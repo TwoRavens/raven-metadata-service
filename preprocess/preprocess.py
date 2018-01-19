@@ -27,6 +27,9 @@ def test_run(input_file):
     variables = dict()
     colnames = list(df.columns)
     for colname in colnames:
+        # Check the type here and, if needed,
+        #  branch to different parts of code
+        #
         od = OrderedDict()
         od['labl'] = ''
         od['varnamesSumStat'] = colname
