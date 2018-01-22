@@ -31,8 +31,7 @@ NATURE_VALUES = (NATURE_NOMINAL,
                  NATURE_INTERVAL,
                  NATURE_RATIO,
                  NATURE_PERCENT,
-                 NATURE_OTHER,
-                 NATURE_VALUES)
+                 NATURE_OTHER)
 
 # --------------------------------------
 # binary constants for metadata file
