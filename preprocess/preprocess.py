@@ -2,6 +2,7 @@ import json
 from collections import OrderedDict
 from os.path import join, isfile, isdir
 
+
 import numpy
 import pandas as pd
 
@@ -17,13 +18,15 @@ class MyEncoder(json.JSONEncoder):
         else:
             return super(MyEncoder, self).default(obj)
 
-
-
+# if file input valid
 def test_run(input_file):
     assert isfile(input_file), 'file not found: %s' % input_file
 
+
     df = pd.read_csv(input_file)
 
+
+    typeGuess(df)
     variables = dict()
     colnames = list(df.columns)
     for colname in colnames:
@@ -122,7 +125,42 @@ def test_run(input_file):
  "defaultBinary":"no",
  "defaultTime":"no"
  """
+def typeGuess(data):
+    print("data in typeGuess",data)
+    k=len(data.columns)
+    print("column count:",k)
+
+    out=list(varnameTypes=data.columns)
+    print("my out:",out)
+
+    def decimal(x):
+        result=False
+        level= numpy.math.floor(x)
+        if any(x!=level): result=True;
+        return  result;
+
+    def nature(x,c,nat):
+        if (c):
+            if(all(x>=0 & x<=1)):return nat[5];
+            elif(all(x >=0 & x <=100) & min(x) < 15 & max(x) > 85) : return nat[5] ;
+            else: return nat[4];
+        else: return nat[2];
+
+
+    def time(x):
+        return "no";
+
+
+
+    return;
 
 if __name__ == '__main__':
     input_file = join('input', 'learningData.csv')
     test_run(input_file)
+
+
+
+#To do list for preprocess.R -> preprocess.py
+#1.Input from different sources
+#2.function typeGuess()
+#3.
