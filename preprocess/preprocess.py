@@ -9,6 +9,7 @@ import pandas as pd
 
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):
+
         if isinstance(obj, numpy.integer):
             return int(obj)
         elif isinstance(obj, numpy.floating):
@@ -24,6 +25,11 @@ def test_run(input_file):
 
 
     df = pd.read_csv(input_file)
+
+    #type_info = GuessTypeUtil.determine_types(df)
+
+    #{ 'colname' : ColumnInfoObject,
+    #'colname' : ColumnInfoObject,
 
 
     typeGuess(df)
@@ -129,25 +135,33 @@ def test_run(input_file):
  "defaultTime":"no"
  """
 def typeGuess(data):
-    print("data in typeGuess",data)
+    print ("data in typeGuess",data)
     k=len(data.columns)
-    print("column count:",k)
+    print ("column count:",k)
 
     out=list(varnameTypes=data.columns)
-    print("my out:",out)
+    print ("my out:",out)
 
-    def decimal(x):
-        result=False
-        level= numpy.math.floor(x)
-        if any(x!=level): result=True;
-        return  result;
+    def check_decimal(x):
+        """Check if variable is a decimal"""
+        result = False
+        level = numpy.math.floor(x)
+        if any(x!=level):
+            result=True;
+
+        return result;
 
     def nature(x,c,nat):
         if (c):
-            if(all(x>=0 & x<=1)):return nat[5];
-            elif(all(x >=0 & x <=100) & min(x) < 15 & max(x) > 85) : return nat[5] ;
-            else: return nat[4];
-        else: return nat[2];
+            if(all(x>=0 & x<=1)):
+                return nat[5]
+            elif(all(x >=0 & x <=100) & min(x) < 15 & max(x) > 85):
+                return nat[5] ;
+            else:
+                return nat[4];
+
+        else:
+            return nat[2];
 
 
     def time(x):
