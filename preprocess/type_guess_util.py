@@ -4,18 +4,20 @@ from os.path import join, isfile, isdir
 
 import numpy
 import pandas as pd
-
 from col_info_constants import *
+
 
 class ColumnInfo(object):
 
     def __init__(self, numchar_val, interval, nature, binary, time_val):
         """Set column info values"""
-        self.numchar = numchar_val
+        self.numchar_val = numchar_val
         self.interval = interval
         self.nature = nature
         self.binary = binary
         self.time_val = time_val
+
+
 
 
 class TypeGuessUtil(object):
@@ -26,6 +28,7 @@ class TypeGuessUtil(object):
         assert dataframe is not None, "dataframe can't be None"
 
         self.df = dataframe
+        self.colcount = len(self.df.columns)
         self.check_types()
 
 
@@ -34,39 +37,75 @@ class TypeGuessUtil(object):
         pass
         # iterate through variables and check...
 
-def typeGuess(data):
-    print ("data in typeGuess",data)
-    k=len(data.columns)
-    print ("column count:",k)
+    def typeGuess(data):
+        print ("data in typeGuess", data)
+        k= len(data.columns)
+        print ("column count:", k)
+        print("my out:", out)
+        out= OrderedDict()
 
-    out=list(varnameTypes=data.columns)
-    print ("my out:",out)
 
-    def check_decimal(x):
-        """Check if variable is a decimal"""
-        result = False
-        level = numpy.math.floor(x)
-        if any(x!=level):
-            result=True;
+        def check_decimal(x):
+            """Check if variable is a decimal"""
+            result = False
+            level = numpy.math.floor(x)
+            if any(x!= level):
+                result= True
 
-        return result;
+            return result
 
-    def nature(x,c,nat):
-        if (c):
-            if(all(x>=0 & x<=1)):
-                return nat[5]
-            elif(all(x >=0 & x <=100) & min(x) < 15 & max(x) > 85):
-                return nat[5] ;
+        def check_nature(x, c, nat):
+            if c:
+                if all(x >= 0 & x <= 1) :
+                    return nat[5]
+                elif all(x >= 0 & x <= 100) & min(x) < 15 & max(x) > 85 :
+                    return nat[5]
+                else:
+                    return nat[4]
+
             else:
-                return nat[4];
-
-        else:
-            return nat[2];
+                return nat[2]
 
 
-    def time(x):
-        return "no";
+        def check_time(x):
+            return "no"
 
+        def isfactor(x):
+            pass
 
+        def islogical(x):
+            if(type(x) == type(True)):
+                return True
+            else:
+                return False
+        for i in range(k):
+            """looping the column and adding to the dict"""
+            """Sample 'out' from preprocess.R :
+                    $varnamesTypes
+                    [1] "ccode.country.cname.cmark.year.wars.war.warl.onset.ethonset.durest.aim.casename.ended.ethwar.waryrs.pop.lpop.polity2.gdpen.gdptype.gdpenl.lgdpenl1.lpopl1.region.western.eeurop.lamerica.ssafrica.asia.nafrme.colbrit.colfra.mtnest.lmtnest.elevdiff.Oil.ncontig.ethfrac.ef.plural.second.numlang.relfrac.plurrel.minrelpc.muslim.nwstate.polity2l.instab.anocl.deml.empethfrac.empwarl.emponset.empgdpenl.emplpopl.emplmtnest.empncontig.empolity2l.sdwars.sdonset.colwars.colonset.cowwars.cowonset.cowwarl.sdwarl.colwarl"
 
-    return;
+                    $defaultInterval
+                    [1] "discrete"
+
+                    $defaultNumchar
+                    [1] "character"
+
+                    $defaultNature
+                    [1] "nominal"
+
+                    $defaultBinary
+                    [1] "no"
+
+                    $defaultTime
+                    [1] "no"
+
+                 """
+            var = data[ : i]
+
+            out['defaultTime'] = check_time(var)
+            if(isfactor(var) | islogical(var)):
+                out['defaultInterval']= ColumnInfo.interval[2]
+                out['defaultNumchar'] = ColumnInfo.numchar_val[2]
+                out['defaultNature'] = ColumnInfo.nature[1]
+
+        return
