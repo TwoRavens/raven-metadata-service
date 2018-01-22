@@ -5,18 +5,20 @@ from os.path import join, isfile, isdir
 import numpy
 import pandas as pd
 
+from col_info_constants import *
 
 class ColumnInfo(object):
 
-    def __init__(self, varname, vartype):
+    def __init__(self, numchar_val, interval, nature, binary, time_val):
+        """Set column info values"""
+        self.numchar = numchar_val
+        self.interval = interval
+        self.nature = nature
+        self.binary = binary
+        self.time_val = time_val
 
-        self.varname = varnames
-        self.var_type = None
-        self.default_interval = None
 
-
-
-class GuessTypeUtil(object):
+class TypeGuessUtil(object):
     """Check variable types of a dataframe"""
 
     def __init__(self, dataframe):
@@ -29,7 +31,8 @@ class GuessTypeUtil(object):
 
     def check_types(self):
         """check the types of the dataframe"""
-
+        pass
+        # iterate through variables and check...
 
 def typeGuess(data):
     print ("data in typeGuess",data)
