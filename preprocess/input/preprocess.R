@@ -22,7 +22,7 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         mydata<-testdata
 
     }else if(!is.null(filename)){
-        mydata<-tryCatch(expr=read.delim(file=filename), error=function(e) NULL)
+        mydata<-tryCatch(expr=read.csv(file=filename), error=function(e) NULL)
     }else{
         path<-paste("http://",hostname,"/api/access/datafile/",fileid,sep="")
         mydata<-tryCatch(expr=read.delim(file=path), error=function(e) NULL)
@@ -31,6 +31,8 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
 
 
     defaulttypes <- typeGuess(mydata)
+print("**** out**")
+    print(defaulttypes)
 
     # Note: types can be passed directly to preprocess, as would be the case if a TwoRavens user tagged a variable as "nominal"
     if(is.null(types)) { # no types have been passed, so simply copying the defaults into the type fields
@@ -281,6 +283,7 @@ typeGuess <- function(data) {
 
     for(i in 1:k){
 
+
         v<- data[,i]
 
         # time
@@ -295,6 +298,8 @@ typeGuess <- function(data) {
             v <- as.character(v)
             v[v=="" | v=="NULL" | v=="NA"]  <- NA
             v <- v[!is.na(v)]
+            print("the v ")
+            print(v)
 
             if(length(unique(v))==2) {out$defaultBinary[i] <- binary.values[1]}
             next
@@ -325,7 +330,12 @@ typeGuess <- function(data) {
                 out$defaultNature[i] <- Nature(v,FALSE, nature.values)
             }
         }
+
     }
 
+
+
+    #print(out)
     return(out)
+    #print("*** end ***")
 }
