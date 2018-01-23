@@ -44,6 +44,7 @@ BINARY_VALUES = (BINARY_YES,
 # --------------------------------------
 # time constants for metadata file
 # --------------------------------------
+TIME_UNKNOWN = 'unknown'
 TIME_YES = 'yes'
 TIME_NO = 'no'
 TIME_VALUES = (TIME_YES,

@@ -1,21 +1,23 @@
 import json
 from collections import OrderedDict
 from os.path import join, isfile, isdir
-
+import random
 import numpy
 import pandas as pd
 from col_info_constants import *
 
 
 class ColumnInfo(object):
+    def __init__(self, colname):
+        """Init with column name"""
+        self.colname = colname
 
-    def __init__(self, numchar_val, interval, nature, binary, time_val):
-        """Set column info values"""
-        self.numchar_val = numchar_val
-        self.interval = interval
-        self.nature = nature
-        self.binary = binary
-        self.time_val = time_val
+        # default to None
+        self.numchar_val = None
+        self.default_interval = None
+        self.nature = None
+        self.binary = None
+        self.time_val = None
 
 
 
@@ -27,15 +29,56 @@ class TypeGuessUtil(object):
         """Init with a pandas dataframe"""
         assert dataframe is not None, "dataframe can't be None"
 
-        self.df = dataframe
+        self.dataframe = dataframe
+        self.colnames = self.df.columns
         self.colcount = len(self.df.columns)
+
+        # final output
+        self.variable_dict = {}
+
         self.check_types()
 
 
     def check_types(self):
         """check the types of the dataframe"""
-        pass
-        # iterate through variables and check...
+        assert self.colnames, 'self.colnames must have values'
+
+        self.variable_dict = {}
+
+        # Iterate though variables and set type info
+        for colname in self.colnames:
+
+            col_info = ColumnInfo(colname)
+
+            # set time
+            col_info.time_val = TIME_UNKNOWN
+
+            # set vals if factor or logical
+            #
+            if self.is_factor(self.dataframe[colname]) or \
+                self.is_logical(self.dataframe[colname]):
+
+                col_info.numchar_val = NUMCHAR_CHARACTER
+                col_info.default_interval = INTERVAL_DISCRETE
+                col_info.nature = NATURE_NOMINAL
+
+                # some other stuff, dropna
+
+                self.variable_dict[colname] = col_info
+                continue    # go to next variable
+
+
+            print(colname)
+
+
+    def is_factor(self, var_series):
+        """Check if pandas Series is a factor"""
+        return random.choice([True, False])
+
+    def is_logical(self, var_series):
+        """Check if pandas Series is a boolean"""
+        return random.choice([True, False])
+
 
     def typeGuess(data):
         print ("data in typeGuess", data)
@@ -69,9 +112,6 @@ class TypeGuessUtil(object):
 
         def check_time(x):
             return "no"
-
-        def isfactor(x):
-            pass
 
         def islogical(x):
             if(type(x) == type(True)):
