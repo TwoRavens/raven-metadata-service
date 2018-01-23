@@ -107,5 +107,27 @@ class TypeGuessUtil(object):
                 out['defaultInterval']= ColumnInfo.interval[2]
                 out['defaultNumchar'] = ColumnInfo.numchar_val[2]
                 out['defaultNature'] = ColumnInfo.nature[1]
+                var=str(var)
+                var.dropna() #to remove the rows with NA
+                var = int(var)
+                if(len(series.unique(var))==2):
+                    out['defaultBinary']= ColumnInfo.binary[1]
 
-        return
+                if any(pd.isnull(var)):
+                    out['defaultInterval'] = ColumnInfo.interval[2]
+                    out['defaultNumchar'] = ColumnInfo.numchar_val[2]
+                    out['defaultNature'] = ColumnInfo.nature[1]
+                else:
+                    out['defaultNumchar'] = ColumnInfo.numchar_val[1]
+
+                    decimal= check_decimal(var)
+                    if(decimal):
+                        out['defaultInterval'] = ColumnInfo.interval[1]
+                        out['defaultNature'] = check_nature(var,True,ColumnInfo.nature)
+                    else:
+                        out['defaultInterval'] = ColumnInfo.interval[2]
+                        out['defaultNature'] = check_nature(var, False, ColumnInfo.nature)
+
+
+
+        return out
