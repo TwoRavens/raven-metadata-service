@@ -4,23 +4,9 @@ from os.path import join, isfile, isdir
 import random
 import numpy
 import pandas as pd
+
 from col_info_constants import *
-
-
-class ColumnInfo(object):
-    def __init__(self, colname):
-        """Init with column name"""
-        self.colname = colname
-
-        # default to None
-        self.numchar_val = None
-        self.default_interval = None
-        self.nature = None
-        self.binary = None
-        self.time_val = None
-
-
-
+from column_info import ColumnInfo
 
 class TypeGuessUtil(object):
     """Check variable types of a dataframe"""
