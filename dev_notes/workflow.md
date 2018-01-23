@@ -11,7 +11,7 @@
 ### B. Create a new branch from master
 
 - Name the new branch starting with the issue number
-  - e.g. `15_islogical`
+  - e.g. `5_islogical`
 
 ### C. Switch your dev machine to the new branch
 
