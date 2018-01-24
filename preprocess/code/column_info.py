@@ -5,8 +5,6 @@ from col_info_constants import *
 class ColumnInfo(object):
     def __init__(self, colname):
         """Init with column name"""
-
-
         self.colname = colname
 
         # default to None

@@ -1,8 +1,10 @@
 import json
 import sys
 from collections import OrderedDict
-from os.path import join, isfile, isdir
+from os.path import abspath, dirname, join, normpath, isdir, isfile
 
+CURRENT_DIR = dirname(abspath(__file__))
+INPUT_DIR = join(dirname(CURRENT_DIR), 'input')
 
 import numpy
 import pandas as pd
@@ -48,6 +50,7 @@ def test_run(input_file):
     colnames = list(df.columns)
     type_info = type_guess_util.get_variable_dict()
 
+    # In the future
     if len(colnames) != type_guess_util.get_variable_count():
         print('type info has incorrect number of variables!')
         print('actual variables: %s' % len(colnames))
@@ -70,6 +73,8 @@ def test_run(input_file):
         # ugly--update later...
         for ti_key, ti_val in col_type_info.as_dict().items():
             od[ti_key] = ti_val
+
+        # not take logic from calcSumStats in original preprocess...
 
         if col_type_info.is_numeric():
             # do something
@@ -210,7 +215,7 @@ def typeGuess(data):
     return;
 
 if __name__ == '__main__':
-    input_file = join('input', 'learningData.csv')
+    input_file = join(INPUT_DIR, 'learningData.csv')
     test_run(input_file)
 
 
