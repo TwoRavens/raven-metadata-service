@@ -31,8 +31,8 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
 
 
     defaulttypes <- typeGuess(mydata)
-print("**** out**")
-    print(defaulttypes)
+# print("**** out**")
+#     print(defaulttypes)
 
     # Note: types can be passed directly to preprocess, as would be the case if a TwoRavens user tagged a variable as "nominal"
     if(is.null(types)) { # no types have been passed, so simply copying the defaults into the type fields
@@ -285,7 +285,10 @@ typeGuess <- function(data) {
 
 
         v<- data[,i]
-
+        print(" v **")
+        print(class(v))
+        print(v)
+        print("***")
         # time
         out$defaultTime[i] <- Time(v)
 
@@ -298,7 +301,7 @@ typeGuess <- function(data) {
             v <- as.character(v)
             v[v=="" | v=="NULL" | v=="NA"]  <- NA
             v <- v[!is.na(v)]
-            print("the v ")
+            print("the valid **** ")
             print(v)
 
             if(length(unique(v))==2) {out$defaultBinary[i] <- binary.values[1]}
@@ -308,7 +311,8 @@ typeGuess <- function(data) {
         v <- as.character(v)
         v[v=="" | v=="NULL" | v=="NA"]  <- NA
         v <- v[!is.na(v)]
-
+ print("the valid **** ")
+            print(v)
         # converts to numeric and if any do not convert and become NA, numchar is character
         v <- as.numeric(v)
 

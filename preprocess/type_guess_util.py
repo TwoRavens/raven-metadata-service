@@ -10,48 +10,63 @@ from column_info import *
 
 class TypeGuessUtil(object):
     """Check variable types of a dataframe"""
-
     def __init__(self, dataframe):
         """Init with a pandas dataframe"""
         assert dataframe is not None, "dataframe can't be None"
 
         self.dataframe = dataframe
-        self.colnames = self.df.columns
-        self.colcount = len(self.df.columns)
-
+        self.colnames = self.dataframe.columns
+        self.colcount = len(self.dataframe.columns)
+        # print("data frame")
+        # print(self.dataframe)
+        # print("colnames")
+        # print(self.colnames)
         # final output
         self.variable_dict = {}
-        # final outout returned
+        # # final outout returned
         self.variable_dict=self.check_types()
 
 
     def check_types(self):
         """check the types of the dataframe"""
-        assert self.colnames, 'self.colnames must have values'
+        #print(self.colnames)
+        #assert self.colnames, 'self.colnames must have values'
         
         self.variable_dict = {}
 
         # Iterate though variables and set type info
         for colname in self.colnames:
 
-            col_info = colname(colnames)
+            print(colname)
             data_info= self.dataframe[colname]
+            print("data_info")
+            print(data_info)
+            print(type(data_info))
             # set time
-            col_info.time_val = self.check_time(data_info)
-
+            ColumnInfo.time_val = self.check_time(data_info)
+            print("time_val")
+            print(ColumnInfo.time_val)
             # set vals if factor or logical
             #
-            if self.is_factor(self.dataframe[colname]) or \
-                self.is_logical(self.dataframe[colname]):
 
-                col_info.numchar_val = NUMCHAR_CHARACTER
-                col_info.default_interval = INTERVAL_DISCRETE
-                col_info.nature = NATURE_NOMINAL
+            print("******")
+            if self.is_factor(data_info) or \
+                self.is_logical(data_info):
 
-                data_info= pd.DataFrame(str(data_info))
+                ColumnInfo.numchar_val = NUMCHAR_CHARACTER
+                ColumnInfo.default_interval = INTERVAL_DISCRETE
+                ColumnInfo.nature = NATURE_NOMINAL
+                print("** column info data**")
+                print(ColumnInfo.numchar_val)
+                print(ColumnInfo.default_interval)
+                print(ColumnInfo.nature)
+
+
+
                 data_info.dropna()
                 if (len(series.unique(data_info)) == 2):
-                    col_info.binary= BINARY_YES
+                    ColumnInfo.binary= BINARY_YES
+                    print(ColumnInfo.binary)
                     next()
 
             data_info = pd.DataFrame(str(data_info))
@@ -59,22 +74,22 @@ class TypeGuessUtil(object):
 
             data_info=pd.DataFrame(int(data_info))
             if (len(series.unique(data_info)) == 2):
-                col_info.binary = BINARY_YES
+                ColumnInfo.binary = BINARY_YES
 
             if any(data_info.isnull()):
-                col_info.numchar_val = NUMCHAR_CHARACTER
-                col_info.nature = NATURE_NOMINAL
-                col_info.default_interval = INTERVAL_DISCRETE
+                ColumnInfo.numchar_val = NUMCHAR_CHARACTER
+                ColumnInfo.nature = NATURE_NOMINAL
+                ColumnInfo.default_interval = INTERVAL_DISCRETE
             else:
-                col_info.numchar_val = NUMCHAR_NUMERIC
+                ColumnInfo.numchar_val = NUMCHAR_NUMERIC
 
                 decimal = self.check_decimal(data_info)
                 if(decimal):
-                    col_info.default_interval = INTERVAL_CONTINUOUS
-                    col_info.nature = self.check_nature(data_info, True, NATURE_VALUES)
+                    ColumnInfo.default_interval = INTERVAL_CONTINUOUS
+                    ColumnInfo.nature = self.check_nature(data_info, True, NATURE_VALUES)
                 else:
-                    col_info.default_interval = INTERVAL_DISCRETE
-                    col_info.nature = check_nature(data_info, False, NATURE_VALUES)
+                    ColumnInfo.default_interval = INTERVAL_DISCRETE
+                    ColumnInfo.nature = check_nature(data_info, False, NATURE_VALUES)
 
 
             # some other stuff, dropna
@@ -83,7 +98,7 @@ class TypeGuessUtil(object):
             continue  # go to next variable
 
 
-            print(colname)
+            #print(colname)
         return self.variable_dict
 
     def is_factor(self, var_series):
@@ -94,7 +109,7 @@ class TypeGuessUtil(object):
         """Check if pandas Series is a boolean"""
         return random.choice([True, False])
 
-    def check_decimal(x):
+    def check_decimal(self,x):
         """Check if variable is a decimal"""
         result = False
         level = numpy.math.floor(x)
@@ -103,7 +118,7 @@ class TypeGuessUtil(object):
 
         return result
 
-    def check_nature(x, c, nat):
+    def check_nature(self,x, c, nat):
         if c:
             if all(x >= 0 & x <= 1):
                 return nat[5]
@@ -115,7 +130,7 @@ class TypeGuessUtil(object):
         else:
             return nat[2]
 
-    def check_time(x):
+    def check_time(self,data_info):
         return "no"
 
 
