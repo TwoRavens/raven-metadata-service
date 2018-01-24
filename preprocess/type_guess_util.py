@@ -22,9 +22,9 @@ class TypeGuessUtil(object):
         # print("colnames")
         # print(self.colnames)
         # final output
-        self.variable_dict = {}
+        self.columnInfo_dict={}
         # # final outout returned
-        self.variable_dict=self.check_types()
+        self.columnInfo_dict=self.check_types()
 
 
     def check_types(self):
@@ -37,13 +37,11 @@ class TypeGuessUtil(object):
         self.nature = None
         self.time_val = None
         self.binary = None
-
-        self.col_info=OrderedDict()
-
-        self.variable_dict = {}
+        variable_dict = dict()
 
         # Iterate though variables and set type info
         for colname in self.colnames:
+            self.col_info = OrderedDict()
             self.colname=colname
             # print(colname)
             data_info= self.dataframe[colname]
@@ -119,13 +117,16 @@ class TypeGuessUtil(object):
                     self.col_info['defaultBinary'] = self.binary
                     self.col_info['defaultTime'] = self.time_val
 
-            print(self.col_info)
-            self.variable_dict[colname] = self.col_info
+            # print(self.col_info)
+            variable_dict[colname] = self.col_info
+            # print(variable_dict)
             continue  # go to next variable
 
 
             #print(colname)
-        return self.variable_dict
+        # print()
+        print(json.dumps(variable_dict, indent=4))
+        return variable_dict
 
     def is_factor(self, var_series):
         """Check if pandas Series is a factor"""
