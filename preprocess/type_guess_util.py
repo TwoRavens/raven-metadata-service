@@ -30,6 +30,13 @@ class TypeGuessUtil(object):
         # # final outout returned
         self.check_types()
 
+    def get_variable_dict(self):
+        """Return the calculated results"""
+        return self.variable_dict
+
+    def get_variable_count(self):
+        """Return the number of variables with type info"""
+        return len(self.variable_dict.keys())
 
     def check_types(self):
         """check the types of the dataframe"""
@@ -81,7 +88,7 @@ class TypeGuessUtil(object):
                 else:
                     col_info.binary = BINARY_NO
 
-                self.variable_dict[colname] = col_info.as_dict()
+                self.variable_dict[colname] = col_info
 
                 continue    # go onto next column
 
@@ -133,14 +140,16 @@ class TypeGuessUtil(object):
                     self.col_info['defaultTime'] = self.time_val
             """
             # print(self.col_info)
-            self.variable_dict[colname] = col_info.as_dict()
+            self.variable_dict[colname] = col_info
             # print(variable_dict)
             continue  # go to next variable
 
 
             #print(colname)
         # print()
-        print(json.dumps(self.variable_dict, indent=4))
+        for key, val in self.variable_dict.items():
+            print('col: %s' % key)
+            print(json.dumps(val.as_dict(), indent=4))
         #return variable_dict
 
     def is_factor(self, var_series):

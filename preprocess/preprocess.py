@@ -1,4 +1,5 @@
 import json
+import sys
 from collections import OrderedDict
 from os.path import join, isfile, isdir
 
@@ -35,14 +36,48 @@ def test_run(input_file):
     #'colname' : ColumnInfoObject,
 
 
-    TypeGuessUtil(df)
+    type_guess_util = TypeGuessUtil(df)
+
+    # Return for now, checking TypeGuessUtil
+    return
+
+    # stop here for now
+
     variables = dict()
+
     colnames = list(df.columns)
+    type_info = type_guess_util.get_variable_dict()
+
+    if len(colnames) != type_guess_util.get_variable_count():
+        print('type info has incorrect number of variables!')
+        print('actual variables: %s' % len(colnames))
+        print('type info variables: %s' % type_guess_util.get_variable_count())
+        sys.exit(0)
+
     for colname in colnames:
+
+        col_type_info = type_info.get(colname)
+        if col_type_info is None:
+            print('type info not found for: %s' % colname)
+            sys.exit(0)
+
         # Check the type here and, if needed,
         #  branch to different parts of code
         #
         od = OrderedDict()
+
+        # Add the type info the main dict
+        # ugly--update later...
+        for ti_key, ti_val in col_type_info.as_dict().items():
+            od[ti_key] = ti_val
+
+        if col_type_info.is_numeric():
+            # do something
+            pass
+        else:
+            # it's char, no numeric calculations...
+            pass
+
         od['labl'] = ''
         od['varnamesSumStat'] = colname
         od['median'] = df[colname].median()

@@ -1,6 +1,6 @@
 from collections import OrderedDict
 import json
-
+from col_info_constants import *
 
 class ColumnInfo(object):
     def __init__(self, colname):
@@ -16,7 +16,9 @@ class ColumnInfo(object):
         self.time_val = None
         self.binary = None
 
-
+    def is_numeric(self):
+        # is this NUMCHAR_NUMERIC?
+        return self.numchar_val == NUMCHAR_NUMERIC
 
     def as_dict(self, as_string=False):
         """For final output"""
