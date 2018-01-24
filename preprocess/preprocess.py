@@ -7,6 +7,9 @@ import numpy
 import pandas as pd
 
 
+from type_guess_util import *
+
+
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):
 
@@ -32,7 +35,7 @@ def test_run(input_file):
     #'colname' : ColumnInfoObject,
 
 
-    typeGuess(df)
+    TypeGuessUtil(df)
     variables = dict()
     colnames = list(df.columns)
     for colname in colnames:
