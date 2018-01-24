@@ -18,7 +18,7 @@ class ColumnInfo(object):
 
 
 
-    def get_dict(self, as_string=False):
+    def as_dict(self, as_string=False):
         """For final output"""
         od = OrderedDict()
         od['varnameTypes'] = self.colname

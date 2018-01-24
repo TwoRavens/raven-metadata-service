@@ -22,36 +22,41 @@ class TypeGuessUtil(object):
         # print("colnames")
         # print(self.colnames)
         # final output
-        self.columnInfo_dict={}
+
+
+        # { col_name : ColumnInfoObject, col_name : ColumnInfoObject}
+        self.variable_dict = {}
+
         # # final outout returned
-        self.columnInfo_dict=self.check_types()
+        self.check_types()
 
 
     def check_types(self):
         """check the types of the dataframe"""
         #print(self.colnames)
         #assert self.colnames, 'self.colnames must have values'
+
+        '''
         self.colname=None
         self.numchar_val = None
         self.default_interval = None
         self.nature = None
         self.time_val = None
         self.binary = None
-        variable_dict = dict()
-
+        '''
         # Iterate though variables and set type info
         for colname in self.colnames:
-            self.col_info = OrderedDict()
-            self.colname=colname
+            col_info = ColumnInfo(colname)
+
             # print(colname)
             data_info= self.dataframe[colname]
             # print("data_info")
             # print(data_info)
             # print(type(data_info))
             # set time
-            self.time_val = self.check_time(data_info)
+            col_info.time_val = self.check_time(data_info)
             print("time_val")
-            print(self.time_val)
+            print(col_info.time_val)
             # set vals if factor or logical
             #
 
@@ -59,74 +64,84 @@ class TypeGuessUtil(object):
             if self.is_factor(data_info) or \
                 self.is_logical(data_info):
 
-                self.numchar_val = NUMCHAR_CHARACTER
-                self.default_interval = INTERVAL_DISCRETE
-                self.nature = NATURE_NOMINAL
+                col_info.numchar_val = NUMCHAR_CHARACTER
+                col_info.default_interval = INTERVAL_DISCRETE
+                col_info.nature = NATURE_NOMINAL
+
                 print("** column info data**")
-                print(self.numchar_val)
-                print(self.default_interval)
-                print(self.nature)
+                print(col_info.numchar_val)
+                print(col_info.default_interval)
+                print(col_info.nature)
 
                 data_info.dropna(inplace=True)
                 if (len(data_info.unique()) == 2):
                     print("#2")
-                    self.binary= BINARY_NO
-                    print(self.binary)
-                    next()
+                    col_info.binary = BINARY_YES
+                    print(col_info.binary)
+                else:
+                    col_info.binary = BINARY_NO
 
+                self.variable_dict[colname] = col_info.as_dict()
+
+                continue    # go onto next column
+
+            # Drop nulls...
             data_info.dropna(inplace=True)
 
             data_info=data_info.astype('int')
             # print(data_info)
 
             if (len(data_info.unique()) == 2):
-                self.binary = BINARY_NO
+                col_info.binary = BINARY_YES
+            else:
+                col_info.binary = BINARY_NO
 
             if any(data_info.isnull()):
-                self.numchar_val = NUMCHAR_CHARACTER
-                self.nature = NATURE_NOMINAL
-                self.default_interval = INTERVAL_DISCRETE
+                # DOES IT EVER REACH? AFTER earlier .dropna...
+                col_info.numchar_val = NUMCHAR_CHARACTER
+                col_info.nature = NATURE_NOMINAL
+                col_info.default_interval = INTERVAL_DISCRETE
                 print("#3")
-                print(self.numchar_val)
-                print(self.default_interval)
-                print(self.nature)
+                print(col_info.numchar_val)
+                print(col_info.default_interval)
+                print(col_info.nature)
             else:
-                self.numchar_val = NUMCHAR_NUMERIC
+                col_info.numchar_val = NUMCHAR_NUMERIC
                 print("#4")
-                print(self.numchar_val)
+                print(col_info.numchar_val)
 
-                decimal = self.check_decimal(data_info)
-                if(decimal):
-                    self.col_info.default_interval = INTERVAL_CONTINUOUS
-                    self.nature = self.check_nature(data_info, True, NATURE_VALUES)
+                if self.check_decimal(data_info):
+                    col_info.default_interval = INTERVAL_CONTINUOUS
+                    col_info.nature = self.check_nature(data_info, True, NATURE_VALUES)
                     print("#5")
-                    print(self.nature)
+                    print(col_info.nature)
                 else:
-                    self.default_interval = INTERVAL_DISCRETE
-                    self.nature = self.check_nature(data_info, False, NATURE_VALUES)
+                    col_info.default_interval = INTERVAL_DISCRETE
+                    col_info.nature = self.check_nature(data_info, False, NATURE_VALUES)
                     print("#6")
-                    print(self.nature)
+                    print(col_info.nature)
 
 
             # some other stuff, dropna
-           # ColumnInfo(col_info)
+            # ColumnInfo(col_info)
+            """
                     self.col_info['varnameTypes']= self.colname
                     self.col_info['defaultNumchar']= self.numchar_val
                     self.col_info['defaultInterval'] = self.default_interval
                     self.col_info['defaultNature'] = self.nature
                     self.col_info['defaultBinary'] = self.binary
                     self.col_info['defaultTime'] = self.time_val
-
+            """
             # print(self.col_info)
-            variable_dict[colname] = self.col_info
+            self.variable_dict[colname] = col_info.as_dict()
             # print(variable_dict)
             continue  # go to next variable
 
 
             #print(colname)
         # print()
-        print(json.dumps(variable_dict, indent=4))
-        return variable_dict
+        print(json.dumps(self.variable_dict, indent=4))
+        #return variable_dict
 
     def is_factor(self, var_series):
         """Check if pandas Series is a factor"""
