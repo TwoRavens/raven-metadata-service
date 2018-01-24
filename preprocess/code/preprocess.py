@@ -49,6 +49,7 @@ def test_run(input_file):
 
     colnames = list(df.columns)
     type_info = type_guess_util.get_variable_dict()
+    # type_info: { colname: ColumnInfo, colname: ColumnInfo}
 
     # In the future
     if len(colnames) != type_guess_util.get_variable_count():
@@ -59,29 +60,21 @@ def test_run(input_file):
 
     for colname in colnames:
 
-        col_type_info = type_info.get(colname)
-        if col_type_info is None:
+        col_info = type_info.get(colname)
+        if col_info is None:
             print('type info not found for: %s' % colname)
             sys.exit(0)
 
-        # Check the type here and, if needed,
-        #  branch to different parts of code
-        #
-        od = OrderedDict()
-
-        # Add the type info the main dict
-        # ugly--update later...
-        for ti_key, ti_val in col_type_info.as_dict().items():
-            od[ti_key] = ti_val
-
         # not take logic from calcSumStats in original preprocess...
 
-        if col_type_info.is_numeric():
+        if col_info.is_numeric():
             # do something
-            pass
+            col_info.median = df[colname].median()
         else:
             # it's char, no numeric calculations...
             pass
+
+
 
         od['labl'] = ''
         od['varnamesSumStat'] = colname
