@@ -22,7 +22,6 @@ class TypeGuessUtil(object):
         # print("colnames")
         # print(self.colnames)
         # final output
-<<<<<<< Updated upstream:preprocess/code/type_guess_util.py
 
 
         # { col_name : ColumnInfoObject, col_name : ColumnInfoObject}
@@ -34,11 +33,6 @@ class TypeGuessUtil(object):
     def get_variable_dict(self):
         """Return the calculated results"""
         return self.variable_dict
-=======
-        self.columnInfo_dict= {}
-        # # final outout returned
-        self.columnInfo_dict= self.check_types()
->>>>>>> Stashed changes:preprocess/type_guess_util.py
 
     def get_variable_count(self):
         """Return the number of variables with type info"""
@@ -48,13 +42,9 @@ class TypeGuessUtil(object):
         """check the types of the dataframe"""
         #print(self.colnames)
         #assert self.colnames, 'self.colnames must have values'
-<<<<<<< Updated upstream:preprocess/code/type_guess_util.py
 
         '''
         self.colname=None
-=======
-        self.colname= None
->>>>>>> Stashed changes:preprocess/type_guess_util.py
         self.numchar_val = None
         self.default_interval = None
         self.nature = None
@@ -63,13 +53,8 @@ class TypeGuessUtil(object):
         '''
         # Iterate though variables and set type info
         for colname in self.colnames:
-<<<<<<< Updated upstream:preprocess/code/type_guess_util.py
             col_info = ColumnInfo(colname)
 
-=======
-            self.col_info = OrderedDict()
-            self.colname= colname
->>>>>>> Stashed changes:preprocess/type_guess_util.py
             # print(colname)
             data_info= self.dataframe[colname]
             # print("data_info")
@@ -98,18 +83,12 @@ class TypeGuessUtil(object):
                 data_info.dropna(inplace=True)
                 if (len(data_info.unique()) == 2):
                     print("#2")
-<<<<<<< Updated upstream:preprocess/code/type_guess_util.py
                     col_info.binary = BINARY_YES
                     print(col_info.binary)
                 else:
                     col_info.binary = BINARY_NO
 
                 self.variable_dict[colname] = col_info
-=======
-                    self.binary= BINARY_NO
-                    print(self.binary)
-                next()
->>>>>>> Stashed changes:preprocess/type_guess_util.py
 
                 continue    # go onto next column
 
@@ -168,15 +147,10 @@ class TypeGuessUtil(object):
 
             #print(colname)
         # print()
-<<<<<<< Updated upstream:preprocess/code/type_guess_util.py
         for key, val in self.variable_dict.items():
             print('col: %s' % key)
             print(json.dumps(val.as_dict(), indent=4))
         #return variable_dict
-=======
-        print(json.dumps(variable_dict, indent= 4))
-        return variable_dict
->>>>>>> Stashed changes:preprocess/type_guess_util.py
 
     def is_factor(self, var_series):
         """Check if pandas Series is a factor"""
@@ -186,20 +160,20 @@ class TypeGuessUtil(object):
         """Check if pandas Series is a boolean"""
         return random.choice([True, False])
 
-    def check_decimal(self, series):
+    def check_decimal(self,x):
         """Check if variable is a decimal"""
         result = False
-        level = np.floor(series)
-        if any(series != level):
+        level = np.floor(x)
+        if any(x != level):
             result = True
 
         return result
 
-    def check_nature(self, series, c, nat):
+    def check_nature(self,x, c, nat):
         if c:
-            if all(series >= 0 & series <= 1):
+            if all(x >= 0 & x <= 1):
                 return nat[5]
-            elif all(series >= 0 & series <= 100) & min(series) < 15 & max(x) > 85:
+            elif all(x >= 0 & x <= 100) & min(x) < 15 & max(x) > 85:
                 return nat[5]
             else:
                 return nat[4]
