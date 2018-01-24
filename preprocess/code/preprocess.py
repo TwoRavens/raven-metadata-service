@@ -1,10 +1,16 @@
 import json
+import sys
 from collections import OrderedDict
-from os.path import join, isfile, isdir
+from os.path import abspath, dirname, join, normpath, isdir, isfile
 
+CURRENT_DIR = dirname(abspath(__file__))
+INPUT_DIR = join(dirname(CURRENT_DIR), 'input')
 
 import numpy
 import pandas as pd
+
+
+from type_guess_util import *
 
 
 class MyEncoder(json.JSONEncoder):
@@ -32,14 +38,44 @@ def test_run(input_file):
     #'colname' : ColumnInfoObject,
 
 
-    typeGuess(df)
+    type_guess_util = TypeGuessUtil(df)
+
+    # Return for now, checking TypeGuessUtil
+    return
+
+    # stop here for now
+
     variables = dict()
+
     colnames = list(df.columns)
+    type_info = type_guess_util.get_variable_dict()
+    # type_info: { colname: ColumnInfo, colname: ColumnInfo}
+
+    # In the future
+    if len(colnames) != type_guess_util.get_variable_count():
+        print('type info has incorrect number of variables!')
+        print('actual variables: %s' % len(colnames))
+        print('type info variables: %s' % type_guess_util.get_variable_count())
+        sys.exit(0)
+
     for colname in colnames:
-        # Check the type here and, if needed,
-        #  branch to different parts of code
-        #
-        od = OrderedDict()
+
+        col_info = type_info.get(colname)
+        if col_info is None:
+            print('type info not found for: %s' % colname)
+            sys.exit(0)
+
+        # not take logic from calcSumStats in original preprocess...
+
+        if col_info.is_numeric():
+            # do something
+            col_info.median = df[colname].median()
+        else:
+            # it's char, no numeric calculations...
+            pass
+
+
+
         od['labl'] = ''
         od['varnamesSumStat'] = colname
         od['median'] = df[colname].median()
@@ -172,7 +208,7 @@ def typeGuess(data):
     return;
 
 if __name__ == '__main__':
-    input_file = join('input', 'learningData.csv')
+    input_file = join(INPUT_DIR, 'learningData.csv')
     test_run(input_file)
 
 
