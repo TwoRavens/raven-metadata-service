@@ -12,6 +12,7 @@ import pandas as pd
 
 from type_guess_util import *
 from cal_stats_util import CalSumStatsUtil
+from column_info import *
 
 
 class MyEncoder(json.JSONEncoder):
@@ -38,22 +39,23 @@ def test_run(input_file):
     type_guess_util = TypeGuessUtil(df)
 
     variable_dict = type_guess_util.get_variable_dict()
+    var = OrderedDict()
 
     # Iterate through variable info and
     # run calc stats on each ColumnInfo object
     #
     for col_name, col_info in variable_dict.items():
-        print('-' * 40)
-        print(col_info.colname)
-        print('median:', col_info.median)
-        print('mode:', col_info.mode)
+        # print('-' * 40)
+        # print(col_info.colname)
+        # print('median:', col_info.median)
+        # print('mode:', col_info.mode)
         calsumstats = CalSumStatsUtil(df, col_info)
-        print(calsumstats)
+    statsvar=type_guess_util.get_variable_dict()
     #calsumstats = CalSumStatsUtil(df, types)
-
+    var[col_name]=ColumnInfo.get_variable_labels(col_info);
     # Return for now, checking TypeGuessUtil
     return
-
+    print(var)
     # stop here for now
 
     variables = dict()

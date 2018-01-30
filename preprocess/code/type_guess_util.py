@@ -66,7 +66,7 @@ class TypeGuessUtil(object):
             # set vals if factor or logical
             #
 
-            print("******")
+            # print("******")
             if self.is_factor(data_info) or \
                 self.is_logical(data_info):
 
@@ -74,15 +74,15 @@ class TypeGuessUtil(object):
                 col_info.default_interval = INTERVAL_DISCRETE
                 col_info.nature = NATURE_NOMINAL
 
-                print(col_info.numchar_val)
-                print(col_info.default_interval)
-                print(col_info.nature)
+                # print(col_info.numchar_val)
+                # print(col_info.default_interval)
+                # print(col_info.nature)
 
                 data_info.dropna(inplace=True)
                 if (len(data_info.unique()) == 2):
-                    print("#2")
+                    # print("#2")
                     col_info.binary = BINARY_YES
-                    print(col_info.binary)
+                    # print(col_info.binary)
                 else:
                     col_info.binary = BINARY_NO
 
@@ -106,25 +106,25 @@ class TypeGuessUtil(object):
                 col_info.numchar_val = NUMCHAR_CHARACTER
                 col_info.nature = NATURE_NOMINAL
                 col_info.default_interval = INTERVAL_DISCRETE
-                print("#3")
-                print(col_info.numchar_val)
-                print(col_info.default_interval)
-                print(col_info.nature)
+                # print("#3")
+                # print(col_info.numchar_val)
+                # print(col_info.default_interval)
+                # print(col_info.nature)
             else:
                 col_info.numchar_val = NUMCHAR_NUMERIC
-                print("#4")
-                print(col_info.numchar_val)
+                # print("#4")
+                # print(col_info.numchar_val)
 
                 if self.check_decimal(data_info):
                     col_info.default_interval = INTERVAL_CONTINUOUS
                     col_info.nature = self.check_nature(data_info, True, NATURE_VALUES)
-                    print("#5")
-                    print(col_info.nature)
+                    # print("#5")
+                    # print(col_info.nature)
                 else:
                     col_info.default_interval = INTERVAL_DISCRETE
                     col_info.nature = self.check_nature(data_info, False, NATURE_VALUES)
-                    print("#6")
-                    print(col_info.nature)
+                    # print("#6")
+                    # print(col_info.nature)
 
 
             # some other stuff, dropna
@@ -145,9 +145,9 @@ class TypeGuessUtil(object):
 
             #print(colname)
         # print()
-        for key, val in self.variable_dict.items():
-            print('col: %s' % key)
-            print(json.dumps(val.as_dict(), indent=4))
+        # for key, val in self.variable_dict.items():
+        #     print('col: %s' % key)
+        #     print(json.dumps(val.as_dict(), indent=4))
         #return variable_dict
 
     def is_factor(self, var_series):

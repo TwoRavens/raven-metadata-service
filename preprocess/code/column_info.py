@@ -90,7 +90,8 @@ class ColumnInfo(object):
             ('interval',self.interval),
             ('time',self.time)
             )
-
+        # print("-"*20)
+        # print(label_list)
         return label_list
 
     def as_dict(self, as_string=False):

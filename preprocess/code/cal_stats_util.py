@@ -22,16 +22,15 @@ class CalSumStatsUtil(object):
 
 
 
-        print('col_info',self.col_info)
+        # print('col_info',self.col_info)
         self.calc_stats(self.dataframe)
-
 
 
 
     def calc_stats(self,dataframe):
 
 
-        print('dataframe passed', dataframe[self.colname])
+        # print('dataframe passed', dataframe[self.colname])
 
 
         self.col_info.invalid = dataframe[self.colname].isnull().sum()
