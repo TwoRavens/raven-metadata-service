@@ -45,8 +45,10 @@ def test_run(input_file):
     for col_name, col_info in variable_dict.items():
         print('-' * 40)
         print(col_info.colname)
-        calsumstats = CalSumStatsUtil(df, col_info)
         print('median:', col_info.median)
+        print('mode:', col_info.mode)
+        calsumstats = CalSumStatsUtil(df, col_info)
+        print(calsumstats)
     #calsumstats = CalSumStatsUtil(df, types)
 
     # Return for now, checking TypeGuessUtil
@@ -85,41 +87,41 @@ def test_run(input_file):
 
 
 
-        od['labl'] = ''
-        od['varnamesSumStat'] = colname
-        od['median'] = df[colname].median()
-        # mode
-        #od['mode'] = df[colname].mode()[0]
-
-        od['mean'] = df[colname].mean()
-        od['max'] = df[colname].max()
-        od['min'] = df[colname].min()
-
-        od['invalid'] = df[colname].isnull().sum()
-        od['valid'] = df[colname].count()
-
-        od['sd'] = df[colname].std()
-        od['uniques'] = df[colname].nunique()
-
-        # NEED TO ADD herfindahl
-        #col_total = float(df[colname].sum())
-        #hhi_elements = [(float(val)/col_total)**2
-        #                for val in list(df[colname].values)]
-
-        #od['herfindahl'] = sum(hhi_elements)
-        od['herfindahl'] = '?'
-
-        if od['uniques']:
-            freq_cnt = None
-            mid_pt = int(od['uniques'] / 2)
-
-            for idx, freq_cnt in enumerate(df[colname].value_counts().iteritems(), 1):
-                if idx == 1:
-                    od['mode'], od['mode_freq'] = freq_cnt
-                if idx == mid_pt:
-                    od['mid'], od['mid_freq'] = freq_cnt
-
-            od['fewest'], od['fewest_freq'] = freq_cnt
+        # od['labl'] = ''
+        # od['varnamesSumStat'] = colname
+        # od['median'] = df[colname].median()
+        # # mode
+        # #od['mode'] = df[colname].mode()[0]
+        #
+        # od['mean'] = df[colname].mean()
+        # od['max'] = df[colname].max()
+        # od['min'] = df[colname].min()
+        #
+        # od['invalid'] = df[colname].isnull().sum()
+        # od['valid'] = df[colname].count()
+        #
+        # od['sd'] = df[colname].std()
+        # od['uniques'] = df[colname].nunique()
+        #
+        # # NEED TO ADD herfindahl
+        # #col_total = float(df[colname].sum())
+        # #hhi_elements = [(float(val)/col_total)**2
+        # #                for val in list(df[colname].values)]
+        #
+        # #od['herfindahl'] = sum(hhi_elements)
+        # od['herfindahl'] = '?'
+        #
+        # if od['uniques']:
+        #     freq_cnt = None
+        #     mid_pt = int(od['uniques'] / 2)
+        #
+        #     for idx, freq_cnt in enumerate(df[colname].value_counts().iteritems(), 1):
+        #         if idx == 1:
+        #             od['mode'], od['mode_freq'] = freq_cnt
+        #         if idx == mid_pt:
+        #             od['mid'], od['mid_freq'] = freq_cnt
+        #
+        #     od['fewest'], od['fewest_freq'] = freq_cnt
 
         # convert R typeGuess function
 

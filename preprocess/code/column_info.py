@@ -39,9 +39,15 @@ class ColumnInfo(object):
         self.sd = None
         self.herfindahl = None
 
-        """
-          out<-list(varnamesSumStat=colnames(data), median=as.vector(rep(NA,length.out=k)), mean=as.vector(rep(NA,length.out=k)), mode=as.vector(rep(NA,length.out=k)), max=as.vector(rep(NA,length.out=k)), min=as.vector(rep(NA,length.out=k)), invalid=as.vector(rep(NA,length.out=k)), valid=as.vector(rep(NA,length.out=k)), sd=as.vector(rep(NA,length.out=k)), uniques=as.vector(rep(NA,length.out=k)), herfindahl=as.vector(rep(NA,length.out=k)), freqmode=as.vector(rep(NA,length.out=k)), fewest=as.vector(rep(NA,length.out=k)), mid=as.vector(rep(NA,length.out=k)), freqfewest=as.vector(rep(NA,length.out=k)), freqmid=as.vector(rep(NA,length.out=k)) )
-         """
+        self.uniques=None
+
+        self.numchar=None
+        self.nature=None
+        self.binary=None
+        self.interval=None
+        self.time=None
+
+
 
 
     def is_numeric(self):
@@ -63,6 +69,26 @@ class ColumnInfo(object):
             ('defaultNature', self.nature),
             ('defaultBinary', self.binary),
             ('defaultTime', self.time_val),
+            ('median', self.median),
+            ('mean', self.mean),
+            ('mode',self.mode),
+            ('max',self.max),
+            ('min',self.min),
+            ('invalid',self.invalid),
+            ('valid',self.valid),
+            ('sd',self.sd),
+            ('uniques',self.uniques),
+            ('herfindahl',self.herfindahl),
+            ('freqmode',self.freqmode),
+            ('fewest',self.fewest),
+            ('mid',self.mid),
+            ('freqfewest',self.freqfewest),
+            ('freqmid',self.freqmid),
+            ('numchar',self.numchar),
+            ('nature',self.nature),
+            ('binary',self.binary),
+            ('interval',self.interval),
+            ('time',self.time)
             )
 
         return label_list
