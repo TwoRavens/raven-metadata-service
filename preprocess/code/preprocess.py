@@ -11,7 +11,7 @@ import pandas as pd
 
 
 from type_guess_util import *
-from cal_stats_util import *
+from cal_stats_util import CalSumStatsUtil
 
 
 class MyEncoder(json.JSONEncoder):
@@ -28,19 +28,26 @@ class MyEncoder(json.JSONEncoder):
 
 # if file input valid
 def test_run(input_file):
+
     assert isfile(input_file), 'file not found: %s' % input_file
 
-
+    # read file into dataframe
     df = pd.read_csv(input_file)
 
-    #type_info = GuessTypeUtil.determine_types(df)
-
-    #{ 'colname' : ColumnInfoObject,
-    #'colname' : ColumnInfoObject,
-
-
+    # use typeguess to produce variable_ifo which is a dict of ColumnInfo
     type_guess_util = TypeGuessUtil(df)
-    calsumstats = CalSumStatsUtil(df, types)
+
+    variable_dict = type_guess_util.get_variable_dict()
+
+    # Iterate through variable info and
+    # run calc stats on each ColumnInfo object
+    #
+    for col_name, col_info in variable_dict.items():
+        print('-' * 40)
+        print(col_info.colname)
+        calsumstats = CalSumStatsUtil(df, col_info)
+        print('median:', col_info.median)
+    #calsumstats = CalSumStatsUtil(df, types)
 
     # Return for now, checking TypeGuessUtil
     return
@@ -116,7 +123,6 @@ def test_run(input_file):
 
         # convert R typeGuess function
 
-        #import ipdb; ipdb.set_trace()
         #df["weight"].mean()
         """
         "herfindahl":0.0265753794874105,

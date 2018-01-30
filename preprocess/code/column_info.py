@@ -22,8 +22,10 @@ class ColumnInfo(object):
         self.time_val = None
         self.binary = None
 
-        # Stats Info
+        # set at type util
         self.varnamesSumStat = None
+
+        # Stats Info
         self.mode = None
         self.freqmode = None
         self.mid = None
@@ -45,6 +47,11 @@ class ColumnInfo(object):
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
         return self.numchar_val == NUMCHAR_NUMERIC
+
+    def is_character(self):
+        # is this NUMCHAR_CHARACTER?
+        return self.numchar_val == NUMCHAR_CHARACTER
+
 
 
     def get_variable_labels(self):

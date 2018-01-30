@@ -4,47 +4,66 @@ from os.path import join, isfile, isdir
 import random
 import numpy as np
 import pandas as pd
-import tabulate
+#import tabulate
 import re
 from column_info import *
+from col_info_constants import *
 
 class CalSumStatsUtil(object):
-    def __init__(self, dataframe,typeguess):
+    def __init__(self, dataframe, col_info):
         assert dataframe is not None, "dataframe can't be None"
-        assert typeguess is not None, "typeguess can't be None"
+        assert col_info is not None, "col_info can't be None"
 
-        self.dataframe=dataframe
-        self.typeguess=typeguess
-        self.colnames = self.dataframe.columns
-        self.colcount = len(self.dataframe.columns)
+        self.dataframe = dataframe
+        self.col_info = col_info
+        self.colname = self.col_info.colname
+        self.col_series = self.dataframe[self.colname]
+        self.calc_stats()
 
+    def calc_stats(self):
+        pass
+
+        if self.col_info.is_character():
+            #self.col_info.fewest = # from mode, etc
+            self.col_info.median = NOT_APPLICABLE
+            self.col_info.max = NOT_APPLICABLE
+            self.col_info.min = NOT_APPLICABLE
+
+        elif self.col_info.is_numeric():
+
+            self.col_info.median = self.col_series.median()
+            self.col_info.max = self.col_series.max()
+            self.col_info.min = self.col_series.min()
+
+    def set_mode_stats(self):
+
+        self.col_info.nature    # reference to nature
+        
+        out= OrderedDict()
+        ux=x.unique()
+        tab= pd.crosstab(x.str.match(ux)) #cross check with result
+
+        ColumnInfo.mode= ux[tab.idxmax()]
+        ColumnInfo.freqmode= tab.max()
+
+        ColumnInfo.mid=ux[np.where(tab== np.median(tab))][1] # just take the first
+        ColumnInfo.fewest= ux[tab.idxmin()]
+
+        ColumnInfo.freqmid= np.median(tab)
+        ColumnInfo.freqfewest=min(tab)
+
+        out['mode']=ColumnInfo.mode
+        out['freqmode']= ColumnInfo.freqmode
+        out['mid']= ColumnInfo.mid
+        out['fewest']= ColumnInfo.fewest
+        out['freqmid']=ColumnInfo.freqmid
+        out['freqfewest']= ColumnInfo.freqfewest
+
+        return out
 
 
     def cal_sum_stats(self,data,types):
         self.var_dict = {}
-        def mode(x, nat):
-            out= OrderedDict()
-            ux=x.unique()
-            tab= pd.crosstab(x.str.match(ux)) #cross check with result
-
-            ColumnInfo.mode= ux[tab.idxmax()]
-            ColumnInfo.freqmode= tab.max()
-
-            ColumnInfo.mid=ux[np.where(tab== np.median(tab))][1] # just take the first
-            ColumnInfo.fewest= ux[tab.idxmin()]
-
-            ColumnInfo.freqmid= np.median(tab)
-            ColumnInfo.freqfewest=min(tab)
-
-            out['mode']=ColumnInfo.mode
-            out['freqmode']= ColumnInfo.freqmode
-            out['mid']= ColumnInfo.mid
-            out['fewest']= ColumnInfo.fewest
-            out['freqmid']=ColumnInfo.freqmid
-            out['freqfewest']= ColumnInfo.freqfewest
-
-            return out
-
 
 
         for colname in self.colnames:
@@ -122,4 +141,3 @@ class CalSumStatsUtil(object):
             print('col: %s' % key)
             print(json.dumps(val.as_dict(), indent=4))
             # return variable_dict
-
