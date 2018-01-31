@@ -34,11 +34,7 @@ class CalSumStatsUtil(object):
 
         dataframe[self.colname].dropna(inplace=True)
 
-        self.col_info.mode = 1
-        self.col_info.freqmode= 1
-
         self.col_info.uniques=len(dataframe[self.colname].unique())
-
 
         if self.col_info.is_character():
 
@@ -80,5 +76,3 @@ class CalSumStatsUtil(object):
 
         self.col_info.fewest = col_val
         self.col_info.freqfewest = val_cnt
-
-    
