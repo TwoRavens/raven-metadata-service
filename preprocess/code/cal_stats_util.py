@@ -28,16 +28,11 @@ class CalSumStatsUtil(object):
 
 
     def calc_stats(self,dataframe):
-
-
-        # print('dataframe passed', dataframe[self.colname])
-
-
+        
         self.col_info.invalid = dataframe[self.colname].isnull().sum()
         self.col_info.valid = dataframe[self.colname].count()
 
         dataframe[self.colname].dropna(inplace=True)
-        tabs= self.set_mode_stats(dataframe[self.colname])
 
         self.col_info.mode = 1
         self.col_info.freqmode= 1
@@ -46,11 +41,7 @@ class CalSumStatsUtil(object):
 
 
         if self.col_info.is_character():
-            #self.col_info.fewest = # from mode, etc
-            self.col_info.fewest=2
-            self.col_info.mid=2
-            self.col_info.freqfewest=2
-            self.col_info.freqmid= 2
+
             self.col_info.herfindahl='?'
             self.col_info.median = NOT_APPLICABLE
             self.col_info.max = NOT_APPLICABLE
@@ -68,27 +59,27 @@ class CalSumStatsUtil(object):
             self.col_info.herfindahl = '?'
 
         # --------------------------
-        # similar to preprocess.R mode function
+        # similar to preprocess.R "Mode" function
         # --------------------------
         col_val = None
         val_cnt = None
         mid_pt = int(self.col_info.uniques / 2)
 
-        # iterate through value_counts
+        # iterate through value_counts for mode stats
         #
         row_num = 0
-        for col_val, col_cnt in dataframe[self.colname].value_counts().iteritems():
+        for col_val, val_cnt in dataframe[self.colname].value_counts().iteritems():
             row_num += 1
             if row_num == 1:
                 self.col_info.mode = col_val
-                self.col_info.freqmode = col_cnt
+                self.col_info.freqmode = val_cnt
             if row_num == mid_pt:
                 self.col_info.mid = col_val
-                self.col_info.freqmid = col_cnt
+                self.col_info.freqmid = val_cnt
 
 
         self.col_info.fewest = col_val
-        self.col_info.freqfewest = col_cnt
+        self.col_info.freqfewest = val_cnt
 
         print("-" * 40)
         print("varnameTypes :",self.col_info.colname)
@@ -113,32 +104,3 @@ class CalSumStatsUtil(object):
         print("freqmid :", self.col_info.freqmid)
         print("herfindahl :",self.col_info.herfindahl)
         # self.stats_var[self.colname]=self.col_info
-
-
-
-
-    def set_mode_stats(self, data):
-
-        self.nat = self.col_info.nature  # reference to nature
-
-        out = OrderedDict()
-        # ux = data.unique()
-        # tab = pd.crosstab(data.str.match(ux))  # cross check with result
-        # print('this is tab', tab)
-        # ColumnInfo.mode = ux[tab.idxmax()]
-        # ColumnInfo.freqmode = tab.max()
-        #
-        # ColumnInfo.mid = ux[np.where(tab == np.median(tab))][1]  # just take the first
-        # ColumnInfo.fewest = ux[tab.idxmin()]
-        #
-        # ColumnInfo.freqmid = np.median(tab)
-        # ColumnInfo.freqfewest = min(tab)
-
-        out['mode'] = 1
-        out['freqmode'] = 1
-        out['mid'] = 1
-        out['fewest'] = 1
-        out['freqmid'] = 1
-        out['freqfewest'] = 1
-
-        return out
