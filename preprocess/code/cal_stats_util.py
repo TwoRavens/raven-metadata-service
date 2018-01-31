@@ -45,8 +45,6 @@ class CalSumStatsUtil(object):
         self.col_info.uniques=len(dataframe[self.colname].unique())
 
 
-
-
         if self.col_info.is_character():
             #self.col_info.fewest = # from mode, etc
             self.col_info.fewest=2
@@ -69,17 +67,28 @@ class CalSumStatsUtil(object):
             self.col_info.sd = self.col_series.std()
             self.col_info.herfindahl = '?'
 
-            if self.col_info.uniques:
-                freq_cnt = None
-                mid_pt = int(self.col_info.uniques / 2)
+        # --------------------------
+        # similar to preprocess.R mode function
+        # --------------------------
+        col_val = None
+        val_cnt = None
+        mid_pt = int(self.col_info.uniques / 2)
 
-                for idx, freq_cnt in enumerate(dataframe[self.colname].value_counts().iteritems(), 1):
-                    if idx == 1:
-                        self.col_info.mode, self.col_info.freqmode = freq_cnt
-                    if idx == mid_pt:
-                        self.col_info.mid, self.col_info.freqmid = freq_cnt
+        # iterate through value_counts
+        #
+        row_num = 0
+        for col_val, col_cnt in dataframe[self.colname].value_counts().iteritems():
+            row_num += 1
+            if row_num == 1:
+                self.col_info.mode = col_val
+                self.col_info.freqmode = col_cnt
+            if row_num == mid_pt:
+                self.col_info.mid = col_val
+                self.col_info.freqmid = col_cnt
 
-                        self.col_info.fewest, self.col_info.freqfewest = freq_cnt
+
+        self.col_info.fewest = col_val
+        self.col_info.freqfewest = col_cnt
 
         print("-" * 40)
         print("varnameTypes :",self.col_info.colname)
