@@ -50,10 +50,10 @@ def test_run(input_file):
         # print('median:', col_info.median)
         # print('mode:', col_info.mode)
         calsumstats = CalSumStatsUtil(df, col_info)
-    statsvar=type_guess_util.get_variable_dict()
-    #calsumstats = CalSumStatsUtil(df, types)
-    var[col_name]=ColumnInfo.get_variable_labels(col_info);
-    # Return for now, checking TypeGuessUtil
+
+    for col_name, col_info in variable_dict.items():
+        col_info.print_values()
+
     return
     print(var)
     # stop here for now

@@ -94,6 +94,12 @@ class ColumnInfo(object):
         # print(label_list)
         return label_list
 
+    def print_values(self):
+        """print to screen"""
+        print('---- %s ----' % self.colname)
+        for label, val in self.get_variable_labels():
+            print('%s: %s' % (label, val))
+
     def as_dict(self, as_string=False):
         """For final output"""
         od = OrderedDict()

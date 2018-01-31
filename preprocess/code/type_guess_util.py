@@ -148,7 +148,7 @@ class TypeGuessUtil(object):
         for key, val in self.variable_dict.items():
             print('col: %s' % key)
             print(json.dumps(val.as_dict(), indent=4))
-
+        print('-- end of typeguess --')
 
     def is_factor(self, var_series):
         """Check if pandas Series is a factor"""
@@ -181,4 +181,3 @@ class TypeGuessUtil(object):
 
     def check_time(self,data_info):
         return "no"
-

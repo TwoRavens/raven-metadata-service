@@ -28,7 +28,7 @@ class CalSumStatsUtil(object):
 
 
     def calc_stats(self,dataframe):
-        
+
         self.col_info.invalid = dataframe[self.colname].isnull().sum()
         self.col_info.valid = dataframe[self.colname].count()
 
@@ -81,26 +81,4 @@ class CalSumStatsUtil(object):
         self.col_info.fewest = col_val
         self.col_info.freqfewest = val_cnt
 
-        print("-" * 40)
-        print("varnameTypes :",self.col_info.colname)
-        print("defaultInterval :",self.col_info.default_interval)
-        print("defaultNumchar :",self.col_info.numchar_val)
-        print("defaultNature :",self.col_info.nature)
-        print("defaultBinary :",self.col_info.binary)
-        print("defaultTime :",self.col_info.time_val)
-        print("mode :",self.col_info.mode)
-        print("freqmode :",self.col_info.freqmode)
-        print("uniques :",self.col_info.uniques)
-        print("valid :",self.col_info.valid)
-        print("invalid :",self.col_info.invalid)
-        print("median :",self.col_info.median)
-        print("max :",self.col_info.max)
-        print("mid :",self.col_info.mid)
-        print("min :",self.col_info.min)
-        print("sd :",self.col_info.sd)
-        print("mean :",self.col_info.mean)
-        print("fewest :", self.col_info.fewest)
-        print("freqfewest :", self.col_info.freqfewest)
-        print("freqmid :", self.col_info.freqmid)
-        print("herfindahl :",self.col_info.herfindahl)
-        # self.stats_var[self.colname]=self.col_info
+    
