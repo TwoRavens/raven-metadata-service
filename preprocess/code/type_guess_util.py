@@ -145,10 +145,10 @@ class TypeGuessUtil(object):
 
             #print(colname)
         # print()
-        # for key, val in self.variable_dict.items():
-        #     print('col: %s' % key)
-        #     print(json.dumps(val.as_dict(), indent=4))
-        #return variable_dict
+        for key, val in self.variable_dict.items():
+            print('col: %s' % key)
+            print(json.dumps(val.as_dict(), indent=4))
+
 
     def is_factor(self, var_series):
         """Check if pandas Series is a factor"""

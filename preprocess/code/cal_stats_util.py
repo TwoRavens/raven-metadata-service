@@ -21,7 +21,7 @@ class CalSumStatsUtil(object):
         self.col_series = self.dataframe[self.colname]
 
 
-
+        # self.stats_var={}
         # print('col_info',self.col_info)
         self.calc_stats(self.dataframe)
 
@@ -82,19 +82,29 @@ class CalSumStatsUtil(object):
                         self.col_info.fewest, self.col_info.freqfewest = freq_cnt
 
         print("-" * 40)
-        print(self.col_info.colname)
-        print(self.col_info.mode)
-        print(self.col_info.freqmode)
-        print(self.col_info.uniques)
-        print(self.col_info.valid)
-        print(self.col_info.invalid)
-        print(self.col_info.median)
-        print(self.col_info.max)
-        print(self.col_info.mid)
-        print(self.col_info.min)
-        print(self.col_info.sd)
-        print(self.col_info.mean)
-        print(self.col_info.herfindahl)
+        print("varnameTypes :",self.col_info.colname)
+        print("defaultInterval :",self.col_info.default_interval)
+        print("defaultNumchar :",self.col_info.numchar_val)
+        print("defaultNature :",self.col_info.nature)
+        print("defaultBinary :",self.col_info.binary)
+        print("defaultTime :",self.col_info.time_val)
+        print("mode :",self.col_info.mode)
+        print("freqmode :",self.col_info.freqmode)
+        print("uniques :",self.col_info.uniques)
+        print("valid :",self.col_info.valid)
+        print("invalid :",self.col_info.invalid)
+        print("median :",self.col_info.median)
+        print("max :",self.col_info.max)
+        print("mid :",self.col_info.mid)
+        print("min :",self.col_info.min)
+        print("sd :",self.col_info.sd)
+        print("mean :",self.col_info.mean)
+        print("fewest :", self.col_info.fewest)
+        print("freqfewest :", self.col_info.freqfewest)
+        print("freqmid :", self.col_info.freqmid)
+        print("herfindahl :",self.col_info.herfindahl)
+        # self.stats_var[self.colname]=self.col_info
+
 
 
 
@@ -123,85 +133,3 @@ class CalSumStatsUtil(object):
         out['freqfewest'] = 1
 
         return out
-
-
-                #
-    # def cal_sum_stats(self,data,types):
-    #     self.var_dict = {}
-    #
-    #
-    #     for colname in self.colnames:
-    #         col_info = ColumnInfo(colname)
-    #         data_info = self.dataframe[colname]
-    #         """ Doubt here on How to handle types data"""
-    #         nc= types.numchar[np.where(types.varnametypes== self.colnames[colname])]
-    #         nat= types.nature[np.where(types.varnametypes== self.colnames[colname])]
-    #
-    #         # data_info= str(data_info)
-    #         data_info=data_info.astype('str')
-    #         valid_data_info=data_info.dropna
-    #         col_info.valid=len(valid_data_info)
-    #         col_info.invalid = len(data_info)-len(valid_data_info)
-    #
-    #         data_info.dropna(inplace=True)
-    #
-    #         tabs= mode(data_info,nat)
-    #
-    #         col_info.mode=tabs.mode
-    #         col_info.freqmode=tabs.freqmode
-    #
-    #         col_info.unique= len(data_info.unique()) #unique or uniques
-    #
-    #         if(nc== "character"):
-    #             col_info.fewest=tabs.fewest
-    #             col_info.mid= tabs.mid
-    #             col_info.freqfewest= tabs.freqfewest
-    #             col_info.freqmid= tabs.freqmid
-    #
-    #             href.t= pd.crosstab(data_info)
-    #             col_info.herfindahl=Herfindahl(herf.t) # concept problem
-    #
-    #             col_info.median= None
-    #             col_info.mean= None
-    #             col_info.max=None
-    #             col_info.min=None
-    #             col_info.sd=None
-    #
-    #             continue
-    #
-    #
-    #          #if not character
-    #         data_info = data_info.astype('str')
-    #         col_info.median = np.median(data_info)
-    #         col_info.mean = np.mean(data_info)
-    #         col_info.max = np.max(data_info)
-    #         col_info.min = np.min(data_info)
-    #         col_info.sd = np.std(data_info)
-    #
-    #         mode_int=col_info.mode.astype('int')
-    #         col_info.mode=np.around(mode_int,decimals=4).astype('str')
-    #
-    #         fewest_int = col_info.fewest.astype('int')
-    #         col_info.fewest = np.around(fewest_int, decimals=4).astype('str')
-    #
-    #         mid_int = col_info.mid.astype('int')
-    #         col_info.mid = np.around(mid_int, decimals=4).astype('str')
-    #
-    #         freqfewest_int = col_info.freqfewest.astype('int')
-    #         col_info.freqfewest = np.around(freqfewest_int, decimals=4).astype('str')
-    #
-    #         freqmid_int = col_info.freqmid.astype('int')
-    #         col_info.freqmid = np.around(freqmid_int, decimals=4).astype('str')
-    #
-    #         href.t = pd.crosstab(data_info)
-    #         col_info.herfindahl = Herfindahl(herf.t)  # concept problem
-    #
-    #         self.var_dict[colname]=col_info
-    #         continue
-    #
-    #
-    #     # print()
-    #     for key, val in self.var_dict.items():
-    #         print('col: %s' % key)
-    #         print(json.dumps(val.as_dict(), indent=4))
-    #         # return variable_dict

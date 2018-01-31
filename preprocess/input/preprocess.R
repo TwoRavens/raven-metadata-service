@@ -156,7 +156,8 @@ calcSumStats <- function(data, types) {
         out <- list(mode=NA, mid=NA, fewest=NA, freqmode=NA, freqfewest=NA, freqmid=NA)
         ux <- unique(x)
         tab <- tabulate(match(x, ux))
-
+        print("tab :")
+        print(tab)
         out$mode <- ux[which.max(tab)]
         out$freqmode <- max(tab)
 
