@@ -94,10 +94,16 @@ class CalSumStatsUtil(object):
         """
         Calculate Herfindahl-Hirschman Index (HHI) for the column data.
         For each given day, HHI is defined as a sum of squared weights of
-        values in a col_series; and varies from 1/N to 1.
+        %values in a col_series; and varies from 1/N to 1.
         """
-        w = col_data/100   # percent is passed
-        return (w ** 2).sum()
+        # s = pd.Series([4, 8, 12])
+        col_data.dropna(inplace=True)
+        totalSum = sum(col_data)
+        fract = []
+        for val, cnt in col_data.items():
+            fract.append(np.math.pow(cnt / totalSum, 2))
+
+        return sum(fract)
 
 
 
