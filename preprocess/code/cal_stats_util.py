@@ -61,7 +61,7 @@ class CalSumStatsUtil(object):
 
         if self.col_info.is_character():
 
-            self.col_info.herfindahl='?'
+            self.col_info.herfindahl=self.herfindahl_index(self.col_series)
             self.col_info.median = NOT_APPLICABLE
             self.col_info.max = NOT_APPLICABLE
             self.col_info.min = NOT_APPLICABLE
@@ -77,7 +77,7 @@ class CalSumStatsUtil(object):
             self.col_info.min = self.col_series.min()
             self.col_info.mean = self.col_series.mean()
             self.col_info.sd = self.col_series.std()
-            self.col_info.herfindahl = '?'
+            self.col_info.herfindahl = self.herfindahl_index(self.col_series)
 
             self.col_info.mode=str(np.around(self.col_info.mode,4))
             self.col_info.fewest = str(np.around(self.col_info.fewest, 4))
@@ -89,8 +89,15 @@ class CalSumStatsUtil(object):
             # print("fewest : ", self.col_info.fewest)
             # print("mid : ", self.col_info.mid)
 
-
-
+    def herfindahl_index(self,col_data):
+        # check again with the logic of calculating, what values are squared
+        """
+        Calculate Herfindahl-Hirschman Index (HHI) for the column data.
+        For each given day, HHI is defined as a sum of squared weights of
+        values in a col_series; and varies from 1/N to 1.
+        """
+        w = col_data/100   # percent is passed
+        return (w ** 2).sum()
 
 
 
