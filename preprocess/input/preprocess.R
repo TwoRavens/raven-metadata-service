@@ -22,7 +22,7 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         mydata<-testdata
 
     }else if(!is.null(filename)){
-        mydata<-tryCatch(expr=read.delim(file=filename), error=function(e) NULL)
+        mydata<-tryCatch(expr=read.csv(file=filename), error=function(e) NULL)
     }else{
         path<-paste("http://",hostname,"/api/access/datafile/",fileid,sep="")
         mydata<-tryCatch(expr=read.delim(file=path), error=function(e) NULL)
@@ -153,18 +153,37 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
 calcSumStats <- function(data, types) {
 
     Mode <- function(x, nat) {
+        print("mode function called")
         out <- list(mode=NA, mid=NA, fewest=NA, freqmode=NA, freqfewest=NA, freqmid=NA)
+        print("x")
+        print(x)
         ux <- unique(x)
+        print("unique")
+        print(ux)
         tab <- tabulate(match(x, ux))
-
+        print("tab :")
+        print(tab)
         out$mode <- ux[which.max(tab)]
+        print("out$mode")
+        print(out$mode)
+
         out$freqmode <- max(tab)
+        print("out$freqmode")
+        print(out$freqmode)
 
         out$mid <- ux[which(tab==median(tab))][1] # just take the first
+        print("out$mid")
+        print(out$mid)
         out$fewest <- ux[which.min(tab)]
+        print("out$fewest")
+        print(out$fewest)
 
         out$freqmid <- median(tab)
+        print("freqmid")
+        print(out$freqmid)
         out$freqfewest <- min(tab)
+        print("out$freqfewest")
+        print(out$freqfewest)
 
         return(out)
     }
@@ -172,8 +191,9 @@ calcSumStats <- function(data, types) {
     k <- ncol(data)
     out<-list(varnamesSumStat=colnames(data), median=as.vector(rep(NA,length.out=k)), mean=as.vector(rep(NA,length.out=k)), mode=as.vector(rep(NA,length.out=k)), max=as.vector(rep(NA,length.out=k)), min=as.vector(rep(NA,length.out=k)), invalid=as.vector(rep(NA,length.out=k)), valid=as.vector(rep(NA,length.out=k)), sd=as.vector(rep(NA,length.out=k)), uniques=as.vector(rep(NA,length.out=k)), herfindahl=as.vector(rep(NA,length.out=k)), freqmode=as.vector(rep(NA,length.out=k)), fewest=as.vector(rep(NA,length.out=k)), mid=as.vector(rep(NA,length.out=k)), freqfewest=as.vector(rep(NA,length.out=k)), freqmid=as.vector(rep(NA,length.out=k)) )
 
+    count<-0
     for(i in 1:k) {
-
+        print(count)
         v <- data[,i]
         nc <- types$numchar[which(types$varnamesTypes==out$varnamesSumStat[i])]
 
@@ -230,6 +250,7 @@ calcSumStats <- function(data, types) {
         herf.t <- table(v)
         out$herfindahl[i] <- Herfindahl(herf.t)
     }
+    count<- count+1
     return(out)
 }
 
