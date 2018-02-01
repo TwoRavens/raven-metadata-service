@@ -49,6 +49,11 @@ def test_run(input_file):
         # set stats for each column
         calsumstats = CalSumStatsUtil(df, col_info)
 
+
+    for col_name, col_info in variable_dict.items():
+        # set stats for each column
+        plotvalues = CalSumStatsUtil(df, col_info)
+
     # print results to screen--format variable section..
     fmt_variable_info = OrderedDict()
     for col_name, col_info in variable_dict.items():
