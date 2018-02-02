@@ -64,12 +64,12 @@ def test_run(input_file):
     overall_dict['variables'] = fmt_variable_info
     variable_string = json.dumps(overall_dict, indent=4, cls=MyEncoder)
     print(variable_string)
-    fname = join(OUTPUT_DIR, 'variable_output.json')
+    fname = join(OUTPUT_DIR, 'variable_output_testfile1.json')
     open(fname, 'w').write(variable_string)
     print('file written: %s' % fname)
 
 if __name__ == '__main__':
-    input_file = join(INPUT_DIR, 'learningData.csv')
+    input_file = join(INPUT_DIR, 'Testfile1.csv')
     test_run(input_file)
 
 

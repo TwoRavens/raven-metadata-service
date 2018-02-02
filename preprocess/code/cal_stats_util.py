@@ -61,7 +61,7 @@ class CalSumStatsUtil(object):
 
         if self.col_info.is_character():
 
-            self.col_info.herfindahl=self.herfindahl_index(self.col_series)
+            # self.col_info.herfindahl=self.herfindahl_index(self.col_series)
             self.col_info.median = NOT_APPLICABLE
             self.col_info.max = NOT_APPLICABLE
             self.col_info.min = NOT_APPLICABLE
