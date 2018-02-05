@@ -8,6 +8,7 @@ import pandas as pd
 from col_info_constants import *
 from column_info import *
 
+
 class TypeGuessUtil(object):
     """Check variable types of a dataframe"""
     def __init__(self, dataframe):
@@ -117,12 +118,12 @@ class TypeGuessUtil(object):
 
                 if self.check_decimal(data_info):
                     col_info.default_interval = INTERVAL_CONTINUOUS
-                    col_info.nature = self.check_nature(data_info, True, NATURE_VALUES)
+                    col_info.nature = self.check_nature(data_info, True)
                     # print("#5")
                     # print(col_info.nature)
                 else:
                     col_info.default_interval = INTERVAL_DISCRETE
-                    col_info.nature = self.check_nature(data_info, False, NATURE_VALUES)
+                    col_info.nature = self.check_nature(data_info, False)
                     # print("#6")
                     # print(col_info.nature)
 
@@ -220,17 +221,17 @@ class TypeGuessUtil(object):
 
         return result
 
-    def check_nature(self,x, c, nat):
+    def check_nature(self,x, c):
         if c:
-            if all(x >= 0 & x <= 1):
-                return nat[5]
-            elif all(x >= 0 & x <= 100) & min(x) < 15 & max(x) > 85:
-                return nat[5]
+            if 0 <= x <= 1:
+                return NATURE_PERCENT
+            elif 0 <= x <= 100 and min(x) < 15 and max(x) > 85:
+                return NATURE_PERCENT
             else:
-                return nat[4]
+                return NATURE_RATIO
 
         else:
-            return nat[2]
+            return NATURE_ORDINAL
 
     def check_time(self,data_info):
         return "no"
