@@ -31,7 +31,7 @@ class PlotValuesUtil(object):
         # y-data for the ECDF: y
         y = np.arange(1, n + 1) / n
         print(x, y)
-        # Should we return y also
+        # Should we return y also?
         return x
 
     def cal_plot_values(self,dataframe):
@@ -47,6 +47,7 @@ class PlotValuesUtil(object):
             cdf_func= self.ecdf(self.col_series.unique())
             if(lu<self.histlimit):
                 self.output=self.col_series
+
 
 
 

@@ -67,7 +67,7 @@ class TypeGuessUtil(object):
             #
 
             # print("******")
-            if self.is_factor(data_info) or \
+            if self.is_notNumeric(data_info) or \
                 self.is_logical(data_info):
 
                 col_info.numchar_val = NUMCHAR_CHARACTER
@@ -150,13 +150,66 @@ class TypeGuessUtil(object):
             print(json.dumps(val.as_dict(), indent=4))
         print('-- end of typeguess --')
 
-    def is_factor(self, var_series):
-        """Check if pandas Series is a factor"""
-        return random.choice([True, False])
+    def is_number(self,s):
+        """To check if the given number is numeric that is : digit, decimal or number"""
+
+        try:
+            float(s)
+            return True
+        except ValueError:
+            pass
+
+        try:
+            import unicodedata
+            unicodedata.numeric(s)
+            return True
+        except (TypeError, ValueError):
+            pass
+
+
+        return False
+
+    def is_notNumeric(self, var_series):
+        """Check if pandas Series is a numeric"""
+
+        if(len(var_series.dropna())==0) or var_series.dropna().dtype=='bool':
+            return True
+        var_series.dropna(inplace=True)
+        total = len(var_series)
+
+        sum = 0
+        for val, cnt in var_series.value_counts().iteritems():
+
+            if (self.is_number(val)):
+                sum=sum+cnt
+
+        if (sum == total):
+
+            print("THis is numeric")
+            return False
+
+        else:
+            return True
+
 
     def is_logical(self, var_series):
         """Check if pandas Series is a boolean"""
-        return random.choice([True, False])
+        var_series.dropna(inplace=True)
+        if(var_series.dtype=='bool'):
+            print("this is boolean")
+            return True
+        elif(var_series.dtype=='object'):
+
+            total1 = len(var_series)
+            sum = 0
+            for val, cnt in var_series.value_counts().iteritems():
+                print(val, cnt)
+                if (val == True or val == False):
+                    sum = sum + cnt
+            if (sum == total1):
+                print("this is boolean")
+                return True
+            else: return False
 
     def check_decimal(self,x):
         """Check if variable is a decimal"""

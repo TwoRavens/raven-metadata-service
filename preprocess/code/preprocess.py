@@ -64,7 +64,7 @@ def test_run(input_file):
     overall_dict['variables'] = fmt_variable_info
     variable_string = json.dumps(overall_dict, indent=4, cls=MyEncoder)
     print(variable_string)
-    fname = join(OUTPUT_DIR, 'variable_output_testfile1.json')
+    fname = join(OUTPUT_DIR, 'variable_output_titanic.json')
     open(fname, 'w').write(variable_string)
     print('file written: %s' % fname)
 
