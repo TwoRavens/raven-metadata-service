@@ -14,6 +14,7 @@ import pandas as pd
 from type_guess_util import *
 from cal_stats_util import CalSumStatsUtil
 from column_info import *
+from plot_values import *
 
 
 class MyEncoder(json.JSONEncoder):
@@ -52,7 +53,7 @@ def test_run(input_file):
 
     for col_name, col_info in variable_dict.items():
         # set stats for each column
-        plotvalues = CalSumStatsUtil(df, col_info)
+        plotvalues = PlotValuesUtil(df, col_info)
 
     # print results to screen--format variable section..
     fmt_variable_info = OrderedDict()
@@ -64,7 +65,7 @@ def test_run(input_file):
     overall_dict['variables'] = fmt_variable_info
     variable_string = json.dumps(overall_dict, indent=4, cls=MyEncoder)
     print(variable_string)
-    fname = join(OUTPUT_DIR, 'variable_output_titanic.json')
+    fname = join(OUTPUT_DIR, 'variable_output_Testfile1.json')
     open(fname, 'w').write(variable_string)
     print('file written: %s' % fname)
 

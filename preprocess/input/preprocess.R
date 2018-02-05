@@ -79,25 +79,35 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
     }
 
     for(i in 1:k){
+        print("----loop starts------------------------")
+
         nat <- types$nature[which(types$varnamesTypes==varnames[i])]
         myint <- types$interval[which(types$varnamesTypes==varnames[i])]
         if(nat!="nominal"){
             uniqueValues<-sort(na.omit(unique(mydata[,i])))
+            # print("uniqueValues")
+            # print(uniqueValues)
+
             lu <- length(uniqueValues)
             cdf_func <- ecdf(mydata[,i])
             print("ecdf")
             print(cdf_func)
             if(lu< histlimit){
+                print("loop starts bar")
                 output<- table(mydata[,i])
                 print("output")
                 print(output)
                 hold[[i]]<- list(plottype="bar", plotvalues=output)
-                # print("hold .........")
-                # print(hold)
+                print("nominal hold .........")
+                print(hold)
                 cdfX <- seq(from=uniqueValues[1],to=uniqueValues[lu],length.out=lu)
                 cdfY <- cdf_func(cdfX)
                 holdcdf[[i]] <- list(cdfplottype="bar", cdfplotx=cdfX, cdfploty=cdfY)
+                # print("holdcdf")
+                # print(holdcdf)
+                print("----end bar------------------------")
             }else{
+                print("loop starts continuous")
                 output<- density( mydata[,i], n=50, na.rm=TRUE )
                 hold[[i]]<- list(plottype="continuous", plotx=output$x, ploty=output$y)
                 if(lu>=50 | (lu<50 & myint != "discrete")) { # if num uniques greater than 50, we get a cumulative density point for each unique
@@ -107,12 +117,17 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
                 }
                 cdfY <- cdf_func(cdfX)
                 holdcdf[[i]] <- list(cdfplottype="continuous", cdfplotx=cdfX, cdfploty=cdfY)
-            }
 
+                print("----end continuous------------------------")
+            }
+        print("----end nominal------------------------")
         }else{
             output<- table(mydata[,i])
             hold[[i]]<- list(plottype="bar", plotvalues=output)
             holdcdf[[i]] <- list(cdfplottype="NULL", cdfplotx="NULL", cdfploty="NULL")
+                print("non nominal hold .........")
+                # print(hold)
+            print("----end other------------------------")
         }
 
         if(metadataflag==1)
@@ -123,6 +138,7 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         hold[[i]] <- c(hold[[i]],holdcdf[[i]], labl=lablname,lapply(mySumStats, `[[`,which(mySumStats$varnamesSumStat==varnames[i])),lapply(types, `[[`,which(types$varnamesTypes==varnames[i])))
     }
     names(hold)<-varnames
+    print("----end all--------------------------")
 
 
 
@@ -136,16 +152,16 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
 
 
       jsontest<-rjson:::toJSON(datasetLevelInfo)
-    #  write(jsontest,file="test.json")
+        #write(jsontest,file="testR.json")
 
     }
 
     else{
-    datasetLevelInfo<-list(private=FALSE,stdyDscr=list(citation=list(titlStmt=list(titl="",IDNo=list("-agency"="","#text"="")),rspStmt=list(Authentry=""),biblcit="No Data Citation Provided")),fileDscr=list("-ID"="",fileTxt=list(fileName="",dimensns=list(caseQnty="",varQnty=""),fileType=""),notes=list("-level"="","-type"="","-subject"="","#text"="")))    # This signifies that that the metadata summaries are not privacy protecting
+    datasetLevelInfo<-list(private=FALSE,stdyDscr=list(citation=list(titlStmt=list(titl="",IDNo=list("-agency"="","#text"="")),rspStmt=list(Authentry=""),biblcit="No Data Citation Provided")),fileDscr=list("-ID"="",fileTxt=list(fileName="",dimensns=list(caseQnty="",varQnty=""),fileType=""),notes=list("-level"="","-type"="","-subject"="","#text"="")),data=hold)    # This signifies that that the metadata summaries are not privacy protecting
     }
     #datasetitationinfo
     jsontest<-rjson:::toJSON(datasetLevelInfo)
-    write(jsontest,file="test.json")
+    write(jsontest,file="testR.json")
       ## Construct Metadata file that at highest level has list of dataset-level, and variable-level information
     largehold<- list(dataset=datasetLevelInfo, variables=hold)
 

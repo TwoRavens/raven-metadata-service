@@ -14,7 +14,7 @@ class PlotValuesUtil(object):
     def __init__(self, dataframe, col_info):
         assert dataframe is not None, "dataframe can't be None"
         assert col_info is not None, "col_info can't be None"
-
+        print("plot values time")
         self.dataframe = dataframe
         self.col_info = col_info
         self.colname = self.col_info.colname
@@ -22,7 +22,9 @@ class PlotValuesUtil(object):
         self.histlimit=13
         self.output={}
 
-    def ecdf(data):
+        self.cal_plot_values(dataframe)
+
+    def ecdf(self,data):
         """Compute ECDF for a one-dimensional array of measurements."""
         # Number of data points: n
         n = len(data)
@@ -42,9 +44,10 @@ class PlotValuesUtil(object):
 
         if(self.nat=="nominal"):
             self.col_series.dropna(inplace=True)
-            uniques = self.col_series.sort_values((self.col_series.unique()))
+            self.col_series=self.col_series.unique()
+            uniques = np.sort(self.col_series)
             lu= len(uniques)
-            cdf_func= self.ecdf(self.col_series.unique())
+            cdf_func= self.ecdf(self.col_series)
             if(lu<self.histlimit):
                 self.output=self.col_series
 
