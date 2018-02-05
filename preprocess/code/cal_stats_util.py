@@ -8,7 +8,7 @@ import pandas as pd
 import re
 from column_info import *
 
-from col_info_constants import NOT_APPLICABLE
+
 from col_info_constants import *
 from type_guess_util import *
 
