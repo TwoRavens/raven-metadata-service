@@ -197,20 +197,21 @@ class TypeGuessUtil(object):
         """Check if pandas Series is a boolean"""
         var_series.dropna(inplace=True)
         if(var_series.dtype=='bool'):
-            print("this is boolean")
+            #print("this is boolean")
             return True
         elif(var_series.dtype=='object'):
 
             total1 = len(var_series)
-            sum = 0
+            total_cnt = 0
             for val, cnt in var_series.value_counts().iteritems():
-                print(val, cnt)
                 if (val == True or val == False):
-                    sum = sum + cnt
-            if (sum == total1):
-                print("this is boolean")
+                    total_cnt = total_cnt + cnt
+
+            if (total_cnt == total1):
+                #print("this is boolean")
                 return True
-            else: return False
+
+        return False
 
     def check_decimal(self,x):
         """Check if variable is a decimal"""
