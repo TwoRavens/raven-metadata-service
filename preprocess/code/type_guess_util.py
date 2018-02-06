@@ -151,7 +151,8 @@ class TypeGuessUtil(object):
             print(json.dumps(val.as_dict(), indent=4))
         print('-- end of typeguess --')
 
-    def is_number(self,s):
+    @staticmethod
+    def is_number(s):
         """To check if the given number is numeric that is : digit, decimal or number"""
 
         try:
@@ -170,7 +171,8 @@ class TypeGuessUtil(object):
 
         return False
 
-    def is_notNumeric(self, var_series):
+    @staticmethod
+    def is_notNumeric(var_series):
         """Check if pandas Series is a numeric"""
 
         if(len(var_series.dropna())==0) or var_series.dropna().dtype=='bool':
@@ -181,7 +183,7 @@ class TypeGuessUtil(object):
         sum = 0
         for val, cnt in var_series.value_counts().iteritems():
 
-            if (self.is_number(val)):
+            if (TypeGuessUtil.is_number(val)):
                 sum=sum+cnt
 
         if (sum == total):
