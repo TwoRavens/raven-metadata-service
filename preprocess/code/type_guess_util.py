@@ -181,6 +181,7 @@ class TypeGuessUtil(object):
         """Check if pandas Series is a numeric"""
         var_series.dropna(inplace=True)
         if(len(var_series)==0) or var_series.dtype=='bool':
+            print("character")
             return True
 
         total = len(var_series)
@@ -197,6 +198,7 @@ class TypeGuessUtil(object):
             return False
 
         else:
+            print("character")
             return True
 
     @staticmethod
