@@ -172,15 +172,13 @@ class TypeGuessUtil(object):
             return True
         except (TypeError, ValueError):
             pass
-
-
         return False
 
     @staticmethod
     def is_not_numeric(var_series):
         """Check if pandas Series is a numeric"""
         var_series.dropna(inplace=True)
-        if(len(var_series)==0) or var_series.dtype=='bool':
+        if len(var_series) == 0 or var_series.dtype == 'bool':
             print("character")
             return True
 
@@ -189,12 +187,12 @@ class TypeGuessUtil(object):
         total_cnt = 0
         for val, cnt in var_series.value_counts().iteritems():
 
-            if (TypeGuessUtil.is_number(val)):
+            if TypeGuessUtil.is_number(val):
                 total_cnt=total_cnt+cnt
 
-        if (total_cnt == total):
+        if total_cnt == total:
 
-            print("THis is numeric")
+            print("This is numeric")
             return False
 
         else:
@@ -205,18 +203,17 @@ class TypeGuessUtil(object):
     def is_logical(var_series):
         """Check if pandas Series is a boolean"""
         var_series.dropna(inplace=True)
-        if(var_series.dtype=='bool'):
-            #print("this is boolean")
+        if var_series.dtype == 'bool':
             return True
-        elif(var_series.dtype=='object'):
+        elif var_series.dtype=='object':
 
             total = len(var_series)
             total_cnt = 0
             for val, cnt in var_series.value_counts().iteritems():
-                if (val == True or val == False):
+                if val == True or val == False:
                     total_cnt = total_cnt + cnt
 
-            if (total_cnt == total):
+            if total_cnt == total:
                 #print("this is boolean")
                 return True
 
