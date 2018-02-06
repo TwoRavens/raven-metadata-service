@@ -162,6 +162,7 @@ class TypeGuessUtil(object):
             pass
         try:
             int(s)
+
             return True
         except ValueError:
             pass
@@ -178,7 +179,7 @@ class TypeGuessUtil(object):
     def is_not_numeric(var_series):
         """Check if pandas Series is a numeric"""
         var_series.dropna(inplace=True)
-        if len(var_series) == 0 or var_series.dtype == 'bool':
+        if len(var_series) == 0:
             print("character")
             return True
 
@@ -186,8 +187,11 @@ class TypeGuessUtil(object):
 
         total_cnt = 0
         for val, cnt in var_series.value_counts().iteritems():
-
+            #val can be bool whose numeric value is 0 or 1.
+            if type(val)==bool:
+                continue
             if TypeGuessUtil.is_number(val):
+
                 total_cnt=total_cnt+cnt
 
         if total_cnt == total:

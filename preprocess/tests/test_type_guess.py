@@ -163,7 +163,7 @@ class TestTypeGuess(unittest.TestCase):
         msgt(self.test_130_is_not_numeric_boolean_nan.__doc__)
 
         msg('Test with a logical series with nan')
-        series = pd.Series([True, False,np.nan, True, True, np.nan, False])
+        series = pd.Series([True, False, np.nan, True, True, np.nan, False])
         self.assertTrue(TypeGuessUtil.is_not_numeric(series))
 
     def test_140_is_logical_all_nan(self):
