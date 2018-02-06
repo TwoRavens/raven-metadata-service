@@ -63,12 +63,12 @@ class TypeGuessUtil(object):
             # print(type(data_info))
             # set time
             col_info.time_val = self.check_time(data_info)
-            print(col_info.time_val)
+
             # set vals if factor or logical
             #
 
             # print("******")
-            if self.is_notNumeric(data_info) or \
+            if self.is_not_numeric(data_info) or \
                 self.is_logical(data_info):
 
                 col_info.numchar_val = NUMCHAR_CHARACTER
@@ -160,6 +160,11 @@ class TypeGuessUtil(object):
             return True
         except ValueError:
             pass
+        try:
+            int(s)
+            return True
+        except ValueError:
+            pass
 
         try:
             import unicodedata
@@ -172,21 +177,21 @@ class TypeGuessUtil(object):
         return False
 
     @staticmethod
-    def is_notNumeric(var_series):
+    def is_not_numeric(var_series):
         """Check if pandas Series is a numeric"""
-
-        if(len(var_series.dropna())==0) or var_series.dropna().dtype=='bool':
-            return True
         var_series.dropna(inplace=True)
+        if(len(var_series)==0) or var_series.dtype=='bool':
+            return True
+
         total = len(var_series)
 
-        sum = 0
+        total_cnt = 0
         for val, cnt in var_series.value_counts().iteritems():
 
             if (TypeGuessUtil.is_number(val)):
-                sum=sum+cnt
+                total_cnt=total_cnt+cnt
 
-        if (sum == total):
+        if (total_cnt == total):
 
             print("THis is numeric")
             return False
@@ -203,13 +208,13 @@ class TypeGuessUtil(object):
             return True
         elif(var_series.dtype=='object'):
 
-            total1 = len(var_series)
+            total = len(var_series)
             total_cnt = 0
             for val, cnt in var_series.value_counts().iteritems():
                 if (val == True or val == False):
                     total_cnt = total_cnt + cnt
 
-            if (total_cnt == total1):
+            if (total_cnt == total):
                 #print("this is boolean")
                 return True
 
