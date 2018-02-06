@@ -100,6 +100,7 @@ class TestTypeGuess(unittest.TestCase):
 
         self.assertTrue(TypeGuessUtil.is_logical(series) is False)
 
+    """ Test cases for is_not_numeric function"""
 
     def test_60_is_not_numeric(self):
         """(60) Test series with int eg: 2, 4, 8'"""
@@ -147,7 +148,7 @@ class TestTypeGuess(unittest.TestCase):
         msg('Should be sent as a character i.e return True')
 
         series = pd.Series(['Red','Blue'])
-        self.assertFalse(TypeGuessUtil.is_not_numeric(series) is False)
+        self.assertTrue(TypeGuessUtil.is_not_numeric(series))
 
     def test_120_is_not_numeric_boolean(self):
         """(120) Test the is_not_numeric with logical Series"""
@@ -155,18 +156,18 @@ class TestTypeGuess(unittest.TestCase):
 
         msg('Test with a logical series')
         series = pd.Series([True, False, True, True])
-        self.assertFalse(TypeGuessUtil.is_not_numeric(series) is False)
+        self.assertTrue(TypeGuessUtil.is_not_numeric(series))
 
     def test_130_is_not_numeric_boolean_nan(self):
-        """(130) Test the is_not_numeric with logical Series"""
-        msgt(self.test_130_is_not_numeric_boolean_Nan.__doc__)
+        """(130) Test the is_not_numeric with nan"""
+        msgt(self.test_130_is_not_numeric_boolean_nan.__doc__)
 
         msg('Test with a logical series with nan')
-        series = pd.Series([True, False, True, True, np.nan, False])
-        self.assertFalse(TypeGuessUtil.is_not_numeric(series) is False)
+        series = pd.Series([True, False,np.nan, True, True, np.nan, False])
+        self.assertTrue(TypeGuessUtil.is_not_numeric(series))
 
     def test_140_is_logical_all_nan(self):
-        """(140) Test the islogial with nan"""
+        """(140) Test the is_logial with nan"""
         msgt(self.test_140_is_logical_all_nan.__doc__)
 
         msg('Test a logical series with nan')
