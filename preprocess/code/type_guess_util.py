@@ -192,8 +192,8 @@ class TypeGuessUtil(object):
         else:
             return True
 
-
-    def is_logical(self, var_series):
+    @staticmethod
+    def is_logical(var_series):
         """Check if pandas Series is a boolean"""
         var_series.dropna(inplace=True)
         if(var_series.dtype=='bool'):
