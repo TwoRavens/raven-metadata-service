@@ -5,7 +5,7 @@ import random
 import numpy as np
 import pandas as pd
 
-import scipy.stats as norm
+
 from column_info import *
 from col_info_constants import *
 from type_guess_util import *
