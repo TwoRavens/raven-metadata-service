@@ -48,6 +48,15 @@ class ColumnInfo(object):
         self.time=None
 
 
+        #plot vlaues
+        self.plot_values=None
+        self.plot_type=None
+        self.plotx=None
+        self.ploty=None
+        self.cdf_plottype=None
+        self.cdf_plotx=None
+        self.cdf_ploty=None
+        self.labl=None
 
 
     def is_numeric(self):
@@ -64,6 +73,14 @@ class ColumnInfo(object):
         """Set labels for variable output"""
         label_list = (
             ('varnameTypes', self.colname),
+            ('plotvalues',self.plot_values),
+            ('plottype',self.plot_type),
+            ('plotx', self.plotx),
+            ('ploty', self.ploty),
+            ('cdfplottype', self.cdf_plottype),
+            ('cdfplotx', self.cdf_plotx),
+            ('cdfploty', self.cdf_ploty),
+            ('labl',self.labl),
             ('defaultInterval', self.default_interval),
             ('defaultNumchar', self.numchar_val),
             ('defaultNature', self.nature),

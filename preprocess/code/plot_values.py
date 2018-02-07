@@ -39,17 +39,21 @@ class PlotValuesUtil(object):
     def cal_plot_values(self,dataframe):
         assert dataframe is not None, "dataframe can't be None"
 
-        self.nat= self.col_info.nature
+        nat = self.col_info.nature
+        print(nat)
         self.interval= self.col_info.interval
-
-        if(self.nat=="nominal"):
+        self.plot_values=list()
+        if nat!="nominal":
+            print("into it")
             self.col_series.dropna(inplace=True)
-            self.col_series=self.col_series.unique()
-            uniques = np.sort(self.col_series)
+            uniques = np.sort(self.col_series.unique())
             lu= len(uniques)
             cdf_func= self.ecdf(self.col_series)
             if(lu<self.histlimit):
-                self.output=self.col_series
+                self.col_info.plot_type="bar"
+                self.col_info.cdf_plottype="bar"
+                for val,cnt in self.col_series.value_counts().iteritems():
+                        print(val,cnt)
 
 
 
