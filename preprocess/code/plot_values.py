@@ -4,8 +4,8 @@ from os.path import join, isfile, isdir
 import random
 import numpy as np
 import pandas as pd
-#import tabulate
-import re
+
+import scipy.stats as norm
 from column_info import *
 from col_info_constants import *
 from type_guess_util import *
@@ -23,7 +23,8 @@ class PlotValuesUtil(object):
         self.output={}
 
         self.cal_plot_values(dataframe)
-
+        self.cdfx=None
+        self.cdfy=None
     def ecdf(self,data):
         """Compute ECDF for a one-dimensional array of measurements."""
         # Number of data points: n
@@ -31,29 +32,106 @@ class PlotValuesUtil(object):
         # x-data for the ECDF: x
         x = np.sort(data)
         # y-data for the ECDF: y
-        y = np.arange(1, n + 1) / n
-        print(x, y)
-        # Should we return y also?
-        return x
+        y=np.arange(1, n + 1) / n
+
+        # print(x, y)
+        # Should we return x also? though it is just sorted array
+        return y
 
     def cal_plot_values(self,dataframe):
         assert dataframe is not None, "dataframe can't be None"
 
         nat = self.col_info.nature
         print(nat)
-        self.interval= self.col_info.interval
+        myint= self.col_info.interval
         self.plot_values=list()
         if nat!="nominal":
-            print("into it")
+
             self.col_series.dropna(inplace=True)
             uniques = np.sort(self.col_series.unique())
             lu= len(uniques)
             cdf_func= self.ecdf(self.col_series)
             if(lu<self.histlimit):
+                print("into it")
+                #code for plot values
                 self.col_info.plot_type="bar"
-                self.col_info.cdf_plottype="bar"
+
                 for val,cnt in self.col_series.value_counts().iteritems():
-                        print(val,cnt)
+                    if type(val) is not str:
+                        try:
+                            self.output[str(val)] = cnt
+                        except:
+                            try:
+                                self.output[repr(val)] = cnt
+                            except:
+                                pass
+                        del cnt
+
+
+                self.col_info.plot_values=self.output
+
+                #code for cdf values
+                self.cdfx=np.sort(uniques)
+                self.col_info.cdf_plottype = "bar"
+                self.col_info.cdf_plotx=np.linspace(start=min(self.cdfx), stop=max(self.cdfx), num=len(self.cdfx))
+                self.col_info.cdf_ploty=self.ecdf(self.cdfx)
+
+
+            else:
+                    #code for plot values
+                    self.col_info.plot_type="continuous"
+                    # here the code for plotx and ploty comes using r density function
+
+                    #code for cdf values
+                    self.col_info.cdf_plottype = "continuous"
+                    if lu >= 50 or (lu <50 and myint != "discrete"):
+                        self.col_info.cdf_plotx=np.linspace(start=min(self.col_series), stop=max(self.col_series), num=50)
+
+                    else:
+                        self.col_info.cdf_plotx = np.linspace(start=min(self.col_series), stop=max(self.col_series),
+                                                              num=lu)
+
+
+
+
+                    self.col_info.cdf_ploty=self.ecdf(self.col_info.cdf_plotx)
+
+        else:
+            """Here data nature is not nominal"""
+            #code for plot values
+            self.col_info.plot_type = "bar"
+
+            for val, cnt in self.col_series.value_counts().iteritems():
+                if type(val) is not str:
+                    try:
+                        self.output[str(val)] = cnt
+                    except:
+                        try:
+                            self.output[repr(val)] = cnt
+                        except:
+                            pass
+                    del cnt
+
+            self.col_info.plot_values = self.output
+
+            #code for cdf values
+            self.col_info.cdf_plottype="Null"
+            self.col_info.cdf_plotx=None
+            self.col_info.cdf_ploty=None
+
+
+        # if metadataflag  !=1
+        self.col_info.labl=""
+
+
+
+
+
+
+
+
+
+
 
 
 

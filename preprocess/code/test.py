@@ -1,4 +1,5 @@
 import pandas as pd
+import scipy.stats as norm
 # input= pd.read_csv("file:/Users/kripanshubhargava/Desktop/raven-metadata-service/preprocess/input/Testfile1.csv")
 # df=input['UN']
 # df.dropna(inplace=True)
@@ -45,3 +46,6 @@ for val,cnt in df[0].value_counts().iteritems():
 if (sum == total):
     print("is numeric")
 else: print("is notnumeric")
+
+
+

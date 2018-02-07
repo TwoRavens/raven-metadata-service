@@ -49,7 +49,7 @@ class ColumnInfo(object):
 
 
         #plot vlaues
-        self.plot_values=None
+        self.plot_values={}
         self.plot_type=None
         self.plotx=None
         self.ploty=None
@@ -81,11 +81,6 @@ class ColumnInfo(object):
             ('cdfplotx', self.cdf_plotx),
             ('cdfploty', self.cdf_ploty),
             ('labl',self.labl),
-            ('defaultInterval', self.default_interval),
-            ('defaultNumchar', self.numchar_val),
-            ('defaultNature', self.nature),
-            ('defaultBinary', self.binary),
-            ('defaultTime', self.time_val),
             ('median', self.median),
             ('mean', self.mean),
             ('mode',self.mode),
@@ -101,11 +96,16 @@ class ColumnInfo(object):
             ('mid',self.mid),
             ('freqfewest',self.freqfewest),
             ('freqmid',self.freqmid),
-            ('numchar',self.numchar),
+            ('numchar',self.numchar_val),
             ('nature',self.nature),
             ('binary',self.binary),
-            ('interval',self.interval),
-            ('time',self.time)
+            ('interval',self.default_interval),
+            ('time',self.time_val),
+            ('defaultInterval', self.default_interval),
+            ('defaultNumchar', self.numchar_val),
+            ('defaultNature', self.nature),
+            ('defaultBinary', self.binary),
+            ('defaultTime', self.time_val),
             )
         # print("-"*20)
         # print(label_list)
