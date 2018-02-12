@@ -81,9 +81,9 @@ class CalSumStatsUtil(object):
             self.col_info.sd = self.col_series.std()
             self.col_info.herfindahl = self.herfindahl_index(self.col_series)
 
-            self.col_info.mode=str(np.around(self.col_info.mode,4))
-            self.col_info.fewest = str(np.around(self.col_info.fewest, 4))
-            self.col_info.mid = str(np.around(self.col_info.mid, 4))
+            self.col_info.mode = np.around(self.col_info.mode,4)
+            self.col_info.fewest = np.around(self.col_info.fewest, 4)
+            self.col_info.mid = np.around(self.col_info.mid, 4)
             # freqfewest and freqmid left for now as they always give int value. why SignIf then?
             # print("--"*20)
             # print("name : ", self.col_info.colname)

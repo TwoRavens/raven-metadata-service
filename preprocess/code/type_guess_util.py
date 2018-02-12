@@ -18,13 +18,6 @@ class TypeGuessUtil(object):
         self.dataframe = dataframe
         self.colnames = self.dataframe.columns
         self.colcount = len(self.dataframe.columns)
-        # print("data frame")
-        # print(self.dataframe)
-        # print("colnames")
-        # print(self.colnames)
-        # final output
-
-
         # { col_name : ColumnInfoObject, col_name : ColumnInfoObject}
         self.variable_dict = {}
 
@@ -41,49 +34,24 @@ class TypeGuessUtil(object):
 
     def check_types(self):
         """check the types of the dataframe"""
-        #print(self.colnames)
         #assert self.colnames, 'self.colnames must have values'
 
-        '''
-        self.colname=None
-        self.numchar_val = None
-        self.default_interval = None
-        self.nature = None
-        self.time_val = None
-        self.binary = None
-        '''
         # Iterate though variables and set type info
         for colname in self.colnames:
             col_info = ColumnInfo(colname)
-
-            # print(colname)
-            data_info= self.dataframe[colname]
-            # print("data_info")
-            # print(data_info)
-            # print(type(data_info))
-            # set time
+            data_info = self.dataframe[colname]
+            # set time , what exactly we want to do with this
             col_info.time_val = self.check_time(data_info)
 
-            # set vals if factor or logical
-            #
-
-            # print("******")
-            if self.is_not_numeric(data_info) or \
-                self.is_logical(data_info):
+            if self.is_not_numeric(data_info) or self.is_logical(data_info):
 
                 col_info.numchar_val = NUMCHAR_CHARACTER
                 col_info.default_interval = INTERVAL_DISCRETE
                 col_info.nature = NATURE_NOMINAL
 
-                # print(col_info.numchar_val)
-                # print(col_info.default_interval)
-                # print(col_info.nature)
-
                 data_info.dropna(inplace=True)
-                if (len(data_info.unique()) == 2):
-                    # print("#2")
+                if len(data_info.unique()) == 2:
                     col_info.binary = BINARY_YES
-                    # print(col_info.binary)
                 else:
                     col_info.binary = BINARY_NO
 
@@ -94,10 +62,10 @@ class TypeGuessUtil(object):
             # Drop nulls...
             data_info.dropna(inplace=True)
 
-            data_info=data_info.astype('int')
+            data_info = data_info.astype('int')
             # print(data_info)
 
-            if (len(data_info.unique()) == 2):
+            if len(data_info.unique()) == 2:
                 col_info.binary = BINARY_YES
             else:
                 col_info.binary = BINARY_NO
@@ -107,14 +75,8 @@ class TypeGuessUtil(object):
                 col_info.numchar_val = NUMCHAR_CHARACTER
                 col_info.nature = NATURE_NOMINAL
                 col_info.default_interval = INTERVAL_DISCRETE
-                # print("#3")
-                # print(col_info.numchar_val)
-                # print(col_info.default_interval)
-                # print(col_info.nature)
             else:
                 col_info.numchar_val = NUMCHAR_NUMERIC
-                # print("#4")
-                # print(col_info.numchar_val)
 
                 if self.check_decimal(data_info):
                     col_info.default_interval = INTERVAL_CONTINUOUS
@@ -124,28 +86,11 @@ class TypeGuessUtil(object):
                 else:
                     col_info.default_interval = INTERVAL_DISCRETE
                     col_info.nature = self.check_nature(data_info, False)
-                    # print("#6")
-                    # print(col_info.nature)
 
-
-            # some other stuff, dropna
-            # ColumnInfo(col_info)
-            """
-                    self.col_info['varnameTypes']= self.colname
-                    self.col_info['defaultNumchar']= self.numchar_val
-                    self.col_info['defaultInterval'] = self.default_interval
-                    self.col_info['defaultNature'] = self.nature
-                    self.col_info['defaultBinary'] = self.binary
-                    self.col_info['defaultTime'] = self.time_val
-            """
-            # print(self.col_info)
             self.variable_dict[colname] = col_info
             # print(variable_dict)
             continue  # go to next variable
 
-
-            #print(colname)
-        # print()
         for key, val in self.variable_dict.items():
             print('col: %s' % key)
             print(json.dumps(val.as_dict(), indent=4))
