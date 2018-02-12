@@ -1,6 +1,6 @@
 import pandas as pd
 import scipy.stats as norm
-# input= pd.read_csv("file:/Users/kripanshubhargava/Desktop/raven-metadata-service/preprocess/input/Testfile1.csv")
+# input= pd.read_csv("file:/Users/kripanshubhargava/Desktop/raven-metadata-service/preprocess/input/test_file_01.csv")
 # df=input['UN']
 # df.dropna(inplace=True)
 # total1=len(df)
