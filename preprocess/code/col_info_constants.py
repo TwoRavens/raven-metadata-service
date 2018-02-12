@@ -50,3 +50,9 @@ TIME_YES = 'yes'
 TIME_NO = 'no'
 TIME_VALUES = (TIME_YES,
                TIME_NO)
+
+# --------------------------------------
+# plot types for metadata file
+# --------------------------------------
+PLOT_BAR= "bar"
+PLOT_CONTINUOUS= "continuous"

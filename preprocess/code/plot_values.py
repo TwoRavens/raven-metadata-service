@@ -10,6 +10,9 @@ from column_info import *
 from col_info_constants import *
 from type_guess_util import *
 
+
+
+
 class PlotValuesUtil(object):
     def __init__(self, dataframe, col_info):
         assert dataframe is not None, "dataframe can't be None"
@@ -45,7 +48,7 @@ class PlotValuesUtil(object):
         print(nat)
         myint= self.col_info.interval
         self.plot_values=list()
-        if nat!="nominal":
+        if nat!= NATURE_NOMINAL:
 
             self.col_series.dropna(inplace=True)
             uniques = np.sort(self.col_series.unique())
@@ -54,7 +57,7 @@ class PlotValuesUtil(object):
             if(lu<self.histlimit):
                 print("into it")
                 #code for plot values
-                self.col_info.plot_type="bar"
+                self.col_info.plot_type= PLOT_BAR
 
                 for val,cnt in self.col_series.value_counts().iteritems():
                     if type(val) is not str:
@@ -72,19 +75,19 @@ class PlotValuesUtil(object):
 
                 #code for cdf values
                 self.cdfx=np.sort(uniques)
-                self.col_info.cdf_plottype = "bar"
+                self.col_info.cdf_plottype = PLOT_BAR
                 self.col_info.cdf_plotx=np.linspace(start=min(self.cdfx), stop=max(self.cdfx), num=len(self.cdfx))
                 self.col_info.cdf_ploty=self.ecdf(self.cdfx)
 
 
             else:
                     #code for plot values
-                    self.col_info.plot_type="continuous"
+                    self.col_info.plot_type= PLOT_CONTINUOUS
                     # here the code for plotx and ploty comes using r density function
 
                     #code for cdf values
-                    self.col_info.cdf_plottype = "continuous"
-                    if lu >= 50 or (lu <50 and myint != "discrete"):
+                    self.col_info.cdf_plottype = PLOT_CONTINUOUS
+                    if lu >= 50 or (lu <50 and myint != INTERVAL_DISCRETE):
                         self.col_info.cdf_plotx=np.linspace(start=min(self.col_series), stop=max(self.col_series), num=50)
 
                     else:
@@ -99,7 +102,7 @@ class PlotValuesUtil(object):
         else:
             """Here data nature is not nominal"""
             #code for plot values
-            self.col_info.plot_type = "bar"
+            self.col_info.plot_type = PLOT_BAR
 
             for val, cnt in self.col_series.value_counts().iteritems():
                 if type(val) is not str:
@@ -115,7 +118,7 @@ class PlotValuesUtil(object):
             self.col_info.plot_values = self.output
 
             #code for cdf values
-            self.col_info.cdf_plottype="Null"
+            self.col_info.cdf_plottype=None
             self.col_info.cdf_plotx=None
             self.col_info.cdf_ploty=None
 

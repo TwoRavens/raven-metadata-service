@@ -75,5 +75,6 @@ class CalSumStatsTest(unittest.TestCase):
         self.assertEqual(col_info.herfindahl, 0.2809709309217837)
 
 
+
 if __name__ == '__main__':
     unittest.main()
