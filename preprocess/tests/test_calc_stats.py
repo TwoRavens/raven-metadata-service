@@ -31,7 +31,7 @@ class CalSumStatsTest(unittest.TestCase):
         msgt(self.test_10_freq_ok.__doc__)
 
         # Pull the ColumnInfo for Ranking
-        col_info = self.variable_info_01.get('Ranking')
+        col_info = self.variable_info_01.get('quat')
 
         # Calculate the stats
         CalSumStatsUtil(self.df_01, col_info)
@@ -41,20 +41,38 @@ class CalSumStatsTest(unittest.TestCase):
 
         # Check uniques
         msg('Check uniques')
-        self.assertEqual(col_info.uniques, 11)
+        self.assertEqual(col_info.uniques, 10)
 
-        # Check median, mean
-        msg('Check median, mean')
-        self.assertEqual(col_info.median, 8.0)
-        self.assertEqual(col_info.mean, 8.363636363636363)
+        # Check valid and invalid data
+        msg('Check valid and invalid ')
+        self.assertEqual(col_info.valid, 11)
+        self.assertEqual(col_info.invalid, 0)
+
+        # Check median, mean, sd
+        msg('Check median, mean, and sd')
+        self.assertEqual(col_info.median, 2445)
+        self.assertEqual(col_info.mean, 6692.272727272727)
+        self.assertEqual(col_info.sd,  10148.778666331324)
+
+
+
 
         # Check min, max
         msg('Check min, max')
-        #self.assertEqual(col_info.min, 'some val')
-        #self.assertEqual(col_info.max, 'some val')
+        self.assertEqual(col_info.min, 12)
+        self.assertEqual(col_info.max, 34314)
 
         msg('Check mode, fewest, mid, etc')
         # Check mode, fewest, mid, etc
+        self.assertEqual(col_info.mode, 1232)
+        self.assertEqual(col_info.freqmode, 2)
+        self.assertEqual(col_info.mid, 1324)
+        self.assertEqual(col_info.freqmid, 1)
+        # Fewest and freqfewest discussion
+
+        msg('Check herfindahl ')
+        # Check herfindahl
+        self.assertEqual(col_info.herfindahl, 0.2809709309217837)
 
 
 if __name__ == '__main__':
