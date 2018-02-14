@@ -1,6 +1,7 @@
 from collections import OrderedDict
 import json
-from col_info_constants import *
+from col_info_constants import \
+    (NUMCHAR_NUMERIC, NUMCHAR_CHARACTER)
 
 class ColumnInfo(object):
 
@@ -36,27 +37,27 @@ class ColumnInfo(object):
         self.mean = None
         self.max = None
         self.min = None
-        self.sd = None
+        self.std_dev = None
         self.herfindahl = None
 
-        self.uniques=None
+        self.uniques = None
 
-        self.numchar=None
-        self.nature=None
-        self.binary=None
-        self.interval=None
-        self.time=None
+        self.numchar = None
+        self.nature = None
+        self.binary = None
+        self.interval = None
+        self.time = None
 
 
         #plot vlaues
-        self.plot_values={}
-        self.plot_type=None
-        self.plotx=None
-        self.ploty=None
-        self.cdf_plottype=None
-        self.cdf_plotx=None
-        self.cdf_ploty=None
-        self.labl=None
+        self.plot_values = {}
+        self.plot_type = None
+        self.plotx = None
+        self.ploty = None
+        self.cdf_plottype = None
+        self.cdf_plotx = None
+        self.cdf_ploty = None
+        self.labl = None
 
 
     def is_numeric(self):
@@ -73,34 +74,34 @@ class ColumnInfo(object):
         """Set labels for variable output"""
         label_list = (
             ('varnameTypes', self.colname),
-            ('plotvalues',self.plot_values),
-            ('plottype',self.plot_type),
+            ('plotvalues', self.plot_values),
+            ('plottype', self.plot_type),
             ('plotx', self.plotx),
             ('ploty', self.ploty),
             ('cdfplottype', self.cdf_plottype),
             ('cdfplotx', self.cdf_plotx),
             ('cdfploty', self.cdf_ploty),
-            ('labl',self.labl),
+            ('labl', self.labl),
             ('median', self.median),
             ('mean', self.mean),
-            ('mode',self.mode),
-            ('max',self.max),
-            ('min',self.min),
-            ('invalid',self.invalid),
-            ('valid',self.valid),
-            ('sd',self.sd),
-            ('uniques',self.uniques),
-            ('herfindahl',self.herfindahl),
-            ('freqmode',self.freqmode),
-            ('fewest',self.fewest),
-            ('mid',self.mid),
-            ('freqfewest',self.freqfewest),
-            ('freqmid',self.freqmid),
-            ('numchar',self.numchar_val),
-            ('nature',self.nature),
-            ('binary',self.binary),
-            ('interval',self.default_interval),
-            ('time',self.time_val),
+            ('mode', self.mode),
+            ('max', self.max),
+            ('min', self.min),
+            ('invalid', self.invalid),
+            ('valid', self.valid),
+            ('sd', self.std_dev),
+            ('uniques', self.uniques),
+            ('herfindahl', self.herfindahl),
+            ('freqmode', self.freqmode),
+            ('fewest', self.fewest),
+            ('mid', self.mid),
+            ('freqfewest', self.freqfewest),
+            ('freqmid', self.freqmid),
+            ('numchar', self.numchar_val),
+            ('nature', self.nature),
+            ('binary', self.binary),
+            ('interval', self.default_interval),
+            ('time', self.time_val),
             ('defaultInterval', self.default_interval),
             ('defaultNumchar', self.numchar_val),
             ('defaultNature', self.nature),

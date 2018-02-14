@@ -1,12 +1,9 @@
 import json
-from collections import OrderedDict
-from os.path import join, isfile, isdir
-import random
 import numpy as np
 import pandas as pd
 
 from col_info_constants import *
-from column_info import *
+from column_info import ColumnInfo
 
 
 class TypeGuessUtil(object):
@@ -97,16 +94,18 @@ class TypeGuessUtil(object):
         print('-- end of typeguess --')
 
     @staticmethod
-    def is_number(s):
+    def is_number(val):
         """To check if the given number is numeric that is : digit, decimal or number"""
+        if not val:
+            return False
 
         try:
-            float(s)
+            float(val)
             return True
         except ValueError:
             pass
         try:
-            int(s)
+            int(val)
 
             return True
         except ValueError:
@@ -114,7 +113,7 @@ class TypeGuessUtil(object):
 
         try:
             import unicodedata
-            unicodedata.numeric(s)
+            unicodedata.numeric(val)
             return True
         except (TypeError, ValueError):
             pass
@@ -123,8 +122,11 @@ class TypeGuessUtil(object):
     @staticmethod
     def is_not_numeric(var_series):
         """Check if pandas Series is a numeric"""
+        assert isinstance(var_series, pd.Series), \
+            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
+
         var_series.dropna(inplace=True)
-        if len(var_series) == 0:
+        if var_series.size == 0:
             print("character")
             return True
 
@@ -133,42 +135,54 @@ class TypeGuessUtil(object):
         total_cnt = 0
         for val, cnt in var_series.value_counts().iteritems():
             #val can be bool whose numeric value is 0 or 1.
-            if type(val)==bool:
+            if isinstance(val, bool):
                 continue
-            if TypeGuessUtil.is_number(val):
-
-                total_cnt=total_cnt+cnt
+            elif TypeGuessUtil.is_number(val):
+                total_cnt += cnt
 
         if total_cnt == total:
-
             print("This is numeric")
             return False
 
-        else:
-            print("character")
-            return True
+        print("character")
+        return True
 
     @staticmethod
     def is_logical(var_series):
-        """Check if pandas Series is a boolean"""
+        """Check if pandas Series contains boolean values"""
+        assert isinstance(var_series, pd.Series), \
+            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
+
         var_series.dropna(inplace=True)
+
+        # Check the dtype
+        #    "bool" - True, clearly logical
+        #    "object" - possibly logical that had contained np.Nan
+        #    ~anything else~ - False
+        #
         if var_series.dtype == 'bool':
             return True
-        elif var_series.dtype=='object':
+        elif var_series.dtype != 'object':
+            return False
 
-            total = len(var_series)
-            total_cnt = 0
-            for val, cnt in var_series.value_counts().iteritems():
-                if val == True or val == False:
-                    total_cnt = total_cnt + cnt
+        # It's an object.  Check if all the values
+        #   either True or False
+        #
+        total = var_series.size
+        total_cnt = 0
+        for val, cnt in var_series.value_counts().iteritems():
+            if val is True or val is False:
+                total_cnt = total_cnt + cnt
 
-            if total_cnt == total:
-                #print("this is boolean")
-                return True
+        if total_cnt == total:
+            # This is a boolean -- everything was either True or False
+            #
+            return True
 
         return False
 
-    def check_decimal(self,x):
+
+    def check_decimal(self, x):
         """Check if variable is a decimal"""
         result = False
         level = np.floor(x)
@@ -177,7 +191,8 @@ class TypeGuessUtil(object):
 
         return result
 
-    def check_nature(self,x, c):
+    def check_nature(self, x, c):
+        """Check the nature of the Series"""
         if c:
             if 0 <= x <= 1:
                 return NATURE_PERCENT
@@ -189,5 +204,7 @@ class TypeGuessUtil(object):
         else:
             return NATURE_ORDINAL
 
-    def check_time(self,data_info):
-        return "no"
+
+    def check_time(self, data_info):
+        """Unimplemented"""
+        return TIME_NO

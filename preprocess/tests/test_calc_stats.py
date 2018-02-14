@@ -52,7 +52,7 @@ class CalSumStatsTest(unittest.TestCase):
         msg('Check median, mean, and sd')
         self.assertEqual(col_info.median, 2445)
         self.assertEqual(col_info.mean, 6692.272727272727)
-        self.assertEqual(col_info.sd,  10148.778666331324)
+        self.assertEqual(col_info.std_dev, 10148.778666331324)
 
 
 

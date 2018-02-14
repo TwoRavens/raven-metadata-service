@@ -68,7 +68,7 @@ class CalSumStatsUtil(object):
             self.col_info.max = NOT_APPLICABLE
             self.col_info.min = NOT_APPLICABLE
             self.col_info.mean = NOT_APPLICABLE
-            self.col_info.sd = NOT_APPLICABLE
+            self.col_info.std_dev = NOT_APPLICABLE
 
 
 
@@ -78,7 +78,7 @@ class CalSumStatsUtil(object):
             self.col_info.max = self.col_series.max()
             self.col_info.min = self.col_series.min()
             self.col_info.mean = self.col_series.mean()
-            self.col_info.sd = self.col_series.std()
+            self.col_info.std_dev = self.col_series.std()
             self.col_info.herfindahl = self.herfindahl_index(self.col_series)
 
             self.col_info.mode = np.around(self.col_info.mode,4)
