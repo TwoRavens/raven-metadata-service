@@ -2,7 +2,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from col_info_constants import *
+import col_info_constants as col_const
 from column_info import ColumnInfo
 
 
@@ -42,15 +42,15 @@ class TypeGuessUtil(object):
 
             if self.is_not_numeric(data_info) or self.is_logical(data_info):
 
-                col_info.numchar_val = NUMCHAR_CHARACTER
-                col_info.default_interval = INTERVAL_DISCRETE
-                col_info.nature = NATURE_NOMINAL
+                col_info.numchar_val = col_const.NUMCHAR_CHARACTER
+                col_info.default_interval = col_const.INTERVAL_DISCRETE
+                col_info.nature = col_const.NATURE_NOMINAL
 
                 data_info.dropna(inplace=True)
                 if len(data_info.unique()) == 2:
-                    col_info.binary = BINARY_YES
+                    col_info.binary = col_const.BINARY_YES
                 else:
-                    col_info.binary = BINARY_NO
+                    col_info.binary = col_const.BINARY_NO
 
                 self.variable_dict[colname] = col_info
 
@@ -63,25 +63,25 @@ class TypeGuessUtil(object):
             # print(data_info)
 
             if len(data_info.unique()) == 2:
-                col_info.binary = BINARY_YES
+                col_info.binary = col_const.BINARY_YES
             else:
-                col_info.binary = BINARY_NO
+                col_info.binary = col_const.BINARY_NO
 
             if any(data_info.isnull()):
                 # DOES IT EVER REACH? AFTER earlier .dropna...
-                col_info.numchar_val = NUMCHAR_CHARACTER
-                col_info.nature = NATURE_NOMINAL
-                col_info.default_interval = INTERVAL_DISCRETE
+                col_info.numchar_val = col_const.NUMCHAR_CHARACTER
+                col_info.nature = col_const.NATURE_NOMINAL
+                col_info.default_interval = col_const.INTERVAL_DISCRETE
             else:
-                col_info.numchar_val = NUMCHAR_NUMERIC
+                col_info.numchar_val = col_const.NUMCHAR_NUMERIC
 
                 if self.check_decimal(data_info):
-                    col_info.default_interval = INTERVAL_CONTINUOUS
+                    col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     col_info.nature = self.check_nature(data_info, True)
                     # print("#5")
                     # print(col_info.nature)
                 else:
-                    col_info.default_interval = INTERVAL_DISCRETE
+                    col_info.default_interval = col_const.INTERVAL_DISCRETE
                     col_info.nature = self.check_nature(data_info, False)
 
             self.variable_dict[colname] = col_info
@@ -198,19 +198,19 @@ class TypeGuessUtil(object):
         """Check the nature of the Series"""
         if c:
             if 0 <= x <= 1:
-                return NATURE_PERCENT
+                return col_const.NATURE_PERCENT
             elif 0 <= x <= 100 and min(x) < 15 and max(x) > 85:
-                return NATURE_PERCENT
+                return col_const.NATURE_PERCENT
             else:
-                return NATURE_RATIO
+                return col_const.NATURE_RATIO
 
         else:
-            return NATURE_ORDINAL
+            return col_const.NATURE_ORDINAL
 
 
     def check_time(self, var_series):
         """Unimplemented"""
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
-            
-        return NOT_IMPLEMENTED
+
+        return col_const.NOT_IMPLEMENTED
