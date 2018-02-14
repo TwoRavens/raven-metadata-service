@@ -96,31 +96,7 @@ class TypeGuessUtil(object):
         #     print(json.dumps(val.as_dict(), indent=4))
         # print('-- end of typeguess --')
 
-    @staticmethod
-    def is_number(val):
-        """To check if the given number is numeric that is : digit, decimal or number"""
-        if not val:
-            return False
 
-        try:
-            float(val)
-            return True
-        except ValueError:
-            pass
-        try:
-            int(val)
-
-            return True
-        except ValueError:
-            pass
-
-        try:
-            import unicodedata
-            unicodedata.numeric(val)
-            return True
-        except (TypeError, ValueError):
-            pass
-        return False
 
     @staticmethod
     def is_not_numeric(var_series):
@@ -133,22 +109,12 @@ class TypeGuessUtil(object):
             # print("character")
             return True
 
-        total = len(var_series)
-
-        total_cnt = 0
-        for val, cnt in var_series.value_counts().iteritems():
-            # val can be bool whose numeric value is 0 or 1.
-            if isinstance(val, bool):
-                continue
-            elif TypeGuessUtil.is_number(val):
-                total_cnt += cnt
-
-        if total_cnt == total:
-            # print("This is numeric")
+        if is_numeric_dtype(var_series):
             return False
+        else:
+            return True
 
-        # print("character")
-        return True
+       
 
     @staticmethod
     def is_logical(var_series):
