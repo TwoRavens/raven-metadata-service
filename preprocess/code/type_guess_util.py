@@ -182,14 +182,17 @@ class TypeGuessUtil(object):
         return False
 
 
-    def check_decimal(self, x):
+    def check_decimal(self, var_series):
         """Check if variable is a decimal"""
-        result = False
-        level = np.floor(x)
-        if any(x != level):
-            result = True
+        assert isinstance(var_series, pd.Series), \
+            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
-        return result
+        level = np.floor(var_series)
+
+        if any(var_series != level):
+            return True
+
+        return False
 
     def check_nature(self, x, c):
         """Check the nature of the Series"""
@@ -205,6 +208,9 @@ class TypeGuessUtil(object):
             return NATURE_ORDINAL
 
 
-    def check_time(self, data_info):
+    def check_time(self, var_series):
         """Unimplemented"""
-        return TIME_NO
+        assert isinstance(var_series, pd.Series), \
+            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
+            
+        return NOT_IMPLEMENTED

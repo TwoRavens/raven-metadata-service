@@ -1,5 +1,6 @@
 '''Contants used in the preprocess logic and metadata output'''
 
+NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'
 # --------------------------------------
 # numchar constants for metadata file
