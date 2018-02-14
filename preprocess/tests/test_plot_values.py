@@ -26,9 +26,9 @@ class PlotValuesTest(unittest.TestCase):
         self.variable_info_01 = type_guess_obj.get_variable_dict()
 
 
-    def test_10_freq_ok(self):
-        """(10) Test the frequency counts"""
-        msgt(self.test_10_freq_ok.__doc__)
+    def test_10_plot_values_ok(self):
+        """(10) Test plot values of column"""
+        msgt(self.test_10_plot_values_ok.__doc__)
 
         # Pull the ColumnInfo for Ranking
         col_info = self.variable_info_01.get('quat')
