@@ -53,3 +53,7 @@ class PlotValuesTest(unittest.TestCase):
         msg('Check cdf plot values')
         self.assertTrue(pd.DataFrame(col_info.cdf_plotx).equals(cdfx))
         self.assertTrue(pd.DataFrame(col_info.cdf_ploty).equals(cdfy))
+
+
+if __name__ == '__main__':
+    unittest.main()
