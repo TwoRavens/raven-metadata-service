@@ -25,6 +25,7 @@ class PlotValuesTest(unittest.TestCase):
         type_guess_obj = TypeGuessUtil(self.df_01)
         self.variable_info_01 = type_guess_obj.get_variable_dict()
 
+
     def test_10_freq_ok(self):
         """(10) Test the frequency counts"""
         msgt(self.test_10_freq_ok.__doc__)
@@ -43,3 +44,12 @@ class PlotValuesTest(unittest.TestCase):
         self.assertEqual(col_info.plot_type, 'bar')
         msg('Check Cdf Plot types')
         self.assertEqual(col_info.cdf_plottype, 'bar')
+
+
+        # Check cdf plot values
+        cdfx = pd.DataFrame([12, 3823.33333333333, 7634.66666666667, 11446, 15257.3333333333, 19068.6666666667, 22880, 26691.3333333333, 30502.6666666667, 34314])
+        cdfy = pd.DataFrame([0.0909090909090909, 0.636363636363636, 0.727272727272727, 0.818181818181818, 0.909090909090909, 0.909090909090909, 0.909090909090909, 0.909090909090909, 0.909090909090909, 1])
+
+        msg('Check cdf plot values')
+        self.assertTrue(pd.DataFrame(col_info.cdf_plotx).equals(cdfx))
+        self.assertTrue(pd.DataFrame(col_info.cdf_ploty).equals(cdfy))
