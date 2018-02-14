@@ -9,8 +9,12 @@ import numpy as np
 from io import StringIO
 
 PREPROCESS_DIR = dirname(dirname(abspath(__file__)))
+INPUT_DIR = join(PREPROCESS_DIR, 'input')
 # add the 'code' directory to the sys path
 sys.path.append(join(PREPROCESS_DIR, 'code'))
+
+
+
 
 from msg_util import *
 from type_guess_util import TypeGuessUtil
@@ -200,6 +204,27 @@ class TestTypeGuess(unittest.TestCase):
         msg('Test a int discreet series')
         series = pd.Series([0.1, 223, 12, 34, 99, None])
         self.assertEqual(TypeGuessUtil.check_nature(series, False), NATURE_ORDINAL)
+
+    def setUp(self):
+        """Load up the test file"""
+        self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
+        type_guess_obj = TypeGuessUtil(self.df_01)
+        self.variable_info_01 = type_guess_obj.get_variable_dict()
+
+    def test_190_valid_check(self):
+        """(10) Test the data for numeric series"""
+        msgt(self.test_190_valid_check.__doc__)
+
+        # Pull the ColumnInfo for Ranking
+        col_info = self.variable_info_01.get('UN')
+
+        # Calculate the stats
+        TypeGuessUtil(self.df_01)
+        dashes()
+        # Check valid and invalid data
+        msg('Check valid and invalid ')
+        self.assertEqual(col_info.valid, 8)
+        self.assertEqual(col_info.invalid, 3)
 
 if __name__ == '__main__':
     unittest.main()

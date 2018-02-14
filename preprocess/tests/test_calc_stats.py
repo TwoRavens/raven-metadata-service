@@ -26,9 +26,9 @@ class CalSumStatsTest(unittest.TestCase):
         self.variable_info_01 = type_guess_obj.get_variable_dict()
 
 
-    def test_10_freq_ok(self):
-        """(10) Test the frequency counts"""
-        msgt(self.test_10_freq_ok.__doc__)
+    def test_10_numeric_val_ok(self):
+        """(10) Test the data for numeric series"""
+        msgt(self.test_10_numeric_val_ok.__doc__)
 
         # Pull the ColumnInfo for Ranking
         col_info = self.variable_info_01.get('quat')
@@ -73,6 +73,49 @@ class CalSumStatsTest(unittest.TestCase):
         msg('Check herfindahl ')
         # Check herfindahl
         self.assertEqual(col_info.herfindahl, 0.2809709309217837)
+
+    def test_20_non_numeric_val_ok(self):
+        """(20) Test the data for non numeric series"""
+        msgt(self.test_20_non_numeric_val_ok.__doc__)
+
+        # Pull the ColumnInfo for Ranking
+        col_info = self.variable_info_01.get('UN')
+
+        # Calculate the stats
+        CalSumStatsUtil(self.df_01, col_info)
+
+        col_info.print_values()
+        dashes()
+
+        # Check uniques
+        msg('Check uniques')
+        self.assertEqual(col_info.uniques, 2)
+
+        # Check median, mean, sd
+        msg('Check median, mean, and sd')
+        self.assertEqual(col_info.median, "NA")
+        self.assertEqual(col_info.mean, "NA")
+        self.assertEqual(col_info.std_dev, "NA")
+
+
+
+
+        # Check min, max
+        msg('Check min, max')
+        self.assertEqual(col_info.min, "NA")
+        self.assertEqual(col_info.max, "NA")
+
+        msg('Check mode, fewest, mid, etc')
+        # Check mode, fewest, mid, etc
+        self.assertEqual(col_info.mode, True)
+        self.assertEqual(col_info.freqmode, 5)
+        self.assertEqual(col_info.mid, True)
+        self.assertEqual(col_info.freqmid, 4)
+        # Fewest and freqfewest discussion about the concept
+
+        msg('Check herfindahl ')
+        # Check herfindahl
+        self.assertEqual(col_info.herfindahl, 0.53125)
 
 
 

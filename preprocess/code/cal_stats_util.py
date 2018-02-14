@@ -20,20 +20,11 @@ class CalSumStatsUtil(object):
         self.dataframe = dataframe
         self.col_info = col_info
         self.colname = self.col_info.colname
-        self.col_series = self.dataframe[self.colname]
+        self.col_series = dataframe[self.colname]
 
-
-        # self.stats_var={}
-        # print('col_info',self.col_info)
         self.calc_stats(self.dataframe)
 
-
-
-    def calc_stats(self,dataframe):
-
-        self.col_info.invalid = self.col_series.isnull().sum()
-        self.col_info.valid = self.col_series.count()
-
+    def calc_stats(self, dataframe):
         self.col_series.dropna(inplace=True)
 
         # --------------------------

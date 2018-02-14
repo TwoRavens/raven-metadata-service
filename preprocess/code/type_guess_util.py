@@ -32,12 +32,14 @@ class TypeGuessUtil(object):
 
     def check_types(self):
         """check the types of the dataframe"""
-        #assert self.colnames, 'self.colnames must have values'
+        # assert self.colnames, 'self.colnames must have values'
 
         # Iterate though variables and set type info
         for colname in self.colnames:
             col_info = ColumnInfo(colname)
             data_info = self.dataframe[colname]
+            col_info.invalid = int(data_info.isnull().sum())
+            col_info.valid = int(data_info.count())
             # set time , what exactly we want to do with this
             col_info.time_val = self.check_time(data_info)
 
@@ -89,10 +91,10 @@ class TypeGuessUtil(object):
             # print(variable_dict)
             continue  # go to next variable
 
-        for key, val in self.variable_dict.items():
-            print('col: %s' % key)
-            print(json.dumps(val.as_dict(), indent=4))
-        print('-- end of typeguess --')
+        # for key, val in self.variable_dict.items():
+        #     print('col: %s' % key)
+        #     print(json.dumps(val.as_dict(), indent=4))
+        # print('-- end of typeguess --')
 
     @staticmethod
     def is_number(val):
@@ -128,24 +130,24 @@ class TypeGuessUtil(object):
 
         var_series.dropna(inplace=True)
         if var_series.size == 0:
-            print("character")
+            # print("character")
             return True
 
         total = len(var_series)
 
         total_cnt = 0
         for val, cnt in var_series.value_counts().iteritems():
-            #val can be bool whose numeric value is 0 or 1.
+            # val can be bool whose numeric value is 0 or 1.
             if isinstance(val, bool):
                 continue
             elif TypeGuessUtil.is_number(val):
                 total_cnt += cnt
 
         if total_cnt == total:
-            print("This is numeric")
+            # print("This is numeric")
             return False
 
-        print("character")
+        # print("character")
         return True
 
     @staticmethod
@@ -197,7 +199,7 @@ class TypeGuessUtil(object):
             return col_const.NATURE_ORDINAL
 
     @staticmethod
-    def check_time( var_series):
+    def check_time(var_series):
         """Unimplemented"""
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
