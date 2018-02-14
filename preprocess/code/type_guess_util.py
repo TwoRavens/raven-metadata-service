@@ -4,6 +4,7 @@ import pandas as pd
 
 import col_info_constants as col_const
 from column_info import ColumnInfo
+from pandas.api.types import *
 
 
 class TypeGuessUtil(object):
@@ -75,7 +76,7 @@ class TypeGuessUtil(object):
             else:
                 col_info.numchar_val = col_const.NUMCHAR_NUMERIC
 
-                if self.check_decimal(data_info):
+                if is_float_dtype(data_info):
                     col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     col_info.nature = self.check_nature(data_info, True)
                     # print("#5")
@@ -181,25 +182,13 @@ class TypeGuessUtil(object):
 
         return False
 
-
-    def check_decimal(self, var_series):
-        """Check if variable is a decimal"""
-        assert isinstance(var_series, pd.Series), \
-            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
-
-        level = np.floor(var_series)
-
-        if any(var_series != level):
-            return True
-
-        return False
-
-    def check_nature(self, x, c):
+    @staticmethod
+    def check_nature(x, c):
         """Check the nature of the Series"""
         if c:
-            if 0 <= x <= 1:
+            if x.between(0, 1).all():
                 return col_const.NATURE_PERCENT
-            elif 0 <= x <= 100 and min(x) < 15 and max(x) > 85:
+            elif x.between(0, 100).all() and min(x) < 15 and max(x) > 85:
                 return col_const.NATURE_PERCENT
             else:
                 return col_const.NATURE_RATIO
@@ -207,8 +196,8 @@ class TypeGuessUtil(object):
         else:
             return col_const.NATURE_ORDINAL
 
-
-    def check_time(self, var_series):
+    @staticmethod
+    def check_time( var_series):
         """Unimplemented"""
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)

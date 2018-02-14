@@ -68,7 +68,7 @@ class PlotValuesUtil(object):
                                 self.output[repr(val)] = cnt
                             except:
                                 pass
-                        del cnt
+
 
 
                 self.col_info.plot_values=self.output

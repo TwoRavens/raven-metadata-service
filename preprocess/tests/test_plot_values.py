@@ -51,6 +51,7 @@ class PlotValuesTest(unittest.TestCase):
         cdfy = pd.DataFrame([0.0909090909090909, 0.636363636363636, 0.727272727272727, 0.818181818181818, 0.909090909090909, 0.909090909090909, 0.909090909090909, 0.909090909090909, 0.909090909090909, 1])
 
         msg('Check cdf plot values')
+        print("cdfx",col_info.cdf_plotx )
         self.assertTrue(pd.DataFrame(col_info.cdf_plotx).equals(cdfx))
         self.assertTrue(pd.DataFrame(col_info.cdf_ploty).equals(cdfy))
 

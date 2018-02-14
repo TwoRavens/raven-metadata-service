@@ -14,9 +14,10 @@ sys.path.append(join(PREPROCESS_DIR, 'code'))
 
 from msg_util import *
 from type_guess_util import TypeGuessUtil
+from col_info_constants import *
+
 
 class TestTypeGuess(unittest.TestCase):
-
     def test_10_is_logical(self):
         """(10) Test the is_logical with logical Series"""
         msgt(self.test_10_is_logical.__doc__)
@@ -72,7 +73,6 @@ class TestTypeGuess(unittest.TestCase):
 
         self.assertTrue(TypeGuessUtil.is_logical(series))
 
-
     def test_50_series_with_string_not_boolean(self):
         """(50) Test series with string 'Red', 'Blue'"""
         msgt(self.test_50_series_with_string_not_boolean.__doc__)
@@ -106,30 +106,29 @@ class TestTypeGuess(unittest.TestCase):
         """(60) Test series with int eg: 2, 4, 8'"""
         msgt(self.test_60_is_not_numeric.__doc__)
         msg('Test a int series')
-        series = pd.Series([2,6,7,3,2,65])
+        series = pd.Series([2, 6, 7, 3, 2, 65])
         self.assertFalse(TypeGuessUtil.is_not_numeric(series))
 
     def test_70_is_not_numeric(self):
         """(70) Test series with float eg: 2, 4, 8'"""
         msgt(self.test_70_is_not_numeric.__doc__)
         msg('Test a float series')
-        series = pd.Series([2.5,3.4,7.00008,3.2,2.12,65.57659])
+        series = pd.Series([2.5, 3.4, 7.00008, 3.2, 2.12, 65.57659])
         self.assertFalse(TypeGuessUtil.is_not_numeric(series))
 
     def test_80_is_not_numeric_nan_values(self):
         """(80) Test series with nan eg: 2, 4, 8, NAN'"""
         msgt(self.test_80_is_not_numeric_nan_values.__doc__)
         msg('Test a numeric series with NAN')
-        series = pd.Series([2.5,3.4,7.00008,np.nan,2.12,65.57659])
+        series = pd.Series([2.5, 3.4, 7.00008, np.nan, 2.12, 65.57659])
         self.assertFalse(TypeGuessUtil.is_not_numeric(series))
-
 
     def test_90_is_not_numeric_all_nan_values(self):
         """(90) Test series with nan eg: NAN,NAN, NAN'"""
         msgt(self.test_90_is_not_numeric_all_nan_values.__doc__)
         msg('Test a numeric series with all NAN')
         msg('Should be sent as a character i.e return True')
-        series = pd.Series([np.nan,np.nan,np.nan])
+        series = pd.Series([np.nan, np.nan, np.nan])
         self.assertFalse(TypeGuessUtil.is_not_numeric(series) is False)
 
     def test_100_is_not_numeric_empty_strings(self):
@@ -138,7 +137,7 @@ class TestTypeGuess(unittest.TestCase):
         msg('Test a numeric series with empty strings')
         msg('Should be sent as a character i.e return True')
 
-        series = pd.Series([3,4.9,"",23])
+        series = pd.Series([3, 4.9, "", 23])
         self.assertFalse(TypeGuessUtil.is_not_numeric(series) is False)
 
     def test_110_is_not_numeric_all_characters(self):
@@ -147,7 +146,7 @@ class TestTypeGuess(unittest.TestCase):
         msg('Test a numeric series with strings')
         msg('Should be sent as a character i.e return True')
 
-        series = pd.Series(['Red','Blue'])
+        series = pd.Series(['Red', 'Blue'])
         self.assertTrue(TypeGuessUtil.is_not_numeric(series))
 
     def test_120_is_not_numeric_boolean(self):
@@ -167,16 +166,40 @@ class TestTypeGuess(unittest.TestCase):
         self.assertTrue(TypeGuessUtil.is_not_numeric(series))
 
     def test_140_is_logical_all_nan(self):
-        """(140) Test the is_logial with nan"""
+        """(140) Test the is_logical with nan"""
         msgt(self.test_140_is_logical_all_nan.__doc__)
 
         msg('Test a logical series with nan')
-        series = pd.Series([np.nan,np.nan,np.nan])
+        series = pd.Series([np.nan, np.nan, np.nan])
         self.assertFalse(TypeGuessUtil.is_logical(series))
 
+    def test_150_nature_check_condition_1(self):
+        """(150) Test the nature check condition 1 : if series(continuous) is between 0 and 1"""
+        msgt(self.test_150_nature_check_condition_1.__doc__)
+        msg('Test a (0,1) series')
+        series = pd.Series([0.2, 0.6, 0.7, 0.3, 0.3, 1])
+        self.assertEqual(TypeGuessUtil.check_nature(series, True), NATURE_PERCENT)
 
+    def test_160_nature_check_condition_2(self):
+        """(160) check condition 2 : if series(continuous) is between 0 and 100 and min < 15 and max > 85"""
+        msgt(self.test_160_nature_check_condition_2.__doc__)
+        msg('Test a int (0,100) series')
+        series = pd.Series([1, 23, 12, 34, 99])
+        self.assertEqual(TypeGuessUtil.check_nature(series, True), NATURE_PERCENT)
 
+    def test_170_nature_check_condition_3(self):
+        """(170) check condition 3 : if series(continuous) is between not  0 and 100 and min !< 15 and max !> 85"""
+        msgt(self.test_170_nature_check_condition_3.__doc__)
+        msg('Test a int any series')
+        series = pd.Series([0.1, 223, 12, 34, 99])
+        self.assertEqual(TypeGuessUtil.check_nature(series, True), NATURE_RATIO)
 
+    def test_180_nature_check_condition_4(self):
+        """(180) check condition 4 : if series(continuous) is between not  0 and 100 and min !< 15 and max !> 85"""
+        msgt(self.test_180_nature_check_condition_4.__doc__)
+        msg('Test a int discreet series')
+        series = pd.Series([0.1, 223, 12, 34, 99, None])
+        self.assertEqual(TypeGuessUtil.check_nature(series, False), NATURE_ORDINAL)
 
 if __name__ == '__main__':
     unittest.main()
