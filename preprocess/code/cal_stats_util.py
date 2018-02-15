@@ -37,8 +37,10 @@ class CalSumStatsUtil(object):
 
         # iterate through value_counts for mode stats
         #
+
         row_num = 0
-        for col_val, val_cnt in self.col_series.value_counts().iteritems():
+        for col_val, val_cnt in self.col_series.value_counts(sort=True).iteritems():
+
             row_num += 1
             if row_num == 1:
                 self.col_info.mode = col_val
@@ -63,6 +65,7 @@ class CalSumStatsUtil(object):
 
 
 
+
         elif self.col_info.is_numeric():
 
             self.col_info.median = self.col_series.median()
@@ -72,7 +75,7 @@ class CalSumStatsUtil(object):
             self.col_info.std_dev = self.col_series.std()
             self.col_info.herfindahl = self.herfindahl_index(self.col_series)
 
-            self.col_info.mode = np.around(self.col_info.mode,4)
+            self.col_info.mode = np.around(self.col_info.mode, 4)
             self.col_info.fewest = np.around(self.col_info.fewest, 4)
             self.col_info.mid = np.around(self.col_info.mid, 4)
             # freqfewest and freqmid left for now as they always give int value. why SignIf then?

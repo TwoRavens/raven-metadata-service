@@ -114,7 +114,7 @@ class TypeGuessUtil(object):
         else:
             return True
 
-       
+
 
     @staticmethod
     def is_logical(var_series):
