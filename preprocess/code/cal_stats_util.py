@@ -39,7 +39,7 @@ class CalSumStatsUtil(object):
         #
 
         row_num = 0
-        for col_val, val_cnt in self.col_series.value_counts(sort=True).iteritems():
+        for col_val, val_cnt in self.col_series.value_counts(sort=True, ascending=True).iteritems():
 
             row_num += 1
             if row_num == 1:
