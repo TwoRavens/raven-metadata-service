@@ -8,15 +8,15 @@ import sys
 import pandas as pd
 import numpy as np
 
-from msg_util import *
-from type_guess_util import TypeGuessUtil
-from col_info_constants import *
-
 
 PREPROCESS_DIR = dirname(dirname(abspath(__file__)))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
 # add the 'code' directory to the sys path
 sys.path.append(join(PREPROCESS_DIR, 'code'))
+
+from msg_util import msg, msgt, dashes
+from type_guess_util import TypeGuessUtil
+import col_info_constants as col_const
 
 
 class TestTypeGuess(unittest.TestCase):
@@ -181,28 +181,32 @@ class TestTypeGuess(unittest.TestCase):
         msgt(self.test_150_nature_check_condition_1.__doc__)
         msg('Test a (0,1) series')
         series = pd.Series([0.2, 0.6, 0.7, 0.3, 0.3, 1])
-        self.assertEqual(TypeGuessUtil.check_nature(series, True), NATURE_PERCENT)
+        self.assertEqual(TypeGuessUtil.check_nature(series, True),
+                         col_const.NATURE_PERCENT)
 
     def test_160_nature_check_condition_2(self):
         """(160) check condition 2 : if series(continuous) is between 0 and 100 and min < 15 and max > 85"""
         msgt(self.test_160_nature_check_condition_2.__doc__)
         msg('Test a int (0,100) series')
         series = pd.Series([1, 23, 12, 34, 99])
-        self.assertEqual(TypeGuessUtil.check_nature(series, True), NATURE_PERCENT)
+        self.assertEqual(TypeGuessUtil.check_nature(series, True),
+                         col_const.NATURE_PERCENT)
 
     def test_170_nature_check_condition_3(self):
         """(170) check condition 3 : if series(continuous) is between not  0 and 100 and min !< 15 and max !> 85"""
         msgt(self.test_170_nature_check_condition_3.__doc__)
         msg('Test a int any series')
         series = pd.Series([0.1, 223, 12, 34, 99])
-        self.assertEqual(TypeGuessUtil.check_nature(series, True), NATURE_RATIO)
+        self.assertEqual(TypeGuessUtil.check_nature(series, True),
+                         col_const.NATURE_RATIO)
 
     def test_180_nature_check_condition_4(self):
         """(180) check condition 4 : if series(continuous) is between not  0 and 100 and min !< 15 and max !> 85"""
         msgt(self.test_180_nature_check_condition_4.__doc__)
         msg('Test a int discreet series')
         series = pd.Series([0.1, 223, 12, 34, 99, None])
-        self.assertEqual(TypeGuessUtil.check_nature(series, False), NATURE_ORDINAL)
+        self.assertEqual(TypeGuessUtil.check_nature(series, False),
+                         col_const.NATURE_ORDINAL)
 
     def setUp(self):
         """Load up the test file"""

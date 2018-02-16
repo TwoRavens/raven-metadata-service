@@ -1,9 +1,6 @@
 """ Unit testing Module for plot values eg: type, cdf, labl etc"""
 import unittest
-from os.path import abspath, dirname, join, normpath, isdir, isfile
-from msg_util import dashes, msgt, msg
-from type_guess_util import TypeGuessUtil
-from plot_values import PlotValuesUtil
+from os.path import abspath, dirname, join
 import sys
 import pandas as pd
 
@@ -12,6 +9,9 @@ INPUT_DIR = join(PREPROCESS_DIR, 'input')
 # add the 'code' directory to the sys path
 sys.path.append(join(PREPROCESS_DIR, 'code'))
 
+from msg_util import dashes, msgt, msg
+from type_guess_util import TypeGuessUtil
+from plot_values import PlotValuesUtil
 
 class PlotValuesTest(unittest.TestCase):
     """ class to test Module for plot values eg: type, cdf, labl etc"""
