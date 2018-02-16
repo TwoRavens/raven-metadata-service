@@ -1,9 +1,12 @@
+"""Module for preprocess structure"""
 from collections import OrderedDict
 import json
 from col_info_constants import \
     (NUMCHAR_NUMERIC, NUMCHAR_CHARACTER)
 
+
 class ColumnInfo(object):
+    """Sets up the expected structure of the whole preprocess output file"""
 
     def __init__(self, colname):
         """Init with column name"""
@@ -11,8 +14,8 @@ class ColumnInfo(object):
         # more general
         # -------------
         self.colname = colname
-        self.valid=None
-        self.invalid=None
+        self.valid = None
+        self.invalid = None
 
         # ----------------------
         # Type Guess Info
@@ -24,7 +27,7 @@ class ColumnInfo(object):
         self.binary = None
 
         # set at type util
-        self.varnamesSumStat = None
+        self.varnames_sum_stat = None
 
         # Stats Info
         self.mode = None
@@ -69,11 +72,10 @@ class ColumnInfo(object):
         return self.numchar_val == NUMCHAR_CHARACTER
 
 
-
     def get_variable_labels(self):
         """Set labels for variable output"""
         label_list = (
-            ('varnameTypes', self.colname),
+            ('varnameSumStat', self.colname),
             ('plotvalues', self.plot_values),
             ('plottype', self.plot_type),
             ('plotx', self.plotx),
@@ -120,12 +122,12 @@ class ColumnInfo(object):
 
     def as_dict(self, as_string=False):
         """For final output"""
-        od = OrderedDict()
+        ordered_dict = OrderedDict()
 
         for label, val in self.get_variable_labels():
-            od[label] = val
+            ordered_dict[label] = val
 
         if as_string:
-            return json.dumps(od)
+            return json.dumps(ordered_dict)
 
-        return od
+        return ordered_dict

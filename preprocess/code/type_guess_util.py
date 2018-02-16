@@ -1,7 +1,6 @@
-import json
-import numpy as np
+""" Module for type guessing """
+from __future__ import print_function
 import pandas as pd
-
 import col_info_constants as col_const
 from column_info import ColumnInfo
 from pandas.api.types import *
@@ -96,8 +95,6 @@ class TypeGuessUtil(object):
         #     print(json.dumps(val.as_dict(), indent=4))
         # print('-- end of typeguess --')
 
-
-
     @staticmethod
     def is_not_numeric(var_series):
         """Check if pandas Series is a numeric"""
@@ -113,8 +110,6 @@ class TypeGuessUtil(object):
             return False
         else:
             return True
-
-
 
     @staticmethod
     def is_logical(var_series):
@@ -151,12 +146,12 @@ class TypeGuessUtil(object):
         return False
 
     @staticmethod
-    def check_nature(x, c):
+    def check_nature(data_series, continuous_check):
         """Check the nature of the Series"""
-        if c:
-            if x.between(0, 1).all():
+        if continuous_check:
+            if data_series.between(0, 1).all():
                 return col_const.NATURE_PERCENT
-            elif x.between(0, 100).all() and min(x) < 15 and max(x) > 85:
+            elif data_series.between(0, 100).all() and min(data_series) < 15 and max(data_series) > 85:
                 return col_const.NATURE_PERCENT
             else:
                 return col_const.NATURE_RATIO

@@ -1,12 +1,17 @@
+"""Unit testing module for Type guess"""
 import unittest
 
+from os.path import abspath, dirname, join, normpath, isdir, isfile
+from io import StringIO
 import json
 import sys
-from collections import OrderedDict
-from os.path import abspath, dirname, join, normpath, isdir, isfile
 import pandas as pd
 import numpy as np
-from io import StringIO
+
+from msg_util import *
+from type_guess_util import TypeGuessUtil
+from col_info_constants import *
+
 
 PREPROCESS_DIR = dirname(dirname(abspath(__file__)))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
@@ -14,14 +19,8 @@ INPUT_DIR = join(PREPROCESS_DIR, 'input')
 sys.path.append(join(PREPROCESS_DIR, 'code'))
 
 
-
-
-from msg_util import *
-from type_guess_util import TypeGuessUtil
-from col_info_constants import *
-
-
 class TestTypeGuess(unittest.TestCase):
+    """Unit testing class for type_guess_util"""
     def test_10_is_logical(self):
         """(10) Test the is_logical with logical Series"""
         msgt(self.test_10_is_logical.__doc__)
@@ -60,8 +59,8 @@ class TestTypeGuess(unittest.TestCase):
                               'TRUE\n'
                               'FALSE'))
 
-        df = pd.read_csv(test_data)
-        series = df['col1']
+        data_frame = pd.read_csv(test_data)
+        series = data_frame['col1']
 
         self.assertTrue(TypeGuessUtil.is_logical(series))
 
@@ -72,8 +71,8 @@ class TestTypeGuess(unittest.TestCase):
                               'TRUE\n'
                               'FALSE'))
 
-        df = pd.read_csv(test_data)
-        series = df['col1']
+        data_frame = pd.read_csv(test_data)
+        series = data_frame['col1']
 
         self.assertTrue(TypeGuessUtil.is_logical(series))
 
@@ -87,8 +86,8 @@ class TestTypeGuess(unittest.TestCase):
                               'Green\n'
                               'Purple'))
 
-        df = pd.read_csv(test_data)
-        series = df['col1']
+        data_frame = pd.read_csv(test_data)
+        series = data_frame['col1']
 
         self.assertTrue(TypeGuessUtil.is_logical(series) is False)
 
@@ -99,8 +98,8 @@ class TestTypeGuess(unittest.TestCase):
                               'Green\n'
                               'Purple'))
 
-        df = pd.read_csv(test_data)
-        series = df['col1']
+        data_frame = pd.read_csv(test_data)
+        series = data_frame['col1']
 
         self.assertTrue(TypeGuessUtil.is_logical(series) is False)
 

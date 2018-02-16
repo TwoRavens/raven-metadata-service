@@ -55,5 +55,5 @@ TIME_VALUES = (TIME_YES,
 # --------------------------------------
 # plot types for metadata file
 # --------------------------------------
-PLOT_BAR= "bar"
-PLOT_CONTINUOUS= "continuous"
+PLOT_BAR = "bar"
+PLOT_CONTINUOUS = "continuous"

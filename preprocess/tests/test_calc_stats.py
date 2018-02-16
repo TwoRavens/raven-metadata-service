@@ -1,12 +1,10 @@
+"""Unit testing for cal_stats_util"""
 import unittest
-
+from os.path import abspath, dirname, join, normpath, isdir, isfile
 import json
 import sys
 from collections import OrderedDict
-from os.path import abspath, dirname, join, normpath, isdir, isfile
 import pandas as pd
-import numpy as np
-from io import StringIO
 
 PREPROCESS_DIR = dirname(dirname(abspath(__file__)))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
@@ -17,14 +15,15 @@ from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil
 from cal_stats_util import CalSumStatsUtil
 
+
 class CalSumStatsTest(unittest.TestCase):
+    """Unit testing class for cal_stats_util"""
 
     def setUp(self):
         """Load up the test file"""
         self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
         type_guess_obj = TypeGuessUtil(self.df_01)
         self.variable_info_01 = type_guess_obj.get_variable_dict()
-
 
     def test_10_numeric_val_ok(self):
         """(10) Test the data for numeric series"""
@@ -53,9 +52,6 @@ class CalSumStatsTest(unittest.TestCase):
         self.assertEqual(col_info.median, 2445)
         self.assertEqual(col_info.mean, 6692.272727272727)
         self.assertEqual(col_info.std_dev, 10148.778666331324)
-
-
-
 
         # Check min, max
         msg('Check min, max')
@@ -97,9 +93,6 @@ class CalSumStatsTest(unittest.TestCase):
         self.assertEqual(col_info.mean, "NA")
         self.assertEqual(col_info.std_dev, "NA")
 
-
-
-
         # Check min, max
         msg('Check min, max')
         self.assertEqual(col_info.min, "NA")
@@ -116,7 +109,6 @@ class CalSumStatsTest(unittest.TestCase):
         msg('Check herfindahl ')
         # Check herfindahl
         self.assertEqual(col_info.herfindahl, 0.53125)
-
 
 
 if __name__ == '__main__':
