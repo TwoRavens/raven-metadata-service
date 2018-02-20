@@ -1,4 +1,4 @@
-"""Unit testing for cal_stats_util"""
+"""Unit testing for cal_stats_util using sample data"""
 import unittest
 from os.path import abspath, dirname, join, normpath, isdir, isfile
 import json
