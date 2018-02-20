@@ -1,6 +1,8 @@
 """Module for preprocess structure"""
+
 from collections import OrderedDict
 import json
+import pandas as pd
 from col_info_constants import \
     (NUMCHAR_NUMERIC, NUMCHAR_CHARACTER)
 
@@ -30,7 +32,7 @@ class ColumnInfo(object):
         self.varnames_sum_stat = None
 
         # Stats Info
-        self.mode = None
+        self.mode = []
         self.freqmode = None
         self.mid = None
         self.fewest = None
@@ -86,7 +88,7 @@ class ColumnInfo(object):
             ('labl', self.labl),
             ('median', self.median),
             ('mean', self.mean),
-            ('mode', self.mode),
+            ('mode', self.mode[:5]),
             ('max', self.max),
             ('min', self.min),
             ('invalid', self.invalid),

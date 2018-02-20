@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 from column_info import *
 from col_info_constants import *
@@ -24,25 +25,45 @@ class CalSumStatsUtil(object):
         # similar to preprocess.R "Mode" function
         # --------------------------
         self.col_info.uniques = len(self.col_series.unique())
-        col_val = None
-        val_cnt = None
+
         mid_pt = int(self.col_info.uniques / 2)
 
         # iterate through value_counts for mode stats
         #
         row_num = 0
+        cnt_min = None
+        val_min = None
+        cnt_max = None
+        val_max = None
+        output = []
         for col_val, val_cnt in self.col_series.value_counts(sort=True, ascending=True).iteritems():
+            if cnt_min is None and val_min is None and cnt_max is None and val_max is None:
+                cnt_min = val_cnt
+                val_min = col_val
+                cnt_max = val_cnt
+                val_max = col_val
 
             row_num += 1
-            if row_num == 1:
-                self.col_info.mode = col_val
-                self.col_info.freqmode = val_cnt
             if row_num == mid_pt:
                 self.col_info.mid = col_val
                 self.col_info.freqmid = val_cnt
 
-        self.col_info.fewest = col_val
-        self.col_info.freqfewest = val_cnt
+            if val_cnt == cnt_max:
+                output.append(col_val)
+                self.col_info.freqmode = val_cnt
+            elif val_cnt > cnt_max:
+                cnt_max = val_cnt
+                output.clear()
+                output.append(col_val)
+                self.col_info.freqmode = val_cnt
+
+            if val_cnt <= cnt_min:
+                cnt_min = val_cnt
+                val_min = col_val
+
+        self.col_info.fewest = val_min
+        self.col_info.freqfewest = cnt_min
+        self.col_info.mode = output
 
         if self.col_info.is_character():
 
@@ -62,7 +83,7 @@ class CalSumStatsUtil(object):
             self.col_info.std_dev = self.col_series.std()
             self.col_info.herfindahl = self.herfindahl_index(self.col_series)
 
-            self.col_info.mode = np.around(self.col_info.mode, 4)
+            # self.col_info.mode = np.around(self.col_info.mode, 4)
             self.col_info.fewest = np.around(self.col_info.fewest, 4)
             self.col_info.mid = np.around(self.col_info.mid, 4)
             # freqfewest and freqmid left for now as they always give int value. why SignIf then?

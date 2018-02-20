@@ -70,7 +70,7 @@ class PlotValuesUtil(object):
                 self.col_info.cdf_plottype = PLOT_BAR
                 self.col_info.cdf_plotx = np.linspace(start=min(self.cdfx),
                                                       stop=max(self.cdfx), num=len(self.cdfx))
-                self.col_info.cdf_ploty = self.ecdf(self.cdfx)
+                self.col_info.cdf_ploty = self.ecdf(self.col_info.cdf_plotx)
 
             else:
                 # code for plot values
