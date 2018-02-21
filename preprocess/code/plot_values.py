@@ -3,24 +3,25 @@ from __future__ import print_function
 
 import numpy as np
 from column_info import *
-from col_info_constants import *
+import col_info_constants as col_const
 from type_guess_util import *
 
 
 class PlotValuesUtil(object):
     """ Class to set up for plot values eg: type, cdf, labl etc"""
-    def __init__(self, dataframe, col_info):
+    def __init__(self, col_series, col_info):
+        assert isinstance(col_series, pd.Series), "col_series must be a pandas.Series object"
+        assert isinstance(col_info, ColumnInfo), "col_info must be a ColumnInfo object"
+
         self.plot_values = list()
-        assert dataframe is not None, "dataframe can't be None"
-        assert col_info is not None, "col_info can't be None"
         print("plot values time")
-        self.dataframe = dataframe
+        #self.dataframe = dataframe
         self.col_info = col_info
         self.colname = self.col_info.colname
-        self.col_series = self.dataframe[self.colname]
+        self.col_series = col_series
         self.histlimit = 13
         self.output = {}
-        self.cal_plot_values(dataframe)
+        self.cal_plot_values()
         self.cdfx = None
         self.cdfy = None
 
@@ -42,14 +43,13 @@ class PlotValuesUtil(object):
 
         return y_value
 
-    def cal_plot_values(self, dataframe):
+    def cal_plot_values(self):
         """Compute all plot values."""
-        assert dataframe is not None, "dataframe can't be None"
 
         nat = self.col_info.nature
         my_interval = self.col_info.interval
 
-        if NATURE_NOMINAL != nat:
+        if col_const.NATURE_NOMINAL != nat:
             print("into not nominal $$$$", self.colname)
             self.col_series.dropna(inplace=True)
             uniques = np.sort(self.col_series.unique())
@@ -58,7 +58,7 @@ class PlotValuesUtil(object):
             if lu < self.histlimit:
                 print("into it %%%%%%%", self.colname)
                 # code for plot values
-                self.col_info.plot_type = PLOT_BAR
+                self.col_info.plot_type = col_const.PLOT_BAR
 
                 for val, cnt in self.col_series.sort_values().value_counts().iteritems():
                     if type(val) is not str:
@@ -73,19 +73,19 @@ class PlotValuesUtil(object):
 
                 # code for cdf values
                 self.cdfx = np.sort(uniques)
-                self.col_info.cdf_plottype = PLOT_BAR
+                self.col_info.cdf_plottype = col_const.PLOT_BAR
                 self.col_info.cdf_plotx = np.linspace(start=min(self.cdfx),
                                                       stop=max(self.cdfx), num=len(self.cdfx))
                 self.col_info.cdf_ploty = self.ecdf(self.col_info.cdf_plotx)
 
             else:
                 # code for plot values
-                self.col_info.plot_type = PLOT_CONTINUOUS
+                self.col_info.plot_type = col_const.PLOT_CONTINUOUS
                 # here the code for plotx and ploty comes using r density function
 
                 # code for cdf values
-                self.col_info.cdf_plottype = PLOT_CONTINUOUS
-                if lu >= 50 or (lu < 50 and my_interval != INTERVAL_DISCRETE):
+                self.col_info.cdf_plottype = col_const.PLOT_CONTINUOUS
+                if lu >= 50 or (lu < 50 and my_interval != col_const.INTERVAL_DISCRETE):
                     self.col_info.cdf_plotx = np.linspace(start=min(self.col_series),
                                                           stop=max(self.col_series), num=50)
 
@@ -98,7 +98,7 @@ class PlotValuesUtil(object):
             """Here data nature is not nominal"""
             print("into it *******", self.colname)
             # code for plot values
-            self.col_info.plot_type = PLOT_BAR
+            self.col_info.plot_type = col_const.PLOT_BAR
 
             for val, cnt in self.col_series.sort_values().value_counts().iteritems():
                 if type(val) is not str:

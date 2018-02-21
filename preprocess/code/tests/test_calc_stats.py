@@ -26,9 +26,10 @@ class CalSumStatsTest(unittest.TestCase):
 
         # Pull the ColumnInfo for Ranking
         col_info = self.variable_info_01.get('quat')
+        col_series = self.df_01[col_info.colname]
 
         # Calculate the stats
-        CalSumStatsUtil(self.df_01, col_info)
+        CalSumStatsUtil(col_series, col_info)
 
         col_info.print_values()
         dashes()
@@ -39,7 +40,7 @@ class CalSumStatsTest(unittest.TestCase):
 
         # Check valid and invalid data
         msg('Check valid and invalid ')
-        self.assertEqual(col_info.valid, 11)
+        self.assertEqual(col_info.valid, 12)
         self.assertEqual(col_info.invalid, 0)
 
         # Check median, mean, sd
@@ -71,9 +72,10 @@ class CalSumStatsTest(unittest.TestCase):
 
         # Pull the ColumnInfo for Ranking
         col_info = self.variable_info_01.get('UN')
+        col_series = self.df_01[col_info.colname]
 
         # Calculate the stats
-        CalSumStatsUtil(self.df_01, col_info)
+        CalSumStatsUtil(col_series, col_info)
 
         col_info.print_values()
         dashes()
@@ -95,7 +97,7 @@ class CalSumStatsTest(unittest.TestCase):
 
         msg('Check mode, fewest, mid, etc')
         # Check mode, fewest, mid, etc
-        self.assertEqual(col_info.mode, True)
+        self.assertEqual(col_info.mode, [True])
         self.assertEqual(col_info.freqmode, 5)
         self.assertEqual(col_info.mid, True)
         self.assertEqual(col_info.freqmid, 4)

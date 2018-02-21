@@ -1,21 +1,20 @@
 import numpy as np
 import pandas as pd
 
-from column_info import *
-from col_info_constants import *
-from type_guess_util import *
+from column_info import ColumnInfo
+import col_info_constants as col_const
 
 
 class CalSumStatsUtil(object):
-    
+
     """This module does the calculation of statistics variables."""
-    def __init__(self, dataframe, col_info):
-        assert dataframe is not None, "dataframe can't be None"
-        assert col_info is not None, "col_info can't be None"
+    def __init__(self, col_series, col_info):
+        assert isinstance(col_series, pd.Series), "col_series must be a pandas.Series object"
+        assert isinstance(col_info, ColumnInfo), "col_info must be a ColumnInfo object"
 
         self.col_info = col_info
         self.colname = self.col_info.colname
-        self.col_series = dataframe[self.colname]
+        self.col_series = col_series
 
         self.calc_stats()
 
@@ -75,11 +74,11 @@ class CalSumStatsUtil(object):
         if self.col_info.is_character():
 
             # self.col_info.herfindahl=self.herfindahl_index(self.col_series)
-            self.col_info.median = NOT_APPLICABLE
-            self.col_info.max = NOT_APPLICABLE
-            self.col_info.min = NOT_APPLICABLE
-            self.col_info.mean = NOT_APPLICABLE
-            self.col_info.std_dev = NOT_APPLICABLE
+            self.col_info.median = col_const.NOT_APPLICABLE
+            self.col_info.max = col_const.NOT_APPLICABLE
+            self.col_info.min = col_const.NOT_APPLICABLE
+            self.col_info.mean = col_const.NOT_APPLICABLE
+            self.col_info.std_dev = col_const.NOT_APPLICABLE
 
         elif self.col_info.is_numeric():
 
@@ -88,7 +87,9 @@ class CalSumStatsUtil(object):
             self.col_info.min = self.col_series.min()
             self.col_info.mean = self.col_series.mean()
             self.col_info.std_dev = self.col_series.std()
-            self.col_info.herfindahl = self.herfindahl_index(self.col_series)
+            self.col_info.herfindahl = self.herfindahl_index(\
+                                                self.col_series,
+                                                drop_missing=False)
 
             # self.col_info.mode = np.around(self.col_info.mode, 4)
             self.col_info.fewest = np.around(self.col_info.fewest, 4)
@@ -101,14 +102,17 @@ class CalSumStatsUtil(object):
             # print("mid : ", self.col_info.mid)
 
     @staticmethod
-    def herfindahl_index(col_data):
+    def herfindahl_index(col_data, drop_missing=True):
         # check again with the logic of calculating, what values are squared
         """Calculate Herfindahl-Hirschman Index (HHI) for the column data.
         For each given day, HHI is defined as a sum of squared weights of
         %values in a col_series; and varies from 1/N to 1.
         """
+        if drop_missing:
+            # redundant if not used as a staticmethod,
+            # already happens at calc_stats init
+            col_data.dropna(inplace=True)
 
-        col_data.dropna(inplace=True)
         total_sum = sum(col_data)
         fraction_val = []
         for val, cnt in col_data.items():
