@@ -7,7 +7,7 @@ import pandas as pd
 from msg_util import msg, msgt, dashes
 from np_json_encoder import NumpyJSONEncoder
 from type_guess_util import TypeGuessUtil
-from cal_stats_util import CalSumStatsUtil
+from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 
@@ -46,7 +46,7 @@ class PreprocessRunner(object):
         if not self.calculate_stats():
             return False
 
-        self.add_plot_info()
+        return True
 
     @staticmethod
     def load_from_csv_file(input_file):
@@ -105,11 +105,13 @@ class PreprocessRunner(object):
         #
         for col_name, col_info in self.variable_info.items():
             # set stats for each column
-            CalSumStatsUtil(self.df, col_info)
+            col_series = self.df[col_name]
+            SummaryStatsUtil(col_series, col_info)
+            PlotValuesUtil(col_series, col_info)
 
         return True
 
-
+    '''
     def add_plot_info(self):
         """For each variable, add plot information as needed"""
         if self.has_error:
@@ -124,7 +126,7 @@ class PreprocessRunner(object):
             PlotValuesUtil(self.df, col_info)
 
         return True
-
+    '''
 
     def show_final_info(self):
         """Print the final info to the screen"""
