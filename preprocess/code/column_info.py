@@ -35,7 +35,7 @@ class ColumnInfo(object):
         self.mode = []
         self.freqmode = None
         self.mid = None
-        self.fewest = None
+        self.fewest = []
         self.freqmid = None
         self.freqfewest = None
         self.median = None
@@ -97,7 +97,7 @@ class ColumnInfo(object):
             ('uniques', self.uniques),
             ('herfindahl', self.herfindahl),
             ('freqmode', self.freqmode),
-            ('fewest', self.fewest),
+            ('fewest', self.fewest[:3]),
             ('mid', self.mid),
             ('freqfewest', self.freqfewest),
             ('freqmid', self.freqmid),

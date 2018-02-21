@@ -36,6 +36,7 @@ class CalSumStatsUtil(object):
         cnt_max = None
         val_max = None
         output = []
+        fewest_output = []
         for col_val, val_cnt in self.col_series.value_counts(sort=True, ascending=True).iteritems():
             if cnt_min is None and val_min is None and cnt_max is None and val_max is None:
                 cnt_min = val_cnt
@@ -57,12 +58,17 @@ class CalSumStatsUtil(object):
                 output.append(col_val)
                 self.col_info.freqmode = val_cnt
 
-            if val_cnt <= cnt_min:
+            if val_cnt == cnt_min:
+                fewest_output.append(col_val)
+                self.col_info.freqfewest = val_cnt
+            elif val_cnt < cnt_min:
                 cnt_min = val_cnt
-                val_min = col_val
+                fewest_output.clear()
+                fewest_output.append(col_val)
+                self.col_info.freqfewest = val_cnt
 
-        self.col_info.fewest = val_min
-        self.col_info.freqfewest = cnt_min
+        self.col_info.fewest = fewest_output
+
         self.col_info.mode = output
 
         if self.col_info.is_character():
