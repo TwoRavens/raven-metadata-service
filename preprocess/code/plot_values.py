@@ -10,6 +10,7 @@ from type_guess_util import *
 class PlotValuesUtil(object):
     """ Class to set up for plot values eg: type, cdf, labl etc"""
     def __init__(self, dataframe, col_info):
+        self.plot_values = list()
         assert dataframe is not None, "dataframe can't be None"
         assert col_info is not None, "col_info can't be None"
         print("plot values time")
@@ -23,17 +24,22 @@ class PlotValuesUtil(object):
         self.cdfx = None
         self.cdfy = None
 
-    @staticmethod
-    def ecdf(data):
+    def ecdf(self, data):
         """Compute ECDF for a one-dimensional array of measurements."""
         # Number of data points: size
-        size_data = len(data)
+        raw_data = np.array(self.col_series)
+
         # x-data for the ECDF: x_
         x_value = np.sort(data)
+        size_data = x_value.size
         # y-data for the ECDF: y
-        y_value = np.arange(1, size_data + 1) / size_data
-        # print(x, y)
-        # Should we return x also? though it is just sorted array
+        y_value = []
+
+        for i in x_value:
+            temp = raw_data[raw_data <= i]
+            val = temp.size / size_data
+            y_value.append(val)
+
         return y_value
 
     def cal_plot_values(self, dataframe):
@@ -42,7 +48,7 @@ class PlotValuesUtil(object):
 
         nat = self.col_info.nature
         my_interval = self.col_info.interval
-        self.plot_values = list()
+
         if NATURE_NOMINAL != nat:
             print("into not nominal $$$$", self.colname)
             self.col_series.dropna(inplace=True)
