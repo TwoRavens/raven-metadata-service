@@ -7,6 +7,7 @@ from type_guess_util import *
 
 
 class CalSumStatsUtil(object):
+    
     """This module does the calculation of statistics variables."""
     def __init__(self, dataframe, col_info):
         assert dataframe is not None, "dataframe can't be None"

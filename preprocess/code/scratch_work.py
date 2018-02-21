@@ -23,6 +23,11 @@ def main():
     #df.columns
     col = df['Id']
 
+    col_oil = df['oil']
+    print('isnull', col_oil.isnull())
+    print('isnull', col_oil.isnull().sum(), int(col_oil.isnull().sum()))
+    print('valid', col_oil.count())
+    return
     #val_counts = col.value_counts(sort=False, ascending=False)
 
     pairs = []

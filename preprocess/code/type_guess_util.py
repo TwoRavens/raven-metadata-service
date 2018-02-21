@@ -1,9 +1,10 @@
 """ Module for type guessing """
 from __future__ import print_function
 import pandas as pd
+from pandas.api.types import is_float_dtype, is_numeric_dtype
+
 import col_info_constants as col_const
 from column_info import ColumnInfo
-from pandas.api.types import *
 
 
 class TypeGuessUtil(object):
@@ -36,20 +37,33 @@ class TypeGuessUtil(object):
         # Iterate though variables and set type info
         for colname in self.colnames:
             col_info = ColumnInfo(colname)
-            data_info = self.dataframe[colname]
-            col_info.invalid = int(data_info.isnull().sum())
-            col_info.valid = int(data_info.count())
-            # set time , what exactly we want to do with this
-            col_info.time_val = self.check_time(data_info)
 
-            if self.is_not_numeric(data_info) or self.is_logical(data_info):
+            # retrieve the Series from the DataFrame
+            #
+            series_info = self.dataframe[colname]
+
+            # number of missing entries
+            #
+            col_info.invalid = int(series_info.isnull().sum())
+
+            # number of valid entries
+            #
+            col_info.valid = int(series_info.count())
+
+            # set time , what exactly we want to do with this
+            #
+            col_info.time_val = self.check_time(series_info)
+
+            # Drop nulls...
+            series_info.dropna(inplace=True)
+
+            if self.is_not_numeric(series_info) or self.is_logical(series_info):
 
                 col_info.numchar_val = col_const.NUMCHAR_CHARACTER
                 col_info.default_interval = col_const.INTERVAL_DISCRETE
                 col_info.nature = col_const.NATURE_NOMINAL
 
-                data_info.dropna(inplace=True)
-                if len(data_info.unique()) == 2:
+                if len(series_info.unique()) == 2:
                     col_info.binary = col_const.BINARY_YES
                 else:
                     col_info.binary = col_const.BINARY_NO
@@ -58,42 +72,34 @@ class TypeGuessUtil(object):
 
                 continue    # go onto next column
 
-            # Drop nulls...
-            data_info.dropna(inplace=True)
-
-            data_info = data_info.astype('int')
+            series_info = series_info.astype('int')
             # print(data_info)
 
-            if len(data_info.unique()) == 2:
+            if len(series_info.unique()) == 2:
                 col_info.binary = col_const.BINARY_YES
             else:
                 col_info.binary = col_const.BINARY_NO
 
-            if any(data_info.isnull()):
-                # DOES IT EVER REACH? AFTER earlier .dropna...
+            if any(series_info.isnull()):
+                # CANNOT REACH HERE B/C NULLS ARE DROPPED!
+                #
                 col_info.numchar_val = col_const.NUMCHAR_CHARACTER
                 col_info.nature = col_const.NATURE_NOMINAL
                 col_info.default_interval = col_const.INTERVAL_DISCRETE
             else:
                 col_info.numchar_val = col_const.NUMCHAR_NUMERIC
 
-                if is_float_dtype(data_info):
+                if is_float_dtype(series_info):
                     col_info.default_interval = col_const.INTERVAL_CONTINUOUS
-                    col_info.nature = self.check_nature(data_info, True)
+                    col_info.nature = self.check_nature(series_info, True)
                     # print("#5")
                     # print(col_info.nature)
                 else:
                     col_info.default_interval = col_const.INTERVAL_DISCRETE
-                    col_info.nature = self.check_nature(data_info, False)
+                    col_info.nature = self.check_nature(series_info, False)
 
             self.variable_dict[colname] = col_info
-            # print(variable_dict)
-            continue  # go to next variable
 
-        # for key, val in self.variable_dict.items():
-        #     print('col: %s' % key)
-        #     print(json.dumps(val.as_dict(), indent=4))
-        # print('-- end of typeguess --')
 
     @staticmethod
     def is_not_numeric(var_series):
