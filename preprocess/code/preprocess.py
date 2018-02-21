@@ -6,6 +6,8 @@ import json
 import numpy as np
 import pandas as pd
 
+from preprocess_runner import PreprocessRunner
+
 from type_guess_util import *
 from cal_stats_util import CalSumStatsUtil
 from column_info import *
@@ -34,6 +36,21 @@ class MyEncoder(json.JSONEncoder):
 def test_run(input_file):
     """Main test run class for this module"""
 
+    runner, err_msg = PreprocessRunner.load_from_csv_file(input_file)
+    if err_msg:
+        print(err_msg)
+        return
+
+    if runner.has_error:
+        print(runner.error_message)
+        return
+
+    runner.show_final_info()
+
+    jstring = runner.get_final_json(indent=4)
+    print(jstring)
+
+    return
     assert isfile(input_file), 'file not found: %s' % input_file
 
     # read file into dataframe
