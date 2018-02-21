@@ -1,4 +1,4 @@
-"""Unit testing for cal_stats_util using sample data"""
+"""Unit testing for summary_stats_util using sample data"""
 import unittest
 from os.path import abspath, dirname, join
 import pandas as pd
@@ -8,11 +8,11 @@ INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
 from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil
-from cal_stats_util import CalSumStatsUtil
+from summary_stats_util import SummaryStatsUtil
 
 
-class CalSumStatsTest(unittest.TestCase):
-    """Unit testing class for cal_stats_util"""
+class SummaryStatsUtilTest(unittest.TestCase):
+    """Unit testing class for summary_stats_util"""
 
     def setUp(self):
         """Load up the test file"""
@@ -29,7 +29,7 @@ class CalSumStatsTest(unittest.TestCase):
         col_series = self.df_01[col_info.colname]
 
         # Calculate the stats
-        CalSumStatsUtil(col_series, col_info)
+        SummaryStatsUtil(col_series, col_info)
 
         col_info.print_values()
         dashes()
@@ -75,7 +75,7 @@ class CalSumStatsTest(unittest.TestCase):
         col_series = self.df_01[col_info.colname]
 
         # Calculate the stats
-        CalSumStatsUtil(col_series, col_info)
+        SummaryStatsUtil(col_series, col_info)
 
         col_info.print_values()
         dashes()

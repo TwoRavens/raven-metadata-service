@@ -7,7 +7,7 @@ import pandas as pd
 from msg_util import msg, msgt, dashes
 from np_json_encoder import NumpyJSONEncoder
 from type_guess_util import TypeGuessUtil
-from cal_stats_util import CalSumStatsUtil
+from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 
@@ -106,7 +106,7 @@ class PreprocessRunner(object):
         for col_name, col_info in self.variable_info.items():
             # set stats for each column
             col_series = self.df[col_name]
-            CalSumStatsUtil(col_series, col_info)
+            SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
 
         return True

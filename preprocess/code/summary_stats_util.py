@@ -5,7 +5,7 @@ from column_info import ColumnInfo
 import col_info_constants as col_const
 
 
-class CalSumStatsUtil(object):
+class SummaryStatsUtil(object):
 
     """This module does the calculation of statistics variables."""
     def __init__(self, col_series, col_info):
