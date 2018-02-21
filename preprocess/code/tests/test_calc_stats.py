@@ -1,15 +1,10 @@
 """Unit testing for cal_stats_util using sample data"""
 import unittest
-from os.path import abspath, dirname, join, normpath, isdir, isfile
-import json
-import sys
-from collections import OrderedDict
+from os.path import abspath, dirname, join
 import pandas as pd
 
-PREPROCESS_DIR = dirname(dirname(abspath(__file__)))
+PREPROCESS_DIR = dirname(dirname(dirname(abspath(__file__))))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
-# add the 'code' directory to the sys path
-sys.path.append(join(PREPROCESS_DIR, 'code'))
 
 from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil

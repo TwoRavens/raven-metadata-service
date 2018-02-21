@@ -1,18 +1,15 @@
 """Unit testing module for Type guess"""
 import unittest
 
-from os.path import abspath, dirname, join, normpath, isdir, isfile
+from os.path import abspath, dirname, join
 from io import StringIO
-import json
-import sys
+
 import pandas as pd
 import numpy as np
 
 
-PREPROCESS_DIR = dirname(dirname(abspath(__file__)))
+PREPROCESS_DIR = dirname(dirname(dirname(abspath(__file__))))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
-# add the 'code' directory to the sys path
-sys.path.append(join(PREPROCESS_DIR, 'code'))
 
 from msg_util import msg, msgt, dashes
 from type_guess_util import TypeGuessUtil
