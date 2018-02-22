@@ -107,9 +107,9 @@ class SummaryStatsUtilTest(unittest.TestCase):
         self.assertEqual(col_info.freqfewest, 3)
         # Fewest and freqfewest discussion about the concept
 
-        # msg('Check herfindahl ')
-        # # Check herfindahl
-        # self.assertEqual(col_info.herfindahl, 0.53125)
+        msg('Check herfindahl ')
+        # Check herfindahl
+        self.assertEqual(col_info.herfindahl, 0.53125)
 
 
 if __name__ == '__main__':
