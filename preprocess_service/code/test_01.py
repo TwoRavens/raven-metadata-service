@@ -8,7 +8,8 @@ output_dir = '../test_output'
 
 
 def try_1_file():
-    r = preprocess_csv_file.delay(join(file_dir, 'fearonLaitin.tab'), output_dir)
+    fname = 'data_student.tab'# 'fearonLaitin.tab' # 'full1960.tab'
+    r = preprocess_csv_file.delay(join(file_dir, fname), output_dir)
 
     print(r)
 
@@ -19,27 +20,66 @@ def try_1_file():
 
     print(r.result)
 
-
 def try_directory():
-    task_items = []
-    cnt = 0
-    for item in os.listdir(file_dir):
-        if not item.endswith('.tab'):
-            continue
-        if item.endswith('NLSYfull.tab'):
-            continue
-        full_path = join(file_dir, item)
-        r = preprocess_csv_file.delay(full_path, output_dir)
-        task_items.append(r)
+    start_time = time.time()
 
-    time.sleep(5)
+    task_items = []
+    num_files = 0
     cnt = 0
-    for t in task_items:
-        cnt += 1
-        if t.ready():
-            print(cnt, t.result)
-        else:
-            print(cnt, 'not ready')
+    for loop_num in range(20):
+        for item in os.listdir(file_dir):
+            if not item.endswith('.tab'):
+                continue
+            if item.endswith('1960.tab') or item.endswith('NLSYfull.tab'):
+                continue
+            full_path = join(file_dir, item)
+
+            try:
+                r = preprocess_csv_file.delay(full_path, output_dir)
+                num_files += 1
+            except Exception as ex_obj:
+                print('Failed: %s' % ex_obj)
+            print(r.id, item)
+            task_items.append(r)
+
+    while len(task_items) > 0:
+        cnt = 0
+        to_remove = []
+        for ye_task in task_items:
+            cnt += 1
+            if ye_task.ready():
+                result_str = '%s' % ye_task.result
+                #print(t.result.keys())
+                print(ye_task.id, 'DONE!',
+                      ye_task.result['success'],
+                      ye_task.result['input_file'])
+
+                if ye_task.result['success']:
+                    print('   Elapsed time: %s' % ye_task.result['elapsed_time'])
+
+                to_remove.append(ye_task)
+            else:
+                print(ye_task.id, 'not ready')
+
+        for tdone in to_remove:
+            print('removed: ', tdone)
+            task_items.remove(tdone)
+
+        if len(task_items) == 0:
+            break
+        print('remaining: %s' % len(task_items))
+        ptime = 5
+        print('pause %d seconds...' % ptime)
+        time.sleep(ptime)
+
+        elapsed_time = time.time() - start_time
+        elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+        print('   - elapsed time: %s' % (elapsed_time_str))
+
+    elapsed_time = time.time() - start_time
+    elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+    print('Total elapsed time: %s' % (elapsed_time_str))
+    print('Number files: %d' % num_files)
 
 if __name__ == '__main__':
     #try_1_file()
@@ -48,9 +88,13 @@ if __name__ == '__main__':
 """
 # window 1
 redis-server /usr/local/etc/redis.conf
+redis-cli flushall  /usr/local/etc/redis.conf
 
 # window 2
 celery -A basic_preprocess worker --loglevel=info
-celery -A basic_preprocess worker --loglevel=warning --concurrency=10 -n worker1@%h
-celery -A basic_preprocess worker --loglevel=warning --concurrency=10 -n worker2@%h
+celery -A basic_preprocess worker -Ofair --loglevel=warning --concurrency=4 -n worker1@%h
+celery -A basic_preprocess worker -Ofair --loglevel=warning --concurrency=4 -n worker2@%h
+
+# window 3
+python test_01.py
 """
