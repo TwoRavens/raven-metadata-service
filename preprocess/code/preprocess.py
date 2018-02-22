@@ -3,7 +3,9 @@ from os.path import abspath, dirname, join
 import sys
 from preprocess_runner import PreprocessRunner
 from msg_util import msg, msgt, dashes
+import logging
 
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
 CURRENT_DIR = dirname(abspath(__file__))
 INPUT_DIR = join(dirname(CURRENT_DIR), 'input')
@@ -12,7 +14,6 @@ OUTPUT_DIR = join(dirname(CURRENT_DIR), 'output')
 
 def test_run(input_file, output_filepath=None):
     """Main test run class for this module"""
-
     if input_file.lower().endswith('.tab'):
         runner, err_msg = PreprocessRunner.load_from_tabular_file(input_file)
     else:

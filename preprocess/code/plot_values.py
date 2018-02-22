@@ -1,10 +1,12 @@
 """ Module for plot values eg: type, cdf, labl etc"""
 from __future__ import print_function
-
+import logging
 import numpy as np
 from column_info import *
 import col_info_constants as col_const
 from type_guess_util import *
+
+logger = logging.getLogger(__name__)
 
 
 class PlotValuesUtil(object):
@@ -14,7 +16,7 @@ class PlotValuesUtil(object):
         assert isinstance(col_info, ColumnInfo), "col_info must be a ColumnInfo object"
 
         self.plot_values = list()
-        print("plot values time")
+        logger.debug("plot values time")
         #self.dataframe = dataframe
         self.col_info = col_info
         self.colname = self.col_info.colname
@@ -50,13 +52,13 @@ class PlotValuesUtil(object):
         my_interval = self.col_info.interval
 
         if col_const.NATURE_NOMINAL != nat:
-            print("into not nominal $$$$", self.colname)
+            logger.debug("into not nominal %s", self.colname)
             self.col_series.dropna(inplace=True)
             uniques = np.sort(self.col_series.unique())
             lu = len(uniques)
             cdf_func = self.ecdf(self.col_series)
             if lu < self.histlimit:
-                print("into it %%%%%%%", self.colname)
+                logger.debug("into it %s", self.colname)
                 # code for plot values
                 self.col_info.plot_type = col_const.PLOT_BAR
 
@@ -96,7 +98,7 @@ class PlotValuesUtil(object):
 
         else:
             """Here data nature is not nominal"""
-            print("into it *******", self.colname)
+            logger.debug("into it *******%s", self.colname)
             # code for plot values
             self.col_info.plot_type = col_const.PLOT_BAR
 

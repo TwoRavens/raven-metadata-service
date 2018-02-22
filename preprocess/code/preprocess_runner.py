@@ -213,7 +213,7 @@ class PreprocessRunner(object):
 
         fmt_variable_info = OrderedDict()
         for col_name, col_info in self.variable_info.items():
-            col_info.print_values()
+            #col_info.print_values()
             fmt_variable_info[col_name] = col_info.as_dict()
 
         overall_dict = OrderedDict()
