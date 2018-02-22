@@ -26,7 +26,7 @@ def try_directory():
     task_items = []
     num_files = 0
     cnt = 0
-    for loop_num in range(20):
+    for loop_num in range(200):
         for item in os.listdir(file_dir):
             if not item.endswith('.tab'):
                 continue
@@ -63,12 +63,13 @@ def try_directory():
 
         for tdone in to_remove:
             print('removed: ', tdone)
+            tdone.forget()
             task_items.remove(tdone)
 
         if len(task_items) == 0:
             break
         print('remaining: %s' % len(task_items))
-        ptime = 5
+        ptime = 15
         print('pause %d seconds...' % ptime)
         time.sleep(ptime)
 
@@ -91,9 +92,9 @@ redis-server /usr/local/etc/redis.conf
 redis-cli flushall  /usr/local/etc/redis.conf
 
 # window 2
-celery -A basic_preprocess worker --loglevel=info
-celery -A basic_preprocess worker -Ofair --loglevel=warning --concurrency=4 -n worker1@%h
-celery -A basic_preprocess worker -Ofair --loglevel=warning --concurrency=4 -n worker2@%h
+celery -A basic_preprocess worker --loglevel=info -Ofair
+celery -A basic_preprocess worker --loglevel=warning --concurrency=2 -n worker1@%h
+celery -A basic_preprocess worker --loglevel=warning --concurrency=2 -n worker2@%h
 
 # window 3
 python test_01.py

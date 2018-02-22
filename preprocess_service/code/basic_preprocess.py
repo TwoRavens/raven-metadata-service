@@ -72,7 +72,7 @@ def preprocess_csv_file(input_file, output_dir):
     output_filepath = None
     for _idx in range(5):
         output_filepath = '%s_%s.json' % \
-                          (fname_base, get_alphanumeric_lowercase(4))
+                          (fname_base, get_alphanumeric_lowercase(5))
         output_filepath = join(output_dir, output_filepath)
         if not isfile(output_filepath):
             break
