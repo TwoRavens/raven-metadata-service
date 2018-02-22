@@ -224,7 +224,7 @@ class TestTypeGuess(unittest.TestCase):
         # Check valid and invalid data
         msg('Check valid and invalid ')
         self.assertEqual(col_info.valid, 8)
-        self.assertEqual(col_info.invalid, 3)
+        self.assertEqual(col_info.invalid, 4)
 
 if __name__ == '__main__':
     unittest.main()

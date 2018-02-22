@@ -15,7 +15,7 @@ class SummaryStatsUtil(object):
         self.col_info = col_info
         self.colname = self.col_info.colname
         self.col_series = col_series
-
+        self.total_agg = 0
         self.calc_stats()
 
     def calc_stats(self):
@@ -37,13 +37,14 @@ class SummaryStatsUtil(object):
         val_max = None
         output = []
         fewest_output = []
+
         for col_val, val_cnt in self.col_series.value_counts(sort=True, ascending=True).iteritems():
             if cnt_min is None and val_min is None and cnt_max is None and val_max is None:
                 cnt_min = val_cnt
                 val_min = col_val
                 cnt_max = val_cnt
                 val_max = col_val
-
+            self.total_agg = self.total_agg + val_cnt
             row_num += 1
             if row_num == mid_pt:
 
@@ -80,6 +81,11 @@ class SummaryStatsUtil(object):
             self.col_info.min = col_const.NOT_APPLICABLE
             self.col_info.mean = col_const.NOT_APPLICABLE
             self.col_info.std_dev = col_const.NOT_APPLICABLE
+            self.col_info.herfindahl = self.herfindahl_index(
+                self.col_series,
+                True,
+                self.total_agg,
+                drop_missing=False)
 
         elif self.col_info.is_numeric():
 
@@ -90,8 +96,9 @@ class SummaryStatsUtil(object):
             self.col_info.std_dev = self.col_series.std()
             self.col_info.herfindahl = self.herfindahl_index(
                                                 self.col_series,
+                                                False,
+                                                self.total_agg,
                                                 drop_missing=False)
-
 
             # self.col_info.mode = np.around(self.col_info.mode, 4)
             # self.col_info.fewest = np.around(self.col_info.fewest, 4)
@@ -105,20 +112,27 @@ class SummaryStatsUtil(object):
             # print("mid : ", self.col_info.mid)
 
     @staticmethod
-    def herfindahl_index(col_data, drop_missing=True):
+    def herfindahl_index(col_data, char, sum_val,  drop_missing=True):
         # check again with the logic of calculating, what values are squared
         """Calculate Herfindahl-Hirschman Index (HHI) for the column data.
         For each given day, HHI is defined as a sum of squared weights of
         %values in a col_series; and varies from 1/N to 1.
         """
+        fraction_val = []
+        total_sum = 0
         if drop_missing:
             # redundant if not used as a staticmethod,
             # already happens at calc_stats init
             col_data.dropna(inplace=True)
+        if char:
+            total_sum = sum_val
+            for val, val_cnt in col_data.value_counts().iteritems():
+                fraction_val.append(np.math.pow(val_cnt / total_sum, 2))
+        else:
+            total_sum = sum(col_data)
 
-        total_sum = sum(col_data)
-        fraction_val = []
-        for val, cnt in col_data.items():
-            fraction_val.append(np.math.pow(cnt / total_sum, 2))
+            for val, cnt in col_data.items():
+                fraction_val.append(np.math.pow(cnt / total_sum, 2))
 
         return sum(fraction_val)
+
