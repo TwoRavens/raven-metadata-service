@@ -15,11 +15,7 @@ def test_run(input_file, output_filepath=None):
 
     runner, err_msg = PreprocessRunner.load_from_csv_file(input_file)
     if err_msg:
-        print(err_msg)
-        return
-
-    if runner.has_error:
-        msgt(runner.error_message)
+        msgt(err_msg)
         return
 
     runner.show_final_info()
