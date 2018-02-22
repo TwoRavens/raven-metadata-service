@@ -178,7 +178,20 @@ class PreprocessRunner(object):
         print(info_string)
 
 
-    def get_final_json(self, indent=4):
+
+    def get_final_json_indented(self, indent=4):
+        """Return the final variable info as a JSON string"""
+        if self.has_error:
+            err_msg = ('An error occurred earlier in the process:\n%s') % \
+                      self.error_message
+            print(err_msg)
+            return
+
+        return self.get_final_dict(as_string=True,
+                                   indent=indent)
+
+
+    def get_final_json(self, indent=None):
         """Return the final variable info as a JSON string"""
         if self.has_error:
             err_msg = ('An error occurred earlier in the process:\n%s') % \
