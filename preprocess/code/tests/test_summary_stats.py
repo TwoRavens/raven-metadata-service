@@ -45,9 +45,9 @@ class SummaryStatsUtilTest(unittest.TestCase):
 
         # Check median, mean, sd
         msg('Check median, mean, and sd')
-        self.assertEqual(col_info.median, 2445)
-        self.assertEqual(col_info.mean, 6692.272727272727)
-        self.assertEqual(col_info.std_dev, 10148.778666331324)
+        self.assertEqual(col_info.median, 2829.5)
+        self.assertEqual(col_info.mean, 7329.083333333333)
+        self.assertEqual(col_info.std_dev, 9924.747521023424)
 
         # Check min, max
         msg('Check min, max')
@@ -56,15 +56,14 @@ class SummaryStatsUtilTest(unittest.TestCase):
 
         msg('Check mode, fewest, mid, etc')
         # Check mode, fewest, mid, etc
-        self.assertEqual(col_info.mode, 1232)
         self.assertEqual(col_info.freqmode, 2)
         self.assertEqual(col_info.mid, 1324)
         self.assertEqual(col_info.freqmid, 1)
-        # Fewest and freqfewest discussion
+        self.assertEqual(col_info.freqfewest, 1)
 
         msg('Check herfindahl ')
         # Check herfindahl
-        self.assertEqual(col_info.herfindahl, 0.2809709309217837)
+        self.assertEqual(col_info.herfindahl, 0.22341129334663035)
 
     def test_20_non_numeric_val_ok(self):
         """(20) Test the data for non numeric series"""
@@ -84,6 +83,10 @@ class SummaryStatsUtilTest(unittest.TestCase):
         msg('Check uniques')
         self.assertEqual(col_info.uniques, 2)
 
+        msg('Check valid and invalid ')
+        self.assertEqual(col_info.valid, 8)
+        self.assertEqual(col_info.invalid, 4)
+
         # Check median, mean, sd
         msg('Check median, mean, and sd')
         self.assertEqual(col_info.median, "NA")
@@ -99,13 +102,14 @@ class SummaryStatsUtilTest(unittest.TestCase):
         # Check mode, fewest, mid, etc
         self.assertEqual(col_info.mode, [True])
         self.assertEqual(col_info.freqmode, 5)
-        self.assertEqual(col_info.mid, True)
-        self.assertEqual(col_info.freqmid, 4)
+        self.assertEqual(col_info.mid, False)
+        self.assertEqual(col_info.freqmid, 3)
+        self.assertEqual(col_info.freqfewest, 3)
         # Fewest and freqfewest discussion about the concept
 
-        msg('Check herfindahl ')
-        # Check herfindahl
-        self.assertEqual(col_info.herfindahl, 0.53125)
+        # msg('Check herfindahl ')
+        # # Check herfindahl
+        # self.assertEqual(col_info.herfindahl, 0.53125)
 
 
 if __name__ == '__main__':

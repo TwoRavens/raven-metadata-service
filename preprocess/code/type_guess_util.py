@@ -110,6 +110,8 @@ class TypeGuessUtil(object):
         if var_series.size == 0:
             # print("character")
             return True
+        elif var_series.dtype == 'bool':
+            return True
 
         if is_numeric_dtype(var_series):
             return False
