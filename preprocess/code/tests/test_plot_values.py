@@ -25,9 +25,10 @@ class PlotValuesTest(unittest.TestCase):
 
         # Pull the ColumnInfo for Ranking
         col_info = self.variable_info_01.get('quat')
+        col_series = self.df_01[col_info.colname]
 
         # Calculate the stats
-        PlotValuesUtil(self.df_01, col_info)
+        PlotValuesUtil(col_series, col_info)
 
         col_info.print_values()
         dashes()

@@ -2,7 +2,7 @@
 Simple test for celery to run preprocess tasks
 """
 import sys
-import time
+from datetime import datetime
 import json
 from os.path import \
     (abspath, basename, dirname, isdir, join, splitext)
@@ -28,13 +28,11 @@ app = Celery('basic_preprocess',
              backend=BROKER_URL,
              broker=BROKER_URL)
 
-TASK_NUM = 0
 @app.task
 def preprocess_csv_file(input_file, output_dir):
     """Run preprocess on a csv file"""
-    global TASK_NUM
-    TASK_NUM += 1
-    print('(%d) Start preprocess: %s' % (TASK_NUM, input_file))
+    init_timestamp = datetime.now()
+    print('(%s) Start preprocess: %s' % (init_timestamp, input_file))
     if not isdir(output_dir):
         return dict(success=False,
                     message='Directory does not exist: %s' % output_dir)
@@ -51,7 +49,7 @@ def preprocess_csv_file(input_file, output_dir):
         runner, user_msg = PreprocessRunner.load_from_csv_file(input_file)
 
     if user_msg:
-        print('(%d) FAILED: %s' % (TASK_NUM, user_msg))
+        print('(%s) FAILED: %s' % (init_timestamp, user_msg))
         return dict(success=False,
                     message=user_msg)
 
@@ -69,12 +67,12 @@ def preprocess_csv_file(input_file, output_dir):
         open(output_filepath, 'w').write(jstring)
     except OSError as os_err:
         user_msg = 'Failed to write file: %s' % (os_err)
-        print('(%d) FAILED: %s' % (TASK_NUM, user_msg))
+        print('(%s) FAILED: %s' % (init_timestamp, user_msg))
         return dict(success=False,
                     message=user_msg)
 
     user_msg = 'file written: %s' % output_filepath
-    print('(%d) SUCCESS: %s' % (TASK_NUM, user_msg))
+    print('(%s) SUCCESS: %s' % (init_timestamp, user_msg))
 
     return dict(success=True,
                 message=user_msg,

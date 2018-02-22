@@ -26,7 +26,7 @@ def try_directory():
     for item in os.listdir(file_dir):
         if not item.endswith('.tab'):
             continue
-        if not item.find('data_student.tab') > -1:
+        if item.endswith('NLSYfull.tab'):
             continue
         full_path = join(file_dir, item)
         r = preprocess_csv_file.delay(full_path, output_dir)
@@ -51,4 +51,6 @@ redis-server /usr/local/etc/redis.conf
 
 # window 2
 celery -A basic_preprocess worker --loglevel=info
+celery -A basic_preprocess worker --loglevel=warning --concurrency=10 -n worker1@%h
+celery -A basic_preprocess worker --loglevel=warning --concurrency=10 -n worker2@%h
 """
