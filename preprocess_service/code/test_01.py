@@ -26,6 +26,8 @@ def try_directory():
     for item in os.listdir(file_dir):
         if not item.endswith('.tab'):
             continue
+        if not item.find('data_student.tab') > -1:
+            continue
         full_path = join(file_dir, item)
         r = preprocess_csv_file.delay(full_path, output_dir)
         task_items.append(r)
@@ -40,7 +42,8 @@ def try_directory():
             print(cnt, 'not ready')
 
 if __name__ == '__main__':
-    try_1_file()
+    #try_1_file()
+    try_directory()
 
 """
 # window 1

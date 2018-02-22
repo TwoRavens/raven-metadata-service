@@ -7,8 +7,8 @@ import json
 from os.path import \
     (abspath, basename, dirname, isdir, join, splitext)
 from celery import Celery
-# Register your new serializer methods into kombu
-from kombu.serialization import register
+
+import logging
 
 # Add preprocess code dir
 PREPROCESS_DIR = join(dirname(dirname(dirname(abspath(__file__)))),
@@ -16,24 +16,25 @@ PREPROCESS_DIR = join(dirname(dirname(dirname(abspath(__file__)))),
                       'code')
 sys.path.append(PREPROCESS_DIR)
 from preprocess_runner import PreprocessRunner
-from np_json_encoder import NumpyJSONEncoder, np_dumps
 from msg_util import msg, msgt
 
-register('pjson', np_dumps, json.loads,
-         content_type='application/pjson',
-         content_encoding='utf-8')
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
 
 BROKER_URL = 'redis://localhost'
 
 app = Celery('basic_preprocess',
-             result_serializer='pjson',
-             task_serializer='pjson',
              backend=BROKER_URL,
              broker=BROKER_URL)
 
+TASK_NUM = 0
 @app.task
 def preprocess_csv_file(input_file, output_dir):
     """Run preprocess on a csv file"""
+    global TASK_NUM
+    TASK_NUM += 1
+    print('(%d) Start preprocess: %s' % (TASK_NUM, input_file))
     if not isdir(output_dir):
         return dict(success=False,
                     message='Directory does not exist: %s' % output_dir)
@@ -42,8 +43,7 @@ def preprocess_csv_file(input_file, output_dir):
     # - check if it's tab delimited
     #
     fname_base, fname_ext = splitext(basename(input_file))
-    #print('fname_base', fname_base)
-    #print('fname_ext', fname_ext)
+
     if fname_ext.lower() == '.tab':
         runner, user_msg = PreprocessRunner.load_from_tabular_file(\
                                     input_file)
@@ -51,6 +51,7 @@ def preprocess_csv_file(input_file, output_dir):
         runner, user_msg = PreprocessRunner.load_from_csv_file(input_file)
 
     if user_msg:
+        print('(%d) FAILED: %s' % (TASK_NUM, user_msg))
         return dict(success=False,
                     message=user_msg)
 
@@ -68,10 +69,13 @@ def preprocess_csv_file(input_file, output_dir):
         open(output_filepath, 'w').write(jstring)
     except OSError as os_err:
         user_msg = 'Failed to write file: %s' % (os_err)
+        print('(%d) FAILED: %s' % (TASK_NUM, user_msg))
         return dict(success=False,
                     message=user_msg)
 
     user_msg = 'file written: %s' % output_filepath
+    print('(%d) SUCCESS: %s' % (TASK_NUM, user_msg))
+
     return dict(success=True,
                 message=user_msg,
                 data=runner.get_final_json())
