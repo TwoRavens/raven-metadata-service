@@ -25,7 +25,7 @@ WORKDIR /var/apps/raven-metadata-service
 # Copy over the requirements and run them
 # -------------------------------------
 COPY ./requirements/ ./requirements
-RUN pip3 install --no-cache-dir -r requirements/prod.txt
+RUN pip3 install --no-cache-dir -r requirements/10_preprocess.txt
 
 # -------------------------------------
 # Copy over the rest of the repository

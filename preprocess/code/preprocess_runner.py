@@ -58,11 +58,19 @@ class PreprocessRunner(object):
         if not isfile(input_file):
             return None, 'file not found: %s' % input_file
 
+        #df = pd.read_csv(input_file)
         try:
             df = pd.read_csv(input_file)
-        except:
-            return None, 'Failed to load the datafile as a csv: %s' % \
-                          input_file
+        except pd.errors.ParserError as err_obj:
+            err_msg = ('Failed to load csv file (pandas ParserError).'
+                       ' \n - File: %s\n - %s') % \
+                      (input_file, err_obj)
+            return None, err_msg
+        except Exception as err_obj:
+            err_msg = ('Failed to load csv file.'
+                       ' \n - File: %s\n - %s') % \
+                      (input_file, err_obj)
+            return None, err_msg
 
         runner = PreprocessRunner(df)
 
