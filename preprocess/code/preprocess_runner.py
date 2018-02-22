@@ -1,6 +1,7 @@
 """Entrypoint for preprocessing files"""
 from collections import OrderedDict
 import json
+import os
 from os.path import isdir, isfile
 import pandas as pd
 
@@ -56,13 +57,23 @@ class PreprocessRunner(object):
         faile: return None, error message
         """
         if not isfile(input_file):
-            return None, 'file not found: %s' % input_file
+            return None, 'The file was not found: [%s]' % input_file
+
+        filesize = os.stat(input_file).st_size
+        if filesize == 0:
+            return None, 'The file size is zero: [%s]' % input_file
+
 
         #df = pd.read_csv(input_file)
         try:
             df = pd.read_csv(input_file)
         except pd.errors.ParserError as err_obj:
             err_msg = ('Failed to load csv file (pandas ParserError).'
+                       ' \n - File: %s\n - %s') % \
+                      (input_file, err_obj)
+            return None, err_msg
+        except PermissionError as err_obj:
+            err_msg = ('No read prermission on this file:'
                        ' \n - File: %s\n - %s') % \
                       (input_file, err_obj)
             return None, err_msg
