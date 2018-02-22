@@ -3,6 +3,7 @@
 from collections import OrderedDict
 import json
 import pandas as pd
+from np_json_encoder import NumpyJSONEncoder
 from col_info_constants import \
     (NUMCHAR_NUMERIC, NUMCHAR_CHARACTER)
 
@@ -130,6 +131,6 @@ class ColumnInfo(object):
             ordered_dict[label] = val
 
         if as_string:
-            return json.dumps(ordered_dict)
+            return json.dumps(ordered_dict, cls=NumpyJSONEncoder)
 
         return ordered_dict

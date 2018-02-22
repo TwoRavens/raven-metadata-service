@@ -13,7 +13,11 @@ OUTPUT_DIR = join(dirname(CURRENT_DIR), 'output')
 def test_run(input_file, output_filepath=None):
     """Main test run class for this module"""
 
-    runner, err_msg = PreprocessRunner.load_from_csv_file(input_file)
+    if input_file.lower().endswith('.tab'):
+        runner, err_msg = PreprocessRunner.load_from_tabular_file(input_file)
+    else:
+        runner, err_msg = PreprocessRunner.load_from_csv_file(input_file)
+
     if err_msg:
         msgt(err_msg)
         return

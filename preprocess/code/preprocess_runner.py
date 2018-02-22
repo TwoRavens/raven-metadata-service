@@ -50,11 +50,22 @@ class PreprocessRunner(object):
         return True
 
     @staticmethod
-    def load_from_csv_file(input_file):
-        """Create the dataframe from a file
+    def load_from_tabular_file(input_file, **kwargs):
+        """Create the dataframe from a tab-delimited file"""
+        return PreprocessRunner.load_from_csv_file(\
+                                input_file,
+                                is_tab_delimited=True)
+
+
+    @staticmethod
+    def load_from_csv_file(input_file, **kwargs):
+        """Create the dataframe from a csv file
+
+        kwargs:
+            is_tab_delimited - default: False
 
         success: return PreprocessRunner obj, None
-        faile: return None, error message
+        failure: return None, error message
         """
         if not isfile(input_file):
             return None, 'The file was not found: [%s]' % input_file
@@ -63,10 +74,17 @@ class PreprocessRunner(object):
         if filesize == 0:
             return None, 'The file size is zero: [%s]' % input_file
 
+        # -----------------------
+        # Process kwargs
+        # -----------------------
+        delimiter = None
+        if kwargs.get('is_tab_delimited', False) is True:
+            delimiter = '\t'
 
         #df = pd.read_csv(input_file)
         try:
-            df = pd.read_csv(input_file)
+            df = pd.read_csv(input_file,
+                             delimiter=delimiter)
         except pd.errors.ParserError as err_obj:
             err_msg = ('Failed to load csv file (pandas ParserError).'
                        ' \n - File: %s\n - %s') % \
@@ -203,22 +221,3 @@ class PreprocessRunner(object):
                               cls=NumpyJSONEncoder)
 
         return overall_dict
-
-
-    def get_formatted_dict(self):
-        """Return an OrderedDict containing the final values"""
-        if self.has_error:
-            return False, "An error occurred earlier in the process"
-
-        fmt_variable_info = OrderedDict()
-        for col_name, col_info in self.variable_info.items():
-            col_info.print_values()
-            fmt_variable_info[col_name] = col_info.as_dict()
-
-        overall_dict = OrderedDict()
-        overall_dict['variables'] = fmt_variable_info
-        variable_string = json.dumps(overall_dict, indent=4, cls=MyEncoder)
-        print(variable_string)
-        file_name = join(OUTPUT_DIR, 'variable_output_testfile1.json')
-        open(file_name, 'w').write(variable_string)
-        print('file written: %s' % file_name)
