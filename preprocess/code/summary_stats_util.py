@@ -27,7 +27,7 @@ class SummaryStatsUtil(object):
         self.col_info.uniques = len(self.col_series.unique())
 
         mid_pt = int(self.col_info.uniques / 2)
-
+        
         # iterate through value_counts for mode stats
         #
         row_num = 0
@@ -46,6 +46,7 @@ class SummaryStatsUtil(object):
 
             row_num += 1
             if row_num == mid_pt:
+
                 self.col_info.mid = col_val
                 self.col_info.freqmid = val_cnt
 
@@ -87,13 +88,15 @@ class SummaryStatsUtil(object):
             self.col_info.min = self.col_series.min()
             self.col_info.mean = self.col_series.mean()
             self.col_info.std_dev = self.col_series.std()
-            self.col_info.herfindahl = self.herfindahl_index(\
+            self.col_info.herfindahl = self.herfindahl_index(
                                                 self.col_series,
                                                 drop_missing=False)
 
+
             # self.col_info.mode = np.around(self.col_info.mode, 4)
-            self.col_info.fewest = np.around(self.col_info.fewest, 4)
-            self.col_info.mid = np.around(self.col_info.mid, 4)
+            # self.col_info.fewest = np.around(self.col_info.fewest, 4)
+            if self.col_info.mid is not None:
+                self.col_info.mid = np.around(self.col_info.mid, 4)
             # freqfewest and freqmid left for now as they always give int value. why SignIf then?
             # print("--"*20)
             # print("name : ", self.col_info.colname)

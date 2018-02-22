@@ -1,9 +1,10 @@
 """Entrypoint for preprocessing files"""
 from collections import OrderedDict
 import json
+import pandas as pd
 import os
 from os.path import isdir, isfile
-import pandas as pd
+
 
 from msg_util import msg, msgt, dashes
 from np_json_encoder import NumpyJSONEncoder
