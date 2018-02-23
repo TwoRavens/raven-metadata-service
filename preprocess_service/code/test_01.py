@@ -26,7 +26,7 @@ def try_directory():
     task_items = []
     num_files = 0
     cnt = 0
-    for loop_num in range(200):
+    for loop_num in range(50):
         for item in os.listdir(file_dir):
             if not item.endswith('.tab'):
                 continue
@@ -69,7 +69,7 @@ def try_directory():
         if len(task_items) == 0:
             break
         print('remaining: %s' % len(task_items))
-        ptime = 15
+        ptime = 5
         print('pause %d seconds...' % ptime)
         time.sleep(ptime)
 

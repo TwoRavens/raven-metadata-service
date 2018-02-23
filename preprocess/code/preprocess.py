@@ -42,17 +42,22 @@ def show_instructions():
 preprocess a single file
 --------------------------
 
+# write output to screen
 > python preprocess.py [input csv file]
+
+# write output to screen and file
 > python preprocess.py [input csv file] [output file name]
 
 OR
 
+# test input and output files
 > python preprocess.py test
 
 """
     print(info)
 
 if __name__ == '__main__':
+
     if len(sys.argv) == 2:
         if sys.argv[1] == 'test':
             input_csv = join(INPUT_DIR, 'test_file_01.csv')

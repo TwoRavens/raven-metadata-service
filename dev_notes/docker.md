@@ -16,3 +16,5 @@ docker run --rm -ti -v /ravens_volume:/ravens_volume --name=raven_ingest --entry
 #
 docker run --rm -ti -v ~/Documents/github-rp/raven-metadata-service/preprocess/input:/ravens_volume --name=raven_ingest preprocess:latest
 ```
+
+docker run --rm -ti -v /Users/ramanprasad/Desktop:/dtop --name=raven_ingest preprocess:latest [input path]

@@ -30,6 +30,7 @@ app = Celery('basic_preprocess',
              backend=BROKER_URL,
              broker=BROKER_URL)
 
+
 @app.task
 def preprocess_csv_file(input_file, output_dir):
     """Run preprocess on a csv file"""
