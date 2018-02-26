@@ -83,21 +83,25 @@ class PreprocessUtils(object):
         return sum(fraction_val)
 
     @staticmethod
-    def ecdf_y_vlaue(self, data, raw_data):
-        """Compute ECDF for a one-dimensional array of measurements."""
-        # Number of data points: size
-        raw_data = np.array(self.col_series)
+    def ecdf_y_vlaue(x_cdf_val, raw_data):
+        """Compute ECDF for a one-dimensional array of measurements"""
 
-        # x-data for the ECDF: x_
-        x_value = np.sort(data)
         size_data = raw_data.size
         # y-data for the ECDF: y
         y_value = []
 
-        for i in x_value:
+        for i in x_cdf_val:
             temp = raw_data[raw_data <= i]
             val = temp.size / size_data
             y_value.append(val)
 
         return y_value
 
+    @staticmethod
+    def ecdf_x_vlaue(series, size):
+        """Compute ECDF for a one-dimensional array of measurements."""
+        # Number of data points: size
+
+        val = np.linspace(start=min(series), stop=max(series), num=size)
+
+        return val
