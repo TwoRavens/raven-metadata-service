@@ -1,14 +1,19 @@
 import pandas as pd
 import numpy as np
+
 from scipy import stats
+from sklearn.neighbors import KernelDensity
+from scipy.stats import gaussian_kde
+from statsmodels.nonparametric.kde import KDEUnivariate
+
 
 cnt_min = None
 val_min = None
 cnt_max = None
 val_max = None
 output = []
-col_data = pd.Series([261,29,33,15,39,28,95,5,6,28,69,8,105,38,15])
-col_data1 = pd.Series([ "India", "USA", "India", "USA", "France","Japan" ])
+col_data = pd.Series([261, 29, 33, 15, 39, 28, 95, 5, 6, 28, 69, 8, 105, 38, 15])
+col_data1 = pd.Series(["India", "USA", "India", "USA", "France", "Japan"])
 # # col_data= pd.Series([2,4,5,6])
 # col_data.dropna(inplace=True)
 # total_sum = sum(col_data)
@@ -41,10 +46,18 @@ col_data1 = pd.Series([ "India", "USA", "India", "USA", "France","Japan" ])
 #
 # print(output)
 
-total_sum = 0
+# total_sum = 0
+#
+#
+# for col_val, val_cnt in col_data1.value_counts().iteritems():
+#     total_sum = total_sum + val_cnt
+#
+# print(total_sum)
 
 
-for col_val, val_cnt in col_data1.value_counts().iteritems():
-    total_sum = total_sum + val_cnt
+kernel = stats.gaussian_kde(col_data)
 
-print(total_sum)
+
+print(kernel.__dict__)
+
+
