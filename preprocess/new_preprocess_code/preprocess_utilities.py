@@ -56,3 +56,48 @@ class PreprocessUtils(object):
             return True
 
         return False
+
+    @staticmethod
+    def herfindahl_index(col_data, char, sum_val, drop_missing=True):
+        # check again with the logic of calculating, what values are squared
+        """Calculate Herfindahl-Hirschman Index (HHI) for the column data.
+        For each given day, HHI is defined as a sum of squared weights of
+        %values in a col_series; and varies from 1/N to 1.
+        """
+        fraction_val = []
+        total_sum = 0
+        if drop_missing:
+            # redundant if not used as a staticmethod,
+            # already happens at calc_stats init
+            col_data.dropna(inplace=True)
+        if char:
+            total_sum = sum_val
+            for val, val_cnt in col_data.value_counts().iteritems():
+                fraction_val.append(np.math.pow(val_cnt / total_sum, 2))
+        else:
+            total_sum = sum(col_data)
+
+            for val, cnt in col_data.items():
+                fraction_val.append(np.math.pow(cnt / total_sum, 2))
+
+        return sum(fraction_val)
+
+    @staticmethod
+    def ecdf_y_vlaue(self, data, raw_data):
+        """Compute ECDF for a one-dimensional array of measurements."""
+        # Number of data points: size
+        raw_data = np.array(self.col_series)
+
+        # x-data for the ECDF: x_
+        x_value = np.sort(data)
+        size_data = raw_data.size
+        # y-data for the ECDF: y
+        y_value = []
+
+        for i in x_value:
+            temp = raw_data[raw_data <= i]
+            val = temp.size / size_data
+            y_value.append(val)
+
+        return y_value
+

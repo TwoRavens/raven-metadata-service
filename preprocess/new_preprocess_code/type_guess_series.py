@@ -20,11 +20,11 @@ class TypeGuessSeries(object):
     def check_leaf(self):
         # number of missing entries
         #
-        col_info.invalid = int(self.col_series.isnull().sum())
+        col_const.invalid = int(self.col_series.isnull().sum())
 
         # number of valid entries
         #
-        col_info.valid = int(self.col_series.count())
+        col_const.valid = int(self.col_series.count())
 
         if PreprocessUtils.is_logical() or PreprocessUtils.is_not_numeric():
             """classification for the discrete or continuous"""
