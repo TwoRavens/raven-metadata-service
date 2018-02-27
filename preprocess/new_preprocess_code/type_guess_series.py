@@ -40,7 +40,7 @@ class TypeGuessSeries(object):
                 self.purpose.append(col_const.NATURE_PERCENT)
                 if self.col_series.between(0, 1).all():
                     self.purpose.append(col_const.PERCENT_01)
-                elif self.col_series.between(0,100).all():
+                elif self.col_series.between(0, 100).all():
                     self.purpose.append(col_const.PERCENT_100)
             elif PreprocessUtils.check_nature(self.col_series) == 'ratio':
                 self.purpose.append(col_const.NATURE_RATIO)
@@ -51,11 +51,9 @@ class TypeGuessSeries(object):
             else:
                 self.purpose.append(col_const.NATURE_OTHER)
 
-
-
-
         else:
-            """They are classified as discreet and numeric/character"""
+            """They are classified as discrete and numeric/character"""
+            # clear definition required for ordinal and nominal
             self.purpose.append(col_const.INTERVAL_DISCRETE)
             # dichotomous, ordinal, nominal
             if is_categorical_dtype(self.col_series) and not self.is_logical:
@@ -63,27 +61,27 @@ class TypeGuessSeries(object):
                 """ classification : character or boolean"""
                 self.purpose.append(col_const.NATURE_NOMINAL)
 
-            elif self.is_logical: # or any other condition
+            elif self.is_logical:  # or any other condition
                 """ discrete : dichotomous """
                 # elif: check for dichotomous with other conditions also
                 self.purpose.append(col_const.NATURE_DICHOTOMOUS)
-                dichotomous_uniques = self.col_series.uniques()
+                dichotomous_uniques = self.col_series.unique()
                 if self.is_logical:
                     self.purpose.append(col_const.DICHOTOMOUS_LOGICAL)
                 elif is_numeric_dtype(dichotomous_uniques) or len(dichotomous_uniques) == 2:
                     self.purpose.append(col_const.DICHOTOMOUS_BINARY)
                 else:
-                    self.purpose.append(col_const.DICHOTOMOUS_OTHER) # may be other classification definition
+                    self.purpose.append(col_const.DICHOTOMOUS_OTHER)  # may be other classification definition
 
             else:
-                """ Discrete : numeric : ordinal"""
+                """ discrete : numeric : ordinal"""
                 self.purpose.append(col_const.NATURE_ORDINAL)
-                if self.col_series.count > 0:
+                if self.col_series.count() > 0:
                     self.purpose.append(col_const.ORDINAL_COUNT)
                 # elif 'others'
 
-
-
+        col_const.purpose = self.purpose
+        print(self.purpose)
 
 
 

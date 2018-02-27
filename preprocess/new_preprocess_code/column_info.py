@@ -65,6 +65,9 @@ class ColumnInfo(object):
         self.cdf_ploty = None
         self.labl = None
 
+        # new ontology
+        self.puropose={}
+
 
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
@@ -112,6 +115,7 @@ class ColumnInfo(object):
             ('defaultNature', self.nature),
             ('defaultBinary', self.binary),
             ('defaultTime', self.time_val),
+            (' purpose ', self.puropose)
             )
         # print("-"*20)
         # print(label_list)
