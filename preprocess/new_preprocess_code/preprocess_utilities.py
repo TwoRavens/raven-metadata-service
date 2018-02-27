@@ -58,14 +58,13 @@ class PreprocessUtils(object):
         return False
 
     @staticmethod
-    def herfindahl_index(col_data, char, sum_val, drop_missing=True):
+    def herfindahl_index(col_data, char, sum_val, total_sum, drop_missing=True,):
         # check again with the logic of calculating, what values are squared
         """Calculate Herfindahl-Hirschman Index (HHI) for the column data.
         For each given day, HHI is defined as a sum of squared weights of
         %values in a col_series; and varies from 1/N to 1.
         """
         fraction_val = []
-        total_sum = 0
         if drop_missing:
             # redundant if not used as a staticmethod,
             # already happens at calc_stats init
@@ -105,3 +104,22 @@ class PreprocessUtils(object):
         val = np.linspace(start=min(series), stop=max(series), num=size)
 
         return val
+
+    @staticmethod
+    def check_nature(data_series):
+        """Check the nature of the Series"""
+
+        if data_series.between(0, 1).all():
+            return 'percent'
+        elif data_series.between(0, 100).all() and min(data_series) < 15 and max(data_series) > 85:
+            return 'percent'
+        else:
+            return 'ratio'
+
+    @staticmethod
+    def check_time(var_series):
+        """Unimplemented"""
+        assert isinstance(var_series, pd.Series), \
+            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
+
+        return col_const.NOT_IMPLEMENTED

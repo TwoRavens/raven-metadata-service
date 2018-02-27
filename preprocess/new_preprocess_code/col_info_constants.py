@@ -27,6 +27,7 @@ NATURE_ORDINAL = 'ordinal'
 NATURE_INTERVAL = 'interval'
 NATURE_RATIO = 'ratio'
 NATURE_PERCENT = 'percent'
+NATURE_DICHOTOMOUS = 'dichotomous'
 NATURE_OTHER = 'other'
 NATURE_VALUES = (NATURE_NOMINAL,
                  NATURE_ORDINAL,
@@ -57,3 +58,10 @@ TIME_VALUES = (TIME_YES,
 # --------------------------------------
 PLOT_BAR = "bar"
 PLOT_CONTINUOUS = "continuous"
+ORDINAL_COUNT = 'count'
+DICHOTOMOUS_LOGICAL = 'logical'
+DICHOTOMOUS_BINARY = 'logical'
+DICHOTOMOUS_OTHER = 'other'
+TIME = 'time'
+PERCENT_01 = '0-1'
+PERCENT_100 = '0-100'
