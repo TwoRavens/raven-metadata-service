@@ -36,13 +36,13 @@ class TypeGuessSeries(object):
             # Can a String be continuous, No?
             # ratio, percent, time or other
             self.purpose.append(col_const.INTERVAL_CONTINUOUS)
-            if PreprocessUtils.check_nature(self.col_series) == 'percent':
+            if PreprocessUtils.check_nature(self.col_series) == col_const.NATURE_PERCENT:
                 self.purpose.append(col_const.NATURE_PERCENT)
                 if self.col_series.between(0, 1).all():
                     self.purpose.append(col_const.PERCENT_01)
                 elif self.col_series.between(0, 100).all():
                     self.purpose.append(col_const.PERCENT_100)
-            elif PreprocessUtils.check_nature(self.col_series) == 'ratio':
+            elif PreprocessUtils.check_nature(self.col_series) == col_const.NATURE_RATIO:
                 self.purpose.append(col_const.NATURE_RATIO)
 
             elif PreprocessUtils.check_time(self.col_series):
