@@ -16,7 +16,6 @@ class TypeGuessSeries(object):
         self.col_info = col_info
         self.variable_dict = {}
         self.purpose = []
-        self.is_logical = None
         self.check_leaf()
 
     def check_leaf(self):
@@ -29,7 +28,7 @@ class TypeGuessSeries(object):
         col_const.valid = int(self.col_series.count())
 
         self.col_series.dropna(inplace=True)
-        self.is_logical = PreprocessUtils.is_logical(self.col_series)
+        uniques = self.col_series.unique()
 
         if is_float_dtype(self.col_series):
             """ These are classified as continuous and numeric"""
@@ -56,22 +55,22 @@ class TypeGuessSeries(object):
             # clear definition required for ordinal and nominal
             self.purpose.append(col_const.INTERVAL_DISCRETE)
             # dichotomous, ordinal, nominal
-            if is_categorical_dtype(self.col_series) and not self.is_logical:
-                # is categorical best definition for nominal data
-                """ classification : character or boolean"""
-                self.purpose.append(col_const.NATURE_NOMINAL)
-
-            elif self.is_logical:  # or any other condition
+            if 0 < len(uniques) <= 2:  # or any other condition
                 """ discrete : dichotomous """
                 # elif: check for dichotomous with other conditions also
                 self.purpose.append(col_const.NATURE_DICHOTOMOUS)
-                dichotomous_uniques = self.col_series.unique()
-                if self.is_logical:
+
+                if PreprocessUtils.is_logical(self.col_series):
                     self.purpose.append(col_const.DICHOTOMOUS_LOGICAL)
-                elif is_numeric_dtype(dichotomous_uniques) or len(dichotomous_uniques) == 2:
+                elif is_numeric_dtype(uniques) or len(uniques) == 2:
                     self.purpose.append(col_const.DICHOTOMOUS_BINARY)
                 else:
                     self.purpose.append(col_const.DICHOTOMOUS_OTHER)  # may be other classification definition
+
+            elif is_categorical_dtype(self.col_series):
+                # is categorical best definition for nominal data
+                """ classification : character or boolean"""
+                self.purpose.append(col_const.NATURE_NOMINAL)
 
             else:
                 """ discrete : numeric : ordinal"""
