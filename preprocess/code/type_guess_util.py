@@ -17,7 +17,7 @@ class TypeGuessUtil(object):
         self.colcount = len(self.dataframe.columns)
         # { col_name : ColumnInfoObject, col_name : ColumnInfoObject}
         self.variable_dict = {}
-
+        self.binary = False
         # # final outout returned
         self.check_types()
 
@@ -56,28 +56,26 @@ class TypeGuessUtil(object):
             # Drop nulls...
             series_info.dropna(inplace=True)
 
+            uniques = series_info.unique()
+
+            binary = self.check_binary(len(uniques))
+
+            # set up binary values..
+            if binary:
+                col_info.binary = col_const.BINARY_YES
+            else:
+                col_info.binary = col_const.BINARY_NO
+
             if self.is_not_numeric(series_info) or self.is_logical(series_info):
 
                 col_info.numchar_val = col_const.NUMCHAR_CHARACTER
                 col_info.default_interval = col_const.INTERVAL_DISCRETE
                 col_info.nature = col_const.NATURE_NOMINAL
-
-                if len(series_info.unique()) == 2:
-                    col_info.binary = col_const.BINARY_YES
-                else:
-                    col_info.binary = col_const.BINARY_NO
-
                 self.variable_dict[colname] = col_info
 
                 continue    # go onto next column
 
             series_info = series_info.astype('int')
-            # print(data_info)
-
-            if len(series_info.unique()) == 2:
-                col_info.binary = col_const.BINARY_YES
-            else:
-                col_info.binary = col_const.BINARY_NO
 
             if any(series_info.isnull()):
                 # CANNOT REACH HERE B/C NULLS ARE DROPPED!
@@ -91,14 +89,12 @@ class TypeGuessUtil(object):
                 if is_float_dtype(series_info):
                     col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     col_info.nature = self.check_nature(series_info, True)
-                    # print("#5")
-                    # print(col_info.nature)
+
                 else:
                     col_info.default_interval = col_const.INTERVAL_DISCRETE
                     col_info.nature = self.check_nature(series_info, False)
 
             self.variable_dict[colname] = col_info
-
 
     @staticmethod
     def is_not_numeric(var_series):
@@ -173,3 +169,11 @@ class TypeGuessUtil(object):
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
         return col_const.NOT_IMPLEMENTED
+
+    @staticmethod
+    def check_binary(unique_size):
+        """ check if the series is binary or not """
+        if unique_size is 2:
+            return True
+        else:
+            return False
