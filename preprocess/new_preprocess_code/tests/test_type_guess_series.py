@@ -6,14 +6,15 @@ from io import StringIO
 
 import pandas as pd
 import numpy as np
+from msg_util import msg, msgt, dashes
+from type_guess_series import *
+import col_info_constants as col_const
 
 
 PREPROCESS_DIR = dirname(dirname(dirname(abspath(__file__))))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
-from msg_util import msg, msgt, dashes
-from type_guess_series import *
-import col_info_constants as col_const
+
 
 
 class TestTypeGuess(unittest.TestCase):

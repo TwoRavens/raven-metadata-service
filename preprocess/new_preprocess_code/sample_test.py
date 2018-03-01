@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 
-series = pd.Series([True, False, True, True])  # ['discrete', 'dichotomous', 'logical']
-#series = pd.Series([1.3243, 21.123123, 65.3242342])  # ['continuous', 'ratio']
+#series = pd.Series([True, False, True, True, np.nan])  # ['discrete', 'dichotomous', 'logical']
+#series = pd.Series([1.3243, 21.123123, 65.3242342, 0.44])  # ['continuous', 'ratio']
 #series = pd.Series([0, 1, 1, 0])  # ['discrete', 'ordinal', 'count']
 #series = pd.Series(['Male', 'Female', 'Male', 'Female'])  # ['discrete', 'ordinal', 'count']
 #series = pd.Series(['India', 'USA', 'Italy', 'France'])  # ['discrete', 'ordinal', 'count']
