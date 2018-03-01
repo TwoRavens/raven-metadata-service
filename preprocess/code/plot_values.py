@@ -5,6 +5,7 @@ import numpy as np
 from column_info import *
 import col_info_constants as col_const
 from type_guess_util import *
+from scipy import stats
 
 logger = logging.getLogger(__name__)
 
@@ -84,6 +85,9 @@ class PlotValuesUtil(object):
                 # code for plot values
                 self.col_info.plot_type = col_const.PLOT_CONTINUOUS
                 # here the code for plotx and ploty comes using r density function
+                self.col_info.plotx = np.linspace(start=min(np.sort(uniques)), stop=max(np.sort(uniques)), num=len(np.sort(uniques)))
+
+                self.col_info.ploty = self.calculate_density(self.col_info.plotx)
 
                 # code for cdf values
                 self.col_info.cdf_plottype = col_const.PLOT_CONTINUOUS
@@ -124,3 +128,9 @@ class PlotValuesUtil(object):
 
         # if metadataflag  !=1
         self.col_info.labl = ""
+
+    @staticmethod
+    def calculate_density(x_values):
+        y = stats.gaussian_kde(x_values)
+
+        return y
