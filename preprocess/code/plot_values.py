@@ -7,7 +7,6 @@ from column_info import *
 import col_info_constants as col_const
 from type_guess_util import *
 from scipy import stats
-import matplotlib.pyplot as plt
 logger = logging.getLogger(__name__)
 
 
@@ -52,10 +51,10 @@ class PlotValuesUtil(object):
 
         nat = self.col_info.nature
         my_interval = self.col_info.interval
-
+        self.col_series.dropna(inplace=True)
         if col_const.NATURE_NOMINAL != nat:
             logger.debug("into not nominal %s", self.colname)
-            self.col_series.dropna(inplace=True)
+
             uniques = np.sort(self.col_series.unique())
             lu = len(uniques)
 
@@ -84,12 +83,13 @@ class PlotValuesUtil(object):
 
             else:
                 # code for plot values
-                sorted_val = np.sort(uniques)
                 self.col_info.plot_type = col_const.PLOT_CONTINUOUS
                 # here the code for plotx and ploty comes using r density function
-                self.col_info.plotx = np.linspace(start=min(self.col_series), stop=max(self.col_series), num=50)
-                kernel = stats.gaussian_kde(self.col_series)
-                self.col_info.ploty = kernel(self.col_info.cdf_plotx)
+                if self.col_series is not None:
+                    x = np.linspace(start=min(self.col_series), stop=max(self.col_series), num=50)
+                    self.col_info.plotx = x
+                    kernel = stats.gaussian_kde(self.col_series)
+                    self.col_info.ploty = kernel(x)
 
                 # code for cdf values
                 self.col_info.cdf_plottype = col_const.PLOT_CONTINUOUS

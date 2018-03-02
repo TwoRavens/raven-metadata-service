@@ -42,10 +42,7 @@ class PreprocessRunner(object):
             self.add_error_message('The dataframe is not valid')
             return False
 
-        if not self.create_variable_info():
-            return False
-
-        if not self.calculate_stats():
+        if not self.calculate_features():
             return False
 
         return True
@@ -109,43 +106,24 @@ class PreprocessRunner(object):
 
         return runner, None
 
-
-
-    def create_variable_info(self):
-        """Use typeguess to produce initial variable info"""
-        if self.has_error:
-            return False
-
-        # Use the TypeGuessUtil to produce variable_info
-        #
-        type_guess_util = TypeGuessUtil(self.df)
-
-        self.variable_info = type_guess_util.get_variable_dict()
-
-        if not self.variable_info:
-            self.add_error_message('Error encountered during TypeGuess process')
-            return False
-
-        return True
-
-
-    def calculate_stats(self):
+    def calculate_features(self):
         """For each variable, calculate summary stats"""
         if self.has_error:
             return False
-
-        if not self.variable_info:
-            self.add_error_message('Error encountered.  self.variable_info not available')
-            return False
-
-        # Iterate through variable info and
-        # run calc stats on each ColumnInfo object
+        # Iterate through data frame and
+        # run type guess, cal_stats, and plot_values on each ColumnInfo object
         #
-        for col_name, col_info in self.variable_info.items():
+        for colnames in self.df:
             # set stats for each column
-            col_series = self.df[col_name]
+            col_info = ColumnInfo(colnames)
+            col_series = self.df[colnames]
+
+            TypeGuessUtil(col_series, col_info)
             SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
+            # assign object info to the variable_info
+            #
+            self.variable_info[colnames] = col_info
 
         return True
 
