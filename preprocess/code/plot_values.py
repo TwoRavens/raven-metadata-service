@@ -6,7 +6,7 @@ from column_info import *
 import col_info_constants as col_const
 from type_guess_util import *
 from scipy import stats
-
+import matplotlib.pyplot as plt
 logger = logging.getLogger(__name__)
 
 
@@ -57,13 +57,13 @@ class PlotValuesUtil(object):
             self.col_series.dropna(inplace=True)
             uniques = np.sort(self.col_series.unique())
             lu = len(uniques)
-            cdf_func = self.ecdf(self.col_series)
+
             if lu < self.histlimit:
                 logger.debug("into it %s", self.colname)
                 # code for plot values
                 self.col_info.plot_type = col_const.PLOT_BAR
 
-                for val, cnt in self.col_series.sort_values().value_counts().iteritems():
+                for val, cnt in self.col_series.sort_values().value_counts().items():
                     if type(val) is not str:
                         try:
                             self.output[str(val)] = cnt
@@ -83,11 +83,12 @@ class PlotValuesUtil(object):
 
             else:
                 # code for plot values
+                sorted_val = np.sort(uniques)
                 self.col_info.plot_type = col_const.PLOT_CONTINUOUS
                 # here the code for plotx and ploty comes using r density function
-                self.col_info.plotx = np.linspace(start=min(np.sort(uniques)), stop=max(np.sort(uniques)), num=len(np.sort(uniques)))
-
-                self.col_info.ploty = self.calculate_density(self.col_info.plotx)
+                self.col_info.plotx = np.linspace(start=min(self.col_series), stop=max(self.col_series), num=50)
+                kernel = stats.gaussian_kde(self.col_series)
+                self.col_info.ploty = kernel(self.col_info.cdf_plotx)
 
                 # code for cdf values
                 self.col_info.cdf_plottype = col_const.PLOT_CONTINUOUS
@@ -106,7 +107,7 @@ class PlotValuesUtil(object):
             # code for plot values
             self.col_info.plot_type = col_const.PLOT_BAR
 
-            for val, cnt in self.col_series.sort_values().value_counts().iteritems():
+            for val, cnt in self.col_series.sort_values().value_counts().items():
                 if type(val) is not str:
                     try:
                         self.output[str(val)] = cnt
@@ -128,9 +129,3 @@ class PlotValuesUtil(object):
 
         # if metadataflag  !=1
         self.col_info.labl = ""
-
-    @staticmethod
-    def calculate_density(x_values):
-        y = stats.gaussian_kde(x_values)
-
-        return y

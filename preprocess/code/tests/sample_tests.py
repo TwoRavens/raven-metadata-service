@@ -1,113 +1,141 @@
 import pandas as pd
 import numpy as np
-
+import matplotlib.pyplot as plt
 from scipy import stats
+from scipy.stats import norm
 from sklearn.neighbors import KernelDensity
 from scipy.stats import gaussian_kde
 from statsmodels.nonparametric.kde import KDEUnivariate
 
+#
+# cnt_min = None
+# val_min = None
+# cnt_max = None
+# val_max = None
+# output = []
+# col_data = pd.Series([261, 29, 33, 15, 39, 28, 95, 5, 6, 28, 69, 8, 105, 38, 15])
+# col_data1 = pd.Series(["India", "USA", "India", "USA", "France", "Japan"])
+# cylinders = pd.Series([])
+#
+# for i in range(397):
+#     output.append(i)
+#
+# # # col_data= pd.Series([2,4,5,6])
+# # col_data.dropna(inplace=True)
+# # total_sum = sum(col_data)
+# # fraction_val = []
+# # for val, cnt in col_data.items():
+# #     fraction_val.append(np.math.pow(cnt / total_sum, 2))
+# #
+# # print(sum(fraction_val))
+#
+# # for col_val, val_cnt in col_data.value_counts(sort=True, ascending=True).iteritems():
+# #     print()
+# #     if cnt_min is None and val_min is None and cnt_max is None and val_max is None:
+# #         print("here", col_val,val_cnt)
+# #
+# #         cnt_min = val_cnt
+# #         val_min = col_val
+# #         cnt_max = val_cnt
+# #         val_max = col_val
+# #
+# #     if val_cnt == cnt_max:
+# #             # val_cnt = cnt_max
+# #             output.append(col_val)
+# #             # print(" append ", col_val , val_cnt)
+# #     elif val_cnt > cnt_max:
+# #             cnt_max = val_cnt
+# #             output.clear()
+# #             output.append(col_val)
+# #             # print(" clear and append", col_val, val_cnt)
+# #
+# #
+# # print(output)
+#
+# # total_sum = 0
+# #
+# #
+# # for col_val, val_cnt in col_data1.value_counts().iteritems():
+# #     total_sum = total_sum + val_cnt
+# #
+# # print(total_sum)
+# val = pd.Series([1.0,
+#                 9.081632653061224,
+#                 17.163265306122447,
+#                 25.24489795918367,
+#                 33.326530612244895,
+#                 41.408163265306115,
+#                 49.48979591836734,
+#                 57.57142857142857,
+#                 65.65306122448979,
+#                 73.73469387755101,
+#                 81.81632653061223,
+#                 89.89795918367346,
+#                 97.97959183673468,
+#                 106.0612244897959,
+#                 114.14285714285714,
+#                 122.22448979591836,
+#                 130.30612244897958,
+#                 138.3877551020408,
+#                 146.46938775510202,
+#                 154.55102040816325,
+#                 162.63265306122446,
+#                 170.7142857142857,
+#                 178.79591836734693,
+#                 186.87755102040813,
+#                 194.95918367346937,
+#                 203.0408163265306,
+#                 211.1224489795918,
+#                 219.20408163265304,
+#                 227.28571428571428,
+#                 235.36734693877548,
+#                 243.44897959183672,
+#                 251.53061224489792,
+#                 259.61224489795916,
+#                 267.69387755102036,
+#                 275.7755102040816,
+#                 283.85714285714283,
+#                 291.93877551020404,
+#                 300.0204081632653,
+#                 308.1020408163265,
+#                 316.1836734693877,
+#                 324.2653061224489,
+#                 332.3469387755102,
+#                 340.4285714285714,
+#                 348.5102040816326,
+#                 356.59183673469386,
+#                 364.67346938775506,
+#                 372.75510204081627,
+#                 380.83673469387753,
+#                 388.91836734693874,
+#                 397.0])
+# kernel = stats.gaussian_kde(output)
+# value = kernel(val)
+#
+# print(kernel.dataset)
+# print(value.size)
+#
+# plt.plot(val, value, 'r', label="KDE estimation", color="blue")
+# plt.hist(output, normed=10, color="cyan", alpha=.8)
+# plt.legend()
+# plt.title("d3mIndex plot")
+# plt.show()
+#
 
-cnt_min = None
-val_min = None
-cnt_max = None
-val_max = None
-output = []
-col_data = pd.Series([261, 29, 33, 15, 39, 28, 95, 5, 6, 28, 69, 8, 105, 38, 15])
-col_data1 = pd.Series(["India", "USA", "India", "USA", "France", "Japan"])
-# # col_data= pd.Series([2,4,5,6])
-# col_data.dropna(inplace=True)
-# total_sum = sum(col_data)
-# fraction_val = []
-# for val, cnt in col_data.items():
-#     fraction_val.append(np.math.pow(cnt / total_sum, 2))
-#
-# print(sum(fraction_val))
 
-# for col_val, val_cnt in col_data.value_counts(sort=True, ascending=True).iteritems():
-#     print()
-#     if cnt_min is None and val_min is None and cnt_max is None and val_max is None:
-#         print("here", col_val,val_cnt)
-#
-#         cnt_min = val_cnt
-#         val_min = col_val
-#         cnt_max = val_cnt
-#         val_max = col_val
-#
-#     if val_cnt == cnt_max:
-#             # val_cnt = cnt_max
-#             output.append(col_val)
-#             # print(" append ", col_val , val_cnt)
-#     elif val_cnt > cnt_max:
-#             cnt_max = val_cnt
-#             output.clear()
-#             output.append(col_val)
-#             # print(" clear and append", col_val, val_cnt)
-#
-#
-# print(output)
-
-# total_sum = 0
-#
-#
-# for col_val, val_cnt in col_data1.value_counts().iteritems():
-#     total_sum = total_sum + val_cnt
-#
-# print(total_sum)
-val = pd.Series([
-            -95.4940990854581,
-            -83.4739317758476,
-            -71.453764466237,
-            -59.4335971566265,
-            -47.413429847016,
-            -35.3932625374054,
-            -23.3730952277949,
-            -11.3529279181844,
-            0.667239391426165,
-            12.6874067010367,
-            24.7075740106472,
-            36.7277413202578,
-            48.7479086298683,
-            60.7680759394788,
-            72.7882432490894,
-            84.8084105586999,
-            96.8285778683104,
-            108.848745177921,
-            120.868912487532,
-            132.889079797142,
-            144.909247106753,
-            156.929414416363,
-            168.949581725974,
-            180.969749035584,
-            192.989916345195,
-            205.010083654805,
-            217.030250964416,
-            229.050418274026,
-            241.070585583637,
-            253.090752893247,
-            265.110920202858,
-            277.131087512468,
-            289.151254822079,
-            301.17142213169,
-            313.1915894413,
-            325.211756750911,
-            337.231924060521,
-            349.252091370132,
-            361.272258679742,
-            373.292425989353,
-            385.312593298963,
-            397.332760608574,
-            409.352927918184,
-            421.373095227795,
-            433.393262537405,
-            445.413429847016,
-            457.433597156626,
-            469.453764466237,
-            481.473931775848,
-            493.494099085458 ])
-x = np.linspace(min(val), max(val), len(val))
-kernel = stats.gaussian_kde(val)
-
-
-print(kernel(np.sort(val)))
-
+data = pd.read_csv("/Users/kripanshubhargava/Desktop/raven-metadata-service/preprocess/input/learningData.csv")
+df = pd.DataFrame(data)
+df.dropna(inplace=True)
+input_data = []
+for val in df:
+    print(df[val])
+    input_data = df[val]
+    x = np.linspace(min(input_data), max(input_data), num=50)
+    kernel = stats.gaussian_kde(input_data)
+    value = kernel(x)
+    plt.plot(x, value, 'r', label="KDE estimation", color="blue")
+    plt.hist(input_data, normed=10, color="cyan", alpha=.8)
+    plt.legend()
+    plt.title(input_data.head())
+    plt.show()
 
