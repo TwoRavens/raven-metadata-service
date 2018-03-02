@@ -86,9 +86,10 @@ class PlotValuesUtil(object):
                 self.col_info.plot_type = col_const.PLOT_CONTINUOUS
                 # here the code for plotx and ploty comes using r density function
                 if self.col_series is not None:
-                    x = np.linspace(start=min(self.col_series), stop=max(self.col_series), num=50)
-                    self.col_info.plotx = x
                     kernel = stats.gaussian_kde(self.col_series)
+                    x = np.linspace(start=min(self.col_series) - kernel.factor,
+                                    stop=max(self.col_series) + kernel.factor, num=50)
+                    self.col_info.plotx = x
                     self.col_info.ploty = kernel(x)
 
                 # code for cdf values
