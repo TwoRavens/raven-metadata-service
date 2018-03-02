@@ -2,6 +2,7 @@
 from __future__ import print_function
 import logging
 import numpy as np
+import pandas as pd
 from column_info import *
 import col_info_constants as col_const
 from type_guess_util import *

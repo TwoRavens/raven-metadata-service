@@ -8,13 +8,13 @@ from column_info import ColumnInfo
 
 class TypeGuessUtil(object):
     """Check variable types of a dataframe"""
-    def __init__(self, dataframe):
+    def __init__(self, col_series, col_info):
         """Init with a pandas dataframe"""
-        assert dataframe is not None, "dataframe can't be None"
+        assert col_series is not None, "dataframe can't be None"
 
-        self.dataframe = dataframe
-        self.colnames = self.dataframe.columns
-        self.colcount = len(self.dataframe.columns)
+        self.col_series = col_series
+        self.col_info = col_info
+        self.colnames = self.col_info.colname
         # { col_name : ColumnInfoObject, col_name : ColumnInfoObject}
         self.variable_dict = {}
         self.binary = False
