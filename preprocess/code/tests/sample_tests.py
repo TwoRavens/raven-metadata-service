@@ -127,11 +127,15 @@ data = pd.read_csv("/Users/kripanshubhargava/Desktop/raven-metadata-service/prep
 df = pd.DataFrame(data)
 df.dropna(inplace=True)
 input_data = []
+# print(list(df.columns[0]))
 for val in df:
-    print(df[val])
+    print(val)
     input_data = df[val]
-    x = np.linspace(min(input_data), max(input_data), num=50)
     kernel = stats.gaussian_kde(input_data)
+    x = np.linspace(min(input_data) - kernel.factor, max(input_data)+ kernel.factor, num=50)
+
+    print(kernel.factor)
+    print(" covariance, " , kernel.covariance_factor)
     value = kernel(x)
     plt.plot(x, value, 'r', label="KDE estimation", color="blue")
     plt.hist(input_data, normed=10, color="cyan", alpha=.8)
