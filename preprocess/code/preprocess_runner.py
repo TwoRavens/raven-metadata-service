@@ -22,7 +22,8 @@ class PreprocessRunner(object):
 
         # to populate
         self.variable_info = {} # { variable_name: ColumnInfo, ...}
-
+        self.num_vars = None
+        self.num_vars_complete = None
         # for error handling
         self.has_error = False
         self.error_message = None
@@ -113,6 +114,9 @@ class PreprocessRunner(object):
         # Iterate through data frame and
         # run type guess, cal_stats, and plot_values on each ColumnInfo object
         #
+        self.num_vars = len(self.df.columns)
+        self.num_vars_complete = 0
+
         for colnames in self.df:
             # set stats for each column
             col_info = ColumnInfo(colnames)
@@ -123,8 +127,11 @@ class PreprocessRunner(object):
             PlotValuesUtil(col_series, col_info)
             # assign object info to the variable_info
             #
+            self.num_vars_complete = + 1
             self.variable_info[colnames] = col_info
 
+        print("completed column", self.num_vars_complete)
+        print(" Number of variable ", self.num_vars)
         return True
 
     '''
@@ -192,12 +199,11 @@ class PreprocessRunner(object):
 
         fmt_variable_info = OrderedDict()
         for col_name, col_info in self.variable_info.items():
-            #col_info.print_values()
+            # col_info.print_values()
             fmt_variable_info[col_name] = col_info.as_dict()
 
         overall_dict = OrderedDict()
         overall_dict['variables'] = fmt_variable_info
-
 
         if as_string:
             # Convert the OrderedDict to a JSON string
