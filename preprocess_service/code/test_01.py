@@ -26,7 +26,7 @@ def try_directory():
     task_items = []
     num_files = 0
     cnt = 0
-    for loop_num in range(50):
+    for loop_num in range(1):
         for item in os.listdir(file_dir):
             if not item.endswith('.tab'):
                 continue

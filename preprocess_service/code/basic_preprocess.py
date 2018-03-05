@@ -32,13 +32,13 @@ app = Celery('basic_preprocess',
 
 
 @app.task
-def preprocess_csv_file(input_file, output_dir):
+def preprocess_csv_file(input_file, output_dir=None):
     """Run preprocess on a csv file"""
     init_timestamp = datetime.now()
     start_time = time.time()
 
     print('(%s) Start preprocess: %s' % (init_timestamp, input_file))
-    if not isdir(output_dir):
+    if output_dir and not isdir(output_dir):
         return dict(success=False,
                     input_file=input_file,
                     message='Directory does not exist: %s' % output_dir)
@@ -68,6 +68,17 @@ def preprocess_csv_file(input_file, output_dir):
     # write to file
     # ------------------------------
     jstring = runner.get_final_json(indent=4)
+
+    if output_dir is None:
+        # your script
+        elapsed_time = time.time() - start_time
+        elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+
+        return dict(success=True,
+                    input_file=input_file,
+                    message=user_msg,
+                    elapsed_time=elapsed_time_str,
+                    data=runner.get_final_dict())
 
     # create output filename
     output_filepath = None
@@ -109,5 +120,5 @@ def preprocess_csv_file(input_file, output_dir):
                 input_file=input_file,
                 message=user_msg,
                 elapsed_time=elapsed_time_str,
-                data=runner.get_final_json())
+                data=runner.get_final_dict())
                 #data=runner.get_final_dict())
