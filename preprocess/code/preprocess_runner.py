@@ -11,7 +11,7 @@ from np_json_encoder import NumpyJSONEncoder
 from type_guess_util import TypeGuessUtil
 from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
-from plot_values import PlotValuesUtil
+#from plot_values import PlotValuesUtil
 
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
@@ -145,7 +145,7 @@ class PreprocessRunner(object):
             # set stats for each column
             col_series = self.df[col_name]
             SummaryStatsUtil(col_series, col_info)
-            PlotValuesUtil(col_series, col_info)
+            #PlotValuesUtil(col_series, col_info)
 
         return True
 
