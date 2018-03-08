@@ -54,7 +54,9 @@ def stop_redis():
 
 @task
 def run_celery():
-    """Start celery"""
+    """Clear redis and Start celery"""
+    clear_redis()
+
     celery_cmd = ('celery -A ravens_metadata worker -l info')
     local(celery_cmd)
 

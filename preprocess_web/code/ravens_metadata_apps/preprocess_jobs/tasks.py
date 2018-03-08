@@ -22,19 +22,19 @@ from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from preprocess_runner import PreprocessRunner
 from msg_util import msg, msgt
 
-from celery import shared_task
+from celery import task, shared_task
 
 from ravens_metadata.celery import celery_app
 
-#@shared_task(bind=celery_app)
-@shared_task(bind=celery_app)
+@shared_task
 def preprocess_csv_file(input_file, output_dir=None):
     """Run preprocess on a csv file"""
     init_timestamp = datetime.now()
     start_time = time.time()
 
     print('(%s) Start preprocess: %s' % (init_timestamp, input_file))
-    if output_dir and not isdir(output_dir):
+
+    if output_dir is not None and isdir(output_dir):
         return dict(success=False,
                     input_file=input_file,
                     message='Directory does not exist: %s' % output_dir)
@@ -43,7 +43,6 @@ def preprocess_csv_file(input_file, output_dir=None):
     # - check if it's tab delimited
     #
     fname_base, fname_ext = splitext(basename(input_file))
-
     if fname_ext.lower() == '.tab':
         runner, user_msg = PreprocessRunner.load_from_tabular_file(\
                                     input_file)
@@ -55,7 +54,6 @@ def preprocess_csv_file(input_file, output_dir=None):
         return dict(success=False,
                     input_file=input_file,
                     message=user_msg)
-
 
     #runner.show_final_info()
 

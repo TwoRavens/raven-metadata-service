@@ -133,7 +133,12 @@ STATIC_URL = '/static/'
 # CELERY SETTINGS
 # -------------------------------
 CELERY_BROKER_URL = 'redis://localhost'
+CELERY_RESULT_BACKEND = 'redis://localhost'
 
-CELERY_RESULT_BACKEND = CELERY_BROKER_URL
+#CELERY_TASK_SERIALIZER = 'pickle'
+#CELERY_RESULT_SERIALIZER = 'json'
 
+# -------------------------------
+# Fabric related
+# -------------------------------
 ALLOW_FAB_DELETE = False
