@@ -5,8 +5,9 @@ from django.core.files.base import ContentFile
 
 from celery.result import AsyncResult
 
-from basic_preprocess import preprocess_csv_file
-from random_util import get_alphanumeric_lowercase
+#from basic_preprocess import preprocess_csv_file
+from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file
+from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
@@ -57,7 +58,7 @@ class JobUtil(object):
             job.end_time = dt.now()
             job.save()
             ye_task.forget()
-            
+
         elif ye_task.state == 'STATE_FAILURE':
             job.set_state_failure()
             job.user_message = 'ye_task failed....'

@@ -15,11 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url, include
+from django.conf.urls import include
+from django.views.generic import RedirectView
 
 urlpatterns = [
-    url(r'^preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
+
+    path(r'preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
 
     path('admin/', admin.site.urls),
 
+    # temp path until there's a home page
+    path(r'', RedirectView.as_view(\
+                pattern_name='view_basic_upload_form',
+                permanent=False)),
 ]

@@ -19,10 +19,10 @@ BASE_DIR = dirname(dirname(os.path.abspath(__file__)))
 #
 # Add path to celery task code
 #
-PREPROCESS_SVC_DIR = join(dirname(dirname(dirname(BASE_DIR))),
-                          'preprocess_service',
+PREPROCESS_DIR = join(dirname(dirname(dirname(BASE_DIR))),
+                          'preprocess',
                           'code')
-sys.path.append(PREPROCESS_SVC_DIR)
+sys.path.append(PREPROCESS_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -128,3 +128,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# -------------------------------
+# CELERY SETTINGS
+# -------------------------------
+CELERY_BROKER_URL = 'redis://localhost'
+
+CELERY_RESULT_BACKEND = CELERY_BROKER_URL
+
+ALLOW_FAB_DELETE = False

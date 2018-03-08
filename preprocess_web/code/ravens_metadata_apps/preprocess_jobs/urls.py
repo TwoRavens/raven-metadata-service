@@ -18,8 +18,8 @@ urlpatterns = (
 
     # default to upload form, for now
     #
-    path(r'',
-        views.view_basic_upload_form,
+    path('hello',
+        views.test_view,
         name='test_view'),
 
 )

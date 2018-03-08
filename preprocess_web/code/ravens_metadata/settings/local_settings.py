@@ -10,6 +10,8 @@ from .base import *
 
 DEBUG = True
 
+ALLOW_FAB_DELETE = True
+
 TIME_ZONE = 'America/New_York'
 
 SECRET_KEY = 'ye-local-laptop-secret-key'

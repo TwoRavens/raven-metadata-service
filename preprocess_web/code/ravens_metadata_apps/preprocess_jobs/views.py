@@ -12,6 +12,8 @@ from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm
 
 # Create your views here.
 def test_view(request):
+    from ravens_metadata.celery import debug_task
+    debug_task.delay()
     return HttpResponse('hello')
 
 

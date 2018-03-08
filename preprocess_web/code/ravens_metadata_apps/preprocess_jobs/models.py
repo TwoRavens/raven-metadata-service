@@ -86,6 +86,14 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
+    def source_file_path(self):
+        """To display the full path in the admin"""
+        if self.source_file:
+            return self.source_file.path
+
+        return 'n/a'
+
+
     def is_finished(self):
         """Is the task complete?"""
         return self.state in (STATE_SUCCESS, STATE_FAILURE)
