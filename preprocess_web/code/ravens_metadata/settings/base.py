@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # track preprocess
-    'ravens_metadata_apps.preprocess_logs',
+    'ravens_metadata_apps.preprocess_jobs',
 ]
 
 MIDDLEWARE = [

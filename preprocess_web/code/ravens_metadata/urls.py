@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url, include
 
 urlpatterns = [
-    url(r'^preprocess/', include('ravens_metadata_apps.preprocess_logs.urls')),
+    url(r'^preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
 
     path('admin/', admin.site.urls),
 
