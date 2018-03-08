@@ -29,20 +29,22 @@ DATABASES = {
 
 SESSION_COOKIE_NAME = 'ravens_metadata_local'
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [join(dirname(BASE_DIR), 'static')]
+
 # where static files are collected
 STATIC_ROOT = join(LOCAL_SETUP_DIR, 'staticfiles')
 if not isdir(STATIC_ROOT):
     makedirs(STATIC_ROOT)
 
 
-TEST_DIRECT_STATIC = join(BASE_DIR, 'assets')
-
 MEDIA_ROOT = join(LOCAL_SETUP_DIR, 'preprocess_files')
 if not isdir(MEDIA_ROOT):
     os.makedirs(MEDIA_ROOT)
 
-ALLOWED_HOSTS = ('0.0.0.0',
-                 '127.0.0.1')
+ALLOWED_HOSTS = ('*', )
+
 
 # For local dev, remove some of the user password requirements
 #
@@ -52,3 +54,5 @@ AUTH_PASSWORD_VALIDATORS = [
     #dict(NAME='django.contrib.auth.password_validation.CommonPasswordValidator'),
     #dict(NAME='django.contrib.auth.password_validation.NumericPasswordValidator'),
 ]
+
+TEST_DIRECT_STATIC = join(dirname(BASE_DIR), 'static')

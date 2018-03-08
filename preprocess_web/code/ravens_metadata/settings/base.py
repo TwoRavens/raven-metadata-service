@@ -64,7 +64,7 @@ ROOT_URLCONF = 'ravens_metadata.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [join(dirname(BASE_DIR), 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,6 +126,7 @@ USE_TZ = True
 
 TIME_ZONE = 'America/New_York'
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -144,3 +145,5 @@ CELERY_RESULT_BACKEND = 'redis://localhost'
 # Fabric related
 # -------------------------------
 ALLOW_FAB_DELETE = False
+
+TEST_DIRECT_STATIC = None

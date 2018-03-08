@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from django.views.generic import RedirectView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
 
@@ -28,4 +30,6 @@ urlpatterns = [
     path(r'', RedirectView.as_view(\
                 pattern_name='view_basic_upload_form',
                 permanent=False)),
-]
+] + static(settings.STATIC_URL,
+           #document_root=settings.STATIC_ROOT)
+           document_root=settings.TEST_DIRECT_STATIC)
