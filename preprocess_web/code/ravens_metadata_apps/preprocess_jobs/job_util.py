@@ -1,12 +1,15 @@
 """Utility class for the preprocess workflow"""
-from ravens_metadata_apps.preprocess_jobs.models import \
-    (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
+import json
+from datetime import datetime as dt
+from django.core.files.base import ContentFile
 
 from celery.result import AsyncResult
 
 from basic_preprocess import preprocess_csv_file
 from random_util import get_alphanumeric_lowercase
 
+from ravens_metadata_apps.preprocess_jobs.models import \
+    (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
@@ -42,10 +45,19 @@ class JobUtil(object):
                               app=preprocess_csv_file)
 
         if ye_task.state == 'SUCCESS':
+
+            preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
+
+            new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+            job.preprocess_file.save(new_name,
+                                     preprocess_data)
             job.set_state_success()
-            job.user_message = ye_task.result['data']
+
+            job.user_message = 'Task completed!  Preprocess is available'
+            job.end_time = dt.now()
             job.save()
             ye_task.forget()
+            
         elif ye_task.state == 'STATE_FAILURE':
             job.set_state_failure()
             job.user_message = 'ye_task failed....'

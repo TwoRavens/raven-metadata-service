@@ -1,3 +1,4 @@
+import json
 from collections import OrderedDict
 from django.db import models
 from model_utils.models import TimeStampedModel
@@ -78,6 +79,10 @@ class PreprocessJob(TimeStampedModel):
             if attr_name.startswith('_'):
                 continue
             od[attr_name] = '%s' % self.__dict__[attr_name]
+        #import ipdb; ipdb.set_trace()
+        if self.preprocess_file:
+            file_data = self.preprocess_file.read()
+            od['data'] = json.loads(file_data)
 
         return od
 
