@@ -8,93 +8,72 @@ from column_info import ColumnInfo
 
 class TypeGuessUtil(object):
     """Check variable types of a dataframe"""
-    def __init__(self, dataframe):
+    def __init__(self, col_series, col_info):
         """Init with a pandas dataframe"""
-        assert dataframe is not None, "dataframe can't be None"
+        assert col_series is not None, "dataframe can't be None"
 
-        self.dataframe = dataframe
-        self.colnames = self.dataframe.columns
-        self.colcount = len(self.dataframe.columns)
-        # { col_name : ColumnInfoObject, col_name : ColumnInfoObject}
-        self.variable_dict = {}
+        self.col_series = col_series
+        self.col_info = col_info
         self.binary = False
         # # final outout returned
         self.check_types()
 
-    def get_variable_dict(self):
-        """Return the calculated results"""
-        return self.variable_dict
-
-    def get_variable_count(self):
-        """Return the number of variables with type info"""
-        return len(self.variable_dict.keys())
-
     def check_types(self):
         """check the types of the dataframe"""
         # assert self.colnames, 'self.colnames must have values'
+        # number of missing entries
+        #
+        self.col_info.invalid = int(self.col_series.isnull().sum())
 
-        # Iterate though variables and set type info
-        for colname in self.colnames:
-            col_info = ColumnInfo(colname)
+        # number of valid entries
+        #
+        self.col_info.valid = int(self.col_series.count())
 
-            # retrieve the Series from the DataFrame
-            #
-            series_info = self.dataframe[colname]
+        # set time , what exactly we want to do with this
+        #
+        self.col_info.time_val = self.check_time(self.col_series)
 
-            # number of missing entries
-            #
-            col_info.invalid = int(series_info.isnull().sum())
+        # Drop nulls...
+        self.col_series.dropna(inplace=True)
 
-            # number of valid entries
-            #
-            col_info.valid = int(series_info.count())
+        uniques = self.col_series.unique()
 
-            # set time , what exactly we want to do with this
-            #
-            col_info.time_val = self.check_time(series_info)
+        binary = self.check_binary(len(uniques))
 
-            # Drop nulls...
-            series_info.dropna(inplace=True)
+        # set up binary values..
+        if binary:
+            self.col_info.binary = col_const.BINARY_YES
+        else:
+            self.col_info.binary = col_const.BINARY_NO
+        if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
 
-            uniques = series_info.unique()
+            self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
+            self.col_info.default_interval = col_const.INTERVAL_DISCRETE
+            self.col_info.nature = col_const.NATURE_NOMINAL
 
-            binary = self.check_binary(len(uniques))
+        else:
 
-            # set up binary values..
-            if binary:
-                col_info.binary = col_const.BINARY_YES
-            else:
-                col_info.binary = col_const.BINARY_NO
-
-            if self.is_not_numeric(series_info) or self.is_logical(series_info):
-
-                col_info.numchar_val = col_const.NUMCHAR_CHARACTER
-                col_info.default_interval = col_const.INTERVAL_DISCRETE
-                col_info.nature = col_const.NATURE_NOMINAL
-                self.variable_dict[colname] = col_info
-
-                continue    # go onto next column
-
-            series_info = series_info.astype('int')
+            series_info = self.col_series.astype('int')
 
             if any(series_info.isnull()):
                 # CANNOT REACH HERE B/C NULLS ARE DROPPED!
                 #
-                col_info.numchar_val = col_const.NUMCHAR_CHARACTER
-                col_info.nature = col_const.NATURE_NOMINAL
-                col_info.default_interval = col_const.INTERVAL_DISCRETE
+                self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
+                self.col_info.nature = col_const.NATURE_NOMINAL
+                self.col_info.default_interval = col_const.INTERVAL_DISCRETE
             else:
-                col_info.numchar_val = col_const.NUMCHAR_NUMERIC
+                self.col_info.numchar_val = col_const.NUMCHAR_NUMERIC
 
                 if is_float_dtype(series_info):
-                    col_info.default_interval = col_const.INTERVAL_CONTINUOUS
-                    col_info.nature = self.check_nature(series_info, True)
+                    self.col_info.default_interval = col_const.INTERVAL_CONTINUOUS
+                    self.col_info.nature = self.check_nature(series_info, True)
 
                 else:
-                    col_info.default_interval = col_const.INTERVAL_DISCRETE
-                    col_info.nature = self.check_nature(series_info, False)
+                    self.col_info.default_interval = col_const.INTERVAL_DISCRETE
+                    self.col_info.nature = self.check_nature(series_info, False)
 
-            self.variable_dict[colname] = col_info
+
+
 
     @staticmethod
     def is_not_numeric(var_series):

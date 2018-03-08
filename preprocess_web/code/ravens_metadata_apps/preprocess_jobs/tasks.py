@@ -23,10 +23,11 @@ from preprocess_runner import PreprocessRunner
 from msg_util import msg, msgt
 
 from celery import shared_task
-#from ravens_metadata.celery import app
 
-#@app.task(bind=True)
-@shared_task
+from ravens_metadata.celery import celery_app
+
+#@shared_task(bind=celery_app)
+@shared_task(bind=celery_app)
 def preprocess_csv_file(input_file, output_dir=None):
     """Run preprocess on a csv file"""
     init_timestamp = datetime.now()
