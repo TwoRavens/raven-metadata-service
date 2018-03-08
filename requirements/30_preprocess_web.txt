@@ -1,3 +1,11 @@
--r 20_preprocess_service.txt
+-r 10_preprocess.txt
 
-Flask==0.12.2
+# For queuing preprocess requests
+#
+celery==4.1.0
+redis==2.10.6
+
+#
+Django==2.0.3
+django-model-utils==3.1.1
+Fabric3==1.14.post1

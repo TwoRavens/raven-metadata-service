@@ -26,7 +26,6 @@ def test_run(input_file, output_filepath=None):
     runner.show_final_info()
 
     jstring = runner.get_final_json(indent=4)
-    msg(jstring)
 
     if output_filepath:
         try:

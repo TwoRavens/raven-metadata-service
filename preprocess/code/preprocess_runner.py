@@ -16,14 +16,16 @@ from plot_values import PlotValuesUtil
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
 
-    def __init__(self, dataframe):
+    def __init__(self, dataframe, **kwargs):
         """Init with a pandas dataframe"""
         self.df = dataframe
 
+        self.celery_task = kwargs.get('celery_task')
         # to populate
         self.variable_info = {} # { variable_name: ColumnInfo, ...}
         self.num_vars = None
         self.num_vars_complete = None
+
         # for error handling
         self.has_error = False
         self.error_message = None
@@ -35,6 +37,21 @@ class PreprocessRunner(object):
         print(err_msg)
         self.has_error = True
         self.error_message = err_msg
+
+    def update_task_status(self):
+        """Optional: update a celery task status"""
+        if not self.celery_task:
+            # no task available
+            return
+
+        if self.num_vars and self.num_vars > 0:
+            self.celery_task.update_state(\
+                state='PROGRESS',
+                meta={'current': self.num_vars_complete,
+                      'total': self.num_vars})
+            return
+
+        self.add_error_message('Celery update failed')
 
 
     def run_preprocess(self):
@@ -127,7 +144,7 @@ class PreprocessRunner(object):
             PlotValuesUtil(col_series, col_info)
             # assign object info to the variable_info
             #
-            self.num_vars_complete = + 1
+            self.num_vars_complete += 1
             self.variable_info[colnames] = col_info
 
         print("completed column", self.num_vars_complete)
@@ -189,6 +206,7 @@ class PreprocessRunner(object):
                                    indent=indent)
 
 
+
     def get_final_dict(self, as_string=False, **kwargs):
         """Return the final variable info as an OrderedDict"""
         if self.has_error:
@@ -218,4 +236,8 @@ class PreprocessRunner(object):
                               indent=indent_level,
                               cls=NumpyJSONEncoder)
 
-        return overall_dict
+        # w/o this step, a regular json.dumps() fails on the returned dict
+        #
+        jstring = json.dumps(overall_dict,
+                             cls=NumpyJSONEncoder)
+        return json.loads(jstring, object_pairs_hook=OrderedDict)

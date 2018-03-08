@@ -1,0 +1,1 @@
+ALLOW_FAB_DELETE = False
