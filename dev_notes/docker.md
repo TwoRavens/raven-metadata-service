@@ -1,3 +1,4 @@
+## preprocess script
 
 ```
 # build image
@@ -18,3 +19,19 @@ docker run --rm -ti -v ~/Documents/github-rp/raven-metadata-service/preprocess/i
 ```
 
 docker run --rm -ti -v /Users/ramanprasad/Desktop:/dtop --name=raven_ingest preprocess:latest [input path]
+
+
+## preprocess web
+
+```
+# build
+#
+docker build -t preprocess_web -f Dockerfile-web .
+
+# run
+#
+docker run --rm -p 8000:8000 -v /ravens_volume:/ravens_volume --name pweb preprocess_web
+
+# shell into running container
+#
+ docker exec -ti pweb /bin/bash

@@ -41,7 +41,8 @@ MEDIA_ROOT = join(LOCAL_SETUP_DIR, 'preprocess_files')
 if not isdir(MEDIA_ROOT):
     os.makedirs(MEDIA_ROOT)
 
-
+ALLOWED_HOSTS = ('0.0.0.0',
+                 '127.0.0.1')
 
 # For local dev, remove some of the user password requirements
 #
