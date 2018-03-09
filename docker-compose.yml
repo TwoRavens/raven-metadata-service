@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  # Redis
+  redis:
+    image: redis:4.0
+    hostname: redis
+    command: redis-server /usr/local/etc/redis.conf
+    volumes:
+      - 'redis:/data'
+    ports:
+      - '6379:6379'
+
+  # Django web server
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile-web
+    hostname: web
+    command: ./run_web.sh
+    volumes:
+      - .:/app  # mount current directory inside container
+    ports:
+      - "8000:8000"
+    # set up links so that web knows about db, rabbit and redis
+    links:
+      - celery_queue
+      - redis
+    depends_on:
+      - celery_queue
+
+  # Celery worker
+  celery_queue:
+    build:
+      context: .
+      dockerfile: Dockerfile-web
+    command: cd preprocess_web/code && celery -A ravens_metadata worker -l info
+    volumes:
+      - .:/ravens_volume
+    links:
+      - redis
+    depends_on:
+      - redis
