@@ -10,11 +10,16 @@ urlpatterns = (
          views.view_basic_upload_form,
          name='view_basic_upload_form'),
 
+    path(r'api-single-file',
+         views.endpoint_api_single_file,
+         name='endpoint_api_single_file'),
+
     # job info
     #
     path('job-info/<int:job_id>',
          views.show_job_info,
          name='show_job_info'),
+
 
     # default to upload form, for now
     #

@@ -1,5 +1,6 @@
 import json
 from collections import OrderedDict
+from django.urls import reverse
 from django.db import models
 from model_utils.models import TimeStampedModel
 from os.path import basename
@@ -79,12 +80,27 @@ class PreprocessJob(TimeStampedModel):
             if attr_name.startswith('_'):
                 continue
             od[attr_name] = '%s' % self.__dict__[attr_name]
-        #import ipdb; ipdb.set_trace()
+
         if self.preprocess_file:
             file_data = self.preprocess_file.read()
             od['data'] = json.loads(file_data)
 
         return od
+
+
+    def get_absolute_url(self):
+        """jobs status..."""
+        return self.get_job_status_link()
+
+
+    def get_job_status_link(self):
+        """for callbacks to check status and/or get preprocess data"""
+        temp_baseurl = 'http://127.0.0.1:8000'
+
+        status_url = reverse('show_job_info',
+                             kwargs=dict(job_id=self.id))
+
+        return '%s%s' % (temp_baseurl, status_url)
 
     def source_file_path(self):
         """To display the full path in the admin"""
