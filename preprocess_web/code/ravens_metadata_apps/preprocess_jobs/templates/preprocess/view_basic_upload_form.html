@@ -1,24 +1,28 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-<div class="container">
+<div class="jumbotron">
 
-  <div class="row">
-    <div class="col">
-      <h3>{{ title }}</h3>
+  <div class="row" style="width: 50%; position:relative; left: 25%; top:10%">
+        <div class="col">
+          <h3 class="display-3">{{ title }}</h3>
+            <div class="col-sm-8 mx-auto">
+                <form action="{% url 'view_basic_upload_form' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <table class="table">
+                       {{ form }}
+                       <tr>
+                         <td>
+                             <div style="text-align: center">
+                                <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
+                             </div>
+                         </td>
+                        </tr>
+                     </table>
 
-        <form action="{% url 'view_basic_upload_form' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
-          {% csrf_token %}
-          <table class="table">
-           {{ form }}
-           <tr>
-             <th>&nbsp;<th>
-             <td><input class="btn btn-primary btn-sm" type="submit" value="submit"/></td>
-            </tr>
-         </table>
-
-        </form>
-    </div>
+                </form>
+            </div>
+        </div>
   </div>
 </div>
 {% endblock %}
