@@ -87,6 +87,13 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
+    def get_preprocess_data(self):
+        """Return preprocess file contents if they exist"""
+        if self.preprocess_file:
+            file_data = self.preprocess_file.read()
+            return json.loads(file_data)
+
+        return None
 
     def get_absolute_url(self):
         """jobs status..."""

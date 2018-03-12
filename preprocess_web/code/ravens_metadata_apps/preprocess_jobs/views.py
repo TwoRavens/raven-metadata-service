@@ -27,7 +27,7 @@ def view_basic_upload_form(request):
 
             JobUtil.start_preprocess(job)
 
-            redirect_url = reverse('show_job_info',
+            redirect_url = reverse('view_job_status_page',
                                    kwargs=dict(job_id=job.id))
 
             return HttpResponseRedirect(redirect_url)
@@ -37,6 +37,24 @@ def view_basic_upload_form(request):
     return render(request,
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
+
+
+
+
+def view_job_status_page(request, job_id):
+    """test to show uploaded file info"""
+    try:
+        job = PreprocessJob.objects.get(pk=job_id)
+    except PreprocessJob.DoesNotExist:
+        raise Http404('job_id not found: %s' % job_id)
+
+    JobUtil.check_status(job)
+
+
+    return render(request,
+                  'preprocess/view_process_status.html',
+                  {'job': job})
+
 
 
 @csrf_exempt
@@ -115,7 +133,15 @@ def show_job_info(request, job_id):
         jstring = json.dumps(job.as_dict(), indent=4)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
+    user_msg = dict(success=True,
+                    message='some message',
+                    callback_url=job.get_job_status_link(),
+                    data=job.as_dict())
+
+    return JsonResponse(user_msg)
+
+
     #return JsonResponse(job.as_dict())
-    return render(request,
-                  'preprocess/view_process_status.html',
-                  {'job': job.as_dict()})
+    #return render(request,
+    #              'preprocess/view_process_status.html',
+    #              {'job': job.as_dict()})

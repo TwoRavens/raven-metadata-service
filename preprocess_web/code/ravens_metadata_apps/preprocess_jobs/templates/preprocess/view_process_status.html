@@ -1,6 +1,17 @@
 {% extends "base.html" %}
 
+{%  block extra_header %}
+    <script>
+    alert('start pollling against {%  url 'show_job_info' job.id  %}');
+    </script>
+
+{%  endblock %}
+
 {% block main_content %}
+     {{  job.id }}<br />
+     {{  job.state }}<br />
+    {{  job.user_message }}<br />
+    {{  job.get_preprocess_data }}<br />
     {% if job.state == "PREPROCESS_STARTED" %}
         <div class="my-3 p-3 bg-white rounded box-shadow" style="background-color:#868e96 ">
 
