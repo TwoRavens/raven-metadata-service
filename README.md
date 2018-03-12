@@ -1,3 +1,5 @@
+(under initial development)
+
 # raven-metadata-service
 service to produce TwoRavens metadata
 
