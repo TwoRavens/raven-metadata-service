@@ -10,3 +10,11 @@ service to produce TwoRavens metadata
 cd preprocess/code
 python -m unittest
 ```
+
+## Create docs
+
+```
+workon metadata
+cd docs
+make html
+```
