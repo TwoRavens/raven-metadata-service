@@ -39,8 +39,6 @@ def view_basic_upload_form(request):
                   {'form': form})
 
 
-
-
 @csrf_exempt
 def endpoint_api_single_file(request):
     """Preprocess a single file
@@ -117,4 +115,7 @@ def show_job_info(request, job_id):
         jstring = json.dumps(job.as_dict(), indent=4)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
-    return JsonResponse(job.as_dict())
+    #return JsonResponse(job.as_dict())
+    return render(request,
+                  'preprocess/view_process_status.html',
+                  {'job': job.as_dict()})
