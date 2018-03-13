@@ -16,7 +16,7 @@ If you have virtualenvwrapper, the requirements may be installed from the top le
 
 ```
 # example.  from (your path)/raven-metadata-service/
-mkvirtualenv metadata
+mkvirtualenv preprocess
 pip install -r requirements/30_preprocess_web.txt
 ```
 
@@ -27,7 +27,7 @@ pip install -r requirements/30_preprocess_web.txt
 1. Go to the top level of the `raven-metadata-service` codebase
 1. Run the following:
   ```
-  workon metadata
+  workon preprocess
   cd docs
   make html
   ```

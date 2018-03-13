@@ -184,3 +184,26 @@ def create_django_superuser():
 
     print('superuser created: "%s"' % dev_admin_username)
     print('password: "%s"' % admin_pw)
+
+@task
+def run_preprocess(input_file, output_file=None):
+    """Preprocess a single file. "fab run_preprocess:input_file" or "fab run_preprocess:input_file,output_file" """
+    # Bit of a hack here....
+    from os.path import dirname, isdir, join
+    preprocess_dir = join(dirname(FAB_BASE_DIR),
+                          'preprocess',
+                          'code')
+    #os.chdir(preprocess_dir)
+
+    if output_file:
+        preprocess_cmd = 'python3 %s/preprocess.py %s %s' % \
+                         (preprocess_dir,
+                          input_file,
+                          output_file)
+    else:
+        preprocess_cmd = 'python3 %s/preprocess.py %s' % \
+                         (preprocess_dir,
+                         input_file)
+
+    print('Run command: "%s"' % preprocess_cmd)
+    local(preprocess_cmd)

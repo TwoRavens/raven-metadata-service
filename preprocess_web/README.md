@@ -11,7 +11,7 @@ These instructions assume [virtualenvwrapper](http://virtualenvwrapper.readthedo
 
 ```
 # Do this from the top directory, e.g. within `raven-metadata-service`
-mkvirtualenv metadata
+mkvirtualenv preprocess
 pip install -r requirements/30_preprocess_web.txt
 ```
 
@@ -23,7 +23,7 @@ For each of these windows, 1st `cd` into `raven-metadata-service`
 
 ```
 cd preprocess_web/code
-workon metadata
+workon preprocess
 fab run_redis
 ```
 
@@ -31,7 +31,7 @@ fab run_redis
 
 ```
 cd preprocess_web/code
-workon metadata
+workon preprocess
 fab run_celery
 ```
 
@@ -39,7 +39,7 @@ fab run_celery
 
 ```
 cd preprocess_web/code
-workon metadata
+workon preprocess
 fab run_web
 ```
 
