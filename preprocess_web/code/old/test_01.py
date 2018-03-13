@@ -17,6 +17,8 @@ PREPROCESS_SVC_DIR = join(dirname(dirname(dirname(abspath(__file__)))),
 sys.path.append(PREPROCESS_SVC_DIR)
 for x in sys.path: print(x)
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                      'ravens_metadata.settings.local_settings')
 from datetime import datetime
 import time
 import json
