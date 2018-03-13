@@ -118,6 +118,9 @@ class ColumnInfo(object):
     def get_display_variables_labels(self):
         pass
 
+    def get_self_variables_labels(self):
+        pass
+
     def get_variable_labels(self):
         """Set labels for variable output.  List of (label, variable name)
         Example of iterating through to show labels and values:
@@ -197,6 +200,18 @@ class ColumnInfo(object):
         ordered_dict = OrderedDict()
 
         for label, varname in self.get_display_variables_labels():
+            ordered_dict[label] = self.__dict__.get(varname)
+
+        if as_string:
+            return json.dumps(ordered_dict, cls=NumpyJSONEncoder)
+
+        return ordered_dict
+
+    def get_self_variables_dict(self, as_string=False):
+        """For final output"""
+        ordered_dict = OrderedDict()
+
+        for label, varname in self.get_self_variables_labels():
             ordered_dict[label] = self.__dict__.get(varname)
 
         if as_string:

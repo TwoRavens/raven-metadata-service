@@ -219,13 +219,15 @@ class PreprocessRunner(object):
         for col_name, col_info in self.variable_info.items():
             # col_info.print_values()
             fmt_variable_info[col_name] = col_info.as_dict()
+            fmt_display_variable_info = col_info.get_variable_display_dict()
+            fmt_self_variable_info = col_info.get_self_variables_dict()
 
         # loop to get variable_display
         # loop to get self
         overall_dict = OrderedDict()
         overall_dict['variables'] = fmt_variable_info
-        overall_dict['self'] = None
-        overall_dict['variable_display'] = None
+        overall_dict['self'] = fmt_self_variable_info
+        overall_dict['variable_display'] = fmt_display_variable_info
 
         if as_string:
             # Convert the OrderedDict to a JSON string
