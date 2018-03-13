@@ -137,6 +137,8 @@ class ColumnInfo(object):
                 print('%s: %s' % (label, variable_val))
             ```
         """
+        self.mode = self.mode[:5]
+        self.fewest = self.fewest[:5]
         label_list = (
             ('varnameSumStat', 'colname'),
             ('labl', 'labl'),
@@ -156,9 +158,9 @@ class ColumnInfo(object):
             ('max', 'max'),
             ('min', 'min'),
 
-            ('mode', 'mode[:5]'),
+            ('mode', 'mode'),
             ('freqmode', 'freqmode'),
-            ('fewest', 'fewest[:5]'),
+            ('fewest', 'fewest'),
             ('freqfewest', 'freqfewest'),
             ('mid', 'mid'),
             ('freqmid', 'freqmid'),
