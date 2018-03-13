@@ -2,6 +2,7 @@
 
 from collections import OrderedDict
 import json
+import time,datetime
 import pandas as pd
 from np_json_encoder import NumpyJSONEncoder
 from col_info_constants import \
@@ -91,6 +92,7 @@ class ColumnInfo(object):
         self.omit = []
         self.images = {}
 
+
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
         return self.numchar_val == NUMCHAR_NUMERIC
@@ -118,8 +120,6 @@ class ColumnInfo(object):
     def get_display_variables_labels(self):
         pass
 
-    def get_self_variables_labels(self):
-        pass
 
     def get_variable_labels(self):
         """Set labels for variable output.  List of (label, variable name)
@@ -151,7 +151,7 @@ class ColumnInfo(object):
 
             ('mode', 'mode[:5]'),
             ('freqmode', 'freqmode'),
-            ('fewest', 'fewest[:3]'),
+            ('fewest', 'fewest[:5]'),
             ('freqfewest', 'freqfewest'),
             ('mid', 'mid'),
             ('freqmid', 'freqmid'),
@@ -207,14 +207,3 @@ class ColumnInfo(object):
 
         return ordered_dict
 
-    def get_self_variables_dict(self, as_string=False):
-        """For final output"""
-        ordered_dict = OrderedDict()
-
-        for label, varname in self.get_self_variables_labels():
-            ordered_dict[label] = self.__dict__.get(varname)
-
-        if as_string:
-            return json.dumps(ordered_dict, cls=NumpyJSONEncoder)
-
-        return ordered_dict
