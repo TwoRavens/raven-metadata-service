@@ -74,44 +74,74 @@ class ColumnInfo(object):
         # is this NUMCHAR_CHARACTER?
         return self.numchar_val == NUMCHAR_CHARACTER
 
+    def get_numeric_attribute_names(self):
+        """These attributes, when set, are always numeric.  Ex/ mean, median, etc."""
+
+        return  ('invalid', 'valid', 'uniques',
+                 'median', 'mean', 'max', 'min',
+                 'freqmode', 'freqfewest', 'freqmid',
+                 'std_dev', 'herfindahl',
+                 'plot_values', 'plotx', 'ploty',
+                 'cdf_plotx', 'cdf_ploty')
+
+
+    def is_numeric_attribute(self, ye_attr_name):
+        """Test if the attribute is numeric (or null if not set)"""
+        if ye_attr_name in self.get_numeric_attribute_names():
+            return True
+        return False
 
     def get_variable_labels(self):
-        """Set labels for variable output"""
+        """Set labels for variable output.  List of (label, variable name)
+        Example of iterating through to show labels and values:
+            ```
+            for label, varname in self.get_variable_labels():
+                variable_val = self.__dict__.get(varname)
+                print('%s: %s' % (label, variable_val))
+            ```
+        """
         label_list = (
-            ('varnameSumStat', self.colname),
-            ('plotvalues', self.plot_values),
-            ('plottype', self.plot_type),
-            ('plotx', self.plotx),
-            ('ploty', self.ploty),
-            ('cdfplottype', self.cdf_plottype),
-            ('cdfplotx', self.cdf_plotx),
-            ('cdfploty', self.cdf_ploty),
-            ('labl', self.labl),
-            ('median', self.median),
-            ('mean', self.mean),
-            ('mode', self.mode[:5]),
-            ('max', self.max),
-            ('min', self.min),
-            ('invalid', self.invalid),
-            ('valid', self.valid),
-            ('sd', self.std_dev),
-            ('uniques', self.uniques),
-            ('herfindahl', self.herfindahl),
-            ('freqmode', self.freqmode),
-            ('fewest', self.fewest[:3]),
-            ('mid', self.mid),
-            ('freqfewest', self.freqfewest),
-            ('freqmid', self.freqmid),
-            ('numchar', self.numchar_val),
-            ('nature', self.nature),
-            ('binary', self.binary),
-            ('interval', self.default_interval),
-            ('time', self.time_val),
-            ('defaultInterval', self.default_interval),
-            ('defaultNumchar', self.numchar_val),
-            ('defaultNature', self.nature),
-            ('defaultBinary', self.binary),
-            ('defaultTime', self.time_val),
+            ('varnameSumStat', 'colname'),
+            ('labl', 'labl'),
+
+            ('numchar', 'numchar_val'),
+            ('nature', 'nature'),
+            ('binary', 'binary'),
+            ('interval', 'default_interval'),
+            ('time', 'time_val'),
+
+            ('invalid', 'invalid'),
+            ('valid', 'valid'),
+            ('uniques', 'uniques'),
+
+            ('median', 'median'),
+            ('mean', 'mean'),
+            ('max', 'max'),
+            ('min', 'min'),
+
+            ('mode', 'mode[:5]'),
+            ('freqmode', 'freqmode'),
+            ('fewest', 'fewest[:3]'),
+            ('freqfewest', 'freqfewest'),
+            ('mid', 'mid'),
+            ('freqmid', 'freqmid'),
+
+            ('sd', 'std_dev'),
+            ('herfindahl', 'herfindahl'),
+
+            ('plotvalues', 'plot_values'),
+            ('plottype', 'plot_type'),
+            ('plotx', 'plotx'),
+            ('ploty', 'ploty'),
+            ('cdfplottype', 'cdf_plottype'),
+            ('cdfplotx', 'cdf_plotx'),
+            ('cdfploty', 'cdf_ploty'),
+
+            ('defaultInterval', 'default_interval'),
+            ('defaultNumchar', 'numchar_val'),
+            ('defaultNature', 'nature'),
+            ('defaultBinary', 'binary'),
+            ('defaultTime', 'time_val'),
             )
         # print("-"*20)
         # print(label_list)
@@ -120,15 +150,15 @@ class ColumnInfo(object):
     def print_values(self):
         """print to screen"""
         print('---- %s ----' % self.colname)
-        for label, val in self.get_variable_labels():
-            print('%s: %s' % (label, val))
+        for label, varname in self.get_variable_labels():
+            print('%s: %s' % (label, self.__dict__.get(varname)))
 
     def as_dict(self, as_string=False):
         """For final output"""
         ordered_dict = OrderedDict()
 
-        for label, val in self.get_variable_labels():
-            ordered_dict[label] = val
+        for label, varname in self.get_variable_labels():
+            ordered_dict[label] = self.__dict__.get(varname)
 
         if as_string:
             return json.dumps(ordered_dict, cls=NumpyJSONEncoder)
