@@ -12,6 +12,7 @@ from type_guess_util import TypeGuessUtil
 from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
+from variable_display_util import VariableDisplayUtil
 
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
@@ -145,6 +146,7 @@ class PreprocessRunner(object):
             TypeGuessUtil(col_series, col_info)
             SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
+            VariableDisplayUtil(col_series,col_info)
             # assign object info to the variable_info
             #
             self.num_vars_complete += 1
@@ -249,7 +251,7 @@ class PreprocessRunner(object):
         for col_name, col_info in self.variable_info.items():
             # col_info.print_values()
             fmt_variable_info[col_name] = col_info.as_dict()
-            # fmt_display_variable_info[col_name] = col_info.get_variable_display_dict()
+            fmt_display_variable_info[col_name] = col_info.get_variable_display_dict()
 
         fmt_self_variable_info = self.get_self_variables_dict()
         # loop to get variable_display
@@ -257,7 +259,7 @@ class PreprocessRunner(object):
         overall_dict = OrderedDict()
         overall_dict['self'] = fmt_self_variable_info
         overall_dict['variables'] = fmt_variable_info
-        # overall_dict['variable_display'] = fmt_display_variable_info
+        overall_dict['variable_display'] = fmt_display_variable_info
 
         if as_string:
             # Convert the OrderedDict to a JSON string

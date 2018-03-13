@@ -118,7 +118,14 @@ class ColumnInfo(object):
         return False
 
     def get_display_variables_labels(self):
-        pass
+        display_var_list = (
+                ('viewable', 'true'),
+                ('omit', 'omit'),
+                ('images', 'images')
+
+        )
+
+        return display_var_list
 
 
     def get_variable_labels(self):
