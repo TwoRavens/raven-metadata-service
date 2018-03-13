@@ -109,12 +109,14 @@ class ColumnInfo(object):
                  'plot_values', 'plotx', 'ploty',
                  'cdf_plotx', 'cdf_ploty')
 
-
     def is_numeric_attribute(self, ye_attr_name):
         """Test if the attribute is numeric (or null if not set)"""
         if ye_attr_name in self.get_numeric_attribute_names():
             return True
         return False
+
+    def get_display_variables_labels(self):
+        pass
 
     def get_variable_labels(self):
         """Set labels for variable output.  List of (label, variable name)
@@ -183,6 +185,18 @@ class ColumnInfo(object):
         ordered_dict = OrderedDict()
 
         for label, varname in self.get_variable_labels():
+            ordered_dict[label] = self.__dict__.get(varname)
+
+        if as_string:
+            return json.dumps(ordered_dict, cls=NumpyJSONEncoder)
+
+        return ordered_dict
+
+    def get_variable_display_dict(self, as_string=False):
+        """For final output"""
+        ordered_dict = OrderedDict()
+
+        for label, varname in self.get_display_variables_labels():
             ordered_dict[label] = self.__dict__.get(varname)
 
         if as_string:
