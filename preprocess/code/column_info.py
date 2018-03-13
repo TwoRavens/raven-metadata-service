@@ -14,6 +14,19 @@ class ColumnInfo(object):
     def __init__(self, colname):
         """Init with column name"""
         # -------------
+        # self data
+        # -------------
+
+        self.schema = None
+        self.description = None
+        self.created = None
+        self.preprocess_id = None
+        self.data_url = None
+        self.format = None
+        self.preprocess_version = None
+        self.schema_version = None
+
+        # -------------
         # more general
         # -------------
         self.colname = colname
@@ -65,6 +78,18 @@ class ColumnInfo(object):
         self.cdf_ploty = None
         self.labl = None
 
+
+        # ----------------------
+        # variable_display Info
+        # ----------------------
+        self.variable_display = {}
+        self.editable = [
+         "label",
+         "varSumState"
+        ]
+        self.viewable = None
+        self.omit = []
+        self.images = {}
 
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
