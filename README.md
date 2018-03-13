@@ -1,8 +1,10 @@
-(under initial development)
+(note! under initial development. very pre-alpha, etc)
+
+---
 
 # raven-metadata-service
 
-Service to produce TwoRavens metadata
+Service to produce TwoRavens metadata.  Description of the produced metadata: http://two-ravens-metadata-service.readthedocs.io
 
 ## Install
 
