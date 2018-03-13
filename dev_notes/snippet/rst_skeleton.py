@@ -10,7 +10,7 @@ PREPROCESS_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess', 'code')
 sys.path.append(PREPROCESS_DIR)
 PREPROCESS_WEB_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess_web', 'code')
 sys.path.append(PREPROCESS_WEB_DIR)
-for x in sys.path: print(x)
+#for x in sys.path: print(x)
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE',
                       'ravens_metadata.settings.local_settings')
@@ -35,9 +35,13 @@ ze_template = template.Template(open(template_file, 'r').read())
 
 attr_keys = column_info.__dict__.keys()
 doc_list = []
-for attr in attr_keys:
-    info = dict(var_name=attr)
+for label, var_name in column_info.get_variable_labels():
+    info = dict(var_name=label)
+    if column_info.is_numeric_attribute(var_name):
+        info['sample_val'] = '1234'
     var_doc = ze_template.render(template.Context((info)))
     doc_list.append(var_doc)
 
-print ('\n'.join(doc_list[:2]))
+print ('\n'.join(doc_list[:]))
+#fname_out = '(some path)/raven-metadata-service/docs/source/preprocess_test.rst'
+#open(fname_out, 'w').write('\n'.join(doc_list[:]))

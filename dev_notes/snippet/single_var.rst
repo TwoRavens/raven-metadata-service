@@ -6,5 +6,5 @@
     .. code-block:: json
 
         {
-          "{{ var_name }}": "var_value"
+          "{{ var_name }}": {% if sample_val %}{{ sample_val }}{% else %}"var_value"{% endif %}
         }
