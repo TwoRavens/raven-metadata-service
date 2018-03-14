@@ -172,6 +172,7 @@ class PreprocessRunner(object):
 
         return True
     '''
+
     def get_self_variables_labels(self):
         """
         {
@@ -246,7 +247,6 @@ class PreprocessRunner(object):
 
         fmt_variable_info = OrderedDict()
         fmt_display_variable_info = OrderedDict()
-        fmt_self_variable_info = OrderedDict()
 
         for col_name, col_info in self.variable_info.items():
             # col_info.print_values()
@@ -259,8 +259,10 @@ class PreprocessRunner(object):
         overall_dict = OrderedDict()
         overall_dict['self'] = fmt_self_variable_info
         overall_dict['variables'] = fmt_variable_info
-        overall_dict['variable_display'] = fmt_display_variable_info
-
+        overall_dict['variable_display'] = {
+            'editable': ['labl','numchar', 'nature', 'time'],
+            'variables': fmt_display_variable_info
+                                            }
         if as_string:
             # Convert the OrderedDict to a JSON string
             #

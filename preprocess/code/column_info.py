@@ -88,10 +88,9 @@ class ColumnInfo(object):
          "label",
          "varSumState"
         ]
-        self.viewable = None
+        self.viewable = True  # By default
         self.omit = []
         self.images = {}
-
 
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
@@ -119,14 +118,13 @@ class ColumnInfo(object):
 
     def get_display_variables_labels(self):
         display_var_list = (
-                ('viewable', 'true'),
+                ('viewable', 'viewable'),
                 ('omit', 'omit'),
                 ('images', 'images')
 
         )
 
         return display_var_list
-
 
     def get_variable_labels(self):
         """Set labels for variable output.  List of (label, variable name)
