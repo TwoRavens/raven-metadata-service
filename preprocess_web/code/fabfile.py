@@ -7,7 +7,7 @@ import string
 import signal
 
 import sys
-from fabric.api import local, task
+from fabric.api import local, settings, task
 import django
 #from django.conf import settings
 import subprocess
@@ -33,38 +33,71 @@ except Exception as e:
 
 
 @task
-def run_redis():
+def redis_run():
     """Run the local redis server"""
     redis_cmd = 'redis-server /usr/local/etc/redis.conf'
-    local(redis_cmd)
+
+    with settings(warn_only=True):
+        result = local(redis_cmd, capture=True)
+
+    if result.failed:
+        print('Redis may already be running...')
 
 
 @task
-def clear_redis():
+def redis_clear():
     """Clear data from the *running* local redis server"""
     redis_cmd = 'redis-cli flushall'    #  /usr/local/etc/redis.conf'
-    local(redis_cmd)
+    with settings(warn_only=True):
+        result = local(redis_cmd, capture=True)
+
+    if result.failed:
+        print('Redis not running, nothing to clear')
 
 @task
-def stop_redis():
+def redis_stop():
     """Clear data from the *running* local redis server"""
     redis_cmd = 'pkill -f redis'
-    local(redis_cmd)
+    with settings(warn_only=True):
+        result = local(redis_cmd, capture=True)
 
+    if result.failed:
+        print('Nothing to stop')
 
 @task
-def run_celery():
+def redis_restart():
+    """Stop redis (if it's running) and start it again"""
+    redis_stop()
+    redis_run()
+
+@task
+def celery_run():
     """Clear redis and Start celery"""
-    clear_redis()
+    redis_clear()
 
     celery_cmd = ('celery -A ravens_metadata worker -l info')
     local(celery_cmd)
 
 @task
-def stop_celery():
+def celery_stop():
     """Stop the celery processes"""
     celery_cmd = ('pkill -f celery')
     local(celery_cmd)
+
+@task
+def celery_restart():
+    """Stop celery (if it's running) and start it again"""
+    celery_stop()
+    celery_run()
+
+@task
+def run_shell():
+    """Start the django shell"""
+    run_shell_cmd = ('python manage.py shell')
+
+    print('run shell: %s' % run_shell_cmd)
+
+    local(run_shell_cmd)
 
 @task
 def run_web():

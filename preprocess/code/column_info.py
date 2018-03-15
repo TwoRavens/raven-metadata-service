@@ -2,6 +2,7 @@
 
 from collections import OrderedDict
 import json
+import time,datetime
 import pandas as pd
 from np_json_encoder import NumpyJSONEncoder
 from col_info_constants import \
@@ -11,8 +12,24 @@ from col_info_constants import \
 class ColumnInfo(object):
     """Sets up the expected structure of the whole preprocess output file"""
 
+    # names of ColumnInfo *attributes*, not labels, that are editable
+    EDITABLE_COLUMNS = ['labl', 'numchar_val', 'nature', 'time_val']
+
     def __init__(self, colname):
         """Init with column name"""
+        # -------------
+        # self data
+        # -------------
+
+        self.schema = None
+        self.description = None
+        self.created = None
+        self.preprocess_id = None
+        self.data_url = None
+        self.format = None
+        self.preprocess_version = None
+        self.schema_version = None
+
         # -------------
         # more general
         # -------------
@@ -65,7 +82,6 @@ class ColumnInfo(object):
         self.cdf_ploty = None
         self.labl = None
 
-
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
         return self.numchar_val == NUMCHAR_NUMERIC
@@ -84,14 +100,55 @@ class ColumnInfo(object):
                  'plot_values', 'plotx', 'ploty',
                  'cdf_plotx', 'cdf_ploty')
 
-
     def is_numeric_attribute(self, ye_attr_name):
         """Test if the attribute is numeric (or null if not set)"""
         if ye_attr_name in self.get_numeric_attribute_names():
             return True
         return False
 
-    def get_variable_labels(self):
+
+    def set_fewest(self, fewest_list):
+        """Take up to 5 values that occur the fewest number of times"""
+        if fewest_list is None:
+            self.fewest = []
+
+        self.fewest = fewest_list[:5]
+
+    def set_mode(self, mode_list):
+        """Take up to 5 values that occur the greatest number of times"""
+        if mode_list is None:
+            self.mode = []
+
+        self.mode = mode_list[:5]
+
+    @staticmethod
+    def get_editable_column_labels():
+        """Return the labels associated with the editable columns"""
+        lookup = ColumnInfo.get_variable_label_lookup()
+
+        editable_list = [lookup.get(varname) for varname in ColumnInfo.EDITABLE_COLUMNS]
+
+        assert not None in editable_list,\
+            ('SERIOUS ERROR!! In ColumnInfo, EDITABLE_COLUMNS'
+             ' has an attribute that either does not exist or'
+             ' doesn\'t have a label')
+
+        return editable_list
+
+
+    @staticmethod
+    def get_variable_label_lookup():
+        """Return a lookup consisting of {"variable name": "label name"}
+        Exclude variables starting with "default" as in "defaultTime" """
+
+        return {info[1]: info[0]
+                for info in ColumnInfo.get_variable_labels()
+                if not info[0].startswith('default')}
+
+
+
+    @staticmethod
+    def get_variable_labels():
         """Set labels for variable output.  List of (label, variable name)
         Example of iterating through to show labels and values:
             ```
@@ -119,9 +176,9 @@ class ColumnInfo(object):
             ('max', 'max'),
             ('min', 'min'),
 
-            ('mode', 'mode[:5]'),
+            ('mode', 'mode'),
             ('freqmode', 'freqmode'),
-            ('fewest', 'fewest[:3]'),
+            ('fewest', 'fewest'),
             ('freqfewest', 'freqfewest'),
             ('mid', 'mid'),
             ('freqmid', 'freqmid'),
