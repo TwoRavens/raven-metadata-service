@@ -24,7 +24,7 @@ For each of these windows, 1st `cd` into `raven-metadata-service`
 ```
 cd preprocess_web/code
 workon preprocess
-fab run_redis
+fab redis_run
 ```
 
 - Terminal 2 - Run Celery
@@ -32,7 +32,7 @@ fab run_redis
 ```
 cd preprocess_web/code
 workon preprocess
-fab run_celery
+fab celery_run
 ```
 
 - Terminal 3 - Run Web Server
