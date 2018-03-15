@@ -8,18 +8,19 @@ from np_json_encoder import NumpyJSONEncoder
 
 
 class VariableDisplayUtil(object):
-    def __init__(self):
+    def __init__(self, col_info, colnames):
         """Init with a pandas dataframe"""
-        # assert col_info is not None, "dataframe can't be None"
-        self.editable = pd.Series['labl','numchar', 'nature', 'time']
-        # self.col_names = pd.Series(colnames)
-        self.col_names = ['cylinders', 'mpg'] # list of all variables
-        self.attributes = ['numchar','nature','mean','median'] # list of all attributes
+        assert col_info is not None, "dataframe can't be None"
+        self.editable = pd.Series['labl','numchar', 'nature', 'time']  # list of all the attributes set as editable ***
+        self.col_names = pd.Series(colnames)  # original list of all the variables to be used
+        self.col_names = ['cylinders', 'mpg']  # list of all variables, for testing with given JSONs
+        self.attributes = ['numchar','nature','mean','median']  # list of all attributes in Two Ravens metadata schema, yet to be updated
         self.var_display()
         self.original_json={}
 
     def get_update_json(self):
         """
+        This is the sample json file I am using to test
                     {
             "preprocess_id": 45,
             "variable_updates": {
@@ -60,6 +61,7 @@ class VariableDisplayUtil(object):
 
     def get_original_json(self):
         """
+        This is the sample json file I am using to test
                 {
            "$schema":"http://(link to eventual schema)/jjonschema/1-0-0#",
            "self":{
