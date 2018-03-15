@@ -22,7 +22,7 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         mydata<-testdata
 
     }else if(!is.null(filename)){
-        mydata<-tryCatch(expr=read.csv(file=filename), error=function(e) NULL)
+        mydata<-tryCatch(expr=read.delim(file=filename), error=function(e) NULL)
     }else{
         path<-paste("http://",hostname,"/api/access/datafile/",fileid,sep="")
         mydata<-tryCatch(expr=read.delim(file=path), error=function(e) NULL)
@@ -79,35 +79,20 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
     }
 
     for(i in 1:k){
-        print("----loop starts------------------------")
-
         nat <- types$nature[which(types$varnamesTypes==varnames[i])]
         myint <- types$interval[which(types$varnamesTypes==varnames[i])]
         if(nat!="nominal"){
             uniqueValues<-sort(na.omit(unique(mydata[,i])))
-            # print("uniqueValues")
-            # print(uniqueValues)
-
             lu <- length(uniqueValues)
             cdf_func <- ecdf(mydata[,i])
-            # print("ecdf")
-            # print(cdf_func)
             if(lu< histlimit){
-                print("loop starts bar")
                 output<- table(mydata[,i])
-                # print("output")
-                # print(output)
                 hold[[i]]<- list(plottype="bar", plotvalues=output)
-                # print("nominal hold .........")
-                # print(hold)
+
                 cdfX <- seq(from=uniqueValues[1],to=uniqueValues[lu],length.out=lu)
                 cdfY <- cdf_func(cdfX)
                 holdcdf[[i]] <- list(cdfplottype="bar", cdfplotx=cdfX, cdfploty=cdfY)
-                # print("holdcdf")
-                # print(holdcdf)
-                print("----end bar------------------------")
             }else{
-                print("loop starts continuous")
                 output<- density( mydata[,i], n=50, na.rm=TRUE )
                 hold[[i]]<- list(plottype="continuous", plotx=output$x, ploty=output$y)
                 if(lu>=50 | (lu<50 & myint != "discrete")) { # if num uniques greater than 50, we get a cumulative density point for each unique
@@ -117,17 +102,12 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
                 }
                 cdfY <- cdf_func(cdfX)
                 holdcdf[[i]] <- list(cdfplottype="continuous", cdfplotx=cdfX, cdfploty=cdfY)
-
-                print("----end continuous------------------------")
             }
-        print("----end nominal------------------------")
+
         }else{
             output<- table(mydata[,i])
             hold[[i]]<- list(plottype="bar", plotvalues=output)
             holdcdf[[i]] <- list(cdfplottype="NULL", cdfplotx="NULL", cdfploty="NULL")
-                print("non nominal hold .........")
-                # print(hold)
-            print("----end other------------------------")
         }
 
         if(metadataflag==1)
@@ -138,7 +118,6 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         hold[[i]] <- c(hold[[i]],holdcdf[[i]], labl=lablname,lapply(mySumStats, `[[`,which(mySumStats$varnamesSumStat==varnames[i])),lapply(types, `[[`,which(types$varnamesTypes==varnames[i])))
     }
     names(hold)<-varnames
-    print("----end all--------------------------")
 
 
 
@@ -152,16 +131,46 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
 
 
       jsontest<-rjson:::toJSON(datasetLevelInfo)
-        #write(jsontest,file="testR.json")
+    #  write(jsontest,file="test.json")
 
     }
 
     else{
-    datasetLevelInfo<-list(private=FALSE,stdyDscr=list(citation=list(titlStmt=list(titl="",IDNo=list("-agency"="","#text"="")),rspStmt=list(Authentry=""),biblcit="No Data Citation Provided")),fileDscr=list("-ID"="",fileTxt=list(fileName="",dimensns=list(caseQnty="",varQnty=""),fileType=""),notes=list("-level"="","-type"="","-subject"="","#text"="")),data=hold)    # This signifies that that the metadata summaries are not privacy protecting
+    datasetLevelInfo<-list(private=FALSE,stdyDscr=list(citation=list(titlStmt=list(titl="",IDNo=list("-agency"="","#text"="")),rspStmt=list(Authentry=""),biblcit="No Data Citation Provided")),fileDscr=list("-ID"="",fileTxt=list(fileName="",dimensns=list(caseQnty="",varQnty=""),fileType=""),notes=list("-level"="","-type"="","-subject"="","#text"="")))    # This signifies that that the metadata summaries are not privacy protecting
     }
     #datasetitationinfo
+
+    print("dataset level info")
+    print(datasetLevelInfo)
+
+    # adding the covariance matrix for all numeric variables to the datasetLevelInfo
+    # using 'complete.obs' is safer than 'pairwise.complete.obs', although it listwise deletes on entire data.frame
+    mydata2 <- mydata
+    # If only two unique (non-missing) values, coerce to numeric for correlation matrix
+    for(i in 1:ncol(mydata2)){
+        temp<-mydata2[,i]
+        if(!is.numeric(temp)){
+            if(length(unique(na.omit(temp)))==2){
+                mydata2[,i]<-as.numeric(as.factor(mydata2[,i]))
+            }
+        }
+    }
+    mydata2 <- mydata2[sapply(mydata2,is.numeric)]
+
+    mycov <- tryCatch(cov(mydata2, use='complete.obs'), error=function(e) matrix(0)) # this will default to a 1x1 matrix with a 0
+    mycor <- tryCatch(cor(mydata2, use='pairwise.complete.obs'), error=function(e) matrix(0)) # this will default to a 1x1 matrix with a 0
+
+    if(!identical(mycor,0)){
+        mydisco<-disco(names(mydata2), mycor, n=3)
+    }else{
+        mydisco<-NULL
+    }
+
+    datasetLevelInfo[["covarianceMatrix"]] <- mycov
+    datasetLevelInfo[["discovery"]] <- mydisco
+
     jsontest<-rjson:::toJSON(datasetLevelInfo)
-    write(jsontest,file="testR.json")
+    write(jsontest,file="test.json")
       ## Construct Metadata file that at highest level has list of dataset-level, and variable-level information
     largehold<- list(dataset=datasetLevelInfo, variables=hold)
 
@@ -174,44 +183,24 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
 calcSumStats <- function(data, types) {
 
     Mode <- function(x, nat) {
-        # print("mode function called")
         out <- list(mode=NA, mid=NA, fewest=NA, freqmode=NA, freqfewest=NA, freqmid=NA)
-        # print("x")
-        # print(x)
         ux <- unique(x)
-        # print("unique")
-        # print(ux)
         tab <- tabulate(match(x, ux))
-        # print("tab :")
-        # print(tab)
-        out$mode <- ux[which.max(tab)]
-        # print("out$mode")
-        # print(out$mode)
 
+        out$mode <- ux[which.max(tab)]
         out$freqmode <- max(tab)
-        # print("out$freqmode")
-        # print(out$freqmode)
 
         out$mid <- ux[which(tab==median(tab))][1] # just take the first
-        # print("out$mid")
-        # print(out$mid)
         out$fewest <- ux[which.min(tab)]
-        # print("out$fewest")
-        # print(out$fewest)
 
         out$freqmid <- median(tab)
-        # print("freqmid")
-        # print(out$freqmid)
         out$freqfewest <- min(tab)
-        # print("out$freqfewest")
-        # print(out$freqfewest)
 
         return(out)
     }
 
     k <- ncol(data)
     out<-list(varnamesSumStat=colnames(data), median=as.vector(rep(NA,length.out=k)), mean=as.vector(rep(NA,length.out=k)), mode=as.vector(rep(NA,length.out=k)), max=as.vector(rep(NA,length.out=k)), min=as.vector(rep(NA,length.out=k)), invalid=as.vector(rep(NA,length.out=k)), valid=as.vector(rep(NA,length.out=k)), sd=as.vector(rep(NA,length.out=k)), uniques=as.vector(rep(NA,length.out=k)), herfindahl=as.vector(rep(NA,length.out=k)), freqmode=as.vector(rep(NA,length.out=k)), fewest=as.vector(rep(NA,length.out=k)), mid=as.vector(rep(NA,length.out=k)), freqfewest=as.vector(rep(NA,length.out=k)), freqmid=as.vector(rep(NA,length.out=k)) )
-
 
     for(i in 1:k) {
 
@@ -271,7 +260,6 @@ calcSumStats <- function(data, types) {
         herf.t <- table(v)
         out$herfindahl[i] <- Herfindahl(herf.t)
     }
-
     return(out)
 }
 
@@ -371,3 +359,40 @@ typeGuess <- function(data) {
 
     return(out)
 }
+
+## Function that runs discovery, finding potential models of interest, here by highest correlated variables.
+
+disco <- function(names, cor, n=3){
+
+    diag(cor) <- 0          # don't include self
+    cor[is.na(cor)] <- 0    # don't get tripped up by incomputable cor
+    cor[cor==1] <- 0        # don't use variables that are perfect
+    cor <- abs(cor)
+    found <- list()
+    k <- nrow(cor)
+
+    r <- min(k-1,n)  # How many predictor variables to keep
+
+    count<-0
+    rating <- NULL
+    for(i in 1:k){
+        if(!identical(names[i],"d3mIndex")){
+            count <- count+1
+            temporder <- order(cor[i,], decreasing=TRUE)[1:r]
+            keep <- names[temporder]
+            rating <- c(rating,sum(cor[i,temporder]))
+            found[[count]] <- list(target=names[i], predictors=keep)
+        }
+
+    }
+
+    newfound <- list()
+    neworder <- order(rating, decreasing=TRUE)
+    for(i in 1:length(rating)){
+        newfound[[i]] <- found[[ neworder[i] ]]
+    }
+
+    return(newfound)
+}
+
+
