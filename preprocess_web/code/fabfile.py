@@ -91,6 +91,15 @@ def celery_restart():
     celery_run()
 
 @task
+def run_shell():
+    """Start the django shell"""
+    run_shell_cmd = ('python manage.py shell')
+
+    print('run shell: %s' % run_shell_cmd)
+
+    local(run_shell_cmd)
+
+@task
 def run_web():
     """Start web server"""
     init_db()

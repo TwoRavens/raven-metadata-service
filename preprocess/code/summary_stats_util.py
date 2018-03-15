@@ -27,7 +27,7 @@ class SummaryStatsUtil(object):
         self.col_info.uniques = len(self.col_series.unique())
 
         mid_pt = int(self.col_info.uniques / 2)
-        
+
         # iterate through value_counts for mode stats
         #
         row_num = 0
@@ -69,9 +69,9 @@ class SummaryStatsUtil(object):
                 fewest_output.append(col_val)
                 self.col_info.freqfewest = val_cnt
 
-        self.col_info.fewest = fewest_output
+        self.col_info.set_fewest(fewest_output)
 
-        self.col_info.mode = output
+        self.col_info.set_mode(output)
 
         if self.col_info.is_character():
 
@@ -101,7 +101,6 @@ class SummaryStatsUtil(object):
                                                 drop_missing=False)
 
             # self.col_info.mode = np.around(self.col_info.mode, 4)
-            # self.col_info.fewest = np.around(self.col_info.fewest, 4)
             if self.col_info.mid is not None:
                 self.col_info.mid = np.around(self.col_info.mid, 4)
             # freqfewest and freqmid left for now as they always give int value. why SignIf then?
@@ -135,4 +134,3 @@ class SummaryStatsUtil(object):
                 fraction_val.append(np.math.pow(cnt / total_sum, 2))
 
         return sum(fraction_val)
-

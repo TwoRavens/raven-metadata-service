@@ -1,4 +1,5 @@
-""" Module for variable display setting """
+"""Module for a variable's display settings"""
+from collections import OrderedDict
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json
@@ -8,15 +9,27 @@ from np_json_encoder import NumpyJSONEncoder
 
 
 class VariableDisplayUtil(object):
-    def __init__(self, col_info, colnames):
+
+    def __init__(self, column_name, **kwargs):
         """Init with a pandas dataframe"""
         assert col_info is not None, "dataframe can't be None"
-        self.editable = pd.Series['labl','numchar', 'nature', 'time']  # list of all the attributes set as editable ***
-        self.col_names = pd.Series(colnames)  # original list of all the variables to be used
-        self.col_names = ['cylinders', 'mpg']  # list of all variables, for testing with given JSONs
-        self.attributes = ['numchar','nature','mean','median']  # list of all attributes in Two Ravens metadata schema, yet to be updated
-        self.var_display()
-        self.original_json={}
+        self.column_name = column_name
+
+        # Initial settings
+        self.viewable = kwargs.get('viewable', True)
+        self.omit = kwargs.get('omit', [])
+        self.images = kwargs.get('images', [])
+
+        self.editable_labels = ColumnInfo.get_editable_column_labels()  # list of all the attributes set as editable ***
+        self.editable_vars = ColumnInfo.EDITABLE_COLUMNS      # list of all the attributes set as editable ***
+
+    @staticmethod
+    def get_default_settings():
+        """Return the initial preprocess settings"""
+        return OrderedDict(viewable=True,
+                           omit=[],
+                           images=[])
+
 
     def get_update_json(self):
         """
@@ -217,7 +230,3 @@ class VariableDisplayUtil(object):
     def final_original_output(self):
         print(self.original_json)
         return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
-
-
-
-
