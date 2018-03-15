@@ -26,8 +26,52 @@ from celery import task, shared_task
 
 from ravens_metadata.celery import celery_app
 
+
+
 @shared_task
-def preprocess_csv_file(input_file, output_dir=None):
+def preprocess_csv_file(input_file):
+    """Run preprocess on a csv file"""
+    init_timestamp = datetime.now()
+    start_time = time.time()
+
+    print('(%s) Start preprocess: %s' % (init_timestamp, input_file))
+
+    # Split out the filename and extension
+    # - check if it's tab delimited
+    #
+    fname_base, fname_ext = splitext(basename(input_file))
+    if fname_ext.lower() == '.tab':
+        runner, user_msg = PreprocessRunner.load_from_tabular_file(\
+                                    input_file)
+    else:
+        runner, user_msg = PreprocessRunner.load_from_csv_file(input_file)
+
+    if user_msg:
+        print('(%s) FAILED: %s' % (input_file, user_msg))
+        return dict(success=False,
+                    input_file=input_file,
+                    message=user_msg)
+
+    #runner.show_final_info()
+
+    # ------------------------------
+    # prepare final JSON output and
+    # write to file
+    # ------------------------------
+    jstring = runner.get_final_json(indent=4)
+
+    elapsed_time = time.time() - start_time
+    elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+
+    return dict(success=True,
+                input_file=input_file,
+                message=user_msg,
+                elapsed_time=elapsed_time_str,
+                data=runner.get_final_dict())
+
+
+@shared_task
+def xpreprocess_csv_file(input_file, output_dir=None):
     """Run preprocess on a csv file"""
     init_timestamp = datetime.now()
     start_time = time.time()
