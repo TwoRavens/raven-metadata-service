@@ -29,10 +29,13 @@ from ravens_metadata.celery import celery_app
 
 
 @shared_task
-def preprocess_csv_file(input_file):
+def preprocess_csv_file(input_file, **kwargs):
     """Run preprocess on a csv file"""
     init_timestamp = datetime.now()
     start_time = time.time()
+    job_id = None
+    if kwargs is not None:
+        job_id = kwargs.get('job_id')
 
     print('(%s) Start preprocess: %s' % (init_timestamp, input_file))
 
@@ -42,9 +45,9 @@ def preprocess_csv_file(input_file):
     fname_base, fname_ext = splitext(basename(input_file))
     if fname_ext.lower() == '.tab':
         runner, user_msg = PreprocessRunner.load_from_tabular_file(\
-                                    input_file)
+                                    input_file, job_id=job_id)
     else:
-        runner, user_msg = PreprocessRunner.load_from_csv_file(input_file)
+        runner, user_msg = PreprocessRunner.load_from_csv_file(input_file, job_id=job_id)
 
     if user_msg:
         print('(%s) FAILED: %s' % (input_file, user_msg))

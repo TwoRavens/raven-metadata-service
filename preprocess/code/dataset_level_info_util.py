@@ -2,7 +2,6 @@
 import numpy as np
 import pandas as pd
 import re
-import xmltodict
 from np_json_encoder import NumpyJSONEncoder
 from collections import OrderedDict
 
