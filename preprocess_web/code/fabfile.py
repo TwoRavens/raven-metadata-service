@@ -136,36 +136,11 @@ def clear_jobs():
     PreprocessJob.objects.all().delete()
     print('Deleted...')
 
-@task
-def create_test_user():
-    """Create regular user with creds: test_user/test_user.  No admin access"""
-    from tworaven_apps.raven_auth.models import User
-
-    test_username = 'test_user'
-
-    if User.objects.filter(username=test_username).count() > 0:
-        print('A "%s" test user already exists' % test_username)
-        return
-
-    test_pw = test_username
-
-    new_user = User(username=test_username,
-                    first_name='Test',
-                    last_name='User',
-                    is_staff=False,
-                    is_active=True,
-                    is_superuser=False)
-
-    new_user.set_password(test_pw)
-    new_user.save()
-
-    print('test user created: "%s"' % test_username)
-    print('password: "%s"' % test_pw)
 
 @task
 def create_test_user():
     """Create regular user with creds: test_user/test_user.  No admin access"""
-    from django.contrib.auth.models import User
+    from ravens_metadata_apps.raven_auth.models import User
 
     test_username = 'test_user'
 
@@ -192,8 +167,7 @@ def create_test_user():
 @task
 def create_django_superuser():
     """(Test only) Create superuser with username: dev_admin. Password is printed to the console."""
-    from django.contrib.auth.models import User
-    #from django.contrib.auth.models import User
+    from ravens_metadata_apps.raven_auth.models import User
 
     dev_admin_username = 'dev_admin'
 

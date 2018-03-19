@@ -35,6 +35,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'raven_auth.User'
+
 
 # Application definition
 
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # track preprocess
+    'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.preprocess_jobs',
 ]
 
