@@ -3,7 +3,9 @@ from collections import OrderedDict
 from django.urls import reverse
 from django.db import models
 from model_utils.models import TimeStampedModel
+from ravens_metadata_apps.raven_auth.models import User
 from os.path import basename
+
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -27,6 +29,13 @@ class PreprocessJob(TimeStampedModel):
     """Initial, minimal model"""
     name = models.CharField(max_length=255,
                             blank=True)
+
+    is_metadata_public = models.BooleanField(default=True)
+
+    creator = models.ForeignKey(User,
+                                blank=True,
+                                null=True,
+                                on_delete=models.SET_NULL)
 
     state = models.CharField(max_length=100,
                              choices=PREPROCESS_CHOICES,
@@ -58,6 +67,13 @@ class PreprocessJob(TimeStampedModel):
     user_message = models.TextField(\
                 blank=True,
                 help_text='May be used for error messages, etc')
+
+
+    class Meta:
+        permissions = (
+            ('view_preprocess_job', 'View Preprocess Job'),
+            #('view_preprocess_job', 'View PreprocessJob'),
+        )
 
     def __str__(self):
         """minimal, change to name"""
