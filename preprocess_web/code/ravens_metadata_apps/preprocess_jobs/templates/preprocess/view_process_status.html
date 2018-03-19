@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{%  block extra_header %}
+    <script>
+    alert('start pollling against {%  url 'show_job_info' job.id  %}');
+    </script>
+
+{%  endblock %}
+
+{% block main_content %}
+     {{  job.id }}<br />
+     {{  job.state }}<br />
+    {{  job.user_message }}<br />
+    {{  job.get_preprocess_data }}<br />
+    {% if job.state == "PREPROCESS_STARTED" %}
+        <div class="my-3 p-3 bg-white rounded box-shadow" style="background-color:#868e96 ">
+
+        <div class="card" style="padding: 12px">
+          <div class="card-block">
+            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">File in process </h6>
+              <p>{{ job.name }}</p>
+          </div>
+        </div>
+        <br>
+            <div class="card" style="padding: 12px">
+          <div class="card-block">
+            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Progress </h6>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card" style="padding: 12px">
+          <div class="card-block">
+            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">State </h6>
+              <p>{{ job.state }}</p>
+          </div>
+        </div>
+        <br>
+
+        </div>
+    {% else %}
+        <div class="card" style="padding: 12px">
+          <div class="card-block">
+            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">User Message </h6>
+              <p>{{ job.user_message }}</p>
+          </div>
+        </div>
+        <br>
+        <div class="card" style="padding: 12px">
+          <div class="card-block">
+              <div style="border: #2e3133">
+           <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96; float: left ">Processed Data </h6>
+                  <button type="button" class="btn btn-primary btn-sm" style="float: right">Download</button>
+              </div>
+              <br>
+              <br>
+              <hr>
+              <br>
+              <p>
+        {{ job.data }}
+              </p>
+        </div>
+          </div>
+        <br>
+
+    {% endif %}
+
+{% endblock %}

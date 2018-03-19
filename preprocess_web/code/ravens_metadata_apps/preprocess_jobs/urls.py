@@ -14,11 +14,17 @@ urlpatterns = (
          views.endpoint_api_single_file,
          name='endpoint_api_single_file'),
 
-    # job info
+    # job info JSON format
     #
-    path('job-info/<int:job_id>',
+    path('job-info-json/<int:job_id>',
          views.show_job_info,
          name='show_job_info'),
+
+    # job info HTML page
+    #
+    path('job-status-page/<int:job_id>',
+         views.view_job_status_page,
+         name='view_job_status_page'),
 
 
     # default to upload form, for now
