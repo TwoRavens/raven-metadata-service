@@ -20,7 +20,11 @@ class JobUtil(object):
         """Start the preprocessing!"""
         assert isinstance(job, PreprocessJob),\
                'job must be a PreprocessJob'
+<<<<<<< HEAD
         # job_id = uuid.UUID.time
+=======
+
+>>>>>>> origin/master
         # send the file to the queue
         task = preprocess_csv_file.delay(job.source_file.path, job_id=job.id)
 
