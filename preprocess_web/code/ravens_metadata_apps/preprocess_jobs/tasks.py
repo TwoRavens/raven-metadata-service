@@ -33,9 +33,7 @@ def preprocess_csv_file(input_file, **kwargs):
     """Run preprocess on a csv file"""
     init_timestamp = datetime.now()
     start_time = time.time()
-    job_id = None
-    if kwargs is not None:
-        job_id = kwargs.get('job_id')
+    job_id = kwargs.get('job_id')
 
     print('(%s) Start preprocess: %s' % (init_timestamp, input_file))
 

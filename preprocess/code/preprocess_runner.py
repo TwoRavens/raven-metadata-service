@@ -72,9 +72,7 @@ class PreprocessRunner(object):
     @staticmethod
     def load_from_tabular_file(input_file, **kwargs):
         """Create the dataframe from a tab-delimited file"""
-        job_id = None
-        if kwargs is not None:
-            job_id = kwargs.get('job_id')
+        job_id = kwargs.get('job_id')
         return PreprocessRunner.load_from_csv_file(\
                                 input_file,
                                 is_tab_delimited=True, job_id=job_id)
@@ -90,9 +88,7 @@ class PreprocessRunner(object):
         success: return PreprocessRunner obj, None
         failure: return None, error message
         """
-        job_id = None
-        if kwargs is not None:
-            job_id = kwargs.get('job_id')
+        job_id = kwargs.get('job_id')
         if not isfile(input_file):
             return None, 'The file was not found: [%s]' % input_file
 
