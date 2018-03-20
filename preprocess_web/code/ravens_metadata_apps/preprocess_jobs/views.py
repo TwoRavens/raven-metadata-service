@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
@@ -57,7 +58,9 @@ def view_job_status_page(request, job_id):
 
 
 
+from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 @csrf_exempt
+@apikey_required
 def endpoint_api_single_file(request):
     """Preprocess a single file
     - Always returns JSON
@@ -109,14 +112,22 @@ import os
 from os.path import isfile, isdir, join
 url = 'http://127.0.0.1:8000/preprocess/api-single-file'
 
+
+fpath = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/preprocess_web/test_setup_local/preprocess_files/source_file/2018/03/19/fearonLaitin.tab'
+files = {'source_file': open(fpath, 'rb')}
+r = requests.post(url, files=files)
+r.text
+open('err.html', 'w').write(r.text)
+
 test_file_dir = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/preprocess/input/'
 
 for fname in os.listdir(test_file_dir):
     if fname.endswith('.csv'):
         fullname = join(test_file_dir, fname)
-        files = {'source_file': open(file_path, 'rb')}
+        files = {'source_file': open(fullname, 'rb')}
         r = requests.post(url, files=files)
         r.text
+        break
 
 """
 

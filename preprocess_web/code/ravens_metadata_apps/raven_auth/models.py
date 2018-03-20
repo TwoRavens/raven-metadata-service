@@ -13,30 +13,30 @@ class User(AbstractUser):
     FIELDS_TO_SERIALIZE = ['id', 'username',
                            'email',
                            'first_name', 'last_name',
-                           'api_token',
+                           'api_key',
                            'is_active', 'is_staff', 'is_superuser',
                            'last_login', 'date_joined']
 
-    api_token = models.CharField(max_length=100,
+    api_key = models.CharField(max_length=100,
                                  blank=True)
 
     token_updated = models.DateTimeField()
 
 
     def save(self, *args, **kwargs):
-        """Override save to generate an initial api_token"""
-        if not self.api_token:
-            # generate an initial api_token
-            self.api_token = uuid.uuid4().hex
+        """Override save to generate an initial api_key"""
+        if not self.api_key:
+            # generate an initial api_key
+            self.api_key = uuid.uuid4().hex
             self.token_updated = timezone.now()
 
         # save...
         super(User, self).save(*args, **kwargs)
 
 
-    def refresh_api_token(self):
+    def refresh_api_key(self):
         """Refresh the API token"""
-        self.api_token = uuid.uuid4().hex
+        self.api_key = uuid.uuid4().hex
         self.token_updated = timezone.now()
         self.save()
 

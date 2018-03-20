@@ -23,7 +23,7 @@ class RavenUserAdmin(UserAdmin):
     list_display = ('username', 'email',
                     'first_name', 'last_name',
                     'is_staff',
-                    'api_token', 'token_updated')
+                    'api_key', 'token_updated')
 
 
 admin.site.register(User, RavenUserAdmin)
