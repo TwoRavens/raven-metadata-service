@@ -39,6 +39,18 @@ def view_basic_upload_form(request):
                   {'form': form})
 
 
+def get_retrive_rows_info(request, job_id):
+    # if request == 'POST':
+        try:
+            job = PreprocessJob.objects.get(pk=job_id)
+        except PreprocessJob.DoesNotExist:
+            raise Http404('job_id not found: %s' % job_id)
+        output = JobUtil.retrieve_rows(job)
+        print("output ", output)
+        return render(request,
+                      'preprocess/retrieve-rows.html',
+                      {'output': output})
+
 
 
 def view_job_status_page(request, job_id):
@@ -49,7 +61,6 @@ def view_job_status_page(request, job_id):
         raise Http404('job_id not found: %s' % job_id)
 
     JobUtil.check_status(job)
-
 
     return render(request,
                   'preprocess/view_process_status.html',

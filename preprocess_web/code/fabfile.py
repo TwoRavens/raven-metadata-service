@@ -103,7 +103,7 @@ def run_shell():
 def run_web():
     """Start web server"""
     init_db()
-    run_webserver_cmd = ('python manage.py runserver')
+    run_webserver_cmd = ('python manage.py runserver 8080')
 
     print('run web server: %s' % run_webserver_cmd)
 
