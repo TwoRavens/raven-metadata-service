@@ -72,25 +72,26 @@ class JobUtil(object):
             # delete task!
 
     @staticmethod
-    def retrieve_rows(job):
+    def retrieve_rows(job, **kwargs):
+
+        print('kwargs', kwargs)
+
         job_id = job.id
         df = pd.read_csv(job.source_file.path)[:100]
         raw_data = df.to_json(orient='split')
-        # print("raw_data", raw_data)
+        data_back_to_list = json.loads(raw_data)
+        print("raw_data", raw_data)
 
         output = {
-            "attributes":
-                {
+            "attributes": {
                     "preprocess_id": job_id,
                     "start_row": 1,
                     "num_rows": 1000,
                     "format": 'json'
                 },
-            "data": raw_data
+                    "data": data_back_to_list,
             }
 
-        od = json.dumps(output, indent=4)
+        #od = json.dumps(output, indent=4)
 
-        return od
-
-
+        return output
