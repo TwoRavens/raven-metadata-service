@@ -26,6 +26,19 @@ urlpatterns = (
          views.view_job_status_page,
          name='view_job_status_page'),
 
+    # job to retrieve rows
+    #
+    path('retrieve-rows/<int:job_id>',
+         views.get_retrieve_rows_info,
+         name='view_retrieve-rows'),
+
+
+    # job to retrieve rows
+    #
+    path('retrieve-rows-post',
+         views.get_retrieve_rows_info2,
+         name='view_retrieve_rows2'),
+
 
     # default to upload form, for now
     #

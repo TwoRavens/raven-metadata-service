@@ -1,5 +1,6 @@
 """Utility class for the preprocess workflow"""
 import json, uuid
+import pandas as pd
 from datetime import datetime as dt
 from django.core.files.base import ContentFile
 
@@ -69,3 +70,28 @@ class JobUtil(object):
             #            data=ye_task.result['data']))
 
             # delete task!
+
+    @staticmethod
+    def retrieve_rows(job, **kwargs):
+
+        print('kwargs', kwargs)
+
+        job_id = job.id
+        df = pd.read_csv(job.source_file.path)[:100]
+        raw_data = df.to_json(orient='split')
+        data_back_to_list = json.loads(raw_data)
+        print("raw_data", raw_data)
+
+        output = {
+            "attributes": {
+                    "preprocess_id": job_id,
+                    "start_row": 1,
+                    "num_rows": 1000,
+                    "format": 'json'
+                },
+                    "data": data_back_to_list,
+            }
+
+        #od = json.dumps(output, indent=4)
+
+        return output

@@ -12,6 +12,10 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm
 from ravens_metadata_apps.raven_auth.models import User
+from ravens_metadata_apps.utils.view_helper import \
+    (get_request_body_as_json,
+     get_json_error,
+     get_json_success)
 
 # Create your views here.
 def test_view(request):
@@ -41,6 +45,56 @@ def view_basic_upload_form(request):
                   {'form': form})
 
 
+def get_retrieve_rows_info(request, job_id):
+    # if request == 'POST':
+    try:
+        job = PreprocessJob.objects.get(pk=job_id)
+    except PreprocessJob.DoesNotExist:
+        raise Http404('job_id not found: %s' % job_id)
+    output = JobUtil.retrieve_rows(job)
+    print("output ", output)
+    return render(request,
+                  'preprocess/retrieve-rows.html',
+                  {'output': output})
+
+
+@csrf_exempt
+def get_retrieve_rows_info2(request):
+    if request.method != 'POST':
+        user_msg = dict(success=False,
+                        message='POST required')
+        return JsonResponse(user_msg)
+
+    print('request.POST', request.POST)
+    if not 'job_id' in request.POST:
+        user_msg = dict(success=False,
+                        message='job_id not found')
+        return JsonResponse(user_msg)
+
+    job_id = request.POST['job_id']
+
+    try:
+        job = PreprocessJob.objects.get(pk=job_id)
+    except PreprocessJob.DoesNotExist:
+        raise Http404('job_id not found: %s' % job_id)
+
+    params = {
+                "num_rows": request.POST.get('num_rows', None)
+            }
+
+    output = JobUtil.retrieve_rows(job, **params)
+    print("output ", output)
+
+    user_msg = dict(success=True,
+                    message='It worked',
+                    data=output)
+
+    return JsonResponse(user_msg)
+
+
+    return render(request,
+                  'preprocess/retrieve-rows.html',
+                  {'output': output})
 
 
 def view_job_status_page(request, job_id):
@@ -51,7 +105,6 @@ def view_job_status_page(request, job_id):
         raise Http404('job_id not found: %s' % job_id)
 
     JobUtil.check_status(job)
-
 
     return render(request,
                   'preprocess/view_process_status.html',
@@ -78,34 +131,22 @@ def endpoint_api_single_file(request, api_user=None):
               "preprocess_status_url" : gives details of PreprocessInfo
              }
     """
-    print('endpoint_api_single_file 1')
-    if request.method != 'POST':
-        user_msg = dict(success=False,
-                        message='Please use a POST request')
-        return JsonResponse(user_msg,
+    for k, v in request.META.items():
+        print(k, v)
+    if not request.method == 'POST':
+        err_msg = 'Must be a POST'
+        return JsonResponse(get_json_error(err_msg),
                             status=412)
-
-    print('endpoint_api_single_file 2')
 
     # This duplicates the apikey_required decorator,
     # exists in case decorator is accidentally removed
     #
     if not isinstance(api_user, User):
-        user_msg = dict(success=False,
-                        message='Authorization failed.')
-        return JsonResponse(user_msg,
+        return JsonResponse(get_json_error('Authorization failed.'),
                             status=401)
-
-    print('endpoint_api_single_file 3')
-
-    return JsonResponse(dict(msg='almost there'),
-                        status=412)
-
-    print('endpoint_api_single_file 4')
 
     form = PreprocessJobForm(request.POST, request.FILES)
 
-    print('endpoint_api_single_file 5')
     if not form.is_valid():
 
         user_msg = dict(success=False,
@@ -114,7 +155,6 @@ def endpoint_api_single_file(request, api_user=None):
         return JsonResponse(user_msg,
                             status=400)
 
-    print('endpoint_api_single_file 6')
 
     # save the PreprocessJob
     job = form.save()
@@ -122,14 +162,24 @@ def endpoint_api_single_file(request, api_user=None):
     # start background task
     JobUtil.start_preprocess(job)
 
-    user_msg = dict(success=True,
-                    message='some message',
-                    callback_url=job.get_job_status_link(),
-                    data=job.as_dict())
+    user_msg = get_json_success(\
+                'some message',
+                callback_url=job.get_job_status_link(request.META.get('HTTP_HOST')),
+                data=job.as_dict())
 
     return JsonResponse(user_msg)
 
 """
+http://127.0.0.1:8080/preprocess/api-single-file
+
+curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
+
+curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
+
+curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
+
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:3000/api/login
+
 import requests
 import os
 from os.path import isfile, isdir, join

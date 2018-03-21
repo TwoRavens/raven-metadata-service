@@ -40,7 +40,15 @@ def apikey_required(view_func):
         # ---------------------------
         # Assume production, check the API key
         # ---------------------------
-        auth_info = request.META.get('HTTP_AUTHORIZATION', '')
+        auth_info = request.META.get('HTTP_AUTHORIZATION', None)
+        if not auth_info:
+            error_message = (\
+                "An API key is required."
+                '(API key is "api-key" in the header)'
+                " Please see [documentation link]")
+            kwargs[API_ERR_MSG_KEY] = error_message
+            return bad_api_view(request, *args, **kwargs)
+
         label, api_key = auth_info.split()
         print('type(api_key)', type(api_key))
         print('api_key', api_key)

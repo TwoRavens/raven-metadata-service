@@ -116,14 +116,15 @@ class PreprocessJob(TimeStampedModel):
         return self.get_job_status_link()
 
 
-    def get_job_status_link(self):
+    def get_job_status_link(self, http_host=None):
         """for callbacks to check status and/or get preprocess data"""
-        temp_baseurl = 'http://127.0.0.1:8000'
+        if not http_host:
+            http_host = 'http://127.0.0.1:8000'
 
         status_url = reverse('show_job_info',
                              kwargs=dict(job_id=self.id))
 
-        return '%s%s' % (temp_baseurl, status_url)
+        return 'http://%s%s' % (http_host, status_url)
 
     def source_file_path(self):
         """To display the full path in the admin"""
