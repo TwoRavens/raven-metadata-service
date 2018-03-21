@@ -80,11 +80,11 @@ class JobUtil(object):
         num_rows = int(kwargs.get('num_rows'))
         format_value = kwargs.get('format')
         update_end_num = start_row + num_rows
-
+        # we can check for max_rows and other conditions using the metadata information ( to be implemented later)
         if start_row <= 0 or num_rows <= 0 or format_value is None or job is None:
             user_msg = dict(success=False,
                             message='The input is incorrect',
-                            input= kwargs)
+                            input=kwargs)
 
             return user_msg
         else:
