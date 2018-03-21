@@ -1,6 +1,7 @@
 """Utility class for the preprocess workflow"""
 import json, uuid
 import pandas as pd
+from collections import OrderedDict
 from datetime import datetime as dt
 from django.core.files.base import ContentFile
 
@@ -75,23 +76,37 @@ class JobUtil(object):
     def retrieve_rows(job, **kwargs):
 
         print('kwargs', kwargs)
+        start_row = int(kwargs.get('start_row'))
+        num_rows = int(kwargs.get('num_rows'))
+        format_value = kwargs.get('format')
+        update_end_num = start_row + num_rows
 
-        job_id = job.id
-        df = pd.read_csv(job.source_file.path)[:100]
-        raw_data = df.to_json(orient='split')
-        data_back_to_list = json.loads(raw_data)
-        print("raw_data", raw_data)
+        if start_row <= 0 or num_rows <= 0 or format_value is None or job is None:
+            user_msg = dict(success=False,
+                            message='The input is incorrect',
+                            input= kwargs)
 
-        output = {
-            "attributes": {
+            return user_msg
+        else:
+            job_id = job.id
+
+            df = pd.read_csv(job.source_file.path)[start_row:update_end_num]
+            raw_data = df.to_dict(orient='split')
+
+            print("raw_data", raw_data)
+
+            output = {
+                "success": True,
+                "message": 'It worked',
+                "attributes": {
                     "preprocess_id": job_id,
-                    "start_row": 1,
-                    "num_rows": 1000,
-                    "format": 'json'
+                    "start_row": start_row,
+                    "num_rows": num_rows,
+                    "format": format_value
                 },
-                    "data": data_back_to_list,
+                "data": str(raw_data),
             }
 
-        #od = json.dumps(output, indent=4)
+            # od = json.dumps(output, indent=4)
 
-        return output
+            return output

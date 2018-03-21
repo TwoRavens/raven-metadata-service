@@ -74,22 +74,17 @@ def get_retrieve_rows_info2(request):
         raise Http404('job_id not found: %s' % job_id)
 
     params = {
-                "num_rows": request.POST.get('num_rows', None)
-            }
+                "num_rows": request.POST.get('num_rows', None),
+                "start_row": request.POST.get('start_row', None),
+                "format": request.POST.get('format', None)
+             }
 
     output = JobUtil.retrieve_rows(job, **params)
     print("output ", output)
 
-    user_msg = dict(success=True,
-                    message='It worked',
-                    data=output)
+    user_msg = output
 
     return JsonResponse(user_msg)
-
-
-    return render(request,
-                  'preprocess/retrieve-rows.html',
-                  {'output': output})
 
 
 def view_job_status_page(request, job_id):
