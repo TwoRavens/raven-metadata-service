@@ -20,6 +20,10 @@ from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = 'TwoRavens Metadata Service'
+admin.site.index_title = 'Features area'
+admin.site.site_title = 'TwoRavens Metadata Service'
+
 urlpatterns = [
 
     path(r'preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),

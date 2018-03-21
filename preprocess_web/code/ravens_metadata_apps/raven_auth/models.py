@@ -18,7 +18,7 @@ class User(AbstractUser):
                            'last_login', 'date_joined']
 
     api_key = models.CharField(max_length=100,
-                                 blank=True)
+                               blank=True)
 
     token_updated = models.DateTimeField()
 

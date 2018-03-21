@@ -11,6 +11,7 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm
+from ravens_metadata_apps.raven_auth.models import User
 
 # Create your views here.
 def test_view(request):
@@ -61,7 +62,7 @@ def view_job_status_page(request, job_id):
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 @csrf_exempt
 @apikey_required
-def endpoint_api_single_file(request):
+def endpoint_api_single_file(request, api_user=None):
     """Preprocess a single file
     - Always returns JSON
     - If not a POST:
@@ -77,13 +78,34 @@ def endpoint_api_single_file(request):
               "preprocess_status_url" : gives details of PreprocessInfo
              }
     """
+    print('endpoint_api_single_file 1')
     if request.method != 'POST':
         user_msg = dict(success=False,
                         message='Please use a POST request')
         return JsonResponse(user_msg,
                             status=412)
 
+    print('endpoint_api_single_file 2')
+
+    # This duplicates the apikey_required decorator,
+    # exists in case decorator is accidentally removed
+    #
+    if not isinstance(api_user, User):
+        user_msg = dict(success=False,
+                        message='Authorization failed.')
+        return JsonResponse(user_msg,
+                            status=401)
+
+    print('endpoint_api_single_file 3')
+
+    return JsonResponse(dict(msg='almost there'),
+                        status=412)
+
+    print('endpoint_api_single_file 4')
+
     form = PreprocessJobForm(request.POST, request.FILES)
+
+    print('endpoint_api_single_file 5')
     if not form.is_valid():
 
         user_msg = dict(success=False,
@@ -92,6 +114,7 @@ def endpoint_api_single_file(request):
         return JsonResponse(user_msg,
                             status=400)
 
+    print('endpoint_api_single_file 6')
 
     # save the PreprocessJob
     job = form.save()
@@ -112,12 +135,17 @@ import os
 from os.path import isfile, isdir, join
 url = 'http://127.0.0.1:8000/preprocess/api-single-file'
 
+sess = requests.Session()
 
-fpath = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/preprocess_web/test_setup_local/preprocess_files/source_file/2018/03/19/fearonLaitin.tab'
+
+fpath = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv'
 files = {'source_file': open(fpath, 'rb')}
-r = requests.post(url, files=files)
+headers = {'API_KEY': 'a919e9a542e24620be1a8a0830a8cbf7'}
+headers={'Authorization': 'token a919e9a542e24620be1a8a0830a8cbf7'}
+#headers = {'content-type': 'application/json'}
+r = sess.post(url, headers=headers, files=files)
 r.text
-open('err.html', 'w').write(r.text)
+open(join(os.getcwd(), 'err.html'), 'w').write(r.text)
 
 test_file_dir = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/preprocess/input/'
 
