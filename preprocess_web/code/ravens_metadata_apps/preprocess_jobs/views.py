@@ -56,28 +56,31 @@ def get_retrieve_rows_info(request, job_id):
 @csrf_exempt
 def get_retrieve_rows_info2(request):
     if request.method != 'POST':
-        user_msg = dict(success=False,
-                        message='POST required')
+        frm = RetrieveRowsForm()
+        return render(request,
+                      'preprocess/retrieve-rows.html',
+                      {'form': frm})
+
+    else:
+
+        frm = RetrieveRowsForm(request.POST)
+        if not frm.is_valid():
+            user_msg = dict(success=False,
+                            message='Invalid input',
+                            errors=frm._errors)
+            return JsonResponse(user_msg)
+
+        try:
+            job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
+        except PreprocessJob.DoesNotExist:
+            raise Http404('job_id not found: %s' % job_id)
+
+        output = JobUtil.retrieve_rows(job, **frm.cleaned_data)
+        print("output ", output)
+
+        user_msg = output
+
         return JsonResponse(user_msg)
-
-    frm = RetrieveRowsForm(request.POST)
-    if not frm.is_valid():
-        user_msg = dict(success=False,
-                        message='Invalid input',
-                        errors=frm._errors)
-        return JsonResponse(user_msg)
-
-    try:
-        job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
-    except PreprocessJob.DoesNotExist:
-        raise Http404('job_id not found: %s' % job_id)
-
-    output = JobUtil.retrieve_rows(job, **frm.cleaned_data)
-    print("output ", output)
-
-    user_msg = output
-
-    return JsonResponse(user_msg)
 
 
 def view_job_status_page(request, job_id):
