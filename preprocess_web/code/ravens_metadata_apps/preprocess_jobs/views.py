@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
-from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm
+from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm, RetrieveRowsForm
 from ravens_metadata_apps.utils.view_helper import get_request_body_as_json
 
 # Create your views here.
@@ -60,26 +60,25 @@ def get_retrieve_rows_info2(request):
                         message='POST required')
         return JsonResponse(user_msg)
 
-    print('request.POST', request.POST)
-    if not 'job_id' in request.POST:
+    frm = RetrieveRowsForm(request.POST)
+    if not frm.is_valid():
         user_msg = dict(success=False,
-                        message='job_id not found')
+                        message='%s' % frm.errors())
         return JsonResponse(user_msg)
 
-    job_id = request.POST['job_id']
 
     try:
-        job = PreprocessJob.objects.get(pk=job_id)
+        job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
     params = {
-                "num_rows": request.POST.get('num_rows', None),
-                "start_row": request.POST.get('start_row', None),
-                "format": request.POST.get('format', None)
+                "num_rows": frm.cleaned_data.get('num_rows', 100),
+                "start_row": frm.cleaned_data.get('start_row', 1),
+                "format": frm.cleaned_data.get('format', None)
              }
 
-    output = JobUtil.retrieve_rows(job, **params)
+    output = JobUtil.retrieve_rows(job, **params) # pass frm.cleaned_data instead
     print("output ", output)
 
     user_msg = output
@@ -127,10 +126,10 @@ def endpoint_api_single_file(request):
 
     form = PreprocessJobForm(request.POST, request.FILES)
     if not form.is_valid():
-
         user_msg = dict(success=False,
                         message='Errors found',
                         errors=form.errors.as_json())
+
         return JsonResponse(user_msg,
                             status=400)
 
