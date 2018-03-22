@@ -16,6 +16,7 @@ from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
 
+
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
@@ -134,7 +135,6 @@ class JobUtil(object):
 
         return output
 
-
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
         if request.method == 'POST':
@@ -164,6 +164,6 @@ class JobUtil(object):
             response = HttpResponse(content_type='text/csv')
             response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.csv'
 
-            data_frame.to_csv(path_or_buf=response, sep=';', float_format='%.2f', index=False, decimal=",")
+            data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
 
             return response
