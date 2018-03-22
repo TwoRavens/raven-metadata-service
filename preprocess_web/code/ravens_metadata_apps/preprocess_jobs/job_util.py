@@ -90,23 +90,59 @@ class JobUtil(object):
         # else:
         job_id = job.id
 
-        df = pd.read_csv(job.source_file.path)[start_row:update_end_num]
-        raw_data = df.to_dict(orient='split')
+        csv_data = pd.read_csv(job.source_file.path)
+        max_rows = len(csv_data)
+        print("the no. of rows are ", max_rows)
 
-        print("raw_data", raw_data)
+        error_message = []
 
-        output = {
-            "success": True,
-            "message": 'It worked',
-            "attributes": {
-                "preprocess_id": job_id,
-                "start_row": start_row,
-                "num_rows": num_rows,
-                "format": format_value
-            },
-            "data": str(raw_data),
-        }
+        if start_row > max_rows:
+            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (start_row, max_rows)
+            error_message.append(err)
+            start_row = 1
+        elif num_rows > max_rows:
+            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (num_rows, max_rows)
+            error_message.append(err)
+            num_rows = max_rows
 
-        # od = json.dumps(output, indent=4)
+        print("error message", error_message)
+        data_frame = csv_data[start_row:update_end_num]
 
-        return output
+        # if the format is json
+        if format_value is 'json':
+            raw_data = data_frame.to_dict(orient='split')
+
+            print("raw_data", raw_data)
+
+            if len(error_message) > 0:
+                output = {
+                    "success": True,
+                    "message": 'It worked but with some changes',
+                    "modifications": error_message,
+                    "attributes": {
+                        "preprocess_id": job_id,
+                        "start_row": start_row,
+                        "num_rows": num_rows,
+                        "format": format_value
+                    },
+                    "data": str(raw_data),
+                }
+
+            else:
+                output = {
+                    "success": True,
+                    "message": 'It worked',
+                    "attributes": {
+                        "preprocess_id": job_id,
+                        "start_row": start_row,
+                        "num_rows": num_rows,
+                        "format": format_value
+                    },
+                    "data": str(raw_data),
+                }
+
+            return output
+
+        # if the format is csv
+        else:
+            return
