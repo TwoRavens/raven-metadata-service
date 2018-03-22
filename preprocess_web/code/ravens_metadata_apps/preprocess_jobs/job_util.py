@@ -141,9 +141,6 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            input_format = kwargs.get('format')
-            job_id = job.id
-
             csv_data = pd.read_csv(job.source_file.path)
             max_rows = len(csv_data)
             print("the no. of rows are ", max_rows)
@@ -165,7 +162,7 @@ class JobUtil(object):
             update_end_num = start_row + num_rows
             data_frame = csv_data[start_row:update_end_num]
             response = HttpResponse(content_type='text/csv')
-            response['Content-Disposition'] = 'attachment; filename=response.csv'
+            response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.csv'
 
             data_frame.to_csv(path_or_buf=response, sep=';', float_format='%.2f', index=False, decimal=",")
 
