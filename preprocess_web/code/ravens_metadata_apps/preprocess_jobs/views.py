@@ -84,6 +84,7 @@ def get_retrieve_rows_info2(request):
         elif input_format == FORMAT_CSV:
             return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
+
 def view_job_status_page(request, job_id):
     """test to show uploaded file info"""
     try:

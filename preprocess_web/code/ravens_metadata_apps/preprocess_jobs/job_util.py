@@ -85,7 +85,11 @@ class JobUtil(object):
 
         job_id = job.id
 
-        csv_data = pd.read_csv(job.source_file.path)
+        if job.source_file.name.lower().endswith('.tab'):
+            csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+        else:
+            csv_data = pd.read_csv(job.source_file.path)
+
         max_rows = len(csv_data)
         print("the no. of rows are ", max_rows)
 
@@ -141,7 +145,10 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            csv_data = pd.read_csv(job.source_file.path)
+            if job.source_file.name.lower().endswith('.tab'):
+                csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+            else:
+                csv_data = pd.read_csv(job.source_file.path)
             max_rows = len(csv_data)
             print("the no. of rows are ", max_rows)
 
