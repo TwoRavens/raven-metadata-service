@@ -137,7 +137,7 @@ class JobUtil(object):
 
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
-        if request.method != 'POST':
+        if request.method == 'POST':
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
