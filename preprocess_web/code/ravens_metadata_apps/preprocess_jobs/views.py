@@ -63,22 +63,16 @@ def get_retrieve_rows_info2(request):
     frm = RetrieveRowsForm(request.POST)
     if not frm.is_valid():
         user_msg = dict(success=False,
-                        message='%s' % frm.errors())
+                        message='Invalid input',
+                        errors=frm._errors)
         return JsonResponse(user_msg)
-
 
     try:
         job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    params = {
-                "num_rows": frm.cleaned_data.get('num_rows', 100),
-                "start_row": frm.cleaned_data.get('start_row', 1),
-                "format": frm.cleaned_data.get('format', None)
-             }
-
-    output = JobUtil.retrieve_rows(job, **params) # pass frm.cleaned_data instead
+    output = JobUtil.retrieve_rows(job, **frm.cleaned_data)
     print("output ", output)
 
     user_msg = output

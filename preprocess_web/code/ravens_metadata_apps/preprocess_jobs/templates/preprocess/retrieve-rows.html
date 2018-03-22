@@ -1,35 +1,40 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-    <div class="card" style="padding: 12px">
-          <div class="card-block">
-            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Status </h6>
-               {% if output.success == True %}
-                    <p>Success</p>
-              {%  else %}
-                    <p>Failed</p>
-          </div>
-        </div>
-
-     <div class="card" style="padding: 12px">
-          <div class="card-block">
-            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Message </h6>
-              <p>output.message</p>
-          </div>
-     </div>
-    <div class="card" style="padding: 12px">
-          <div class="card-block">
-            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Data Information </h6>
-              <p>output.attributes</p>
-          </div>
-     </div>
-    <div class="card" style="padding: 12px">
-          <div class="card-block">
-            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Data </h6>
-              <p style="font-family: 'Helvetica', sans-serif">output.data</p>
-          </div>
-     </div>
-
-{{ output }}
+{#    <div class="card" style="padding: 12px">#}
+{#          <div class="card-block">#}
+{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Status </h6>#}
+{#               {% if output.success == True %}#}
+{#                    <p>Success</p>#}
+{#              {%  else %}#}
+{#                    <p>Failed</p>#}
+{#          </div>#}
+{#        </div>#}
+{##}
+{#     <div class="card" style="padding: 12px">#}
+{#          <div class="card-block">#}
+{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Message </h6>#}
+{#              <p>output.message</p>#}
+{#          </div>#}
+{#     </div>#}
+{#    <div class="card" style="padding: 12px">#}
+{#          <div class="card-block">#}
+{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Data Information </h6>#}
+{#              <p>output.attributes</p>#}
+{#          </div>#}
+{#     </div>#}
+{#    <div class="card" style="padding: 12px">#}
+{#          <div class="card-block">#}
+{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Data </h6>#}
+{#              <p style="font-family: 'Helvetica', sans-serif">output.data</p>#}
+{#          </div>#}
+{#     </div>#}
+{##}
+{#{{ output }}#}
+    <form method="post" novalidate>
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">Submit</button>
+</form>
 
 {% endblock %}

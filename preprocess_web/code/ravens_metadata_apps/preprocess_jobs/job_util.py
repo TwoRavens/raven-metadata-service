@@ -76,37 +76,37 @@ class JobUtil(object):
     def retrieve_rows(job, **kwargs):
 
         print('kwargs', kwargs)
-        start_row = int(kwargs.get('start_row'))
-        num_rows = int(kwargs.get('num_rows'))
+        start_row = kwargs.get('start_row')
+        num_rows = kwargs.get('number_rows')
         format_value = kwargs.get('format')
         update_end_num = start_row + num_rows
         # we can check for max_rows and other conditions using the metadata information ( to be implemented later)
-        if start_row <= 0 or num_rows <= 0 or format_value is None or job is None:
-            user_msg = dict(success=False,
-                            message='The input is incorrect',
-                            input=kwargs)
+        # if start_row <= 0 or num_rows <= 0 or format_value is None or job is None:
+        #     user_msg = dict(success=False,
+        #                     message='The input is incorrect',
+        #                     input=kwargs)
+        #
+        #     return user_msg
+        # else:
+        job_id = job.id
 
-            return user_msg
-        else:
-            job_id = job.id
+        df = pd.read_csv(job.source_file.path)[start_row:update_end_num]
+        raw_data = df.to_dict(orient='split')
 
-            df = pd.read_csv(job.source_file.path)[start_row:update_end_num]
-            raw_data = df.to_dict(orient='split')
+        print("raw_data", raw_data)
 
-            print("raw_data", raw_data)
+        output = {
+            "success": True,
+            "message": 'It worked',
+            "attributes": {
+                "preprocess_id": job_id,
+                "start_row": start_row,
+                "num_rows": num_rows,
+                "format": format_value
+            },
+            "data": str(raw_data),
+        }
 
-            output = {
-                "success": True,
-                "message": 'It worked',
-                "attributes": {
-                    "preprocess_id": job_id,
-                    "start_row": start_row,
-                    "num_rows": num_rows,
-                    "format": format_value
-                },
-                "data": str(raw_data),
-            }
+        # od = json.dumps(output, indent=4)
 
-            # od = json.dumps(output, indent=4)
-
-            return output
+        return output
