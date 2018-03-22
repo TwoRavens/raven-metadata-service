@@ -5,7 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
-
+from .forms import FORMAT_JSON,FORMAT_CSV
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
@@ -74,13 +74,13 @@ def get_retrieve_rows_info2(request):
             job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
         except PreprocessJob.DoesNotExist:
             raise Http404('job_id not found: %s' % job_id)
-
-        output = JobUtil.retrieve_rows(job, **frm.cleaned_data)
-        print("output ", output)
-
-        user_msg = output
-
-        return JsonResponse(user_msg)
+        if frm.cleaned_data.get('format') is 'json':
+            output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
+            print("output ", output)
+            user_msg = output
+            return JsonResponse(user_msg)
+        else:
+            return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
 
 def view_job_status_page(request, job_id):
