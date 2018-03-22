@@ -15,7 +15,8 @@ from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,
-     get_json_success)
+     get_json_success,
+     get_baseurl_from_request)
 
 # Create your views here.
 def test_view(request):
@@ -131,8 +132,6 @@ def endpoint_api_single_file(request, api_user=None):
               "preprocess_status_url" : gives details of PreprocessInfo
              }
     """
-    for k, v in request.META.items():
-        print(k, v)
     if not request.method == 'POST':
         err_msg = 'Must be a POST'
         return JsonResponse(get_json_error(err_msg),
@@ -162,9 +161,11 @@ def endpoint_api_single_file(request, api_user=None):
     # start background task
     JobUtil.start_preprocess(job)
 
+    base_url = get_baseurl_from_request(request)
+
     user_msg = get_json_success(\
-                'some message',
-                callback_url=job.get_job_status_link(request.META.get('HTTP_HOST')),
+                'In progress',
+                callback_url=job.get_job_status_link(base_url),
                 data=job.as_dict())
 
     return JsonResponse(user_msg)
@@ -174,7 +175,7 @@ http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
 
-curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
+curl -H "Authorization: token 3b4347dc311148bfae355275b30c1905" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
 
@@ -190,22 +191,10 @@ sess = requests.Session()
 
 fpath = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv'
 files = {'source_file': open(fpath, 'rb')}
-headers = {'API_KEY': 'a919e9a542e24620be1a8a0830a8cbf7'}
 headers={'Authorization': 'token a919e9a542e24620be1a8a0830a8cbf7'}
-#headers = {'content-type': 'application/json'}
 r = sess.post(url, headers=headers, files=files)
 r.text
 open(join(os.getcwd(), 'err.html'), 'w').write(r.text)
-
-test_file_dir = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/preprocess/input/'
-
-for fname in os.listdir(test_file_dir):
-    if fname.endswith('.csv'):
-        fullname = join(test_file_dir, fname)
-        files = {'source_file': open(fullname, 'rb')}
-        r = requests.post(url, files=files)
-        r.text
-        break
 
 """
 

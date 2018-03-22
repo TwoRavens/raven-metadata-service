@@ -2,6 +2,7 @@ import json
 from collections import OrderedDict
 from django.urls import reverse
 from django.db import models
+from django.conf import settings
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
 from os.path import basename
@@ -116,15 +117,15 @@ class PreprocessJob(TimeStampedModel):
         return self.get_job_status_link()
 
 
-    def get_job_status_link(self, http_host=None):
+    def get_job_status_link(self, base_url=''):
         """for callbacks to check status and/or get preprocess data"""
-        if not http_host:
-            http_host = 'http://127.0.0.1:8000'
+        #if not base_url:
+        #    base_url = 'http://127.0.0.1:8000'
 
         status_url = reverse('show_job_info',
                              kwargs=dict(job_id=self.id))
 
-        return 'http://%s%s' % (http_host, status_url)
+        return '%s%s' % (base_url, status_url)
 
     def source_file_path(self):
         """To display the full path in the admin"""

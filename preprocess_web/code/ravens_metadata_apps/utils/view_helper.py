@@ -3,6 +3,9 @@ Utilities for views
 """
 from collections import OrderedDict
 import json
+from urllib.parse import urlparse
+
+from django.http import HttpRequest
 
 def get_common_view_info(request):
     """For all pages, e.g. is user logged in, etc"""
@@ -14,6 +17,15 @@ def get_common_view_info(request):
 
     return info
 
+
+def get_baseurl_from_request(request):
+    """Use the request object to build a base url"""
+    assert isinstance(request, HttpRequest),\
+        "request must be a django.http.HttpRequest object"""
+
+    urlParts = urlparse(request.build_absolute_uri())
+
+    return '%s://%s' % (urlParts.scheme, urlParts.netloc)
 
 def get_json_error(err_msg):
     """return an OrderedDict with success=False + message"""
