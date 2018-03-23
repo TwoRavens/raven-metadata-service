@@ -1,15 +1,20 @@
-{
-   "preprocess_id":45,
-   "variable_updates":{
-      "cylinders":{
-         "omit":[
-            "mean",
-            "median"
-         ],
-         "label":"(new value is here)"
-      },
-      "mpg":{
-         "viewable":false
-      }
-   }
-}
+ {
+            "preprocess_id": 45,
+            "variable_updates": {
+               "cylinders" : {
+                  "viewable": true,
+                 "omit": ["mean", "median"],
+                 "label": {
+                     "numchar":"discrete",
+                     "nature": "ordinal"
+                 }
+               },
+               "mpg": {
+                 "viewable": false,
+                 "omit": [],
+                 "label": {
+
+                 }
+               }
+            }
+        }

@@ -17,14 +17,26 @@ class UpdatePreprocessTest(unittest.TestCase):
     def setUp(self):
         """Load up the test file"""
         update_01_fname = join(TEST_DATA_DIR, 'update_01.json')
+        preprocess_01_fname = join(TEST_DATA_DIR, 'preprocess_01.json')
         update_data = open(update_01_fname, 'r').read()
+        preprocess_data = open(preprocess_01_fname, 'r').read()
         self.update_json_01 = json.loads(update_data,
                                          object_pairs_hook=OrderedDict)
-
+        self.preprocess_json_01 = json.loads(preprocess_data,
+                                             object_pairs_hook=OrderedDict)
 
     def test_10_update(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_10_update.__doc__)
         print(self.update_json_01)
+        print(self.preprocess_json_01)
 
         self.assertTrue('preprocess_id' in self.update_json_01)
+        # self.assertTrue('preprocess_id' in self.preprocess_json_01)
+
+
+    def test_20_update(self):
+        """(20) Test the data for numeric series"""
+        msgt(self.test_20_update.__doc__)
+
+        print(VariableDisplayUtil.var_display(self));
