@@ -25,13 +25,13 @@ class VariableDisplayUtil(object):
 
         # for error handling
         self.has_error = False
-        self.error_message = None
+        self.error_messages = []
 
     def add_error_message(self, err_msg):
         """Add error message"""
         print(err_msg)
         self.has_error = True
-        self.error_message = err_msg
+        self.error_messages.append(err_msg)
 
     @staticmethod
     def get_default_settings():
