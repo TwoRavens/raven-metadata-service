@@ -96,7 +96,12 @@ class PreprocessJob(TimeStampedModel):
         for attr_name in self.__dict__.keys():
             if attr_name.startswith('_'):
                 continue
-            od[attr_name] = '%s' % self.__dict__[attr_name]
+
+            elif attr_name == 'creator_id':
+                creator_info = self.creator.as_dict_short()
+                od['creator'] = creator_info
+            else:
+                od[attr_name] = '%s' % self.__dict__[attr_name]
 
         if self.preprocess_file:
             file_data = self.preprocess_file.read()

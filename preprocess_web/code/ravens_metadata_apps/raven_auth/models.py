@@ -7,6 +7,7 @@ from django.contrib.auth.models import AbstractUser
 from django.core.serializers.json import json, DjangoJSONEncoder
 from django.utils import timezone
 
+KEY_API_USER = 'api_user'
 
 class User(AbstractUser):
     """New user class to hold extra attributes in the future"""
@@ -16,6 +17,8 @@ class User(AbstractUser):
                            'api_key',
                            'is_active', 'is_staff', 'is_superuser',
                            'last_login', 'date_joined']
+
+    FIELDS_TO_SERIALIZE_SHORT = ['id', 'username', 'email']
 
     api_key = models.CharField(max_length=100,
                                blank=True)
@@ -46,6 +49,15 @@ class User(AbstractUser):
         if pretty:
             return self.as_dict(as_json_pretty=True)
         return self.as_dict(as_json=True)
+
+    def as_dict_short(self):
+        """Serialize a subset of fields that may be public"""
+        od = OrderedDict()
+
+        for param in self.FIELDS_TO_SERIALIZE_SHORT:
+            od[param] = self.__dict__.get(param)
+
+        return od
 
     def as_dict(self, **kwargs):
         """Return as an OrderedDict"""

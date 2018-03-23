@@ -1,4 +1,5 @@
-from ravens_metadata_apps.preprocess_jobs.models import User
+from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
+
 
 #from django.core.exceptions import PermissionDenied
 from django.http import JsonResponse, QueryDict
@@ -75,7 +76,7 @@ def apikey_required(view_func):
         # ---------------------------
         # OK, Continue on!
         # ---------------------------
-        kwargs['api_user'] = user
+        kwargs[KEY_API_USER] = user
         response = view_func(request, *args, **kwargs)
 
         # (maybe do something after the view_func call)

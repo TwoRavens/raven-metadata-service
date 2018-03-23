@@ -11,7 +11,8 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm
-from ravens_metadata_apps.raven_auth.models import User
+from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
+
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,
@@ -158,6 +159,9 @@ def endpoint_api_single_file(request, api_user=None):
     # save the PreprocessJob
     job = form.save()
 
+    job.creator = api_user
+    job.save()
+
     # start background task
     JobUtil.start_preprocess(job)
 
@@ -175,7 +179,7 @@ http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
 
-curl -H "Authorization: token 3b4347dc311148bfae355275b30c1905" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
+curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
 
