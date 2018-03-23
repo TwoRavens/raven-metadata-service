@@ -124,7 +124,7 @@ def init_db():
 
 @task
 def clear_jobs():
-    """Clear existing jobs. (ONLY ON TEST)"""
+    """Delete existing PreprocessJob objects. (ONLY ON TEST)"""
     from django.conf import settings
     if not settings.ALLOW_FAB_DELETE:
         print('For testing! Only if ALLOW_FAB_DELETE settings is True')
@@ -132,7 +132,10 @@ def clear_jobs():
 
     from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
     cnt = PreprocessJob.objects.count()
-    print('%d PreprocessJob(s) found' % cnt)
+    print('\n%d PreprocessJob(s) found' % cnt)
+    if cnt == 0:
+        print('Nothing to delete.')
+        return
     PreprocessJob.objects.all().delete()
     print('Deleted...')
 

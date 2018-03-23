@@ -1,8 +1,11 @@
 """
 Utilities for views
 """
-import collections
+from collections import OrderedDict
 import json
+from urllib.parse import urlparse
+
+from django.http import HttpRequest
 
 def get_common_view_info(request):
     """For all pages, e.g. is user logged in, etc"""
@@ -11,6 +14,35 @@ def get_common_view_info(request):
 
     #info = dict(is_authenticated=request.user.is_authenticated,
     #            user=request.user)
+
+    return info
+
+
+def get_baseurl_from_request(request):
+    """Use the request object to build a base url"""
+    assert isinstance(request, HttpRequest),\
+        "request must be a django.http.HttpRequest object"""
+
+    urlParts = urlparse(request.build_absolute_uri())
+
+    return '%s://%s' % (urlParts.scheme, urlParts.netloc)
+
+def get_json_error(err_msg):
+    """return an OrderedDict with success=False + message"""
+    info = OrderedDict()
+    info['success'] = False
+    info['message'] = err_msg
+    return info
+
+def get_json_success(user_msg, **kwargs):
+    """return an OrderedDict with success=True + message + optional 'data'"""
+    info = OrderedDict()
+    info['success'] = True
+    info['message'] = user_msg
+
+    # add on additional data pieces
+    for key, val in kwargs.items():
+        info[key] = val
 
     return info
 
@@ -63,7 +95,7 @@ def get_request_body_as_json(request):
 
     try:
         json_data = json.loads(req_body_or_err,
-                               object_pairs_hook=collections.OrderedDict)
+                               object_pairs_hook=OrderedDict)
     except json.decoder.JSONDecodeError as err_obj:
         err_msg = ('Failed to convert request body to JSON: %s') % err_obj
         return False, err_msg

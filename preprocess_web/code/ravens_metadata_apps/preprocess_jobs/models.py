@@ -2,8 +2,11 @@ import json
 from collections import OrderedDict
 from django.urls import reverse
 from django.db import models
+from django.conf import settings
 from model_utils.models import TimeStampedModel
+from ravens_metadata_apps.raven_auth.models import User
 from os.path import basename
+
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -27,6 +30,13 @@ class PreprocessJob(TimeStampedModel):
     """Initial, minimal model"""
     name = models.CharField(max_length=255,
                             blank=True)
+
+    is_metadata_public = models.BooleanField(default=True)
+
+    creator = models.ForeignKey(User,
+                                blank=True,
+                                null=True,
+                                on_delete=models.SET_NULL)
 
     state = models.CharField(max_length=100,
                              choices=PREPROCESS_CHOICES,
@@ -59,6 +69,13 @@ class PreprocessJob(TimeStampedModel):
                 blank=True,
                 help_text='May be used for error messages, etc')
 
+
+    class Meta:
+        permissions = (
+            ('view_preprocess_job', 'View Preprocess Job'),
+            #('view_preprocess_job', 'View PreprocessJob'),
+        )
+
     def __str__(self):
         """minimal, change to name"""
         return self.name
@@ -79,7 +96,12 @@ class PreprocessJob(TimeStampedModel):
         for attr_name in self.__dict__.keys():
             if attr_name.startswith('_'):
                 continue
-            od[attr_name] = '%s' % self.__dict__[attr_name]
+
+            elif attr_name == 'creator_id':
+                creator_info = self.creator.as_dict_short()
+                od['creator'] = creator_info
+            else:
+                od[attr_name] = '%s' % self.__dict__[attr_name]
 
         if self.preprocess_file:
             file_data = self.preprocess_file.read()
@@ -100,14 +122,15 @@ class PreprocessJob(TimeStampedModel):
         return self.get_job_status_link()
 
 
-    def get_job_status_link(self):
+    def get_job_status_link(self, base_url=''):
         """for callbacks to check status and/or get preprocess data"""
-        temp_baseurl = 'http://127.0.0.1:8000'
+        #if not base_url:
+        #    base_url = 'http://127.0.0.1:8000'
 
         status_url = reverse('show_job_info',
                              kwargs=dict(job_id=self.id))
 
-        return '%s%s' % (temp_baseurl, status_url)
+        return '%s%s' % (base_url, status_url)
 
     def source_file_path(self):
         """To display the full path in the admin"""
@@ -116,6 +139,19 @@ class PreprocessJob(TimeStampedModel):
 
         return 'n/a'
 
+    def is_tab_source_file(self):
+        """Is the source file a .tab file"""
+        if self.source_file:
+            if self.source_file.path.lower().endswith('.tab'):
+                return True
+        return False
+
+    def is_csv_source_file(self):
+        """Is the source file a .tab file"""
+        if self.source_file:
+            if self.source_file.path.lower().endswith('.csv'):
+                return True
+        return False
 
     def is_finished(self):
         """Is the task complete?"""

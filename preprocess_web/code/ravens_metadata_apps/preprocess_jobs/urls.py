@@ -42,7 +42,7 @@ urlpatterns = (
     # default to upload form, for now
     #
     path('hello',
-        views.test_view,
-        name='test_view'),
+         views.test_view,
+         name='test_view'),
 
 )

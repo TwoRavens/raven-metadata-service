@@ -83,12 +83,15 @@ class JobUtil(object):
         num_rows = kwargs.get('number_rows')
         input_format = kwargs.get('format')
         job_id = kwargs.get('preprocess_id')
-        if job.name.lower().endswith('.tab'):
-            print("is tab file")
+
+        if job.is_tab_source_file():
             csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
             print(csv_data)
-        else:
+        elif job.is_csv_source_file():
             csv_data = pd.read_csv(job.source_file.path)
+        else:
+            return dict(success=True,
+                        message='File type unknown (not csv or tab)')
 
         max_rows = len(csv_data)
         print("the no. of rows are ", max_rows)

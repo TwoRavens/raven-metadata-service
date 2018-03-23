@@ -5,12 +5,23 @@ from django.views.decorators.csrf import csrf_exempt
 
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
-from .forms import FORMAT_JSON,FORMAT_CSV
+
+from django.utils.decorators import method_decorator
+
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
+from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
+from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
-from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm, RetrieveRowsForm
-from ravens_metadata_apps.utils.view_helper import get_request_body_as_json
+from ravens_metadata_apps.preprocess_jobs.forms import \
+    (PreprocessJobForm, RetrieveRowsForm,
+     FORMAT_JSON, FORMAT_CSV)
+from ravens_metadata_apps.utils.view_helper import \
+    (get_request_body_as_json,
+     get_json_error,
+     get_json_success,
+     get_baseurl_from_request)
+
 
 # Create your views here.
 def test_view(request):
@@ -129,8 +140,10 @@ def view_job_status_page(request, job_id):
 
 
 
+from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 @csrf_exempt
-def endpoint_api_single_file(request):
+@apikey_required
+def endpoint_api_single_file(request, api_user=None):
     """Preprocess a single file
     - Always returns JSON
     - If not a POST:
@@ -146,13 +159,20 @@ def endpoint_api_single_file(request):
               "preprocess_status_url" : gives details of PreprocessInfo
              }
     """
-    if request.method != 'POST':
-        user_msg = dict(success=False,
-                        message='Please use a POST request')
-        return JsonResponse(user_msg,
+    if not request.method == 'POST':
+        err_msg = 'Must be a POST'
+        return JsonResponse(get_json_error(err_msg),
                             status=412)
 
+    # This duplicates the apikey_required decorator,
+    # exists in case decorator is accidentally removed
+    #
+    if not isinstance(api_user, User):
+        return JsonResponse(get_json_error('Authorization failed.'),
+                            status=401)
+
     form = PreprocessJobForm(request.POST, request.FILES)
+
     if not form.is_valid():
         user_msg = dict(success=False,
                         message='Errors found',
@@ -165,30 +185,46 @@ def endpoint_api_single_file(request):
     # save the PreprocessJob
     job = form.save()
 
+    job.creator = api_user
+    job.save()
+
     # start background task
     JobUtil.start_preprocess(job)
 
-    user_msg = dict(success=True,
-                    message='some message',
-                    callback_url=job.get_job_status_link(),
-                    data=job.as_dict())
+    base_url = get_baseurl_from_request(request)
+
+    user_msg = get_json_success(\
+                'In progress',
+                callback_url=job.get_job_status_link(base_url),
+                data=job.as_dict())
 
     return JsonResponse(user_msg)
 
 """
+http://127.0.0.1:8080/preprocess/api-single-file
+
+curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
+
+curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
+
+curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
+
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:3000/api/login
+
 import requests
 import os
 from os.path import isfile, isdir, join
 url = 'http://127.0.0.1:8000/preprocess/api-single-file'
 
-test_file_dir = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/preprocess/input/'
+sess = requests.Session()
 
-for fname in os.listdir(test_file_dir):
-    if fname.endswith('.csv'):
-        fullname = join(test_file_dir, fname)
-        files = {'source_file': open(file_path, 'rb')}
-        r = requests.post(url, files=files)
-        r.text
+
+fpath = '/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv'
+files = {'source_file': open(fpath, 'rb')}
+headers={'Authorization': 'token a919e9a542e24620be1a8a0830a8cbf7'}
+r = sess.post(url, headers=headers, files=files)
+r.text
+open(join(os.getcwd(), 'err.html'), 'w').write(r.text)
 
 """
 
