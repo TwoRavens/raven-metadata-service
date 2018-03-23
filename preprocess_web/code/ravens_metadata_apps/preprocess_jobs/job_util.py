@@ -82,11 +82,11 @@ class JobUtil(object):
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('number_rows')
         input_format = kwargs.get('format')
-
-        job_id = job.id
-
-        if job.source_file.name.lower().endswith('.tab'):
+        job_id = kwargs.get('preprocess_id')
+        if job.name.lower().endswith('.tab'):
+            print("is tab file")
             csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+            print(csv_data)
         else:
             csv_data = pd.read_csv(job.source_file.path)
 
@@ -108,7 +108,7 @@ class JobUtil(object):
         data_frame = csv_data[start_row:update_end_num]
         raw_data = data_frame.to_dict(orient='split')
 
-        print("raw_data", raw_data)
+        # print("raw_data", raw_data)
 
         if len(error_message) > 0:
             output = {
@@ -145,8 +145,10 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            if job.source_file.name.lower().endswith('.tab'):
+            if job.name.lower().endswith('.tab'):
+                print("is tab file")
                 csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+                print(csv_data)
             else:
                 csv_data = pd.read_csv(job.source_file.path)
             max_rows = len(csv_data)
