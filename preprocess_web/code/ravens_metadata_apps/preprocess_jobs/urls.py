@@ -10,7 +10,7 @@ urlpatterns = (
          views.view_basic_upload_form,
          name='view_basic_upload_form'),
 
-    path(r'api-single-file',
+    path(r'api/process-single-file',
          views.endpoint_api_single_file,
          name='endpoint_api_single_file'),
 
@@ -28,16 +28,15 @@ urlpatterns = (
 
     # job to retrieve rows
     #
-    path('retrieve-rows/<int:job_id>',
-         views.get_retrieve_rows_info,
-         name='view_retrieve-rows'),
-
+    path(r'form/retrieve-rows',
+         views.view_retrieve_rows_form,
+         name='view_form_retrieve_rows'),
 
     # job to retrieve rows
     #
-    path('retrieve-rows-post',
-         views.get_retrieve_rows_info2,
-         name='view_retrieve_rows2'),
+    path(r'api/retrieve-rows',
+         views.view_api_retrieve_rows,
+         name='view_api_retrieve_rows'),
 
 
     # default to upload form, for now
