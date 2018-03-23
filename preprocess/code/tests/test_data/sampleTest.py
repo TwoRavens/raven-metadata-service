@@ -32,8 +32,6 @@ preprocess_json = {
                   "cylinders":{
                      "viewable":"true",
                      "omit":[
-                        "numChar",
-                        "mean"
                      ],
                      "label":"",
                      "images":{
@@ -49,8 +47,6 @@ preprocess_json = {
 {
                      "viewable":"true",
                      "omit":[
-                        "numChar",
-                        "mean"
                      ],
                      "label":"",
                      "images":{
@@ -101,43 +97,44 @@ def modify_original(varname, omit_obj, viewable_obj, label_obj):
     print("viewable_obj", viewable_obj)
     print("lable", label_obj)
 
+    if not varname in access_obj_original:
+        print('"%s" was not found in the "variable" section of the metadata file' % varname)
+        return
 
+    elif not varname in access_obj_original_display:
+        print('"%s" was not found in the "variable_display" section of the metadata file' % varname)
+        return
 
-    for var in colnames:
-        try:
-            variable_obj = access_obj_original[var]
-            display_variable_obj = access_obj_original_display[var]
-            print(variable_obj)
-            """
-            variable_obj contains : "numchar":"continuous",
-                        "nature": "nominal",
-                       "mean":213,
-                       "median":34
-            """
-            # code for omit
-            if omit_obj is not None and var is varname:
-                # start deleting omit objects
-                for omit_var in omit_obj:
-                    del variable_obj[omit_var]
+    else:
+        variable_obj = access_obj_original[varname]
+        display_variable_obj = access_obj_original_display[varname]
+        print(variable_obj)
+        """
+        variable_obj contains : "numchar":"continuous",
+                    "nature": "nominal",
+                   "mean":213,
+                   "median":34
+        """
+        # code for omit
+        if omit_obj:
+            # start deleting omit objects
+            for omit_var in omit_obj:
+                del variable_obj[omit_var]
+            display_variable_obj['omit'] = omit_obj
 
-                display_variable_obj['omit'] = omit_obj
+        # code for viewable
+        if viewable_obj is False:
+            # print("delete", var)
+            del access_obj_original[varname]
+            display_variable_obj['viewable'] = False
 
-            # code for viewable
-            if viewable_obj is False and viewable_obj is not None and var is varname:
-                print("delete", var)
-                del access_obj_original[var]
-                display_variable_obj['viewable'] = False
+        # code for label
+        if label_obj:
+            for att_name in attributes:
+                if att_name in label_obj and att_name in editable_vars:
+                    variable_obj[att_name] = label_obj[att_name]
 
-            # code for label
-            if label_obj is not None and var is varname:
-                for att_name in attributes:
-                    if att_name in label_obj and att_name in editable_vars:
-                        variable_obj[att_name] = label_obj[att_name]
-
-                display_variable_obj['label'] = label_obj
-
-        except KeyError:
-            print('key not found : %s', var);
+            display_variable_obj['label'] = label_obj
 
 
 access_object = update_json['variable_updates']
