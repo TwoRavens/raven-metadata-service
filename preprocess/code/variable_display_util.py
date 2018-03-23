@@ -23,6 +23,16 @@ class VariableDisplayUtil(object):
         self.editable_labels = ColumnInfo.get_editable_column_labels()  # list of all the attributes set as editable ***
         self.editable_vars = ColumnInfo.EDITABLE_COLUMNS      # list of all the attributes set as editable ***
 
+        # for error handling
+        self.has_error = False
+        self.error_message = None
+
+    def add_error_message(self, err_msg):
+        """Add error message"""
+        print(err_msg)
+        self.has_error = True
+        self.error_message = err_msg
+
     @staticmethod
     def get_default_settings():
         """Return the initial preprocess settings"""
@@ -226,6 +236,7 @@ class VariableDisplayUtil(object):
                     variable_obj[att_name] = label_obj[att_name]
 
             display_variable_obj['label'] = label_obj
+
 
     def final_original_output(self):
         print(self.original_json)
