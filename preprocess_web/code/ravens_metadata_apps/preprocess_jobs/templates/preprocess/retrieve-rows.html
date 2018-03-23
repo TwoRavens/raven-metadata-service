@@ -31,7 +31,7 @@
 {#     </div>#}
 {##}
 {#{{ output }}#}
-    <form action="{% url 'view_retrieve-rows2' %}" method="post" novalidate>
+    <form action="{% url 'view_form_retrieve_rows' %}" method="post" novalidate>
   {% csrf_token %}
   {{ form }}
   <button type="submit">Submit</button>
