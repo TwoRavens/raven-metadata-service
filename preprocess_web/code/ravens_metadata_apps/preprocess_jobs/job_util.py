@@ -1,9 +1,12 @@
 """Utility class for the preprocess workflow"""
 import json, uuid
 import pandas as pd
+from collections import OrderedDict
 from datetime import datetime as dt
 from django.core.files.base import ContentFile
+from django.http import HttpResponse
 
+from .forms import FORMAT_JSON,FORMAT_CSV
 from celery.result import AsyncResult
 
 #from basic_preprocess import preprocess_csv_file
@@ -12,6 +15,7 @@ from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
+
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
@@ -72,26 +76,101 @@ class JobUtil(object):
             # delete task!
 
     @staticmethod
-    def retrieve_rows(job, **kwargs):
+    def retrieve_rows_json(job, **kwargs):
 
         print('kwargs', kwargs)
+        start_row = kwargs.get('start_row')
+        num_rows = kwargs.get('number_rows')
+        input_format = kwargs.get('format')
 
         job_id = job.id
-        df = pd.read_csv(job.source_file.path)[:100]
-        raw_data = df.to_json(orient='split')
-        data_back_to_list = json.loads(raw_data)
+
+        if job.source_file.name.lower().endswith('.tab'):
+            csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+        else:
+            csv_data = pd.read_csv(job.source_file.path)
+
+        max_rows = len(csv_data)
+        print("the no. of rows are ", max_rows)
+
+        error_message = []
+
+        if start_row > max_rows:
+            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (start_row, max_rows)
+            error_message.append(err)
+            start_row = 1
+        elif num_rows > max_rows:
+            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (num_rows, max_rows)
+            error_message.append(err)
+            num_rows = max_rows
+        update_end_num = start_row + num_rows
+        print("error message", error_message)
+        data_frame = csv_data[start_row:update_end_num]
+        raw_data = data_frame.to_dict(orient='split')
+
         print("raw_data", raw_data)
 
-        output = {
-            "attributes": {
+        if len(error_message) > 0:
+            output = {
+                "success": True,
+                "message": 'It worked but with some changes',
+                "modifications": error_message,
+                "attributes": {
                     "preprocess_id": job_id,
-                    "start_row": 1,
-                    "num_rows": 1000,
-                    "format": 'json'
+                    "start_row": start_row,
+                    "num_rows": num_rows,
+                    "format": input_format
                 },
-                    "data": data_back_to_list,
+                "data": str(raw_data),
             }
 
-        #od = json.dumps(output, indent=4)
+        else:
+            output = {
+                "success": True,
+                "message": 'It worked',
+                "attributes": {
+                    "preprocess_id": job_id,
+                    "start_row": start_row,
+                    "num_rows": num_rows,
+                    "format": input_format
+                },
+                "data": str(raw_data),
+            }
 
         return output
+
+    @staticmethod
+    def retrieve_rows_csv(request, job, **kwargs):
+        if request.method == 'POST':
+            print('kwargs', kwargs)
+            start_row = kwargs.get('start_row')
+            num_rows = kwargs.get('number_rows')
+            if job.source_file.name.lower().endswith('.tab'):
+                csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+            else:
+                csv_data = pd.read_csv(job.source_file.path)
+            max_rows = len(csv_data)
+            print("the no. of rows are ", max_rows)
+
+            error_message = []
+
+            if start_row > max_rows:
+                err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (
+                    start_row, max_rows)
+                error_message.append(err)
+                start_row = 1
+            elif num_rows > max_rows:
+                err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (
+                    num_rows, max_rows)
+                error_message.append(err)
+                num_rows = max_rows
+
+            print("error message", error_message)
+            update_end_num = start_row + num_rows
+            data_frame = csv_data[start_row:update_end_num]
+            response = HttpResponse(content_type='text/csv')
+            response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.csv'
+
+            data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
+
+            return response

@@ -5,11 +5,11 @@ from django.views.decorators.csrf import csrf_exempt
 
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
-
+from .forms import FORMAT_JSON,FORMAT_CSV
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
-from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm
+from ravens_metadata_apps.preprocess_jobs.forms import PreprocessJobForm, RetrieveRowsForm
 from ravens_metadata_apps.utils.view_helper import get_request_body_as_json
 
 # Create your views here.
@@ -39,7 +39,7 @@ def view_basic_upload_form(request):
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
 
-
+"""
 def get_retrieve_rows_info(request, job_id):
     # if request == 'POST':
     try:
@@ -51,45 +51,67 @@ def get_retrieve_rows_info(request, job_id):
     return render(request,
                   'preprocess/retrieve-rows.html',
                   {'output': output})
+"""
+
+def view_retrieve_rows_form(request):
+    """HTML form to retrieve rows from a preprocess file"""
+    if request.method != 'POST':
+        frm = RetrieveRowsForm()
+        return render(request,
+                      'preprocess/retrieve-rows.html',
+                      {'form': frm})
+    else:
+        frm = RetrieveRowsForm(request.POST)
+        if not frm.is_valid():
+            user_msg = dict(success=False,
+                            message='Invalid input',
+                            errors=frm._errors)
+            return JsonResponse(user_msg)
+
+        try:
+            job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
+        except PreprocessJob.DoesNotExist:
+            raise Http404('job_id not found: %s' % job_id)
+
+        input_format = frm.cleaned_data.get('format')
+        if input_format == FORMAT_JSON:
+            output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
+            print("output ", output)
+            user_msg = output
+            return JsonResponse(user_msg)
+        elif input_format == FORMAT_CSV:
+            return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
+
 
 
 @csrf_exempt
-def get_retrieve_rows_info2(request):
+def view_api_retrieve_rows(request):
+    """API endpoint to retrieve rows from a preprocess file"""
     if request.method != 'POST':
         user_msg = dict(success=False,
-                        message='POST required')
+                        message='Please use a POST to access this endpoint')
         return JsonResponse(user_msg)
 
-    print('request.POST', request.POST)
-    if not 'job_id' in request.POST:
+    frm = RetrieveRowsForm(request.POST)
+    if not frm.is_valid():
         user_msg = dict(success=False,
-                        message='job_id not found')
+                        message='Invalid input',
+                        errors=frm._errors)
         return JsonResponse(user_msg)
-
-    job_id = request.POST['job_id']
 
     try:
-        job = PreprocessJob.objects.get(pk=job_id)
+        job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    params = {
-                "num_rows": request.POST.get('num_rows', None)
-            }
-
-    output = JobUtil.retrieve_rows(job, **params)
-    print("output ", output)
-
-    user_msg = dict(success=True,
-                    message='It worked',
-                    data=output)
-
-    return JsonResponse(user_msg)
-
-
-    return render(request,
-                  'preprocess/retrieve-rows.html',
-                  {'output': output})
+    input_format = frm.cleaned_data.get('format')
+    if input_format == FORMAT_JSON:
+        output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
+        print("output ", output)
+        user_msg = output
+        return JsonResponse(user_msg)
+    elif input_format == FORMAT_CSV:
+        return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
 
 def view_job_status_page(request, job_id):
@@ -132,10 +154,10 @@ def endpoint_api_single_file(request):
 
     form = PreprocessJobForm(request.POST, request.FILES)
     if not form.is_valid():
-
         user_msg = dict(success=False,
                         message='Errors found',
                         errors=form.errors.as_json())
+
         return JsonResponse(user_msg,
                             status=400)
 
@@ -189,9 +211,3 @@ def show_job_info(request, job_id):
                     data=job.as_dict())
 
     return JsonResponse(user_msg)
-
-
-    #return JsonResponse(job.as_dict())
-    #return render(request,
-    #              'preprocess/view_process_status.html',
-    #              {'job': job.as_dict()})
