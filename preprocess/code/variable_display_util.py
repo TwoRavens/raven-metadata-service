@@ -10,16 +10,15 @@ from np_json_encoder import NumpyJSONEncoder
 
 class VariableDisplayUtil(object):
 
-    def __init__(self, df, preprocess_file, update_fie, **kwargs):
+    def __init__(self,preprocess_file, update_file):
         """Init with a pandas dataframe"""
-        assert col_info is not None, "dataframe can't be None"
-        self.col_names = pd.Series(df.columns.values)
+        assert preprocess_file or update_file is not None, "files can't be None"
+
         self.preprocess_file = preprocess_file
-        self.update_file = update_fie
+        self.update_file = update_file
+        self.col_names = {}
         # Initial settings
-        self.viewable = kwargs.get('viewable', True)
-        self.omit = kwargs.get('omit', [])
-        self.images = kwargs.get('images', [])
+
 
         self.attributes = [x[0] for x in ColumnInfo.get_variable_labels()]  # list of all the attributes ***
         self.editable_vars = ColumnInfo.get_editable_column_labels()      # list of all the attributes set as editable ***
@@ -50,12 +49,12 @@ class VariableDisplayUtil(object):
     def var_display(self):
         """ this function go through the update_json and call omit,viewable,label functions"""
         update_json = self.update_file
-        print(update_json)
+        # print(update_json)
         self.original_json = self.preprocess_file
         self.access_obj_original = self.original_json['variables']
         self.access_obj_original_display = self.original_json['variable_display']
         access_object = update_json['variable_updates']
-
+        self.col_names = list(self.access_obj_original)
         # for each column say [' cylinder','mpg',...]
         for varname in self.col_names:
             omit_object = access_object[varname]['omit']
@@ -105,7 +104,7 @@ class VariableDisplayUtil(object):
             # code for viewable
             if viewable_obj is False:
                 # del self.access_obj_original[varname]
-                display_variable_obj['viewable'] = False
+                display_variable_obj['viewable'] = "false"
 
             # code for label
             if label_obj:
@@ -117,5 +116,5 @@ class VariableDisplayUtil(object):
 
 
     def final_original_output(self):
-        print(self.original_json)
+        # print("json output : ",self.original_json)
         return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
