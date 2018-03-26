@@ -130,6 +130,62 @@ class PreprocessRunner(object):
 
         return runner, None
 
+    @staticmethod
+    def load_update_file(preprocess_input, update_input):
+        """ Returns the dict from the file input"""
+        if not isfile(preprocess_input):
+            return None, 'The file was not found: [%s]' % preprocess_input
+        elif not isfile(update_input):
+            return None, 'The file was not found: [%s]' % update_input
+
+        filesize_preprocess = os.stat(preprocess_input).st_size
+        filesize_update = os.stat(update_input).st_size
+        if filesize_preprocess == 0:
+            return None, 'The file size is zero: [%s]' % preprocess_input
+
+        elif filesize_update == 0:
+            return None, 'The file size is zero: [%s]' % update_input
+
+
+        try:
+            preprocess_input_dict = json.loads(preprocess_input, object_pairs_hook=OrderedDict)
+        except TypeError as err_obj:
+            err_msg = ('Input does not have Ordered dict convertable type'
+                       '\n - File: %s\n - %s')% \
+                      (preprocess_input, err_obj)
+            return None, err_msg
+        except Exception as err_obj:
+            err_msg = ('Failed to convert into Orderd dict'
+                       ' \n - File: %s\n - %s') % \
+                      (preprocess_input, err_obj)
+            return None, err_msg
+
+
+        try:
+            update_input_dict = json.loads(update_input, object_pairs_hook=OrderedDict)
+        except TypeError as err_obj:
+            err_msg = ('Input does not have Ordered dict convertable type'
+                       '\n - File: %s\n - %s')% \
+                      (update_input, err_obj)
+            return None, err_msg
+        except Exception as err_obj:
+            err_msg = ('Failed to convert into Orderd dict'
+                       ' \n - File: %s\n - %s') % \
+                      (update_input, err_obj)
+            return None, err_msg
+
+
+
+        update_variable = VariableDisplayUtil(preprocess_input_dict, update_input_dict)
+
+        if update_variable.has_error:
+            return None, update_variable.error_message
+
+        return update_variable, None
+
+
+
+
     def calculate_features(self):
         """For each variable, calculate summary stats"""
         if self.has_error:
@@ -154,8 +210,8 @@ class PreprocessRunner(object):
             self.num_vars_complete += 1
             self.variable_info[colnames] = col_info
 
-        print("completed column", self.num_vars_complete)
-        print(" Number of variable ", self.num_vars)
+        # print("completed column", self.num_vars_complete)
+        # print(" Number of variable ", self.num_vars)
         return True
 
     '''
