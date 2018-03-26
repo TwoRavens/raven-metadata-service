@@ -38,5 +38,6 @@ class UpdatePreprocessTest(unittest.TestCase):
     def test_20_update(self):
         """(20) Test the data for numeric series"""
         msgt(self.test_20_update.__doc__)
-
-        print(VariableDisplayUtil.var_display(self));
+        var_display_util = VariableDisplayUtil(self.preprocess_json_01, self.update_data)
+        if var_display_util.has_error:
+            print (var_display_util.error_messages)
