@@ -10,10 +10,10 @@ from np_json_encoder import NumpyJSONEncoder
 
 class VariableDisplayUtil(object):
 
-    def __init__(self, column_name, preprocess_file, update_fie, **kwargs):
+    def __init__(self, df, preprocess_file, update_fie, **kwargs):
         """Init with a pandas dataframe"""
         assert col_info is not None, "dataframe can't be None"
-        self.col_names = column_name
+        self.col_names = df[col]
         self.preprocess_file = preprocess_file
         self.update_file = update_fie
         # Initial settings
@@ -21,8 +21,8 @@ class VariableDisplayUtil(object):
         self.omit = kwargs.get('omit', [])
         self.images = kwargs.get('images', [])
 
-        self.attributes = ColumnInfo.get_editable_column_labels()  # list of all the attributes ***
-        self.editable_vars = ColumnInfo.EDITABLE_COLUMNS      # list of all the attributes set as editable ***
+        self.attributes = [x[0] for x in ColumnInfo.get_variable_labels()]  # list of all the attributes ***
+        self.editable_vars = ColumnInfo.get_editable_column_labels()      # list of all the attributes set as editable ***
 
         # for error handling
         self.has_error = False
@@ -74,42 +74,46 @@ class VariableDisplayUtil(object):
             #     self.label_edit_call(varname, label_object)
 
     def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
+        if not varname in self.access_obj_original:
+            print('"%s" was not found in the "variable" section of the metadata file' % varname)
+            self.error_messages.append('"%s" was not found in the "variable" section of the metadata file' % varname)
+            return
 
-        for var in self.col_names:
-            try:
-                variable_obj = self.access_obj_original[var]
-                display_variable_obj = self.access_obj_original_display[var]
-                # print(variable_obj)
-                """
-                variable_obj contains : "numchar":"continuous",
-                            "nature": "nominal",
-                           "mean":213,
-                           "median":34
-                """
-                # code for omit
-                if omit_obj is not None and var is varname:
-                    # start deleting omit objects
-                    for omit_var in omit_obj:
-                        del variable_obj[omit_var]
+        elif not varname in self.access_obj_original_display:
+            print('"%s" was not found in the "variable_display" section of the metadata file' % varname)
+            self.error_messages.append('"%s" was not found in the "variable_display" section of the metadata file' % varname)
+            return
 
-                    display_variable_obj['omit'] = omit_obj
+        else:
 
-                # code for viewable
-                if viewable_obj is False and viewable_obj is not None:
-                    del self.access_obj_original[var]
-                    display_variable_obj['viewable'] = False
+            variable_obj = self.access_obj_original[varname]
+            display_variable_obj = self.access_obj_original_display[varname]
+            # print(variable_obj)
+            """
+            variable_obj contains : "numchar":"continuous",
+                        "nature": "nominal",
+                       "mean":213,
+                       "median":34
+            """
+            # code for omit
+            if omit_obj:
+                # start deleting omit objects
+                # for omit_var in omit_obj:
+                #      del variable_obj[omit_var]
+                display_variable_obj['omit'] = omit_obj
 
-                # code for label
-                if label_obj is not None and var is varname:
-                    for att_name in self.attributes:
-                        if att_name in label_obj and att_name in self.editable_vars:
-                            variable_obj[att_name] = label_obj[att_name]
+            # code for viewable
+            if viewable_obj is False:
+                # del self.access_obj_original[varname]
+                display_variable_obj['viewable'] = False
 
-                    display_variable_obj['label'] = label_obj
+            # code for label
+            if label_obj:
+                for att_name in self.attributes:
+                    if att_name in label_obj and att_name in self.editable_vars:
+                        variable_obj[att_name] = label_obj[att_name]
 
-            except KeyError:
-                self.error_messages.append(" Variable %s not found in variable display", var)
-
+                display_variable_obj['label'] = label_obj
 
 
     def final_original_output(self):
