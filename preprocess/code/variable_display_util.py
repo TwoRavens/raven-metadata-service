@@ -13,7 +13,7 @@ class VariableDisplayUtil(object):
     def __init__(self, df, preprocess_file, update_fie, **kwargs):
         """Init with a pandas dataframe"""
         assert col_info is not None, "dataframe can't be None"
-        self.col_names = df[col]
+        self.col_names = pd.Series(df.columns.values)
         self.preprocess_file = preprocess_file
         self.update_file = update_fie
         # Initial settings
