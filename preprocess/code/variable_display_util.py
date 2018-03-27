@@ -51,26 +51,62 @@ class VariableDisplayUtil(object):
         update_json = self.update_file
         # print(update_json)
         self.original_json = self.preprocess_file
-        self.access_obj_original = self.original_json['variables']
-        self.access_obj_original_display = self.original_json['variable_display']
-        access_object = update_json['variable_updates']
+
+        if 'variables' in self.original_json:
+            self.access_obj_original = self.original_json['variables']
+        else:
+            self.access_obj_original_display = None
+            self.error_messages.append(
+                "variables section is not found in Preprocess file")
+            return ValueError
+
+        if 'variable_display' in self.original_json:
+            self.access_obj_original_display = self.original_json['variable_display']
+        else:
+            self.access_obj_original_display = None
+            self.error_messages.append(
+                'variable_display section is not found in Preprocess file')
+            return ValueError
+
+        if 'variable_updates' in update_json:
+            access_object = update_json['variable_updates']
+        else:
+            access_object = None
+            self.error_messages.append(
+                'variable_updates not found in Update file')
+            return ValueError
+
+
         self.col_names = list(self.access_obj_original)
-        # for each column say [' cylinder','mpg',...]
-        for varname in self.col_names:
-            omit_object = access_object[varname]['omit']
-            viewable_object = access_object[varname]['viewable']
-            label_object = access_object[varname]['label']
+        if self.access_obj_original_display and self.access_obj_original and access_object:
+            # for each column say [' cylinder','mpg',...]
+             for varname in self.col_names:
 
-            self.modify_original(varname, omit_object, viewable_object, label_object)
+                 if 'omit' in access_object[varname]:
+                    omit_object = access_object[varname]['omit']
+                 else:
+                     omit_object = None
+                     self.error_messages.append(
+                         "omit field not found in update file section of '%s'" % varname)
+                     return ValueError
 
-            # if omit_object is not None:
-            #     self.omit_call(varname, omit_object)
-            #
-            # if viewable_object is False:
-            #     self.viewable_call(varname)
-            #
-            # if label_object is not None:
-            #     self.label_edit_call(varname, label_object)
+                 if 'viewable' in access_object[varname]:
+                    viewable_object = access_object[varname]['viewable']
+                 else:
+                     viewable_object = None
+                     self.error_messages.append(
+                         "viewable field not found in update file section of '%s' " % varname)
+                     return ValueError
+
+                 if 'label' in access_object[varname]:
+                    label_object = access_object[varname]['label']
+                 else:
+                     label_object = None
+                     self.error_messages.append(
+                         "label field not found in update file section of '%s'" % varname)
+                     return ValueError
+
+                 self.modify_original(varname, omit_object, viewable_object, label_object)
 
     def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
         if not varname in self.access_obj_original:
@@ -102,7 +138,7 @@ class VariableDisplayUtil(object):
                 display_variable_obj['omit'] = omit_obj
 
             # code for viewable
-            if viewable_obj is False:
+            if viewable_obj and viewable_obj is False:
                 # del self.access_obj_original[varname]
                 display_variable_obj['viewable'] = "false"
 
