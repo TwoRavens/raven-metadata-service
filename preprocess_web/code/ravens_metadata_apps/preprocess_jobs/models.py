@@ -109,6 +109,15 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
+    def get_preprocess_data_as_json(self):
+        """Return preprocess file contents if they exist"""
+        if self.preprocess_file:
+            file_data = self.preprocess_file.read()
+            json_data = json.loads(file_data)
+            return json.dumps(json_data, indent=4)
+            
+        return None
+
     def get_preprocess_data(self):
         """Return preprocess file contents if they exist"""
         if self.preprocess_file:
