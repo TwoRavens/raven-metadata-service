@@ -161,3 +161,18 @@ def xpreprocess_csv_file(input_file, output_dir=None):
                 elapsed_time=elapsed_time_str,
                 data=runner.get_final_dict())
                 #data=runner.get_final_dict())
+
+
+
+def get_variable_display(pre_input, update_input, **kwargs):
+    """Run editor on preprocess according to json input"""
+    init_timestamp = datetime.now()
+    start_time = time.time()
+    preprocess_id = kwargs.get('preprocess_id')
+
+    print('(%s) Start proces: %s' % (init_timestamp, update_input))
+    result, err_message= PreprocessRunner.load_variable_display(pre_input, update_input, preprocess_id=preprocess_id)
+
+    return result
+
+

@@ -77,11 +77,12 @@ class VariableDisplayUtil(object):
             return ValueError
 
 
-        self.col_names = list(self.access_obj_original)
+        self.col_names = list(access_object)
+        print('self.col_names', self.col_names)
         if self.access_obj_original_display and self.access_obj_original and access_object:
             # for each column say [' cylinder','mpg',...]
              for varname in self.col_names:
-
+                 print('varname', varname)
                  if 'omit' in access_object[varname]:
                     omit_object = access_object[varname]['omit']
                  else:
@@ -107,8 +108,10 @@ class VariableDisplayUtil(object):
                      return ValueError
 
                  self.modify_original(varname, omit_object, viewable_object, label_object)
+        return self.final_original_output()
 
     def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
+        print(self.access_obj_original_display)
         if not varname in self.access_obj_original:
             print('"%s" was not found in the "variable" section of the metadata file' % varname)
             self.error_messages.append('"%s" was not found in the "variable" section of the metadata file' % varname)
@@ -153,4 +156,5 @@ class VariableDisplayUtil(object):
 
     def final_original_output(self):
         # print("json output : ",self.original_json)
+
         return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)

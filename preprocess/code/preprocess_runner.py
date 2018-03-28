@@ -305,7 +305,7 @@ class PreprocessRunner(object):
 
         fmt_variable_info = OrderedDict()   # capture the variables section
         fmt_display_variable_info = OrderedDict()   # capture the variable_display section
-
+        fmt_display_variable_info['editable'] = ColumnInfo.get_editable_column_labels()
         # Iterate through each column and pull variable + variable_display info
         #
         for col_name, col_info in self.variable_info.items():
@@ -321,9 +321,7 @@ class PreprocessRunner(object):
 
         overall_dict['variables'] = fmt_variable_info   # add "variables"
 
-        overall_dict['variable_display'] = dict(\
-                editable=ColumnInfo.get_editable_column_labels(),
-                variable_display=fmt_display_variable_info)
+        overall_dict['variable_display'] = fmt_display_variable_info
 
         if as_string:
             # Convert the OrderedDict to a JSON string
@@ -343,3 +341,6 @@ class PreprocessRunner(object):
         jstring = json.dumps(overall_dict,
                              cls=NumpyJSONEncoder)
         return json.loads(jstring, object_pairs_hook=OrderedDict)
+
+
+

@@ -8,11 +8,11 @@ from django.http import HttpResponse
 
 from .forms import FORMAT_JSON,FORMAT_CSV
 from celery.result import AsyncResult
-
+from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
-from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file
+from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
-
+from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
 
@@ -179,3 +179,13 @@ class JobUtil(object):
             data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
 
             return response
+
+    @staticmethod
+    def variable_display_job(preprocess_json, update_json,**kwargs):
+        preprocess_id = kwargs.get('preprocess_id')
+        # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
+        result, err_message= VariableDisplayUtil(preprocess_json,update_json).var_display()
+        return json.dumps(result, indent=4)
+
+
+
