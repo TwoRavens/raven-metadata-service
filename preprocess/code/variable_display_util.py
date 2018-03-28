@@ -141,9 +141,10 @@ class VariableDisplayUtil(object):
                 display_variable_obj['omit'] = omit_obj
 
             # code for viewable
-            if viewable_obj and viewable_obj is False:
+            print("viewable obj ",viewable_obj)
+            if viewable_obj == False:
                 # del self.access_obj_original[varname]
-                display_variable_obj['viewable'] = "false"
+                display_variable_obj['viewable'] = False
 
             # code for label
             if label_obj:

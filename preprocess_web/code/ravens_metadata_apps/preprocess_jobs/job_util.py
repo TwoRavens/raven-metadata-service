@@ -184,8 +184,9 @@ class JobUtil(object):
     def variable_display_job(preprocess_json, update_json,**kwargs):
         preprocess_id = kwargs.get('preprocess_id')
         # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
-        result, err_message= VariableDisplayUtil(preprocess_json,update_json).var_display()
-        return json.dumps(result, indent=4)
+        result = VariableDisplayUtil(preprocess_json,update_json).var_display()
+        # print('result', result)
+        return result
 
 
 

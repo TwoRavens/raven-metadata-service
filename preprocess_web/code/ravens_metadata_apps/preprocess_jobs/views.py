@@ -145,14 +145,17 @@ def variable_display_endpoint(request):
             raise Http404('job_id not found: %s' % preprocess_id)
 
         result = JobUtil.variable_display_job(job.get_preprocess_data(),update_json)
+        print('result ',result)
 
     else:
         result = dict(success=False,
                       message='Preprocess_id not found !'
                       )
 
-
-    return JsonResponse(result)
+    user_msg = dict(success=True,
+                    message='Variable Display',
+                    data = json.loads(result))
+    return JsonResponse(user_msg)
 
 def view_job_status_page(request, job_id):
     """test to show uploaded file info"""
