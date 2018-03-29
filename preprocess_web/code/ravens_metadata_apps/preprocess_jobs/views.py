@@ -133,29 +133,39 @@ def variable_display_endpoint(request):
                             message='Please use a POST to access this endpoint')
         return JsonResponse(user_msg)
     # get json file from POST using view_helper
-    update_json = get_request_body_as_json(request)[1]
-    print("update Json : ",update_json)
-    if 'preprocess_id' in update_json:
-        preprocess_id = update_json['preprocess_id']
-        print(preprocess_id)
-        try:
-            job = PreprocessJob.objects.get(pk=preprocess_id)
-        except PreprocessJob.DoesNotExist:
-            result = 'job_id not found: %s' % preprocess_id
-            raise Http404('job_id not found: %s' % preprocess_id)
 
-        result = JobUtil.variable_display_job(job.get_preprocess_data(),update_json)
-        print('result ',result)
+    success, update_json = get_request_body_as_json(request)
+    if success:
+        print("update Json : ", update_json)
+        if 'preprocess_id' in update_json:
+            preprocess_id = update_json['preprocess_id']
+            print(preprocess_id)
+            try:
+                job = PreprocessJob.objects.get(pk=preprocess_id)
+            except PreprocessJob.DoesNotExist:
+                result = dict(success = False,
+                    message = 'job_id not found: %s' % preprocess_id)
+                return JsonResponse(result)
 
+            result = JobUtil.variable_display_job(job.get_preprocess_data(), update_json)
+            print('result ', result)
+
+        else:
+            result = dict(success=False,
+                          message='job_id not found: %s' % update_json['preprocess_id']
+                          )
+
+        user_msg = dict(success=True,
+                        message='Variable Display',
+                        data=json.loads(result))
+        return JsonResponse(user_msg)
     else:
         result = dict(success=False,
-                      message='Preprocess_id not found !'
+                      message='Invalid JSON'
                       )
+        return JsonResponse(result)
 
-    user_msg = dict(success=True,
-                    message='Variable Display',
-                    data = json.loads(result))
-    return JsonResponse(user_msg)
+
 
 def view_job_status_page(request, job_id):
     """test to show uploaded file info"""

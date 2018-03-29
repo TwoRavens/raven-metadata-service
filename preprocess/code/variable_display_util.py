@@ -30,7 +30,7 @@ class VariableDisplayUtil(object):
         self.access_obj_original= {}
         self.access_obj_original_display = {}
         # call the display function
-        self.var_display();
+        self.update_preprocess_data();
 
     def add_error_message(self, err_msg):
         """Add error message"""
@@ -46,7 +46,7 @@ class VariableDisplayUtil(object):
                            images=[])
 
 
-    def var_display(self):
+    def update_preprocess_data(self):
         """ this function go through the update_json and call omit,viewable,label functions"""
         update_json = self.update_file
         # print(update_json)
@@ -56,7 +56,7 @@ class VariableDisplayUtil(object):
             self.access_obj_original = self.original_json['variables']
         else:
             self.access_obj_original_display = None
-            self.error_messages.append(
+            self.add_error_message(
                 "variables section is not found in Preprocess file")
             return ValueError
 
@@ -64,7 +64,7 @@ class VariableDisplayUtil(object):
             self.access_obj_original_display = self.original_json['variable_display']
         else:
             self.access_obj_original_display = None
-            self.error_messages.append(
+            self.add_error_message(
                 'variable_display section is not found in Preprocess file')
             return ValueError
 
@@ -72,7 +72,7 @@ class VariableDisplayUtil(object):
             access_object = update_json['variable_updates']
         else:
             access_object = None
-            self.error_messages.append(
+            self.add_error_message(
                 'variable_updates not found in Update file')
             return ValueError
 
@@ -87,7 +87,7 @@ class VariableDisplayUtil(object):
                     omit_object = access_object[varname]['omit']
                  else:
                      omit_object = None
-                     self.error_messages.append(
+                     self.add_error_message(
                          "omit field not found in update file section of '%s'" % varname)
                      return ValueError
 
@@ -95,7 +95,7 @@ class VariableDisplayUtil(object):
                     viewable_object = access_object[varname]['viewable']
                  else:
                      viewable_object = None
-                     self.error_messages.append(
+                     self.add_error_message(
                          "viewable field not found in update file section of '%s' " % varname)
                      return ValueError
 
@@ -103,23 +103,24 @@ class VariableDisplayUtil(object):
                     label_object = access_object[varname]['label']
                  else:
                      label_object = None
-                     self.error_messages.append(
+                     self.add_error_message(
                          "label field not found in update file section of '%s'" % varname)
                      return ValueError
 
                  self.modify_original(varname, omit_object, viewable_object, label_object)
+
         return self.final_original_output()
 
     def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
         print(self.access_obj_original_display)
         if not varname in self.access_obj_original:
             print('"%s" was not found in the "variable" section of the metadata file' % varname)
-            self.error_messages.append('"%s" was not found in the "variable" section of the metadata file' % varname)
+            self.add_error_message('"%s" was not found in the "variable" section of the metadata file' % varname)
             return
 
         elif not varname in self.access_obj_original_display:
             print('"%s" was not found in the "variable_display" section of the metadata file' % varname)
-            self.error_messages.append('"%s" was not found in the "variable_display" section of the metadata file' % varname)
+            self.add_error_message('"%s" was not found in the "variable_display" section of the metadata file' % varname)
             return
 
         else:
@@ -157,5 +158,8 @@ class VariableDisplayUtil(object):
 
     def final_original_output(self):
         # print("json output : ",self.original_json)
-
-        return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
+        output = json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
+        if self.has_error:
+            return False, self.error_messages
+        else:
+            return True, output

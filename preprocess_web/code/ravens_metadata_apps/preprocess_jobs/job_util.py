@@ -184,9 +184,16 @@ class JobUtil(object):
     def variable_display_job(preprocess_json, update_json,**kwargs):
         preprocess_id = kwargs.get('preprocess_id')
         # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
-        result = VariableDisplayUtil(preprocess_json,update_json).var_display()
-        # print('result', result)
-        return result
+        success, updated_json_or_err = VariableDisplayUtil(preprocess_json, update_json).update_preprocess_data()
+        if success:
+        # return appropriate message; updated data is in "updated_json_or_err"
+            return updated_json_or_err
+        else:
+        # return error message; [] of error messages is in updated_json_or_err
+           user_msg = dict(success = False,
+                                   message = 'Failed due to inappropriate input',
+                                   error = updated_json_or_err)
+           return user_msg
 
 
 
