@@ -98,8 +98,11 @@ class PreprocessJob(TimeStampedModel):
                 continue
 
             elif attr_name == 'creator_id':
-                creator_info = self.creator.as_dict_short()
-                od['creator'] = creator_info
+                if self.creator:
+                    creator_info = self.creator.as_dict_short()
+                    od['creator'] = creator_info
+                else:
+                    od['creator'] = None
             else:
                 od[attr_name] = '%s' % self.__dict__[attr_name]
 
@@ -115,7 +118,7 @@ class PreprocessJob(TimeStampedModel):
             file_data = self.preprocess_file.read()
             json_data = json.loads(file_data)
             return json.dumps(json_data, indent=4)
-            
+
         return None
 
     def get_preprocess_data(self):
