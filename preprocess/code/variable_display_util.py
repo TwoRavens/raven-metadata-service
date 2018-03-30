@@ -46,7 +46,7 @@ class VariableDisplayUtil(object):
         assert self.has_error is False, \
               "Make sure that 'has_error' is False before using this method"
 
-        return self.original_json
+        return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
 
     @staticmethod
     def get_default_settings():

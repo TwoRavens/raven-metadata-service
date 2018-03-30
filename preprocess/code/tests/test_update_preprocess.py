@@ -44,7 +44,8 @@ class UpdatePreprocessTest(unittest.TestCase):
     def test_20_update(self):
         """(20) Test output json"""
         msgt(self.test_20_update.__doc__)
-        var_display_util = VariableDisplayUtil(self.preprocess_json_01, self.update_json_01).update_preprocess_data()
+        var_util = VariableDisplayUtil(self.preprocess_json_01, self.update_json_01)
+        success, var_display_util=True, var_util.get_updated_metadata()
         print(" ****output : ",var_display_util)
         print("**** exp_output : ",self.expected_data)
         self.maxDiff = None
@@ -122,7 +123,7 @@ class UpdatePreprocessTest(unittest.TestCase):
             "variable_updates": {
                "cylinders" : {
                  "omit": ["mean", "median"],
-                 "label": {
+                 "value_updates": {
                      "numchar":"discrete",
                      "nature": "ordinal"
                  }
@@ -151,7 +152,7 @@ class UpdatePreprocessTest(unittest.TestCase):
                "cylinders" : {
                    "viewable": "true",
                  "omit": ["mean", "median"],
-                 "label": {
+                 "value_updates": {
                      "numchar":"discrete",
                      "nature": "ordinal"
                  }
@@ -171,27 +172,33 @@ class UpdatePreprocessTest(unittest.TestCase):
         print("Error : ", var_err)
 
     def test_90_update(self):
-        """(80) test for variable display section's label not found in update file"""
+        """(90) test for error in updating non editable data"""
+        """ here mean is not editable"""
         msgt(self.test_90_update.__doc__)
-        update = {
+        update_json = {
             "preprocess_id": 45,
             "variable_updates": {
-               "cylinders" : {
-                   "viewable": "true",
-                 "omit": ["mean", "median"],
-                 "label": {
-                     "numchar":"discrete",
-                     "nature": "ordinal"
-                 }
-               },
-               "mpg": {
-                   "omit":[],
-                 "viewable": "false",
-               }
+                "cylinders": {
+                    "viewable": "true",
+                    "omit": ["mean", "median"],
+                    "value_updates": {
+                        "numchar": "discrete",
+                        "nature": "ordinal"
+                    }
+                },
+                "mpg": {
+                    "viewable": "false",
+                    "omit": [],
+                    "value_updates": {
+                        "mean": 5
+
+                    }
+                }
             }
         }
-
-        var_display_modify = VariableDisplayUtil(self.preprocess_json_01, update)
-        var_err = var_display_modify.error_messages
+        var_display_modify = VariableDisplayUtil(self.preprocess_json_01, update_json)
+        var_err = var_display_modify.get_error_messages()
         self.assertTrue(var_display_modify.has_error)
         print("Error : ", var_err)
+
+
