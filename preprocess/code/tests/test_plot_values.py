@@ -9,26 +9,27 @@ INPUT_DIR = join(PREPROCESS_DIR, 'input')
 from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil
 from plot_values import PlotValuesUtil
-
+from column_info import ColumnInfo
+from summary_stats_util import SummaryStatsUtil
 class PlotValuesTest(unittest.TestCase):
     """ class to test Module for plot values eg: type, cdf, labl etc"""
 
     def setUp(self):
         """Load up the test file"""
         self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
-        type_guess_obj = TypeGuessUtil(self.df_01)
-        self.variable_info_01 = type_guess_obj.get_variable_dict()
+        self.col_info = ColumnInfo('quat')
+        TypeGuessUtil(self.df_01['quat'],self.col_info)
+        SummaryStatsUtil((self.df_01['quat']), self.col_info)
+        PlotValuesUtil(self.df_01['quat'], self.col_info)
 
     def test_10_plot_values_ok(self):
         """(10) Test plot values of column"""
         msgt(self.test_10_plot_values_ok.__doc__)
 
         # Pull the ColumnInfo for Ranking
-        col_info = self.variable_info_01.get('quat')
-        col_series = self.df_01[col_info.colname]
-
+        col_info = self.col_info
         # Calculate the stats
-        PlotValuesUtil(col_series, col_info)
+
 
         col_info.print_values()
         dashes()
