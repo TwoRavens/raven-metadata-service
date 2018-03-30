@@ -4,6 +4,8 @@ from collections import OrderedDict
 from django.urls import reverse
 from django.db import models
 from django.conf import settings
+from django.utils.safestring import mark_safe
+
 import jsonfield
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
@@ -112,7 +114,7 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
-    def get_preprocess_data_as_json(self):
+    def preprocess_data_as_json(self):
         """Return preprocess file contents if they exist"""
         if self.preprocess_file:
             file_data = self.preprocess_file.read()
@@ -218,6 +220,9 @@ class MetadataUpdate(TimeStampedModel):
 
     note = models.TextField(blank=True)
 
+    class Meta:
+        ordering = ('-created',)
+
     def metadata_file_path(self):
         """To display the full path in the admin"""
         if self.metadata_file:
@@ -225,6 +230,12 @@ class MetadataUpdate(TimeStampedModel):
 
         return 'n/a'
 
+    def update_data_as_json(self):
+        """Return preprocess file contents if they exist"""
+        if self.update_json:
+            return mark_safe('<pre>%s</pre>' % json.dumps(self.update_json, indent=4))
+
+        return None
 
     def __str__(self):
         """minimal, change to name"""
