@@ -20,6 +20,10 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
+
+    #@staticmethod
+    #def create_metadata_update()
+
     @staticmethod
     def start_preprocess(job):
         """Start the preprocessing!"""
@@ -189,7 +193,3 @@ class JobUtil(object):
             return False, var_util.get_error_messages()
 
         return True, var_util.get_updated_metadata()
-
-
-
-

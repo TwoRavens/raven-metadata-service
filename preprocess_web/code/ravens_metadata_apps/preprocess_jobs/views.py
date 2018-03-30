@@ -5,6 +5,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.core.files.base import ContentFile
+from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 
 from django.utils.decorators import method_decorator
 
@@ -12,7 +14,8 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
-from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
+from ravens_metadata_apps.preprocess_jobs.models import \
+    (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.preprocess_jobs.forms import \
     (PreprocessJobForm, RetrieveRowsForm,
      FORMAT_JSON, FORMAT_CSV)
@@ -170,6 +173,20 @@ def variable_display_endpoint(request):
         user_note = 'Updated failed.  Please see errors.'
     else:
         user_note = 'Success!'
+
+        # Record successful update
+        metadata_update = MetadataUpdate(\
+                            previous_metadata=job,
+                            orig_metadata=job,
+                            update_json=update_json)
+        metadata_update.save()
+
+        new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+        new_preprocess_data = ContentFile(json.dumps(err_or_update))
+
+        metadata_update.metadata_file.save(new_name,
+                                           new_preprocess_data)
+        metadata_update.save()
 
     user_msg = dict(success=success,
                     message=user_note,

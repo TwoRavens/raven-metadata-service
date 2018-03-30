@@ -229,3 +229,12 @@ class MetadataUpdate(TimeStampedModel):
     def __str__(self):
         """minimal, change to name"""
         return self.name
+
+    def save(self, *args, **kwargs):
+        """update name..."""
+        if not self.id:
+            super(MetadataUpdate, self).save(*args, **kwargs)
+
+        self.name = 'update %d' % self.id #basename(self.source_file.name)[:100]
+
+        super(MetadataUpdate, self).save(*args, **kwargs)
