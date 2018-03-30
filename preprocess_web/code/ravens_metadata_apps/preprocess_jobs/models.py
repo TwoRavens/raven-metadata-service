@@ -108,28 +108,42 @@ class PreprocessJob(TimeStampedModel):
             else:
                 od[attr_name] = '%s' % self.__dict__[attr_name]
 
-        if self.preprocess_file:
-            file_data = self.preprocess_file.read()
-            od['data'] = json.loads(file_data)
 
+        if self.preprocess_file:
+
+            try:
+                file_data = self.preprocess_file.read()
+                od['data'] = json.loads(file_data)
+            except FileNotFoundError:
+                return 'File was not found! (%s)' % (self.preprocess_file.path)
         return od
+
 
     def preprocess_data_as_json(self):
         """Return preprocess file contents if they exist"""
-        if self.preprocess_file:
-            file_data = self.preprocess_file.read()
-            json_data = json.loads(file_data)
-            return json.dumps(json_data, indent=4)
+        return self.get_preprocess_data(as_string=True)
 
-        return None
 
-    def get_preprocess_data(self):
+    def get_preprocess_data(self, as_string=False):
         """Return preprocess file contents if they exist"""
         if self.preprocess_file:
-            file_data = self.preprocess_file.read()
-            return json.loads(file_data)
+            try:
+                file_data = self.preprocess_file.read()
+            except FileNotFoundError:
+                return 'Preprocess file not found for job id: %s' % self.id
 
-        return None
+            try:
+                json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+            except ValueError:
+                return 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+
+            if as_string:
+                return json.dumps(json_dict, indent=4)
+
+            return json_dict
+
+        return 'No preprocess data. e.g. No file'
+
 
     def get_absolute_url(self):
         """jobs status..."""
@@ -236,6 +250,8 @@ class MetadataUpdate(TimeStampedModel):
             return mark_safe('<pre>%s</pre>' % json.dumps(self.update_json, indent=4))
 
         return None
+
+
 
     def __str__(self):
         """minimal, change to name"""

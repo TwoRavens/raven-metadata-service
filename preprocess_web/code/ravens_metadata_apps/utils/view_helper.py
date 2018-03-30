@@ -27,11 +27,13 @@ def get_baseurl_from_request(request):
 
     return '%s://%s' % (urlParts.scheme, urlParts.netloc)
 
-def get_json_error(err_msg):
+def get_json_error(err_msg, errors=None):
     """return an OrderedDict with success=False + message"""
     info = OrderedDict()
     info['success'] = False
     info['message'] = err_msg
+    if errors:
+        info['errors'] = errors
     return info
 
 def get_json_success(user_msg, **kwargs):

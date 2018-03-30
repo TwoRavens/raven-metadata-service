@@ -102,9 +102,8 @@ def view_retrieve_rows_form(request):
 def view_api_retrieve_rows(request):
     """API endpoint to retrieve rows from a preprocess file"""
     if request.method != 'POST':
-        user_msg = dict(success=False,
-                        message='Please use a POST to access this endpoint')
-        return JsonResponse(user_msg)
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
 
     frm = RetrieveRowsForm(request.POST)
     if not frm.is_valid():
@@ -127,74 +126,75 @@ def view_api_retrieve_rows(request):
         print("output ", output)
         user_msg = output
         return JsonResponse(user_msg)
+
     elif input_format == FORMAT_CSV:
         return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
+    user_msg = 'Unknown input_format: %s' % input_format
+    return JsonResponse(get_json_error(user_msg))
 
-    user_msg = dict(success=False,
-                    message='Unknown input_format: %s' % input_format)
-    return JsonResponse(user_msg)
 
 @csrf_exempt
 def api_update_metadata(request):
     """ API endpoint to get JSON request for updating the Preprocess metadata"""
     if request.method != 'POST':
-        user_msg = dict(success=False,
-                            message='Please use a POST to access this endpoint')
-        return JsonResponse(user_msg)
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
     # get json file from POST using view_helper
 
     success, update_json_or_err = get_request_body_as_json(request)
     if success is False:
-        result = dict(success=False,
-                      message='Invalid JSON'
-                      )
-        return JsonResponse(result)
+        return JsonResponse(get_json_error(update_json_or_err))
 
     update_json = update_json_or_err
-    print("update Json : ", update_json)
     if 'preprocess_id' not in update_json:
-        user_msg = dict(success=False,
-                      message='job_id not found: %s' % update_json['preprocess_id']
-                      )
-        return JsonResponse(user_msg)
+        user_msg = 'preprocess_id not found: %s' % update_json['preprocess_id']
+        return JsonResponse(get_json_error(user_msg))
 
     preprocess_id = update_json['preprocess_id']
     print(preprocess_id)
     try:
         job = PreprocessJob.objects.get(pk=preprocess_id)
     except PreprocessJob.DoesNotExist:
-        result = dict(success=False,
-                      message='job_id not found: %s' % preprocess_id)
-        return JsonResponse(result)
+        user_msg = 'PreprocessJob not found for id: %s' % preprocess_id
+        return JsonResponse(get_json_error(user_msg))
 
-    success, err_or_update = JobUtil.variable_display_job(job.get_preprocess_data(), update_json)
+    success, update_or_errors = JobUtil.variable_display_job(job.get_preprocess_data(), update_json)
     if not success:
-        user_note = 'Updated failed.  Please see errors.'
-    else:
-        user_note = 'Success!'
-
-        # Record successful update
-        metadata_update = MetadataUpdate(\
-                            previous_metadata=job,
-                            orig_metadata=job,
-                            update_json=update_json)
-        metadata_update.save()
-
-        new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
-        new_preprocess_data = ContentFile(json.dumps(err_or_update))
-
-        metadata_update.metadata_file.save(new_name,
-                                           new_preprocess_data)
-        metadata_update.save()
-
-    user_msg = dict(success=success,
-                    message=user_note,
-                    data=err_or_update)
-
-    return JsonResponse(user_msg)
+        user_msg = 'Updated failed.  Please see errors.'
+        return JsonResponse(get_json_error(user_msg, update_or_errors))
 
 
+    # Record successful update
+    metadata_update = MetadataUpdate(\
+                        previous_metadata=job,
+                        orig_metadata=job,
+                        update_json=update_json)
+    metadata_update.save()
+
+    new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+    new_preprocess_data = ContentFile(json.dumps(update_or_errors))
+
+    metadata_update.metadata_file.save(new_name,
+                                       new_preprocess_data)
+    metadata_update.save()
+
+    result = get_json_success('Success!',
+                              data=update_or_errors)
+
+    return JsonResponse(result)
+
+
+
+def api_get_metadata(request, job_id):
+    """Return complete metadata"""
+    try:
+        job = PreprocessJob.objects.get(pk=job_id)
+    except PreprocessJob.DoesNotExist:
+        user_msg = 'metadata not found for id: %s' % job_id,
+        return JsonResponse(get_json_error(user_msg))
+
+    return JsonResponse(job.get_preprocess_data())
 
 
 def view_job_status_page(request, job_id):

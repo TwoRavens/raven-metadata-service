@@ -7,7 +7,8 @@ class MetadataUpdateInline(admin.TabularInline):
     model = MetadataUpdate
     fk_name = "orig_metadata"
     exclude = ('update_json', 'note', 'previous_metadata')
-    readonly_fields = ('name', 'metadata_file', 'update_data_as_json', 'editor', 'created', 'modified', )
+    readonly_fields = ('name', 'metadata_file', 'update_data_as_json',
+                       'editor', 'created', 'modified', )
     extra = 0
     can_delete = True
 
