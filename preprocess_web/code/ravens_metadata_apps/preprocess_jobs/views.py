@@ -141,36 +141,42 @@ def variable_display_endpoint(request):
         return JsonResponse(user_msg)
     # get json file from POST using view_helper
 
-    success, update_json = get_request_body_as_json(request)
-    if success:
-        print("update Json : ", update_json)
-        if 'preprocess_id' in update_json:
-            preprocess_id = update_json['preprocess_id']
-            print(preprocess_id)
-            try:
-                job = PreprocessJob.objects.get(pk=preprocess_id)
-            except PreprocessJob.DoesNotExist:
-                result = dict(success = False,
-                    message = 'job_id not found: %s' % preprocess_id)
-                return JsonResponse(result)
-
-            result = JobUtil.variable_display_job(job.get_preprocess_data(), update_json)
-            print('result ', result)
-
-        else:
-            result = dict(success=False,
-                          message='job_id not found: %s' % update_json['preprocess_id']
-                          )
-
-        user_msg = dict(success=True,
-                        message='Variable Display',
-                        data=json.loads(result))
-        return JsonResponse(user_msg)
-    else:
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
         result = dict(success=False,
                       message='Invalid JSON'
                       )
         return JsonResponse(result)
+
+    update_json = update_json_or_err
+    print("update Json : ", update_json)
+    if 'preprocess_id' not in update_json:
+        user_msg = dict(success=False,
+                      message='job_id not found: %s' % update_json['preprocess_id']
+                      )
+        return JsonResponse(user_msg)
+
+    preprocess_id = update_json['preprocess_id']
+    print(preprocess_id)
+    try:
+        job = PreprocessJob.objects.get(pk=preprocess_id)
+    except PreprocessJob.DoesNotExist:
+        result = dict(success=False,
+                      message='job_id not found: %s' % preprocess_id)
+        return JsonResponse(result)
+
+    success, err_or_update = JobUtil.variable_display_job(job.get_preprocess_data(), update_json)
+    if not success:
+        user_note = 'Updated failed.  Please see errors.'
+    else:
+        user_note = 'Success!'
+
+    user_msg = dict(success=success,
+                    message=user_note,
+                    data=err_or_update)
+
+    return JsonResponse(user_msg)
+
 
 
 

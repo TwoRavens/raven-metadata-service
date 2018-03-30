@@ -7,8 +7,11 @@ import col_info_constants as col_const
 from column_info import ColumnInfo
 from np_json_encoder import NumpyJSONEncoder
 
+VALUE_UPDATES = 'value_updates'
+
 
 class VariableDisplayUtil(object):
+
 
     def __init__(self,preprocess_file, update_file):
         """Init with a pandas dataframe"""
@@ -38,12 +41,23 @@ class VariableDisplayUtil(object):
         self.has_error = True
         self.error_messages.append(err_msg)
 
+    def get_updated_metadata(self):
+        """Return the modified metadata--which is in the 'original_json' """
+        assert self.has_error is False, \
+              "Make sure that 'has_error' is False before using this method"
+
+        return self.original_json
+
     @staticmethod
     def get_default_settings():
         """Return the initial preprocess settings"""
         return OrderedDict(viewable=True,
                            omit=[],
                            images=[])
+
+    def get_error_messages(self):
+        return self.error_messages
+
 
 
     def update_preprocess_data(self):
@@ -58,7 +72,7 @@ class VariableDisplayUtil(object):
             self.access_obj_original_display = None
             self.add_error_message(
                 "variables section is not found in Preprocess file")
-            return ValueError
+            return False, self.get_error_messages()
 
         if 'variable_display' in self.original_json:
             self.access_obj_original_display = self.original_json['variable_display']
@@ -66,7 +80,7 @@ class VariableDisplayUtil(object):
             self.access_obj_original_display = None
             self.add_error_message(
                 'variable_display section is not found in Preprocess file')
-            return ValueError
+            return False, self.get_error_messages()
 
         if 'variable_updates' in update_json:
             access_object = update_json['variable_updates']
@@ -74,7 +88,7 @@ class VariableDisplayUtil(object):
             access_object = None
             self.add_error_message(
                 'variable_updates not found in Update file')
-            return ValueError
+            return False, self.get_error_messages()
 
 
         self.col_names = list(access_object)
@@ -89,7 +103,7 @@ class VariableDisplayUtil(object):
                      omit_object = None
                      self.add_error_message(
                          "omit field not found in update file section of '%s'" % varname)
-                     return ValueError
+                     return False, self.get_error_messages()
 
                  if 'viewable' in access_object[varname]:
                     viewable_object = access_object[varname]['viewable']
@@ -97,19 +111,19 @@ class VariableDisplayUtil(object):
                      viewable_object = None
                      self.add_error_message(
                          "viewable field not found in update file section of '%s' " % varname)
-                     return ValueError
+                     return False, self.get_error_messages()
 
-                 if 'label' in access_object[varname]:
-                    label_object = access_object[varname]['label']
+                 if VALUE_UPDATES in access_object[varname]:
+                    label_object = access_object[varname][VALUE_UPDATES]
                  else:
                      label_object = None
-                     self.add_error_message(
-                         "label field not found in update file section of '%s'" % varname)
-                     return ValueError
+
 
                  self.modify_original(varname, omit_object, viewable_object, label_object)
-
-        return self.final_original_output()
+        if self.has_error:
+            return False, self.get_error_messages()
+        else:
+            return True, self.final_original_output()
 
     def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
         print(self.access_obj_original_display)
@@ -149,11 +163,14 @@ class VariableDisplayUtil(object):
 
             # code for label
             if label_obj:
-                for att_name in self.attributes:
-                    if att_name in label_obj and att_name in self.editable_vars:
+                for att_name in label_obj:
+                    if att_name not in self.editable_vars:
+                        self.add_error_message(" '%s' is not editable" % att_name)
+                    else:
                         variable_obj[att_name] = label_obj[att_name]
 
-                display_variable_obj['label'] = label_obj
+
+                display_variable_obj[VALUE_UPDATES] = label_obj
 
 
     def final_original_output(self):
