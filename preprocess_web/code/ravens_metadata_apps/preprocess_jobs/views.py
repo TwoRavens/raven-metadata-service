@@ -136,8 +136,8 @@ def view_api_retrieve_rows(request):
     return JsonResponse(user_msg)
 
 @csrf_exempt
-def variable_display_endpoint(request):
-    """ API endpoint to get JSON request for updating Preprocess file"""
+def api_update_metadata(request):
+    """ API endpoint to get JSON request for updating the Preprocess metadata"""
     if request.method != 'POST':
         user_msg = dict(success=False,
                             message='Please use a POST to access this endpoint')

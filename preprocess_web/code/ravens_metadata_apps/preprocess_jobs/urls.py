@@ -40,9 +40,9 @@ urlpatterns = (
 
     # job to retrieve rows
     #
-    path(r'editor',
-         views.variable_display_endpoint,
-         name='view_editor'),
+    path(r'api/update-metadata',
+         views.api_update_metadata,
+         name='api_update_metadata'),
 
 
     # default to upload form, for now
