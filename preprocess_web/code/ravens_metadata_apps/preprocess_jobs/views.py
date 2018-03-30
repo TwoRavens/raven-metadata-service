@@ -107,15 +107,18 @@ def view_api_retrieve_rows(request):
     if not frm.is_valid():
         user_msg = dict(success=False,
                         message='Invalid input',
-                        errors=frm._errors)
+                        errors=frm.errors)
         return JsonResponse(user_msg)
 
+    job_id = frm.cleaned_data['preprocess_id']
+
     try:
-        job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
+        job = PreprocessJob.objects.get(pk=job_id)
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
     input_format = frm.cleaned_data.get('format')
+
     if input_format == FORMAT_JSON:
         output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
         print("output ", output)
@@ -124,6 +127,10 @@ def view_api_retrieve_rows(request):
     elif input_format == FORMAT_CSV:
         return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
+
+    user_msg = dict(success=False,
+                    message='Unknown input_format: %s' % input_format)
+    return JsonResponse(user_msg)
 
 @csrf_exempt
 def variable_display_endpoint(request):

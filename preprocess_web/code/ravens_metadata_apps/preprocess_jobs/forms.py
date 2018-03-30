@@ -14,9 +14,8 @@ class PreprocessJobForm(forms.ModelForm):
 
 FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
-FORMAT_CHOICES = [(FORMAT_JSON, 'json'),
-                  (FORMAT_CSV, 'csv')]
-
+INPUT_FORMATS = (FORMAT_JSON, FORMAT_JSON)
+FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
 # errors = []
 
 
@@ -71,13 +70,16 @@ class RetrieveRowsForm(forms.Form):
 
     def clean_format(self):
         """ check if the format is valid"""
-        format = self.cleaned_data.get('format')
-        if format is FORMAT_CSV or format is FORMAT_JSON:
+        input_format = self.cleaned_data.get('format')
+        if not input_format:
+            input_format = FORMAT_JSON
+
+        if input_format not in INPUT_FORMATS:
             # errors.append(forms.ValidationError)
             raise forms.ValidationError(
                 _('The format should be either json or csv.'))
 
-        return format
+        return input_format
 
 # errors = json.dumps(errors)
 """

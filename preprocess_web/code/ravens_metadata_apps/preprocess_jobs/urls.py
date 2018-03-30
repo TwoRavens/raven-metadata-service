@@ -38,7 +38,7 @@ urlpatterns = (
          views.view_api_retrieve_rows,
          name='view_api_retrieve_rows'),
 
-# job to retrieve rows
+    # job to retrieve rows
     #
     path(r'editor',
          views.variable_display_endpoint,
