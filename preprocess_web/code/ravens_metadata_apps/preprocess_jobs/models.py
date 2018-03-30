@@ -1,12 +1,12 @@
 import json
+from os.path import basename
 from collections import OrderedDict
 from django.urls import reverse
 from django.db import models
 from django.conf import settings
+import jsonfield
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
-from os.path import basename
-
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -188,3 +188,44 @@ class PreprocessJob(TimeStampedModel):
     def set_state_failure(self):
         """set state to STATE_FAILURE"""
         self.state = STATE_FAILURE
+
+
+class MetadataUpdate(TimeStampedModel):
+    """Track updates to preprocss metadata"""
+    name = models.CharField(max_length=255,
+                            blank=True)
+
+    previous_metadata = models.ForeignKey(PreprocessJob,
+                                          on_delete=models.PROTECT,
+                                          related_name='previous_metadata')
+
+    orig_metadata = models.ForeignKey(PreprocessJob,
+                                      on_delete=models.PROTECT,
+                                      related_name='orig_metadata')
+
+    update_json = jsonfield.JSONField(\
+                    load_kwargs=dict(object_pairs_hook=OrderedDict))
+
+    metadata_file = models.FileField(\
+                    help_text='Summary metadata created by preprocess',
+                    upload_to='preprocess_file/%Y/%m/%d/',
+                    blank=True)
+
+    editor = models.ForeignKey(User,
+                               blank=True,
+                               null=True,
+                               on_delete=models.SET_NULL)
+
+    note = models.TextField(blank=True)
+
+    def metadata_file_path(self):
+        """To display the full path in the admin"""
+        if self.metadata_file:
+            return self.metadata_file.path
+
+        return 'n/a'
+
+
+    def __str__(self):
+        """minimal, change to name"""
+        return self.name

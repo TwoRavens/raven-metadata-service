@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
+from ravens_metadata_apps.preprocess_jobs.models import \
+    (PreprocessJob, MetadataUpdate)
 
 
 class PreprocessJobAdmin(admin.ModelAdmin):
@@ -25,3 +26,21 @@ class PreprocessJobAdmin(admin.ModelAdmin):
                        'creator')
 
 admin.site.register(PreprocessJob, PreprocessJobAdmin)
+
+
+class MetadataUpdateAdmin(admin.ModelAdmin):
+    save_on_top = True
+    list_display = ('id',
+                    'name',
+                    'editor',
+                    'created',
+                    'modified')
+
+    list_filter = ('editor',)
+
+    readonly_fields = ('modified',
+                       'created',
+                       'metadata_file_path',
+                       'editor')
+
+admin.site.register(MetadataUpdate, MetadataUpdateAdmin)
