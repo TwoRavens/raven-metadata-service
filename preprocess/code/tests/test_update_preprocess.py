@@ -45,11 +45,16 @@ class UpdatePreprocessTest(unittest.TestCase):
         """(20) Test output json"""
         msgt(self.test_20_update.__doc__)
         var_util = VariableDisplayUtil(self.preprocess_json_01, self.update_json_01)
-        success, var_display_util=True, var_util.get_updated_metadata()
-        print(" ****output : ",var_display_util)
-        print("**** exp_output : ",self.expected_data)
-        self.maxDiff = None
-        self.assertEqual(var_display_util,self.expected_data)
+
+        success, var_display_util = True, var_util.get_updated_metadata()
+
+        print(" ****output : ", var_display_util)
+        print("**** exp_output : ", self.expected_data)
+
+        expected_json = json.loads(self.expected_data,
+                                   object_pairs_hook=OrderedDict)
+
+        self.assertEqual(var_display_util, expected_json)
 
 
     def test_30_update(self):
@@ -200,5 +205,3 @@ class UpdatePreprocessTest(unittest.TestCase):
         var_err = var_display_modify.get_error_messages()
         self.assertTrue(var_display_modify.has_error)
         print("Error : ", var_err)
-
-
