@@ -42,6 +42,7 @@ admin.site.register(PreprocessJob, PreprocessJobAdmin)
 class MetadataUpdateAdmin(admin.ModelAdmin):
     save_on_top = True
     list_display = ('id',
+                    'orig_metadata',
                     'name',
                     'editor',
                     'created',

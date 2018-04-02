@@ -152,14 +152,18 @@ def api_update_metadata(request):
         return JsonResponse(get_json_error(user_msg))
 
     preprocess_id = update_json['preprocess_id']
-    print(preprocess_id)
+
     try:
         job = PreprocessJob.objects.get(pk=preprocess_id)
     except PreprocessJob.DoesNotExist:
         user_msg = 'PreprocessJob not found for id: %s' % preprocess_id
         return JsonResponse(get_json_error(user_msg))
 
-    success, update_or_errors = JobUtil.variable_display_job(job.get_preprocess_data(), update_json)
+    data_found, preprocess_data_or_err = job.get_preprocess_data()
+    if not data_found:
+        return JsonResponse(get_json_error(preprocess_data_or_err))
+
+    success, update_or_errors = JobUtil.variable_display_job(preprocess_data_or_err, update_json)
     if not success:
         user_msg = 'Updated failed.  Please see errors.'
         return JsonResponse(get_json_error(user_msg, update_or_errors))
@@ -180,21 +184,27 @@ def api_update_metadata(request):
     metadata_update.save()
 
     result = get_json_success('Success!',
-                              data=update_or_errors)
+                              data=metadata_update.get_metadata())
 
     return JsonResponse(result)
 
 
 
-def api_get_metadata(request, job_id):
-    """Return complete metadata"""
-    try:
-        job = PreprocessJob.objects.get(pk=job_id)
-    except PreprocessJob.DoesNotExist:
-        user_msg = 'metadata not found for id: %s' % job_id,
-        return JsonResponse(get_json_error(user_msg))
+def api_get_metadata(request, preprocess_id):
+    """Return the latest version of the preprocess metadata"""
 
-    return JsonResponse(job.get_preprocess_data())
+    success, metadata_or_err = JobUtil.get_latest_metadata(preprocess_id)
+    print('metadata_or_err:', type(metadata_or_err))
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    return JsonResponse(metadata_or_err, safe=False)
+    return JsonResponse(\
+                get_json_success('Success',
+                                 data=metadata_or_err))
+
+#def api_get_metadata_version(request, job_id, update_id):
+#    """Re
 
 
 def view_job_status_page(request, job_id):
@@ -206,9 +216,20 @@ def view_job_status_page(request, job_id):
 
     JobUtil.check_status(job)
 
+    info_dict = dict(job=job,
+                     preprocess_string_err=False)
+
+    if job.is_finished():
+        data_ok, preprocess_string = job.get_preprocess_data(as_string=True)
+        print('preprocess_string', preprocess_string)
+        if data_ok:
+            info_dict['preprocess_string'] = preprocess_string
+        else:
+            info_dict['preprocess_string_err'] = True
+
     return render(request,
                   'preprocess/view_process_status.html',
-                  {'job': job})
+                  info_dict)
 
 
 

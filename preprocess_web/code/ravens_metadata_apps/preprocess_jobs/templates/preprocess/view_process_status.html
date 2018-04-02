@@ -8,12 +8,20 @@
 {%  endblock %}
 
 {% block main_content %}
-    {% comment %}
-    {{  job.id }}<br />
-    {{  job.state }}<br />
-    {{  job.user_message }}<br />
-    {{  job.get_preprocess_data }}<br />
-    {% endcomment %}
+
+    {{ job.id }}<br />
+    {{ job.state }}<br />
+    {{ job.user_message }}<br />
+    {{ job.preprocess_file }}<br />
+    {#{ job.as_dict }#}
+    {% if not preprocess_string_err %}
+      <hr />
+      <pre>{{ preprocess_string|slice:":300" }}<pre>
+    {% else %}
+    <hr />
+      {{ preprocess_string_err }}
+    {% endif %}
+    {% comment %}{% endcomment %}
     {% if job.state == "PREPROCESS_STARTED" %}
         <div class="my-3 p-3 bg-white rounded box-shadow" style="background-color:#868e96 ">
 

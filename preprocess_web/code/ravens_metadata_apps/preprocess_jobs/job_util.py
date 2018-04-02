@@ -5,7 +5,7 @@ from collections import OrderedDict
 from datetime import datetime as dt
 from django.core.files.base import ContentFile
 from django.http import HttpResponse
-
+from django.utils import timezone
 from .forms import FORMAT_JSON,FORMAT_CSV
 from celery.result import AsyncResult
 from preprocess_runner import PreprocessRunner
@@ -14,15 +14,38 @@ from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
-    (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
+    (PreprocessJob, MetadataUpdate,
+     STATE_SUCCESS, STATE_FAILURE)
 
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
 
-    #@staticmethod
-    #def create_metadata_update()
+    @staticmethod
+    def get_latest_metadata(job_id):
+        """Return the latest version of the metadata"""
+        if not job_id:
+            return False, 'job_id cannot be None'
+
+        # Look for the latest update, if it exists
+        #
+        latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id\
+                                    ).order_by('-previous_metadata'\
+                                    ).first()
+        if latest_update:
+            # returns a tuple...
+            return latest_update.get_metadata()
+
+        # Look for the original...
+        #
+        try:
+            orig_metadata = PreprocessJob.objects.get(pk=job_id)
+        except PreprocessJob.DoesNotExist:
+            return False, 'PreprocessJob not found: %s' % job_id
+
+        return True, orig_metadata.get_preprocess_data()
+
 
     @staticmethod
     def start_preprocess(job):
@@ -66,7 +89,7 @@ class JobUtil(object):
             job.set_state_success()
 
             job.user_message = 'Task completed!  Preprocess is available'
-            job.end_time = dt.now()
+            job.end_time = timezone.now()
             job.save()
             ye_task.forget()
 

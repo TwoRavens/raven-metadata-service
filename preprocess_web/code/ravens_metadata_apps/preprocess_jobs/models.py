@@ -110,39 +110,50 @@ class PreprocessJob(TimeStampedModel):
 
 
         if self.preprocess_file:
+            data_ok, data_or_err = self.get_preprocess_data()
+            if data_ok:
+                od['data'] = data_or_err
+            else:
+                od['data'] = 'ERROR: %s' % data_or_err
 
-            try:
-                file_data = self.preprocess_file.read()
-                od['data'] = json.loads(file_data)
-            except FileNotFoundError:
-                return 'File was not found! (%s)' % (self.preprocess_file.path)
         return od
 
 
     def preprocess_data_as_json(self):
-        """Return preprocess file contents if they exist"""
-        return self.get_preprocess_data(as_string=True)
+        """For display, return preprocess file as string if it exists"""
+        success, info = self.get_preprocess_data(as_string=True)
+
+        return info
+
 
 
     def get_preprocess_data(self, as_string=False):
         """Return preprocess file contents if they exist"""
-        if self.preprocess_file:
-            try:
-                file_data = self.preprocess_file.read()
-            except FileNotFoundError:
-                return 'Preprocess file not found for job id: %s' % self.id
 
-            try:
-                json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
-            except ValueError:
-                return 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+        if not self.preprocess_file:
+            return False, 'No preprocess data. e.g. No file'
 
-            if as_string:
-                return json.dumps(json_dict, indent=4)
+        try:
+            #f = MyModel.objects.all().get(id=0).saved_file
+            #f.open(mode='rb')
+            #lines = f.readlines()
+            #f.close()
+            self.preprocess_file.open(mode='r')
+            file_data = self.preprocess_file.read()
+            self.preprocess_file.close()
 
-            return json_dict
+        except FileNotFoundError:
+            return False, 'Preprocess file not found for job id: %s' % self.id
 
-        return 'No preprocess data. e.g. No file'
+        try:
+            json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+        except ValueError:
+            return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+
+        if as_string:
+            return True, json.dumps(json_dict, indent=4)
+
+        return True, json_dict
 
 
     def get_absolute_url(self):
@@ -234,6 +245,12 @@ class MetadataUpdate(TimeStampedModel):
 
     note = models.TextField(blank=True)
 
+
+    def __str__(self):
+        """minimal, change to name"""
+        return self.name
+
+
     class Meta:
         ordering = ('-created',)
 
@@ -252,11 +269,6 @@ class MetadataUpdate(TimeStampedModel):
         return None
 
 
-
-    def __str__(self):
-        """minimal, change to name"""
-        return self.name
-
     def save(self, *args, **kwargs):
         """update name..."""
         if not self.id:
@@ -265,3 +277,31 @@ class MetadataUpdate(TimeStampedModel):
         self.name = 'update %d' % self.id #basename(self.source_file.name)[:100]
 
         super(MetadataUpdate, self).save(*args, **kwargs)
+
+    def get_metadata_as_json(self):
+        """For display, return preprocess file as string if it exists"""
+        success, info = self.get_metadata(as_string=True)
+
+        return info
+
+
+    def get_metadata(self, as_string=False):
+        """Return preprocess file contents if they exist"""
+
+        if not self.metadata_file:
+            return False, 'No preprocess data. e.g. No file'
+
+        try:
+            file_data = self.metadata_file.read()
+        except FileNotFoundError:
+            return False, 'Metadata file not found for job id: %s' % self.id
+
+        try:
+            json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+        except ValueError:
+            return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+
+        if as_string:
+            return True, json.dumps(json_dict, indent=4)
+
+        return True, json_dict
