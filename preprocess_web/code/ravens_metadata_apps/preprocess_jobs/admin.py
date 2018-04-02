@@ -6,7 +6,7 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 class MetadataUpdateInline(admin.TabularInline):
     model = MetadataUpdate
     fk_name = "orig_metadata"
-    exclude = ('update_json', 'note', 'previous_metadata')
+    exclude = ('update_json', 'note', 'previous_update')
     readonly_fields = ('name', 'metadata_file', 'update_data_as_json',
                        'editor', 'created', 'modified', )
     extra = 0
@@ -44,11 +44,13 @@ class MetadataUpdateAdmin(admin.ModelAdmin):
     list_display = ('id',
                     'orig_metadata',
                     'name',
+                    'version_number',
                     'editor',
                     'created',
                     'modified')
 
-    list_filter = ('editor',)
+    list_filter = ('version_number',
+                   'editor',)
 
     readonly_fields = ('modified',
                        'created',

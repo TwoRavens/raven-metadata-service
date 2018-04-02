@@ -32,6 +32,9 @@ class JobUtil(object):
         if success is False:
             return False, obj_or_err
 
+
+        print('type(obj_or_err)', type(obj_or_err))
+        print('obj_or_err.id', obj_or_err.id)
         # Return the actual metadata as an OrderedDict
         #
         metadata_ok, metadata_or_err = obj_or_err.get_metadata()
@@ -50,7 +53,7 @@ class JobUtil(object):
         # Look for the latest update, if it exists
         #
         latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id\
-                                    ).order_by('-previous_metadata'\
+                                    ).order_by('-version_number'\
                                     ).first()
 
         # It exists! Return it

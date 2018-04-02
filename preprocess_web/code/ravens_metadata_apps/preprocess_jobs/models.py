@@ -125,9 +125,9 @@ class PreprocessJob(TimeStampedModel):
 
         return info
 
-    def has_previous_metadata(self):
+    def is_original_metadata(self):
         """This is the original, there is no previous metadata"""
-        return False
+        return True
 
     def get_metadata(self, as_string=False):
         """Return preprocess file contents if they exist"""
@@ -219,17 +219,17 @@ class MetadataUpdate(TimeStampedModel):
     name = models.CharField(max_length=255,
                             blank=True)
 
-    previous_metadata = models.ForeignKey('self',
-                                          on_delete=models.PROTECT,
-                                          blank=True,
-                                          null=True,
-                                          related_name='prev_metadata')
+    previous_update = models.ForeignKey('self',
+                                        on_delete=models.PROTECT,
+                                        blank=True,
+                                        null=True,
+                                        related_name='prev_metadata')
 
     orig_metadata = models.ForeignKey(PreprocessJob,
                                       on_delete=models.PROTECT,
                                       related_name='orig_metadata')
 
-    #version_number = models.IntegerField(default=2)
+    version_number = models.IntegerField(default=2)
 
     update_json = jsonfield.JSONField(\
                     load_kwargs=dict(object_pairs_hook=OrderedDict))
@@ -254,10 +254,11 @@ class MetadataUpdate(TimeStampedModel):
 
     class Meta:
         ordering = ('-created',)
+        unique_together = ('orig_metadata', 'version_number')
 
-    def has_previous_metadata(self):
+    def is_original_metadata(self):
         """This is the original, there is no previous metadata"""
-        return True
+        return False
 
     def metadata_file_path(self):
         """To display the full path in the admin"""

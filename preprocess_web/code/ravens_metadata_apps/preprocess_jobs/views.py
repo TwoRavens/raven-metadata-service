@@ -24,7 +24,7 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_error,
      get_json_success,
      get_baseurl_from_request)
-
+from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 
 # Create your views here.
 def test_view(request):
@@ -141,7 +141,6 @@ def api_update_metadata(request):
         user_msg = 'Please use a POST to access this endpoint'
         return JsonResponse(get_json_error(user_msg))
 
-
     # Retrieve the JSON request from the body
     #
     success, update_json_or_err = get_request_body_as_json(request)
@@ -157,52 +156,23 @@ def api_update_metadata(request):
 
     preprocess_id = update_json['preprocess_id']
 
-    # Retrieve the PreprocessJob
-    #
-    try:
-        job = PreprocessJob.objects.get(pk=preprocess_id)
-    except PreprocessJob.DoesNotExist:
-        user_msg = 'PreprocessJob not found for id: %s' % preprocess_id
-        return JsonResponse(get_json_error(user_msg))
+    update_util = MetadataUpdateUtil(preprocess_id, update_json)
+    if update_util.has_error:
+        return JsonResponse(get_json_error(update_util.error_messages))
 
-    # Is this the latest
-    data_found, latest_metadata = JobUtil.get_latest_metadata(preprocess_id)
-    if not data_found:
-        return JsonResponse(get_json_error(preprocess_data_or_err))
-
-    success, update_or_errors = JobUtil.update_preprocess_metadata(\
-                                        latest_metadata, update_json)
-    if not success:
-        user_msg = 'Updated failed.  Please see errors.'
-        return JsonResponse(get_json_error(user_msg, update_or_errors))
-
-
-    # Record successful update
-    metadata_update = MetadataUpdate(\
-                    #previous_metadata=previous_metadata,
-                    orig_metadata=job,
-                    update_json=update_json)
-    metadata_update.save()
-
-    new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
-    new_preprocess_data = ContentFile(json.dumps(update_or_errors))
-
-    metadata_update.metadata_file.save(new_name,
-                                       new_preprocess_data)
-    metadata_update.save()
 
     result = get_json_success('Success!',
-                              data=metadata_update.get_metadata())
+                              data=update_util.get_updated_metadata())
 
     return JsonResponse(result)
 
 
 
-def api_get_metadata(request, preprocess_id):
+def api_get_latest_metadata(request, preprocess_id):
     """Return the latest version of the preprocess metadata"""
 
     success, metadata_or_err = JobUtil.get_latest_metadata(preprocess_id)
-    print('metadata_or_err:', type(metadata_or_err))
+
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 

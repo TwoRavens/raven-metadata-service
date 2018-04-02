@@ -47,8 +47,8 @@ urlpatterns = (
     # job to retrieve preprocess data
     #
     path(r'api/metadata/<int:preprocess_id>',
-         views.api_get_metadata,
-         name='api_get_metadata'),
+         views.api_get_latest_metadata,
+         name='api_get_latest_metadata'),
 
     # job to retrieve preprocess data version
     #
