@@ -6,12 +6,12 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
-from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 
 from django.utils.decorators import method_decorator
 
+from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
-
+from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
@@ -163,7 +163,7 @@ def api_update_metadata(request):
     if not data_found:
         return JsonResponse(get_json_error(preprocess_data_or_err))
 
-    success, update_or_errors = JobUtil.variable_display_job(preprocess_data_or_err, update_json)
+    success, update_or_errors = JobUtil.update_preprocess_metadata(preprocess_data_or_err, update_json)
     if not success:
         user_msg = 'Updated failed.  Please see errors.'
         return JsonResponse(get_json_error(user_msg, update_or_errors))
@@ -233,7 +233,6 @@ def view_job_status_page(request, job_id):
 
 
 
-from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 @csrf_exempt
 @apikey_required
 def endpoint_api_single_file(request, api_user=None):

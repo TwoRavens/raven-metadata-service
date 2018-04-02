@@ -33,7 +33,7 @@ class VariableDisplayUtil(object):
         self.access_obj_original= {}
         self.access_obj_original_display = {}
         # call the display function
-        self.update_preprocess_data();
+        self.update_preprocess_data()
 
     def add_error_message(self, err_msg):
         """Add error message"""
@@ -41,12 +41,15 @@ class VariableDisplayUtil(object):
         self.has_error = True
         self.error_messages.append(err_msg)
 
-    def get_updated_metadata(self):
+    def get_updated_metadata(self, as_string=False):
         """Return the modified metadata--which is in the 'original_json' """
         assert self.has_error is False, \
               "Make sure that 'has_error' is False before using this method"
 
-        return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
+        if as_string:
+            return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
+
+        return self.original_json
 
     @staticmethod
     def get_default_settings():

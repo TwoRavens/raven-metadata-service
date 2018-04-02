@@ -208,7 +208,7 @@ class JobUtil(object):
             return response
 
     @staticmethod
-    def variable_display_job(preprocess_json, update_json,**kwargs):
+    def update_preprocess_metadata(preprocess_json, update_json,**kwargs):
         """To get the updated preprocess file from VariableDisplayUtil """
         # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
         var_util = VariableDisplayUtil(preprocess_json, update_json)
