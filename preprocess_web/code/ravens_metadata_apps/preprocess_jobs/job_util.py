@@ -5,20 +5,72 @@ from collections import OrderedDict
 from datetime import datetime as dt
 from django.core.files.base import ContentFile
 from django.http import HttpResponse
-
-from .forms import FORMAT_JSON,FORMAT_CSV
+from django.utils import timezone
+from .forms import FORMAT_JSON, FORMAT_CSV
 from celery.result import AsyncResult
-
+from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
-from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file
+from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
-
+from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
-    (PreprocessJob, STATE_SUCCESS, STATE_FAILURE)
+    (PreprocessJob, MetadataUpdate,
+     STATE_SUCCESS, STATE_FAILURE)
 
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
+
+
+    @staticmethod
+    def get_latest_metadata(job_id):
+        """Return the latest version of the metadata as an OrderedDict"""
+
+        # Get the PreprocessJob or MetadataUpdate
+        #
+        success, obj_or_err = JobUtil.get_latest_metadata_object(job_id)
+        if success is False:
+            return False, obj_or_err
+
+
+        print('type(obj_or_err)', type(obj_or_err))
+        print('obj_or_err.id', obj_or_err.id)
+        # Return the actual metadata as an OrderedDict
+        #
+        metadata_ok, metadata_or_err = obj_or_err.get_metadata()
+        if metadata_ok is False:
+            return False, metadata_or_err
+
+        return True, metadata_or_err
+
+
+    @staticmethod
+    def get_latest_metadata_object(job_id):
+        """Return either a PreprocessJob object (orig) or MetadataUpdate object (update)"""
+        if not job_id:
+            return False, 'job_id cannot be None'
+
+        # Look for the latest update, if it exists
+        #
+        latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id\
+                                    ).order_by('-version_number'\
+                                    ).first()
+
+        # It exists! Return it
+        #
+        if latest_update:
+            return True, latest_update
+
+        # Look for the original preprocess metadata
+        #
+        try:
+            orig_metadata = PreprocessJob.objects.get(pk=job_id)
+        except PreprocessJob.DoesNotExist:
+            return False, 'PreprocessJob not found: %s' % job_id
+
+        return True, orig_metadata
+
+
 
     @staticmethod
     def start_preprocess(job):
@@ -62,7 +114,7 @@ class JobUtil(object):
             job.set_state_success()
 
             job.user_message = 'Task completed!  Preprocess is available'
-            job.end_time = dt.now()
+            job.end_time = timezone.now()
             job.save()
             ye_task.forget()
 
@@ -179,3 +231,13 @@ class JobUtil(object):
             data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
 
             return response
+
+    @staticmethod
+    def update_preprocess_metadata(preprocess_json, update_json,**kwargs):
+        """To get the updated preprocess file from VariableDisplayUtil """
+        # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
+        var_util = VariableDisplayUtil(preprocess_json, update_json)
+        if var_util.has_error:
+            return False, var_util.get_error_messages()
+
+        return True, var_util.get_updated_metadata()

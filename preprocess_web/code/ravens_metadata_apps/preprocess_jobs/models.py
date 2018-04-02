@@ -1,12 +1,14 @@
 import json
+from os.path import basename
 from collections import OrderedDict
 from django.urls import reverse
 from django.db import models
 from django.conf import settings
+from django.utils.safestring import mark_safe
+
+import jsonfield
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
-from os.path import basename
-
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -98,24 +100,58 @@ class PreprocessJob(TimeStampedModel):
                 continue
 
             elif attr_name == 'creator_id':
-                creator_info = self.creator.as_dict_short()
-                od['creator'] = creator_info
+                if self.creator:
+                    creator_info = self.creator.as_dict_short()
+                    od['creator'] = creator_info
+                else:
+                    od['creator'] = None
             else:
                 od[attr_name] = '%s' % self.__dict__[attr_name]
 
+
         if self.preprocess_file:
-            file_data = self.preprocess_file.read()
-            od['data'] = json.loads(file_data)
+            data_ok, data_or_err = self.get_metadata()
+            if data_ok:
+                od['data'] = data_or_err
+            else:
+                od['data'] = 'ERROR: %s' % data_or_err
 
         return od
 
-    def get_preprocess_data(self):
-        """Return preprocess file contents if they exist"""
-        if self.preprocess_file:
-            file_data = self.preprocess_file.read()
-            return json.loads(file_data)
 
-        return None
+    def get_metadata_as_json(self):
+        """For display, return preprocess file as string if it exists"""
+        success, info = self.get_metadata(as_string=True)
+
+        return info
+
+    def is_original_metadata(self):
+        """This is the original, there is no previous metadata"""
+        return True
+
+    def get_metadata(self, as_string=False):
+        """Return preprocess file contents if they exist"""
+
+        if not self.preprocess_file:
+            return False, 'No preprocess data. e.g. No file'
+
+        try:
+            self.preprocess_file.open(mode='r')
+            file_data = self.preprocess_file.read()
+            self.preprocess_file.close()
+        except FileNotFoundError:
+            return False, 'Preprocess file not found for job id: %s' % self.id
+
+        try:
+            json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+        except ValueError:
+            return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+
+        if as_string:
+            return True, json.dumps(json_dict, indent=4)
+
+        return True, json_dict
+
 
     def get_absolute_url(self):
         """jobs status..."""
@@ -176,3 +212,102 @@ class PreprocessJob(TimeStampedModel):
     def set_state_failure(self):
         """set state to STATE_FAILURE"""
         self.state = STATE_FAILURE
+
+
+class MetadataUpdate(TimeStampedModel):
+    """Track updates to preprocss metadata"""
+    name = models.CharField(max_length=255,
+                            blank=True)
+
+    previous_update = models.ForeignKey('self',
+                                        on_delete=models.PROTECT,
+                                        blank=True,
+                                        null=True,
+                                        related_name='prev_metadata')
+
+    orig_metadata = models.ForeignKey(PreprocessJob,
+                                      on_delete=models.PROTECT,
+                                      related_name='orig_metadata')
+
+    version_number = models.IntegerField(default=2)
+
+    update_json = jsonfield.JSONField(\
+                    load_kwargs=dict(object_pairs_hook=OrderedDict))
+
+    metadata_file = models.FileField(\
+                    help_text='Summary metadata created by preprocess',
+                    upload_to='preprocess_file/%Y/%m/%d/',
+                    blank=True)
+
+    editor = models.ForeignKey(User,
+                               blank=True,
+                               null=True,
+                               on_delete=models.SET_NULL)
+
+    note = models.TextField(blank=True)
+
+
+    def __str__(self):
+        """minimal, change to name"""
+        return self.name
+
+
+    class Meta:
+        ordering = ('-created',)
+        unique_together = ('orig_metadata', 'version_number')
+
+    def is_original_metadata(self):
+        """This is the original, there is no previous metadata"""
+        return False
+
+    def metadata_file_path(self):
+        """To display the full path in the admin"""
+        if self.metadata_file:
+            return self.metadata_file.path
+
+        return 'n/a'
+
+    def update_data_as_json(self):
+        """Return preprocess file contents if they exist"""
+        if self.update_json:
+            return mark_safe('<pre>%s</pre>' % json.dumps(self.update_json, indent=4))
+
+        return None
+
+
+    def save(self, *args, **kwargs):
+        """update name..."""
+        if not self.id:
+            super(MetadataUpdate, self).save(*args, **kwargs)
+
+        self.name = 'update %d' % self.id #basename(self.source_file.name)[:100]
+
+        super(MetadataUpdate, self).save(*args, **kwargs)
+
+    def get_metadata_as_json(self):
+        """For display, return preprocess file as string if it exists"""
+        success, info = self.get_metadata(as_string=True)
+
+        return info
+
+
+    def get_metadata(self, as_string=False):
+        """Return preprocess file contents if they exist"""
+
+        if not self.metadata_file:
+            return False, 'No preprocess data. e.g. No file'
+
+        try:
+            file_data = self.metadata_file.read()
+        except FileNotFoundError:
+            return False, 'Metadata file not found for job id: %s' % self.id
+
+        try:
+            json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+        except ValueError:
+            return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+
+        if as_string:
+            return True, json.dumps(json_dict, indent=4)
+
+        return True, json_dict

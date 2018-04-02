@@ -1,9 +1,21 @@
 from django.contrib import admin
 
-from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
+from ravens_metadata_apps.preprocess_jobs.models import \
+    (PreprocessJob, MetadataUpdate)
 
+class MetadataUpdateInline(admin.TabularInline):
+    model = MetadataUpdate
+    fk_name = "orig_metadata"
+    exclude = ('update_json', 'note', 'previous_update')
+    readonly_fields = ('name', 'metadata_file', 'update_data_as_json',
+                       'editor', 'created', 'modified', )
+    extra = 0
+    can_delete = True
 
 class PreprocessJobAdmin(admin.ModelAdmin):
+    inlines = [
+        MetadataUpdateInline,
+    ]
     save_on_top = True
     search_fields = ('name',)
     list_display = ('id',
@@ -25,3 +37,24 @@ class PreprocessJobAdmin(admin.ModelAdmin):
                        'creator')
 
 admin.site.register(PreprocessJob, PreprocessJobAdmin)
+
+
+class MetadataUpdateAdmin(admin.ModelAdmin):
+    save_on_top = True
+    list_display = ('id',
+                    'orig_metadata',
+                    'name',
+                    'version_number',
+                    'editor',
+                    'created',
+                    'modified')
+
+    list_filter = ('version_number',
+                   'editor',)
+
+    readonly_fields = ('modified',
+                       'created',
+                       'metadata_file_path',
+                       'editor')
+
+admin.site.register(MetadataUpdate, MetadataUpdateAdmin)

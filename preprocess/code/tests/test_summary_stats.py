@@ -9,6 +9,7 @@ INPUT_DIR = join(PREPROCESS_DIR, 'input')
 from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil
 from summary_stats_util import SummaryStatsUtil
+from column_info import ColumnInfo
 
 
 class SummaryStatsUtilTest(unittest.TestCase):
@@ -17,21 +18,26 @@ class SummaryStatsUtilTest(unittest.TestCase):
     def setUp(self):
         """Load up the test file"""
         self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
-        type_guess_obj = TypeGuessUtil(self.df_01)
-        self.variable_info_01 = type_guess_obj.get_variable_dict()
+
+
+
+
 
     def test_10_numeric_val_ok(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_10_numeric_val_ok.__doc__)
 
-        # Pull the ColumnInfo for Ranking
-        col_info = self.variable_info_01.get('quat')
-        col_series = self.df_01[col_info.colname]
+
 
         # Calculate the stats
-        SummaryStatsUtil(col_series, col_info)
-
-        col_info.print_values()
+        # SummaryStatsUtil(col_series, col_info)
+        self.col_info = ColumnInfo('quat')
+        print("df ", self.df_01['quat'])
+        print("col_info", self.col_info.colname)
+        TypeGuessUtil(pd.Series(self.df_01['quat']), self.col_info)
+        SummaryStatsUtil((self.df_01['quat']), self.col_info)
+        self.col_info.print_values()
+        col_info = self.col_info
         dashes()
 
         # Check uniques
@@ -68,24 +74,28 @@ class SummaryStatsUtilTest(unittest.TestCase):
     def test_20_non_numeric_val_ok(self):
         """(20) Test the data for non numeric series"""
         msgt(self.test_20_non_numeric_val_ok.__doc__)
-
+        self.col_info = ColumnInfo('country')
+        print("df ", self.df_01['country'])
+        print("col_info", self.col_info.colname)
+        TypeGuessUtil(pd.Series(self.df_01['country']), self.col_info)
+        SummaryStatsUtil((self.df_01['country']), self.col_info)
         # Pull the ColumnInfo for Ranking
-        col_info = self.variable_info_01.get('UN')
-        col_series = self.df_01[col_info.colname]
+        col_info = self.col_info
+        #col_series = self.df_01[col_info.colname]
 
         # Calculate the stats
-        SummaryStatsUtil(col_series, col_info)
+        # SummaryStatsUtil(col_series, col_info)
 
         col_info.print_values()
         dashes()
 
         # Check uniques
         msg('Check uniques')
-        self.assertEqual(col_info.uniques, 2)
+        self.assertEqual(col_info.uniques, 8)
 
         msg('Check valid and invalid ')
-        self.assertEqual(col_info.valid, 8)
-        self.assertEqual(col_info.invalid, 4)
+        self.assertEqual(col_info.valid, 12)
+        self.assertEqual(col_info.invalid, 0)
 
         # Check median, mean, sd
         msg('Check median, mean, and sd')
@@ -100,16 +110,20 @@ class SummaryStatsUtilTest(unittest.TestCase):
 
         msg('Check mode, fewest, mid, etc')
         # Check mode, fewest, mid, etc
-        self.assertEqual(col_info.mode, [True])
-        self.assertEqual(col_info.freqmode, 5)
-        self.assertEqual(col_info.mid, False)
-        self.assertEqual(col_info.freqmid, 3)
-        self.assertEqual(col_info.freqfewest, 3)
+        # self.assertEqual(col_info.mode, ['France', 'Canada', 'USA', 'India'] )
+        # mode = pd.Series(col_info.mode).sort_values(ascending=True)
+        # expected_mode = pd.Series(['Canada','France','India','USA']).sort_values(ascending=True)
+
+        # mid and mode has been removed as they give random values
+        self.assertEqual(col_info.freqmode, 2)
+        # self.assertEqual(col_info.mid, "England")
+        self.assertEqual(col_info.freqmid, 1)
+        self.assertEqual(col_info.freqfewest, 1)
         # Fewest and freqfewest discussion about the concept
 
         msg('Check herfindahl ')
         # Check herfindahl
-        self.assertEqual(col_info.herfindahl, 0.53125)
+        self.assertEqual(col_info.herfindahl, 0.1388888888888889)
 
 
 if __name__ == '__main__':

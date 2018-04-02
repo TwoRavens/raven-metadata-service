@@ -5,14 +5,17 @@ from django.views.decorators.csrf import csrf_exempt
 
 from django.http import JsonResponse, HttpResponse, Http404, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
 
+from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
-
+from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
-from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
+from ravens_metadata_apps.preprocess_jobs.models import \
+    (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.preprocess_jobs.forms import \
     (PreprocessJobForm, RetrieveRowsForm,
      FORMAT_JSON, FORMAT_CSV)
@@ -21,7 +24,7 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_error,
      get_json_success,
      get_baseurl_from_request)
-
+from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 
 # Create your views here.
 def test_view(request):
@@ -99,30 +102,88 @@ def view_retrieve_rows_form(request):
 def view_api_retrieve_rows(request):
     """API endpoint to retrieve rows from a preprocess file"""
     if request.method != 'POST':
-        user_msg = dict(success=False,
-                        message='Please use a POST to access this endpoint')
-        return JsonResponse(user_msg)
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
 
     frm = RetrieveRowsForm(request.POST)
     if not frm.is_valid():
         user_msg = dict(success=False,
                         message='Invalid input',
-                        errors=frm._errors)
+                        errors=frm.errors)
         return JsonResponse(user_msg)
 
+    job_id = frm.cleaned_data['preprocess_id']
+
     try:
-        job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
+        job = PreprocessJob.objects.get(pk=job_id)
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
     input_format = frm.cleaned_data.get('format')
+
     if input_format == FORMAT_JSON:
         output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
         print("output ", output)
         user_msg = output
         return JsonResponse(user_msg)
+
     elif input_format == FORMAT_CSV:
         return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
+
+    user_msg = 'Unknown input_format: %s' % input_format
+    return JsonResponse(get_json_error(user_msg))
+
+
+@csrf_exempt
+def api_update_metadata(request):
+    """ API endpoint to get JSON request for updating the Preprocess metadata"""
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+    # Retrieve the JSON request from the body
+    #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+    # Make sure there's a preprocess_id
+    #
+    update_json = update_json_or_err
+    if 'preprocess_id' not in update_json:
+        user_msg = 'preprocess_id not found: %s' % update_json['preprocess_id']
+        return JsonResponse(get_json_error(user_msg))
+
+    preprocess_id = update_json['preprocess_id']
+
+    update_util = MetadataUpdateUtil(preprocess_id, update_json)
+    if update_util.has_error:
+        return JsonResponse(get_json_error(update_util.error_messages))
+
+
+    result = get_json_success('Success!',
+                              data=update_util.get_updated_metadata())
+
+    return JsonResponse(result)
+
+
+
+def api_get_latest_metadata(request, preprocess_id):
+    """Return the latest version of the preprocess metadata"""
+
+    success, metadata_or_err = JobUtil.get_latest_metadata(preprocess_id)
+
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    return JsonResponse(metadata_or_err, safe=False)
+
+    #return JsonResponse(\
+    #            get_json_success('Success',
+    #                             data=metadata_or_err))
+
+#def api_get_metadata_version(request, job_id, update_id):
+#    """Re
 
 
 def view_job_status_page(request, job_id):
@@ -134,13 +195,23 @@ def view_job_status_page(request, job_id):
 
     JobUtil.check_status(job)
 
+    info_dict = dict(job=job,
+                     preprocess_string_err=False)
+
+    if job.is_finished():
+        data_ok, preprocess_string = job.get_metadata(as_string=True)
+        print('preprocess_string', preprocess_string)
+        if data_ok:
+            info_dict['preprocess_string'] = preprocess_string
+        else:
+            info_dict['preprocess_string_err'] = True
+
     return render(request,
                   'preprocess/view_process_status.html',
-                  {'job': job})
+                  info_dict)
 
 
 
-from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 @csrf_exempt
 @apikey_required
 def endpoint_api_single_file(request, api_user=None):
