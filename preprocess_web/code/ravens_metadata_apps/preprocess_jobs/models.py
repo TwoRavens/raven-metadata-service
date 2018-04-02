@@ -110,7 +110,7 @@ class PreprocessJob(TimeStampedModel):
 
 
         if self.preprocess_file:
-            data_ok, data_or_err = self.get_preprocess_data()
+            data_ok, data_or_err = self.get_metadata()
             if data_ok:
                 od['data'] = data_or_err
             else:
@@ -119,29 +119,26 @@ class PreprocessJob(TimeStampedModel):
         return od
 
 
-    def preprocess_data_as_json(self):
+    def get_metadata_as_json(self):
         """For display, return preprocess file as string if it exists"""
-        success, info = self.get_preprocess_data(as_string=True)
+        success, info = self.get_metadata(as_string=True)
 
         return info
 
+    def has_previous_metadata(self):
+        """This is the original, there is no previous metadata"""
+        return False
 
-
-    def get_preprocess_data(self, as_string=False):
+    def get_metadata(self, as_string=False):
         """Return preprocess file contents if they exist"""
 
         if not self.preprocess_file:
             return False, 'No preprocess data. e.g. No file'
 
         try:
-            #f = MyModel.objects.all().get(id=0).saved_file
-            #f.open(mode='rb')
-            #lines = f.readlines()
-            #f.close()
             self.preprocess_file.open(mode='r')
             file_data = self.preprocess_file.read()
             self.preprocess_file.close()
-
         except FileNotFoundError:
             return False, 'Preprocess file not found for job id: %s' % self.id
 
@@ -222,13 +219,17 @@ class MetadataUpdate(TimeStampedModel):
     name = models.CharField(max_length=255,
                             blank=True)
 
-    previous_metadata = models.ForeignKey(PreprocessJob,
+    previous_metadata = models.ForeignKey('self',
                                           on_delete=models.PROTECT,
-                                          related_name='previous_metadata')
+                                          blank=True,
+                                          null=True,
+                                          related_name='prev_metadata')
 
     orig_metadata = models.ForeignKey(PreprocessJob,
                                       on_delete=models.PROTECT,
                                       related_name='orig_metadata')
+
+    #version_number = models.IntegerField(default=2)
 
     update_json = jsonfield.JSONField(\
                     load_kwargs=dict(object_pairs_hook=OrderedDict))
@@ -253,6 +254,10 @@ class MetadataUpdate(TimeStampedModel):
 
     class Meta:
         ordering = ('-created',)
+
+    def has_previous_metadata(self):
+        """This is the original, there is no previous metadata"""
+        return True
 
     def metadata_file_path(self):
         """To display the full path in the admin"""

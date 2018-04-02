@@ -52,7 +52,7 @@ urlpatterns = (
 
     # job to retrieve preprocess data version
     #
-    #path(r'api/metadata/<int:job_id>/<int:update_id>',
+    #path(r'api/metadata/<int:job_id>/version/<int:update_id>',
     #     views.api_get_metadata_version,
     #     name='api_get_metadata_version'),
 

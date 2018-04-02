@@ -6,7 +6,7 @@ from datetime import datetime as dt
 from django.core.files.base import ContentFile
 from django.http import HttpResponse
 from django.utils import timezone
-from .forms import FORMAT_JSON,FORMAT_CSV
+from .forms import FORMAT_JSON, FORMAT_CSV
 from celery.result import AsyncResult
 from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
@@ -24,7 +24,26 @@ class JobUtil(object):
 
     @staticmethod
     def get_latest_metadata(job_id):
-        """Return the latest version of the metadata"""
+        """Return the latest version of the metadata as an OrderedDict"""
+
+        # Get the PreprocessJob or MetadataUpdate
+        #
+        success, obj_or_err = JobUtil.get_latest_metadata_object(job_id)
+        if success is False:
+            return False, obj_or_err
+
+        # Return the actual metadata as an OrderedDict
+        #
+        metadata_ok, metadata_or_err = obj_or_err.get_metadata()
+        if metadata_ok is False:
+            return False, metadata_or_err
+
+        return True, metadata_or_err
+
+
+    @staticmethod
+    def get_latest_metadata_object(job_id):
+        """Return either a PreprocessJob object (orig) or MetadataUpdate object (update)"""
         if not job_id:
             return False, 'job_id cannot be None'
 
@@ -33,18 +52,21 @@ class JobUtil(object):
         latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id\
                                     ).order_by('-previous_metadata'\
                                     ).first()
-        if latest_update:
-            # returns a tuple...
-            return latest_update.get_metadata()
 
-        # Look for the original...
+        # It exists! Return it
+        #
+        if latest_update:
+            return True, latest_update
+
+        # Look for the original preprocess metadata
         #
         try:
             orig_metadata = PreprocessJob.objects.get(pk=job_id)
         except PreprocessJob.DoesNotExist:
             return False, 'PreprocessJob not found: %s' % job_id
 
-        return True, orig_metadata.get_preprocess_data()
+        return True, orig_metadata
+
 
 
     @staticmethod

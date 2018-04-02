@@ -140,12 +140,16 @@ def api_update_metadata(request):
     if request.method != 'POST':
         user_msg = 'Please use a POST to access this endpoint'
         return JsonResponse(get_json_error(user_msg))
-    # get json file from POST using view_helper
 
+
+    # Retrieve the JSON request from the body
+    #
     success, update_json_or_err = get_request_body_as_json(request)
     if success is False:
         return JsonResponse(get_json_error(update_json_or_err))
 
+    # Make sure there's a preprocess_id
+    #
     update_json = update_json_or_err
     if 'preprocess_id' not in update_json:
         user_msg = 'preprocess_id not found: %s' % update_json['preprocess_id']
@@ -153,17 +157,21 @@ def api_update_metadata(request):
 
     preprocess_id = update_json['preprocess_id']
 
+    # Retrieve the PreprocessJob
+    #
     try:
         job = PreprocessJob.objects.get(pk=preprocess_id)
     except PreprocessJob.DoesNotExist:
         user_msg = 'PreprocessJob not found for id: %s' % preprocess_id
         return JsonResponse(get_json_error(user_msg))
 
-    data_found, preprocess_data_or_err = job.get_preprocess_data()
+    # Is this the latest
+    data_found, latest_metadata = JobUtil.get_latest_metadata(preprocess_id)
     if not data_found:
         return JsonResponse(get_json_error(preprocess_data_or_err))
 
-    success, update_or_errors = JobUtil.update_preprocess_metadata(preprocess_data_or_err, update_json)
+    success, update_or_errors = JobUtil.update_preprocess_metadata(\
+                                        latest_metadata, update_json)
     if not success:
         user_msg = 'Updated failed.  Please see errors.'
         return JsonResponse(get_json_error(user_msg, update_or_errors))
@@ -171,9 +179,9 @@ def api_update_metadata(request):
 
     # Record successful update
     metadata_update = MetadataUpdate(\
-                        previous_metadata=job,
-                        orig_metadata=job,
-                        update_json=update_json)
+                    #previous_metadata=previous_metadata,
+                    orig_metadata=job,
+                    update_json=update_json)
     metadata_update.save()
 
     new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
@@ -199,9 +207,10 @@ def api_get_metadata(request, preprocess_id):
         return JsonResponse(get_json_error(metadata_or_err))
 
     return JsonResponse(metadata_or_err, safe=False)
-    return JsonResponse(\
-                get_json_success('Success',
-                                 data=metadata_or_err))
+
+    #return JsonResponse(\
+    #            get_json_success('Success',
+    #                             data=metadata_or_err))
 
 #def api_get_metadata_version(request, job_id, update_id):
 #    """Re
@@ -220,7 +229,7 @@ def view_job_status_page(request, job_id):
                      preprocess_string_err=False)
 
     if job.is_finished():
-        data_ok, preprocess_string = job.get_preprocess_data(as_string=True)
+        data_ok, preprocess_string = job.get_metadata(as_string=True)
         print('preprocess_string', preprocess_string)
         if data_ok:
             info_dict['preprocess_string'] = preprocess_string
