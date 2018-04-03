@@ -31,10 +31,13 @@
 {#     </div>#}
 {##}
 {#{{ output }}#}
+    <div class="container"style="margin:8%; background-color:#f0f8ff; border: transparent">
+    <div class="row" style=" padding: 2%">
     <form action="{% url 'view_form_retrieve_rows' %}" method="post" novalidate>
   {% csrf_token %}
   {{ form }}
   <button type="submit">Submit</button>
 </form>
-
+    </div>
+</div>
 {% endblock %}
