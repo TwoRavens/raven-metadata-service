@@ -32,6 +32,10 @@ def test_view(request):
     debug_task.delay()
     return HttpResponse('hello')
 
+def view_homepage(request):
+    return render(request,
+                  'preprocess/homepage.html',
+                  {'context' : 'context'})
 
 def view_basic_upload_form(request):
     """Basic test form"""

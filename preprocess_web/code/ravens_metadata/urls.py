@@ -32,7 +32,7 @@ urlpatterns = [
 
     # temp path until there's a home page
     path(r'', RedirectView.as_view(\
-                pattern_name='view_basic_upload_form',
+                pattern_name='view_homepage',
                 permanent=False)),
 ] + static(settings.STATIC_URL,
            #document_root=settings.STATIC_ROOT)
