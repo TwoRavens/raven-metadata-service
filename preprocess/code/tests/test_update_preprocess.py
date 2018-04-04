@@ -32,7 +32,7 @@ class UpdatePreprocessTest(unittest.TestCase):
 
     def setUp(self):
         """Load up tests as OrderedDict objects--unless specified otherwise"""
-        self.test_020_expected_data = self.get_file_content('test_020_expected_data.json')
+        self.expected_data_01 = self.get_file_content('expected_data_01.json')
 
         self.update_json_01 = self.get_file_content('update_json_01.json')
 
@@ -60,7 +60,7 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         print(var_util.get_updated_metadata(True))
         self.assertEqual(json.dumps(var_util.get_updated_metadata()),
-                         json.dumps(self.test_020_expected_data))
+                         json.dumps(self.expected_data_01))
 
 
     @skip('skipit')
@@ -215,4 +215,4 @@ class UpdatePreprocessTest(unittest.TestCase):
         var_display_util = var_util.get_updated_metadata()
 
         #self.assertTrue(success)
-        self.assertEqual(var_display_util, self.test_020_expected_data)
+        self.assertEqual(var_display_util, self.expected_data_01)

@@ -13,15 +13,16 @@ VALUE_UPDATES = 'value_updates'
 class VariableDisplayUtil(object):
 
 
-    def __init__(self,preprocess_file, update_json):
+    def __init__(self, preprocess_json, update_json):
         """Init with a pandas dataframe"""
-        assert preprocess_file or update_file is not None, "files can't be None"
+        assert isinstance(preprocess_json, dict),\
+            "preprocess_json must be a dict/OrderedDict"
+        assert isinstance(update_json, dict),\
+            "update_json must be a dict/OrderedDict"
 
-        self.preprocess_file = preprocess_file
+        self.preprocess_json = preprocess_json
         self.update_json = update_json
         self.col_names = {}
-        # Initial settings
-
 
         self.attributes = [x[0] for x in ColumnInfo.get_variable_labels()]  # list of all the attributes ***
         self.editable_vars = ColumnInfo.get_editable_column_labels()      # list of all the attributes set as editable ***
@@ -64,37 +65,58 @@ class VariableDisplayUtil(object):
 
 
     def run_basic_checks(self):
-        """Do some sanity checks"""
+        """Do some sanity checks--replace this with JSON schema checks..."""
         if col_const.PREPROCESS_ID not in self.update_json:
             self.add_error_message(\
                 "A '%s' was not found in the update JSON" % col_const.PREPROCESS_ID)
             return False
 
-        if col_const.PREPROCESS_ID not in self.update_json:
+        if col_const.SELF_SECTION_KEY not in self.preprocess_json:
             self.add_error_message(\
-                "A '%s' was not found in the update JSON" % col_const.PREPROCESS_ID)
+                "A '%s' was not found in the preprocess JSON" % col_const.SELF_SECTION_KEY)
             return False
+
+        if col_const.PREPROCESS_ID not in self.preprocess_json[col_const.SELF_SECTION_KEY]:
+            self.add_error_message(\
+                "A '%s.%s' was not found in the preprocess JSON" % \
+                (col_const.SELF_SECTION_KEY, col_const.PREPROCESS_ID))
+            return False
+
+        if not self.update_json[col_const.PREPROCESS_ID] == \
+            self.preprocess_json[col_const.SELF_SECTION_KEY][col_const.PREPROCESS_ID]:
+            self.add_error_message(\
+                ('The "%s" in the update does not match the'
+                 ' "%s" in the preprocess metadata') % \
+                (col_const.SELF_SECTION_KEY, col_const.PREPROCESS_ID))
+            return False
+
+        return True
 
     def update_preprocess_data(self):
         """Iterate through the update_json and call omit,viewable,label functions"""
+        if not self.run_basic_checks():
+            return False, self.get_error_messages
+
         update_json = self.update_json
         # print(update_json)
-        self.original_json = self.preprocess_file
+        self.original_json = self.preprocess_json
 
-        if 'variables' in self.original_json:
-            self.access_obj_original = self.original_json['variables']
+        if col_const.VARIABLES_SECTION_KEY in self.original_json:
+            self.access_obj_original = self.original_json[col_const.VARIABLES_SECTION_KEY]
         else:
             self.access_obj_original_display = None
             self.add_error_message(
-                "variables section is not found in Preprocess file")
+                '"%s" section not found in the preprocess data' % col_const.VARIABLES_SECTION_KEY)
             return False, self.get_error_messages()
 
-        if 'variable_display' in self.original_json:
-            self.access_obj_original_display = self.original_json['variable_display']
+        if col_const.VARIABLE_DISPLAY_SECTION_KEY in self.original_json:
+            self.access_obj_original_display = \
+                self.original_json[col_const.VARIABLE_DISPLAY_SECTION_KEY]
         else:
             self.access_obj_original_display = None
-            self.add_error_message(
-                'variable_display section is not found in Preprocess file')
+            self.add_error_message(\
+                '"%s" section not found in the preprocess data' % \
+                col_const.VARIABLE_DISPLAY_SECTION_KEY)
             return False, self.get_error_messages()
 
         if 'variable_updates' in update_json:
@@ -129,18 +151,18 @@ class VariableDisplayUtil(object):
                     #return False, self.get_error_messages()
 
                 if VALUE_UPDATES in access_object[varname]:
-                    label_object = access_object[varname][VALUE_UPDATES]
+                    value_update_dict = access_object[varname][VALUE_UPDATES]
                 else:
                     label_object = None
 
-                self.modify_original(varname, omit_object, viewable_object, label_object)
+                self.modify_original(varname, omit_object, viewable_object, value_update_dict)
 
         if self.has_error:
             return False, self.get_error_messages()
         else:
             return True, self.get_updated_metadata()
 
-    def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
+    def modify_original(self, varname, omit_obj, viewable_obj, value_update_dict):
         print(self.access_obj_original_display)
         if not varname in self.access_obj_original:
             print('"%s" was not found in the "variable" section of the metadata file' % varname)
@@ -181,12 +203,12 @@ class VariableDisplayUtil(object):
                     self.add_error_message(user_msg)
 
             # code for label
-            if label_obj:
-                for att_name in label_obj:
-                    if att_name not in self.editable_vars:
-                        self.add_error_message(" '%s' is not editable" % att_name)
+            if value_update_dict:
+                for update_var, update_value in value_update_dict.items():
+                    if update_var not in self.editable_vars:
+                        self.add_error_message(" '%s' is not editable" % update_var)
                     else:
-                        variable_obj[att_name] = label_obj[att_name]
+                        variable_obj[update_var] = update_value
 
-
-                display_variable_obj[VALUE_UPDATES] = label_obj
+                #import ipdb; ipdb.set_trace()
+                #display_variable_obj[VALUE_UPDATES] = label_obj
