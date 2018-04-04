@@ -5,6 +5,7 @@ from os.path import abspath, dirname, isfile, join
 import json
 from collections import OrderedDict
 import col_info_constants as col_const
+import update_constants as update_const
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
 #INPUT_DIR = join(PREPROCESS_DIR, 'input')
@@ -39,8 +40,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.test_input_01 = self.get_file_content('test_input_01.json')
 
         self.test_040_file = self.get_file_content(\
-                                    'test_040_preprocess_file.json',
-                                    as_json_dict=False)
+                                    'test_040_preprocess_file.json')
 
         self.test_050_input = self.get_file_content('test_050_input.json')
 
@@ -51,67 +51,84 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(col_const.PREPROCESS_ID in self.update_json_01)
 
 
-    def test_020_update(self):
+    def test_020_clean_update(self):
         """(20) Test output json"""
-        msgt(self.test_020_update.__doc__)
+        msgt(self.test_020_clean_update.__doc__)
         var_util = VariableDisplayUtil(self.test_input_01, self.update_json_01)
 
         self.assertTrue(var_util.has_error is False)
 
-        print(var_util.get_updated_metadata(True))
+        #print(var_util.get_updated_metadata(True))
         self.assertEqual(json.dumps(var_util.get_updated_metadata()),
                          json.dumps(self.expected_data_01))
 
 
-    @skip('skipit')
-    def test_030_update(self):
-        """(30) test if there is no error"""
-        msgt(self.test_030_update.__doc__)
-        var_display = VariableDisplayUtil(self.test_input_01,
-                                          self.update_json_01)
-        self.assertTrue(var_display)
-
-    @skip('skipit')
     def test_040_update(self):
-        """(40) test for variable section not found in preprocess file"""
+        """(40) test for variables section not found in preprocess file"""
         msgt(self.test_040_update.__doc__)
-        pre_file = self.test_040_file
+        preprocess_json = self.test_040_file
 
-        var_display_modify = VariableDisplayUtil(pre_file, self.update_json_01)
-        var_err = var_display_modify.error_messages
+        var_display_modify = VariableDisplayUtil(preprocess_json, self.update_json_01)
         self.assertTrue(var_display_modify.has_error)
-        print("Error : ", var_err)
 
-    @skip('skipit')
+        expected_err = '"%s" section not found' % col_const.VARIABLES_SECTION_KEY
+        var_err = var_display_modify.error_messages[0]
+
+        print("Error : ", var_err)
+        self.assertTrue(var_err.find(expected_err) > -1)
+
+
+    def test_045_update_err(self):
+        """(45) test for preprocess id's not matching"""
+        msgt(self.test_045_update_err.__doc__)
+        update_json = self.update_json_01
+
+        update_json[col_const.PREPROCESS_ID] = 999
+
+        var_display_modify = VariableDisplayUtil(self.test_input_01, update_json)
+        self.assertTrue(var_display_modify.has_error)
+
+        var_err = var_display_modify.error_messages[0]
+
+        print("Error : ", var_err)
+        self.assertTrue(var_err.find(col_const.PREPROCESS_ID) > -1)
+        self.assertTrue(var_err.find('does not match') > -1)
+
+
     def test_050_update(self):
         """(50) test for variable display section not found in preprocess file"""
         msgt(self.test_050_update.__doc__)
 
         var_display_modify = VariableDisplayUtil(self.test_050_input, self.update_json_01)
-        var_err = var_display_modify.error_messages
+        var_err = var_display_modify.error_messages[0]
         self.assertTrue(var_display_modify.has_error)
 
         print("Error : ", var_err)
+        self.assertTrue(var_err.find(col_const.VARIABLE_DISPLAY_SECTION_KEY) > -1)
+        self.assertTrue(var_err.find('not found') > -1)
 
-    @skip('skipit')
+
     def test_060_update(self):
         """(60) test for variable display section not found in preprocess file"""
         msgt(self.test_060_update.__doc__)
 
-        update = {"preprocess_id": 45}
+        update = {"preprocess_id": 5}
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
-        var_err = var_display_modify.error_messages
+        var_err = var_display_modify.error_messages[0]
         self.assertTrue(var_display_modify.has_error)
+
+        self.assertTrue(var_err.find(update_const.VARIABLE_UPDATES) > -1)
+        self.assertTrue(var_err.find('not found') > -1)
+
 
         print("Error : ", var_err)
 
 
-    @skip('skipit')
     def test_070_update(self):
-        """(70) test for variable display section's viewable not found in update file"""
+        """(70) should work w/o the viewable option"""
         msgt(self.test_070_update.__doc__)
         update = {
-            "preprocess_id": 45,
+            "preprocess_id": 5,
             "variable_updates": {
                "cylinders" : {
                  "omit": ["mean", "median"],

@@ -59,6 +59,7 @@ class VariableDisplayUtil(object):
                            omit=[],
                            images=[])
 
+
     def get_error_messages(self):
         """Return the list of error messages"""
         return self.error_messages
@@ -85,9 +86,10 @@ class VariableDisplayUtil(object):
         if not self.update_json[col_const.PREPROCESS_ID] == \
             self.preprocess_json[col_const.SELF_SECTION_KEY][col_const.PREPROCESS_ID]:
             self.add_error_message(\
-                ('The "%s" in the update does not match the'
                  ' "%s" in the preprocess metadata') % \
-                (col_const.SELF_SECTION_KEY, col_const.PREPROCESS_ID))
+                ('The "{0}" in the update does not match the'
+                 ' "{1}.{0}" in the preprocess metadata').format(\
+                 col_const.PREPROCESS_ID, col_const.SELF_SECTION_KEY))
             return False
 
         return True
@@ -163,52 +165,62 @@ class VariableDisplayUtil(object):
             return True, self.get_updated_metadata()
 
     def modify_original(self, varname, omit_obj, viewable_obj, value_update_dict):
+        """Make updates to the original preprocess file for a single variable"""
+
         print(self.access_obj_original_display)
+
+        # Look for the variable in the original variables section
+        #
         if not varname in self.access_obj_original:
-            print('"%s" was not found in the "variable" section of the metadata file' % varname)
-            self.add_error_message('"%s" was not found in the "variable" section of the metadata file' % varname)
+            err_msg = ('"%s" was not found in the "%s"'
+                       ' section of the metadata file') % \
+                       (varname, col_const.VARIABLES_SECTION_KEY)
+            self.add_error_message(err_msg)
             return
 
         elif not varname in self.access_obj_original_display:
-            print('"%s" was not found in the "variable_display" section of the metadata file' % varname)
-            self.add_error_message('"%s" was not found in the "variable_display" section of the metadata file' % varname)
+            # Look for the variable in the original variable_display section
+            #
+            err_msg = ('"%s" was not found in the "%s"'
+                       ' section of the metadata file') % \
+                       (varname, col_const.VARIABLE_DISPLAY_SECTION_KEY)
+            self.add_error_message(err_msg)
             return
 
-        else:
 
-            variable_obj = self.access_obj_original[varname]
-            display_variable_obj = self.access_obj_original_display[varname]
-            # print(variable_obj)
-            """
-            variable_obj contains : "numchar":"continuous",
-                        "nature": "nominal",
-                       "mean":213,
-                       "median":34
-            """
-            # code for omit
-            if omit_obj:
-                # start deleting omit objects
-                # for omit_var in omit_obj:
-                #      del variable_obj[omit_var]
-                display_variable_obj['omit'] = omit_obj
+        variable_obj = self.access_obj_original[varname]
+        display_variable_obj = self.access_obj_original_display[varname]
+        # print(variable_obj)
+        """
+        variable_obj contains : "numchar":"continuous",
+                    "nature": "nominal",
+                   "mean":213,
+                   "median":34
+        """
+        # code for omit
+        if omit_obj:
+            # start deleting omit objects
+            # for omit_var in omit_obj:
+            #      del variable_obj[omit_var]
+            display_variable_obj['omit'] = omit_obj
 
-            # code for viewable
-            print("viewable obj ", viewable_obj)
-            if viewable_obj is not None:
-                if viewable_obj in (True, False):
-                    display_variable_obj['viewable'] = viewable_obj
+        # code for viewable
+        print("viewable obj ", viewable_obj)
+        if viewable_obj is not None:
+            if viewable_obj in (True, False):
+                display_variable_obj['viewable'] = viewable_obj
+            else:
+                user_msg = ('Invalid value for "viewable": %s'
+                            ' It must be "true" or "false"' % viewable_obj)
+                self.add_error_message(user_msg)
+
+        # code for label
+        if value_update_dict:
+            for update_var, update_value in value_update_dict.items():
+                if update_var not in self.editable_vars:
+                    self.add_error_message(" '%s' is not editable" % update_var)
                 else:
-                    user_msg = ('Invalid value for "viewable": %s'
-                                ' It must be "true" or "false"' % viewable_obj)
-                    self.add_error_message(user_msg)
+                    variable_obj[update_var] = update_value
 
-            # code for label
-            if value_update_dict:
-                for update_var, update_value in value_update_dict.items():
-                    if update_var not in self.editable_vars:
-                        self.add_error_message(" '%s' is not editable" % update_var)
-                    else:
-                        variable_obj[update_var] = update_value
-
-                #import ipdb; ipdb.set_trace()
-                #display_variable_obj[VALUE_UPDATES] = label_obj
+            #import ipdb; ipdb.set_trace()
+            #display_variable_obj[VALUE_UPDATES] = label_obj
