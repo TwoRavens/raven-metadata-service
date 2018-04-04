@@ -253,7 +253,7 @@ class VariableDisplayUtil(object):
         if value_update_dict:
             for update_var, update_value in value_update_dict.items():
                 if update_var not in EDITABLE_ATTRIBUTES:
-                    err_msg = ('For the variable, "%s", the value for "%s"'
+                    err_msg = ('For the variable "%s", the value for "%s"'
                                ' is not editable.  Editable variables are:'
                                ' %s') % \
                                (varname, update_var, EDITABLE_ATTRIBUTES)
@@ -261,15 +261,15 @@ class VariableDisplayUtil(object):
 
                 elif update_var == col_const.NATURE_LABEL:
                     if not ColumnInfo.is_valid_nature(update_value):
-                        err_msg = ('For the variable, "%s", the value for "%s"'
-                                   ' is not editable.  Valid values are:'
+                        err_msg = ('For the variable "%s", the value for "%s"'
+                                   ' is not valid.  Valid values are:'
                                    ' %s') % \
                             (varname, col_const.NATURE_LABEL, col_const.NATURE_VALUES)
                         self.add_error_message(err_msg)
 
                 elif update_var == col_const.NUMCHAR_LABEL:
                     if not ColumnInfo.is_valid_numchar(update_value):
-                        err_msg = ('For the variable, "%s", the value for "%s"'
+                        err_msg = ('For the variable "%s", the value for "%s"'
                                    ' is not valid.  Valid values are:'
                                    ' %s') % \
                             (varname, col_const.NUMCHAR_LABEL, col_const.NUMCHAR_VALUES)

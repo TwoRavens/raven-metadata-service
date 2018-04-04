@@ -58,8 +58,8 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         self.assertTrue(var_util.has_error is False)
 
-        self.assertEqual(json.dumps(var_util.get_updated_metadata()),
-                         json.dumps(self.expected_data_01))
+        self.assertEqual(var_util.get_updated_metadata(),
+                         self.expected_data_01)
 
 
     def test_040_update(self):
@@ -71,7 +71,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_display_modify.has_error)
 
         expected_err = '"%s" section not found' % col_const.VARIABLES_SECTION_KEY
-        var_err = var_display_modify.error_messages[0]
+        var_err = var_display_modify.get_error_messages()[0]
 
         print("Error: ", var_err)
         self.assertTrue(var_err.find(expected_err) > -1)
@@ -87,7 +87,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         var_display_modify = VariableDisplayUtil(self.test_input_01, update_json)
         self.assertTrue(var_display_modify.has_error)
 
-        var_err = var_display_modify.error_messages[0]
+        var_err = var_display_modify.get_error_messages()[0]
 
         print("Error: ", var_err)
         self.assertTrue(var_err.find(col_const.PREPROCESS_ID) > -1)
@@ -99,7 +99,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         msgt(self.test_050_update.__doc__)
 
         var_display_modify = VariableDisplayUtil(self.test_050_input, self.update_json_01)
-        var_err = var_display_modify.error_messages[0]
+        var_err = var_display_modify.get_error_messages()[0]
         self.assertTrue(var_display_modify.has_error)
 
         print("Error: ", var_err)
@@ -113,7 +113,7 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         update = {"preprocess_id": 5}
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
-        var_err = var_display_modify.error_messages[0]
+        var_err = var_display_modify.get_error_messages()[0]
         self.assertTrue(var_display_modify.has_error)
 
         self.assertTrue(var_err.find(update_const.VARIABLE_UPDATES) > -1)
@@ -175,7 +175,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         }
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
-        var_err = var_display_modify.error_messages[0]
+        var_err = var_display_modify.get_error_messages()[0]
         self.assertTrue(var_display_modify.has_error)
 
         self.assertTrue(var_err.find(update_const.OMIT_KEY) > -1)
@@ -211,7 +211,7 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update_json)
 
-        var_err = var_display_modify.error_messages[0]
+        var_err = var_display_modify.get_error_messages()[0]
         self.assertTrue(var_display_modify.has_error)
 
         print("Error: ", var_err)
@@ -236,8 +236,36 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
 
-        #self.assertTrue(var_display_modify.has_error)
+        self.assertTrue(var_display_modify.has_error)
 
-        #var_err = var_display_modify.error_messages[0]
-        #print("Error: ", var_err)
-        #self.assertTrue(var_err.find('A new version was NOT created') > -1)
+        var_err = var_display_modify.get_error_messages()[0]
+        print("Error: ", var_err)
+        self.assertTrue(var_err.find('A new version was NOT created') > -1)
+
+    def test_110_update(self):
+        """(110) Error for invalid nature and numchar values"""
+        msgt(self.test_110_update.__doc__)
+
+        invalid_nature = 'blue-footed-rhino'
+        invalid_numchar = 'boogie-woogie'
+
+        update = {
+            "preprocess_id": 5,
+            "variable_updates": {
+               "cylinders" : {
+                 "value_updates": {
+                     "nature": invalid_nature,
+                     "numchar": invalid_numchar
+                     }
+                }
+            }
+        }
+
+        var_display_modify = VariableDisplayUtil(self.test_input_01, update)
+
+        self.assertTrue(var_display_modify.has_error)
+
+        var_err = var_display_modify.get_error_messages()
+        print("Error: ", var_err)
+        self.assertTrue(var_err[0].find('is not valid') > -1)
+        self.assertTrue(var_err[1].find('is not valid') > -1)
