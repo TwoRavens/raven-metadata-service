@@ -1,4 +1,9 @@
 '''Contants used in the preprocess logic and metadata output'''
+PREPROCESS_ID = 'preprocess_id'
+
+SELF_SECTION_KEY = 'self'
+VARIABLES_SECTION_KEY = 'variables'
+VARIABLE_DISPLAY_SECTION_KEY = 'variable_display'
 
 NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'

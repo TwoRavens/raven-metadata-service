@@ -13,12 +13,12 @@ VALUE_UPDATES = 'value_updates'
 class VariableDisplayUtil(object):
 
 
-    def __init__(self,preprocess_file, update_file):
+    def __init__(self,preprocess_file, update_json):
         """Init with a pandas dataframe"""
         assert preprocess_file or update_file is not None, "files can't be None"
 
         self.preprocess_file = preprocess_file
-        self.update_file = update_file
+        self.update_json = update_json
         self.col_names = {}
         # Initial settings
 
@@ -30,7 +30,7 @@ class VariableDisplayUtil(object):
         self.has_error = False
         self.error_messages = []
         self.original_json = {}
-        self.access_obj_original= {}
+        self.access_obj_original = {}
         self.access_obj_original_display = {}
         # call the display function
         self.update_preprocess_data()
@@ -59,13 +59,25 @@ class VariableDisplayUtil(object):
                            images=[])
 
     def get_error_messages(self):
+        """Return the list of error messages"""
         return self.error_messages
 
 
+    def run_basic_checks(self):
+        """Do some sanity checks"""
+        if col_const.PREPROCESS_ID not in self.update_json:
+            self.add_error_message(\
+                "A '%s' was not found in the update JSON" % col_const.PREPROCESS_ID)
+            return False
+
+        if col_const.PREPROCESS_ID not in self.update_json:
+            self.add_error_message(\
+                "A '%s' was not found in the update JSON" % col_const.PREPROCESS_ID)
+            return False
 
     def update_preprocess_data(self):
-        """ this function go through the update_json and call omit,viewable,label functions"""
-        update_json = self.update_file
+        """Iterate through the update_json and call omit,viewable,label functions"""
+        update_json = self.update_json
         # print(update_json)
         self.original_json = self.preprocess_file
 
@@ -98,35 +110,35 @@ class VariableDisplayUtil(object):
         print('self.col_names', self.col_names)
         if self.access_obj_original_display and self.access_obj_original and access_object:
             # for each column say [' cylinder','mpg',...]
-             for varname in self.col_names:
-                 print('varname', varname)
-                 if 'omit' in access_object[varname]:
+            for varname in self.col_names:
+                print('varname', varname)
+                if 'omit' in access_object[varname]:
                     omit_object = access_object[varname]['omit']
-                 else:
-                     omit_object = None
-                     self.add_error_message(
+                else:
+                    omit_object = None
+                    self.add_error_message(\
                          "omit field not found in update file section of '%s'" % varname)
-                     return False, self.get_error_messages()
+                    return False, self.get_error_messages()
 
-                 if 'viewable' in access_object[varname]:
+                if 'viewable' in access_object[varname]:
                     viewable_object = access_object[varname]['viewable']
-                 else:
-                     viewable_object = None
-                     self.add_error_message(
-                         "viewable field not found in update file section of '%s' " % varname)
-                     return False, self.get_error_messages()
+                else:
+                    viewable_object = None
+                    #self.add_error_message(
+                    #      "viewable field not found in update file section of '%s' " % varname)
+                    #return False, self.get_error_messages()
 
-                 if VALUE_UPDATES in access_object[varname]:
+                if VALUE_UPDATES in access_object[varname]:
                     label_object = access_object[varname][VALUE_UPDATES]
-                 else:
-                     label_object = None
+                else:
+                    label_object = None
 
+                self.modify_original(varname, omit_object, viewable_object, label_object)
 
-                 self.modify_original(varname, omit_object, viewable_object, label_object)
         if self.has_error:
             return False, self.get_error_messages()
         else:
-            return True, self.final_original_output()
+            return True, self.get_updated_metadata()
 
     def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
         print(self.access_obj_original_display)
@@ -159,10 +171,14 @@ class VariableDisplayUtil(object):
                 display_variable_obj['omit'] = omit_obj
 
             # code for viewable
-            print("viewable obj ",viewable_obj)
-            if viewable_obj == False:
-                # del self.access_obj_original[varname]
-                display_variable_obj['viewable'] = False
+            print("viewable obj ", viewable_obj)
+            if viewable_obj is not None:
+                if viewable_obj in (True, False):
+                    display_variable_obj['viewable'] = viewable_obj
+                else:
+                    user_msg = ('Invalid value for "viewable": %s'
+                                ' It must be "true" or "false"' % viewable_obj)
+                    self.add_error_message(user_msg)
 
             # code for label
             if label_obj:
@@ -174,12 +190,3 @@ class VariableDisplayUtil(object):
 
 
                 display_variable_obj[VALUE_UPDATES] = label_obj
-
-
-    def final_original_output(self):
-        # print("json output : ",self.original_json)
-        output = json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
-        if self.has_error:
-            return False, self.error_messages
-        else:
-            return True, output
