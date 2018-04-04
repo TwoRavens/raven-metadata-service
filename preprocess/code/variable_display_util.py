@@ -24,12 +24,16 @@ class VariableDisplayUtil(object):
         self.preprocess_json = preprocess_json
         self.update_json = update_json
 
+        # count the updates
+        self.update_cnt = 0
+
         # for error handling
         self.has_error = False
         self.error_messages = []
         self.original_json = {}
         self.access_obj_original = {}
         self.access_obj_original_display = {}
+
         # call the display function
         self.update_preprocess_data()
 
@@ -151,6 +155,15 @@ class VariableDisplayUtil(object):
 
             self.modify_original(varname, omit_list, viewable_object, value_update_dict)
 
+        # Check if any updates were made...
+        #
+        print('self.update_cnt', self.update_cnt)
+        if self.update_cnt == 0:
+            user_msg = ('The update request will not change'
+                        ' the current preprocess metadata.'
+                        ' A new version was NOT created')
+            self.add_error_message(user_msg)
+
         if self.has_error:
             return False, self.get_error_messages()
 
@@ -200,19 +213,33 @@ class VariableDisplayUtil(object):
             #
             for omit_var in omit_list:
                 if omit_var not in ALL_VARIABLE_ATTRIBUTES:
+                    err_found = True
                     err_msg = ('Variable "%s", which is in the %s list for'
                                ' %s does not exist.') %\
                                (omit_var, update_const.OMIT_KEY, varname)
                     self.add_error_message(err_msg)
+
             if not err_found:
-                display_variable_obj[update_const.OMIT_KEY] = omit_list
+                if set(display_variable_obj[update_const.OMIT_KEY]) ==\
+                    set(omit_list):
+                    # nothing to change, keep going
+                    pass
+                else:
+                    display_variable_obj[update_const.OMIT_KEY] = omit_list
+                    self.update_cnt += 1
 
         # ---------------------------------
         # Update the viewable section, if specified
         # ---------------------------------
         if viewable_obj is not None:
             if viewable_obj in (True, False):
-                display_variable_obj['viewable'] = viewable_obj
+                # is there a change?
+                if display_variable_obj['viewable'] == viewable_obj:
+                    # nope
+                    pass
+                else:
+                    self.update_cnt += 1
+                    display_variable_obj['viewable'] = viewable_obj
             else:
                 user_msg = ('Invalid value for "viewable": %s'
                             ' It must be "true" or "false"'
@@ -230,7 +257,12 @@ class VariableDisplayUtil(object):
                                (varname, update_var, EDITABLE_ATTRIBUTES)
                     self.add_error_message(err_msg)
                 else:
-                    variable_obj[update_var] = update_value
-
+                    # Is an update needed?
+                    if variable_obj[update_var] == update_value:
+                        # nope
+                        pass
+                    else:
+                        variable_obj[update_var] = update_value
+                        self.update_cnt += 1
             #import ipdb; ipdb.set_trace()
             #display_variable_obj[update_const.VALUE_UPDATES_KEY] = label_obj

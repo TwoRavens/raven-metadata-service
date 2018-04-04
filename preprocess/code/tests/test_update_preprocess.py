@@ -58,7 +58,6 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         self.assertTrue(var_util.has_error is False)
 
-        #print(var_util.get_updated_metadata(True))
         self.assertEqual(json.dumps(var_util.get_updated_metadata()),
                          json.dumps(self.expected_data_01))
 
@@ -146,8 +145,10 @@ class UpdatePreprocessTest(unittest.TestCase):
             }
         }
 
-        var_display_modify = VariableDisplayUtil(self.test_input_01, update)
-        self.assertTrue(var_display_modify.has_error is False)
+        var_util = VariableDisplayUtil(self.test_input_01, update)
+        self.assertTrue(var_util.has_error is False)
+
+        print('var_util errs', var_util.get_error_messages())
 
     def test_080_update(self):
         """(80) invalid value in the omit list"""
@@ -215,3 +216,28 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         self.assertTrue(var_err.find('is not editable') > -1)
         print("Error: ", var_err)
+
+
+    def test_100_update(self):
+        """(100) Error b/c update has no real changes"""
+        msgt(self.test_100_update.__doc__)
+        update = {
+            "preprocess_id": 5,
+            "variable_updates": {
+               "cylinders" : {
+                 "viewable": True,
+                 "omit": [],
+                 "value_updates": {
+                     "nature": "ordinal"
+                     }
+                }
+            }
+        }
+
+        var_display_modify = VariableDisplayUtil(self.test_input_01, update)
+
+        #self.assertTrue(var_display_modify.has_error)
+
+        #var_err = var_display_modify.error_messages[0]
+        #print("Error: ", var_err)
+        #self.assertTrue(var_err.find('A new version was NOT created') > -1)
