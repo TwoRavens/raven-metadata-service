@@ -247,22 +247,39 @@ class VariableDisplayUtil(object):
                             viewable_obj
                 self.add_error_message(user_msg)
 
-        # code for label
+        # ---------------------------------
+        # Update variable values....
+        # ---------------------------------
         if value_update_dict:
             for update_var, update_value in value_update_dict.items():
                 if update_var not in EDITABLE_ATTRIBUTES:
                     err_msg = ('For the variable, "%s", the value for "%s"'
-                               ' is not editable.  Editable variables include:'
+                               ' is not editable.  Editable variables are:'
                                ' %s') % \
                                (varname, update_var, EDITABLE_ATTRIBUTES)
                     self.add_error_message(err_msg)
+
+                elif update_var == col_const.NATURE_LABEL:
+                    if not ColumnInfo.is_valid_nature(update_value):
+                        err_msg = ('For the variable, "%s", the value for "%s"'
+                                   ' is not editable.  Valid values are:'
+                                   ' %s') % \
+                            (varname, col_const.NATURE_LABEL, col_const.NATURE_VALUES)
+                        self.add_error_message(err_msg)
+
+                elif update_var == col_const.NUMCHAR_LABEL:
+                    if not ColumnInfo.is_valid_numchar(update_value):
+                        err_msg = ('For the variable, "%s", the value for "%s"'
+                                   ' is not valid.  Valid values are:'
+                                   ' %s') % \
+                            (varname, col_const.NUMCHAR_LABEL, col_const.NUMCHAR_VALUES)
+                        self.add_error_message(err_msg)
+
+                elif variable_obj[update_var] == update_value:
+                    # No change needed
+                    pass
                 else:
-                    # Is an update needed?
-                    if variable_obj[update_var] == update_value:
-                        # nope
-                        pass
-                    else:
-                        variable_obj[update_var] = update_value
-                        self.update_cnt += 1
+                    variable_obj[update_var] = update_value
+                    self.update_cnt += 1
             #import ipdb; ipdb.set_trace()
             #display_variable_obj[update_const.VALUE_UPDATES_KEY] = label_obj

@@ -10,6 +10,8 @@ NOT_APPLICABLE = 'NA'
 # --------------------------------------
 # numchar constants for metadata file
 # --------------------------------------
+NUMCHAR_LABEL = 'numchar'
+
 NUMCHAR_NUMERIC = 'numeric'
 NUMCHAR_CHARACTER = 'character'
 
@@ -27,6 +29,8 @@ INTERVAL_VALUES = (INTERVAL_CONTINUOUS,
 # --------------------------------------
 # nature constants for metadata file
 # --------------------------------------
+NATURE_LABEL = 'nature'
+
 NATURE_NOMINAL = 'nominal'
 NATURE_ORDINAL = 'ordinal'
 NATURE_INTERVAL = 'interval'

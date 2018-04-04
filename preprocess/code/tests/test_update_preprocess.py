@@ -132,7 +132,6 @@ class UpdatePreprocessTest(unittest.TestCase):
                "cylinders" : {
                  "omit": ["mean", "median"],
                  "value_updates": {
-                     "numchar": "discrete",
                      "nature": "ordinal"
                  }
                },
@@ -146,9 +145,10 @@ class UpdatePreprocessTest(unittest.TestCase):
         }
 
         var_util = VariableDisplayUtil(self.test_input_01, update)
+        print('var_util errs', var_util.get_error_messages())
+
         self.assertTrue(var_util.has_error is False)
 
-        print('var_util errs', var_util.get_error_messages())
 
     def test_080_update(self):
         """(80) invalid value in the omit list"""
@@ -194,7 +194,7 @@ class UpdatePreprocessTest(unittest.TestCase):
                     "viewable": True,
                     "omit": ["mean", "median"],
                     "value_updates": {
-                        "numchar": "discrete",
+                        "numchar": "character",
                         "nature": "ordinal"
                     }
                 },
@@ -214,8 +214,8 @@ class UpdatePreprocessTest(unittest.TestCase):
         var_err = var_display_modify.error_messages[0]
         self.assertTrue(var_display_modify.has_error)
 
-        self.assertTrue(var_err.find('is not editable') > -1)
         print("Error: ", var_err)
+        self.assertTrue(var_err.find('is not editable') > -1)
 
 
     def test_100_update(self):

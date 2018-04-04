@@ -5,8 +5,7 @@ import json
 import time,datetime
 import pandas as pd
 from np_json_encoder import NumpyJSONEncoder
-from col_info_constants import \
-    (NUMCHAR_NUMERIC, NUMCHAR_CHARACTER)
+import col_info_constants as col_const
 
 
 class ColumnInfo(object):
@@ -84,11 +83,22 @@ class ColumnInfo(object):
 
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
-        return self.numchar_val == NUMCHAR_NUMERIC
+        return self.numchar_val == col_const.NUMCHAR_NUMERIC
 
     def is_character(self):
         # is this NUMCHAR_CHARACTER?
-        return self.numchar_val == NUMCHAR_CHARACTER
+        return self.numchar_val == col_const.NUMCHAR_CHARACTER
+
+    @staticmethod
+    def is_valid_nature(val):
+        """Check if the nature is valid"""
+        return val in col_const.NATURE_VALUES
+
+    @staticmethod
+    def is_valid_numchar(val):
+        """Check if the nature is valid"""
+        return val in col_const.NUMCHAR_VALUES
+
 
     def get_numeric_attribute_names(self):
         """These attributes, when set, are always numeric.  Ex/ mean, median, etc."""
@@ -161,8 +171,8 @@ class ColumnInfo(object):
             ('varnameSumStat', 'colname'),
             ('labl', 'labl'),
 
-            ('numchar', 'numchar_val'),
-            ('nature', 'nature'),
+            (col_const.NUMCHAR_LABEL, 'numchar_val'),
+            (col_const.NATURE_LABEL, 'nature'),
             ('binary', 'binary'),
             ('interval', 'default_interval'),
             ('time', 'time_val'),
