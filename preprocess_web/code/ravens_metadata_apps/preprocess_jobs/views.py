@@ -43,6 +43,7 @@ def view_job_list(request):
     try:
         jobs = PreprocessJob.objects.all()
 
+
     except PreprocessJob.DoesNotExist:
         raise Http404('could not find jobs')
 
@@ -53,17 +54,18 @@ def view_job_list(request):
         data.append({'name' : str(e),
                      'id':e.pk,
                      'created':e.created,
-                     'size':e.size
+                     'size':e.preprocess_file.size
                      })
 
 
-    info_dict = dict(job = data)
-    print(info_dict)
+    #info_dict = dict(job = data)
+    #print(info_dict)
 
 
     return render(request,
                   'preprocess/list.html',
-                  {'list':info_dict['job']})
+                  {'list': data,
+                   'jobs': jobs})
 
 
 def view_basic_upload_form(request):

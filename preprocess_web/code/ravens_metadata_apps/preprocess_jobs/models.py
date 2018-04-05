@@ -65,7 +65,7 @@ class PreprocessJob(TimeStampedModel):
                                       default='beta')
 
     end_time = models.DateTimeField(blank=True, null=True)
-    
+
     user_message = models.TextField(\
                 blank=True,
                 help_text='May be used for error messages, etc')
