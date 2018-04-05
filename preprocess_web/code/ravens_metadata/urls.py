@@ -27,7 +27,7 @@ admin.site.site_title = 'TwoRavens Metadata Service'
 urlpatterns = [
 
     path(r'preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
-
+    path(r'auth/', include('ravens_metadata_apps.raven_auth.urls')),
     path('admin/', admin.site.urls),
 
     # temp path until there's a home page
