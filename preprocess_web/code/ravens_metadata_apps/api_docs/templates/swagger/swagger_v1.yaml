@@ -99,19 +99,7 @@ paths:
       - "preprocess"
       summary: "Update the preprocess metadata"
       description: "Update the selected variable values or the 'variable_display' \
-        \ section. Example:\n
-        \          { \
-        \n &nbsp;&nbsp;  \"preprocess_id\": 3, \
-        \n &nbsp;&nbsp;   \"variable_updates\":{ \
-        \n &nbsp; &nbsp;   &nbsp;  \"cylinders\":{ \
-        \n &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; \"viewable\": false, \
-        \n &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp;       \"omit\": [ \"mean\"], \
-        \n &nbsp; &nbsp;  &nbsp;    &nbsp; &nbsp;      \"value_updates\": { \
-        \n &nbsp; &nbsp;  &nbsp;     &nbsp; &nbsp;  &nbsp; &nbsp;        \"nature\":\"ordinal\" \
-        \n       &nbsp; &nbsp;    &nbsp; &nbsp; }
-        \n     &nbsp; &nbsp;  }
-        \n    &nbsp; }
-        \n }"
+        \ section."
       produces:
       - "application/json"
       parameters:
