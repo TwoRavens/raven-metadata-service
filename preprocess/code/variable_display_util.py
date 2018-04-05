@@ -1,37 +1,41 @@
 """Module for a variable's display settings"""
 from collections import OrderedDict
+from decimal import Decimal
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json
 import col_info_constants as col_const
+import update_constants as update_const
 from column_info import ColumnInfo
 from np_json_encoder import NumpyJSONEncoder
 
-VALUE_UPDATES = 'value_updates'
-
+ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
+EDITABLE_ATTRIBUTES = ColumnInfo.get_editable_column_labels()
 
 class VariableDisplayUtil(object):
 
 
-    def __init__(self,preprocess_file, update_file):
+    def __init__(self, preprocess_json, update_json):
         """Init with a pandas dataframe"""
-        assert preprocess_file or update_file is not None, "files can't be None"
+        assert isinstance(preprocess_json, dict),\
+            "preprocess_json must be a dict/OrderedDict"
+        assert isinstance(update_json, dict),\
+            "update_json must be a dict/OrderedDict"
 
-        self.preprocess_file = preprocess_file
-        self.update_file = update_file
-        self.col_names = {}
-        # Initial settings
+        self.preprocess_json = preprocess_json
+        self.update_json = update_json
 
-
-        self.attributes = [x[0] for x in ColumnInfo.get_variable_labels()]  # list of all the attributes ***
-        self.editable_vars = ColumnInfo.get_editable_column_labels()      # list of all the attributes set as editable ***
+        # count the updates
+        self.update_display_cnt = 0
+        self.update_value_cnt = 0
 
         # for error handling
         self.has_error = False
         self.error_messages = []
-        self.original_json = {}
-        self.access_obj_original= {}
-        self.access_obj_original_display = {}
+        self.original_json = None
+        self.access_obj_original = None
+        self.access_obj_original_display = None
+
         # call the display function
         self.update_preprocess_data()
 
@@ -47,7 +51,9 @@ class VariableDisplayUtil(object):
               "Make sure that 'has_error' is False before using this method"
 
         if as_string:
-            return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
+            return json.dumps(self.original_json,
+                              indent=4,
+                              cls=NumpyJSONEncoder)
 
         return self.original_json
 
@@ -58,128 +64,310 @@ class VariableDisplayUtil(object):
                            omit=[],
                            images=[])
 
+
     def get_error_messages(self):
+        """Return the list of error messages"""
         return self.error_messages
 
 
+    def run_basic_checks(self):
+        """Do some sanity checks--replace this with JSON schema checks..."""
+        if col_const.PREPROCESS_ID not in self.update_json:
+            self.add_error_message(\
+                "A '%s' was not found in the update JSON" % col_const.PREPROCESS_ID)
+            return False
+
+        if col_const.SELF_SECTION_KEY not in self.preprocess_json:
+            self.add_error_message(\
+                "A '%s' was not found in the preprocess JSON" % col_const.SELF_SECTION_KEY)
+            return False
+
+        if col_const.PREPROCESS_ID not in self.preprocess_json[col_const.SELF_SECTION_KEY]:
+            self.add_error_message(\
+                "A '%s.%s' was not found in the preprocess JSON" % \
+                (col_const.SELF_SECTION_KEY, col_const.PREPROCESS_ID))
+            return False
+
+        if not self.update_json[col_const.PREPROCESS_ID] == \
+            self.preprocess_json[col_const.SELF_SECTION_KEY][col_const.PREPROCESS_ID]:
+            self.add_error_message(\
+                ('The "{0}" in the update does not match the'
+                 ' "{1}.{0}" in the preprocess metadata').format(\
+                 col_const.PREPROCESS_ID, col_const.SELF_SECTION_KEY))
+            return False
+
+        if col_const.VARIABLES_SECTION_KEY in self.preprocess_json:
+            self.access_obj_original = self.preprocess_json[col_const.VARIABLES_SECTION_KEY]
+        else:
+            self.add_error_message(
+                '"%s" section not found in the preprocess data' % col_const.VARIABLES_SECTION_KEY)
+            return False
+
+        if col_const.VARIABLE_DISPLAY_SECTION_KEY in self.preprocess_json:
+            self.access_obj_original_display = \
+                self.preprocess_json[col_const.VARIABLE_DISPLAY_SECTION_KEY]
+        else:
+            self.add_error_message(\
+                '"%s" section not found in the preprocess data' % \
+                col_const.VARIABLE_DISPLAY_SECTION_KEY)
+            return False
+
+
+        return True
+
+    def is_major_update(self):
+        """updates to the values are "major", updates to the display are "minor" """
+        if self.update_value_cnt > 0:
+            return True
+        return False
 
     def update_preprocess_data(self):
-        """ this function go through the update_json and call omit,viewable,label functions"""
-        update_json = self.update_file
-        # print(update_json)
-        self.original_json = self.preprocess_file
+        """Iterate through the update_json and call omit,viewable,label functions"""
+        if not self.run_basic_checks():
+            return False, self.get_error_messages
 
-        if 'variables' in self.original_json:
-            self.access_obj_original = self.original_json['variables']
-        else:
-            self.access_obj_original_display = None
-            self.add_error_message(
-                "variables section is not found in Preprocess file")
-            return False, self.get_error_messages()
+        self.original_json = self.preprocess_json
 
-        if 'variable_display' in self.original_json:
-            self.access_obj_original_display = self.original_json['variable_display']
+        if update_const.VARIABLE_UPDATES in self.update_json:
+            variable_updates = self.update_json[update_const.VARIABLE_UPDATES]
         else:
-            self.access_obj_original_display = None
-            self.add_error_message(
-                'variable_display section is not found in Preprocess file')
-            return False, self.get_error_messages()
-
-        if 'variable_updates' in update_json:
-            access_object = update_json['variable_updates']
-        else:
-            access_object = None
+            variable_updates = None
             self.add_error_message(
                 'variable_updates not found in Update file')
             return False, self.get_error_messages()
 
 
-        self.col_names = list(access_object)
-        print('self.col_names', self.col_names)
-        if self.access_obj_original_display and self.access_obj_original and access_object:
-            # for each column say [' cylinder','mpg',...]
-             for varname in self.col_names:
-                 print('varname', varname)
-                 if 'omit' in access_object[varname]:
-                    omit_object = access_object[varname]['omit']
-                 else:
-                     omit_object = None
-                     self.add_error_message(
-                         "omit field not found in update file section of '%s'" % varname)
-                     return False, self.get_error_messages()
+        # Iterate through the columns and make updates
+        #
+        cols_to_update = list(variable_updates)
+        for varname in cols_to_update:
 
-                 if 'viewable' in access_object[varname]:
-                    viewable_object = access_object[varname]['viewable']
-                 else:
-                     viewable_object = None
-                     self.add_error_message(
-                         "viewable field not found in update file section of '%s' " % varname)
-                     return False, self.get_error_messages()
+            # Check for changes to the omit list
+            #
+            if update_const.OMIT_KEY in variable_updates[varname]:
+                self.update_omit_list(\
+                        varname,
+                        variable_updates[varname][update_const.OMIT_KEY])
 
-                 if VALUE_UPDATES in access_object[varname]:
-                    label_object = access_object[varname][VALUE_UPDATES]
-                 else:
-                     label_object = None
+            # Make updates to the viewable section for a variable
+            #
+            if update_const.VIEWABLE_KEY in variable_updates[varname]:
+                self.update_viewable(\
+                        varname,
+                        variable_updates[varname][update_const.VIEWABLE_KEY])
 
+            # Make value updates
+            #
+            if update_const.VALUE_UPDATES_KEY in variable_updates[varname]:
+                value_update_dict = variable_updates[varname][update_const.VALUE_UPDATES_KEY]
+                self.modify_original(varname, value_update_dict)
 
-                 self.modify_original(varname, omit_object, viewable_object, label_object)
+        # Check if any updates were made...
+        #
+        if (self.update_value_cnt + self.update_display_cnt) == 0:
+            user_msg = ('The update request will not change'
+                        ' the current preprocess metadata.'
+                        ' A new version was NOT created')
+            self.add_error_message(user_msg)
+
+        # Update the version number
+        #
+        self.update_version_number()
+
+        # Were there errors?
+        #
         if self.has_error:
             return False, self.get_error_messages()
-        else:
-            return True, self.final_original_output()
 
-    def modify_original(self, varname, omit_obj, viewable_obj, label_obj):
-        print(self.access_obj_original_display)
-        if not varname in self.access_obj_original:
-            print('"%s" was not found in the "variable" section of the metadata file' % varname)
-            self.add_error_message('"%s" was not found in the "variable" section of the metadata file' % varname)
+        return True, self.get_updated_metadata()
+
+
+    def update_version_number(self):
+        """Bump the version number"""
+        if col_const.SELF_SECTION_KEY not in self.original_json:
+            user_msg = ('The "%s" section was not found in the'
+                        ' preprocess metadata') % \
+                        (col_const.SELF_SECTION_KEY)
+            self.add_error_message(user_msg)
+            return False
+
+        if col_const.VERSION_KEY not in self.original_json[col_const.SELF_SECTION_KEY]:
+            user_msg = ('The "%s%s" was not found in the'
+                        ' preprocess metadata') % \
+                        (col_const.SELF_SECTION_KEY, col_const.VERSION_KEY)
+            self.add_error_message(user_msg)
+            return False
+
+        version = Decimal(self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY])
+        print ('version 1:', version)
+        if self.is_major_update():
+            version += Decimal('1')
+        else:
+            version += Decimal('.1')
+        print ('version 2:', version)
+
+        self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY] = version
+
+        return True
+
+    def is_in_display_section(self, varname):
+        """Make sure the variable is in the 'variable_display' section"""
+        assert self.access_obj_original_display is not None,\
+                ('The self.access_obj_original_display must'
+                 ' be populated before using this method')
+
+        if varname not in self.access_obj_original_display:
+            user_msg = ('The variable "%s" was not found in the "%s" section'
+                        ' of the metadata.') % \
+                        (varname, col_const.VARIABLE_DISPLAY_SECTION_KEY)
+            self.add_error_message(user_msg)
+            return False
+
+        return True
+
+
+    def is_in_variables_section(self, varname):
+        """Make sure the variable is in the 'variables' section"""
+        assert self.access_obj_original is not None,\
+                ('The self.access_obj_original must'
+                 ' be populated before using this method')
+
+        if varname not in self.access_obj_original:
+            user_msg = ('The variable "%s" was not found in the "%s" section'
+                        ' of the metadata.') % \
+                        (varname, col_const.VARIABLES_SECTION_KEY)
+            self.add_error_message(user_msg)
+            return False
+
+        return True
+
+    def update_viewable(self, varname, viewable_val):
+        """Update the viewable parameter within the variable display section"""
+        assert self.access_obj_original_display is not None,\
+            ('The self.access_obj_original_display must'
+             ' be populated before using this method')
+        if not self.is_in_display_section(varname):
             return
 
-        elif not varname in self.access_obj_original_display:
-            print('"%s" was not found in the "variable_display" section of the metadata file' % varname)
-            self.add_error_message('"%s" was not found in the "variable_display" section of the metadata file' % varname)
+        if viewable_val is None:
             return
 
+        # Is it a legimate value?
+        if viewable_val not in (True, False):
+            user_msg = ('For variable "%s" the value for "%s" must'
+                        ' be "true" or "false"'
+                        ' (Hint: make sure it is not a string)') % \
+                        (varname, update_const.VIEWABLE_KEY)
+            self.add_error_message(user_msg)
+            return
+
+        # Is it an update?
+        #
+        if self.access_obj_original_display[varname][update_const.VIEWABLE_KEY] ==\
+            viewable_val:
+            # Same value, no update to make
+            return
+
+        self.update_display_cnt += 1
+        self.access_obj_original_display[varname][update_const.VIEWABLE_KEY] = \
+            viewable_val
+
+
+    def update_omit_list(self, varname, omit_list):
+        """Update the omit_list in the preprocess metadata.  """
+        assert self.access_obj_original_display is not None,\
+            ('The self.access_obj_original_display must'
+             ' be populated before using this method')
+        if not self.is_in_display_section(varname):
+            return
+
+        if omit_list is None:
+            return
+
+        # Make sure all of the omit variables are valid
+        #
+        err_found = False
+        for omit_var in omit_list:
+            if omit_var not in ALL_VARIABLE_ATTRIBUTES:
+                err_found = True
+                err_msg = ('Variable "%s", which is in the %s list for'
+                           ' %s does not exist.') %\
+                           (omit_var, update_const.OMIT_KEY, varname)
+                self.add_error_message(err_msg)
+
+        if err_found:
+            return
+
+        if set(self.access_obj_original_display[varname][update_const.OMIT_KEY]) ==\
+                set(omit_list):
+            # nothing to change, keep going
+            pass
         else:
-
-            variable_obj = self.access_obj_original[varname]
-            display_variable_obj = self.access_obj_original_display[varname]
-            # print(variable_obj)
-            """
-            variable_obj contains : "numchar":"continuous",
-                        "nature": "nominal",
-                       "mean":213,
-                       "median":34
-            """
-            # code for omit
-            if omit_obj:
-                # start deleting omit objects
-                # for omit_var in omit_obj:
-                #      del variable_obj[omit_var]
-                display_variable_obj['omit'] = omit_obj
-
-            # code for viewable
-            print("viewable obj ",viewable_obj)
-            if viewable_obj == False:
-                # del self.access_obj_original[varname]
-                display_variable_obj['viewable'] = False
-
-            # code for label
-            if label_obj:
-                for att_name in label_obj:
-                    if att_name not in self.editable_vars:
-                        self.add_error_message(" '%s' is not editable" % att_name)
-                    else:
-                        variable_obj[att_name] = label_obj[att_name]
+            self.access_obj_original_display[varname][update_const.OMIT_KEY] = omit_list
+            self.update_display_cnt += 1
 
 
-                display_variable_obj[VALUE_UPDATES] = label_obj
+    def modify_original(self, varname, value_update_dict):
+        """Make updates to the original preprocess file for a single variable"""
+        assert self.access_obj_original is not None,\
+            ('The self.access_obj_original must'
+             ' be populated before using this method')
+        if not self.is_in_variables_section(varname):
+            return
+
+        if not value_update_dict:
+            return
+
+        # Iterate through the udpates...
+        #
+        for update_var, update_value in value_update_dict.items():
+
+            if not self.is_update_value_valid(varname, update_var, update_value):
+                continue
+            elif self.access_obj_original[varname][update_var] != update_value:
+                # Is this a change from the current value? YES!
+                #
+                self.access_obj_original[varname][update_var] = update_value
+                self.update_value_cnt += 1
 
 
-    def final_original_output(self):
-        # print("json output : ",self.original_json)
-        output = json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
-        if self.has_error:
-            return False, self.error_messages
-        else:
-            return True, output
+
+    def is_update_value_valid(self, varname, update_var, update_value):
+        """Check if the value for a new variable is valid"""
+        assert update_var, 'The "update_var" cannot be None'
+
+        # Make sure this is an editable variable
+        #
+        if update_var not in EDITABLE_ATTRIBUTES:
+            err_msg = ('For the variable "%s", the value for "%s"'
+                       ' is not editable.  Editable variables are:'
+                       ' %s') % \
+                       (varname, update_var, EDITABLE_ATTRIBUTES)
+            self.add_error_message(err_msg)
+            return False
+
+        # If appropriate, check for a valid "nature" value
+        #
+        if update_var == col_const.NATURE_LABEL and \
+            not ColumnInfo.is_valid_nature(update_value):
+
+            err_msg = ('For the variable "%s", the value for "%s"'
+                       ' is not valid.  Valid values are:'
+                       ' %s') % \
+                       (varname, col_const.NATURE_LABEL, col_const.NATURE_VALUES)
+            self.add_error_message(err_msg)
+            return False
+
+        # If appropriate, check for a valid "numchar" value
+        #
+        if update_var == col_const.NUMCHAR_LABEL and \
+            not ColumnInfo.is_valid_numchar(update_value):
+
+            err_msg = ('For the variable "%s", the value for "%s"'
+                       ' is not valid.  Valid values are:'
+                       ' %s') % \
+            (varname, col_const.NUMCHAR_LABEL, col_const.NUMCHAR_VALUES)
+            self.add_error_message(err_msg)
+            return False
+
+        return True
