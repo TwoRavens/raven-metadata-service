@@ -1,5 +1,6 @@
 """Entrypoint for preprocessing files"""
 from collections import OrderedDict
+import decimal
 import json, time, datetime
 import pandas as pd
 import os
@@ -163,7 +164,9 @@ class PreprocessRunner(object):
 
 
         try:
-            update_input_dict = json.loads(update_input, object_pairs_hook=OrderedDict)
+            update_input_dict = json.loads(update_input,
+                                           object_pairs_hook=OrderedDict,
+                                           parse_float=decimal.Decimal)
         except TypeError as err_obj:
             err_msg = ('Input does not have Ordered dict convertable type'
                        '\n - File: %s\n - %s')% \
@@ -337,4 +340,6 @@ class PreprocessRunner(object):
         #
         jstring = json.dumps(overall_dict,
                              cls=NumpyJSONEncoder)
-        return json.loads(jstring, object_pairs_hook=OrderedDict)
+        return json.loads(jstring,
+                          object_pairs_hook=OrderedDict,
+                          parse_float=decimal.Decimal)

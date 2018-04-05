@@ -1,5 +1,6 @@
 """Module for a variable's display settings"""
 from collections import OrderedDict
+from decimal import Decimal
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json
@@ -50,7 +51,9 @@ class VariableDisplayUtil(object):
               "Make sure that 'has_error' is False before using this method"
 
         if as_string:
-            return json.dumps(self.original_json, indent=4, cls=NumpyJSONEncoder)
+            return json.dumps(self.original_json,
+                              indent=4,
+                              cls=NumpyJSONEncoder)
 
         return self.original_json
 
@@ -167,11 +170,45 @@ class VariableDisplayUtil(object):
                         ' A new version was NOT created')
             self.add_error_message(user_msg)
 
+        # Update the version number
+        #
+        self.update_version_number()
+
+        # Were there errors?
+        #
         if self.has_error:
             return False, self.get_error_messages()
 
         return True, self.get_updated_metadata()
 
+
+    def update_version_number(self):
+        """Bump the version number"""
+        if col_const.SELF_SECTION_KEY not in self.original_json:
+            user_msg = ('The "%s" section was not found in the'
+                        ' preprocess metadata') % \
+                        (col_const.SELF_SECTION_KEY)
+            self.add_error_message(user_msg)
+            return False
+
+        if col_const.VERSION_KEY not in self.original_json[col_const.SELF_SECTION_KEY]:
+            user_msg = ('The "%s%s" was not found in the'
+                        ' preprocess metadata') % \
+                        (col_const.SELF_SECTION_KEY, col_const.VERSION_KEY)
+            self.add_error_message(user_msg)
+            return False
+
+        version = Decimal(self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY])
+        print ('version 1:', version)
+        if self.is_major_update():
+            version += Decimal('1')
+        else:
+            version += Decimal('.1')
+        print ('version 2:', version)
+
+        self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY] = version
+
+        return True
 
     def is_in_display_section(self, varname):
         """Make sure the variable is in the 'variable_display' section"""

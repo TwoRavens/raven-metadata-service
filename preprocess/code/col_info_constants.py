@@ -2,6 +2,7 @@
 PREPROCESS_ID = 'preprocess_id'
 
 SELF_SECTION_KEY = 'self'
+VERSION_KEY = 'version'
 VARIABLES_SECTION_KEY = 'variables'
 VARIABLE_DISPLAY_SECTION_KEY = 'variable_display'
 

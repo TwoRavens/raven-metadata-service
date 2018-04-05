@@ -3,6 +3,7 @@ import unittest
 from unittest import skip
 from os.path import abspath, dirname, isfile, join
 import json
+import decimal
 from collections import OrderedDict
 import col_info_constants as col_const
 import update_constants as update_const
@@ -29,7 +30,8 @@ class UpdatePreprocessTest(unittest.TestCase):
             return content
 
         return json.loads(content,
-                          object_pairs_hook=OrderedDict)
+                          object_pairs_hook=OrderedDict,
+                          parse_float=decimal.Decimal)
 
     def setUp(self):
         """Load up tests as OrderedDict objects--unless specified otherwise"""
@@ -63,9 +65,14 @@ class UpdatePreprocessTest(unittest.TestCase):
         #print('=' * 40)
         #print(var_util.get_updated_metadata(True))
         #print('=' * 40)
-        self.assertEqual(var_util.get_updated_metadata(),
+
+        updated_metadata = var_util.get_updated_metadata()
+        self.assertEqual(updated_metadata,
                          self.expected_data_01)
 
+        version = updated_metadata[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY]
+        print('new version', version)
+        self.assertEqual(version, 2)
 
     #@skip('skipit')
     def test_040_update(self):

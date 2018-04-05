@@ -7,6 +7,7 @@ from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
 from variable_display_util import VariableDisplayUtil
+from np_json_encoder import NumpyJSONEncoder
 
 class MetadataUpdateUtil(object):
 
@@ -110,9 +111,14 @@ class MetadataUpdateUtil(object):
         #  + attach it to the MetadataUpdate
         # ------------------------------------------------------
         try:
-            json_val = json.dumps(var_util.get_updated_metadata())
+            json_val = json.dumps(var_util.get_updated_metadata(),
+                                  cls=NumpyJSONEncoder)
         except TypeError as err_obj:
-            self.add_err_msg('Failed to convert to JSON: %s' % err_obj)
+            # delete the MetadataUpdate
+            self.metadata_update_obj.delete()
+            self.add_err_msg(\
+                ('Failed to convert to JSON: %s'
+                 ' (MetadataUpdateUtil: 118)') % err_obj)
             return False
 
         new_name = 'update_%s.json' % get_alphanumeric_lowercase(8)

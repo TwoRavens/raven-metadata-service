@@ -1,4 +1,5 @@
 import json
+import decimal
 from os.path import basename
 from collections import OrderedDict
 from django.urls import reverse
@@ -143,7 +144,9 @@ class PreprocessJob(TimeStampedModel):
             return False, 'Preprocess file not found for job id: %s' % self.id
 
         try:
-            json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+            json_dict = json.loads(file_data,
+                                   object_pairs_hook=OrderedDict,
+                                   parse_float=decimal.Decimal)
         except ValueError:
             return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
 
@@ -305,7 +308,9 @@ class MetadataUpdate(TimeStampedModel):
             return False, 'Metadata file not found for job id: %s' % self.id
 
         try:
-            json_dict = json.loads(file_data, object_pairs_hook=OrderedDict)
+            json_dict = json.loads(file_data,
+                                   object_pairs_hook=OrderedDict,
+                                   parse_float=decimal.Decimal)
         except ValueError:
             return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
 
