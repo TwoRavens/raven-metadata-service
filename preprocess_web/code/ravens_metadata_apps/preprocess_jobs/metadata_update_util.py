@@ -1,10 +1,12 @@
 """Update preprocess metadata, creating a new MetadataUpdate object in the processs"""
 import json
-from django.core.files.base import ContentFile
+from decimal import Decimal
 
+from django.core.files.base import ContentFile
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
+from variable_display_util import VariableDisplayUtil
 
 class MetadataUpdateUtil(object):
 
@@ -38,7 +40,12 @@ class MetadataUpdateUtil(object):
         assert self.has_error is False,\
             'Make sure ".has_error" is False before calling this method!'
 
-        return self.metadata_update_obj.get_metadata()
+        success, metadata = self.metadata_update_obj.get_metadata()
+        assert success is True, \
+            "MetadataUpdate object with id %s should have valid metadata" % \
+            (self.metadata_update_obj.id)
+
+        return metadata
 
 
     def make_update(self):
@@ -63,11 +70,12 @@ class MetadataUpdateUtil(object):
 
         # Make the update!!
         #
-        success, update_or_errors = JobUtil.update_preprocess_metadata(\
-                                            latest_metadata_or_err,
-                                            self.update_json)
-        if not success:
-            self.add_err_msg(update_or_errors)
+        #success, update_or_errors = JobUtil.update_preprocess_metadata(\
+        #                                    latest_metadata_or_err,
+        #                                    self.update_json)
+        var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
+        if var_util.has_error:
+            self.add_err_msg(var_util.get_error_messages())
             return False
 
         # ------------------------------------------------------
@@ -78,12 +86,18 @@ class MetadataUpdateUtil(object):
             # this is a PreprocessJob
             update_kwargs['orig_metadata'] = metadata_obj
             update_kwargs['previous_update'] = None
-            update_kwargs['version_number'] = 2
+            if var_util.is_major_update():
+                update_kwargs['version_number'] = Decimal('2')
+            else:
+                update_kwargs['version_number'] = Decimal('1.1')
         else:
             # this is a MetadataUpdate object
             update_kwargs['orig_metadata'] = metadata_obj.orig_metadata
             update_kwargs['previous_update'] = metadata_obj
-            update_kwargs['version_number'] = metadata_obj.version_number + 1
+            if var_util.is_major_update():
+                update_kwargs['version_number'] = metadata_obj.version_number + Decimal('1')
+            else:
+                update_kwargs['version_number'] = metadata_obj.version_number + Decimal('.1')
 
         # ------------------------------------------------------
         # Create the object....
@@ -96,7 +110,7 @@ class MetadataUpdateUtil(object):
         #  + attach it to the MetadataUpdate
         # ------------------------------------------------------
         try:
-            json_val = json.dumps(update_or_errors)
+            json_val = json.dumps(var_util.get_updated_metadata())
         except TypeError as err_obj:
             self.add_err_msg('Failed to convert to JSON: %s' % err_obj)
             return False

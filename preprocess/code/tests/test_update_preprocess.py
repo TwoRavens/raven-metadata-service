@@ -44,6 +44,7 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         self.test_050_input = self.get_file_content('test_050_input.json')
 
+    #@skip('skipit')
     def test_010_update(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_010_update.__doc__)
@@ -51,6 +52,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(col_const.PREPROCESS_ID in self.update_json_01)
 
 
+    #@skip('skipit')
     def test_020_clean_update(self):
         """(20) Test output json"""
         msgt(self.test_020_clean_update.__doc__)
@@ -58,10 +60,14 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         self.assertTrue(var_util.has_error is False)
 
+        #print('=' * 40)
+        #print(var_util.get_updated_metadata(True))
+        #print('=' * 40)
         self.assertEqual(var_util.get_updated_metadata(),
                          self.expected_data_01)
 
 
+    #@skip('skipit')
     def test_040_update(self):
         """(40) test for variables section not found in preprocess file"""
         msgt(self.test_040_update.__doc__)
@@ -77,6 +83,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find(expected_err) > -1)
 
 
+    #@skip('skipit')
     def test_045_update_err(self):
         """(45) test for preprocess id's not matching"""
         msgt(self.test_045_update_err.__doc__)
@@ -94,6 +101,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find('does not match') > -1)
 
 
+    #@skip('skipit')
     def test_050_update(self):
         """(50) test for variable display section not found in preprocess file"""
         msgt(self.test_050_update.__doc__)
@@ -107,6 +115,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find('not found') > -1)
 
 
+    #@skip('skipit')
     def test_060_update(self):
         """(60) test for variable display section not found in preprocess file"""
         msgt(self.test_060_update.__doc__)
@@ -123,6 +132,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         print("Error: ", var_err)
 
 
+    #@skip('skipit')
     def test_070_update(self):
         """(70) should work w/o the viewable option"""
         msgt(self.test_070_update.__doc__)
@@ -150,6 +160,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_util.has_error is False)
 
 
+    #@skip('skipit')
     def test_080_update(self):
         """(80) invalid value in the omit list"""
         msgt(self.test_080_update.__doc__)
@@ -183,6 +194,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find(bumble_bee) > -1)
 
 
+    #@skip('skipit')
     def test_090_update(self):
         """(90) test for error in updating non editable data"""
         """In this case, "mean" is not editable"""
@@ -218,6 +230,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find('is not editable') > -1)
 
 
+    #@skip('skipit')
     def test_100_update(self):
         """(100) Error b/c update has no real changes"""
         msgt(self.test_100_update.__doc__)
@@ -242,6 +255,7 @@ class UpdatePreprocessTest(unittest.TestCase):
         print("Error: ", var_err)
         self.assertTrue(var_err.find('A new version was NOT created') > -1)
 
+    #@skip('skipit')
     def test_110_update(self):
         """(110) Error for invalid nature and numchar values"""
         msgt(self.test_110_update.__doc__)

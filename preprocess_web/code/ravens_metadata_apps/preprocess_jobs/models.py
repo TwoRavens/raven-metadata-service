@@ -229,7 +229,9 @@ class MetadataUpdate(TimeStampedModel):
                                       on_delete=models.PROTECT,
                                       related_name='orig_metadata')
 
-    version_number = models.IntegerField(default=2)
+    version_number = models.DecimalField(default=2,
+                                         max_digits=8,
+                                         decimal_places=1)
 
     update_json = jsonfield.JSONField(\
                     load_kwargs=dict(object_pairs_hook=OrderedDict))
