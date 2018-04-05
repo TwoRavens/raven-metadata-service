@@ -51,7 +51,9 @@ def view_job_list(request):
         # print(e)
         # print(e.pk)
         data.append({'name' : str(e),
-                     'id':e.pk
+                     'id':e.pk,
+                     'created':e.created,
+                     'size':e.size
                      })
 
 

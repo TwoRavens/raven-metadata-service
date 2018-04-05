@@ -61,12 +61,11 @@ class PreprocessJob(TimeStampedModel):
                     help_text='Summary metadata created by preprocess',
                     upload_to='preprocess_file/%Y/%m/%d/',
                     blank=True)
-
     schema_version = models.CharField(max_length=100,
                                       default='beta')
 
     end_time = models.DateTimeField(blank=True, null=True)
-
+    
     user_message = models.TextField(\
                 blank=True,
                 help_text='May be used for error messages, etc')
