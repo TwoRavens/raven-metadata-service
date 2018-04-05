@@ -1,0 +1,41 @@
+branches:
+  # all branches
+  only:
+  - gh-pages
+  - /.*/
+
+language: python
+
+python:
+  - "3.6"
+
+services:
+  - docker
+
+install:
+  # Build/test dependencies
+  - pip install --no-cache-dir -r requirements/30_preprocess_web.txt
+  - pip install coveralls
+
+script:
+  # Run django tests.  (Note django settings are an env variable)
+  - cd preprocess/code; python -m unittest
+  #- coverage run --source=ravens_metadata_apps.ta2_interfaces manage.py test ravens_metadata_apps.ta2_interfaces ravens_metadata_apps.workspaces
+  #- docker build -t tworavens/ravens-main:latest .
+
+# Don't push the image but instead trigger a build on dockerhub
+after_script:
+  #
+  #curl -H "Content-Type: application/json"
+  #--data '{"docker_tag": "master"}'
+  #-X POST #https://registry.hub.docker.com/u/tworavens/ravens-main/trigger/9269f094-1951-4d52-ba6d-15b216cec4a4/
+
+  # Push image to dockerhub
+  #- if [ "$TRAVIS_BRANCH" == "master" ]; then
+  #  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  #  docker push tworavens/ravens-main:latest;
+  #  fi
+
+# send report to coveralls
+after_success:
+  #coveralls

@@ -216,9 +216,9 @@ def view_job_status_page(request, job_id):
 
 
 
+#@apikey_required
 @csrf_exempt
-@apikey_required
-def endpoint_api_single_file(request, api_user=None):
+def api_process_single_file(request, api_user=None):
     """Preprocess a single file
     - Always returns JSON
     - If not a POST:
@@ -242,9 +242,9 @@ def endpoint_api_single_file(request, api_user=None):
     # This duplicates the apikey_required decorator,
     # exists in case decorator is accidentally removed
     #
-    if not isinstance(api_user, User):
-        return JsonResponse(get_json_error('Authorization failed.'),
-                            status=401)
+    #if not isinstance(api_user, User):
+    #    return JsonResponse(get_json_error('Authorization failed.'),
+    #                        status=401)
 
     form = PreprocessJobForm(request.POST, request.FILES)
 
