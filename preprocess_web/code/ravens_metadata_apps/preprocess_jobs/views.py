@@ -56,11 +56,17 @@ def api_download(request,preprocess_id ):
     """ download file"""
     print("job_id", preprocess_id)
     output = JobUtil.get_latest_metadata(preprocess_id)
-    response = HttpResponse(content_type='json')
-    response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.json'
+    if output:
+        response = HttpResponse(content_type='json')
+        response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.json'
 
-    json.dump(output,fp=response,indent=4)
-    return response
+        json.dump(output, fp=response, indent=4)
+        return response
+    else:
+        usermsg = dict(success = "False",
+                       message = "failed to get the JSON")
+
+        return JsonResponse(usermsg)
 
 def view_basic_upload_form(request):
     """Basic test form"""
