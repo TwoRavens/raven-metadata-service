@@ -1,8 +1,6 @@
 {%  extends "base.html" %}
 {% block main_content %}
-    {% for info in jobs %}
-       {{ info.created }}, {{  info.preprocess_file.size }}
-    {% endfor %}
+
 <h4 class="border-bottom border-gray pb-2 mb-0" style="text-align: center"> Preprocess Jobs </h4>
     <hr>
 
@@ -18,15 +16,15 @@
     </tr>
   </thead>
     <tbody>
-    {
-  {% for r in list %}
+
+  {% for r in jobs %}
     <tr>
       <td scope="row">{{r.name}}</td>
-      <td>{{r.id}}</td>
+      <td>{{r.pk}}</td>
       <td>{{r.created }}</td>
-      <td>{{ r.size }}</td>
-      <td><button class="btn btn-info">Download</button>
-          <a href="{% url 'api_get_latest_metadata' r.id %}" class="btn btn-info">Download</a>
+      <td>{{ r.preprocess_file.size }}</td>
+      <td><a href="{% url 'api_get_latest_metadata' r.id %}" class="btn btn-info">View</a>
+          <a href="{% url 'api_download' r.id %}" class="btn btn-info">Download</a>
 
       </td>
     </tr>

@@ -47,26 +47,20 @@ def view_job_list(request):
     except PreprocessJob.DoesNotExist:
         raise Http404('could not find jobs')
 
-    data = []
-    for e in jobs:
-        # print(e)
-        # print(e.pk)
-        data.append({'name' : str(e),
-                     'id':e.pk,
-                     'created':e.created,
-                     'size':e.preprocess_file.size
-                     })
-
-
-    #info_dict = dict(job = data)
-    #print(info_dict)
-
-
     return render(request,
                   'preprocess/list.html',
-                  {'list': data,
-                   'jobs': jobs})
+                  {'jobs': jobs})
 
+
+def api_download(request,preprocess_id ):
+    """ download file"""
+    print("job_id", preprocess_id)
+    output = JobUtil.get_latest_metadata(preprocess_id)
+    response = HttpResponse(content_type='json')
+    response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.json'
+
+    json.dump(output,fp=response,indent=4)
+    return response
 
 def view_basic_upload_form(request):
     """Basic test form"""
