@@ -1,0 +1,39 @@
+  UserSuccessMessage:
+    type: "object"
+    required:
+    - "success"
+    - "message"
+    properties:
+      success:
+        type: "boolean"
+      message:
+        type: "string"
+      data:
+        type: "object"
+  UserSuccessMessageWithCallback:
+    type: "object"
+    required:
+    - "success"
+    - "message"
+    - "callback_url"
+    properties:
+      success:
+        type: "boolean"
+      message:
+        type: "string"
+      data:
+        type: "object"
+      callback_url:
+        type: "string"
+  UserErrorMessage:
+    type: "object"
+    required:
+    - "success"
+    - "message"
+    properties:
+      success:
+        type: "boolean"
+      message:
+        type: "string"
+      details:
+        type: "object"

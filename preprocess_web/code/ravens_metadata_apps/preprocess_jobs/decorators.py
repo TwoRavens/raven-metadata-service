@@ -17,7 +17,7 @@ def bad_api_view(request, *args, **kwargs):
 
     d = dict(status='ERROR',\
             message=err_msg)
-    return JsonResponse(d)
+    return JsonResponse(d, status=401)
 
 
 def apikey_required(view_func):

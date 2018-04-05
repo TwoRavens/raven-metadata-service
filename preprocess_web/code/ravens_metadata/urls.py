@@ -26,7 +26,9 @@ admin.site.site_title = 'TwoRavens Metadata Service'
 
 urlpatterns = [
 
-    path(r'preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
+    path('preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
+
+    path('api/', include('ravens_metadata_apps.api_docs.urls')),
 
     path('admin/', admin.site.urls),
 
@@ -34,6 +36,7 @@ urlpatterns = [
     path(r'', RedirectView.as_view(\
                 pattern_name='view_homepage',
                 permanent=False)),
+                
 ] + static(settings.STATIC_URL,
            #document_root=settings.STATIC_ROOT)
            document_root=settings.TEST_DIRECT_STATIC)

@@ -7,8 +7,7 @@ urlpatterns = (
     #
     path(r'homepage',
          views.view_homepage,
-         name='view_homepage'
-         ),
+         name='view_homepage'),
 
     # Show saved workspaces for the logged in user
     #
@@ -17,8 +16,8 @@ urlpatterns = (
          name='view_basic_upload_form'),
 
     path(r'api/process-single-file',
-         views.endpoint_api_single_file,
-         name='endpoint_api_single_file'),
+         views.api_process_single_file,
+         name='api_process_single_file'),
 
     # job info JSON format
     #

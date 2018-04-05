@@ -1,0 +1,109 @@
+---
+swagger: "2.0"
+info:
+  description: "Initial endpoints for TwoRavens preprocess service."
+  version: "1.0.0"
+  title: "TwoRavens preprocess service doc"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "raman_prasad@harvard.edu"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "{{ SWAGGER_HOST }}"
+#basePath: "/api/v1"
+tags:
+- name: "preprocess"
+  description: "Retrieve SavedWorkspace information"
+schemes:
+- "http"
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: api-key
+paths:
+  {% url 'api_process_single_file' %}:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - "preprocess"
+      summary: "Preprocess a single file."
+      description: "Preprocess a single .csv or .tab file."
+      produces:
+        - "application/json"
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: source_file
+          in: formData
+          type: file
+          description: The file to upload.
+        #- name: Authorization
+        #  in: header
+        #  description: an authorization header
+        #  required: true
+        #  type: string
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserSuccessMessageWithCallback"
+        400:
+          description: "An error occurred.  See details in the response."
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserErrorMessage"
+        401:
+          description: "A valid API key is needed."
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserErrorMessage"
+{% comment %}
+  {% url 'view_end_ta3_search' %}:
+    post:
+      tags:
+      - "ta3_search"
+      summary: "Send a message and shutdown any open ta3_search consoles"
+      description: "Gives the ability to send messages and shutdown registered ta3_search consoles from the UI"
+      operationId: "ta3_send_message_exit"
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: message
+        description: Message to send
+        schema:
+          type: object
+          required:
+            - is_success
+            - message
+          properties:
+            is_success:
+              type: boolean
+            message:
+              type: string
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserSuccessMessage"
+        400:
+          description: "Error with the registration.  See details in the response."
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserErrorMessage"
+{% endcomment %}
+# ------------------------------
+# Define reusable parameters:
+# ------------------------------
+definitions:
+{% include "swagger/v1_defn_basic.yaml" %}
+{% comment %}
+{% include "swagger/v1_defn_workspaces.yaml" %}
+{% include "swagger/v1_defn_ta2.yaml" %}
+{% endcomment %}
