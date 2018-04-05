@@ -30,7 +30,7 @@ paths:
         - apiKey: []
       tags:
         - "preprocess"
-      summary: "Preprocess a single file."
+      summary: "Preprocess a single file. (Note!: Currently the callback_url is needed to finish the process)"
       description: "Preprocess a single .csv or .tab file."
       produces:
         - "application/json"
@@ -62,14 +62,56 @@ paths:
           schema:
             type: "object"
             $ref: "#/definitions/UserErrorMessage"
-{% comment %}
-  {% url 'view_end_ta3_search' %}:
+  /preprocess/api/metadata/{preprocess_id}:
+    get:
+      tags:
+       - "preprocess"
+      summary: "Retrieve preprocess metadata in JSON format"
+      description: "Retrieve preprocess metadata in JSON format"
+      produces:
+       - "application/json"
+      parameters:
+        - in: path
+          name: preprocess_id
+          schema:
+            type: integer
+            required: true
+            description: Numeric ID of the preprocess metadata file
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+            $ref: "#/definitions/PreprocessData"
+        400:
+          description: "An error occurred.  See details in the response."
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserErrorMessage"
+        401:
+          description: "A valid API key is needed."
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserErrorMessage"
+  {% url 'api_update_metadata' %}:
     post:
       tags:
-      - "ta3_search"
-      summary: "Send a message and shutdown any open ta3_search consoles"
-      description: "Gives the ability to send messages and shutdown registered ta3_search consoles from the UI"
-      operationId: "ta3_send_message_exit"
+      - "preprocess"
+      summary: "Update the preprocess metadata"
+      description: "Update the selected variable values or the 'variable_display' \
+        \ section. Example:\n
+        \          { \
+        \n &nbsp;&nbsp;  \"preprocess_id\": 3, \
+        \n &nbsp;&nbsp;   \"variable_updates\":{ \
+        \n &nbsp; &nbsp;   &nbsp;  \"cylinders\":{ \
+        \n &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; \"viewable\": false, \
+        \n &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp;       \"omit\": [ \"mean\"], \
+        \n &nbsp; &nbsp;  &nbsp;    &nbsp; &nbsp;      \"value_updates\": { \
+        \n &nbsp; &nbsp;  &nbsp;     &nbsp; &nbsp;  &nbsp; &nbsp;        \"nature\":\"ordinal\" \
+        \n       &nbsp; &nbsp;    &nbsp; &nbsp; }
+        \n     &nbsp; &nbsp;  }
+        \n    &nbsp; }
+        \n }"
       produces:
       - "application/json"
       parameters:
@@ -77,15 +119,7 @@ paths:
         name: message
         description: Message to send
         schema:
-          type: object
-          required:
-            - is_success
-            - message
-          properties:
-            is_success:
-              type: boolean
-            message:
-              type: string
+          $ref: "#/definitions/UpdateInputData"
       responses:
         200:
           description: "successful operation"
@@ -97,7 +131,6 @@ paths:
           schema:
             type: "object"
             $ref: "#/definitions/UserErrorMessage"
-{% endcomment %}
 # ------------------------------
 # Define reusable parameters:
 # ------------------------------

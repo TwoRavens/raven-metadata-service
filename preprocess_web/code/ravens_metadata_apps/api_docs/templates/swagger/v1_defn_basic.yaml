@@ -37,3 +37,40 @@
         type: "string"
       details:
         type: "object"
+  PreprocessData:
+    type: "object"
+    required:
+     - "self"
+     - "variables"
+    properties:
+      self:
+        type: "object"
+      variables:
+        type: "object"
+      variable_display:
+        type: "object"
+  # ------------------------------
+  # update-metadata input
+  # ------------------------------
+  UpdateSingleVariable:
+    type: "object"
+    properties:
+      viewable:
+        type: "boolean"
+      omit:
+        type: array
+        items:
+          type: string
+      value_updates:
+        type: "object"
+  UpdateInputData:
+    type: "object"
+    required:
+     - "preprocess_id"
+     - "variable_updates"
+    properties:
+      preprocess_id:
+        type: "integer"
+      variable_updates:
+        type: "object"
+        #$ref: "#/definitions/UpdateSingleVariable"
