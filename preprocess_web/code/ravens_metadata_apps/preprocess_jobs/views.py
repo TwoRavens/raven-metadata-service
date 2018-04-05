@@ -68,6 +68,32 @@ def api_download(request,preprocess_id ):
 
         return JsonResponse(usermsg)
 
+
+def api_detail(request,preprocess_id):
+    """ get all the versions and detail of the preprocess job"""
+    print("job_id", preprocess_id)
+    """Return the latest version of the preprocess metadata"""
+
+    success, metadata_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
+
+    print("metadata file :",metadata_or_err)
+
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    return render(request,
+                  'preprocess/preprocess-job-detail.html',
+                  {'jobs': metadata_or_err})
+
+    # return JsonResponse(\
+    #            get_json_success('Success',
+    #                             data=metadata_or_err))
+
+    # def api_get_metadata_version(request, job_id, update_id):
+    #    """Re
+
+
+
 def view_basic_upload_form(request):
     """Basic test form"""
     if request.method == 'POST':
