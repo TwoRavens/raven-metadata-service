@@ -33,9 +33,36 @@ def test_view(request):
     return HttpResponse('hello')
 
 def view_homepage(request):
+    """landing page"""
     return render(request,
                   'preprocess/homepage.html',
-                  {'context' : 'context'})
+                  {'context' : ""})
+
+def view_job_list(request):
+    """ get list of all jobs"""
+    try:
+        jobs = PreprocessJob.objects.all()
+
+    except PreprocessJob.DoesNotExist:
+        raise Http404('could not find jobs')
+
+    data = []
+    for e in jobs:
+        # print(e)
+        # print(e.pk)
+        data.append({'name' : str(e),
+                     'id':e.pk
+                     })
+
+
+    info_dict = dict(job = data)
+    print(info_dict)
+
+
+    return render(request,
+                  'preprocess/list.html',
+                  {'list':info_dict['job']})
+
 
 def view_basic_upload_form(request):
     """Basic test form"""
