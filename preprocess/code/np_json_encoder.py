@@ -1,4 +1,5 @@
-import json
+import decimal
+import simplejson as json
 import numpy as np
 
 
@@ -14,6 +15,7 @@ class NumpyJSONEncoder(json.JSONEncoder):
             return obj.tolist()
         else:
             return super(NumpyJSONEncoder, self).default(obj)
+
 
 # Encoder function
 def np_dumps(obj):

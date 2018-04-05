@@ -12,7 +12,7 @@ from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
 from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
-from variable_display_util import VariableDisplayUtil
+#from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate,
      STATE_SUCCESS, STATE_FAILURE)

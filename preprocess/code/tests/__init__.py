@@ -4,9 +4,18 @@ Run all tests from /preprocess/code
 
 Running 1 file at a time from /preprocess/code
 
-> python -m unittest tests.test_type_guess.TestTypeGuess
-> python -m unittest tests.test_summary_stats.SummaryStatsUtilTest
-> python -m unittest tests.test_plot_values.PlotValuesTest
-> python -m unittest tests.test_update_preprocess.UpdatePreprocessTest
+```
+# Test type guess
+python -m unittest tests.test_type_guess.TestTypeGuess
+
+# Test summary stats
+python -m unittest tests.test_summary_stats.SummaryStatsUtilTest
+
+# Test plot values
+python -m unittest tests.test_plot_values.PlotValuesTest
+
+# Test update preprocess
+python -m unittest tests.test_update_preprocess.UpdatePreprocessTest
+```
 
 """

@@ -1,10 +1,18 @@
 '''Contants used in the preprocess logic and metadata output'''
+PREPROCESS_ID = 'preprocess_id'
+
+SELF_SECTION_KEY = 'self'
+VERSION_KEY = 'version'
+VARIABLES_SECTION_KEY = 'variables'
+VARIABLE_DISPLAY_SECTION_KEY = 'variable_display'
 
 NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'
 # --------------------------------------
 # numchar constants for metadata file
 # --------------------------------------
+NUMCHAR_LABEL = 'numchar'
+
 NUMCHAR_NUMERIC = 'numeric'
 NUMCHAR_CHARACTER = 'character'
 
@@ -22,6 +30,8 @@ INTERVAL_VALUES = (INTERVAL_CONTINUOUS,
 # --------------------------------------
 # nature constants for metadata file
 # --------------------------------------
+NATURE_LABEL = 'nature'
+
 NATURE_NOMINAL = 'nominal'
 NATURE_ORDINAL = 'ordinal'
 NATURE_INTERVAL = 'interval'
