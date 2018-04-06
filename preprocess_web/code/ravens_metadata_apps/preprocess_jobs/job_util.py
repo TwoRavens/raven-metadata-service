@@ -12,6 +12,7 @@ from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
 from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
+from ravens_metadata_apps.utils.time_util import get_current_timestring
 #from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate,
@@ -129,23 +130,37 @@ class JobUtil(object):
 
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
+        """Open the original data file and return the rows in JSON format (python dict)"""
 
-        print('kwargs', kwargs)
+        # Assume this passed through the RetrieveRowsForm for validation
+        #
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('number_rows')
         input_format = kwargs.get('format')
         job_id = kwargs.get('preprocess_id')
 
+        # -------------------------------------------
+        # Read partial file, set lines to skip, etc
+        # -------------------------------------------
+        start_row_idx = start_row - 1    # e.g. if start_row is 1, skip nothing
+                                    # if start_row is 10, start on index
+
         if job.is_tab_source_file():
-            csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+            csv_data = pd.read_csv(job.source_file.path,
+                                   sep='\t',
+                                   lineterminator='\r')
+                                   #skiprows=skiprows,
+                                   #nrows=num_rows)
             print(csv_data)
         elif job.is_csv_source_file():
             csv_data = pd.read_csv(job.source_file.path)
+                                   #skiprows=skiprows,
+                                   #nrows=num_rows)
         else:
             return dict(success=True,
                         message='File type unknown (not csv or tab)')
 
-        max_rows = len(csv_data)
+        max_rows = len(csv_data.index)
         print("the no. of rows are ", max_rows)
 
         error_message = []
@@ -158,11 +173,14 @@ class JobUtil(object):
             err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (num_rows, max_rows)
             error_message.append(err)
             num_rows = max_rows
+
         update_end_num = start_row + num_rows
         print("error message", error_message)
-        data_frame = csv_data[start_row:update_end_num]
+        data_frame = csv_data[start_row_idx:update_end_num]
         raw_data = data_frame.to_dict(orient='split')
 
+        if 'index' in raw_data:
+            del raw_data['index']
         # print("raw_data", raw_data)
 
         if len(error_message) > 0:
@@ -176,7 +194,7 @@ class JobUtil(object):
                     "num_rows": num_rows,
                     "format": input_format
                 },
-                "data": str(raw_data),
+                "data": raw_data,
             }
 
         else:
@@ -189,13 +207,14 @@ class JobUtil(object):
                     "num_rows": num_rows,
                     "format": input_format
                 },
-                "data": str(raw_data),
+                "data": raw_data,
             }
 
         return output
 
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
+        """Return data rows as a .csv file."""
         if request.method == 'POST':
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
@@ -210,6 +229,7 @@ class JobUtil(object):
             print("the no. of rows are ", max_rows)
 
             error_message = []
+            start_row_idx = start_row - 1
 
             if start_row > max_rows:
                 err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (
@@ -224,9 +244,11 @@ class JobUtil(object):
 
             print("error message", error_message)
             update_end_num = start_row + num_rows
-            data_frame = csv_data[start_row:update_end_num]
+            data_frame = csv_data[start_row_idx:update_end_num]
             response = HttpResponse(content_type='text/csv')
-            response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.csv'
+
+            csv_fname = 'data_rows_%s.csv' % (get_current_timestring())
+            response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
 
             data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
 

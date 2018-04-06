@@ -93,13 +93,13 @@ paths:
           schema:
             type: "object"
             $ref: "#/definitions/UserErrorMessage"
-  {% url 'api_update_metadata' %}:
+  {% url 'view_api_retrieve_rows' %}:
     post:
       tags:
       - "preprocess"
-      summary: "Update the preprocess metadata"
-      description: "Update the selected variable values or the 'variable_display' \
-        \ section."
+      summary: "Retrieve rows from the source file"
+      description: "Optional: specify the start_row, num_rows, and format \
+        \ (json or csv)"
       produces:
       - "application/json"
       parameters:
@@ -107,7 +107,34 @@ paths:
         name: message
         description: Message to send
         schema:
-          $ref: "#/definitions/UpdateInputData"
+          $ref: "#/definitions/RetrieveRowsInput"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserSuccessMessage"
+        400:
+          description: "Error with the registration.  See details in the response."
+          schema:
+            type: "object"
+            $ref: "#/definitions/UserErrorMessage"
+
+  {% url 'api_update_metadata' %}:
+    post:
+      tags:
+      - "preprocess"
+      summary: "Update the preprocess metadata"
+      description: "Update the selected variable values or the 'variable_display' \
+      \ section."
+      produces:
+        - "application/json"
+      parameters:
+        - in: body
+          name: message
+          description:  to send
+          schema:
+            $ref: "#/definitions/RetrieveRowsInput"
       responses:
         200:
           description: "successful operation"

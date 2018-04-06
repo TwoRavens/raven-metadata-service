@@ -14,9 +14,8 @@ class PreprocessJobForm(forms.ModelForm):
 
 FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
-INPUT_FORMATS = (FORMAT_JSON, FORMAT_JSON)
+INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
-# errors = []
 
 
 class RetrieveRowsForm(forms.Form):
@@ -58,7 +57,7 @@ class RetrieveRowsForm(forms.Form):
     def clean_number_rows(self):
         """Check if number_rows is valid"""
         number_rows = self.cleaned_data.get('number_rows')
-        if number_rows is None:
+        if not number_rows:
             number_rows = 100   # later on it would be the maximum number of rows in the source file
 
         if number_rows < 1:
@@ -68,9 +67,11 @@ class RetrieveRowsForm(forms.Form):
 
         return number_rows
 
+
     def clean_format(self):
         """ check if the format is valid"""
         input_format = self.cleaned_data.get('format')
+
         if not input_format:
             input_format = FORMAT_JSON
 

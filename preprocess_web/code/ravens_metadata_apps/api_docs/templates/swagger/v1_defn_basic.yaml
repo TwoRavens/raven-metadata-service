@@ -50,6 +50,26 @@
       variable_display:
         type: "object"
   # ------------------------------
+  # retrieve row input
+  # ------------------------------
+  RetrieveRowsInput:
+    type: "object"
+    required:
+     - "preprocess_id"
+    properties:
+      preprocess_id:
+        type: "integer"
+      start_row:
+        type: "integer"
+        default: 1
+      number_rows:
+        type: "integer"
+        default: 100
+      format:
+        type: "string"
+        description: "'csv' or 'json'"
+        default: "json"
+  # ------------------------------
   # update-metadata input
   # ------------------------------
   UpdateSingleVariable:
