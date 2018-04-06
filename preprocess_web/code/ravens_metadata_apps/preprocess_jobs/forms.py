@@ -16,7 +16,6 @@ FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
 INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
-# errors = []
 
 
 class RetrieveRowsForm(forms.Form):

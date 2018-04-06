@@ -12,6 +12,7 @@ from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
 from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
+from ravens_metadata_apps.utils.time_util import get_current_timestring
 #from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate,
@@ -213,6 +214,7 @@ class JobUtil(object):
 
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
+        """Return data rows as a .csv file."""
         if request.method == 'POST':
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
@@ -227,6 +229,7 @@ class JobUtil(object):
             print("the no. of rows are ", max_rows)
 
             error_message = []
+            start_row_idx = start_row - 1
 
             if start_row > max_rows:
                 err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (
@@ -241,9 +244,11 @@ class JobUtil(object):
 
             print("error message", error_message)
             update_end_num = start_row + num_rows
-            data_frame = csv_data[start_row:update_end_num]
+            data_frame = csv_data[start_row_idx:update_end_num]
             response = HttpResponse(content_type='text/csv')
-            response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.csv'
+
+            csv_fname = 'data_rows_%s.csv' % (get_current_timestring())
+            response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
 
             data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
 

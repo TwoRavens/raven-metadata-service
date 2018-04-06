@@ -193,12 +193,7 @@ def api_get_latest_metadata(request, preprocess_id):
 
     return JsonResponse(metadata_or_err, safe=False)
 
-    #return JsonResponse(\
-    #            get_json_success('Success',
-    #                             data=metadata_or_err))
 
-#def api_get_metadata_version(request, job_id, update_id):
-#    """Re
 
 
 def view_job_status_page(request, job_id):
