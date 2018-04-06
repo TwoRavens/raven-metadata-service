@@ -1,4 +1,4 @@
-import json
+import json, collections
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
@@ -81,17 +81,26 @@ def api_detail(request,preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    for obj in metadata_or_err:
-        job_name = {'name' : str(obj.orig_metadata)}
+    if isinstance(metadata_or_err, collections.Iterable):
+
+        for obj in metadata_or_err:
+            job_name = {'name': str(obj.orig_metadata)}
+
+        return render(request,
+                      'preprocess/preprocess-job-detail.html',
+                      {'iterable':True,
+                          'jobs': metadata_or_err,
+                       'name': job_name,
+                       'preprocess_id': preprocess_id})
+    else:
+        return render(request,
+                      'preprocess/preprocess-job-detail.html',
+                      {'iterable':False,
+                          'jobs': metadata_or_err,
+                       'preprocess_id': preprocess_id})
 
 
-    return render(request,
-                  'preprocess/preprocess-job-detail.html',
-                  {'jobs': metadata_or_err,
-                   'name':job_name,
-                   'preprocess_id':preprocess_id})
-
-    # return JsonResponse(\
+        # return JsonResponse(\
     #            get_json_success('Success',
     #                             data=metadata_or_err))
 

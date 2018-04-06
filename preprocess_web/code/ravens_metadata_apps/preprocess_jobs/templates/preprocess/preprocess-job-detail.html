@@ -1,42 +1,65 @@
 {%  extends "base.html" %}
 {% block main_content %}
+{% if iterable %}
     <h4 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">{{ name.name }}</h4>
     <br>
     <br>
-    {% for obj in jobs %}
-    <div id="accordion" style="text-align: center; margin-left:10% ">
-  <div class="card" style="text-align: center">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button style="width: 100%" class="btn btn-info" type="button" data-toggle="collapse" data-target="#{{ obj.id }}" aria-expanded="true" aria-controls="{{ obj.id }}">
-            <h5 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">Version : {{ obj.version_number }}</h5>
-        </button>
-      </h5>
-    </div>
 
-    <div id="{{ obj.id }}" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-            <div class="detail" style="float: left ; text-align: left">
-              <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> Preprocess ID : {{ obj.id }}</p>
-              <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%">
-                  {% if obj.previous_update is None %}
-                  Previous Update : {{ name.name }}
-                  {% else %}
-                  Previous Update : {{ obj.previous_update }}
-                  {% endif %}
 
-              </p>
-                <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> Date : {{ obj.created }}</p>
-            <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> size : {{ obj.metadata_file.size }} bytes</p>
-            </div>
-            <a href="{% url 'api_get_latest_metadata' preprocess_id %}" class="btn btn-info">View Update</a>
-            <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
-            <a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View Original</a>
-        </div>
-    </div>
-  </div>
-    </div>
-        <br>
-    {% endfor %}
+                {% for obj in jobs %}
+                <div id="accordion" style="text-align: center; margin-left:10% ">
+              <div class="card" style="text-align: center">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button style="width: 100%" class="btn btn-info" type="button" data-toggle="collapse" data-target="#{{ obj.id }}" aria-expanded="true" aria-controls="{{ obj.id }}">
+                        <h5 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">Version : {{ obj.version_number }}</h5>
+                    </button>
+                  </h5>
+                </div>
 
+                <div id="{{ obj.id }}" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                        <div class="detail" style="float: left ; text-align: left">
+                          <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%">
+                              {% if obj.previous_update is None %}
+                              Previous Update : {{ name.name }}
+                              {% else %}
+                              Previous Update : {{ obj.previous_update }}
+                              {% endif %}
+
+                          </p>
+                            <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> Date : {{ obj.created }}</p>
+                        <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> size : {{ obj.metadata_file.size }} bytes</p>
+                        </div>
+                        <a href="{% url 'api_get_latest_metadata' preprocess_id %}" class="btn btn-info">View Update</a>
+                        <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
+                        <a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View Original</a>
+                    </div>
+                </div>
+              </div>
+                </div>
+                    <br>
+                {% endfor %}
+    {% else %}
+                <div id="accordion" style="text-align: center; margin-left:10%; height: 100% ">
+              <div class="card" style="text-align: center; height: 100%">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button style="width: 100%" class="btn btn-info" type="button" data-toggle="collapse" data-target="#one" aria-expanded="true" aria-controls="one">
+                        <h5 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">{{ jobs.name }}</h5>
+                    </button>
+                  </h5>
+                </div>
+                   <div id="one" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="height: 100%">
+                  <div class="card-body" style="text-align: left">
+                      <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
+                      <hr>
+                      <h6 class="border-bottom border-gray pb-2 mb-0"> Data</h6>
+                        {{ jobs.get_metadata_as_json }}
+                    </div>
+                </div>
+              </div>
+                </div>
+                </div>
+    {% endif %}
 {% endblock %}
