@@ -1,0 +1,96 @@
+  UserSuccessMessage:
+    type: "object"
+    required:
+    - "success"
+    - "message"
+    properties:
+      success:
+        type: "boolean"
+      message:
+        type: "string"
+      data:
+        type: "object"
+  UserSuccessMessageWithCallback:
+    type: "object"
+    required:
+    - "success"
+    - "message"
+    - "callback_url"
+    properties:
+      success:
+        type: "boolean"
+      message:
+        type: "string"
+      data:
+        type: "object"
+      callback_url:
+        type: "string"
+  UserErrorMessage:
+    type: "object"
+    required:
+    - "success"
+    - "message"
+    properties:
+      success:
+        type: "boolean"
+      message:
+        type: "string"
+      details:
+        type: "object"
+  PreprocessData:
+    type: "object"
+    required:
+     - "self"
+     - "variables"
+    properties:
+      self:
+        type: "object"
+      variables:
+        type: "object"
+      variable_display:
+        type: "object"
+  # ------------------------------
+  # retrieve row input
+  # ------------------------------
+  RetrieveRowsInput:
+    type: "object"
+    required:
+     - "preprocess_id"
+    properties:
+      preprocess_id:
+        type: "integer"
+      start_row:
+        type: "integer"
+        default: 1
+      number_rows:
+        type: "integer"
+        default: 100
+      format:
+        type: "string"
+        description: "'csv' or 'json'"
+        default: "json"
+  # ------------------------------
+  # update-metadata input
+  # ------------------------------
+  UpdateSingleVariable:
+    type: "object"
+    properties:
+      viewable:
+        type: "boolean"
+      omit:
+        type: array
+        items:
+          type: string
+      value_updates:
+        type: "object"
+  UpdateInputData:
+    type: "object"
+    required:
+     - "preprocess_id"
+     - "variable_updates"
+    properties:
+      preprocess_id:
+        type: "integer"
+      variable_updates:
+        type: "object"
+        #$ref: "#/definitions/UpdateSingleVariable"

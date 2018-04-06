@@ -45,6 +45,7 @@ if not isdir(MEDIA_ROOT):
 
 ALLOWED_HOSTS = ('*', )
 
+PAGE_CACHE_TIME = 0 # No cache in dev
 
 # For local dev, remove some of the user password requirements
 #

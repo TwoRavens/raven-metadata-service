@@ -7,8 +7,7 @@ urlpatterns = (
     #
     path(r'homepage',
          views.view_homepage,
-         name='view_homepage'
-         ),
+         name='view_homepage'),
 
     # Show saved workspaces for the logged in user
     #
@@ -17,8 +16,8 @@ urlpatterns = (
          name='view_basic_upload_form'),
 
     path(r'api/process-single-file',
-         views.endpoint_api_single_file,
-         name='endpoint_api_single_file'),
+         views.api_process_single_file,
+         name='api_process_single_file'),
 
     # job info JSON format
     #
@@ -50,6 +49,7 @@ urlpatterns = (
          views.api_update_metadata,
          name='api_update_metadata'),
 
+
     # job to retrieve preprocess data
     #
     path(r'api/metadata/<int:preprocess_id>',
@@ -69,6 +69,7 @@ urlpatterns = (
 
     # job to retrieve preprocess data version
     #
+<<<<<<< HEAD
     path(r'api/metadata/<int:preprocess_id>/version/<int:version_number>',
         views.api_get_metadata_version,
        name='api_get_metadata_version'),
@@ -78,6 +79,12 @@ urlpatterns = (
     path(r'list',
          views.view_job_list,
          name='view_list'),
+=======
+    #path(r'api/metadata/<int:preprocess_id>/version/<int:version_number>',
+    #     views.api_get_metadata_version,
+    #     name='api_get_metadata_version'),
+>>>>>>> master
+
 
     # default to upload form, for now
     #

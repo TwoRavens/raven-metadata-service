@@ -37,6 +37,9 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'raven_auth.User'
 
+PAGE_CACHE_TIME = 60 * 60 * 2 # 2 hours
+
+SWAGGER_HOST = '127.0.0.1:8080'
 
 # Application definition
 
@@ -50,6 +53,7 @@ INSTALLED_APPS = [
     # track preprocess
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.preprocess_jobs',
+    'ravens_metadata_apps.api_docs',
 ]
 
 MIDDLEWARE = [
