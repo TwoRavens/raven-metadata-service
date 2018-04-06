@@ -31,10 +31,10 @@ after_script:
   #-X POST #https://registry.hub.docker.com/u/tworavens/ravens-main/trigger/9269f094-1951-4d52-ba6d-15b216cec4a4/
 
   # Push image to dockerhub
-  #- if [ "$TRAVIS_BRANCH" == "master" ]; then
-  #  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-  #  docker push tworavens/ravens-main:latest;
-  #  fi
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push tworavens/raven-metadata-service:latest;
+    fi
 
 # send report to coveralls
 after_success:
