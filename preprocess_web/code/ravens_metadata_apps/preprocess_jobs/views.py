@@ -81,9 +81,15 @@ def api_detail(request,preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
+    for obj in metadata_or_err:
+        job_name = {'name' : str(obj.orig_metadata)}
+
+
     return render(request,
                   'preprocess/preprocess-job-detail.html',
-                  {'jobs': metadata_or_err})
+                  {'jobs': metadata_or_err,
+                   'name':job_name,
+                   'preprocess_id':preprocess_id})
 
     # return JsonResponse(\
     #            get_json_success('Success',
