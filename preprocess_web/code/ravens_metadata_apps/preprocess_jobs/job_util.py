@@ -44,6 +44,28 @@ class JobUtil(object):
         return True, metadata_or_err
 
     @staticmethod
+    def get_version_metadata_object(job_id,version):
+        """ Retrun the versions and detail of job"""
+        if not job_id:
+            return False, 'job_id cannot be None'
+        if not version:
+            return False, 'version cannot be None'
+
+        update_object = MetadataUpdate.objects.filter(orig_metadata=job_id,version_number=version)
+        if update_object:
+            return True, update_object
+
+        # Look for the original preprocess metadata
+        #
+        try:
+            orig_metadata = PreprocessJob.objects.get(pk=job_id)
+        except PreprocessJob.DoesNotExist:
+            return False, 'PreprocessJob not found: %s' % job_id
+
+        return True, orig_metadata
+
+
+    @staticmethod
     def get_versions_metadata_objects(job_id):
         """ Retrun the versions and detail of job"""
         if not job_id:

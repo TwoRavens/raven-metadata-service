@@ -68,6 +68,22 @@ def api_download(request,preprocess_id ):
 
         return JsonResponse(usermsg)
 
+def api_get_metadata_version(request, preprocess_id,version):
+    """ get the versions and detail of the preprocess job"""
+    print("job_id", preprocess_id)
+    """Return the latest version of the preprocess metadata"""
+    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version)
+
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    user_msg = dict(success= True,
+                    name = str(metadata_or_err.name),
+                    data = metadata_or_err
+                        )
+
+    return JsonResponse(user_msg)
+
 
 def api_detail(request,preprocess_id):
     """ get all the versions and detail of the preprocess job"""
