@@ -35,3 +35,8 @@ docker run --rm -p 8000:8000 -v /ravens_volume:/ravens_volume --name pweb prepro
 # shell into running container
 #
  docker exec -ti pweb /bin/bash
+
+
+## Other
+
+Travis env variables: https://docs.travis-ci.com/user/environment-variables/
