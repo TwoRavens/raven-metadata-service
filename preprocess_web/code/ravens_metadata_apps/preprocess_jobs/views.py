@@ -2,7 +2,7 @@ import json, collections
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
-
+from decimal import Decimal
 from django.http import \
     (JsonResponse, HttpResponse,
      Http404, HttpResponseRedirect,
@@ -73,17 +73,22 @@ def api_download(request,preprocess_id ):
 
 def api_get_metadata_version(request, preprocess_id,version):
     """ get the versions and detail of the preprocess job"""
+    global version_decimal
     print("job_id", preprocess_id)
+    print("version", version)
+    if version:
+        print("view version ",version)
+        # use this param for the query
+        version_decimal = Decimal(str(version))
     """Return the latest version of the preprocess metadata"""
-    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version)
-
+    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version_decimal)
+    print('metadata',str(metadata_or_err))
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
     user_msg = dict(success= True,
-                    name = str(metadata_or_err.name),
-                    data = metadata_or_err
-                        )
+                       data = metadata_or_err
+                            )
 
     return JsonResponse(user_msg)
 
@@ -95,7 +100,7 @@ def api_detail(request,preprocess_id):
 
     success, metadata_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 
-    print("metadata file :",metadata_or_err)
+    print("metadata file :",str(metadata_or_err))
 
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))

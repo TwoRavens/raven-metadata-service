@@ -250,6 +250,12 @@ class MetadataUpdate(TimeStampedModel):
 
     note = models.TextField(blank=True)
 
+    def get_version_string(self):
+        """Return the version in string format"""
+        # print("string version_number", str(self.version_number))
+        # 3.0 => '3.0'
+        return str(self.version_number)
+
 
     def __str__(self):
         """minimal, change to name"""

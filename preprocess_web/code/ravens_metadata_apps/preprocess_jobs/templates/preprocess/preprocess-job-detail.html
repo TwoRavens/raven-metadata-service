@@ -31,7 +31,7 @@
                             <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> Date : {{ obj.created }}</p>
                         <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> size : {{ obj.metadata_file.size }} bytes</p>
                         </div>
-                        <a href="{% url 'api_get_metadata_version' preprocess_id  obj.version_number  %}" class="btn btn-info">View Update</a>
+                        <a href="{% url 'api_get_metadata_version' preprocess_id  obj.get_version_string %}" class="btn btn-info">View Update</a>
                         <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
                         <a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View Original</a>
                     </div>
