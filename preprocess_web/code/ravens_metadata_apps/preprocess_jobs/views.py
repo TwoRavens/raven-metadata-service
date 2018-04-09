@@ -82,15 +82,23 @@ def api_get_metadata_version(request, preprocess_id,version):
         version_decimal = Decimal(str(version))
     """Return the latest version of the preprocess metadata"""
     success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version_decimal)
-    print('metadata',str(metadata_or_err))
+    data = []
+    for obj in metadata_or_err:
+        job = {'job': obj,
+               'metadata': obj.get_metadata()}
+        data.append(job)
+        print('metadata',job)
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    user_msg = dict(success= True,
-                       data = metadata_or_err
-                            )
 
-    return JsonResponse(user_msg)
+
+    return render(request,
+                      'preprocess/view_metadata_version.html',
+                  {
+                      'job': data,
+                      'preprocess_id':preprocess_id,
+                      'version_number': version_decimal})
 
 
 def api_detail(request,preprocess_id):
