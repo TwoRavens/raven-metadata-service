@@ -1,6 +1,21 @@
-{%  extends "base.html" %}
+{% extends "base.html" %}
+
+
+    {% block extra_header %}
+
+        {% load staticfiles %}
+        <script src="{% static "js/app.js" %}"></script>
+        <script>
+        var input_json = "{{ job|escapejs }}";
+        </script>
+    {% endblock %}
 {% block main_content %}
-    {% for obj in job %}
-        {{ obj }}
-    {% endfor %}
+<!-- rest of our template, business as usual. -->
+    <div class="container" style="height: 1000px; width: 100%; margin-top: 2%">
+    <div id="variables" style=" border:groove;   width: 20%; float: left; height: 100%; text-align: center; overflow: auto">
+    </div>
+     <div id="desc" style="border:groove;   width: 40%; float: left; height: 100%;overflow: auto;text-align: center;"></div>
+     <div id="plots" style=" border:groove;   width: 40%; float: left; height: 100%;overflow: auto;text-align: center;"></div>
+
+    </div>
 {% endblock %}

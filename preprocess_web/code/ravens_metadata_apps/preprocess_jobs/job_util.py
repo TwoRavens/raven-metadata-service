@@ -52,7 +52,7 @@ class JobUtil(object):
         if not version:
             return False, 'version cannot be None'
 
-        update_object = MetadataUpdate.objects.filter(orig_metadata=job_id,version_number=version)
+        update_object = MetadataUpdate.objects.filter(orig_metadata=job_id,version_number=version).first()
         # print("here is the data",update_object.name.version_number)
         if update_object:
             return True, update_object
