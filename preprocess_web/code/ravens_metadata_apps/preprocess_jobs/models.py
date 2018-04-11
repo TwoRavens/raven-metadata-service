@@ -118,6 +118,9 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
+    def get_version_string(self):
+        """Always 1"""
+        return "1.0"
 
     def get_metadata_as_json(self):
         """For display, return preprocess file as string if it exists"""
@@ -256,6 +259,10 @@ class MetadataUpdate(TimeStampedModel):
         # 3.0 => '3.0'
         return str(self.version_number)
 
+    # def get_download_preprocess_version_url(self):
+    #     """Get the download url"""
+    #     reverse('api_get_metadata_version',
+    #             kwargs=dict(preprocess_id=self.id,version=self.version_number))
 
     def __str__(self):
         """minimal, change to name"""

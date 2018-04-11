@@ -54,6 +54,35 @@ def view_job_list(request):
                   'preprocess/list.html',
                   {'jobs': jobs})
 
+def api_download_version(request,**kwargs):
+    """ download version file"""
+    version = kwargs.get('version')
+    preprocess_id = kwargs.get('preprocess_id')
+    global version_decimal
+    print("job_id", preprocess_id)
+    print("version", version)
+    if version:
+        print("view version ", version)
+        # use this param for the query
+        version_decimal = Decimal(str(version))
+    """Return the latest version of the preprocess metadata"""
+    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id, version_decimal)
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    if success:
+        response = HttpResponse(content_type='json')
+        response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.json'
+
+        json.dump(metadata_or_err.get_metadata(), fp=response, indent=4)
+        return response
+    else:
+        usermsg = dict(success = "False",
+                       message = "failed to get the JSON")
+
+        return JsonResponse(usermsg)
+
+
 
 def api_download(request,preprocess_id ):
     """ download file"""
@@ -71,8 +100,10 @@ def api_download(request,preprocess_id ):
 
         return JsonResponse(usermsg)
 
-def api_get_metadata_version(request, preprocess_id,version):
+def api_get_metadata_version(request, **kwargs):
     """ get the versions and detail of the preprocess job"""
+    version = kwargs.get('version')
+    preprocess_id= kwargs.get('preprocess_id')
     global version_decimal
     print("job_id", preprocess_id)
     print("version", version)
@@ -82,19 +113,16 @@ def api_get_metadata_version(request, preprocess_id,version):
         version_decimal = Decimal(str(version))
     """Return the latest version of the preprocess metadata"""
     success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version_decimal)
-
-    data = json.dumps(metadata_or_err.get_metadata())
-    print("metadata ",data )
-    print("metadata ",data )
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    return render(request,
-                      'preprocess/view_metadata_version.html',
-                  {
-                      'job':str(data),
-                      'preprocess_id':preprocess_id,
-                      'version_number': version_decimal})
+
+    data = metadata_or_err.get_metadata()
+    user_msg = dict(success = "True",
+                    data = data)
+
+
+    return JsonResponse(user_msg)
 
 
 def api_detail(request,preprocess_id):
@@ -109,6 +137,11 @@ def api_detail(request,preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
+    try:
+        orig_preprocess_job = PreprocessJob.objects.get(pk=preprocess_id)
+    except PreprocessJob.DoesNotExist:
+        raise Http404('job_id not found: %s' % preprocess_id)
+
     if isinstance(metadata_or_err, collections.Iterable):
 
         for obj in metadata_or_err:
@@ -119,6 +152,7 @@ def api_detail(request,preprocess_id):
                       {'iterable':True,
                           'jobs': metadata_or_err,
                        'name': job_name,
+                       'orig_preprocess_job' : orig_preprocess_job,
                        'preprocess_id': preprocess_id})
     else:
         return render(request,
@@ -288,7 +322,11 @@ def api_get_latest_metadata(request, preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    return JsonResponse(metadata_or_err, safe=False)
+    data = json.dumps(metadata_or_err)
+    user_msg = dict( success=True,
+                     data = data)
+
+    return JsonResponse(user_msg)
 
 
 

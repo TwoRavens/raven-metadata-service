@@ -1,90 +1,64 @@
 {%  extends "base.html" %}
 {% block main_content %}
 {% if iterable %}
-    <h4 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">{{ name.name }}</h4>
-    <br>
-    <br>
-
-                 <table class="table table-hover">
-    <thead class="thead-dark">
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">ID</th>
-      <th scope="col">Created</th>
-      <th scope="col">Size</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-    <tbody>
-                {% for obj in jobs %}
-{#                <div id="accordion" style="text-align: center; margin-left:10% ">#}
-{#              <div class="card" style="text-align: center">#}
-{#                <div class="card-header" id="headingOne">#}
-{#                  <h5 class="mb-0">#}
-{#                    <button style="width: 100%" class="btn btn-info" type="button" data-toggle="collapse" data-target="#{{ obj.id }}" aria-expanded="true" aria-controls="{{ obj.id }}">#}
-{#                        <h5 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">Version : {{ obj.version_number }}</h5>#}
-{#                    </button>#}
-{#                  </h5>#}
-{#                </div>#}
-{##}
-{#                <div id="{{ obj.id }}" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">#}
-{#                  <div class="card-body">#}
-{#                        <div class="detail" style="float: left ; text-align: left">#}
-{#                          <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%">#}
-{#                              {% if obj.previous_update is None %}#}
-{#                              Previous Update : {{ name.name }}#}
-{#                              {% else %}#}
-{#                              Previous Update : {{ obj.previous_update }}#}
-{#                              {% endif %}#}
-{##}
-{#                          </p>#}
-{#                            <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> Date : {{ obj.created }}</p>#}
-{#                        <p class="border-bottom border-gray pb-2 mb-0" style="left: 0%"> size : {{ obj.metadata_file.size }} bytes</p>#}
-{#                        </div>#}
-{#                        <a href="{% url 'api_get_metadata_version' preprocess_id  obj.get_version_string %}" class="btn btn-info">View Update</a>#}
-{#                        <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>#}
-{#                        <a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View Original</a>#}
-{#                    </div>#}
-{#                </div>#}
-{#              </div>#}
-{#                </div>#}
-
-
-                    <tr>
-      <td scope="row">{{obj.name}}</td>
-      <td>{{obj.pk}}</td>
-      <td>{{obj.created }}</td>
-      <td>{{ obj.metadata_file.size }}</td>
-      <td><a href="{% url 'api_get_metadata_version' preprocess_id  obj.get_version_string %}" class="btn btn-info">View Update</a>
-                       <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
-                        <a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View Original</a>
-
-      </td>
-    </tr>
-                    <br>
-                {% endfor %}
-</tbody>
+<h4 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">{{ name.name }}</h4>
+<br>
+<br>
+<table class="table table-hover">
+   <thead class="thead-dark">
+      <tr>
+         <th scope="col">Name</th>
+         <th scope="col">Version</th>
+         <th scope="col">Created</th>
+         <th scope="col">Size</th>
+         <th scope="col">Handle</th>
+      </tr>
+   </thead>
+   <tbody>
+      {% for obj in jobs %}
+      <tr>
+         <td scope="row">{{obj.name}}</td>
+         <td>{{obj.get_version_string}}</td>
+         <td>{{obj.created }}</td>
+         <td>{{ obj.metadata_file.size }}</td>
+         <td><a href="{% url 'api_get_metadata_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">View</a>
+            <a href="{% url 'api_download_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">Download</a>
+         </td>
+      </tr>
+      {% endfor %}
+      {% if orig_preprocess_job %}
+      <tr style="background-color: #d3d9df">
+         <td scope="row">{{orig_preprocess_job.name}}</td>
+         <td>{{orig_preprocess_job.get_version_string}}</td>
+         <td>{{orig_preprocess_job.created }}</td>
+         <td>{{ orig_preprocess_job.preprocess_file.size }}</td>
+         <td><a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View</a>
+            <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
+         </td>
+      </tr>
+      {% endif %}
+   </tbody>
 </table>
-    {% else %}
-                <div id="accordion" style="text-align: center; margin-left:10%; height: 100% ">
-              <div class="card" style="text-align: center; height: 100%">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button style="width: 100%" class="btn btn-info" type="button" data-toggle="collapse" data-target="#one" aria-expanded="true" aria-controls="one">
-                        <h5 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">{{ jobs.name }}</h5>
-                    </button>
-                  </h5>
-                </div>
-                   <div id="one" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="height: 100%">
-                  <div class="card-body" style="text-align: left">
-                      <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
-                      <hr>
-                      <h6 class="border-bottom border-gray pb-2 mb-0"> Data</h6>
-                        {{ jobs.get_metadata_as_json }}
-                    </div>
-                </div>
-              </div>
-                </div>
-                </div>
-    {% endif %}
+{% else %}
+<div id="accordion" style="text-align: center; margin-left:10%; height: 100% ">
+   <div class="card" style="text-align: center; height: 100%">
+      <div class="card-header" id="headingOne">
+         <h5 class="mb-0">
+            <button style="width: 100%" class="btn btn-info" type="button" data-toggle="collapse" data-target="#one" aria-expanded="true" aria-controls="one">
+               <h5 class="border-bottom border-gray pb-2 mb-0" style="text-align: center">{{ jobs.name }}</h5>
+            </button>
+         </h5>
+      </div>
+      <div id="one" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="height: 100%">
+         <div class="card-body" style="text-align: left">
+            <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
+            <hr>
+            <h6 class="border-bottom border-gray pb-2 mb-0"> Data</h6>
+            {{ jobs.get_metadata_as_json }}
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+{% endif %}
 {% endblock %}

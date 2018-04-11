@@ -25,10 +25,8 @@ admin.site.index_title = 'Features area'
 admin.site.site_title = 'TwoRavens Metadata Service'
 
 urlpatterns = [
-
-
     path(r'preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
-    path(r'auth/', include('ravens_metadata_apps.raven_auth.urls')),
+    #path(r'auth/', include('ravens_metadata_apps.raven_auth.urls')),
 
     path('preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
 
