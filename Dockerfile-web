@@ -51,6 +51,9 @@ EXPOSE 8080
 
 ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
 
+# -------------------------------------
+# Update the working directory
+# -------------------------------------
 WORKDIR /var/webapps/raven-metadata-service/preprocess_web/code
 
 # -------------------------------------

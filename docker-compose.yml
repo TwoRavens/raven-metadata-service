@@ -1,25 +1,35 @@
-version: '3'
+# -------------------------------
+# Rudimentary docker-compose for local testing
+# "docker-compose up" should run a web service at:
+#   http://0.0.0.0:8080/
+# -------------------------------
 
+version: '3'
 services:
+  # -------------------------------
   # Redis
+  # -------------------------------
   redis:
     image: redis:4.0
     hostname: redis
-    #command: redis-server /usr/local/etc/redis.conf
     volumes:
-      - ':/ravens_volume'
+      - /tmp:/tmp
     ports:
       - '6379:6379'
-
+  # -------------------------------
   # Django web server
+  # -------------------------------
   web:
     build:
       context: .
       dockerfile: Dockerfile-web
     hostname: web
-    command: ./run_web.sh
+    environment:
+      - DJANGO_SETTINGS_MODULE=ravens_metadata.settings.docker_test_settings
+      - REDIS_HOST=redis
+    #command: python manage.py runserver 8080
     volumes:
-      - .:/ravens_volume  # mount current directory inside container
+      - /tmp:/tmp
     ports:
       - "8080:8080"
     # set up links so that web knows about db, rabbit and redis
@@ -28,15 +38,19 @@ services:
       - redis
     depends_on:
       - celery_queue
-
+  # -------------------------------
   # Celery worker
+  # -------------------------------
   celery_queue:
     build:
       context: .
       dockerfile: Dockerfile-web
     command: celery -A ravens_metadata worker -l info
+    environment:
+      - DJANGO_SETTINGS_MODULE=ravens_metadata.settings.docker_test_settings
+      - REDIS_HOST=redis
     volumes:
-      - .:/ravens_volume
+      - /tmp:/tmp
     links:
       - redis
     depends_on:

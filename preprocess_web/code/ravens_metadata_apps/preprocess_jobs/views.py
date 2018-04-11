@@ -97,7 +97,7 @@ def view_retrieve_rows_form(request):
     input_format = frm.cleaned_data.get('format')
     if input_format == FORMAT_JSON:
         output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
-        print("output ", output)
+        #print("output ", output)
         user_msg = output
         return JsonResponse(user_msg)
     elif input_format == FORMAT_CSV:
@@ -136,7 +136,7 @@ def view_api_retrieve_rows(request):
 
     if input_format == FORMAT_JSON:
         output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
-        print("output ", output)
+        #print("output ", output)
         user_msg = output
         return JsonResponse(user_msg)
 
@@ -210,7 +210,6 @@ def view_job_status_page(request, job_id):
 
     if job.is_finished():
         data_ok, preprocess_string = job.get_metadata(as_string=True)
-        print('preprocess_string', preprocess_string)
         if data_ok:
             info_dict['preprocess_string'] = preprocess_string
         else:
