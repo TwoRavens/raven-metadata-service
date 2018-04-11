@@ -1739,9 +1739,9 @@ function point(node, event) {
 
   if (svg.createSVGPoint) {
     var point = svg.createSVGPoint();
-    point.x_val = event.clientX, point.y = event.clientY;
+    point.x = event.clientX, point.y = event.clientY;
     point = point.matrixTransform(node.getScreenCTM().inverse());
-    return [point.x_val, point.y];
+    return [point.x, point.y];
   }
 
   var rect = node.getBoundingClientRect();
@@ -1829,7 +1829,7 @@ function DragEvent(target, type, subject, id, active, x, y, dx, dy, dispatch) {
   this.subject = subject;
   this.identifier = id;
   this.active = active;
-  this.x_val = x;
+  this.x = x;
   this.y = y;
   this.dx = dx;
   this.dy = dy;
@@ -1851,7 +1851,7 @@ function defaultContainer() {
 }
 
 function defaultSubject(d) {
-  return d == null ? {x: exports.event.x_val, y: exports.event.y} : d;
+  return d == null ? {x: exports.event.x, y: exports.event.y} : d;
 }
 
 function defaultTouchable() {
@@ -1958,7 +1958,7 @@ function drag() {
 
     if (!customEvent(new DragEvent(drag, "beforestart", s, id, active, p[0], p[1], 0, 0, sublisteners), function() {
       if ((exports.event.subject = s = subject.apply(that, args)) == null) return false;
-      dx = s.x_val - p[0] || 0;
+      dx = s.x - p[0] || 0;
       dy = s.y - p[1] || 0;
       return true;
     })) return;
@@ -2731,10 +2731,10 @@ function interpolateString(a, b) {
   // Special optimization for only a single match.
   // Otherwise, interpolate each of the numbers and rejoin the string.
   return s.length < 2 ? (q[0]
-      ? one(q[0].x_val)
+      ? one(q[0].x)
       : zero(b))
       : (b = q.length, function(t) {
-          for (var i = 0, o; i < b; ++i) s[(o = q[i]).i] = o.x_val(t);
+          for (var i = 0, o; i < b; ++i) s[(o = q[i]).i] = o.x(t);
           return s.join("");
         });
 }
@@ -2860,7 +2860,7 @@ function interpolateTransform(parse, pxComma, pxParen, degParen) {
     a = b = null; // gc
     return function(t) {
       var i = -1, n = q.length, o;
-      while (++i < n) s[(o = q[i]).i] = o.x_val(t);
+      while (++i < n) s[(o = q[i]).i] = o.x(t);
       return s.join("");
     };
   };
@@ -5608,7 +5608,7 @@ function density() {
     return density;
   }
 
-  density.x_val = function(_) {
+  density.x = function(_) {
     return arguments.length ? (x = typeof _ === "function" ? _ : constant$6(+_), density) : x;
   };
 
@@ -5878,11 +5878,11 @@ function center$1(x, y) {
         sy = 0;
 
     for (i = 0; i < n; ++i) {
-      node = nodes[i], sx += node.x_val, sy += node.y;
+      node = nodes[i], sx += node.x, sy += node.y;
     }
 
     for (sx = sx / n - x, sy = sy / n - y, i = 0; i < n; ++i) {
-      node = nodes[i], node.x_val -= sx, node.y -= sy;
+      node = nodes[i], node.x -= sx, node.y -= sy;
     }
   }
 
@@ -5890,7 +5890,7 @@ function center$1(x, y) {
     nodes = _;
   };
 
-  force.x_val = function(_) {
+  force.x = function(_) {
     return arguments.length ? (x = +_, force) : x;
   };
 
@@ -6331,11 +6331,11 @@ treeProto.root = tree_root;
 treeProto.size = tree_size;
 treeProto.visit = tree_visit;
 treeProto.visitAfter = tree_visitAfter;
-treeProto.x_val = tree_x;
+treeProto.x = tree_x;
 treeProto.y = tree_y;
 
 function x(d) {
-  return d.x_val + d.vx;
+  return d.x + d.vx;
 }
 
 function y(d) {
@@ -6364,7 +6364,7 @@ function collide(radius) {
       for (i = 0; i < n; ++i) {
         node = nodes[i];
         ri = radii[node.index], ri2 = ri * ri;
-        xi = node.x_val + node.vx;
+        xi = node.x + node.vx;
         yi = node.y + node.vy;
         tree.visit(apply);
       }
@@ -6374,7 +6374,7 @@ function collide(radius) {
       var data = quad.data, rj = quad.r, r = ri + rj;
       if (data) {
         if (data.index > node.index) {
-          var x = xi - data.x_val - data.vx,
+          var x = xi - data.x - data.vx,
               y = yi - data.y - data.vy,
               l = x * x + y * y;
           if (l < r * r) {
@@ -6460,7 +6460,7 @@ function link(links) {
     for (var k = 0, n = links.length; k < iterations; ++k) {
       for (var i = 0, link, source, target, x, y, l, b; i < n; ++i) {
         link = links[i], source = link.source, target = link.target;
-        x = target.x_val + target.vx - source.x_val - source.vx || jiggle();
+        x = target.x + target.vx - source.x - source.vx || jiggle();
         y = target.y + target.vy - source.y - source.vy || jiggle();
         l = Math.sqrt(x * x + y * y);
         l = (l - distances[i]) / l * alpha * strengths[i];
@@ -6543,7 +6543,7 @@ function link(links) {
 }
 
 function x$1(d) {
-  return d.x_val;
+  return d.x;
 }
 
 function y$1(d) {
@@ -6586,8 +6586,8 @@ function simulation(nodes) {
 
     for (i = 0; i < n; ++i) {
       node = nodes[i];
-      if (node.fx == null) node.x_val += node.vx *= velocityDecay;
-      else node.x_val = node.fx, node.vx = 0;
+      if (node.fx == null) node.x += node.vx *= velocityDecay;
+      else node.x = node.fx, node.vx = 0;
       if (node.fy == null) node.y += node.vy *= velocityDecay;
       else node.y = node.fy, node.vy = 0;
     }
@@ -6596,9 +6596,9 @@ function simulation(nodes) {
   function initializeNodes() {
     for (var i = 0, n = nodes.length, node; i < n; ++i) {
       node = nodes[i], node.index = i;
-      if (isNaN(node.x_val) || isNaN(node.y)) {
+      if (isNaN(node.x) || isNaN(node.y)) {
         var radius = initialRadius * Math.sqrt(i), angle = i * initialAngle;
-        node.x_val = radius * Math.cos(angle);
+        node.x = radius * Math.cos(angle);
         node.y = radius * Math.sin(angle);
       }
       if (isNaN(node.vx) || isNaN(node.vy)) {
@@ -6667,7 +6667,7 @@ function simulation(nodes) {
 
       for (i = 0; i < n; ++i) {
         node = nodes[i];
-        dx = x - node.x_val;
+        dx = x - node.x;
         dy = y - node.y;
         d2 = dx * dx + dy * dy;
         if (d2 < radius) closest = node, radius = d2;
@@ -6711,17 +6711,17 @@ function manyBody() {
     if (quad.length) {
       for (x = y = i = 0; i < 4; ++i) {
         if ((q = quad[i]) && (c = Math.abs(q.value))) {
-          strength += q.value, weight += c, x += c * q.x_val, y += c * q.y;
+          strength += q.value, weight += c, x += c * q.x, y += c * q.y;
         }
       }
-      quad.x_val = x / weight;
+      quad.x = x / weight;
       quad.y = y / weight;
     }
 
     // For leaf nodes, accumulate forces from coincident quadrants.
     else {
       q = quad;
-      q.x_val = q.data.x_val;
+      q.x = q.data.x;
       q.y = q.data.y;
       do strength += strengths[q.data.index];
       while (q = q.next);
@@ -6733,7 +6733,7 @@ function manyBody() {
   function apply(quad, x1, _, x2) {
     if (!quad.value) return true;
 
-    var x = quad.x_val - node.x_val,
+    var x = quad.x - node.x,
         y = quad.y - node.y,
         w = x2 - x1,
         l = x * x + y * y;
@@ -6805,7 +6805,7 @@ function radial(radius, x, y) {
   function force(alpha) {
     for (var i = 0, n = nodes.length; i < n; ++i) {
       var node = nodes[i],
-          dx = node.x_val - x || 1e-6,
+          dx = node.x - x || 1e-6,
           dy = node.y - y || 1e-6,
           r = Math.sqrt(dx * dx + dy * dy),
           k = (radiuses[i] - r) * strengths[i] * alpha / r;
@@ -6837,7 +6837,7 @@ function radial(radius, x, y) {
     return arguments.length ? (radius = typeof _ === "function" ? _ : constant$7(+_), initialize(), force) : radius;
   };
 
-  force.x_val = function(_) {
+  force.x = function(_) {
     return arguments.length ? (x = +_, force) : x;
   };
 
@@ -6858,7 +6858,7 @@ function x$2(x) {
 
   function force(alpha) {
     for (var i = 0, n = nodes.length, node; i < n; ++i) {
-      node = nodes[i], node.vx += (xz[i] - node.x_val) * strengths[i] * alpha;
+      node = nodes[i], node.vx += (xz[i] - node.x) * strengths[i] * alpha;
     }
   }
 
@@ -6881,7 +6881,7 @@ function x$2(x) {
     return arguments.length ? (strength = typeof _ === "function" ? _ : constant$7(+_), initialize(), force) : strength;
   };
 
-  force.x_val = function(_) {
+  force.x = function(_) {
     return arguments.length ? (x = typeof _ === "function" ? _ : constant$7(+_), initialize(), force) : x;
   };
 
@@ -6928,8 +6928,8 @@ function y$2(y) {
   return force;
 }
 
-// Computes the decimal coefficient and exponent of the specified number x_val with
-// significant digits p, where x_val is positive and p is in [1, 21] or undefined.
+// Computes the decimal coefficient and exponent of the specified number x with
+// significant digits p, where x is positive and p is in [1, 21] or undefined.
 // For example, formatDecimal(1.23) returns ["123", 0].
 function formatDecimal(x, p) {
   if ((i = (x = p ? x.toExponential(p - 1) : x.toExponential()).indexOf("e")) < 0) return null; // NaN, ±Infinity
@@ -7028,7 +7028,7 @@ var formatTypes = {
   "r": formatRounded,
   "s": formatPrefixAuto,
   "X": function(x) { return Math.round(x).toString(16).toUpperCase(); },
-  "x_val": function(x) { return Math.round(x).toString(16); }
+  "x": function(x) { return Math.round(x).toString(16); }
 };
 
 // [[fill]align][sign][symbol][0][width][,][.precision][type]
@@ -7987,7 +7987,7 @@ function pointEqual(a, b) {
 }
 
 function Intersection(point, points, other, entry) {
-  this.x_val = point;
+  this.x = point;
   this.z = points;
   this.o = other; // another intersection
   this.e = entry; // is an entry?
@@ -8051,7 +8051,7 @@ function clipRejoin(segments, compareIntersection, startInside, interpolate, str
         if (isSubject) {
           for (i = 0, n = points.length; i < n; ++i) stream.point((point = points[i])[0], point[1]);
         } else {
-          interpolate(current.x_val, current.n.x_val, 1, stream);
+          interpolate(current.x, current.n.x, 1, stream);
         }
         current = current.n;
       } else {
@@ -8059,7 +8059,7 @@ function clipRejoin(segments, compareIntersection, startInside, interpolate, str
           points = current.p.z;
           for (i = points.length - 1; i >= 0; --i) stream.point((point = points[i])[0], point[1]);
         } else {
-          interpolate(current.x_val, current.p.x_val, -1, stream);
+          interpolate(current.x, current.p.x, -1, stream);
         }
         current = current.p;
       }
@@ -8277,8 +8277,8 @@ function validSegment(segment) {
 // Intersections are sorted along the clip edge. For both antimeridian cutting
 // and circle clipping, the same comparison is used.
 function compareIntersection(a, b) {
-  return ((a = a.x_val)[0] < 0 ? a[1] - halfPi$2 - epsilon$2 : halfPi$2 - a[1])
-       - ((b = b.x_val)[0] < 0 ? b[1] - halfPi$2 - epsilon$2 : halfPi$2 - b[1]);
+  return ((a = a.x)[0] < 0 ? a[1] - halfPi$2 - epsilon$2 : halfPi$2 - a[1])
+       - ((b = b.x)[0] < 0 ? b[1] - halfPi$2 - epsilon$2 : halfPi$2 - b[1]);
 }
 
 var clipAntimeridian = clip(
@@ -8639,7 +8639,7 @@ function clipRectangle(x0, y0, x1, y1) {
   }
 
   function compareIntersection(a, b) {
-    return comparePoint(a.x_val, b.x_val);
+    return comparePoint(a.x, b.x);
   }
 
   function comparePoint(a, b) {
@@ -10257,7 +10257,7 @@ function meanX(children) {
 }
 
 function meanXReduce(x, c) {
-  return x + c.x_val;
+  return x + c.x;
 }
 
 function maxY(children) {
@@ -10290,14 +10290,14 @@ function cluster() {
     var previousNode,
         x = 0;
 
-    // First walk, computing the initial x_val & y values.
+    // First walk, computing the initial x & y values.
     root.eachAfter(function(node) {
       var children = node.children;
       if (children) {
-        node.x_val = meanX(children);
+        node.x = meanX(children);
         node.y = maxY(children);
       } else {
-        node.x_val = previousNode ? x += separation(node, previousNode) : 0;
+        node.x = previousNode ? x += separation(node, previousNode) : 0;
         node.y = 0;
         previousNode = node;
       }
@@ -10305,15 +10305,15 @@ function cluster() {
 
     var left = leafLeft(root),
         right = leafRight(root),
-        x0 = left.x_val - separation(left, right) / 2,
-        x1 = right.x_val + separation(right, left) / 2;
+        x0 = left.x - separation(left, right) / 2,
+        x1 = right.x + separation(right, left) / 2;
 
-    // Second walk, normalizing x_val & y to the desired size.
+    // Second walk, normalizing x & y to the desired size.
     return root.eachAfter(nodeSize ? function(node) {
-      node.x_val = (node.x_val - root.x_val) * dx;
+      node.x = (node.x - root.x) * dx;
       node.y = (root.y - node.y) * dy;
     } : function(node) {
-      node.x_val = (node.x_val - x0) / (x1 - x0) * dx;
+      node.x = (node.x - x0) / (x1 - x0) * dx;
       node.y = (1 - (root.y ? node.y / root.y : 1)) * dy;
     });
   }
@@ -10597,12 +10597,12 @@ function extendBasis(B, p) {
 }
 
 function enclosesNot(a, b) {
-  var dr = a.r - b.r, dx = b.x_val - a.x_val, dy = b.y - a.y;
+  var dr = a.r - b.r, dx = b.x - a.x, dy = b.y - a.y;
   return dr < 0 || dr * dr < dx * dx + dy * dy;
 }
 
 function enclosesWeak(a, b) {
-  var dr = a.r - b.r + 1e-6, dx = b.x_val - a.x_val, dy = b.y - a.y;
+  var dr = a.r - b.r + 1e-6, dx = b.x - a.x, dy = b.y - a.y;
   return dr > 0 && dr * dr > dx * dx + dy * dy;
 }
 
@@ -10625,15 +10625,15 @@ function encloseBasis(B) {
 
 function encloseBasis1(a) {
   return {
-    x: a.x_val,
+    x: a.x,
     y: a.y,
     r: a.r
   };
 }
 
 function encloseBasis2(a, b) {
-  var x1 = a.x_val, y1 = a.y, r1 = a.r,
-      x2 = b.x_val, y2 = b.y, r2 = b.r,
+  var x1 = a.x, y1 = a.y, r1 = a.r,
+      x2 = b.x, y2 = b.y, r2 = b.r,
       x21 = x2 - x1, y21 = y2 - y1, r21 = r2 - r1,
       l = Math.sqrt(x21 * x21 + y21 * y21);
   return {
@@ -10644,9 +10644,9 @@ function encloseBasis2(a, b) {
 }
 
 function encloseBasis3(a, b, c) {
-  var x1 = a.x_val, y1 = a.y, r1 = a.r,
-      x2 = b.x_val, y2 = b.y, r2 = b.r,
-      x3 = c.x_val, y3 = c.y, r3 = c.r,
+  var x1 = a.x, y1 = a.y, r1 = a.r,
+      x2 = b.x, y2 = b.y, r2 = b.r,
+      x3 = c.x, y3 = c.y, r3 = c.r,
       a2 = x1 - x2,
       a3 = x1 - x3,
       b2 = y1 - y2,
@@ -10673,26 +10673,26 @@ function encloseBasis3(a, b, c) {
 }
 
 function place(a, b, c) {
-  var ax = a.x_val,
+  var ax = a.x,
       ay = a.y,
       da = b.r + c.r,
       db = a.r + c.r,
-      dx = b.x_val - ax,
+      dx = b.x - ax,
       dy = b.y - ay,
       dc = dx * dx + dy * dy;
   if (dc) {
     var x = 0.5 + ((db *= db) - (da *= da)) / (2 * dc),
         y = Math.sqrt(Math.max(0, 2 * da * (db + dc) - (db -= dc) * db - da * da)) / (2 * dc);
-    c.x_val = ax + x * dx + y * dy;
+    c.x = ax + x * dx + y * dy;
     c.y = ay + x * dy - y * dx;
   } else {
-    c.x_val = ax + db;
+    c.x = ax + db;
     c.y = ay;
   }
 }
 
 function intersects(a, b) {
-  var dx = b.x_val - a.x_val,
+  var dx = b.x - a.x,
       dy = b.y - a.y,
       dr = a.r + b.r;
   return dr * dr - 1e-6 > dx * dx + dy * dy;
@@ -10702,7 +10702,7 @@ function score(node) {
   var a = node._,
       b = node.next._,
       ab = a.r + b.r,
-      dx = (a.x_val * b.r + b.x_val * a.r) / ab,
+      dx = (a.x * b.r + b.x * a.r) / ab,
       dy = (a.y * b.r + b.y * a.r) / ab;
   return dx * dx + dy * dy;
 }
@@ -10719,11 +10719,11 @@ function packEnclose(circles) {
   var a, b, c, n, aa, ca, i, j, k, sj, sk;
 
   // Place the first circle.
-  a = circles[0], a.x_val = 0, a.y = 0;
+  a = circles[0], a.x = 0, a.y = 0;
   if (!(n > 1)) return a.r;
 
   // Place the second circle.
-  b = circles[1], a.x_val = -b.r, b.x_val = a.r, b.y = 0;
+  b = circles[1], a.x = -b.r, b.x = a.r, b.y = 0;
   if (!(n > 2)) return a.r + b.r;
 
   // Place the third circle.
@@ -10776,7 +10776,7 @@ function packEnclose(circles) {
   a = [b._], c = b; while ((c = c.next) !== b) a.push(c._); c = enclose(a);
 
   // Translate the circles to put the enclosing circle around the origin.
-  for (i = 0; i < n; ++i) a = circles[i], a.x_val -= c.x_val, a.y -= c.y;
+  for (i = 0; i < n; ++i) a = circles[i], a.x -= c.x, a.y -= c.y;
 
   return c.r;
 }
@@ -10816,7 +10816,7 @@ function index$2() {
       padding = constantZero;
 
   function pack(root) {
-    root.x_val = dx / 2, root.y = dy / 2;
+    root.x = dx / 2, root.y = dy / 2;
     if (radius) {
       root.eachBefore(radiusLeaf(radius))
           .eachAfter(packChildren(padding, 0.5))
@@ -10875,7 +10875,7 @@ function translateChild(k) {
     var parent = node.parent;
     node.r *= k;
     if (parent) {
-      node.x_val = parent.x_val + k * node.x_val;
+      node.x = parent.x + k * node.x;
       node.y = parent.y + k * node.y;
     }
   };
@@ -11132,26 +11132,26 @@ function tree() {
     t.eachAfter(firstWalk), t.parent.m = -t.z;
     t.eachBefore(secondWalk);
 
-    // If a fixed node size is specified, scale x_val and y.
+    // If a fixed node size is specified, scale x and y.
     if (nodeSize) root.eachBefore(sizeNode);
 
-    // If a fixed tree size is specified, scale x_val and y based on the extent.
+    // If a fixed tree size is specified, scale x and y based on the extent.
     // Compute the left-most, right-most, and depth-most nodes for extents.
     else {
       var left = root,
           right = root,
           bottom = root;
       root.eachBefore(function(node) {
-        if (node.x_val < left.x_val) left = node;
-        if (node.x_val > right.x_val) right = node;
+        if (node.x < left.x) left = node;
+        if (node.x > right.x) right = node;
         if (node.depth > bottom.depth) bottom = node;
       });
       var s = left === right ? 1 : separation(left, right) / 2,
-          tx = s - left.x_val,
-          kx = dx / (right.x_val + s + tx),
+          tx = s - left.x,
+          kx = dx / (right.x + s + tx),
           ky = dy / (bottom.depth || 1);
       root.eachBefore(function(node) {
-        node.x_val = (node.x_val + tx) * kx;
+        node.x = (node.x + tx) * kx;
         node.y = node.depth * ky;
       });
     }
@@ -11159,7 +11159,7 @@ function tree() {
     return root;
   }
 
-  // Computes a preliminary x_val-coordinate for v. Before that, FIRST WALK is
+  // Computes a preliminary x-coordinate for v. Before that, FIRST WALK is
   // applied recursively to the children of v, as well as the function
   // APPORTION. After spacing out the children by calling EXECUTE SHIFTS, the
   // node v is placed to the midpoint of its outermost children.
@@ -11182,9 +11182,9 @@ function tree() {
     v.parent.A = apportion(v, w, v.parent.A || siblings[0]);
   }
 
-  // Computes all real x_val-coordinates by summing up the modifiers recursively.
+  // Computes all real x-coordinates by summing up the modifiers recursively.
   function secondWalk(v) {
-    v._.x_val = v.z + v.parent.m;
+    v._.x = v.z + v.parent.m;
     v.m += v.parent.m;
   }
 
@@ -11239,7 +11239,7 @@ function tree() {
   }
 
   function sizeNode(node) {
-    node.x_val *= dx;
+    node.x *= dx;
     node.y = node.depth * dy;
   }
 
@@ -11547,7 +11547,7 @@ function centroid$1(polygon) {
 }
 
 // Returns the 2D cross product of AB and AC vectors, i.e., the z-component of
-// the 3D cross product in a quadrant I Cartesian coordinate system (+x_val is
+// the 3D cross product in a quadrant I Cartesian coordinate system (+x is
 // right, +y is up). Returns a positive value if ABC is counter-clockwise,
 // negative if clockwise, and zero if the points are collinear.
 function cross$1(a, b, c) {
@@ -11559,7 +11559,7 @@ function lexicographicOrder(a, b) {
 }
 
 // Computes the upper convex hull per the monotone chain algorithm.
-// Assumes points.length >= 3, is sorted by x_val, unique in y.
+// Assumes points.length >= 3, is sorted by x, unique in y.
 // Returns an array of indices into points in left-to-right order.
 function computeUpperHullIndexes(points) {
   var n = points.length,
@@ -11674,7 +11674,7 @@ var normal = (function sourceRandomNormal(source) {
       // If available, use the second previously-generated uniform random.
       if (x != null) y = x, x = null;
 
-      // Otherwise, generate a new x_val and y.
+      // Otherwise, generate a new x and y.
       else do {
         x = source() * 2 - 1;
         y = source() * 2 - 1;
@@ -11959,8 +11959,8 @@ function copy(source, target) {
       .clamp(source.clamp());
 }
 
-// deinterpolate(a, b)(x_val) takes a domain value x_val in [a,b] and returns the corresponding parameter t in [0,1].
-// reinterpolate(a, b)(t) takes a parameter t in [0,1] and returns the corresponding domain value x_val in [a,b].
+// deinterpolate(a, b)(x) takes a domain value x in [a,b] and returns the corresponding parameter t in [0,1].
+// reinterpolate(a, b)(t) takes a parameter t in [0,1] and returns the corresponding domain value x in [a,b].
 function continuous(deinterpolate, reinterpolate$$1) {
   var domain = unit,
       range = unit,
@@ -12862,10 +12862,10 @@ function formatLocale$1(locale) {
   };
 
   // These recursive directive definitions must be deferred.
-  formats.x_val = newFormat(locale_date, formats);
+  formats.x = newFormat(locale_date, formats);
   formats.X = newFormat(locale_time, formats);
   formats.c = newFormat(locale_dateTime, formats);
-  utcFormats.x_val = newFormat(locale_date, utcFormats);
+  utcFormats.x = newFormat(locale_date, utcFormats);
   utcFormats.X = newFormat(locale_time, utcFormats);
   utcFormats.c = newFormat(locale_dateTime, utcFormats);
 
@@ -13353,7 +13353,7 @@ function formatUnixTimestampSeconds(d) {
 var locale$1;
 
 defaultLocale$1({
-  dateTime: "%x_val, %X",
+  dateTime: "%x, %X",
   date: "%-m/%-d/%Y",
   time: "%-I:%M:%S %p",
   periods: ["AM", "PM"],
@@ -14305,7 +14305,7 @@ function line() {
     if (buffer) return output = null, buffer + "" || null;
   }
 
-  line.x_val = function(_) {
+  line.x = function(_) {
     return arguments.length ? (x$$1 = typeof _ === "function" ? _ : constant$11(+_), line) : x$$1;
   };
 
@@ -14380,7 +14380,7 @@ function area$3() {
     return line().defined(defined).curve(curve).context(context);
   }
 
-  area.x_val = function(_) {
+  area.x = function(_) {
     return arguments.length ? (x0 = typeof _ === "function" ? _ : constant$11(+_), x1 = null, area) : x0;
   };
 
@@ -14406,15 +14406,15 @@ function area$3() {
 
   area.lineX0 =
   area.lineY0 = function() {
-    return arealine().x_val(x0).y(y0);
+    return arealine().x(x0).y(y0);
   };
 
   area.lineY1 = function() {
-    return arealine().x_val(x0).y(y1);
+    return arealine().x(x0).y(y1);
   };
 
   area.lineX1 = function() {
-    return arealine().x_val(x1).y(y0);
+    return arealine().x(x1).y(y0);
   };
 
   area.defined = function(_) {
@@ -14553,7 +14553,7 @@ function curveRadial(curve) {
 function lineRadial(l) {
   var c = l.curve;
 
-  l.angle = l.x_val, delete l.x_val;
+  l.angle = l.x, delete l.x;
   l.radius = l.y, delete l.y;
 
   l.curve = function(_) {
@@ -14575,7 +14575,7 @@ function areaRadial() {
       y0 = a.lineY0,
       y1 = a.lineY1;
 
-  a.angle = a.x_val, delete a.x_val;
+  a.angle = a.x, delete a.x;
   a.startAngle = a.x0, delete a.x0;
   a.endAngle = a.x1, delete a.x1;
   a.radius = a.y, delete a.y;
@@ -14629,7 +14629,7 @@ function link$2(curve) {
     return arguments.length ? (target = _, link) : target;
   };
 
-  link.x_val = function(_) {
+  link.x = function(_) {
     return arguments.length ? (x$$1 = typeof _ === "function" ? _ : constant$11(+_), link) : x$$1;
   };
 
@@ -14673,7 +14673,7 @@ function linkVertical() {
 
 function linkRadial() {
   var l = link$2(curveRadial$1);
-  l.angle = l.x_val, delete l.x_val;
+  l.angle = l.x, delete l.x;
   l.radius = l.y, delete l.y;
   return l;
 }
@@ -16375,7 +16375,7 @@ var firstCircle;
 
 function Circle() {
   RedBlackNode(this);
-  this.x_val =
+  this.x =
   this.y =
   this.arc =
   this.site =
@@ -16412,7 +16412,7 @@ function attachCircle(arc) {
   var circle = circlePool.pop() || new Circle;
   circle.arc = arc;
   circle.site = cSite;
-  circle.x_val = x + bx;
+  circle.x = x + bx;
   circle.y = (circle.cy = y + by) + Math.sqrt(x * x + y * y); // y bottom
 
   arc.circle = circle;
@@ -16421,7 +16421,7 @@ function attachCircle(arc) {
       node = circles._;
 
   while (node) {
-    if (circle.y < node.y || (circle.y === node.y && circle.x_val <= node.x_val)) {
+    if (circle.y < node.y || (circle.y === node.y && circle.x <= node.x)) {
       if (node.L) node = node.L;
       else { before = node.P; break; }
     } else {
@@ -16469,7 +16469,7 @@ function detachBeach(beach) {
 
 function removeBeach(beach) {
   var circle = beach.circle,
-      x = circle.x_val,
+      x = circle.x,
       y = circle.cy,
       vertex = [x, y],
       previous = beach.P,
@@ -16480,7 +16480,7 @@ function removeBeach(beach) {
 
   var lArc = previous;
   while (lArc.circle
-      && Math.abs(x - lArc.circle.x_val) < epsilon$4
+      && Math.abs(x - lArc.circle.x) < epsilon$4
       && Math.abs(y - lArc.circle.cy) < epsilon$4) {
     previous = lArc.P;
     disappearing.unshift(lArc);
@@ -16493,7 +16493,7 @@ function removeBeach(beach) {
 
   var rArc = next;
   while (rArc.circle
-      && Math.abs(x - rArc.circle.x_val) < epsilon$4
+      && Math.abs(x - rArc.circle.x) < epsilon$4
       && Math.abs(y - rArc.circle.cy) < epsilon$4) {
     next = rArc.N;
     disappearing.push(rArc);
@@ -16662,7 +16662,7 @@ function Diagram(sites, extent) {
 
   while (true) {
     circle = firstCircle;
-    if (site && (!circle || site[1] < circle.y || (site[1] === circle.y && site[0] < circle.x_val))) {
+    if (site && (!circle || site[1] < circle.y || (site[1] === circle.y && site[0] < circle.x))) {
       if (site[0] !== x || site[1] !== y) {
         addBeach(site);
         x = site[0], y = site[1];
@@ -16796,7 +16796,7 @@ function voronoi() {
     return voronoi(data).triangles();
   };
 
-  voronoi.x_val = function(_) {
+  voronoi.x = function(_) {
     return arguments.length ? (x$$1 = typeof _ === "function" ? _ : constant$12(+_), voronoi) : x$$1;
   };
 
@@ -16829,32 +16829,32 @@ function ZoomEvent(target, type, transform) {
 
 function Transform(k, x, y) {
   this.k = k;
-  this.x_val = x;
+  this.x = x;
   this.y = y;
 }
 
 Transform.prototype = {
   constructor: Transform,
   scale: function(k) {
-    return k === 1 ? this : new Transform(this.k * k, this.x_val, this.y);
+    return k === 1 ? this : new Transform(this.k * k, this.x, this.y);
   },
   translate: function(x, y) {
-    return x === 0 & y === 0 ? this : new Transform(this.k, this.x_val + this.k * x, this.y + this.k * y);
+    return x === 0 & y === 0 ? this : new Transform(this.k, this.x + this.k * x, this.y + this.k * y);
   },
   apply: function(point) {
-    return [point[0] * this.k + this.x_val, point[1] * this.k + this.y];
+    return [point[0] * this.k + this.x, point[1] * this.k + this.y];
   },
   applyX: function(x) {
-    return x * this.k + this.x_val;
+    return x * this.k + this.x;
   },
   applyY: function(y) {
     return y * this.k + this.y;
   },
   invert: function(location) {
-    return [(location[0] - this.x_val) / this.k, (location[1] - this.y) / this.k];
+    return [(location[0] - this.x) / this.k, (location[1] - this.y) / this.k];
   },
   invertX: function(x) {
-    return (x - this.x_val) / this.k;
+    return (x - this.x) / this.k;
   },
   invertY: function(y) {
     return (y - this.y) / this.k;
@@ -16866,7 +16866,7 @@ Transform.prototype = {
     return y.copy().domain(y.range().map(this.invertY, this).map(y.invert, y));
   },
   toString: function() {
-    return "translate(" + this.x_val + "," + this.y + ") scale(" + this.k + ")";
+    return "translate(" + this.x + "," + this.y + ") scale(" + this.k + ")";
   }
 };
 
@@ -17017,12 +17017,12 @@ function zoom() {
 
   function scale(transform, k) {
     k = Math.max(scaleExtent[0], Math.min(scaleExtent[1], k));
-    return k === transform.k ? transform : new Transform(k, transform.x_val, transform.y);
+    return k === transform.k ? transform : new Transform(k, transform.x, transform.y);
   }
 
   function translate(transform, p0, p1) {
     var x = p0[0] - p1[0] * transform.k, y = p0[1] - p1[1] * transform.k;
-    return x === transform.x_val && y === transform.y ? transform : new Transform(transform.k, x, y);
+    return x === transform.x && y === transform.y ? transform : new Transform(transform.k, x, y);
   }
 
   function centroid(extent) {

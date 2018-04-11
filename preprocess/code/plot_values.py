@@ -33,7 +33,7 @@ class PlotValuesUtil(object):
         # Number of data points: size
         raw_data = np.array(self.col_series)
 
-        # x_val-data for the ECDF: x_
+        # x-data for the ECDF: x_
         x_value = np.sort(data)
         size_data = raw_data.size
         # y-data for the ECDF: y

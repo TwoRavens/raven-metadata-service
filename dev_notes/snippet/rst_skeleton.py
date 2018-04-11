@@ -10,7 +10,7 @@ PREPROCESS_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess', 'code')
 sys.path.append(PREPROCESS_DIR)
 PREPROCESS_WEB_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess_web', 'code')
 sys.path.append(PREPROCESS_WEB_DIR)
-#for x_val in sys.path: print(x_val)
+#for x in sys.path: print(x)
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE',
                       'ravens_metadata.settings.local_settings')

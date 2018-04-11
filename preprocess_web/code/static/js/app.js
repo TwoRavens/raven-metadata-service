@@ -92,15 +92,15 @@ $(document).ready(function () {
 			});
 		}
 		data2.forEach(function (d) {
-			d.x_val = +d.x_val;
+			d.x = +d.x;
 			d.y = +d.y;
 		});
 
 		var min_x = d3.min(data2, function (d, i) {
-			return data2[i].x_val;
+			return data2[i].x;
 		});
 		var max_x = d3.max(data2, function (d, i) {
-			return data2[i].x_val;
+			return data2[i].x;
 		});
 		var avg_x = (max_x - min_x) / 10;
 		var min_y = d3.min(data2, function (d, i) {
@@ -115,9 +115,9 @@ $(document).ready(function () {
 			.range([0, width_cross]);
 		var invx = d3.scale.linear()
 			.range([d3.min(data2.map(function (d) {
-				return d.x_val;
+				return d.x;
 			})), d3.max(data2.map(function (d) {
-				return d.x_val;
+				return d.x;
 			}))])
 			.domain([0, width_cross]);
 		var y = d3.scale.linear()
@@ -136,16 +136,16 @@ $(document).ready(function () {
 			.orient("left");
 		var area = d3.svg.area()
 			.interpolate("monotone")
-			.x_val(function (d) {
-				return x(d.x_val);
+			.x(function (d) {
+				return x(d.x);
 			})
 			.y0(height_cross - avg_y)
 			.y1(function (d) {
 				return y(d.y);
 			});
 		var line = d3.svg.line()
-			.x_val(function (d) {
-				return x(d.x_val);
+			.x(function (d) {
+				return x(d.x);
 			})
 			.y(function (d) {
 				return y(d.y);
@@ -166,7 +166,7 @@ $(document).ready(function () {
 			.attr("class", "area")
 			.attr("d", area);
 		plotsvg.append("g")
-			.attr("class", "x_val axis")
+			.attr("class", "x axis")
 			.attr("transform", "translate(0," + (height_cross) + ")")
 			.call(xAxis);
 		plotsvg.append("text")
