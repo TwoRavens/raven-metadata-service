@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 
 from ravens_metadata_apps.preprocess_jobs import views
 
@@ -52,15 +52,46 @@ urlpatterns = (
 
     # job to retrieve preprocess data
     #
-    path(r'api/metadata/<int:preprocess_id>',
+    re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})',
          views.api_get_latest_metadata,
          name='api_get_latest_metadata'),
 
+    # job to download preprocess
+    #
+    re_path(r'api/download_preprocess/(?P<preprocess_id>[0-9]{1,10})',
+         views.api_download,
+         name='api_download'),
+    # job to download preprocess version
+    #
+    re_path(r'api/metadata_download/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
+         views.api_download_version,
+         name='api_download_version'),
+
+     # job to get detail
+    #
+    re_path(r'api/detail/(?P<preprocess_id>[0-9]{1,10})',
+         views.api_detail,
+         name='api_detail'),
+
+
+
+    re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
+        views.api_get_metadata_version,
+       name='api_get_metadata_version'),
+
     # job to retrieve preprocess data version
     #
+    
+    #job to get all the preprocessed jobs
+    #
+    path(r'list',
+         views.view_job_list,
+         name='view_list'),
+
     #path(r'api/metadata/<int:preprocess_id>/version/<int:version_number>',
     #     views.api_get_metadata_version,
     #     name='api_get_metadata_version'),
+
 
 
     # default to upload form, for now

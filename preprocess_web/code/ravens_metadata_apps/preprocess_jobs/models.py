@@ -62,7 +62,6 @@ class PreprocessJob(TimeStampedModel):
                     help_text='Summary metadata created by preprocess',
                     upload_to='preprocess_file/%Y/%m/%d/',
                     blank=True)
-
     schema_version = models.CharField(max_length=100,
                                       default='beta')
 
@@ -119,6 +118,9 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
+    def get_version_string(self):
+        """Always 1"""
+        return "1.0"
 
     def get_download_preprocess_url(self):
         """Get the download url"""
@@ -221,6 +223,16 @@ class PreprocessJob(TimeStampedModel):
         """set state to STATE_FAILURE"""
         self.state = STATE_FAILURE
 
+    def get_latest_preprocess_url(self):
+        """Get the download url"""
+        reverse('api_get_latest_metadata',
+                kwargs=dict(preprocess_id=self.id))
+
+    def get_download_preprocess_url(self):
+         """Get the download url"""
+         return reverse('api_download_version',
+                        kwargs=dict(preprocess_id=self.id,
+                                    version=self.get_version_string()))
 
 class MetadataUpdate(TimeStampedModel):
     """Track updates to preprocss metadata"""
@@ -255,6 +267,17 @@ class MetadataUpdate(TimeStampedModel):
                                on_delete=models.SET_NULL)
 
     note = models.TextField(blank=True)
+
+    def get_version_string(self):
+        """Return the version in string format"""
+        # print("string version_number", str(self.version_number))
+        # 3.0 => '3.0'
+        return str(self.version_number)
+
+    # def get_download_preprocess_version_url(self):
+    #     """Get the download url"""
+    #     reverse('api_get_metadata_version',
+    #             kwargs=dict(preprocess_id=self.id,version=self.version_number))
 
     #def get_download_preprocess_url(self):
     #    """Get the download url"""
@@ -328,3 +351,9 @@ class MetadataUpdate(TimeStampedModel):
             return True, json.dumps(json_dict, indent=4)
 
         return True, json_dict
+
+    def get_download_preprocess_url(self):
+        """Get the download url"""
+        return reverse('api_download_version',
+                        kwargs=dict(preprocess_id=self.id,
+                        version=self.get_version_string()))

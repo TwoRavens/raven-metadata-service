@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+    {% block extra_header %}
+
+        {% load staticfiles %}
+        <script src="{% static "js/app.js" %}"></script>
+        <script>
+        var input_json = "{{ job|escapejs }}";
+        </script>
+    {% endblock %}
+{% block main_content %}
+<!-- rest of our template, business as usual. -->
+
+    <div id="variables" style=" border:groove;   width: 20%; float: left; height: 500px; text-align: center; overflow: auto;">
+    </div>
+     <div id="plots" style="border:groove;   width: 60%; float: left; height: 500px;overflow: auto;text-align: center;"></div>
+     <div id="desc" style=" border:groove;   width: 20%;  height: 500px;overflow: auto;text-align: center;float: right"></div>
+
+
+{% endblock %}
