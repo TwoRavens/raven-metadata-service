@@ -218,6 +218,16 @@ class PreprocessJob(TimeStampedModel):
         """set state to STATE_FAILURE"""
         self.state = STATE_FAILURE
 
+    def get_latest_preprocess_url(self):
+        """Get the download url"""
+        reverse('api_get_latest_metadata',
+                kwargs=dict(preprocess_id=self.id))
+
+    def get_download_preprocess_url(self):
+         """Get the download url"""
+         return reverse('api_download_version',
+                        kwargs=dict(preprocess_id=self.id,
+                                    version=self.get_version_string()))
 
 class MetadataUpdate(TimeStampedModel):
     """Track updates to preprocss metadata"""
@@ -330,3 +340,9 @@ class MetadataUpdate(TimeStampedModel):
             return True, json.dumps(json_dict, indent=4)
 
         return True, json_dict
+
+    def get_download_preprocess_url(self):
+        """Get the download url"""
+        return reverse('api_download_version',
+                        kwargs=dict(preprocess_id=self.id,
+                        version=self.get_version_string()))

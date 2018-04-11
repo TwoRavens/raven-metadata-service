@@ -45,7 +45,7 @@ class JobUtil(object):
         return True, metadata_or_err
 
     @staticmethod
-    def get_version_metadata_object(job_id,version):
+    def get_version_metadata_object(job_id, version):
         """ Retrun the versions and detail of job"""
         if not job_id:
             return False, 'job_id cannot be None'
