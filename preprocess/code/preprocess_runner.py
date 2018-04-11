@@ -16,6 +16,16 @@ from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 from variable_display_util import VariableDisplayUtil
 
+
+# Move these elsewhere as things progress ....
+# ---------------------------------------------
+CSV_FILE_EXT = '.csv'
+TAB_FILE_EXT = '.tab'
+ACCEPTABLE_FILE_TYPE_EXTS = \
+                    (CSV_FILE_EXT,
+                     TAB_FILE_EXT)
+# ---------------------------------------------
+
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
 

@@ -107,16 +107,26 @@ class JobUtil(object):
 
         if ye_task.state == 'SUCCESS':
 
-            preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
+            if ye_task.result['success']:
 
-            new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
-            job.preprocess_file.save(new_name,
-                                     preprocess_data)
-            job.set_state_success()
+                preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
 
-            job.user_message = 'Task completed!  Preprocess is available'
-            job.end_time = timezone.now()
-            job.save()
+                new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+                job.preprocess_file.save(new_name,
+                                         preprocess_data)
+                job.set_state_success()
+
+                job.user_message = 'Task completed!  Preprocess is available'
+                job.end_time = timezone.now()
+                job.save()
+
+            else:
+                # Didn't work so well
+                job.set_state_failure()
+                job.user_message = ye_task.result['message']
+                #job.preprocess_file.delete()
+                job.save()
+
             ye_task.forget()
 
         elif ye_task.state == 'STATE_FAILURE':

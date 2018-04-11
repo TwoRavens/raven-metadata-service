@@ -19,7 +19,9 @@ from celery import Celery, shared_task
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 
 
-from preprocess_runner import PreprocessRunner
+from preprocess_runner import \
+    (PreprocessRunner, ACCEPTABLE_FILE_TYPE_EXTS,
+     CSV_FILE_EXT, TAB_FILE_EXT)
 from msg_util import msg, msgt
 
 from celery import task, shared_task
@@ -41,11 +43,21 @@ def preprocess_csv_file(input_file, **kwargs):
     # - check if it's tab delimited
     #
     fname_base, fname_ext = splitext(basename(input_file))
-    if fname_ext.lower() == '.tab':
+    fname_ext_check = fname_ext.lower()
+    if fname_ext_check == TAB_FILE_EXT:
         runner, user_msg = PreprocessRunner.load_from_tabular_file(\
-                                    input_file, job_id=job_id)
+                                    input_file,
+                                    job_id=job_id)
+    elif fname_ext_check == CSV_FILE_EXT:
+        runner, user_msg = PreprocessRunner.load_from_csv_file(input_file,
+                                                               job_id=job_id)
     else:
-        runner, user_msg = PreprocessRunner.load_from_csv_file(input_file, job_id=job_id)
+        err_msg = ('We currently do not process this file type.'
+                   ' Please use a file with one of the following'
+                   ' extensions: %s') % (ACCEPTABLE_FILE_TYPE_EXTS,)
+        return dict(success=False,
+                    input_file=input_file,
+                    message=err_msg)
 
     if user_msg:
         print('(%s) FAILED: %s' % (input_file, user_msg))
@@ -174,5 +186,3 @@ def get_variable_display(pre_input, update_input, **kwargs):
     result, err_message= PreprocessRunner.load_variable_display(pre_input, update_input, preprocess_id=preprocess_id)
 
     return result
-
-
