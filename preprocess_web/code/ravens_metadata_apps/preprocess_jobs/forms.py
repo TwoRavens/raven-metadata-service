@@ -57,7 +57,8 @@ class RetrieveRowsForm(forms.Form):
     def clean_number_rows(self):
         """Check if number_rows is valid"""
         number_rows = self.cleaned_data.get('number_rows')
-        if not number_rows:
+
+        if number_rows is None:
             number_rows = 100   # later on it would be the maximum number of rows in the source file
 
         if number_rows < 1:

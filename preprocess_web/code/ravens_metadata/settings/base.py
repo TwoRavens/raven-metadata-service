@@ -144,14 +144,19 @@ TIME_ZONE = 'America/New_York'
 
 STATIC_URL = '/static/'
 
-# -------------------------------
-# CELERY SETTINGS
-# -------------------------------
-CELERY_BROKER_URL = 'redis://localhost'
-CELERY_RESULT_BACKEND = 'redis://localhost'
 
-#CELERY_TASK_SERIALIZER = 'pickle'
-#CELERY_RESULT_SERIALIZER = 'json'
+# ---------------------------
+# REDIS/CELERY SETTINGS
+# ---------------------------
+REDIS_HOST = os.environ.get('REDIS_HOST', 'localhost')
+REDIS_PORT = os.environ.get('REDIS_PORT', 6379)
+
+CELERY_BROKER_URL = 'redis://%s:%d' % (REDIS_HOST, REDIS_PORT)
+CELERY_RESULT_BACKEND = 'redis://%s:%d' % (REDIS_HOST, REDIS_PORT)
+
+#CELERY_BROKER_URL = 'redis://localhost'
+#CELERY_RESULT_BACKEND = 'redis://localhost'
+
 
 # -------------------------------
 # Fabric related
