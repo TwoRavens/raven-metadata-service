@@ -10,7 +10,7 @@ from .forms import FORMAT_JSON, FORMAT_CSV
 from celery.result import AsyncResult
 from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
-from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
+from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 #from variable_display_util import VariableDisplayUtil
@@ -267,7 +267,6 @@ class JobUtil(object):
     @staticmethod
     def update_preprocess_metadata(preprocess_json, update_json,**kwargs):
         """To get the updated preprocess file from VariableDisplayUtil """
-        # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
         var_util = VariableDisplayUtil(preprocess_json, update_json)
         if var_util.has_error:
             return False, var_util.get_error_messages()
