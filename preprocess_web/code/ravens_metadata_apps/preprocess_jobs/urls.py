@@ -66,18 +66,24 @@ urlpatterns = (
     path(r'api/metadata_download/<int:preprocess_id>/version/(?P<version>[0-9]+\.?[0-9]*)',
          views.api_download_version,
          name='api_download_version'),
-    # job to get detail
+
+     # job to get detail
     #
     path(r'api/detail/<int:preprocess_id>',
          views.api_detail,
          name='api_detail'),
 
-    # job to retrieve preprocess data version
-    #
+
 
     path(r'api/metadata/<int:preprocess_id>/version/(?P<version>[0-9]+\.?[0-9]*)',
         views.api_get_metadata_version,
        name='api_get_metadata_version'),
+
+    # job to retrieve preprocess data version
+    #
+    path(r'api/metadata_download/<int:preprocess_id>/version/',
+         views.get_metadata_version_base,
+         name='get_metadata_version_base'),
 
     #job to get all the preprocessed jobs
     #
