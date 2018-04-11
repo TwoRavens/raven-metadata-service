@@ -54,9 +54,6 @@ def view_job_list(request):
                   'preprocess/list.html',
                   {'jobs': jobs})
 
-def get_metadata_version_base(request):
-    """placeholder, not a view"""
-    raise Http404('placeholder, not a view')
 
 def api_download_version(request,**kwargs):
     """ download version file"""
