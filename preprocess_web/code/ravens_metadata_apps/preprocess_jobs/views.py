@@ -54,6 +54,10 @@ def view_job_list(request):
                   'preprocess/list.html',
                   {'jobs': jobs})
 
+def get_metadata_version_base(request):
+    """placeholder, not a view"""
+    raise Http404('placeholder, not a view')
+
 def api_download_version(request,**kwargs):
     """ download version file"""
     version = kwargs.get('version')
@@ -100,17 +104,12 @@ def api_download(request,preprocess_id ):
 
         return JsonResponse(usermsg)
 
-def api_get_metadata_version(request, **kwargs):
+def api_get_metadata_version(request, preprocess_id, version):
     """ get the versions and detail of the preprocess job"""
-    version = kwargs.get('version')
-    preprocess_id= kwargs.get('preprocess_id')
-    global version_decimal
-    print("job_id", preprocess_id)
-    print("version", version)
-    if version:
-        print("view version ",version)
-        # use this param for the query
-        version_decimal = Decimal(str(version))
+    #version = kwargs.get('version')
+    #preprocess_id= kwargs.get('preprocess_id')
+
+    version_decimal = Decimal(str(version))
     """Return the latest version of the preprocess metadata"""
     success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version_decimal)
     if not success:
