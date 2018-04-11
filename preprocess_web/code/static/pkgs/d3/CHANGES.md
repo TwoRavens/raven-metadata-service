@@ -588,7 +588,7 @@ The [d3.interpolate](https://github.com/d3/d3-interpolate/blob/master/README.md#
 The behavior of [d3.interpolateObject](https://github.com/d3/d3-interpolate/blob/master/README.md#interpolateObject) and [d3.interpolateArray](https://github.com/d3/d3-interpolate/blob/master/README.md#interpolateArray) has changed slightly with respect to properties or elements in the start value *a* that do not exist in the end value *b*: these properties and elements are now ignored, such that the ending value of the interpolator at *t* = 1 is now precisely equal to *b*. So, in 3.x:
 
 ```js
-d3.interpolateObject({foo: 2, bar: 1}, {foo: 3})(0.5); // {bar: 1, foo: 2.5} in 3.x
+d3.interpolateObject({foo: 2, bar: 1}, {foo: 3})(0.5); x_val
 ```
 
 Whereas in 4.0, *a*.bar is ignored:

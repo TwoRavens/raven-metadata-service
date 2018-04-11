@@ -1446,7 +1446,7 @@ function microtaskDebounce(fn) {
   return function () {
     if (!scheduled) {
       scheduled = true;
-      elem.setAttribute('x-index', i);
+      elem.setAttribute('x_val-index', i);
       i = i + 1; // don't use compund (+=) because it doesn't get optimized in V8
     }
   };
@@ -1537,7 +1537,7 @@ function getScrollParent(element) {
     return window.document.body;
   }
 
-  // Firefox want us to check `-x` and `-y` variations as well
+  // Firefox want us to check `-x_val` and `-y` variations as well
 
   var _getStyleComputedProp = getStyleComputedProperty(element),
       overflow = _getStyleComputedProp.overflow,
@@ -1695,12 +1695,12 @@ function includeScroll(rect, element) {
  * @memberof Popper.Utils
  * @param {CSSStyleDeclaration} styles
  * Result of `getStyleComputedProperty` on the given element
- * @param {String} axis - `x` or `y`
+ * @param {String} axis - `x_val` or `y`
  * @return {number} borders - The borders size of the given axis
  */
 
 function getBordersSize(styles, axis) {
-  var sideA = axis === 'x' ? 'Left' : 'Top';
+  var sideA = axis === 'x_val' ? 'Left' : 'Top';
   var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
 
   return +styles['border' + sideA + 'Width'].split('px')[0] + +styles['border' + sideB + 'Width'].split('px')[0];
@@ -1853,7 +1853,7 @@ function getBoundingClientRect(element) {
   // we make this check conditional for performance reasons
   if (horizScrollbar || vertScrollbar) {
     var styles = getStyleComputedProperty(element);
-    horizScrollbar -= getBordersSize(styles, 'x');
+    horizScrollbar -= getBordersSize(styles, 'x_val');
     vertScrollbar -= getBordersSize(styles, 'y');
 
     result.width -= horizScrollbar;
@@ -2502,7 +2502,7 @@ function applyStyle(data) {
 }
 
 /**
- * Set the x-placement attribute before everything else because it could be used
+ * Set the x_val-placement attribute before everything else because it could be used
  * to add margins to the popper margins needs to be calculated to get the
  * correct popper offsets.
  * @method
@@ -2537,7 +2537,7 @@ function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
  * @returns {Object} The data object, properly modified
  */
 function computeStyle(data, options) {
-  var x = options.x,
+  var x = options.x_val,
       y = options.y;
   var popper = data.offsets.popper;
 
@@ -2579,10 +2579,10 @@ function computeStyle(data, options) {
   // If the content of the popper grows once it's been positioned, it
   // may happen that the popper gets misplaced because of the new content
   // overflowing its reference element
-  // To avoid this problem, we provide two options (x and y), which allow
+  // To avoid this problem, we provide two options (x_val and y), which allow
   // the consumer to define the offset origin.
   // If we position a popper on top of a reference element, we can set
-  // `x` to `top` to make the popper grow towards its top instead of
+  // `x_val` to `top` to make the popper grow towards its top instead of
   // its bottom.
   var left = void 0,
       top = void 0;
@@ -2979,7 +2979,7 @@ function toValue(str, measurement, popperOffsets, referenceOffsets) {
 }
 
 /**
- * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
+ * Parse an `offset` string to extrapolate `x_val` and `y` numeric offsets.
  * @function
  * @memberof {modifiers~offset}
  * @private
@@ -2987,7 +2987,7 @@ function toValue(str, measurement, popperOffsets, referenceOffsets) {
  * @argument {Object} popperOffsets
  * @argument {Object} referenceOffsets
  * @argument {String} basePlacement
- * @returns {Array} a two cells array with x and y offsets in numbers
+ * @returns {Array} a two cells array with x_val and y offsets in numbers
  */
 function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
   var offsets = [0, 0];
@@ -3417,8 +3417,8 @@ var modifiers = {
     enabled: true,
     /** @prop {ModifierFn} */
     fn: arrow,
-    /** @prop {String|HTMLElement} element='[x-arrow]' - Selector or node used as arrow */
-    element: '[x-arrow]'
+    /** @prop {String|HTMLElement} element='[x_val-arrow]' - Selector or node used as arrow */
+    element: '[x_val-arrow]'
   },
 
   /**
@@ -3478,7 +3478,7 @@ var modifiers = {
 
   /**
    * Modifier used to hide the popper when its reference element is outside of the
-   * popper boundaries. It will set a `x-out-of-boundaries` attribute which can
+   * popper boundaries. It will set a `x_val-out-of-boundaries` attribute which can
    * be used to hide with a CSS selector the popper when its reference is
    * out of boundaries.
    *
@@ -3524,13 +3524,13 @@ var modifiers = {
      */
     gpuAcceleration: true,
     /**
-     * @prop {string} [x='bottom']
+     * @prop {string} [x_val='bottom']
      * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
      * Change this if your popper should grow in a direction different from `bottom`
      */
-    x: 'bottom',
+    x_val: 'bottom',
     /**
-     * @prop {string} [x='left']
+     * @prop {string} [x_val='left']
      * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
      * Change this if your popper should grow in a direction different from `right`
      */

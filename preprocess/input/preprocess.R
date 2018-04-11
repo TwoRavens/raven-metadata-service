@@ -286,7 +286,7 @@ typeGuess <- function(data) {
         return(result)
     }
 
-    # Nature() takes a column of data x, and a boolean c that is true if x is continuous, and a vector nat that is the values of nature and returns a guess at the nature field
+    # Nature() takes a column of data x_val, and a boolean c that is true if x_val is continuous, and a vector nat that is the values of nature and returns a guess at the nature field
     Nature <- function(x, c, nat) {
         if(c) { # interval is continuous
             if(all(x >=0 & x <=1)) {
@@ -302,7 +302,7 @@ typeGuess <- function(data) {
         }
     }
 
-    # Time() takes a column of data x and returns "yes" or "no" for whether x is some unit of time
+    # Time() takes a column of data x_val and returns "yes" or "no" for whether x_val is some unit of time
     Time <- function(x){
         # eventually, this should test the variable against known time formats
         return("no")
