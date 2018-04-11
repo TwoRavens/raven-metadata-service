@@ -120,6 +120,11 @@ class PreprocessJob(TimeStampedModel):
         return od
 
 
+    def get_download_preprocess_url(self):
+        """Get the download url"""
+        reverse('api_get_latest_metadata',
+                kwargs=dict(preprocess_id=self.id))
+
     def get_metadata_as_json(self):
         """For display, return preprocess file as string if it exists"""
         success, info = self.get_metadata(as_string=True)
@@ -250,6 +255,11 @@ class MetadataUpdate(TimeStampedModel):
                                on_delete=models.SET_NULL)
 
     note = models.TextField(blank=True)
+
+    #def get_download_preprocess_url(self):
+    #    """Get the download url"""
+    #    reverse('api_get_latest_metadata',
+    #            kwargs=dict(preprocess_id=self.id))
 
 
     def __str__(self):

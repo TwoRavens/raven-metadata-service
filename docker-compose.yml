@@ -5,9 +5,9 @@ services:
   redis:
     image: redis:4.0
     hostname: redis
-    command: redis-server /usr/local/etc/redis.conf
+    #command: redis-server /usr/local/etc/redis.conf
     volumes:
-      - 'redis:/data'
+      - ':/ravens_volume'
     ports:
       - '6379:6379'
 
@@ -19,9 +19,9 @@ services:
     hostname: web
     command: ./run_web.sh
     volumes:
-      - .:/app  # mount current directory inside container
+      - .:/ravens_volume  # mount current directory inside container
     ports:
-      - "8000:8000"
+      - "8080:8080"
     # set up links so that web knows about db, rabbit and redis
     links:
       - celery_queue
@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-web
-    command: cd preprocess_web/code && celery -A ravens_metadata worker -l info
+    command: celery -A ravens_metadata worker -l info
     volumes:
       - .:/ravens_volume
     links:

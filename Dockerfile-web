@@ -45,11 +45,13 @@ VOLUME /ravens_volume
 
 # -------------------------------------
 # Expose port for web communication
-# - web: 8000
+# - web: 8080
 # -------------------------------------
-EXPOSE 8000
+EXPOSE 8080
 
 ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
+
+WORKDIR /var/webapps/raven-metadata-service/preprocess_web/code
 
 # -------------------------------------
 # Run preprocess against the entry point input param
@@ -57,9 +59,8 @@ ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
 #ENTRYPOINT ["/usr/bin/preprocess_file.sh"]
 
 CMD echo 'Starting preprocess web server.' && \
-    cd preprocess_web/code && \
     fab init_db && \
-    python manage.py runserver 0.0.0.0:8000
+    python manage.py runserver 0.0.0.0:8080
 
 #RUN cd preprocess  && \
 #    python preprocess.py
