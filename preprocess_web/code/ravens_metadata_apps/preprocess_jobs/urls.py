@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 
 from ravens_metadata_apps.preprocess_jobs import views
 
@@ -63,7 +63,7 @@ urlpatterns = (
          name='api_download'),
     # job to download preprocess version
     #
-    path(r'api/metadata_download/<int:preprocess_id>/version/(?P<version>[0-9]+\.?[0-9]*)',
+    re_path(r'api/metadata_download/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
          views.api_download_version,
          name='api_download_version'),
     # job to get detail
