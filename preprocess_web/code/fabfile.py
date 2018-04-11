@@ -18,12 +18,15 @@ import re
 FAB_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(FAB_BASE_DIR)
 
-if FAB_BASE_DIR == '/var/webapps/raven-metadata-service':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE',
-                          'ravens_metadata.settings.local_settings')
-else:
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE',
-                          'ravens_metadata.settings.local_settings')
+KEY_DJANGO_SETTINGS_MODULE = 'DJANGO_SETTINGS_MODULE'
+
+if not KEY_DJANGO_SETTINGS_MODULE in os.environ:
+    if FAB_BASE_DIR == '/var/webapps/raven-metadata-service':
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                              'ravens_metadata.settings.local_settings')
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                              'ravens_metadata.settings.local_settings')
 
 try:
     django.setup()
@@ -103,6 +106,7 @@ def run_shell():
 def run_web():
     """Start web server"""
     init_db()
+    print('init db complete; start web server')
     run_webserver_cmd = ('python manage.py runserver 8080')
 
     print('run web server: %s' % run_webserver_cmd)

@@ -122,6 +122,11 @@ class PreprocessJob(TimeStampedModel):
         """Always 1"""
         return "1.0"
 
+    def get_download_preprocess_url(self):
+        """Get the download url"""
+        reverse('api_get_latest_metadata',
+                kwargs=dict(preprocess_id=self.id))
+
     def get_metadata_as_json(self):
         """For display, return preprocess file as string if it exists"""
         success, info = self.get_metadata(as_string=True)
@@ -263,6 +268,7 @@ class MetadataUpdate(TimeStampedModel):
 
     note = models.TextField(blank=True)
 
+<<<<<<< HEAD
     def get_version_string(self):
         """Return the version in string format"""
         # print("string version_number", str(self.version_number))
@@ -273,6 +279,13 @@ class MetadataUpdate(TimeStampedModel):
     #     """Get the download url"""
     #     reverse('api_get_metadata_version',
     #             kwargs=dict(preprocess_id=self.id,version=self.version_number))
+=======
+    #def get_download_preprocess_url(self):
+    #    """Get the download url"""
+    #    reverse('api_get_latest_metadata',
+    #            kwargs=dict(preprocess_id=self.id))
+
+>>>>>>> master
 
     def __str__(self):
         """minimal, change to name"""

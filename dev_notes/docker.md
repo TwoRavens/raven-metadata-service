@@ -30,7 +30,10 @@ docker build -t preprocess_web -f Dockerfile-web .
 
 # run
 #
-docker run --rm -p 8000:8000 -v /ravens_volume:/ravens_volume --name pweb preprocess_web
+docker run --rm -p 8080:8080 -v /tmp:/tmp --env REDIS_HOST=docker.for.mac.localhost --env DJANGO_SETTINGS_MODULE=ravens_metadata.settings.docker_test_settings --name pweb preprocess_web
+
+#--net="host"
+
 
 # shell into running container
 #
