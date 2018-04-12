@@ -1,8 +1,9 @@
-import json
+"""Views for preprocess jobs"""
+import json, collections
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
-
+from decimal import Decimal
 from django.http import \
     (JsonResponse, HttpResponse,
      Http404, HttpResponseRedirect,
@@ -12,8 +13,7 @@ from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
 
-from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
-from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
@@ -28,6 +28,7 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_success,
      get_baseurl_from_request)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
+from np_json_encoder import NumpyJSONEncoder
 
 # Create your views here.
 def test_view(request):
@@ -36,9 +37,146 @@ def test_view(request):
     return HttpResponse('hello')
 
 def view_homepage(request):
+    """landing page"""
     return render(request,
                   'preprocess/homepage.html',
-                  {'context' : 'context'})
+                  {'context' : ""})
+
+
+def view_job_list(request):
+    """Display a list of all jobs"""
+    jobs = PreprocessJob.objects.all().order_by('-created')
+
+    return render(request,
+                  'preprocess/list.html',
+                  {'jobs': jobs})
+
+
+def api_download_version(request, preprocess_id, version):
+    """Download preprocess info by version"""
+
+    if version:
+        # use this param for the query
+        version_decimal = Decimal(str(version))
+    else:
+        # Default to version 1.0
+        version_decimal = Decimal('1.0')
+
+    # Return the latest version of the preprocess metadata
+    #
+    success, metadata_obj_or_err = JobUtil.get_version_metadata_object(\
+                                    preprocess_id, version_decimal)
+    if not success:
+        return JsonResponse(get_json_error(metadata_obj_or_err))
+
+    fname = get_preprocess_filename(preprocess_id,
+                                    metadata_obj_or_err.get_version_string())
+
+    response = HttpResponse(content_type='json')
+    response['Content-Disposition'] = 'attachment; filename=%s' % fname
+
+    metadata_found, metadata_or_err = metadata_obj_or_err.get_metadata()
+    if not metadata_found:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    json.dump(metadata_or_err,
+              fp=response,
+              indent=4,
+              cls=NumpyJSONEncoder)
+    return response
+
+
+
+
+def api_download_latest_metadata(request, preprocess_id):
+    """Return the metadata JSON as an attachment"""
+
+    success, metadata_or_err = JobUtil.get_latest_metadata(preprocess_id)
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    # Prepare the response
+    #
+    response = HttpResponse(content_type='json')
+
+    # (no check against int b/c retrieval already worked)
+    fname = get_preprocess_filename(preprocess_id)
+
+    response['Content-Disposition'] = 'attachment; filename=%s' % fname
+
+    json.dump(metadata_or_err,
+              fp=response,
+              indent=4,
+              cls=NumpyJSONEncoder)
+
+    return response
+
+
+def api_get_metadata_version(request, preprocess_id, version):
+    """ get the versions and detail of the preprocess job"""
+    #version = kwargs.get('version')
+    #preprocess_id= kwargs.get('preprocess_id')
+
+    version_decimal = Decimal(str(version))
+    """Return the latest version of the preprocess metadata"""
+    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version_decimal)
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+
+    data = metadata_or_err.get_metadata()
+    user_msg = dict(success = "True",
+                    data = data)
+
+
+    return JsonResponse(user_msg)
+
+
+def api_detail(request,preprocess_id):
+    """ get all the versions and detail of the preprocess job"""
+    print("job_id", preprocess_id)
+    """Return the latest version of the preprocess metadata"""
+
+    success, metadata_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
+
+    print("metadata file :",str(metadata_or_err))
+
+    if not success:
+        return JsonResponse(get_json_error(metadata_or_err))
+
+    try:
+        orig_preprocess_job = PreprocessJob.objects.get(pk=preprocess_id)
+    except PreprocessJob.DoesNotExist:
+        raise Http404('job_id not found: %s' % preprocess_id)
+
+    if isinstance(metadata_or_err, collections.Iterable):
+
+        for obj in metadata_or_err:
+            job_name = {'name': str(obj.orig_metadata)}
+
+        return render(request,
+                      'preprocess/preprocess-job-detail.html',
+                      {'iterable':True,
+                          'jobs': metadata_or_err,
+                       'name': job_name,
+                       'orig_preprocess_job' : orig_preprocess_job,
+                       'preprocess_id': preprocess_id})
+    else:
+        return render(request,
+                      'preprocess/preprocess-job-detail.html',
+                      {'iterable':False,
+                          'jobs': metadata_or_err,
+                       'preprocess_id': preprocess_id})
+
+
+        # return JsonResponse(\
+    #            get_json_success('Success',
+    #                             data=metadata_or_err))
+
+    # def api_get_metadata_version(request, job_id, update_id):
+    #    """Re
+
+
 
 def view_basic_upload_form(request):
     """Basic test form"""
@@ -191,7 +329,15 @@ def api_get_latest_metadata(request, preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    return JsonResponse(metadata_or_err, safe=False)
+
+    user_msg = get_json_success(user_msg="Metadata retrieved",
+                                data=metadata_or_err)
+
+    if 'pretty' in request.GET:
+        jstring = json.dumps(user_msg, indent=4, cls=NumpyJSONEncoder)
+        return HttpResponse('<pre>%s</pre>' % jstring)
+
+    return JsonResponse(user_msg)
 
 
 
@@ -318,7 +464,7 @@ def show_job_info(request, job_id):
     JobUtil.check_status(job)
 
     if 'pretty' in request.GET:
-        jstring = json.dumps(job.as_dict(), indent=4)
+        jstring = json.dumps(job.as_dict(), indent=4, cls=NumpyJSONEncoder)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
     user_msg = dict(success=True,
