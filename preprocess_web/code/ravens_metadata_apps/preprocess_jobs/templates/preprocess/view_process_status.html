@@ -8,20 +8,20 @@
 {%  endblock %}
 
 {% block main_content %}
-
-    {{ job.id }}<br />
-    {{ job.state }}<br />
-    {{ job.user_message }}<br />
-    {{ job.preprocess_file }}<br />
-    {#{ job.as_dict }#}
-    {% if not preprocess_string_err %}
+  {% comment %}
+      {{ job.id }}<br />
+      {{ job.state }}<br />
+      {{ job.user_message }}<br />
+      {{ job.preprocess_file }}<br />
+      {#{ job.as_dict }#}
+      {% if not preprocess_string_err %}
+        <hr />
+        <pre>{{ preprocess_string|slice:":300" }}<pre>
+      {% else %}
       <hr />
-      <pre>{{ preprocess_string|slice:":300" }}<pre>
-    {% else %}
-    <hr />
-      {{ preprocess_string_err }}
-    {% endif %}
-    {% comment %}{% endcomment %}
+        {{ preprocess_string_err }}
+      {% endif %}
+    {% endcomment %}
     {% if job.state == "PREPROCESS_STARTED" %}
         <div class="container" style="margin:8%; background-color:#f0f8ff; border: thin">
 
