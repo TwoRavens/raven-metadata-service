@@ -28,13 +28,13 @@
       {#<td>{{r.state }}</td>#}
       <td>{{r.created }}</td>
       {% if r.preprocess_file %}
-      <td class="text-right">{{ r.preprocess_file.size|filesizeformat }}</td>
+      <td>{{ r.preprocess_file.size|filesizeformat }}</td>
       <td class="text-center"><a href="{% url 'api_get_latest_metadata' r.id %}" class="btn btn-info btn-sm">View</a>
           <a href="{% url 'api_download_latest_metadata' r.id %}" class="btn btn-info btn-sm">Download</a>
           <a href="{% url 'api_detail' r.id %}" class="btn btn-info btn-sm">Detail</a>
       </td>
       {% else %}
-      <td class="text-right">&#150; &#150;</td>
+      <td>&#150; &#150;</td>
       <td class="text-center">
           {% if r.is_finished %}
             <span class="badge badge-danger">{{ r.state }}</span>

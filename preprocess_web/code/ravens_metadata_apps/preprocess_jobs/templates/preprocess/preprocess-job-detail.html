@@ -21,10 +21,14 @@
          <td scope="row">{{obj.name}}</td>
          <td>{{obj.get_version_string}}</td>
          <td>{{obj.created }}</td>
-         <td>{{ obj.metadata_file.size }}</td>
+         {% if obj.get_preprocess_filesize %}
+         <td>{{ obj.get_preprocess_filesize|filesizeformat }}</td>
          <td><a href="{% url 'api_get_metadata_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">View</a>
             <a href="{% url 'api_download_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">Download</a>
          </td>
+         {% else %}
+         <td>--</td>
+         {% endif %}
       </tr>
       {% endfor %}
       {% if orig_preprocess_job %}

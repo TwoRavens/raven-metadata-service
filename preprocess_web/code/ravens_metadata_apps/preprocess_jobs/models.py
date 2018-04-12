@@ -133,6 +133,13 @@ class PreprocessJob(TimeStampedModel):
 
         return info
 
+    def get_preprocess_filesize(self):
+        """Return the size of the file"""
+        if self.preprocess_file:
+            return self.preprocess_file.size
+
+        return None
+
     def is_original_metadata(self):
         """This is the original, there is no previous metadata"""
         return True
@@ -312,6 +319,12 @@ class MetadataUpdate(TimeStampedModel):
 
         return None
 
+    def get_preprocess_filesize(self):
+        """Return the size of the file"""
+        if self.metadata_file:
+            return self.metadata_file.size
+
+        return None
 
     def save(self, *args, **kwargs):
         """update name..."""
