@@ -34,7 +34,7 @@
          <td>{{orig_preprocess_job.created }}</td>
          <td>{{ orig_preprocess_job.preprocess_file.size }}</td>
          <td><a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View</a>
-            <a href="{% url 'api_download' preprocess_id %}{{ orig_preprocess_job.get_version_string }}" class="btn btn-info">Download</a>
+            <a href="{% url 'api_download_latest_metadata' preprocess_id %}{{ orig_preprocess_job.get_version_string }}" class="btn btn-info">Download</a>
 
 
          </td>
@@ -55,7 +55,7 @@
       </div>
       <div id="one" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="height: 100%">
          <div class="card-body" style="text-align: left">
-            <a href="{% url 'api_download' preprocess_id %}" class="btn btn-info">Download</a>
+            <a href="{% url 'api_download_latest_metadata' preprocess_id %}" class="btn btn-info">Download</a>
             <hr>
             <h6 class="border-bottom border-gray pb-2 mb-0"> Data</h6>
             {{ jobs.get_metadata_as_json }}

@@ -1,3 +1,4 @@
+"""Views for preprocess jobs"""
 import json, collections
 from django.shortcuts import render
 from django.urls import reverse
@@ -13,6 +14,7 @@ from django.core.files.base import ContentFile
 from django.utils.decorators import method_decorator
 
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
+from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
@@ -41,14 +43,10 @@ def view_homepage(request):
                   'preprocess/homepage.html',
                   {'context' : ""})
 
+
 def view_job_list(request):
-    """ get list of all jobs"""
-    try:
-        jobs = PreprocessJob.objects.all()
-
-
-    except PreprocessJob.DoesNotExist:
-        raise Http404('could not find jobs')
+    """Display a list of all jobs"""
+    jobs = PreprocessJob.objects.all().order_by('-created')
 
     return render(request,
                   'preprocess/list.html',
@@ -85,21 +83,28 @@ def api_download_version(request,**kwargs):
 
 
 
-def api_download(request,preprocess_id ):
-    """ download file"""
-    print("job_id", preprocess_id)
-    output = JobUtil.get_latest_metadata(preprocess_id)
-    if output:
-        response = HttpResponse(content_type='json')
-        response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.json'
+def api_download_latest_metadata(request, preprocess_id):
+    """Return the metadata JSON as an attachment"""
 
-        json.dump(output, fp=response, indent=4)
-        return response
-    else:
-        usermsg = dict(success = "False",
-                       message = "failed to get the JSON")
+    success, metadata_or_err = JobUtil.get_latest_metadata(preprocess_id)
+    if not success:
+        return JsonResponse(get_json_error(user_msg=metadata_or_err))
 
-        return JsonResponse(usermsg)
+    # Prepare the response
+    #
+    response = HttpResponse(content_type='json')
+
+    # (no check against int b/c retrieval already worked)
+    fname = get_preprocess_filename(preprocess_id)
+
+    response['Content-Disposition'] = 'attachment; filename=%s' % fname
+
+    json.dump(metadata_or_err,
+              fp=response,
+              indent=4)
+
+    return response
+
 
 def api_get_metadata_version(request, preprocess_id, version):
     """ get the versions and detail of the preprocess job"""
@@ -318,9 +323,13 @@ def api_get_latest_metadata(request, preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    data = json.dumps(metadata_or_err)
-    user_msg = dict( success=True,
-                     data = data)
+
+    user_msg = get_json_success(user_msg="Metadata retrieved",
+                                data=metadata_or_err)
+
+    if 'pretty' in request.GET:
+        jstring = json.dumps(user_msg, indent=4)
+        return HttpResponse('<pre>%s</pre>' % jstring)
 
     return JsonResponse(user_msg)
 

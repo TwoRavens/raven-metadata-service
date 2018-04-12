@@ -24,7 +24,7 @@
       <td>{{r.created }}</td>
       <td>{{ r.preprocess_file.size }}</td>
       <td><a href="{% url 'api_get_latest_metadata' r.id %}" class="btn btn-info">View</a>
-          <a href="{% url 'api_download' r.id %}" class="btn btn-info">Download</a>
+          <a href="{% url 'api_download_latest_metadata' r.id %}" class="btn btn-info">Download</a>
           <a href="{% url 'api_detail' r.id %}" class="btn btn-info">Detail</a>
 
       </td>
