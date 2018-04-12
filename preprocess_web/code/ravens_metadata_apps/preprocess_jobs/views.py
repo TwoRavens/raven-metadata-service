@@ -137,44 +137,20 @@ def api_detail(request,preprocess_id):
     print("job_id", preprocess_id)
     """Return the latest version of the preprocess metadata"""
 
-    success, metadata_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
-
-    print("metadata file :",str(metadata_or_err))
+    success, preprocess_list_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 
     if not success:
-        return JsonResponse(get_json_error(metadata_or_err))
+        return JsonResponse(get_json_error(preprocess_list_or_err))
 
-    try:
-        orig_preprocess_job = PreprocessJob.objects.get(pk=preprocess_id)
-    except PreprocessJob.DoesNotExist:
-        raise Http404('job_id not found: %s' % preprocess_id)
+    for obj in preprocess_list_or_err:
+        job_name = {'name': str(obj)}
 
-    if isinstance(metadata_or_err, collections.Iterable):
-
-        for obj in metadata_or_err:
-            job_name = {'name': str(obj.orig_metadata)}
-
-        return render(request,
-                      'preprocess/preprocess-job-detail.html',
-                      {'iterable':True,
-                          'jobs': metadata_or_err,
-                       'name': job_name,
-                       'orig_preprocess_job' : orig_preprocess_job,
-                       'preprocess_id': preprocess_id})
-    else:
-        return render(request,
-                      'preprocess/preprocess-job-detail.html',
-                      {'iterable':False,
-                          'jobs': metadata_or_err,
-                       'preprocess_id': preprocess_id})
-
-
-        # return JsonResponse(\
-    #            get_json_success('Success',
-    #                             data=metadata_or_err))
-
-    # def api_get_metadata_version(request, job_id, update_id):
-    #    """Re
+    return render(request,
+                  'preprocess/preprocess-job-detail.html',
+                  {'iterable':True,
+                   'jobs': preprocess_list_or_err,
+                   'name': job_name,
+                   'preprocess_id': preprocess_id})
 
 
 

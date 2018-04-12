@@ -8,6 +8,8 @@ import socket
 
 from .local_settings import *
 
+DEBUG = True
+
 ALLOW_FAB_DELETE = False
 
 MEDIA_ROOT = '/tmp'

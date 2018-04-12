@@ -10,7 +10,7 @@ from .forms import FORMAT_JSON, FORMAT_CSV
 from celery.result import AsyncResult
 from preprocess_runner import PreprocessRunner
 #from basic_preprocess import preprocess_csv_file
-from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file,get_variable_display
+from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 #from variable_display_util import VariableDisplayUtil
@@ -69,14 +69,17 @@ class JobUtil(object):
 
     @staticmethod
     def get_versions_metadata_objects(job_id):
-        """ Retrun the versions and detail of job"""
+        """ Return the versions and detail of job"""
         if not job_id:
-            return False,'job_id cannot be None'
+            return False, 'job_id cannot be None'
 
         update_objects = MetadataUpdate.objects.filter(orig_metadata=job_id)
-        print("versions ",update_objects)
+
         if update_objects:
-            return True, update_objects
+            #return True, update_objects
+            update_objects = list(update_objects)
+        else:
+            update_objects = []
 
         # Look for the original preprocess metadata
         #
@@ -85,7 +88,9 @@ class JobUtil(object):
         except PreprocessJob.DoesNotExist:
             return False, 'PreprocessJob not found: %s' % job_id
 
-        return True, orig_metadata
+        update_objects.append(orig_metadata)
+
+        return True, update_objects
 
 
     @staticmethod
@@ -150,16 +155,26 @@ class JobUtil(object):
 
         if ye_task.state == 'SUCCESS':
 
-            preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
+            if ye_task.result['success']:
 
-            new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
-            job.preprocess_file.save(new_name,
-                                     preprocess_data)
-            job.set_state_success()
+                preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
 
-            job.user_message = 'Task completed!  Preprocess is available'
-            job.end_time = timezone.now()
-            job.save()
+                new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+                job.preprocess_file.save(new_name,
+                                         preprocess_data)
+                job.set_state_success()
+
+                job.user_message = 'Task completed!  Preprocess is available'
+                job.end_time = timezone.now()
+                job.save()
+
+            else:
+                # Didn't work so well
+                job.set_state_failure()
+                job.user_message = ye_task.result['message']
+                #job.preprocess_file.delete()
+                job.save()
+
             ye_task.forget()
 
         elif ye_task.state == 'STATE_FAILURE':
@@ -300,7 +315,6 @@ class JobUtil(object):
     @staticmethod
     def update_preprocess_metadata(preprocess_json, update_json,**kwargs):
         """To get the updated preprocess file from VariableDisplayUtil """
-        # result = get_variable_display(preprocess_json,update_json, preprocess_id=preprocess_id)
         var_util = VariableDisplayUtil(preprocess_json, update_json)
         if var_util.has_error:
             return False, var_util.get_error_messages()

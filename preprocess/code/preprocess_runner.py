@@ -16,6 +16,17 @@ from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 from variable_display_util import VariableDisplayUtil
 
+
+# Move these elsewhere as things progress ....
+# ---------------------------------------------
+CSV_FILE_EXT = '.csv'
+TAB_FILE_EXT = '.tab'
+ACCEPTABLE_FILE_TYPE_EXTS = \
+                    (CSV_FILE_EXT,
+                     TAB_FILE_EXT)
+ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])                     
+# ---------------------------------------------
+
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
 
@@ -180,12 +191,12 @@ class PreprocessRunner(object):
 
 
 
-        update_variable = VariableDisplayUtil(preprocess_input_dict, update_input_dict)
+        display_util = VariableDisplayUtil(preprocess_input_dict, update_input_dict)
 
-        if update_variable.has_error:
-            return None, update_variable.error_message
+        if display_util.has_error:
+            return None, display_util.get_error_messages()
 
-        return update_variable, None
+        return display_util, None
 
 
 

@@ -13,7 +13,7 @@ services:
     image: redis:4.0
     hostname: redis
     volumes:
-      - /tmp:/tmp
+      - app-volume:/tmp
     ports:
       - '6379:6379'
   # -------------------------------
@@ -29,7 +29,7 @@ services:
       - REDIS_HOST=redis
     #command: python manage.py runserver 8080
     volumes:
-      - /tmp:/tmp
+      - app-volume:/tmp
     ports:
       - "8080:8080"
     # set up links so that web knows about db, rabbit and redis
@@ -50,8 +50,11 @@ services:
       - DJANGO_SETTINGS_MODULE=ravens_metadata.settings.docker_test_settings
       - REDIS_HOST=redis
     volumes:
-      - /tmp:/tmp
+      - app-volume:/tmp
     links:
       - redis
     depends_on:
       - redis
+
+volumes:
+  app-volume:
