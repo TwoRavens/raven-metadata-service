@@ -53,19 +53,19 @@ urlpatterns = (
     # job to retrieve preprocess data
     #
     re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})',
-         views.api_get_latest_metadata,
-         name='api_get_latest_metadata'),
+            views.api_get_latest_metadata,
+            name='api_get_latest_metadata'),
 
     # job to download preprocess
     #
-    re_path(r'api/download_preprocess/(?P<preprocess_id>[0-9]{1,10})',
-         views.api_download,
-         name='api_download'),
+    re_path(r'api/metadata/download/(?P<preprocess_id>[0-9]{1,10})',
+            views.api_download_latest_metadata,
+            name='api_download_latest_metadata'),
     # job to download preprocess version
     #
     re_path(r'api/metadata_download/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
-         views.api_download_version,
-         name='api_download_version'),
+            views.api_download_version,
+            name='api_download_version'),
 
      # job to get detail
     #
@@ -81,7 +81,7 @@ urlpatterns = (
 
     # job to retrieve preprocess data version
     #
-    
+
     #job to get all the preprocessed jobs
     #
     path(r'list',
