@@ -34,7 +34,7 @@
          <td>{{orig_preprocess_job.created }}</td>
          <td>{{ orig_preprocess_job.preprocess_file.size }}</td>
          <td><a href="{% url 'show_job_info' preprocess_id%}" class="btn btn-info">View</a>
-            <a href="{% url 'api_download_latest_metadata' preprocess_id %}{{ orig_preprocess_job.get_version_string }}" class="btn btn-info">Download</a>
+            <a href="{% url 'api_download_version' preprocess_id '1' %}" class="btn btn-info">Download</a>
 
 
          </td>

@@ -13,9 +13,7 @@ from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
 
-from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
-from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
@@ -30,6 +28,7 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_success,
      get_baseurl_from_request)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
+from np_json_encoder import NumpyJSONEncoder
 
 # Create your views here.
 def test_view(request):
@@ -53,33 +52,39 @@ def view_job_list(request):
                   {'jobs': jobs})
 
 
-def api_download_version(request,**kwargs):
-    """ download version file"""
-    version = kwargs.get('version')
-    preprocess_id = kwargs.get('preprocess_id')
-    global version_decimal
-    print("job_id", preprocess_id)
-    print("version", version)
+def api_download_version(request, preprocess_id, version):
+    """Download preprocess info by version"""
+
     if version:
-        print("view version ", version)
         # use this param for the query
         version_decimal = Decimal(str(version))
-    """Return the latest version of the preprocess metadata"""
-    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id, version_decimal)
+    else:
+        # Default to version 1.0
+        version_decimal = Decimal('1.0')
+
+    # Return the latest version of the preprocess metadata
+    #
+    success, metadata_obj_or_err = JobUtil.get_version_metadata_object(\
+                                    preprocess_id, version_decimal)
     if not success:
+        return JsonResponse(get_json_error(metadata_obj_or_err))
+
+    fname = get_preprocess_filename(preprocess_id,
+                                    metadata_obj_or_err.get_version_string())
+
+    response = HttpResponse(content_type='json')
+    response['Content-Disposition'] = 'attachment; filename=%s' % fname
+
+    metadata_found, metadata_or_err = metadata_obj_or_err.get_metadata()
+    if not metadata_found:
         return JsonResponse(get_json_error(metadata_or_err))
 
-    if success:
-        response = HttpResponse(content_type='json')
-        response['Content-Disposition'] = 'attachment; filename=TwoRavensResponse.json'
+    json.dump(metadata_or_err,
+              fp=response,
+              indent=4,
+              cls=NumpyJSONEncoder)
+    return response
 
-        json.dump(metadata_or_err.get_metadata(), fp=response, indent=4)
-        return response
-    else:
-        usermsg = dict(success = "False",
-                       message = "failed to get the JSON")
-
-        return JsonResponse(usermsg)
 
 
 
@@ -88,7 +93,7 @@ def api_download_latest_metadata(request, preprocess_id):
 
     success, metadata_or_err = JobUtil.get_latest_metadata(preprocess_id)
     if not success:
-        return JsonResponse(get_json_error(user_msg=metadata_or_err))
+        return JsonResponse(get_json_error(metadata_or_err))
 
     # Prepare the response
     #
@@ -101,7 +106,8 @@ def api_download_latest_metadata(request, preprocess_id):
 
     json.dump(metadata_or_err,
               fp=response,
-              indent=4)
+              indent=4,
+              cls=NumpyJSONEncoder)
 
     return response
 
@@ -328,7 +334,7 @@ def api_get_latest_metadata(request, preprocess_id):
                                 data=metadata_or_err)
 
     if 'pretty' in request.GET:
-        jstring = json.dumps(user_msg, indent=4)
+        jstring = json.dumps(user_msg, indent=4, cls=NumpyJSONEncoder)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
     return JsonResponse(user_msg)
@@ -458,7 +464,7 @@ def show_job_info(request, job_id):
     JobUtil.check_status(job)
 
     if 'pretty' in request.GET:
-        jstring = json.dumps(job.as_dict(), indent=4)
+        jstring = json.dumps(job.as_dict(), indent=4, cls=NumpyJSONEncoder)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
     user_msg = dict(success=True,
