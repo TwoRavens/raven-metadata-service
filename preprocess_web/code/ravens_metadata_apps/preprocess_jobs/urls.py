@@ -52,7 +52,7 @@ urlpatterns = (
 
     # job to retrieve preprocess data
     #
-    re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})',
+    re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})$',
             views.api_get_latest_metadata,
             name='api_get_latest_metadata'),
 

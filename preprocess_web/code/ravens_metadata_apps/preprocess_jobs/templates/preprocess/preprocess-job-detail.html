@@ -23,7 +23,7 @@
          <td>{{obj.created }}</td>
          {% if obj.get_preprocess_filesize %}
          <td>{{ obj.get_preprocess_filesize|filesizeformat }}</td>
-         <td><a href="{% url 'api_get_metadata_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">View</a>
+         <td><a href="{% url 'api_get_metadata_version' preprocess_id=preprocess_id  version=obj.get_version_string %}?pretty" class="btn btn-info">View</a>
             <a href="{% url 'api_download_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">Download</a>
          </td>
          {% else %}

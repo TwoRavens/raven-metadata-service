@@ -113,23 +113,25 @@ def api_download_latest_metadata(request, preprocess_id):
 
 
 def api_get_metadata_version(request, preprocess_id, version):
-    """ get the versions and detail of the preprocess job"""
-    #version = kwargs.get('version')
-    #preprocess_id= kwargs.get('preprocess_id')
-
+    """Return a specific version of the preprocess metadata"""
     version_decimal = Decimal(str(version))
-    """Return the latest version of the preprocess metadata"""
-    success, metadata_or_err = JobUtil.get_version_metadata_object(preprocess_id,version_decimal)
+    success, metadata_or_err = JobUtil.get_version_metadata_object(\
+                        preprocess_id, version_decimal)
+
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
 
-    data = metadata_or_err.get_metadata()
-    user_msg = dict(success = "True",
-                    data = data)
+    success, data_or_err = metadata_or_err.get_metadata()
+    if not success:
+        return JsonResponse(get_json_error(data_or_err))
+
+    if 'pretty' in request.GET:
+        jstring = json.dumps(data_or_err, indent=4, cls=NumpyJSONEncoder)
+        return HttpResponse('<pre>%s</pre>' % jstring)
 
 
-    return JsonResponse(user_msg)
+    return JsonResponse(get_json_success('Success', data=data_or_err))
 
 
 def api_detail(request,preprocess_id):
