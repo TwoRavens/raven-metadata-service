@@ -69,14 +69,17 @@ class JobUtil(object):
 
     @staticmethod
     def get_versions_metadata_objects(job_id):
-        """ Retrun the versions and detail of job"""
+        """ Return the versions and detail of job"""
         if not job_id:
-            return False,'job_id cannot be None'
+            return False, 'job_id cannot be None'
 
         update_objects = MetadataUpdate.objects.filter(orig_metadata=job_id)
-        print("versions ",update_objects)
+
         if update_objects:
-            return True, update_objects
+            #return True, update_objects
+            update_objects = list(update_objects)
+        else:
+            update_objects = []
 
         # Look for the original preprocess metadata
         #
@@ -85,7 +88,9 @@ class JobUtil(object):
         except PreprocessJob.DoesNotExist:
             return False, 'PreprocessJob not found: %s' % job_id
 
-        return True, orig_metadata
+        update_objects.append(orig_metadata)
+
+        return True, update_objects
 
 
     @staticmethod

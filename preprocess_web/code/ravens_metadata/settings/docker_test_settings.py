@@ -8,7 +8,7 @@ import socket
 
 from .local_settings import *
 
-DEBUG = False
+DEBUG = True
 
 ALLOW_FAB_DELETE = False
 

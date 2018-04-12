@@ -1,4 +1,5 @@
 {%  extends "base.html" %}
+{% load humanize %}
 {% block main_content %}
 
 <h4 class="border-bottom border-gray pb-2 mb-0" style="text-align: center"> Preprocess Jobs </h4>
@@ -6,28 +7,46 @@
 
     <div class="container">
     <table class="table table-hover">
-    <thead class="thead-dark">
+    <thead class="thead-dark text-center">
     <tr>
+      <th scope="col">#</th>
       <th scope="col">Name</th>
-      <th scope="col">Preprocess ID</th>
+      <th scope="col">Preprocess<br />ID</th>
+      {#<th scope="col">Status</th>#}
       <th scope="col">Created</th>
-      <th scope="col">Size</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Size<br />(bytes)</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
     <tbody>
 
   {% for r in jobs %}
     <tr>
+      <td scope="row">({{forloop.counter}})</td>
       <td scope="row">{{r.name}}</td>
-      <td>{{r.pk}}</td>
+      <td class="text-center">{{r.pk}}</td>
+      {#<td>{{r.state }}</td>#}
       <td>{{r.created }}</td>
-      <td>{{ r.preprocess_file.size }}</td>
-      <td><a href="{% url 'api_get_latest_metadata' r.id %}" class="btn btn-info">View</a>
-          <a href="{% url 'api_download_latest_metadata' r.id %}" class="btn btn-info">Download</a>
-          <a href="{% url 'api_detail' r.id %}" class="btn btn-info">Detail</a>
-
+      {% if r.preprocess_file %}
+      <td class="text-right">{{ r.preprocess_file.size|filesizeformat }}</td>
+      <td class="text-center"><a href="{% url 'api_get_latest_metadata' r.id %}" class="btn btn-info btn-sm">View</a>
+          <a href="{% url 'api_download_latest_metadata' r.id %}" class="btn btn-info btn-sm">Download</a>
+          <a href="{% url 'api_detail' r.id %}" class="btn btn-info btn-sm">Detail</a>
       </td>
+      {% else %}
+      <td class="text-right">&#150; &#150;</td>
+      <td class="text-center">
+          {% if r.is_finished %}
+            <span class="badge badge-danger">{{ r.state }}</span>
+          {% else %}
+            <span class="badge badge-info">{{ r.state }}</span>
+          {% endif %}
+      </td>
+      {% endif %}
+    </tr>
+  {% empty %}
+    <tr>
+      <td colspan="6">There are no preprocess jobs in the system.</td>
     </tr>
   {% endfor %}
     </tbody>

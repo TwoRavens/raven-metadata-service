@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     # track preprocess
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.preprocess_jobs',
