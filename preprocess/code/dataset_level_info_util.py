@@ -25,36 +25,32 @@ class DatasetLevelInfo(object):
        "variable_cnt": 25
             }
         """
-        if self.dataframe:
+        if self.dataframe is not None:
             self.rows_count = self.dataframe.shape[0]; # shape[0] gives the number of records/rows and is faster then count
             self.variables_count = len(self.dataframe.columns);
         else:
             self.has_error = True
             self.error_messages.append(" There is no data available to get dataset level info")
-
+            return
         if self.rows_count <1:
             self.has_error = True
             self.error_messages.append(" This is an empty dataframe with no record")
+            return
         if self.variables_count <1:
             self.has_error = True
             self.error_messages.append(" This is an empty dataframe with no variables")
+            return
 
-        if not self.has_error:
-            self.final_output =  {      "row_cnt": self.rows_count,
+
+        self.final_output =  {      "row_cnt": self.rows_count,
                              "variable_cnt": self.variables_count
                             }
 
 
-            return True,self.final_output
-
-        else:
-            """There is an error"""
-
-            self.final_output = self.error_messages
+        print("*** final output for dataset level info", self.final_output)
 
 
-            print("*** final output for dataset level info", self.final_output)
-            return False, self.final_output
+
 
 
 

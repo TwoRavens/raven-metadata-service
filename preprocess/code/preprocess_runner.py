@@ -274,17 +274,17 @@ class PreprocessRunner(object):
                 }
 
         """
-        print("data frame to pass ", self.df)
-        success, dataset_level_info = DatasetLevelInfo(self.df);
         dataset_level = OrderedDict()
-
-        if success:
-
-            dataset_level['dataset']= dataset_level_info
+        print("data frame to pass ", self.df)
+        dataset_level_info = DatasetLevelInfo(self.df);
+        if dataset_level_info.has_error:
+            dataset_level = {"error": dataset_level_info.error_messages}
             return dataset_level
-        else:
-            dataset_level['dataset'] = {"error" : dataset_level_info}
-            return dataset_level
+
+        dataset_level = dataset_level_info.final_output
+        return dataset_level
+
+
 
 
     def show_final_info(self):
