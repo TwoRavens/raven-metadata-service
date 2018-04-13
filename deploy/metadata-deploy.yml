@@ -70,6 +70,8 @@ spec:
             value: localhost
           - name: DJANGO_DEBUG
             value: "True"
+          - name: SWAGGER_HOST
+            value: "metadata.2ravens.org"
         volumeMounts:
           - name: "raven-metadata-volume"
             mountPath: "/raven_metadata"
