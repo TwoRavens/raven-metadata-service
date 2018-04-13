@@ -28,17 +28,6 @@ COPY ./requirements/ ./requirements
 RUN pip3 install --no-cache-dir -r requirements/30_preprocess_web.txt
 
 # -------------------------------------
-# Copy over the rest of the repository
-# -------------------------------------
-COPY . .
-
-# -------------------------------------
-# Copy preprocess script
-# -------------------------------------
-COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
-RUN chmod u+x /usr/bin/preprocess_file.sh
-
-# -------------------------------------
 # Create a volume for sharing between containers
 # -------------------------------------
 VOLUME /raven_metadata
@@ -49,7 +38,21 @@ VOLUME /raven_metadata
 # -------------------------------------
 EXPOSE 8080
 
+# -------------------------------------
+# Set env variable
+# -------------------------------------
 ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
+
+# -------------------------------------
+# Copy over the rest of the repository
+# -------------------------------------
+COPY . .
+
+# -------------------------------------
+# Copy preprocess script
+# -------------------------------------
+COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
+RUN chmod u+x /usr/bin/preprocess_file.sh
 
 # -------------------------------------
 # Update the working directory

@@ -46,7 +46,8 @@ spec:
             value: localhost
         volumeMounts:
           - name: "raven-metadata-volume"
-            mountPath: "/preprocess_data"
+            mountPath: "/raven_metadata"
+            readOnly: false
             #valueFrom:
             #  secretKeyRef:
             #    name: postgres-credentials
@@ -67,9 +68,12 @@ spec:
           - name: REDIS_HOST
             # Note this is within the same pod
             value: localhost
+          - name: DJANGO_DEBUG
+            value: "True"
         volumeMounts:
           - name: "raven-metadata-volume"
             mountPath: "/raven_metadata"
+            readOnly: false
         # liveness is for restart
         livenessProbe:
           httpGet:
@@ -84,5 +88,5 @@ spec:
           httpGet:
             path: /monitoring/alive
             port: 8080
-          initialDelaySeconds: 10
+          initialDelaySeconds: 30
           periodSeconds: 10

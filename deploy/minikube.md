@@ -1,6 +1,7 @@
 # Minikube
 
-Build local docker images and run on minikube
+Build local docker images and run on minikube.  
+Commands may be run from the top of the directory, e.g. right under `raven-metadata-service`
 
 
 ### Startup
@@ -22,7 +23,7 @@ docker build -t tworavens/raven-metadata-service:latest -f Dockerfile-web .
 ```
 # get the pod running
 #
-kubectl apply -f metadata-deploy.yml --validate=false
+kubectl apply -f deploy/metadata-deploy.yml --validate=false
 
 # forward to local ports
 #
@@ -37,8 +38,10 @@ kubectl port-forward [pod name] 8080:8080
 # show pods
 kubectl get pods
 
-# Log into running pod
-kubectl exec -it [pod name] -- /bin/bash
+# Log into running container
+# xkubectl exec -it [pod name] -- /bin/bash
+kubectl exec -it  [pod name] -c preprocess-web /bin/bash
+
 
 # describe containers in pod
 kubectl describe pod/[pod name]
