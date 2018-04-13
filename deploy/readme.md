@@ -16,15 +16,14 @@ These steps deploy the TwoRavens EventData application using Docker images from 
 cd two-metadata-service
 git pull
 
-# deployment
+# activate the deployment and service
+#
+kubectl apply -f deploy/metadata-deploy.yml  # start a new deployment
+kubectl apply -f deploy/metadata-service.yml  # expose the app to the web/external IP
+
+# delete the deployment and service (you can leave the service running)
 #
 kubectl delete -f deploy/metadata-deploy.yml  # stop the current deployment
-kubectl apply -f deploy/metadata-service.yml  # start a new deployment
-
-# create service, e.g. expose the deployment to the web
-# - usually already running
-#
-kubectl apply -f deploy/metadata-service.yml  # expose the app to the web/external IP
 kubectl delete -f deploy/metadata-service.yml # stop the service
 
 # ---------------
