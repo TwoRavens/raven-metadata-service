@@ -3,7 +3,7 @@ MAINTAINER TwoRavens http://2ra.vn/
 
 LABEL organization="Two Ravens" \
       2ra.vn.version="0.0.1-alpha" \
-      2ra.vn.release-date="2018-03-08" \
+      2ra.vn.release-date="2018-04-13" \
       description="Web service for preprocessing tabular data"
 
 # -------------------------------------
@@ -35,13 +35,13 @@ COPY . .
 # -------------------------------------
 # Copy preprocess script
 # -------------------------------------
-#COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
-#RUN chmod u+x /usr/bin/preprocess_file.sh
+COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
+RUN chmod u+x /usr/bin/preprocess_file.sh
 
 # -------------------------------------
 # Create a volume for sharing between containers
 # -------------------------------------
-VOLUME /ravens_volume
+VOLUME /raven_metadata
 
 # -------------------------------------
 # Expose port for web communication

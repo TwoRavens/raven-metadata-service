@@ -3,11 +3,6 @@ from django.urls import path, re_path
 from ravens_metadata_apps.preprocess_jobs import views
 
 urlpatterns = (
-    # homepage/ splash page
-    #
-    path(r'homepage',
-         views.view_homepage,
-         name='view_homepage'),
 
     # Show saved workspaces for the logged in user
     #

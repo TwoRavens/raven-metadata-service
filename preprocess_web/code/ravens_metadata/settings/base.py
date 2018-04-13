@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.preprocess_jobs',
     'ravens_metadata_apps.api_docs',
+    'ravens_metadata_apps.content_pages', # user model
 ]
 
 MIDDLEWARE = [

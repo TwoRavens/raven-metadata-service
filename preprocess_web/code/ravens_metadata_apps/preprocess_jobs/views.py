@@ -36,12 +36,6 @@ def test_view(request):
     debug_task.delay()
     return HttpResponse('hello')
 
-def view_homepage(request):
-    """landing page"""
-    return render(request,
-                  'preprocess/homepage.html',
-                  {'context' : ""})
-
 
 def view_job_list(request):
     """Display a list of all jobs"""

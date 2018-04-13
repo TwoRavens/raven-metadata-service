@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eventdataweb
+  labels:
+    app: eventdata
+spec:
+  selector:
+    app: eventdata
+    tier: web
+  ports:
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer
+  # eventdata.2ravens.org
+  loadBalancerIP: 35.188.4.189
+  #
+  # 2ravens.org
+  #loadBalancerIP: 104.197.235.238

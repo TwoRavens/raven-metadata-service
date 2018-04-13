@@ -12,4 +12,4 @@ DEBUG = True
 
 ALLOW_FAB_DELETE = False
 
-MEDIA_ROOT = '/tmp'
+MEDIA_ROOT = '/preprocess_data'

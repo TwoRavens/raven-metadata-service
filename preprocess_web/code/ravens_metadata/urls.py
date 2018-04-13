@@ -35,11 +35,8 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
 
-    # temp path until there's a home page
-    path(r'', RedirectView.as_view(\
-                pattern_name='view_homepage',
-                permanent=False)),
-                
+    path('', include('ravens_metadata_apps.content_pages.urls')),
+
 ] + static(settings.STATIC_URL,
            #document_root=settings.STATIC_ROOT)
            document_root=settings.TEST_DIRECT_STATIC)
