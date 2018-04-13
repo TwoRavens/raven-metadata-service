@@ -226,9 +226,11 @@ class PreprocessJob(TimeStampedModel):
         """set state to STATE_SUCCESS"""
         self.state = STATE_SUCCESS
 
-    def set_state_failure(self):
+    def set_state_failure(self, user_msg=None):
         """set state to STATE_FAILURE"""
         self.state = STATE_FAILURE
+        if user_msg:
+            self.user_message = user_msg
 
     def get_latest_preprocess_url(self):
         """Get the download url"""

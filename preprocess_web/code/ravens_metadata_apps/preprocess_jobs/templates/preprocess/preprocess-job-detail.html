@@ -27,7 +27,14 @@
             <a href="{% url 'api_download_version' preprocess_id=preprocess_id  version=obj.get_version_string %}" class="btn btn-info">Download</a>
          </td>
          {% else %}
-         <td>--</td>
+         <td>
+            {% if r.user_message %}
+              <p class="text-left">{{ r.user_message }}</p>
+            {% else %}
+              &#150; &#150
+            {% endif %}
+
+         </td>
          {% endif %}
       </tr>
       {% endfor %}

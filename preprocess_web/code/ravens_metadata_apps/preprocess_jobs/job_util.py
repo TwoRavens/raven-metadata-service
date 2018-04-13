@@ -127,7 +127,11 @@ class JobUtil(object):
         assert isinstance(job, PreprocessJob),\
                'job must be a PreprocessJob'
 
-        # job_id = uuid.UUID.time
+        if not job.source_file.name:
+            err_msg = ('The PreprocessJob source_file is not available')
+            job.set_state_failure(err_msg)
+            job.save()
+            return
 
         # send the file to the queue
         task = preprocess_csv_file.delay(job.source_file.path, job_id=job.id)
@@ -170,17 +174,15 @@ class JobUtil(object):
 
             else:
                 # Didn't work so well
-                job.set_state_failure()
-                job.user_message = ye_task.result['message']
-                #job.preprocess_file.delete()
+                job.set_state_failure(ye_task.result['message'])
                 job.save()
 
             ye_task.forget()
 
         elif ye_task.state == 'STATE_FAILURE':
-            job.set_state_failure()
-            job.user_message = 'ye_task failed....'
+            job.set_state_failure('ye_task failed....')
             job.save()
+            ye_task.forget()
             #get_ok_resp('looking good: %s' % (ye_task.result['input_file']),
             #            data=ye_task.result['data']))
 
