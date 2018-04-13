@@ -38,6 +38,10 @@
       <td class="text-center">
           {% if r.is_finished %}
             <span class="badge badge-danger">{{ r.state }}</span>
+            {% if r.user_message %}
+              <p class="text-left">{{ r.user_message }}</p>
+            {% endif %}
+
           {% else %}
             <span class="badge badge-info">{{ r.state }}</span>
           {% endif %}

@@ -45,6 +45,8 @@ class PreprocessJob(TimeStampedModel):
                              choices=PREPROCESS_CHOICES,
                              default=STATE_RECEIVED)
 
+    is_success = models.BooleanField(default=False)
+
     task_id = models.CharField('queue task id (e.g. celery id)',
                                max_length=255,
                                blank=True)
@@ -88,6 +90,11 @@ class PreprocessJob(TimeStampedModel):
             super(PreprocessJob, self).save(*args, **kwargs)
 
         self.name = basename(self.source_file.name)[:100]
+
+        if self.state == STATE_SUCCESS:
+            self.is_success = True
+        else:
+            self.is_success = False
 
         super(PreprocessJob, self).save(*args, **kwargs)
 
@@ -226,9 +233,11 @@ class PreprocessJob(TimeStampedModel):
         """set state to STATE_SUCCESS"""
         self.state = STATE_SUCCESS
 
-    def set_state_failure(self):
+    def set_state_failure(self, user_msg=None):
         """set state to STATE_FAILURE"""
         self.state = STATE_FAILURE
+        if user_msg:
+            self.user_message = user_msg
 
     def get_latest_preprocess_url(self):
         """Get the download url"""
