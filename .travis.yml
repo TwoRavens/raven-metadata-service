@@ -25,13 +25,9 @@ script:
 
 # Don't push the image but instead trigger a build on dockerhub
 after_script:
-  #
-  #curl -H "Content-Type: application/json"
-  #--data '{"docker_tag": "master"}'
-  #-X POST #https://registry.hub.docker.com/u/tworavens/ravens-main/trigger/9269f094-1951-4d52-ba6d-15b216cec4a4/
-
-  # Push image to dockerhub
+  # Build an image and push to dockerhub
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker build -t tworavens/raven-metadata-service:latest .
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push tworavens/raven-metadata-service:latest;
     fi
