@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TwoRavens/raven-metadata-service.svg?branch=master)](https://travis-ci.org/TwoRavens/raven-metadata-service.svg)
+
 (note! under initial development. very pre-alpha, etc)
 
 ---
