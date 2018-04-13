@@ -71,7 +71,7 @@ Data for each variable
 
 .. data:: numchar
 
-    TODO: Description of the variable. Defaults
+    Numchar attribute descirbes the classification of the data into two types `Character` and `Numeric`. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -82,7 +82,7 @@ Data for each variable
 
 .. data:: nature
 
-    TODO: Description of the variable. Defaults
+    Nature attribute describes the classification of data into `Nominal`,  `Ordinal`,  `Ratio`,  `Interval`,  `Percentage`. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -93,7 +93,7 @@ Data for each variable
 
 .. data:: binary
 
-    TODO: Description of the variable. Defaults
+    Binary represents the data of variables in a form where they can only take two values `0` and `1`. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -104,7 +104,7 @@ Data for each variable
 
 .. data:: interval
 
-    TODO: Description of the variable. Defaults
+    It referes to the representation of the variables in certain intervals of values. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -126,7 +126,7 @@ Data for each variable
 
 .. data:: invalid
 
-    TODO: Description of the variable. Defaults
+    Invalid represents the count of missing values ( `NA`,`Null`, empty cells, etc) in the data of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -137,7 +137,7 @@ Data for each variable
 
 .. data:: valid
 
-    TODO: Description of the variable. Defaults
+    It refers to the data in the variable anything but not `invalid`. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -148,7 +148,7 @@ Data for each variable
 
 .. data:: uniques
 
-    TODO: Description of the variable. Defaults
+    Uniques represents the count of unique values in the data of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -159,8 +159,8 @@ Data for each variable
 
 .. data:: median
 
-    Median for a *numeric* variable.
-    For non-numeric values, or if all values are missing, this value is set to `null`.
+    Median for a *numeric* variable. It represents the value lying at the midpoint of a frequency distribution.
+     For non-numeric values, or if all values are missing, this value is set to null..
 
     .. code-block:: json
 
@@ -170,8 +170,9 @@ Data for each variable
 
 .. data:: mean
 
-    Mean for a *numeric* variable.
-    For non-numeric values, or if all values are missing, this value is set to `null`.
+    Mean for a *numeric* variable.It represents the average of the numbers in the data of the given variable.
+    For non-numeric values, or if all values are missing, this value is set to null.
+
 
     .. code-block:: json
 
@@ -181,7 +182,7 @@ Data for each variable
 
 .. data:: max
 
-    TODO: Description of the variable. Defaults
+    It is the maximum value among the values of the variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -192,8 +193,8 @@ Data for each variable
 
 .. data:: min
 
-    TODO: Description of the variable. Defaults
-    Defaults to some thing or is calculated by ....
+    Min represents the minimum or least value in the data of the given variable.
+     Defaults Defaults to some thing or is calculated by ….
 
     .. code-block:: json
 
@@ -223,7 +224,7 @@ Data for each variable
 
 .. data:: freqmode
 
-    TODO: Description of the variable. Defaults
+    It is a part of mode which represents the `count/frequence` of the mode of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -234,7 +235,7 @@ Data for each variable
 
 .. data:: fewest
 
-    TODO: Description of the variable. Defaults
+    fewest represents the value of the least frequently occurring variable. If more than multiple variable share the highest number of occurrences, up to the first 5 are displayed. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -245,7 +246,7 @@ Data for each variable
 
 .. data:: freqfewest
 
-    TODO: Description of the variable. Defaults
+    It is a part of fewest which represents the `count/frequence` of the fewest of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -267,7 +268,7 @@ Data for each variable
 
 .. data:: freqmid
 
-    TODO: Description of the variable. Defaults
+    It is a part of mid which represents the `count/frequence` of the mid of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -278,7 +279,7 @@ Data for each variable
 
 .. data:: sd
 
-    TODO: Description of the variable. Defaults
+    sd represents the `Standard deviation`, which is the measure of how spread out the numbers are in the data. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -300,7 +301,7 @@ Data for each variable
 
 .. data:: plotvalues
 
-    TODO: Description of the variable. Defaults
+    It represents the array of the values to draw the `bar` plot. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -310,8 +311,7 @@ Data for each variable
         }
 
 .. data:: plottype
-
-    TODO: Description of the variable. Defaults
+PlotType describes the type of plot on the basis of the data of the variable. It is mainly classified as `Bar` and `Continuous`. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -322,7 +322,7 @@ Data for each variable
 
 .. data:: plotx
 
-    TODO: Description of the variable. Defaults
+    plotx describes the x-coordinates of the plot drawn using the data of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -333,7 +333,7 @@ Data for each variable
 
 .. data:: ploty
 
-    TODO: Description of the variable. Defaults
+    ploty describes the y-coordinates of the plot drawn using the data of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -344,7 +344,7 @@ Data for each variable
 
 .. data:: cdfplottype
 
-    TODO: Description of the variable. Defaults
+    CDF : cumulative distribution function. The cdf plot represent the cumulative distribution of the data of the variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -355,7 +355,7 @@ Data for each variable
 
 .. data:: cdfplotx
 
-    TODO: Description of the variable. Defaults
+    cdfplotx describes the x-coordinates of the `cdf plot` drawn using the data of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -366,7 +366,7 @@ Data for each variable
 
 .. data:: cdfploty
 
-    TODO: Description of the variable. Defaults
+    cdfploty describes the x-coordinates of the `cdf plot` drawn using the data of the given variable. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -377,7 +377,8 @@ Data for each variable
 
 .. data:: defaultInterval
 
-    TODO: Description of the variable. Defaults
+    It represents the user input for the interval from the interface if user wants the variable to have default interval.
+    The definition of this remains the same as interval. Defaults
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -388,7 +389,7 @@ Data for each variable
 
 .. data:: defaultNumchar
 
-    TODO: Description of the variable. Defaults
+    It represents the user input for the numchar from the interface if user wants the variable to have default numchar. The definition of this remains the same as numchar
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -399,7 +400,7 @@ Data for each variable
 
 .. data:: defaultNature
 
-    TODO: Description of the variable. Defaults
+    It represents the user input for the nature from the interface if user wants the variable to have default nature. The definition of this remains the same as nature
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -410,7 +411,7 @@ Data for each variable
 
 .. data:: defaultBinary
 
-    TODO: Description of the variable. Defaults
+    It represents the user input for the binary from the interface if user wants the variable to have default binary. The definition of this remains the same as binary
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
@@ -421,7 +422,7 @@ Data for each variable
 
 .. data:: defaultTime
 
-    TODO: Description of the variable. Defaults
+    It represents the user input for the time from the interface if user wants the variable to have default time. The definition of this remains the same as time
     Defaults to some thing or is calculated by ....
 
     .. code-block:: json
