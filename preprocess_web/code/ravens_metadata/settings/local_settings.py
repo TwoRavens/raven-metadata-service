@@ -45,6 +45,8 @@ if not isdir(MEDIA_ROOT):
 
 ALLOWED_HOSTS = ('*', )
 
+INTERNAL_IPS = ('127.0.0.1', '0.0.0.0')
+
 PAGE_CACHE_TIME = 0 # No cache in dev
 
 # For local dev, remove some of the user password requirements
