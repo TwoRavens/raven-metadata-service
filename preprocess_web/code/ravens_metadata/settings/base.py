@@ -51,6 +51,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+
+    # debug toolbar
+    'debug_toolbar',
+
     # track preprocess
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.preprocess_jobs',
@@ -66,6 +70,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # debug_toolbar
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 AUTHENTICATION_BACKENDS = (

@@ -6,13 +6,13 @@ kind: Deployment
 metadata:
   name: ravens-preprocess-web
   labels:
-    app: preprocess
+    app: tworavens-preprocess-app
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: preprocess
+        app: tworavens-preprocess-app
         tier: web
     spec:
       restartPolicy: Always
@@ -36,7 +36,7 @@ spec:
       # -------------------------
       - name: celery-worker
         image: tworavens/raven-metadata-service:latest
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
         env:
           - name: DJANGO_SETTINGS_MODULE
@@ -57,7 +57,7 @@ spec:
       # -------------------------
       - name: preprocess-web
         image: tworavens/raven-metadata-service:latest
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 8080
             name: http

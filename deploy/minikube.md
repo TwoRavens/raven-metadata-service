@@ -18,17 +18,27 @@ minikube dashboard
 docker build -t tworavens/raven-metadata-service:latest -f Dockerfile-web .
 ```
 
-### Run it
+### Run it!
 
 ```
 # get the pod running
 #
 kubectl apply -f deploy/metadata-deploy.yml --validate=false
 
-# forward to local ports
+# Run service and view locally
 #
-kubectl get pods # get pod name
-kubectl port-forward [pod name] 8080:8080
+kubectl apply -f deploy/metadata-service.yml
+minikube service ravens-preprocess-svc
+
+```
+
+### Stop it!
+
+```
+# Shutdown svc and deploy
+#
+kubectl delete -f deploy/metadata-service.yml   # stop service
+kubectl delete -f deploy/metadata-deploy.yml  # stop deploy
 ```
 
 
@@ -46,4 +56,17 @@ kubectl exec -it  [pod name] -c preprocess-web /bin/bash
 # describe containers in pod
 kubectl describe pod/[pod name]
 
+```
+
+## Old/Other
+
+```
+# forward to local ports
+#
+kubectl get pods # get pod name
+kubectl port-forward [pod name] 8080:8080
+
+# Create service via command
+#
+kubectl expose deployment  ravens-preprocess-web --type="LoadBalancer" --port=8080 --target-port=8080
 ```

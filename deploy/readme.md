@@ -13,19 +13,19 @@ These steps deploy the TwoRavens EventData application using Docker images from 
 ```
 # pull the latest config code
 #
-cd two-metadata-service/deploy
+cd two-metadata-service
 git pull
 
 # deployment
 #
-kubectl delete -f metadata-deploy.yml  # stop the current deployment
-kubectl apply -f metadata-service.yml  # start a new deployment
+kubectl delete -f deploy/metadata-deploy.yml  # stop the current deployment
+kubectl apply -f deploy/metadata-service.yml  # start a new deployment
 
 # create service, e.g. expose the deployment to the web
 # - usually already running
 #
-kubectl apply -f metadata-service.yml  # expose the app to the web/external IP
-kubectl delete -f metadata-service.yml # stop the service
+kubectl apply -f deploy/metadata-service.yml  # expose the app to the web/external IP
+kubectl delete -f deploy/metadata-service.yml # stop the service
 
 # ---------------
 # other
@@ -67,67 +67,9 @@ kubectl exec -ti  ravens-eventdata-web-xxxxxx-xxxx -c ravens-nginx /bin/bash
 1. Press the "return" key to execute the auto-added line.  Usually something like this:
     - `gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project raven2-186120`
 
-## Create the eventdata "Deployment"
-
-- Run these steps from the Terminal (previous step).  These steps pull the appropriate Docker images (nginx, python server, rook server) from Docker hub
-
-```
-cd two-ravens-deploy/gce-eventdata
-git pull  # get the latest k8s config info
-
-# Stop any running deployments
-#   - if nothing was running, you'll see "Error from server (NotFound):..."
-#     - that's fine
-#
-kubectl delete -f eventdata-deploy.yml
-
-
-# Create a new deployment
-#   - should see a message like: deployment "ravens-eventdata-web" created
-#
-kubectl apply -f eventdata-deploy.yml
-
-# Run service:
-#
-kubectl apply -f eventdata-service.yml
-
-
-# Wait for service to have IP assigned
-#
-kubectl get svc
-
-# Check progress
-#
-kubectl get pods
-kubectl describe pod [pod name from previous command]
-```
-
-## Stop the eventdata "Deployment"
-
-- Open the gce Terminal from a browser (see steps above)
-
-```
-cd two-ravens-deploy/gce-eventdata
-git pull  # get the latest k8s config info
-
-# Stop any running deployments
-#
-kubectl delete -f eventdata-deploy.yml
-
-# Stop any running services
-#
-kubectl delete -f eventdata-deploy.yml
-```
 
 ---
 
-## Misc notes
-
-### local run
-
-```
-sudo kubectl port-forward ravens-eventdata-web-833262626-v1mgs 80:80
-```
 
 ### downsize cluster
 
