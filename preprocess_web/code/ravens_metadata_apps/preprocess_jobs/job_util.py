@@ -22,6 +22,14 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
+    @staticmethod
+    def get_completed_preprocess_job(job_id):
+        """Return only a completed PreprocessJob"""
+        try:
+            return PreprocessJob.objects.get(pk=job_id,
+                                             is_success=True)
+        except PreprocessJob.DoesNotExist:
+            return None
 
     @staticmethod
     def get_latest_metadata(job_id):
@@ -52,20 +60,28 @@ class JobUtil(object):
         if not version:
             return False, 'version cannot be None'
 
-        update_object = MetadataUpdate.objects.filter(orig_metadata=job_id,version_number=version).first()
+        update_object = MetadataUpdate.objects.filter(\
+                                 orig_metadata=job_id,
+                                 version_number=version\
+                                ).first()
         # print("here is the data",update_object.name.version_number)
         if update_object:
             return True, update_object
 
         # Look for the original preprocess metadata
         #
+        orig_metadata = None
+        err_msg = 'PreprocessJob not found for id: %s' % job_id
         try:
-            orig_metadata = PreprocessJob.objects.get(pk=job_id)
-        except PreprocessJob.DoesNotExist:
-            return False, 'PreprocessJob not found: %s' % job_id
+            if int(version) == 1:
+                orig_metadata = JobUtil.get_completed_preprocess_job(job_id)
+        except ValueError:
+            return False, err_msg
 
-        return True, orig_metadata
+        if orig_metadata:
+            return True, orig_metadata
 
+        return False, err_msg
 
     @staticmethod
     def get_versions_metadata_objects(job_id):
@@ -83,10 +99,9 @@ class JobUtil(object):
 
         # Look for the original preprocess metadata
         #
-        try:
-            orig_metadata = PreprocessJob.objects.get(pk=job_id)
-        except PreprocessJob.DoesNotExist:
-            return False, 'PreprocessJob not found: %s' % job_id
+        orig_metadata = JobUtil.get_completed_preprocess_job(job_id)
+        if not orig_metadata:
+            return False, 'PreprocessJob not found for id: %s' % job_id
 
         update_objects.append(orig_metadata)
 
@@ -101,7 +116,8 @@ class JobUtil(object):
 
         # Look for the latest update, if it exists
         #
-        latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id\
+        latest_update = MetadataUpdate.objects.filter(\
+                                      orig_metadata=job_id,\
                                     ).order_by('-version_number'\
                                     ).first()
 
@@ -112,10 +128,9 @@ class JobUtil(object):
 
         # Look for the original preprocess metadata
         #
-        try:
-            orig_metadata = PreprocessJob.objects.get(pk=job_id)
-        except PreprocessJob.DoesNotExist:
-            return False, 'PreprocessJob not found: %s' % job_id
+        orig_metadata = JobUtil.get_completed_preprocess_job(job_id)
+        if not orig_metadata:
+            return False, 'PreprocessJob not found for id: %s' % job_id
 
         return True, orig_metadata
 
@@ -292,13 +307,17 @@ class JobUtil(object):
             start_row_idx = start_row - 1
 
             if start_row > max_rows:
-                err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (
-                    start_row, max_rows)
+                err = ('The request was from %s rows but only %d'
+                       ' rows were found, so default start rows = 1'
+                       ' is set') % \
+                       (start_row, max_rows)
                 error_message.append(err)
                 start_row = 1
             elif num_rows > max_rows:
-                err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (
-                    num_rows, max_rows)
+                err = ('The request was for %s rows but only'
+                       ' %d rows were found, so number rows'
+                       ' is set to max rows') % \
+                       (num_rows, max_rows)
                 error_message.append(err)
                 num_rows = max_rows
 
@@ -315,8 +334,9 @@ class JobUtil(object):
             return response
 
     @staticmethod
-    def update_preprocess_metadata(preprocess_json, update_json,**kwargs):
+    def update_preprocess_metadata(preprocess_json, update_json, **kwargs):
         """To get the updated preprocess file from VariableDisplayUtil """
+
         var_util = VariableDisplayUtil(preprocess_json, update_json)
         if var_util.has_error:
             return False, var_util.get_error_messages()

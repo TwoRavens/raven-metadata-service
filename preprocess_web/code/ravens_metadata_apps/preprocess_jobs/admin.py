@@ -21,13 +21,15 @@ class PreprocessJobAdmin(admin.ModelAdmin):
     list_display = ('id',
                     'name',
                     'creator',
+                    'is_success',
                     'state',
                     'schema_version',
                     'task_id',
                     'created',
                     'source_file',)
 
-    list_filter = ('is_metadata_public',
+    list_filter = ('is_success',
+                   'is_metadata_public',
                    'state',
                    'schema_version')
 

@@ -199,9 +199,8 @@ def view_retrieve_rows_form(request):
                         errors=frm._errors)
         return JsonResponse(user_msg)
 
-    try:
-        job = PreprocessJob.objects.get(pk=frm.cleaned_data['preprocess_id'])
-    except PreprocessJob.DoesNotExist:
+    job = JobUtil.get_completed_preprocess_job(pk=frm.cleaned_data['preprocess_id'])
+    if not job:
         raise Http404('job_id not found: %s' % job_id)
 
     input_format = frm.cleaned_data.get('format')
@@ -237,10 +236,7 @@ def view_api_retrieve_rows(request):
 
     job_id = frm.cleaned_data['preprocess_id']
 
-    try:
-        job = PreprocessJob.objects.get(pk=job_id)
-    except PreprocessJob.DoesNotExist:
-        raise Http404('job_id not found: %s' % job_id)
+    job = JobUtil.get_completed_preprocess_job(job_id)
 
     input_format = frm.cleaned_data.get('format')
 
