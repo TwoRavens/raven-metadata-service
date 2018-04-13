@@ -15,6 +15,7 @@ from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 from variable_display_util import VariableDisplayUtil
+from dataset_level_info_util import DatasetLevelInfo
 
 
 # Move these elsewhere as things progress ....
@@ -265,6 +266,26 @@ class PreprocessRunner(object):
 
         return self_section
 
+    def get_dataset_level_info(self):
+        """
+        "dataset": {
+       "row_cnt": 1000,
+       "variable_cnt": 25
+                }
+
+        """
+        print("data frame to pass ", self.df)
+        success, dataset_level_info = DatasetLevelInfo(self.df);
+        dataset_level = OrderedDict()
+
+        if success:
+
+            dataset_level['dataset']= dataset_level_info
+            return dataset_level
+        else:
+            dataset_level['dataset'] = {"error" : dataset_level_info}
+            return dataset_level
+
 
     def show_final_info(self):
         """Print the final info to the screen"""
@@ -330,6 +351,7 @@ class PreprocessRunner(object):
 
         overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section() # add the "self" section
 
+        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info() # add "dataset" section
         overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info   # add "variables"
 
         overall_dict[col_const.VARIABLE_DISPLAY_SECTION_KEY] = fmt_display_variable_info

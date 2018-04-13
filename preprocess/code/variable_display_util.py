@@ -13,7 +13,7 @@ ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
 EDITABLE_ATTRIBUTES = ColumnInfo.get_editable_column_labels()
 
 class VariableDisplayUtil(object):
-
+    print("Varaible display called")
 
     def __init__(self, preprocess_json, update_json):
         """Init with a pandas dataframe"""
