@@ -13,19 +13,19 @@ These steps deploy the TwoRavens EventData application using Docker images from 
 ```
 # pull the latest config code
 #
-cd two-ravens-deploy/gce-eventdata
+cd two-metadata-service/deploy
 git pull
 
 # deployment
 #
-kubectl delete -f eventdata-deploy.yml  # stop the current deployment
-kubectl apply -f eventdata-service.yml  # start a new deployment
+kubectl delete -f metadata-deploy.yml  # stop the current deployment
+kubectl apply -f metadata-service.yml  # start a new deployment
 
 # create service, e.g. expose the deployment to the web
 # - usually already running
 #
-kubectl apply -f eventdata-service.yml  # expose the app to the web/external IP
-kubectl delete -f eventdata-service.yml # stop the service
+kubectl apply -f metadata-service.yml  # expose the app to the web/external IP
+kubectl delete -f metadata-service.yml # stop the service
 
 # ---------------
 # other
