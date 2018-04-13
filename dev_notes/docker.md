@@ -26,7 +26,7 @@ docker run --rm -ti -v /Users/ramanprasad/Desktop:/dtop --name=raven_ingest prep
 ```
 # build
 #
-docker build -t preprocess_web -f Dockerfile-web .
+docker build -t preprocess_web -f Dockerfile .
 
 # run
 #
