@@ -23,12 +23,12 @@ script:
   #- coverage run --source=ravens_metadata_apps.ta2_interfaces manage.py test ravens_metadata_apps.ta2_interfaces ravens_metadata_apps.workspaces
   #- docker build -t tworavens/ravens-main:latest .
 
-# Don't push the image but instead trigger a build on dockerhub
 after_script:
   # Build an image and push to dockerhub
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+  #- if [ "$TRAVIS_BRANCH" == "master" ]; then
+  - if [ "$TRAVIS_BRANCH" == "87-gce-travis" ]; then
     cd ../..;
-    docker build -t tworavens/raven-metadata-service:latest -f ./Dockefile .;
+    docker build -t tworavens/raven-metadata-service:latest -f ./Dockerfile .;
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push tworavens/raven-metadata-service:latest;
     fi
