@@ -23,11 +23,11 @@ docker build -t tworavens/raven-metadata-service:latest -f Dockerfile-web .
 ```
 # get the pod running
 #
-kubectl apply -f deploy/metadata-deploy.yml --validate=false
+kubectl apply -f deploy/mk-metadata-deploy.yml --validate=false
 
 # Run service and view locally
 #
-kubectl apply -f deploy/metadata-service.yml
+kubectl apply -f deploy/mk-metadata-service.yml
 minikube service ravens-preprocess-svc
 
 ```
@@ -37,8 +37,8 @@ minikube service ravens-preprocess-svc
 ```
 # Shutdown svc and deploy
 #
-kubectl delete -f deploy/metadata-service.yml   # stop service
-kubectl delete -f deploy/metadata-deploy.yml  # stop deploy
+kubectl delete -f deploy/mk-metadata-service.yml   # stop service
+kubectl delete -f deploy/mk-metadata-deploy.yml  # stop deploy
 ```
 
 

@@ -36,7 +36,7 @@ spec:
       # -------------------------
       - name: celery-worker
         image: tworavens/raven-metadata-service:latest
-        #imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
         env:
           - name: DJANGO_SETTINGS_MODULE
@@ -57,7 +57,7 @@ spec:
       # -------------------------
       - name: preprocess-web
         image: tworavens/raven-metadata-service:latest
-        #imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         ports:
           - containerPort: 8080
             name: http
