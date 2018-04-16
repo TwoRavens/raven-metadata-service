@@ -10,6 +10,8 @@ from django.utils.safestring import mark_safe
 import jsonfield
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
+from ravens_metadata_apps.utils.json_util import json_dump
+
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -172,7 +174,7 @@ class PreprocessJob(TimeStampedModel):
             return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
 
         if as_string:
-            return True, json.dumps(json_dict, indent=4)
+            return json_dump(json_dict, indent=4)
 
         return True, json_dict
 
@@ -324,7 +326,11 @@ class MetadataUpdate(TimeStampedModel):
     def update_data_as_json(self):
         """Return preprocess file contents if they exist"""
         if self.update_json:
-            return mark_safe('<pre>%s</pre>' % json.dumps(self.update_json, indent=4))
+            json_info = json_dump(self.update_json, indent=4)
+            if json_info.success:
+                return mark_safe('<pre>%s</pre>' % json_info.result_obj)
+
+            return json_info.err_msg
 
         return None
 
@@ -370,12 +376,12 @@ class MetadataUpdate(TimeStampedModel):
             return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
 
         if as_string:
-            return True, json.dumps(json_dict, indent=4)
+            return json_dump(json_dict, indent=4)
 
         return True, json_dict
 
     def get_download_preprocess_url(self):
         """Get the download url"""
         return reverse('api_download_version',
-                        kwargs=dict(preprocess_id=self.id,
-                        version=self.get_version_string()))
+                       kwargs=dict(preprocess_id=self.id,
+                                   version=self.get_version_string()))

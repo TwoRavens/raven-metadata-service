@@ -35,7 +35,7 @@ class PreprocessRunner(object):
         """Init with a pandas dataframe"""
         self.df = dataframe
         self.job_id = kwargs.get('job_id', None)
-        self.celery_task = kwargs.get('celery_task')
+        #self.job_callback_function = kwargs.get('job_callback_function')
         # to populate
         self.variable_info = {} # { variable_name: ColumnInfo, ...}
         self.num_vars = None
@@ -81,7 +81,10 @@ class PreprocessRunner(object):
         if not self.calculate_features():
             return False
 
+        self.run_callback_function()
+
         return True
+
 
     @staticmethod
     def load_from_tabular_file(input_file, **kwargs):

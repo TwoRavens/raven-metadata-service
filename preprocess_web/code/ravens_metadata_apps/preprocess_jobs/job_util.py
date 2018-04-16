@@ -1,12 +1,14 @@
 """Utility class for the preprocess workflow"""
 import pandas as pd
 from django.http import HttpResponse
-from ravens_metadata_apps.preprocess_jobs.tasks import preprocess_csv_file
+from ravens_metadata_apps.preprocess_jobs.tasks import \
+    (preprocess_csv_file,)
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
+from variable_display_util import VariableDisplayUtil
 
 
 class JobUtil(object):
@@ -139,7 +141,9 @@ class JobUtil(object):
             return
 
         # send the file to the queue
-        task = preprocess_csv_file.delay(job.source_file.path, job_id=job.id)
+        task = preprocess_csv_file.delay(\
+                    job.source_file.path,
+                    job_id=job.id)
 
         # set the task_id
         job.task_id = task.id
