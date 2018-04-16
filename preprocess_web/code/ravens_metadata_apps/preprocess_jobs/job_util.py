@@ -31,7 +31,7 @@ class JobUtil(object):
         #
         success, obj_or_err = JobUtil.get_latest_metadata_object(job_id)
         if success is False:
-            return False, obj_or_err
+            return err_resp(obj_or_err)
 
 
         print('type(obj_or_err)', type(obj_or_err))
@@ -40,17 +40,17 @@ class JobUtil(object):
         #
         metadata_ok, metadata_or_err = obj_or_err.get_metadata()
         if metadata_ok is False:
-            return False, metadata_or_err
+            return err_resp(metadata_or_err)
 
-        return True, metadata_or_err
+        return ok_resp(metadata_or_err)
 
     @staticmethod
     def get_version_metadata_object(job_id, version):
         """ Retrun the versions and detail of job"""
         if not job_id:
-            return False, 'job_id cannot be None'
+            return err_resp('job_id cannot be None')
         if not version:
-            return False, 'version cannot be None'
+            return err_resp('version cannot be None')
 
         update_object = MetadataUpdate.objects.filter(\
                                  orig_metadata=job_id,
@@ -58,7 +58,7 @@ class JobUtil(object):
                                 ).first()
         # print("here is the data",update_object.name.version_number)
         if update_object:
-            return True, update_object
+            return ok_resp(update_object)
 
         # Look for the original preprocess metadata
         #
@@ -68,18 +68,18 @@ class JobUtil(object):
             if int(version) == 1:
                 orig_metadata = JobUtil.get_completed_preprocess_job(job_id)
         except ValueError:
-            return False, err_msg
+            return err_resp(err_msg)
 
         if orig_metadata:
-            return True, orig_metadata
+            return ok_resp(orig_metadata)
 
-        return False, err_msg
+        return err_resp(err_msg)
 
     @staticmethod
     def get_versions_metadata_objects(job_id):
         """ Return the versions and detail of job"""
         if not job_id:
-            return False, 'job_id cannot be None'
+            return err_resp('job_id cannot be None')
 
         update_objects = MetadataUpdate.objects.filter(orig_metadata=job_id)
 
@@ -93,11 +93,11 @@ class JobUtil(object):
         #
         orig_metadata = JobUtil.get_completed_preprocess_job(job_id)
         if not orig_metadata:
-            return False, 'PreprocessJob not found for id: %s' % job_id
+            return err_resp('PreprocessJob not found for id: %s' % job_id)
 
         update_objects.append(orig_metadata)
 
-        return True, update_objects
+        return ok_resp(update_objects)
 
 
     @staticmethod
@@ -184,7 +184,7 @@ class JobUtil(object):
                                    #skiprows=skiprows,
                                    #nrows=num_rows)
         else:
-            return dict(success=True,
+            return dict(success=False,
                         message='File type unknown (not csv or tab)')
 
         max_rows = len(csv_data.index)

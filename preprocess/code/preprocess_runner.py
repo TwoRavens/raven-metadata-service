@@ -81,8 +81,6 @@ class PreprocessRunner(object):
         if not self.calculate_features():
             return False
 
-        self.run_callback_function()
-
         return True
 
 
