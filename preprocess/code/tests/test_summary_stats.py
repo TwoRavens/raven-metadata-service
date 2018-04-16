@@ -10,6 +10,7 @@ from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil
 from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
+from dataset_level_info_util import DatasetLevelInfo
 
 
 class SummaryStatsUtilTest(unittest.TestCase):
@@ -18,6 +19,10 @@ class SummaryStatsUtilTest(unittest.TestCase):
     def setUp(self):
         """Load up the test file"""
         self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
+        self.df_02 = pd.DataFrame.from_csv(join(INPUT_DIR, 'sample_empty.csv'))
+
+        self.dataset_level_info = DatasetLevelInfo(self.df_01).final_output
+        self.emptydataerrors = DatasetLevelInfo(self.df_02)
 
 
     def test_10_numeric_val_ok(self):
@@ -120,6 +125,21 @@ class SummaryStatsUtilTest(unittest.TestCase):
         # Check herfindahl
         self.assertEqual(col_info.herfindahl, 0.1388888888888889)
 
+    def test_30_non_numeric_val_ok(self):
+        """(30) Test for the row and column count"""
+        msgt(self.test_30_non_numeric_val_ok.__doc__)
+        sample ={'row_cnt': 12, 'variable_cnt': 10}
+        # print('sample : ', sample)
+        self.assertEqual(self.dataset_level_info,sample)
+
+    def test_40_non_numeric_val_ok(self):
+        """(40) Test for the row and column count"""
+        msgt(self.test_40_non_numeric_val_ok.__doc__)
+        errors = self.emptydataerrors.error_messages
+        has_error = self.emptydataerrors.has_error
+
+        self.assertTrue(has_error)
+        print("Errors : ",errors)
 
 if __name__ == '__main__':
     unittest.main()

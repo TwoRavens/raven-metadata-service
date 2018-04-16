@@ -203,7 +203,7 @@ class JobUtil(object):
 
         update_end_num = start_row + num_rows
         print("error message", error_message)
-        data_frame = csv_data[start_row_idx:update_end_num]
+        data_frame = csv_data[start_row_idx:update_end_num-1]
         raw_data = data_frame.to_dict(orient='split')
 
         if 'index' in raw_data:
@@ -275,7 +275,7 @@ class JobUtil(object):
 
             print("error message", error_message)
             update_end_num = start_row + num_rows
-            data_frame = csv_data[start_row_idx:update_end_num]
+            data_frame = csv_data[start_row_idx:update_end_num-1]
             response = HttpResponse(content_type='text/csv')
 
             csv_fname = 'data_rows_%s.csv' % (get_current_timestring())

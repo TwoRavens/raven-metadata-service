@@ -200,7 +200,9 @@ def view_retrieve_rows_form(request):
                         errors=frm._errors)
         return JsonResponse(user_msg)
 
-    job = JobUtil.get_completed_preprocess_job(pk=frm.cleaned_data['preprocess_id'])
+    job_id = frm.cleaned_data['preprocess_id']
+
+    job = JobUtil.get_completed_preprocess_job(job_id)
     if not job:
         raise Http404('job_id not found: %s' % job_id)
 
