@@ -1,22 +1,12 @@
 """Utility class for the preprocess workflow"""
-import json, uuid
 import pandas as pd
-from collections import OrderedDict
-from datetime import datetime as dt
-from django.core.files.base import ContentFile
 from django.http import HttpResponse
-from django.utils import timezone
-from .forms import FORMAT_JSON, FORMAT_CSV
-from celery.result import AsyncResult
-from preprocess_runner import PreprocessRunner
-#from basic_preprocess import preprocess_csv_file
-from ravens_metadata_apps.preprocess_jobs.tasks  import preprocess_csv_file
-from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
+from ravens_metadata_apps.preprocess_jobs.tasks import preprocess_csv_file
 from ravens_metadata_apps.utils.time_util import get_current_timestring
-#from variable_display_util import VariableDisplayUtil
+from ravens_metadata_apps.utils.basic_response import \
+    (ok_resp, err_resp)
 from ravens_metadata_apps.preprocess_jobs.models import \
-    (PreprocessJob, MetadataUpdate,
-     STATE_SUCCESS, STATE_FAILURE)
+    (PreprocessJob, MetadataUpdate)
 
 
 class JobUtil(object):
@@ -160,48 +150,6 @@ class JobUtil(object):
         # save the new state
         job.save()
 
-    @staticmethod
-    def check_status(job):
-        """Check/update the job status"""
-        assert isinstance(job, PreprocessJob),\
-               'job must be a PreprocessJob'
-
-        if job.is_finished():
-            return
-
-        ye_task = AsyncResult(job.task_id,
-                              app=preprocess_csv_file)
-
-        if ye_task.state == 'SUCCESS':
-
-            if ye_task.result['success']:
-
-                preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
-
-                new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
-                job.preprocess_file.save(new_name,
-                                         preprocess_data)
-                job.set_state_success()
-
-                job.user_message = 'Task completed!  Preprocess is available'
-                job.end_time = timezone.now()
-                job.save()
-
-            else:
-                # Didn't work so well
-                job.set_state_failure(ye_task.result['message'])
-                job.save()
-
-            ye_task.forget()
-
-        elif ye_task.state == 'STATE_FAILURE':
-            job.set_state_failure('ye_task failed....')
-            job.save()
-            ye_task.forget()
-            #get_ok_resp('looking good: %s' % (ye_task.result['input_file']),
-            #            data=ye_task.result['data']))
-
-            # delete task!
 
     @staticmethod
     def retrieve_rows_json(job, **kwargs):

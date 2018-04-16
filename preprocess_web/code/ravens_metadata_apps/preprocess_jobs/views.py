@@ -28,6 +28,7 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_success,
      get_baseurl_from_request)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
+from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from np_json_encoder import NumpyJSONEncoder
 
 # Create your views here.
@@ -317,7 +318,7 @@ def view_job_status_page(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    JobUtil.check_status(job)
+    check_job_status(job)
 
     info_dict = dict(job=job,
                      preprocess_string_err=False)
@@ -429,7 +430,7 @@ def show_job_info(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    JobUtil.check_status(job)
+    check_job_status(job)
 
     if 'pretty' in request.GET:
         jstring = json.dumps(job.as_dict(), indent=4, cls=NumpyJSONEncoder)

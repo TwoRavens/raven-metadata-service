@@ -20,14 +20,9 @@ class SummaryStatsUtilTest(unittest.TestCase):
         self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
 
 
-
-
-
     def test_10_numeric_val_ok(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_10_numeric_val_ok.__doc__)
-
-
 
         # Calculate the stats
         # SummaryStatsUtil(col_series, col_info)
