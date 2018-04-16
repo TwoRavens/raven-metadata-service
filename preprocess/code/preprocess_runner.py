@@ -48,6 +48,11 @@ class PreprocessRunner(object):
         self.current_time = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
         self.preprocess_id = None
 
+        # for data source
+        self.type=None
+        self.format = None
+        self.name = None
+
         self.run_preprocess()
 
     def add_error_message(self, err_msg):
@@ -265,6 +270,31 @@ class PreprocessRunner(object):
         self_section['version'] = 1
 
         return self_section
+
+
+    def get_data_source_info(self):
+        '''
+         "data_source": {
+            "type": "file",
+            "format": "[see below]",
+            "name": "[see below]"
+       }
+
+        '''
+        data_source_section = OrderedDict()
+        if self.type and self.format and self.name:
+            data_source_section['type']= self.type
+            data_source_section['format']= self.format
+            data_source_section['name']=self.name
+
+        else:
+            data_source_section['type'] = None
+            data_source_section['format'] = None
+            data_source_section['name'] = None
+
+        return data_source_section
+
+
 
     def get_dataset_level_info(self):
         """
