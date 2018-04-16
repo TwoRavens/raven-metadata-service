@@ -8,7 +8,7 @@ from collections import OrderedDict
 class DatasetLevelInfo(object):
     def __init__(self, df):
         """This class sets the dataset level info of the preprocess file. """
-        print(" df for dataset level info *** : ", df)
+        # print(" df for dataset level info *** : ", df)
         self.dataframe= df;
         self.rows_count = None;
         self.variables_count = None;
@@ -47,7 +47,7 @@ class DatasetLevelInfo(object):
                             }
 
 
-        print("*** final output for dataset level info", self.final_output)
+        # print("*** final output for dataset level info", self.final_output)
 
 
 

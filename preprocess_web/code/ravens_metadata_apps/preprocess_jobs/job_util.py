@@ -23,10 +23,11 @@ class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
     @staticmethod
-    def get_completed_preprocess_job(job_id):
+    def get_completed_preprocess_job(**kwargs):
         """Return only a completed PreprocessJob"""
+        pk = kwargs.get('pk')
         try:
-            return PreprocessJob.objects.get(pk=job_id,
+            return PreprocessJob.objects.get(pk=pk,
                                              is_success=True)
         except PreprocessJob.DoesNotExist:
             return None

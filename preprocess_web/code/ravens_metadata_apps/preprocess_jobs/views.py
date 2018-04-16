@@ -198,10 +198,10 @@ def view_retrieve_rows_form(request):
                         message='Invalid input',
                         errors=frm._errors)
         return JsonResponse(user_msg)
-
+    id = frm.cleaned_data['preprocess_id']
     job = JobUtil.get_completed_preprocess_job(pk=frm.cleaned_data['preprocess_id'])
     if not job:
-        raise Http404('job_id not found: %s' % job_id)
+        raise Http404('job_id not found: %s' % id)
 
     input_format = frm.cleaned_data.get('format')
     if input_format == FORMAT_JSON:
