@@ -28,6 +28,7 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_success,
      get_baseurl_from_request)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
+from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from np_json_encoder import NumpyJSONEncoder
 
 # Create your views here.
@@ -198,10 +199,12 @@ def view_retrieve_rows_form(request):
                         message='Invalid input',
                         errors=frm._errors)
         return JsonResponse(user_msg)
-    id = frm.cleaned_data['preprocess_id']
-    job = JobUtil.get_completed_preprocess_job(pk=frm.cleaned_data['preprocess_id'])
+
+    job_id = frm.cleaned_data['preprocess_id']
+
+    job = JobUtil.get_completed_preprocess_job(job_id)
     if not job:
-        raise Http404('job_id not found: %s' % id)
+        raise Http404('job_id not found: %s' % job_id)
 
     input_format = frm.cleaned_data.get('format')
     if input_format == FORMAT_JSON:
@@ -317,7 +320,7 @@ def view_job_status_page(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    JobUtil.check_status(job)
+    check_job_status(job)
 
     info_dict = dict(job=job,
                      preprocess_string_err=False)
@@ -429,7 +432,7 @@ def show_job_info(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    JobUtil.check_status(job)
+    check_job_status(job)
 
     if 'pretty' in request.GET:
         jstring = json.dumps(job.as_dict(), indent=4, cls=NumpyJSONEncoder)

@@ -25,14 +25,9 @@ class SummaryStatsUtilTest(unittest.TestCase):
         self.emptydataerrors = DatasetLevelInfo(self.df_02)
 
 
-
-
-
     def test_10_numeric_val_ok(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_10_numeric_val_ok.__doc__)
-
-
 
         # Calculate the stats
         # SummaryStatsUtil(col_series, col_info)

@@ -25,7 +25,7 @@ TAB_FILE_EXT = '.tab'
 ACCEPTABLE_FILE_TYPE_EXTS = \
                     (CSV_FILE_EXT,
                      TAB_FILE_EXT)
-ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])                     
+ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
 # ---------------------------------------------
 
 class PreprocessRunner(object):
@@ -35,7 +35,7 @@ class PreprocessRunner(object):
         """Init with a pandas dataframe"""
         self.df = dataframe
         self.job_id = kwargs.get('job_id', None)
-        self.celery_task = kwargs.get('celery_task')
+        #self.job_callback_function = kwargs.get('job_callback_function')
         # to populate
         self.variable_info = {} # { variable_name: ColumnInfo, ...}
         self.num_vars = None
@@ -83,13 +83,15 @@ class PreprocessRunner(object):
 
         return True
 
+
     @staticmethod
     def load_from_tabular_file(input_file, **kwargs):
         """Create the dataframe from a tab-delimited file"""
-        job_id = kwargs.get('job_id')
+        #job_id = kwargs.get('job_id')
         return PreprocessRunner.load_from_csv_file(\
                                 input_file,
-                                is_tab_delimited=True, job_id=job_id)
+                                is_tab_delimited=True,
+                                **kwargs)
 
 
     @staticmethod
@@ -102,7 +104,7 @@ class PreprocessRunner(object):
         success: return PreprocessRunner obj, None
         failure: return None, error message
         """
-        job_id = kwargs.get('job_id')
+        #job_id = kwargs.get('job_id')
         if not isfile(input_file):
             return None, 'The file was not found: [%s]' % input_file
 
@@ -137,7 +139,7 @@ class PreprocessRunner(object):
                       (input_file, err_obj)
             return None, err_msg
 
-        runner = PreprocessRunner(df, job_id=job_id)
+        runner = PreprocessRunner(df, **kwargs)
 
         if runner.has_error:
             return None, runner.error_message
@@ -275,7 +277,7 @@ class PreprocessRunner(object):
 
         """
         dataset_level = OrderedDict()
-        print("data frame to pass ", self.df)
+        #print("data frame to pass ", self.df)
         dataset_level_info = DatasetLevelInfo(self.df);
         if dataset_level_info.has_error:
             dataset_level = {"error": dataset_level_info.error_messages}
