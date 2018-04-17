@@ -16,7 +16,7 @@ from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 from variable_display_util import VariableDisplayUtil
 from dataset_level_info_util import DatasetLevelInfo
-
+from file_format_util import FileFormatUtil
 
 # Move these elsewhere as things progress ....
 # ---------------------------------------------
@@ -25,7 +25,7 @@ TAB_FILE_EXT = '.tab'
 ACCEPTABLE_FILE_TYPE_EXTS = \
                     (CSV_FILE_EXT,
                      TAB_FILE_EXT)
-ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])                     
+ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
 # ---------------------------------------------
 
 class PreprocessRunner(object):
@@ -89,65 +89,86 @@ class PreprocessRunner(object):
         return True
 
     @staticmethod
-    def load_from_tabular_file(input_file, **kwargs):
-        """Create the dataframe from a tab-delimited file"""
-        job_id = kwargs.get('job_id')
-        return PreprocessRunner.load_from_csv_file(\
-                                input_file,
-                                is_tab_delimited=True, job_id=job_id)
+    def load_from_file(input_file, **kwargs):
+        """decide type/format, and name"""
+        # Use new class to decide "csv file", "tab file"
+        # etc
+        job_id=kwargs.get('job_id')
+        df ,error = FileFormatUtil(input_file,**kwargs)
+        if df is None:
+            return None,error
+        else:
+            runner = PreprocessRunner(df, job_id=job_id)
+
+            if runner.has_error:
+                return None, runner.error_message
+
+            return runner, None
 
 
-    @staticmethod
-    def load_from_csv_file(input_file, **kwargs):
-        """Create the dataframe from a csv file
 
-        kwargs:
-            is_tab_delimited - default: False
-
-        success: return PreprocessRunner obj, None
-        failure: return None, error message
-        """
-        job_id = kwargs.get('job_id')
-        if not isfile(input_file):
-            return None, 'The file was not found: [%s]' % input_file
-
-        filesize = os.stat(input_file).st_size
-        if filesize == 0:
-            return None, 'The file size is zero: [%s]' % input_file
-
-        # -----------------------
-        # Process kwargs
-        # -----------------------
-        delimiter = None
-        if kwargs.get('is_tab_delimited', False) is True:
-            delimiter = '\t'
-
-        #df = pd.read_csv(input_file)
-        try:
-            df = pd.read_csv(input_file,
-                             delimiter=delimiter)
-        except pd.errors.ParserError as err_obj:
-            err_msg = ('Failed to load csv file (pandas ParserError).'
-                       ' \n - File: %s\n - %s') % \
-                      (input_file, err_obj)
-            return None, err_msg
-        except PermissionError as err_obj:
-            err_msg = ('No read prermission on this file:'
-                       ' \n - File: %s\n - %s') % \
-                      (input_file, err_obj)
-            return None, err_msg
-        except Exception as err_obj:
-            err_msg = ('Failed to load csv file.'
-                       ' \n - File: %s\n - %s') % \
-                      (input_file, err_obj)
-            return None, err_msg
-
-        runner = PreprocessRunner(df, job_id=job_id)
-
-        if runner.has_error:
-            return None, runner.error_message
-
-        return runner, None
+    # @staticmethod
+    # def load_from_tabular_file(input_file, **kwargs):
+    #     """Create the dataframe from a tab-delimited file"""
+    #     job_id = kwargs.get('job_id')
+    #     return PreprocessRunner.load_from_csv_file(\
+    #                             input_file,
+    #                             is_tab_delimited=True, job_id=job_id)
+    #
+    #
+    # @staticmethod
+    # def load_from_csv_file(input_file, **kwargs):
+    #     """Create the dataframe from a csv file
+    #
+    #     kwargs:
+    #         is_tab_delimited - default: False
+    #
+    #     success: return PreprocessRunner obj, None
+    #     failure: return None, error message
+    #     """
+    #     job_id = kwargs.get('job_id')
+    #     if not isfile(input_file):
+    #         return None, 'The file was not found: [%s]' % input_file
+    #
+    #     filesize = os.stat(input_file).st_size
+    #     if filesize == 0:
+    #         return None, 'The file size is zero: [%s]' % input_file
+    #
+    #     # -----------------------
+    #     # Process kwargs
+    #     # -----------------------
+    #     delimiter = None
+    #     if kwargs.get('is_tab_delimited', False) is True:
+    #         delimiter = '\t'
+    #
+    #     #df = pd.read_csv(input_file)
+    #     try:
+    #         df = pd.read_csv(input_file,
+    #                          delimiter=delimiter)
+    #     except pd.errors.ParserError as err_obj:
+    #         err_msg = ('Failed to load csv file (pandas ParserError).'
+    #                    ' \n - File: %s\n - %s') % \
+    #                   (input_file, err_obj)
+    #         return None, err_msg
+    #     except PermissionError as err_obj:
+    #         err_msg = ('No read prermission on this file:'
+    #                    ' \n - File: %s\n - %s') % \
+    #                   (input_file, err_obj)
+    #         return None, err_msg
+    #     except Exception as err_obj:
+    #         err_msg = ('Failed to load csv file.'
+    #                    ' \n - File: %s\n - %s') % \
+    #                   (input_file, err_obj)
+    #         return None, err_msg
+    #
+    #
+    #
+    #     runner = PreprocessRunner(df, job_id=job_id)
+    #
+    #     if runner.has_error:
+    #         return None, runner.error_message
+    #
+    #     return runner, None
 
     @staticmethod
     def load_update_file(preprocess_input, update_input):
