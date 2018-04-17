@@ -8,6 +8,11 @@ import socket
 
 from .base import *
 
+# add cross-origin-resource-sharing header to responses on local dev setup
+INSTALLED_APPS.append('corsheaders')
+MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')
+CORS_ORIGIN_ALLOW_ALL = True
+
 DEBUG = True
 
 ALLOW_FAB_DELETE = True
