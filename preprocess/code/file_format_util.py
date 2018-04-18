@@ -5,7 +5,7 @@ import pandas as pd
 import os
 from os.path import isdir, isfile
 from preprocess_runner import*
-
+from data_source_util import DataSourceUtil
 from msg_util import msg, msgt
 
 # Move these elsewhere as things progress ....
@@ -22,15 +22,20 @@ ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
 class FileFormatUtil(object):
     def __init__(self,file,**kwargs):
         """Identify file type: csv, tab, etc"""
-        print("The file format class is called")
+        # print("The file format class is called")
         self.input_file = file
         self.job_id = kwargs.get('job_id')
-        self.fname = kwargs.get('fname')
+
         self.fname_ext = kwargs.get('fname_ext')
         self.fname_ext_check = self.fname_ext.lower()
 
         self.dataframe = None
         self.data_source_info = None # instance of DataSourceInfo
+
+        # data source info
+        self.fname = kwargs.get('fname')
+        self.type = None
+        self.format = None
 
         #
         self.has_error = False
@@ -61,10 +66,21 @@ class FileFormatUtil(object):
     def set_format_etc(self):
         """ here it checks the format and set"""
         if self.fname_ext_check == TAB_FILE_EXT:
-            runner = self.get_dataframe(TAB_FILE_EXT);
+            runner = self.get_dataframe(TAB_FILE_EXT)
+            self.type = "File"
+            self.format = TAB_FILE_EXT
+            data_source_info_object = DataSourceUtil(name=self.fname, type= self.type, format= self.format)
+            if not data_source_info_object.has_error:
+                self.data_source_info = data_source_info_object.output
+
 
         elif self.fname_ext_check == CSV_FILE_EXT:
-            runner = self.get_dataframe(CSV_FILE_EXT);
+            runner = self.get_dataframe(CSV_FILE_EXT)
+            self.type = "File"
+            self.format = CSV_FILE_EXT
+            data_source_info_object = DataSourceUtil(name=self.fname, type=self.type, format=self.format)
+            if not data_source_info_object.has_error:
+                self.data_source_info = data_source_info_object.output
 
         else:
             err_msg = ('We currently do not process this file type.'
@@ -107,8 +123,9 @@ class FileFormatUtil(object):
                       (self.input_file, err_obj)
             self.add_error(err_msg)
             return None, self.error_message
-         print("*******df********", df)
+         # print("*******df********", df)
          self.dataframe = df
+         print("datasource", self.data_source_info)
 
 
         if format == CSV_FILE_EXT:
@@ -133,8 +150,9 @@ class FileFormatUtil(object):
                           (self.input_file, err_obj)
                 self.add_error(err_msg)
                 return None, self.error_message
-            print("*******df********",df)
+            # print("*******df********",df)
             self.dataframe = df
+            print("datasource", self.data_source_info)
 
 
 

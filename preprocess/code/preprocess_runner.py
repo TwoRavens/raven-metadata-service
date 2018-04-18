@@ -49,9 +49,7 @@ class PreprocessRunner(object):
         self.preprocess_id = None
 
         # for data source
-        self.type=None
-        self.format = None
-        self.name = None
+        self.data_source_info=kwargs.get('data_source_info')
 
         self.run_preprocess()
 
@@ -102,7 +100,9 @@ class PreprocessRunner(object):
             return None,file_format_util.error_message
         else:
             df = file_format_util.dataframe
-            runner = PreprocessRunner(df, job_id=job_id)
+            data_source_info = file_format_util.data_source_info
+            runner = PreprocessRunner(df, job_id=job_id, data_source_info=data_source_info)
+
 
             if runner.has_error:
                 return None, runner.error_message
@@ -111,68 +111,7 @@ class PreprocessRunner(object):
 
 
 
-    # @staticmethod
-    # def load_from_tabular_file(input_file, **kwargs):
-    #     """Create the dataframe from a tab-delimited file"""
-    #     job_id = kwargs.get('job_id')
-    #     return PreprocessRunner.load_from_csv_file(\
-    #                             input_file,
-    #                             is_tab_delimited=True, job_id=job_id)
-    #
-    #
-    # @staticmethod
-    # def load_from_csv_file(input_file, **kwargs):
-    #     """Create the dataframe from a csv file
-    #
-    #     kwargs:
-    #         is_tab_delimited - default: False
-    #
-    #     success: return PreprocessRunner obj, None
-    #     failure: return None, error message
-    #     """
-    #     job_id = kwargs.get('job_id')
-    #     if not isfile(input_file):
-    #         return None, 'The file was not found: [%s]' % input_file
-    #
-    #     filesize = os.stat(input_file).st_size
-    #     if filesize == 0:
-    #         return None, 'The file size is zero: [%s]' % input_file
-    #
-    #     # -----------------------
-    #     # Process kwargs
-    #     # -----------------------
-    #     delimiter = None
-    #     if kwargs.get('is_tab_delimited', False) is True:
-    #         delimiter = '\t'
-    #
-    #     #df = pd.read_csv(input_file)
-    #     try:
-    #         df = pd.read_csv(input_file,
-    #                          delimiter=delimiter)
-    #     except pd.errors.ParserError as err_obj:
-    #         err_msg = ('Failed to load csv file (pandas ParserError).'
-    #                    ' \n - File: %s\n - %s') % \
-    #                   (input_file, err_obj)
-    #         return None, err_msg
-    #     except PermissionError as err_obj:
-    #         err_msg = ('No read prermission on this file:'
-    #                    ' \n - File: %s\n - %s') % \
-    #                   (input_file, err_obj)
-    #         return None, err_msg
-    #     except Exception as err_obj:
-    #         err_msg = ('Failed to load csv file.'
-    #                    ' \n - File: %s\n - %s') % \
-    #                   (input_file, err_obj)
-    #         return None, err_msg
-    #
-    #
-    #
-    #     runner = PreprocessRunner(df, job_id=job_id)
-    #
-    #     if runner.has_error:
-    #         return None, runner.error_message
-    #
-    #     return runner, None
+
 
     @staticmethod
     def load_update_file(preprocess_input, update_input):
@@ -307,16 +246,8 @@ class PreprocessRunner(object):
 
         '''
         data_source_section = OrderedDict()
-        if self.type and self.format and self.name:
-            data_source_section['type']= self.type
-            data_source_section['format']= self.format
-            data_source_section['name']=self.name
-
-        else:
-            data_source_section['type'] = None
-            data_source_section['format'] = None
-            data_source_section['name'] = None
-
+        data_source_section = self.data_source_info
+        # print("data_source_section", {"data_source":self.data_source_info})
         return data_source_section
 
 
@@ -330,7 +261,7 @@ class PreprocessRunner(object):
 
         """
         dataset_level = OrderedDict()
-        print("data frame to pass ", self.df)
+        # print("data frame to pass ", self.df)
         dataset_level_info = DatasetLevelInfo(self.df);
         if dataset_level_info.has_error:
             dataset_level = {"error": dataset_level_info.error_messages}
@@ -405,8 +336,9 @@ class PreprocessRunner(object):
         overall_dict = OrderedDict()
 
         overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section() # add the "self" section
+        overall_dict[col_const.DATA_SOURCE_INFO] = self.get_data_source_info()
+        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()
 
-        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info() # add "dataset" section
         overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info   # add "variables"
 
         overall_dict[col_const.VARIABLE_DISPLAY_SECTION_KEY] = fmt_display_variable_info
