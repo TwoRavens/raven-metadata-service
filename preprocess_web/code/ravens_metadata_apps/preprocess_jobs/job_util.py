@@ -3,7 +3,7 @@ import pandas as pd
 from django.http import HttpResponse
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
-from ravens_metadata_apps.utils.time_util import get_current_timestring
+from ravens_metadata_apps.utils.time_util import get_timestring_for_file
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.preprocess_jobs.models import \
@@ -278,7 +278,7 @@ class JobUtil(object):
             data_frame = csv_data[start_row_idx:update_end_num-1]
             response = HttpResponse(content_type='text/csv')
 
-            csv_fname = 'data_rows_%s.csv' % (get_current_timestring())
+            csv_fname = 'data_rows_%s.csv' % (get_timestring_for_file())
             response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
 
             data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)

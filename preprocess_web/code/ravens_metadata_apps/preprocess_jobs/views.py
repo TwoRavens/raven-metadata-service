@@ -13,6 +13,7 @@ from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
 
+from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
@@ -29,12 +30,12 @@ from ravens_metadata_apps.utils.view_helper import \
      get_baseurl_from_request)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
+from ravens_metadata_apps.utils.json_util import json_dump
+
 from np_json_encoder import NumpyJSONEncoder
 
-# Create your views here.
 def test_view(request):
-    from ravens_metadata.celery import debug_task
-    debug_task.delay()
+    """test view"""
     return HttpResponse('hello')
 
 
@@ -122,7 +123,7 @@ def api_get_metadata_version(request, preprocess_id, version):
         return JsonResponse(get_json_error(data_or_err))
 
     if 'pretty' in request.GET:
-        jstring = json.dumps(data_or_err, indent=4, cls=NumpyJSONEncoder)
+        jstring = json_dump(data_or_err, indent=4)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
 
@@ -305,7 +306,7 @@ def api_get_latest_metadata(request, preprocess_id):
                                 data=metadata_or_err)
 
     if 'pretty' in request.GET:
-        jstring = json.dumps(user_msg, indent=4, cls=NumpyJSONEncoder)
+        jstring = json_dump(user_msg, indent)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
     return JsonResponse(user_msg)
@@ -331,6 +332,8 @@ def view_job_status_page(request, job_id):
             info_dict['preprocess_string'] = preprocess_string
         else:
             info_dict['preprocess_string_err'] = True
+    else:
+        info_dict['current_time'] = get_current_timestring()
 
     return render(request,
                   'preprocess/view_process_status.html',
@@ -435,7 +438,7 @@ def show_job_info(request, job_id):
     check_job_status(job)
 
     if 'pretty' in request.GET:
-        jstring = json.dumps(job.as_dict(), indent=4, cls=NumpyJSONEncoder)
+        jstring = json_dump(job.as_dict(), indent=4)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
     user_msg = dict(success=True,

@@ -1,11 +1,36 @@
 {% extends "base.html" %}
 
-{%  block extra_header %}
-    <script>
-    //alert('start pollling against {%  url 'show_job_info' job.id  %}');
-    </script>
+{% block extra_header %}
+<script>
 
-{%  endblock %}
+function check_preprocess_status() {
+  let get_metdata_url = '{% url 'api_get_latest_metadata' job.id %}';
+  $.getJSON(get_metdata_url, function (data) {
+
+    if (data.success) {
+      $('#div_metadata_msg').hide();
+      //$('#div_metadata_as_json').show();
+      //alert($('#div_metadata_as_json').height());
+      $('#div_metadata_as_json').html('<pre>'
+            + JSON.stringify(data.data, null, 4)
+            + '</pre>');
+    }else{
+      //$('#div_metadata_as_json').hide();
+      let current_time = new Date().toLocaleTimeString();
+      $('#div_metadata_msg').show('Preprocess in progress (' + current_time + '');
+
+      setTimeout(check_preprocess_status, 2000);
+    }
+  });
+};
+
+$(document).ready(function() {
+  {% if job.state == "PREPROCESS_STARTED" %}
+    check_preprocess_status();
+  {% endif %}
+});
+</script>
+{% endblock %}
 
 {% block main_content %}
   {% comment %}
@@ -22,8 +47,11 @@
         {{ preprocess_string_err }}
       {% endif %}
     {% endcomment %}
+
+    <div id="div_user_msg">
+    </div>
     {% if job.state == "PREPROCESS_STARTED" %}
-        <div class="container" style="margin:8%; background-color:#f0f8ff; border: thin">
+    <div class="container" style="margin:8%; background-color:#f0f8ff; border: thin">
 
         <div class="card" style="padding: 12px">
           <div class="card-block">
@@ -36,8 +64,13 @@
           <div class="card-block">
             <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Progress </h6>
             <div class="progress">
+              <div id="div_metadata_msg" style="display:none;">
+              </div>
+              </div>
+              {% comment %}
               <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-            </div>
+              {% endcomment %}
+          </div>
           </div>
         </div>
         <br>
@@ -61,18 +94,16 @@
         <div class="card" style="padding: 12px">
           <div class="card-block">
               <div style="border: #2e3133">
-           <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96; float: left ">Processed Data </h6>
-              <!--    <button type="button" class="btn btn-primary btn-sm" style="float: right">Download</button> -->
+                 <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96; float: left ">Processed Data </h6>
               </div>
-              <br /><br />
               <hr>
-              <p>
-        <pre>{{ job.get_metadata_as_json }}</pre>
-              </p>
-        </div>
+                {% if job.is_success %}
+                <pre>{{ job.get_metadata_as_json }}</pre>
+                {% endif %}
+            </div>
           </div>
         <br>
 
     {% endif %}
-
+    <div id="div_metadata_as_json"></div>
 {% endblock %}

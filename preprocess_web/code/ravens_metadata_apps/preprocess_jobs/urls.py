@@ -68,16 +68,12 @@ urlpatterns = (
             views.view_job_detail,
             name='view_job_detail'),
 
-
-
     re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
             views.api_get_metadata_version,
             name='api_get_metadata_version'),
 
-    # job to retrieve preprocess data version
-    #
 
-    #job to get all the preprocessed jobs
+    # job to get all the preprocessed jobs
     #
     path(r'list',
          views.view_job_list,
@@ -86,8 +82,6 @@ urlpatterns = (
     #path(r'api/metadata/<int:preprocess_id>/version/<int:version_number>',
     #     views.api_get_metadata_version,
     #     name='api_get_metadata_version'),
-
-
 
     # default to upload form, for now
     #
