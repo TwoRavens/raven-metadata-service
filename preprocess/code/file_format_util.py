@@ -47,15 +47,18 @@ class FileFormatUtil(object):
         """ here it checks the format and set"""
         if self.fname_ext_check == TAB_FILE_EXT:
             runner, err_msg = self.get_dataframe(TAB_FILE_EXT);
+            return runner, err_msg
         elif self.fname_ext_check == CSV_FILE_EXT:
             runner, err_msg = self.get_dataframe(CSV_FILE_EXT);
+            return runner, err_msg
         else:
             err_msg = ('We currently do not process this file type.'
                        ' Please use a file with one of the following'
                        ' extensions: %s') % \
                       (ACCEPTABLE_EXT_LIST,)
             runner = None
-        return runner, err_msg
+            return runner, err_msg
+
 
         # ## database
         # - database -> dataframe

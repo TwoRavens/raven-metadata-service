@@ -38,6 +38,7 @@ def preprocess_csv_file(input_file, **kwargs):
 
     start_time = time.time()
     print('(%s) Start preprocess: %s' % (start_time, input_file))
+
     fname = basename(input_file)
     print("*************fname : ", fname)
     fname_base, fname_ext = splitext(fname)
@@ -59,7 +60,7 @@ def preprocess_csv_file(input_file, **kwargs):
     runner, err_msg = PreprocessRunner.load_from_file( \
                                             input_file,
                                     job_id=job_id,
-                                    fname = fname, fname_base = fname_base,fname_ext = fname_ext)
+                                    fname = fname, fname_base = fname_base,fname_ext = fname_ext) # only input_file and job_id should be sent.
 
 
     if err_msg and runner is None:
