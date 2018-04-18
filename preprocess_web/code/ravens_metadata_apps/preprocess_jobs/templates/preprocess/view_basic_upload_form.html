@@ -1,5 +1,20 @@
 {% extends "base.html" %}
+{% block extra_header %}
+<script>
 
+function check_preprocess_status() {
+  $.getJSON('/poll_newmail.php', function (response) {
+    if (response.newMail) {
+      alert(
+        "You have received a letter, good sir. " +
+        "I will have a quick lie-down and be on my way shortly."
+      );
+    }
+    setTimeout(pollServerForMail, 1000);
+  });
+};
+</script>
+{% endblock %}
 {% block main_content %}
 <div class="container" style="margin:8%; background-color:#f0f8ff; border: transparent">
   <div class="row" style=" padding: 2%">

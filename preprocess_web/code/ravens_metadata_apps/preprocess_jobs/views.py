@@ -129,7 +129,7 @@ def api_get_metadata_version(request, preprocess_id, version):
     return JsonResponse(get_json_success('Success', data=data_or_err))
 
 
-def api_detail(request,preprocess_id):
+def view_job_detail(request,preprocess_id):
     """ get all the versions and detail of the preprocess job"""
     print("job_id", preprocess_id)
     """Return the latest version of the preprocess metadata"""

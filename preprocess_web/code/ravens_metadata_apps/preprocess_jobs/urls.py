@@ -64,9 +64,9 @@ urlpatterns = (
 
     # job to get detail
     #
-    re_path(r'api/detail/(?P<preprocess_id>[0-9]{1,10})',
-            views.api_detail,
-            name='api_detail'),
+    re_path(r'detail/(?P<preprocess_id>[0-9]{1,10})',
+            views.view_job_detail,
+            name='view_job_detail'),
 
 
 
