@@ -22,10 +22,10 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         mydata<-testdata
 
     }else if(!is.null(filename)){
-        mydata<-tryCatch(expr=read.delim(file=filename), error=function(e) NULL)
+        mydata<-tryCatch(expr=read.csv(file=filename), error=function(e) NULL)
     }else{
         path<-paste("http://",hostname,"/api/access/datafile/",fileid,sep="")
-        mydata<-tryCatch(expr=read.delim(file=path), error=function(e) NULL)
+        mydata<-tryCatch(expr=read.csv(file=path), error=function(e) NULL)
         #mydata<-getDataverse(hostname=hostname, fileid=fileid) #could use this function if we set up a common set of utilities with the rook code.
     }
 

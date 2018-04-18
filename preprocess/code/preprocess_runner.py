@@ -94,10 +94,14 @@ class PreprocessRunner(object):
         # Use new class to decide "csv file", "tab file"
         # etc
         job_id=kwargs.get('job_id')
-        df ,error = FileFormatUtil(input_file,**kwargs)
-        if df is None:
-            return None,error
+        file_format_util = FileFormatUtil(input_file,**kwargs)
+
+        # file_format_util.data_frame
+        # file_format_util.data_source_info
+        if file_format_util.has_error:
+            return None,file_format_util.error_message
         else:
+            df = file_format_util.dataframe
             runner = PreprocessRunner(df, job_id=job_id)
 
             if runner.has_error:

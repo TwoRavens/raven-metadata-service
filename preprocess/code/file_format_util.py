@@ -28,17 +28,32 @@ class FileFormatUtil(object):
         self.fname = kwargs.get('fname')
         self.fname_ext = kwargs.get('fname_ext')
         self.fname_ext_check = self.fname_ext.lower()
+
+        self.dataframe = None
+        self.data_source_info = None # instance of DataSourceInfo
+
+        #
+        self.has_error = False
+        self.error_message = None
+
+
         self.check_file()
 
+    def add_error(self,err):
+        self.has_error = True
+        self.error_message = err
 
     def check_file(self):
         """ handels all the files"""
         if not isfile(self.input_file):
-            return None, 'The file was not found: [%s]' % self.input_file
+            self.add_error('The file was not found: [%s]' % self.input_file)
+
+            return None, self.error_message
 
         filesize = os.stat(self.input_file).st_size
         if filesize == 0:
-            return None, 'The file size is zero: [%s]' % self.input_file
+            self.add_error('The file size is zero: [%s]' % self.input_file)
+            return None, self.error_message
         else:
             self.set_format_etc()
 
@@ -46,18 +61,19 @@ class FileFormatUtil(object):
     def set_format_etc(self):
         """ here it checks the format and set"""
         if self.fname_ext_check == TAB_FILE_EXT:
-            runner, err_msg = self.get_dataframe(TAB_FILE_EXT);
-            return runner, err_msg
+            runner = self.get_dataframe(TAB_FILE_EXT);
+
         elif self.fname_ext_check == CSV_FILE_EXT:
-            runner, err_msg = self.get_dataframe(CSV_FILE_EXT);
-            return runner, err_msg
+            runner = self.get_dataframe(CSV_FILE_EXT);
+
         else:
             err_msg = ('We currently do not process this file type.'
                        ' Please use a file with one of the following'
                        ' extensions: %s') % \
                       (ACCEPTABLE_EXT_LIST,)
             runner = None
-            return runner, err_msg
+            self.add_error(err_msg)
+            return runner, self.error_message
 
 
         # ## database
@@ -77,19 +93,23 @@ class FileFormatUtil(object):
             err_msg = ('Failed to load csv file (pandas ParserError).'
                        ' \n - File: %s\n - %s') % \
                       (self.input_file, err_obj)
-            return None, err_msg
+            self.add_error(err_msg)
+            return None, self.error_message
          except PermissionError as err_obj:
             err_msg = ('No read prermission on this file:'
                        ' \n - File: %s\n - %s') % \
                       (self.input_file, err_obj)
-            return None, err_msg
+            self.add_error(err_msg)
+            return None, self.error_message
          except Exception as err_obj:
             err_msg = ('Failed to load csv file.'
                        ' \n - File: %s\n - %s') % \
                       (self.input_file, err_obj)
-            return None, err_msg
+            self.add_error(err_msg)
+            return None, self.error_message
          print("*******df********", df)
-         return df,None
+         self.dataframe = df
+
 
         if format == CSV_FILE_EXT:
             try:
@@ -99,19 +119,23 @@ class FileFormatUtil(object):
                 err_msg = ('Failed to load csv file (pandas ParserError).'
                            ' \n - File: %s\n - %s') % \
                           (self.input_file, err_obj)
-                return None, err_msg
+                self.add_error(err_msg)
+                return None, self.error_message
             except PermissionError as err_obj:
                 err_msg = ('No read prermission on this file:'
                            ' \n - File: %s\n - %s') % \
                           (self.input_file, err_obj)
-                return None, err_msg
+                self.add_error(err_msg)
+                return None, self.error_message
             except Exception as err_obj:
                 err_msg = ('Failed to load csv file.'
                            ' \n - File: %s\n - %s') % \
                           (self.input_file, err_obj)
-                return None, err_msg
+                self.add_error(err_msg)
+                return None, self.error_message
             print("*******df********",df)
-            return df,None
+            self.dataframe = df
+
 
 
 
