@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-header">
-    <b>Preprocess status</b>
+    <h5>Preprocess status</h5>
   </div>
   <div class="card-body">
     <div id="id_job_alert_div">
@@ -10,42 +10,18 @@
         </div>
         {% endif %}
     </div>
-    <table class="table table-condensd">
+    <table class="table table-condensd" id="tbl_job_status">
       <tr>
         <th>ID / Name</th>
-        <td><span class="badge badge-info">{{ job.id }}</span>
-            &nbsp; &nbsp; {{ job.name }}
-        </td>
-      </tr>
-      <tr>
-        <th>Preprocess complete?</th>
-        <td>
-            {% if job.is_success %}
-            <span class="badge badge-success">{{ job.state }}</span>
-            {% elif job.has_error %}
-            <span class="badge badge-danger">{{ job.state }}</span>
-              <br />{{ job.user_message|linebreaks }}
-            {% else %}
-            <span class="badge badge-info">{{ job.state }}</span>
-            {% endif %}
+        <td><span class="badge badge-primary">{{ job.id }}</span>
+            <span class="badge badge-primary">{{ job.name }}</span>
         </td>
       </tr>
       <tr>
         <th>Created</th>
         <td>{{ job.created }}</td>
       </tr>
-      {% if job.end_time %}
-      <tr>
-        <th>Elapsed time</th>
-        <td>{{ job.get_elapsed_time }}</td>
-      </tr>
-      <tr>
-        <th>Action</th>
-        <td><a href="{% url 'api_get_metadata_version' preprocess_id=job.id version=job.get_version_string %}?pretty" class="btn btn-info btn-sm">View</a>
-           <a href="{% url 'api_download_version' preprocess_id=job.id version=job.get_version_string %}" class="btn btn-info btn-sm">Download</a>
-         </td>
-      </tr>
-      {% endif %}
+      {% include "preprocess/job_card_rows.html" %}
     </table>
   </div>
 </div>

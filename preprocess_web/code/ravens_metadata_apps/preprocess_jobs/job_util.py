@@ -14,6 +14,18 @@ from variable_display_util import VariableDisplayUtil
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
+
+    @staticmethod
+    def get_preprocess_job_dict(preprocess_id):
+        """Return a PreprocessJob to check its status"""
+        try:
+            ze_job = PreprocessJob.objects.get(pk=preprocess_id)
+        except PreprocessJob.DoesNotExist:
+            return err_resp('PreprocessJob not found: %d' % preprocess_id)
+
+        return ok_resp(ze_job.as_dict())
+
+
     @staticmethod
     def get_completed_preprocess_job(job_id):
         """Return only a completed PreprocessJob"""

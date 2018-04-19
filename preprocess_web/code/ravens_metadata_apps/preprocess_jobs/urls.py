@@ -59,12 +59,25 @@ urlpatterns = (
          views_api.api_update_metadata,
          name='api_update_metadata'),
 
-
-    # job to retrieve preprocess data
+    # job to retrieve preprocess job status....
     #
     re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})$',
             views_api.api_get_latest_metadata,
             name='api_get_latest_metadata'),
+
+
+    # job to retrieve preprocess data--assumes job has completed ok
+    #
+    path('api/job-status/<int:preprocess_id>',
+         views_api.api_get_job_status,
+         name='api_get_job_status'),
+
+    # job info JSON format
+    #
+    path('api/job-status/<int:preprocess_id>/with-html',
+         views_api.api_get_job_status_with_html,
+         name='api_get_job_status_with_html'),
+
 
     # job to download preprocess
     #

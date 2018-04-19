@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.db import models
 from django.conf import settings
 from django.utils.safestring import mark_safe
-
+from distutils.util import strtobool
 import jsonfield
 from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
@@ -116,8 +116,7 @@ class PreprocessJob(TimeStampedModel):
                 else:
                     od['creator'] = None
             else:
-                od[attr_name] = '%s' % self.__dict__[attr_name]
-
+                od[attr_name] = self.__dict__[attr_name]    #'%s'
 
         if self.preprocess_file:
             data_ok, data_or_err = self.get_metadata()

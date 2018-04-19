@@ -12,6 +12,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
+from django.template.loader import render_to_string
 
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
@@ -166,6 +167,45 @@ def api_update_metadata(request):
 
     return JsonResponse(result)
 
+
+def api_get_job_status_with_html(request, preprocess_id):
+    """Return job status info with a chunk of HTML"""
+    return api_get_job_status(request,
+                              preprocess_id,
+                              with_html=True)
+
+
+def api_get_job_status(request, preprocess_id, with_html=False):
+    """Return the PreprocessJob status, including data if available.
+    Used to display the status of a PreprocessJob
+    """
+    try:
+        job = PreprocessJob.objects.get(pk=preprocess_id)
+    except PreprocessJob.DoesNotExist:
+        err_mg = 'PreprocessJob not found for id: %d' % preprocess_id
+        return JsonResponse(get_json_error(err_mg),
+                            status=404)
+
+    resp_info = job.as_dict()
+    if with_html:
+        status_row_html = render_to_string('preprocess/job_card_rows.html',
+                                           dict(job=job))
+        resp_info['status_row_html'] = status_row_html
+
+    json_success = get_json_success('job retrieved',
+                                    data=resp_info)
+    if 'pretty' in request.GET:
+        is_success, jstring = json_dump(json_success, indent=4)
+        return HttpResponse('<pre>%s</pre>' % jstring)
+
+    return JsonResponse(json_success)
+
+    #json_fail = get_json_error(resp_info.err_msg)
+    #if 'pretty' in request.GET:
+    #    is_success, jstring = json_dump(json_fail, indent=4)
+    #    return HttpResponse('<pre>%s</pre>' % jstring)
+
+    #return JsonResponse(json_fail)
 
 
 def api_get_latest_metadata(request, preprocess_id):
