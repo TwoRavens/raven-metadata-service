@@ -1,7 +1,7 @@
-"""Entrypoint for preprocessing files"""
+from __future__ import print_function
+import json, time, datetime
 from collections import OrderedDict
 import decimal
-import json, time, datetime
 import pandas as pd
 import os
 from os.path import isdir, isfile
@@ -28,34 +28,41 @@ ACCEPTABLE_FILE_TYPE_EXTS = \
 ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
 # ---------------------------------------------
 
+
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
 
     def __init__(self, dataframe, **kwargs):
-        """Init with a pandas dataframe"""
-        self.df = dataframe
+        """Init with a pandas dataframe
+
+        optional kwargs:
+        job_id
+
+        """
+        self.data_frame = dataframe
         self.job_id = kwargs.get('job_id', None)
         self.celery_task = kwargs.get('celery_task')
         # to populate
-        self.variable_info = {} # { variable_name: ColumnInfo, ...}
+        self.variable_info = {}  # { variable_name: ColumnInfo, ...}
         self.num_vars = None
         self.num_vars_complete = None
 
         # for error handling
         self.has_error = False
         self.error_message = None
-        ts = time.time()
-        self.current_time = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+        time_stamp = time.time()
+        self.current_time = datetime.datetime.fromtimestamp(time_stamp)\
+            .strftime('%Y-%m-%d %H:%M:%S')
         self.preprocess_id = None
 
         # for data source
-        self.data_source_info=kwargs.get('data_source_info')
+        self.data_source_info = kwargs.get('data_source_info')
 
         self.run_preprocess()
 
     def add_error_message(self, err_msg):
         """Add error message"""
-        print(err_msg)
+        # print(err_msg)
         self.has_error = True
         self.error_message = err_msg
 
@@ -66,7 +73,7 @@ class PreprocessRunner(object):
             return
 
         if self.num_vars and self.num_vars > 0:
-            self.celery_task.update_state(\
+            self.celery_task.update_state(
                 state='PROGRESS',
                 meta={'current': self.num_vars_complete,
                       'total': self.num_vars})
@@ -74,10 +81,9 @@ class PreprocessRunner(object):
 
         self.add_error_message('Celery update failed')
 
-
     def run_preprocess(self):
         """Run preprocess"""
-        if not isinstance(self.df, pd.DataFrame):
+        if not isinstance(self.data_frame, pd.DataFrame):
             self.add_error_message('The dataframe is not valid')
             return False
 
@@ -91,27 +97,21 @@ class PreprocessRunner(object):
         """decide type/format, and name"""
         # Use new class to decide "csv file", "tab file"
         # etc
-        job_id=kwargs.get('job_id')
-        file_format_util = FileFormatUtil(input_file,**kwargs)
+        job_id = kwargs.get('job_id')
+        file_format_util = FileFormatUtil(input_file, **kwargs)
 
         # file_format_util.data_frame
         # file_format_util.data_source_info
         if file_format_util.has_error:
-            return None,file_format_util.error_message
+            return None, file_format_util.error_message
         else:
-            df = file_format_util.dataframe
+            data_frame = file_format_util.dataframe
             data_source_info = file_format_util.data_source_info
-            runner = PreprocessRunner(df, job_id=job_id, data_source_info=data_source_info)
-
-
+            runner = PreprocessRunner(data_frame, job_id=job_id, data_source_info=data_source_info)
             if runner.has_error:
                 return None, runner.error_message
 
             return runner, None
-
-
-
-
 
     @staticmethod
     def load_update_file(preprocess_input, update_input):
@@ -129,20 +129,16 @@ class PreprocessRunner(object):
         elif filesize_update == 0:
             return None, 'The file size is zero: [%s]' % update_input
 
-
         try:
             preprocess_input_dict = json.loads(preprocess_input, object_pairs_hook=OrderedDict)
         except TypeError as err_obj:
             err_msg = ('Input does not have Ordered dict convertable type'
-                       '\n - File: %s\n - %s')% \
-                      (preprocess_input, err_obj)
+                       '\n - File: %s\n - %s') % (preprocess_input, err_obj)
             return None, err_msg
         except Exception as err_obj:
             err_msg = ('Failed to convert into Orderd dict'
-                       ' \n - File: %s\n - %s') % \
-                      (preprocess_input, err_obj)
+                       ' \n - File: %s\n - %s') % (preprocess_input, err_obj)
             return None, err_msg
-
 
         try:
             update_input_dict = json.loads(update_input,
@@ -150,16 +146,12 @@ class PreprocessRunner(object):
                                            parse_float=decimal.Decimal)
         except TypeError as err_obj:
             err_msg = ('Input does not have Ordered dict convertable type'
-                       '\n - File: %s\n - %s')% \
-                      (update_input, err_obj)
+                       '\n - File: %s\n - %s')% (update_input, err_obj)
             return None, err_msg
         except Exception as err_obj:
             err_msg = ('Failed to convert into Orderd dict'
-                       ' \n - File: %s\n - %s') % \
-                      (update_input, err_obj)
+                       ' \n - File: %s\n - %s') % (update_input, err_obj)
             return None, err_msg
-
-
 
         display_util = VariableDisplayUtil(preprocess_input_dict, update_input_dict)
 
@@ -168,9 +160,6 @@ class PreprocessRunner(object):
 
         return display_util, None
 
-
-
-
     def calculate_features(self):
         """For each variable, calculate summary stats"""
         if self.has_error:
@@ -178,18 +167,18 @@ class PreprocessRunner(object):
         # Iterate through data frame and
         # run type guess, cal_stats, and plot_values on each ColumnInfo object
         #
-        self.num_vars = len(self.df.columns)
+        self.num_vars = len(self.data_frame.columns)
         self.num_vars_complete = 0
 
-        for colnames in self.df:
+        for colnames in self.data_frame:
             # set stats for each column
             col_info = ColumnInfo(colnames)
-            col_series = self.df[colnames]
+            col_series = self.data_frame[colnames]
 
             TypeGuessUtil(col_series, col_info)
             SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
-            #VariableDisplayUtil(col_series, col_info)
+            # VariableDisplayUtil(col_series, col_info)
             # assign object info to the variable_info
             #
             self.num_vars_complete += 1
@@ -211,7 +200,7 @@ class PreprocessRunner(object):
 
         for col_name, col_info in self.variable_info.items():
             # set stats for each column
-            PlotValuesUtil(self.df, col_info)
+            PlotValuesUtil(self.data_frame, col_info)
 
         return True
     '''
@@ -235,22 +224,18 @@ class PreprocessRunner(object):
 
         return self_section
 
-
     def get_data_source_info(self):
-        '''
+        """
          "data_source": {
             "type": "file",
             "format": "[see below]",
             "name": "[see below]"
        }
-
-        '''
+       """
         data_source_section = OrderedDict()
         data_source_section = self.data_source_info
         # print("data_source_section", {"data_source":self.data_source_info})
         return data_source_section
-
-
 
     def get_dataset_level_info(self):
         """
@@ -258,20 +243,18 @@ class PreprocessRunner(object):
        "row_cnt": 1000,
        "variable_cnt": 25
                 }
-
         """
         dataset_level = OrderedDict()
-        # print("data frame to pass ", self.df)
-        dataset_level_info = DatasetLevelInfo(self.df);
+        # print("data frame to pass ", self.data_frame)
+        dataset_level_info = DatasetLevelInfo(self.data_frame)
         if dataset_level_info.has_error:
             dataset_level = {"error": dataset_level_info.error_messages}
             return dataset_level
 
-        dataset_level = {"dataset":dataset_level_info.final_output, "data_source":self.data_source_info}
+        dataset_level = {"row_cnt" : dataset_level_info.final_output['row_cnt'],
+                         "variable_cnt" : dataset_level_info.final_output['variable_cnt'],
+                         col_const.DATA_SOURCE_INFO : self.get_data_source_info()}
         return dataset_level
-
-
-
 
     def show_final_info(self):
         """Print the final info to the screen"""
@@ -285,8 +268,6 @@ class PreprocessRunner(object):
 
         print(info_string)
 
-
-
     def get_final_json_indented(self, indent=4):
         """Return the final variable info as a JSON string"""
         if self.has_error:
@@ -297,7 +278,6 @@ class PreprocessRunner(object):
 
         return self.get_final_dict(as_string=True,
                                    indent=indent)
-
 
     def get_final_json(self, indent=None):
         """Return the final variable info as a JSON string"""
@@ -310,8 +290,6 @@ class PreprocessRunner(object):
         return self.get_final_dict(as_string=True,
                                    indent=indent)
 
-
-
     def get_final_dict(self, as_string=False, **kwargs):
         """Return the preprocess data as an OrderedDict"""
         if self.has_error:
@@ -319,7 +297,6 @@ class PreprocessRunner(object):
                       self.error_message
             print(err_msg)
             return
-
 
         fmt_variable_info = OrderedDict()   # capture the variables section
         fmt_display_variable_info = OrderedDict()   # capture the variable_display section
@@ -335,11 +312,12 @@ class PreprocessRunner(object):
         #
         overall_dict = OrderedDict()
 
-        overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section() # add the "self" section
-        # overall_dict[col_const.DATA_SOURCE_INFO] = self.get_data_source_info()
-        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()
+        overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section()  # add the "self" section
 
-        overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info   # add "variables"
+        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()\
+            # add the 'dataset' section
+
+        overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info    # add "variables"
 
         overall_dict[col_const.VARIABLE_DISPLAY_SECTION_KEY] = fmt_display_variable_info
 
