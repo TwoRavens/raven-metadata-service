@@ -122,10 +122,9 @@ def view_retrieve_rows_form(request):
     elif input_format == FORMAT_CSV:
         return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
-    else:
-        # Shouldn't reach here, e.g. form should check
-        err_msg = 'Unknown format: %s' % input_format
-        return JsonResponse(get_json_error(err_msg))
+    # Shouldn't reach here, e.g. form should check
+    err_msg = 'Unknown format: %s' % input_format
+    return JsonResponse(get_json_error(err_msg))
 
 
 
