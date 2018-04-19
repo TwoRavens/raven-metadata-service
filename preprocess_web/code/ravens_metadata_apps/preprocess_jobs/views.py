@@ -90,19 +90,6 @@ def view_basic_upload_form(request):
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
 
-"""
-def get_retrieve_rows_info(request, job_id):
-    # if request == 'POST':
-    try:
-        job = PreprocessJob.objects.get(pk=job_id)
-    except PreprocessJob.DoesNotExist:
-        raise Http404('job_id not found: %s' % job_id)
-    output = JobUtil.retrieve_rows(job)
-    print("output ", output)
-    return render(request,
-                  'preprocess/retrieve-rows.html',
-                  {'output': output})
-"""
 
 def view_retrieve_rows_form(request):
     """HTML form to retrieve rows from a preprocess file"""
