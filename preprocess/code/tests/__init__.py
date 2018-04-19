@@ -16,6 +16,9 @@ python -m unittest tests.test_plot_values.PlotValuesTest
 
 # Test update preprocess
 python -m unittest tests.test_update_preprocess.UpdatePreprocessTest
+
+python -m unittest tests.test_preprocess.PreprocessTest
+
 ```
 
 """

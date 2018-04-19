@@ -8,6 +8,7 @@ from django.conf import settings
 from django.utils.safestring import mark_safe
 
 import jsonfield
+from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.json_util import json_dump
@@ -148,6 +149,17 @@ class PreprocessJob(TimeStampedModel):
             return self.preprocess_file.size
 
         return None
+
+
+    def get_elapsed_time(self):
+        """Return the time needed to run preprocess"""
+        if not self.end_time:
+            return None
+
+        elapsed_time = self.end_time - self.created
+
+        return format_timespan(elapsed_time.total_seconds())
+
 
     def is_original_metadata(self):
         """This is the original, there is no previous metadata"""

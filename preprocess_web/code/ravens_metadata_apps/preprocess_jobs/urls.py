@@ -19,9 +19,9 @@ urlpatterns = (
 
     # job info HTML page
     #
-    path('job-status-page/<int:job_id>',
-         views.view_job_status_page,
-         name='view_job_status_page'),
+    path('view-job-status/<int:job_id>',
+         views.view_preprocess_job_status,
+         name='view_preprocess_job_status'),
 
     # job to retrieve rows
     #

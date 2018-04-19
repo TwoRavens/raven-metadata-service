@@ -79,7 +79,7 @@ def view_basic_upload_form(request):
 
             JobUtil.start_preprocess(job)
 
-            redirect_url = reverse('view_job_status_page',
+            redirect_url = reverse('view_preprocess_job_status',
                                    kwargs=dict(job_id=job.id))
 
             return HttpResponseRedirect(redirect_url)
@@ -103,7 +103,8 @@ def view_retrieve_rows_form(request):
     if not frm.is_valid():
         user_msg = dict(success=False,
                         message='Invalid input',
-                        errors=frm._errors)
+                        errors=frm.errors)
+
         return JsonResponse(user_msg)
 
     job_id = frm.cleaned_data['preprocess_id']
@@ -121,15 +122,21 @@ def view_retrieve_rows_form(request):
     elif input_format == FORMAT_CSV:
         return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
 
+    else:
+        # Shouldn't reach here, e.g. form should check
+        err_msg = 'Unknown format: %s' % input_format
+        return JsonResponse(get_json_error(err_msg))
 
-def view_job_status_page(request, job_id):
-    """test to show uploaded file info"""
+
+
+def view_preprocess_job_status(request, job_id):
+    """Show the state of an uploaded preprocess file"""
     try:
         job = PreprocessJob.objects.get(pk=job_id)
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    check_job_status(job)
+    #check_job_status(job)
 
     info_dict = dict(job=job,
                      preprocess_string_err=False)
@@ -144,7 +151,7 @@ def view_job_status_page(request, job_id):
         info_dict['current_time'] = get_current_timestring()
 
     return render(request,
-                  'preprocess/view_process_status.html',
+                  'preprocess/view_preprocess_status.html',
                   info_dict)
 
 
