@@ -267,7 +267,7 @@ class PreprocessRunner(object):
             dataset_level = {"error": dataset_level_info.error_messages}
             return dataset_level
 
-        dataset_level = dataset_level_info.final_output
+        dataset_level = {"dataset":dataset_level_info.final_output, "data_source":self.data_source_info}
         return dataset_level
 
 
@@ -336,7 +336,7 @@ class PreprocessRunner(object):
         overall_dict = OrderedDict()
 
         overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section() # add the "self" section
-        overall_dict[col_const.DATA_SOURCE_INFO] = self.get_data_source_info()
+        # overall_dict[col_const.DATA_SOURCE_INFO] = self.get_data_source_info()
         overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()
 
         overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info   # add "variables"
