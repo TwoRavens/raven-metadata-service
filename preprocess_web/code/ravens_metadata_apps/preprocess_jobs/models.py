@@ -326,7 +326,7 @@ class MetadataUpdate(TimeStampedModel):
     def update_data_as_json(self):
         """Return preprocess file contents if they exist"""
         if self.update_json:
-            json_info = json_dump(self.update_json, indent=4)
+        json_info = json_dump(self.update_json, indent=4)
             if json_info.success:
                 return mark_safe('<pre>%s</pre>' % json_info.result_obj)
 

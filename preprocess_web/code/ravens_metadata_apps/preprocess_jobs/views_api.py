@@ -181,7 +181,7 @@ def api_get_latest_metadata(request, preprocess_id):
                                 data=metadata_or_err)
 
     if 'pretty' in request.GET:
-        jstring = json_dump(user_msg, indent)
+        is_success, jstring = json_dump(user_msg, indent=4)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
     return JsonResponse(user_msg)
@@ -262,7 +262,7 @@ def api_get_metadata_version(request, preprocess_id, version):
         return JsonResponse(get_json_error(data_or_err))
 
     if 'pretty' in request.GET:
-        jstring = json_dump(data_or_err, indent=4)
+        is_success, jstring = json_dump(data_or_err, indent=4)
         return HttpResponse('<pre>%s</pre>' % jstring)
 
 
