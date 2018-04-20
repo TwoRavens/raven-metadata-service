@@ -2,7 +2,7 @@
   <th>Preprocess complete?</th>
   <td>
       {% if job.is_success %}
-      <span class="badge badge-success">{{ job.state }}</span>
+      <h5><span class="badge badge-success">{{ job.state }}</span></h5>
       {% elif job.has_error %}
       <span class="badge badge-danger">{{ job.state }}</span>
         <br />{{ job.user_message|linebreaks }}
@@ -16,6 +16,10 @@
 <tr>
   <th>Elapsed time</th>
   <td>{{ job.get_elapsed_time }}</td>
+</tr>
+<tr>
+  <th>Preprocess File (Size)</th>
+  <td>{{ job.preprocess_filename }} ({{ job.get_preprocess_filesize|filesizeformat }})</td>
 </tr>
 <tr>
   <th>Action</th>

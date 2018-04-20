@@ -60,7 +60,11 @@ class PreprocessResultUpdater(object):
         preprocess_string = dump_result.result_obj
         preprocess_content_file = ContentFile(preprocess_string)
 
-        new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+        new_name = 'preprocess_%s_%s_%s.json' % \
+                   (job.id,
+                    job.get_version_string(as_slug=True),
+                    get_alphanumeric_lowercase(8))
+                    
         job.preprocess_file.save(new_name,
                                  preprocess_content_file)
         job.set_state_success()
