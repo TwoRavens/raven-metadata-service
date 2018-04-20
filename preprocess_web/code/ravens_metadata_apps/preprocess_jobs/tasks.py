@@ -46,33 +46,32 @@ def preprocess_csv_file(input_file, **kwargs):
     start_time = time.time()
     print('(%s) Start preprocess: %s' % (start_time, input_file))
 
+    fname = basename(input_file)
+    print("*************fname : ", fname)
+    fname_base, fname_ext = splitext(fname)
+
+
     # Split out the filename and extension
     # - check if it's a valid file type
     #
-    fname_base, fname_ext = splitext(basename(input_file))
-    fname_ext_check = fname_ext.lower()
+    # fname_base, fname_ext = splitext(basename(input_file))
+    # fname_ext_check = fname_ext.lower()
+    # if fname_ext_check == TAB_FILE_EXT:
+    #     runner, err_msg = PreprocessRunner.load_from_tabular_file(\
+    #                                 input_file,
+    #                                 job_id=job_id)
+    # elif fname_ext_check == CSV_FILE_EXT:
+    #     runner, err_msg = PreprocessRunner.load_from_csv_file(input_file,
+    #                                                           job_id=job_id)
 
-    preprocess_args = dict(job_id=job_id)
-
-    if fname_ext_check == TAB_FILE_EXT:
-        runner, err_msg = PreprocessRunner.load_from_tabular_file(\
-                                    input_file,
-                                    **preprocess_args)
-
-    elif fname_ext_check == CSV_FILE_EXT:
-        # process .csv file
-        #
-        runner, err_msg = PreprocessRunner.load_from_csv_file(\
-                                    input_file,
-                                    **preprocess_args)
-    else:
-        err_msg = ('We currently do not process this file type.'
-                   ' Please use a file with one of the following'
-                   ' extensions: %s') % \
-                   (ACCEPTABLE_EXT_LIST,)
+    runner, err_msg = PreprocessRunner.load_from_file( \
+                                            input_file,
+                                    job_id=job_id,
+                                    fname = fname, fname_base = fname_base,fname_ext = fname_ext) # only input_file and job_id should be sent.
 
 
     if err_msg:
+
         print('(%s) FAILED: %s' % (input_file, err_msg))
         result_info = dict(success=False,
                            job_id=job_id,

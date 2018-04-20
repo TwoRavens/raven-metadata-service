@@ -1,3 +1,4 @@
+from __future__ import print_function
 """ this is the information of dataset level info"""
 import numpy as np
 import pandas as pd
@@ -5,10 +6,12 @@ import re
 from np_json_encoder import NumpyJSONEncoder
 from collections import OrderedDict
 
+
 class DatasetLevelInfo(object):
+
     def __init__(self, df):
         """This class sets the dataset level info of the preprocess file. """
-        #print(" df for dataset level info *** : ", df)
+
         self.dataframe = df
         self.rows_count = None
         self.variables_count = None
@@ -26,7 +29,8 @@ class DatasetLevelInfo(object):
             }
         """
         if self.dataframe is not None:
-            self.rows_count = self.dataframe.shape[0] # shape[0] gives the number of records/rows and is faster then count
+            self.rows_count = self.dataframe.shape[0]  \
+                # shape[0] gives the number of records/rows and is faster then count
             self.variables_count = len(self.dataframe.columns)
         else:
             self.has_error = True
@@ -41,9 +45,4 @@ class DatasetLevelInfo(object):
             self.error_messages.append(" This is an empty dataframe with no variables")
             return
 
-
-        self.final_output = dict(row_cnt=self.rows_count,
-                                 variable_cnt=self.variables_count)
-
-
-        # print("*** final output for dataset level info", self.final_output)
+        self.final_output = dict(row_cnt=self.rows_count, variable_cnt=self.variables_count)
