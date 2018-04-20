@@ -5,6 +5,7 @@ from decimal import Decimal
 from django.core.files.base import ContentFile
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+
 from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
 from variable_display_util import VariableDisplayUtil
 from np_json_encoder import NumpyJSONEncoder

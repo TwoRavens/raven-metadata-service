@@ -6,10 +6,14 @@ from django.urls import reverse
 from django.db import models
 from django.conf import settings
 from django.utils.safestring import mark_safe
-
+from django.utils.text import slugify
+from distutils.util import strtobool
 import jsonfield
+from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
+from ravens_metadata_apps.utils.json_util import json_dump
+
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -113,8 +117,7 @@ class PreprocessJob(TimeStampedModel):
                 else:
                     od['creator'] = None
             else:
-                od[attr_name] = '%s' % self.__dict__[attr_name]
-
+                od[attr_name] = self.__dict__[attr_name]    #'%s'
 
         if self.preprocess_file:
             data_ok, data_or_err = self.get_metadata()
@@ -125,8 +128,11 @@ class PreprocessJob(TimeStampedModel):
 
         return od
 
-    def get_version_string(self):
+    def get_version_string(self, as_slug=False):
         """Always 1"""
+        if as_slug:
+            return "1-0"
+
         return "1.0"
 
     def get_download_preprocess_url(self):
@@ -141,11 +147,29 @@ class PreprocessJob(TimeStampedModel):
         return info
 
     def get_preprocess_filesize(self):
-        """Return the size of the file"""
+        """Return the size of the preprocess file"""
         if self.preprocess_file:
             return self.preprocess_file.size
 
         return None
+
+
+    def get_source_filesize(self):
+        """Return the size of the source file"""
+        if self.source_file:
+            return self.source_file.size
+
+        return None
+
+    def get_elapsed_time(self):
+        """Return the time needed to run preprocess"""
+        if not self.end_time:
+            return None
+
+        elapsed_time = self.end_time - self.created
+
+        return format_timespan(elapsed_time.total_seconds())
+
 
     def is_original_metadata(self):
         """This is the original, there is no previous metadata"""
@@ -172,7 +196,7 @@ class PreprocessJob(TimeStampedModel):
             return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
 
         if as_string:
-            return True, json.dumps(json_dict, indent=4)
+            return json_dump(json_dict, indent=4)
 
         return True, json_dict
 
@@ -198,6 +222,21 @@ class PreprocessJob(TimeStampedModel):
             return self.source_file.path
 
         return 'n/a'
+
+
+    def source_filename(self):
+        """return the source filename (basename only)"""
+        if self.source_file:
+            return basename(self.source_file.name)
+
+        return '(no source file)'
+
+    def preprocess_filename(self):
+        """return the preprocess filename (basename only)"""
+        if self.preprocess_file:
+            return basename(self.preprocess_file.name)
+
+        return '(no preprocess file)'
 
     def is_tab_source_file(self):
         """Is the source file a .tab file"""
@@ -284,10 +323,13 @@ class MetadataUpdate(TimeStampedModel):
 
     note = models.TextField(blank=True)
 
-    def get_version_string(self):
+    def get_version_string(self, as_slug=False):
         """Return the version in string format"""
         # print("string version_number", str(self.version_number))
         # 3.0 => '3.0'
+        if as_slug:
+            return slugify(str(self.version_number))
+
         return str(self.version_number)
 
     # def get_download_preprocess_version_url(self):
@@ -324,7 +366,11 @@ class MetadataUpdate(TimeStampedModel):
     def update_data_as_json(self):
         """Return preprocess file contents if they exist"""
         if self.update_json:
-            return mark_safe('<pre>%s</pre>' % json.dumps(self.update_json, indent=4))
+            json_info = json_dump(self.update_json, indent=4)
+            if json_info.success:
+                return mark_safe('<pre>%s</pre>' % json_info.result_obj)
+
+            return json_info.err_msg
 
         return None
 
@@ -370,12 +416,12 @@ class MetadataUpdate(TimeStampedModel):
             return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
 
         if as_string:
-            return True, json.dumps(json_dict, indent=4)
+            return json_dump(json_dict, indent=4)
 
         return True, json_dict
 
     def get_download_preprocess_url(self):
         """Get the download url"""
         return reverse('api_download_version',
-                        kwargs=dict(preprocess_id=self.id,
-                        version=self.get_version_string()))
+                       kwargs=dict(preprocess_id=self.id,
+                                   version=self.get_version_string()))
