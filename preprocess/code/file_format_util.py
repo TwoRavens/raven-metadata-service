@@ -21,7 +21,7 @@ ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
 
 
 class FileFormatUtil(object):
-    def __init__(self ,file ,**kwargs):
+    def __init__(self, file, **kwargs):
         """Identify file type: csv, tab, etc"""
         # print("The file format class is called")
         self.input_file = file
@@ -64,14 +64,18 @@ class FileFormatUtil(object):
                 self.get_dataframe(TAB_FILE_EXT)
                 self.type = "File"
                 self.format = TAB_FILE_EXT
-                data_source_info_object = DataSourceInfo(name=self.fname, type= self.type, format= self.format)
+                data_source_info_object = DataSourceInfo(name=self.fname,
+                                                         type=self.type,
+                                                         format=self.format)
                 self.data_source_info = data_source_info_object.data
 
             elif self.fname_ext_check == CSV_FILE_EXT:
                 self.get_dataframe(CSV_FILE_EXT)
                 self.type = "File"
                 self.format = CSV_FILE_EXT
-                data_source_info_object = DataSourceInfo(name=self.fname, type=self.type, format=self.format)
+                data_source_info_object = DataSourceInfo(name=self.fname,
+                                                         type=self.type,
+                                                         format=self.format)
                 self.data_source_info = data_source_info_object.data
 
             else:
@@ -90,56 +94,56 @@ class FileFormatUtil(object):
         # ## apache ray type of thing
         # - in -memory -> dataframe
 
-    def get_dataframe(self, format):
-            """ get dataframe on basis of the format"""
-            if format == TAB_FILE_EXT:
-                 try:
-                    data_frame = pd.read_csv(self.input_file,
-                                     delimiter='\t')
-                 except pd.errors.ParserError as err_obj:
-                    err_msg = ('Failed to load csv file (pandas ParserError).'
-                               ' \n - File: %s\n - %s') % \
-                              (self.input_file, err_obj)
-                    self.add_error(err_msg)
-                    return None, self.error_message
-                 except PermissionError as err_obj:
-                    err_msg = ('No read prermission on this file:'
-                               ' \n - File: %s\n - %s') % \
-                              (self.input_file, err_obj)
-                    self.add_error(err_msg)
-                    return None, self.error_message
-                 except Exception as err_obj:
-                    err_msg = ('Failed to load csv file.'
-                               ' \n - File: %s\n - %s') % \
-                              (self.input_file, err_obj)
-                    self.add_error(err_msg)
-                    return None, self.error_message
-                 # print("*******df********", df)
-                 self.dataframe = data_frame
-                 print("datasource", self.data_source_info)
+    def get_dataframe(self, format_name):
+        """ get dataframe on basis of the format"""
+        if format_name == TAB_FILE_EXT:
+            try:
+                data_frame = pd.read_csv(self.input_file,
+                                         delimiter='\t')
+            except pd.errors.ParserError as err_obj:
+                err_msg = ('Failed to load csv file (pandas ParserError).'
+                           ' \n - File: %s\n - %s') % \
+                          (self.input_file, err_obj)
+                self.add_error(err_msg)
+                return None, self.error_message
+            except PermissionError as err_obj:
+                err_msg = ('No read prermission on this file:'
+                           ' \n - File: %s\n - %s') % \
+                          (self.input_file, err_obj)
+                self.add_error(err_msg)
+                return None, self.error_message
+            except Exception as err_obj:
+                err_msg = ('Failed to load csv file.'
+                           ' \n - File: %s\n - %s') % \
+                          (self.input_file, err_obj)
+                self.add_error(err_msg)
+                return None, self.error_message
+            # print("*******df********", df)
+            self.dataframe = data_frame
+            print("datasource", self.data_source_info)
 
-            if format == CSV_FILE_EXT:
-                try:
-                    data_frame = pd.read_csv(self.input_file,
-                                             delimiter=None)
-                except pd.errors.ParserError as err_obj:
-                    err_msg = ('Failed to load csv file (pandas ParserError).'
-                               ' \n - File: %s\n - %s') % \
-                              (self.input_file, err_obj)
-                    self.add_error(err_msg)
-                    return None, self.error_message
-                except PermissionError as err_obj:
-                    err_msg = ('No read prermission on this file:'
-                               ' \n - File: %s\n - %s') % \
-                              (self.input_file, err_obj)
-                    self.add_error(err_msg)
-                    return None, self.error_message
-                except Exception as err_obj:
-                    err_msg = ('Failed to load csv file.'
-                               ' \n - File: %s\n - %s') % \
-                              (self.input_file, err_obj)
-                    self.add_error(err_msg)
-                    return None, self.error_message
-                # print("*******df********",df)
-                self.dataframe = data_frame
-                print("datasource", self.data_source_info)
+        if format_name == CSV_FILE_EXT:
+            try:
+                data_frame = pd.read_csv(self.input_file,
+                                         delimiter=None)
+            except pd.errors.ParserError as err_obj:
+                err_msg = ('Failed to load csv file (pandas ParserError).'
+                           ' \n - File: %s\n - %s') % \
+                          (self.input_file, err_obj)
+                self.add_error(err_msg)
+                return None, self.error_message
+            except PermissionError as err_obj:
+                err_msg = ('No read prermission on this file:'
+                           ' \n - File: %s\n - %s') % \
+                          (self.input_file, err_obj)
+                self.add_error(err_msg)
+                return None, self.error_message
+            except Exception as err_obj:
+                err_msg = ('Failed to load csv file.'
+                           ' \n - File: %s\n - %s') % \
+                          (self.input_file, err_obj)
+                self.add_error(err_msg)
+                return None, self.error_message
+            # print("*******df********",df)
+            self.dataframe = data_frame
+            print("datasource", self.data_source_info)

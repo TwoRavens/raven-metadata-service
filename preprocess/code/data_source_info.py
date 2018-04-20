@@ -16,4 +16,7 @@ class DataSourceInfo(object):
         self.to_dict()
 
     def to_dict(self):
-        self.data = dict(type =self.type, format =self.format, name =self.name)
+        self.data = OrderedDict()
+        self.data['type'] = self.type
+        self.data['format'] = self.format
+        self.data['name'] = self.name
