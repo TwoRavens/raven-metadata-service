@@ -6,8 +6,9 @@ from django.urls import reverse
 from django.db import models
 from django.conf import settings
 from django.utils.safestring import mark_safe
-
+from distutils.util import strtobool
 import jsonfield
+from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.json_util import json_dump
@@ -115,8 +116,7 @@ class PreprocessJob(TimeStampedModel):
                 else:
                     od['creator'] = None
             else:
-                od[attr_name] = '%s' % self.__dict__[attr_name]
-
+                od[attr_name] = self.__dict__[attr_name]    #'%s'
 
         if self.preprocess_file:
             data_ok, data_or_err = self.get_metadata()
@@ -148,6 +148,17 @@ class PreprocessJob(TimeStampedModel):
             return self.preprocess_file.size
 
         return None
+
+
+    def get_elapsed_time(self):
+        """Return the time needed to run preprocess"""
+        if not self.end_time:
+            return None
+
+        elapsed_time = self.end_time - self.created
+
+        return format_timespan(elapsed_time.total_seconds())
+
 
     def is_original_metadata(self):
         """This is the original, there is no previous metadata"""

@@ -1,0 +1,26 @@
+<tr>
+  <th>Preprocess complete?</th>
+  <td>
+      {% if job.is_success %}
+      <span class="badge badge-success">{{ job.state }}</span>
+      {% elif job.has_error %}
+      <span class="badge badge-danger">{{ job.state }}</span>
+        <br />{{ job.user_message|linebreaks }}
+      {% else %}
+      <span class="badge badge-info">{{ job.state }}</span>
+          &nbsp; ({% now "jS F Y H:i" %})
+      {% endif %}
+  </td>
+</tr>
+{% if job.end_time %}
+<tr>
+  <th>Elapsed time</th>
+  <td>{{ job.get_elapsed_time }}</td>
+</tr>
+<tr>
+  <th>Action</th>
+  <td><a href="{% url 'api_get_metadata_version' preprocess_id=job.id version=job.get_version_string %}?pretty" class="btn btn-info btn-sm">View</a>
+     <a href="{% url 'api_download_version' preprocess_id=job.id version=job.get_version_string %}" class="btn btn-info btn-sm">Download</a>
+   </td>
+</tr>
+{% endif %}

@@ -1,6 +1,6 @@
 from django.urls import path, re_path
 
-from ravens_metadata_apps.preprocess_jobs import views
+from ravens_metadata_apps.preprocess_jobs import views, views_api
 
 urlpatterns = (
 
@@ -10,9 +10,6 @@ urlpatterns = (
          views.view_basic_upload_form,
          name='view_basic_upload_form'),
 
-    path(r'api/process-single-file',
-         views.api_process_single_file,
-         name='api_process_single_file'),
 
     # job info JSON format
     #
@@ -22,9 +19,9 @@ urlpatterns = (
 
     # job info HTML page
     #
-    path('job-status-page/<int:job_id>',
-         views.view_job_status_page,
-         name='view_job_status_page'),
+    path('view-job-status/<int:job_id>',
+         views.view_preprocess_job_status,
+         name='view_preprocess_job_status'),
 
     # job to retrieve rows
     #
@@ -32,62 +29,79 @@ urlpatterns = (
          views.view_retrieve_rows_form,
          name='view_form_retrieve_rows'),
 
+    # View PreprocessJob detail, includes MetadataUpdate objects
+    #
+    re_path(r'detail/(?P<preprocess_id>[0-9]{1,10})',
+            views.view_job_detail,
+            name='view_job_detail'),
+
+
+    # View list of all the preprocessed jobs
+    #
+    path(r'job-list',
+         views.view_job_list,
+         name='view_job_list'),
+
+
+    path(r'api/process-single-file',
+         views_api.api_process_single_file,
+         name='api_process_single_file'),
+
     # job to retrieve rows
     #
     path(r'api/retrieve-rows',
-         views.view_api_retrieve_rows,
+         views_api.view_api_retrieve_rows,
          name='view_api_retrieve_rows'),
 
     # job to retrieve rows
     #
     path(r'api/update-metadata',
-         views.api_update_metadata,
+         views_api.api_update_metadata,
          name='api_update_metadata'),
 
-
-    # job to retrieve preprocess data
+    # job to retrieve preprocess job status....
     #
     re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})$',
-            views.api_get_latest_metadata,
+            views_api.api_get_latest_metadata,
             name='api_get_latest_metadata'),
+
+
+    # job to retrieve preprocess data--assumes job has completed ok
+    #
+    path('api/job-status/<int:preprocess_id>',
+         views_api.api_get_job_status,
+         name='api_get_job_status'),
+
+    # job info JSON format
+    #
+    path('api/job-status/<int:preprocess_id>/with-html',
+         views_api.api_get_job_status_with_html,
+         name='api_get_job_status_with_html'),
+
 
     # job to download preprocess
     #
     re_path(r'api/metadata/download/(?P<preprocess_id>[0-9]{1,10})',
-            views.api_download_latest_metadata,
+            views_api.api_download_latest_metadata,
             name='api_download_latest_metadata'),
+
     # job to download preprocess version
     #
-    re_path(r'api/metadata_download/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
-            views.api_download_version,
+    re_path((r'api/metadata_download/(?P<preprocess_id>[0-9]{1,10})/'
+             r'version/(?P<version>[0-9]+\.?[0-9]*)'),
+            views_api.api_download_version,
             name='api_download_version'),
-
-    # job to get detail
-    #
-    re_path(r'api/detail/(?P<preprocess_id>[0-9]{1,10})',
-            views.api_detail,
-            name='api_detail'),
-
 
 
     re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})/version/(?P<version>[0-9]+\.?[0-9]*)',
-            views.api_get_metadata_version,
+            views_api.api_get_metadata_version,
             name='api_get_metadata_version'),
 
-    # job to retrieve preprocess data version
-    #
 
-    #job to get all the preprocessed jobs
-    #
-    path(r'list',
-         views.view_job_list,
-         name='view_list'),
 
     #path(r'api/metadata/<int:preprocess_id>/version/<int:version_number>',
     #     views.api_get_metadata_version,
     #     name='api_get_metadata_version'),
-
-
 
     # default to upload form, for now
     #

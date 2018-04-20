@@ -53,6 +53,7 @@ class PreprocessResultUpdater(object):
         dump_result = json_dump(self.preprocess_data)
         if not dump_result.success:
             job.set_state_failure(dump_result.err_msg)
+            job.source_file.delete()
             job.save()
             return
 

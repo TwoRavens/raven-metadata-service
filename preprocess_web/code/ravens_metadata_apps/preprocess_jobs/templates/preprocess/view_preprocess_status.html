@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block extra_header %}
+<script>
+
+function check_preprocess_status() {
+  let get_metdata_url = '{% url 'api_get_job_status_with_html' job.id %}';
+  $.getJSON(get_metdata_url, function (data) {
+
+    if (data.success) {
+        console.log('ok....');
+        if (data.data.status_row_html){
+          console.log('ok....:' + data.data.status_row_html);
+          $("#tbl_job_status").find("tr:gt(1)").remove();
+          $('#tbl_job_status tr:last').after(data.data.status_row_html);
+        }
+        if(data.data.is_success){
+            console.log('looks successful?? yes');
+            $('#id_job_alert_div').hide();
+            //$('#div_metadata_as_json').show();
+            //alert($('#div_metadata_as_json').height());
+            if ("status_row_html" in data.data){
+              delete data.data["status_row_html"];
+            }
+            $('#id_metadata_card_data').html('<pre>'
+                  + JSON.stringify(data.data, null, 4)
+                  + '</pre>');
+            $('#id_metadata_card').show();
+
+        }else{
+            console.log('looks successful?? no');
+            //$('#div_metadata_as_json').hide();
+            let current_time = new Date().toLocaleTimeString();
+            $('#id_job_alert').html('Preprocess in progress (' + current_time + ')');
+             setTimeout(check_preprocess_status, 2000);
+        }
+    } else {
+        $('#id_job_alert').html(data.message + ' (' + current_time + ')');
+    }
+
+
+  });
+};
+
+$(document).ready(function() {
+  {% if not job.is_success %}
+    $('#id_metadata_card').hide();
+    {% if not job.has_error %}
+      check_preprocess_status();
+    {% endif %}
+  {% endif %}
+});
+</script>
+{% endblock %}
+
+{% block main_content %}
+
+    {% include "preprocess/job_card.html" %}
+    <br /><br />
+    <div class="card" id="id_metadata_card">
+      <div class="card-header">
+        <h5>Metadata</h5>
+      </div>
+      <div class="card-body" id="id_metadata_card_data">
+          {% if job.is_success %}
+            <pre>{{ job.get_metadata_as_json }}</pre>
+          {% endif %}
+      </div>
+    </div>
+
+{% endblock %}

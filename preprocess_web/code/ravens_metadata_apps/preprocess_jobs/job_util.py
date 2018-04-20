@@ -3,7 +3,7 @@ import pandas as pd
 from django.http import HttpResponse
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
-from ravens_metadata_apps.utils.time_util import get_current_timestring
+from ravens_metadata_apps.utils.time_util import get_timestring_for_file
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.preprocess_jobs.models import \
@@ -13,6 +13,18 @@ from variable_display_util import VariableDisplayUtil
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
+
+
+    @staticmethod
+    def get_preprocess_job_dict(preprocess_id):
+        """Return a PreprocessJob to check its status"""
+        try:
+            ze_job = PreprocessJob.objects.get(pk=preprocess_id)
+        except PreprocessJob.DoesNotExist:
+            return err_resp('PreprocessJob not found: %d' % preprocess_id)
+
+        return ok_resp(ze_job.as_dict())
+
 
     @staticmethod
     def get_completed_preprocess_job(job_id):
@@ -278,7 +290,7 @@ class JobUtil(object):
             data_frame = csv_data[start_row_idx:update_end_num-1]
             response = HttpResponse(content_type='text/csv')
 
-            csv_fname = 'data_rows_%s.csv' % (get_current_timestring())
+            csv_fname = 'data_rows_%s.csv' % (get_timestring_for_file())
             response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
 
             data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)

@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header">
+    <h5>Preprocess status</h5>
+  </div>
+  <div class="card-body">
+    <div id="id_job_alert_div">
+        {% if not job.is_finished %}
+        <div id="id_job_alert" class="alert alert-primary" role="alert">
+            Preprocess is in progress....
+        </div>
+        {% endif %}
+    </div>
+    <table class="table table-condensd" id="tbl_job_status">
+      <tr>
+        <th>ID / Name</th>
+        <td><span class="badge badge-primary">{{ job.id }}</span>
+            <span class="badge badge-primary">{{ job.name }}</span>
+        </td>
+      </tr>
+      <tr>
+        <th>Created</th>
+        <td>{{ job.created }}</td>
+      </tr>
+      {% include "preprocess/job_card_rows.html" %}
+    </table>
+  </div>
+</div>
