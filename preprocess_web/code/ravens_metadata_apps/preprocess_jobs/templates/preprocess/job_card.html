@@ -12,10 +12,13 @@
     </div>
     <table class="table table-condensd" id="tbl_job_status">
       <tr>
-        <th>ID / Name</th>
-        <td><span class="badge badge-primary">{{ job.id }}</span>
-            <span class="badge badge-primary">{{ job.name }}</span>
+        <th>ID</th>
+        <td><h4><span class="badge badge-primary">{{ job.id }}</span></h4>
         </td>
+      </tr>
+      <tr>
+        <th>Source File (Size)</th>
+        <td>{{ job.source_filename }} &nbsp; ({{ job.get_source_filesize|filesizeformat }})</td>
       </tr>
       <tr>
         <th>Created</th>

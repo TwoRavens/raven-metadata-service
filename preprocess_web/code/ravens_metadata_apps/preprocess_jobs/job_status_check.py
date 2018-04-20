@@ -55,7 +55,11 @@ class JobStatusCheck(object):
 
                 preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
 
-                new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
+                new_name = 'preprocess_%s_%s_%s.json' % \
+                           (job.id,
+                            job.get_version_string(as_slug=True),
+                            get_alphanumeric_lowercase(8))
+
                 job.preprocess_file.save(new_name,
                                          preprocess_data)
                 job.set_state_success()
