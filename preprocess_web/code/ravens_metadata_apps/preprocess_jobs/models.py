@@ -188,6 +188,9 @@ class PreprocessJob(TimeStampedModel):
         except FileNotFoundError:
             return False, 'Preprocess file not found for job id: %s' % self.id
 
+        if type(file_data) is bytes:
+            file_data = file_data.decode('utf-8')
+
         try:
             json_dict = json.loads(file_data,
                                    object_pairs_hook=OrderedDict,
@@ -407,6 +410,9 @@ class MetadataUpdate(TimeStampedModel):
             file_data = self.metadata_file.read()
         except FileNotFoundError:
             return False, 'Metadata file not found for job id: %s' % self.id
+
+        if type(file_data) is bytes:
+            file_data = file_data.decode('utf-8')
 
         try:
             json_dict = json.loads(file_data,
