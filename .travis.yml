@@ -20,7 +20,7 @@ install:
 script:
   # Run django tests.  (Note django settings are an env variable)
   - cd preprocess/code; python -m unittest
-  - cd ../../preprocess_web/code; python manage.py tests
+  - cd ../../preprocess_web/code; python manage.py test
   - cd ../../; docker build -t tworavens/raven-metadata-service:latest -f ./Dockerfile .
   #- coverage run --source=ravens_metadata_apps.ta2_interfaces manage.py test ravens_metadata_apps.ta2_interfaces ravens_metadata_apps.workspaces
   #- docker build -t tworavens/ravens-main:latest .
