@@ -27,8 +27,8 @@
       <td class="text-center">{{r.pk}}</td>
       {#<td>{{r.state }}</td>#}
       <td>{{r.created }}</td>
-      {% if r.preprocess_file %}
-      <td>{{ r.preprocess_file.size|filesizeformat }}</td>
+      {% if r.metadata_file %}
+      <td>{{ r.metadata_file.size|filesizeformat }}</td>
       <td class="text-center"><a href="{% url 'api_get_latest_metadata' r.id %}?pretty" class="btn btn-info btn-sm">View</a>
           <a href="{% url 'api_download_latest_metadata' r.id %}" class="btn btn-info btn-sm">Download</a>
           <a href="{% url 'view_job_detail' r.id %}" class="btn btn-info btn-sm">Detail</a>

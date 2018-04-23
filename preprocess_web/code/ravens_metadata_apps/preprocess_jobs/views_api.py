@@ -15,7 +15,7 @@ from django.utils.decorators import method_decorator
 from django.template.loader import render_to_string
 
 from ravens_metadata_apps.utils.time_util import get_current_timestring
-from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
+from ravens_metadata_apps.utils.metadata_file import get_metadata_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
@@ -239,7 +239,7 @@ def api_download_latest_metadata(request, preprocess_id):
     response = HttpResponse(content_type='json')
 
     # (no check against int b/c retrieval already worked)
-    fname = get_preprocess_filename(preprocess_id)
+    fname = get_metadata_filename(preprocess_id)
 
     response['Content-Disposition'] = 'attachment; filename=%s' % fname
 
@@ -269,7 +269,7 @@ def api_download_version(request, preprocess_id, version):
     if not success:
         return JsonResponse(get_json_error(metadata_obj_or_err))
 
-    fname = get_preprocess_filename(preprocess_id,
+    fname = get_metadata_filename(preprocess_id,
                                     metadata_obj_or_err.get_version_string())
 
     response = HttpResponse(content_type='json')

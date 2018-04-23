@@ -67,10 +67,11 @@ class PreprocessJob(TimeStampedModel):
                     upload_to='source_file/%Y/%m/%d/',
                     blank=True)
 
-    preprocess_file = models.FileField(\
+    metadata_file = models.FileField(\
                     help_text='Summary metadata created by preprocess',
-                    upload_to='preprocess_file/%Y/%m/%d/',
+                    upload_to='metadata_file/%Y/%m/%d/',
                     blank=True)
+
     schema_version = models.CharField(max_length=100,
                                       default='beta')
 
@@ -122,7 +123,7 @@ class PreprocessJob(TimeStampedModel):
             else:
                 od[attr_name] = self.__dict__[attr_name]    #'%s'
 
-        if self.preprocess_file:
+        if self.metadata_file:
             data_ok, data_or_err = self.get_metadata()
             if data_ok:
                 od['data'] = data_or_err
@@ -149,10 +150,10 @@ class PreprocessJob(TimeStampedModel):
 
         return info
 
-    def get_preprocess_filesize(self):
+    def get_metadata_filesize(self):
         """Return the size of the preprocess file"""
-        if self.preprocess_file:
-            return self.preprocess_file.size
+        if self.metadata_file:
+            return self.metadata_file.size
 
         return None
 
@@ -181,15 +182,15 @@ class PreprocessJob(TimeStampedModel):
     def get_metadata(self, as_string=False):
         """Return preprocess file contents if they exist"""
 
-        if not self.preprocess_file:
+        if not self.metadata_file:
             return err_resp('No preprocess data. e.g. No file')
 
         try:
-            self.preprocess_file.open(mode='r')
-            file_data = self.preprocess_file.read()
-            self.preprocess_file.close()
+            self.metadata_file.open(mode='r')
+            file_data = self.metadata_file.read()
+            self.metadata_file.close()
         except FileNotFoundError:
-            return err_resp('Preprocess file not found for job id: %s' % \
+            return err_resp('Metadata file not found for job id: %s' % \
                             self.id)
 
         if isinstance(file_data, bytes): #type(file_data) is bytes:
@@ -202,7 +203,7 @@ class PreprocessJob(TimeStampedModel):
                                    parse_float=decimal.Decimal)
         except ValueError:
             return err_resp('File contained invalid JSON! (%s)' % \
-                            (self.preprocess_file))
+                            (self.metadata_file))
 
         if as_string:
             return json_dump(json_dict, indent=4)
@@ -240,10 +241,10 @@ class PreprocessJob(TimeStampedModel):
 
         return '(no source file)'
 
-    def preprocess_filename(self):
+    def metadata_filename(self):
         """return the preprocess filename (basename only)"""
-        if self.preprocess_file:
-            return basename(self.preprocess_file.name)
+        if self.metadata_file:
+            return basename(self.metadata_file.name)
 
         return '(no preprocess file)'
 
@@ -323,7 +324,7 @@ class MetadataUpdate(TimeStampedModel):
 
     metadata_file = models.FileField(\
                     help_text='Summary metadata created by preprocess',
-                    upload_to='preprocess_file/%Y/%m/%d/',
+                    upload_to='metadata_file/%Y/%m/%d/',
                     blank=True)
 
     editor = models.ForeignKey(User,
@@ -374,7 +375,7 @@ class MetadataUpdate(TimeStampedModel):
 
         return None
 
-    def get_preprocess_filesize(self):
+    def get_metadata_filesize(self):
         """Return the size of the file"""
         if self.metadata_file:
             return self.metadata_file.size
@@ -419,7 +420,7 @@ class MetadataUpdate(TimeStampedModel):
                                    parse_float=decimal.Decimal)
         except ValueError:
             return err_resp('File contained invalid JSON! (%s)' % \
-                            (self.preprocess_file))
+                            (self.metadata_file))
 
         if as_string:
             return json_dump(json_dict, indent=4)
