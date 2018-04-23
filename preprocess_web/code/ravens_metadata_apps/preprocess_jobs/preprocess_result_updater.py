@@ -64,11 +64,10 @@ class PreprocessResultUpdater(object):
                    (job.id,
                     job.get_version_string(as_slug=True),
                     get_alphanumeric_lowercase(8))
-                    
+
         job.preprocess_file.save(new_name,
                                  preprocess_content_file)
         job.set_state_success()
 
         job.user_message = 'Task completed!  Preprocess is available'
-        job.end_time = timezone.now()
         job.save()

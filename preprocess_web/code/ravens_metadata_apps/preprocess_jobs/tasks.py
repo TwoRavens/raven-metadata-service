@@ -136,7 +136,6 @@ def check_job_status(job):
             job.set_state_success()
 
             job.user_message = 'Task completed!  Preprocess is available'
-            job.end_time = timezone.now()
             job.save()
 
         else:
