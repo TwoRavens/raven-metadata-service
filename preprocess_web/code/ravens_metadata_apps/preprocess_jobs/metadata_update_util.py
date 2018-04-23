@@ -37,8 +37,8 @@ class MetadataUpdateUtil(object):
         else:
             self.error_messages.append(err_msg)
 
-    def get_updated_metadata(self):
-        """Return the updated metadata"""
+    def get_updated_metadata(self, as_obj=False):
+        """Return the updated metadata dict or obj"""
         assert self.has_error is False,\
             'Make sure ".has_error" is False before calling this method!'
 
@@ -46,6 +46,9 @@ class MetadataUpdateUtil(object):
         assert success is True, \
             "MetadataUpdate object with id %s should have valid metadata" % \
             (self.metadata_update_obj.id)
+
+        if as_obj:
+            return self.metadata_update_obj
 
         return metadata
 

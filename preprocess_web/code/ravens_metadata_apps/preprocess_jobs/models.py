@@ -8,12 +8,15 @@ from django.conf import settings
 from django.utils.safestring import mark_safe
 from django.utils.text import slugify
 from distutils.util import strtobool
+from django.utils import timezone
+
 import jsonfield
 from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
 from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.json_util import json_dump
-
+from ravens_metadata_apps.utils.basic_response import \
+    (ok_resp, err_resp)
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
@@ -179,26 +182,32 @@ class PreprocessJob(TimeStampedModel):
         """Return preprocess file contents if they exist"""
 
         if not self.preprocess_file:
-            return False, 'No preprocess data. e.g. No file'
+            return err_resp('No preprocess data. e.g. No file')
 
         try:
             self.preprocess_file.open(mode='r')
             file_data = self.preprocess_file.read()
             self.preprocess_file.close()
         except FileNotFoundError:
-            return False, 'Preprocess file not found for job id: %s' % self.id
+            return err_resp('Preprocess file not found for job id: %s' % \
+                            self.id)
+
+        if isinstance(file_data, bytes): #type(file_data) is bytes:
+            print('BYTES found!')
+            file_data = file_data.decode('utf-8')
 
         try:
             json_dict = json.loads(file_data,
                                    object_pairs_hook=OrderedDict,
                                    parse_float=decimal.Decimal)
         except ValueError:
-            return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+            return err_resp('File contained invalid JSON! (%s)' % \
+                            (self.preprocess_file))
 
         if as_string:
             return json_dump(json_dict, indent=4)
 
-        return True, json_dict
+        return ok_resp(json_dict)
 
 
     def get_absolute_url(self):
@@ -271,6 +280,7 @@ class PreprocessJob(TimeStampedModel):
     def set_state_success(self):
         """set state to STATE_SUCCESS"""
         self.state = STATE_SUCCESS
+        self.end_time = timezone.now()
 
     def set_state_failure(self, user_msg=None):
         """set state to STATE_FAILURE"""
@@ -332,16 +342,6 @@ class MetadataUpdate(TimeStampedModel):
 
         return str(self.version_number)
 
-    # def get_download_preprocess_version_url(self):
-    #     """Get the download url"""
-    #     reverse('api_get_metadata_version',
-    #             kwargs=dict(preprocess_id=self.id,version=self.version_number))
-
-    #def get_download_preprocess_url(self):
-    #    """Get the download url"""
-    #    reverse('api_get_latest_metadata',
-    #            kwargs=dict(preprocess_id=self.id))
-
 
     def __str__(self):
         """minimal, change to name"""
@@ -401,24 +401,30 @@ class MetadataUpdate(TimeStampedModel):
         """Return preprocess file contents if they exist"""
 
         if not self.metadata_file:
-            return False, 'No preprocess data. e.g. No file'
+            return err_resp('No preprocess data. e.g. No file')
 
         try:
+            self.metadata_file.open(mode='r')
             file_data = self.metadata_file.read()
+            self.metadata_file.close()
         except FileNotFoundError:
-            return False, 'Metadata file not found for job id: %s' % self.id
+            return err_resp('Metadata file not found for job id: %s' % self.id)
+
+        if isinstance(file_data, bytes):
+            file_data = file_data.decode('utf-8')
 
         try:
             json_dict = json.loads(file_data,
                                    object_pairs_hook=OrderedDict,
                                    parse_float=decimal.Decimal)
         except ValueError:
-            return False, 'File contained invalid JSON! (%s)' % (self.preprocess_file)
+            return err_resp('File contained invalid JSON! (%s)' % \
+                            (self.preprocess_file))
 
         if as_string:
             return json_dump(json_dict, indent=4)
 
-        return True, json_dict
+        return ok_resp(json_dict)
 
     def get_download_preprocess_url(self):
         """Get the download url"""
