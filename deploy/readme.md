@@ -13,7 +13,7 @@ These steps deploy the TwoRavens EventData application using Docker images from 
 ```
 # pull the latest config code
 #
-cd two-metadata-service
+cd raven-metadata-service
 git pull
 
 # activate the deployment and service
