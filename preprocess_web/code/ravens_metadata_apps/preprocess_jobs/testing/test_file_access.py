@@ -34,8 +34,8 @@ class FileEncodingTestCase(TestCase):
     def tearDown(self):
         """Set up PreprocessJobs"""
         print('    - remove test files')
-        self.job_01_text.preprocess_file.delete()
-        self.job_02_binary.preprocess_file.delete()
+        self.job_01_text.metadata_file.delete()
+        self.job_02_binary.metadata_file.delete()
 
 
     def get_metadata_obj(self, job_obj):
@@ -86,10 +86,10 @@ class FileEncodingTestCase(TestCase):
                     get_timestring_for_file(),
                     get_alphanumeric_lowercase(8))
 
-        ye_job.preprocess_file.save(new_name,
+        ye_job.metadata_file.save(new_name,
                                     preprocess_content_file)
 
-        #print('    - create test file:', ye_job.preprocess_file.path)
+        #print('    - create test file:', ye_job.metadata_file.path)
 
         ye_job.set_state_success()
         ye_job.save()

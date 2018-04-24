@@ -65,7 +65,7 @@ class PreprocessResultUpdater(object):
                     job.get_version_string(as_slug=True),
                     get_alphanumeric_lowercase(8))
 
-        job.preprocess_file.save(new_name,
+        job.metadata_file.save(new_name,
                                  preprocess_content_file)
         job.set_state_success()
 

@@ -60,8 +60,8 @@ class JobStatusCheck(object):
                             job.get_version_string(as_slug=True),
                             get_alphanumeric_lowercase(8))
 
-                job.preprocess_file.save(new_name,
-                                         preprocess_data)
+                job.metadata_file.save(new_name,
+                                       preprocess_data)
                 job.set_state_success()
 
                 job.user_message = 'Task completed!  Preprocess is available'

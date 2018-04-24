@@ -44,7 +44,7 @@ if not isdir(STATIC_ROOT):
     makedirs(STATIC_ROOT)
 
 
-MEDIA_ROOT = join(LOCAL_SETUP_DIR, 'preprocess_files')
+MEDIA_ROOT = join(LOCAL_SETUP_DIR, 'metadata_files')
 if not isdir(MEDIA_ROOT):
     os.makedirs(MEDIA_ROOT)
 

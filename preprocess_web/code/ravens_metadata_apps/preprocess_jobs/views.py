@@ -14,7 +14,7 @@ from django.core.files.base import ContentFile
 from django.utils.decorators import method_decorator
 
 from ravens_metadata_apps.utils.time_util import get_current_timestring
-from ravens_metadata_apps.utils.metadata_file import get_preprocess_filename
+from ravens_metadata_apps.utils.metadata_file import get_metadata_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
 from ravens_metadata_apps.raven_auth.models import User, KEY_API_USER
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil

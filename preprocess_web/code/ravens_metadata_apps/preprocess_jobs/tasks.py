@@ -131,7 +131,7 @@ def check_job_status(job):
             preprocess_data = ContentFile(json.dumps(ye_task.result['data']))
 
             new_name = 'preprocess_%s.json' % get_alphanumeric_lowercase(8)
-            job.preprocess_file.save(new_name,
+            job.metadata_file.save(new_name,
                                      preprocess_data)
             job.set_state_success()
 
