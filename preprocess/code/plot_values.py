@@ -110,7 +110,7 @@ class PlotValuesUtil(object):
             self.col_info.plot_type = col_const.PLOT_BAR
 
             for val, cnt in self.col_series.sort_values().value_counts().items():
-                if type(val) is not str:
+                if not isinstance(val, str):
                     try:
                         self.output[str(val)] = cnt
                     except TypeError:
@@ -121,7 +121,7 @@ class PlotValuesUtil(object):
                     del cnt
                 else:
                     self.output[str(val)] = cnt
-
+        
             self.col_info.plot_values = self.output
 
             # code for cdf values

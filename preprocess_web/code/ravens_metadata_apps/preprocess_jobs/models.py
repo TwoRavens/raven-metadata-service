@@ -13,6 +13,8 @@ from django.utils import timezone
 import jsonfield
 from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
+
+from file_format_util import TAB_FILE_EXT, CSV_FILE_EXT
 from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.json_util import json_dump
 from ravens_metadata_apps.utils.basic_response import \
@@ -251,14 +253,14 @@ class PreprocessJob(TimeStampedModel):
     def is_tab_source_file(self):
         """Is the source file a .tab file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith('.tab'):
+            if self.source_file.path.lower().endswith(TAB_FILE_EXT):
                 return True
         return False
 
     def is_csv_source_file(self):
-        """Is the source file a .tab file"""
+        """Is the source file a .FORMAT_CSV file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith('.csv'):
+            if self.source_file.path.lower().endswith(CSV_FILE_EXT):
                 return True
         return False
 

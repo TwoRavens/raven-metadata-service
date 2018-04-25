@@ -9,7 +9,7 @@ from ravens_metadata_apps.utils.basic_response import \
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from variable_display_util import VariableDisplayUtil
-
+from file_format_constants import TAB_FILE_EXT
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
@@ -258,12 +258,14 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            if job.name.lower().endswith('.tab'):
+
+            if job.name.lower().endswith(TAB_FILE_EXT):
                 print("is tab file")
                 csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
                 print(csv_data)
             else:
                 csv_data = pd.read_csv(job.source_file.path)
+
             max_rows = len(csv_data)
             print("the no. of rows are ", max_rows)
 

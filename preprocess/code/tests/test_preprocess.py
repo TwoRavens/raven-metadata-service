@@ -12,7 +12,8 @@ import col_info_constants as col_const
 import update_constants as update_const
 from preprocess_runner import PreprocessRunner
 from data_source_info import SOURCE_TYPE_FILE
-from file_format_util import (CSV_FILE_EXT, TAB_FILE_EXT)
+from file_format_constants import \
+    (CSV_FILE_EXT, TAB_FILE_EXT, get_mime_type)
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
 # INPUT_DIR = join(PREPROCESS_DIR, 'input')
@@ -76,7 +77,7 @@ class PreprocessTest(unittest.TestCase):
         self.assertEqual(result_dict['dataset']['row_cnt'], 4)
         self.assertEqual(result_dict['dataset']['variable_cnt'], 3)
         self.assertEqual(result_dict['dataset']['data_source']['type'], SOURCE_TYPE_FILE)
-        self.assertEqual(result_dict['dataset']['data_source']['format'], CSV_FILE_EXT)
+        self.assertEqual(result_dict['dataset']['data_source']['format'], get_mime_type(CSV_FILE_EXT))
         self.assertEqual(result_dict['dataset']['data_source']['name'], 'editor_test.csv')
 
 
@@ -98,7 +99,7 @@ class PreprocessTest(unittest.TestCase):
         self.assertEqual(result_dict['dataset']['row_cnt'], 4)
         self.assertEqual(result_dict['dataset']['variable_cnt'], 3)
         self.assertEqual(result_dict['dataset']['data_source']['type'], SOURCE_TYPE_FILE)
-        self.assertEqual(result_dict['dataset']['data_source']['format'], TAB_FILE_EXT)
+        self.assertEqual(result_dict['dataset']['data_source']['format'], get_mime_type(TAB_FILE_EXT))
         self.assertEqual(result_dict['dataset']['data_source']['name'], 'editor_test.tab')
 
 

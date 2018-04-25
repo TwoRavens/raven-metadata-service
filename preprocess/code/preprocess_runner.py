@@ -18,15 +18,6 @@ from variable_display_util import VariableDisplayUtil
 from dataset_level_info_util import DatasetLevelInfo
 from file_format_util import FileFormatUtil
 
-# Move these elsewhere as things progress ....
-# ---------------------------------------------
-CSV_FILE_EXT = '.csv'
-TAB_FILE_EXT = '.tab'
-ACCEPTABLE_FILE_TYPE_EXTS = \
-                    (CSV_FILE_EXT,
-                     TAB_FILE_EXT)
-ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
-# ---------------------------------------------
 
 
 class PreprocessRunner(object):
@@ -105,11 +96,10 @@ class PreprocessRunner(object):
         if file_format_util.has_error:
             return None, file_format_util.error_message
         else:
-            data_frame = file_format_util.dataframe
-            data_source_info = file_format_util.data_source_info
-            runner = PreprocessRunner(data_frame,
-                                      job_id=job_id,
-                                      data_source_info=data_source_info)
+            runner = PreprocessRunner(\
+                        file_format_util.dataframe,
+                        job_id=job_id,
+                        data_source_info=file_format_util.data_source_info)
             if runner.has_error:
                 return None, runner.error_message
 
@@ -242,7 +232,7 @@ class PreprocessRunner(object):
 
         info_dict = dataset_level_info.final_output
         if self.data_source_info:
-            info_dict[col_const.DATA_SOURCE_INFO] = self.data_source_info
+            info_dict[col_const.DATA_SOURCE_INFO] = self.data_source_info.as_dict()
 
         return info_dict
 

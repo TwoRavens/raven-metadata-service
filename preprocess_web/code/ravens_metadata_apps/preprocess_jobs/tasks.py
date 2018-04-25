@@ -31,8 +31,8 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from preprocess_runner import \
-    (PreprocessRunner, ACCEPTABLE_EXT_LIST,
-     CSV_FILE_EXT, TAB_FILE_EXT)
+    (PreprocessRunner,)
+
 from msg_util import msg, msgt
 
 from ravens_metadata.celery import celery_app
