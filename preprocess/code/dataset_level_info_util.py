@@ -1,5 +1,6 @@
 from __future__ import print_function
 """ this is the information of dataset level info"""
+from collections import OrderedDict
 import numpy as np
 import pandas as pd
 import re
@@ -17,7 +18,7 @@ class DatasetLevelInfo(object):
         self.variables_count = None
         self.has_error = False
         self.error_messages = []
-        self.final_output = {}
+        self.final_output = OrderedDict()
 
         self.set_values()
 
@@ -45,4 +46,5 @@ class DatasetLevelInfo(object):
             self.error_messages.append(" This is an empty dataframe with no variables")
             return
 
-        self.final_output = dict(row_cnt=self.rows_count, variable_cnt=self.variables_count)
+        self.final_output['row_cnt'] = self.rows_count
+        self.final_output['variable_cnt'] = self.variables_count

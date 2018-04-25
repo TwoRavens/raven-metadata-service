@@ -11,6 +11,8 @@ from os.path import \
 import col_info_constants as col_const
 import update_constants as update_const
 from preprocess_runner import PreprocessRunner
+from data_source_info import SOURCE_TYPE_FILE
+from file_format_util import (CSV_FILE_EXT, TAB_FILE_EXT)
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
 # INPUT_DIR = join(PREPROCESS_DIR, 'input')
@@ -60,11 +62,10 @@ class PreprocessTest(unittest.TestCase):
         msgt(self.test_010_basic_preprocess.__doc__)
 
         basic_csv = self.get_file_path('editor_test.csv')
-        fname = basename(basic_csv)
-        fname_base, fname_ext = splitext(fname)
-        runner, err = PreprocessRunner.load_from_file(basic_csv,job_id=1,fname=fname,fname_base=fname_base,fname_ext=fname_ext)
+        runner, err = PreprocessRunner.load_from_file(basic_csv, job_id=1)
 
-
+        print(err)
+        print('=' * 40)
         self.assertTrue(err is None)
         self.assertTrue(runner.has_error is False)
 
@@ -74,8 +75,8 @@ class PreprocessTest(unittest.TestCase):
 
         self.assertEqual(result_dict['dataset']['row_cnt'], 4)
         self.assertEqual(result_dict['dataset']['variable_cnt'], 3)
-        self.assertEqual(result_dict['dataset']['data_source']['type'],'File')
-        self.assertEqual(result_dict['dataset']['data_source']['format'], '.csv')
+        self.assertEqual(result_dict['dataset']['data_source']['type'], SOURCE_TYPE_FILE)
+        self.assertEqual(result_dict['dataset']['data_source']['format'], CSV_FILE_EXT)
         self.assertEqual(result_dict['dataset']['data_source']['name'], 'editor_test.csv')
 
 
@@ -85,10 +86,7 @@ class PreprocessTest(unittest.TestCase):
         msgt(self.test_020_basic_preprocess.__doc__)
 
         basic_tab = self.get_file_path('editor_test.tab')
-        fname = basename(basic_tab)
-        fname_base, fname_ext = splitext(fname)
-        runner, err = PreprocessRunner.load_from_file(basic_tab, job_id=1, fname=fname, fname_base=fname_base,
-                                                      fname_ext=fname_ext)
+        runner, err = PreprocessRunner.load_from_file(basic_tab, job_id=1)
 
         self.assertTrue(err is None)
         self.assertTrue(runner.has_error is False)
@@ -99,8 +97,8 @@ class PreprocessTest(unittest.TestCase):
 
         self.assertEqual(result_dict['dataset']['row_cnt'], 4)
         self.assertEqual(result_dict['dataset']['variable_cnt'], 3)
-        self.assertEqual(result_dict['dataset']['data_source']['type'], 'File')
-        self.assertEqual(result_dict['dataset']['data_source']['format'], '.tab')
+        self.assertEqual(result_dict['dataset']['data_source']['type'], SOURCE_TYPE_FILE)
+        self.assertEqual(result_dict['dataset']['data_source']['format'], TAB_FILE_EXT)
         self.assertEqual(result_dict['dataset']['data_source']['name'], 'editor_test.tab')
 
 

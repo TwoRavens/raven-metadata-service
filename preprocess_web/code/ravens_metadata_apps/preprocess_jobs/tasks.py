@@ -46,29 +46,9 @@ def preprocess_csv_file(input_file, **kwargs):
     start_time = time.time()
     print('(%s) Start preprocess: %s' % (start_time, input_file))
 
-    fname = basename(input_file)
-    print("*************fname : ", fname)
-    fname_base, fname_ext = splitext(fname)
-
-
-    # Split out the filename and extension
-    # - check if it's a valid file type
-    #
-    # fname_base, fname_ext = splitext(basename(input_file))
-    # fname_ext_check = fname_ext.lower()
-    # if fname_ext_check == TAB_FILE_EXT:
-    #     runner, err_msg = PreprocessRunner.load_from_tabular_file(\
-    #                                 input_file,
-    #                                 job_id=job_id)
-    # elif fname_ext_check == CSV_FILE_EXT:
-    #     runner, err_msg = PreprocessRunner.load_from_csv_file(input_file,
-    #                                                           job_id=job_id)
-
-    runner, err_msg = PreprocessRunner.load_from_file( \
-                                            input_file,
-                                    job_id=job_id,
-                                    fname = fname, fname_base = fname_base,fname_ext = fname_ext) # only input_file and job_id should be sent.
-
+    runner, err_msg = PreprocessRunner.load_from_file(\
+                                        input_file,
+                                        job_id=job_id)
 
     if err_msg:
 
