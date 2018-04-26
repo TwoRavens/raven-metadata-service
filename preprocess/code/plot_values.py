@@ -121,7 +121,7 @@ class PlotValuesUtil(object):
                     del cnt
                 else:
                     self.output[str(val)] = cnt
-        
+
             self.col_info.plot_values = self.output
 
             # code for cdf values
