@@ -185,16 +185,32 @@ class JobUtil(object):
                                     # if start_row is 10, start on index
 
         if job.is_tab_source_file():
-            csv_data = pd.read_csv(job.source_file.path,
+            try:
+                csv_data = pd.read_csv(job.source_file.path,
                                    sep='\t',
-                                   lineterminator='\r')
-                                   #skiprows=skiprows,
-                                   #nrows=num_rows)
+                                   lineterminator='\r',
+                                   skiprows=start_row_idx,
+                                   nrows=num_rows)
+
+            except ValueError:
+                print(" not good value for the row start")
+                csv_data = pd.read_csv(job.source_file.path,
+                                       sep='\t',
+                                       lineterminator='\r',
+                                       skiprows=0,
+                                       nrows=num_rows)
             print(csv_data)
         elif job.is_csv_source_file():
-            csv_data = pd.read_csv(job.source_file.path)
-                                   #skiprows=skiprows,
-                                   #nrows=num_rows)
+            try:
+                csv_data = pd.read_csv(job.source_file.path,
+                                   skiprows=start_row_idx,
+                                   nrows=num_rows)
+            except ValueError:
+                print(" not good value for the row start")
+                csv_data = pd.read_csv(job.source_file.path,
+                                       skiprows=0,
+                                       nrows=num_rows)
+            print(csv_data)
         else:
             return dict(success=False,
                         message='File type unknown (not csv or tab)')
@@ -208,7 +224,8 @@ class JobUtil(object):
             err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (start_row, max_rows)
             error_message.append(err)
             start_row = 1
-        elif num_rows > max_rows:
+            start_row_idx = start_row -1
+        if num_rows > max_rows:
             err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (num_rows, max_rows)
             error_message.append(err)
             num_rows = max_rows
@@ -217,7 +234,7 @@ class JobUtil(object):
         print("error message", error_message)
         data_frame = csv_data[start_row_idx:update_end_num-1]
         raw_data = data_frame.to_dict(orient='split')
-
+        print("num_rows ", num_rows)
         if 'index' in raw_data:
             del raw_data['index']
         # print("raw_data", raw_data)
@@ -258,17 +275,50 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            if job.name.lower().endswith('.tab'):
-                print("is tab file")
-                csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
+            input_format = kwargs.get('format')
+            job_id = kwargs.get('preprocess_id')
+            # -------------------------------------------
+            # Read partial file, set lines to skip, etc
+            # -------------------------------------------
+            start_row_idx = start_row - 1  # e.g. if start_row is 1, skip nothing
+            # if start_row is 10, start on index
+
+            if job.is_tab_source_file():
+                try:
+                    csv_data = pd.read_csv(job.source_file.path,
+                                           sep='\t',
+                                           lineterminator='\r',
+                                           skiprows=start_row_idx,
+                                           nrows=num_rows)
+
+                except ValueError:
+                    print(" not good value for the row start")
+                    csv_data = pd.read_csv(job.source_file.path,
+                                           sep='\t',
+                                           lineterminator='\r',
+                                           skiprows=0,
+                                           nrows=num_rows)
+                print(csv_data)
+            elif job.is_csv_source_file():
+                try:
+                    csv_data = pd.read_csv(job.source_file.path,
+                                           skiprows=start_row_idx,
+                                           nrows=num_rows)
+                except ValueError:
+                    print(" not good value for the row start")
+                    csv_data = pd.read_csv(job.source_file.path,
+                                           skiprows=0,
+                                           nrows=num_rows)
                 print(csv_data)
             else:
-                csv_data = pd.read_csv(job.source_file.path)
+                return dict(success=False,
+                            message='File type unknown (not csv or tab)')
+
             max_rows = len(csv_data)
             print("the no. of rows are ", max_rows)
 
             error_message = []
-            start_row_idx = start_row - 1
+
 
             if start_row > max_rows:
                 err = ('The request was from %s rows but only %d'
@@ -277,7 +327,8 @@ class JobUtil(object):
                        (start_row, max_rows)
                 error_message.append(err)
                 start_row = 1
-            elif num_rows > max_rows:
+                start_row_idx = start_row -1
+            if num_rows > max_rows:
                 err = ('The request was for %s rows but only'
                        ' %d rows were found, so number rows'
                        ' is set to max rows') % \
