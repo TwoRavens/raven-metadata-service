@@ -159,7 +159,7 @@ class JobUtil(object):
         job.save()
 
     @staticmethod
-    def get_csv(job, **kwargs):
+    def get_data_frame(job, **kwargs):
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('num_rows')
         # ------------------------------------------
@@ -168,7 +168,7 @@ class JobUtil(object):
         error_message = []
         job_data = job.get_metadata()
         if not job_data.success:
-            return err_resp(job_data.err_msg)
+            return False,None,err_resp(job_data.err_msg)
 
         job_metadata = job_data.result_obj  # in this case job_data is an `ok_resp`
         row_cnt = job_metadata['dataset']['row_cnt']
@@ -230,7 +230,7 @@ class JobUtil(object):
         print("error message", error_message)
         data_frame = pd.DataFrame(csv_data)
 
-        return data_frame, error_message
+        return True,data_frame, error_message
 
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
@@ -240,41 +240,44 @@ class JobUtil(object):
         input_format = kwargs.get('format')
         job_id = kwargs.get('preprocess_id')
 
-        data_frame, error_message = JobUtil.get_csv(job, start_row = start_row, num_rows = num_rows)
-        raw_data = data_frame.to_dict(orient='split')
-        print("num_rows ", num_rows)
-        if 'index' in raw_data:
-            del raw_data['index']
-        # print("raw_data", raw_data)
+        success,data_frame, error_message = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
+        if success:
+            raw_data = data_frame.to_dict(orient='split')
+            print("num_rows ", num_rows)
+            if 'index' in raw_data:
+                del raw_data['index']
+            # print("raw_data", raw_data)
 
-        if len(error_message) > 0:
-            output = {
-                "success": True,
-                "message": 'It worked but with some changes',
-                "modifications": error_message,
-                "attributes": {
-                    "preprocess_id": job_id,
-                    "start_row": start_row,
-                    "num_rows": num_rows,
-                    "format": input_format
-                },
-                "data": raw_data,
-            }
+            if len(error_message) > 0:
+                output = {
+                    "success": True,
+                    "message": 'It worked but with some changes',
+                    "modifications": error_message,
+                    "attributes": {
+                        "preprocess_id": job_id,
+                        "start_row": start_row,
+                        "num_rows": num_rows,
+                        "format": input_format
+                    },
+                    "data": raw_data,
+                }
 
+            else:
+                output = {
+                    "success": True,
+                    "message": 'It worked',
+                    "attributes": {
+                        "preprocess_id": job_id,
+                        "start_row": start_row,
+                        "num_rows": num_rows,
+                        "format": input_format
+                    },
+                    "data": raw_data,
+                }
+
+            return output
         else:
-            output = {
-                "success": True,
-                "message": 'It worked',
-                "attributes": {
-                    "preprocess_id": job_id,
-                    "start_row": start_row,
-                    "num_rows": num_rows,
-                    "format": input_format
-                },
-                "data": raw_data,
-            }
-
-        return output
+            return error_message
 
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
@@ -283,15 +286,18 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            data_frame, err_resp = JobUtil.get_csv(job, start_row = start_row, num_rows = num_rows)
-            response = HttpResponse(content_type='text/csv')
+            success,data_frame, err_resp = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
+            if success:
+                response = HttpResponse(content_type='text/csv')
 
-            csv_fname = 'data_rows_%s.csv' % (get_timestring_for_file())
-            response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
+                csv_fname = 'data_rows_%s.csv' % (get_timestring_for_file())
+                response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
 
-            data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
+                data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
 
-            return response
+                return response
+            else:
+                return err_resp
 
     @staticmethod
     def update_preprocess_metadata(preprocess_json, update_json, **kwargs):
