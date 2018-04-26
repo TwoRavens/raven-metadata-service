@@ -161,9 +161,6 @@ class JobUtil(object):
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
         """Open the original data file and return the rows in JSON format (python dict)"""
-
-        # Assume this passed through the RetrieveRowsForm for validation
-        #
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('number_rows')
         input_format = kwargs.get('format')
@@ -172,9 +169,30 @@ class JobUtil(object):
         # -------------------------------------------
         # Read partial file, set lines to skip, etc
         # -------------------------------------------
-        start_row_idx = start_row - 1    # e.g. if start_row is 1, skip nothing
-                                         # if start_row is 10, start on index
+        start_row_idx = start_row - 1  # e.g. if start_row is 1, skip nothing
+                                       # if start_row is 10, start on index
 
+        # ------------------------------------------
+        # Check the errors
+        # ------------------------------------------
+        error_message = []
+        job_data = job.get_metadata()
+        if job_data:
+            row_cnt = job_data[1]['dataset']['row_cnt']
+            print("row_cnt ", row_cnt)
+            if start_row > row_cnt:
+                err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set'\
+                        % (start_row, row_cnt)
+                error_message.append(err)
+                start_row = 1
+                start_row_idx = start_row - 1
+            if num_rows > row_cnt:
+                err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows'\
+                        % (num_rows, row_cnt)
+                error_message.append(err)
+                num_rows = row_cnt
+
+        # To read csv given rows count and start rows
         if job.is_tab_source_file():
             try:
                 csv_data = pd.read_csv(job.source_file.path,
@@ -185,10 +203,11 @@ class JobUtil(object):
 
             except ValueError:
                 print(" not good value for the row start")
+                start_row = 0
                 csv_data = pd.read_csv(job.source_file.path,
                                        sep='\t',
                                        lineterminator='\r',
-                                       skiprows=0,
+                                       skiprows=start_row,
                                        nrows=num_rows)
             print(csv_data)
         elif job.is_csv_source_file():
@@ -198,30 +217,14 @@ class JobUtil(object):
                                        nrows=num_rows)
             except ValueError:
                 print(" not good value for the row start")
+                start_row = 0
                 csv_data = pd.read_csv(job.source_file.path,
-                                       skiprows=0,
+                                       skiprows=start_row,
                                        nrows=num_rows)
             print(csv_data)
         else:
             return dict(success=False,
                         message='File type unknown (not csv or tab)')
-
-        max_rows = len(csv_data.index)
-        print("the no. of rows are ", max_rows)
-
-        error_message = []
-
-        if start_row > max_rows:
-            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set'\
-                    % (start_row, max_rows)
-            error_message.append(err)
-            start_row = 1
-            start_row_idx = start_row - 1
-        if num_rows > max_rows:
-            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows'\
-                    % (num_rows, max_rows)
-            error_message.append(err)
-            num_rows = max_rows
 
         update_end_num = start_row + num_rows
         print("error message", error_message)
@@ -274,6 +277,25 @@ class JobUtil(object):
             # -------------------------------------------
             start_row_idx = start_row - 1  # e.g. if start_row is 1, skip nothing
             # if start_row is 10, start on index
+            # ------------------------------------------
+            # Check the errors
+            # ------------------------------------------
+            error_message = []
+            job_data = job.get_metadata()
+            if job_data:
+                row_cnt = job_data[1]['dataset']['row_cnt']
+                print("row_cnt ", row_cnt)
+                if start_row > row_cnt:
+                    err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' \
+                          % (start_row, row_cnt)
+                    error_message.append(err)
+                    start_row = 1
+                    start_row_idx = start_row - 1
+                if num_rows > row_cnt:
+                    err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' \
+                          % (num_rows, row_cnt)
+                    error_message.append(err)
+                    num_rows = row_cnt
 
             if job.is_tab_source_file():
                 try:
@@ -305,26 +327,6 @@ class JobUtil(object):
             else:
                 return dict(success=False,
                             message='File type unknown (not csv or tab)')
-
-            max_rows = len(csv_data)
-            print("the no. of rows are ", max_rows)
-
-            error_message = []
-            if start_row > max_rows:
-                err = ('The request was from %s rows but only %d'
-                       ' rows were found, so default start rows = 1'
-                       ' is set') % \
-                       (start_row, max_rows)
-                error_message.append(err)
-                start_row = 1
-                start_row_idx = start_row - 1
-            if num_rows > max_rows:
-                err = ('The request was for %s rows but only'
-                       ' %d rows were found, so number rows'
-                       ' is set to max rows') % \
-                       (num_rows, max_rows)
-                error_message.append(err)
-                num_rows = max_rows
 
             print("error message", error_message)
             update_end_num = start_row + num_rows
