@@ -14,7 +14,6 @@ from variable_display_util import VariableDisplayUtil
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
 
-
     @staticmethod
     def get_preprocess_job_dict(preprocess_id):
         """Return a PreprocessJob to check its status"""
@@ -24,7 +23,6 @@ class JobUtil(object):
             return err_resp('PreprocessJob not found: %d' % preprocess_id)
 
         return ok_resp(ze_job.as_dict())
-
 
     @staticmethod
     def get_completed_preprocess_job(job_id):
@@ -44,7 +42,6 @@ class JobUtil(object):
         success, obj_or_err = JobUtil.get_latest_metadata_object(job_id)
         if success is False:
             return err_resp(obj_or_err)
-
 
         print('type(obj_or_err)', type(obj_or_err))
         print('obj_or_err.id', obj_or_err.id)
@@ -66,7 +63,7 @@ class JobUtil(object):
 
         update_object = MetadataUpdate.objects.filter(\
                                  orig_metadata=job_id,
-                                 version_number=version\
+                                 version_number=version
                                 ).first()
         # print("here is the data",update_object.name.version_number)
         if update_object:
@@ -96,7 +93,7 @@ class JobUtil(object):
         update_objects = MetadataUpdate.objects.filter(orig_metadata=job_id)
 
         if update_objects:
-            #return True, update_objects
+            # return True, update_objects
             update_objects = list(update_objects)
         else:
             update_objects = []
@@ -111,7 +108,6 @@ class JobUtil(object):
 
         return ok_resp(update_objects)
 
-
     @staticmethod
     def get_latest_metadata_object(job_id):
         """Return either a PreprocessJob object (orig) or MetadataUpdate object (update)"""
@@ -120,10 +116,9 @@ class JobUtil(object):
 
         # Look for the latest update, if it exists
         #
-        latest_update = MetadataUpdate.objects.filter(\
-                                      orig_metadata=job_id,\
-                                    ).order_by('-version_number'\
-                                    ).first()
+        latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id,)\
+                                    .order_by('-version_number')\
+                                    .first()
 
         # It exists! Return it
         #
@@ -138,22 +133,19 @@ class JobUtil(object):
 
         return True, orig_metadata
 
-
-
     @staticmethod
     def start_preprocess(job):
         """Start the preprocessing!"""
-        assert isinstance(job, PreprocessJob),\
-               'job must be a PreprocessJob'
+        assert isinstance(job, PreprocessJob), 'job must be a PreprocessJob'
 
         if not job.source_file.name:
-            err_msg = ('The PreprocessJob source_file is not available')
+            err_msg = 'The PreprocessJob source_file is not available'
             job.set_state_failure(err_msg)
             job.save()
             return
 
         # send the file to the queue
-        task = preprocess_csv_file.delay(\
+        task = preprocess_csv_file.delay(
                     job.source_file.path,
                     job_id=job.id)
 
@@ -165,7 +157,6 @@ class JobUtil(object):
 
         # save the new state
         job.save()
-
 
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
@@ -182,15 +173,15 @@ class JobUtil(object):
         # Read partial file, set lines to skip, etc
         # -------------------------------------------
         start_row_idx = start_row - 1    # e.g. if start_row is 1, skip nothing
-                                    # if start_row is 10, start on index
+                                         # if start_row is 10, start on index
 
         if job.is_tab_source_file():
             try:
                 csv_data = pd.read_csv(job.source_file.path,
-                                   sep='\t',
-                                   lineterminator='\r',
-                                   skiprows=start_row_idx,
-                                   nrows=num_rows)
+                                       sep='\t',
+                                       lineterminator='\r',
+                                       skiprows=start_row_idx,
+                                       nrows=num_rows)
 
             except ValueError:
                 print(" not good value for the row start")
@@ -203,8 +194,8 @@ class JobUtil(object):
         elif job.is_csv_source_file():
             try:
                 csv_data = pd.read_csv(job.source_file.path,
-                                   skiprows=start_row_idx,
-                                   nrows=num_rows)
+                                       skiprows=start_row_idx,
+                                       nrows=num_rows)
             except ValueError:
                 print(" not good value for the row start")
                 csv_data = pd.read_csv(job.source_file.path,
@@ -221,18 +212,20 @@ class JobUtil(object):
         error_message = []
 
         if start_row > max_rows:
-            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (start_row, max_rows)
+            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set'\
+                    % (start_row, max_rows)
             error_message.append(err)
             start_row = 1
-            start_row_idx = start_row -1
+            start_row_idx = start_row - 1
         if num_rows > max_rows:
-            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (num_rows, max_rows)
+            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows'\
+                    % (num_rows, max_rows)
             error_message.append(err)
             num_rows = max_rows
 
         update_end_num = start_row + num_rows
         print("error message", error_message)
-        data_frame = csv_data[start_row_idx:update_end_num-1]
+        data_frame = csv_data[start_row_idx:update_end_num - 1]
         raw_data = data_frame.to_dict(orient='split')
         print("num_rows ", num_rows)
         if 'index' in raw_data:
@@ -275,8 +268,7 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            input_format = kwargs.get('format')
-            job_id = kwargs.get('preprocess_id')
+
             # -------------------------------------------
             # Read partial file, set lines to skip, etc
             # -------------------------------------------
@@ -318,8 +310,6 @@ class JobUtil(object):
             print("the no. of rows are ", max_rows)
 
             error_message = []
-
-
             if start_row > max_rows:
                 err = ('The request was from %s rows but only %d'
                        ' rows were found, so default start rows = 1'
@@ -327,7 +317,7 @@ class JobUtil(object):
                        (start_row, max_rows)
                 error_message.append(err)
                 start_row = 1
-                start_row_idx = start_row -1
+                start_row_idx = start_row - 1
             if num_rows > max_rows:
                 err = ('The request was for %s rows but only'
                        ' %d rows were found, so number rows'
