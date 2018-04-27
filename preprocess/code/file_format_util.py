@@ -35,6 +35,8 @@ class FileFormatUtil(object):
         self.fname = kwargs.get('fname')
         self.type = None
         self.format = None
+        self.filesize = None
+
         #
         self.has_error = False
         self.error_message = None
@@ -51,41 +53,43 @@ class FileFormatUtil(object):
 
             return None, self.error_message
 
-        filesize = os.stat(self.input_file).st_size
-        if filesize == 0:
+        self.filesize  = os.stat(self.input_file).st_size
+        if self.filesize  == 0:
             self.add_error('The file size is zero: [%s]' % self.input_file)
             return None, self.error_message
         else:
             self.set_format_etc()
 
     def set_format_etc(self):
-            """ here it checks the format and set"""
-            if self.fname_ext_check == TAB_FILE_EXT:
-                self.get_dataframe(TAB_FILE_EXT)
-                self.type = "File"
-                self.format = TAB_FILE_EXT
-                data_source_info_object = DataSourceInfo(name=self.fname,
-                                                         type=self.type,
-                                                         format=self.format)
-                self.data_source_info = data_source_info_object.data
+        """ here it checks the format and set"""
+        if self.fname_ext_check == TAB_FILE_EXT:
+            self.get_dataframe(TAB_FILE_EXT)
+            self.type = "File"
+            self.format = TAB_FILE_EXT
+            data_source_info_object = DataSourceInfo(name=self.fname,
+                                                     type=self.type,
+                                                     format=self.format,
+                                                     filesize=self.filesize)
+            self.data_source_info = data_source_info_object.data
 
-            elif self.fname_ext_check == CSV_FILE_EXT:
-                self.get_dataframe(CSV_FILE_EXT)
-                self.type = "File"
-                self.format = CSV_FILE_EXT
-                data_source_info_object = DataSourceInfo(name=self.fname,
-                                                         type=self.type,
-                                                         format=self.format)
-                self.data_source_info = data_source_info_object.data
+        elif self.fname_ext_check == CSV_FILE_EXT:
+            self.get_dataframe(CSV_FILE_EXT)
+            self.type = "File"
+            self.format = CSV_FILE_EXT
+            data_source_info_object = DataSourceInfo(name=self.fname,
+                                                     type=self.type,
+                                                     format=self.format,
+                                                     filesize=self.filesize)
+            self.data_source_info = data_source_info_object.data
 
-            else:
-                err_msg = ('We currently do not process this file type.'
-                           ' Please use a file with one of the following'
-                           ' extensions: %s') % \
-                          (ACCEPTABLE_EXT_LIST,)
-                runner = None
-                self.add_error(err_msg)
-                return runner, self.error_message
+        else:
+            err_msg = ('We currently do not process this file type.'
+                       ' Please use a file with one of the following'
+                       ' extensions: %s') % \
+                      (ACCEPTABLE_EXT_LIST,)
+            runner = None
+            self.add_error(err_msg)
+            return runner, self.error_message
 
         # ## database
         # - database -> dataframe

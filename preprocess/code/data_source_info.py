@@ -12,6 +12,7 @@ class DataSourceInfo(object):
         self.name = kwargs.get('name')
         self.type = kwargs.get('type')
         self.format = kwargs.get('format')
+        self.filesize = kwargs.get('filesize')  # optional
         self.data = None
         self.to_dict()
 
@@ -20,3 +21,5 @@ class DataSourceInfo(object):
         self.data['type'] = self.type
         self.data['format'] = self.format
         self.data['name'] = self.name
+        if self.filesize:
+            self.data['filesize'] = self.filesize

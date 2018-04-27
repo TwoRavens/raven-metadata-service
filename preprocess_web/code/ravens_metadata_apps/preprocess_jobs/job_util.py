@@ -1,6 +1,6 @@
 """Utility class for the preprocess workflow"""
 import pandas as pd
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
 from ravens_metadata_apps.utils.time_util import get_timestring_for_file
@@ -9,11 +9,10 @@ from ravens_metadata_apps.utils.basic_response import \
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from variable_display_util import VariableDisplayUtil
-
+from ravens_metadata_apps.utils.view_helper import get_json_error
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
-
 
     @staticmethod
     def get_preprocess_job_dict(preprocess_id):
@@ -24,7 +23,6 @@ class JobUtil(object):
             return err_resp('PreprocessJob not found: %d' % preprocess_id)
 
         return ok_resp(ze_job.as_dict())
-
 
     @staticmethod
     def get_completed_preprocess_job(job_id):
@@ -44,7 +42,6 @@ class JobUtil(object):
         success, obj_or_err = JobUtil.get_latest_metadata_object(job_id)
         if success is False:
             return err_resp(obj_or_err)
-
 
         print('type(obj_or_err)', type(obj_or_err))
         print('obj_or_err.id', obj_or_err.id)
@@ -66,7 +63,7 @@ class JobUtil(object):
 
         update_object = MetadataUpdate.objects.filter(\
                                  orig_metadata=job_id,
-                                 version_number=version\
+                                 version_number=version
                                 ).first()
         # print("here is the data",update_object.name.version_number)
         if update_object:
@@ -96,7 +93,7 @@ class JobUtil(object):
         update_objects = MetadataUpdate.objects.filter(orig_metadata=job_id)
 
         if update_objects:
-            #return True, update_objects
+            # return True, update_objects
             update_objects = list(update_objects)
         else:
             update_objects = []
@@ -111,7 +108,6 @@ class JobUtil(object):
 
         return ok_resp(update_objects)
 
-
     @staticmethod
     def get_latest_metadata_object(job_id):
         """Return either a PreprocessJob object (orig) or MetadataUpdate object (update)"""
@@ -120,10 +116,9 @@ class JobUtil(object):
 
         # Look for the latest update, if it exists
         #
-        latest_update = MetadataUpdate.objects.filter(\
-                                      orig_metadata=job_id,\
-                                    ).order_by('-version_number'\
-                                    ).first()
+        latest_update = MetadataUpdate.objects.filter(orig_metadata=job_id,)\
+                                    .order_by('-version_number')\
+                                    .first()
 
         # It exists! Return it
         #
@@ -138,22 +133,19 @@ class JobUtil(object):
 
         return True, orig_metadata
 
-
-
     @staticmethod
     def start_preprocess(job):
         """Start the preprocessing!"""
-        assert isinstance(job, PreprocessJob),\
-               'job must be a PreprocessJob'
+        assert isinstance(job, PreprocessJob), 'job must be a PreprocessJob'
 
         if not job.source_file.name:
-            err_msg = ('The PreprocessJob source_file is not available')
+            err_msg = 'The PreprocessJob source_file is not available'
             job.set_state_failure(err_msg)
             job.save()
             return
 
         # send the file to the queue
-        task = preprocess_csv_file.delay(\
+        task = preprocess_csv_file.delay(
                     job.source_file.path,
                     job_id=job.id)
 
@@ -166,58 +158,112 @@ class JobUtil(object):
         # save the new state
         job.save()
 
+    @staticmethod
+    def get_data_frame(job, **kwargs):
+        start_row = kwargs.get('start_row')
+        num_rows = kwargs.get('num_rows')
+        # ------------------------------------------
+        # Check the errors
+        # ------------------------------------------
+        error_message = []
+        job_data = job.get_metadata()
+        if not job_data.success:
+            return False, None, job_data.err_msg
+
+        job_metadata = job_data.result_obj  # in this case job_data is an `ok_resp`
+        row_cnt = job_metadata['dataset']['row_cnt']
+        print("row_cnt ", row_cnt)
+        if start_row > row_cnt:
+            err_msg = 'The start row, %s, exceeds the total number of rows, %d.' \
+                        % (start_row, row_cnt)
+            return False, None, err_msg
+
+        if start_row == 1 and num_rows > row_cnt:
+            err_msg = 'Note: The request was for %s row(s) but only %d rows were found.' \
+                  % (num_rows, row_cnt)
+            error_message.append(err_msg)
+            num_rows = row_cnt
+
+        elif (start_row + num_rows) > row_cnt:
+            num_rows_avail = row_cnt - start_row
+            err_msg = ('Note: The request was for %s row(s) starting'
+                       ' at row %d.') % \
+                       (num_rows, start_row)
+
+            # Case where no rows are available
+            #
+            if num_rows_avail < 1:
+                err_msg = ('%s However, no rows are available'
+                           ' when starting with row %d. (total rows: %s)') % \
+                           (err_msg, start_row, row_cnt)
+                return False, None, err_msg
+
+            err_msg = ('%s However, only %d row(s) were found'
+                       ' starting with row %d') % \
+                       (err_msg, num_rows_avail, start_row)
+
+            error_message.append(err_msg)
+            num_rows = num_rows_avail
+
+        # To read csv given rows count and start rows
+        if job.is_tab_source_file():
+            print('is_tab_source_file')
+
+            try:
+                csv_data = pd.read_csv(job.source_file.path,
+                                       sep='\t',
+                                       #lineterminator='\r',
+                                       skiprows=range(1, start_row),
+                                       # skip rows range starts from 1 as 0 row is the header
+                                       nrows=num_rows)
+
+            except ValueError:
+                print(" not good value for the row start")
+                start_row = 1
+                csv_data = pd.read_csv(job.source_file.path,
+                                       sep='\t',
+                                       lineterminator='\r',
+                                       skiprows=range(1, start_row),
+                                       # skip rows range starts from 1 as 0 row is the header
+                                       nrows=num_rows)
+            print(csv_data)
+        elif job.is_csv_source_file():
+            print('is_csv_source_file')
+            try:
+                csv_data = pd.read_csv(job.source_file.path,
+                                       skiprows=range(1, start_row),
+                                       # skip rows range starts from 1 as 0 row is the header
+                                       nrows=num_rows)
+            except ValueError:
+                print(" not good value for the row start")
+                start_row = 1
+                csv_data = pd.read_csv(job.source_file.path,
+                                       skiprows=range(1, start_row),
+                                       # skip rows range starts from 1 as 0 row is the header
+                                       nrows=num_rows)
+            print(csv_data)
+        else:
+            return err_resp('File type unknown (not csv or tab)')
+
+        print("error message", error_message)
+        #data_frame = pd.DataFrame(csv_data)
+
+        return True, csv_data, error_message
 
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
         """Open the original data file and return the rows in JSON format (python dict)"""
-
-        # Assume this passed through the RetrieveRowsForm for validation
-        #
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('number_rows')
         input_format = kwargs.get('format')
         job_id = kwargs.get('preprocess_id')
 
-        # -------------------------------------------
-        # Read partial file, set lines to skip, etc
-        # -------------------------------------------
-        start_row_idx = start_row - 1    # e.g. if start_row is 1, skip nothing
-                                    # if start_row is 10, start on index
+        success, data_frame, error_message = JobUtil.get_data_frame(job, start_row=start_row, num_rows=num_rows)
+        if not success:
+            return err_resp(error_message)
 
-        if job.is_tab_source_file():
-            csv_data = pd.read_csv(job.source_file.path,
-                                   sep='\t',
-                                   lineterminator='\r')
-                                   #skiprows=skiprows,
-                                   #nrows=num_rows)
-            print(csv_data)
-        elif job.is_csv_source_file():
-            csv_data = pd.read_csv(job.source_file.path)
-                                   #skiprows=skiprows,
-                                   #nrows=num_rows)
-        else:
-            return dict(success=False,
-                        message='File type unknown (not csv or tab)')
-
-        max_rows = len(csv_data.index)
-        print("the no. of rows are ", max_rows)
-
-        error_message = []
-
-        if start_row > max_rows:
-            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' % (start_row, max_rows)
-            error_message.append(err)
-            start_row = 1
-        elif num_rows > max_rows:
-            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' % (num_rows, max_rows)
-            error_message.append(err)
-            num_rows = max_rows
-
-        update_end_num = start_row + num_rows
-        print("error message", error_message)
-        data_frame = csv_data[start_row_idx:update_end_num-1]
         raw_data = data_frame.to_dict(orient='split')
-
+        print("num_rows ", num_rows)
         if 'index' in raw_data:
             del raw_data['index']
         # print("raw_data", raw_data)
@@ -249,7 +295,7 @@ class JobUtil(object):
                 "data": raw_data,
             }
 
-        return output
+        return ok_resp(output)
 
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
@@ -258,44 +304,18 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            if job.name.lower().endswith('.tab'):
-                print("is tab file")
-                csv_data = pd.read_csv(job.source_file.path, sep='\t', lineterminator='\r')
-                print(csv_data)
+            success, data_frame, err_resp = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
+            if success:
+                response = HttpResponse(content_type='text/csv')
+
+                csv_fname = 'data_rows_%s.csv' % (get_timestring_for_file())
+                response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
+
+                data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
+
+                return response
             else:
-                csv_data = pd.read_csv(job.source_file.path)
-            max_rows = len(csv_data)
-            print("the no. of rows are ", max_rows)
-
-            error_message = []
-            start_row_idx = start_row - 1
-
-            if start_row > max_rows:
-                err = ('The request was from %s rows but only %d'
-                       ' rows were found, so default start rows = 1'
-                       ' is set') % \
-                       (start_row, max_rows)
-                error_message.append(err)
-                start_row = 1
-            elif num_rows > max_rows:
-                err = ('The request was for %s rows but only'
-                       ' %d rows were found, so number rows'
-                       ' is set to max rows') % \
-                       (num_rows, max_rows)
-                error_message.append(err)
-                num_rows = max_rows
-
-            print("error message", error_message)
-            update_end_num = start_row + num_rows
-            data_frame = csv_data[start_row_idx:update_end_num-1]
-            response = HttpResponse(content_type='text/csv')
-
-            csv_fname = 'data_rows_%s.csv' % (get_timestring_for_file())
-            response['Content-Disposition'] = 'attachment; filename=%s' % csv_fname
-
-            data_frame.to_csv(path_or_buf=response, sep=',', float_format='%.2f', index=False)
-
-            return response
+                return JsonResponse(get_json_error(err_resp))
 
     @staticmethod
     def update_preprocess_metadata(preprocess_json, update_json, **kwargs):
