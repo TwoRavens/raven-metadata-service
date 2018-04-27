@@ -173,3 +173,12 @@ CELERY_RESULT_BACKEND = 'redis://%s:%d' % (REDIS_HOST, REDIS_PORT)
 ALLOW_FAB_DELETE = False
 
 TEST_DIRECT_STATIC = None
+
+# -------------------------------
+# Web application, function specific
+# -------------------------------
+
+# The number of rows that may be retrieved from a
+# source file--though API or web form
+#
+MAX_SOURCE_FILE_ROWS_TO_RETRIEVE = os.environ.get('MAX_SOURCE_FILE_ROWS_TO_RETRIEVE', 1000)
