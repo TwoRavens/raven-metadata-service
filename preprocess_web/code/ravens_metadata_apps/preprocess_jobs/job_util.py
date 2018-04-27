@@ -1,6 +1,6 @@
 """Utility class for the preprocess workflow"""
 import pandas as pd
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
 from ravens_metadata_apps.utils.time_util import get_timestring_for_file
@@ -9,7 +9,7 @@ from ravens_metadata_apps.utils.basic_response import \
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from variable_display_util import VariableDisplayUtil
-
+from ravens_metadata_apps.utils.view_helper import get_json_error
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
@@ -168,29 +168,47 @@ class JobUtil(object):
         error_message = []
         job_data = job.get_metadata()
         if not job_data.success:
-            return False,None,err_resp(job_data.err_msg)
+            return False, None, job_data.err_msg
 
         job_metadata = job_data.result_obj  # in this case job_data is an `ok_resp`
         row_cnt = job_metadata['dataset']['row_cnt']
         print("row_cnt ", row_cnt)
         if start_row > row_cnt:
-            err = 'The request was from %s rows but only %d rows were found, so default start rows = 1 is set' \
-                  % (start_row, row_cnt)
-            error_message.append(err)
-            start_row = 1
-        if num_rows > row_cnt:
-            err = 'The request was for %s rows but only %d rows were found, so number rows is set to max rows' \
+            err_msg = 'The start row, %s, exceeds the total number of rows, %d.' \
+                        % (start_row, row_cnt)
+            return False, None, err_msg
+
+        if start_row == 1 and num_rows > row_cnt:
+            err_msg = 'Note: The request was for %s row(s) but only %d rows were found.' \
                   % (num_rows, row_cnt)
-            error_message.append(err)
+            error_message.append(err_msg)
             num_rows = row_cnt
-        if start_row + num_rows > row_cnt:
-            err = 'The request was from %s rows with %d number of rows, but it exceeds the limit.' \
-                  ' Maximum rows returned.' \
-                  % (num_rows, row_cnt)
-            error_message.append(err)
+
+        elif (start_row + num_rows) > row_cnt:
+            num_rows_avail = row_cnt - start_row
+            err_msg = ('Note: The request was for %s row(s) starting'
+                       ' at row %d.') % \
+                       (num_rows, start_row)
+
+            # Case where no rows are available
+            #
+            if num_rows_avail < 1:
+                err_msg = ('%s However, no rows are available'
+                           ' when starting with row %d. (total rows: %s)') % \
+                           (err_msg, start_row, row_cnt)
+                return False, None, err_msg
+
+            err_msg = ('%s However, only %d row(s) were found'
+                       ' starting with row %d') % \
+                       (err_msg, num_rows_avail, start_row)
+
+            error_message.append(err_msg)
+            num_rows = num_rows_avail
 
         # To read csv given rows count and start rows
         if job.is_tab_source_file():
+            print('is_tab_source_file')
+
             try:
                 csv_data = pd.read_csv(job.source_file.path,
                                        sep='\t',
@@ -210,6 +228,7 @@ class JobUtil(object):
                                        nrows=num_rows)
             print(csv_data)
         elif job.is_csv_source_file():
+            print('is_csv_source_file')
             try:
                 csv_data = pd.read_csv(job.source_file.path,
                                        skiprows=range(1, start_row),
@@ -224,13 +243,12 @@ class JobUtil(object):
                                        nrows=num_rows)
             print(csv_data)
         else:
-            return dict(success=False,
-                        message='File type unknown (not csv or tab)')
+            return err_resp('File type unknown (not csv or tab)')
 
         print("error message", error_message)
-        data_frame = pd.DataFrame(csv_data)
+        #data_frame = pd.DataFrame(csv_data)
 
-        return True,data_frame, error_message
+        return True, csv_data, error_message
 
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
@@ -240,44 +258,44 @@ class JobUtil(object):
         input_format = kwargs.get('format')
         job_id = kwargs.get('preprocess_id')
 
-        success,data_frame, error_message = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
-        if success:
-            raw_data = data_frame.to_dict(orient='split')
-            print("num_rows ", num_rows)
-            if 'index' in raw_data:
-                del raw_data['index']
-            # print("raw_data", raw_data)
+        success, data_frame, error_message = JobUtil.get_data_frame(job, start_row=start_row, num_rows=num_rows)
+        if not success:
+            return err_resp(error_message)
 
-            if len(error_message) > 0:
-                output = {
-                    "success": True,
-                    "message": 'It worked but with some changes',
-                    "modifications": error_message,
-                    "attributes": {
-                        "preprocess_id": job_id,
-                        "start_row": start_row,
-                        "num_rows": num_rows,
-                        "format": input_format
-                    },
-                    "data": raw_data,
-                }
+        raw_data = data_frame.to_dict(orient='split')
+        print("num_rows ", num_rows)
+        if 'index' in raw_data:
+            del raw_data['index']
+        # print("raw_data", raw_data)
 
-            else:
-                output = {
-                    "success": True,
-                    "message": 'It worked',
-                    "attributes": {
-                        "preprocess_id": job_id,
-                        "start_row": start_row,
-                        "num_rows": num_rows,
-                        "format": input_format
-                    },
-                    "data": raw_data,
-                }
+        if len(error_message) > 0:
+            output = {
+                "success": True,
+                "message": 'It worked but with some changes',
+                "modifications": error_message,
+                "attributes": {
+                    "preprocess_id": job_id,
+                    "start_row": start_row,
+                    "num_rows": num_rows,
+                    "format": input_format
+                },
+                "data": raw_data,
+            }
 
-            return output
         else:
-            return error_message
+            output = {
+                "success": True,
+                "message": 'It worked',
+                "attributes": {
+                    "preprocess_id": job_id,
+                    "start_row": start_row,
+                    "num_rows": num_rows,
+                    "format": input_format
+                },
+                "data": raw_data,
+            }
+
+        return ok_resp(output)
 
     @staticmethod
     def retrieve_rows_csv(request, job, **kwargs):
@@ -286,7 +304,7 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            success,data_frame, err_resp = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
+            success, data_frame, err_resp = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
             if success:
                 response = HttpResponse(content_type='text/csv')
 
@@ -297,7 +315,7 @@ class JobUtil(object):
 
                 return response
             else:
-                return err_resp
+                return JsonResponse(get_json_error(err_resp))
 
     @staticmethod
     def update_preprocess_metadata(preprocess_json, update_json, **kwargs):
