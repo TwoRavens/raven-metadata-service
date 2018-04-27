@@ -21,7 +21,8 @@ FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
 class RetrieveRowsForm(forms.Form):
 
     preprocess_id = forms.IntegerField()
-    start_row = forms.IntegerField(required=False)
+    start_row = forms.IntegerField(required=False,
+                                   initial=1)
     number_rows = forms.IntegerField(required=False,
                                      initial=100)
     format = forms.ChoiceField(choices=FORMAT_CHOICES,
