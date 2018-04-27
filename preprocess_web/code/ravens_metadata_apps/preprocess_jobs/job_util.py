@@ -212,7 +212,7 @@ class JobUtil(object):
             try:
                 csv_data = pd.read_csv(job.source_file.path,
                                        sep='\t',
-                                       lineterminator='\r',
+                                       #lineterminator='\r',
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)
