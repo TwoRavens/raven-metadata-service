@@ -115,13 +115,16 @@ def view_retrieve_rows_form(request):
 
     input_format = frm.cleaned_data.get('format')
     if input_format == FORMAT_JSON:
-        output = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
-        #print("output ", output)
-        user_msg = output
-        return JsonResponse(user_msg)
-    elif input_format == FORMAT_CSV:
-        return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
+        resp_info = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
+        if not resp_info.success:
+            return JsonResponse(get_json_error(resp_info.err_msg))
 
+        return JsonResponse(resp_info.result_obj)
+
+    elif input_format == FORMAT_CSV:
+        csv_resp = JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
+        return csv_resp
+        
     # Shouldn't reach here, e.g. form should check
     err_msg = 'Unknown format: %s' % input_format
     return JsonResponse(get_json_error(err_msg))

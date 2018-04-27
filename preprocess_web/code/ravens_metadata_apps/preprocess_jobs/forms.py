@@ -18,10 +18,13 @@ INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
 
 
+MAX_ROWS_TO_RETRIEVE = 1000
+
 class RetrieveRowsForm(forms.Form):
 
     preprocess_id = forms.IntegerField()
-    start_row = forms.IntegerField(required=False)
+    start_row = forms.IntegerField(required=False,
+                                   initial=1)
     number_rows = forms.IntegerField(required=False,
                                      initial=100)
     format = forms.ChoiceField(choices=FORMAT_CHOICES,
@@ -65,6 +68,9 @@ class RetrieveRowsForm(forms.Form):
             # errors.append(forms.ValidationError)
             raise forms.ValidationError(
                 _('The number of rows must be 1 or greater.'))
+        elif number_rows > MAX_ROWS_TO_RETRIEVE:
+            raise forms.ValidationError(
+                _('The number cannot be greater than %d.') % MAX_ROWS_TO_RETRIEVE)
 
         return number_rows
 

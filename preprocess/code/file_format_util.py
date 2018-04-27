@@ -30,18 +30,37 @@ class FileFormatUtil(object):
         self.has_error = False
         self.error_message = None
 
-        self.split_filename()
-        self.check_file()
+        self.check_basic_file_info()
+        self.load_dataframe()
+
 
     def add_error(self, err):
         self.has_error = True
         self.error_message = err
 
 
-    def split_filename(self):
+    def check_basic_file_info(self):
         """split the filename"""
+        if self.has_error:
+            return
+
+        # Is the file specified?
+        #
         if not self.input_file:
             self.add_error('The "input_file" was %s' % self.input_file)
+            return
+
+        # Does the file exist?
+        #
+        if not isfile(self.input_file):
+            self.add_error('The file was not found: [%s]' % self.input_file)
+            return
+
+        # Get the filesize
+        #
+        self.filesize = os.stat(self.input_file).st_size
+        if self.filesize == 0:
+            self.add_error('The file size is zero: [%s]' % self.input_file)
             return
 
         # file basename with extension
@@ -75,28 +94,15 @@ class FileFormatUtil(object):
         #
         self.data_source_info = DataSourceInfo(name=file_basename,
                                                source_type=SOURCE_TYPE_FILE,
-                                               source_format=source_format)
+                                               source_format=source_format,
+                                               filesize=self.filesize)
 
-    def check_file(self):
-        """ handles all the files"""
+
+    def load_dataframe(self):
+        """Load the file to a dataframe"""
         if self.has_error:
             return
 
-        if not isfile(self.input_file):
-            self.add_error('The file was not found: [%s]' % self.input_file)
-
-            return None, self.error_message
-
-        filesize = os.stat(self.input_file).st_size
-        if filesize == 0:
-            self.add_error('The file size is zero: [%s]' % self.input_file)
-            return None, self.error_message
-        else:
-            self.set_format_etc()
-
-
-    def set_format_etc(self):
-        """ here it checks the format and set"""
         if self.fname_ext_check == TAB_FILE_EXT:
             self.set_dataframe('\t')
 
@@ -121,8 +127,6 @@ class FileFormatUtil(object):
                 (ACCEPTABLE_EXT_LIST,)
 
 
-
-
     def set_dataframe(self, delimiter=None, is_excel=False):
         """Retrieve a pandas dataframe based on format"""
         try:
@@ -130,7 +134,7 @@ class FileFormatUtil(object):
                 self.dataframe = pd.read_excel(self.input_file)
             else:
                 self.dataframe = pd.read_csv(self.input_file,
-                                         delimiter=delimiter)
+                                             delimiter=delimiter)
 
         except pd.errors.ParserError as err_obj:
             err_msg = ('Failed to load csv file (pandas ParserError).'
