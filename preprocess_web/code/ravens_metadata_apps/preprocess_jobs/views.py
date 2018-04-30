@@ -21,7 +21,7 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.preprocess_jobs.forms import \
-    (PreprocessJobForm, RetrieveRowsForm,
+    (PreprocessJobForm, RetrieveRowsForm, CustomStatistics,
      FORMAT_JSON, FORMAT_CSV)
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
@@ -90,6 +90,31 @@ def view_basic_upload_form(request):
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
 
+def view_custom_statistics_form(request):
+    """ HTML form to get the custom statistics"""
+    if request.method != 'POST':
+        frm = CustomStatistics()
+        return render(request,
+                      'preprocess/custom_statistics.html',
+                      {'form': frm})
+
+    frm = CustomStatistics(request.POST)
+    if not frm.is_valid():
+        user_msg = dict(success=False,
+                        message='Invalid input',
+                        errors=frm.errors)
+        return JsonResponse(user_msg)
+
+    job_id = frm.cleaned_data['preprocess_id']
+
+    # ------------------------
+    # for now to check snippet
+    user_msg = dict(success = True,
+                    message='Started',
+                    id= job_id,
+                    data = frm.cleaned_data)
+    return JsonResponse(user_msg)
+    # ------------------------
 
 def view_retrieve_rows_form(request):
     """HTML form to retrieve rows from a preprocess file"""

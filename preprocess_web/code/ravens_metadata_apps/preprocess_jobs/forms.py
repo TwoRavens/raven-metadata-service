@@ -16,6 +16,10 @@ FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
 INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
+OMIT_TRUE = 'True'
+OMIT_FALSE = 'False'
+INPUT_OMIT_TYPES = (OMIT_TRUE,OMIT_FALSE)
+OMIT_CHOICES = [(x,x) for x in INPUT_OMIT_TYPES]
 
 
 class RetrieveRowsForm(forms.Form):
@@ -83,6 +87,97 @@ class RetrieveRowsForm(forms.Form):
                 _('The format should be either json or csv.'))
 
         return input_format
+
+
+class CustomStatistics(forms.Form):
+    """ this class takes the custom statistics update form:
+                [
+             {
+               "id": 1,
+               "name": "Third order statistic",
+               "variables": ["lpop"], _optional_
+               "image": "image_id", _optional_
+               "value": "23.45",
+               "description": "Third smallest value",
+               "replication": "sorted(X)[2]",
+               "omit": false _optional_
+             },
+             {*custom statistic 2*},
+             ...
+            ]
+    """
+    # preprocess file info
+    preprocess_id = forms.IntegerField()
+    # single custom_statistic info
+    name = forms.CharField(required= True, label='Custom Statistic Name')
+    variables = forms.CharField(required=True, label='Variables Name')
+    image = forms.URLField(required=False, label='Url Of Image')
+    value = forms.FloatField(required= True, label='Value')
+    description = forms.CharField(required=True, label='Description')
+    replication = forms.CharField(required= True,label='Logic for Custom Statistic')
+    omit = forms.ChoiceField(choices=OMIT_CHOICES,
+                               initial=OMIT_FALSE,
+                               required=True)
+
+
+    def clean_preprocess_id(self):
+        """Check if PreprocessJob exists"""
+        preprocess_id = self.cleaned_data.get('preprocess_id')
+        try:
+            job = PreprocessJob.objects.get(id=preprocess_id)
+        except PreprocessJob.DoesNotExist:
+            # errors.append('A preprocess file does not exist for id: %s' % preprocess_id)
+            raise forms.ValidationError(
+                _('A preprocess file does not exist for id: %s' % preprocess_id))
+
+        return preprocess_id
+
+    def clean_name(self):
+        name = self.cleaned_data.get('name')
+
+        return name
+
+    def clean_variables(self):
+        variable = self.cleaned_data.get('variables')
+
+        return variable
+
+    def clean_image(self):
+        image = self.cleaned_data.get('image')
+
+        if image is None:
+            image = 'preprocess_web/code/static/images/TwoRavens.png'
+
+        return image
+
+    def clean_value(self):
+        value = self.cleaned_data.get('value')
+
+        return value
+
+    def clean_description(self):
+        desc = self.cleaned_data.get('description')
+
+        return desc
+
+    def clean_replication(self):
+        rep = self.cleaned_data.get('replication')
+
+        return rep
+
+    def clean_omit(self):
+        """ check if the format is valid"""
+        input_omit = self.cleaned_data.get('omit')
+
+        if not input_omit:
+            input_omit = OMIT_FALSE
+
+        if input_omit not in INPUT_OMIT_TYPES:
+            # errors.append(forms.ValidationError)
+            raise forms.ValidationError(
+                _('The omit should be either True or False.'))
+
+        return input_omit
 
 # errors = json.dumps(errors)
 """
