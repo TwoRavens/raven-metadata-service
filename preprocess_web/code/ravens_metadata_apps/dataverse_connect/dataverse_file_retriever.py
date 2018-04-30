@@ -12,14 +12,15 @@ from ravens_metadata_apps.utils.basic_err_check import BasicErrCheck
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob)
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
+from ravens_metadata_apps.utils.url_helper import URLHelper
 from ravens_metadata_apps.dataverse_connect.models import \
     (RegisteredDataverse,
-     DataverseFile)
+     DataverseFileInfo)
 import logging
 
 LOGGER = logging.getLogger(__name__)
 
-class DataFileRetriever(BasicErrCheck):
+class DataverseFileRetriever(BasicErrCheck):
     """Download a Dataverse file and save it to a PreprocessJob"""
 
     def __init__(self, data_file_url, **kwargs):
@@ -28,6 +29,7 @@ class DataFileRetriever(BasicErrCheck):
         dataverse_citation_url - url to retrive a dataverse JSON-LD citation
         """
         self.data_file_url = data_file_url
+        self.dv_file_info = None # to hold an instance of DataverseFileInfo
         self.preprocess_job = None  # to hold an instance of PreprocessJob
 
         # default to .tab for Dataverse files
@@ -43,12 +45,62 @@ class DataFileRetriever(BasicErrCheck):
 
     def run_process(self):
         """Do your thing...."""
+        self.load_dataverse_info()
+        self.run_file_retrieval()
+
+    def load_dataverse_info(self):
+        """Check if the Dataverse if Registered and if a file id exists"""
+        if self.has_error():
+            return
+
+        # Get the Datafile id from the url
+        #
+        dv_id_info = URLHelper.get_datafile_id_from_url(self.data_file_url)
+        if not dv_id_info.success:
+            self.add_err_msg(dv_id_info.err_msg)
+            return
+
+        # Get the network location from the url
+        #
+        netloc = URLHelper.get_netloc_from_url(self.data_file_url)
+        if not netloc.success:
+            self.add_err_msg(netloc.err_msg)
+            return
+
+        # Retrieve the RegisteredDataverse based on the url network location
+        #
+        try:
+            registered_dv = RegisteredDataverse.objects.get(\
+                                    network_location=netloc.result_obj)
+        except RegisteredDataverse.DoesNotExist:
+            self.add_err_msg("This Dataverse is not registerd: %s" % dv_info.result_obj)
+            return
+
+        # Format the url
+        #
+        #url_to_save = URLHelper.format_datafile_request_url(self.data_file_url)
+        #if not url_to_save.success:
+        #    self.add_err_msg('Failed to format the url: %s' % url_to_save.err_msg)
+
+        # Start the DataverseFileInfo object--but don't save it yet
+        #
+        self.dv_file_info = DataverseFileInfo(\
+                                    dataverse=registered_dv,
+                                    datafile_id=dv_id_info.result_obj)
+
+
+    def run_file_retrieval(self):
+        """Retrieval the file and save it to a PreprocessJob"""
+        if self.has_error():
+            return
 
         # (1) Retrieve the file stream
         #
         LOGGER.debug('(1) Retrieve the file stream')
+        file_access_url = self.dv_file_info.get_file_access_url()
+        print('file_access_url: ', file_access_url)
         try:
-            request = requests.get(self.data_file_url, stream=True)
+            request = requests.get(file_access_url, stream=True)
         except requests.exceptions.ConnectionError as err_obj:
             user_msg = ('Failed to retrieve file from %s'
                         '\nError: %s') % (self.data_file_url, err_obj)
@@ -87,6 +139,7 @@ class DataFileRetriever(BasicErrCheck):
         self.preprocess_job.save() # save it to get the id
 
         # Get the filename from the url, used for saving later
+        #
         file_name = 'data_%s_%s%s' % \
                     (self.preprocess_job.id,
                      get_alphanumeric_lowercase(8),
@@ -95,3 +148,8 @@ class DataFileRetriever(BasicErrCheck):
         self.preprocess_job.source_file.save(\
                         file_name,
                         files.File(named_temp_file))
+
+        # Update and save the instance of DataverseFileInfo
+        #
+        self.dv_file_info.preprocess_job = self.preprocess_job
+        self.dv_file_info.save()

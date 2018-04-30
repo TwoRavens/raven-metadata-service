@@ -14,7 +14,8 @@ try:
 except Exception as e:
     print("WARNING: Can't configure Django. %s" % e)
 
-from ravens_metadata_apps.dataverse_connect.data_file_retriever import DataFileRetriever
+from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
+    (DataverseFileRetriever)
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 
@@ -23,7 +24,7 @@ def try_it(file_id=3147445):
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
     dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
 
-    file_retriever = DataFileRetriever(dv_url)
+    file_retriever = DataverseFileRetriever(dv_url)
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
         return
