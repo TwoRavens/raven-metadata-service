@@ -97,7 +97,10 @@ class PreprocessJob(TimeStampedModel):
         if not self.id:
             super(PreprocessJob, self).save(*args, **kwargs)
 
-        self.name = basename(self.source_file.name)[:100]
+        if self.source_file:
+            self.name = basename(self.source_file.name)[:100]
+        else:
+            self.name = 'job %s' % self.id
 
         if self.state == STATE_SUCCESS:
             self.is_success = True
@@ -111,18 +114,33 @@ class PreprocessJob(TimeStampedModel):
         od = OrderedDict()
 
         for attr_name in self.__dict__.keys():
+
+            # check for attributes to skip...
             if attr_name.startswith('_'):
                 continue
 
+            val = self.__dict__[attr_name]
+            if isinstance(val, models.fields.files.FieldFile):
+                # this is a file field...
+                #
+                val = str(val)  # file path or empty string
+                if val == '':
+                    val = None
+                od[attr_name] = val
+
             elif attr_name == 'creator_id':
+                # user details...
+                #
                 if self.creator:
                     creator_info = self.creator.as_dict_short()
                     od['creator'] = creator_info
                 else:
                     od['creator'] = None
             else:
-                od[attr_name] = self.__dict__[attr_name]    #'%s'
+                od[attr_name] = val
 
+        # Add the metadata file contents, if they exist
+        #
         if self.metadata_file:
             data_ok, data_or_err = self.get_metadata()
             if data_ok:
