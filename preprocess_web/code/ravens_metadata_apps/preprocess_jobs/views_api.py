@@ -80,7 +80,8 @@ def api_process_single_file(request, api_user=None):
     # save the PreprocessJob
     job = form.save()
 
-    job.creator = api_user
+    if api_user:
+        job.creator = api_user
     job.save()
 
     # start background task

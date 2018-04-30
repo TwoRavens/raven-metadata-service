@@ -124,7 +124,7 @@ def view_retrieve_rows_form(request):
     elif input_format == FORMAT_CSV:
         csv_resp = JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
         return csv_resp
-        
+
     # Shouldn't reach here, e.g. form should check
     err_msg = 'Unknown format: %s' % input_format
     return JsonResponse(get_json_error(err_msg))
@@ -163,7 +163,7 @@ http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
 
-curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api-single-file
+curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api/process-single-file
 
 curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
 
