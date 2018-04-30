@@ -15,6 +15,8 @@ except Exception as e:
     print("WARNING: Can't configure Django. %s" % e)
 
 from ravens_metadata_apps.dataverse_connect.data_file_retriever import DataFileRetriever
+from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+
 
 def try_it(file_id=3147445):
     # hmmm...
@@ -28,6 +30,7 @@ def try_it(file_id=3147445):
 
     print(file_retriever.preprocess_job)
 
+    JobUtil.start_preprocess(file_retriever.preprocess_job)
 
 
 if __name__ == '__main__':

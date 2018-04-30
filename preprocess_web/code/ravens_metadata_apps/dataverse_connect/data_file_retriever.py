@@ -12,6 +12,9 @@ from ravens_metadata_apps.utils.basic_err_check import BasicErrCheck
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob)
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
+from ravens_metadata_apps.dataverse_connect.models import \
+    (RegisteredDataverse,
+     DataverseFile)
 import logging
 
 LOGGER = logging.getLogger(__name__)
@@ -36,6 +39,7 @@ class DataFileRetriever(BasicErrCheck):
         self.dataverse_citation_url = kwargs.get('dataverse_citation_url')
 
         self.run_process()
+
 
     def run_process(self):
         """Do your thing...."""

@@ -49,10 +49,7 @@ def view_job_list(request):
 
 
 def view_job_detail(request,preprocess_id):
-    """ get all the versions and detail of the preprocess job"""
-    print("job_id", preprocess_id)
-    """Return the latest version of the preprocess metadata"""
-
+    """List the PreprocessJob and associated MetadataUpdates"""
     success, preprocess_list_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 
     if not success:
