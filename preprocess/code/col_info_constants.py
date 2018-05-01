@@ -1,6 +1,8 @@
 '''Contants used in the preprocess logic and metadata output'''
 PREPROCESS_ID = 'preprocess_id'
 
+CUSTOM_KEY = 'custom'
+
 SELF_SECTION_KEY = 'self'
 VERSION_KEY = 'version'
 VARIABLES_SECTION_KEY = 'variables'

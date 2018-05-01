@@ -72,9 +72,9 @@ class CustomStatisticsUtil(object):
         return statistics_name
 
 
-    def custom_statistics_check_variables(self,variables):
-        print("all var ", ALL_VARIABLE_ATTRIBUTES)
-        if variables not in ALL_VARIABLE_ATTRIBUTES:
+    def custom_statistics_check_variables(self,var_list,variables):
+        print("all var ", var_list)
+        if variables not in var_list:
             self.add_error_message('The variable does not exist in the metadata file')
 
         return variables
@@ -122,27 +122,27 @@ class CustomStatisticsUtil(object):
         # print(self.preprocess_json)
         # print(self.custom_statistics_json['variables'])
         preprocess_id = self.custom_statistics_json['preprocess_id']
-
+        var_list = list(self.preprocess_json['variables'])
         id = self.custom_statistics_create_id(preprocess_id)
         name = self.custom_statistics_check_name(self.custom_statistics_json['name'])
-        variables = self.custom_statistics_check_variables(self.custom_statistics_json['variables'])
+        variables = self.custom_statistics_check_variables(var_list,self.custom_statistics_json['variables'])
         image = self.custom_statistics_check_image(self.custom_statistics_json['image'])
         value = self.custom_statistics_check_value(self.custom_statistics_json['value'])
         description = self.custom_statistics_check_description(self.custom_statistics_json['description'])
         replication = self.custom_statistics_check_replication(self.custom_statistics_json['replication'])
         omit = self.custom_statistics_check_omit(self.custom_statistics_json['omit'])
-
-        if omit:
+        data ={}
+        if omit is True:
             data = {
                 "custom":[{
                     "message":"omitted"
                 }]
 
             }
-            return data
+            print("dat to be sent", data)
+
 
         data = {
-            "custom":[{
                 "id":id,
                 "name":name,
                 "variables":variables,
@@ -151,11 +151,25 @@ class CustomStatisticsUtil(object):
                 "description":description,
                 "replication":replication,
                 "omit":omit
-            }]
+            }
+        print("data to be sent",data)
 
-                }
-        print(data)
-        return data
+        self.add_to_original(data)
+
+
+    def add_to_original(self,data):
+
+        self.original_json= self.preprocess_json
+        output = OrderedDict
+        output = self.preprocess_json
+        if col_const.CUSTOM_KEY not in self.original_json:
+            output[col_const.CUSTOM_KEY]=data
+        else:
+            output[col_const.CUSTOM_KEY].append(data)
+
+        self.original_json = output
+        # print(self.original_json)
+
 
 
 

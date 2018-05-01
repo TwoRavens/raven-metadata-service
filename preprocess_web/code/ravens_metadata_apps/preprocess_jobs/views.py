@@ -109,11 +109,18 @@ def view_custom_statistics_form(request):
 
     # ------------------------
     # for now to check snippet
-    user_msg = dict(success = True,
-                    message='Started',
-                    id= job_id,
-                    data = frm.cleaned_data)
-    updated_metadata = JobUtil.update_preprocess_metadata_custom_statistics(job_id,frm.cleaned_data)
+
+    success,updated_metadata = JobUtil.update_preprocess_metadata_custom_statistics(job_id,frm.cleaned_data)
+    if not success:
+        user_msg = dict(success=False,
+                    message='Custom Statistics',
+                    id=job_id)
+
+    user_msg = dict(success=True,
+                    message='Custom Statistics',
+                    id=job_id,
+                    data=updated_metadata)
+    print(updated_metadata)
 
     return JsonResponse(user_msg)
     # ------------------------
