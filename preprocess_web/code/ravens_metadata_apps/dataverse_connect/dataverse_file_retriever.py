@@ -29,6 +29,8 @@ class DataverseFileRetriever(BasicErrCheck):
         dataverse_citation_url - url to retrive a dataverse JSON-LD citation
         """
         self.data_file_url = data_file_url
+        self.dataverse_doi = kwargs.get('dataverse_doi')
+        self.dataset_id = kwargs.get('dataset_id')
         self.dv_file_info = None # to hold an instance of DataverseFileInfo
         self.preprocess_job = None  # to hold an instance of PreprocessJob
 
@@ -87,6 +89,10 @@ class DataverseFileRetriever(BasicErrCheck):
         self.dv_file_info = DataverseFileInfo(\
                                     dataverse=registered_dv,
                                     datafile_id=dv_id_info.result_obj)
+        if self.dataset_id:
+            self.dv_file_info.dataset_id = self.dataset_id
+        if self.dataverse_doi:
+            self.dv_file_info.dataverse_doi = self.dataverse_doi
 
 
     def run_file_retrieval(self):

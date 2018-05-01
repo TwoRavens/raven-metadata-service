@@ -51,7 +51,6 @@ def preprocess_csv_file(input_file, **kwargs):
                                         job_id=job_id)
 
     if err_msg:
-
         print('(%s) FAILED: %s' % (input_file, err_msg))
         result_info = dict(success=False,
                            job_id=job_id,

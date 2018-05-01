@@ -1,4 +1,5 @@
 import os, sys
+import csv
 from os.path import abspath, dirname, join
 
 code_dir1 = dirname(dirname(dirname(abspath(__file__))))
@@ -16,15 +17,18 @@ except Exception as e:
 
 from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
     (DataverseFileRetriever)
+from ravens_metadata_apps.dataverse_connect.tasks import preprocess_dataverse_file
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+from msg_util import msg, msgt
 
 
-def try_it(file_id=3147445):
+def try_it(file_id=3147445, dataset_id=None):
+
     # hmmm...
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
     dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
-
-    file_retriever = DataverseFileRetriever(dv_url)
+    preprocess_dataverse_file.delay(dv_url)
+    file_retriever = DataverseFileRetriever(dv_url, dataset_id=dataset_id)
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
         return
@@ -34,5 +38,36 @@ def try_it(file_id=3147445):
     JobUtil.start_preprocess(file_retriever.preprocess_job)
 
 
+def try_queue(file_id=3147445, dataset_id=None):
+
+    # hmmm...
+    # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
+    dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
+    preprocess_dataverse_file.delay(dv_url, dataset_id)
+
+
+def try_it2():
+
+    tab_file_list = '/Users/ramanprasad/Google Drive/2Ravens/dv_data/tabular_2017_00829.csv'
+    cnt = 0
+
+    with open(tab_file_list, "r") as f:
+        reader = csv.reader(f)
+        for idx, line_items in enumerate(reader):
+            if idx == 0:
+                continue
+            #line_items = line.split(',')
+            print('line_items', line_items)
+            file_id = line_items[0]
+            dataset_id = line_items[1]
+            filesize = line_items[3]
+            if str(file_id).isdigit() and int(filesize) < 2500000:
+                cnt += 1
+                msgt('(%s) Process file: %s (idx: %s)' % (cnt, file_id, idx))
+                try_queue(file_id, dataset_id)
+            if cnt == 100:
+                break
+
 if __name__ == '__main__':
-    try_it()
+    try_it2()
+    #try_queue()

@@ -67,6 +67,8 @@ class DataverseFileInfo(TimeStampedModel):
     #version = models.CharField(max_length=50,
     #                           help_text='Dataverse file version',
     #                           blank=True)
+    dataset_id = models.IntegerField('Dataverse dataset Id',
+                                     default=-1)
 
     dataverse_doi = models.CharField('DOI',
                                      max_length=255,
