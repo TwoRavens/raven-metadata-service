@@ -113,6 +113,8 @@ def view_custom_statistics_form(request):
                     message='Started',
                     id= job_id,
                     data = frm.cleaned_data)
+    updated_metadata = JobUtil.update_preprocess_metadata_custom_statistics(job_id,frm.cleaned_data)
+
     return JsonResponse(user_msg)
     # ------------------------
 

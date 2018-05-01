@@ -9,6 +9,7 @@ from ravens_metadata_apps.utils.basic_response import \
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from variable_display_util import VariableDisplayUtil
+from custom_statistics_util import CustomStatisticsUtil
 from ravens_metadata_apps.utils.view_helper import get_json_error
 
 class JobUtil(object):
@@ -326,3 +327,24 @@ class JobUtil(object):
             return False, var_util.get_error_messages()
 
         return True, var_util.get_updated_metadata()
+
+    # @staticmethod
+    # def get_preprocess_and_custom_statistics_file(job_id,custom):
+        """"""
+    @staticmethod
+    def update_preprocess_metadata_custom_statistics(job_id,custom_statistics_json):
+        """ Send info to the custom_statistics in preprocess runner"""
+        success,latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+        if success is False:
+            user_msg = dict(success=False,
+                            message=latest_metadata_json_or_err)
+            return user_msg
+
+        custom_util = CustomStatisticsUtil(latest_metadata_json_or_err,custom_statistics_json)
+        if custom_util.has_error:
+            return False, custom_util.get_error_messages()
+
+        return True, custom_util.get_updated_metadata()
+
+
+

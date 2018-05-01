@@ -109,12 +109,12 @@ class CustomStatistics(forms.Form):
     # preprocess file info
     preprocess_id = forms.IntegerField()
     # single custom_statistic info
-    name = forms.CharField(required= True, label='Custom Statistic Name')
-    variables = forms.CharField(required=True, label='Variables Name')
-    image = forms.URLField(required=False, label='Url Of Image')
+    name = forms.CharField(required= True, label='Name')
+    variables = forms.CharField(required=True, label='Variables')
+    image = forms.URLField(required=False, label='Image')
     value = forms.FloatField(required= True, label='Value')
     description = forms.CharField(required=True, label='Description')
-    replication = forms.CharField(required= True,label='Logic for Custom Statistic')
+    replication = forms.CharField(required= True,label='replication')
     omit = forms.ChoiceField(choices=OMIT_CHOICES,
                                initial=OMIT_FALSE,
                                required=True)
