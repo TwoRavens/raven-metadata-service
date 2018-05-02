@@ -67,8 +67,8 @@ def try_it2():
             if str(file_id).isdigit() and int(filesize) < 2500000:
                 cnt += 1
                 msgt('(%s) Process file: %s (idx: %s)' % (cnt, file_id, idx))
-                try_queue(3004409, dataset_id)
-                #try_queue(file_id, dataset_id)
+                #try_queue(3004409, dataset_id)
+                try_queue(file_id, dataset_id)
             if cnt == 1:
                 break
 
