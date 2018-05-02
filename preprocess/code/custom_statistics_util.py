@@ -86,7 +86,13 @@ class CustomStatisticsUtil(object):
 
         return image_url
 
+    def is_major_update(self):
+        """add or change a custom stat"""
+        return False
 
+    def is_minor_update(self):
+        """add or change a custom stat"""
+        return True
 
     def custom_statistics_check_value(self,value):
         if value is None:
@@ -135,6 +141,7 @@ class CustomStatisticsUtil(object):
         if omit is True:
             data = {
                 "custom":[{
+                    "id":id,
                     "message":"omitted"
                 }]
 
@@ -150,7 +157,9 @@ class CustomStatisticsUtil(object):
                 "value":value,
                 "description":description,
                 "replication":replication,
-                "omit":omit
+                "display": {
+                    "omit":omit
+                }
             }
         print("data to be sent",data)
 
@@ -159,10 +168,10 @@ class CustomStatisticsUtil(object):
 
     def add_to_original(self,data):
 
-        self.original_json= self.preprocess_json
-        output = OrderedDict
+        # self.original_json= self.preprocess_json
+        #output = OrderedDict()
         output = self.preprocess_json
-        if col_const.CUSTOM_KEY not in self.original_json:
+        if col_const.CUSTOM_KEY not in output:
             output[col_const.CUSTOM_KEY]=data
         else:
             output[col_const.CUSTOM_KEY].append(data)

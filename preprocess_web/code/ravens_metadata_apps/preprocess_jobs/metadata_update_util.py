@@ -1,5 +1,6 @@
 """Update preprocess metadata, creating a new MetadataUpdate object in the processs"""
 import json
+
 from decimal import Decimal
 
 from django.core.files.base import ContentFile
@@ -7,15 +8,19 @@ from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
+from custom_statistics_util import CustomStatisticsUtil
+
 from variable_display_util import VariableDisplayUtil
 from np_json_encoder import NumpyJSONEncoder
+from col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
 
 class MetadataUpdateUtil(object):
 
-    def __init__(self, preprocess_id, update_json):
+    def __init__(self, preprocess_id, update_json, update_type):
         """Initialize with a PreprocessJob id and JSON update snippet"""
         self.preprocess_id = preprocess_id
         self.update_json = update_json
+        self.update_type = update_type
 
         # to be created...
         self.metadata_update_obj = None
@@ -53,6 +58,22 @@ class MetadataUpdateUtil(object):
         return metadata
 
 
+    def get_update_util(self, latest_metadata_or_err):
+        """Either update the variable display or the summary stats"""
+
+        if self.update_type == UPDATE_VARIABLE_DISPLAY:
+
+            return VariableDisplayUtil(latest_metadata_or_err, self.update_json)
+
+        elif self.update_type == UPDATE_CUSTOM_STATISTICS:
+
+            return CustomStatisticsUtil(latest_metadata_or_err, self.update_json)
+
+        else:
+            self.add_err_msg('Unknown update type: %s' % self.update_type)
+            return None
+
+
     def make_update(self):
         """Update the latest version of the preprocess metadata"""
 
@@ -78,8 +99,13 @@ class MetadataUpdateUtil(object):
         #success, update_or_errors = JobUtil.update_preprocess_metadata(\
         #                                    latest_metadata_or_err,
         #                                    self.update_json)
-        var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
-        if var_util.has_error:
+
+
+        #var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
+        var_util = self.get_update_util(latest_metadata_or_err)
+        if var_util is None:
+            return False
+        elif var_util.has_error:
             self.add_err_msg(var_util.get_error_messages())
             return False
 
@@ -87,7 +113,7 @@ class MetadataUpdateUtil(object):
         # Record successful update in new MetadataUpdate object
         # ------------------------------------------------------
         update_kwargs = dict(update_json=self.update_json)
-        if metadata_obj.is_original_metadata():
+        if metadata_obj.is_original_metadata(): # Is this a PreprocssJob
             # this is a PreprocessJob
             update_kwargs['orig_metadata'] = metadata_obj
             update_kwargs['previous_update'] = None
@@ -125,7 +151,7 @@ class MetadataUpdateUtil(object):
                  ' (MetadataUpdateUtil: 118)') % err_obj)
             return False
 
-        new_name = 'update_%s.json' % get_alphanumeric_lowercase(8)
+        new_name = 'update_%s_%s.json' % (self.metadata_update_obj.id, get_alphanumeric_lowercase(8))
         new_preprocess_data = ContentFile(json_val)
 
         try:

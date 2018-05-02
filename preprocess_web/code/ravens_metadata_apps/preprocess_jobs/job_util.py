@@ -1,5 +1,6 @@
 """Utility class for the preprocess workflow"""
 import pandas as pd
+
 from django.http import HttpResponse, JsonResponse
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
@@ -11,6 +12,8 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 from variable_display_util import VariableDisplayUtil
 from custom_statistics_util import CustomStatisticsUtil
 from ravens_metadata_apps.utils.view_helper import get_json_error
+from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
+from col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
@@ -328,9 +331,6 @@ class JobUtil(object):
 
         return True, var_util.get_updated_metadata()
 
-    # @staticmethod
-    # def get_preprocess_and_custom_statistics_file(job_id,custom):
-        """"""
     @staticmethod
     def update_preprocess_metadata_custom_statistics(job_id,custom_statistics_json):
         """ Send info to the custom_statistics in preprocess runner"""
@@ -340,11 +340,17 @@ class JobUtil(object):
                             message=latest_metadata_json_or_err)
             return user_msg
 
-        custom_util = CustomStatisticsUtil(latest_metadata_json_or_err,custom_statistics_json)
-        if custom_util.has_error:
-            return False, custom_util.get_error_messages()
+        metadata_update_or_err=MetadataUpdateUtil(latest_metadata_json_or_err,custom_statistics_json, UPDATE_CUSTOM_STATISTICS)
+        if metadata_update_or_err.has_error:
+            return False, metadata_update_or_err.get_error_messages()
+        else:
 
-        return True, custom_util.get_updated_metadata()
+            custom_util = CustomStatisticsUtil(latest_metadata_json_or_err, custom_statistics_json)
+            if custom_util.has_error:
+                return False, custom_util.get_error_messages()
+
+            return True, custom_util.get_updated_metadata()
+
 
 
 

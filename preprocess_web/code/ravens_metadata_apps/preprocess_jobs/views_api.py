@@ -32,7 +32,7 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
-
+from col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
 from np_json_encoder import NumpyJSONEncoder
 
 
@@ -158,7 +158,7 @@ def api_update_metadata(request):
 
     preprocess_id = update_json['preprocess_id']
 
-    update_util = MetadataUpdateUtil(preprocess_id, update_json)
+    update_util = MetadataUpdateUtil(preprocess_id, update_json, UPDATE_VARIABLE_DISPLAY)
     if update_util.has_error:
         return JsonResponse(get_json_error(update_util.error_messages))
 
