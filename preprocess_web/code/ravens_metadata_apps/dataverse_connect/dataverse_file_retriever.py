@@ -31,8 +31,18 @@ class DataverseFileRetriever(BasicErrCheck):
         self.data_file_url = data_file_url
         self.dataverse_doi = kwargs.get('dataverse_doi')
         self.dataset_id = kwargs.get('dataset_id')
+
         self.dv_file_info = None # to hold an instance of DataverseFileInfo
-        self.preprocess_job = None  # to hold an instance of PreprocessJob
+
+        # to hold an instance of PreprocessJob
+        #
+        self.preprocess_job = None
+
+        # - Specify a preprocess_job_id to use an existing PreprocessJob
+        #     when tracking a celery task id
+        #   - BUT: should have no source_file, metadata_file, etc
+        #
+        self.preprocess_job_id = kwargs.get('preprocess_job_id')
 
         # default to .tab for Dataverse files
         #
@@ -47,8 +57,42 @@ class DataverseFileRetriever(BasicErrCheck):
 
     def run_process(self):
         """Do your thing...."""
+        # do this to have a record of the attempt...
+        self.update_preprocess_job()
         self.load_dataverse_info()
         self.run_file_retrieval()
+
+    def update_preprocess_job(self):
+        """Update or create the Preprocess Job"""
+        if self.preprocess_job_id:
+            # There's an existing PreprocessJob to use, let's get it
+            try:
+                self.preprocess_job = PreprocessJob.objects.get(pk=self.preprocess_job_id)
+            except PreprocessJob.DoesNotExist:
+                self.preprocess_job = PreprocessJob(name=self.data_file_url)
+                err_msg = ('Unable to locate PreprocessJob with id: %d' % \
+                           self.preprocess_job_id)
+                self.preprocess_job.add_err_msg(err_msg)
+                return
+        else:
+            # Create a new PreprocessJob for this request
+            #
+            self.preprocess_job = PreprocessJob(name=self.data_file_url)
+
+        self.preprocess_job.set_state_retrieving_data()
+        self.preprocess_job.save()
+
+
+    def add_err_msg(self, err_msg):
+        """Add an error message"""
+        self.error_found = True
+        self.error_message = err_msg
+
+        # Also update the preprocess job
+        #
+        self.preprocess_job.set_state_failure()
+        self.preprocess_job.user_message = err_msg
+        self.preprocess_job.save()
 
     def load_dataverse_info(self):
         """Check if the Dataverse if Registered and if a file id exists"""
@@ -117,9 +161,18 @@ class DataverseFileRetriever(BasicErrCheck):
         #
         LOGGER.debug('(2) was the request OK?')
         if request.status_code != requests.codes.ok:
-            user_msg = ('Failed to retrieve file from %s'
-                        '\nStatus code: %s') % \
-                        (self.data_file_url, request.status_code)
+            user_msg = ('Failed to retrieve file from %s') % \
+                       (self.data_file_url)
+
+            if request.status_code == requests.codes.not_found:
+                user_msg = ('%s\nThe file was not found.') % user_msg
+            elif request.status_code == requests.codes.forbidden:
+                user_msg = ('%s\nThe url is forbidden--likely an unpublished'
+                            ' file.') % \
+                            user_msg
+
+            user_msg = ('%s\nStatus code: %s') % (user_msg, request.status_code)
+
             self.add_err_msg(user_msg)
             return
 
@@ -141,8 +194,6 @@ class DataverseFileRetriever(BasicErrCheck):
         #
         LOGGER.debug('(4) Link the file to a new PreprocessJob')
         #
-        self.preprocess_job = PreprocessJob(name=self.data_file_url)
-        self.preprocess_job.save() # save it to get the id
 
         # Get the filename from the url, used for saving later
         #
@@ -154,6 +205,9 @@ class DataverseFileRetriever(BasicErrCheck):
         self.preprocess_job.source_file.save(\
                         file_name,
                         files.File(named_temp_file))
+
+        self.preprocess_job.set_state_data_retrieved()
+        self.preprocess_job.save()
 
         # Update and save the instance of DataverseFileInfo
         #

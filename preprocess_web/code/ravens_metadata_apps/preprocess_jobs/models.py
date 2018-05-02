@@ -22,6 +22,7 @@ from ravens_metadata_apps.utils.basic_response import \
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
+STATE_RETRIEVING_DATA = u'STATE_RETRIEVING_DATA'
 STATE_DATA_RETRIEVED = u'DATA_RETRIEVED'
 STATE_PREPROCESS_STARTED = u'PREPROCESS_STARTED'
 STATE_SUCCESS = u'SUCCESS'
@@ -30,6 +31,7 @@ STATE_REVOKED = u'REVOKED'
 
 PREPROCESS_STATES = (STATE_RECEIVED,
                      STATE_PENDING,
+                     STATE_RETRIEVING_DATA,
                      STATE_DATA_RETRIEVED,
                      STATE_PREPROCESS_STARTED,
                      STATE_SUCCESS,
@@ -65,7 +67,7 @@ class PreprocessJob(TimeStampedModel):
                     blank=True)
 
     source_file = models.FileField(\
-                    help_text='Source file for preprocess',
+                    help_text='Source file to analyze',
                     upload_to='source_file/%Y/%m/%d/',
                     blank=True)
 
@@ -291,6 +293,14 @@ class PreprocessJob(TimeStampedModel):
     def has_error(self):
         """Was there an error?"""
         return self.state == STATE_FAILURE
+
+    def set_state_pending(self):
+        """set state to STATE_PENDING"""
+        self.state = STATE_PENDING
+
+    def set_state_retrieving_data(self):
+        """set state to STATE_RETRIEVING_DATA"""
+        self.state = STATE_RETRIEVING_DATA
 
     def set_state_data_retrieved(self):
         """set state to STATE_DATA_RETRIEVED"""

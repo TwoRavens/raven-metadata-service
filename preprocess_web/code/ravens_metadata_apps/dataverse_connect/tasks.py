@@ -14,9 +14,14 @@ from celery import task, shared_task
 from celery.result import AsyncResult
 
 @task
-def preprocess_dataverse_file(dv_url, dataset_id=None):
-    """Test task to download file and preprocess it"""
-    file_retriever = DataverseFileRetriever(dv_url, dataset_id=dataset_id)
+def preprocess_dataverse_file(dv_url, **kwargs):
+    """Test task to download file and preprocess it
+    kwargs: params to pass onto DataverseFileRetriever:
+     - dataset_id - id of the dataset
+     - preprocess_job - an instance of PreprocessJob
+        - recommended if you plan to add a celery `task_id` to it
+    """
+    file_retriever = DataverseFileRetriever(dv_url, **kwargs)
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
         err_data = dict(dataverse_url=dv_url)

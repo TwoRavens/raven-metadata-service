@@ -19,6 +19,7 @@ from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
     (DataverseFileRetriever)
 from ravens_metadata_apps.dataverse_connect.tasks import preprocess_dataverse_file
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+from ravens_metadata_apps.dataverse_connect.dataverse_util import DataverseUtil
 from msg_util import msg, msgt
 
 
@@ -27,7 +28,6 @@ def try_it(file_id=3147445, dataset_id=None):
     # hmmm...
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
     dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
-    preprocess_dataverse_file.delay(dv_url)
     file_retriever = DataverseFileRetriever(dv_url, dataset_id=dataset_id)
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
@@ -43,7 +43,10 @@ def try_queue(file_id=3147445, dataset_id=None):
     # hmmm...
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
     dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
-    preprocess_dataverse_file.delay(dv_url, dataset_id)
+
+    job = DataverseUtil.process_dataverse_file(dv_url, dataset_id=dataset_id)
+    print('job: %s' % job)
+    #preprocess_dataverse_file.delay(dv_url, dataset_id=dataset_id)
 
 
 def try_it2():
@@ -64,8 +67,9 @@ def try_it2():
             if str(file_id).isdigit() and int(filesize) < 2500000:
                 cnt += 1
                 msgt('(%s) Process file: %s (idx: %s)' % (cnt, file_id, idx))
-                try_queue(file_id, dataset_id)
-            if cnt == 100:
+                try_queue(3004409, dataset_id)
+                #try_queue(file_id, dataset_id)
+            if cnt == 1:
                 break
 
 if __name__ == '__main__':

@@ -146,6 +146,10 @@ class JobUtil(object):
             job.save()
             return
 
+        # update the state of the job
+        job.set_state_pending()
+        job.save()
+
         # send the file to the queue
         task = preprocess_csv_file.delay(\
                     job.source_file.path,
@@ -153,9 +157,6 @@ class JobUtil(object):
 
         # set the task_id
         job.task_id = task.id
-
-        # update the state of the job
-        job.set_state_preprocess_started()
 
         # save the new state
         job.save()
