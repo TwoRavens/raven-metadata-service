@@ -175,7 +175,7 @@ class CustomStatisticsUtil(object):
         if col_const.CUSTOM_KEY not in output:
             output[col_const.CUSTOM_KEY]=data
         else:
-            output[col_const.CUSTOM_KEY].append(data)
+            output[col_const.CUSTOM_KEY]=data
 
         self.original_json = output
         # print(self.original_json)

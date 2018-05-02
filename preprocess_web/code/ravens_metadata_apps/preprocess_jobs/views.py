@@ -31,7 +31,7 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
-
+from col_info_constants import (UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS)
 from np_json_encoder import NumpyJSONEncoder
 
 def test_view(request):
@@ -115,12 +115,29 @@ def view_custom_statistics_form(request):
         user_msg = dict(success=False,
                     message='Custom Statistics',
                     id=job_id)
+        return JsonResponse(user_msg)
 
-    user_msg = dict(success=True,
-                    message='Custom Statistics',
-                    id=job_id,
-                    data=updated_metadata)
-    print(updated_metadata)
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+    metadata_update_or_err = MetadataUpdateUtil(job_id, frm.cleaned_data, \
+                                                UPDATE_CUSTOM_STATISTICS)
+    if metadata_update_or_err.has_error:
+        msg= metadata_update_or_err.get_error_messages()
+        user_msg = dict(success=True,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=msg)
+
+    else:
+        user_msg = dict(success=True,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=updated_metadata)
+        print(updated_metadata)
 
     return JsonResponse(user_msg)
     # ------------------------
