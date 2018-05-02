@@ -2,6 +2,7 @@
 from collections import OrderedDict
 from decimal import Decimal
 import pandas as pd
+import re
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json, uuid
 from random import randrange
@@ -66,7 +67,7 @@ class CustomStatisticsUtil(object):
 
     def custom_statistics_check_name(self,name):
         statistics_name = name
-        if not statistics_name.isalnum(): # check if the name is alpha numerics , \
+        if not re.match(r'^[A-Za-z0-9_]+$', statistics_name): # check if the name is alpha numerics , \
                                       #  i.e does not contain special characters or empty spaces
             self.add_error_message('The name is not alpha-numeric')
         return statistics_name
