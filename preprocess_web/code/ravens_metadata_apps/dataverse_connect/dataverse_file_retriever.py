@@ -17,6 +17,7 @@ from ravens_metadata_apps.utils.url_helper import URLHelper
 from ravens_metadata_apps.dataverse_connect.models import \
     (RegisteredDataverse,
      DataverseFileInfo)
+from ravens_metadata_apps.dataverse_connect.citation_retriever import CitationRetriever
 import logging
 
 LOGGER = logging.getLogger(__name__)
@@ -30,6 +31,7 @@ class DataverseFileRetriever(BasicErrCheck):
         dataverse_citation_url - url to retrive a dataverse JSON-LD citation
         """
         self.data_file_url = data_file_url
+        self.datafile_id = None  # derived from the data_file_url
         self.dataverse_doi = kwargs.get('dataverse_doi')
         self.dataset_id = kwargs.get('dataset_id')
 
@@ -61,7 +63,20 @@ class DataverseFileRetriever(BasicErrCheck):
         # do this to have a record of the attempt...
         self.update_preprocess_job()
         self.load_dataverse_info()
+        self.load_citation_info()
         self.run_file_retrieval()
+
+
+    def load_citation_info(self):
+        """Retrieve the Dataverse citation information"""
+        if self.has_error():
+            return
+        #import ipdb; ipdb.set_trace()
+        retriever = CitationRetriever(self.datafile_id, self.dv_file_info.dataverse)
+        if retriever.has_error():
+            self.add_err_msg(retriever.get_error_message())
+            return
+
 
     def update_preprocess_job(self):
         """Update or create the Preprocess Job"""
@@ -131,6 +146,7 @@ class DataverseFileRetriever(BasicErrCheck):
 
         # Start the DataverseFileInfo object--but don't save it yet
         #
+        self.datafile_id = dv_id_info.result_obj
         self.dv_file_info = DataverseFileInfo(\
                                     dataverse=registered_dv,
                                     datafile_id=dv_id_info.result_obj)

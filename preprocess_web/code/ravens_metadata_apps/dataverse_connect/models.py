@@ -53,6 +53,22 @@ class RegisteredDataverse(TimeStampedModel):
         super(RegisteredDataverse, self).save(*args, **kwargs)
 
 
+    def get_search_api_url(self, file_id):
+        """Construct a url for using the search API for a file"""
+        # example:
+        # https://dataverse.harvard.edu/api/search?q=entityId:$FILEID
+
+        return ('{0}://{1}/api/search?q=entityId:{2}').format(\
+                    self.url_scheme,
+                    self.network_location,
+                    file_id)
+
+    def get_jsonld_url(self, doi_str):
+        """Construct a url for retrieving the citation in JSON-LD format"""
+        return ('{0}://{1}/api/datasets/export?exporter=schema.org&persistentId={2}').format(\
+                self.url_scheme,
+                self.network_location,
+                doi_str)
 
 class DataverseFileInfo(TimeStampedModel):
     """Information about Preprocessed DataverseFile"""
