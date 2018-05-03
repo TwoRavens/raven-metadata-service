@@ -57,7 +57,7 @@ def try_it2():
     with open(tab_file_list, "r") as f:
         reader = csv.reader(f)
         for idx, line_items in enumerate(reader):
-            if idx == 0:
+            if idx < 1000:
                 continue
             #line_items = line.split(',')
             print('line_items', line_items)
@@ -67,11 +67,12 @@ def try_it2():
             if str(file_id).isdigit() and int(filesize) < 2500000:
                 cnt += 1
                 msgt('(%s) Process file: %s (idx: %s)' % (cnt, file_id, idx))
-                #try_queue(3004409, dataset_id)
+                #try_queue(3148839, dataset_id)
                 try_queue(file_id, dataset_id)
-            if cnt == 1:
+            if cnt == 100:
                 break
 
 if __name__ == '__main__':
+    #try_it(3148842)
     try_it2()
     #try_queue()

@@ -2,9 +2,10 @@
 Retrieve a Dataverse file and create a PreprocessJob object
 ref: https://stackoverflow.com/questions/16174022/download-a-remote-image-and-save-it-to-a-django-model
 """
+import re
 import requests
 import tempfile
-
+from os.path import splitext
 from django.core import files
 
 from file_format_constants import TAB_FILE_EXT
@@ -176,7 +177,24 @@ class DataverseFileRetriever(BasicErrCheck):
             self.add_err_msg(user_msg)
             return
 
-        # (3) Read stream to a temporary file
+        # (3) Check for the filename and extension
+        #
+        # example val: "attachment; filename*=UTF-8''FerryDataDepositFinal.mat"
+        content_disp = request.headers['content-disposition']
+        print('content_disp', content_disp)
+        found_list = re.findall(r"filename\*=UTF\-8''(.+)", content_disp)
+        if found_list:
+            file_name = found_list[0]
+            fname_base, fname_ext = splitext(file_name)
+            if fname_ext:
+                self.file_extension = fname_ext
+
+        output_file_name = 'data_%s_%s%s' % \
+                        (self.preprocess_job.id,
+                         get_alphanumeric_lowercase(8),
+                         self.file_extension)
+
+        # (3a) Read stream to a temporary file
         #
         LOGGER.debug('(3) Read stream to a temporary file')
         named_temp_file = tempfile.NamedTemporaryFile()
@@ -195,15 +213,8 @@ class DataverseFileRetriever(BasicErrCheck):
         LOGGER.debug('(4) Link the file to a new PreprocessJob')
         #
 
-        # Get the filename from the url, used for saving later
-        #
-        file_name = 'data_%s_%s%s' % \
-                    (self.preprocess_job.id,
-                     get_alphanumeric_lowercase(8),
-                     self.file_extension)
-
         self.preprocess_job.source_file.save(\
-                        file_name,
+                        output_file_name,
                         files.File(named_temp_file))
 
         self.preprocess_job.set_state_data_retrieved()
