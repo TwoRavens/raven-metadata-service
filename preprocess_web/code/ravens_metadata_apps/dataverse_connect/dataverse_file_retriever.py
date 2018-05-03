@@ -180,14 +180,7 @@ class DataverseFileRetriever(BasicErrCheck):
         # (3) Check for the filename and extension
         #
         # example val: "attachment; filename*=UTF-8''FerryDataDepositFinal.mat"
-        content_disp = request.headers['content-disposition']
-        print('content_disp', content_disp)
-        found_list = re.findall(r"filename\*=UTF\-8''(.+)", content_disp)
-        if found_list:
-            file_name = found_list[0]
-            fname_base, fname_ext = splitext(file_name)
-            if fname_ext:
-                self.file_extension = fname_ext
+        orig_file_name = self.get_original_filename(request)
 
         output_file_name = 'data_%s_%s%s' % \
                         (self.preprocess_job.id,
@@ -222,5 +215,42 @@ class DataverseFileRetriever(BasicErrCheck):
 
         # Update and save the instance of DataverseFileInfo
         #
+        print('update DataverseFileInfo')
         self.dv_file_info.preprocess_job = self.preprocess_job
+        self.dv_file_info.original_filename = orig_file_name
         self.dv_file_info.save()
+
+    def get_original_filename(self, req_result):
+        """Attempt to determine the original filename and update the extension, if appropriate"""
+        # default to empty string
+        orig_file_name = ''
+
+        if not req_result:
+            return orig_file_name
+
+        content_disp = req_result.headers['content-disposition']
+        if not content_disp:
+            return orig_file_name
+
+        # Attempt to find the filename in the content disposition
+        #  (2 attempts listed have been seen in the course of downloading dv files)
+        #
+        found_list = re.findall(r"filename\*=UTF\-8''(.+)", content_disp)
+        if not found_list:
+            found_list = re.findall(r'filename="(.+)"', content_disp)
+
+        if not found_list:
+            return orig_file_name
+
+        # got it!
+        #
+        orig_file_name = found_list[0]
+        #print('orig_file_name', orig_file_name)
+
+        # update the file extension
+        #
+        _fname_base, fname_ext = splitext(orig_file_name)
+        if fname_ext:
+            self.file_extension = fname_ext
+
+        return orig_file_name

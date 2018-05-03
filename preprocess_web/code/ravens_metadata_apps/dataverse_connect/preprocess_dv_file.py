@@ -69,10 +69,10 @@ def try_it2():
                 msgt('(%s) Process file: %s (idx: %s)' % (cnt, file_id, idx))
                 #try_queue(3148839, dataset_id)
                 try_queue(file_id, dataset_id)
-            if cnt == 100:
+            if cnt == 15:
                 break
 
 if __name__ == '__main__':
-    #try_it(3148842)
+    #try_it(3131016)
     try_it2()
     #try_queue()

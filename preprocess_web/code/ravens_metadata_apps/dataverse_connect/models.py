@@ -74,6 +74,10 @@ class DataverseFileInfo(TimeStampedModel):
                                      max_length=255,
                                      blank=True)
 
+    original_filename = models.CharField('original filename',
+                                         max_length=255,
+                                         blank=True)
+
     formatted_citation = models.TextField(blank=True)
 
     jsonld_citation = jsonfield.JSONField(\
