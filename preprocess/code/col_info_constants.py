@@ -1,7 +1,7 @@
 '''Contants used in the preprocess logic and metadata output'''
 PREPROCESS_ID = 'preprocess_id'
 
-CUSTOM_KEY = 'custom'
+
 
 SELF_SECTION_KEY = 'self'
 VERSION_KEY = 'version'
@@ -72,5 +72,7 @@ TIME_VALUES = (TIME_YES,
 PLOT_BAR = "bar"
 PLOT_CONTINUOUS = "continuous"
 
+
+CUSTOM_KEY = 'custom_statistics'
 UPDATE_VARIABLE_DISPLAY = 'UPDATE_VARIABLE_DISPLAY'
 UPDATE_CUSTOM_STATISTICS = 'UPDATE_CUSTOM_STATISTICS'

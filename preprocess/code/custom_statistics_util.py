@@ -2,6 +2,7 @@
 from collections import OrderedDict
 from decimal import Decimal
 import pandas as pd
+from django.utils.text import slugify
 import re
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json, uuid
@@ -58,20 +59,17 @@ class CustomStatisticsUtil(object):
     def update_preprocess_version(self):
         """ here update the preprocess version of the metadata"""
 
-    def custom_statistics_create_id(self,id): # need to think of generating id
-        irand = randrange(0, 100)
-        custom_id = str(id)+"."+str(irand)
+    def custom_statistics_create_id(self,name): # need to think of generating id
+        var_id = slugify(name).replace('-', '_')[:25]
 
-        return custom_id
-
+        return var_id
 
     def custom_statistics_check_name(self,name):
         statistics_name = name
-        if not re.match(r'^[A-Za-z0-9_]+$', statistics_name): # check if the name is alpha numerics , \
+        if not re.match(r'^[A-Za-z0-9_ ]+$', statistics_name): # check if the name is alpha numerics , \
                                       #  i.e does not contain special characters or empty spaces
             self.add_error_message('The name is not alpha-numeric')
         return statistics_name
-
 
     def custom_statistics_check_variables(self,var_list,variables):
         print("all var ", var_list)
@@ -79,7 +77,6 @@ class CustomStatisticsUtil(object):
             self.add_error_message('The variable does not exist in the metadata file')
 
         return variables
-
 
     def custom_statistics_check_image(self,image_url):
         if image_url is None:
@@ -101,7 +98,6 @@ class CustomStatisticsUtil(object):
 
         return value
 
-
     def custom_statistics_check_description(self,desc):
         if desc is None:
             self.add_error_message(' value is none ')
@@ -116,13 +112,11 @@ class CustomStatisticsUtil(object):
 
         return rep
 
-
     def custom_statistics_check_omit(self,omit):
         if omit not in OMIT_VALUES:
             self.add_error_message('Omit should be either True or False')
             return
         return omit
-
 
     def custom_statistics_update(self):
         """Main function for appending the data"""
@@ -130,7 +124,6 @@ class CustomStatisticsUtil(object):
         # print(self.custom_statistics_json['variables'])
         preprocess_id = self.custom_statistics_json['preprocess_id']
         var_list = list(self.preprocess_json['variables'])
-        id = self.custom_statistics_create_id(preprocess_id)
         name = self.custom_statistics_check_name(self.custom_statistics_json['name'])
         variables = self.custom_statistics_check_variables(var_list,self.custom_statistics_json['variables'])
         image = self.custom_statistics_check_image(self.custom_statistics_json['image'])
@@ -138,46 +131,32 @@ class CustomStatisticsUtil(object):
         description = self.custom_statistics_check_description(self.custom_statistics_json['description'])
         replication = self.custom_statistics_check_replication(self.custom_statistics_json['replication'])
         omit = self.custom_statistics_check_omit(self.custom_statistics_json['omit'])
-        data ={}
-        if omit is True:
-            data = {
-                "custom":[{
-                    "id":id,
-                    "message":"omitted"
-                }]
-
-            }
-            print("dat to be sent", data)
-
 
         data = {
-                "id":id,
                 "name":name,
-                "variables":variables,
-                "image":image,
+                "variables":[variables],
+                "image":[image],
                 "value":value,
                 "description":description,
                 "replication":replication,
                 "display": {
                     "omit":omit
                 }
-            }
+
+        }
         print("data to be sent",data)
 
         self.add_to_original(data)
 
-
     def add_to_original(self,data):
-
+        id = self.custom_statistics_create_id(data['name'])
         # self.original_json= self.preprocess_json
-        #output = OrderedDict()
-        output = self.preprocess_json
-        if col_const.CUSTOM_KEY not in output:
-            output[col_const.CUSTOM_KEY]=data
+        if id is 1:
+            self.preprocess_json[col_const.CUSTOM_KEY] = { id: data}
         else:
-            output[col_const.CUSTOM_KEY]=data
+            self.preprocess_json[col_const.CUSTOM_KEY][id]= data
 
-        self.original_json = output
+        self.original_json = self.preprocess_json
         # print(self.original_json)
 
 
