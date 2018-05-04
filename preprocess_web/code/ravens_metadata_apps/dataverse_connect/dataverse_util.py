@@ -5,6 +5,11 @@ from ravens_metadata_apps.dataverse_connect.tasks import preprocess_dataverse_fi
 class DataverseUtil(object):
     """Methods related to Dataverse files"""
 
+
+    #@staticmethod
+    #def check_for_existing_dataverse_file(data_file_url):
+
+
     @staticmethod
     def process_dataverse_file(data_file_url, dataset_id=None):
         """Create a PreprocessJob, download a DataverseFile and preprocess it!"""

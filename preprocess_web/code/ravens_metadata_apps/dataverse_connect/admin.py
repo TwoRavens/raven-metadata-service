@@ -2,6 +2,8 @@ from django.contrib import admin
 
 from ravens_metadata_apps.dataverse_connect.models import \
     DataverseFileInfo, RegisteredDataverse
+from ravens_metadata_apps.preprocess_jobs.models import \
+    PreprocessJob
 
 
 class DataverseFileInfoAdmin(admin.ModelAdmin):
