@@ -16,8 +16,8 @@ FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
 INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
-OMIT_TRUE = 'True'
-OMIT_FALSE = 'False'
+OMIT_TRUE = True
+OMIT_FALSE = False
 INPUT_OMIT_TYPES = (OMIT_TRUE,OMIT_FALSE)
 OMIT_CHOICES = [(x,x) for x in INPUT_OMIT_TYPES]
 
@@ -106,8 +106,7 @@ class CustomStatisticsForm(forms.Form):
              ...
             ]
     """
-    # preprocess file info
-    preprocess_id = forms.IntegerField()
+
     # single custom_statistic info
     name = forms.CharField(required= True, label='Name')
     variables = forms.CharField(required=True, label='Variables')
@@ -121,17 +120,17 @@ class CustomStatisticsForm(forms.Form):
     #                           required=True)
 
 
-    def clean_preprocess_id(self):
-        """Check if PreprocessJob exists"""
-        preprocess_id = self.cleaned_data.get('preprocess_id')
-        try:
-            job = PreprocessJob.objects.get(id=preprocess_id)
-        except PreprocessJob.DoesNotExist:
-            # errors.append('A preprocess file does not exist for id: %s' % preprocess_id)
-            raise forms.ValidationError(
-                _('A preprocess file does not exist for id: %s' % preprocess_id))
-
-        return preprocess_id
+    # def clean_preprocess_id(self):
+    #     """Check if PreprocessJob exists"""
+    #     preprocess_id = self.cleaned_data.get('preprocess_id')
+    #     try:
+    #         job = PreprocessJob.objects.get(id=preprocess_id)
+    #     except PreprocessJob.DoesNotExist:
+    #         # errors.append('A preprocess file does not exist for id: %s' % preprocess_id)
+    #         raise forms.ValidationError(
+    #             _('A preprocess file does not exist for id: %s' % preprocess_id))
+    #
+    #     return preprocess_id
 
     def clean_name(self):
         name = self.cleaned_data.get('name')

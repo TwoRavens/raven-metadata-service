@@ -13,14 +13,40 @@ from column_info import ColumnInfo
 from np_json_encoder import NumpyJSONEncoder
 
 ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
-OMIT_VALUES = ['True', 'False']
+OMIT_VALUES = [True, False]
 class CustomStatisticsUtil(object):
     def __init__(self,preprocess_json, custom_statistics_json):
         """class for the custom statistics process"""
+        """
+        sample Update json coming :
+        {
+   "preprocess_id":1677,
+   "custom_statistics":[
+      {
+         "name":"Third order statistic",
+         "variables":"lpop,bebop",
+         "image":"http://www.google.com",
+         "value":23.45,
+         "description":"Third smallest value",
+         "replication":"sorted(X)[2]",
+         "omit":false
+      },
+      {
+         "name":"Fourth order statistic",
+         "variables":"pop,bebop",
+         "image":"http://www.youtube.com",
+         "value":29.45,
+         "description":"Fourth smallest value",
+         "replication":"sorted(X)[3]",
+         "omit":false
+      }
+   ]
+}
+        """
+
         assert isinstance(preprocess_json, dict), \
             "preprocess_json must be a dict/OrderedDict"
-        assert isinstance(custom_statistics_json, dict), \
-            "update_json must be a dict/OrderedDict"
+
 
         self.preprocess_json = preprocess_json
         self.custom_statistics_json = custom_statistics_json
@@ -54,6 +80,7 @@ class CustomStatisticsUtil(object):
 
     def get_error_messages(self):
         """Return the list of error messages"""
+        print("Error messages ",self.error_messages)
         return self.error_messages
 
     def update_preprocess_version(self):
@@ -69,6 +96,10 @@ class CustomStatisticsUtil(object):
         if not re.match(r'^[A-Za-z0-9_ ]+$', statistics_name): # check if the name is alpha numerics , \
                                       #  i.e does not contain special characters or empty spaces
             self.add_error_message('The name is not alpha-numeric')
+
+        for val in self.custom_statistics_json:
+            if name is val['name']:
+                self.add_error_message('The variable name %s already exist in the metadata file' % name)
         return statistics_name
 
     def custom_statistics_check_variables(self,var_list,variables):
@@ -122,42 +153,53 @@ class CustomStatisticsUtil(object):
     def custom_statistics_update(self):
         """Main function for appending the data"""
         # print(self.preprocess_json)
-        # print(self.custom_statistics_json['variables'])
-        preprocess_id = self.custom_statistics_json['preprocess_id']
-        var_list = list(self.preprocess_json['variables'])
-        name = self.custom_statistics_check_name(self.custom_statistics_json['name'])
-        variables = self.custom_statistics_check_variables(var_list,self.custom_statistics_json['variables'])
-        image = self.custom_statistics_check_image(self.custom_statistics_json['image'])
-        value = self.custom_statistics_check_value(self.custom_statistics_json['value'])
-        description = self.custom_statistics_check_description(self.custom_statistics_json['description'])
-        replication = self.custom_statistics_check_replication(self.custom_statistics_json['replication'])
-        omit = self.custom_statistics_check_omit(self.custom_statistics_json['omit'])
+        print("custom statistics json ",self.custom_statistics_json)
 
-        data = {
-                "name":name,
-                "variables":variables,
-                "image":image,
-                "value":value,
-                "description":description,
-                "replication":replication,
-                "display": {
-                    "omit":omit
+
+        # preprocess_id = self.custom_statistics_json['preprocess_id']
+        var_list = list(self.preprocess_json['variables'])
+        data = None
+        for dat in self.custom_statistics_json:
+
+            name = self.custom_statistics_check_name(dat['name'])
+            # id = self.custom_statistics_create_id(name)
+            variables = self.custom_statistics_check_variables(var_list,dat['variables'])
+            image = self.custom_statistics_check_image(dat['image'])
+            value = self.custom_statistics_check_value(dat['value'])
+            description = self.custom_statistics_check_description(dat['description'])
+            replication = self.custom_statistics_check_replication(dat['replication'])
+            omit = self.custom_statistics_check_omit(dat['omit'])
+
+            data = {
+                    "name":name,
+                    "variables":variables,
+                    "image":image,
+                    "value":value,
+                    "description":description,
+                    "replication":replication,
+                    "display": {
+                        "omit":omit
+                    }
+
                 }
 
-        }
-        print("data to be sent",data)
 
-        self.add_to_original(data)
+            print("data to be sent",data)
+
+            self.add_to_original(data)
+
+        self.original_json = self.preprocess_json
+
 
     def add_to_original(self,data):
         id = self.custom_statistics_create_id(data['name'])
         # self.original_json= self.preprocess_json
-        if id is 1:
+        if col_const.CUSTOM_KEY not in self.preprocess_json:
             self.preprocess_json[col_const.CUSTOM_KEY] = { id: data}
         else:
             self.preprocess_json[col_const.CUSTOM_KEY][id]= data
 
-        self.original_json = self.preprocess_json
+
         # print(self.original_json)
 
 

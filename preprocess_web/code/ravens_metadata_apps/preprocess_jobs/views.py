@@ -90,31 +90,71 @@ def view_basic_upload_form(request):
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
 
+@csrf_exempt
 def view_custom_statistics_form(request):
     """ HTML form to get the custom statistics"""
+
+    """
+    expected input:
+    {
+   "preprocess_id":1677,
+   "custom_statistics":[
+      {
+         "name":"Third order statistic",
+         "variables":"lpop,bebop",
+         "image":"http://www.google.com",
+         "value":23.45,
+         "description":"Third smallest value",
+         "replication":"sorted(X)[2]",
+         "omit":false
+      },
+      {
+         "name":"Fourth order statistic",
+         "variables":"pop,bebop",
+         "image":"http://www.youtube.com",
+         "value":29.45,
+         "description":"Fourth smallest value",
+         "replication":"sorted(X)[3]",
+         "omit":false
+      },
+    {custom_statistics3}...
+    ]
+    }
+    """
     if request.method != 'POST':
-        frm = CustomStatisticsForm()
-        return render(request,
-                      'preprocess/custom_statistics.html',
-                      {'form': frm})
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
 
-    frm = CustomStatisticsForm(request.POST)
-    if not frm.is_valid():
-        user_msg = dict(success=False,
-                        message='Invalid input',
-                        errors=frm.errors)
-        return JsonResponse(user_msg)
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
 
-    job_id = frm.cleaned_data['preprocess_id']
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err['preprocess_id']
+    custom_statistics_json = []
+    # form_data = json.loads(update_json_or_err)
+    for data in update_json_or_err['custom_statistics']:
+        frm = CustomStatisticsForm(data)
+
+        if not frm.is_valid():
+            user_msg = dict(success=False,
+                            message='Invalid input',
+                            errors=frm.errors)
+            return JsonResponse(user_msg)
+
+        custom_statistics_json.append(data)
 
     # ------------------------
     # for now to check snippet
-
-    success,updated_metadata = JobUtil.update_preprocess_metadata_custom_statistics(job_id,frm.cleaned_data)
+    # data_send = json.loads(custom_statistics_json)
+    success,updated_metadata = JobUtil.update_preprocess_metadata_custom_statistics(job_id,custom_statistics_json)
     if not success:
         user_msg = dict(success=False,
-                    message='Custom Statistics',
-                    id=job_id)
+                    message=updated_metadata,
+                    preprocess_id=job_id)
         return JsonResponse(user_msg)
 
     success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
@@ -123,7 +163,7 @@ def view_custom_statistics_form(request):
                         message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
 
-    metadata_update_or_err = MetadataUpdateUtil(job_id, frm.cleaned_data, \
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, \
                                                 UPDATE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
         msg= metadata_update_or_err.get_error_messages()
