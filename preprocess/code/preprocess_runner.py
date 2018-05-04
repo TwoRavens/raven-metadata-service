@@ -19,6 +19,8 @@ from dataset_level_info_util import DatasetLevelInfo
 from file_format_util import FileFormatUtil
 
 
+KEY_JSONLD_CITATION = 'jsonld_citation'
+
 
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
@@ -27,11 +29,18 @@ class PreprocessRunner(object):
         """Init with a pandas dataframe
 
         optional kwargs:
-        job_id
-
+        job_id - id of a PreprocessJob object
+        jsonld_citation - jsonld_citation as an OrderedDict
         """
         self.data_frame = dataframe
         self.job_id = kwargs.get('job_id', None)
+
+        # for a json_ld citation from dataverse
+        self.jsonld_citation = kwargs.get(KEY_JSONLD_CITATION, None)
+
+        # for data source
+        self.data_source_info = kwargs.get('data_source_info')
+
         self.celery_task = kwargs.get('celery_task')
         # to populate
         self.variable_info = {}  # { variable_name: ColumnInfo, ...}
@@ -46,8 +55,6 @@ class PreprocessRunner(object):
             .strftime('%Y-%m-%d %H:%M:%S')
         self.preprocess_id = None
 
-        # for data source
-        self.data_source_info = kwargs.get('data_source_info')
 
         self.run_preprocess()
 
@@ -88,18 +95,19 @@ class PreprocessRunner(object):
         """decide type/format, and name"""
         # Use new class to decide "csv file", "tab file"
         # etc
-        job_id = kwargs.get('job_id')
         file_format_util = FileFormatUtil(input_file, **kwargs)
 
-        # file_format_util.data_frame
-        # file_format_util.data_source_info
         if file_format_util.has_error:
             return None, file_format_util.error_message
         else:
+            if 'data_source_info' not in kwargs:
+                kwargs['data_source_info'] = file_format_util.data_source_info
+
             runner = PreprocessRunner(\
                         file_format_util.dataframe,
-                        job_id=job_id,
-                        data_source_info=file_format_util.data_source_info)
+                        **kwargs)
+                        #job_id=job_id,
+                        #data_source_info=file_format_util.data_source_info)
             if runner.has_error:
                 return None, runner.error_message
 
@@ -233,6 +241,10 @@ class PreprocessRunner(object):
         info_dict = dataset_level_info.final_output
         if self.data_source_info:
             info_dict[col_const.DATA_SOURCE_INFO] = self.data_source_info.as_dict()
+
+        if self.jsonld_citation:
+            info_dict[col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_CITATION] = \
+                self.jsonld_citation
 
         return info_dict
 

@@ -48,7 +48,7 @@ def preprocess_csv_file(input_file, **kwargs):
 
     runner, err_msg = PreprocessRunner.load_from_file(\
                                         input_file,
-                                        job_id=job_id)
+                                        **kwargs)
 
     if err_msg:
         print('(%s) FAILED: %s' % (input_file, err_msg))

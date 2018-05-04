@@ -1,6 +1,8 @@
 """Utility class for the preprocess workflow"""
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
+
+from preprocess_runner import KEY_JSONLD_CITATION
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
 from ravens_metadata_apps.utils.time_util import get_timestring_for_file
@@ -150,10 +152,17 @@ class JobUtil(object):
         job.set_state_pending()
         job.save()
 
+        # Additional/optional arguments for preprocess
+        #
+        additional_args = dict(job_id=job.id)
+        dv_file_info = job.dataversefileinfo_set.first()
+        if dv_file_info and dv_file_info.jsonld_citation:
+            additional_args[KEY_JSONLD_CITATION] = dv_file_info.jsonld_citation
         # send the file to the queue
+        #
         task = preprocess_csv_file.delay(\
                     job.source_file.path,
-                    job_id=job.id)
+                    **additional_args)
 
         # set the task_id
         job.task_id = task.id
