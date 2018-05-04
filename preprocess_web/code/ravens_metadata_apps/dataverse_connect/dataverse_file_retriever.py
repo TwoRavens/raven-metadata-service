@@ -7,7 +7,7 @@ import requests
 import tempfile
 from os.path import splitext
 from django.core import files
-
+from django.conf import settings
 from file_format_constants import TAB_FILE_EXT
 from ravens_metadata_apps.utils.basic_err_check import BasicErrCheck
 from ravens_metadata_apps.preprocess_jobs.models import \
@@ -174,10 +174,23 @@ class DataverseFileRetriever(BasicErrCheck):
         file_access_url = self.dv_file_info.get_file_access_url()
         print('file_access_url: ', file_access_url)
         try:
-            request = requests.get(file_access_url, stream=True)
+            request = requests.get(file_access_url,
+                                   stream=True,
+                                   timeout=settings.REQUESTS_TIMEOUT)
         except requests.exceptions.ConnectionError as err_obj:
             user_msg = ('Failed to retrieve file from %s'
                         '\nError: %s') % (self.data_file_url, err_obj)
+            self.add_err_msg(user_msg)
+            return
+        except requests.exceptions.Timeout as err_obj:
+            user_msg = ('Timeout error when attempting to download'
+                        ' the Dataverse file: %s'
+                        '\nTimeout (seconds): %s'
+                        '\nError: %s') % \
+                        (file_access_url,
+                         settings.REQUESTS_TIMEOUT,
+                         err_obj)
+            print('user_msg', user_msg)
             self.add_err_msg(user_msg)
             return
 
