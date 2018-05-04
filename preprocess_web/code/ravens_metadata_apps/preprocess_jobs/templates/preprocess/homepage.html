@@ -75,34 +75,94 @@
     </ul>
   </div>
 </nav>
-<div class="container" style="margin:10%; background-color:#f0f8ff; border: transparent">
+<div class="container" style="margin:10%; xbackground-color:#f0f8ff; border: transparent">
       <!-- Three columns of text below the carousel -->
-      <div class="row" style="margin-left:2%; padding: 2%">
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA">
-          <h2>Pre-Process</h2>
-          <p>Preprocess is a tool which generate a metadata file for the given information. It allows user to upload the file and generate the metadata output in JSON file format.  <p><a class="btn btn-primary" href="{% url 'view_basic_upload_form' %}" style="background-color: #ffcccc" role="button">Run Preprocess</a></p>
+      <div class="row">
+        <div class="col-lg-4  mb-4">
+          <div class="card">
+            <div class="card-body">
+                <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
+
+              <h3 class="card-title">Metadata List</h3>
+
+              <p>List all of the summary statistic files, including
+                those in process.</p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
+            </div>
+          </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="{% static "icon/info.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-          <h2>Check Data</h2>
-          <p> Check Data is a tool which helps user to take a look into the data and understand it by contolling the rows of the data. Helps user to get the big picture of the data.w<p><a class="btn btn-primary" href="{% url 'view_form_retrieve_rows' %}" style="background-color: #ffcccc" role="button">Check Data</a></p>
+        <div class="col-lg-4  mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
 
+              <h3 class="card-title">Create Summary Statistics</h3>
+
+              <p>Upload a data file and generate a metadata file containing summary statistics.</p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
+
+            </div>
+          </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-          <h2>Editor</h2>
-          <p>Editor is a tool which helps user to edit/View the preprocessed file, user can moulde the output according to the need and suggest the corrections.  <p><a class="btn btn-primary" href="#" style="background-color: #ffcccc" role="button">Check Editor</a></p>
 
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-          <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-          <h2>Lists</h2>
-          <p>Get the list of all the preprocess jobs.  <p><a class="btn btn-primary" href="{% url 'view_job_list' %}" style="background-color: #ffcccc" role="button">Check List</a></p>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
 
+              <h3 class="card-title">Dataverse Summary Statistics</h3>
+
+              <p>Use a <a href="http://dataverse.harvard.edu" target="_blank">Dataverse</a>
+                 link to generate a metadata file containing summary statistics.</p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- end row -->
+
+      <!-- start row -->
+      <div class="row">
+
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+
+              <img class="rounded-circle" src="{% static "icon/info.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
+
+              <h3 class="card-title">Retrieve Data</h3>
+
+              <p> Retrieve data rows from the source file<p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">Check Data</a>
+
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+
+                <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
+
+                <h3 class="card-title">Metadata Editor</h3>
+
+                <p>The Metadta Editor allows a user to view/edit the metadata file,
+                  completing tasks such as updating labels, adding summary
+                  statistics, and setting views for other users.</p>
+
+                <a class="btn btn-sm btn-primary" href="#" role="button">Check Editor</a>
+
+              </div>
+            </div>
           </div><!-- /.col-lg-4 -->
+
 
       </div><!-- /.row -->
+
 </div>
       <hr>
       <footer><p style="float:right; font-family:SansSerif; font-size: small; text-decoration-color: #6c757d"> <a href="http://2ravens.org/" target="_blank">@2ravens</a>, @RamanPrasad @Kripanshu </p></footer>

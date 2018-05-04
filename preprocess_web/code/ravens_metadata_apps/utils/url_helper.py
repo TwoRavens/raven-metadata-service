@@ -75,6 +75,9 @@ class URLHelper(object):
         #
         if KEY_DATAVERSE_FILE_ID in params and params[KEY_DATAVERSE_FILE_ID]:
             dv_id = params[KEY_DATAVERSE_FILE_ID]
+            if isinstance(dv_id, list) and dv_id:
+                dv_id = dv_id[0]
+
             if not str(dv_id).isdigit():
                 return err_resp('The file id is not an integer: "%s"' % dv_id)
 

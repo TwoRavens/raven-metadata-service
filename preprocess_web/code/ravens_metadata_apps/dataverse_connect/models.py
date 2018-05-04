@@ -42,7 +42,12 @@ class RegisteredDataverse(TimeStampedModel):
         ordering = ('name',)
 
     def __str__(self):
-        return '%s (%s)' % (self.name, self.dataverse_url)
+        """str representation"""
+        if self.network_location:
+            return self.network_location
+
+        return self.name
+        #return '%s (%s)' % (self.name, self.network_location)
 
     def save(self, *args, **kwargs):
         """Standardize the url on save"""
@@ -62,6 +67,18 @@ class RegisteredDataverse(TimeStampedModel):
                     self.url_scheme,
                     self.network_location,
                     file_id)
+
+    def get_file_access_url(self, file_id):
+        """Build a url similar to:
+        https://dataverse.harvard.edu/api/access/datafile/{{ file id }}
+        """
+        params = (self.url_scheme,
+                  self.network_location,
+                  '%s%s' % (PATH_DATAFILE_ACCESS, file_id),
+                  None, None, None)
+
+        return urlunparse(params)
+
 
     def get_jsonld_url(self, doi_str):
         """Construct a url for retrieving the citation in JSON-LD format
@@ -121,10 +138,7 @@ class DataverseFileInfo(TimeStampedModel):
         """Build a url similar to:
         https://dataverse.harvard.edu/api/access/datafile/{{ file id }}
         """
-        params = (self.dataverse.url_scheme,
-                  self.dataverse.network_location,
-                  '%s%s' % (PATH_DATAFILE_ACCESS, self.datafile_id),
-                  None, None, None)
+        if not self.dataverse:
+            return None
 
-        print('params: ', params)
-        return urlunparse(params)
+        return self.dataverse.get_file_access_url(self.datafile_id)

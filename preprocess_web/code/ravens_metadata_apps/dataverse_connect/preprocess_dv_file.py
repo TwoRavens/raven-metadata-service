@@ -79,6 +79,6 @@ def try_it2():
 
 if __name__ == '__main__':
     #try_queue(3131016)
-    #try_it(3131016)
-    try_it2()
+    try_it(3131016)
+    #try_it2()
     #try_queue()

@@ -83,7 +83,7 @@ class DataverseFileRetriever(BasicErrCheck):
         """Retrieve the Dataverse citation information"""
         if self.has_error():
             return
-        #import ipdb; ipdb.set_trace()
+
         retriever = CitationRetriever(self.datafile_id, self.dv_file_info.dataverse)
         if retriever.has_error():
             self.add_err_msg(retriever.get_error_message())
