@@ -139,8 +139,9 @@ def clear_jobs():
     mcnt = MetadataUpdate.objects.count()
     print('\n%d MetadataUpdate(s) found' % mcnt)
     if mcnt > 0:
-        for mu in MetadataUpdate.objects.all().order_by('-id'):
-            mu.delete()
+        for meta_obj in MetadataUpdate.objects.all().order_by('-id'):
+            meta_obj.metadata_file.delete()
+            meta_obj.delete()
         print('Deleted...')
     else:
         print('No MetadataUpdate objects found.\n')
@@ -150,7 +151,10 @@ def clear_jobs():
     if cnt == 0:
         print('No PreprocessJob objects found.\n')
         return
-    PreprocessJob.objects.all().delete()
+    for job in PreprocessJob.objects.all():
+        job.source_file.delete()
+        job.metadata_file.delete()
+        job.delete()
     print('Deleted...')
 
 

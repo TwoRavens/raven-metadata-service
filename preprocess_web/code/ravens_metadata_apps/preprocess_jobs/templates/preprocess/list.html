@@ -37,13 +37,14 @@
       <td>&#150; &#150;</td>
       <td class="text-center">
           {% if r.is_finished %}
+            <!-- preprocess failed -->
             <span class="badge badge-danger">{{ r.state }}</span>
             {% if r.user_message %}
               <p class="text-left">{{ r.user_message }}</p>
             {% endif %}
 
           {% else %}
-            <span class="badge badge-info">{{ r.state }}</span>
+            <span class="badge badge-success">{{ r.state }}</span>
           {% endif %}
       </td>
       {% endif %}

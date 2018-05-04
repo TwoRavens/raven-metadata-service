@@ -13,6 +13,8 @@ from django.utils import timezone
 import jsonfield
 from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
+
+from file_format_util import TAB_FILE_EXT, CSV_FILE_EXT
 from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.json_util import json_dump
 from ravens_metadata_apps.utils.basic_response import \
@@ -20,6 +22,7 @@ from ravens_metadata_apps.utils.basic_response import \
 
 STATE_RECEIVED = u'RECEIVED'
 STATE_PENDING = u'PENDING'
+STATE_RETRIEVING_DATA = u'STATE_RETRIEVING_DATA'
 STATE_DATA_RETRIEVED = u'DATA_RETRIEVED'
 STATE_PREPROCESS_STARTED = u'PREPROCESS_STARTED'
 STATE_SUCCESS = u'SUCCESS'
@@ -28,6 +31,7 @@ STATE_REVOKED = u'REVOKED'
 
 PREPROCESS_STATES = (STATE_RECEIVED,
                      STATE_PENDING,
+                     STATE_RETRIEVING_DATA,
                      STATE_DATA_RETRIEVED,
                      STATE_PREPROCESS_STARTED,
                      STATE_SUCCESS,
@@ -63,7 +67,7 @@ class PreprocessJob(TimeStampedModel):
                     blank=True)
 
     source_file = models.FileField(\
-                    help_text='Source file for preprocess',
+                    help_text='Source file to analyze',
                     upload_to='source_file/%Y/%m/%d/',
                     blank=True)
 
@@ -231,7 +235,9 @@ class PreprocessJob(TimeStampedModel):
 
     def get_absolute_url(self):
         """jobs status..."""
-        return self.get_job_status_link()
+        return reverse('view_job_detail',
+                       kwargs=dict(preprocess_id=self.id))
+        #return self.get_job_status_link()
 
 
     def get_job_status_link(self, base_url=''):
@@ -269,14 +275,14 @@ class PreprocessJob(TimeStampedModel):
     def is_tab_source_file(self):
         """Is the source file a .tab file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith('.tab'):
+            if self.source_file.path.lower().endswith(TAB_FILE_EXT):
                 return True
         return False
 
     def is_csv_source_file(self):
-        """Is the source file a .tab file"""
+        """Is the source file a .FORMAT_CSV file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith('.csv'):
+            if self.source_file.path.lower().endswith(CSV_FILE_EXT):
                 return True
         return False
 
@@ -287,6 +293,14 @@ class PreprocessJob(TimeStampedModel):
     def has_error(self):
         """Was there an error?"""
         return self.state == STATE_FAILURE
+
+    def set_state_pending(self):
+        """set state to STATE_PENDING"""
+        self.state = STATE_PENDING
+
+    def set_state_retrieving_data(self):
+        """set state to STATE_RETRIEVING_DATA"""
+        self.state = STATE_RETRIEVING_DATA
 
     def set_state_data_retrieved(self):
         """set state to STATE_DATA_RETRIEVED"""

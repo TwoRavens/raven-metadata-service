@@ -18,12 +18,12 @@ from collections import namedtuple
 
 
 SuccessResponse = namedtuple('SuccessResponse', 'success result_obj')
-ErrorResponse = namedtuple('ErrorResponse', 'success err_msg')
+ErrorResponse = namedtuple('ErrorResponse', 'success err_msg err_data')
 
 def ok_resp(result_obj):
     """Return a SuccessResponse with success=True and result_obj"""
     return SuccessResponse(True, result_obj)
 
-def err_resp(err_msg):
+def err_resp(err_msg, err_data=None):
     """Return a ErrorResponse with success=True and result_obj"""
-    return ErrorResponse(False, err_msg)
+    return ErrorResponse(False, err_msg, err_data)

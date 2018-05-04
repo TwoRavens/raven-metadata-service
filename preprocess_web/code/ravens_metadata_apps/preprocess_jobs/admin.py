@@ -2,6 +2,21 @@ from django.contrib import admin
 
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
+from ravens_metadata_apps.dataverse_connect.models import \
+    (DataverseFileInfo)
+
+class DataverseFileInfoInline(admin.TabularInline):
+    model = DataverseFileInfo
+    #fk_name = "orig_metadata"
+    #exclude = ('update_json', 'note', 'previous_update')
+    readonly_fields = ('dataverse', 'datafile_id',
+                       'dataset_id', 'dataset_doi',
+                       'original_filename',
+                       'jsonld_citation', 'formatted_citation',
+                       'created', 'modified', )
+    extra = 0
+    can_delete = False
+    show_change_link = True
 
 class MetadataUpdateInline(admin.TabularInline):
     model = MetadataUpdate
@@ -11,9 +26,11 @@ class MetadataUpdateInline(admin.TabularInline):
                        'editor', 'created', 'modified', )
     extra = 0
     can_delete = True
+    show_change_link = True
 
 class PreprocessJobAdmin(admin.ModelAdmin):
     inlines = [
+        DataverseFileInfoInline,
         MetadataUpdateInline,
     ]
     save_on_top = True

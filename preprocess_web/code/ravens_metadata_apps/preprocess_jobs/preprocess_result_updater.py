@@ -66,7 +66,7 @@ class PreprocessResultUpdater(object):
                     get_alphanumeric_lowercase(8))
 
         job.metadata_file.save(new_name,
-                                 preprocess_content_file)
+                               preprocess_content_file)
         job.set_state_success()
 
         job.user_message = 'Task completed!  Preprocess is available'

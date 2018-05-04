@@ -3,23 +3,25 @@ import json
 import col_info_constants as col_const
 from collections import OrderedDict
 
+SOURCE_TYPE_FILE = 'File'
 
 class DataSourceInfo(object):
 
-    def __init__(self, **kwargs):
-        """ set data source"""
+    def __init__(self, name, source_type, **kwargs):
+        """Set data source"""
+        self.name = name
+        self.source_type = source_type
+        self.source_format = kwargs.get('source_format')
+        self.filesize = kwargs.get('filesize')
 
-        self.name = kwargs.get('name')
-        self.type = kwargs.get('type')
-        self.format = kwargs.get('format')
-        self.filesize = kwargs.get('filesize')  # optional
-        self.data = None
-        self.to_dict()
+    def as_dict(self):
+        """Return DataSourceInfo as an OrderedDict()"""
+        data = OrderedDict()
+        data['name'] = self.name
+        data['type'] = self.source_type
+        data['format'] = self.source_format
 
-    def to_dict(self):
-        self.data = OrderedDict()
-        self.data['type'] = self.type
-        self.data['format'] = self.format
-        self.data['name'] = self.name
         if self.filesize:
-            self.data['filesize'] = self.filesize
+            data['filesize'] = self.filesize
+
+        return data
