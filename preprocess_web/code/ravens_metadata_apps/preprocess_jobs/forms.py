@@ -89,7 +89,7 @@ class RetrieveRowsForm(forms.Form):
         return input_format
 
 
-class CustomStatistics(forms.Form):
+class CustomStatisticsForm(forms.Form):
     """ this class takes the custom statistics update form:
                 [
              {
@@ -140,7 +140,7 @@ class CustomStatistics(forms.Form):
     def clean_variables(self):
         variable = self.cleaned_data.get('variables')
 
-        return variable
+        return [x.strip() for x in variable.split(',')]
 
     def clean_image(self):
         image = self.cleaned_data.get('image')

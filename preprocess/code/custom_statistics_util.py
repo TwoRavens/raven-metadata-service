@@ -73,8 +73,9 @@ class CustomStatisticsUtil(object):
 
     def custom_statistics_check_variables(self,var_list,variables):
         print("all var ", var_list)
-        if variables not in var_list:
-            self.add_error_message('The variable does not exist in the metadata file')
+        for var in variables:
+            if var not in var_list:
+                self.add_error_message('The variable %s does not exist in the metadata file' % var )
 
         return variables
 
@@ -134,8 +135,8 @@ class CustomStatisticsUtil(object):
 
         data = {
                 "name":name,
-                "variables":[variables],
-                "image":[image],
+                "variables":variables,
+                "image":image,
                 "value":value,
                 "description":description,
                 "replication":replication,

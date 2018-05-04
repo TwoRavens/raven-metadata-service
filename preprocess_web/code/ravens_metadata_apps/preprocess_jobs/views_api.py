@@ -22,7 +22,7 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.preprocess_jobs.forms import \
-    (PreprocessJobForm, RetrieveRowsForm,
+    (PreprocessJobForm, RetrieveRowsForm, CustomStatisticsForm,
      FORMAT_JSON, FORMAT_CSV)
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
