@@ -68,6 +68,17 @@ class DataverseFileRetriever(BasicErrCheck):
         self.run_file_retrieval()
 
 
+    def add_err_msg(self, err_msg):
+        """Add an error message"""
+        self.error_found = True
+        self.error_message = err_msg
+
+        # Also update the preprocess job
+        #
+        self.preprocess_job.set_state_failure()
+        self.preprocess_job.user_message = err_msg
+        self.preprocess_job.save()
+
     def load_citation_info(self):
         """Retrieve the Dataverse citation information"""
         if self.has_error():
@@ -104,16 +115,7 @@ class DataverseFileRetriever(BasicErrCheck):
         self.preprocess_job.save()
 
 
-    def add_err_msg(self, err_msg):
-        """Add an error message"""
-        self.error_found = True
-        self.error_message = err_msg
 
-        # Also update the preprocess job
-        #
-        self.preprocess_job.set_state_failure()
-        self.preprocess_job.user_message = err_msg
-        self.preprocess_job.save()
 
     def load_dataverse_info(self):
         """Check if the Dataverse if Registered and if a file id exists"""

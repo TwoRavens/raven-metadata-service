@@ -148,15 +148,17 @@ class CitationRetriever(BasicErrCheck):
         try:
             result_cnt = json_result['data']['total_count']
         except KeyError as err_obj:
-            user_msg = ('Key not found in json_result: %s\n%s') % \
-                        (json_result, err_obj)
+            user_msg = ('Key not found in json_result: %s'
+                        '\nSearch url: %s\n%s') % \
+                        (json_result, search_url, err_obj)
             self.add_err_msg(user_msg)
             return
 
         if result_cnt != 1:
             user_msg = ('Expected a single result from the search.'
-                        ' But found: %s\n%s\n%s') % \
-                        (result_cnt, json_result, err_obj)
+                        ' Found: %s'
+                        '\nSearch url: %s\n%s') % \
+                        (result_cnt, search_url, json_result)
             self.add_err_msg(user_msg)
             return
 
@@ -164,8 +166,9 @@ class CitationRetriever(BasicErrCheck):
             dataset_citation = json_result['data']['items'][0]['dataset_citation']
         except IndexError as err_obj:
             user_msg = ('Index error when retrieving "dataset_citation" from'
-                        ' data.items[0]: %s\n%s') % \
-                        (json_result, err_obj)
+                        ' data.items[0]: %s'
+                        '\nSearch url: %s\n%s') % \
+                        (json_result, search_url, err_obj)
             self.add_err_msg(user_msg)
             return
         except KeyError as err_obj:
