@@ -42,7 +42,12 @@ class RegisteredDataverse(TimeStampedModel):
         ordering = ('name',)
 
     def __str__(self):
-        return '%s (%s)' % (self.name, self.dataverse_url)
+        """str representation"""
+        if self.network_location:
+            return self.network_location
+
+        return self.name
+        #return '%s (%s)' % (self.name, self.network_location)
 
     def save(self, *args, **kwargs):
         """Standardize the url on save"""

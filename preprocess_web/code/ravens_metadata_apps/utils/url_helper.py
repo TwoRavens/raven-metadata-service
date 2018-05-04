@@ -61,6 +61,7 @@ class URLHelper(object):
         url_path = info.result_obj.path.lower()
         if url_path.startswith(PATH_DATAFILE_ACCESS):
             dv_id = url_path.replace(PATH_DATAFILE_ACCESS, '')
+            print('>>>>>>>>>> dv_id:', dv_id)
             if not str(dv_id).isdigit():
                 return err_resp('The file id is not an integer: "%s"' % dv_id)
 

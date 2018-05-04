@@ -18,8 +18,10 @@ class DataverseFileByURLForm(forms.Form):
 
 class DataverseFileByIdForm(forms.Form):
 
+    dataverse = forms.ModelChoiceField(\
+                    queryset=RegisteredDataverse.objects.filter(active=True),
+                    empty_label=('------'))
     dataverse_file_id = forms.IntegerField()
-    dataverse = forms.ChoiceField(choices=RegisteredDataverse.objects.all())
 
     def get_dataverse_file_url(self):
         """Return the dataverse_file_url"""

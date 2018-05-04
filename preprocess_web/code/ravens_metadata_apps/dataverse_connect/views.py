@@ -15,10 +15,13 @@ def view_dataverse_file_form(request):
     """Process a Dataverse File form: 2 possible forms"""
     form_by_url = None
     form_by_id = None
+
+    info_dict = dict(title='Create Summary Statistics for a Dataverse File')
+
     if request.method == 'POST':
         # Try each of the forms...
         #
-        if 'dataverse_file_url' in request.method.POST:
+        if 'dataverse_file_url' in request.POST:
             # try form 1
             #
             form_by_url = DataverseFileByURLForm(request.POST)
@@ -26,10 +29,15 @@ def view_dataverse_file_form(request):
                 job = DataverseUtil.process_dataverse_file(\
                             form_by_url.get_dataverse_file_url())
 
-                redirect_url = reverse('view_preprocess_job_status',
-                                       kwargs=dict(job_id=job.id))
+                if not job.success:
+                    info_dict['form_by_url_err_msg'] = job.err_msg
+                else:
+                    job_id = job.result_obj.id
+                    redirect_url = reverse(\
+                                       'view_preprocess_job_status',
+                                       kwargs=dict(job_id=job_id))
 
-                return HttpResponseRedirect(redirect_url)
+                    return HttpResponseRedirect(redirect_url)
 
         else:
             form_by_id = DataverseFileByIdForm(request.POST)
@@ -50,8 +58,8 @@ def view_dataverse_file_form(request):
     if not form_by_url:
         form_by_url = DataverseFileByURLForm()
 
-    info_dict = dict(form_by_id=form_by_id,
-                     form_by_url=form_by_url)
+    info_dict['form_by_id'] = form_by_id
+    info_dict['form_by_url'] = form_by_url
 
     return render(request,
                   'dataverse_connect/view_dataverse_file_form.html',
