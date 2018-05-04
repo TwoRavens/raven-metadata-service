@@ -1,5 +1,6 @@
 """Interim workaround for pulling citation information based on a file id"""
 import requests
+from django.conf import settings
 from ravens_metadata_apps.utils.basic_err_check import BasicErrCheck
 
 
@@ -47,13 +48,27 @@ class CitationRetriever(BasicErrCheck):
 
         # Call Dataverse....
         #
+        print('-' * 40)
+        print('jsonld_url', jsonld_url)
+        print('-' * 40)
         try:
-            result2 = requests.get(jsonld_url)
+            result2 = requests.get(jsonld_url,
+                                   timeout=settings.REQUESTS_TIMEOUT)
         except requests.exceptions.ConnectionError as err_obj:
             user_msg = ('Failed to retrieve JSON-LD from %s'
                         '\nError: %s') % (jsonld_url, err_obj)
             self.add_err_msg(user_msg)
             return
+        except requests.exceptions.Timeout as err_obj:
+            user_msg = ('Timeout error when retrieving the JSON-LD '
+                        ' citation from %s'
+                        '\nTimeout (seconds): %s'
+                        '\nError: %s') % \
+                        (jsonld_url, settings.REQUESTS_TIMEOUT, err_obj)
+            print('time out....', user_msg)
+            self.add_err_msg(user_msg)
+            return
+        print('made it: ')
 
         # Check the response codes
         #
@@ -95,19 +110,32 @@ class CitationRetriever(BasicErrCheck):
 
         # Call Dataverse....
         #
+        print('-' * 40)
+        print('search_url', search_url)
+        print('-' * 40)
         try:
-            result1 = requests.get(search_url)
+            result1 = requests.get(search_url,
+                                   timeout=settings.REQUESTS_TIMEOUT)
         except requests.exceptions.ConnectionError as err_obj:
             user_msg = ('Failed to retrieve doi from %s'
                         '\nError: %s') % (search_url, err_obj)
             self.add_err_msg(user_msg)
             return
-
+        except requests.exceptions.Timeout as err_obj:
+            user_msg = ('Timeout error when retrieving the'
+                        ' DOI for the Dataverse file: %s'
+                        '\nTimeout (seconds): %s'
+                        '\nError: %s') % \
+                        (search_url, settings.REQUESTS_TIMEOUT, err_obj)
+            print('user_msg', user_msg)
+            self.add_err_msg(user_msg)
+            return
+        print('made it')
         # Check the response codes
         #
         if result1.status_code != requests.codes.ok:
             user_msg = ('Failed to retrieve doi from %s') % \
-                        (self.search_url)
+                        (search_url)
 
             if result1.status_code == requests.codes.not_found:
                 user_msg = ('%s\nThe file was not found.') % user_msg
