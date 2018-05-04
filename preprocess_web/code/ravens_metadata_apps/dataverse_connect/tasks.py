@@ -7,7 +7,7 @@ from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
     (DataverseFileRetriever)
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.utils.basic_response import \
-    (ok_resp, err_resp)
+    (ok_resp, err_resp, err_resp_with_data)
 from ravens_metadata_apps.preprocess_jobs.tasks import preprocess_csv_file
 
 from celery import task, shared_task
@@ -25,6 +25,6 @@ def preprocess_dataverse_file(dv_url, **kwargs):
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
         err_data = dict(dataverse_url=dv_url)
-        return err_resp(file_retriever.get_error_message(), err_data)
+        return err_resp_with_data(file_retriever.get_error_message(), err_data)
 
     return JobUtil.start_preprocess(file_retriever.preprocess_job)

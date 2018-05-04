@@ -85,7 +85,10 @@
 
               <h3 class="card-title">Metadata List</h3>
 
-              <p>List all of the preprocess jobs.  <p><a class="btn btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a></p>
+              <p>List all of the summary statistic files, including
+                those in process.</p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
@@ -97,7 +100,9 @@
               <h3 class="card-title">Create Summary Statistics</h3>
 
               <p>Upload a data file and generate a metadata file containing summary statistics.</p>
-                    <a class="btn btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a></p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
+
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
@@ -112,7 +117,7 @@
               <p>Use a <a href="http://dataverse.harvard.edu" target="_blank">Dataverse</a>
                  link to generate a metadata file containing summary statistics.</p>
 
-              <a class="btn btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a></p>
+              <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
@@ -129,7 +134,9 @@
 
               <h3 class="card-title">Retrieve Data</h3>
 
-              <p> Retrieve data rows from the source file<p><a class="btn btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">Check Data</a></p>
+              <p> Retrieve data rows from the source file<p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">Check Data</a>
 
             </div>
           </div>
@@ -141,9 +148,13 @@
 
                 <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
 
-                <h3 class="card-title">Editor</h3>
+                <h3 class="card-title">Metadata Editor</h3>
 
-                <p>Editor is a tool which helps user to edit/View the preprocessed file, user can moulde the output according to the need and suggest the corrections.  <p><a class="btn btn-primary" href="#" role="button">Check Editor</a></p>
+                <p>The Metadta Editor allows a user to view/edit the metadata file,
+                  completing tasks such as updating labels, adding summary
+                  statistics, and setting views for other users.</p>
+
+                <a class="btn btn-sm btn-primary" href="#" role="button">Check Editor</a>
 
               </div>
             </div>

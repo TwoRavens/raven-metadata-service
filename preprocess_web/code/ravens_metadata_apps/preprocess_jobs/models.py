@@ -203,7 +203,6 @@ class PreprocessJob(TimeStampedModel):
 
     def get_metadata(self, as_string=False):
         """Return preprocess file contents if they exist"""
-
         if not self.metadata_file:
             return err_resp('No preprocess data. e.g. No file')
 
