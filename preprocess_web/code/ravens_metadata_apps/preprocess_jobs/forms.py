@@ -16,10 +16,10 @@ FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
 INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
-OMIT_TRUE = True
-OMIT_FALSE = False
-INPUT_OMIT_TYPES = (OMIT_TRUE,OMIT_FALSE)
-OMIT_CHOICES = [(x,x) for x in INPUT_OMIT_TYPES]
+VIEWABLE_TRUE = True
+VIEWABLE_FALSE = False
+INPUT_VIEWABLE_TYPES = (VIEWABLE_TRUE,VIEWABLE_FALSE)
+VIEWABLE_CHOICES = [(x,x) for x in INPUT_VIEWABLE_TYPES]
 
 
 class RetrieveRowsForm(forms.Form):
@@ -114,7 +114,7 @@ class CustomStatisticsForm(forms.Form):
     value = forms.FloatField(required= True, label='Value')
     description = forms.CharField(required=True, label='Description')
     replication = forms.CharField(required= True,label='replication')
-    omit = forms.NullBooleanField(initial=False)
+    viewable = forms.NullBooleanField(initial=False)
     #omit = forms.ChoiceField(choices=OMIT_CHOICES,
     #                           initial=OMIT_FALSE,
     #                           required=True)
@@ -165,11 +165,11 @@ class CustomStatisticsForm(forms.Form):
 
         return rep
 
-    def clean_omit(self):
+    def clean_viewable(self):
         """ check if the format is valid"""
-        input_omit = self.cleaned_data.get('omit')
-        if not input_omit:
-            input_omit = False
+        input_viewable = self.cleaned_data.get('viewable')
+        if not input_viewable:
+            input_viewable = False
 
         #if not input_omit:
         #    input_omit = OMIT_FALSE
@@ -179,7 +179,7 @@ class CustomStatisticsForm(forms.Form):
         #    raise forms.ValidationError(
         #        _('The omit should be either True or False.'))
 
-        return input_omit
+        return input_viewable
 
 # errors = json.dumps(errors)
 """

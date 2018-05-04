@@ -106,7 +106,7 @@ def view_custom_statistics_form(request):
          "value":23.45,
          "description":"Third smallest value",
          "replication":"sorted(X)[2]",
-         "omit":false
+         "viewable":false
       },
       {
          "name":"Fourth order statistic",
@@ -115,7 +115,7 @@ def view_custom_statistics_form(request):
          "value":29.45,
          "description":"Fourth smallest value",
          "replication":"sorted(X)[3]",
-         "omit":false
+         "viewable":false
       },
     {custom_statistics3}...
     ]

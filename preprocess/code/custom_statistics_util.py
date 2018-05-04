@@ -13,7 +13,7 @@ from column_info import ColumnInfo
 from np_json_encoder import NumpyJSONEncoder
 
 ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
-OMIT_VALUES = [True, False]
+VIEWABLE_VALUES = [True, False]
 class CustomStatisticsUtil(object):
     def __init__(self,preprocess_json, custom_statistics_json):
         """class for the custom statistics process"""
@@ -96,10 +96,12 @@ class CustomStatisticsUtil(object):
         if not re.match(r'^[A-Za-z0-9_ ]+$', statistics_name): # check if the name is alpha numerics , \
                                       #  i.e does not contain special characters or empty spaces
             self.add_error_message('The name is not alpha-numeric')
-
-        for val in self.custom_statistics_json:
-            if name is val['name']:
-                self.add_error_message('The variable name %s already exist in the metadata file' % name)
+        if col_const.CUSTOM_KEY in self.preprocess_json:
+            for val in self.preprocess_json[col_const.CUSTOM_KEY]:
+                print("Value coming ",self.preprocess_json[col_const.CUSTOM_KEY][val]['name'])
+                if name == self.preprocess_json[col_const.CUSTOM_KEY][val]['name']:
+                    print("******** error **********")
+                    self.add_error_message('The variable name %s already exist in the metadata file' % name)
         return statistics_name
 
     def custom_statistics_check_variables(self,var_list,variables):
@@ -144,11 +146,11 @@ class CustomStatisticsUtil(object):
 
         return rep
 
-    def custom_statistics_check_omit(self,omit):
-        if omit not in OMIT_VALUES:
-            self.add_error_message('Omit should be either True or False')
+    def custom_statistics_check_viewable(self,viewable):
+        if viewable not in VIEWABLE_VALUES:
+            self.add_error_message('Viewable should be either True or False')
             return
-        return omit
+        return viewable
 
     def custom_statistics_update(self):
         """Main function for appending the data"""
@@ -168,7 +170,7 @@ class CustomStatisticsUtil(object):
             value = self.custom_statistics_check_value(dat['value'])
             description = self.custom_statistics_check_description(dat['description'])
             replication = self.custom_statistics_check_replication(dat['replication'])
-            omit = self.custom_statistics_check_omit(dat['omit'])
+            viewable = self.custom_statistics_check_viewable(dat['viewable'])
 
             data = {
                     "name":name,
@@ -178,13 +180,13 @@ class CustomStatisticsUtil(object):
                     "description":description,
                     "replication":replication,
                     "display": {
-                        "omit":omit
+                        "viewable":viewable
                     }
 
                 }
 
 
-            print("data to be sent",data)
+            # print("data to be sent",data)
 
             self.add_to_original(data)
 
