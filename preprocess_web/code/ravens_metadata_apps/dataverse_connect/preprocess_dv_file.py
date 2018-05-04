@@ -44,8 +44,13 @@ def try_queue(file_id=3147445, dataset_id=None):
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
     dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
 
-    job = DataverseUtil.process_dataverse_file(dv_url, dataset_id=dataset_id)
-    print('job: %s' % job)
+    job_info = DataverseUtil.process_dataverse_file(dv_url, dataset_id=dataset_id)
+    if job_info.success:
+        print('it worked!!')
+        print('job: %s' % job_info.result_obj)
+    else:
+        print('failed!')
+        print(job_info.err_msg)
     #preprocess_dataverse_file.delay(dv_url, dataset_id=dataset_id)
 
 
@@ -73,6 +78,7 @@ def try_it2():
                 break
 
 if __name__ == '__main__':
-    try_it(3131016)
+    try_queue(3131016)
+    #try_it(3131016)
     #try_it2()
     #try_queue()

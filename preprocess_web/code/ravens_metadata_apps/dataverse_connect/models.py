@@ -90,8 +90,8 @@ class DataverseFileInfo(TimeStampedModel):
                                      default=-1)
 
     dataset_doi = models.CharField('DOI',
-                                     max_length=255,
-                                     blank=True)
+                                   max_length=255,
+                                   blank=True)
 
     original_filename = models.CharField('original filename',
                                          max_length=255,
