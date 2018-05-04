@@ -141,4 +141,4 @@ class DataverseFileInfo(TimeStampedModel):
         if not self.dataverse:
             return None
 
-        return self.dataaverse.get_file_access_url(self.datafile_id)
+        return self.dataverse.get_file_access_url(self.datafile_id)

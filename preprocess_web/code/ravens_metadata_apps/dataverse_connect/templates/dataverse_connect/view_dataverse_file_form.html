@@ -46,6 +46,7 @@
             <h5 class="card-header">by Dataverse and File Id</h5>
             <div class="card-body">
               <p>Please choose a Dataverse and enter a Datafle Id</p>
+              <p>Example, choose "dataverse.harvard.edu" and enter 3085021.
 
               <form action="{% url 'view_dataverse_file_form' %}" method="post">
                 {% csrf_token %}

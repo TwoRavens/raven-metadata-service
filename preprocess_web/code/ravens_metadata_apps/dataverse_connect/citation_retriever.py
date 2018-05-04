@@ -148,7 +148,8 @@ class CitationRetriever(BasicErrCheck):
         try:
             result_cnt = json_result['data']['total_count']
         except KeyError as err_obj:
-            user_msg = ('Key not found in json_result: %s'
+            user_msg = ('This may not be a Datafile url.'
+                        '\nKey not found in json_result: %s'
                         '\nSearch url: %s\n%s') % \
                         (json_result, search_url, err_obj)
             self.add_err_msg(user_msg)
@@ -172,7 +173,8 @@ class CitationRetriever(BasicErrCheck):
             self.add_err_msg(user_msg)
             return
         except KeyError as err_obj:
-            user_msg = ('Key not found in json_result: %s\n%s') % \
+            user_msg = ('This may not be a Datafile url.'
+                        '\nKey not found in json_result: %s\n%s') % \
                         (json_result, err_obj)
             self.add_err_msg(user_msg)
             return

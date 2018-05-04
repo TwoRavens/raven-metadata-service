@@ -45,10 +45,15 @@ def view_dataverse_file_form(request):
                 job = DataverseUtil.process_dataverse_file(\
                             form_by_id.get_dataverse_file_url())
 
-                redirect_url = reverse('view_preprocess_job_status',
-                                       kwargs=dict(job_id=job.id))
+                if not job.success:
+                    info_dict['form_by_url_err_msg'] = job.err_msg
+                else:
+                    job_id = job.result_obj.id
+                    redirect_url = reverse(\
+                                       'view_preprocess_job_status',
+                                       kwargs=dict(job_id=job_id))
 
-                return HttpResponseRedirect(redirect_url)
+                    return HttpResponseRedirect(redirect_url)
 
     # If there an error or no POST, create the forms as needed....
     #

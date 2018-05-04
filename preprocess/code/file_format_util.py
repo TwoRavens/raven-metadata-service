@@ -24,6 +24,7 @@ class FileFormatUtil(object):
         self.dataframe = None
         self.data_source_info = None
 
+        self.file_basename = None
         self.fname_ext_check = None
 
         #
@@ -65,11 +66,11 @@ class FileFormatUtil(object):
 
         # file basename with extension
         #
-        file_basename = basename(self.input_file)
+        self.file_basename = basename(self.input_file)
 
         # file extenion
         #
-        _fname_base, fname_ext = splitext(file_basename)
+        _fname_base, fname_ext = splitext(self.file_basename)
 
         if fname_ext:
             self.fname_ext_check = fname_ext.lower()
@@ -92,7 +93,7 @@ class FileFormatUtil(object):
 
         # Create the informational DataSourceInfo object
         #
-        self.data_source_info = DataSourceInfo(name=file_basename,
+        self.data_source_info = DataSourceInfo(name=self.file_basename,
                                                source_type=SOURCE_TYPE_FILE,
                                                source_format=source_format,
                                                filesize=self.filesize)
@@ -121,10 +122,15 @@ class FileFormatUtil(object):
 
     def get_unaccepted_file_err(self):
         """Error message used multiple times"""
+        name_for_err = self.input_file
+        if self.file_basename:
+            name_for_err = self.file_basename
+
         return ('We currently do not process this file type.'
                 ' Please use a file with one of the following'
-                ' extensions: %s') % \
-                (ACCEPTABLE_EXT_LIST,)
+                ' extensions: %s'
+                '\nFile name: %s') % \
+                (ACCEPTABLE_EXT_LIST, name_for_err)
 
 
     def set_dataframe(self, delimiter=None, is_excel=False):
