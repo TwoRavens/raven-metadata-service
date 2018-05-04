@@ -115,9 +115,10 @@ class CustomStatisticsForm(forms.Form):
     value = forms.FloatField(required= True, label='Value')
     description = forms.CharField(required=True, label='Description')
     replication = forms.CharField(required= True,label='replication')
-    omit = forms.ChoiceField(choices=OMIT_CHOICES,
-                               initial=OMIT_FALSE,
-                               required=True)
+    omit = forms.NullBooleanField(initial=False)
+    #omit = forms.ChoiceField(choices=OMIT_CHOICES,
+    #                           initial=OMIT_FALSE,
+    #                           required=True)
 
 
     def clean_preprocess_id(self):
@@ -168,14 +169,16 @@ class CustomStatisticsForm(forms.Form):
     def clean_omit(self):
         """ check if the format is valid"""
         input_omit = self.cleaned_data.get('omit')
-
         if not input_omit:
-            input_omit = OMIT_FALSE
+            input_omit = False
 
-        if input_omit not in INPUT_OMIT_TYPES:
-            # errors.append(forms.ValidationError)
-            raise forms.ValidationError(
-                _('The omit should be either True or False.'))
+        #if not input_omit:
+        #    input_omit = OMIT_FALSE
+
+        #if input_omit not in INPUT_OMIT_TYPES:
+        #    # errors.append(forms.ValidationError)
+        #    raise forms.ValidationError(
+        #        _('The omit should be either True or False.'))
 
         return input_omit
 
@@ -190,5 +193,35 @@ data = dict(preprocess_id=1,
 f = RetrieveRowsForm(data)
 f.is_valid()
 f.errors
+
+"""
+
+"""
+python manage.py shell
+
+from ravens_metadata_apps.preprocess_jobs.forms import CustomStatisticsForm
+import json
+
+json_str ='''
+
+    {
+   "preprocess_id":1677,
+   "name":"Third order statistic",
+   "variables":"lpop,bebop",
+   "image":"http://www.google.com",
+   "value":23.45,
+   "description":"Third smallest value",
+   "replication":"sorted(X)[2]",
+   "omit":"true"
+}'''
+
+form_data = json.loads(json_str)
+
+f = CustomStatisticsForm(form_data)
+if f.is_valid():
+    print(f.cleaned_data)
+else:
+    print(f.errors())
+
 
 """
