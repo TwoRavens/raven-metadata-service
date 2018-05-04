@@ -64,7 +64,10 @@ class RegisteredDataverse(TimeStampedModel):
                     file_id)
 
     def get_jsonld_url(self, doi_str):
-        """Construct a url for retrieving the citation in JSON-LD format"""
+        """Construct a url for retrieving the citation in JSON-LD format
+        example: https://dataverse.harvard.edu/api/datasets/export?exporter=schema.org&persistentId=doi%3A10.7910/DVN/ROLEY5"""
+        doi_str = doi_str.replace('doi', 'doi:').replace('.org/', '')
+
         return ('{0}://{1}/api/datasets/export?exporter=schema.org&persistentId={2}').format(\
                 self.url_scheme,
                 self.network_location,
@@ -86,7 +89,7 @@ class DataverseFileInfo(TimeStampedModel):
     dataset_id = models.IntegerField('Dataverse dataset Id',
                                      default=-1)
 
-    dataverse_doi = models.CharField('DOI',
+    dataset_doi = models.CharField('DOI',
                                      max_length=255,
                                      blank=True)
 
@@ -101,8 +104,8 @@ class DataverseFileInfo(TimeStampedModel):
 
     def __str__(self):
         """display name"""
-        if self.dataverse_doi:
-            return '{0} ({1})'.format(self.datafile_id, self.dataverse_doi)
+        if self.dataset_doi:
+            return '{0} ({1})'.format(self.datafile_id, self.dataset_doi)
 
         return '{0}'.format(self.datafile_id)
 

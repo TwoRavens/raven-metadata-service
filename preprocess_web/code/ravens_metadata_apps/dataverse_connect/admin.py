@@ -6,9 +6,9 @@ from ravens_metadata_apps.dataverse_connect.models import \
 
 class DataverseFileInfoAdmin(admin.ModelAdmin):
     """For RegisteredDataverse objects"""
-    search_fields = ('dataverse__name', 'dataverse_doi')
+    search_fields = ('dataverse__name', 'dataset_doi')
     list_display = ('datafile_id', 'dataverse',
-                    'dataset_id', 'dataverse_doi',
+                    'dataset_id', 'dataset_doi',
                     'original_filename', 'preprocess_job')
     readonly_fields = ('created', 'modified')
     save_on_top = True

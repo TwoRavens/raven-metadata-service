@@ -64,15 +64,15 @@ def try_it2():
             file_id = line_items[0]
             dataset_id = line_items[1]
             filesize = line_items[3]
-            if str(file_id).isdigit() and int(filesize) < 2500000:
+            if str(file_id).isdigit() and int(filesize) < 1800000:
                 cnt += 1
                 msgt('(%s) Process file: %s (idx: %s)' % (cnt, file_id, idx))
                 #try_queue(3148839, dataset_id)
                 try_queue(file_id, dataset_id)
-            if cnt == 15:
+            if cnt == 100:
                 break
 
 if __name__ == '__main__':
-    try_it(3131016)
-    #try_it2()
+    #try_it(3131016)
+    try_it2()
     #try_queue()

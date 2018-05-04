@@ -32,7 +32,7 @@ class DataverseFileRetriever(BasicErrCheck):
         """
         self.data_file_url = data_file_url
         self.datafile_id = None  # derived from the data_file_url
-        self.dataverse_doi = kwargs.get('dataverse_doi')
+        self.dataset_doi = None #.get('dataset_doi')
         self.dataset_id = kwargs.get('dataset_id')
 
         self.dv_file_info = None # to hold an instance of DataverseFileInfo
@@ -51,9 +51,10 @@ class DataverseFileRetriever(BasicErrCheck):
         #
         self.file_extension = kwargs.get('file_ext', TAB_FILE_EXT)
 
-        # optional: retrieve a citation
+        # Based on the file id, attempt to retrieve the
+        # citation for the file's dataset.   (dataset -> file)
         #
-        self.dataverse_citation_url = kwargs.get('dataverse_citation_url')
+        self.jsonld_citation = None
 
         self.run_process()
 
@@ -77,6 +78,10 @@ class DataverseFileRetriever(BasicErrCheck):
             self.add_err_msg(retriever.get_error_message())
             return
 
+        self.jsonld_citation = retriever.get_citation()
+        self.dataset_doi = retriever.get_dataset_doi()
+        print('get_citation:', self.jsonld_citation)
+        print('dataset_doi:', self.dataset_doi)
 
     def update_preprocess_job(self):
         """Update or create the Preprocess Job"""
@@ -152,8 +157,8 @@ class DataverseFileRetriever(BasicErrCheck):
                                     datafile_id=dv_id_info.result_obj)
         if self.dataset_id:
             self.dv_file_info.dataset_id = self.dataset_id
-        if self.dataverse_doi:
-            self.dv_file_info.dataverse_doi = self.dataverse_doi
+        if self.dataset_doi:
+            self.dv_file_info.dataset_doi = self.dataset_doi
 
 
     def run_file_retrieval(self):
@@ -231,10 +236,25 @@ class DataverseFileRetriever(BasicErrCheck):
 
         # Update and save the instance of DataverseFileInfo
         #
-        print('update DataverseFileInfo')
+        self.update_dataverse_file_info(orig_file_name)
+
+
+    def update_dataverse_file_info(self, orig_file_name):
+        """Update and save the DataverseFileInfo object"""
+
         self.dv_file_info.preprocess_job = self.preprocess_job
-        self.dv_file_info.original_filename = orig_file_name
+
+        if orig_file_name:
+            self.dv_file_info.original_filename = orig_file_name
+
+        if self.jsonld_citation:
+            self.dv_file_info.jsonld_citation = self.jsonld_citation
+
+        if self.dataset_doi:
+            self.dv_file_info.dataset_doi = self.dataset_doi
+
         self.dv_file_info.save()
+
 
     def get_original_filename(self, req_result):
         """Attempt to determine the original filename and update the extension, if appropriate"""
