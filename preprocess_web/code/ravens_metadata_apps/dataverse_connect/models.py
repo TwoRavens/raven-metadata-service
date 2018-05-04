@@ -63,6 +63,18 @@ class RegisteredDataverse(TimeStampedModel):
                     self.network_location,
                     file_id)
 
+    def get_file_access_url(self, file_id):
+        """Build a url similar to:
+        https://dataverse.harvard.edu/api/access/datafile/{{ file id }}
+        """
+        params = (self.url_scheme,
+                  self.network_location,
+                  '%s%s' % (PATH_DATAFILE_ACCESS, file_id),
+                  None, None, None)
+
+        return urlunparse(params)
+
+
     def get_jsonld_url(self, doi_str):
         """Construct a url for retrieving the citation in JSON-LD format
         example: https://dataverse.harvard.edu/api/datasets/export?exporter=schema.org&persistentId=doi%3A10.7910/DVN/ROLEY5"""
@@ -121,10 +133,7 @@ class DataverseFileInfo(TimeStampedModel):
         """Build a url similar to:
         https://dataverse.harvard.edu/api/access/datafile/{{ file id }}
         """
-        params = (self.dataverse.url_scheme,
-                  self.dataverse.network_location,
-                  '%s%s' % (PATH_DATAFILE_ACCESS, self.datafile_id),
-                  None, None, None)
+        if not self.dataverse:
+            return None
 
-        print('params: ', params)
-        return urlunparse(params)
+        return self.dataaverse.get_file_access_url(self.datafile_id)

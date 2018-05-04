@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<div class="container" style="margin:8%; background-color:#f0f8ff; border: transparent">
+  <div class="row" style=" padding: 2%">
+        <div class="col">
+          <h3 class="display-3">{{ title }}</h3>
+            <div class="col-sm-8 mx-auto">
+                <form action="{% url 'view_basic_upload_form' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <table class="table">
+                       {{ form }}
+                       <tr>
+                         <td>
+                             <div style="text-align: center">
+                                <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
+                             </div>
+                         </td>
+                        </tr>
+                     </table>
+
+                </form>
+            </div>
+        </div>
+  </div>
+</div>
+{% endblock %}
