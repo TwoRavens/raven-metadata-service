@@ -197,7 +197,7 @@ class CustomStatisticsUtil(object):
 
             self.add_to_original(data)
 
-        self.original_json = self.preprocess_json
+        self.original_json = OrderedDict(self.preprocess_json)
 
 
     def add_to_original(self,data):
