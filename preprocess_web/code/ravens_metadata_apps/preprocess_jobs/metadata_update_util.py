@@ -100,7 +100,8 @@ class MetadataUpdateUtil(object):
             update_kwargs['orig_metadata'] = metadata_obj.orig_metadata
             update_kwargs['previous_update'] = metadata_obj
             if var_util.is_major_update():
-                update_kwargs['version_number'] = metadata_obj.version_number + Decimal('1')
+                new_num = Decimal(int(metadata_obj.version_number + Decimal('1')))
+                update_kwargs['version_number'] = new_num
             else:
                 update_kwargs['version_number'] = metadata_obj.version_number + Decimal('.1')
 

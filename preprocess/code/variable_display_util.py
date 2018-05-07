@@ -199,7 +199,8 @@ class VariableDisplayUtil(object):
 
         version = Decimal(self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY])
         if self.is_major_update():
-            version += Decimal('1')
+            new_version = Decimal(int(version + Decimal('1.0')))
+            version = new_version
         else:
             version += Decimal('.1')
 

@@ -25,6 +25,7 @@
   <th>Action</th>
   <td><a href="{% url 'api_get_metadata_version' preprocess_id=job.id version=job.get_version_string %}?pretty" class="btn btn-info btn-sm">View</a>
      <a href="{% url 'api_download_version' preprocess_id=job.id version=job.get_version_string %}" class="btn btn-info btn-sm">Download</a>
+     <a href="{% url 'view_job_detail' preprocess_id=job.id %}" class="btn btn-info btn-sm">Versions</a>
    </td>
 </tr>
 {% endif %}
