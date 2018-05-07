@@ -87,7 +87,7 @@ class FileEncodingTestCase(TestCase):
                     get_alphanumeric_lowercase(8))
 
         ye_job.metadata_file.save(new_name,
-                                    preprocess_content_file)
+                                  preprocess_content_file)
 
         #print('    - create test file:', ye_job.metadata_file.path)
 
@@ -98,9 +98,9 @@ class FileEncodingTestCase(TestCase):
 
 
 
-    def test_10_get_metata(self):
+    def test_10_get_metadata(self):
         """Read metadata that has a text file encoding"""
-        msgt(self.test_10_get_metata.__doc__)
+        msgt(self.test_10_get_metadata.__doc__)
 
         # Open text file, return dict
         #
@@ -108,6 +108,8 @@ class FileEncodingTestCase(TestCase):
         #print('type(metadata.result_obj)', type(metadata.result_obj))
         self.assertTrue(metadata.success)
         self.assertEqual(metadata.result_obj['dataset']['row_cnt'], 6610)
+        self.assertEqual(metadata.result_obj['dataset']['row_cnt'], 6610)
+        self.assertEqual(metadata.result_obj['self']['version'], 1)
 
 
         # Open text file, return string
@@ -117,6 +119,7 @@ class FileEncodingTestCase(TestCase):
 
         self.assertTrue(metadata2.success)
         self.assertTrue(metadata2.result_obj.find('"row_cnt": 6610') > -1)
+        self.assertTrue(metadata2.result_obj.find('"version": 1') > -1)
 
 
         # Check the info from the MetadataUpdate
@@ -128,6 +131,7 @@ class FileEncodingTestCase(TestCase):
         self.assertEqual(metadata_dict['dataset']['row_cnt'], 6610)
         self.assertEqual(metadata_dict['variables']['ccode']["labl"],
                          self.code_book_label)
+        self.assertEqual(metadata_dict['self']['version'], 2)
 
         # clean up
         #
@@ -145,6 +149,7 @@ class FileEncodingTestCase(TestCase):
 
         self.assertTrue(metadata3.success)
         self.assertEqual(metadata3.result_obj['dataset']['row_cnt'], 6610)
+        self.assertEqual(metadata3.result_obj['self']['version'], 1)
 
         # Open bytes file, return string
         #
