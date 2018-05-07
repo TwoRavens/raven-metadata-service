@@ -5,6 +5,7 @@ python manage.py test ravens_metadata_apps.preprocess_jobs.tests.test_file_encod
 """
 from os.path import abspath, dirname, isdir, isfile, join
 import json
+from decimal import Decimal
 
 from django.test import TestCase
 from django.core.files.base import ContentFile
@@ -15,6 +16,7 @@ from msg_util import msgt
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.utils.time_util import get_timestring_for_file
+from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import \
     (MetadataUpdateUtil)
 
@@ -38,8 +40,19 @@ class FileEncodingTestCase(TestCase):
         self.job_02_binary.metadata_file.delete()
 
 
-    def get_metadata_obj(self, job_obj):
+    def delete_metadata_files(self, preprocess_id):
+        """Delete metadata files"""
+        for metadata_obj in MetadataUpdate.objects.filter(orig_metadata=preprocess_id):
+            # delete the associated metadata file...
+            if metadata_obj.metadata_file:
+                metadata_obj.metadata_file.delete()
+
+    def get_metadata_obj(self, job_obj, **kwargs):
         """Create a new Metadata object using a PreprocessJob"""
+        viewable = kwargs.get('viewable', True)
+        omit_list = kwargs.get('omit_list', ['mean', 'median'])
+        labl = kwargs.get('labl', 'code book label')
+
         update_str = """{
                        "preprocess_id": %s,
                        "variable_updates":{
@@ -56,6 +69,11 @@ class FileEncodingTestCase(TestCase):
                        }
                     }""" % (job_obj.id, self.code_book_label)
         update_json = json.loads(update_str)
+
+        # viewable for minor update
+        update_json['variable_updates']['ccode']['viewable'] = viewable
+        update_json['variable_updates']['ccode']['omit'] = omit_list
+        update_json['variable_updates']['ccode']['value_updates']['labl'] = labl
 
         update_util = MetadataUpdateUtil(job_obj.id, update_json)
 
@@ -135,7 +153,8 @@ class FileEncodingTestCase(TestCase):
 
         # clean up
         #
-        metadata_01_obj.metadata_file.delete()
+        self.delete_metadata_files(metadata_01_obj.orig_metadata.id)
+        #metadata_01_obj.metadata_file.delete()
 
 
     def test_20_get_metata(self):
@@ -164,3 +183,91 @@ class FileEncodingTestCase(TestCase):
         metadata_02_obj.metadata_file.delete()
         metadata_info = metadata_02_obj.get_metadata()
         self.assertTrue(metadata_info.success is False)
+
+        # Clean up test files
+        #
+        self.delete_metadata_files(metadata_02_obj.orig_metadata.id)
+
+
+    def test_30_multi_version_updates(self):
+        """Make sure minor/major versions are correct"""
+        msgt(self.test_30_multi_version_updates.__doc__)
+
+        # Open text file, return dict
+        #
+        metadata = self.job_01_text.get_metadata()
+        self.assertTrue(metadata.success)
+        self.assertEqual(metadata.result_obj['self']['version'], 1)
+
+
+        # Check the info from the MetadataUpdate
+        #
+        metadata_01_obj = self.get_metadata_obj(self.job_01_text)
+        metadata_info = metadata_01_obj.get_metadata()
+        self.assertTrue(metadata_info.success)
+        metadata_dict = metadata_info.result_obj
+        self.assertEqual(metadata_dict['self']['version'], 2)
+
+        # minor version update: 2.1
+        #
+        metadata_obj = self.get_metadata_obj(\
+                                self.job_01_text,
+                                viewable=False)
+        new_version = Decimal('2.1')
+        self.assertEqual(metadata_obj.version_number, new_version)
+        self.assertEqual(metadata_obj.version_number, new_version)
+        metadata_info = metadata_obj.get_metadata()
+        self.assertEqual(metadata_info.result_obj['self']['version'],
+                         new_version)
+
+        # minor version update: 2.2
+        #
+        metadata_obj = self.get_metadata_obj(\
+                                self.job_01_text,
+                                omit_list=['median'])
+        new_version = Decimal('2.2')
+        self.assertEqual(metadata_obj.version_number, new_version)
+        metadata_info = metadata_obj.get_metadata()
+        self.assertEqual(metadata_info.result_obj['self']['version'],
+                         new_version)
+
+        # major version update: 3
+        #
+        labl_code_book = 'code book 3'
+        metadata_obj = self.get_metadata_obj(\
+                                self.job_01_text,
+                                labl=labl_code_book)
+        new_version = Decimal('3')
+        self.assertEqual(metadata_obj.version_number, new_version)
+        metadata_info = metadata_obj.get_metadata()
+        self.assertEqual(metadata_info.result_obj['self']['version'],
+                         new_version)
+
+        # minor version update: 3.1
+        #
+        metadata_obj = self.get_metadata_obj(\
+                                self.job_01_text,
+                                labl=labl_code_book,
+                                omit_list=[])
+        new_version = Decimal('3.1')
+        self.assertEqual(metadata_obj.version_number, new_version)
+        metadata_info = metadata_obj.get_metadata()
+        self.assertEqual(metadata_info.result_obj['self']['version'],
+                         new_version)
+
+
+        # major version update: 4  (major + minor changes)
+        #
+        metadata_obj = self.get_metadata_obj(\
+                                self.job_01_text,
+                                labl='code book 4',
+                                omit_list=['median', 'mean'])
+        new_version = Decimal(4)
+        self.assertEqual(metadata_obj.version_number, new_version)
+        metadata_info = metadata_obj.get_metadata()
+        self.assertEqual(metadata_info.result_obj['self']['version'],
+                         new_version)
+
+        # Clean up test files
+        #
+        self.delete_metadata_files(metadata_obj.orig_metadata.id)
