@@ -6,6 +6,8 @@ from django.utils.translation import gettext_lazy as _
 
 from ravens_metadata_apps.dataverse_connect.models import RegisteredDataverse
 
+FORM_KEY_DV_FILE_URL = 'id_dataverse_file_url'
+
 class DataverseFileByURLForm(forms.Form):
 
     dataverse_file_url = forms.URLField()

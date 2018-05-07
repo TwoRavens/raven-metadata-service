@@ -40,7 +40,7 @@ AUTH_USER_MODEL = 'raven_auth.User'
 PAGE_CACHE_TIME = 60 * 60 * 2 # 2 hours
 
 SWAGGER_HOST = os.environ.get('SWAGGER_HOST', '127.0.0.1:8080')
-
+SITE_SCHEME = os.environ.get('SITE_SCHEME', 'http')
 # Application definition
 
 INSTALLED_APPS = [

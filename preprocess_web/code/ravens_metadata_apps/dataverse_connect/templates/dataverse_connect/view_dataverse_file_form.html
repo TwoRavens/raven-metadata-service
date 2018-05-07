@@ -20,7 +20,16 @@
                   <li>https://dataverse.harvard.edu/file.xhtml?fileId=3085004</li>
                   <li>https://dataverse.harvard.edu/api/access/datafile/3085004</li>
                 </ul>
-                <p><a href="https://dataverse.harvard.edu/dataverse/harvard?q=&fq0=fileTypeGroupFacet%3A%22tabulardata%22&fq1=fileAccess%3A%22Public%22&types=files&sort=dateSort&order=desc" target="_blank">View potential dataverse files</a> </p>
+
+                <p>Helpful links:</p>
+                  <ul>
+                    <li><a href="https://dataverse.harvard.edu/dataverse/harvard?q=&fq0=fileTypeGroupFacet%3A%22tabulardata%22&fq1=fileAccess%3A%22Public%22&types=files&sort=dateSort&order=desc" target="_blank">View potential dataverse files</a></li>
+
+                    <li><a href="javascript:var myParam = location;window.location = '{{ SITE_SCHEME }}://{{ SWAGGER_HOST }}/preprocess/dataverse-form?dv_file_url=' + myParam;">Scriptlet for Dataverse file pages</a>
+                        <br />(drag into your browser toolbar)
+                    </li>
+                  </ul>
+
 
               <form action="{% url 'view_dataverse_file_form' %}" method="post">
                 {% csrf_token %}
@@ -33,6 +42,11 @@
                    {{ form_by_url }}
                     <tr>
                         <td colspan="2" class="text-right">
+                          {% if PRESS_SCRIPTLET_SUBMIT %}
+                          <div class="alert alert-success" role="alert">
+                              Press "submit" below to process the Dataverse file!
+                          </div>
+                          {% endif %}
                            <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
                          </td>
                     </tr>
