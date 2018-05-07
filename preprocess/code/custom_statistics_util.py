@@ -87,8 +87,15 @@ class CustomStatisticsUtil(object):
         """ here update the preprocess version of the metadata"""
 
     def custom_statistics_create_id(self,name): # need to think of generating id
-        var_id = slugify(name).replace('-', '_')[:25]
-
+        if col_const.CUSTOM_KEY not in self.preprocess_json:
+            var_id = 'id_000001'
+        else:
+            ids = list(self.preprocess_json['custom_statistics'])
+            ids.sort()
+            latest_id = ids[-1]
+            _unused, idnum = latest_id.split('_')
+            next_num = str(int(idnum) + 1)
+            var_id = 'id_%s' % next_num.zfill(6)
         return var_id
 
     def custom_statistics_check_name(self,name):
@@ -96,12 +103,12 @@ class CustomStatisticsUtil(object):
         if not re.match(r'^[A-Za-z0-9_ ]+$', statistics_name): # check if the name is alpha numerics , \
                                       #  i.e does not contain special characters or empty spaces
             self.add_error_message('The name is not alpha-numeric')
-        if col_const.CUSTOM_KEY in self.preprocess_json:
-            for val in self.preprocess_json[col_const.CUSTOM_KEY]:
-                print("Value coming ",self.preprocess_json[col_const.CUSTOM_KEY][val]['name'])
-                if name == self.preprocess_json[col_const.CUSTOM_KEY][val]['name']:
-                    print("******** error **********")
-                    self.add_error_message('The variable name %s already exist in the metadata file' % name)
+        # if col_const.CUSTOM_KEY in self.preprocess_json:
+            # for val in self.preprocess_json[col_const.CUSTOM_KEY]:
+            #     print("Value coming ",self.preprocess_json[col_const.CUSTOM_KEY][val]['name'])
+            #     if name == self.preprocess_json[col_const.CUSTOM_KEY][val]['name']:
+            #         print("******** error **********")
+            #         self.add_error_message('The variable name %s already exist in the metadata file' % name)
         return statistics_name
 
     def custom_statistics_check_variables(self,var_list,variables):

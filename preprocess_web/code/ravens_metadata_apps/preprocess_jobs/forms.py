@@ -110,10 +110,10 @@ class CustomStatisticsForm(forms.Form):
     # single custom_statistic info
     name = forms.CharField(required= True, label='Name')
     variables = forms.CharField(required=True, label='Variables')
-    image = forms.URLField(required=False, label='Image')
-    value = forms.FloatField(required= True, label='Value')
-    description = forms.CharField(required=True, label='Description')
-    replication = forms.CharField(required= True,label='replication')
+    image = forms.CharField(required=False, label='Image')
+    value = forms.CharField(required= True, label='Value')
+    description = forms.CharField(required=False, label='Description')
+    replication = forms.CharField(required= False,label='replication')
     viewable = forms.NullBooleanField(initial=False)
     #omit = forms.ChoiceField(choices=OMIT_CHOICES,
     #                           initial=OMIT_FALSE,
@@ -146,9 +146,10 @@ class CustomStatisticsForm(forms.Form):
         image = self.cleaned_data.get('image')
 
         if image is None:
-            image = 'preprocess_web/code/static/images/TwoRavens.png'
+            # image = 'preprocess_web/code/static/images/TwoRavens.png'
+            return []
 
-        return image
+        return [x.strip() for x in image.split(',')]
 
     def clean_value(self):
         value = self.cleaned_data.get('value')
