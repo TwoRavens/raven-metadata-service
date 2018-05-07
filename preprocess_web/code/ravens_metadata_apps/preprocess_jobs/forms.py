@@ -114,7 +114,7 @@ class CustomStatisticsForm(forms.Form):
     value = forms.CharField(required= True, label='Value')
     description = forms.CharField(required=False, label='Description')
     replication = forms.CharField(required= False,label='replication')
-    viewable = forms.NullBooleanField(initial=False)
+    viewable = forms.NullBooleanField(required=False,initial=False)
     #omit = forms.ChoiceField(choices=OMIT_CHOICES,
     #                           initial=OMIT_FALSE,
     #                           required=True)

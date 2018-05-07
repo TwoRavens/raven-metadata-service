@@ -14,6 +14,13 @@ from np_json_encoder import NumpyJSONEncoder
 
 ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
 VIEWABLE_VALUES = [True, False]
+CUSTOM_STATISTICS_NAME = 'name'
+CUSTOM_STATISTICS_VARIABLES = 'variables'
+CUSTOM_STATISTICS_IMAGE = 'image'
+CUSTOM_STATISTICS_DESCRIPTION = 'description'
+CUSTOM_STATISTICS_REPLICATION = 'replication'
+CUSTOM_STATISTICS_VIEWABLE = 'viewable'
+
 class CustomStatisticsUtil(object):
     def __init__(self,preprocess_json, custom_statistics_json):
         """class for the custom statistics process"""
@@ -86,7 +93,7 @@ class CustomStatisticsUtil(object):
     def update_preprocess_version(self):
         """ here update the preprocess version of the metadata"""
 
-    def custom_statistics_create_id(self,name): # need to think of generating id
+    def custom_statistics_create_id(self): # need to think of generating id
         if col_const.CUSTOM_KEY not in self.preprocess_json:
             var_id = 'id_000001'
         else:
@@ -159,6 +166,7 @@ class CustomStatisticsUtil(object):
             return
         return viewable
 
+
     def custom_statistics_update(self):
         """Main function for appending the data"""
         # print(self.preprocess_json)
@@ -167,17 +175,33 @@ class CustomStatisticsUtil(object):
 
         # preprocess_id = self.custom_statistics_json['preprocess_id']
         var_list = list(self.preprocess_json['variables'])
-        data = None
         for dat in self.custom_statistics_json:
-
-            name = self.custom_statistics_check_name(dat['name'])
+            print("dat ",dat)
+            name = self.custom_statistics_check_name(dat['name']) # required = True
             # id = self.custom_statistics_create_id(name)
-            variables = self.custom_statistics_check_variables(var_list,dat['variables'])
-            image = self.custom_statistics_check_image(dat['image'])
-            value = self.custom_statistics_check_value(dat['value'])
-            description = self.custom_statistics_check_description(dat['description'])
-            replication = self.custom_statistics_check_replication(dat['replication'])
-            viewable = self.custom_statistics_check_viewable(dat['viewable'])
+            variables = self.custom_statistics_check_variables(var_list,dat['variables']) # required = True
+
+            if CUSTOM_STATISTICS_IMAGE in dat:
+                image = self.custom_statistics_check_image(dat['image'])
+            else:
+                image =[]
+
+            value = self.custom_statistics_check_value(dat['value']) # required = True
+
+            if CUSTOM_STATISTICS_DESCRIPTION in dat:
+                description = self.custom_statistics_check_description(dat['description'])
+            else:
+                description = ""
+
+            if CUSTOM_STATISTICS_REPLICATION in dat:
+                replication = self.custom_statistics_check_replication(dat['replication'])
+            else:
+                replication = ""
+
+            if CUSTOM_STATISTICS_VIEWABLE in dat:
+                viewable = self.custom_statistics_check_viewable(dat['viewable'])
+            else:
+                viewable = True # default
 
             data = {
                     "name":name,
@@ -201,7 +225,7 @@ class CustomStatisticsUtil(object):
 
 
     def add_to_original(self,data):
-        id = self.custom_statistics_create_id(data['name'])
+        id = self.custom_statistics_create_id()
         # self.original_json= self.preprocess_json
         if col_const.CUSTOM_KEY not in self.preprocess_json:
             self.preprocess_json[col_const.CUSTOM_KEY] = { id: data}
