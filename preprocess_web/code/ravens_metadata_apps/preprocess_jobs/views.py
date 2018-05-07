@@ -91,6 +91,58 @@ def view_basic_upload_form(request):
                   {'form': form})
 
 @csrf_exempt
+def view_custom_statistics_update(request):
+    """ the update for custom statistics"""
+    """
+            {
+  "preprocess_id": 1,
+  "custom_statistics": [
+    {
+      "id": "id_00001",
+      "updates": {
+        "name": "Fourth order statistic",
+        "value": 40
+      }
+    },
+    {
+      "updates": {
+        "name": "This will be a new statistic",
+        "value": 40
+      }
+    }
+  ]
+}
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err['preprocess_id']
+    custom_statistics_json = update_json_or_err['custom_statistics']
+
+    success, updated_metadata = JobUtil.update_custom_statistics(job_id, custom_statistics_json)
+    if not success:
+        user_msg = dict(success=False,
+                        message=updated_metadata,
+                        preprocess_id=job_id)
+        return JsonResponse(user_msg)
+
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+
+@csrf_exempt
 def view_custom_statistics_form(request):
     """ HTML form to get the custom statistics"""
 

@@ -65,7 +65,7 @@ class CustomStatisticsUtil(object):
         self.original_json=None
 
         # call the statistic function
-        self.custom_statistics_update()
+
 
 
     def add_error_message(self, err_msg):
@@ -176,6 +176,7 @@ class CustomStatisticsUtil(object):
 
         # preprocess_id = self.custom_statistics_json['preprocess_id']
         var_list = list(self.preprocess_json[CUSTOM_STATISTICS_VARIABLES])
+
         for dat in self.custom_statistics_json:
             print("dat ",dat)
             name = self.custom_statistics_check_name(dat[CUSTOM_STATISTICS_NAME]) # required = True
@@ -237,6 +238,7 @@ class CustomStatisticsUtil(object):
         # print(self.original_json)
 
 
-
+    def update_custom_stats(self):
+        """ The update is done here"""
 
 

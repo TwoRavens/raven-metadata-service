@@ -340,11 +340,24 @@ class JobUtil(object):
             return user_msg
 
         custom_util = CustomStatisticsUtil(latest_metadata_json_or_err, custom_statistics_json)
+        custom_util.custom_statistics_update()
         if custom_util.has_error:
             return False, custom_util.get_error_messages()
 
         return True, custom_util.get_updated_metadata()
 
+    @staticmethod
+    def update_custom_statistics(job_id,update_json):
+        """ send the updates list in the json to custom statistics"""
 
+        success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+        if success is False:
+            user_msg = dict(success=False,
+                            message=latest_metadata_json_or_err)
+            return user_msg
+        custom_util_update = CustomStatisticsUtil(latest_metadata_json_or_err, update_json)
+        custom_util_update.update_custom_stats()
+        if custom_util_update.has_error:
+            return False, custom_util_update.get_error_messages()
 
-
+        return True, custom_util_update.get_updated_metadata()
