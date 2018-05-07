@@ -71,6 +71,10 @@ class URLHelper(object):
         #
         params = parse_qs(info.result_obj.query)
 
+        if not params:
+            return err_resp('The file id was not found in the url or query'
+                            ' string: "%s"' % (url_str))
+
         # retrieve the required keys
         #
         if KEY_DATAVERSE_FILE_ID in params and params[KEY_DATAVERSE_FILE_ID]:

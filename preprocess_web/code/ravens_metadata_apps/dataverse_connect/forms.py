@@ -6,9 +6,17 @@ from django.utils.translation import gettext_lazy as _
 
 from ravens_metadata_apps.dataverse_connect.models import RegisteredDataverse
 
+FORM_KEY_DV_FILE_URL = 'id_dataverse_file_url'
+
 class DataverseFileByURLForm(forms.Form):
 
     dataverse_file_url = forms.URLField()
+
+    def __init__(self, *args, **kwargs):
+        super(DataverseFileByURLForm, self).__init__(*args, **kwargs)
+        self.fields['dataverse_file_url'].widget.attrs.update(\
+                {'class' : 'form-control'})
+
 
     def get_dataverse_file_url(self):
         """Return the dataverse_file_url"""
@@ -22,6 +30,13 @@ class DataverseFileByIdForm(forms.Form):
                     queryset=RegisteredDataverse.objects.filter(active=True),
                     empty_label=('------'))
     dataverse_file_id = forms.IntegerField()
+
+    def __init__(self, *args, **kwargs):
+        super(DataverseFileByIdForm, self).__init__(*args, **kwargs)
+        self.fields['dataverse'].widget.attrs.update(\
+                {'class' : 'form-control'})
+        self.fields['dataverse_file_id'].widget.attrs.update(\
+                {'class' : 'form-control'})
 
     def get_dataverse_file_url(self):
         """Return the dataverse_file_url"""

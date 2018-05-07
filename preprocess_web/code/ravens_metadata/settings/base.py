@@ -40,7 +40,7 @@ AUTH_USER_MODEL = 'raven_auth.User'
 PAGE_CACHE_TIME = 60 * 60 * 2 # 2 hours
 
 SWAGGER_HOST = os.environ.get('SWAGGER_HOST', '127.0.0.1:8080')
-
+SITE_SCHEME = os.environ.get('SITE_SCHEME', 'http')
 # Application definition
 
 INSTALLED_APPS = [
@@ -182,4 +182,4 @@ TEST_DIRECT_STATIC = None
 # source file--though API or web form
 #
 MAX_SOURCE_FILE_ROWS_TO_RETRIEVE = os.environ.get('MAX_SOURCE_FILE_ROWS_TO_RETRIEVE', 1000)
-REQUESTS_TIMEOUT = 2 # 1 second for server to respond
+REQUESTS_TIMEOUT = 7 # 1 second for server to respond
