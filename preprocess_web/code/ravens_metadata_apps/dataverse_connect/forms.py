@@ -12,6 +12,12 @@ class DataverseFileByURLForm(forms.Form):
 
     dataverse_file_url = forms.URLField()
 
+    def __init__(self, *args, **kwargs):
+        super(DataverseFileByURLForm, self).__init__(*args, **kwargs)
+        self.fields['dataverse_file_url'].widget.attrs.update(\
+                {'class' : 'form-control'})
+
+
     def get_dataverse_file_url(self):
         """Return the dataverse_file_url"""
         assert self.is_valid(), \

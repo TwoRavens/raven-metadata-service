@@ -78,20 +78,7 @@
 <div class="container" style="margin:10%; xbackground-color:#f0f8ff; border: transparent">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4  mb-4">
-          <div class="card">
-            <div class="card-body">
-                <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
 
-              <h3 class="card-title">Metadata List</h3>
-
-              <p>List all of the summary statistic files, including
-                those in process.</p>
-
-              <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
-            </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
         <div class="col-lg-4  mb-4">
           <div class="card">
             <div class="card-body">
@@ -107,6 +94,21 @@
           </div>
         </div><!-- /.col-lg-4 -->
 
+        <div class="col-lg-4  mb-4">
+          <div class="card">
+            <div class="card-body">
+                <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
+
+              <h3 class="card-title">Metadata List</h3>
+
+              <p>List all of the summary statistic files, including
+                those in process.</p>
+
+              <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        
         <div class="col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
