@@ -31,6 +31,13 @@ class DataverseFileByIdForm(forms.Form):
                     empty_label=('------'))
     dataverse_file_id = forms.IntegerField()
 
+    def __init__(self, *args, **kwargs):
+        super(DataverseFileByIdForm, self).__init__(*args, **kwargs)
+        self.fields['dataverse'].widget.attrs.update(\
+                {'class' : 'form-control'})
+        self.fields['dataverse_file_id'].widget.attrs.update(\
+                {'class' : 'form-control'})
+
     def get_dataverse_file_url(self):
         """Return the dataverse_file_url"""
         assert self.is_valid(), \
