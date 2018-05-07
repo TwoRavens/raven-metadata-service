@@ -20,6 +20,7 @@ CUSTOM_STATISTICS_IMAGE = 'image'
 CUSTOM_STATISTICS_DESCRIPTION = 'description'
 CUSTOM_STATISTICS_REPLICATION = 'replication'
 CUSTOM_STATISTICS_VIEWABLE = 'viewable'
+CUSTOM_STATISTICS_VALUE = 'value'
 
 class CustomStatisticsUtil(object):
     def __init__(self,preprocess_json, custom_statistics_json):
@@ -174,44 +175,44 @@ class CustomStatisticsUtil(object):
 
 
         # preprocess_id = self.custom_statistics_json['preprocess_id']
-        var_list = list(self.preprocess_json['variables'])
+        var_list = list(self.preprocess_json[CUSTOM_STATISTICS_VARIABLES])
         for dat in self.custom_statistics_json:
             print("dat ",dat)
-            name = self.custom_statistics_check_name(dat['name']) # required = True
+            name = self.custom_statistics_check_name(dat[CUSTOM_STATISTICS_NAME]) # required = True
             # id = self.custom_statistics_create_id(name)
-            variables = self.custom_statistics_check_variables(var_list,dat['variables']) # required = True
+            variables = self.custom_statistics_check_variables(var_list,dat[CUSTOM_STATISTICS_VARIABLES]) # required = True
 
             if CUSTOM_STATISTICS_IMAGE in dat:
-                image = self.custom_statistics_check_image(dat['image'])
+                image = self.custom_statistics_check_image(dat[CUSTOM_STATISTICS_IMAGE])
             else:
                 image =[]
 
-            value = self.custom_statistics_check_value(dat['value']) # required = True
+            value = self.custom_statistics_check_value(dat[CUSTOM_STATISTICS_VALUE]) # required = True
 
             if CUSTOM_STATISTICS_DESCRIPTION in dat:
-                description = self.custom_statistics_check_description(dat['description'])
+                description = self.custom_statistics_check_description(dat[CUSTOM_STATISTICS_DESCRIPTION])
             else:
-                description = ""
+                description = None
 
             if CUSTOM_STATISTICS_REPLICATION in dat:
-                replication = self.custom_statistics_check_replication(dat['replication'])
+                replication = self.custom_statistics_check_replication(dat[CUSTOM_STATISTICS_REPLICATION])
             else:
-                replication = ""
+                replication = None
 
             if CUSTOM_STATISTICS_VIEWABLE in dat:
-                viewable = self.custom_statistics_check_viewable(dat['viewable'])
+                viewable = self.custom_statistics_check_viewable(dat[CUSTOM_STATISTICS_VIEWABLE])
             else:
                 viewable = True # default
 
             data = {
-                    "name":name,
-                    "variables":variables,
-                    "image":image,
-                    "value":value,
-                    "description":description,
-                    "replication":replication,
+                    CUSTOM_STATISTICS_NAME:name,
+                    CUSTOM_STATISTICS_VARIABLES:variables,
+                    CUSTOM_STATISTICS_IMAGE:image,
+                    CUSTOM_STATISTICS_VALUE:value,
+                    CUSTOM_STATISTICS_DESCRIPTION:description,
+                    CUSTOM_STATISTICS_REPLICATION:replication,
                     "display": {
-                        "viewable":viewable
+                        CUSTOM_STATISTICS_VIEWABLE:viewable
                     }
 
                 }
