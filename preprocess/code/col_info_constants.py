@@ -24,6 +24,12 @@ DATA_SOURCE_FILESIZE = 'filesize'
 
 NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'
+
+# --------------------------------------
+# variable labels for the metadata file
+# --------------------------------------
+LABEL_FOR_LABEL = 'label'
+
 # --------------------------------------
 # numchar constants for metadata file
 # --------------------------------------

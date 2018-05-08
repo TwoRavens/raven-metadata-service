@@ -33,6 +33,8 @@ class ColumnInfo(object):
         # more general
         # -------------
         self.colname = colname
+        self.labl = None
+
         self.valid = None
         self.invalid = None
 
@@ -79,7 +81,6 @@ class ColumnInfo(object):
         self.cdf_plottype = None
         self.cdf_plotx = None
         self.cdf_ploty = None
-        self.labl = None
 
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
@@ -171,7 +172,7 @@ class ColumnInfo(object):
         """
         label_list = (
             ('variableName', 'colname'),
-            ('label', 'labl'),
+            (col_const.LABEL_FOR_LABEL, 'labl'),
 
             (col_const.NUMCHAR_LABEL, 'numchar_val'),
             (col_const.NATURE_LABEL, 'nature'),
