@@ -40,7 +40,7 @@ AUTH_USER_MODEL = 'raven_auth.User'
 PAGE_CACHE_TIME = 60 * 60 * 2 # 2 hours
 
 SWAGGER_HOST = os.environ.get('SWAGGER_HOST', '127.0.0.1:8080')
-
+SITE_SCHEME = os.environ.get('SITE_SCHEME', 'http')
 # Application definition
 
 INSTALLED_APPS = [
@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'ravens_metadata_apps.preprocess_jobs',
     'ravens_metadata_apps.api_docs',
     'ravens_metadata_apps.content_pages', # user model
+    'ravens_metadata_apps.dataverse_connect', # preprocess dataverse files
 ]
 
 MIDDLEWARE = [
@@ -172,3 +173,13 @@ CELERY_RESULT_BACKEND = 'redis://%s:%d' % (REDIS_HOST, REDIS_PORT)
 ALLOW_FAB_DELETE = False
 
 TEST_DIRECT_STATIC = None
+
+# -------------------------------
+# Web application, function specific
+# -------------------------------
+
+# The number of rows that may be retrieved from a
+# source file--though API or web form
+#
+MAX_SOURCE_FILE_ROWS_TO_RETRIEVE = os.environ.get('MAX_SOURCE_FILE_ROWS_TO_RETRIEVE', 1000)
+REQUESTS_TIMEOUT = 7 # 1 second for server to respond

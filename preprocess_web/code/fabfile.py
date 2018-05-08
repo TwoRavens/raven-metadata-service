@@ -122,8 +122,24 @@ def init_db():
     local("python manage.py migrate")
     create_django_superuser()
     create_test_user()
+    load_registered_dataverses()
     #local("python manage.py loaddata fixtures/users.json")
     #Series(name_abbreviation="Mass.").save()
+
+@task
+def load_registered_dataverses():
+    """If none exist, load RegisteredDataverse objects from fixtures"""
+    from ravens_metadata_apps.dataverse_connect.models import RegisteredDataverse
+
+    cnt = RegisteredDataverse.objects.count()
+    if cnt > 0:
+        print('RegisteredDataverse object(s) already exist: %s' % cnt)
+        return
+
+    load_cmd = ('python manage.py loaddata ravens_metadata_apps/dataverse_connect'
+                '/fixtures/initial_fixtures.json')
+    local(load_cmd)
+
 
 
 @task
@@ -139,8 +155,9 @@ def clear_jobs():
     mcnt = MetadataUpdate.objects.count()
     print('\n%d MetadataUpdate(s) found' % mcnt)
     if mcnt > 0:
-        for mu in MetadataUpdate.objects.all().order_by('-id'):
-            mu.delete()
+        for meta_obj in MetadataUpdate.objects.all().order_by('-id'):
+            meta_obj.metadata_file.delete()
+            meta_obj.delete()
         print('Deleted...')
     else:
         print('No MetadataUpdate objects found.\n')
@@ -150,7 +167,10 @@ def clear_jobs():
     if cnt == 0:
         print('No PreprocessJob objects found.\n')
         return
-    PreprocessJob.objects.all().delete()
+    for job in PreprocessJob.objects.all():
+        job.source_file.delete()
+        job.metadata_file.delete()
+        job.delete()
     print('Deleted...')
 
 

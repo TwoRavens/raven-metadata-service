@@ -36,7 +36,6 @@ def main():
         pairs.append((col_val, val_cnt))
 
     #print(sorted(pairs, key=lambda x: (x[1], x[0]), reverse=True))
-    #import ipdb; ipdb.set_trace()
 
 if __name__ == '__main__':
     main()

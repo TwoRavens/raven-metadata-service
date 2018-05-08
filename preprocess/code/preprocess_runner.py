@@ -18,15 +18,8 @@ from variable_display_util import VariableDisplayUtil
 from dataset_level_info_util import DatasetLevelInfo
 from file_format_util import FileFormatUtil
 
-# Move these elsewhere as things progress ....
-# ---------------------------------------------
-CSV_FILE_EXT = '.csv'
-TAB_FILE_EXT = '.tab'
-ACCEPTABLE_FILE_TYPE_EXTS = \
-                    (CSV_FILE_EXT,
-                     TAB_FILE_EXT)
-ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
-# ---------------------------------------------
+
+KEY_JSONLD_CITATION = 'jsonld_citation'
 
 
 class PreprocessRunner(object):
@@ -36,11 +29,18 @@ class PreprocessRunner(object):
         """Init with a pandas dataframe
 
         optional kwargs:
-        job_id
-
+        job_id - id of a PreprocessJob object
+        jsonld_citation - jsonld_citation as an OrderedDict
         """
         self.data_frame = dataframe
         self.job_id = kwargs.get('job_id', None)
+
+        # for a json_ld citation from dataverse
+        self.jsonld_citation = kwargs.get(KEY_JSONLD_CITATION, None)
+
+        # for data source
+        self.data_source_info = kwargs.get('data_source_info')
+
         self.celery_task = kwargs.get('celery_task')
         # to populate
         self.variable_info = {}  # { variable_name: ColumnInfo, ...}
@@ -55,8 +55,6 @@ class PreprocessRunner(object):
             .strftime('%Y-%m-%d %H:%M:%S')
         self.preprocess_id = None
 
-        # for data source
-        self.data_source_info = kwargs.get('data_source_info')
 
         self.run_preprocess()
 
@@ -97,17 +95,19 @@ class PreprocessRunner(object):
         """decide type/format, and name"""
         # Use new class to decide "csv file", "tab file"
         # etc
-        job_id = kwargs.get('job_id')
         file_format_util = FileFormatUtil(input_file, **kwargs)
 
-        # file_format_util.data_frame
-        # file_format_util.data_source_info
         if file_format_util.has_error:
             return None, file_format_util.error_message
         else:
-            data_frame = file_format_util.dataframe
-            data_source_info = file_format_util.data_source_info
-            runner = PreprocessRunner(data_frame, job_id=job_id, data_source_info=data_source_info)
+            if 'data_source_info' not in kwargs:
+                kwargs['data_source_info'] = file_format_util.data_source_info
+
+            runner = PreprocessRunner(\
+                        file_format_util.dataframe,
+                        **kwargs)
+                        #job_id=job_id,
+                        #data_source_info=file_format_util.data_source_info)
             if runner.has_error:
                 return None, runner.error_message
 
@@ -224,18 +224,6 @@ class PreprocessRunner(object):
 
         return self_section
 
-    def get_data_source_info(self):
-        """
-         "data_source": {
-            "type": "file",
-            "format": "[see below]",
-            "name": "[see below]"
-       }
-       """
-        data_source_section = OrderedDict()
-        data_source_section = self.data_source_info
-        # print("data_source_section", {"data_source":self.data_source_info})
-        return data_source_section
 
     def get_dataset_level_info(self):
         """
@@ -244,17 +232,22 @@ class PreprocessRunner(object):
        "variable_cnt": 25
                 }
         """
-        dataset_level = OrderedDict()
-        # print("data frame to pass ", self.data_frame)
         dataset_level_info = DatasetLevelInfo(self.data_frame)
         if dataset_level_info.has_error:
-            dataset_level = {"error": dataset_level_info.error_messages}
-            return dataset_level
+            info_dict = OrderedDict()
+            info_dict["error"] = dataset_level_info.error_messages
+            return info_dict
 
-        dataset_level = {"row_cnt" : dataset_level_info.final_output['row_cnt'],
-                         "variable_cnt" : dataset_level_info.final_output['variable_cnt'],
-                         col_const.DATA_SOURCE_INFO : self.get_data_source_info()}
-        return dataset_level
+        info_dict = dataset_level_info.final_output
+        if self.data_source_info:
+            info_dict[col_const.DATA_SOURCE_INFO] = self.data_source_info.as_dict()
+
+        if self.jsonld_citation:
+            info_dict[col_const.DATA_SOURCE_CITATION] = self.jsonld_citation
+            #info_dict[col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_CITATION] = \
+            #    self.jsonld_citation
+
+        return info_dict
 
     def show_final_info(self):
         """Print the final info to the screen"""
@@ -314,8 +307,8 @@ class PreprocessRunner(object):
 
         overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section()  # add the "self" section
 
-        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()\
-            # add the 'dataset' section
+        # add the 'dataset' section
+        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()
 
         overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info    # add "variables"
 

@@ -1,6 +1,7 @@
 import json
 
 from django import forms
+from django.conf import settings
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from django.utils.translation import gettext_lazy as _
 
@@ -20,6 +21,7 @@ VIEWABLE_TRUE = True
 VIEWABLE_FALSE = False
 INPUT_VIEWABLE_TYPES = (VIEWABLE_TRUE,VIEWABLE_FALSE)
 VIEWABLE_CHOICES = [(x,x) for x in INPUT_VIEWABLE_TYPES]
+
 
 
 class RetrieveRowsForm(forms.Form):
@@ -70,6 +72,10 @@ class RetrieveRowsForm(forms.Form):
             # errors.append(forms.ValidationError)
             raise forms.ValidationError(
                 _('The number of rows must be 1 or greater.'))
+        elif number_rows > settings.MAX_SOURCE_FILE_ROWS_TO_RETRIEVE:
+            raise forms.ValidationError(
+                _('The number cannot be greater than %d.') % \
+                settings.MAX_SOURCE_FILE_ROWS_TO_RETRIEVE)
 
         return number_rows
 

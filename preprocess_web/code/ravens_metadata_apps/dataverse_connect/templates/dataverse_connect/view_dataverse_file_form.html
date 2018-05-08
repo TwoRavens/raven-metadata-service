@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block extra_header %}
+<style>
+label{
+  font-weight: bold;
+}
+</style>
+{% endblock %}
+
+{% block main_content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+        <h5>{{ title }}</h5>
+
+        <p>Enter a Datafile url or file id:</p>
+    </div>
+  </div>
+
+  <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <h5 class="card-header">by Datafile Url</h5>
+            <div class="card-body">
+                <p>Please enter a Dataverse file url.  Examples:</p>
+                <ul>
+                  <li>https://dataverse.harvard.edu/file.xhtml?fileId=3085004</li>
+                  <li>https://dataverse.harvard.edu/api/access/datafile/3085004</li>
+                </ul>
+
+                <p>Helpful links:</p>
+                  <ul>
+                    <li><a href="https://dataverse.harvard.edu/dataverse/harvard?q=&fq0=fileTypeGroupFacet%3A%22tabulardata%22&fq1=fileAccess%3A%22Public%22&types=files&sort=dateSort&order=desc" target="_blank">View potential dataverse files</a></li>
+
+                    <li><a href="javascript:var myParam = location;window.location = '{{ SITE_SCHEME }}://{{ SWAGGER_HOST }}/preprocess/dataverse-form?dv_file_url=' + myParam;">Scriptlet for Dataverse file pages</a>
+                        <br />(drag into your browser toolbar)
+                    </li>
+                  </ul>
+
+
+              <form action="{% url 'view_dataverse_file_form' %}" method="post">
+                {% csrf_token %}
+
+                <hr />
+                {% if form_by_url_err_msg %}
+                    {{ form_by_url_err_msg }}
+                {% endif %}
+
+                <div class="form-group">
+
+                {{ form_by_url.as_p }}
+              </div>
+                {% if PRESS_SCRIPTLET_SUBMIT %}
+                <div class="alert alert-success" role="alert">
+                    Press "submit" below to process the Dataverse file!
+                    <span class="oi oi-arrow-circle-bottom"></span>
+                </div>
+                {% endif %}
+                <div class="text-right">
+                  <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
+                </div>
+              </form>
+            </div><!-- end: card body -->
+          </div><!-- end: card -->
+        </div><!-- end: column -->
+
+        <div class="col-sm-6">
+          <div class="card">
+            <h5 class="card-header">by Dataverse and File Id</h5>
+            <div class="card-body">
+              <p>Please choose a Dataverse and enter a Datafle Id</p>
+              <p>Example, choose "dataverse.harvard.edu" and enter 3085021.
+
+
+              <form action="{% url 'view_dataverse_file_form' %}" method="post">
+                  {% csrf_token %}
+
+                <div class="form-group">
+                  {{ form_by_id.as_p }}
+                </div>
+                <div class="text-right">
+                  <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
+                </div>
+
+              </form>
+              </div><!-- end: card body -->
+            </div><!-- end: card -->
+          </div><!-- end: column -->
+
+  </div>
+</div>
+
+
+{% endblock %}

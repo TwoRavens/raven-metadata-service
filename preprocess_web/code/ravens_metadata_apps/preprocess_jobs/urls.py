@@ -1,6 +1,7 @@
 from django.urls import path, re_path
 
 from ravens_metadata_apps.preprocess_jobs import views, views_api
+from ravens_metadata_apps.dataverse_connect import views as dv_connect_views
 
 urlpatterns = (
 
@@ -9,6 +10,12 @@ urlpatterns = (
     path(r'form-basic-upload',
          views.view_basic_upload_form,
          name='view_basic_upload_form'),
+
+    # Dataverse file form
+    #
+    path(r'dataverse-form',
+         dv_connect_views.view_dataverse_file_form,
+         name='view_dataverse_file_form'),
 
 
     # job info JSON format
@@ -37,7 +44,7 @@ urlpatterns = (
 
     # job for custom statistics
     #
-    path(r'form/custom-statistics_update',
+    path(r'form/custom-statistics-update',
          views.view_custom_statistics_update,
          name='view_form_custom_statistics_update'),
 

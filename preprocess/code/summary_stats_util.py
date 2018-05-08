@@ -125,12 +125,19 @@ class SummaryStatsUtil(object):
             col_data.dropna(inplace=True)
         if char:
             total_sum = sum_val
-            for val, val_cnt in col_data.value_counts().iteritems():
-                fraction_val.append(np.math.pow(val_cnt / total_sum, 2))
+            if total_sum == 0:
+                pass
+            else:
+                for val, val_cnt in col_data.value_counts().iteritems():
+                    fraction_val.append(\
+                        np.math.pow(val_cnt / total_sum, 2))
         else:
             total_sum = sum(col_data)
-
-            for val, cnt in col_data.items():
-                fraction_val.append(np.math.pow(cnt / total_sum, 2))
+            if total_sum == 0:
+                pass
+            else:
+                for val, cnt in col_data.items():
+                    fraction_val.append(\
+                        np.math.pow(cnt / total_sum, 2))
 
         return sum(fraction_val)

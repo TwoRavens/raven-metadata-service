@@ -2,6 +2,8 @@
 import pandas as pd
 
 from django.http import HttpResponse, JsonResponse
+
+from preprocess_runner import KEY_JSONLD_CITATION
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
 from ravens_metadata_apps.utils.time_util import get_timestring_for_file
@@ -10,6 +12,8 @@ from ravens_metadata_apps.utils.basic_response import \
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from variable_display_util import VariableDisplayUtil
+from file_format_constants import TAB_FILE_EXT
+
 from custom_statistics_util import CustomStatisticsUtil
 from ravens_metadata_apps.utils.view_helper import get_json_error
 
@@ -147,16 +151,24 @@ class JobUtil(object):
             job.save()
             return
 
+        # update the state of the job
+        job.set_state_pending()
+        job.save()
+
+        # Additional/optional arguments for preprocess
+        #
+        additional_args = dict(job_id=job.id)
+        dv_file_info = job.dataversefileinfo_set.first()
+        if dv_file_info and dv_file_info.jsonld_citation:
+            additional_args[KEY_JSONLD_CITATION] = dv_file_info.jsonld_citation
         # send the file to the queue
-        task = preprocess_csv_file.delay(
+        #
+        task = preprocess_csv_file.delay(\
                     job.source_file.path,
-                    job_id=job.id)
+                    **additional_args)
 
         # set the task_id
         job.task_id = task.id
-
-        # update the state of the job
-        job.set_state_preprocess_started()
 
         # save the new state
         job.save()
@@ -261,7 +273,8 @@ class JobUtil(object):
         input_format = kwargs.get('format')
         job_id = kwargs.get('preprocess_id')
 
-        success, data_frame, error_message = JobUtil.get_data_frame(job, start_row=start_row, num_rows=num_rows)
+        success, data_frame, error_message = JobUtil.get_data_frame(\
+                            job, start_row=start_row, num_rows=num_rows)
         if not success:
             return err_resp(error_message)
 
@@ -307,7 +320,10 @@ class JobUtil(object):
             print('kwargs', kwargs)
             start_row = kwargs.get('start_row')
             num_rows = kwargs.get('number_rows')
-            success, data_frame, err_resp = JobUtil.get_data_frame(job, start_row = start_row, num_rows = num_rows)
+            success, data_frame, err_resp = JobUtil.get_data_frame(\
+                                                job,
+                                                start_row=start_row,
+                                                num_rows=num_rows)
             if success:
                 response = HttpResponse(content_type='text/csv')
 

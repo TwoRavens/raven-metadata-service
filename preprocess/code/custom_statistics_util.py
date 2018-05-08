@@ -5,12 +5,11 @@ import pandas as pd
 from django.utils.text import slugify
 import re
 from pandas.api.types import is_float_dtype, is_numeric_dtype
-import json, uuid
-from random import randrange
+import json
 import col_info_constants as col_const
-import update_constants as update_const
 from column_info import ColumnInfo
 from np_json_encoder import NumpyJSONEncoder
+from version_number_util import VersionNumberUtil
 
 ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
 VIEWABLE_VALUES = [True, False]
@@ -225,6 +224,12 @@ class CustomStatisticsUtil(object):
 
         self.original_json = OrderedDict(self.preprocess_json)
 
+        success, updated_or_err = VersionNumberUtil.update_version_number(\
+                                        self.original_json,
+                                        self.is_major_update())
+
+        if not success:
+            self.add_error_message(new_version_or_err)
 
 
     def add_to_original(self,data):
@@ -301,11 +306,3 @@ class CustomStatisticsUtil(object):
             self.make_update(update['id'],update['updates'])
 
         print("updates to custom_statistics : ", self.preprocess_json)
-
-
-
-
-
-
-
-

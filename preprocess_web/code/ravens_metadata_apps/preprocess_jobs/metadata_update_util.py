@@ -12,12 +12,16 @@ from custom_statistics_util import CustomStatisticsUtil
 
 from variable_display_util import VariableDisplayUtil
 from np_json_encoder import NumpyJSONEncoder
-from col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
+from col_info_constants import \
+    (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS)
 
 class MetadataUpdateUtil(object):
 
-    def __init__(self, preprocess_id, update_json, update_type):
+    def __init__(self, preprocess_id, update_json, update_type=None):
         """Initialize with a PreprocessJob id and JSON update snippet"""
+        if not update_type:
+            update_type = UPDATE_VARIABLE_DISPLAY
+
         self.preprocess_id = preprocess_id
         self.update_json = update_json
         self.update_type = update_type
@@ -127,7 +131,8 @@ class MetadataUpdateUtil(object):
             update_kwargs['orig_metadata'] = metadata_obj.orig_metadata
             update_kwargs['previous_update'] = metadata_obj
             if var_util.is_major_update():
-                update_kwargs['version_number'] = metadata_obj.version_number + Decimal('1')
+                new_num = Decimal(int(metadata_obj.version_number + Decimal('1')))
+                update_kwargs['version_number'] = new_num
             else:
                 update_kwargs['version_number'] = metadata_obj.version_number + Decimal('.1')
 
