@@ -21,6 +21,7 @@ CUSTOM_STATISTICS_REPLICATION = 'replication'
 CUSTOM_STATISTICS_VIEWABLE = 'viewable'
 CUSTOM_STATISTICS_VALUE = 'value'
 
+
 class CustomStatisticsUtil(object):
     def __init__(self,preprocess_json, custom_statistics_json):
         """class for the custom statistics process"""
@@ -28,18 +29,15 @@ class CustomStatisticsUtil(object):
         assert isinstance(preprocess_json, dict), \
             "preprocess_json must be a dict/OrderedDict"
 
-
         self.preprocess_json = preprocess_json
         self.custom_statistics_json = custom_statistics_json
 
         # for error handling
         self.has_error = False
         self.error_messages = []
-        self.original_json=None
+        self.original_json = None
 
         # call the statistic function
-
-
 
     def add_error_message(self, err_msg):
         """Add error message"""
@@ -61,22 +59,19 @@ class CustomStatisticsUtil(object):
 
     def get_error_messages(self):
         """Return the list of error messages"""
-        print("Error messages ",self.error_messages)
+        print("Error messages ", self.error_messages)
         return self.error_messages
-
-    def update_preprocess_version(self):
-        """ here update the preprocess version of the metadata"""
 
     def custom_statistics_create_id(self): # need to think of generating id
         if col_const.CUSTOM_KEY not in self.preprocess_json:
-            var_id = 'id_1'
+            var_id = 'id_000001'
         else:
             ids = list(self.preprocess_json['custom_statistics'])
             ids.sort()
             latest_id = ids[-1]
             _unused, idnum = latest_id.split('_')
             next_num = str(int(idnum) + 1)
-            var_id = 'id_%s' % next_num
+            var_id = 'id_%s' % next_num.zfill(6)
         return var_id
 
     def custom_statistics_check_name(self,name):
@@ -140,7 +135,6 @@ class CustomStatisticsUtil(object):
             return
         return viewable
 
-
     def custom_statistics_update(self):
         """Main function for appending the data"""
         """
@@ -169,10 +163,6 @@ class CustomStatisticsUtil(object):
           ]
        }
                """
-        # print(self.preprocess_json)
-        print("custom statistics json ",self.custom_statistics_json)
-
-
         # preprocess_id = self.custom_statistics_json['preprocess_id']
         var_list = list(self.preprocess_json[CUSTOM_STATISTICS_VARIABLES])
 
@@ -217,9 +207,6 @@ class CustomStatisticsUtil(object):
 
                 }
 
-
-            # print("data to be sent",data)
-
             self.add_to_original(data)
 
         self.original_json = OrderedDict(self.preprocess_json)
@@ -231,85 +218,125 @@ class CustomStatisticsUtil(object):
         if not success:
             self.add_error_message(updated_or_err)
 
-
     def add_to_original(self,data):
-        id = self.custom_statistics_create_id()
+        id_name = self.custom_statistics_create_id()
         # self.original_json= self.preprocess_json
         if col_const.CUSTOM_KEY not in self.preprocess_json:
-            self.preprocess_json[col_const.CUSTOM_KEY] = { id: data}
+            self.preprocess_json[col_const.CUSTOM_KEY] = {id_name: data}
         else:
-            self.preprocess_json[col_const.CUSTOM_KEY][id]= data
-
+            self.preprocess_json[col_const.CUSTOM_KEY][id_name] = data
 
         # print(self.original_json)
 
     # update functions for custom_stats_update
 
-    def check_ids(self,id):
+    def check_ids(self, id_name):
         """check for id"""
         id_list = list(self.preprocess_json['custom_statistics']) # return list of ids
-        if id in id_list:
-            print( ' id %s is there ' %id)
-            return True,None
-        else: return False,' id %s not found in requested updates' % id
+        if id_name in id_list:
+            print(' id %s is there ' % id_name)
+            return True, None
+        else:
+            return False, ' id %s not found in requested updates' % id_name
 
-    def make_update(self, id, update_json):
+    def make_update(self, id_name, update_json):
         """ make changes to preprocess json"""
         for val in update_json:
             # print(" this is val ", val)
             # print("this is the updateing object ", self.preprocess_json['custom_statistics'][id])
-            self.preprocess_json['custom_statistics'][id][val] = update_json[val]
+            try:
+                self.preprocess_json['custom_statistics'][id_name][val] = update_json[val]
+            except KeyError:
+                self.add_error_message('%s not present in the file ' % val)
+                return False, self.get_error_messages()
 
 
-    def basic_update_structure_check(self, update_json):
+    @staticmethod
+    def basic_update_structure_check(update_json, type):
         """ check if all updates has update and ids"""
+        search = None
+        if type == 'delete':
+            search = 'delete'
+        elif type == 'updates':
+            search = 'updates'
         if 'id' not in update_json:
             return False,'id section is not present in request'
-        if 'updates' not in update_json:
-            return False, 'updates section not present in request'
+        if search not in update_json:
+            return False, '%s section not present in request' % search
 
-
-        return True,None
-
+        return True, None
 
     def update_custom_stats(self):
         """ The update is done here"""
         """ Sample update_json
-         [
-    {
-      "id": "id_1",
-      "updates": {
-        "name": "Fourth order statistic",
-        "value": 40
-      }
-    },
-    {
-      "id": "id_2"
-      "updates": {
-        "name": "This will be a new statistic",
-        "value": 40
-      }
-    }
-  ]
+                 [
+            {
+              "id": "id_1",
+              "updates": {
+                "name": "Fourth order statistic",
+                "value": 40
+              }
+            },
+            {
+              "id": "id_2"
+              "updates": {
+                "name": "This will be a new statistic",
+                "value": 40
+              }
+            }
+          ]
         """
         # going through each update
         for update in self.custom_statistics_json:
-            check,msg = self.basic_update_structure_check(update)
+            check, msg = CustomStatisticsUtil.basic_update_structure_check(update, 'updates')
             if check is False:
                 self.add_error_message(msg)
-                return dict(success = False,
-                            message = msg)
+                return self.get_error_messages()
 
-
-            id_check,msg = self.check_ids(update['id'])
+            id_check, msg = self.check_ids(update['id'])
             if id_check is False:
                 self.add_error_message(msg)
-                return dict(success=False,
-                            message=msg)
+                return self.get_error_messages()
 
-            self.make_update(update['id'],update['updates'])
+            self.make_update(update['id'], update['updates'])
         self.original_json = OrderedDict(self.preprocess_json)
         success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,self.is_major_update())
         if not success:
             self.add_error_message(updated_or_err)
         # print("updates to custom_statistics : ", self.preprocess_json)
+
+    def make_deletion(self, id_num, update):
+        """ here we delete"""
+        if 'id' in update:
+            del self.preprocess_json['custom_statistics'][id_num]
+        else:
+            for val in update:
+                try:
+                    del self.preprocess_json['custom_statistics'][id_num][val]
+                except KeyError:
+                    self.add_error_message('%s not present in file' % val)
+                    return False, self.get_error_messages()
+
+    def delete_custom_stat(self):
+        """ delete fields/custom stats"""
+
+        for delete_obj in self.custom_statistics_json:
+            check, msg = self.basic_update_structure_check(delete_obj, 'delete')
+            if not check:
+                self.add_error_message(msg)
+                return self.get_error_messages()
+
+            id_check, msg = self.check_ids(delete_obj['id'])
+            if id_check is False:
+                self.add_error_message(msg)
+                return self.get_error_messages()
+
+            self.make_deletion(delete_obj['id'], delete_obj['delete'])
+            self.original_json = OrderedDict(self.preprocess_json)
+
+            print("After deletion ", self.original_json)
+
+            success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,
+                                                                              self.is_major_update())
+            if not success:
+                self.add_error_message(updated_or_err)

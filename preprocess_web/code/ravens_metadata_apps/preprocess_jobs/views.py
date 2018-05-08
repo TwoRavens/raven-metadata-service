@@ -87,6 +87,68 @@ def view_basic_upload_form(request):
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
 
+@csrf_exempt
+def view_custom_statistics_delete(request):
+    """ to delete the custom_statistics"""
+    """ expected input:
+    {
+   "preprocess_id":1,
+   "custom_statistics":[
+      {
+         "id":"id_1",
+         "delete":[
+            "description",
+            "replication"
+         ]
+      },
+      {
+         "id":"id_2",
+         "delete":[
+            "id"
+         ]
+        }
+      ]
+    }
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err['preprocess_id']
+    custom_statistics_json = update_json_or_err['custom_statistics']
+
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, \
+                                               DELETE_CUSTOM_STATISTICS)
+    if metadata_update_or_err.has_error:
+        msg = get_json_error(metadata_update_or_err)
+        user_msg = dict(success=False,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=msg)
+
+    else:
+        user_msg = dict(success=True,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=metadata_update_or_err.get_updated_metadata())
+        print("Updated metadata : ", metadata_update_or_err)
+
+    return JsonResponse(user_msg)
+
 
 @csrf_exempt
 def view_custom_statistics_update(request):
@@ -96,7 +158,7 @@ def view_custom_statistics_update(request):
   "preprocess_id": 1,
   "custom_statistics": [
     {
-      "id": "id_00001",
+      "id": "id_1",
       "updates": {
         "name": "Fourth order statistic",
         "value": 40
@@ -125,13 +187,6 @@ def view_custom_statistics_update(request):
         #
     job_id = update_json_or_err['preprocess_id']
     custom_statistics_json = update_json_or_err['custom_statistics']
-
-    # success, updated_metadata = JobUtil.update_custom_statistics(job_id, version, custom_statistics_json)
-    # if not success:
-    #     user_msg = dict(success=False,
-    #                     message=updated_metadata,
-    #                     id=id)
-    #     return JsonResponse(user_msg)
 
     success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
     if success is False:
@@ -213,16 +268,6 @@ def view_custom_statistics_form(request):
             return JsonResponse(user_msg)
 
         custom_statistics_json.append(data)
-
-    # ------------------------
-    # for now to check snippet
-    # data_send = json.loads(custom_statistics_json)
-    # success,updated_metadata = JobUtil.update_preprocess_metadata_custom_statistics(job_id,custom_statistics_json)
-    # if not success:
-    #     user_msg = dict(success=False,
-    #                 message=updated_metadata,
-    #                 preprocess_id=job_id)
-    #     return JsonResponse(user_msg)
 
     success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
     if success is False:

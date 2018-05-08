@@ -67,7 +67,6 @@ class MetadataUpdateUtil(object):
 
         return metadata
 
-
     def get_update_util(self, latest_metadata_or_err):
         """Either update the variable display or the summary stats"""
 
@@ -84,10 +83,15 @@ class MetadataUpdateUtil(object):
             update_util = CustomStatisticsUtil(latest_metadata_or_err, self.update_json)
             update_util.update_custom_stats()
             return update_util
+
+        elif self.update_type == DELETE_CUSTOM_STATISTICS:
+            delete_util = CustomStatisticsUtil(latest_metadata_or_err, self.update_json)
+            delete_util.delete_custom_stat()
+            return delete_util
+
         else:
             self.add_err_msg('Unknown update type: %s' % self.update_type)
             return None
-
 
     def make_update(self):
         """Update the latest version of the preprocess metadata"""
