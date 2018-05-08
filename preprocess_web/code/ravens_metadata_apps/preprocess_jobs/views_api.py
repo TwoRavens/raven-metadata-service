@@ -158,7 +158,7 @@ def api_update_metadata(request):
 
     preprocess_id = update_json['preprocess_id']
 
-    update_util = MetadataUpdateUtil(preprocess_id, update_json,0, UPDATE_VARIABLE_DISPLAY)
+    update_util = MetadataUpdateUtil(preprocess_id, update_json, UPDATE_VARIABLE_DISPLAY)
     if update_util.has_error:
         return JsonResponse(get_json_error(update_util))
 

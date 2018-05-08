@@ -17,16 +17,15 @@ from col_info_constants import \
 
 class MetadataUpdateUtil(object):
 
-    def __init__(self, preprocess_id,update_json, version=None, update_type=None):
+    def __init__(self, preprocess_id,update_json, update_type=None):
         """Initialize with a PreprocessJob id and JSON update snippet"""
         if not update_type:
             update_type = UPDATE_VARIABLE_DISPLAY
-        if not version:
-            version = None
+
         self.preprocess_id = preprocess_id
         self.update_json = update_json
         self.update_type = update_type
-        self.version = version
+
 
         # to be created...
         self.metadata_update_obj = None
@@ -47,6 +46,11 @@ class MetadataUpdateUtil(object):
             self.error_messages = err_msg
         else:
             self.error_messages.append(err_msg)
+
+    def get_error_messages(self):
+        """Return the list of error messages"""
+        print("Error messages ",self.error_messages)
+        return self.error_messages
 
     def get_updated_metadata(self, as_obj=False):
         """Return the updated metadata dict or obj"""
@@ -105,18 +109,6 @@ class MetadataUpdateUtil(object):
             return False
 
 
-        print("version to  be sent ", self.version)
-        success, metadata_or_err = JobUtil.get_version_metadata_object( \
-            self.preprocess_id, self.version)
-
-        if not success:
-            self.add_err_msg(metadata_or_err)
-            return False
-
-        success, data_or_err = metadata_or_err.get_metadata()
-        if not success:
-            self.add_err_msg(data_or_err)
-            return False
 
         # Make the update!!
         #
@@ -126,20 +118,13 @@ class MetadataUpdateUtil(object):
 
 
         #var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
-        if self.update_type == UPDATE_TO_CUSTOM_STATISTICS:
-            var_util = self.get_update_util(data_or_err)
-            if var_util is None:
-                return False
-            elif var_util.has_error:
-                self.add_err_msg(var_util.get_error_messages())
-                return False
-        else:
-            var_util = self.get_update_util(latest_metadata_or_err)
-            if var_util is None:
-                return False
-            elif var_util.has_error:
-                self.add_err_msg(var_util.get_error_messages())
-                return False
+
+        var_util = self.get_update_util(latest_metadata_or_err)
+        if var_util is None:
+            return False
+        elif var_util.has_error:
+            self.add_err_msg(var_util.get_error_messages())
+            return False
 
         # ------------------------------------------------------
         # Record successful update in new MetadataUpdate object

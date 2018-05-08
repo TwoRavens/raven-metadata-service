@@ -94,7 +94,6 @@ def view_custom_statistics_update(request):
     """
             {
   "preprocess_id": 1,
-  "version":1.2,
   "custom_statistics": [
     {
       "id": "id_00001",
@@ -124,7 +123,6 @@ def view_custom_statistics_update(request):
 
         # Make sure there's a preprocess_id
         #
-    version = float(update_json_or_err['version'])
     job_id = update_json_or_err['preprocess_id']
     custom_statistics_json = update_json_or_err['custom_statistics']
 
@@ -135,17 +133,17 @@ def view_custom_statistics_update(request):
     #                     id=id)
     #     return JsonResponse(user_msg)
 
-    success, version_metadata_json_or_err = JobUtil.get_version_metadata_object(job_id,version)
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
     if success is False:
         user_msg = dict(success=False,
-                        message=version_metadata_json_or_err)
+                        message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
 
-    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,version, \
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, \
                                                 UPDATE_TO_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
-        msg = metadata_update_or_err.get_error_messages()
-        user_msg = dict(success=True,
+        msg = get_json_error(metadata_update_or_err)
+        user_msg = dict(success=False,
                         message='Custom Statistics',
                         id=job_id,
                         data=msg)
@@ -232,11 +230,11 @@ def view_custom_statistics_form(request):
                         message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
 
-    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, 0, \
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, \
                                                 UPDATE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
-        msg= metadata_update_or_err.get_error_messages()
-        user_msg = dict(success=True,
+        msg = get_json_error(metadata_update_or_err)
+        user_msg = dict(success=False,
                         message='Custom Statistics',
                         id=job_id,
                         data=msg)
