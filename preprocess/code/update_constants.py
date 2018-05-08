@@ -24,8 +24,8 @@ Example update request:
 }
 """
 
-VARIABLE_UPDATES = 'variable_updates'
+VARIABLE_UPDATES = 'variableUpdates'
 
 VIEWABLE_KEY = 'viewable'
 OMIT_KEY = 'omit'
-VALUE_UPDATES_KEY = 'value_updates'
+VALUE_UPDATES_KEY = 'valueUpdates'

@@ -132,7 +132,7 @@ class VariableDisplayUtil(object):
         else:
             variable_updates = None
             self.add_error_message(
-                'variable_updates not found in Update file')
+                '%s not found in Update file' % update_const.VARIABLE_UPDATES)
             return False, self.get_error_messages()
 
 

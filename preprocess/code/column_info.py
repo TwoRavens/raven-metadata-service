@@ -170,6 +170,62 @@ class ColumnInfo(object):
             ```
         """
         label_list = (
+            ('variableName', 'colname'),
+            ('label', 'labl'),
+
+            (col_const.NUMCHAR_LABEL, 'numchar_val'),
+            (col_const.NATURE_LABEL, 'nature'),
+
+            ('binary', 'binary'),
+            ('interval', 'default_interval'),
+            ('time', 'time_val'),
+
+            ('invalidCount', 'invalid'),
+            ('validCount', 'valid'),
+            ('uniqueCount', 'uniques'),
+
+            ('median', 'median'),
+            ('mean', 'mean'),
+            ('max', 'max'),
+            ('min', 'min'),
+
+            ('mode', 'mode'),
+            ('modeFreq', 'freqmode'),
+            ('fewestValues ', 'fewest'),
+            ('fewestFreq', 'freqfewest'),
+            ('midpoint', 'mid'),
+            ('midpointFreq', 'freqmid'),
+
+            ('stdDev', 'std_dev'),
+            ('herfindahlIndex', 'herfindahl'),
+
+            ('plotValues', 'plot_values'),
+            ('plotType', 'plot_type'),
+            ('plotX', 'plotx'),
+            ('plotY', 'ploty'),
+            ('cdfPlotType', 'cdf_plottype'),
+            ('cdfPlotX', 'cdf_plotx'),
+            ('cdfPlotY', 'cdf_ploty'),
+
+            )
+        # print("-"*20)
+        # print(label_list)
+        return label_list
+
+    @staticmethod
+    def xget_variable_labels_snake():
+        """Set labels for variable output.  List of:
+
+         (label, variable name)
+
+        Example of iterating through to show labels and values:
+            ```
+            for label, varname in self.get_variable_labels():
+                variable_val = self.__dict__.get(varname)
+                print('%s: %s' % (label, variable_val))
+            ```
+        """
+        label_list = (
             ('variable_name', 'colname'),
             ('label', 'labl'),
 
@@ -213,7 +269,7 @@ class ColumnInfo(object):
         return label_list
 
     @staticmethod
-    def xget_variable_labels_old():
+    def xget_variable_labels_orig():
         """Set labels for variable output.  List of (label, variable name)
         Example of iterating through to show labels and values:
             ```

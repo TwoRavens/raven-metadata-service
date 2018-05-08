@@ -14,6 +14,7 @@ from django.core.files.base import ContentFile
 from django.utils.decorators import method_decorator
 from django.template.loader import render_to_string
 
+import col_info_constants as col_const
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_metadata_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
@@ -152,11 +153,11 @@ def api_update_metadata(request):
     # Make sure there's a preprocess_id
     #
     update_json = update_json_or_err
-    if 'preprocess_id' not in update_json:
-        user_msg = 'preprocess_id not found: %s' % update_json['preprocess_id']
+    if col_const.PREPROCESS_ID not in update_json:
+        user_msg = 'preprocess_id not found: %s' % update_json
         return JsonResponse(get_json_error(user_msg))
 
-    preprocess_id = update_json['preprocess_id']
+    preprocess_id = update_json[col_const.PREPROCESS_ID]
 
     update_util = MetadataUpdateUtil(preprocess_id, update_json)
     if update_util.has_error:
