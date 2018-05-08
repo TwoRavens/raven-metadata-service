@@ -25,32 +25,6 @@ CUSTOM_STATISTICS_VALUE = 'value'
 class CustomStatisticsUtil(object):
     def __init__(self,preprocess_json, custom_statistics_json):
         """class for the custom statistics process"""
-        """
-        sample Update json coming :
-        {
-   "preprocess_id":1677,
-   "custom_statistics":[
-      {
-         "name":"Third order statistic",
-         "variables":"lpop,bebop",
-         "image":"http://www.google.com",
-         "value":23.45,
-         "description":"Third smallest value",
-         "replication":"sorted(X)[2]",
-         "omit":false
-      },
-      {
-         "name":"Fourth order statistic",
-         "variables":"pop,bebop",
-         "image":"http://www.youtube.com",
-         "value":29.45,
-         "description":"Fourth smallest value",
-         "replication":"sorted(X)[3]",
-         "omit":false
-      }
-   ]
-}
-        """
 
         assert isinstance(preprocess_json, dict), \
             "preprocess_json must be a dict/OrderedDict"
@@ -96,14 +70,14 @@ class CustomStatisticsUtil(object):
 
     def custom_statistics_create_id(self): # need to think of generating id
         if col_const.CUSTOM_KEY not in self.preprocess_json:
-            var_id = 'id_000001'
+            var_id = 'id_1'
         else:
             ids = list(self.preprocess_json['custom_statistics'])
             ids.sort()
             latest_id = ids[-1]
             _unused, idnum = latest_id.split('_')
             next_num = str(int(idnum) + 1)
-            var_id = 'id_%s' % next_num.zfill(6)
+            var_id = 'id_%s' % next_num
         return var_id
 
     def custom_statistics_check_name(self,name):
@@ -170,6 +144,32 @@ class CustomStatisticsUtil(object):
 
     def custom_statistics_update(self):
         """Main function for appending the data"""
+        """
+               sample Update json coming :
+               {
+          "preprocess_id":1677,
+          "custom_statistics":[
+             {
+                "name":"Third order statistic",
+                "variables":"lpop,bebop",
+                "image":"http://www.google.com",
+                "value":23.45,
+                "description":"Third smallest value",
+                "replication":"sorted(X)[2]",
+                "omit":false
+             },
+             {
+                "name":"Fourth order statistic",
+                "variables":"pop,bebop",
+                "image":"http://www.youtube.com",
+                "value":29.45,
+                "description":"Fourth smallest value",
+                "replication":"sorted(X)[3]",
+                "omit":false
+             }
+          ]
+       }
+               """
         # print(self.preprocess_json)
         print("custom statistics json ",self.custom_statistics_json)
 
@@ -226,6 +226,7 @@ class CustomStatisticsUtil(object):
         self.original_json = OrderedDict(self.preprocess_json)
 
 
+
     def add_to_original(self,data):
         id = self.custom_statistics_create_id()
         # self.original_json= self.preprocess_json
@@ -237,8 +238,74 @@ class CustomStatisticsUtil(object):
 
         # print(self.original_json)
 
+    # update functions for custom_stats_update
+
+    def check_ids(self,id):
+        """check for id"""
+        id_list = list(self.preprocess_json['custom_statistics']) # return list of ids
+        if id in id_list:
+            return True,None
+        else: return False,' id %s not found in requested updates' % id
+
+    def make_update(self, id, update_json):
+        """ make changes to preprocess json"""
+        for val in update_json:
+            self.preprocess_json[id][val] = update_json[val]
+
+
+    def basic_update_structure_check(self, update_json):
+        """ check if all updates has update and ids"""
+        if 'id' not in update_json:
+            return False,'id section is not present in request'
+        if 'updates' not in update_json:
+            return False, 'updates section not present in request'
+
+        return True,None
+
 
     def update_custom_stats(self):
         """ The update is done here"""
+        """ Sample update_json
+         [
+    {
+      "id": "id_1",
+      "updates": {
+        "name": "Fourth order statistic",
+        "value": 40
+      }
+    },
+    {
+      "id": "id_2"
+      "updates": {
+        "name": "This will be a new statistic",
+        "value": 40
+      }
+    }
+  ]
+        """
+        # going through each update
+        for update in self.custom_statistics_json:
+            check,msg = self.basic_update_structure_check(update)
+            if check is False:
+                self.add_error_message(msg)
+                return dict(success = False,
+                            message = msg)
+
+
+            id_check,msg = self.check_ids(update['id'])
+            if id_check is False:
+                self.add_error_message(msg)
+                return dict(success=False,
+                            message=msg)
+
+            self.make_update(update['id'],update['updates'])
+
+        print("updates to custom_statistics : ", self.preprocess_json)
+
+
+
+
+
+
 
 

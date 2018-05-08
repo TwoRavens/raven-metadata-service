@@ -66,8 +66,9 @@ class MetadataUpdateUtil(object):
             return VariableDisplayUtil(latest_metadata_or_err, self.update_json)
 
         elif self.update_type == UPDATE_CUSTOM_STATISTICS:
-
-            return CustomStatisticsUtil(latest_metadata_or_err, self.update_json)
+            var_util = CustomStatisticsUtil(latest_metadata_or_err, self.update_json)
+            var_util.custom_statistics_update()
+            return var_util
 
         else:
             self.add_err_msg('Unknown update type: %s' % self.update_type)

@@ -347,15 +347,20 @@ class JobUtil(object):
         return True, custom_util.get_updated_metadata()
 
     @staticmethod
-    def update_custom_statistics(job_id,update_json):
+    def update_custom_statistics(job_id,version,update_json):
         """ send the updates list in the json to custom statistics"""
 
-        success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+        success, version_metadata_json_or_err = JobUtil.get_version_metadata_object(job_id,version)
         if success is False:
             user_msg = dict(success=False,
-                            message=latest_metadata_json_or_err)
+                            message=version_metadata_json_or_err)
             return user_msg
-        custom_util_update = CustomStatisticsUtil(latest_metadata_json_or_err, update_json)
+        success, data_or_err = version_metadata_json_or_err.get_metadata()
+        if not success:
+            return JsonResponse(get_json_error(data_or_err))
+
+        print(" version object ", data_or_err)
+        custom_util_update = CustomStatisticsUtil(data_or_err, update_json)
         custom_util_update.update_custom_stats()
         if custom_util_update.has_error:
             return False, custom_util_update.get_error_messages()

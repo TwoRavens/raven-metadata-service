@@ -90,12 +90,13 @@ def view_basic_upload_form(request):
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
 
+
 @csrf_exempt
 def view_custom_statistics_update(request):
     """ the update for custom statistics"""
     """
             {
-  "preprocess_id": 1,
+  "preprocess_id": 1.1,
   "custom_statistics": [
     {
       "id": "id_00001",
@@ -125,20 +126,23 @@ def view_custom_statistics_update(request):
 
         # Make sure there's a preprocess_id
         #
-    job_id = update_json_or_err['preprocess_id']
+    id = float(update_json_or_err['preprocess_id']) # float taken to avoid error at 1
+    int_place,dec_place = str(id).split('.') # we get strings '1' and '1' here for above expample
+    job_id = int(int_place)
+    version = int(dec_place)
     custom_statistics_json = update_json_or_err['custom_statistics']
 
-    success, updated_metadata = JobUtil.update_custom_statistics(job_id, custom_statistics_json)
+    success, updated_metadata = JobUtil.update_custom_statistics(job_id, version, custom_statistics_json)
     if not success:
         user_msg = dict(success=False,
                         message=updated_metadata,
-                        preprocess_id=job_id)
+                        id=id)
         return JsonResponse(user_msg)
 
-    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    success, version_metadata_json_or_err = JobUtil.get_version_metadata_object(job_id,version)
     if success is False:
         user_msg = dict(success=False,
-                        message=latest_metadata_json_or_err)
+                        message=version_metadata_json_or_err)
         return JsonResponse(user_msg)
 
 
@@ -229,7 +233,7 @@ def view_custom_statistics_form(request):
                         message='Custom Statistics',
                         id=job_id,
                         data=updated_metadata)
-        print(updated_metadata)
+        print("Updated metadata : ",updated_metadata)
 
     return JsonResponse(user_msg)
     # ------------------------
