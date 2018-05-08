@@ -5,9 +5,22 @@ SELF_SECTION_KEY = 'self'
 VERSION_KEY = 'version'
 VARIABLES_SECTION_KEY = 'variables'
 VARIABLE_DISPLAY_SECTION_KEY = 'variable_display'
+
+# -----------------------------
+# dataset
+# -----------------------------
 DATASET_LEVEL_KEY = 'dataset'
+
+DATASET_ROW_CNT = 'row_count'
+DATASET_VARIABLE_CNT = 'variable_count'
+DATASET_CITATION = 'citation'
+
 DATA_SOURCE_INFO = 'data_source'
-DATA_SOURCE_CITATION = 'citation'
+DATA_SOURCE_NAME = 'name'
+DATA_SOURCE_TYPE = 'type'
+DATA_SOURCE_FORMAT = 'format'
+DATA_SOURCE_FILESIZE = 'filesize'
+
 
 NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'

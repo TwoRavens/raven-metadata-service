@@ -156,9 +156,64 @@ class ColumnInfo(object):
                 if not info[0].startswith('default')}
 
 
-
     @staticmethod
     def get_variable_labels():
+        """Set labels for variable output.  List of:
+
+         (label, variable name)
+
+        Example of iterating through to show labels and values:
+            ```
+            for label, varname in self.get_variable_labels():
+                variable_val = self.__dict__.get(varname)
+                print('%s: %s' % (label, variable_val))
+            ```
+        """
+        label_list = (
+            ('variable_name', 'colname'),
+            ('label', 'labl'),
+
+            (col_const.NUMCHAR_LABEL, 'numchar_val'),
+            (col_const.NATURE_LABEL, 'nature'),
+
+            ('binary', 'binary'),
+            ('interval', 'default_interval'),
+            ('time', 'time_val'),
+
+            ('invalid_count', 'invalid'),
+            ('valid_count', 'valid'),
+            ('unique_count', 'uniques'),
+
+            ('median', 'median'),
+            ('mean', 'mean'),
+            ('max', 'max'),
+            ('min', 'min'),
+
+            ('mode', 'mode'),
+            ('mode_freq', 'freqmode'),
+            ('fewest_values ', 'fewest'),
+            ('fewest_freq', 'freqfewest'),
+            ('midpoint', 'mid'),
+            ('midpoint_freq', 'freqmid'),
+
+            ('std_dev', 'std_dev'),
+            ('herfindahl_index', 'herfindahl'),
+
+            ('plot_values', 'plot_values'),
+            ('plot_type', 'plot_type'),
+            ('plot_x', 'plotx'),
+            ('plot_y', 'ploty'),
+            ('cdf_plot_type', 'cdf_plottype'),
+            ('cdf_plot_x', 'cdf_plotx'),
+            ('cdf_plot_y', 'cdf_ploty'),
+
+            )
+        # print("-"*20)
+        # print(label_list)
+        return label_list
+
+    @staticmethod
+    def xget_variable_labels_old():
         """Set labels for variable output.  List of (label, variable name)
         Example of iterating through to show labels and values:
             ```
@@ -204,11 +259,6 @@ class ColumnInfo(object):
             ('cdfplotx', 'cdf_plotx'),
             ('cdfploty', 'cdf_ploty'),
 
-            ('defaultInterval', 'default_interval'),
-            ('defaultNumchar', 'numchar_val'),
-            ('defaultNature', 'nature'),
-            ('defaultBinary', 'binary'),
-            ('defaultTime', 'time_val'),
             )
         # print("-"*20)
         # print(label_list)

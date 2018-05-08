@@ -5,7 +5,8 @@ import numpy as np
 import pandas as pd
 import re
 from np_json_encoder import NumpyJSONEncoder
-from collections import OrderedDict
+
+import col_info_constants as col_const
 
 
 class DatasetLevelInfo(object):
@@ -46,5 +47,5 @@ class DatasetLevelInfo(object):
             self.error_messages.append(" This is an empty dataframe with no variables")
             return
 
-        self.final_output['row_cnt'] = self.rows_count
-        self.final_output['variable_cnt'] = self.variables_count
+        self.final_output[col_const.DATASET_ROW_CNT] = self.rows_count
+        self.final_output[col_const.DATASET_VARIABLE_CNT] = self.variables_count
