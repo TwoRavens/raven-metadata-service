@@ -375,9 +375,10 @@ class JobUtil(object):
         if not success:
             return JsonResponse(get_json_error(data_or_err))
 
-        print(" version object ", data_or_err)
+        # print(" version object ", data_or_err)
         custom_util_update = CustomStatisticsUtil(data_or_err, update_json)
         custom_util_update.update_custom_stats()
+        print("updated custom _ stats", custom_util_update.get_updated_metadata())
         if custom_util_update.has_error:
             return False, custom_util_update.get_error_messages()
 

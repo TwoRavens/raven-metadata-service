@@ -249,13 +249,16 @@ class CustomStatisticsUtil(object):
         """check for id"""
         id_list = list(self.preprocess_json['custom_statistics']) # return list of ids
         if id in id_list:
+            print( ' id %s is there ' %id)
             return True,None
         else: return False,' id %s not found in requested updates' % id
 
     def make_update(self, id, update_json):
         """ make changes to preprocess json"""
         for val in update_json:
-            self.preprocess_json[id][val] = update_json[val]
+            # print(" this is val ", val)
+            # print("this is the updateing object ", self.preprocess_json['custom_statistics'][id])
+            self.preprocess_json['custom_statistics'][id][val] = update_json[val]
 
 
     def basic_update_structure_check(self, update_json):
@@ -264,6 +267,7 @@ class CustomStatisticsUtil(object):
             return False,'id section is not present in request'
         if 'updates' not in update_json:
             return False, 'updates section not present in request'
+
 
         return True,None
 
@@ -304,5 +308,8 @@ class CustomStatisticsUtil(object):
                             message=msg)
 
             self.make_update(update['id'],update['updates'])
-
-        print("updates to custom_statistics : ", self.preprocess_json)
+        self.original_json = OrderedDict(self.preprocess_json)
+        success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,self.is_major_update())
+        if not success:
+            self.add_error_message(updated_or_err)
+        # print("updates to custom_statistics : ", self.preprocess_json)
