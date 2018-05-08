@@ -229,7 +229,7 @@ class CustomStatisticsUtil(object):
                                         self.is_major_update())
 
         if not success:
-            self.add_error_message(new_version_or_err)
+            self.add_error_message(updated_or_err)
 
 
     def add_to_original(self,data):
