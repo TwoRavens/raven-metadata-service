@@ -78,7 +78,7 @@ class FileEncodingTestCase(TestCase):
                       update_const.VALUE_UPDATES_KEY,
                       self.code_book_label)
 
-        print('update_str', update_str)
+        #print('update_str', update_str)
 
         update_json = json.loads(update_str)
 
@@ -190,7 +190,7 @@ class FileEncodingTestCase(TestCase):
         self.delete_metadata_files(metadata_01_obj.orig_metadata.id)
         #metadata_01_obj.metadata_file.delete()
 
-
+    #@skip('skipit')
     def test_20_get_metata(self):
         """Read metadata that has (we think) bytes file encoding"""
         msgt(self.test_20_get_metata.__doc__)
@@ -212,6 +212,7 @@ class FileEncodingTestCase(TestCase):
         str_to_find1 = '"%s": 6610' % col_const.DATASET_ROW_CNT
         self.assertTrue(metadata4.result_obj.find(str_to_find1) > -1)
 
+        return
         # Create a MetadataUpdate and delete its file
         #
         metadata_02_obj = self.get_metadata_obj(self.job_02_binary)
@@ -224,7 +225,7 @@ class FileEncodingTestCase(TestCase):
         self.delete_metadata_files(metadata_02_obj.orig_metadata.id)
 
 
-    @skip('skipit')
+    #@skip('skipit')
     def test_30_multi_version_updates(self):
         """Make sure minor/major versions are correct"""
         msgt(self.test_30_multi_version_updates.__doc__)
@@ -272,7 +273,7 @@ class FileEncodingTestCase(TestCase):
         labl_code_book = 'code book 3'
         metadata_obj = self.get_metadata_obj(\
                                 self.job_01_text,
-                                labl=labl_code_book)
+                                label=labl_code_book)
         new_version = Decimal('3')
         self.assertEqual(metadata_obj.version_number, new_version)
         metadata_info = metadata_obj.get_metadata()
@@ -283,7 +284,7 @@ class FileEncodingTestCase(TestCase):
         #
         metadata_obj = self.get_metadata_obj(\
                                 self.job_01_text,
-                                labl=labl_code_book,
+                                label=labl_code_book,
                                 omit_list=[])
         new_version = Decimal('3.1')
         self.assertEqual(metadata_obj.version_number, new_version)
