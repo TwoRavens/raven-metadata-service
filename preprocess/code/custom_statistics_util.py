@@ -23,10 +23,10 @@ CUSTOM_STATISTICS_VALUE = 'value'
 
 
 class CustomStatisticsUtil(object):
-    def __init__(self,preprocess_json, custom_statistics_json):
+    def __init__(self, preprocess_json, custom_statistics_json):
         """class for the custom statistics process"""
 
-        assert isinstance(preprocess_json, dict), \
+        assert isinstance(preprocess_json, dict),\
             "preprocess_json must be a dict/OrderedDict"
 
         self.preprocess_json = preprocess_json
@@ -62,7 +62,7 @@ class CustomStatisticsUtil(object):
         print("Error messages ", self.error_messages)
         return self.error_messages
 
-    def custom_statistics_create_id(self): # need to think of generating id
+    def custom_statistics_create_id(self):   # need to think of generating id
         if col_const.CUSTOM_KEY not in self.preprocess_json:
             var_id = 'id_000001'
         else:
@@ -91,7 +91,7 @@ class CustomStatisticsUtil(object):
         print("all var ", var_list)
         for var in variables:
             if var not in var_list:
-                self.add_error_message('The variable %s does not exist in the metadata file' % var )
+                self.add_error_message('The variable %s does not exist in the metadata file' % var)
 
         return variables
 
@@ -111,27 +111,27 @@ class CustomStatisticsUtil(object):
         """add or change a custom stat"""
         return True
 
-    def custom_statistics_check_value(self,value):
+    def custom_statistics_check_value(self, value):
         if value is None:
             self.add_error_message(' value is none ')
 
         return value
 
-    def custom_statistics_check_description(self,desc):
+    def custom_statistics_check_description(self, desc):
         if desc is None:
             self.add_error_message(' value is none ')
             return
 
         return desc
 
-    def custom_statistics_check_replication(self,rep):
+    def custom_statistics_check_replication(self, rep):
         if rep is None:
             self.add_error_message(' value is none ')
             return
 
         return rep
 
-    def custom_statistics_check_viewable(self,viewable):
+    def custom_statistics_check_viewable(self, viewable):
         if viewable not in VIEWABLE_VALUES:
             self.add_error_message('Viewable should be either True or False')
             return
@@ -169,17 +169,18 @@ class CustomStatisticsUtil(object):
         var_list = list(self.preprocess_json[CUSTOM_STATISTICS_VARIABLES])
 
         for dat in self.custom_statistics_json:
-            print("dat ",dat)
-            name = self.custom_statistics_check_name(dat[CUSTOM_STATISTICS_NAME]) # required = True
+            print("dat ", dat)
+            name = self.custom_statistics_check_name(dat[CUSTOM_STATISTICS_NAME])   # required = True
             # id = self.custom_statistics_create_id(name)
-            variables = self.custom_statistics_check_variables(var_list,dat[CUSTOM_STATISTICS_VARIABLES]) # required = True
+            variables = self.custom_statistics_check_variables(var_list,
+                                                               dat[CUSTOM_STATISTICS_VARIABLES])   # required = True
 
             if CUSTOM_STATISTICS_IMAGE in dat:
                 image = self.custom_statistics_check_image(dat[CUSTOM_STATISTICS_IMAGE])
             else:
-                image =[]
+                image = []
 
-            value = self.custom_statistics_check_value(dat[CUSTOM_STATISTICS_VALUE]) # required = True
+            value = self.custom_statistics_check_value(dat[CUSTOM_STATISTICS_VALUE])    # required = True
 
             if CUSTOM_STATISTICS_DESCRIPTION in dat:
                 description = self.custom_statistics_check_description(dat[CUSTOM_STATISTICS_DESCRIPTION])
@@ -194,17 +195,17 @@ class CustomStatisticsUtil(object):
             if CUSTOM_STATISTICS_VIEWABLE in dat:
                 viewable = self.custom_statistics_check_viewable(dat[CUSTOM_STATISTICS_VIEWABLE])
             else:
-                viewable = True # default
+                viewable = True  # default
 
             data = {
-                    CUSTOM_STATISTICS_NAME:name,
-                    CUSTOM_STATISTICS_VARIABLES:variables,
-                    CUSTOM_STATISTICS_IMAGE:image,
-                    CUSTOM_STATISTICS_VALUE:value,
-                    CUSTOM_STATISTICS_DESCRIPTION:description,
-                    CUSTOM_STATISTICS_REPLICATION:replication,
+                    CUSTOM_STATISTICS_NAME: name,
+                    CUSTOM_STATISTICS_VARIABLES: variables,
+                    CUSTOM_STATISTICS_IMAGE: image,
+                    CUSTOM_STATISTICS_VALUE: value,
+                    CUSTOM_STATISTICS_DESCRIPTION: description,
+                    CUSTOM_STATISTICS_REPLICATION: replication,
                     "display": {
-                        CUSTOM_STATISTICS_VIEWABLE:viewable
+                        CUSTOM_STATISTICS_VIEWABLE: viewable
                     }
 
                 }
@@ -213,7 +214,7 @@ class CustomStatisticsUtil(object):
 
         self.original_json = OrderedDict(self.preprocess_json)
 
-        success, updated_or_err = VersionNumberUtil.update_version_number(\
+        success, updated_or_err = VersionNumberUtil.update_version_number(
                                         self.original_json,
                                         self.is_major_update())
 
@@ -235,7 +236,7 @@ class CustomStatisticsUtil(object):
 
     def check_ids(self, id_name):
         """check for id"""
-        id_list = list(self.preprocess_json['custom_statistics']) # return list of ids
+        id_list = list(self.preprocess_json['custom_statistics'])    # return list of ids
         if id_name in id_list:
             print(' id %s is there ' % id_name)
             return True, None

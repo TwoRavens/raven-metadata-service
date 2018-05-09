@@ -18,7 +18,7 @@ from col_info_constants import \
 
 class MetadataUpdateUtil(object):
 
-    def __init__(self, preprocess_id,update_json, update_type=None):
+    def __init__(self, preprocess_id, update_json, update_type=None):
         """Initialize with a PreprocessJob id and JSON update snippet"""
         if not update_type:
             update_type = UPDATE_VARIABLE_DISPLAY
@@ -48,7 +48,7 @@ class MetadataUpdateUtil(object):
 
     def get_error_messages(self):
         """Return the list of error messages"""
-        print("Error messages ",self.error_messages)
+        print("Error messages ", self.error_messages)
         return self.error_messages
 
     def get_updated_metadata(self, as_obj=False):
@@ -131,7 +131,7 @@ class MetadataUpdateUtil(object):
         # Record successful update in new MetadataUpdate object
         # ------------------------------------------------------
         update_kwargs = dict(update_json=self.update_json)
-        if metadata_obj.is_original_metadata(): # Is this a PreprocssJob
+        if metadata_obj.is_original_metadata():  # Is this a PreprocssJob
             # this is a PreprocessJob
             update_kwargs['orig_metadata'] = metadata_obj
             update_kwargs['previous_update'] = None
@@ -165,7 +165,7 @@ class MetadataUpdateUtil(object):
         except TypeError as err_obj:
             # delete the MetadataUpdate
             self.metadata_update_obj.delete()
-            self.add_err_msg(\
+            self.add_err_msg(
                 ('Failed to convert to JSON: %s'
                  ' (MetadataUpdateUtil: 118)') % err_obj)
             return False
@@ -174,7 +174,7 @@ class MetadataUpdateUtil(object):
         new_preprocess_data = ContentFile(json_val)
 
         try:
-            self.metadata_update_obj.metadata_file.save(\
+            self.metadata_update_obj.metadata_file.save(
                                     new_name,
                                     new_preprocess_data)
         except Exception as err_obj:

@@ -31,8 +31,10 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
-from col_info_constants import (UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS)
+from col_info_constants import (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS, DELETE_CUSTOM_STATISTICS,
+                                UPDATE_TO_CUSTOM_STATISTICS)
 from np_json_encoder import NumpyJSONEncoder
+
 
 def test_view(request):
     """test view"""
@@ -48,7 +50,7 @@ def view_job_list(request):
                   {'jobs': jobs})
 
 
-def view_job_detail(request,preprocess_id):
+def view_job_detail(request, preprocess_id):
     """List the PreprocessJob and associated MetadataUpdates"""
     success, preprocess_list_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 
@@ -64,7 +66,6 @@ def view_job_detail(request,preprocess_id):
                    'jobs': preprocess_list_or_err,
                    'name': job_name,
                    'preprocess_id': preprocess_id})
-
 
 
 def view_basic_upload_form(request):
@@ -131,8 +132,8 @@ def view_custom_statistics_delete(request):
                         message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
 
-    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, \
-                                               DELETE_CUSTOM_STATISTICS)
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
+                                                DELETE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
         msg = get_json_error(metadata_update_or_err)
         user_msg = dict(success=False,
@@ -337,7 +338,6 @@ def view_retrieve_rows_form(request):
     return JsonResponse(get_json_error(err_msg))
 
 
-
 def view_preprocess_job_status(request, job_id):
     """Show the state of an uploaded preprocess file"""
     try:
@@ -345,7 +345,7 @@ def view_preprocess_job_status(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    #check_job_status(job)
+    #   check_job_status(job)
 
     info_dict = dict(job=job,
                      preprocess_string_err=False)
@@ -364,13 +364,13 @@ def view_preprocess_job_status(request, job_id):
                   info_dict)
 
 
-
 """
 http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
 
-curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api/process-single-file
+curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/
+github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api/process-single-file
 
 curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
 
@@ -392,6 +392,7 @@ r.text
 open(join(os.getcwd(), 'err.html'), 'w').write(r.text)
 
 """
+
 
 def show_job_info(request, job_id):
     """test to show uploaded file info"""
