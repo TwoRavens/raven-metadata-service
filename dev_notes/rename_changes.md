@@ -10,7 +10,7 @@
 
 - `data_source` -> `dataSource`
 
-- `row_cnt` -> `rowCnt`
+- `row_cnt` -> `rowCount`
 
 - `variable_count` -> `variableCount`
 
