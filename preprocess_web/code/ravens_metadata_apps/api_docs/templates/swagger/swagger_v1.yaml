@@ -62,7 +62,7 @@ paths:
           schema:
             type: "object"
             $ref: "#/definitions/UserErrorMessage"
-  /preprocess/api/metadata/{preprocess_id}:
+  /preprocess/api/metadata/{preprocessId}:
     get:
       tags:
        - "preprocess"
@@ -72,7 +72,7 @@ paths:
        - "application/json"
       parameters:
         - in: path
-          name: preprocess_id
+          name: preprocessId
           schema:
             type: integer
             required: true
@@ -134,7 +134,7 @@ paths:
           name: message
           description:  to send
           schema:
-            $ref: "#/definitions/RetrieveRowsInput"
+            $ref: "#/definitions/UpdateInputData"
       responses:
         200:
           description: "successful operation"
