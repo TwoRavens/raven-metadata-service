@@ -30,7 +30,7 @@ class FileEncodingTestCase(TestCase):
 
     def setUp(self):
         """Set up PreprocessJobs"""
-        self.code_book_label = "code book label"
+        self.code_book_description = "code book label"
 
         self.job_01_text = self.get_preprocess_job_with_file()
 
@@ -55,7 +55,7 @@ class FileEncodingTestCase(TestCase):
         """Create a new Metadata object using a PreprocessJob"""
         viewable = kwargs.get('viewable', True)
         omit_list = kwargs.get('omit_list', ['mean', 'median'])
-        label = kwargs.get('label', 'code book label')
+        description = kwargs.get(col_const.DESCRIPTION_LABEL, 'code book label')
 
         update_str = """{
                        "%s": %s,
@@ -67,7 +67,7 @@ class FileEncodingTestCase(TestCase):
                                 "median"
                              ],
                              "%s":{
-                                "label": "%s"
+                                "%s": "%s"
                              }
                           }
                        }
@@ -76,7 +76,8 @@ class FileEncodingTestCase(TestCase):
                       job_obj.id,
                       update_const.VARIABLE_UPDATES,
                       update_const.VALUE_UPDATES_KEY,
-                      self.code_book_label)
+                      col_const.DESCRIPTION_LABEL,
+                      self.code_book_description)
 
         #print('update_str', update_str)
 
@@ -85,7 +86,7 @@ class FileEncodingTestCase(TestCase):
         # viewable for minor update
         update_json[update_const.VARIABLE_UPDATES]['ccode']['viewable'] = viewable
         update_json[update_const.VARIABLE_UPDATES]['ccode']['omit'] = omit_list
-        update_json[update_const.VARIABLE_UPDATES]['ccode'][update_const.VALUE_UPDATES_KEY][col_const.LABEL_FOR_LABEL] = label
+        update_json[update_const.VARIABLE_UPDATES]['ccode'][update_const.VALUE_UPDATES_KEY][col_const.DESCRIPTION_LABEL] = description
 
         update_util = MetadataUpdateUtil(job_obj.id, update_json)
 
@@ -178,8 +179,8 @@ class FileEncodingTestCase(TestCase):
             6610)
 
         self.assertEqual(\
-            metadata_dict[col_const.VARIABLES_SECTION_KEY]['ccode'][col_const.LABEL_FOR_LABEL],
-            self.code_book_label)
+            metadata_dict[col_const.VARIABLES_SECTION_KEY]['ccode'][col_const.DESCRIPTION_LABEL],
+            self.code_book_description)
 
         self.assertEqual(\
             metadata_dict[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY],
@@ -273,7 +274,7 @@ class FileEncodingTestCase(TestCase):
         labl_code_book = 'code book 3'
         metadata_obj = self.get_metadata_obj(\
                                 self.job_01_text,
-                                label=labl_code_book)
+                                description=labl_code_book)
         new_version = Decimal('3')
         self.assertEqual(metadata_obj.version_number, new_version)
         metadata_info = metadata_obj.get_metadata()
@@ -284,7 +285,7 @@ class FileEncodingTestCase(TestCase):
         #
         metadata_obj = self.get_metadata_obj(\
                                 self.job_01_text,
-                                label=labl_code_book,
+                                description=labl_code_book,
                                 omit_list=[])
         new_version = Decimal('3.1')
         self.assertEqual(metadata_obj.version_number, new_version)
@@ -297,7 +298,7 @@ class FileEncodingTestCase(TestCase):
         #
         metadata_obj = self.get_metadata_obj(\
                                 self.job_01_text,
-                                labl='code book 4',
+                                description='code book 4',
                                 omit_list=['median', 'mean'])
         new_version = Decimal(4)
         self.assertEqual(metadata_obj.version_number, new_version)

@@ -172,7 +172,7 @@ class ColumnInfo(object):
         """
         label_list = (
             ('variableName', 'colname'),
-            (col_const.LABEL_FOR_LABEL, 'labl'),
+            (col_const.DESCRIPTION_LABEL, 'labl'),
 
             (col_const.NUMCHAR_LABEL, 'numchar_val'),
             (col_const.NATURE_LABEL, 'nature'),
