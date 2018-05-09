@@ -315,8 +315,8 @@ class JobUtil(object):
     def retrieve_rows_csv(request, job, **kwargs):
         """Return data rows as a .csv file."""
         if request.method == 'POST':
-            start_row = kwargs.get('startRow')
-            num_rows = kwargs.get('numberRows')
+            start_row = kwargs.get(update_const.START_ROW)
+            num_rows = kwargs.get(update_const.NUM_ROWS)
             success, data_frame, err_resp = JobUtil.get_data_frame(\
                                                 job,
                                                 start_row=start_row,

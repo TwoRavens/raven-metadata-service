@@ -64,6 +64,17 @@
 - `start_row` -> `startRow`
 - `number_rows` -> `numberRows`
 
+- Example of a request:
+  - Note: Only `preprocessId` is required.  All other fields are optional
+
+    ```json
+    {
+        "preprocessId": 5,
+        "startRow": 1,
+        "numberRows": 100,
+        "format":"json"
+    }
+    ```
 
 # Variable Update Requests
 
