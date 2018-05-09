@@ -237,12 +237,12 @@ class CustomStatisticsUtil(object):
     def check_ids(self, id_name):
         """check for id"""
         id_list = list(self.preprocess_json['custom_statistics'])    # return list of ids
+        print("id name and id list ", id_name, id_list)
         if id_name in id_list:
             print(' id %s is there ' % id_name)
             return True, None
         else:
-            self.add_error_message(' id %s not found in requested updates' % id_name)
-            return False, self.get_error_messages()
+            return False, ' id %s not found in requested updates' % id_name
 
     def make_update(self, id_name, update_json):
         """ make changes to preprocess json"""
@@ -264,10 +264,10 @@ class CustomStatisticsUtil(object):
             search = 'updates'
         if 'id' not in update_json:
             self.add_error_message('id section is not present in request')
-            return False, self.get_error_messages()
+            return False, 'id section is not present in request'
         if search not in update_json:
             self.add_error_message('%s section not present in request' % search)
-            return False, self.get_error_messages()
+            return False, '%s section not present in request' % search
 
         return True, None
 
@@ -296,14 +296,14 @@ class CustomStatisticsUtil(object):
             check, msg = self.basic_update_structure_check(update, 'updates')
             if check is False:
                 self.add_error_message(msg)
-                return False
 
             id_check, msg = self.check_ids(update['id'])
             if id_check is False:
                 self.add_error_message(msg)
-                return False
 
             self.make_update(update['id'], update['updates'])
+        if self.has_error:
+            return self.get_error_messages()
         self.original_json = OrderedDict(self.preprocess_json)
         success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json, self.is_major_update())
         if not success:
@@ -325,25 +325,28 @@ class CustomStatisticsUtil(object):
 
     def delete_custom_stat(self):
         """ delete fields/custom stats"""
-
+        print("custom json ", self.custom_statistics_json)
         for delete_obj in self.custom_statistics_json:
+            print("this is delete obj ", delete_obj)
             check, msg = self.basic_update_structure_check(delete_obj, 'delete')
             if not check:
                 self.add_error_message(msg)
-                return False
 
             id_check, msg = self.check_ids(delete_obj['id'])
             if id_check is False:
                 self.add_error_message(msg)
+
+            if self.has_error:
                 return False
+            else:
+                self.make_deletion(delete_obj['id'], delete_obj['delete'])
 
-            self.make_deletion(delete_obj['id'], delete_obj['delete'])
-            self.original_json = OrderedDict(self.preprocess_json)
+        self.original_json = OrderedDict(self.preprocess_json)
 
-            print("After deletion ", self.original_json)
+        print("After deletion ", self.original_json)
 
-            success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,
-                                                                              self.is_major_update())
-            if not success:
-                self.add_error_message(updated_or_err)
-                return False
+        success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,
+                                                                          self.is_major_update())
+        if not success:
+            self.add_error_message(updated_or_err)
+            return False

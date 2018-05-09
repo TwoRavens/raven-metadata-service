@@ -363,7 +363,7 @@ class JobUtil(object):
         return True, custom_util.get_updated_metadata()
 
     @staticmethod
-    def update_custom_statistics(job_id,version,update_json):
+    def update_custom_statistics(job_id, version, update_json):
         """ send the updates list in the json to custom statistics"""
 
         success, version_metadata_json_or_err = JobUtil.get_version_metadata_object(job_id,version)

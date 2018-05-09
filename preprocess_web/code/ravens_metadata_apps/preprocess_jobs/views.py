@@ -135,7 +135,7 @@ def view_custom_statistics_delete(request):
     metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
                                                 DELETE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
-        msg = get_json_error(metadata_update_or_err)
+        msg = metadata_update_or_err.get_error_messages()
         user_msg = dict(success=False,
                         message='Custom Statistics',
                         id=job_id,
@@ -147,7 +147,7 @@ def view_custom_statistics_delete(request):
                         id=job_id,
                         data=metadata_update_or_err.get_updated_metadata())
         print("Updated metadata : ", metadata_update_or_err)
-
+    print("usr_msg ",user_msg)
     return JsonResponse(user_msg)
 
 

@@ -40,6 +40,7 @@ PREPROCESS_STATES = (STATE_RECEIVED,
 
 PREPROCESS_CHOICES = [(x, x) for x in PREPROCESS_STATES]
 
+
 class PreprocessJob(TimeStampedModel):
     """Initial, minimal model"""
     name = models.CharField(max_length=255,
