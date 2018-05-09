@@ -118,7 +118,7 @@ def view_api_retrieve_rows(request):
                         errors=frm.errors)
         return JsonResponse(user_msg)
 
-    job_id = frm.cleaned_data['preprocess_id']
+    job_id = frm.cleaned_data[col_const.PREPROCESS_ID]
 
     job = JobUtil.get_completed_preprocess_job(job_id)
 
