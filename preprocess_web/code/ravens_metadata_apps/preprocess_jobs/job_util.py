@@ -2,6 +2,7 @@
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
 
+import col_info_constants as col_const
 from preprocess_runner import KEY_JSONLD_CITATION
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
@@ -183,7 +184,7 @@ class JobUtil(object):
             return False, None, job_data.err_msg
 
         job_metadata = job_data.result_obj  # in this case job_data is an `ok_resp`
-        row_cnt = job_metadata['dataset']['row_cnt']
+        row_cnt = job_metadata[col_const.DATASET_LEVEL_KEY][col_const.DATASET_ROW_CNT]
         print("row_cnt ", row_cnt)
         if start_row > row_cnt:
             err_msg = 'The start row, %s, exceeds the total number of rows, %d.' \
