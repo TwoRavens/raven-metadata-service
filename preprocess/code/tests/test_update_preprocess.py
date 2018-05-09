@@ -46,20 +46,18 @@ class UpdatePreprocessTest(unittest.TestCase):
 
         self.test_050_input = self.get_file_content('test_050_input.json')
 
-    #@skip('skipit')
     def test_010_update(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_010_update.__doc__)
 
         self.assertTrue(col_const.PREPROCESS_ID in self.update_json_01)
 
-
-    #@skip('skipit')
     def test_020_clean_update(self):
         """(20) Test output json"""
         msgt(self.test_020_clean_update.__doc__)
         var_util = VariableDisplayUtil(self.test_input_01, self.update_json_01)
 
+        #print('var_util.error_messages', var_util.error_messages)
         self.assertTrue(var_util.has_error is False)
 
         #print('=' * 40)
@@ -74,23 +72,23 @@ class UpdatePreprocessTest(unittest.TestCase):
         print('new version', version)
         self.assertEqual(version, 2)
 
-    #@skip('skipit')
     def test_040_update(self):
         """(40) test for variables section not found in preprocess file"""
         msgt(self.test_040_update.__doc__)
         preprocess_json = self.test_040_file
 
-        var_display_modify = VariableDisplayUtil(preprocess_json, self.update_json_01)
-        self.assertTrue(var_display_modify.has_error)
+        var_util = VariableDisplayUtil(preprocess_json, self.update_json_01)
+        print('var_util.error_messages', var_util.error_messages)
+
+        self.assertTrue(var_util.has_error)
 
         expected_err = '"%s" section not found' % col_const.VARIABLES_SECTION_KEY
-        var_err = var_display_modify.get_error_messages()[0]
+        var_err = var_util.get_error_messages()[0]
 
         print("Error: ", var_err)
         self.assertTrue(var_err.find(expected_err) > -1)
 
 
-    #@skip('skipit')
     def test_045_update_err(self):
         """(45) test for preprocess id's not matching"""
         msgt(self.test_045_update_err.__doc__)
@@ -108,7 +106,6 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find('does not match') > -1)
 
 
-    #@skip('skipit')
     def test_050_update(self):
         """(50) test for variable display section not found in preprocess file"""
         msgt(self.test_050_update.__doc__)
@@ -122,13 +119,13 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find('not found') > -1)
 
 
-    #@skip('skipit')
     def test_060_update(self):
         """(60) test for variable display section not found in preprocess file"""
         msgt(self.test_060_update.__doc__)
 
-        update = {"preprocess_id": 5}
+        update = {col_const.PREPROCESS_ID: 5}
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
+        #print('var_display_modify.get_error_messages()', var_display_modify.get_error_messages())
         var_err = var_display_modify.get_error_messages()[0]
         self.assertTrue(var_display_modify.has_error)
 
@@ -139,23 +136,22 @@ class UpdatePreprocessTest(unittest.TestCase):
         print("Error: ", var_err)
 
 
-    #@skip('skipit')
     def test_070_update(self):
         """(70) should work w/o the viewable option"""
         msgt(self.test_070_update.__doc__)
         update = {
-            "preprocess_id": 5,
-            "variable_updates": {
-               "cylinders" : {
-                 "omit": ["mean", "median"],
-                 "value_updates": {
-                     "nature": "ordinal"
+            col_const.PREPROCESS_ID: 5,
+            update_const.VARIABLE_UPDATES: {
+                "cylinders" : {
+                     "omit": ["mean", "median"],
+                     update_const.VALUE_UPDATES_KEY: {
+                         "nature": "ordinal"
                  }
                },
                "mpg": {
                  "viewable": False,
                  "omit": [],
-                 "value_updates": {
+                 update_const.VALUE_UPDATES_KEY: {
                  }
                }
             }
@@ -167,30 +163,22 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_util.has_error is False)
 
 
-    #@skip('skipit')
     def test_080_update(self):
         """(80) invalid value in the omit list"""
         msgt(self.test_080_update.__doc__)
 
         bumble_bee = 'bumble-bee'
         update = {
-            "preprocess_id": 5,
-            "variable_updates": {
-               "cylinders" : {
-                 "omit": ["mean", "median", bumble_bee],
-                 "value_updates": {
-                     "numchar": "discrete",
-                     "nature": "ordinal"
-                 }
-               },
-               "mpg": {
+            col_const.PREPROCESS_ID: 5,
+            update_const.VARIABLE_UPDATES: { \
+               "cylinders": { \
+                    "omit": ["mean", "median", bumble_bee],
+                    update_const.VALUE_UPDATES_KEY: { \
+                        "numchar": "discrete",
+                        "nature": "ordinal"}},
+               "mpg": { \
                  "viewable": False,
-                 "label": {
-
-                 }
-               }
-            }
-        }
+                 "label": {}}}}
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
         var_err = var_display_modify.get_error_messages()[0]
@@ -201,32 +189,24 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find(bumble_bee) > -1)
 
 
-    #@skip('skipit')
     def test_090_update(self):
         """(90) test for error in updating non editable data"""
         """In this case, "mean" is not editable"""
         msgt(self.test_090_update.__doc__)
         update_json = {
-            "preprocess_id": 5,
-            "variable_updates": {
-                "cylinders": {
+            col_const.PREPROCESS_ID: 5,
+            update_const.VARIABLE_UPDATES: { \
+                "cylinders": { \
                     "viewable": True,
                     "omit": ["mean", "median"],
-                    "value_updates": {
+                    update_const.VALUE_UPDATES_KEY: { \
                         "numchar": "character",
-                        "nature": "ordinal"
-                    }
-                },
-                "mpg": {
+                        "nature": "ordinal"}},
+                "mpg": { \
                     "viewable": False,
                     "omit": [],
-                    "value_updates": {
-                        "mean": 5
-
-                    }
-                }
-            }
-        }
+                    update_const.VALUE_UPDATES_KEY: {
+                        "mean": 5}}}}
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update_json)
 
@@ -237,22 +217,17 @@ class UpdatePreprocessTest(unittest.TestCase):
         self.assertTrue(var_err.find('is not editable') > -1)
 
 
-    #@skip('skipit')
     def test_100_update(self):
         """(100) Error b/c update has no real changes"""
         msgt(self.test_100_update.__doc__)
         update = {
-            "preprocess_id": 5,
-            "variable_updates": {
-               "cylinders" : {
+            col_const.PREPROCESS_ID: 5,
+            update_const.VARIABLE_UPDATES: { \
+               "cylinders" : { \
                  "viewable": True,
                  "omit": [],
-                 "value_updates": {
-                     "nature": "ordinal"
-                     }
-                }
-            }
-        }
+                 update_const.VALUE_UPDATES_KEY: { \
+                     "nature": "ordinal"}}}}
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
 
@@ -262,7 +237,6 @@ class UpdatePreprocessTest(unittest.TestCase):
         print("Error: ", var_err)
         self.assertTrue(var_err.find('A new version was NOT created') > -1)
 
-    #@skip('skipit')
     def test_110_update(self):
         """(110) Error for invalid nature and numchar values"""
         msgt(self.test_110_update.__doc__)
@@ -271,16 +245,12 @@ class UpdatePreprocessTest(unittest.TestCase):
         invalid_numchar = 'boogie-woogie'
 
         update = {
-            "preprocess_id": 5,
-            "variable_updates": {
-               "cylinders" : {
-                 "value_updates": {
+            col_const.PREPROCESS_ID: 5,
+            update_const.VARIABLE_UPDATES: { \
+               "cylinders" : { \
+                 update_const.VALUE_UPDATES_KEY: { \
                      "nature": invalid_nature,
-                     "numchar": invalid_numchar
-                     }
-                }
-            }
-        }
+                     "numchar": invalid_numchar}}}}
 
         var_display_modify = VariableDisplayUtil(self.test_input_01, update)
 

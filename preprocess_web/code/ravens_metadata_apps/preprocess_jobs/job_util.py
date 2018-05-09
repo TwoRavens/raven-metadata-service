@@ -2,6 +2,8 @@
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
 
+import col_info_constants as col_const
+import update_constants as update_const
 from preprocess_runner import KEY_JSONLD_CITATION
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
@@ -172,6 +174,8 @@ class JobUtil(object):
 
     @staticmethod
     def get_data_frame(job, **kwargs):
+        """Return a dataframe"""
+
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('num_rows')
         # ------------------------------------------
@@ -183,8 +187,8 @@ class JobUtil(object):
             return False, None, job_data.err_msg
 
         job_metadata = job_data.result_obj  # in this case job_data is an `ok_resp`
-        row_cnt = job_metadata['dataset']['row_cnt']
-        print("row_cnt ", row_cnt)
+        row_cnt = job_metadata[col_const.DATASET_LEVEL_KEY][col_const.DATASET_ROW_CNT]
+
         if start_row > row_cnt:
             err_msg = 'The start row, %s, exceeds the total number of rows, %d.' \
                         % (start_row, row_cnt)
@@ -219,7 +223,6 @@ class JobUtil(object):
 
         # To read csv given rows count and start rows
         if job.is_tab_source_file():
-            print('is_tab_source_file')
 
             try:
                 csv_data = pd.read_csv(job.source_file.path,
@@ -238,9 +241,7 @@ class JobUtil(object):
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)
-            print(csv_data)
         elif job.is_csv_source_file():
-            print('is_csv_source_file')
             try:
                 csv_data = pd.read_csv(job.source_file.path,
                                        skiprows=range(1, start_row),
@@ -253,7 +254,6 @@ class JobUtil(object):
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)
-            print(csv_data)
         else:
             return err_resp('File type unknown (not csv or tab)')
 
@@ -265,18 +265,19 @@ class JobUtil(object):
     @staticmethod
     def retrieve_rows_json(job, **kwargs):
         """Open the original data file and return the rows in JSON format (python dict)"""
-        start_row = kwargs.get('start_row')
-        num_rows = kwargs.get('number_rows')
+        start_row = kwargs.get(update_const.START_ROW)
+        num_rows = kwargs.get(update_const.NUM_ROWS)
         input_format = kwargs.get('format')
-        job_id = kwargs.get('preprocess_id')
+        job_id = kwargs.get(col_const.PREPROCESS_ID)
 
         success, data_frame, error_message = JobUtil.get_data_frame(\
-                            job, start_row=start_row, num_rows=num_rows)
+                                            job,
+                                            start_row=start_row,
+                                            num_rows=num_rows)
         if not success:
             return err_resp(error_message)
 
         raw_data = data_frame.to_dict(orient='split')
-        print("num_rows ", num_rows)
         if 'index' in raw_data:
             del raw_data['index']
         # print("raw_data", raw_data)
@@ -287,9 +288,9 @@ class JobUtil(object):
                 "message": 'It worked but with some changes',
                 "modifications": error_message,
                 "attributes": {
-                    "preprocess_id": job_id,
-                    "start_row": start_row,
-                    "num_rows": num_rows,
+                    col_const.PREPROCESS_ID: job_id,
+                    update_const.START_ROW: start_row,
+                    update_const.NUM_ROWS: num_rows,
                     "format": input_format
                 },
                 "data": raw_data,
@@ -300,9 +301,9 @@ class JobUtil(object):
                 "success": True,
                 "message": 'It worked',
                 "attributes": {
-                    "preprocess_id": job_id,
-                    "start_row": start_row,
-                    "num_rows": num_rows,
+                    col_const.PREPROCESS_ID: job_id,
+                    update_const.START_ROW: start_row,
+                    update_const.NUM_ROWS: num_rows,
                     "format": input_format
                 },
                 "data": raw_data,
@@ -314,9 +315,8 @@ class JobUtil(object):
     def retrieve_rows_csv(request, job, **kwargs):
         """Return data rows as a .csv file."""
         if request.method == 'POST':
-            print('kwargs', kwargs)
-            start_row = kwargs.get('start_row')
-            num_rows = kwargs.get('number_rows')
+            start_row = kwargs.get(update_const.START_ROW)
+            num_rows = kwargs.get(update_const.NUM_ROWS)
             success, data_frame, err_resp = JobUtil.get_data_frame(\
                                                 job,
                                                 start_row=start_row,

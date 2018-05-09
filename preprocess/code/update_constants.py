@@ -3,20 +3,20 @@ Will be switched to a JSON schema check
 
 Example update request:
  {
-    "preprocess_id": 5,
-    "variable_updates": {
+    "preprocessId": 5,
+    "variableUpdates": {
        "cylinders" : {
          "viewable": true,
          "omit": ["mean", "median"],
-         "value_updates": {
-             "numchar":"discrete",
+         "valueUpdates": {
+             "numchar":"character",
              "nature": "ordinal"
          }
        },
        "mpg": {
          "viewable": false,
          "omit": [],
-         "value_updates": {
+         "valueUpdates": {
 
          }
        }
@@ -24,8 +24,12 @@ Example update request:
 }
 """
 
-VARIABLE_UPDATES = 'variable_updates'
+VARIABLE_UPDATES = 'variableUpdates'
 
 VIEWABLE_KEY = 'viewable'
 OMIT_KEY = 'omit'
-VALUE_UPDATES_KEY = 'value_updates'
+VALUE_UPDATES_KEY = 'valueUpdates'
+
+# ----------------
+START_ROW = 'startRow'
+NUM_ROWS = 'numberRows'

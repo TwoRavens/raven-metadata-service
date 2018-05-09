@@ -243,8 +243,8 @@ class PreprocessRunner(object):
             info_dict[col_const.DATA_SOURCE_INFO] = self.data_source_info.as_dict()
 
         if self.jsonld_citation:
-            info_dict[col_const.DATA_SOURCE_CITATION] = self.jsonld_citation
-            #info_dict[col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_CITATION] = \
+            info_dict[col_const.DATASET_CITATION] = self.jsonld_citation
+            #info_dict[col_const.DATA_SOURCE_INFO][col_const.DATASET_CITATION] = \
             #    self.jsonld_citation
 
         return info_dict

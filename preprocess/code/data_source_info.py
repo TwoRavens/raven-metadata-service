@@ -11,17 +11,21 @@ class DataSourceInfo(object):
         """Set data source"""
         self.name = name
         self.source_type = source_type
+
         self.source_format = kwargs.get('source_format')
         self.filesize = kwargs.get('filesize')
 
     def as_dict(self):
         """Return DataSourceInfo as an OrderedDict()"""
         data = OrderedDict()
-        data['name'] = self.name
-        data['type'] = self.source_type
-        data['format'] = self.source_format
+        data[col_const.DATA_SOURCE_NAME] = self.name
+        data[col_const.DATA_SOURCE_TYPE] = self.source_type
 
+        # may be None in final output
+        data[col_const.DATA_SOURCE_FORMAT] = self.source_format
+
+        # optional
         if self.filesize:
-            data['filesize'] = self.filesize
+            data[col_const.DATA_SOURCE_FILESIZE] = self.filesize
 
         return data

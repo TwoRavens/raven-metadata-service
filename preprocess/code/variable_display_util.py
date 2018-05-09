@@ -87,6 +87,11 @@ class VariableDisplayUtil(object):
                 (col_const.SELF_SECTION_KEY, col_const.PREPROCESS_ID))
             return False
 
+        #print('-/\\' * 40)
+        #print('update: %s' % self.update_json[col_const.PREPROCESS_ID])
+        #print('preprocess_json: %s' % #self.preprocess_json[col_const.SELF_SECTION_KEY][col_const.PREPROCESS_ID])
+        #print('-/\\' * 40)
+
         if not self.update_json[col_const.PREPROCESS_ID] == \
             self.preprocess_json[col_const.SELF_SECTION_KEY][col_const.PREPROCESS_ID]:
             self.add_error_message(\
@@ -132,7 +137,7 @@ class VariableDisplayUtil(object):
         else:
             variable_updates = None
             self.add_error_message(
-                'variable_updates not found in Update file')
+                '%s not found in Update file' % update_const.VARIABLE_UPDATES)
             return False, self.get_error_messages()
 
 

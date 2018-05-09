@@ -13,6 +13,7 @@ from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
 
+import col_info_constants as col_const
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_metadata_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
@@ -104,7 +105,7 @@ def view_retrieve_rows_form(request):
 
         return JsonResponse(user_msg)
 
-    job_id = frm.cleaned_data['preprocess_id']
+    job_id = frm.cleaned_data[col_const.PREPROCESS_ID]
 
     job = JobUtil.get_completed_preprocess_job(job_id)
     if not job:

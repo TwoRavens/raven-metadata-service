@@ -1,16 +1,35 @@
 '''Contants used in the preprocess logic and metadata output'''
-PREPROCESS_ID = 'preprocess_id'
+PREPROCESS_ID = 'preprocessId'
 
 SELF_SECTION_KEY = 'self'
 VERSION_KEY = 'version'
 VARIABLES_SECTION_KEY = 'variables'
-VARIABLE_DISPLAY_SECTION_KEY = 'variable_display'
+VARIABLE_DISPLAY_SECTION_KEY = 'variableDisplay'
+
+# -----------------------------
+# dataset
+# -----------------------------
 DATASET_LEVEL_KEY = 'dataset'
-DATA_SOURCE_INFO = 'data_source'
-DATA_SOURCE_CITATION = 'citation'
+
+DATASET_ROW_CNT = 'rowCount'
+DATASET_VARIABLE_CNT = 'variableCount'
+DATASET_CITATION = 'citation'
+
+DATA_SOURCE_INFO = 'dataSource'
+DATA_SOURCE_NAME = 'name'
+DATA_SOURCE_TYPE = 'type'
+DATA_SOURCE_FORMAT = 'format'
+DATA_SOURCE_FILESIZE = 'filesize'
+
 
 NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'
+
+# --------------------------------------
+# variable labels for the metadata file
+# --------------------------------------
+DESCRIPTION_LABEL = 'description'
+
 # --------------------------------------
 # numchar constants for metadata file
 # --------------------------------------

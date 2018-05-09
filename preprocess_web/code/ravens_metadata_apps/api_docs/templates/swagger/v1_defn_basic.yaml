@@ -47,7 +47,7 @@
         type: "object"
       variables:
         type: "object"
-      variable_display:
+      variableDisplay:
         type: "object"
   # ------------------------------
   # retrieve row input
@@ -55,14 +55,14 @@
   RetrieveRowsInput:
     type: "object"
     required:
-     - "preprocess_id"
+     - "preprocessId"
     properties:
-      preprocess_id:
+      preprocessId:
         type: "integer"
-      start_row:
+      startRow:
         type: "integer"
         default: 1
-      number_rows:
+      numberRows:
         type: "integer"
         default: 100
       format:
@@ -81,16 +81,16 @@
         type: array
         items:
           type: string
-      value_updates:
+      valueUpdates:
         type: "object"
   UpdateInputData:
     type: "object"
     required:
-     - "preprocess_id"
+     - "preprocessId"
      - "variable_updates"
     properties:
-      preprocess_id:
+      preprocessId:
         type: "integer"
-      variable_updates:
+      variableUpdates:
         type: "object"
-        #$ref: "#/definitions/UpdateSingleVariable"
+        $ref: "#/definitions/UpdateSingleVariable"

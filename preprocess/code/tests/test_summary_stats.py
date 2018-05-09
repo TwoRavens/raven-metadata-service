@@ -6,10 +6,12 @@ import pandas as pd
 PREPROCESS_DIR = dirname(dirname(dirname(abspath(__file__))))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
+
 from msg_util import dashes, msgt, msg
 from type_guess_util import TypeGuessUtil
 from summary_stats_util import SummaryStatsUtil
 from column_info import ColumnInfo
+import col_info_constants as col_const
 from dataset_level_info_util import DatasetLevelInfo
 
 
@@ -74,17 +76,12 @@ class SummaryStatsUtilTest(unittest.TestCase):
     def test_20_non_numeric_val_ok(self):
         """(20) Test the data for non numeric series"""
         msgt(self.test_20_non_numeric_val_ok.__doc__)
-        self.col_info = ColumnInfo('country')
-        print("df ", self.df_01['country'])
-        print("col_info", self.col_info.colname)
-        TypeGuessUtil(pd.Series(self.df_01['country']), self.col_info)
-        SummaryStatsUtil((self.df_01['country']), self.col_info)
-        # Pull the ColumnInfo for Ranking
-        col_info = self.col_info
-        #col_series = self.df_01[col_info.colname]
 
-        # Calculate the stats
-        # SummaryStatsUtil(col_series, col_info)
+        col_info = ColumnInfo('country')
+        print("df ", self.df_01['country'])
+        print("col_info", col_info.colname)
+        TypeGuessUtil(pd.Series(self.df_01['country']), col_info)
+        SummaryStatsUtil((self.df_01['country']), col_info)
 
         col_info.print_values()
         dashes()
@@ -128,9 +125,10 @@ class SummaryStatsUtilTest(unittest.TestCase):
     def test_30_non_numeric_val_ok(self):
         """(30) Test for the row and column count"""
         msgt(self.test_30_non_numeric_val_ok.__doc__)
-        sample ={'row_cnt': 12, 'variable_cnt': 10}
+        sample = {col_const.DATASET_ROW_CNT: 12,
+                  col_const.DATASET_VARIABLE_CNT: 10}
         # print('sample : ', sample)
-        self.assertEqual(self.dataset_level_info,sample)
+        self.assertEqual(self.dataset_level_info, sample)
 
     def test_40_non_numeric_val_ok(self):
         """(40) Test for the row and column count"""
@@ -139,7 +137,7 @@ class SummaryStatsUtilTest(unittest.TestCase):
         has_error = self.emptydataerrors.has_error
 
         self.assertTrue(has_error)
-        print("Errors : ",errors)
+        print("Errors : ", errors)
 
 if __name__ == '__main__':
     unittest.main()

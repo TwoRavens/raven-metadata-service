@@ -33,6 +33,8 @@ class ColumnInfo(object):
         # more general
         # -------------
         self.colname = colname
+        self.labl = None
+
         self.valid = None
         self.invalid = None
 
@@ -79,7 +81,6 @@ class ColumnInfo(object):
         self.cdf_plottype = None
         self.cdf_plotx = None
         self.cdf_ploty = None
-        self.labl = None
 
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
@@ -156,10 +157,12 @@ class ColumnInfo(object):
                 if not info[0].startswith('default')}
 
 
-
     @staticmethod
     def get_variable_labels():
-        """Set labels for variable output.  List of (label, variable name)
+        """Set labels for variable output.  List of:
+
+         (label, variable name)
+
         Example of iterating through to show labels and values:
             ```
             for label, varname in self.get_variable_labels():
@@ -168,18 +171,19 @@ class ColumnInfo(object):
             ```
         """
         label_list = (
-            ('varnameSumStat', 'colname'),
-            ('labl', 'labl'),
+            ('variableName', 'colname'),
+            (col_const.DESCRIPTION_LABEL, 'labl'),
 
             (col_const.NUMCHAR_LABEL, 'numchar_val'),
             (col_const.NATURE_LABEL, 'nature'),
+
             ('binary', 'binary'),
             ('interval', 'default_interval'),
             ('time', 'time_val'),
 
-            ('invalid', 'invalid'),
-            ('valid', 'valid'),
-            ('uniques', 'uniques'),
+            ('invalidCount', 'invalid'),
+            ('validCount', 'valid'),
+            ('uniqueCount', 'uniques'),
 
             ('median', 'median'),
             ('mean', 'mean'),
@@ -187,32 +191,28 @@ class ColumnInfo(object):
             ('min', 'min'),
 
             ('mode', 'mode'),
-            ('freqmode', 'freqmode'),
-            ('fewest', 'fewest'),
-            ('freqfewest', 'freqfewest'),
-            ('mid', 'mid'),
-            ('freqmid', 'freqmid'),
+            ('modeFreq', 'freqmode'),
+            ('fewestValues ', 'fewest'),
+            ('fewestFreq', 'freqfewest'),
+            ('midpoint', 'mid'),
+            ('midpointFreq', 'freqmid'),
 
-            ('sd', 'std_dev'),
-            ('herfindahl', 'herfindahl'),
+            ('stdDev', 'std_dev'),
+            ('herfindahlIndex', 'herfindahl'),
 
-            ('plotvalues', 'plot_values'),
-            ('plottype', 'plot_type'),
-            ('plotx', 'plotx'),
-            ('ploty', 'ploty'),
-            ('cdfplottype', 'cdf_plottype'),
-            ('cdfplotx', 'cdf_plotx'),
-            ('cdfploty', 'cdf_ploty'),
+            ('plotValues', 'plot_values'),
+            ('plotType', 'plot_type'),
+            ('plotX', 'plotx'),
+            ('plotY', 'ploty'),
+            ('cdfPlotType', 'cdf_plottype'),
+            ('cdfPlotX', 'cdf_plotx'),
+            ('cdfPlotY', 'cdf_ploty'),
 
-            ('defaultInterval', 'default_interval'),
-            ('defaultNumchar', 'numchar_val'),
-            ('defaultNature', 'nature'),
-            ('defaultBinary', 'binary'),
-            ('defaultTime', 'time_val'),
             )
         # print("-"*20)
         # print(label_list)
         return label_list
+
 
     def print_values(self):
         """print to screen"""
