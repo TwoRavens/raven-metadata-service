@@ -162,7 +162,6 @@ def api_update_metadata(request):
     if update_util.has_error:
         return JsonResponse(get_json_error(update_util))
 
-
     result = get_json_success('Success!',
                               data=update_util.get_updated_metadata())
 

@@ -212,6 +212,7 @@ def view_custom_statistics_update(request):
 
     return JsonResponse(user_msg)
 
+
 @csrf_exempt
 def view_custom_statistics_form(request):
     """ HTML form to get the custom statistics"""
@@ -256,8 +257,9 @@ def view_custom_statistics_form(request):
         # Make sure there's a preprocess_id
         #
     job_id = update_json_or_err['preprocess_id']
+    if job_id is None:
+        return JsonResponse('preprocess Id is required')
     custom_statistics_json = []
-    # form_data = json.loads(update_json_or_err)
     for data in update_json_or_err['custom_statistics']:
         frm = CustomStatisticsForm(data)
 
@@ -278,6 +280,7 @@ def view_custom_statistics_form(request):
     metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json, \
                                                 UPDATE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
+        print("got error")
         msg = get_json_error(metadata_update_or_err)
         user_msg = dict(success=False,
                         message='Custom Statistics',
@@ -289,10 +292,11 @@ def view_custom_statistics_form(request):
                         message='Custom Statistics',
                         id=job_id,
                         data=metadata_update_or_err.get_updated_metadata())
-        print("Updated metadata : ",metadata_update_or_err)
+        print("Updated metadata : ", metadata_update_or_err)
 
     return JsonResponse(user_msg)
     # ------------------------
+
 
 def view_retrieve_rows_form(request):
     """HTML form to retrieve rows from a preprocess file"""

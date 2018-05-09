@@ -23,7 +23,6 @@ INPUT_VIEWABLE_TYPES = (VIEWABLE_TRUE,VIEWABLE_FALSE)
 VIEWABLE_CHOICES = [(x,x) for x in INPUT_VIEWABLE_TYPES]
 
 
-
 class RetrieveRowsForm(forms.Form):
 
     preprocess_id = forms.IntegerField()
@@ -34,7 +33,6 @@ class RetrieveRowsForm(forms.Form):
     format = forms.ChoiceField(choices=FORMAT_CHOICES,
                                initial=FORMAT_JSON,
                                required=False)
-
 
     def clean_preprocess_id(self):
         """Check if PreprocessJob exists"""
@@ -79,7 +77,6 @@ class RetrieveRowsForm(forms.Form):
 
         return number_rows
 
-
     def clean_format(self):
         """ check if the format is valid"""
         input_format = self.cleaned_data.get('format')
@@ -121,10 +118,9 @@ class CustomStatisticsForm(forms.Form):
     description = forms.CharField(required=False, label='Description')
     replication = forms.CharField(required= False,label='replication')
     viewable = forms.NullBooleanField(required=False,initial=False)
-    #omit = forms.ChoiceField(choices=OMIT_CHOICES,
+    # omit = forms.ChoiceField(choices=OMIT_CHOICES,
     #                           initial=OMIT_FALSE,
     #                           required=True)
-
 
     # def clean_preprocess_id(self):
     #     """Check if PreprocessJob exists"""
@@ -178,10 +174,10 @@ class CustomStatisticsForm(forms.Form):
         if not input_viewable:
             input_viewable = False
 
-        #if not input_omit:
+        # if not input_omit:
         #    input_omit = OMIT_FALSE
 
-        #if input_omit not in INPUT_OMIT_TYPES:
+        # if input_omit not in INPUT_OMIT_TYPES:
         #    # errors.append(forms.ValidationError)
         #    raise forms.ValidationError(
         #        _('The omit should be either True or False.'))

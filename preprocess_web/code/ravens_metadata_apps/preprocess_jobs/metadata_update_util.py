@@ -15,6 +15,7 @@ from np_json_encoder import NumpyJSONEncoder
 from col_info_constants import \
     (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS)
 
+
 class MetadataUpdateUtil(object):
 
     def __init__(self, preprocess_id,update_json, update_type=None):
@@ -26,7 +27,6 @@ class MetadataUpdateUtil(object):
         self.update_json = update_json
         self.update_type = update_type
 
-
         # to be created...
         self.metadata_update_obj = None
 
@@ -35,7 +35,6 @@ class MetadataUpdateUtil(object):
         self.error_messages = []
 
         self.make_update()
-
 
     def add_err_msg(self, err_msg):
         """Create an error message and flip the 'has_error' flag"""
@@ -60,7 +59,7 @@ class MetadataUpdateUtil(object):
         success, metadata = self.metadata_update_obj.get_metadata()
         assert success is True, \
             "MetadataUpdate object with id %s should have valid metadata" % \
-            (self.metadata_update_obj.id)
+            self.metadata_update_obj.id
 
         if as_obj:
             return self.metadata_update_obj
@@ -112,19 +111,17 @@ class MetadataUpdateUtil(object):
             self.add_err_msg(latest_metadata_or_err)
             return False
 
-
-
-        # Make the update!!
+        #  Make the update!!
         #
-        #success, update_or_errors = JobUtil.update_preprocess_metadata(\
+        # success, update_or_errors = JobUtil.update_preprocess_metadata(\
         #                                    latest_metadata_or_err,
         #                                    self.update_json)
 
-
-        #var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
+        # var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
 
         var_util = self.get_update_util(latest_metadata_or_err)
         if var_util is None:
+            self.add_err_msg(var_util.get_error_messages())
             return False
         elif var_util.has_error:
             self.add_err_msg(var_util.get_error_messages())
