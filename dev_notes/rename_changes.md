@@ -18,6 +18,8 @@
 
 - `varnameSumStat` -> `variableName`
 
+- `labl` -> `description`
+
 - `invalid` -> `invalidCount`
 
 - `valid` -> `validCount`

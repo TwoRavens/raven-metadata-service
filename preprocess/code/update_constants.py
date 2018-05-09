@@ -3,20 +3,20 @@ Will be switched to a JSON schema check
 
 Example update request:
  {
-    "preprocess_id": 5,
-    "variable_updates": {
+    "preprocessId": 5,
+    "variableUpdates": {
        "cylinders" : {
          "viewable": true,
          "omit": ["mean", "median"],
-         "value_updates": {
-             "numchar":"discrete",
+         "valueUpdates": {
+             "numchar":"character",
              "nature": "ordinal"
          }
        },
        "mpg": {
          "viewable": false,
          "omit": [],
-         "value_updates": {
+         "valueUpdates": {
 
          }
        }

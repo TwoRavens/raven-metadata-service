@@ -28,7 +28,7 @@ NOT_APPLICABLE = 'NA'
 # --------------------------------------
 # variable labels for the metadata file
 # --------------------------------------
-LABEL_FOR_LABEL = 'label'
+LABEL_FOR_LABEL = 'description'
 
 # --------------------------------------
 # numchar constants for metadata file
