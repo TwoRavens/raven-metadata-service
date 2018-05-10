@@ -71,9 +71,10 @@ class JobUtil(object):
             return err_resp('version cannot be None')
 
         update_object = MetadataUpdate.objects.filter(\
-                                 orig_metadata=job_id,
-                                 version_number=version
-                                ).first()
+                                  orig_metadata=job_id,
+                                  version_number=version\
+                                  ).first()
+
         # print("here is the data",update_object.name.version_number)
         if update_object:
             return ok_resp(update_object)
@@ -181,6 +182,8 @@ class JobUtil(object):
 
         start_row = kwargs.get('start_row')
         num_rows = kwargs.get('num_rows')
+        #change_nas_to_null = kwargs.get('change_nas_to_null', True)
+
         # ------------------------------------------
         # Check the errors
         # ------------------------------------------
@@ -260,9 +263,6 @@ class JobUtil(object):
         else:
             return err_resp('File type unknown (not csv or tab)')
 
-        print("error message", error_message)
-        #data_frame = pd.DataFrame(csv_data)
-
         return True, csv_data, error_message
 
     @staticmethod
@@ -273,6 +273,8 @@ class JobUtil(object):
         input_format = kwargs.get('format')
         job_id = kwargs.get(col_const.PREPROCESS_ID)
 
+        # Retrieve the dataframe
+        #
         success, data_frame, error_message = JobUtil.get_data_frame(\
                                             job,
                                             start_row=start_row,
@@ -281,9 +283,17 @@ class JobUtil(object):
             return err_resp(error_message)
 
         raw_data = data_frame.to_dict(orient='split')
-        if 'index' in raw_data:
-            del raw_data['index']
-        # print("raw_data", raw_data)
+
+        info_result = remove_nan_from_dict(raw_data)
+        if not info_result.success:
+            return err_resp(info_result.err_msg)
+
+        formatted_json_data = info_result.result_obj
+
+        # Remove the index
+        #
+        if 'index' in formatted_json_data:
+            del formatted_json_data['index']
 
         if len(error_message) > 0:
             output = {
@@ -296,7 +306,7 @@ class JobUtil(object):
                     update_const.NUM_ROWS: num_rows,
                     "format": input_format
                 },
-                "data": raw_data,
+                "data": formatted_json_data,
             }
 
         else:
@@ -309,7 +319,7 @@ class JobUtil(object):
                     update_const.NUM_ROWS: num_rows,
                     "format": input_format
                 },
-                "data": raw_data,
+                "data": formatted_json_data,
             }
 
         return ok_resp(output)

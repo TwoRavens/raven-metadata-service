@@ -9,7 +9,7 @@ from os.path import splitext
 from django.core import files
 from django.conf import settings
 from file_format_constants import TAB_FILE_EXT
-from ravens_metadata_apps.utils.basic_err_check import BasicErrCheck
+from basic_utils.basic_err_check import BasicErrCheck
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob)
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase

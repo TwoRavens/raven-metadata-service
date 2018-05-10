@@ -4,9 +4,10 @@ from pandas.api.types import is_float_dtype, is_numeric_dtype
 
 import col_info_constants as col_const
 from column_info import ColumnInfo
+from basic_utils.basic_err_check import BasicErrCheck
 
 
-class TypeGuessUtil(object):
+class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
     def __init__(self, col_series, col_info):
         """Init with a pandas dataframe"""
@@ -53,7 +54,13 @@ class TypeGuessUtil(object):
 
         else:
 
-            series_info = self.col_series.astype('int')
+            try:
+                series_info = self.col_series.astype('int')
+            except ValueError as err_obj:
+                user_msg = ('Type guess error when converting'
+                            ' to int: %s') % err_obj
+                self.add_err_msg(user_msg)
+                return
 
             if any(series_info.isnull()):
                 # CANNOT REACH HERE B/C NULLS ARE DROPPED!
