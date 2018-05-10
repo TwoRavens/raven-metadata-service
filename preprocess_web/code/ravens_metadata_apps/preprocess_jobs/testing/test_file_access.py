@@ -102,7 +102,7 @@ class FileEncodingTestCase(TestCase):
         ye_job = PreprocessJob(**kwargs)
         ye_job.save()
 
-        preprocess_string = render_to_string(\
+        preprocess_string = render_to_string(
                                 'preprocess/test_files/fearon_laitin.json',
                                 dict(preprocess_id=ye_job.id))
 
