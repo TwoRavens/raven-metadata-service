@@ -22,21 +22,28 @@ VIEWABLE_FALSE = False
 INPUT_VIEWABLE_TYPES = (VIEWABLE_TRUE,VIEWABLE_FALSE)
 VIEWABLE_CHOICES = [(x,x) for x in INPUT_VIEWABLE_TYPES]
 
+DEFAULT_START_ROW = 1
+DEFAULT_NUM_ROWS = 100
 
 class RetrieveRowsForm(forms.Form):
+    preprocessId = forms.IntegerField(label="Preprocess Id")
 
-    preprocess_id = forms.IntegerField()
-    start_row = forms.IntegerField(required=False,
-                                   initial=1)
-    number_rows = forms.IntegerField(required=False,
-                                     initial=100)
+    startRow = forms.IntegerField(label="Start row",
+                                  required=False,
+                                  initial=DEFAULT_START_ROW)
+
+    numberRows = forms.IntegerField(label="Number of rows",
+                                    required=False,
+                                    initial=DEFAULT_NUM_ROWS)
+
     format = forms.ChoiceField(choices=FORMAT_CHOICES,
                                initial=FORMAT_JSON,
                                required=False)
 
-    def clean_preprocess_id(self):
+
+    def clean_preprocessId(self):
         """Check if PreprocessJob exists"""
-        preprocess_id = self.cleaned_data.get('preprocess_id')
+        preprocess_id = self.cleaned_data.get('preprocessId')
         try:
             job = PreprocessJob.objects.get(id=preprocess_id)
         except PreprocessJob.DoesNotExist:
@@ -46,9 +53,9 @@ class RetrieveRowsForm(forms.Form):
 
         return preprocess_id
 
-    def clean_start_row(self):
+    def clean_startRow(self):
         """Check if start row is valid"""
-        start_row = self.cleaned_data.get('start_row')
+        start_row = self.cleaned_data.get('startRow')
         if start_row is None:
             start_row = 1
 
@@ -59,12 +66,12 @@ class RetrieveRowsForm(forms.Form):
 
         return start_row
 
-    def clean_number_rows(self):
+    def clean_numberRows(self):
         """Check if number_rows is valid"""
-        number_rows = self.cleaned_data.get('number_rows')
+        number_rows = self.cleaned_data.get('numberRows')
 
         if number_rows is None:
-            number_rows = 100   # later on it would be the maximum number of rows in the source file
+            number_rows = DEFAULT_NUM_ROWS
 
         if number_rows < 1:
             # errors.append(forms.ValidationError)
@@ -76,6 +83,7 @@ class RetrieveRowsForm(forms.Form):
                 settings.MAX_SOURCE_FILE_ROWS_TO_RETRIEVE)
 
         return number_rows
+
 
     def clean_format(self):
         """ check if the format is valid"""
@@ -90,7 +98,6 @@ class RetrieveRowsForm(forms.Form):
                 _('The format should be either json or csv.'))
 
         return input_format
-
 
 class CustomStatisticsForm(forms.Form):
     """ this class takes the custom statistics update form:

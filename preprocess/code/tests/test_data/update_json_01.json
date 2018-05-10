@@ -1,18 +1,18 @@
  {
-    "preprocess_id": 5,
-    "variable_updates": {
+    "preprocessId": 5,
+    "variableUpdates": {
        "cylinders" : {
          "viewable": true,
          "omit": ["mean", "median"],
-         "value_updates": {
+         "valueUpdates": {
              "numchar":"numeric",
              "nature": "interval"
          }
        },
        "mpg": {
          "viewable": false,
-         "value_updates": {
-           "labl": "Miles Per Gallon"
+         "valueUpdates": {
+           "description": "Miles Per Gallon"
          }
        },
        "light": {

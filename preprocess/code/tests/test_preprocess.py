@@ -74,11 +74,20 @@ class PreprocessTest(unittest.TestCase):
 
         print('result_dict', result_dict)
 
-        self.assertEqual(result_dict['dataset']['row_cnt'], 4)
-        self.assertEqual(result_dict['dataset']['variable_cnt'], 3)
-        self.assertEqual(result_dict['dataset']['data_source']['type'], SOURCE_TYPE_FILE)
-        self.assertEqual(result_dict['dataset']['data_source']['format'], get_mime_type(CSV_FILE_EXT))
-        self.assertEqual(result_dict['dataset']['data_source']['name'], 'editor_test.csv')
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATASET_ROW_CNT], 4)
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATASET_VARIABLE_CNT], 3)
+
+        self.assertEqual(\
+            result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_TYPE],
+            SOURCE_TYPE_FILE)
+
+        self.assertEqual(\
+            result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_FORMAT],
+            get_mime_type(CSV_FILE_EXT))
+
+        self.assertEqual(\
+            result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_NAME],
+            'editor_test.csv')
 
 
     #@skip('skipit')
@@ -96,11 +105,11 @@ class PreprocessTest(unittest.TestCase):
 
         print('result_dict', result_dict)
 
-        self.assertEqual(result_dict['dataset']['row_cnt'], 4)
-        self.assertEqual(result_dict['dataset']['variable_cnt'], 3)
-        self.assertEqual(result_dict['dataset']['data_source']['type'], SOURCE_TYPE_FILE)
-        self.assertEqual(result_dict['dataset']['data_source']['format'], get_mime_type(TAB_FILE_EXT))
-        self.assertEqual(result_dict['dataset']['data_source']['name'], 'editor_test.tab')
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATASET_ROW_CNT], 4)
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATASET_VARIABLE_CNT], 3)
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_TYPE], SOURCE_TYPE_FILE)
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_FORMAT], get_mime_type(TAB_FILE_EXT))
+        self.assertEqual(result_dict[col_const.DATASET_LEVEL_KEY][col_const.DATA_SOURCE_INFO][col_const.DATA_SOURCE_NAME], 'editor_test.tab')
 
 
 if __name__ == '__main__':
