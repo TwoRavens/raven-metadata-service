@@ -1,0 +1,49 @@
+{
+   "type":"object",
+   "properties":{
+      "description":{
+         "type":"string"
+      },
+      "unitOfAnalysis":{
+         "type":"string"
+      },
+      "structure":{
+         "type":"string",
+         "enum": [
+              "wide",
+              "long"
+            ]
+      },
+      "rowCount":{
+         "type":"integer"
+      },
+      "variableCount":{
+         "type":"integer"
+      },
+      "dataSource": {
+        "type":"object",
+        "properties":{
+           "name":{
+              "type":"string"
+           },
+           "type":{
+              "type":"string"
+           },
+           "format":{
+              "type":"string"
+           },
+           "filesize":{
+              "type":"integer"
+           }
+        },
+        "required": ["name", "type"]  
+      }
+    },
+   "required":[
+      "description",
+      "unitOfAnalysis",
+      "structure",
+      "rowCount",
+      "variableCount"
+   ]
+}
