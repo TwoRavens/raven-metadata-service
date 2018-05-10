@@ -18,9 +18,9 @@ def get_file_as_dict(fname):
     return info_dict
 
 
-def run_it():
+def run_it(schema_fname, data_fname):
 
-    the_schema = get_file_as_dict('dataset_schema.json')
+    the_schema = get_file_as_dict(schema_fname)
     #print(json.dumps(the_schema, indent=4))
     try:
         Draft4Validator(the_schema)
@@ -29,7 +29,7 @@ def run_it():
         print('Schema Error. full message: ', err_obj)
         return
 
-    the_data = get_file_as_dict('dataset_data_02.json')
+    the_data = get_file_as_dict(data_fname)
     #print(json.dumps(the_data, indent=4))
     try:
         Draft4Validator(the_schema).validate(the_data)
@@ -40,5 +40,8 @@ def run_it():
 
     print('looking good!')
 
+
 if __name__ == '__main__':
-    run_it()
+    #run_it('dataset_schema.json', 'dataset_data_02.json')
+    #run_it('variable_schema.json', 'variable_data_01.json')
+    run_it('variable_schema_03.json', 'variable_data_02.json')
