@@ -1,4 +1,5 @@
 import json
+from collections import OrderedDict
 from np_json_encoder import NumpyJSONEncoder
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
@@ -23,3 +24,33 @@ def json_dump(data_dict, indent=None):
                     ' (json_util)\n\n%s') % \
                     (err_obj, str(data_dict)[:200])
         return err_resp(user_msg)
+
+
+def remove_nan_from_dict(info_dict):
+    """For dict (or OrderedDict) objects, that contain np.Nan,
+    change np.Nan to None
+    reference: https://stackoverflow.com/questions/35297868/how-could-i-fix-the-unquoted-nan-value-in-json-using-python
+    """
+    if not isinstance(info_dict, dict):
+        user_msg = ('"info_dict" must be a dict object'
+                    ' (which includes OrderedDict)')
+        return err_resp(user_msg)
+
+    # 1 - Dump the info_dict to a string
+    #
+    json_info = json_dump(info_dict)
+    if not json_info.success:
+        return err_resp(json_info.err_msg)
+
+
+    # 2- Within the string, replace 'NaN' with 'null'
+    #
+    json_str = json_info.result_obj.replace('NaN', 'null')
+
+
+    # 3 - Load the string back to a dict and return it
+    #
+    formatted_json_data = json.loads(json_str,
+                                     object_pairs_hook=OrderedDict)
+
+    return ok_resp(formatted_json_data)
