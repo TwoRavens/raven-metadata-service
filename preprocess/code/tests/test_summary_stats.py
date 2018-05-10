@@ -1,5 +1,6 @@
 """Unit testing for summary_stats_util using sample data"""
 import unittest
+from collections import OrderedDict
 from os.path import abspath, dirname, join
 import pandas as pd
 
@@ -125,8 +126,13 @@ class SummaryStatsUtilTest(unittest.TestCase):
     def test_30_non_numeric_val_ok(self):
         """(30) Test for the row and column count"""
         msgt(self.test_30_non_numeric_val_ok.__doc__)
-        sample = {col_const.DATASET_ROW_CNT: 12,
-                  col_const.DATASET_VARIABLE_CNT: 10}
+        sample = OrderedDict()
+        sample[col_const.DATASET_DESCRIPTION] = ''
+        sample[col_const.DATASET_UNIT_OF_ANALYSIS] = ''
+        sample[col_const.DATASET_STRUCTURE] = col_const.STRUCTURE_LONG
+        sample[col_const.DATASET_ROW_CNT] = 12
+        sample[col_const.DATASET_VARIABLE_CNT] = 10
+
         # print('sample : ', sample)
         self.assertEqual(self.dataset_level_info, sample)
 
