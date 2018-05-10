@@ -124,14 +124,12 @@ def view_api_retrieve_rows(request):
 
     input_format = frm.cleaned_data.get('format')
 
-    print('frm.cleaned_data', frm.cleaned_data)
-
     if input_format == FORMAT_JSON:
         result = JobUtil.retrieve_rows_json(job, **frm.cleaned_data)
         if not result.success:
             return JsonResponse(get_json_error(result.err_msg))
 
-        return JsonResponse(result.result_obj)
+        return JsonResponse(result.result_obj, encoder=NumpyJSONEncoder)
 
     elif input_format == FORMAT_CSV:
         return JobUtil.retrieve_rows_csv(request, job, **frm.cleaned_data)
