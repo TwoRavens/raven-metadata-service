@@ -20,6 +20,9 @@ CUSTOM_STATISTICS_DESCRIPTION = 'description'
 CUSTOM_STATISTICS_REPLICATION = 'replication'
 CUSTOM_STATISTICS_VIEWABLE = 'viewable'
 CUSTOM_STATISTICS_VALUE = 'value'
+CUSTOM_STATISTICS_DELETE = 'delete'
+CUSTOM_STATISTICS_UPDATE = 'updates'
+CUSTOM_STATISTICS_ID = 'id'
 
 
 class CustomStatisticsUtil(object):
@@ -66,7 +69,7 @@ class CustomStatisticsUtil(object):
         if col_const.CUSTOM_KEY not in self.preprocess_json:
             var_id = 'id_000001'
         else:
-            ids = list(self.preprocess_json['custom_statistics'])
+            ids = list(self.preprocess_json[col_const.CUSTOM_KEY])
             ids.sort()
             latest_id = ids[-1]
             _unused, idnum = latest_id.split('_')
@@ -236,10 +239,10 @@ class CustomStatisticsUtil(object):
 
     def check_ids(self, id_name):
         """check for id"""
-        id_list = list(self.preprocess_json['custom_statistics'])    # return list of ids
-        print("id name and id list ", id_name, id_list)
+        id_list = list(self.preprocess_json[col_const.CUSTOM_KEY])    # return list of ids
+        # print("id name and id list ", id_name, id_list)
         if id_name in id_list:
-            print(' id %s is there ' % id_name)
+            # print(' id %s is there ' % id_name)
             return True, None
         else:
             return False, ' id %s not found in requested updates' % id_name
@@ -250,19 +253,19 @@ class CustomStatisticsUtil(object):
             # print(" this is val ", val)
             # print("this is the updateing object ", self.preprocess_json['custom_statistics'][id])
             try:
-                self.preprocess_json['custom_statistics'][id_name][val] = update_json[val]
+                self.preprocess_json[col_const.CUSTOM_KEY][id_name][val] = update_json[val]
             except KeyError:
-                self.add_error_message('%s not present in the file ' % val)
+                self.add_error_message('%s not present in the preprocess file ' % val)
                 return False
 
     def basic_update_structure_check(self, update_json, type_input):
         """ check if all updates has update and ids"""
         search = None
-        if type_input == 'delete':
-            search = 'delete'
-        elif type_input == 'updates':
-            search = 'updates'
-        if 'id' not in update_json:
+        if type_input == CUSTOM_STATISTICS_DELETE:
+            search = CUSTOM_STATISTICS_DELETE
+        elif type_input == CUSTOM_STATISTICS_UPDATE:
+            search = CUSTOM_STATISTICS_UPDATE
+        if CUSTOM_STATISTICS_ID not in update_json:
             self.add_error_message('id section is not present in request')
             return False, 'id section is not present in request'
         if search not in update_json:
@@ -293,15 +296,15 @@ class CustomStatisticsUtil(object):
         """
         # going through each update
         for update in self.custom_statistics_json:
-            check, msg = self.basic_update_structure_check(update, 'updates')
+            check, msg = self.basic_update_structure_check(update, CUSTOM_STATISTICS_UPDATE)
             if check is False:
                 self.add_error_message(msg)
 
-            id_check, msg = self.check_ids(update['id'])
+            id_check, msg = self.check_ids(update[CUSTOM_STATISTICS_ID])
             if id_check is False:
                 self.add_error_message(msg)
 
-            self.make_update(update['id'], update['updates'])
+            self.make_update(update[CUSTOM_STATISTICS_ID], update[CUSTOM_STATISTICS_UPDATE])
         if self.has_error:
             return self.get_error_messages()
         self.original_json = OrderedDict(self.preprocess_json)
@@ -313,33 +316,33 @@ class CustomStatisticsUtil(object):
 
     def make_deletion(self, id_num, update):
         """ here we delete"""
-        if 'id' in update:
-            del self.preprocess_json['custom_statistics'][id_num]
+        if CUSTOM_STATISTICS_ID in update:
+            del self.preprocess_json[col_const.CUSTOM_KEY][id_num]
         else:
             for val in update:
                 try:
-                    del self.preprocess_json['custom_statistics'][id_num][val]
+                    del self.preprocess_json[col_const.CUSTOM_KEY][id_num][val]
                 except KeyError:
                     self.add_error_message('%s not present in file' % val)
                     return False
 
     def delete_custom_stat(self):
         """ delete fields/custom stats"""
-        print("custom json ", self.custom_statistics_json)
+        # print("custom json ", self.custom_statistics_json)
         for delete_obj in self.custom_statistics_json:
-            print("this is delete obj ", delete_obj)
-            check, msg = self.basic_update_structure_check(delete_obj, 'delete')
+            # print("this is delete obj ", delete_obj)
+            check, msg = self.basic_update_structure_check(delete_obj, CUSTOM_STATISTICS_DELETE)
             if not check:
                 self.add_error_message(msg)
 
-            id_check, msg = self.check_ids(delete_obj['id'])
+            id_check, msg = self.check_ids(delete_obj[CUSTOM_STATISTICS_ID])
             if id_check is False:
                 self.add_error_message(msg)
 
             if self.has_error:
                 return False
             else:
-                self.make_deletion(delete_obj['id'], delete_obj['delete'])
+                self.make_deletion(delete_obj[CUSTOM_STATISTICS_ID], delete_obj[CUSTOM_STATISTICS_DELETE])
 
         self.original_json = OrderedDict(self.preprocess_json)
 
