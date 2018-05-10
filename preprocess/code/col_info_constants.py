@@ -10,6 +10,11 @@ VARIABLE_DISPLAY_SECTION_KEY = 'variableDisplay'
 # dataset
 # -----------------------------
 DATASET_LEVEL_KEY = 'dataset'
+DATASET_DESCRIPTION = 'description'
+DATASET_UNIT_OF_ANALYSIS = 'unitOfAnalysis'
+DATASET_STRUCTURE = 'structure' # wide or long
+STRUCTURE_WIDE = 'wide'
+STRUCTURE_LONG = 'long'
 
 DATASET_ROW_CNT = 'rowCount'
 DATASET_VARIABLE_CNT = 'variableCount'

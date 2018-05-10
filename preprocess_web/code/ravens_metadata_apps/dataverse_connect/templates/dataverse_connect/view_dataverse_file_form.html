@@ -23,6 +23,12 @@ label{
           <div class="card">
             <h5 class="card-header">by Datafile Url</h5>
             <div class="card-body">
+              {% if PRESS_SCRIPTLET_SUBMIT %}
+              <div class="alert alert-success" role="alert">
+                  Press "submit" to process the Dataverse file! 
+                  <span class="oi oi-arrow-circle-bottom"></span>
+              </div>
+              {% endif %}
                 <p>Please enter a Dataverse file url.  Examples:</p>
                 <ul>
                   <li>https://dataverse.harvard.edu/file.xhtml?fileId=3085004</li>
@@ -51,12 +57,7 @@ label{
 
                 {{ form_by_url.as_p }}
               </div>
-                {% if PRESS_SCRIPTLET_SUBMIT %}
-                <div class="alert alert-success" role="alert">
-                    Press "submit" below to process the Dataverse file!
-                    <span class="oi oi-arrow-circle-bottom"></span>
-                </div>
-                {% endif %}
+
                 <div class="text-right">
                   <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
                 </div>
