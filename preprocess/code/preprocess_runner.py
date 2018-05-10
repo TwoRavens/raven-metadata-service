@@ -175,7 +175,11 @@ class PreprocessRunner(object):
             col_info = ColumnInfo(colnames)
             col_series = self.data_frame[colnames]
 
-            TypeGuessUtil(col_series, col_info)
+            type_guess_util = TypeGuessUtil(col_series, col_info)
+            if type_guess_util.has_error():
+                self.add_error_message(type_guess_util.get_error_message())
+                return
+
             SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
             # VariableDisplayUtil(col_series, col_info)
