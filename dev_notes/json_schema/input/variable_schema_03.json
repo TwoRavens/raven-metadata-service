@@ -1,36 +1,15 @@
 {
-   "type":"object",
-   "patternProperties":{
-      "^([a-z])+$":{
-          "type": "string"
+  "type": "object",
+  "patternProperties": {
+    "^[_a-zA-Z0-9]+$": {
+      "type": "object",
+      "properties": {
+        "variableName": { "type": "string" },
+        "description": { "type": "string" }
       },
-      
-         "type":"object",
-         "properties":{
-            "variableName":{
-               "type":"string"
-            },
-            "description":{
-               "type":"string"
-            }
-         },
-         "required":[
-            "variableName",
-            "description"
-         ]
-      }
-   },
-   "xpatternProperties":{
-      "^([a-z])+$":{
-         "anyOf":[
-            {
-               "type":"string"
-            },
-            {
-               "type":"null"
-            }
-         ]
-      }
-   },
-   "xadditionalProperties":false
+      "required": ["variableName", "description"]
+    }
+  },
+  "additionalProperties": false,
+  "minProperties": 1
 }
