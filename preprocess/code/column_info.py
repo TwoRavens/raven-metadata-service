@@ -216,6 +216,7 @@ class ColumnInfo(object):
 
     def tidy_plot_values(self):
         """for plot values that are None, set them to None or "NA" """
+        attr_names = ('plot_type', 'plotx', 'ploty',
                       'cdf_plot_type', 'cdf_plotx', 'cdf_ploty')
 
         for pname in attr_names:
