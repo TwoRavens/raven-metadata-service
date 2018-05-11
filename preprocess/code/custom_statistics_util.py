@@ -182,7 +182,7 @@ class CustomStatisticsUtil(object):
             if CUSTOM_STATISTICS_VARIABLES in dat:
 
                 variables = self.custom_statistics_check_variables(var_list,
-                                                               dat[CUSTOM_STATISTICS_VARIABLES])   # required = True
+                                                                   dat[CUSTOM_STATISTICS_VARIABLES])   # required = True
             else:
                 variables = ''
                 self.add_error_message(' at least one variable is required')
