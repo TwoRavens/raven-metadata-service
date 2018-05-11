@@ -201,9 +201,9 @@ class ColumnInfo(object):
             ('herfindahlIndex', 'herfindahl'),
 
             ('plotValues', 'plot_values'),
-            ('plotType', 'plot_type'),
-            ('plotX', 'plotx'),
-            ('plotY', 'ploty'),
+            ('pdfPlotType', 'plot_type'),
+            ('pdfPlotX', 'plotx'),
+            ('pdfPlotY', 'ploty'),
             ('cdfPlotType', 'cdf_plottype'),
             ('cdfPlotX', 'cdf_plotx'),
             ('cdfPlotY', 'cdf_ploty'),

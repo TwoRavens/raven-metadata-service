@@ -44,13 +44,18 @@
                ]
             },
             "time":{
-               "type":"string",
-               "description":"Signifies that the variable describes points in time",
-               "enum":[
-                  "no",
-                  "yes",
-                  "unknown"
-               ]
+              "description":"Signifies that the variable describes points in time",
+              "oneOf":[
+                 {
+                    "type":"boolean"
+                 },
+                 {
+                    "type":"string",
+                    "enum":[
+                       "unknown"
+                    ]
+                 }
+              ]
             },
             "invalidCount":{
                "type":"integer",
@@ -157,6 +162,11 @@
                      }
                   },
                   {
+                     "type":"array",
+                     "items":{
+                        "type":"string"
+                     }
+                  },                  {
                      "type":"string",
                      "enum":[
                         "NA"
@@ -193,6 +203,12 @@
                      "type":"array",
                      "items":{
                         "type":"number"
+                     }
+                  },
+                  {
+                     "type":"array",
+                     "items":{
+                        "type":"string"
                      }
                   },
                   {
@@ -233,7 +249,7 @@
                   },
                   {
                      "type":"string",
-                     "enum":[
+                     "xenum":[
                         "NA"
                      ]
                   }
@@ -311,7 +327,7 @@
                   }
                ]
             },
-            "plotType":{
+            "pdfPlotType":{
                "type":"string",
                "description":"Describes default type of plot appropriate to represent distribution of variable",
                "enum":[
@@ -319,7 +335,7 @@
                   "continuous"
                ]
             },
-            "plotX":{
+            "pdfPlotX":{
                "type":[
                   "array",
                   "string"
@@ -340,7 +356,7 @@
                   }
                ]
             },
-            "plotY":{
+            "pdfPlotY":{
                "type":[
                   "array",
                   "string"
