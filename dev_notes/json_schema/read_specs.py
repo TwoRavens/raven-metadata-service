@@ -9,10 +9,12 @@ def get_file_info():
             for x in open(fname, 'r').readlines()
             if len(x.strip()) > 0]
 
+REQUIRED_LIST = []
 def format_line(line):
     """get the defn"""
     attr, desc, jtype, format, enum, required = line
 
+    REQUIRED_LIST.append(attr)
     od = OrderedDict()
 
     if enum == 'number, NA' and type != 'string':
@@ -58,6 +60,6 @@ def run_it():
     output = json.dumps(od, indent=4)
     print(output)
     open('output/schema_out.json', 'w').write(output)
-
+    print('required_list', REQUIRED_LIST)
 if __name__ == '__main__':
     run_it()

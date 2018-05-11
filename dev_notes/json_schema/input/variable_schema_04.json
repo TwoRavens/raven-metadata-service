@@ -33,14 +33,10 @@
             },
             "binary":{
                "type":"boolean",
-               "description":"Signifies that the data can only take two values",
-               "enum":[
-                  "no",
-                  "yes"
-               ]
+               "description":"Signifies that the data can only take two values"
             },
             "interval":{
-               "type":"boolean",
+               "type":"string",
                "description":"Describes numeric variables as either continuously valued, or discrete valued",
                "enum":[
                   "continuous",
@@ -48,7 +44,7 @@
                ]
             },
             "time":{
-               "type":"boolean",
+               "type":"string",
                "description":"Signifies that the variable describes points in time",
                "enum":[
                   "no",
@@ -296,16 +292,13 @@
             },
             "plotValues":{
                "type":[
-                  "array",
+                  "object",
                   "string"
                ],
                "description":"Plot points of a bar chart for tracing distribution of variable",
                "oneOf":[
                   {
-                     "type":"array",
-                     "items":{
-                        "type":"number"
-                     }
+                     "type":"object"
                   },
                   {
                      "type":"string",
@@ -463,8 +456,7 @@
             }
          },
          "required":[
-            "variableName",
-            "description"
+            "variableName", "description", "numchar", "nature", "binary", "interval", "time", "invalidCount", "validCount", "uniqueCount", "median", "mean", "max", "min", "mode", "modeFreq", "fewestValues", "fewestFreq", "midpoint", "midpointFreq", "stdDev", "herfindahlIndex", "plotValues", "plotType", "plotX", "plotY", "cdfPlotType", "cdfPlotX", "cdfPlotY"
          ]
       }
    },

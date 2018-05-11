@@ -192,7 +192,7 @@ class ColumnInfo(object):
 
             ('mode', 'mode'),
             ('modeFreq', 'freqmode'),
-            ('fewestValues ', 'fewest'),
+            ('fewestValues', 'fewest'),
             ('fewestFreq', 'freqfewest'),
             ('midpoint', 'mid'),
             ('midpointFreq', 'freqmid'),
