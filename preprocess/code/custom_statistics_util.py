@@ -81,7 +81,7 @@ class CustomStatisticsUtil(object):
         statistics_name = name
         if not re.match(r'^[A-Za-z0-9_]+$', statistics_name):   # check if the name is alpha numerics , \
                                             #  i.e does not contain special characters or empty spaces
-            self.add_error_message('The name is not alpha-numeric')
+            self.add_error_message('The name is not valid (Should be alpha-numeric)')
         # if col_const.CUSTOM_KEY in self.preprocess_json:
             # for val in self.preprocess_json[col_const.CUSTOM_KEY]:
             #     print("Value coming ",self.preprocess_json[col_const.CUSTOM_KEY][val]['name'])
@@ -100,7 +100,7 @@ class CustomStatisticsUtil(object):
 
     def custom_statistics_check_image(self, image_url):
         if image_url is None:
-            self.add_error_message('image url is none')
+            self.add_error_message('image url not found!')
 
         return image_url
 
@@ -116,20 +116,20 @@ class CustomStatisticsUtil(object):
 
     def custom_statistics_check_value(self, value):
         if value is None:
-            self.add_error_message(' value is none ')
+            self.add_error_message(' value not found ')
 
         return value
 
     def custom_statistics_check_description(self, desc):
         if desc is None:
-            self.add_error_message(' value is none ')
+            self.add_error_message(' description not found!')
             return
 
         return desc
 
     def custom_statistics_check_replication(self, rep):
         if rep is None:
-            self.add_error_message(' value is none ')
+            self.add_error_message(' replication not found! ')
             return
 
         return rep
@@ -260,7 +260,7 @@ class CustomStatisticsUtil(object):
             # print(' id %s is there ' % id_name)
             return True, None
         else:
-            return False, ' id %s not found in requested updates' % id_name
+            return False, ' id %s not found in requested update' % id_name
 
     def make_update(self, id_name, update_json):
         """ make changes to preprocess json"""
