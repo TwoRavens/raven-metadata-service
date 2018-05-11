@@ -78,7 +78,7 @@ class ColumnInfo(object):
         self.plot_type = None
         self.plotx = None
         self.ploty = None
-        self.cdf_plottype = None
+        self.cdf_plot_type = None
         self.cdf_plotx = None
         self.cdf_ploty = None
 
@@ -204,7 +204,7 @@ class ColumnInfo(object):
             ('pdfPlotType', 'plot_type'),
             ('pdfPlotX', 'plotx'),
             ('pdfPlotY', 'ploty'),
-            ('cdfPlotType', 'cdf_plottype'),
+            ('cdfPlotType', 'cdf_plot_type'),
             ('cdfPlotX', 'cdf_plotx'),
             ('cdfPlotY', 'cdf_ploty'),
 
@@ -213,6 +213,24 @@ class ColumnInfo(object):
         # print(label_list)
         return label_list
 
+
+    def tidy_plot_values(self):
+        """for plot values that are None, set them to None or "NA" """
+                      'cdf_plot_type', 'cdf_plotx', 'cdf_ploty')
+
+        for pname in attr_names:
+            val = self.__dict__[pname]
+            if val in ['', []]: # empty string or None
+                self.__dict__[pname] = None #col_const.NOT_APPLICABLE
+
+        # Next 2 lines need to be fixed in the plot
+        # value calculation section
+        
+        if self.plotx is None and self.ploty is None:
+            self.plot_type = None
+
+        if self.cdf_plotx is None and self.cdf_ploty is None:
+            self.cdf_plot_type = None
 
     def print_values(self):
         """print to screen"""

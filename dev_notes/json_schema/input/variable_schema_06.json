@@ -328,16 +328,24 @@
                ]
             },
             "pdfPlotType":{
-               "type":"string",
+               "type":["string", "null"],
                "description":"Describes default type of plot appropriate to represent distribution of variable",
-               "enum":[
-                 "bar", "continuous", "NA"
+               "oneOf":[
+                  {
+                    "type": "string",
+                    "enum":[
+                      "bar", "continuous", "NA"
+                    ]
+                 },
+                 {
+                   "type": "null"
+                 }
                ]
             },
             "pdfPlotX":{
                "type":[
                   "array",
-                  "string"
+                  "null"
                ],
                "description":"Plot points along x dimension for tracing distribution of variable",
                "oneOf":[
@@ -348,17 +356,14 @@
                      }
                   },
                   {
-                     "type":"string",
-                     "enum":[
-                        "NA"
-                     ]
+                     "type":"null"
                   }
                ]
             },
             "pdfPlotY":{
                "type":[
                   "array",
-                  "string"
+                  "null"
                ],
                "description":"Plot points along y dimension for tracing distribution of variable",
                "oneOf":[
@@ -369,24 +374,29 @@
                      }
                   },
                   {
-                     "type":"string",
-                     "enum":[
-                        "NA"
-                     ]
+                     "type":"null"
                   }
                ]
             },
             "cdfPlotType":{
-              "type":"string",
+              "type":["string", "null"],
               "description":"Describes default type of plot appropriate to represent cumulative distribution of variable",
-              "enum":[
-                    "bar", "continuous", "NA"
-                 ]
+              "oneOf":[
+                 {
+                   "type": "string",
+                   "enum":[
+                     "bar", "continuous", "NA"
+                   ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
             },
             "cdfPlotX":{
                "type":[
                   "array",
-                  "string"
+                  "null"
                ],
                "description":"Plot points along x dimension for tracing cumulative distribution of variable",
                "oneOf":[
@@ -397,17 +407,14 @@
                      }
                   },
                   {
-                     "type":"string",
-                     "enum":[
-                        "NA"
-                     ]
+                     "type":"null"
                   }
                ]
             },
             "cdfPlotY":{
                "type":[
                   "array",
-                  "string"
+                  "null"
                ],
                "description":"Plot points along y dimension for tracing cumulative distribution of variable",
                "oneOf":[
@@ -418,10 +425,7 @@
                      }
                   },
                   {
-                     "type":"string",
-                     "enum":[
-                        "NA"
-                     ]
+                     "type":"null"
                   }
                ]
             },

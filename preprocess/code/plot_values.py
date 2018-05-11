@@ -24,9 +24,13 @@ class PlotValuesUtil(object):
         self.col_series = col_series
         self.histlimit = 13
         self.output = {}
-        self.cal_plot_values()
         self.cdfx = None
         self.cdfy = None
+
+        self.cal_plot_values()
+        self.col_info.tidy_plot_values()
+        
+
 
     def ecdf(self, data):
         """Compute ECDF for a one-dimensional array of measurements."""
@@ -76,7 +80,7 @@ class PlotValuesUtil(object):
 
                 # code for cdf values
                 self.cdfx = np.sort(uniques)
-                self.col_info.cdf_plottype = col_const.PLOT_BAR
+                self.col_info.cdf_plot_type = col_const.PLOT_BAR
                 self.col_info.cdf_plotx = np.linspace(start=min(self.cdfx),
                                                       stop=max(self.cdfx), num=len(self.cdfx))
                 self.col_info.cdf_ploty = self.ecdf(self.col_info.cdf_plotx)
@@ -93,7 +97,7 @@ class PlotValuesUtil(object):
                     self.col_info.ploty = kernel(x)
 
                 # code for cdf values
-                self.col_info.cdf_plottype = col_const.PLOT_CONTINUOUS
+                self.col_info.cdf_plot_type = col_const.PLOT_CONTINUOUS
                 if lu >= 50 or (lu < 50 and my_interval != col_const.INTERVAL_DISCRETE):
                     self.col_info.cdf_plotx = np.linspace(start=min(self.col_series),
                                                           stop=max(self.col_series), num=50)
@@ -125,7 +129,7 @@ class PlotValuesUtil(object):
             self.col_info.plot_values = self.output
 
             # code for cdf values
-            self.col_info.cdf_plottype = None
+            self.col_info.cdf_plot_type = None
             self.col_info.cdf_plotx = None
             self.col_info.cdf_ploty = None
 
