@@ -1,0 +1,31 @@
+description	Brief explanation of the variable 	string			yes; can be empty string
+numchar	Describes the variable as numeric or character valued	string		character, numeric	yes
+nature	Describes the classification of data into Nominal, Ordinal, Ratio, Interval, Percentage.	string		interval, nominal, ordinal, percent, ratio, other	yes
+binary	Signifies that the data can only take two values	boolean		no, yes	yes
+interval	Describes numeric variables as either continuously valued, or discrete valued	boolean		continuous, discrete	yes
+time	Signifies that the variable describes points in time	boolean		no, yes, unknown	yes
+invalidCount	Counts the number of invalid observations, including missing values, nulls, NA's and any observation with a value enumerated in invalidSpecialCodes	integer			yes
+invalidSpecialCodes	Any numbers that represent invalid observations	array (of numbers)			yes
+validCount	Counts the number of valid observations	integer			yes
+uniqueCount	Count of unique values, including invalid signifiers	integer			yes
+median	A central value in the distribution such that there are as many values equal or above, as there are equal or below this value.	number		number, NA	yes
+mean	Average of all numeric values, which are not contained in invalidSpecialCodes	number		number, NA	yes
+max	Largest numeric value observed in dataset, that is not contained in invalidSpecialCodes	number		number, NA	yes
+min	Least numeric value observed in dataset, that is not contained in invalidSpecialCodes	number		number, NA	yes
+mode	Value that occurs most frequently.  Multiple values in the case of ties.	array (of numbers or strings)		number, NA	yes
+modeFreq	Number of times value of mode is observed in variable	integer		number, NA	yes
+fewestValues	Value that occurs least frequently.  Multiple values in the case of ties.	array (of numbers or strings)		number, NA	yes
+fewestFreq	Number of times value of fewestValues is observed in variable	integer		number, NA	yes
+midpoint	The value equidistant from the reported min and max values	number		number, NA	yes
+midpointFreq	Number of observations with value equal to minpoint	integer		number, NA	yes
+stdDev	Standard deviation of the values, measuring the spread between values, specifically using population formula	number		number, NA	yes
+herfindahlIndex	Measure of heterogeneity of a categorical variable which gives the probability that any two randomly sampled observations have the same value	number		number, NA	yes
+plotValues	Plot points of a bar chart for tracing distribution of variable	array (of numbers)		number, NA	yes
+plotType	Describes default type of plot appropriate to represent distribution of variable	string		bar, continuous	yes
+plotX	Plot points along x dimension for tracing distribution of variable	array (of numbers)		number, NA	yes
+plotY	Plot points along y dimension for tracing distribution of variable	array (of numbers)		number, NA	yes
+cdfPlotType	Describes default type of plot appropriate to represent cumulative distribution of variable	string		number, NA	yes
+cdfPlotX	Plot points along x dimension for tracing cumulative distribution of variable	array (of numbers)		number, NA	yes
+cdfPlotY	Plot points along y dimension for tracing cumulative distribution of variable	array (of numbers)		number, NA	yes
+interpretation	Object containing descriptors to interpret variable	object		number, NA	yes
+tworavens	Object containing metadata specifically used by TwoRavens platform	object		number, NA	yes

@@ -2,8 +2,21 @@ from django.urls import path, re_path
 
 from ravens_metadata_apps.preprocess_jobs import views, views_api
 from ravens_metadata_apps.dataverse_connect import views as dv_connect_views
+from ravens_metadata_apps.metadata_schemas import views as schema_views
 
 urlpatterns = (
+
+    # Show saved workspaces for the logged in user
+    #
+    path(r'api/schema/metadata/latest',
+         schema_views.view_latest_metadata_schema,
+         name='view_latest_metadata_schema'),
+
+    # Show saved workspaces for the logged in user
+    #
+    path(r'api/schema/metadata/dataset/latest',
+         schema_views.view_latest_dataset_schema,
+         name='view_latest_dataset_schema'),
 
     # Show saved workspaces for the logged in user
     #

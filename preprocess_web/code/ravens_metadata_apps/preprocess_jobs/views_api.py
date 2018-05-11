@@ -198,9 +198,10 @@ def api_get_job_status(request, preprocess_id, with_html=False):
     json_success = get_json_success('job retrieved',
                                     data=resp_info)
     if 'pretty' in request.GET:
-        is_success, jstring = json_dump(json_success, indent=4)
-        return HttpResponse('<pre>%s</pre>' % jstring)
-
+        jstring = json_dump(json_success, indent=4)
+        if jstring.success:
+            return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
+        return JsonResponse(get_json_error(jstring.err_mg))
     return JsonResponse(json_success)
 
     #json_fail = get_json_error(resp_info.err_msg)

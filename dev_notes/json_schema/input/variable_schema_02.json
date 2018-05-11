@@ -1,0 +1,33 @@
+{
+   "type":"object",
+   "properties":{
+      "^([a-z])+$":{
+         "type":"object",
+         "properties":{
+            "variableName":{
+               "type":"string"
+            },
+            "description":{
+               "type":"string"
+            }
+         },
+         "required":[
+            "variableName",
+            "description"
+         ]
+      }
+   },
+   "xpatternProperties":{
+      "^([a-z])+$":{
+         "anyOf":[
+            {
+               "type":"string"
+            },
+            {
+               "type":"null"
+            }
+         ]
+      }
+   },
+   "xadditionalProperties":false
+}
