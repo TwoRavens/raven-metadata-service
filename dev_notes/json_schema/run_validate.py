@@ -47,4 +47,4 @@ if __name__ == '__main__':
     #run_it('dataset_schema.json', 'dataset_data_02.json')
     #run_it('variable_schema.json', 'variable_data_01.json')
     #run_it('variable_schema_05.json', 'variable_data_04.json')
-    run_it('variable_schema_08.json', 'test_data.json')
+    run_it('variable_schema_11.json', 'test_data.json')
