@@ -44,7 +44,7 @@ class CustomStatisticsUtil(object):
 
     def add_error_message(self, err_msg):
         """Add error message"""
-        print(err_msg)
+        # print(err_msg)
         self.has_error = True
         self.error_messages.append(err_msg)
 
@@ -91,7 +91,7 @@ class CustomStatisticsUtil(object):
         return statistics_name
 
     def custom_statistics_check_variables(self, var_list, variables):
-        print("all var ", var_list)
+        # print("all var ", var_list)
         for var in variables:
             if var not in var_list:
                 self.add_error_message('The variable %s does not exist in the metadata file' % var)
@@ -172,18 +172,31 @@ class CustomStatisticsUtil(object):
         var_list = list(self.preprocess_json[CUSTOM_STATISTICS_VARIABLES])
 
         for dat in self.custom_statistics_json:
-            print("dat ", dat)
-            name = self.custom_statistics_check_name(dat[CUSTOM_STATISTICS_NAME])   # required = True
+            # print("dat ", dat)
+            if CUSTOM_STATISTICS_NAME in dat:
+                name = self.custom_statistics_check_name(dat[CUSTOM_STATISTICS_NAME])   # required = True
+            else:
+                name = ''
+                self.add_error_message(' name is required')
             # id = self.custom_statistics_create_id(name)
-            variables = self.custom_statistics_check_variables(var_list,
+            if CUSTOM_STATISTICS_VARIABLES in dat:
+
+                variables = self.custom_statistics_check_variables(var_list,
                                                                dat[CUSTOM_STATISTICS_VARIABLES])   # required = True
+            else:
+                variables = ''
+                self.add_error_message(' at least one variable is required')
 
             if CUSTOM_STATISTICS_IMAGE in dat:
                 image = self.custom_statistics_check_image(dat[CUSTOM_STATISTICS_IMAGE])
             else:
                 image = []
 
-            value = self.custom_statistics_check_value(dat[CUSTOM_STATISTICS_VALUE])    # required = True
+            if CUSTOM_STATISTICS_VALUE:
+                value = self.custom_statistics_check_value(dat[CUSTOM_STATISTICS_VALUE])    # required = True
+            else:
+                value = ''
+                self.add_error_message(' value is required')
 
             if CUSTOM_STATISTICS_DESCRIPTION in dat:
                 description = self.custom_statistics_check_description(dat[CUSTOM_STATISTICS_DESCRIPTION])
@@ -199,21 +212,23 @@ class CustomStatisticsUtil(object):
                 viewable = self.custom_statistics_check_viewable(dat[CUSTOM_STATISTICS_VIEWABLE])
             else:
                 viewable = True  # default
+            if self.has_error:
+                return False
+            else:
+                data = {
+                        CUSTOM_STATISTICS_NAME: name,
+                        CUSTOM_STATISTICS_VARIABLES: variables,
+                        CUSTOM_STATISTICS_IMAGE: image,
+                        CUSTOM_STATISTICS_VALUE: value,
+                        CUSTOM_STATISTICS_DESCRIPTION: description,
+                        CUSTOM_STATISTICS_REPLICATION: replication,
+                        "display": {
+                            CUSTOM_STATISTICS_VIEWABLE: viewable
+                        }
 
-            data = {
-                    CUSTOM_STATISTICS_NAME: name,
-                    CUSTOM_STATISTICS_VARIABLES: variables,
-                    CUSTOM_STATISTICS_IMAGE: image,
-                    CUSTOM_STATISTICS_VALUE: value,
-                    CUSTOM_STATISTICS_DESCRIPTION: description,
-                    CUSTOM_STATISTICS_REPLICATION: replication,
-                    "display": {
-                        CUSTOM_STATISTICS_VIEWABLE: viewable
                     }
 
-                }
-
-            self.add_to_original(data)
+                self.add_to_original(data)
 
         self.original_json = OrderedDict(self.preprocess_json)
 
@@ -266,10 +281,10 @@ class CustomStatisticsUtil(object):
         elif type_input == CUSTOM_STATISTICS_UPDATE:
             search = CUSTOM_STATISTICS_UPDATE
         if CUSTOM_STATISTICS_ID not in update_json:
-            self.add_error_message('id section is not present in request')
+            # self.add_error_message('id section is not present in request')
             return False, 'id section is not present in request'
         if search not in update_json:
-            self.add_error_message('%s section not present in request' % search)
+            # self.add_error_message('%s section not present in request' % search)
             return False, '%s section not present in request' % search
 
         return True, None
@@ -304,9 +319,9 @@ class CustomStatisticsUtil(object):
             if id_check is False:
                 self.add_error_message(msg)
 
-            self.make_update(update[CUSTOM_STATISTICS_ID], update[CUSTOM_STATISTICS_UPDATE])
-        if self.has_error:
-            return self.get_error_messages()
+            if not self.has_error:
+                self.make_update(update[CUSTOM_STATISTICS_ID], update[CUSTOM_STATISTICS_UPDATE])
+
         self.original_json = OrderedDict(self.preprocess_json)
         success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json, self.is_major_update())
         if not success:
@@ -339,14 +354,12 @@ class CustomStatisticsUtil(object):
             if id_check is False:
                 self.add_error_message(msg)
 
-            if self.has_error:
-                return False
-            else:
+            if not self.has_error:
                 self.make_deletion(delete_obj[CUSTOM_STATISTICS_ID], delete_obj[CUSTOM_STATISTICS_DELETE])
 
         self.original_json = OrderedDict(self.preprocess_json)
 
-        print("After deletion ", self.original_json)
+        # print("After deletion ", self.original_json)
 
         success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,
                                                                           self.is_major_update())

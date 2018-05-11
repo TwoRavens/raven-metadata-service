@@ -95,7 +95,6 @@ class FileEncodingTestCase(TestCase):
 
         return update_util.get_updated_metadata(as_obj=True)
 
-
     def get_preprocess_job_with_file(self, as_binary=False):
         """Create a new PreprocessJob with a preprocess_file"""
         kwargs = dict(name='job 01')
