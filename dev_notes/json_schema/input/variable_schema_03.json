@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "patternProperties": {
+    "^[_a-zA-Z0-9]+$": {
+      "type": "object",
+      "properties": {
+        "variableName": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["variableName", "description"]
+    }
+  },
+  "additionalProperties": false,
+  "xmaxProperties": 2,
+  "minProperties": 1
+}

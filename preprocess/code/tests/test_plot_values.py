@@ -36,9 +36,9 @@ class PlotValuesTest(unittest.TestCase):
 
         # Check plottype, cdf plot type
         msg('Check Plot types')
-        self.assertEqual(col_info.plot_type, 'bar')
+        self.assertEqual(col_info.plot_type, None)
         msg('Check Cdf Plot types')
-        self.assertEqual(col_info.cdf_plottype, 'bar')
+        self.assertEqual(col_info.cdf_plot_type, 'bar')
 
         # Check cdf plot values
         cdfx = pd.DataFrame([12.0,

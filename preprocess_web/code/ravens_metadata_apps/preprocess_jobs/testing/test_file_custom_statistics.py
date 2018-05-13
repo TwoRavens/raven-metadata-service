@@ -65,11 +65,7 @@ class CustomStatisticsTestCases(TestCase):
                 "name": "products",
                 "value": "6553225",
                 "description": "product of numbers",
-                "replication": "pi(n)"
-            }
-
-                             ]
-            }
+                "replication": "pi(n)"}]}
 
 
     def tearDown(self):
@@ -136,7 +132,7 @@ class CustomStatisticsTestCases(TestCase):
         ye_job = PreprocessJob(**kwargs)
         ye_job.save()
 
-        preprocess_string = render_to_string(
+        preprocess_string = render_to_string(\
                                 'preprocess/test_files/fearon_laitin.json',
                                 dict(preprocess_id=ye_job.id))
 
@@ -166,15 +162,19 @@ class CustomStatisticsTestCases(TestCase):
         """ test the custom_statistics add feature"""
         msgt(self.test_10_custom_statistics_add.__doc__)
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
-        Preprocess_id = metadata_01_obj.orig_metadata.id
+        preprocess_id = metadata_01_obj.orig_metadata.id
 
         # check ID
         #
-        self.assertEqual(Preprocess_id, self.update_json['preprocess_id'], "ID check passed")
+        self.assertEqual(preprocess_id,
+                         self.update_json['preprocess_id'],
+                         "ID check passed")
 
         # get updated metadata
         #
-        update_util = MetadataUpdateUtil(Preprocess_id, self.update_json[col_const.CUSTOM_KEY], col_const.UPDATE_CUSTOM_STATISTICS)
+        update_util = MetadataUpdateUtil(\
+                        preprocess_id,
+                        self.update_json[col_const.CUSTOM_KEY], col_const.UPDATE_CUSTOM_STATISTICS)
         # print(update_util.get_updated_metadata()['custom_statistics'])
 
         # check custom_statistics ID's
@@ -182,7 +182,9 @@ class CustomStatisticsTestCases(TestCase):
         id_list = ['id_000001', 'id_000002']
         id_list_from_metadata = list(update_util.get_updated_metadata()[col_const.CUSTOM_KEY])
         # print(id_list_from_metadata)
-        self.assertEqual(id_list, id_list_from_metadata, "Custom Statistics ID check passed ")
+        self.assertEqual(id_list,
+                         id_list_from_metadata,
+                         "Custom Statistics ID check passed")
 
         # value test
         #
@@ -209,11 +211,14 @@ class CustomStatisticsTestCases(TestCase):
 
             ]
         }
-        """ update_json has error for variables( mpg is not a variable name in metadata) and no name error"""
+
+        """update_json has error for variables
+            - mpg is not a variable name in metadata
+              and produces a 'no name' error"""
 
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
-        Preprocess_id = metadata_01_obj.orig_metadata.id
-        update_util = MetadataUpdateUtil(Preprocess_id, update_json[col_const.CUSTOM_KEY],
+        preprocess_id = metadata_01_obj.orig_metadata.id
+        update_util = MetadataUpdateUtil(preprocess_id, update_json[col_const.CUSTOM_KEY],
                                          col_const.UPDATE_CUSTOM_STATISTICS)
         # error test
         #
@@ -221,40 +226,39 @@ class CustomStatisticsTestCases(TestCase):
 
     def test_30_custom_statistics_update(self):
         msgt(self.test_30_custom_statistics_update.__doc__)
-        update_json = {
+        update_json = {\
                   "preprocess_id": 1,
-                  "custom_statistics": [
-                    {
+                  "custom_statistics": [\
+                    {\
                       "id": "id_000001",
-                      "updates": {
+                      "updates": {\
                         "name": "Fourth order statistic",
-                        "value": 80
-                      }
-                    },
-                    {
+                        "value": 80}},
+                    {\
                       "id": "id_000002",
-                      "updates": {
+                      "updates": {\
                         "name": "third order statistic",
                         "value": 810,
-                        "description": "new desc"
-                      }
-                    }
+                        "description": "new desc"}}]}
 
-                  ]
-            }
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
-        Preprocess_id = metadata_01_obj.orig_metadata.id
-        add_util = MetadataUpdateUtil(Preprocess_id, self.update_json[col_const.CUSTOM_KEY],
-                                         col_const.UPDATE_CUSTOM_STATISTICS)
+        preprocess_id = metadata_01_obj.orig_metadata.id
+        add_util = MetadataUpdateUtil(\
+                        preprocess_id,
+                        self.update_json[col_const.CUSTOM_KEY],
+                        col_const.UPDATE_CUSTOM_STATISTICS)
         id_list_from_metadata = list(add_util.get_updated_metadata()[col_const.CUSTOM_KEY])
-        update_util = MetadataUpdateUtil(Preprocess_id, update_json[col_const.CUSTOM_KEY],
-                                         col_const.UPDATE_TO_CUSTOM_STATISTICS)
+        update_util = MetadataUpdateUtil(\
+                            preprocess_id,
+                            update_json[col_const.CUSTOM_KEY],
+                            col_const.UPDATE_TO_CUSTOM_STATISTICS)
 
         #   name and desc test
         #
         name = update_util.get_updated_metadata()[col_const.CUSTOM_KEY][id_list_from_metadata[0]]['name']
         # print(value)
         self.assertEqual(name, 'Fourth order statistic')
+
         desc = update_util.get_updated_metadata()[col_const.CUSTOM_KEY][id_list_from_metadata[1]]['description']
         # print(value)
         self.assertEqual(desc, 'new desc')
@@ -278,43 +282,45 @@ class CustomStatisticsTestCases(TestCase):
             ]
         }
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
-        Preprocess_id = metadata_01_obj.orig_metadata.id
-        MetadataUpdateUtil(Preprocess_id, self.update_json[col_const.CUSTOM_KEY],
-                                      col_const.UPDATE_CUSTOM_STATISTICS)
+        preprocess_id = metadata_01_obj.orig_metadata.id
+        MetadataUpdateUtil(preprocess_id,
+                           self.update_json[col_const.CUSTOM_KEY],
+                           col_const.UPDATE_CUSTOM_STATISTICS)
 
         # error check for wrong ID and key error [ ' updates' ]
         #
-        update_util = MetadataUpdateUtil(Preprocess_id, update_json[col_const.CUSTOM_KEY],
+        update_util = MetadataUpdateUtil(preprocess_id, update_json[col_const.CUSTOM_KEY],
                                          col_const.UPDATE_TO_CUSTOM_STATISTICS)
 
         self.assertTrue(update_util.has_error)
 
     def test_50_custom_statistics_delete(self):
         msgt(self.test_50_custom_statistics_delete.__doc__)
-        update_json = {
+        update_json = {\
                "preprocess_id": 1,
-               "custom_statistics":[
-                  {
+               "custom_statistics":[ \
+                  { \
                      "id":"id_000001",
-                     "delete": [
+                     "delete": [\
                         "description",
-                        "replication"
-                     ]
-                  },
-                  {
+                        "replication"]},
+                  {\
                      "id": "id_000002",
-                     "delete": [
-                        "id"
-                     ]
-                  }
-               ]
-            }
+                     "delete": [ \
+                        "id"]}]}
+
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
-        Preprocess_id = metadata_01_obj.orig_metadata.id
-        add_util = MetadataUpdateUtil(Preprocess_id, self.update_json[col_const.CUSTOM_KEY],
-                           col_const.UPDATE_CUSTOM_STATISTICS)
+
+        preprocess_id = metadata_01_obj.orig_metadata.id
+
+        add_util = MetadataUpdateUtil(\
+                            preprocess_id,
+                            self.update_json[col_const.CUSTOM_KEY],
+                            col_const.UPDATE_CUSTOM_STATISTICS)
+
         id_list_from_metadata = list(add_util.get_updated_metadata()[col_const.CUSTOM_KEY])
-        delete_util = MetadataUpdateUtil(Preprocess_id, update_json[col_const.CUSTOM_KEY],
+
+        delete_util = MetadataUpdateUtil(preprocess_id, update_json[col_const.CUSTOM_KEY],
                                          col_const.DELETE_CUSTOM_STATISTICS)
 
         # self.assertRaises(KeyError, delete_util.get_updated_metadata()[col_const.CUSTOM_KEY][id_list_from_metadata[1]])
@@ -322,32 +328,29 @@ class CustomStatisticsTestCases(TestCase):
 
     def test_50_custom_statistics_delete_fail(self):
         msgt(self.test_50_custom_statistics_delete_fail.__doc__)
-        update_json = {
+        update_json = {\
                "preprocess_id": 1,
-               "custom_statistics":[
-                  {
+               "custom_statistics":[\
+                  {\
                      "id":"id_000001",
-                     "delete": [
+                     "delete": [\
                         "description",
-                        "replication"
-                     ]
-                  },
-                  {
+                        "replication"]},\
+                  {\
                      "id": "id_000003",
-                     "delete": [
-                        "id"
-                     ]
-                  }
-               ]
-            }
+                     "delete": [\
+                        "id"]}]}
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
-        Preprocess_id = metadata_01_obj.orig_metadata.id
-        MetadataUpdateUtil(Preprocess_id, self.update_json[col_const.CUSTOM_KEY],
-                                      col_const.UPDATE_CUSTOM_STATISTICS)
+        preprocess_id = metadata_01_obj.orig_metadata.id
+        MetadataUpdateUtil(preprocess_id,
+                           self.update_json[col_const.CUSTOM_KEY],
+                           col_const.UPDATE_CUSTOM_STATISTICS)
 
         # error check for wrong ID key error [ 'id_000003' ]
         #
-        update_util = MetadataUpdateUtil(Preprocess_id, update_json[col_const.CUSTOM_KEY],
-                                         col_const.DELETE_CUSTOM_STATISTICS)
+        update_util = MetadataUpdateUtil(\
+                            preprocess_id,
+                            update_json[col_const.CUSTOM_KEY],
+                            col_const.DELETE_CUSTOM_STATISTICS)
 
         self.assertTrue(update_util.has_error)

@@ -29,6 +29,7 @@ DATA_SOURCE_FORMAT = 'format'
 DATA_SOURCE_FILESIZE = 'filesize'
 
 
+UNKNOWN = 'unknown'
 NOT_IMPLEMENTED = 'NOT IMPLEMENTED'
 NOT_APPLICABLE = 'NA'
 
@@ -77,8 +78,8 @@ NATURE_VALUES = (NATURE_NOMINAL,
 # --------------------------------------
 # binary constants for metadata file
 # --------------------------------------
-BINARY_YES = 'yes'
-BINARY_NO = 'no'
+BINARY_YES = True
+BINARY_NO = False
 BINARY_VALUES = (BINARY_YES,
                  BINARY_NO)
 

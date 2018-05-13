@@ -407,7 +407,9 @@ def show_job_info(request, job_id):
 
     if 'pretty' in request.GET:
         jstring = json_dump(job.as_dict(), indent=4)
-        return HttpResponse('<pre>%s</pre>' % jstring)
+        if jstring.success:
+            return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
+        return JsonResponse(get_json_error(jstring.err_mg))
 
     user_msg = dict(success=True,
                     message='some message',

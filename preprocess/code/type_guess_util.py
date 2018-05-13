@@ -154,7 +154,7 @@ class TypeGuessUtil(BasicErrCheck):
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
-        return col_const.NOT_IMPLEMENTED
+        return col_const.UNKNOWN
 
     @staticmethod
     def check_binary(unique_size):
