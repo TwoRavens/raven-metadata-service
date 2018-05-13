@@ -181,14 +181,6 @@ class CustomStatisticsForm(forms.Form):
         if not input_viewable:
             input_viewable = False
 
-        # if not input_omit:
-        #    input_omit = OMIT_FALSE
-
-        # if input_omit not in INPUT_OMIT_TYPES:
-        #    # errors.append(forms.ValidationError)
-        #    raise forms.ValidationError(
-        #        _('The omit should be either True or False.'))
-
         return input_viewable
 
 # errors = json.dumps(errors)
