@@ -17,13 +17,15 @@ FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
 INPUT_FORMATS = (FORMAT_JSON, FORMAT_CSV)
 FORMAT_CHOICES = [(x, x) for x in INPUT_FORMATS]
-
+VIEWABLE_TRUE = True
+VIEWABLE_FALSE = False
+INPUT_VIEWABLE_TYPES = (VIEWABLE_TRUE,VIEWABLE_FALSE)
+VIEWABLE_CHOICES = [(x,x) for x in INPUT_VIEWABLE_TYPES]
 
 DEFAULT_START_ROW = 1
 DEFAULT_NUM_ROWS = 100
 
 class RetrieveRowsForm(forms.Form):
-
     preprocessId = forms.IntegerField(label="Preprocess Id")
 
     startRow = forms.IntegerField(label="Start row",
@@ -97,6 +99,90 @@ class RetrieveRowsForm(forms.Form):
 
         return input_format
 
+class CustomStatisticsForm(forms.Form):
+    """ this class takes the custom statistics update form:
+                [
+             {
+               "id": 1,
+               "name": "Third order statistic",
+               "variables": ["lpop"], _optional_
+               "image": "image_id", _optional_
+               "value": "23.45",
+               "description": "Third smallest value",
+               "replication": "sorted(X)[2]",
+               "omit": false _optional_
+             },
+             {*custom statistic 2*},
+             ...
+            ]
+    """
+
+    # single custom_statistic info
+    name = forms.CharField(required= True, label='Name')
+    variables = forms.CharField(required=True, label='Variables')
+    image = forms.CharField(required=False, label='Image')
+    value = forms.CharField(required= True, label='Value')
+    description = forms.CharField(required=False, label='Description')
+    replication = forms.CharField(required= False,label='replication')
+    viewable = forms.NullBooleanField(required=False,initial=False)
+    # omit = forms.ChoiceField(choices=OMIT_CHOICES,
+    #                           initial=OMIT_FALSE,
+    #                           required=True)
+
+    # def clean_preprocess_id(self):
+    #     """Check if PreprocessJob exists"""
+    #     preprocess_id = self.cleaned_data.get('preprocess_id')
+    #     try:
+    #         job = PreprocessJob.objects.get(id=preprocess_id)
+    #     except PreprocessJob.DoesNotExist:
+    #         # errors.append('A preprocess file does not exist for id: %s' % preprocess_id)
+    #         raise forms.ValidationError(
+    #             _('A preprocess file does not exist for id: %s' % preprocess_id))
+    #
+    #     return preprocess_id
+
+    def clean_name(self):
+        name = self.cleaned_data.get('name')
+
+        return name
+
+    def clean_variables(self):
+        variable = self.cleaned_data.get('variables')
+
+        return [x.strip() for x in variable.split(',')]
+
+    def clean_image(self):
+        image = self.cleaned_data.get('image')
+
+        if image is None:
+            # image = 'preprocess_web/code/static/images/TwoRavens.png'
+            return []
+
+        return [x.strip() for x in image.split(',')]
+
+    def clean_value(self):
+        value = self.cleaned_data.get('value')
+
+        return value
+
+    def clean_description(self):
+        desc = self.cleaned_data.get('description')
+
+        return desc
+
+    def clean_replication(self):
+        rep = self.cleaned_data.get('replication')
+
+        return rep
+
+    def clean_viewable(self):
+        """ check if the format is valid"""
+        input_viewable = self.cleaned_data.get('viewable')
+        if not input_viewable:
+            input_viewable = False
+
+        return input_viewable
+
 # errors = json.dumps(errors)
 """
 fab run_shell
@@ -108,5 +194,35 @@ data = dict(preprocess_id=1,
 f = RetrieveRowsForm(data)
 f.is_valid()
 f.errors
+
+"""
+
+"""
+python manage.py shell
+
+from ravens_metadata_apps.preprocess_jobs.forms import CustomStatisticsForm
+import json
+
+json_str ='''
+
+    {
+   "preprocess_id":1677,
+   "name":"Third order statistic",
+   "variables":"lpop,bebop",
+   "image":"http://www.google.com",
+   "value":23.45,
+   "description":"Third smallest value",
+   "replication":"sorted(X)[2]",
+   "omit":"true"
+}'''
+
+form_data = json.loads(json_str)
+
+f = CustomStatisticsForm(form_data)
+if f.is_valid():
+    print(f.cleaned_data)
+else:
+    print(f.errors())
+
 
 """

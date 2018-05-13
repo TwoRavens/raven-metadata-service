@@ -22,7 +22,7 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.preprocess_jobs.forms import \
-    (PreprocessJobForm, RetrieveRowsForm,
+    (PreprocessJobForm, RetrieveRowsForm, CustomStatisticsForm,
      FORMAT_JSON, FORMAT_CSV)
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
@@ -32,8 +32,10 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
-
+from col_info_constants import (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS, DELETE_CUSTOM_STATISTICS,
+                                UPDATE_TO_CUSTOM_STATISTICS)
 from np_json_encoder import NumpyJSONEncoder
+
 
 def test_view(request):
     """test view"""
@@ -49,7 +51,7 @@ def view_job_list(request):
                   {'jobs': jobs})
 
 
-def view_job_detail(request,preprocess_id):
+def view_job_detail(request, preprocess_id):
     """List the PreprocessJob and associated MetadataUpdates"""
     success, preprocess_list_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 
@@ -65,7 +67,6 @@ def view_job_detail(request,preprocess_id):
                    'jobs': preprocess_list_or_err,
                    'name': job_name,
                    'preprocess_id': preprocess_id})
-
 
 
 def view_basic_upload_form(request):
@@ -87,6 +88,217 @@ def view_basic_upload_form(request):
     return render(request,
                   'preprocess/view_basic_upload_form.html',
                   {'form': form})
+
+
+@csrf_exempt
+def view_custom_statistics_delete(request):
+    """ to delete the custom_statistics"""
+    """ expected input:
+    {
+   "preprocess_id":1,
+   "custom_statistics":[
+      {
+         "id":"id_1",
+         "delete":[
+            "description",
+            "replication"
+         ]
+      },
+      {
+         "id":"id_2",
+         "delete":[
+            "id"
+         ]
+        }
+      ]
+    }
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err['preprocess_id']
+    custom_statistics_json = update_json_or_err['custom_statistics']
+
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
+                                                DELETE_CUSTOM_STATISTICS)
+    if metadata_update_or_err.has_error:
+        msg = metadata_update_or_err.get_error_messages()
+        user_msg = dict(success=False,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=msg)
+
+    else:
+        user_msg = dict(success=True,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=metadata_update_or_err.get_updated_metadata())
+        print("Updated metadata : ", metadata_update_or_err)
+    print("usr_msg ", user_msg)
+    return JsonResponse(user_msg)
+
+
+@csrf_exempt
+def view_custom_statistics_update(request):
+    """ the update for custom statistics"""
+    """
+            {
+  "preprocess_id": 1,
+  "custom_statistics": [
+    {
+      "id": "id_1",
+      "updates": {
+        "name": "Fourth order statistic",
+        "value": 40
+      }
+    },
+    {
+      "updates": {
+        "name": "This will be a new statistic",
+        "value": 40
+      }
+    }
+  ]
+}
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err['preprocess_id']
+    custom_statistics_json = update_json_or_err['custom_statistics']
+
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
+                                                UPDATE_TO_CUSTOM_STATISTICS)
+    if metadata_update_or_err.has_error:
+        msg = metadata_update_or_err.get_error_messages()
+        user_msg = dict(success=False,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=msg)
+
+    else:
+        user_msg = dict(success=True,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=metadata_update_or_err.get_updated_metadata())
+        print("Updated metadata : ", metadata_update_or_err)
+    print("user msg ", user_msg)
+    return JsonResponse(user_msg)
+
+
+@csrf_exempt
+def view_custom_statistics_form(request):
+    """ HTML form to get the custom statistics"""
+
+    """
+    expected input:
+    {
+   "preprocess_id":1677,
+   "custom_statistics":[
+      {
+         "name":"Third order statistic",
+         "variables":"lpop,bebop",
+         "image":"http://www.google.com",
+         "value":23.45,
+         "description":"Third smallest value",
+         "replication":"sorted(X)[2]",
+         "viewable":false
+      },
+      {
+         "name":"Fourth order statistic",
+         "variables":"pop,bebop",
+         "image":"http://www.youtube.com",
+         "value":29.45,
+         "description":"Fourth smallest value",
+         "replication":"sorted(X)[3]",
+         "viewable":false
+      },
+    {custom_statistics3}...
+    ]
+    }
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err['preprocess_id']
+    if job_id is None:
+        return JsonResponse('preprocess Id is required')
+    custom_statistics_json = []
+    for data in update_json_or_err['custom_statistics']:
+        frm = CustomStatisticsForm(data)
+
+        if not frm.is_valid():
+            user_msg = dict(success=False,
+                            message='Invalid input',
+                            errors=frm.errors)
+            return JsonResponse(user_msg)
+
+        custom_statistics_json.append(data)
+
+    success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
+                                                UPDATE_CUSTOM_STATISTICS)
+    if metadata_update_or_err.has_error:
+        print("got error")
+        msg = get_json_error(metadata_update_or_err)
+        user_msg = dict(success=False,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=msg)
+
+    else:
+        user_msg = dict(success=True,
+                        message='Custom Statistics',
+                        id=job_id,
+                        data=metadata_update_or_err.get_updated_metadata())
+        print("Updated metadata : ", metadata_update_or_err)
+
+    return JsonResponse(user_msg)
+    # ------------------------
 
 
 def view_retrieve_rows_form(request):
@@ -128,7 +340,6 @@ def view_retrieve_rows_form(request):
     return JsonResponse(get_json_error(err_msg))
 
 
-
 def view_preprocess_job_status(request, job_id):
     """Show the state of an uploaded preprocess file"""
     try:
@@ -136,7 +347,7 @@ def view_preprocess_job_status(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    #check_job_status(job)
+    #   check_job_status(job)
 
     info_dict = dict(job=job,
                      preprocess_string_err=False)
@@ -155,13 +366,13 @@ def view_preprocess_job_status(request, job_id):
                   info_dict)
 
 
-
 """
 http://127.0.0.1:8080/preprocess/api-single-file
 
 curl -H "Authorization: token 4db9ac8fd7f4465faf38a9765c8039a7" -X POST http://127.0.0.1:8080/preprocess/api-single-file
 
-curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api/process-single-file
+curl -H "Authorization: token 2e92d83e53e0436abd88e7c4688c49ea" -F source_file=@/Users/ramanprasad/Documents/
+github-rp/raven-metadata-service/test_data/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api/process-single-file
 
 curl -F "fieldNameHere=@myfile.html"  http://myapi.com/
 
@@ -183,6 +394,7 @@ r.text
 open(join(os.getcwd(), 'err.html'), 'w').write(r.text)
 
 """
+
 
 def show_job_info(request, job_id):
     """test to show uploaded file info"""

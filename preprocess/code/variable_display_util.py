@@ -8,6 +8,7 @@ import col_info_constants as col_const
 import update_constants as update_const
 from column_info import ColumnInfo
 from np_json_encoder import NumpyJSONEncoder
+from version_number_util import VersionNumberUtil
 
 ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
 EDITABLE_ATTRIBUTES = ColumnInfo.get_editable_column_labels()
@@ -202,14 +203,13 @@ class VariableDisplayUtil(object):
             self.add_error_message(user_msg)
             return False
 
-        version = Decimal(self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY])
-        if self.is_major_update():
-            new_version = Decimal(int(version + Decimal('1.0')))
-            version = new_version
-        else:
-            version += Decimal('.1')
+        success, updated_or_err = VersionNumberUtil.update_version_number(\
+                                        self.original_json,
+                                        self.is_major_update())
 
-        self.original_json[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY] = version
+        if not success:
+            self.add_error_message(updated_or_err)
+            return False
 
         return True
 

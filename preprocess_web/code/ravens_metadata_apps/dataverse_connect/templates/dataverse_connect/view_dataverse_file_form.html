@@ -25,7 +25,7 @@ label{
             <div class="card-body">
               {% if PRESS_SCRIPTLET_SUBMIT %}
               <div class="alert alert-success" role="alert">
-                  Press "submit" to process the Dataverse file! 
+                  Dataverse file ready to process!
                   <span class="oi oi-arrow-circle-bottom"></span>
               </div>
               {% endif %}
@@ -44,7 +44,12 @@ label{
                     </li>
                   </ul>
 
-
+                  {% if PRESS_SCRIPTLET_SUBMIT %}
+                  <div class="alert alert-success" role="alert">
+                      Press "submit" to process the Dataverse file!
+                      <span class="oi oi-arrow-circle-bottom"></span>
+                  </div>
+                  {% endif %}
               <form action="{% url 'view_dataverse_file_form' %}" method="post">
                 {% csrf_token %}
 

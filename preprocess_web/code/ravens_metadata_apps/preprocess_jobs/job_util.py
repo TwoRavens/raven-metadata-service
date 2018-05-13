@@ -1,4 +1,5 @@
 """Utility class for the preprocess workflow"""
+"""Utility class for the preprocess workflow"""
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
 
@@ -14,10 +15,11 @@ from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.utils.json_util import remove_nan_from_dict
-
-
 from file_format_constants import TAB_FILE_EXT
 from ravens_metadata_apps.utils.view_helper import get_json_error
+from custom_statistics_util import CustomStatisticsUtil
+from ravens_metadata_apps.utils.view_helper import get_json_error
+
 
 class JobUtil(object):
     """Convenience class for the preprocess work flow"""
@@ -354,3 +356,41 @@ class JobUtil(object):
             return False, var_util.get_error_messages()
 
         return True, var_util.get_updated_metadata()
+
+    @staticmethod
+    def update_preprocess_metadata_custom_statistics(job_id,custom_statistics_json):
+        """ Send info to the custom_statistics in preprocess runner"""
+        success,latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
+        if success is False:
+            user_msg = dict(success=False,
+                            message=latest_metadata_json_or_err)
+            return user_msg
+
+        custom_util = CustomStatisticsUtil(latest_metadata_json_or_err, custom_statistics_json)
+        custom_util.custom_statistics_update()
+        if custom_util.has_error:
+            return False, custom_util.get_error_messages()
+
+        return True, custom_util.get_updated_metadata()
+
+    @staticmethod
+    def update_custom_statistics(job_id, version, update_json):
+        """ send the updates list in the json to custom statistics"""
+
+        success, version_metadata_json_or_err = JobUtil.get_version_metadata_object(job_id,version)
+        if success is False:
+            user_msg = dict(success=False,
+                            message=version_metadata_json_or_err)
+            return user_msg
+        success, data_or_err = version_metadata_json_or_err.get_metadata()
+        if not success:
+            return JsonResponse(get_json_error(data_or_err))
+
+        # print(" version object ", data_or_err)
+        custom_util_update = CustomStatisticsUtil(data_or_err, update_json)
+        custom_util_update.update_custom_stats()
+        print("updated custom _ stats", custom_util_update.get_updated_metadata())
+        if custom_util_update.has_error:
+            return False, custom_util_update.get_error_messages()
+
+        return True, custom_util_update.get_updated_metadata()
