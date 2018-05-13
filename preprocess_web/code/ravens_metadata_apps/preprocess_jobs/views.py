@@ -12,8 +12,11 @@ from django.contrib.auth.decorators import login_required
 from django.core.files.base import ContentFile
 
 from django.utils.decorators import method_decorator
+from django.conf import settings
 
 import col_info_constants as col_const
+import update_constants as update_const
+
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_metadata_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
@@ -23,7 +26,8 @@ from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.preprocess_jobs.forms import \
     (PreprocessJobForm, RetrieveRowsForm, CustomStatisticsForm,
-     FORMAT_JSON, FORMAT_CSV)
+     FORMAT_JSON, FORMAT_CSV,
+     DEFAULT_START_ROW, DEFAULT_NUM_ROWS)
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,
@@ -32,10 +36,9 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
-from col_info_constants import (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS, DELETE_CUSTOM_STATISTICS,
-                                UPDATE_TO_CUSTOM_STATISTICS)
-from np_json_encoder import NumpyJSONEncoder
 
+KEY_EDITOR_URL = 'EDITOR_URL'
+HIDE_VERSIONS_BUTTON = 'HIDE_VERSIONS_BUTTON'
 
 def test_view(request):
     """test view"""
@@ -46,9 +49,12 @@ def view_job_list(request):
     """Display a list of all jobs"""
     jobs = PreprocessJob.objects.all().order_by('-created')
 
+    info_dict = {'jobs': jobs,
+                 KEY_EDITOR_URL: settings.EDITOR_URL}
+
     return render(request,
                   'preprocess/list.html',
-                  {'jobs': jobs})
+                  info_dict)
 
 
 def view_job_detail(request, preprocess_id):
@@ -61,12 +67,16 @@ def view_job_detail(request, preprocess_id):
     for obj in preprocess_list_or_err:
         job_name = {'name': str(obj)}
 
+    info_dict = {'iterable':True,
+                 KEY_EDITOR_URL: settings.EDITOR_URL,
+                 HIDE_VERSIONS_BUTTON: True,
+                 'jobs': preprocess_list_or_err,
+                 'name': job_name,
+                 'preprocess_id': preprocess_id}
+
     return render(request,
                   'preprocess/preprocess-job-detail.html',
-                  {'iterable':True,
-                   'jobs': preprocess_list_or_err,
-                   'name': job_name,
-                   'preprocess_id': preprocess_id})
+                  info_dict)
 
 
 def view_basic_upload_form(request):
@@ -134,8 +144,10 @@ def view_custom_statistics_delete(request):
                         message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
 
-    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
-                                                DELETE_CUSTOM_STATISTICS)
+    metadata_update_or_err = MetadataUpdateUtil(\
+                                job_id,
+                                custom_statistics_json,
+                                col_const.DELETE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
         msg = metadata_update_or_err.get_error_messages()
         user_msg = dict(success=False,
@@ -197,8 +209,10 @@ def view_custom_statistics_update(request):
                         message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
 
-    metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
-                                                UPDATE_TO_CUSTOM_STATISTICS)
+    metadata_update_or_err = MetadataUpdateUtil(\
+                                        job_id,
+                                        custom_statistics_json,
+                                        col_const.UPDATE_TO_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
         msg = metadata_update_or_err.get_error_messages()
         user_msg = dict(success=False,
@@ -281,7 +295,7 @@ def view_custom_statistics_form(request):
         return JsonResponse(user_msg)
 
     metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
-                                                UPDATE_CUSTOM_STATISTICS)
+                                                col_const.UPDATE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
         print("got error")
         msg = get_json_error(metadata_update_or_err)
@@ -304,7 +318,16 @@ def view_custom_statistics_form(request):
 def view_retrieve_rows_form(request):
     """HTML form to retrieve rows from a preprocess file"""
     if request.method != 'POST':
-        frm = RetrieveRowsForm()
+        # Is there a default preprocess id in the url query string
+        #
+        if col_const.PREPROCESS_ID in request.GET:
+            init_vals = {update_const.START_ROW: DEFAULT_START_ROW,
+                         update_const.NUM_ROWS: DEFAULT_NUM_ROWS,
+                         col_const.PREPROCESS_ID: request.GET[col_const.PREPROCESS_ID]}
+            frm = RetrieveRowsForm(init_vals)
+        else:
+            frm = RetrieveRowsForm()
+
         return render(request,
                       'preprocess/retrieve-rows.html',
                       {'form': frm})
@@ -349,8 +372,12 @@ def view_preprocess_job_status(request, job_id):
 
     #   check_job_status(job)
 
-    info_dict = dict(job=job,
-                     preprocess_string_err=False)
+    info_dict = {'job': job,
+                 KEY_EDITOR_URL: settings.EDITOR_URL,
+                 HIDE_VERSIONS_BUTTON: True,
+                 'preprocess_string_err': False}
+
+    print('info_dict', info_dict)
 
     if job.is_finished():
         data_ok, preprocess_string = job.get_metadata(as_string=True)

@@ -239,6 +239,12 @@ class PreprocessJob(TimeStampedModel):
                        kwargs=dict(preprocess_id=self.id))
         #return self.get_job_status_link()
 
+    def get_preprocess_id(self):
+        """Return the id of the preprocess job"""
+        if self.id:
+            return self.id
+
+        return None
 
     def get_job_status_link(self, base_url=''):
         """for callbacks to check status and/or get preprocess data"""
@@ -429,6 +435,12 @@ class MetadataUpdate(TimeStampedModel):
 
         return info
 
+    def get_preprocess_id(self):
+        """Return the id of the preprocess job"""
+        if self.orig_metadata:
+            return self.orig_metadata.id
+
+        return None
 
     def get_metadata(self, as_string=False):
         """Return preprocess file contents if they exist"""
