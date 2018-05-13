@@ -32,6 +32,8 @@ DATABASES = {
     }
 }
 
+EDITOR_URL = 'http://localhost:1234'
+
 SESSION_COOKIE_NAME = 'ravens_metadata_local'
 
 STATIC_URL = '/static/'
