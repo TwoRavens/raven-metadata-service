@@ -5,32 +5,43 @@
 
 
 <div class="card">
+  <h5 class="card-header">Metadata file details:   <span class="badge badge-primary">{{ preprocess_job.id }}</h5>
+
   <div class="card-body">
-    <h4 class="pb-2 mb-0" style="text-align: center">Details for:   <span class="badge badge-primary">{{ preprocess_job.id }}</span> </h4>
     <table class="table table-condensed">
       <tr>
-        <th>name</th>
-        <td>{{ preprocess_job.name }}</td>
+        <th>id / name</th>
+        <td><span class="badge badge-primary">{{ preprocess_job.id }}</span>
+            &nbsp;/&nbsp; {{ preprocess_job.name }}</td>
       </tr>
       {% if dv_info %}
       <tr>
         <th>Dataverse File <img src="{% static "images/dataverse-icon.jpg" %}" alt="Dataverse Icon" width="20" height="30" /></th>
         <td>
-
-          {% if dv_info.jsonld_citation.name %}
-            <p>{{ dv_info.jsonld_citation.name|safe }}</p>
-          {% endif %}
-        {% if dv_info.jsonld_citation.citation.0 %}
-          <p>{{ dv_info.jsonld_citation.citation.0|safe }}</p>
-        {% elif dv_info.jsonld_citation.description %}
-          <p>{{ dv_info.jsonld_citation.description|safe }}</p>
-
-        {% else %}
-          doi: {{ dv_info.dataset_doi }}
+          {% if dv_info.get_file_page_url %}
+          <b>source:</b> <a href="{{ dv_info.get_file_page_url }}" target="_blank">{{ dv_info.get_file_page_url }}</a>
         {% endif %}
-        {% if dv_info.get_file_page_url %}
-      <br /><a href="{{ dv_info.get_file_page_url }}" target="_blank">{{ dv_info.get_file_page_url }}</a>
-      {% endif %}
+        <br /><b>doi:</b> {{ dv_info.dataset_doi }}
+          {% if dv_info.jsonld_citation.name %}
+            <p><b>dataset name:</b> {{ dv_info.jsonld_citation.name|safe }}
+
+            </p>
+            <a class="btn btn-info btn-sm" data-toggle="collapse" href="#dvDescription" role="button" aria-expanded="false" aria-controls="dvDescription">
+                 description</a>
+          {% endif %}
+          <div class="collapse" id="dvDescription">
+              {% if dv_info.jsonld_citation.citation.0 %}
+                <p>{{ dv_info.jsonld_citation.citation.0|safe }}</p>
+              {% elif dv_info.jsonld_citation.description %}
+                <p>{{ dv_info.jsonld_citation.description|safe }}
+
+                </p>
+
+              {% else %}
+                <p>doi: {{ dv_info.dataset_doi }}</p>
+              {% endif %}
+          </div>
+
         </td>
       </tr>
       {% endif %}
