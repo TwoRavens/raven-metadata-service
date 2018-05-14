@@ -83,9 +83,14 @@ def view_latest_metadata_schema(request):
 
     if 'pretty' in request.GET:
         jstring = json_dump(info_dict, indent=4)
+
         if jstring.success:
-            return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
-        return JsonResponse(get_json_error(jstring.err_mg))
+            info = dict(json_schema=jstring.result_obj)
+            return render(request,
+                          'metadata_schemas/schema_pretty.html',
+                          info)
+        else:
+            return JsonResponse(get_json_error(jstring.err_mg))
 
     return JsonResponse(info_dict)
 
@@ -113,7 +118,10 @@ def view_latest_dataset_schema(request):
     if 'pretty' in request.GET:
         jstring = json_dump(dataset_dict, indent=4)
         if jstring.success:
-            return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
+            info = dict(json_schema=jstring.result_obj)
+            return render(request,
+                          'metadata_schemas/schema_pretty.html',
+                          info)
         return JsonResponse(get_json_error(jstring.err_mg))
 
     return JsonResponse(dataset_dict)
