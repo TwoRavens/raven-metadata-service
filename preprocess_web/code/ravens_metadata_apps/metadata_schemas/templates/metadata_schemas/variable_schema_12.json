@@ -92,7 +92,8 @@
                "type":"object",
                "properties":{
                   "variableName":{
-                     "type":"string"
+                     "type":"string",
+                     "description":"Name of the variable"
                   },
                   "description":{
                      "type":"string",
@@ -124,7 +125,7 @@
                   },
                   "interval":{
                      "type":"string",
-                     "description":"Describes numeric variables as either continuously valued, or discrete valued",
+                     "description":"Describes numeric variables as either continuously valued, or discretely valued",
                      "enum":[
                         "continuous",
                         "discrete"

@@ -1,81 +1,7 @@
+{% extends "base.html" %}
 {% load static %}
-<!doctype html>
-<html>
-  <head>
-    <link rel="shortcut icon" type="image/png" href="{% static "images/TwoRavens_favicon.png" %}"/>
-    <title>{% block title_block %}
-        {% if title %}{{ title }}{% else %}TwoRavens{% endif %}
-        {% endblock %}
-    </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {% block extra_css %}
-    <!-- bootstrap 4 (not on pebbles page) -->
-    <link rel="stylesheet" href="{% static "pkgs/bootstrap4/css/bootstrap.min.css" %}">
-    <!--link rel="stylesheet" href="{% static "css/non_app.css" %}"-->
-    {% endblock %}
-
-    {% block extra_js %}
-    <!-- bootstrap 4 / jquery 3.2 / popper (not on pebbles page) -->
-    <script src="{% static "pkgs/bootstrap4/jquery-3.2.1.min.js" %}"></script>
-    <script src="{% static "pkgs/bootstrap4/popper.min.js" %}"></script>
-    <script src="{% static "pkgs/bootstrap4/js/bootstrap.min.js" %}"></script>
-    {% endblock %}
-
-    {% block extra_header %}
-    {% endblock %}
-
-  </head>
-
-  <body>
-  {% block body_content %}
-  <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom:1px solid #ccc;">
-  {#<a class="navbar-brand" href="#">Navbar</a>#}
-  <a href="/" class="navbar-brand"><img src="{% static "images/TwoRavens.png" %}" alt="TwoRavens" width="100" style="margin-left: 1em; margin-top: -0.5em;" /></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-      {% comment %}
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'view_dev_raven_links' %}">links</a>
-      </li>
-        {% endcomment %}
-      {% if user.is_authenticated %}
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{ user.username }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Profile?</a>
-          <a class="dropdown-item" href="#">Saved metadata?</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{#% url 'logout' %#}">Log out</a>
-      </li>
-      {% else %}
-      <li class="nav-item">
-        <a class="nav-link" href="{#% url 'signup' %#}">Sign Up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{#% url 'login' %#}">Log In</a>
-      </li>
-      {% endif %}
-
-
-    </ul>
-  </div>
-</nav>
-<div class="container" style="margin:10%; xbackground-color:#f0f8ff; border: transparent">
+{% load humanize %}
+{% block main_content %}
       <!-- Three columns of text below the carousel -->
       <div class="row">
 
@@ -90,6 +16,7 @@
 
               <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
 
+              <a class="btn btn-sm btn-primary" style="margin-top: 5px" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
@@ -136,7 +63,7 @@
 
               <h3 class="card-title">Custom Statistics</h3>
 
-              <p>Go to custom statistic page.  <p><a class="btn btn-primary" href="{% url 'view_form_custom_statistics' %}" role="button">Custom Statistics</a></p>
+              <p>Go to the custom statistic page.  <p><a class="btn btn-primary" href="{% url 'view_form_custom_statistics' %}" role="button">Custom Statistics</a></p>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
@@ -179,9 +106,26 @@
 
       </div><!-- /.row -->
 
-</div>
-      <hr>
-      <footer><p style="float:right; font-family:SansSerif; font-size: small; text-decoration-color: #6c757d"> <a href="http://2ravens.org/" target="_blank">@2ravens</a>, @RamanPrasad @Kripanshu </p></footer>
-  {% endblock %}
-  </body>
-</html>
+      <!-- start: row -->
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+
+              <span class="oi oi-list oi-lg"></span>
+
+                <h3 class="card-title">Other Links</h3>
+
+                <ul>
+                  <li><a href="{% url 'view_latest_metadata_schema' %}?pretty">metadata schema (latest)</a>
+                  <li><a href="{% url 'view_latest_dataset_schema' %}?pretty">dataset schema (latest)</a>
+                    <li><a href="{% url 'view_variable_definitions' %}">variable defns (latest, .rst)</a>
+                </ul>
+
+
+              </div>
+            </div>
+          </div><!-- /.col-lg-4 -->
+
+      </div><!-- end: row -->
+{% endblock %}
