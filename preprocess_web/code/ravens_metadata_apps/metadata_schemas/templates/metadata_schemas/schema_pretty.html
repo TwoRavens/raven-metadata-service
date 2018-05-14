@@ -1,0 +1,12 @@
+{%  extends "base.html" %}
+{% load static %}
+{% block extra_header %}
+<script src="{% static "js/run_prettify.js" %}?lang=js&amp;skin=sunburst"></script>
+{% endblock %}
+
+{% block main_content %}
+
+<pre class="prettyprint">
+  {{ json_schema|safe }}
+</pre>
+{% endblock %}
