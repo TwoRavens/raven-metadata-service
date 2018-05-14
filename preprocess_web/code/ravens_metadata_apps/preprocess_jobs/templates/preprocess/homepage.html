@@ -2,128 +2,76 @@
 {% load static %}
 {% load humanize %}
 {% block main_content %}
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-
-        <div class="col-lg-4  mb-4">
-          <div class="card">
-            <div class="card-body">
-              <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
-
-              <h3 class="card-title">Create Summary Statistics</h3>
-
-              <p>Upload a data file and generate a metadata file containing summary statistics.</p>
-
-              <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
-
-              <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
+<!-- Three columns of text below the carousel -->
+<div class="container" style="text-align: center; margin-top: 10%">
+<table class="table" style="text-align: center; width: 100%; height: 40%">
+   <tbody>
+      <tr>
+         <td style="border: transparent; width: 30% ; height: 100%">
+            <div class="col-lg-15  mb-3">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
+                     <h3 class="card-title">Create Summary Statistics</h3>
+                     <p>Upload a data file and generate a metadata file containing summary statistics.</p>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-                <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-
-              <h3 class="card-title">Metadata List</h3>
-
-              <p>List all of the summary statistic files, including
-                those in process.</p>
-
-              <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
+            <!-- /.col-lg-4 -->
+         </td>
+         <td style="border: transparent ;width: 30%; height: 100%">
+            <div class="col-lg-15 mb-3">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
+                     <h3 class="card-title">View Data</h3>
+                     <p>It gives the List of all the summary statistic files, including
+                        those in process. Also provides access to the source data ( both system files and dataverse files).
+                     </p>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">View Source Data</a>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
-
-              <h3 class="card-title">Documentation</h3>
-
-              <p><a href="http://two-ravens-metadata-service.readthedocs.io/" target="_blank">Definitions</a> for the metadata file created
-                 preprocess.</p>
+            <!-- /.col-lg-4 -->
+         </td>
+         <td style="border: transparent; width: 30%; height: 100%">
+            <div class="col-lg-15 mb-3">
+               <div class="card">
+                  <div class="card-body">
+                     <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
+                     <h3 class="card-title">Documentation</h3>
+                     <p>Documentation containing the definitions for the custom statistics in  metadata file created by preprocess.</p>
+                     <a class="btn btn-sm btn-primary" href="http://two-ravens-metadata-service.readthedocs.io/" target="_blank">Definitions</a>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- end row -->
+            <!-- /.col-lg-4 -->
+         </td>
+      </tr>
+   </tbody>
+</table>
+<div class="container" style="text-align: center; margin-top: 10%">
+   <table width="100%">
+      <tbody >
+         <tr>
+            <td width="40%" >
+               <div class="list-group" style="width: 35%; text-align: left">
+                  <span class="list-group-item list-group-item-action active ">
+                     <h5 style="margin-left: 30%">Other Links</h5>
+                  </span>
+                  <a href="{% url 'view_latest_metadata_schema' %}?pretty" class="list-group-item list-group-item-action">metadata schema (latest)</a>
+                  <a href="{% url 'view_latest_dataset_schema' %}?pretty" class="list-group-item list-group-item-action">dataset schema (latest)</a>
+                  <a href="{% url 'view_variable_definitions' %}" class="list-group-item list-group-item-action">variable defns (latest, .rst)</a>
+               </div>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<footer style="margin-bottom: 5%"></footer>
+</div>
 
-      <!-- start row -->
-      <div class="row">
-
-        <div class="col-lg-4  mb-4">
-          <div class="card">
-            <div class="card-body">
-
-              <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-
-              <h3 class="card-title">Custom Statistics</h3>
-
-              <p>Go to the custom statistic page.  <p><a class="btn btn-primary" href="{% url 'view_form_custom_statistics' %}" role="button">Custom Statistics</a></p>
-            </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
-
-
-        <div class="col-lg-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-
-              <img class="rounded-circle" src="{% static "icon/info.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-
-              <h3 class="card-title">Retrieve Data</h3>
-
-              <p> Retrieve data rows from the source file<p>
-
-              <a class="btn btn-sm btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">Check Data</a>
-
-            </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-
-                <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-
-                <h3 class="card-title">Metadata Editor</h3>
-
-                <p>The Metadta Editor allows a user to view/edit the metadata file,
-                  completing tasks such as updating labels, adding summary
-                  statistics, and setting views for other users.</p>
-
-                <a class="btn btn-sm btn-primary" href="#" role="button">Check Editor</a>
-
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-
-
-      </div><!-- /.row -->
-
-      <!-- start: row -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-
-              <span class="oi oi-list oi-lg"></span>
-
-                <h3 class="card-title">Other Links</h3>
-
-                <ul>
-                  <li><a href="{% url 'view_latest_metadata_schema' %}?pretty">metadata schema (latest)</a>
-                  <li><a href="{% url 'view_latest_dataset_schema' %}?pretty">dataset schema (latest)</a>
-                    <li><a href="{% url 'view_variable_definitions' %}">variable defns (latest, .rst)</a>
-                </ul>
-
-
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-
-      </div><!-- end: row -->
 {% endblock %}

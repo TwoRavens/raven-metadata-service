@@ -50,6 +50,14 @@
         <a class="nav-link" href="{% url 'view_dev_raven_links' %}">links</a>
       </li>
         {% endcomment %}
+     {% if not HIDE_HOME_BUTTON %}
+    <li class="nav-item">
+        <a style="padding: 5%; margin-top: 1%" class="btn-primary" onclick="goBack()" > <img style="width: 50%; height: 50% " src="{% static "icon/arrow-left.png" %}"></a>
+      </li>
+          <li class="nav-item">
+       <a style="padding: 5%; margin-top: 1%" class="btn-primary"  href="{% url 'view_homepage' %}"> <img style="width: 50%; height: 50%" src="{% static "icon/home-outline.png" %}"></a>
+      </li>
+         {% endif %}
       {% if user.is_authenticated %}
 
       <li class="nav-item dropdown">
@@ -62,6 +70,7 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" href="{#% url 'logout' %#}">Log out</a>
       </li>
@@ -78,11 +87,20 @@
     </ul>
   </div>
 </nav>
-  <div class="container" id="main_block" style="height: 100%; float: left; width: 100%"><br />
-    {% block main_content %}
+  <div class="container" id="main_block" style="height: 100%; width: 100%; text-align: center"><br />
+
+      {% block main_content %}
 
     {% endblock %}
   </div>
   {% endblock %}
   </body>
+<script>
+function goBack() {
+    window.history.back();
+}
+function home() {
+window.location.href = "http://127.0.0.1:8080/";
+}
+</script>
 </html>
