@@ -10,6 +10,7 @@ from django.http import HttpRequest
 
 KEY_EDITOR_URL = 'EDITOR_URL'
 HIDE_VERSIONS_BUTTON = 'HIDE_VERSIONS_BUTTON'
+HIDE_EDITOR_BUTTON = 'HIDE_EDITOR_BUTTON'
 
 
 def get_common_view_info(request):

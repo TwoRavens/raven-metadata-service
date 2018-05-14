@@ -33,7 +33,8 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_error,
      get_json_success,
      get_baseurl_from_request,
-     KEY_EDITOR_URL, HIDE_VERSIONS_BUTTON)
+     KEY_EDITOR_URL,
+     HIDE_VERSIONS_BUTTON, HIDE_EDITOR_BUTTON)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
@@ -56,7 +57,7 @@ def view_job_list(request):
                   info_dict)
 
 
-def view_job_detail(request, preprocess_id):
+def view_job_versions(request, preprocess_id):
     """List the PreprocessJob and associated MetadataUpdates"""
     success, preprocess_list_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 

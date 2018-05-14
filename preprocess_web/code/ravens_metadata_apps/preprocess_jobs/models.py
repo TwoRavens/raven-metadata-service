@@ -236,7 +236,7 @@ class PreprocessJob(TimeStampedModel):
 
     def get_absolute_url(self):
         """jobs status..."""
-        return reverse('view_job_detail',
+        return reverse('view_job_versions',
                        kwargs=dict(preprocess_id=self.id))
         #return self.get_job_status_link()
 

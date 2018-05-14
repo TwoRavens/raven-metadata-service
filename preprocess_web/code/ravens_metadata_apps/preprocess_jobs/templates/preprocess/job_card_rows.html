@@ -18,6 +18,10 @@
   <td>{{ job.get_elapsed_time }}</td>
 </tr>
 <tr>
+  <th>Preprocess File API endpoint</th>
+  <td><a href="{% url 'api_get_metadata_version' preprocess_id=job.get_preprocess_id version=job.get_version_string %}">{% url 'api_get_metadata_version' preprocess_id=job.get_preprocess_id version=job.get_version_string %}</a></td>
+</tr>
+<tr>
   <th>Preprocess File (Size)</th>
   <td>{{ job.metadata_filename }} ({{ job.get_metadata_filesize|filesizeformat }})</td>
 </tr>

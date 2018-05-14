@@ -25,7 +25,13 @@
          <td>{{ obj.get_metadata_filesize|filesizeformat }}</td>
          <td>
            {% with metadata_obj=obj %}
-              {% include "preprocess/action_buttons.html" %}
+              {% if forloop.first %}
+                {% include "preprocess/action_buttons.html" %}
+              {% else %}
+                {% with HIDE_EDITOR_BUTTON=True %}
+                  {% include "preprocess/action_buttons.html" %}
+                {% endwith %}
+              {% endif %}
             {% endwith %}
 
          </td>

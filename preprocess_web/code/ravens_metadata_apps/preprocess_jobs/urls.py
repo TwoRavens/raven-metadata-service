@@ -70,8 +70,8 @@ urlpatterns = (
     # View PreprocessJob detail, includes MetadataUpdate objects
     #
     re_path(r'detail/(?P<preprocess_id>[0-9]{1,10})',
-            views.view_job_detail,
-            name='view_job_detail'),
+            views.view_job_versions,
+            name='view_job_versions'),
 
 
     # View list of all the preprocessed jobs
