@@ -1,5 +1,6 @@
 """Views for preprocess jobs"""
 import json, collections
+from django.conf import settings
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
