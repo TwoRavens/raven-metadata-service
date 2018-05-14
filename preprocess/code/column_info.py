@@ -226,12 +226,16 @@ class ColumnInfo(object):
 
         # Next 2 lines need to be fixed in the plot
         # value calculation section
-        
+
         if self.plotx is None and self.ploty is None:
             self.plot_type = None
 
         if self.cdf_plotx is None and self.cdf_ploty is None:
             self.cdf_plot_type = None
+
+        # Until mid is updated
+        self.mid = None
+        self.freqmid = None
 
     def print_values(self):
         """print to screen"""
