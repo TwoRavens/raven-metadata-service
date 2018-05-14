@@ -153,5 +153,8 @@ urlpatterns = (
     path('hello',
          views.test_view,
          name='test_view'),
+    # path(r'pretty_json',
+    #      views.pretty_json,
+    #      name='pretty_json'),
 
 )

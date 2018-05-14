@@ -170,7 +170,9 @@ def api_update_metadata(request):
     result = get_json_success('Success!',
                               data=update_util.get_updated_metadata())
 
-    return JsonResponse(result)
+    return render(request,
+                  'preprocess/pretty_output.html',
+                  result)
 
 
 def api_get_job_status_with_html(request, preprocess_id):
@@ -211,8 +213,10 @@ def api_get_job_status(request, preprocess_id, with_html=False):
     if 'pretty' in request.GET:
         jstring = json_dump(json_success, indent=4)
         if jstring.success:
-            return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
-        return JsonResponse(get_json_error(jstring.err_mg))
+            info = dict(success=True, data= jstring.result_obj)
+            return render(request, 'preprocess/pretty_output.html', info)
+        else:
+            return JsonResponse(get_json_error(jstring.err_mg))
     return JsonResponse(json_success)
 
     #json_fail = get_json_error(resp_info.err_msg)
@@ -234,13 +238,15 @@ def api_get_latest_metadata(request, preprocess_id):
     if not success:
         return JsonResponse(get_json_error(metadata_or_err))
 
-
     user_msg = get_json_success(user_msg="Metadata retrieved",
                                 data=metadata_or_err)
 
     if 'pretty' in request.GET:
         is_success, jstring = json_dump(user_msg, indent=4)
-        return HttpResponse('<pre>%s</pre>' % jstring)
+        info = dict(success=True,data= jstring)
+        return render(request,
+                  'preprocess/pretty_output.html',
+                  info)
 
     return JsonResponse(user_msg)
 
@@ -321,7 +327,12 @@ def api_get_metadata_version(request, preprocess_id, version):
 
     if 'pretty' in request.GET:
         is_success, jstring = json_dump(data_or_err, indent=4)
-        return HttpResponse('<pre>%s</pre>' % jstring)
+        info = dict(success=True,
+                    data = jstring)
+        return render(request,
+                  "preprocess/pretty_output.html",
+                  info
+                  )
 
-
-    return JsonResponse(get_json_success('Success', data=data_or_err))
+    usr_msg = get_json_success('Success', data=data_or_err)
+    return JsonResponse(usr_msg)

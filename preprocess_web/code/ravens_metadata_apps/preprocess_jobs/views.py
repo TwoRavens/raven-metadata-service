@@ -176,7 +176,9 @@ def view_custom_statistics_delete(request):
                         data=metadata_update_or_err.get_updated_metadata())
         print("Updated metadata : ", metadata_update_or_err)
     print("usr_msg ", user_msg)
-    return JsonResponse(user_msg)
+    return render(request,
+                  'preprocess/pretty_output.html',
+                  user_msg)
 
 
 @csrf_exempt
@@ -241,7 +243,9 @@ def view_custom_statistics_update(request):
                         data=metadata_update_or_err.get_updated_metadata())
         print("Updated metadata : ", metadata_update_or_err)
     print("user msg ", user_msg)
-    return JsonResponse(user_msg)
+    return render(request,
+                  'preprocess/pretty_output.html',
+                  user_msg)
 
 
 @csrf_exempt
@@ -325,7 +329,9 @@ def view_custom_statistics_form(request):
                         data=metadata_update_or_err.get_updated_metadata())
         print("Updated metadata : ", metadata_update_or_err)
 
-    return JsonResponse(user_msg)
+    return render(request,
+                  'preprocess/pretty_output.html',
+                  user_msg)
     # ------------------------
 
 
@@ -452,8 +458,12 @@ def show_job_info(request, job_id):
     if 'pretty' in request.GET:
         jstring = json_dump(job.as_dict(), indent=4)
         if jstring.success:
-            return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
-        return JsonResponse(get_json_error(jstring.err_mg))
+            info = dict(json_schema=jstring.result_obj)
+            return render(request,
+                          'preprocess/pretty_output.html',
+                            info)
+        else:
+            return JsonResponse(get_json_error(jstring.err_mg))
 
     user_msg = dict(success=True,
                     message='some message',
