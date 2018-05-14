@@ -35,6 +35,7 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
+from ravens_metadata_apps.dataverse_connect.models import DataverseFileInfo
 from col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
 from np_json_encoder import NumpyJSONEncoder
 
@@ -190,9 +191,13 @@ def api_get_job_status(request, preprocess_id, with_html=False):
         return JsonResponse(get_json_error(err_mg),
                             status=404)
 
+    dv_info = DataverseFileInfo.objects.filter(\
+                            preprocess_job=job\
+                            ).first()
     resp_info = job.as_dict()
     if with_html:
         html_dict = {"job": job,
+                     "dv_info": dv_info,
                      KEY_EDITOR_URL: settings.EDITOR_URL,
                      HIDE_VERSIONS_BUTTON: True}
 

@@ -75,10 +75,16 @@ def view_job_versions(request, preprocess_id):
 
     for obj in preprocess_list_or_err:
         job_name = {'name': str(obj)}
+        break
+
+    dv_info = DataverseFileInfo.objects.filter(\
+                                preprocess_job__id=preprocess_id\
+                                ).first()
 
     info_dict = {'iterable':True,
                  KEY_EDITOR_URL: settings.EDITOR_URL,
                  HIDE_VERSIONS_BUTTON: True,
+                 'dv_info': dv_info,
                  'jobs': preprocess_list_or_err,
                  'name': job_name,
                  col_const.PREPROCESS_ID: preprocess_id}
@@ -379,9 +385,12 @@ def view_preprocess_job_status(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    #   check_job_status(job)
+    dv_info = DataverseFileInfo.objects.filter(\
+                            preprocess_job=job\
+                            ).first()
 
     info_dict = {'job': job,
+                 'dv_info': dv_info,
                  KEY_EDITOR_URL: settings.EDITOR_URL,
                  HIDE_VERSIONS_BUTTON: True,
                  'preprocess_string_err': False}

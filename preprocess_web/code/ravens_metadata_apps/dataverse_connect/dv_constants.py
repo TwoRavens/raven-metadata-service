@@ -6,3 +6,4 @@ KEY_DATAVERSE_FILE_ID = 'fileId'
 KEY_DATAVERSE_FILE_VERSION = 'version'
 
 PATH_DATAFILE_ACCESS = '/api/access/datafile/'
+PATH_DATAFILE_PAGE = '/file.xhtml'
