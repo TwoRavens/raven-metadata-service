@@ -7,7 +7,7 @@ def view_homepage(request):
     """landing page"""
     return render(request,
                   'preprocess/homepage.html',
-                  {})
+                  {'HIDE_HOME_BUTTON':True})
 
 def view_monitoring_alive(request):
     """For kubernetes liveness check"""
