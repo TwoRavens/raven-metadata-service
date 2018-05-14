@@ -8,10 +8,10 @@
 <a href="{% url 'api_get_metadata_version' preprocess_id=metadata_obj.get_preprocess_id version=metadata_obj.get_version_string %}?pretty" class="btn btn-info btn-sm">View</a>
 
 {% if not HIDE_VERSIONS_BUTTON %}
-<a href="{% url 'view_job_detail' preprocess_id=metadata_obj.get_preprocess_id %}" class="btn btn-info btn-sm">Versions</a>
+<a href="{% url 'view_job_versions' preprocess_id=metadata_obj.get_preprocess_id %}" class="btn btn-info btn-sm">Details</a>
 {% endif %}
 
-{% if EDITOR_URL %}
+{% if EDITOR_URL and not HIDE_EDITOR_BUTTON %}
 <a href="{{ EDITOR_URL }}{{ metadata_obj.get_preprocess_id }}/editor" target="_blank" class="btn btn-info btn-sm">Editor</a>
 {% endif %}
 

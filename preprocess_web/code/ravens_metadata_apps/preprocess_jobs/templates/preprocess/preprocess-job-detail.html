@@ -1,9 +1,58 @@
 {%  extends "base.html" %}
+{% load static %}
 {% block main_content %}
 {% if iterable %}
-<h4 class="pb-2 mb-0" style="text-align: center">{{ name.name }}</h4>
-    <a class="btn btn-info btn-sm" href="{%  url 'view_job_list' %}" style="float: left">Back</a>
-<br>
+
+
+<div class="card">
+  <h5 class="card-header">Metadata file details:   <span class="badge badge-primary">{{ preprocess_job.id }}</h5>
+
+  <div class="card-body">
+    <table class="table table-condensed">
+      <tr>
+        <th>id / name</th>
+        <td><span class="badge badge-primary">{{ preprocess_job.id }}</span>
+            &nbsp;/&nbsp; {{ preprocess_job.name }}</td>
+      </tr>
+      {% if dv_info %}
+      <tr>
+        <th>Dataverse File <img src="{% static "images/dataverse-icon.jpg" %}" alt="Dataverse Icon" width="20" height="30" /></th>
+        <td>
+          {% if dv_info.get_file_page_url %}
+          <b>source:</b> <a href="{{ dv_info.get_file_page_url }}" target="_blank">{{ dv_info.get_file_page_url }}</a>
+        {% endif %}
+        <br /><b>doi:</b> {{ dv_info.dataset_doi }}
+          {% if dv_info.jsonld_citation.name %}
+            <p><b>dataset name:</b> {{ dv_info.jsonld_citation.name|safe }}
+
+            </p>
+            <a class="btn btn-info btn-sm" data-toggle="collapse" href="#dvDescription" role="button" aria-expanded="false" aria-controls="dvDescription">
+                 description</a>
+          {% endif %}
+          <div class="collapse" id="dvDescription">
+              {% if dv_info.jsonld_citation.citation.0 %}
+                <p>{{ dv_info.jsonld_citation.citation.0|safe }}</p>
+              {% elif dv_info.jsonld_citation.description %}
+                <p>{{ dv_info.jsonld_citation.description|safe }}
+
+                </p>
+
+              {% else %}
+                <p>doi: {{ dv_info.dataset_doi }}</p>
+              {% endif %}
+          </div>
+
+        </td>
+      </tr>
+      {% endif %}
+      <tr>
+        <th>source File (size)</th>
+        <td>{{ preprocess_job.source_filename }} &nbsp; ({{ preprocess_job.get_source_filesize|filesizeformat }})</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 <br>
 <table class="table table-hover">
    <thead class="thead-dark">
@@ -25,7 +74,13 @@
          <td>{{ obj.get_metadata_filesize|filesizeformat }}</td>
          <td>
            {% with metadata_obj=obj %}
-              {% include "preprocess/action_buttons.html" %}
+              {% if forloop.first %}
+                {% include "preprocess/action_buttons.html" %}
+              {% else %}
+                {% with HIDE_EDITOR_BUTTON=True %}
+                  {% include "preprocess/action_buttons.html" %}
+                {% endwith %}
+              {% endif %}
             {% endwith %}
 
          </td>

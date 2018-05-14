@@ -1,3 +1,4 @@
+{% load static %}
 <tr>
   <th>Preprocess complete?</th>
   <td>
@@ -17,6 +18,22 @@
   <th>Elapsed time</th>
   <td>{{ job.get_elapsed_time }}</td>
 </tr>
+<tr>
+  <th>Preprocess File API endpoint</th>
+  <td><a href="{% url 'api_get_metadata_version' preprocess_id=job.get_preprocess_id version=job.get_version_string %}">{% url 'api_get_metadata_version' preprocess_id=job.get_preprocess_id version=job.get_version_string %}</a></td>
+</tr>
+{% if dv_info %}
+<tr>
+  <th>Dataverse File</th>
+  <td>
+      <img src="{% static "images/dataverse-icon.jpg" %}" alt="Dataverse Icon" width="20" height="30" />
+    &nbsp; {{ dv_info.dataset_doi }}
+    {% if dv_info.get_file_page_url %}
+    <br /><a href="{{ dv_info.get_file_page_url }}" target="_blank">{{ dv_info.get_file_page_url }}</a>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
 <tr>
   <th>Preprocess File (Size)</th>
   <td>{{ job.metadata_filename }} ({{ job.get_metadata_filesize|filesizeformat }})</td>

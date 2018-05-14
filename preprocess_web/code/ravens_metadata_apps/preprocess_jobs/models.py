@@ -103,10 +103,11 @@ class PreprocessJob(TimeStampedModel):
         if not self.id:
             super(PreprocessJob, self).save(*args, **kwargs)
 
-        if self.source_file:
-            self.name = basename(self.source_file.name)[:100]
-        else:
-            self.name = 'job %s' % self.id
+        if not self.name:
+            if self.source_file:
+                self.name = basename(self.source_file.name)[:100]
+            else:
+                self.name = 'job %s' % self.id
 
         if self.state == STATE_SUCCESS:
             self.is_success = True
@@ -236,7 +237,7 @@ class PreprocessJob(TimeStampedModel):
 
     def get_absolute_url(self):
         """jobs status..."""
-        return reverse('view_job_detail',
+        return reverse('view_job_versions',
                        kwargs=dict(preprocess_id=self.id))
         #return self.get_job_status_link()
 

@@ -70,8 +70,8 @@ urlpatterns = (
     # View PreprocessJob detail, includes MetadataUpdate objects
     #
     re_path(r'detail/(?P<preprocess_id>[0-9]{1,10})',
-            views.view_job_detail,
-            name='view_job_detail'),
+            views.view_job_versions,
+            name='view_job_versions'),
 
 
     # View list of all the preprocessed jobs
@@ -102,6 +102,13 @@ urlpatterns = (
     re_path(r'api/metadata/(?P<preprocess_id>[0-9]{1,10})$',
             views_api.api_get_latest_metadata,
             name='api_get_latest_metadata'),
+
+
+    # job to retrieve preprocess job status....
+    #
+    #re_path(r'api/metadata/dataverse/(?P<dataverse_file_id>[0-9]{1,11})$',
+    #        views_api.api_get_latest_metadata_by_dataverse,
+    #        name='api_get_latest_metadata_by_dataverse'),
 
 
     # job to retrieve preprocess data--assumes job has completed ok

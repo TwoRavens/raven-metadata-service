@@ -12,8 +12,10 @@
     </div>
     <table class="table table-condensd" id="tbl_job_status">
       <tr>
-        <th>ID</th>
-        <td><h4><span class="badge badge-primary">{{ job.id }}</span></h4>
+        <th>ID / Name</th>
+        <td><h4><span class="badge badge-primary">{{ job.id }}</span>
+            <span style="font-weight:normal;">/</span> {{ job.name }}
+        </h4>
         </td>
       </tr>
       <tr>

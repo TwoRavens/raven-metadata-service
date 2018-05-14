@@ -33,10 +33,12 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_error,
      get_json_success,
      get_baseurl_from_request,
-     KEY_EDITOR_URL, HIDE_VERSIONS_BUTTON)
+     KEY_EDITOR_URL,
+     HIDE_VERSIONS_BUTTON, HIDE_EDITOR_BUTTON)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
+from ravens_metadata_apps.dataverse_connect.models import DataverseFileInfo
 
 
 def test_view(request):
@@ -46,9 +48,17 @@ def test_view(request):
 
 def view_job_list(request):
     """Display a list of all jobs"""
-    jobs = PreprocessJob.objects.all().order_by('-created')
+    dv_lookup = {}
+    for dv_info in DataverseFileInfo.objects.select_related('preprocess_job').all():
+        dv_lookup[dv_info.preprocess_job.id] = dv_info
 
-    info_dict = {'jobs': jobs,
+    jobs = PreprocessJob.objects.all().order_by('-created')
+    job_list = []
+    for job in jobs:
+        job.dv_info = dv_lookup.get(job.id, None)
+        job_list.append(job)
+
+    info_dict = {'jobs': job_list,
                  KEY_EDITOR_URL: settings.EDITOR_URL}
 
     return render(request,
@@ -56,21 +66,26 @@ def view_job_list(request):
                   info_dict)
 
 
-def view_job_detail(request, preprocess_id):
+def view_job_versions(request, preprocess_id):
     """List the PreprocessJob and associated MetadataUpdates"""
     success, preprocess_list_or_err = JobUtil.get_versions_metadata_objects(preprocess_id)
 
     if not success:
         return JsonResponse(get_json_error(preprocess_list_or_err))
 
-    for obj in preprocess_list_or_err:
-        job_name = {'name': str(obj)}
+    preprocess_job = JobUtil.get_completed_preprocess_job(preprocess_id)
+
+    dv_info = DataverseFileInfo.objects.filter(\
+                                preprocess_job=preprocess_job\
+                                ).first()
 
     info_dict = {'iterable':True,
                  KEY_EDITOR_URL: settings.EDITOR_URL,
                  HIDE_VERSIONS_BUTTON: True,
+                 'dv_info': dv_info,
                  'jobs': preprocess_list_or_err,
-                 'name': job_name,
+                 'preprocess_job': preprocess_job,
+                 'name': preprocess_job.name,
                  col_const.PREPROCESS_ID: preprocess_id}
 
     return render(request,
@@ -369,11 +384,14 @@ def view_preprocess_job_status(request, job_id):
     except PreprocessJob.DoesNotExist:
         raise Http404('job_id not found: %s' % job_id)
 
-    #   check_job_status(job)
+    dv_info = DataverseFileInfo.objects.filter(\
+                            preprocess_job=job\
+                            ).first()
 
     info_dict = {'job': job,
+                 'dv_info': dv_info,
                  KEY_EDITOR_URL: settings.EDITOR_URL,
-                 HIDE_VERSIONS_BUTTON: True,
+                 #HIDE_VERSIONS_BUTTON: True,
                  'preprocess_string_err': False}
 
     print('info_dict', info_dict)

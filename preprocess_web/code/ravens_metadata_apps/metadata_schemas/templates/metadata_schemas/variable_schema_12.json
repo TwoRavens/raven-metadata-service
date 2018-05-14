@@ -329,7 +329,8 @@
                   "midpoint":{
                      "type":[
                         "number",
-                        "string"
+                        "string",
+                        "null"
                      ],
                      "description":"The value equidistant from the reported min and max values",
                      "oneOf":[
@@ -337,17 +338,18 @@
                            "type":"number"
                         },
                         {
-                           "type":"string",
-                           "xenum":[
-                              "NA"
-                           ]
+                           "type":"string"
+                        },
+                        {
+                           "type":"null"
                         }
                      ]
                   },
                   "midpointFreq":{
                      "type":[
                         "integer",
-                        "string"
+                        "string",
+                        "null"
                      ],
                      "description":"Number of observations with value equal to minpoint",
                      "oneOf":[
@@ -355,10 +357,10 @@
                            "type":"integer"
                         },
                         {
-                           "type":"string",
-                           "enum":[
-                              "NA"
-                           ]
+                           "type":"string"
+                        },
+                        {
+                           "type":"null"
                         }
                      ]
                   },

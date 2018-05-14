@@ -7,7 +7,9 @@ from model_utils.models import TimeStampedModel
 from django.db import models
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
-from ravens_metadata_apps.dataverse_connect.dv_constants import PATH_DATAFILE_ACCESS
+from ravens_metadata_apps.dataverse_connect.dv_constants import \
+    (PATH_DATAFILE_ACCESS, PATH_DATAFILE_PAGE,
+     KEY_DATAVERSE_FILE_ID)
 
 from ravens_metadata_apps.utils.url_helper import URLHelper
 
@@ -92,6 +94,17 @@ class RegisteredDataverse(TimeStampedModel):
 
         return urlunparse(params)
 
+    def get_file_page_url(self, file_id):
+        """Build a url similar to:
+        https://dataverse.harvard.edu/file.xhtml?fileId={{ file id }}
+        """
+        params = (\
+            self.url_scheme,
+            self.network_location,
+            '%s?%s=%s' % (PATH_DATAFILE_PAGE, KEY_DATAVERSE_FILE_ID, file_id),
+            None, None, None)
+
+        return urlunparse(params)
 
     def get_jsonld_url(self, doi_str):
         """Construct a url for retrieving the citation in JSON-LD format
@@ -122,6 +135,9 @@ class DataverseFileInfo(TimeStampedModel):
     dataset_doi = models.CharField('DOI',
                                    max_length=255,
                                    blank=True)
+
+    dataset_name = models.CharField(max_length=255,
+                                    blank=True)
 
     original_filename = models.CharField('original filename',
                                          max_length=255,
@@ -155,3 +171,12 @@ class DataverseFileInfo(TimeStampedModel):
             return None
 
         return self.dataverse.get_file_access_url(self.datafile_id)
+
+    def get_file_page_url(self):
+        """Build a url similar to:
+        https://dataverse.harvard.edu/file.xhtml?fileId={{ file id }}
+        """
+        if not self.dataverse:
+            return None
+
+        return self.dataverse.get_file_page_url(self.datafile_id)
