@@ -41,8 +41,8 @@ class CustomStatisticsTestCases(TestCase):
         self.job_02_binary = self.get_preprocess_job_with_file(as_binary=True)
 
         self.update_json ={
-        "preprocess_id":1,
-        "custom_statistics":[
+        col_const.PREPROCESS_ID:1,
+        col_const.CUSTOM_KEY:[
             {
                 "variables": [
                     "ccode"
@@ -167,7 +167,7 @@ class CustomStatisticsTestCases(TestCase):
         # check ID
         #
         self.assertEqual(preprocess_id,
-                         self.update_json['preprocess_id'],
+                         self.update_json[col_const.PREPROCESS_ID],
                          "ID check passed")
 
         # get updated metadata
@@ -195,8 +195,8 @@ class CustomStatisticsTestCases(TestCase):
     def test_20_custom_statistics_add_fail(self):
         msgt(self.test_20_custom_statistics_add_fail.__doc__)
         update_json = {
-            "preprocess_id": 1,
-            "custom_statistics": [
+            col_const.PREPROCESS_ID: 1,
+            col_const.CUSTOM_KEY: [
                 {
                     "variables": [
                         "mpg"
@@ -227,8 +227,8 @@ class CustomStatisticsTestCases(TestCase):
     def test_30_custom_statistics_update(self):
         msgt(self.test_30_custom_statistics_update.__doc__)
         update_json = {\
-                  "preprocess_id": 1,
-                  "custom_statistics": [\
+                  col_const.PREPROCESS_ID: 1,
+                  col_const.CUSTOM_KEY: [\
                     {\
                       "id": "id_000001",
                       "updates": {\
@@ -266,8 +266,8 @@ class CustomStatisticsTestCases(TestCase):
     def test_40_custom_statistics_update_fail(self):
         msgt(self.test_40_custom_statistics_update_fail.__doc__)
         update_json = {
-            "preprocess_id": 1,
-            "custom_statistics": [
+            col_const.PREPROCESS_ID: 1,
+            col_const.CUSTOM_KEY: [
                 {
                     "id": "id_000005",
                     "updates": {
@@ -297,8 +297,8 @@ class CustomStatisticsTestCases(TestCase):
     def test_50_custom_statistics_delete(self):
         msgt(self.test_50_custom_statistics_delete.__doc__)
         update_json = {\
-               "preprocess_id": 1,
-               "custom_statistics":[ \
+               col_const.PREPROCESS_ID: 1,
+               col_const.CUSTOM_KEY:[ \
                   { \
                      "id":"id_000001",
                      "delete": [\
@@ -329,8 +329,8 @@ class CustomStatisticsTestCases(TestCase):
     def test_50_custom_statistics_delete_fail(self):
         msgt(self.test_50_custom_statistics_delete_fail.__doc__)
         update_json = {\
-               "preprocess_id": 1,
-               "custom_statistics":[\
+               col_const.PREPROCESS_ID: 1,
+               col_const.CUSTOM_KEY:[\
                   {\
                      "id":"id_000001",
                      "delete": [\

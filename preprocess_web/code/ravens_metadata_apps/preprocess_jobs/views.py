@@ -72,7 +72,7 @@ def view_job_detail(request, preprocess_id):
                  HIDE_VERSIONS_BUTTON: True,
                  'jobs': preprocess_list_or_err,
                  'name': job_name,
-                 'preprocess_id': preprocess_id}
+                 col_const.PREPROCESS_ID: preprocess_id}
 
     return render(request,
                   'preprocess/preprocess-job-detail.html',
@@ -135,8 +135,8 @@ def view_custom_statistics_delete(request):
 
         # Make sure there's a preprocess_id
         #
-    job_id = update_json_or_err['preprocess_id']
-    custom_statistics_json = update_json_or_err['custom_statistics']
+    job_id = update_json_or_err[col_const.PREPROCESS_ID]
+    custom_statistics_json = update_json_or_err[col_const.CUSTOM_KEY]
 
     success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
     if success is False:
@@ -200,8 +200,8 @@ def view_custom_statistics_update(request):
 
         # Make sure there's a preprocess_id
         #
-    job_id = update_json_or_err['preprocess_id']
-    custom_statistics_json = update_json_or_err['custom_statistics']
+    job_id = update_json_or_err[col_const.PREPROCESS_ID]
+    custom_statistics_json = update_json_or_err[col_const.CUSTOM_KEY]
 
     success, latest_metadata_json_or_err = JobUtil.get_latest_metadata(job_id)
     if success is False:
@@ -273,11 +273,11 @@ def view_custom_statistics_form(request):
 
         # Make sure there's a preprocess_id
         #
-    job_id = update_json_or_err['preprocess_id']
+    job_id = update_json_or_err[col_const.PREPROCESS_ID]
     if job_id is None:
-        return JsonResponse('preprocess Id is required')
+        return JsonResponse('%s is required' % col_const.PREPROCESS_ID)
     custom_statistics_json = []
-    for data in update_json_or_err['custom_statistics']:
+    for data in update_json_or_err[col_const.CUSTOM_KEY]:
         frm = CustomStatisticsForm(data)
 
         if not frm.is_valid():
