@@ -103,10 +103,11 @@ class PreprocessJob(TimeStampedModel):
         if not self.id:
             super(PreprocessJob, self).save(*args, **kwargs)
 
-        if self.source_file:
-            self.name = basename(self.source_file.name)[:100]
-        else:
-            self.name = 'job %s' % self.id
+        if not self.name:
+            if self.source_file:
+                self.name = basename(self.source_file.name)[:100]
+            else:
+                self.name = 'job %s' % self.id
 
         if self.state == STATE_SUCCESS:
             self.is_success = True

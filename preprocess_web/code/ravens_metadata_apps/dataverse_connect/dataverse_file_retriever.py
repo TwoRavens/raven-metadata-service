@@ -247,6 +247,8 @@ class DataverseFileRetriever(BasicErrCheck):
                         files.File(named_temp_file))
 
         self.preprocess_job.set_state_data_retrieved()
+        if orig_file_name:
+            self.preprocess_job.name = orig_file_name
         self.preprocess_job.save()
 
         # Update and save the instance of DataverseFileInfo

@@ -38,6 +38,7 @@ from ravens_metadata_apps.utils.view_helper import \
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
+from ravens_metadata_apps.dataverse_connect.models import DataverseFileInfo
 
 
 def test_view(request):
@@ -47,9 +48,17 @@ def test_view(request):
 
 def view_job_list(request):
     """Display a list of all jobs"""
-    jobs = PreprocessJob.objects.all().order_by('-created')
+    dv_lookup = {}
+    for dv_info in DataverseFileInfo.objects.select_related('preprocess_job').all():
+        dv_lookup[dv_info.preprocess_job.id] = dv_info
 
-    info_dict = {'jobs': jobs,
+    jobs = PreprocessJob.objects.all().order_by('-created')
+    job_list = []
+    for job in jobs:
+        job.dv_info = dv_lookup.get(job.id, None)
+        job_list.append(job)
+
+    info_dict = {'jobs': job_list,
                  KEY_EDITOR_URL: settings.EDITOR_URL}
 
     return render(request,

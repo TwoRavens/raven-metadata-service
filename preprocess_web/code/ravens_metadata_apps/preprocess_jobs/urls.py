@@ -104,6 +104,13 @@ urlpatterns = (
             name='api_get_latest_metadata'),
 
 
+    # job to retrieve preprocess job status....
+    #
+    #re_path(r'api/metadata/dataverse/(?P<dataverse_file_id>[0-9]{1,11})$',
+    #        views_api.api_get_latest_metadata_by_dataverse,
+    #        name='api_get_latest_metadata_by_dataverse'),
+
+
     # job to retrieve preprocess data--assumes job has completed ok
     #
     path('api/job-status/<int:preprocess_id>',

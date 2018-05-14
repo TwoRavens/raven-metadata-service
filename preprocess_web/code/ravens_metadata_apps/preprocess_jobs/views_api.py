@@ -218,6 +218,9 @@ def api_get_job_status(request, preprocess_id, with_html=False):
     #return JsonResponse(json_fail)
 
 
+#def api_get_latest_metadata_by_dataverse(request, dataverse_file_id):
+#    dataverse_install = request.get_
+
 def api_get_latest_metadata(request, preprocess_id):
     """Return the latest version of the preprocess metadata"""
 
