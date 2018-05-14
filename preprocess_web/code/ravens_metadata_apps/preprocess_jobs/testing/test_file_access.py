@@ -26,6 +26,7 @@ from ravens_metadata_apps.preprocess_jobs.metadata_update_util import \
 
 TEST_FILE_DIR = join(dirname(abspath(__file__)), 'test_files')
 
+
 class FileEncodingTestCase(TestCase):
 
     def setUp(self):
@@ -36,13 +37,11 @@ class FileEncodingTestCase(TestCase):
 
         self.job_02_binary = self.get_preprocess_job_with_file(as_binary=True)
 
-
     def tearDown(self):
         """Set up PreprocessJobs"""
         print('    - remove test files')
         self.job_01_text.metadata_file.delete()
         self.job_02_binary.metadata_file.delete()
-
 
     def delete_metadata_files(self, preprocess_id):
         """Delete metadata files"""
@@ -79,14 +78,15 @@ class FileEncodingTestCase(TestCase):
                       col_const.DESCRIPTION_LABEL,
                       self.code_book_description)
 
-        #print('update_str', update_str)
+        #   print('update_str', update_str)
 
         update_json = json.loads(update_str)
 
         # viewable for minor update
         update_json[update_const.VARIABLE_UPDATES]['ccode']['viewable'] = viewable
         update_json[update_const.VARIABLE_UPDATES]['ccode']['omit'] = omit_list
-        update_json[update_const.VARIABLE_UPDATES]['ccode'][update_const.VALUE_UPDATES_KEY][col_const.DESCRIPTION_LABEL] = description
+        update_json[update_const.VARIABLE_UPDATES]['ccode'][update_const.VALUE_UPDATES_KEY]\
+                                                           [col_const.DESCRIPTION_LABEL] = description
 
         update_util = MetadataUpdateUtil(job_obj.id, update_json)
 
@@ -95,14 +95,13 @@ class FileEncodingTestCase(TestCase):
 
         return update_util.get_updated_metadata(as_obj=True)
 
-
     def get_preprocess_job_with_file(self, as_binary=False):
         """Create a new PreprocessJob with a preprocess_file"""
         kwargs = dict(name='job 01')
         ye_job = PreprocessJob(**kwargs)
         ye_job.save()
 
-        preprocess_string = render_to_string(\
+        preprocess_string = render_to_string(
                                 'preprocess/test_files/fearon_laitin.json',
                                 dict(preprocess_id=ye_job.id))
 
@@ -120,15 +119,14 @@ class FileEncodingTestCase(TestCase):
         ye_job.metadata_file.save(new_name,
                                   preprocess_content_file)
 
-        #print('    - create test file:', ye_job.metadata_file.path)
+        #   print('    - create test file:', ye_job.metadata_file.path)
 
         ye_job.set_state_success()
         ye_job.save()
 
         return ye_job
 
-
-    #@skip('skipit')
+    #   @skip('skipit')
     def test_10_get_metadata(self):
         """Read metadata that has a text file encoding"""
         msgt(self.test_10_get_metadata.__doc__)
@@ -137,7 +135,7 @@ class FileEncodingTestCase(TestCase):
         #
         metadata = self.job_01_text.get_metadata()
 
-        #print('type(metadata.result_obj)', type(metadata.result_obj))
+        #   print('type(metadata.result_obj)', type(metadata.result_obj))
         self.assertTrue(metadata.success)
 
         self.assertEqual(\
@@ -152,11 +150,10 @@ class FileEncodingTestCase(TestCase):
             metadata.result_obj[col_const.SELF_SECTION_KEY][col_const.VERSION_KEY],
             1)
 
-
-        # Open text file, return string
+        #   Open text file, return string
         #
         metadata2 = self.job_01_text.get_metadata(as_string=True)
-        #print('type(metadata2.result_obj)', type(metadata2.result_obj))
+        #   print('type(metadata2.result_obj)', type(metadata2.result_obj))
 
         self.assertTrue(metadata2.success)
 
@@ -165,7 +162,6 @@ class FileEncodingTestCase(TestCase):
 
         str_to_find2 = '"%s": 1' % col_const.VERSION_KEY
         self.assertTrue(metadata2.result_obj.find(str_to_find2) > -1)
-
 
         # Check the info from the MetadataUpdate
         #
@@ -189,9 +185,9 @@ class FileEncodingTestCase(TestCase):
         # clean up
         #
         self.delete_metadata_files(metadata_01_obj.orig_metadata.id)
-        #metadata_01_obj.metadata_file.delete()
+        #   metadata_01_obj.metadata_file.delete()
 
-    #@skip('skipit')
+    #   @skip('skipit')
     def test_20_get_metata(self):
         """Read metadata that has (we think) bytes file encoding"""
         msgt(self.test_20_get_metata.__doc__)
@@ -199,7 +195,7 @@ class FileEncodingTestCase(TestCase):
         # Open bytes file, return dict
         #
         metadata3 = self.job_02_binary.get_metadata()
-        #print('type(metadata3.result_obj)', type(metadata3.result_obj))
+        #   print('type(metadata3.result_obj)', type(metadata3.result_obj))
 
         self.assertTrue(metadata3.success)
         self.assertEqual(metadata3.result_obj[col_const.DATASET_LEVEL_KEY][col_const.DATASET_ROW_CNT], 6610)
@@ -225,8 +221,7 @@ class FileEncodingTestCase(TestCase):
         #
         self.delete_metadata_files(metadata_02_obj.orig_metadata.id)
 
-
-    #@skip('skipit')
+    #   @skip('skipit')
     def test_30_multi_version_updates(self):
         """Make sure minor/major versions are correct"""
         msgt(self.test_30_multi_version_updates.__doc__)
@@ -236,7 +231,6 @@ class FileEncodingTestCase(TestCase):
         metadata = self.job_01_text.get_metadata()
         self.assertTrue(metadata.success)
         self.assertEqual(metadata.result_obj['self']['version'], 1)
-
 
         # Check the info from the MetadataUpdate
         #
@@ -248,7 +242,7 @@ class FileEncodingTestCase(TestCase):
 
         # minor version update: 2.1
         #
-        metadata_obj = self.get_metadata_obj(\
+        metadata_obj = self.get_metadata_obj(
                                 self.job_01_text,
                                 viewable=False)
         new_version = Decimal('2.1')
@@ -260,7 +254,7 @@ class FileEncodingTestCase(TestCase):
 
         # minor version update: 2.2
         #
-        metadata_obj = self.get_metadata_obj(\
+        metadata_obj = self.get_metadata_obj(
                                 self.job_01_text,
                                 omit_list=['median'])
         new_version = Decimal('2.2')
@@ -272,7 +266,7 @@ class FileEncodingTestCase(TestCase):
         # major version update: 3
         #
         labl_code_book = 'code book 3'
-        metadata_obj = self.get_metadata_obj(\
+        metadata_obj = self.get_metadata_obj(
                                 self.job_01_text,
                                 description=labl_code_book)
         new_version = Decimal('3')
@@ -283,7 +277,7 @@ class FileEncodingTestCase(TestCase):
 
         # minor version update: 3.1
         #
-        metadata_obj = self.get_metadata_obj(\
+        metadata_obj = self.get_metadata_obj(
                                 self.job_01_text,
                                 description=labl_code_book,
                                 omit_list=[])
@@ -293,10 +287,9 @@ class FileEncodingTestCase(TestCase):
         self.assertEqual(metadata_info.result_obj['self']['version'],
                          new_version)
 
-
         # major version update: 4  (major + minor changes)
         #
-        metadata_obj = self.get_metadata_obj(\
+        metadata_obj = self.get_metadata_obj(
                                 self.job_01_text,
                                 description='code book 4',
                                 omit_list=['median', 'mean'])

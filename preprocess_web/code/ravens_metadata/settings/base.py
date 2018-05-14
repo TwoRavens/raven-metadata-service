@@ -188,4 +188,11 @@ TEST_DIRECT_STATIC = None
 # source file--though API or web form
 #
 MAX_SOURCE_FILE_ROWS_TO_RETRIEVE = os.environ.get('MAX_SOURCE_FILE_ROWS_TO_RETRIEVE', 1000)
-REQUESTS_TIMEOUT = 7    # 1 second for server to respond
+
+REQUESTS_TIMEOUT = 7 # 1 second for server to respond
+
+# -------------------------------
+# Set this link if the editor is available
+# -------------------------------
+EDITOR_URL = os.environ.get('EDITOR_URL', None)
+

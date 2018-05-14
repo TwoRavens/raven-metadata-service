@@ -49,6 +49,24 @@ urlpatterns = (
          views.view_retrieve_rows_form,
          name='view_form_retrieve_rows'),
 
+    # job for custom statistics (add)
+    #
+    path(r'form/custom-statistics',
+         views.view_custom_statistics_form,
+         name='view_form_custom_statistics'),
+
+    # job for custom statistics (update)
+    #
+    path(r'form/custom-statistics-update',
+         views.view_custom_statistics_update,
+         name='view_form_custom_statistics_update'),
+
+    # job for custom statistics (delete)
+    #
+    path(r'form/custom-statistics-delete',
+         views.view_custom_statistics_delete,
+         name='view_form_custom_statistics_delete'),
+
     # View PreprocessJob detail, includes MetadataUpdate objects
     #
     re_path(r'detail/(?P<preprocess_id>[0-9]{1,10})',

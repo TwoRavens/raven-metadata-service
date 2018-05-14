@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 import json
 import sys
+import os
 from os import makedirs
 from os.path import join, normpath, isdir, isfile
 from distutils.util import strtobool
@@ -66,3 +67,10 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 TEST_DIRECT_STATIC = join(dirname(BASE_DIR), 'static')
+
+# -------------------------------
+# Set this link if the editor is available
+# -------------------------------
+# example with preprocess_id 2: http://localhost:1234/2
+#
+EDITOR_URL = os.environ.get('EDITOR_URL', 'http://localhost:1234/')
