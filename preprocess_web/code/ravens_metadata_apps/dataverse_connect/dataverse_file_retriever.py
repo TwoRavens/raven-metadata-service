@@ -249,12 +249,25 @@ class DataverseFileRetriever(BasicErrCheck):
         self.preprocess_job.set_state_data_retrieved()
         if orig_file_name:
             self.preprocess_job.name = orig_file_name
+
         self.preprocess_job.save()
 
         # Update and save the instance of DataverseFileInfo
         #
         self.update_dataverse_file_info(orig_file_name)
 
+
+    def get_json_ld_name(self):
+        """Pull the name from the JSON LD citation"""
+        if not self.jsonld_citation:
+            return ''
+
+        if 'name' in self.jsonld_citation:
+            val = self.jsonld_citation['name']
+            if val is not None:
+                return val
+
+        return ''
 
     def update_dataverse_file_info(self, orig_file_name):
         """Update and save the DataverseFileInfo object"""
@@ -266,6 +279,8 @@ class DataverseFileRetriever(BasicErrCheck):
 
         if self.jsonld_citation:
             self.dv_file_info.jsonld_citation = self.jsonld_citation
+
+        self.dv_file_info.dataset_name = self.get_json_ld_name()
 
         if self.dataset_doi:
             self.dv_file_info.dataset_doi = self.dataset_doi

@@ -73,12 +73,10 @@ def view_job_versions(request, preprocess_id):
     if not success:
         return JsonResponse(get_json_error(preprocess_list_or_err))
 
-    for obj in preprocess_list_or_err:
-        job_name = {'name': str(obj)}
-        break
+    preprocess_job = JobUtil.get_completed_preprocess_job(preprocess_id)
 
     dv_info = DataverseFileInfo.objects.filter(\
-                                preprocess_job__id=preprocess_id\
+                                preprocess_job=preprocess_job\
                                 ).first()
 
     info_dict = {'iterable':True,
@@ -86,7 +84,8 @@ def view_job_versions(request, preprocess_id):
                  HIDE_VERSIONS_BUTTON: True,
                  'dv_info': dv_info,
                  'jobs': preprocess_list_or_err,
-                 'name': job_name,
+                 'preprocess_job': preprocess_job,
+                 'name': preprocess_job.name,
                  col_const.PREPROCESS_ID: preprocess_id}
 
     return render(request,
@@ -392,7 +391,7 @@ def view_preprocess_job_status(request, job_id):
     info_dict = {'job': job,
                  'dv_info': dv_info,
                  KEY_EDITOR_URL: settings.EDITOR_URL,
-                 HIDE_VERSIONS_BUTTON: True,
+                 #HIDE_VERSIONS_BUTTON: True,
                  'preprocess_string_err': False}
 
     print('info_dict', info_dict)

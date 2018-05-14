@@ -136,6 +136,9 @@ class DataverseFileInfo(TimeStampedModel):
                                    max_length=255,
                                    blank=True)
 
+    dataset_name = models.CharField(max_length=255,
+                                    blank=True)
+
     original_filename = models.CharField('original filename',
                                          max_length=255,
                                          blank=True)

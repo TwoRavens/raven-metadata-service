@@ -1,9 +1,47 @@
 {%  extends "base.html" %}
+{% load static %}
 {% block main_content %}
 {% if iterable %}
-<h4 class="pb-2 mb-0" style="text-align: center">{{ name.name }}</h4>
-    <a class="btn btn-info btn-sm" href="{%  url 'view_job_list' %}" style="float: left">Back</a>
-<br>
+
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="pb-2 mb-0" style="text-align: center">Details for:   <span class="badge badge-primary">{{ preprocess_job.id }}</span> </h4>
+    <table class="table table-condensed">
+      <tr>
+        <th>name</th>
+        <td>{{ preprocess_job.name }}</td>
+      </tr>
+      {% if dv_info %}
+      <tr>
+        <th>Dataverse File <img src="{% static "images/dataverse-icon.jpg" %}" alt="Dataverse Icon" width="20" height="30" /></th>
+        <td>
+
+          {% if dv_info.jsonld_citation.name %}
+            <p>{{ dv_info.jsonld_citation.name|safe }}</p>
+          {% endif %}
+        {% if dv_info.jsonld_citation.citation.0 %}
+          <p>{{ dv_info.jsonld_citation.citation.0|safe }}</p>
+        {% elif dv_info.jsonld_citation.description %}
+          <p>{{ dv_info.jsonld_citation.description|safe }}</p>
+
+        {% else %}
+          doi: {{ dv_info.dataset_doi }}
+        {% endif %}
+        {% if dv_info.get_file_page_url %}
+      <br /><a href="{{ dv_info.get_file_page_url }}" target="_blank">{{ dv_info.get_file_page_url }}</a>
+      {% endif %}
+        </td>
+      </tr>
+      {% endif %}
+      <tr>
+        <th>source File (size)</th>
+        <td>{{ preprocess_job.source_filename }} &nbsp; ({{ preprocess_job.get_source_filesize|filesizeformat }})</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 <br>
 <table class="table table-hover">
    <thead class="thead-dark">
