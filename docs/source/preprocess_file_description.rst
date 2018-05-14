@@ -26,6 +26,8 @@ Preprocess Parameters
 Data for each variable
 ----------------------------
 
+.. include:: defn_variables.rst
+
 .. note::
 
     - Except for **invalid**, for all numeric calculations, missing values are ignored.

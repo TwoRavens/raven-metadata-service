@@ -32,6 +32,7 @@ urlpatterns = [
 
     path('api/', include('ravens_metadata_apps.api_docs.urls')),
 
+    path('metadata/', include('ravens_metadata_apps.metadata_schemas.urls')),
 
     path('admin/', admin.site.urls),
 
