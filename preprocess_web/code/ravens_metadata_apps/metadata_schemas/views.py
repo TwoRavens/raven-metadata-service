@@ -21,7 +21,7 @@ from ravens_metadata_apps.metadata_schemas.variable_info import VariableInfo
 
 # Create your views here.
 
-temp_schema_pre_models = 'metadata_schemas/variable_schema_12.json'
+temp_schema_pre_models = 'metadata_schemas/variable_schema_13.json'
 
 
 def get_schema_as_dict():
