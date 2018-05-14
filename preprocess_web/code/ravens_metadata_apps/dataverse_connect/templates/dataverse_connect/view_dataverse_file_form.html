@@ -15,6 +15,12 @@ label{
         <h5>{{ title }}</h5>
 
         <p>Enter a Datafile url or file id:</p>
+        {% if not active_dvs %}
+        <div class="alert alert-danger" role="alert">
+            Sorry, there are no registered Dataverses.
+            Please give this message to your system administrator.
+        </div>
+        {% endif %}
     </div>
   </div>
 
@@ -23,26 +29,11 @@ label{
           <div class="card">
             <h5 class="card-header">by Datafile Url</h5>
             <div class="card-body">
-              {% if PRESS_SCRIPTLET_SUBMIT %}
-              <div class="alert alert-success" role="alert">
-                  Dataverse file ready to process!
-                  <span class="oi oi-arrow-circle-bottom"></span>
-              </div>
-              {% endif %}
                 <p>Please enter a Dataverse file url.  Examples:</p>
                 <ul>
                   <li>https://dataverse.harvard.edu/file.xhtml?fileId=3085004</li>
                   <li>https://dataverse.harvard.edu/api/access/datafile/3085004</li>
                 </ul>
-
-                <p>Helpful links:</p>
-                  <ul>
-                    <li><a href="https://dataverse.harvard.edu/dataverse/harvard?q=&fq0=fileTypeGroupFacet%3A%22tabulardata%22&fq1=fileAccess%3A%22Public%22&types=files&sort=dateSort&order=desc" target="_blank">View potential dataverse files</a></li>
-
-                    <li><a href="javascript:var myParam = location;window.location = '{{ SITE_SCHEME }}://{{ SWAGGER_HOST }}/preprocess/dataverse-form?dv_file_url=' + myParam;">Scriptlet for Dataverse file pages</a>
-                        <br />(drag into your browser toolbar)
-                    </li>
-                  </ul>
 
                   {% if PRESS_SCRIPTLET_SUBMIT %}
                   <div class="alert alert-success" role="alert">
@@ -50,6 +41,7 @@ label{
                       <span class="oi oi-arrow-circle-bottom"></span>
                   </div>
                   {% endif %}
+              {% if active_dvs %}
               <form action="{% url 'view_dataverse_file_form' %}" method="post">
                 {% csrf_token %}
 
@@ -59,14 +51,32 @@ label{
                 {% endif %}
 
                 <div class="form-group">
-
-                {{ form_by_url.as_p }}
-              </div>
+                    {{ form_by_url.as_p }}
+                </div>
 
                 <div class="text-right">
                   <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
                 </div>
               </form>
+              {% endif %}
+
+            </div><!-- end: card body -->
+          </div><!-- end: card -->
+
+          <div class="card mt-4">
+            <h5 class="card-header">Helpful links</h5>
+            <div class="card-body">
+
+              <ul>
+                <li><a href="javascript:var myParam = location;window.location = '{{ SITE_SCHEME }}://{{ SWAGGER_HOST }}/preprocess/dataverse-form?dv_file_url=' + myParam;">Scriptlet for Dataverse file pages</a>
+                    <br />(drag into your browser toolbar)
+                </li>
+
+                {% for rd in active_dvs %}
+                  <li>View <a href="{{ rd.get_potential_file_url }}" target="_blank">{{ rd.name }}</a> files</li>
+                {% endfor %}
+
+              </ul>
             </div><!-- end: card body -->
           </div><!-- end: card -->
         </div><!-- end: column -->
@@ -79,17 +89,20 @@ label{
               <p>Example, choose "dataverse.harvard.edu" and enter 3085021.
 
 
+              {% if active_dvs %}
               <form action="{% url 'view_dataverse_file_form' %}" method="post">
                   {% csrf_token %}
 
                 <div class="form-group">
-                  {{ form_by_id.as_p }}
+                    {{ form_by_id.as_p }}
                 </div>
                 <div class="text-right">
                   <input class="btn btn-primary btn-sm"  type="submit" value="submit"/>
                 </div>
 
               </form>
+              {% endif %}
+
               </div><!-- end: card body -->
             </div><!-- end: card -->
           </div><!-- end: column -->

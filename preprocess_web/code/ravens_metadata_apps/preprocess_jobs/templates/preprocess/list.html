@@ -2,7 +2,7 @@
 {% load humanize %}
 {% block main_content %}
 
-<h4 class="pb-2 mb-0" style="text-align: center"> Preprocess Jobs </h4>
+<h4 class="pb-2 mb-0" style="text-align: center">Summary Statistic Metadata</h4>
     <hr>
 
     <div class="container">
@@ -33,7 +33,7 @@
         {% with metadata_obj=r %}
           {% include "preprocess/action_buttons.html" %}
         {% endwith %}
-  
+
       </td>
       {% else %}
       <td>&#150; &#150;</td>
