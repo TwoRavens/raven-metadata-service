@@ -7,6 +7,11 @@ from urllib.parse import urlparse
 
 from django.http import HttpRequest
 
+
+KEY_EDITOR_URL = 'EDITOR_URL'
+HIDE_VERSIONS_BUTTON = 'HIDE_VERSIONS_BUTTON'
+
+
 def get_common_view_info(request):
     """For all pages, e.g. is user logged in, etc"""
 

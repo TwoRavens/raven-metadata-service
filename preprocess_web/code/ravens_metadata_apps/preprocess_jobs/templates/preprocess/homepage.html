@@ -16,12 +16,12 @@
 
               <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
 
-              <a class="btn btn-sm btn-primary" style="margin-top: 5px" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
+              <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4  mb-4">
+        <div class="col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
                 <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
@@ -41,12 +41,10 @@
             <div class="card-body">
               <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
 
-              <h3 class="card-title">Dataverse Summary Statistics</h3>
+              <h3 class="card-title">Documentation</h3>
 
-              <p>Use a <a href="http://dataverse.harvard.edu" target="_blank">Dataverse</a>
-                 link to generate a metadata file containing summary statistics.</p>
-
-              <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
+              <p><a href="http://two-ravens-metadata-service.readthedocs.io/" target="_blank">Definitions</a> for the metadata file created
+                 preprocess.</p>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->

@@ -58,6 +58,19 @@ class RegisteredDataverse(TimeStampedModel):
         super(RegisteredDataverse, self).save(*args, **kwargs)
 
 
+    def get_potential_file_url(self):
+        """subject to change, append query params to show tabular files"""
+
+        query_params = ('q=&fq0=fileTypeGroupFacet%3A"tabulardata"'
+                        '&fq1=fileAccess%3A"Public"'
+                        '&types=files&sort=dateSort'
+                        '&order=desc')
+
+        return ('{0}://{1}?{2}').format(\
+                 self.url_scheme,
+                 self.network_location,
+                 query_params)
+
     def get_search_api_url(self, file_id):
         """Construct a url for using the search API for a file"""
         # example:

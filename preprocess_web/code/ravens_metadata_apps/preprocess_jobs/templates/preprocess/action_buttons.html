@@ -12,7 +12,7 @@
 {% endif %}
 
 {% if EDITOR_URL %}
-<a href="{{ EDITOR_URL }}{{ metadata_obj.get_preprocess_id }}" target="_blank" class="btn btn-info btn-sm">Editor</a>
+<a href="{{ EDITOR_URL }}{{ metadata_obj.get_preprocess_id }}/editor" target="_blank" class="btn btn-info btn-sm">Editor</a>
 {% endif %}
 
 <a href="{% url 'api_download_version' preprocess_id=metadata_obj.get_preprocess_id  version=metadata_obj.get_version_string %}" class="btn btn-info btn-sm">Download</a>

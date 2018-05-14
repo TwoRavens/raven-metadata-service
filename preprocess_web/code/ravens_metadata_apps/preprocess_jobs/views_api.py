@@ -29,7 +29,8 @@ from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,
      get_json_success,
-     get_baseurl_from_request)
+     get_baseurl_from_request,
+     KEY_EDITOR_URL, HIDE_VERSIONS_BUTTON)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
@@ -190,12 +191,17 @@ def api_get_job_status(request, preprocess_id, with_html=False):
 
     resp_info = job.as_dict()
     if with_html:
+        html_dict = {"job": job,
+                     KEY_EDITOR_URL: settings.EDITOR_URL,
+                     HIDE_VERSIONS_BUTTON: True}
+
         status_row_html = render_to_string('preprocess/job_card_rows.html',
-                                           dict(job=job))
+                                           html_dict)
         resp_info['status_row_html'] = status_row_html
 
     json_success = get_json_success('job retrieved',
                                     data=resp_info)
+
     if 'pretty' in request.GET:
         jstring = json_dump(json_success, indent=4)
         if jstring.success:

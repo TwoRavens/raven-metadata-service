@@ -53,8 +53,8 @@ class JobUtil(object):
         if success is False:
             return err_resp(obj_or_err)
 
-        print('type(obj_or_err)', type(obj_or_err))
-        print('obj_or_err.id', obj_or_err.id)
+        #print('type(obj_or_err)', type(obj_or_err))
+        #print('obj_or_err.id', obj_or_err.id)
         # Return the actual metadata as an OrderedDict
         #
         metadata_ok, metadata_or_err = obj_or_err.get_metadata()

@@ -7,6 +7,7 @@ from django.http import \
 from ravens_metadata_apps.dataverse_connect.forms import \
     (DataverseFileByURLForm, DataverseFileByIdForm,
      FORM_KEY_DV_FILE_URL)
+from ravens_metadata_apps.dataverse_connect.models import RegisteredDataverse
 from ravens_metadata_apps.dataverse_connect.dataverse_util import \
     (DataverseUtil)
 
@@ -20,10 +21,13 @@ def view_dataverse_file_form(request):
     form_by_url = None
     form_by_id = None
 
+    active_dvs = RegisteredDataverse.objects.filter(active=True)
+
     info_dict = dict(title='Create Summary Statistics for a Dataverse File',
                      SWAGGER_HOST=settings.SWAGGER_HOST,
                      SITE_SCHEME=settings.SITE_SCHEME,
-                     PRESS_SCRIPTLET_SUBMIT=False)
+                     PRESS_SCRIPTLET_SUBMIT=False,
+                     active_dvs=active_dvs)
 
 
 

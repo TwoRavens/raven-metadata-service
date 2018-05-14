@@ -32,13 +32,12 @@ from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,
      get_json_success,
-     get_baseurl_from_request)
+     get_baseurl_from_request,
+     KEY_EDITOR_URL, HIDE_VERSIONS_BUTTON)
 from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUpdateUtil
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
 
-KEY_EDITOR_URL = 'EDITOR_URL'
-HIDE_VERSIONS_BUTTON = 'HIDE_VERSIONS_BUTTON'
 
 def test_view(request):
     """test view"""
