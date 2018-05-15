@@ -41,6 +41,12 @@ class RetrieveRowsForm(forms.Form):
                                required=False)
 
 
+    def __init__(self, *args, **kwargs):
+        super(RetrieveRowsForm, self).__init__(*args, **kwargs)
+        for attr_name in ['preprocessId', 'startRow', 'numberRows', 'format']:
+            self.fields[attr_name].widget.attrs.update(\
+                            {'class' : 'form-control'})
+
     def clean_preprocessId(self):
         """Check if PreprocessJob exists"""
         preprocess_id = self.cleaned_data.get('preprocessId')

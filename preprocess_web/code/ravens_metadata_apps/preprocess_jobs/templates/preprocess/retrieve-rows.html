@@ -1,23 +1,31 @@
 {% extends "base.html" %}
 
 {% block main_content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+        <h5>Retrieve source data</h5>
+
+        <p>Retrieve source data in either JSON or .csv format.</p>
+    </div>
+  </div>
 
   <div class="row">
-    <div class="col-lg-4  mb-4">
+    <div class="col-4  mb-4">
        <div class="card">
-         <h5 class="card-header">Retrieve Source Data Rows</h5>
+         <h5 class="card-header">View Source Data (<i>retrieve rows</i>)</h5>
           <div class="card-body">
             <form action="{% url 'view_form_retrieve_rows' %}" method="post" novalidate>
-            <table class="table table-condensed">
               {% csrf_token %}
-              {{ form }}
-              <tr>
-                <td colspan="2" class="text-right"><button type="submit">Submit</button></a>
-          </table>
-          </form>
+
+                <div class="form-group">
+                  {{ form.as_p }}
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
           </div>
        </div>
     </div>
   </div>
-
+</div>
 {% endblock %}
