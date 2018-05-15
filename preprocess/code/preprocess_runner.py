@@ -37,6 +37,7 @@ class PreprocessRunner(object):
 
         # for a json_ld citation from dataverse
         self.jsonld_citation = kwargs.get(KEY_JSONLD_CITATION, None)
+        self.schema_info_dict = kwargs.get('SCHEMA_INFO_DICT', None)
 
         # for data source
         self.data_source_info = kwargs.get('data_source_info')
@@ -225,6 +226,9 @@ class PreprocessRunner(object):
         self_section['created'] = self.current_time
         self_section[col_const.PREPROCESS_ID] = self.job_id
         self_section['version'] = 1
+
+        if self.schema_info_dict:
+            self_section['schema'] = self.schema_info_dict
 
         return self_section
 

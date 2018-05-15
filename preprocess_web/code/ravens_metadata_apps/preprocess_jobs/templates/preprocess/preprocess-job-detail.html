@@ -11,7 +11,7 @@
     <table class="table table-condensed">
       <tr>
         <th>id / name</th>
-        <td><span class="badge badge-primary">{{ preprocess_job.id }}</span>
+        <td>{{ preprocess_job.id }}
             &nbsp;/&nbsp; {{ preprocess_job.name }}</td>
       </tr>
       {% if dv_info %}
@@ -21,15 +21,16 @@
           {% if dv_info.get_file_page_url %}
           <b>source:</b> <a href="{{ dv_info.get_file_page_url }}" target="_blank">{{ dv_info.get_file_page_url }}</a>
         {% endif %}
-        <br /><b>doi:</b> {{ dv_info.dataset_doi }}
-          {% if dv_info.jsonld_citation.name %}
-            <p><b>dataset name:</b> {{ dv_info.jsonld_citation.name|safe }}
 
-            </p>
-            <a class="btn btn-info btn-sm" data-toggle="collapse" href="#dvDescription" role="button" aria-expanded="false" aria-controls="dvDescription">
-                 description</a>
+          {% if dv_info.jsonld_citation.name %}
+            <br /><b>dataset name:</b> {{ dv_info.jsonld_citation.name|safe }}
+
+
+            <br />&gt; <a data-toggle="collapse" href="#dvDescription" role="button" aria-expanded="false" aria-controls="dvDescription">
+                Show Description</a>
           {% endif %}
           <div class="collapse" id="dvDescription">
+              <b>doi:</b> {{ dv_info.dataset_doi }}
               {% if dv_info.jsonld_citation.citation.0 %}
                 <p>{{ dv_info.jsonld_citation.citation.0|safe }}</p>
               {% elif dv_info.jsonld_citation.description %}
@@ -47,7 +48,10 @@
       {% endif %}
       <tr>
         <th>source File (size)</th>
-        <td>{{ preprocess_job.source_filename }} &nbsp; ({{ preprocess_job.get_source_filesize|filesizeformat }})</td>
+        <td>{{ preprocess_job.source_filename }} &nbsp; ({{ preprocess_job.get_source_filesize|filesizeformat }})
+
+          &nbsp; &nbsp; &gt; <a href="{% url 'view_form_retrieve_rows' %}?preprocessId={{ preprocess_job.id }}">Retrieve Rows</a>
+        </td>
       </tr>
     </table>
   </div>

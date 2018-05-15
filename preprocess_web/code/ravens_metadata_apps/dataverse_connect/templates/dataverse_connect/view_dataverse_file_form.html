@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block extra_header %}
 <style>
 label{
@@ -14,7 +14,7 @@ label{
     <div class="col-sm-12">
         <h5>{{ title }}</h5>
 
-        <p>Enter a Datafile url or file id:</p>
+        <p> Enter a Datafile url or file id:   </p>
         {% if not active_dvs %}
         <div class="alert alert-danger" role="alert">
             Sorry, there are no registered Dataverses.
@@ -29,7 +29,7 @@ label{
           <div class="card">
             <h5 class="card-header">by Datafile Url</h5>
             <div class="card-body">
-                <p>Please enter a Dataverse file url.  Examples:</p>
+                <p> <img src="{% static "images/dataverse-icon.jpg" %}" alt="Dataverse Icon" width="20" height="30" />Please enter a Dataverse file url.  Examples:</p>
                 <ul>
                   <li>https://dataverse.harvard.edu/file.xhtml?fileId=3085004</li>
                   <li>https://dataverse.harvard.edu/api/access/datafile/3085004</li>
@@ -85,7 +85,7 @@ label{
           <div class="card">
             <h5 class="card-header">by Dataverse and File Id</h5>
             <div class="card-body">
-              <p>Please choose a Dataverse and enter a Datafle Id</p>
+              <p><img src="{% static "images/dataverse-icon.jpg" %}" alt="Dataverse Icon" width="20" height="30" /> Please choose a Dataverse and enter a Datafle Id</p>
               <p>Example, choose "dataverse.harvard.edu" and enter 3085021.
 
 

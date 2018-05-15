@@ -12,6 +12,11 @@ class PreprocessJobForm(forms.ModelForm):
         model = PreprocessJob
         fields = ('source_file',)
 
+    def __init__(self, *args, **kwargs):
+        super(PreprocessJobForm, self).__init__(*args, **kwargs)
+        self.fields['source_file'].widget.attrs.update(\
+                    {'class' : 'form-control-file form-control'})
+
 
 FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
@@ -40,6 +45,12 @@ class RetrieveRowsForm(forms.Form):
                                initial=FORMAT_JSON,
                                required=False)
 
+
+    def __init__(self, *args, **kwargs):
+        super(RetrieveRowsForm, self).__init__(*args, **kwargs)
+        for attr_name in ['preprocessId', 'startRow', 'numberRows', 'format']:
+            self.fields[attr_name].widget.attrs.update(\
+                            {'class' : 'form-control'})
 
     def clean_preprocessId(self):
         """Check if PreprocessJob exists"""

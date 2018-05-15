@@ -30,6 +30,7 @@ from ravens_metadata_apps.preprocess_jobs.models import \
      STATE_SUCCESS, STATE_FAILURE)
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
+from ravens_metadata_apps.metadata_schemas.models import get_temp_schema_info
 from preprocess_runner import \
     (PreprocessRunner,)
 
@@ -45,6 +46,8 @@ def preprocess_csv_file(input_file, **kwargs):
 
     start_time = time.time()
     print('(%s) Start preprocess: %s' % (start_time, input_file))
+
+    kwargs['SCHEMA_INFO_DICT'] = get_temp_schema_info()
 
     runner, err_msg = PreprocessRunner.load_from_file(\
                                         input_file,

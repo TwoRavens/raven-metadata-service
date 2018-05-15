@@ -3,74 +3,66 @@
 {% load humanize %}
 {% block main_content %}
 <!-- Three columns of text below the carousel -->
-<div class="container" style="text-align: center; margin-top: 10%">
-<table class="table" style="text-align: center; width: 100%; height: 40%">
-   <tbody>
-      <tr>
-         <td style="border: transparent; width: 30% ; height: 100%">
-            <div class="col-lg-15  mb-3">
+<div class="container" style="text-align: center; margin-top: 2%">
+  <div class="row">
+
+            <div class="col-lg-4  mb-4">
                <div class="card">
                   <div class="card-body">
                      <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
                      <h3 class="card-title">Create Summary Statistics</h3>
-                     <p>Upload a data file and generate a metadata file containing summary statistics.</p>
+                     <p class=text-left>Upload a data file to generate a metadata file containing summary statistics.</p>
                      <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
                      <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
                   </div>
                </div>
             </div>
             <!-- /.col-lg-4 -->
-         </td>
-         <td style="border: transparent ;width: 30%; height: 100%">
-            <div class="col-lg-15 mb-3">
-               <div class="card">
-                  <div class="card-body">
-                     <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
-                     <h3 class="card-title">View Data</h3>
-                     <p>It gives the List of all the summary statistic files, including
-                        those in process. Also provides access to the source data ( both system files and dataverse files).
-                     </p>
-                     <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
-                     <a class="btn btn-sm btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">View Source Data</a>
-                  </div>
-               </div>
-            </div>
+
+
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                   <img class="rounded-circle" src="{% static "icon/edit.png" %}" alt="Generic placeholder image" width="60" height="60"style="background-color: #FAFAFA">
+                   <h3 class="card-title">View Data</h3>
+                   <p class=text-left>View completed metadata files as well as those in process.
+                     Retrieve rows from the source data.
+                   </p>
+                   <a class="btn btn-sm btn-primary" href="{% url 'view_job_list' %}" role="button">View List</a>
+                   <a class="btn btn-sm btn-primary" href="{% url 'view_form_retrieve_rows' %}" role="button">View Source Data</a>
+                </div>
+             </div>
+           </div>
             <!-- /.col-lg-4 -->
-         </td>
-         <td style="border: transparent; width: 30%; height: 100%">
-            <div class="col-lg-15 mb-3">
+
+            <div class="col-lg-4 mb-4">
+
                <div class="card">
                   <div class="card-body">
                      <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
-                     <h3 class="card-title">Documentation</h3>
-                     <p>Documentation containing the definitions for the custom statistics in  metadata file created by preprocess.</p>
-                     <a class="btn btn-sm btn-primary" href="http://two-ravens-metadata-service.readthedocs.io/" target="_blank">Definitions</a>
+                     <h3 class="card-title">Metadata JSON Schema / Docs</h3>
+                     <p class="text-left">View the JSON schema as well as documentation with variable descriptions generated from the JSON schema.</p>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}">JSON Schema</a>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}?pretty">("pretty")</a>
+
+                     <a class="btn btn-sm btn-primary" href="http://two-ravens-metadata-service.readthedocs.io/" target="_blank">Docs</a>
                   </div>
                </div>
             </div>
             <!-- /.col-lg-4 -->
-         </td>
-      </tr>
-   </tbody>
-</table>
-<div class="container" style="text-align: center; margin-top: 10%">
-   <table width="100%">
-      <tbody >
-         <tr>
-            <td width="40%" >
-               <div class="list-group" style="width: 35%; text-align: left">
-                  <span class="list-group-item list-group-item-action active ">
-                     <h5 style="margin-left: 30%">Other Links</h5>
-                  </span>
-                  <a href="{% url 'view_latest_metadata_schema' %}?pretty" class="list-group-item list-group-item-action">metadata schema (latest)</a>
-                  <a href="{% url 'view_latest_dataset_schema' %}?pretty" class="list-group-item list-group-item-action">dataset schema (latest)</a>
-                  <a href="{% url 'view_variable_definitions' %}" class="list-group-item list-group-item-action">variable defns (latest, .rst)</a>
-               </div>
-            </td>
-         </tr>
-      </tbody>
-   </table>
-</div>
+         </div><!-- end: row -->
+
+       <div class="row">
+        <div class="col-lg-4 mb-4">
+           <div class="card">
+              <h5 class="card-header">Other Links</h5>
+              <div class="card-body">
+                - <a href="{% url 'view_variable_definitions' %}">variable defns (latest, .rst)
+              </div>
+           </div>
+        </div>
+      </div><!-- end: row -->
+
 <footer style="margin-bottom: 5%"></footer>
 </div>
 
