@@ -427,7 +427,12 @@ class MetadataUpdate(TimeStampedModel):
         if not self.id:
             super(MetadataUpdate, self).save(*args, **kwargs)
 
-        self.name = 'update %d' % self.id #basename(self.source_file.name)[:100]
+        if self.orig_metadata:
+            self.name = '%s (v%s)' % (self.orig_metadata.name,
+                                    self.get_version_string())
+        else:
+            self.name = 'update %d' % self.get_version_string()
+        ##basename(self.source_file.name)[:100]
 
         super(MetadataUpdate, self).save(*args, **kwargs)
 
