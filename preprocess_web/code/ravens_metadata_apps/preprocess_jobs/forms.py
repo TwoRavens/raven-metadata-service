@@ -12,6 +12,11 @@ class PreprocessJobForm(forms.ModelForm):
         model = PreprocessJob
         fields = ('source_file',)
 
+    def __init__(self, *args, **kwargs):
+        super(PreprocessJobForm, self).__init__(*args, **kwargs)
+        self.fields['source_file'].widget.attrs.update(\
+                    {'class' : 'form-control-file form-control'})
+
 
 FORMAT_JSON = 'json'
 FORMAT_CSV = 'csv'
