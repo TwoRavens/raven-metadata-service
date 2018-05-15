@@ -13,15 +13,24 @@ Preprocess Parameters
   .. code-block:: json
 
    {
+     "dataset": {
+            ...dataset-level information...
+     },
      "variables":{
         "var_1":{
-            ...variable specific data...
+            ...variable-level data...
         },
         "var_2":{
-            ..variable specific data...
+            ..variable-level data...
         }
-      }
+      },
+      "variableDisplay":{
+        "var_1":{
+            ...variable-level display data...
+        }
+      },
     }
+    
 
 Data for each variable
 ----------------------------
