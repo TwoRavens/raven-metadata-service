@@ -47,7 +47,10 @@
       {% endif %}
       <tr>
         <th>source File (size)</th>
-        <td>{{ preprocess_job.source_filename }} &nbsp; ({{ preprocess_job.get_source_filesize|filesizeformat }})</td>
+        <td>{{ preprocess_job.source_filename }} &nbsp; ({{ preprocess_job.get_source_filesize|filesizeformat }})
+
+            <br /><a class="btn btn-sm btn-info" href="{% url 'view_form_retrieve_rows' %}?preprocessId={{ preprocess_job.id }}">Retrieve Rows</a>
+        </td>
       </tr>
     </table>
   </div>

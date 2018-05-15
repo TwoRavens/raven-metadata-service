@@ -1,43 +1,23 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-{#    <div class="card" style="padding: 12px">#}
-{#          <div class="card-block">#}
-{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Status </h6>#}
-{#               {% if output.success == True %}#}
-{#                    <p>Success</p>#}
-{#              {%  else %}#}
-{#                    <p>Failed</p>#}
-{#          </div>#}
-{#        </div>#}
-{##}
-{#     <div class="card" style="padding: 12px">#}
-{#          <div class="card-block">#}
-{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Message </h6>#}
-{#              <p>output.message</p>#}
-{#          </div>#}
-{#     </div>#}
-{#    <div class="card" style="padding: 12px">#}
-{#          <div class="card-block">#}
-{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Data Information </h6>#}
-{#              <p>output.attributes</p>#}
-{#          </div>#}
-{#     </div>#}
-{#    <div class="card" style="padding: 12px">#}
-{#          <div class="card-block">#}
-{#            <h6 class="border-bottom border-gray pb-2 mb-0"style=" border: #868e96 ">Data </h6>#}
-{#              <p style="font-family: 'Helvetica', sans-serif">output.data</p>#}
-{#          </div>#}
-{#     </div>#}
-{##}
-{#{{ output }}#}
-    <div class="container"style="margin:8%; background-color:#f0f8ff; border: transparent">
-    <div class="row" style=" padding: 2%">
-    <form action="{% url 'view_form_retrieve_rows' %}" method="post" novalidate>
-  {% csrf_token %}
-  {{ form }}
-  <button type="submit">Submit</button>
-</form>
+
+  <div class="row">
+    <div class="col-lg-4  mb-4">
+       <div class="card">
+         <h5 class="card-header">Retrieve Source Data Rows</h5>
+          <div class="card-body">
+            <form action="{% url 'view_form_retrieve_rows' %}" method="post" novalidate>
+            <table class="table table-condensed">
+              {% csrf_token %}
+              {{ form }}
+              <tr>
+                <td colspan="2" class="text-right"><button type="submit">Submit</button></a>
+          </table>
+          </form>
+          </div>
+       </div>
     </div>
-</div>
+  </div>
+
 {% endblock %}
