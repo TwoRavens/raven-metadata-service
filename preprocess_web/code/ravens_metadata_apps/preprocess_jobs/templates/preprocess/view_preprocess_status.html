@@ -1,6 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block extra_header %}
+<script src="{% static "google-code-prettify/run_prettify.js" %}?lang=js"></script>
+
 <script>
 
 function check_preprocess_status() {
@@ -63,6 +66,7 @@ $(document).ready(function() {
       </div>
       <div class="card-body" id="id_metadata_card_data">
           {% if job.is_success %}
+          <pre class="prettyprint">{{ job.get_metadata_as_json|safe }}</pre>
             <pre>{{ job.get_metadata_as_json }}</pre>
           {% endif %}
       </div>
