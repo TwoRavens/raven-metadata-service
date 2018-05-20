@@ -189,3 +189,11 @@ REQUESTS_TIMEOUT = 7 # 1 second for server to respond
 # Set this link if the editor is available
 # -------------------------------
 EDITOR_URL = os.environ.get('EDITOR_URL', None)
+
+# -----------------
+# google cloud storage
+# -----------------
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = '2ravens-metadata-dev-storage'
+GS_PROJECT_ID = 717338393819
+GS_CREDENTIALS= ''
