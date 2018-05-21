@@ -261,8 +261,10 @@ class PreprocessJob(TimeStampedModel):
     def source_file_path(self):
         """To display the full path in the admin"""
         if self.source_file:
-            return self.source_file.path
-
+            try:
+                return self.source_file.path
+            except NotImplementedError:
+                return '(n/a for object storage)'
         return 'n/a'
 
 
