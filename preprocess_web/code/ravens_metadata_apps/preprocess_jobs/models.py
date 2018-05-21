@@ -260,6 +260,7 @@ class PreprocessJob(TimeStampedModel):
 
     def source_file_path(self):
         """To display the full path in the admin"""
+
         if self.source_file:
             try:
                 return self.source_file.path

@@ -49,7 +49,13 @@ def preprocess_csv_file(input_file, **kwargs):
 
     kwargs['SCHEMA_INFO_DICT'] = get_temp_schema_info()
 
-    runner, err_msg = PreprocessRunner.load_from_file(\
+
+    if 1:
+        runner, err_msg = PreprocessRunner.load_from_file(\
+                                        input_file,
+                                        **kwargs)
+    else:
+        runner, err_msg = PreprocessRunner.load_from_file(\
                                         input_file,
                                         **kwargs)
 

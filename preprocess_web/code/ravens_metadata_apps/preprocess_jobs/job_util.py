@@ -168,7 +168,7 @@ class JobUtil(object):
         # send the file to the queue
         #
         task = preprocess_csv_file.delay(\
-                    job.source_file.path,
+                    job.source_file,
                     **additional_args)
 
         # set the task_id
