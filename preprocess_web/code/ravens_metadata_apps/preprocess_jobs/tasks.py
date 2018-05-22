@@ -65,6 +65,7 @@ def preprocess_csv_file(job_id, **kwargs):
     print('(%s) Start preprocess: %s' % (start_time, input_file))
 
     kwargs['SCHEMA_INFO_DICT'] = get_temp_schema_info()
+    kwargs['job_id'] = job_id
 
 
     if 1:
