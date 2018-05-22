@@ -232,7 +232,7 @@ class JobUtil(object):
         if job.is_tab_source_file():
 
             try:
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        sep='\t',
                                        #lineterminator='\r',
                                        skiprows=range(1, start_row),
@@ -242,7 +242,7 @@ class JobUtil(object):
             except ValueError:
                 print(" not good value for the row start")
                 start_row = 1
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        sep='\t',
                                        lineterminator='\r',
                                        skiprows=range(1, start_row),
@@ -250,14 +250,14 @@ class JobUtil(object):
                                        nrows=num_rows)
         elif job.is_csv_source_file():
             try:
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)
             except ValueError:
                 print(" not good value for the row start")
                 start_row = 1
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)

@@ -286,14 +286,14 @@ class PreprocessJob(TimeStampedModel):
     def is_tab_source_file(self):
         """Is the source file a .tab file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith(TAB_FILE_EXT):
+            if self.source_file.name.lower().endswith(TAB_FILE_EXT):
                 return True
         return False
 
     def is_csv_source_file(self):
         """Is the source file a .FORMAT_CSV file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith(CSV_FILE_EXT):
+            if self.source_file.name.lower().endswith(CSV_FILE_EXT):
                 return True
         return False
 
