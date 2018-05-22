@@ -8,8 +8,6 @@ from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp, err_resp_with_data)
-from ravens_metadata_apps.preprocess_jobs.tasks import preprocess_csv_file
-
 from celery import task, shared_task
 from celery.result import AsyncResult
 

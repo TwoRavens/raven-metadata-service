@@ -38,7 +38,7 @@ class JobStatusCheck(object):
 
 
     @staticmethod
-    def check_status(job):
+    def xcheck_status(job):
         """Check/update the job status"""
         assert isinstance(job, PreprocessJob),\
                'job must be a PreprocessJob'

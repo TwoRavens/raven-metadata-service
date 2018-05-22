@@ -161,14 +161,15 @@ class JobUtil(object):
 
         # Additional/optional arguments for preprocess
         #
-        additional_args = dict(job_id=job.id)
+        additional_args = dict()
         dv_file_info = job.dataversefileinfo_set.first()
         if dv_file_info and dv_file_info.jsonld_citation:
             additional_args[KEY_JSONLD_CITATION] = dv_file_info.jsonld_citation
+
         # send the file to the queue
         #
         task = preprocess_csv_file.delay(\
-                    job.source_file,
+                    job.id,
                     **additional_args)
 
         # set the task_id

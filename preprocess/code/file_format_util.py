@@ -53,22 +53,29 @@ class FileFormatUtil(object):
 
         # Does the file exist?
         #
-        if not isfile(self.input_file):
-            self.add_error('The file was not found: [%s]' % self.input_file)
-            return
+        if isinstance(self.input_file, str):
+            # "self.input_file" is file path
+            if not isfile(self.input_file):
+                self.add_error('The file was not found: [%s]' % self.input_file)
+                return
 
-        # Get the filesize
-        #
-        self.filesize = os.stat(self.input_file).st_size
+            self.filesize = os.stat(self.input_file).st_size
+            self.file_basename = basename(self.input_file)
+
+        else:
+            # "self.input_file" is Django FileField
+            self.filesize = self.input_file.size
+            self.file_basename = basename(self.input_file.name)
+
+
         if self.filesize == 0:
             self.add_error('The file size is zero: [%s]' % self.input_file)
             return
 
         # file basename with extension
         #
-        self.file_basename = basename(self.input_file)
 
-        # file extenion
+        # file extension
         #
         _fname_base, fname_ext = splitext(self.file_basename)
 
