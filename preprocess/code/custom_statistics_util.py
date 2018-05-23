@@ -235,6 +235,7 @@ class CustomStatisticsUtil(object):
         success, updated_or_err = VersionNumberUtil.update_version_number(
                                         self.original_json,
                                         self.is_major_update())
+        print(' custom stats updated ', self.original_json)
 
         if not success:
             self.add_error_message(updated_or_err)
@@ -327,7 +328,7 @@ class CustomStatisticsUtil(object):
         if not success:
             self.add_error_message(updated_or_err)
             return False
-        # print("updates to custom_statistics : ", self.preprocess_json)
+        print("updates to custom_statistics : ", self.original_json)
 
     def make_deletion(self, id_num, update):
         """ here we delete"""

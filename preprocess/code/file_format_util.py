@@ -58,9 +58,9 @@ class FileFormatUtil(object):
                 self.add_error('The file was not found: [%s]' % self.input_file)
                 return
 
-            self.filesize = self.input_file.size
+            self.filesize = os.stat(self.input_file).st_size
             print('filesize ', self.filesize)
-            self.file_basename = basename(self.input_file.name)
+            self.file_basename = basename(self.input_file)
             print('file basename ', self.file_basename)
 
         else:

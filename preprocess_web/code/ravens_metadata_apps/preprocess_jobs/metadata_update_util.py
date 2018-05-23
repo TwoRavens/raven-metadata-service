@@ -64,6 +64,7 @@ class MetadataUpdateUtil(object):
         if as_obj:
             return self.metadata_update_obj
 
+        print('metadata obtained ', metadata)
         return metadata
 
     def get_update_util(self, latest_metadata_or_err):
@@ -98,6 +99,7 @@ class MetadataUpdateUtil(object):
         # Retrieve either a PreprocessJob or MetadataUpdate
         #
         success, metadata_obj_or_err = JobUtil.get_latest_metadata_object(self.preprocess_id)
+        print(' return from latest metadata ', success, metadata_obj_or_err)
         if not success:
             self.add_err_msg(metadata_obj_or_err)
             return False
@@ -107,6 +109,7 @@ class MetadataUpdateUtil(object):
         # Retrieve the metadata from a file; returned as an OrderedDict
         #
         data_found, latest_metadata_or_err = metadata_obj_or_err.get_metadata()
+        print('metadata retrieve ', data_found, latest_metadata_or_err)
         if not data_found:
             self.add_err_msg(latest_metadata_or_err)
             return False
@@ -120,6 +123,7 @@ class MetadataUpdateUtil(object):
         # var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
 
         var_util = self.get_update_util(latest_metadata_or_err)
+        print(' var util return ', var_util)
         if var_util is None:
             self.add_err_msg(var_util.get_error_messages())
             return False
@@ -171,6 +175,7 @@ class MetadataUpdateUtil(object):
             return False
 
         new_name = 'update_%s_%s.json' % (self.metadata_update_obj.id, get_alphanumeric_lowercase(8))
+        json_val = json_val.encode('utf-8')
         new_preprocess_data = ContentFile(json_val)
 
         try:

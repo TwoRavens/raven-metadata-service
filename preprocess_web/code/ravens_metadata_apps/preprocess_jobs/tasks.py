@@ -70,12 +70,7 @@ def preprocess_csv_file(job_id, **kwargs):
     kwargs['job_id'] = job_id
 
 
-    if 1:
-        runner, err_msg = PreprocessRunner.load_from_file(\
-                                        input_file,
-                                        **kwargs)
-    else:
-        runner, err_msg = PreprocessRunner.load_from_file(\
+    runner, err_msg = PreprocessRunner.load_from_file(\
                                         input_file,
                                         **kwargs)
 

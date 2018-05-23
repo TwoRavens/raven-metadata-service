@@ -307,7 +307,7 @@ def view_custom_statistics_form(request):
         user_msg = dict(success=False,
                         message=latest_metadata_json_or_err)
         return JsonResponse(user_msg)
-
+    print(' custom statistics json ', custom_statistics_json)
     metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
                                                 col_const.UPDATE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
