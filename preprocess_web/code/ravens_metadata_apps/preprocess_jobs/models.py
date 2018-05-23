@@ -421,7 +421,7 @@ class MetadataUpdate(TimeStampedModel):
     def get_metadata_filesize(self):
         """Return the size of the file"""
         if self.metadata_file:
-            return self.metadata_file.size
+                return self.metadata_file.size
 
         return None
 

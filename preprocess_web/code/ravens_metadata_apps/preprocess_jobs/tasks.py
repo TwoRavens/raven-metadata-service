@@ -42,9 +42,11 @@ from ravens_metadata.celery import celery_app
 @shared_task
 def preprocess_csv_file(job_id, **kwargs):
     """Run preprocess on a selected file"""
-
+    print('job_id', job_id)
     try:
         preprocess_job = PreprocessJob.objects.get(pk=job_id)
+
+        print('preprocess_job obj', preprocess_job)
     except PreprocessJob.DoesNotExist:
         err_msg = 'PreprocessJob not found for id: %s' % job_id
         result_info = dict(success=False,

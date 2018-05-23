@@ -27,6 +27,7 @@ class JobUtil(object):
     @staticmethod
     def get_preprocess_job_dict(preprocess_id):
         """Return a PreprocessJob to check its status"""
+        print('preprocess_id for get_preprocess_job_dict ', preprocess_id )
         try:
             ze_job = PreprocessJob.objects.get(pk=preprocess_id)
         except PreprocessJob.DoesNotExist:
@@ -166,6 +167,7 @@ class JobUtil(object):
         if dv_file_info and dv_file_info.jsonld_citation:
             additional_args[KEY_JSONLD_CITATION] = dv_file_info.jsonld_citation
 
+        print('job id to be passed with file ', job.id)
         # send the file to the queue
         #
         task = preprocess_csv_file.delay(\
