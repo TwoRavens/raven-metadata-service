@@ -17,9 +17,9 @@ from file_format_constants import \
 class FileFormatUtil(object):
     def __init__(self, input_file, **kwargs):
         """Identify file type: csv, tab, etc"""
-        # print("The file format class is called")
+
         self.input_file = input_file
-        print('file format util file ', self.input_file)
+
         self.job_id = kwargs.get('job_id')
 
         self.dataframe = None
@@ -59,16 +59,16 @@ class FileFormatUtil(object):
                 return
 
             self.filesize = os.stat(self.input_file).st_size
-            print('filesize ', self.filesize)
+            # print('filesize ', self.filesize)
             self.file_basename = basename(self.input_file)
-            print('file basename ', self.file_basename)
+            # print('file basename ', self.file_basename)
 
         else:
             # "self.input_file" is Django FileField
             self.filesize = self.input_file.size
-            print('filesize ', self.filesize)
+            # print('filesize ', self.filesize)
             self.file_basename = basename(self.input_file.name)
-            print('file basename ', self.file_basename)
+            # print('file basename ', self.file_basename)
 
         if self.filesize == 0:
             self.add_error('The file size is zero: [%s]' % self.input_file)

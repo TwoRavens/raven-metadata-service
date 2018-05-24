@@ -42,7 +42,6 @@ from ravens_metadata.celery import celery_app
 @shared_task
 def preprocess_csv_file(job_id, **kwargs):
     """Run preprocess on a selected file"""
-    print('job_id', job_id)
     try:
         preprocess_job = PreprocessJob.objects.get(pk=job_id)
 
