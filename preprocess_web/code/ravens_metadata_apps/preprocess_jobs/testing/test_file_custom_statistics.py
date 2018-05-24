@@ -136,9 +136,7 @@ class CustomStatisticsTestCases(TestCase):
                                 'preprocess/test_files/fearon_laitin.json',
                                 dict(preprocess_id=ye_job.id))
 
-        if as_binary:
-            preprocess_string = preprocess_string.encode()
-
+        preprocess_string = preprocess_string.encode("utf-8")
         preprocess_content_file = ContentFile(preprocess_string)
 
         new_name = 'preprocess_%s_%s_%s_%s.json' % \
@@ -159,7 +157,7 @@ class CustomStatisticsTestCases(TestCase):
 
 
     def test_10_custom_statistics_add(self):
-        """ test the custom_statistics add feature"""
+        """(10) test the custom_statistics add feature"""
         msgt(self.test_10_custom_statistics_add.__doc__)
         metadata_01_obj = self.get_metadata_obj(self.job_01_text)
         preprocess_id = metadata_01_obj.orig_metadata.id
@@ -193,6 +191,7 @@ class CustomStatisticsTestCases(TestCase):
         self.assertEqual(value, '65555')
 
     def test_20_custom_statistics_add_fail(self):
+        """(20) test the custom stats error messages"""
         msgt(self.test_20_custom_statistics_add_fail.__doc__)
         update_json = {
             col_const.PREPROCESS_ID: 1,
@@ -225,6 +224,7 @@ class CustomStatisticsTestCases(TestCase):
         self.assertTrue(update_util.has_error)
 
     def test_30_custom_statistics_update(self):
+        """(30) Test the update feature for custom stats"""
         msgt(self.test_30_custom_statistics_update.__doc__)
         update_json = {\
                   col_const.PREPROCESS_ID: 1,
@@ -264,6 +264,7 @@ class CustomStatisticsTestCases(TestCase):
         self.assertEqual(desc, 'new desc')
 
     def test_40_custom_statistics_update_fail(self):
+        """(40) Test update feature err checking for custom stats"""
         msgt(self.test_40_custom_statistics_update_fail.__doc__)
         update_json = {
             col_const.PREPROCESS_ID: 1,
@@ -295,6 +296,7 @@ class CustomStatisticsTestCases(TestCase):
         self.assertTrue(update_util.has_error)
 
     def test_50_custom_statistics_delete(self):
+        """(50) custom stats delete"""
         msgt(self.test_50_custom_statistics_delete.__doc__)
         update_json = {\
                col_const.PREPROCESS_ID: 1,
@@ -326,8 +328,9 @@ class CustomStatisticsTestCases(TestCase):
         # self.assertRaises(KeyError, delete_util.get_updated_metadata()[col_const.CUSTOM_KEY][id_list_from_metadata[1]])
 
 
-    def test_50_custom_statistics_delete_fail(self):
-        msgt(self.test_50_custom_statistics_delete_fail.__doc__)
+    def test_60_custom_statistics_delete_fail(self):
+        """(60) custom stats delete fail"""
+        msgt(self.test_60_custom_statistics_delete_fail.__doc__)
         update_json = {\
                col_const.PREPROCESS_ID: 1,
                col_const.CUSTOM_KEY:[\

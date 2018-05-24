@@ -105,8 +105,8 @@ class FileEncodingTestCase(TestCase):
                                 'preprocess/test_files/fearon_laitin.json',
                                 dict(preprocess_id=ye_job.id))
 
-        if as_binary:
-            preprocess_string = preprocess_string.encode()
+
+        preprocess_string = preprocess_string.encode("utf-8")
 
         preprocess_content_file = ContentFile(preprocess_string)
 
@@ -128,7 +128,7 @@ class FileEncodingTestCase(TestCase):
 
     #   @skip('skipit')
     def test_10_get_metadata(self):
-        """Read metadata that has a text file encoding"""
+        """(10) Read metadata that has a text file encoding"""
         msgt(self.test_10_get_metadata.__doc__)
 
         # Open text file, return dict
@@ -189,7 +189,7 @@ class FileEncodingTestCase(TestCase):
 
     #   @skip('skipit')
     def test_20_get_metata(self):
-        """Read metadata that has (we think) bytes file encoding"""
+        """(20) Read metadata that has (we think) bytes file encoding"""
         msgt(self.test_20_get_metata.__doc__)
 
         # Open bytes file, return dict
@@ -223,7 +223,7 @@ class FileEncodingTestCase(TestCase):
 
     #   @skip('skipit')
     def test_30_multi_version_updates(self):
-        """Make sure minor/major versions are correct"""
+        """(30) Make sure minor/major versions are correct"""
         msgt(self.test_30_multi_version_updates.__doc__)
 
         # Open text file, return dict

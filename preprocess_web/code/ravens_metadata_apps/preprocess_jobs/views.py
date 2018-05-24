@@ -174,8 +174,7 @@ def view_custom_statistics_delete(request):
                         message='Custom Statistics',
                         id=job_id,
                         data=metadata_update_or_err.get_updated_metadata())
-        print("Updated metadata : ", metadata_update_or_err)
-    print("usr_msg ", user_msg)
+        # print("Updated metadata : ", metadata_update_or_err)
     return JsonResponse(user_msg)
 
 
@@ -239,8 +238,8 @@ def view_custom_statistics_update(request):
                         message='Custom Statistics',
                         id=job_id,
                         data=metadata_update_or_err.get_updated_metadata())
-        print("Updated metadata : ", metadata_update_or_err)
-    print("user msg ", user_msg)
+        # print("Updated metadata : ", metadata_update_or_err)
+
     return JsonResponse(user_msg)
 
 
@@ -311,7 +310,6 @@ def view_custom_statistics_form(request):
     metadata_update_or_err = MetadataUpdateUtil(job_id, custom_statistics_json,
                                                 col_const.UPDATE_CUSTOM_STATISTICS)
     if metadata_update_or_err.has_error:
-        print("got error")
         msg = get_json_error(metadata_update_or_err)
         user_msg = dict(success=False,
                         message='Custom Statistics',
@@ -323,7 +321,7 @@ def view_custom_statistics_form(request):
                         message='Custom Statistics',
                         id=job_id,
                         data=metadata_update_or_err.get_updated_metadata())
-        print("Updated metadata : ", metadata_update_or_err)
+        # print("Updated metadata : ", metadata_update_or_err)
 
     return JsonResponse(user_msg)
     # ------------------------
@@ -394,7 +392,7 @@ def view_preprocess_job_status(request, job_id):
                  #HIDE_VERSIONS_BUTTON: True,
                  'preprocess_string_err': False}
 
-    print('info_dict', info_dict)
+    # print('info_dict', info_dict)
 
     if job.is_finished():
         data_ok, preprocess_string = job.get_metadata(as_string=True)

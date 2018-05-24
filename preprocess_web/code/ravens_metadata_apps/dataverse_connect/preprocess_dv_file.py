@@ -23,12 +23,12 @@ from ravens_metadata_apps.dataverse_connect.dataverse_util import DataverseUtil
 from msg_util import msg, msgt
 
 
-def try_it(file_id=3147445, dataset_id=None):
+def try_it(file_id=3147445):
 
     # hmmm...
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
-    dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
-    file_retriever = DataverseFileRetriever(dv_url, dataset_id=dataset_id)
+    dv_file_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
+    file_retriever = DataverseFileRetriever(dv_file_url)
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
         return
@@ -80,6 +80,6 @@ def try_it2():
 if __name__ == '__main__':
     #try_queue(3131016)
 
-    #try_it(3131016)
-    try_it2()
+    try_it(3156792)
+    #try_it2()
     #try_queue()

@@ -12,7 +12,7 @@
                      <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
                      <h3 class="card-title">Create Summary Statistics</h3>
                      <p class=text-left>Upload a data file to generate a metadata file containing summary statistics.</p>
-                     <a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a>
+                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a></p>
                      <a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a>
                   </div>
                </div>
@@ -42,8 +42,9 @@
                      <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
                      <h3 class="card-title">Metadata JSON Schema / Docs</h3>
                      <p class="text-left">View the JSON schema as well as documentation with variable descriptions generated from the JSON schema.</p>
-                     <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}">JSON Schema</a>
-                     <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}?pretty">("pretty")</a>
+
+                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}">JSON Schema</a>
+                     <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}?pretty">("pretty")</a></p>
 
                      <a class="btn btn-sm btn-primary" href="http://two-ravens-metadata-service.readthedocs.io/" target="_blank">Docs</a>
                   </div>

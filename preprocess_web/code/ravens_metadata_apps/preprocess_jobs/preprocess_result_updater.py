@@ -58,7 +58,9 @@ class PreprocessResultUpdater(object):
             return
 
         preprocess_string = dump_result.result_obj
+        preprocess_string = preprocess_string.encode('utf-8')
         preprocess_content_file = ContentFile(preprocess_string)
+
 
         new_name = 'preprocess_%s_%s_%s.json' % \
                    (job.id,

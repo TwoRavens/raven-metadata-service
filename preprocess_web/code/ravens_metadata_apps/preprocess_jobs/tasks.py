@@ -40,14 +40,34 @@ from ravens_metadata.celery import celery_app
 
 
 @shared_task
-def preprocess_csv_file(input_file, **kwargs):
+def preprocess_csv_file(job_id, **kwargs):
     """Run preprocess on a selected file"""
-    job_id = kwargs.get('job_id')
+    try:
+        preprocess_job = PreprocessJob.objects.get(pk=job_id)
+
+        print('preprocess_job obj', preprocess_job)
+    except PreprocessJob.DoesNotExist:
+        err_msg = 'PreprocessJob not found for id: %s' % job_id
+        result_info = dict(success=False,
+                           job_id=job_id,
+                           user_message=err_msg)
+        return err_resp(err_msg)
+
+    if not preprocess_job.source_file:
+        err_msg = 'No source file for PreprocessJob with id: %s' % job_id
+        result_info = dict(success=False,
+                           job_id=job_id,
+                           user_message=err_msg)
+        return err_resp(err_msg)
+
+    input_file = preprocess_job.source_file
 
     start_time = time.time()
     print('(%s) Start preprocess: %s' % (start_time, input_file))
 
     kwargs['SCHEMA_INFO_DICT'] = get_temp_schema_info()
+    kwargs['job_id'] = job_id
+
 
     runner, err_msg = PreprocessRunner.load_from_file(\
                                         input_file,

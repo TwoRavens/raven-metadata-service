@@ -218,7 +218,7 @@ class PreprocessJob(TimeStampedModel):
                             self.id)
 
         if isinstance(file_data, bytes): #type(file_data) is bytes:
-            print('BYTES found!')
+            #print('BYTES found!')
             file_data = file_data.decode('utf-8')
 
         try:
@@ -260,9 +260,12 @@ class PreprocessJob(TimeStampedModel):
 
     def source_file_path(self):
         """To display the full path in the admin"""
-        if self.source_file:
-            return self.source_file.path
 
+        if self.source_file:
+            try:
+                return self.source_file.path
+            except NotImplementedError:
+                return '(n/a for object storage)'
         return 'n/a'
 
 
@@ -283,14 +286,14 @@ class PreprocessJob(TimeStampedModel):
     def is_tab_source_file(self):
         """Is the source file a .tab file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith(TAB_FILE_EXT):
+            if self.source_file.name.lower().endswith(TAB_FILE_EXT):
                 return True
         return False
 
     def is_csv_source_file(self):
         """Is the source file a .FORMAT_CSV file"""
         if self.source_file:
-            if self.source_file.path.lower().endswith(CSV_FILE_EXT):
+            if self.source_file.name.lower().endswith(CSV_FILE_EXT):
                 return True
         return False
 
@@ -418,7 +421,7 @@ class MetadataUpdate(TimeStampedModel):
     def get_metadata_filesize(self):
         """Return the size of the file"""
         if self.metadata_file:
-            return self.metadata_file.size
+                return self.metadata_file.size
 
         return None
 

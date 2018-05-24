@@ -98,6 +98,7 @@ class MetadataUpdateUtil(object):
         # Retrieve either a PreprocessJob or MetadataUpdate
         #
         success, metadata_obj_or_err = JobUtil.get_latest_metadata_object(self.preprocess_id)
+
         if not success:
             self.add_err_msg(metadata_obj_or_err)
             return False
@@ -107,6 +108,7 @@ class MetadataUpdateUtil(object):
         # Retrieve the metadata from a file; returned as an OrderedDict
         #
         data_found, latest_metadata_or_err = metadata_obj_or_err.get_metadata()
+
         if not data_found:
             self.add_err_msg(latest_metadata_or_err)
             return False
@@ -120,6 +122,7 @@ class MetadataUpdateUtil(object):
         # var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
 
         var_util = self.get_update_util(latest_metadata_or_err)
+
         if var_util is None:
             self.add_err_msg(var_util.get_error_messages())
             return False
@@ -170,11 +173,14 @@ class MetadataUpdateUtil(object):
                  ' (MetadataUpdateUtil: 118)') % err_obj)
             return False
 
-        new_name = 'update_%s_%s.json' % (self.metadata_update_obj.id, get_alphanumeric_lowercase(8))
+        new_name = 'update_%s_%s.json' % (self.metadata_update_obj.id,
+                                          get_alphanumeric_lowercase(8))
+
+        json_val = json_val.encode('utf-8')
         new_preprocess_data = ContentFile(json_val)
 
         try:
-            self.metadata_update_obj.metadata_file.save(
+            self.metadata_update_obj.metadata_file.save(\
                                     new_name,
                                     new_preprocess_data)
         except Exception as err_obj:

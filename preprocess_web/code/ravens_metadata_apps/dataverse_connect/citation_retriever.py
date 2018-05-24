@@ -48,9 +48,6 @@ class CitationRetriever(BasicErrCheck):
 
         # Call Dataverse....
         #
-        print('-' * 40)
-        print('jsonld_url', jsonld_url)
-        print('-' * 40)
         try:
             result2 = requests.get(jsonld_url,
                                    timeout=settings.REQUESTS_TIMEOUT)
@@ -68,7 +65,6 @@ class CitationRetriever(BasicErrCheck):
             print('time out....', user_msg)
             self.add_err_msg(user_msg)
             return
-        print('made it: ')
 
         # Check the response codes
         #
@@ -110,9 +106,6 @@ class CitationRetriever(BasicErrCheck):
 
         # Call Dataverse....
         #
-        print('-' * 40)
-        print('search_url', search_url)
-        print('-' * 40)
         try:
             result1 = requests.get(search_url,
                                    timeout=settings.REQUESTS_TIMEOUT)
@@ -130,7 +123,7 @@ class CitationRetriever(BasicErrCheck):
             print('user_msg', user_msg)
             self.add_err_msg(user_msg)
             return
-        print('made it')
+
         # Check the response codes
         #
         if result1.status_code != requests.codes.ok:

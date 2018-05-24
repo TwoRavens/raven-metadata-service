@@ -27,6 +27,7 @@ class JobUtil(object):
     @staticmethod
     def get_preprocess_job_dict(preprocess_id):
         """Return a PreprocessJob to check its status"""
+        print('preprocess_id for get_preprocess_job_dict ', preprocess_id )
         try:
             ze_job = PreprocessJob.objects.get(pk=preprocess_id)
         except PreprocessJob.DoesNotExist:
@@ -161,14 +162,15 @@ class JobUtil(object):
 
         # Additional/optional arguments for preprocess
         #
-        additional_args = dict(job_id=job.id)
+        additional_args = dict()
         dv_file_info = job.dataversefileinfo_set.first()
         if dv_file_info and dv_file_info.jsonld_citation:
             additional_args[KEY_JSONLD_CITATION] = dv_file_info.jsonld_citation
+
         # send the file to the queue
         #
         task = preprocess_csv_file.delay(\
-                    job.source_file.path,
+                    job.id,
                     **additional_args)
 
         # set the task_id
@@ -232,7 +234,7 @@ class JobUtil(object):
         if job.is_tab_source_file():
 
             try:
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        sep='\t',
                                        #lineterminator='\r',
                                        skiprows=range(1, start_row),
@@ -240,9 +242,9 @@ class JobUtil(object):
                                        nrows=num_rows)
 
             except ValueError:
-                print(" not good value for the row start")
+                # print(" not good value for the row start")
                 start_row = 1
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        sep='\t',
                                        lineterminator='\r',
                                        skiprows=range(1, start_row),
@@ -250,14 +252,14 @@ class JobUtil(object):
                                        nrows=num_rows)
         elif job.is_csv_source_file():
             try:
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)
             except ValueError:
-                print(" not good value for the row start")
+                # print(" not good value for the row start")
                 start_row = 1
-                csv_data = pd.read_csv(job.source_file.path,
+                csv_data = pd.read_csv(job.source_file,
                                        skiprows=range(1, start_row),
                                        # skip rows range starts from 1 as 0 row is the header
                                        nrows=num_rows)
@@ -389,7 +391,7 @@ class JobUtil(object):
         # print(" version object ", data_or_err)
         custom_util_update = CustomStatisticsUtil(data_or_err, update_json)
         custom_util_update.update_custom_stats()
-        print("updated custom _ stats", custom_util_update.get_updated_metadata())
+
         if custom_util_update.has_error:
             return False, custom_util_update.get_error_messages()
 
