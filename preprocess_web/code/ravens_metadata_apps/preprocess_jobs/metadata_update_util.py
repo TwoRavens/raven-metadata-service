@@ -173,12 +173,14 @@ class MetadataUpdateUtil(object):
                  ' (MetadataUpdateUtil: 118)') % err_obj)
             return False
 
-        new_name = 'update_%s_%s.json' % (self.metadata_update_obj.id, get_alphanumeric_lowercase(8))
+        new_name = 'update_%s_%s.json' % (self.metadata_update_obj.id,
+                                          get_alphanumeric_lowercase(8))
+
         json_val = json_val.encode('utf-8')
         new_preprocess_data = ContentFile(json_val)
 
         try:
-            self.metadata_update_obj.metadata_file.save(
+            self.metadata_update_obj.metadata_file.save(\
                                     new_name,
                                     new_preprocess_data)
         except Exception as err_obj:

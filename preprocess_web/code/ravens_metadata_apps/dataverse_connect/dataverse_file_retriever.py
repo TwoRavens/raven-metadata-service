@@ -5,9 +5,13 @@ ref: https://stackoverflow.com/questions/16174022/download-a-remote-image-and-sa
 import re
 import requests
 import tempfile
+import os
 from os.path import splitext
+
 from django.core import files
 from django.conf import settings
+from django.core.files.base import ContentFile
+
 from file_format_constants import TAB_FILE_EXT
 from basic_utils.basic_err_check import BasicErrCheck
 from ravens_metadata_apps.preprocess_jobs.models import \
@@ -18,8 +22,8 @@ from ravens_metadata_apps.dataverse_connect.models import \
     (RegisteredDataverse,
      DataverseFileInfo)
 from ravens_metadata_apps.dataverse_connect.citation_retriever import CitationRetriever
-import logging
 
+import logging
 LOGGER = logging.getLogger(__name__)
 
 class DataverseFileRetriever(BasicErrCheck):
@@ -91,9 +95,7 @@ class DataverseFileRetriever(BasicErrCheck):
 
         self.jsonld_citation = retriever.get_citation()
         self.dataset_doi = retriever.get_dataset_doi()
-        print('get_citation:', self.jsonld_citation)
-        print('dataset_doi:', self.dataset_doi)
-
+        
     def update_preprocess_job(self):
         """Update or create the Preprocess Job"""
         if self.preprocess_job_id:
@@ -226,10 +228,12 @@ class DataverseFileRetriever(BasicErrCheck):
         # (3a) Read stream to a temporary file
         #
         LOGGER.debug('(3) Read stream to a temporary file')
-        named_temp_file = tempfile.NamedTemporaryFile()
 
         # Read the streamed image in sections
         #
+        named_temp_file = tempfile.NamedTemporaryFile(delete=False)
+        temp_file_path = named_temp_file.name
+
         for block in request.iter_content(1024 * 8):
             # If blocks, then stop
             if not block:
@@ -237,20 +241,25 @@ class DataverseFileRetriever(BasicErrCheck):
             # Write image block to temporary file
             named_temp_file.write(block)
 
+        named_temp_file.close()
+
         # (4) Link the file to a new PreprocessJob
         #
         LOGGER.debug('(4) Link the file to a new PreprocessJob')
         #
-
         self.preprocess_job.source_file.save(\
                         output_file_name,
-                        files.File(named_temp_file))
+                        ContentFile(open(temp_file_path, 'rb').read()))
 
         self.preprocess_job.set_state_data_retrieved()
         if orig_file_name:
             self.preprocess_job.name = orig_file_name
 
         self.preprocess_job.save()
+
+        # Delete the temp file
+        #
+        os.unlink(temp_file_path)
 
         # Update and save the instance of DataverseFileInfo
         #

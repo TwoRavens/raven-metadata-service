@@ -218,7 +218,7 @@ class PreprocessJob(TimeStampedModel):
                             self.id)
 
         if isinstance(file_data, bytes): #type(file_data) is bytes:
-            print('BYTES found!')
+            #print('BYTES found!')
             file_data = file_data.decode('utf-8')
 
         try:

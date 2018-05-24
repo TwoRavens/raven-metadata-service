@@ -128,7 +128,7 @@ class FileEncodingTestCase(TestCase):
 
     #   @skip('skipit')
     def test_10_get_metadata(self):
-        """Read metadata that has a text file encoding"""
+        """(10) Read metadata that has a text file encoding"""
         msgt(self.test_10_get_metadata.__doc__)
 
         # Open text file, return dict
@@ -189,7 +189,7 @@ class FileEncodingTestCase(TestCase):
 
     #   @skip('skipit')
     def test_20_get_metata(self):
-        """Read metadata that has (we think) bytes file encoding"""
+        """(20) Read metadata that has (we think) bytes file encoding"""
         msgt(self.test_20_get_metata.__doc__)
 
         # Open bytes file, return dict
@@ -223,7 +223,7 @@ class FileEncodingTestCase(TestCase):
 
     #   @skip('skipit')
     def test_30_multi_version_updates(self):
-        """Make sure minor/major versions are correct"""
+        """(30) Make sure minor/major versions are correct"""
         msgt(self.test_30_multi_version_updates.__doc__)
 
         # Open text file, return dict
