@@ -105,8 +105,8 @@ class FileEncodingTestCase(TestCase):
                                 'preprocess/test_files/fearon_laitin.json',
                                 dict(preprocess_id=ye_job.id))
 
-        if as_binary:
-            preprocess_string = preprocess_string.encode()
+
+        preprocess_string = preprocess_string.encode("utf-8")
 
         preprocess_content_file = ContentFile(preprocess_string)
 
