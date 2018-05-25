@@ -199,7 +199,7 @@ def api_get_job_status(request, preprocess_id, with_html=False):
         html_dict = {"job": job,
                      "dv_info": dv_info,
                      KEY_EDITOR_URL: settings.EDITOR_URL,
-                     HIDE_VERSIONS_BUTTON: True}
+                     HIDE_VERSIONS_BUTTON: False}
 
         status_row_html = render_to_string('preprocess/job_card_rows.html',
                                            html_dict)

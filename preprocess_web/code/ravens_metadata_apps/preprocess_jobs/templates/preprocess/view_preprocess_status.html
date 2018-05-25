@@ -15,7 +15,7 @@ function check_preprocess_status() {
     if (data.success) {
         console.log('ok....');
         if (data.data.status_row_html){
-          console.log('ok....:' + data.data.status_row_html);
+          console.log('ok.... status_row_html rcvd');//:' + data.data.status_row_html);
           $("#tbl_job_status").find("tr:gt(1)").remove();
           $('#tbl_job_status tr:last').after(data.data.status_row_html);
         }
@@ -27,6 +27,11 @@ function check_preprocess_status() {
             if ("status_row_html" in data.data){
               delete data.data["status_row_html"];
             }
+
+            // update the name of the job
+            //   - e.g. this changes with dataverse files
+            $('#id_job_name').html(data.data.name);
+
             $('#id_metadata_card_data').html('<pre>'
                   + JSON.stringify(data.data, null, 4)
                   + '</pre>');
