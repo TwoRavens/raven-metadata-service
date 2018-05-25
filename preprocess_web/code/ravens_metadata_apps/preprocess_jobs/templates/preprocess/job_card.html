@@ -14,13 +14,10 @@
       <tr>
         <th>ID / Name</th>
         <td><h4><span class="badge badge-primary">{{ job.id }}</span>
-            <span style="font-weight:normal;">/</span> {{ job.name }}
+            <span style="font-weight:normal;">/</span>
+            <span id="id_job_name">{{ job.name }}</span>
         </h4>
         </td>
-      </tr>
-      <tr>
-        <th>Source File (Size)</th>
-        <td>{{ job.source_filename }} &nbsp; ({{ job.get_source_filesize|filesizeformat }})</td>
       </tr>
       <tr>
         <th>Created</th>

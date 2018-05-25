@@ -1,5 +1,10 @@
 {% load static %}
 <tr>
+  <th>Source File (Size)</th>
+  <td>{{ job.source_filename }} &nbsp; ({{ job.get_source_filesize|filesizeformat }})</td>
+</tr>
+
+<tr>
   <th>Preprocess complete?</th>
   <td>
       {% if job.is_success %}
