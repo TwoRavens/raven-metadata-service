@@ -64,7 +64,10 @@
         </div>
       </div><!-- end: row -->
 
-<footer style="margin-bottom: 5%"></footer>
+<footer style="margin-bottom: 5%">
+    {% if TEST_ENV_VARIABLE %}<p>TEST_ENV_VARIABLE: {{ TEST_ENV_VARIABLE }}</p>{% endif %}
+
+</footer>
 </div>
 
 {% endblock %}
