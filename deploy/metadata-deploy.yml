@@ -74,6 +74,11 @@ spec:
             value: "metadata.2ravens.org"
           - name: EDITOR_URL
             value:
+          - name: TEST_ENV_VARIABLE
+            valueFrom:
+              secretKeyRef:
+                name: test-env-variable
+                key: TEST_ENV_VARIABLE
         volumeMounts:
           - name: "raven-metadata-volume"
             mountPath: "/raven_metadata"
