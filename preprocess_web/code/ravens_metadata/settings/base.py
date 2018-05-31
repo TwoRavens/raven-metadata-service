@@ -196,7 +196,6 @@ dev_secret_file = join(dirname(abspath(__file__)),
                       'secret.json')
 GCE_CREDS_FILE = os.environ.get('GCE_CREDS_FILE',
                                 dev_secret_file)
-assert isfile(GCE_CREDS_FILE), "GCE creds don't exist: %s" % GCE_CREDS_FILE
 
 print(GCE_CREDS_FILE)
 with open(GCE_CREDS_FILE) as json_data:
