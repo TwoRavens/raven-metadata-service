@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-import sys
+import sys, json
 import os
 from os.path import abspath, dirname, join
 
@@ -190,4 +190,16 @@ REQUESTS_TIMEOUT = 7 # 1 second for server to respond
 # -------------------------------
 EDITOR_URL = os.environ.get('EDITOR_URL', None)
 
-TEST_ENV_VARIABLE = os.environ.get('TEST_ENV_VARIABLE', '(nothing set)')
+# TEST_ENV_VARIABLE = os.environ.get('TEST_ENV_VARIABLE', '(nothing set)')
+dev_secret_file = join(dirname(abspath(__file__)),
+                      'gce',
+                      'secret.json')
+GCE_CREDS_FILE = os.environ.get('GCE_CREDS_FILE',
+                                dev_secret_file)
+assert isfile(GCE_CREDS_FILE), "GCE creds don't exist: %s" % GCE_CREDS_FILE
+
+print(GCE_CREDS_FILE)
+with open(GCE_CREDS_FILE) as json_data:
+    d = json.load(json_data)
+TEST_ENV_VARIABLE = d['TEST_ENV_VARIABLE']
+print(TEST_ENV_VARIABLE)
