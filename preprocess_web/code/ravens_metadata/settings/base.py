@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 import sys, json
 import os
-from os.path import abspath, dirname, join
+from os.path import abspath, dirname, isfile, join
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = dirname(dirname(os.path.abspath(__file__)))
