@@ -74,11 +74,11 @@ spec:
             value: "metadata.2ravens.org"
           - name: EDITOR_URL
             value:
-          - name: GS_CREDENTIALS
+          - name: GCE_CREDS_INFO
             valueFrom:
               secretKeyRef:
-                name: gs-credentaials-variable
-                key: GS_CREDENTIALS
+                name: gce-creds-variable
+                key: GCE_CREDS_INFO
         volumeMounts:
           - name: "raven-metadata-volume"
             mountPath: "/raven_metadata"
