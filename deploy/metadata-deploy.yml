@@ -40,7 +40,7 @@ spec:
         command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
         env:
           - name: DJANGO_SETTINGS_MODULE
-            value: "ravens_metadata.settings.docker_test_settings"
+            value: "ravens_metadata.settings.gce_deploy_settings"
           - name: REDIS_HOST
             # Note this is within the same pod
             value: localhost
@@ -64,7 +64,7 @@ spec:
             protocol: TCP
         env:
           - name: DJANGO_SETTINGS_MODULE
-            value: "ravens_metadata.settings.docker_test_settings"
+            value: "ravens_metadata.settings.gce_deploy_settings"
           - name: REDIS_HOST
             # Note this is within the same pod
             value: localhost
@@ -74,11 +74,11 @@ spec:
             value: "metadata.2ravens.org"
           - name: EDITOR_URL
             value:
-          - name: TEST_ENV_VARIABLE
+          - name: GS_CREDENTIALS
             valueFrom:
               secretKeyRef:
-                name: test-env-variable
-                key: TEST_ENV_VARIABLE
+                name: gs-credentaials-variable
+                key: GS_CREDENTIALS
         volumeMounts:
           - name: "raven-metadata-volume"
             mountPath: "/raven_metadata"
