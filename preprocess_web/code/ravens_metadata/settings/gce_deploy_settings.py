@@ -29,5 +29,6 @@ GS_PROJECT_ID = os.environ.get('GS_PROJECT_ID',
 #
 creds_info_str = os.environ.get('GCE_CREDS_INFO', '(nothing found)')
 print('creds_info_str', creds_info_str)
-GCE_CREDS_INFO = json.loads(creds_info_str)
+creds_info_str_decoded = creds_info_str.replace('\n', '').decode("utf-8")
+GCE_CREDS_INFO = json.loads(creds_info_str_decoded)
 GS_CREDENTIALS = service_account.Credentials.from_service_account_info(GCE_CREDS_INFO)
