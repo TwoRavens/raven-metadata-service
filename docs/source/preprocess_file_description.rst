@@ -30,9 +30,28 @@ Preprocess Parameters
         }
       },
     }
-    
 
-Data for each variable
+Self Section
+----------------------------
+.. note::
+
+    - This section contains the structure and description of the preprocessed file.
+
+
+.. include:: self_section.rst
+
+
+Dataset Section
+----------------------------
+.. note::
+
+    - This section contains the important parameters of preprocess file at dataset level.
+
+
+.. include:: dataset_section.rst
+
+
+Variable Section
 ----------------------------
 
 
@@ -50,3 +69,22 @@ Data for each variable
 
 
 .. include:: defn_variables.rst
+
+
+Variable Display Section
+----------------------------
+.. note::
+
+    - This section contains the modified object/parameters in the particular version of preprocessed dataset.
+
+
+.. include:: variable_display_section.rst
+
+Custom Statistics Section
+----------------------------
+.. note::
+
+    - This section contains the custom statistics added by the user on the dataset.
+
+
+.. include:: variable_display_section.rst
