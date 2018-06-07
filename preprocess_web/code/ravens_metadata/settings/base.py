@@ -192,4 +192,4 @@ EDITOR_URL = os.environ.get('EDITOR_URL', None)
 
 
 TEST_ENV_VARIABLE = os.environ.get('TEST_ENV_VARIABLE', '(nothing set)')
-GCE_CREDS_INFO = os.environ.get('GCE_CREDS_INFO', 'nothing found')
+
