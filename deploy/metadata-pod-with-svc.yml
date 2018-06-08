@@ -14,7 +14,7 @@ spec:
     targetPort: 8080
   type: LoadBalancer
   # metadata.2ravens.org
-  loadBalancerIP: 35.192.35.125
+  #loadBalancerIP: 35.192.35.125
 ---
 # ---------------------------------------------------------
 # EventData - Kubernetes Pod File
@@ -25,6 +25,7 @@ metadata:
   name: ravens-preprocess-app
   labels:
     app: ravens-preprocess-app
+    tier: web
 spec:
   restartPolicy: Always
   volumes:

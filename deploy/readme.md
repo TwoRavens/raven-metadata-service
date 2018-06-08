@@ -47,9 +47,9 @@ kubectl describe pod ravens-preprocess-app
   - `kubectl logs -f .....` will stream the log
 
   ```
-  kubectl logs ravens-preprocess-app redis  
-  kubectl logs ravens-preprocess-app celery-worker
   kubectl logs ravens-preprocess-app preprocess-web  
+  kubectl logs ravens-preprocess-app celery-worker
+  kubectl logs ravens-preprocess-app redis  
   ```
 
 # Log into a running container with full admin rights
