@@ -43,19 +43,21 @@ kubectl get pods
 #
 kubectl describe pod ravens-preprocess-app
 
-# See a log for a container, e.g. what you see in the rook Terminal when running locally
-#   - `kubectl logs -f .....` will stream the log
-#
-kubectl logs ravens-preprocess-app rook-service  # rook server log
-kubectl logs ravens-preprocess-app ta3-main  # python server log
-kubectl logs ravens-preprocess-app ravens-nginx  # nginx log
+- See a log for a container, e.g. what you see in the rook Terminal when running locally
+  - `kubectl logs -f .....` will stream the log
+
+  ```
+  kubectl logs ravens-preprocess-app redis  
+  kubectl logs ravens-preprocess-app celery-worker
+  kubectl logs ravens-preprocess-app preprocess-web  
+  ```
 
 # Log into a running container with full admin rights
 #   - e.g. look around, see if files are being created, stop/start things, etc
 #
-kubectl exec -ti  ravens-preprocess-app -c rook-service /bin/bash
-kubectl exec -ti  ravens-preprocess-app -c ta3-main /bin/bash
-kubectl exec -ti  ravens-preprocess-app -c ravens-nginx /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c redis /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c celery-worker /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c preprocess-web /bin/bash
 
 ```
 
