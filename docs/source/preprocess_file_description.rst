@@ -87,4 +87,4 @@ Custom Statistics Section
     - This section contains the custom statistics added by the user on the dataset.
 
 
-.. include:: variable_display_section.rst
+.. include:: custom_statistics_section.rst
