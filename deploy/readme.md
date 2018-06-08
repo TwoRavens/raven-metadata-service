@@ -18,13 +18,17 @@ git pull
 
 # activate the deployment and service
 #
-kubectl apply -f deploy/metadata-deploy.yml  # start a new deployment
-kubectl apply -f deploy/metadata-service.yml  # expose the app to the web/external IP
+kubectl apply -f deploy/metadata-pod-with-svc.yml   # stop the pod/service
+
+#kubectl apply -f deploy/metadata-deploy.yml  # start a new deployment
+#kubectl apply -f deploy/metadata-service.yml  # expose the app to the web/external IP
 
 # delete the deployment and service (you can leave the service running)
 #
-kubectl delete -f deploy/metadata-deploy.yml  # stop the current deployment
-kubectl delete -f deploy/metadata-service.yml # stop the service
+kubectl delete -f deploy/metadata-pod-with-svc.yml  # stop the pod/service
+
+#kubectl delete -f deploy/metadata-deploy.yml  # stop the current deployment
+#kubectl delete -f deploy/metadata-service.yml # stop the service
 
 # ---------------
 # other
@@ -37,21 +41,21 @@ kubectl get pods
 # describe pod using name from "kubectl get pods"
 #   - will tell if there are errors starting containers
 #
-kubectl describe pod ravens-eventdata-web-xxxxxx-xxxx
+kubectl describe pod ravens-preprocess-app
 
 # See a log for a container, e.g. what you see in the rook Terminal when running locally
 #   - `kubectl logs -f .....` will stream the log
 #
-kubectl logs ravens-eventdata-web-xxxxxx-xxxx rook-service  # rook server log
-kubectl logs ravens-eventdata-web-xxxxxx-xxxx ta3-main  # python server log
-kubectl logs ravens-eventdata-web-xxxxxx-xxxx ravens-nginx  # nginx log
+kubectl logs ravens-preprocess-app rook-service  # rook server log
+kubectl logs ravens-preprocess-app ta3-main  # python server log
+kubectl logs ravens-preprocess-app ravens-nginx  # nginx log
 
 # Log into a running container with full admin rights
 #   - e.g. look around, see if files are being created, stop/start things, etc
 #
-kubectl exec -ti  ravens-eventdata-web-xxxxxx-xxxx -c rook-service /bin/bash
-kubectl exec -ti  ravens-eventdata-web-xxxxxx-xxxx -c ta3-main /bin/bash
-kubectl exec -ti  ravens-eventdata-web-xxxxxx-xxxx -c ravens-nginx /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c rook-service /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c ta3-main /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c ravens-nginx /bin/bash
 
 ```
 
