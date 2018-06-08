@@ -18,17 +18,12 @@ git pull
 
 # activate the deployment and service
 #
-kubectl apply -f deploy/metadata-pod-with-svc.yml   # stop the pod/service
-
-#kubectl apply -f deploy/metadata-deploy.yml  # start a new deployment
-#kubectl apply -f deploy/metadata-service.yml  # expose the app to the web/external IP
+kubectl apply -f deploy/metadata-pod-with-svc.yml   # start the pod/service
 
 # delete the deployment and service (you can leave the service running)
 #
 kubectl delete -f deploy/metadata-pod-with-svc.yml  # stop the pod/service
 
-#kubectl delete -f deploy/metadata-deploy.yml  # stop the current deployment
-#kubectl delete -f deploy/metadata-service.yml # stop the service
 
 # ---------------
 # other
