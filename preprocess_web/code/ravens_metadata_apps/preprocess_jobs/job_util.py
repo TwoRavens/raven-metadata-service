@@ -13,6 +13,7 @@ from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
+from ravens_metadata_apps.metadata_schemas.models import MetadataSchema
 from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.utils.json_util import remove_nan_from_dict
 from file_format_constants import TAB_FILE_EXT
@@ -396,3 +397,26 @@ class JobUtil(object):
             return False, custom_util_update.get_error_messages()
 
         return True, custom_util_update.get_updated_metadata()
+
+    # code for metadata schema
+    @staticmethod
+    def get_latest_schema():
+        """to get latest metadata schema"""
+        # call to metadata schema
+
+        # Look for the latest update, if it exists
+        #
+        latest_schema = MetadataSchema.objects.filter().first()
+        print('latest schema ', latest_schema)
+        err_msg = 'Metadata schema not found.'
+        # print("here is the data",update_object.name.version_number)
+        if not latest_schema:
+            return err_resp(latest_schema)
+
+        schema_ok, schema_or_err = latest_schema.get_schema()
+
+        if schema_ok is False:
+            return err_resp(schema_or_err)
+
+        return ok_resp(schema_or_err)
+

@@ -21,13 +21,14 @@ from ravens_metadata_apps.metadata_schemas.variable_info import VariableInfo
 
 # Create your views here.
 
-temp_schema_pre_models = 'metadata_schemas/variable_schema_13.json'
+# temp_schema_pre_models = 'metadata_schemas/variable_schema_13.json'
+from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 
-def get_schema_as_dict():
+def get_schema_as_dict(schema):
     """Open the schema file and return it as an OrderedDict"""
     json_string = render_to_string(\
-                        temp_schema_pre_models,
+                        schema,
                         {})
 
     # A quick sanity check
@@ -45,7 +46,6 @@ def view_variable_definitions(request):
     schema_info = get_schema_as_dict()
     if not schema_info.success:
         return HttpResponse(get_json_error(schema_info.err_msg))
-
 
     schema = schema_info.result_obj
     var_info = schema['properties']['variables']\
@@ -75,7 +75,13 @@ def view_variable_definitions(request):
 def view_latest_metadata_schema(request):
     """Return the latest JSON schema for the metadata file"""
 
-    schema_info = get_schema_as_dict()
+    success, object_or_err = JobUtil.get_latest_schema()
+    usr_msg = dict(success=success,
+                   data=object_or_err)
+    if not success:
+        return JsonResponse(usr_msg)
+
+    schema_info = get_schema_as_dict(object_or_err)
     if not schema_info.success:
         return JsonResponse(get_json_error(schema_info.err_msg))
 
