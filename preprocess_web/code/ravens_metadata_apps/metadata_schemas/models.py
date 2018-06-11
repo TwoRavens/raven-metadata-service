@@ -2,6 +2,27 @@ from django.db import models
 from django.urls import reverse
 from django.conf import settings
 # For the prototype, set the current schema for now...
+from model_utils.models import TimeStampedModel
+
+PREPROCESS_CORE_METADATA = 'PREPROCESS_CORE_METADATA'
+
+
+class MetadataSchema(TimeStampedModel):
+    """ model for metadata schema"""
+    name = models.CharField(blank=False,
+                            max_length=255,
+                            unique=True)
+
+    schema_type = models.CharField(default=PREPROCESS_CORE_METADATA,
+                                   max_length=255)
+    version = models.CharField(max_length=50,
+                               unique=True)
+    is_published = models.BooleanField(default=False)
+    is_latest = models.BooleanField(default=True)
+    schema_file = models.FileField(upload_to='schema_files/%Y/%m/%d/',
+                                   blank=False)
+    description = models.TextField(blank=True)
+
 
 def get_temp_schema_info():
     # ------------------------------------------
@@ -23,3 +44,4 @@ def get_temp_schema_info():
                             schema_url=SCHEMA_TEMP_LINK,
                             schema_docs=SCHEMA_TEMP_DOCS_LINK)
     return SCHEMA_INFO_DICT
+
