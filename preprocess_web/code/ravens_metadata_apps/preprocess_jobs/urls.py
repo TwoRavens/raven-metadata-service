@@ -14,6 +14,12 @@ urlpatterns = (
 
     # Show saved workspaces for the logged in user
     #
+    re_path(r'api/schema/metadata/version/(?P<version>[0-9]+\.?[0-9]*)',
+         schema_views.view_metadata_schema_version,
+         name='view_latest_metadata_schema'),
+
+    # Show saved workspaces for the logged in user
+    #
     path(r'api/schema/metadata/dataset/latest',
          schema_views.view_latest_dataset_schema,
          name='view_latest_dataset_schema'),

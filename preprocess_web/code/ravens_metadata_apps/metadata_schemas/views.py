@@ -70,7 +70,8 @@ def view_variable_definitions(request):
                   info_dict)
 
 
-
+def view_metadata_schema_version(request):
+    """ Retrun the JSON schema version for the metadata file"""
 
 def view_latest_metadata_schema(request):
     """Return the latest JSON schema for the metadata file"""
@@ -81,24 +82,24 @@ def view_latest_metadata_schema(request):
     if not success:
         return JsonResponse(usr_msg)
 
-    schema_info = get_schema_as_dict(object_or_err)
-    if not schema_info.success:
-        return JsonResponse(get_json_error(schema_info.err_msg))
+    # schema_info = get_schema_as_dict(object_or_err)
+    # if not schema_info.success:
+    #     return JsonResponse(get_json_error(schema_info.err_msg))
+    #
+    # info_dict = schema_info.result_obj
+    #
+    # if 'pretty' in request.GET:
+    #     jstring = json_dump(info_dict, indent=4)
+    #
+    #     if jstring.success:
+    #         info = dict(json_schema=jstring.result_obj)
+    #         return render(request,
+    #                       'metadata_schemas/schema_pretty.html',
+    #                       info)
+    #     else:
+    #         return JsonResponse(get_json_error(jstring.err_mg))
 
-    info_dict = schema_info.result_obj
-
-    if 'pretty' in request.GET:
-        jstring = json_dump(info_dict, indent=4)
-
-        if jstring.success:
-            info = dict(json_schema=jstring.result_obj)
-            return render(request,
-                          'metadata_schemas/schema_pretty.html',
-                          info)
-        else:
-            return JsonResponse(get_json_error(jstring.err_mg))
-
-    return JsonResponse(info_dict)
+    return JsonResponse(usr_msg)
 
 
 def view_latest_dataset_schema(request):
