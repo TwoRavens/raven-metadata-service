@@ -70,8 +70,16 @@ def view_variable_definitions(request):
                   info_dict)
 
 
-def view_metadata_schema_version(request):
+def view_metadata_schema_version(request, version):
     """ Retrun the JSON schema version for the metadata file"""
+
+    success, object_or_err = JobUtil.get_schema_version(version)
+    usr_msg = dict(success=success,
+                   data=object_or_err)
+    if not success:
+        return JsonResponse(usr_msg)
+
+    return JsonResponse(usr_msg)
 
 def view_latest_metadata_schema(request):
     """Return the latest JSON schema for the metadata file"""

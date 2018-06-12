@@ -1,8 +1,9 @@
+import json
+import decimal
 from django.db import models
 from django.urls import reverse
 from django.conf import settings
-import json
-import decimal
+from django.utils.text import slugify
 from collections import OrderedDict
 # For the prototype, set the current schema for now...
 from model_utils.models import TimeStampedModel
@@ -63,6 +64,17 @@ class MetadataSchema(TimeStampedModel):
         success, info = self.get_schema(as_string=True)
 
         return info
+
+    def get_version_string(self, as_slug=False):
+        """Return the version in string format"""
+        # print("string version_number", str(self.version_number))
+        # 3.0 => '3.0'
+        if as_slug:
+            return slugify(str(self.version))
+
+        return str(self.version)
+
+
 
 
 def get_temp_schema_info():

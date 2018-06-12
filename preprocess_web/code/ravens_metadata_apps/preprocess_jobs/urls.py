@@ -14,9 +14,9 @@ urlpatterns = (
 
     # Show saved workspaces for the logged in user
     #
-    re_path(r'api/schema/metadata/version/(?P<version>[0-9]+\.?[0-9]*)',
+    re_path(r'api/schema/metadata/version/(?P<version>[a-zA-Z0-9_]+$)',
          schema_views.view_metadata_schema_version,
-         name='view_latest_metadata_schema'),
+         name='view_metadata_schema_version'),
 
     # Show saved workspaces for the logged in user
     #

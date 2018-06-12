@@ -422,3 +422,23 @@ class JobUtil(object):
 
         return ok_resp(schema_or_err)
 
+
+    @staticmethod
+    def get_schema_version(version):
+        """Retrun the version of schema"""
+        latest_schema = MetadataSchema.objects.filter(version=version).first()
+        print('latest schema ', latest_schema)
+        err_msg = 'Metadata schema not found.'
+        # print("here is the data",update_object.name.version_number)
+        if not latest_schema:
+            return err_resp(err_msg)
+
+        schema_ok, schema_or_err = latest_schema.get_schema()
+        print('schema status ', schema_ok)
+        print('schema', schema_or_err)
+
+        if schema_ok is False:
+            return err_resp(schema_or_err)
+
+        return ok_resp(schema_or_err)
+
