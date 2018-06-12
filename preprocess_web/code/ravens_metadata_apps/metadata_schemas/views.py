@@ -90,22 +90,16 @@ def view_latest_metadata_schema(request):
     if not success:
         return JsonResponse(usr_msg)
 
-    # schema_info = get_schema_as_dict(object_or_err)
-    # if not schema_info.success:
-    #     return JsonResponse(get_json_error(schema_info.err_msg))
-    #
-    # info_dict = schema_info.result_obj
-    #
-    # if 'pretty' in request.GET:
-    #     jstring = json_dump(info_dict, indent=4)
-    #
-    #     if jstring.success:
-    #         info = dict(json_schema=jstring.result_obj)
-    #         return render(request,
-    #                       'metadata_schemas/schema_pretty.html',
-    #                       info)
-    #     else:
-    #         return JsonResponse(get_json_error(jstring.err_mg))
+    if 'pretty' in request.GET:
+        jstring_info = json_dump(object_or_err, indent=4)
+
+        if jstring_info.success:
+            info = dict(json_schema=jstring_info.result_obj)
+            return render(request,
+                          'metadata_schemas/schema_pretty.html',
+                          info)
+        else:
+            return JsonResponse(get_json_error(jstring_info.err_mg))
 
     return JsonResponse(usr_msg)
 
