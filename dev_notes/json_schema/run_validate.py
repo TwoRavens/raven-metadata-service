@@ -22,6 +22,9 @@ def get_file_as_dict(fname):
 
 def run_it(schema_fname, data_fname):
 
+    # (1)  VALIDATE THE SCHEMA
+    #
+
     the_schema = get_file_as_dict(schema_fname)
     #print(json.dumps(the_schema, indent=4))
     try:
@@ -31,6 +34,8 @@ def run_it(schema_fname, data_fname):
         print('Schema Error. full message: ', err_obj)
         return
 
+    # (2)  VALIDATE THE DATA USING THE SCHEMA
+    #
     the_data = get_file_as_dict(data_fname)
     #print(json.dumps(the_data, indent=4))
     try:
