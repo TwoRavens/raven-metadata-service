@@ -4,6 +4,8 @@ from django.db import models
 from django.urls import reverse
 from django.conf import settings
 from django.utils.text import slugify
+from django.db import transaction
+
 from collections import OrderedDict
 # For the prototype, set the current schema for now...
 from model_utils.models import TimeStampedModel
@@ -24,40 +26,57 @@ class MetadataSchema(TimeStampedModel):
                                    max_length=255)
     version = models.CharField(max_length=50,
                                unique=True)
-    is_published = models.BooleanField(default=False)
+    is_published = models.BooleanField(default=True)
     is_latest = models.BooleanField(default=True)
     schema_file = models.FileField(upload_to='schema_files/%Y/%m/%d/',
                                    blank=False)
     description = models.TextField(blank=True)
 
+    class Meta:
+        ordering = ('-id',)
+
+    @transaction.atomic
+    def save(self, *args, **kwargs):
+        """make sure there is only one 'is_latest' """
+        if not self.id:
+            super(MetadataSchema, self).save(*args, **kwargs)
+
+        # If this is the default, set everything else to non-default
+        if self.is_latest:
+            MetadataSchema.objects.filter(is_latest=True\
+                            ).exclude(id=self.id\
+                            ).update(is_latest=False)
+
+        super(MetadataSchema, self).save(*args, **kwargs)
+
     def get_schema(self, as_string=False):
-            """Return preprocess file contents if they exist"""
+        """Return preprocess file contents if they exist"""
 
-            if not self.schema_file:
-                return err_resp('No schema data. e.g. No file')
+        if not self.schema_file:
+            return err_resp('No schema data. e.g. No file')
 
-            try:
-                self.schema_file.open(mode='r')
-                file_data = self.schema_file.read()
-                self.schema_file.close()
-            except FileNotFoundError:
-                return err_resp('schema file not found for job id: %s' % self.id)
+        try:
+            self.schema_file.open(mode='r')
+            file_data = self.schema_file.read()
+            self.schema_file.close()
+        except FileNotFoundError:
+            return err_resp('schema file not found for job id: %s' % self.id)
 
-            if isinstance(file_data, bytes):
-                file_data = file_data.decode('utf-8')
+        if isinstance(file_data, bytes):
+            file_data = file_data.decode('utf-8')
 
-            try:
-                json_dict = json.loads(file_data,
-                                       object_pairs_hook=OrderedDict,
-                                       parse_float=decimal.Decimal)
-            except ValueError:
-                return err_resp('File contained invalid JSON! (%s)' % \
-                                (self.schema_file))
+        try:
+            json_dict = json.loads(file_data,
+                                   object_pairs_hook=OrderedDict,
+                                   parse_float=decimal.Decimal)
+        except ValueError:
+            return err_resp('File contained invalid JSON! (%s)' % \
+                            (self.schema_file))
 
-            if as_string:
-                return json_dump(json_dict, indent=4)
+        if as_string:
+            return json_dump(json_dict, indent=4)
 
-            return ok_resp(json_dict)
+        return ok_resp(json_dict)
 
     def get_schema_as_json(self):
         """For display, return preprocess file as string if it exists"""
