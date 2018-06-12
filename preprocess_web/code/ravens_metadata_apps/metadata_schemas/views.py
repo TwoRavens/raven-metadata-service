@@ -23,6 +23,7 @@ from ravens_metadata_apps.metadata_schemas.variable_info import VariableInfo
 
 # temp_schema_pre_models = 'metadata_schemas/variable_schema_13.json'
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+from ravens_metadata_apps.metadata_schemas.schema_util import SchemaUtil
 
 
 def get_schema_as_dict(schema):
@@ -73,7 +74,7 @@ def view_variable_definitions(request):
 def view_metadata_schema_version(request, version):
     """ Retrun the JSON schema version for the metadata file"""
 
-    success, object_or_err = JobUtil.get_schema_version(version)
+    success, object_or_err = SchemaUtil.get_schema_version(version)
     usr_msg = dict(success=success,
                    data=object_or_err)
     if not success:
@@ -84,7 +85,7 @@ def view_metadata_schema_version(request, version):
 def view_latest_metadata_schema(request):
     """Return the latest JSON schema for the metadata file"""
 
-    success, object_or_err = JobUtil.get_latest_schema()
+    success, object_or_err = SchemaUtil.get_latest_schema()
     usr_msg = dict(success=success,
                    data=object_or_err)
     if not success:
