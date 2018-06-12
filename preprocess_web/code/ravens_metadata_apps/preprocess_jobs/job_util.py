@@ -13,6 +13,7 @@ from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
+from ravens_metadata_apps.metadata_schemas.models import MetadataSchema
 from variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.utils.json_util import remove_nan_from_dict
 from file_format_constants import TAB_FILE_EXT

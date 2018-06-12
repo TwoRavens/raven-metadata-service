@@ -4,6 +4,7 @@ from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.dataverse_connect.models import \
     (DataverseFileInfo)
+from ravens_metadata_apps.metadata_schemas.models import MetadataSchema
 
 class DataverseFileInfoInline(admin.TabularInline):
     model = DataverseFileInfo
@@ -77,3 +78,17 @@ class MetadataUpdateAdmin(admin.ModelAdmin):
                        'editor')
 
 admin.site.register(MetadataUpdate, MetadataUpdateAdmin)
+
+class MetadataSchemaAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'schema_type',
+        'version',
+        'is_published',
+        'is_latest',
+        'schema_file',
+        'description'
+    )
+    list_filter = ('version',
+                   'is_latest')
+admin.site.register(MetadataSchema, MetadataSchemaAdmin)

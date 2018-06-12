@@ -21,13 +21,15 @@ from ravens_metadata_apps.metadata_schemas.variable_info import VariableInfo
 
 # Create your views here.
 
-temp_schema_pre_models = 'metadata_schemas/variable_schema_13.json'
+# temp_schema_pre_models = 'metadata_schemas/variable_schema_13.json'
+from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
+from ravens_metadata_apps.metadata_schemas.schema_util import SchemaUtil
 
 
-def get_schema_as_dict():
+def get_schema_as_dict(schema):
     """Open the schema file and return it as an OrderedDict"""
     json_string = render_to_string(\
-                        temp_schema_pre_models,
+                        schema,
                         {})
 
     # A quick sanity check
@@ -45,7 +47,6 @@ def view_variable_definitions(request):
     schema_info = get_schema_as_dict()
     if not schema_info.success:
         return HttpResponse(get_json_error(schema_info.err_msg))
-
 
     schema = schema_info.result_obj
     var_info = schema['properties']['variables']\
@@ -70,29 +71,48 @@ def view_variable_definitions(request):
                   info_dict)
 
 
+def view_metadata_schema_version(request, version):
+    """ Retrun the JSON schema version for the metadata file"""
 
+    success, object_or_err = SchemaUtil.get_schema_version(version)
 
-def view_latest_metadata_schema(request):
-    """Return the latest JSON schema for the metadata file"""
-
-    schema_info = get_schema_as_dict()
-    if not schema_info.success:
-        return JsonResponse(get_json_error(schema_info.err_msg))
-
-    info_dict = schema_info.result_obj
+    if not success:
+        return JsonResponse(get_json_error(object_or_err))
 
     if 'pretty' in request.GET:
-        jstring = json_dump(info_dict, indent=4)
+        jstring_info = json_dump(object_or_err, indent=4)
 
-        if jstring.success:
-            info = dict(json_schema=jstring.result_obj)
+        if jstring_info.success:
+            info = dict(json_schema=jstring_info.result_obj)
             return render(request,
                           'metadata_schemas/schema_pretty.html',
                           info)
         else:
-            return JsonResponse(get_json_error(jstring.err_mg))
+            return JsonResponse(get_json_error(jstring_info.err_mg))
 
-    return JsonResponse(info_dict)
+    return JsonResponse(object_or_err)
+
+def view_latest_metadata_schema(request):
+    """Return the latest JSON schema for the metadata file"""
+
+    success, object_or_err = SchemaUtil.get_latest_schema()
+    usr_msg = dict(success=success,
+                   data=object_or_err)
+    if not success:
+        return JsonResponse(usr_msg)
+
+    if 'pretty' in request.GET:
+        jstring_info = json_dump(object_or_err, indent=4)
+
+        if jstring_info.success:
+            info = dict(json_schema=jstring_info.result_obj)
+            return render(request,
+                          'metadata_schemas/schema_pretty.html',
+                          info)
+        else:
+            return JsonResponse(get_json_error(jstring_info.err_mg))
+
+    return JsonResponse(object_or_err)
 
 
 def view_latest_dataset_schema(request):
