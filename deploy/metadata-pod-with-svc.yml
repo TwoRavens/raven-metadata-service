@@ -79,7 +79,7 @@ spec:
       - name: DB_HOST
         value: "127.0.0.1"
       - name: DB_PORT
-        value: 3306
+        value: "3306"
       - name: DB_USER
         valueFrom:
           secretKeyRef:
@@ -128,7 +128,7 @@ spec:
       - name: DB_HOST
         value: "127.0.0.1"
       - name: DB_PORT
-        value: 3306
+        value: "3306"
       - name: DB_USER
         valueFrom:
           secretKeyRef:

@@ -94,15 +94,12 @@ def view_metadata_schema_version(request, version):
 
 def view_latest_metadata_schema(request):
     """Return the latest JSON schema for the metadata file"""
-
-    success, object_or_err = SchemaUtil.get_latest_schema()
-    usr_msg = dict(success=success,
-                   data=object_or_err)
-    if not success:
-        return JsonResponse(usr_msg)
+    schema_info = SchemaUtil.get_latest_schema()
+    if not schema_info.success:
+        return JsonResponse(get_json_error(schema_info.err_msg))
 
     if 'pretty' in request.GET:
-        jstring_info = json_dump(object_or_err, indent=4)
+        jstring_info = json_dump(schema_info.result_obj, indent=4)
 
         if jstring_info.success:
             info = dict(json_schema=jstring_info.result_obj)
@@ -112,12 +109,12 @@ def view_latest_metadata_schema(request):
         else:
             return JsonResponse(get_json_error(jstring_info.err_mg))
 
-    return JsonResponse(object_or_err)
+    return JsonResponse(schema_info.result_obj)
 
 
 def view_latest_dataset_schema(request):
     """Return the latest JSON schema for the dataset portion of the metadata file"""
-    schema_info = get_schema_as_dict()
+    schema_info = SchemaUtil.get_latest_schema()
     if not schema_info.success:
         return JsonResponse(get_json_error(schema_info.err_msg))
 

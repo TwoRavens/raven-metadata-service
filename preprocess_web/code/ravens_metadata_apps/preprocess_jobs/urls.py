@@ -6,21 +6,21 @@ from ravens_metadata_apps.metadata_schemas import views as schema_views
 
 urlpatterns = (
 
-    # Show saved workspaces for the logged in user
+    # Latest metadata schema
     #
     path(r'api/schema/metadata/latest',
          schema_views.view_latest_metadata_schema,
          name='view_latest_metadata_schema'),
 
-    # Show saved workspaces for the logged in user
+    # Metadata schema by version
     #
-    re_path(r'api/schema/metadata/version/(?P<version>[a-zA-Z0-9_]+$)',
-         schema_views.view_metadata_schema_version,
-         name='view_metadata_schema_version'),
+    re_path(r'api/schema/metadata/(?P<version>[a-zA-Z0-9_\.-]+$)',
+            schema_views.view_metadata_schema_version,
+            name='view_metadata_schema_version'),
 
-    # Show saved workspaces for the logged in user
+    # Latest ~Dataset~ schema (extracted from the metadata schema)
     #
-    path(r'api/schema/metadata/dataset/latest',
+    path(r'api/schema/metadata-dataset/latest',
          schema_views.view_latest_dataset_schema,
          name='view_latest_dataset_schema'),
 
