@@ -71,6 +71,17 @@ def view_variable_definitions(request):
                   info_dict)
 
 
+def validate_preprocess(request, preprocess_id):
+    """ Validate preprocess file with latest schema"""
+    usr_msg = dict(success=True,
+                   data='check successfull',
+                   id=preprocess_id
+                   )
+
+
+    return JsonResponse(usr_msg)
+
+
 def view_metadata_schema_version(request, version):
     """ Retrun the JSON schema version for the metadata file"""
 
@@ -81,6 +92,7 @@ def view_metadata_schema_version(request, version):
         return JsonResponse(usr_msg)
 
     return JsonResponse(usr_msg)
+
 
 def view_latest_metadata_schema(request):
     """Return the latest JSON schema for the metadata file"""

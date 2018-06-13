@@ -13,9 +13,10 @@ def get_file_as_dict(fname):
 
     print('load file: %s' % fpath)
 
-    info_dict = json.loads(open(fpath, 'r').read())#                          object_pairs_hook=OrderedDict)
-    #if 'xvariables' in info_dict:
-    #    return info_dict['variables']
+    info_dict = json.loads(open(fpath, 'r').read())
+    #  object_pairs_hook=OrderedDict)
+    #  if 'xvariables' in info_dict:
+    #  return info_dict['variables']
 
     return info_dict
 

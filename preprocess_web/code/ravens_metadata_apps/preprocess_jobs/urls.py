@@ -12,6 +12,12 @@ urlpatterns = (
          schema_views.view_latest_metadata_schema,
          name='view_latest_metadata_schema'),
 
+    # Validate preprocess metadata with schema
+    #
+    re_path(r'api/schema/metadata/validate/(?P<preprocess_id>[0-9]{1,10})',
+         schema_views.validate_preprocess,
+         name='validate_preprocess'),
+
     # Show saved workspaces for the logged in user
     #
     re_path(r'api/schema/metadata/version/(?P<version>[a-zA-Z0-9_]+$)',

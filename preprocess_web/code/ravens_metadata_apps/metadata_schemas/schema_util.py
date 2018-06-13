@@ -67,3 +67,8 @@ class SchemaUtil(object):
             return err_resp(schema_or_err)
 
         return ok_resp(schema_or_err)
+
+    @staticmethod
+    def validate_preprocess_file(preprocess_id):
+        """ Run validator"""
+
