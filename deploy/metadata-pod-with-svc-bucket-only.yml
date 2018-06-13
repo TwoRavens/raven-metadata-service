@@ -31,12 +31,9 @@ spec:
   volumes:
     - name: raven-metadata-volume
       emptyDir: {}
-    - name: cloudsql-instance-credentials
-      secret:
-        secretName: cloudsql-instance-credentials
   containers:
   # -------------------------
-  # 1 of 4: redis
+  # 1 of 3: redis
   # -------------------------
   - name: redis
     image: redis:4.0
@@ -47,19 +44,7 @@ spec:
     ports:
     - containerPort: 6379
   # -------------------------
-  # 2 of 4: cloudsql proxy
-  # -------------------------
-  - name: cloudsql-proxy
-    image: gcr.io/cloudsql-docker/gce-proxy:1.11
-    command: ["/cloud_sql_proxy",
-              "-instances=raven2-186120:us-central1:raven-mysql-metadata-svc=tcp:3306",
-              "-credential_file=/secrets/cloudsql/credentials.json"]
-    volumeMounts:
-      - name: cloudsql-instance-credentials
-        mountPath: /secrets/cloudsql
-        readOnly: true
-  # -------------------------
-  # 3 of 4: celery worker
+  # 2 of 3: celery worker
   # -------------------------
   - name: celery-worker
     image: tworavens/raven-metadata-service:latest
@@ -76,20 +61,6 @@ spec:
           secretKeyRef:
             name: gce-creds-variable
             key: GCE_CREDS_INFO
-      - name: DB_HOST
-        value: 127.0.0.1
-      - name: DB_PORT
-        value: 3306
-      - name: DB_USER
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: username
-      - name: DB_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: password
     volumeMounts:
       - name: "raven-metadata-volume"
         mountPath: "/raven_metadata"
@@ -99,7 +70,7 @@ spec:
         #    name: postgres-credentials
         #    key: user
   # -------------------------
-  # 4 of 4: web server
+  # 3 of 3: web server
   # -------------------------
   - name: preprocess-web
     image: tworavens/raven-metadata-service:latest
@@ -125,20 +96,6 @@ spec:
           secretKeyRef:
             name: gce-creds-variable
             key: GCE_CREDS_INFO
-      - name: DB_HOST
-        value: 127.0.0.1
-      - name: DB_PORT
-        value: 3306
-      - name: DB_USER
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: username
-      - name: DB_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: password
     volumeMounts:
       - name: "raven-metadata-volume"
         mountPath: "/raven_metadata"

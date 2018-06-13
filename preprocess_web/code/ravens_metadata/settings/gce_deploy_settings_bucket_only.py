@@ -5,21 +5,6 @@ from distutils.util import strtobool
 from .docker_test_settings import *
 from google.oauth2 import service_account
 
-
-# -----------------------------------
-# use Google Cloud MySQL
-# -----------------------------------
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME', 'raven_metadata'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
-        'PORT': os.environ.get('DB_PORT', 3306),
-    }
-}
 # -----------------------------------
 # use Google Cloud Storage via django-storages
 # -----------------------------------
