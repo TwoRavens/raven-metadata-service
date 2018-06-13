@@ -19,7 +19,7 @@ PREPROCESS_CORE_METADATA = 'PREPROCESS_CORE_METADATA'
 class MetadataSchema(TimeStampedModel):
     """ model for metadata schema"""
     name = models.CharField(blank=False,
-                            max_length=555,
+                            max_length=255,
                             unique=True)
 
     schema_type = models.CharField(default=PREPROCESS_CORE_METADATA,
