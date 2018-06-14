@@ -44,7 +44,7 @@ def get_schema_as_dict(schema):
 def view_variable_definitions(request):
     """Helper view to generate .rst file.  This content may be copied into
     docs/source/defn_variables.rst"""
-    schema_info = get_schema_as_dict()
+    schema_info = SchemaUtil.get_latest_schema()
     if not schema_info.success:
         return HttpResponse(get_json_error(schema_info.err_msg))
 
