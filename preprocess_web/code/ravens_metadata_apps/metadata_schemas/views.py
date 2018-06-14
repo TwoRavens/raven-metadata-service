@@ -73,12 +73,17 @@ def view_variable_definitions(request):
 
 def validate_preprocess(request, preprocess_id):
     """ Validate preprocess file with latest schema"""
+
+    succ, validate_object = SchemaUtil.validate_preprocess_file(preprocess_id)
+
+    if not succ:
+        usr_msg = dict(success=False,
+                       data='check unsuccessfull',
+                       id=preprocess_id
+                       )
+        return JsonResponse(usr_msg)
     usr_msg = dict(success=True,
-                   data='check successfull',
-                   id=preprocess_id
-                   )
-
-
+                   data=validate_object)
     return JsonResponse(usr_msg)
 
 
