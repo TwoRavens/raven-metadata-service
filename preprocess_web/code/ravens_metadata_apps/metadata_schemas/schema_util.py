@@ -41,8 +41,8 @@ class SchemaUtil(object):
             return err_resp('Metadata schema not found.')
 
         schema_ok, schema_or_err = latest_schema.get_schema()
-        print('schema status ', schema_ok)
-        print('schema', schema_or_err)
+        #print('schema status ', schema_ok)
+        #print('schema', schema_or_err)
 
         if schema_ok is False:
             return err_resp(schema_or_err)
@@ -60,8 +60,8 @@ class SchemaUtil(object):
             return err_resp('Metadata schema not found.')
 
         schema_ok, schema_or_err = latest_schema.get_schema()
-        print('schema status ', schema_ok)
-        print('schema', schema_or_err)
+        #print('schema status ', schema_ok)
+        #print('schema', schema_or_err)
 
         if schema_ok is False:
             return err_resp(schema_or_err)
