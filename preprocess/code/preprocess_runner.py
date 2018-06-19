@@ -184,7 +184,7 @@ class PreprocessRunner(object):
 
             SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
-            # MetalearnUtil(col_series,col_info)
+            MetalearnUtil(col_series,col_info)
             # VariableDisplayUtil(col_series, col_info)
             # assign object info to the variable_info
             #
@@ -235,12 +235,12 @@ class PreprocessRunner(object):
 
         return self_section
 
-    #metalearn features
-    def get_metalearn_feature(self):
-        """get metalearn feature"""
-        metalearn_feature = MetalearnUtil(self.data_frame)
-        print("preprocess_output", metalearn_feature.get_output_json())
-        return metalearn_feature.get_output_json()
+    # #metalearn features
+    # def get_metalearn_feature(self):
+    #     """get metalearn feature"""
+    #     metalearn_feature = MetalearnUtil(self.data_frame)
+    #     print("preprocess_output", metalearn_feature.get_output_json())
+    #     return metalearn_feature.get_output_json()
 
     def get_dataset_level_info(self):
         """

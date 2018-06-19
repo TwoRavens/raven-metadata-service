@@ -25,7 +25,7 @@ from column_info import ColumnInfo
 
 class MetalearnUtil(object):
 
-    def __init__(self, data_frame):
+    def __init__(self, data_frame, col_info):
         """ to use metalearn submodule
         feature used : mean_categorical_attribute_entropy_time
         """
@@ -34,33 +34,31 @@ class MetalearnUtil(object):
         self.has_error = False
         self.error_messages = []
         self.output_json = OrderedDict
-        for colnames in data_frame:
-            self.col_series = data_frame[colnames]
-            self.my_df = pd.DataFrame(self.col_series)
-            self.col_info = ColumnInfo(colnames)
 
-            self.my_metafeatures = Metafeatures().compute(
-                X=self.my_df,
-                Y=None,  # supports None and only computes Y-independent mfs
-                column_types=None,
-                # column_types={
-                #     'col_a': 'NUMERIC',
-                #     'col_b': 'CATEGORICAL',
-                #     'y': 'CATEGORICAL'
-                # },
-                # None for metafeature_ids means compute all available
-                metafeature_ids=[
-                    "MeanCategoricalAttributeEntropy_Time"
-                ],
-                # metafeature_ids=None,
-                sample_rows=True,  # samples down to 150k rows
-                sample_columns=True,  # samples down to 150 cols
-                seed=None,  # a seed will be generated randomly when None is given
-                timeout=None  # will return those metafeatures computed within alloted time, in order of those requested
-            )
-            json_format = pd.DataFrame(self.my_metafeatures).to_json()
-            print('***** METALEARN *****', json_format)
-            self.output_json[colnames][self.col_info] = json_format
+        self.my_df = pd.DataFrame(data_frame)
+
+        self.my_metafeatures = Metafeatures().compute(
+            X=self.my_df,
+            Y=None,  # supports None and only computes Y-independent mfs
+            column_types=None,
+            # column_types={
+            #     'col_a': 'NUMERIC',
+            #     'col_b': 'CATEGORICAL',
+            #     'y': 'CATEGORICAL'
+            # },
+            # None for metafeature_ids means compute all available
+            metafeature_ids=[
+                "MeanCategoricalAttributeEntropy_Time"
+            ],
+            # metafeature_ids=None,
+            sample_rows=True,  # samples down to 150k rows
+            sample_columns=True,  # samples down to 150 cols
+            seed=None,  # a seed will be generated randomly when None is given
+            timeout=None  # will return those metafeatures computed within alloted time, in order of those requested
+        )
+        json_format = pd.DataFrame(self.my_metafeatures).to_json()
+        print('***** METALEARN *****', json_format)
+        self.colinfo.mean_categorical_attribute_entropy_time = json_format
 
 
         def add_error_message(self, err_msg):
