@@ -254,3 +254,9 @@ class ColumnInfo(object):
             return json.dumps(ordered_dict, cls=NumpyJSONEncoder)
 
         return ordered_dict
+
+"""
+from column_info import ColumnInfo
+for item in ColumnInfo.get_variable_labels():
+    print (item[0])
+"""

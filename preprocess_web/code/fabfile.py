@@ -141,6 +141,26 @@ def load_registered_dataverses():
     local(load_cmd)
 
 
+@task
+def clear_metadata_updates():
+    """Delete all MetadataUpdate objects"""
+    from django.conf import settings
+    if not settings.ALLOW_FAB_DELETE:
+        print('For testing! Only if ALLOW_FAB_DELETE settings is True')
+        return
+
+    from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob, MetadataUpdate
+
+    mcnt = MetadataUpdate.objects.count()
+    print('\n%d MetadataUpdate(s) found' % mcnt)
+    if mcnt > 0:
+        for meta_obj in MetadataUpdate.objects.all().order_by('-id'):
+            if meta_obj.metadata_file:
+                meta_obj.metadata_file.delete()
+            meta_obj.delete()
+        print('Deleted...')
+    else:
+        print('No MetadataUpdate objects found.\n')
 
 @task
 def clear_jobs():
