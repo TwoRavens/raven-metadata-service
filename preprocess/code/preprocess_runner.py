@@ -12,6 +12,7 @@ from msg_util import msg, msgt, dashes
 from np_json_encoder import NumpyJSONEncoder
 from type_guess_util import TypeGuessUtil
 from summary_stats_util import SummaryStatsUtil
+from metalearn_util import MetalearnUtil
 from column_info import ColumnInfo
 from plot_values import PlotValuesUtil
 from variable_display_util import VariableDisplayUtil
@@ -183,6 +184,7 @@ class PreprocessRunner(object):
 
             SummaryStatsUtil(col_series, col_info)
             PlotValuesUtil(col_series, col_info)
+            # MetalearnUtil(col_series,col_info)
             # VariableDisplayUtil(col_series, col_info)
             # assign object info to the variable_info
             #
@@ -233,6 +235,12 @@ class PreprocessRunner(object):
 
         return self_section
 
+    #metalearn features
+    def get_metalearn_feature(self):
+        """get metalearn feature"""
+        metalearn_feature = MetalearnUtil(self.data_frame)
+        print("preprocess_output", metalearn_feature.get_output_json())
+        return metalearn_feature.get_output_json()
 
     def get_dataset_level_info(self):
         """
@@ -318,7 +326,7 @@ class PreprocessRunner(object):
 
         # add the 'dataset' section
         overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()
-
+        overall_dict['Metalearn'] = self.get_metalearn_feature()
         overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info    # add "variables"
 
         overall_dict[col_const.VARIABLE_DISPLAY_SECTION_KEY] = fmt_display_variable_info

@@ -107,7 +107,7 @@ def run_web():
     """Start web server"""
     init_db()
     print('init db complete; start web server')
-    run_webserver_cmd = ('python manage.py runserver 8080')
+    run_webserver_cmd = ('python manage.py runserver --noreload 8080')
 
     print('run web server: %s' % run_webserver_cmd)
 

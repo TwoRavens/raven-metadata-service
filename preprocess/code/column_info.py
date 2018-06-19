@@ -82,6 +82,9 @@ class ColumnInfo(object):
         self.cdf_plotx = None
         self.cdf_ploty = None
 
+        #metalearn
+        self.mean_categorical_attribute_entropy_time = None
+
     def is_numeric(self):
         # is this NUMCHAR_NUMERIC?
         return self.numchar_val == col_const.NUMCHAR_NUMERIC
@@ -109,7 +112,7 @@ class ColumnInfo(object):
                  'freqmode', 'freqfewest', 'freqmid',
                  'std_dev', 'herfindahl',
                  'plot_values', 'plotx', 'ploty',
-                 'cdf_plotx', 'cdf_ploty')
+                 'cdf_plotx', 'cdf_ploty', 'mean_categorical_attribute_entropy_time')
 
     def is_numeric_attribute(self, ye_attr_name):
         """Test if the attribute is numeric (or null if not set)"""
@@ -207,6 +210,7 @@ class ColumnInfo(object):
             ('cdfPlotType', 'cdf_plot_type'),
             ('cdfPlotX', 'cdf_plotx'),
             ('cdfPlotY', 'cdf_ploty'),
+            ('meanCategoricalAttributeEntropyTime', 'mean_categorical_attribute_entropy_time')
 
             )
         # print("-"*20)
