@@ -20,9 +20,7 @@ services:
   # Django web server
   # -------------------------------
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile-web
+    image: tworavens/raven-metadata-service
     hostname: web
     environment:
       - DJANGO_DEBUG=true
@@ -47,9 +45,7 @@ services:
   # Celery worker
   # -------------------------------
   celery_queue:
-    build:
-      context: .
-      dockerfile: Dockerfile-web
+    image: tworavens/raven-metadata-service
     command: celery -A ravens_metadata worker -l info
     environment:
       - DJANGO_SETTINGS_MODULE=ravens_metadata.settings.docker_test_settings

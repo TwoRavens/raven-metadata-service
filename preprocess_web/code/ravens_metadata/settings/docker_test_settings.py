@@ -8,7 +8,7 @@ DEBUG = strtobool(os.environ.get('DJANGO_DEBUG', 'False'))
 
 ALLOW_FAB_DELETE = strtobool(os.environ.get('ALLOW_FAB_DELETE', 'False'))
 
-PREPROCESS_DATA_DIR = '/raven_metadata'
+PREPROCESS_DATA_DIR = os.environ.get('PREPROCESS_DATA_DIR', '/raven_metadata')
 
 MEDIA_ROOT_DIRNAME = join(PREPROCESS_DATA_DIR, 'files')
 if not isdir(MEDIA_ROOT_DIRNAME):
