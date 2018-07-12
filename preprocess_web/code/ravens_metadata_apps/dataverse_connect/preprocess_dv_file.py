@@ -33,9 +33,10 @@ def try_it(file_id=3147445):
         print('error found: %s' % file_retriever.get_error_message())
         return
 
-    print(file_retriever.preprocess_job)
+    print('preprocess_job', file_retriever.preprocess_job)
+    print('preprocess_job id:', file_retriever.preprocess_job.id)
 
-    JobUtil.start_preprocess(file_retriever.preprocess_job)
+    #JobUtil.start_preprocess(file_retriever.preprocess_job)
 
 
 def try_queue(file_id=3147445, dataset_id=None):
