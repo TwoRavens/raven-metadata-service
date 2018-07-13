@@ -11,7 +11,7 @@ class DataverseFileInfoAdmin(admin.ModelAdmin):
     search_fields = ('dataverse__name', 'dataset_doi')
     list_display = ('datafile_id', 'dataverse',
                     'dataset_id', 'dataset_doi',
-                    'original_filename', 'preprocess_job')
+                    'original_filename', 'preprocess_job','persistent_id')
     readonly_fields = ('created', 'modified')
     save_on_top = True
     list_filter = ('dataverse', )

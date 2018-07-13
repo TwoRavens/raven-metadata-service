@@ -121,10 +121,12 @@ class DataverseFileInfo(TimeStampedModel):
     preprocess_job = models.ForeignKey(PreprocessJob,
                                        on_delete=models.CASCADE)
 
+    persistent_id = models.CharField('persistentId', max_length=255, blank=False)
+
     dataverse = models.ForeignKey(RegisteredDataverse,
                                   on_delete=models.CASCADE)
 
-    datafile_id = models.IntegerField('Datafile Id')
+    datafile_id = models.IntegerField('Datafile Id', default=-1)
 
     #version = models.CharField(max_length=50,
     #                           help_text='Dataverse file version',
@@ -159,7 +161,8 @@ class DataverseFileInfo(TimeStampedModel):
     class Meta:
         unique_together = ('dataverse',
                            'datafile_id',
-                           'preprocess_job')
+                           'preprocess_job',
+                           'persistent_id')
         verbose_name = 'Dataverse File Information'
         verbose_name_plural = 'Dataverse File Information'
 
@@ -169,8 +172,11 @@ class DataverseFileInfo(TimeStampedModel):
         """
         if not self.dataverse:
             return None
+        if self.persistent_id:
+            return self.dataverse.get_file_access_url(self.persistent_id)
+        else:
+            return self.dataverse.get_file_access_url(self.datafile_id)
 
-        return self.dataverse.get_file_access_url(self.datafile_id)
 
     def get_file_page_url(self):
         """Build a url similar to:
@@ -178,5 +184,7 @@ class DataverseFileInfo(TimeStampedModel):
         """
         if not self.dataverse:
             return None
-
-        return self.dataverse.get_file_page_url(self.datafile_id)
+        if self.persistent_id:
+            return self.dataverse.get_file_page_url(self.persistent_id)
+        else:
+            return self.dataverse.get_file_page_url(self.datafile_id)
