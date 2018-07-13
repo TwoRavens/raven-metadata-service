@@ -38,6 +38,7 @@ class DataverseFileRetriever(BasicErrCheck):
         self.datafile_id = None  # derived from the data_file_url
         self.dataset_doi = None #.get('dataset_doi')
         self.dataset_id = kwargs.get('dataset_id')
+        self.persistent_id = kwargs.get('persistent_id')    # expecting to get persistent_id
 
         self.dv_file_info = None # to hold an instance of DataverseFileInfo
 
@@ -67,7 +68,7 @@ class DataverseFileRetriever(BasicErrCheck):
         """Do your thing...."""
         # do this to have a record of the attempt...
         self.update_preprocess_job()
-        self.load_dataverse_info()
+        self.load_dataverse_info_using_persistent_id()
         self.load_citation_info()
         self.run_file_retrieval()
 
@@ -88,7 +89,7 @@ class DataverseFileRetriever(BasicErrCheck):
         if self.has_error():
             return
 
-        retriever = CitationRetriever(self.datafile_id, self.dv_file_info.dataverse)
+        retriever = CitationRetriever(self.datafile_id, self.persistent_id, self.dv_file_info.dataverse)
         if retriever.has_error():
             self.add_err_msg(retriever.get_error_message())
             return
@@ -116,10 +117,7 @@ class DataverseFileRetriever(BasicErrCheck):
         self.preprocess_job.set_state_retrieving_data()
         self.preprocess_job.save()
 
-
-
-
-    def load_dataverse_info(self):
+    def load_dataverse_info_using_datafile_id(self):
         """Check if the Dataverse if Registered and if a file id exists"""
         if self.has_error():
             return
@@ -144,7 +142,7 @@ class DataverseFileRetriever(BasicErrCheck):
             registered_dv = RegisteredDataverse.objects.get(\
                                     network_location=netloc.result_obj)
         except RegisteredDataverse.DoesNotExist:
-            self.add_err_msg("This Dataverse is not registerd: %s" % dv_info.result_obj)
+            self.add_err_msg("This Dataverse is not registerd: %s" % dv_id_info.result_obj)
             return
 
         # Format the url
@@ -159,6 +157,51 @@ class DataverseFileRetriever(BasicErrCheck):
         self.dv_file_info = DataverseFileInfo(\
                                     dataverse=registered_dv,
                                     datafile_id=dv_id_info.result_obj)
+        if self.dataset_id:
+            self.dv_file_info.dataset_id = self.dataset_id
+        if self.dataset_doi:
+            self.dv_file_info.dataset_doi = self.dataset_doi
+
+    def load_dataverse_info_using_persistent_id(self):
+        """Check if the Dataverse if Registered and if a file id exists"""
+        if self.has_error():
+            return
+
+        # Get the Datafile id from the url
+        #
+        dv_id_info = URLHelper.get_persistent_id_from_url(self.data_file_url)
+        if not dv_id_info.success:
+            self.add_err_msg(dv_id_info.err_msg)
+            return
+
+        # Get the network location from the url
+        #
+        netloc = URLHelper.get_netloc_from_url(self.data_file_url)
+        if not netloc.success:
+            self.add_err_msg(netloc.err_msg)
+            return
+
+        # Retrieve the RegisteredDataverse based on the url network location
+        #
+        try:
+            registered_dv = RegisteredDataverse.objects.get( \
+                network_location=netloc.result_obj)
+        except RegisteredDataverse.DoesNotExist:
+            self.add_err_msg("This Dataverse is not registerd: %s" % dv_id_info.result_obj)
+            return
+
+        # Format the url
+        #
+        # url_to_save = URLHelper.format_datafile_request_url(self.data_file_url)
+        # if not url_to_save.success:
+        #    self.add_err_msg('Failed to format the url: %s' % url_to_save.err_msg)
+
+        # Start the DataverseFileInfo object--but don't save it yet
+        #
+        self.datafile_id = dv_id_info.result_obj
+        self.dv_file_info = DataverseFileInfo( \
+            dataverse=registered_dv,
+            datafile_id=dv_id_info.result_obj)
         if self.dataset_id:
             self.dv_file_info.dataset_id = self.dataset_id
         if self.dataset_doi:

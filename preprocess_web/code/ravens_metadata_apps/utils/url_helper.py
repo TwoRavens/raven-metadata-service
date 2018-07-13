@@ -2,7 +2,7 @@
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from ravens_metadata_apps.utils.basic_response import err_resp, ok_resp
 from ravens_metadata_apps.dataverse_connect.dv_constants import \
-    (KEY_DATAVERSE_FILE_ID, KEY_DATAVERSE_FILE_VERSION,
+    (KEY_DATAVERSE_FILE_ID, KEY_DATAVERSE_FILE_VERSION,KEY_DATAVERSE_PERSISTENT_ID,
      PATH_DATAFILE_ACCESS)
 
 
@@ -90,17 +90,63 @@ class URLHelper(object):
         return err_resp('No "%s" key in the url query string: %s' % \
                         (KEY_DATAVERSE_FILE_ID, info.result_obj.query))
 
+    @staticmethod
+    def get_persistent_id_from_url(url_str):
+        """ Return the datafile id from the path or query params
+            - http://dataverse.harvard.edu/api/access/datafile/:persistentId/?persistentId=doi:10.5072/FK2/J8SJZB
+            - https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/MZIBKB/61BZQK&version=1.0"""
+
+        info = URLHelper.get_parsed_url(url_str)
+        if not info.success:
+            return info
+
+        # Is the file id in the path?
+        #
+        url_path = info.result_obj.path.lower()
+        if url_path.startswith(PATH_DATAFILE_ACCESS):
+            dv_id = url_path.replace(PATH_DATAFILE_ACCESS, '')
+            if not isinstance(dv_id, str):
+                return err_resp('The persistent id is not string: "%s"' % dv_id)
+
+            return ok_resp(str(dv_id))
+
+        # Check for the fileId the query string
+        #
+        params = parse_qs(info.result_obj.query)
+
+        if not params:
+            return err_resp('The file id was not found in the url or query'
+                            ' string: "%s"' % (url_str))
+
+        # retrieve the required keys
+        #
+        if KEY_DATAVERSE_PERSISTENT_ID in params and params[KEY_DATAVERSE_PERSISTENT_ID]:
+            dv_id = params[KEY_DATAVERSE_PERSISTENT_ID]
+            if isinstance(dv_id, list) and dv_id:
+                dv_id = dv_id[0]
+
+            if not isinstance(dv_id, str):
+                return err_resp('The persistent id is not string : "%s"' % dv_id)
+
+            return ok_resp(str(dv_id))
+
+        return err_resp('No "%s" key in the url query string: %s' % \
+                        (KEY_DATAVERSE_PERSISTENT_ID, info.result_obj.query))
+
 
     @staticmethod
     def format_datafile_request_url(url_str):
-        """Return a formatted datafile request with a consistent case, etc."""
+        """Return a formatted datafile request with a consistent case, etc.
+        ------ Now using persistent ID only, Can create one more function
+               using data file ID if needed---------
+        """
         info = URLHelper.get_parsed_url(url_str)
         if not info.success:
             return info
 
         parsed = info.result_obj
 
-        datafile_info = URLHelper.get_datafile_id_from_url(url_str)
+        datafile_info = URLHelper.get_persistent_id_from_url(url_str)
         if not datafile_info.success:
             return err_resp(datafile_info.err_msg)
 

@@ -6,12 +6,13 @@ from basic_utils.basic_err_check import BasicErrCheck
 
 class CitationRetriever(BasicErrCheck):
     """Used for pulling Dataverse Citations based on file id"""
-    def __init__(self, datafile_id, registered_dataverse):
+    def __init__(self, datafile_id, persistent_id, registered_dataverse):
 
         self.datafile_id = datafile_id
         self.registered_dataverse = registered_dataverse
         self.dataset_doi = None
         self.citation_as_jsonld = None
+        self.persistent_id = persistent_id
 
         self.retrieve_citation()
 
@@ -102,7 +103,7 @@ class CitationRetriever(BasicErrCheck):
         if self.has_error():
             return
 
-        search_url = self.registered_dataverse.get_search_api_url(self.datafile_id)
+        search_url = self.registered_dataverse.get_search_api_url(self.persistent_id) # just a check
 
         # Call Dataverse....
         #

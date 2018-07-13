@@ -121,7 +121,7 @@ class DataverseFileInfo(TimeStampedModel):
     preprocess_job = models.ForeignKey(PreprocessJob,
                                        on_delete=models.CASCADE)
 
-    persistent_id = models.CharField('persistentId', max_length=255, blank=False)
+
 
     dataverse = models.ForeignKey(RegisteredDataverse,
                                   on_delete=models.CASCADE)
@@ -137,6 +137,7 @@ class DataverseFileInfo(TimeStampedModel):
     dataset_doi = models.CharField('DOI',
                                    max_length=255,
                                    blank=True)
+    persistent_id = models.CharField('persistentId', max_length=255, blank=True)
 
     dataset_name = models.CharField(max_length=255,
                                     blank=True)
