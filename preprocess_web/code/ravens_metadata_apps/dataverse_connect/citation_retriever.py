@@ -13,7 +13,8 @@ class CitationRetriever(BasicErrCheck):
         self.dataset_doi = None
         self.citation_as_jsonld = None
         self.persistent_id = persistent_id
-
+        print("persistentID", self.persistent_id)
+        print("datafile ID", self.datafile_id)
         self.retrieve_citation()
 
     def get_citation(self):
@@ -32,7 +33,9 @@ class CitationRetriever(BasicErrCheck):
     def retrieve_citation(self):
         """go through the steps needed for the citation"""
         if not self.datafile_id:
-            self.add_err_msg('datafile_id must be set')
+            """"""
+        elif not self.persistent_id:
+            self.add_err_msg('persistent_id must be set')
             return
 
         self.call_search_api_for_doi()
@@ -99,11 +102,14 @@ class CitationRetriever(BasicErrCheck):
 
 
     def call_search_api_for_doi(self):
-        """Use the Dataverse search API to retrieve the file's DOI"""
+        """Use the Dataverse search API to retrieve the file's DOI
+        https://dataverse.harvard.edu/api/search?q=doi:10.7910/DVN/LNUYXZ/XZFDCF
+        """
         if self.has_error():
             return
 
-        search_url = self.registered_dataverse.get_search_api_url(self.persistent_id) # just a check
+
+        search_url = self.registered_dataverse.get_search_api_url_persistent_Id(self.persistent_id) # just a check
 
         # Call Dataverse....
         #

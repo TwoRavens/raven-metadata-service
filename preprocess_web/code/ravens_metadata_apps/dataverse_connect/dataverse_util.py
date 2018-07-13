@@ -15,7 +15,7 @@ class DataverseUtil(object):
         """Examine the url and see if we already have metadata for this file"""
         # Get the Datafile id from the url
         #
-        dv_id_info = URLHelper.get_datafile_id_from_url(data_file_url)
+        dv_id_info = URLHelper.get_persistent_id_from_url(data_file_url)
         if not dv_id_info.success:
             return err_resp(dv_id_info.err_msg)
 

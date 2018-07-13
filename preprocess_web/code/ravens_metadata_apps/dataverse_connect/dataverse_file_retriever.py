@@ -35,6 +35,7 @@ class DataverseFileRetriever(BasicErrCheck):
         dataverse_citation_url - url to retrive a dataverse JSON-LD citation
         """
         self.data_file_url = data_file_url
+        print('datafile url ', self.data_file_url)
         self.datafile_id = None  # derived from the data_file_url
         self.dataset_doi = None #.get('dataset_doi')
         self.dataset_id = kwargs.get('dataset_id')
@@ -169,7 +170,9 @@ class DataverseFileRetriever(BasicErrCheck):
 
         # Get the Datafile id from the url
         #
+
         dv_id_info = URLHelper.get_persistent_id_from_url(self.data_file_url)
+        print("get dv_id info", dv_id_info)
         if not dv_id_info.success:
             self.add_err_msg(dv_id_info.err_msg)
             return
@@ -198,10 +201,13 @@ class DataverseFileRetriever(BasicErrCheck):
 
         # Start the DataverseFileInfo object--but don't save it yet
         #
-        self.datafile_id = dv_id_info.result_obj
+        self.persistent_id = dv_id_info.result_obj
+
         self.dv_file_info = DataverseFileInfo( \
             dataverse=registered_dv,
-            datafile_id=dv_id_info.result_obj)
+            persistent_id=dv_id_info.result_obj)
+        if self.persistent_id:
+            self.dv_file_info.persistent_id = self.persistent_id
         if self.dataset_id:
             self.dv_file_info.dataset_id = self.dataset_id
         if self.dataset_doi:

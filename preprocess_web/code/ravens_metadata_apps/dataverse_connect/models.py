@@ -83,6 +83,13 @@ class RegisteredDataverse(TimeStampedModel):
                     self.network_location,
                     file_id)
 
+    def get_search_api_url_persistent_Id(self, persistent_Id):
+        """ https://dataverse.harvard.edu/api/search?q=doi:10.7910/DVN/LNUYXZ/XZFDCF"""
+        return ('{0}://{1}/api/search?q={2}').format( \
+            self.url_scheme,
+            self.network_location,
+            persistent_Id)
+
     def get_file_access_url(self, file_id):
         """Build a url similar to:
         https://dataverse.harvard.edu/api/access/datafile/{{ file id }}

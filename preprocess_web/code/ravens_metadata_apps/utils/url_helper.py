@@ -3,7 +3,7 @@ from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from ravens_metadata_apps.utils.basic_response import err_resp, ok_resp
 from ravens_metadata_apps.dataverse_connect.dv_constants import \
     (KEY_DATAVERSE_FILE_ID, KEY_DATAVERSE_FILE_VERSION,KEY_DATAVERSE_PERSISTENT_ID,
-     PATH_DATAFILE_ACCESS)
+     PATH_DATAFILE_ACCESS, PATH_DATAFILE_ACCESS_PERSISTENT_ID)
 
 
 class URLHelper(object):
@@ -95,16 +95,17 @@ class URLHelper(object):
         """ Return the datafile id from the path or query params
             - http://dataverse.harvard.edu/api/access/datafile/:persistentId/?persistentId=doi:10.5072/FK2/J8SJZB
             - https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/MZIBKB/61BZQK&version=1.0"""
-
+        print('url_str', url_str)
         info = URLHelper.get_parsed_url(url_str)
+        print("info ", info)
         if not info.success:
             return info
 
         # Is the file id in the path?
         #
         url_path = info.result_obj.path.lower()
-        if url_path.startswith(PATH_DATAFILE_ACCESS):
-            dv_id = url_path.replace(PATH_DATAFILE_ACCESS, '')
+        if url_path.startswith(PATH_DATAFILE_ACCESS_PERSISTENT_ID):
+            dv_id = url_path.replace(PATH_DATAFILE_ACCESS_PERSISTENT_ID, '')
             if not isinstance(dv_id, str):
                 return err_resp('The persistent id is not string: "%s"' % dv_id)
 
@@ -124,7 +125,7 @@ class URLHelper(object):
             dv_id = params[KEY_DATAVERSE_PERSISTENT_ID]
             if isinstance(dv_id, list) and dv_id:
                 dv_id = dv_id[0]
-
+            print("persistent ID loc url_helper", dv_id)
             if not isinstance(dv_id, str):
                 return err_resp('The persistent id is not string : "%s"' % dv_id)
 
@@ -150,7 +151,7 @@ class URLHelper(object):
         if not datafile_info.success:
             return err_resp(datafile_info.err_msg)
 
-        params = urlencode({KEY_DATAVERSE_FILE_ID: datafile_info.result_obj})
+        params = urlencode({PATH_DATAFILE_ACCESS_PERSISTENT_ID: datafile_info.result_obj})
 
         fmt_url = urlunparse((parsed.scheme,
                               parsed.netloc.lower(),

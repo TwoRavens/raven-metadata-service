@@ -23,11 +23,13 @@ from ravens_metadata_apps.dataverse_connect.dataverse_util import DataverseUtil
 from msg_util import msg, msgt
 
 
-def try_it(file_id=3147445):
+def try_it(file_id='doi:10.5072/FK2/J8SJZB'):
 
     # hmmm...
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
-    dv_file_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
+    # http://dataverse.harvard.edu/api/access/datafile/:persistentId/?persistentId=doi:10.5072/FK2/J8SJZB
+    dv_file_url = 'http://dataverse.harvard.edu/api/access/datafile/:persistentId/?persistentId=%s' % 'doi:10.5072/FK2/J8SJZB'
+    print("dv_file_url",dv_file_url)
     file_retriever = DataverseFileRetriever(dv_file_url)
     if file_retriever.has_error():
         print('error found: %s' % file_retriever.get_error_message())
@@ -39,11 +41,12 @@ def try_it(file_id=3147445):
     #JobUtil.start_preprocess(file_retriever.preprocess_job)
 
 
-def try_queue(file_id=3147445, dataset_id=None):
+def try_queue(file_id='doi:10.5072/FK2/J8SJZB', dataset_id=None):
 
     # hmmm...
     # https://dataverse.harvard.edu/file.xhtml?fileId=3147445&datasetVersionId=136558
-    dv_url = 'https://dataverse.harvard.edu/api/access/datafile/%s' % file_id
+    # http://dataverse.harvard.edu/api/access/datafile/:persistentId/?persistentId=doi:10.5072/FK2/J8SJZB
+    dv_url = 'http://dataverse.harvard.edu/api/access/datafile/:persistentId/?persistentId=%s' % 'doi:10.5072/FK2/J8SJZB'
 
     job_info = DataverseUtil.process_dataverse_file(dv_url, dataset_id=dataset_id)
     if job_info.success:
