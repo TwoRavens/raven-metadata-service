@@ -22,10 +22,10 @@ KEY_DJANGO_SETTINGS_MODULE = 'DJANGO_SETTINGS_MODULE'
 
 if not KEY_DJANGO_SETTINGS_MODULE in os.environ:
     if FAB_BASE_DIR == '/var/webapps/raven-metadata-service':
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+        os.environ.setdefault(KEY_DJANGO_SETTINGS_MODULE,
                               'ravens_metadata.settings.local_settings')
     else:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+        os.environ.setdefault(KEY_DJANGO_SETTINGS_MODULE,
                               'ravens_metadata.settings.local_settings')
 
 try:
