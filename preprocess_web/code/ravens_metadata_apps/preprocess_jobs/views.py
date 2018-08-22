@@ -462,3 +462,52 @@ def show_job_info(request, job_id):
                     data=job.as_dict())
 
     return JsonResponse(user_msg)
+
+
+@csrf_exempt
+def add_problems_section(request):
+    """Add the problems section to the preprocess metadata"""
+    """
+    Sample:{
+   "preprocessId":24,
+   "version":1,
+   "problems":[
+      {
+         "description":{"problem_id":"problem1","system":"auto","meaningful":"no","target":"Hits","predictors":
+         ["At_bats","Runs","Doubles"],"transform":0,"subsetObs":0,"subsetFeats":0,"task":"regression","rating":3,
+         "description":"Hits is predicted by At_bats and Runs and Doubles","metric":"meanSquaredError"},
+         "results":{}
+      }
+   ]
+}
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err[col_const.PREPROCESS_ID]
+    version = update_json_or_err[col_const.VERSION_KEY]
+    if job_id is None:
+        return JsonResponse('%s is required' % col_const.PREPROCESS_ID)
+
+    success, latest_metadata_json_or_err = JobUtil.update_preprocess_problem_section(job_id, version, update_json_or_err)
+    if success is False:
+        user_msg = dict(success=False,
+                        message=latest_metadata_json_or_err)
+        return JsonResponse(user_msg)
+
+    return JsonResponse(latest_metadata_json_or_err)
+
+
+
+
+
+

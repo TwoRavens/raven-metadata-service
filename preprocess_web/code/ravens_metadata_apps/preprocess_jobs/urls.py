@@ -160,4 +160,10 @@ urlpatterns = (
          views.test_view,
          name='test_view'),
 
+    # job for problems section (add)
+    #
+    path(r'problem-section',
+         views.add_problems_section,
+         name='add_problems_section'),
+
 )

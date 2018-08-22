@@ -19,6 +19,7 @@ from ravens_metadata_apps.utils.json_util import remove_nan_from_dict
 from file_format_constants import TAB_FILE_EXT
 from ravens_metadata_apps.utils.view_helper import get_json_error
 from custom_statistics_util import CustomStatisticsUtil
+from problems_section_utils import ProblemSectionUtil
 from ravens_metadata_apps.utils.view_helper import get_json_error
 
 
@@ -80,6 +81,7 @@ class JobUtil(object):
 
         # print("here is the data",update_object.name.version_number)
         if update_object:
+
             return ok_resp(update_object)
 
         # Look for the original preprocess metadata
@@ -93,6 +95,10 @@ class JobUtil(object):
             return err_resp(err_msg)
 
         if orig_metadata:
+            print("-" * 10)
+            print(orig_metadata)
+            print("-" * 10)
+
             return ok_resp(orig_metadata)
 
         return err_resp(err_msg)
@@ -397,3 +403,26 @@ class JobUtil(object):
             return False, custom_util_update.get_error_messages()
 
         return True, custom_util_update.get_updated_metadata()
+
+    @staticmethod
+    def update_preprocess_problem_section(job_id, version, problem_section_json):
+        """ add the problem section to the preprocess file """
+
+        success, version_metadata_json_or_err = JobUtil.get_version_metadata_object(job_id, version)
+        if success is False:
+            user_msg = dict(success=False,
+                            message=version_metadata_json_or_err)
+            return user_msg
+        success, data_or_err = version_metadata_json_or_err.get_metadata()
+        if not success:
+            return JsonResponse(get_json_error(data_or_err))
+
+        # print(" version object ", data_or_err)
+
+        problem_section_update = ProblemSectionUtil(data_or_err, problem_section_json)
+        problem_section_update.problem_section_update()
+
+        if problem_section_update.has_error:
+            return err_resp(get_json_error(problem_section_update))
+
+        return ok_resp(problem_section_update.get_updated_metadata())
