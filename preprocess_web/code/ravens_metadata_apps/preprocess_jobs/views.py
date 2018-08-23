@@ -498,15 +498,28 @@ def add_problems_section(request):
     if job_id is None:
         return JsonResponse('%s is required' % col_const.PREPROCESS_ID)
 
-    success, latest_metadata_json_or_err = JobUtil.update_preprocess_problem_section(job_id, version, update_json_or_err)
-    if success is False:
+    # success, latest_metadata_json_or_err = JobUtil.update_preprocess_problem_section(job_id, version, update_json_or_err)
+    # if success is False:
+    #     user_msg = dict(success=False,
+    #                     message=latest_metadata_json_or_err)
+    #     return JsonResponse(user_msg)
+    metadata_update_or_err = MetadataUpdateUtil(job_id, update_json_or_err,
+                                                col_const.ADD_PROBLEM_SECTION)
+    if metadata_update_or_err.has_error:
+        msg = get_json_error(metadata_update_or_err.get_error_messages())
         user_msg = dict(success=False,
-                        message=latest_metadata_json_or_err)
-        return JsonResponse(user_msg)
+                        message='Problem Section',
+                        id=job_id,
+                        data=msg)
 
-    return JsonResponse(latest_metadata_json_or_err)
-
-
+    else:
+        user_msg = dict(success=True,
+                        message='Problem Section',
+                        id=job_id,
+                        data=metadata_update_or_err.get_updated_metadata())
+        print("Updated problem metadata : ", metadata_update_or_err)
+    print(user_msg)
+    return JsonResponse(user_msg)
 
 
 

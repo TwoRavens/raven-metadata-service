@@ -9,11 +9,11 @@ from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
 from custom_statistics_util import CustomStatisticsUtil
-
+from problems_section_utils import ProblemSectionUtil
 from variable_display_util import VariableDisplayUtil
 from np_json_encoder import NumpyJSONEncoder
 from col_info_constants import \
-    (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS)
+    (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS, ADD_PROBLEM_SECTION)
 
 
 class MetadataUpdateUtil(object):
@@ -88,6 +88,11 @@ class MetadataUpdateUtil(object):
             delete_util.delete_custom_stat()
             return delete_util
 
+        elif self.update_type == ADD_PROBLEM_SECTION:
+            add_problem_util = ProblemSectionUtil(latest_metadata_or_err, self.update_json)
+            add_problem_util.problem_section_update()
+            return add_problem_util
+
         else:
             self.add_err_msg('Unknown update type: %s' % self.update_type)
             return None
@@ -104,6 +109,8 @@ class MetadataUpdateUtil(object):
             return False
         else:
             metadata_obj = metadata_obj_or_err  # to be clear
+
+
 
         # Retrieve the metadata from a file; returned as an OrderedDict
         #

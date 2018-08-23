@@ -425,4 +425,6 @@ class JobUtil(object):
         if problem_section_update.has_error:
             return err_resp(get_json_error(problem_section_update))
 
+        print(problem_section_update.get_updated_metadata())
+
         return ok_resp(problem_section_update.get_updated_metadata())
