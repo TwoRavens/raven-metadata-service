@@ -58,6 +58,18 @@ class ProblemSectionUtil(object):
         """add or change a custom stat"""
         return True
 
+    def generate_id(self):
+        if col_const.PROBLEM_KEY not in self.preprocess_json:
+            var_id = 'id_000001'
+        else:
+            ids = list(self.preprocess_json[col_const.PROBLEM_KEY])
+            ids.sort()
+            latest_id = ids[-1]
+            _unused, idnum = latest_id.split('_')
+            next_num = str(int(idnum) + 1)
+            var_id = 'id_%s' % next_num.zfill(6)
+        return var_id
+
     def redundent_id_check(self, id_list):
         list_preprocess_problem = list(self.preprocess_json[col_const.PROBLEM_KEY])
         print(list_preprocess_problem)
@@ -71,30 +83,30 @@ class ProblemSectionUtil(object):
         """update the preprocess with problem section
         Sample problem_section_json:
         {
-           "preprocessId":24,
+           "preprocessId":2,
            "version":1,
-           "problems":
-           [
-              {
+           "problems":[{
                  "description":{"problem_id":"problem1","system":"auto","meaningful":"no","target":"Hits",
                  "predictors":["At_bats","Runs","Doubles"],"transform":0,"subsetObs":0,"subsetFeats":0,
                  "task":"regression","rating":3,"description":"Hits is predicted by At_bats and Runs and Doubles",
                  "metric":"meanSquaredError"},
                  "results":{}
+              },
+              {
+                 "description":{"problem_id":"problem2","system":"auto","meaningful":"no","target":
+                 "Triple","predictors":["At_bats","Runs","Doubles"],"transform":0,"subsetObs":0,"subsetFeats":0,
+                 "task":"regression","rating":3,"description":"Triples is predicted by At_bats and Runs and Doubles",
+                 "metric":"meanSquaredError"},
+                 "results":{}
               }
            ]
-        }
+}
         """
-        print(self.problem_section_json[col_const.PROBLEM_KEY])
-        id_list = list(self.problem_section_json[col_const.PROBLEM_KEY])
 
-        if col_const.PROBLEM_KEY not in self.preprocess_json:
-            self.preprocess_json[col_const.PROBLEM_KEY] = self.problem_section_json[col_const.PROBLEM_KEY]
-        else:
-            success, obj = self.redundent_id_check(id_list)
-            if not success:
-                return False
-            self.preprocess_json[col_const.PROBLEM_KEY].append(self.problem_section_json[col_const.PROBLEM_KEY])
+        for data in self.problem_section_json[col_const.PROBLEM_KEY]:
+            self.add_to_original(data)
+
+            print("values : ", data)
 
         self.original_json = OrderedDict(self.preprocess_json)
 
@@ -107,3 +119,60 @@ class ProblemSectionUtil(object):
             return False
 
 
+
+
+        # print(self.problem_section_json[col_const.PROBLEM_KEY])
+        # id_list = list(self.problem_section_json[col_const.PROBLEM_KEY])
+        #
+        # if col_const.PROBLEM_KEY not in self.preprocess_json:
+        #     self.preprocess_json[col_const.PROBLEM_KEY] = self.problem_section_json[col_const.PROBLEM_KEY]
+        # else:
+        #     success, obj = self.redundent_id_check(id_list)
+        #     if not success:
+        #         return False
+        #     self.preprocess_json[col_const.PROBLEM_KEY].append(self.problem_section_json[col_const.PROBLEM_KEY])
+        #
+        # self.original_json = OrderedDict(self.preprocess_json)
+        #
+        # success, updated_or_err = VersionNumberUtil.update_version_number(
+        #     self.original_json,
+        #     self.is_major_update())
+        #
+        # if not success:
+        #     self.add_error_message(updated_or_err)
+        #     return False
+    def add_to_original(self, data):
+        id_name = self.generate_id()
+        # self.original_json= self.preprocess_json
+        if col_const.PROBLEM_KEY not in self.preprocess_json:
+            self.preprocess_json[col_const.PROBLEM_KEY] = {id_name: data}
+        else:
+            self.preprocess_json[col_const.PROBLEM_KEY][id_name] = data
+
+        # print(self.original_json)
+
+    # update functions for custom_stats_update
+
+    def delete_problem_section(self):
+        """delete problem using problem_id"""
+
+        print(self.preprocess_json[col_const.PROBLEM_KEY])
+        id_list = list(self.preprocess_json[col_const.PROBLEM_KEY])
+        print("these are the ids", id_list)
+        print(" the problem update section", self.problem_section_json)
+        problem_id = self.problem_section_json[col_const.PROBLEM_ID]
+
+        if problem_id not in id_list:
+            self.add_error_message('problem ID %s not found' % problem_id)
+            return False
+
+        del self.preprocess_json[col_const.PROBLEM_KEY][problem_id]
+        self.original_json = OrderedDict(self.preprocess_json)
+
+        # print("After deletion ", self.original_json)
+
+        success, updated_or_err = VersionNumberUtil.update_version_number(self.original_json,
+                                                                          self.is_major_update())
+        if not success:
+            self.add_error_message(updated_or_err)
+            return False

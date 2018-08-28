@@ -521,6 +521,57 @@ def add_problems_section(request):
     print(user_msg)
     return JsonResponse(user_msg)
 
+@csrf_exempt
+def delete_problems_section(request):
+    """ Delete problem section from problems
+    Sample request :
+    {
+    "preprocessId" : 1,
+    "version": 1,
+    "problem_id" : "problem1"
+    }
+    """
+    if request.method != 'POST':
+        user_msg = 'Please use a POST to access this endpoint'
+        return JsonResponse(get_json_error(user_msg))
+
+        # Retrieve the JSON request from the body
+        #
+    success, update_json_or_err = get_request_body_as_json(request)
+    if success is False:
+        return JsonResponse(get_json_error(update_json_or_err))
+
+        # Make sure there's a preprocess_id
+        #
+    job_id = update_json_or_err[col_const.PREPROCESS_ID]
+    version = update_json_or_err[col_const.VERSION_KEY]
+    if job_id is None:
+        return JsonResponse('%s is required' % col_const.PREPROCESS_ID)
+
+    metadata_update_or_err = MetadataUpdateUtil(job_id, update_json_or_err,
+                                                col_const.DELETE_PROBLEM_SECTION)
+    if metadata_update_or_err.has_error:
+        msg = get_json_error(metadata_update_or_err.get_error_messages())
+        user_msg = dict(success=False,
+                        message='Problem Section',
+                        id=job_id,
+                        data=msg)
+
+    else:
+        user_msg = dict(success=True,
+                        message='Problem Section',
+                        id=job_id,
+                        data=metadata_update_or_err.get_updated_metadata())
+        print("Updated problem metadata : ", metadata_update_or_err)
+    print(user_msg)
+    return JsonResponse(user_msg)
+
+
+
+
+
+
+
 
 
 

@@ -166,4 +166,10 @@ urlpatterns = (
          views.add_problems_section,
          name='add_problems_section'),
 
+    # job for problems section (delete)
+    #
+    path(r'problem-section-delete',
+         views.delete_problems_section,
+         name='delete_problems_section'),
+
 )

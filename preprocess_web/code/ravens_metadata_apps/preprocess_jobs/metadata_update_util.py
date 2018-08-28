@@ -13,7 +13,7 @@ from problems_section_utils import ProblemSectionUtil
 from variable_display_util import VariableDisplayUtil
 from np_json_encoder import NumpyJSONEncoder
 from col_info_constants import \
-    (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS, ADD_PROBLEM_SECTION)
+    (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS, ADD_PROBLEM_SECTION, DELETE_PROBLEM_SECTION)
 
 
 class MetadataUpdateUtil(object):
@@ -93,6 +93,11 @@ class MetadataUpdateUtil(object):
             add_problem_util.problem_section_update()
             return add_problem_util
 
+        elif self.update_type == DELETE_PROBLEM_SECTION:
+            delete_problem_util = ProblemSectionUtil(latest_metadata_or_err, self.update_json)
+            delete_problem_util.delete_problem_section()
+            return delete_problem_util
+
         else:
             self.add_err_msg('Unknown update type: %s' % self.update_type)
             return None
@@ -127,7 +132,7 @@ class MetadataUpdateUtil(object):
         #                                    self.update_json)
 
         # var_util = VariableDisplayUtil(latest_metadata_or_err, self.update_json)
-
+        # print(" latest metadata ", latest_metadata_or_err)
         var_util = self.get_update_util(latest_metadata_or_err)
 
         if var_util is None:
