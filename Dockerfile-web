@@ -55,6 +55,13 @@ COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
 RUN chmod u+x /usr/bin/preprocess_file.sh
 
 # -------------------------------------
+# Copy the metadata web server start command
+# -------------------------------------
+COPY startup_scripts/metadata_start.sh /usr/bin/metadata_start.sh
+RUN chmod u+x /usr/bin/metadata_start.sh
+
+
+# -------------------------------------
 # Update the working directory
 # -------------------------------------
 WORKDIR /var/webapps/raven-metadata-service/preprocess_web/code

@@ -142,7 +142,7 @@ def load_registered_dataverses():
 
 
 @task
-def collect_static():
+def collectstatic():
     """Run the Django collectstatic command"""
     local('python manage.py collectstatic --noinput')
 

@@ -7,7 +7,7 @@
 # -----------------------------------
 printf "\n(10) Run Init Steps"
 fab init_db
-fab collect_static
+fab collectstatic
 
 # -----------------------------------
 # (30) "Run web server.."

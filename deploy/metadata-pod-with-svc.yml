@@ -70,9 +70,9 @@ spec:
               "-instances=raven2-186120:us-central1:raven-mysql-metadata-svc=tcp:3306",
               "-credential_file=/secrets/cloudsql/credentials.json"]
     volumeMounts:
-      - name: cloudsql-instance-credentials
-        mountPath: /secrets/cloudsql
-        readOnly: true
+    - name: cloudsql-instance-credentials
+      mountPath: /secrets/cloudsql
+      readOnly: true
   # -------------------------
   # 4 of 5: celery worker
   # -------------------------
@@ -81,29 +81,29 @@ spec:
     #imagePullPolicy: IfNotPresent
     command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
     envFrom:
-      - configMapRef:
-          name: metadata-python-configmap
+    - configMapRef:
+        name: metadata-python-configmap
     env:
-      - name: SECRET_KEY
-        valueFrom:
-          secretKeyRef:
-            name: metadata-web-secrets
-            key: SECRET_KEY
-      - name: GCE_CREDS_INFO
-        valueFrom:
-          secretKeyRef:
-            name: gce-creds-variable
-            key: GCE_CREDS_INFO
-      - name: DB_USER
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: username
-      - name: DB_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: password
+    - name: SECRET_KEY
+      valueFrom:
+        secretKeyRef:
+          name: metadata-web-secrets
+          key: SECRET_KEY
+    - name: GCE_CREDS_INFO
+      valueFrom:
+        secretKeyRef:
+          name: gce-creds-variable
+          key: GCE_CREDS_INFO
+    - name: DB_USER
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: username
+    - name: DB_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: password
     volumeMounts:
       - name: "raven-metadata-volume"
         mountPath: "/raven_metadata"
@@ -117,39 +117,40 @@ spec:
   # -------------------------
   - name: preprocess-web
     image: tworavens/raven-metadata-service:latest
-    #imagePullPolicy: IfNotPresent
+    imagePullPolicy: Always
+    command: ["metadata_start.sh"]
     ports:
-      - containerPort: 8080
-        name: http
-        protocol: TCP
+    - containerPort: 8080
+      name: http
+      protocol: TCP
     envFrom:
-      - configMapRef:
-          name: metadata-python-configmap
+    - configMapRef:
+        name: metadata-python-configmap
     env:
-      - name: GCE_CREDS_INFO
-        valueFrom:
-          secretKeyRef:
-            name: gce-creds-variable
-            key: GCE_CREDS_INFO
-      - name: DB_USER
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: username
-      - name: DB_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: password
-      - name: SECRET_KEY
-        valueFrom:
-          secretKeyRef:
-            name: metadata-web-secrets
-            key: SECRET_KEY
+    - name: GCE_CREDS_INFO
+      valueFrom:
+        secretKeyRef:
+          name: gce-creds-variable
+          key: GCE_CREDS_INFO
+    - name: DB_USER
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: username
+    - name: DB_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: password
+    - name: SECRET_KEY
+      valueFrom:
+        secretKeyRef:
+          name: metadata-web-secrets
+          key: SECRET_KEY
     volumeMounts:
-      - name: "raven-metadata-volume"
-        mountPath: "/raven_metadata"
-        readOnly: false
+    - name: "raven-metadata-volume"
+      mountPath: "/raven_metadata"
+      readOnly: false
     # liveness is for restart
     livenessProbe:
       httpGet:
