@@ -27,12 +27,13 @@ kubectl create -f metadata-python-configmap.yml
 
 # activate the deployment and service
 #
-kubectl apply -f deploy/metadata-pod-with-svc.yml   # start the pod/service
+kubectl apply -f metadata-pod-with-svc.yml   # start the pod/service
 
 # delete the deployment and service (you can leave the service running)
 #
-kubectl delete -f deploy/metadata-pod-with-svc.yml  # stop the pod/service
-
+kubectl delete -f metadata-pod-with-svc.yml  # stop the pod/service
+# OR: (stop if immediately)
+kubectl delete -f metadata-pod-with-svc.yml --grace-period=0 --force
 
 # ---------------
 # other

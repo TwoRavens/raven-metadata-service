@@ -14,4 +14,4 @@ fab collectstatic
 # -----------------------------------
 printf "\n(30) Run web server.."
 #setsid python manage.py runserver 0.0.0.0:8080
-gunicorn --timeout 120 --workers 3 --bind 0.0.0.0:8080 ravens_metadata.settings.gce_deploy_settings
+gunicorn --timeout 120 --workers 3 --bind 0.0.0.0:8080 ravens_metadata.wsgi_preprocess_gce

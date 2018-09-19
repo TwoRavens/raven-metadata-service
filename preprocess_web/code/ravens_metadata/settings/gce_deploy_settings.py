@@ -62,7 +62,7 @@ if not creds_info_str:
     GCE_CREDS_INFO = None
     GS_CREDENTIALS = None
 else:
-    print('GCE_CREDS_INFO string: %s' % (creds_info_str))
+    #print('GCE_CREDS_INFO string: %s' % (creds_info_str))
     creds_info_str_decoded = creds_info_str.replace('\n', '')   #.decode("utf-8")
     GCE_CREDS_INFO = json.loads(creds_info_str_decoded)
     GS_CREDENTIALS = service_account.Credentials.from_service_account_info(GCE_CREDS_INFO)

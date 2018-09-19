@@ -78,7 +78,7 @@ spec:
   # -------------------------
   - name: celery-worker
     image: tworavens/raven-metadata-service:latest
-    #imagePullPolicy: IfNotPresent
+    imagePullPolicy: Always
     command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
     envFrom:
     - configMapRef:
