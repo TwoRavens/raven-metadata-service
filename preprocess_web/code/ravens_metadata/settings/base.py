@@ -189,7 +189,7 @@ REQUESTS_TIMEOUT = 7 # 1 second for server to respond
 # Set this link if the editor is available
 # -------------------------------
 EDITOR_URL = os.environ.get('EDITOR_URL', None)
-
+if not EDITOR_URL:
+    EDITOR_URL = None   # Convert an empty string to None
 
 TEST_ENV_VARIABLE = os.environ.get('TEST_ENV_VARIABLE', '(nothing set)')
-

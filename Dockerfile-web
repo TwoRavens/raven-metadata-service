@@ -49,10 +49,13 @@ ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
 COPY . .
 
 # -------------------------------------
-# Copy preprocess script
+# Copy the metadata web server start command +
+#   preprocess script
 # -------------------------------------
-COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
-RUN chmod u+x /usr/bin/preprocess_file.sh
+COPY startup_scripts/metadata_start.sh preprocess/scripts/preprocess_file.sh /usr/bin/
+RUN chmod u+x /usr/bin/metadata_start.sh && \
+    chmod u+x /usr/bin/preprocess_file.sh
+
 
 # -------------------------------------
 # Update the working directory

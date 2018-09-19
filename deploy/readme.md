@@ -11,25 +11,35 @@ These steps deploy the TwoRavens EventData application using Docker images from 
     - https://console.cloud.google.com/kubernetes/list
 
 ```
-# pull the latest config code
 #
-cd raven-metadata-service
-git pull
+# Retrieve the config file + configmap
+#    
+mkdir metadata-deploy
+cd metadata-deploy
+wget https://raw.githubusercontent.com/TwoRavens/raven-metadata-service/master/deploy/metadata-pod-with-svc.yml
+wget https://raw.githubusercontent.com/TwoRavens/raven-metadata-service/master/deploy/metadata-python-configmap.yml
+
+
+#
+# Create the configmap (rarely updated)
+#
+kubectl create -f metadata-python-configmap.yml
 
 # activate the deployment and service
 #
-kubectl apply -f deploy/metadata-pod-with-svc.yml   # start the pod/service
+kubectl apply -f metadata-pod-with-svc.yml   # start the pod/service
 
 # delete the deployment and service (you can leave the service running)
 #
-kubectl delete -f deploy/metadata-pod-with-svc.yml  # stop the pod/service
-
+kubectl delete -f metadata-pod-with-svc.yml  # stop the pod/service
+# OR: (stop if immediately)
+kubectl delete -f metadata-pod-with-svc.yml --grace-period=0 --force
 
 # ---------------
 # other
 # ---------------
 
-# list pods, the name of the eventdata pod is "ravens-eventdata-web-xxxxxx-xxxx"
+# list pods, the name of the metadata pod is "ravens-preprocess-app"
 #
 kubectl get pods
 

@@ -11,7 +11,7 @@ spec:
     tier: web
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 80
   type: LoadBalancer
   # This IP is tied to: metadata.2ravens.org
   loadBalancerIP: 35.192.35.125
@@ -35,8 +35,23 @@ spec:
       secret:
         secretName: cloudsql-instance-credentials
   containers:
+  # --------------------------------
+  # 1 of 5: Ravens nginx
+  # - reverse proxy for psi-main
+  # --------------------------------
+  - name: metadata-nginx
+    image: tworavens/raven-metadata-nginx:latest
+    imagePullPolicy: Always
+    ports:
+      - containerPort: 80
+        name: http
+        protocol: TCP
+    volumeMounts:
+    - name: "raven-metadata-volume"
+      mountPath: "/raven_metadata"
+      readOnly: true
   # -------------------------
-  # 1 of 4: redis
+  # 2 of 5: redis
   # -------------------------
   - name: redis
     image: redis:4.0
@@ -47,7 +62,7 @@ spec:
     ports:
     - containerPort: 6379
   # -------------------------
-  # 2 of 4: cloudsql proxy
+  # 3 of 5: cloudsql proxy
   # -------------------------
   - name: cloudsql-proxy
     image: gcr.io/cloudsql-docker/gce-proxy:1.11
@@ -55,41 +70,40 @@ spec:
               "-instances=raven2-186120:us-central1:raven-mysql-metadata-svc=tcp:3306",
               "-credential_file=/secrets/cloudsql/credentials.json"]
     volumeMounts:
-      - name: cloudsql-instance-credentials
-        mountPath: /secrets/cloudsql
-        readOnly: true
+    - name: cloudsql-instance-credentials
+      mountPath: /secrets/cloudsql
+      readOnly: true
   # -------------------------
-  # 3 of 4: celery worker
+  # 4 of 5: celery worker
   # -------------------------
   - name: celery-worker
     image: tworavens/raven-metadata-service:latest
-    #imagePullPolicy: IfNotPresent
+    imagePullPolicy: Always
     command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
+    envFrom:
+    - configMapRef:
+        name: metadata-python-configmap
     env:
-      - name: DJANGO_SETTINGS_MODULE
-        value: "ravens_metadata.settings.gce_deploy_settings"
-      - name: REDIS_HOST
-        # Note this is within the same pod
-        value: localhost
-      - name: GCE_CREDS_INFO
-        valueFrom:
-          secretKeyRef:
-            name: gce-creds-variable
-            key: GCE_CREDS_INFO
-      - name: DB_HOST
-        value: "127.0.0.1"
-      - name: DB_PORT
-        value: "3306"
-      - name: DB_USER
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: username
-      - name: DB_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: password
+    - name: SECRET_KEY
+      valueFrom:
+        secretKeyRef:
+          name: metadata-web-secrets
+          key: SECRET_KEY
+    - name: GCE_CREDS_INFO
+      valueFrom:
+        secretKeyRef:
+          name: gce-creds-variable
+          key: GCE_CREDS_INFO
+    - name: DB_USER
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: username
+    - name: DB_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: password
     volumeMounts:
       - name: "raven-metadata-volume"
         mountPath: "/raven_metadata"
@@ -99,56 +113,50 @@ spec:
         #    name: postgres-credentials
         #    key: user
   # -------------------------
-  # 4 of 4: web server
+  # 5 of 5: web server
   # -------------------------
   - name: preprocess-web
     image: tworavens/raven-metadata-service:latest
-    #imagePullPolicy: IfNotPresent
+    imagePullPolicy: Always
+    command: ["metadata_start.sh"]
     ports:
-      - containerPort: 8080
-        name: http
-        protocol: TCP
+    - containerPort: 8080
+      name: http
+      protocol: TCP
+    envFrom:
+    - configMapRef:
+        name: metadata-python-configmap
     env:
-      - name: DJANGO_SETTINGS_MODULE
-        value: "ravens_metadata.settings.gce_deploy_settings"
-      - name: REDIS_HOST
-        # Note this is within the same pod
-        value: localhost
-      - name: DJANGO_DEBUG
-        value: "True"
-      - name: SWAGGER_HOST
-        value: "metadata.2ravens.org"
-      - name: EDITOR_URL
-        value:
-      - name: GCE_CREDS_INFO
-        valueFrom:
-          secretKeyRef:
-            name: gce-creds-variable
-            key: GCE_CREDS_INFO
-      - name: DB_HOST
-        value: "127.0.0.1"
-      - name: DB_PORT
-        value: "3306"
-      - name: DB_USER
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: username
-      - name: DB_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: cloudsql-db-credentials
-            key: password
+    - name: GCE_CREDS_INFO
+      valueFrom:
+        secretKeyRef:
+          name: gce-creds-variable
+          key: GCE_CREDS_INFO
+    - name: DB_USER
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: username
+    - name: DB_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: cloudsql-db-credentials
+          key: password
+    - name: SECRET_KEY
+      valueFrom:
+        secretKeyRef:
+          name: metadata-web-secrets
+          key: SECRET_KEY
     volumeMounts:
-      - name: "raven-metadata-volume"
-        mountPath: "/raven_metadata"
-        readOnly: false
+    - name: "raven-metadata-volume"
+      mountPath: "/raven_metadata"
+      readOnly: false
     # liveness is for restart
     livenessProbe:
       httpGet:
         path: /monitoring/alive
         port: 8080
-      initialDelaySeconds: 5
+      initialDelaySeconds: 30
       timeoutSeconds: 1
       periodSeconds: 10
       failureThreshold: 3
