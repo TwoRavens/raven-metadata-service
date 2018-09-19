@@ -142,6 +142,11 @@ def load_registered_dataverses():
 
 
 @task
+def collect_static():
+    """Run the Django collectstatic command"""
+    local('python manage.py collectstatic --noinput')
+
+@task
 def clear_metadata_updates():
     """Delete all MetadataUpdate objects"""
     from django.conf import settings

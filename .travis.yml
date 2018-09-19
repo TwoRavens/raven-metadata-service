@@ -24,7 +24,7 @@ script:
   #- coverage run --source=ravens_metadata_apps.ta2_interfaces manage.py test ravens_metadata_apps.ta2_interfaces ravens_metadata_apps.workspaces
   #- docker build -t tworavens/ravens-main:latest .
   - echo $TRAVIS_BRANCH;
-  
+
 after_success:
   # Build an image and push to dockerhub
   - echo $TRAVIS_BRANCH;
@@ -33,7 +33,11 @@ after_success:
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push tworavens/raven-metadata-service:latest;
     fi
-
+  - if [ "$TRAVIS_BRANCH" = "166-gunicorn-etc" ]; then
+    docker build -t tworavens/raven-metadata-service:latest -f ./Dockerfile .;
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push tworavens/raven-metadata-service:latest;
+    fi
 # send report to coveralls
 #after_success:
 # coveralls

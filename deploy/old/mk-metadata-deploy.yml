@@ -1,0 +1,92 @@
+# ---------------------------------------------------------
+# EventData - Kubernetes Pod File
+# ---------------------------------------------------------
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: ravens-preprocess-web
+  labels:
+    app: tworavens-preprocess-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tworavens-preprocess-app
+        tier: web
+    spec:
+      restartPolicy: Always
+      volumes:
+        - name: raven-metadata-volume
+          emptyDir: {}
+      containers:
+      # -------------------------
+      # 1 of 3: redis
+      # -------------------------
+      - name: redis
+        image: redis:4.0
+        #resources:
+        #  requests:
+        #    cpu: 100m
+        #    memory: 100Mi
+        ports:
+        - containerPort: 6379
+      # -------------------------
+      # 2 of 3: celery worker
+      # -------------------------
+      - name: celery-worker
+        image: tworavens/raven-metadata-service:latest
+        imagePullPolicy: Never
+        command: ['celery', '-A', 'ravens_metadata', 'worker', '-l', 'info']
+        env:
+          - name: DJANGO_SETTINGS_MODULE
+            value: "ravens_metadata.settings.docker_test_settings"
+          - name: REDIS_HOST
+            # Note this is within the same pod
+            value: localhost
+        volumeMounts:
+          - name: "raven-metadata-volume"
+            mountPath: "/raven_metadata"
+            readOnly: false
+            #valueFrom:
+            #  secretKeyRef:
+            #    name: postgres-credentials
+            #    key: user
+      # -------------------------
+      # 3 of 3: web server
+      # -------------------------
+      - name: preprocess-web
+        image: tworavens/raven-metadata-service:latest
+        imagePullPolicy: Never
+        ports:
+          - containerPort: 8080
+            name: http
+            protocol: TCP
+        env:
+          - name: DJANGO_SETTINGS_MODULE
+            value: "ravens_metadata.settings.docker_test_settings"
+          - name: REDIS_HOST
+            # Note this is within the same pod
+            value: localhost
+          - name: DJANGO_DEBUG
+            value: "True"
+        volumeMounts:
+          - name: "raven-metadata-volume"
+            mountPath: "/raven_metadata"
+            readOnly: false
+        # liveness is for restart
+        livenessProbe:
+          httpGet:
+            path: /monitoring/alive
+            port: 8080
+          initialDelaySeconds: 5
+          timeoutSeconds: 1
+          periodSeconds: 10
+          failureThreshold: 3
+        # readiness: ready for traffic
+        readinessProbe:
+          httpGet:
+            path: /monitoring/alive
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10

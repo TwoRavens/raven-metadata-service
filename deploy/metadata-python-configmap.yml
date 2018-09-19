@@ -1,0 +1,30 @@
+# ------------------------
+# Env variables
+# Used by containers:
+#  - preprocess-web
+#  - redis
+# ------------------------
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: metadata-python-configmap
+  namespace: default
+data:
+  #
+  # Same env variables for django + celery
+  #
+  DJANGO_SETTINGS_MODULE: "ravens_metadata.settings.gce_deploy_settings"
+  DJANGO_DEBUG: "False"
+  SESSION_COOKIE_NAME: "ravens_metadata_gce"
+  SWAGGER_HOST: "metadata.2ravens.org"
+  EDITOR_URL: ""
+  #
+  # Redis
+  #
+  REDIS_HOST: localhost
+  #
+  # Open database settings
+  #
+  DB_HOST: "127.0.0.1"
+  DB_PORT: "3306"
+  #

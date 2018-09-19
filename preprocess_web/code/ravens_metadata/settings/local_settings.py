@@ -72,3 +72,5 @@ TEST_DIRECT_STATIC = join(dirname(BASE_DIR), 'static')
 # example with preprocess_id 2: http://localhost:1234/2
 #
 EDITOR_URL = os.environ.get('EDITOR_URL', 'http://localhost:1234/')
+if not EDITOR_URL:
+    EDITOR_URL = None   # Convert an empty string to None
