@@ -78,10 +78,3 @@ if not os.path.isdir(STATIC_ROOT):
 SESSION_COOKIE_NAME = os.environ.get('SESSION_COOKIE_NAME',
                                      '2ravens_metadata_gce')
 CSRF_COOKIE_NAME = '2ravens_metadata_gce_csrf'
-
-# -----------------------------------
-# editor url
-# -----------------------------------
-EDITOR_URL = os.environ.get('EDITOR_URL', None)
-if not EDITOR_URL:
-    EDITOR_URL = None   # Convert an empty string to None
