@@ -52,7 +52,7 @@ COPY . .
 # Copy the metadata web server start command +
 #   preprocess script
 # -------------------------------------
-COPY startup_scripts/metadata_start.sh /usr/bin//metadata_start.sh
+COPY startup_scripts/metadata_start.sh /usr/bin/metadata_start.sh
 COPY preprocess/scripts/preprocess_file.sh /usr/bin/preprocess_file.sh
 RUN chmod u+x /usr/bin/metadata_start.sh && \
     chmod u+x /usr/bin/preprocess_file.sh
