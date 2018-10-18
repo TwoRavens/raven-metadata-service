@@ -154,7 +154,7 @@
                   },
                   "invalidCount":{
                      "type":"integer",
-                     "description":"Counts the number of invalid observations, including missing values, nulls, NA's and any observation with a value enumerated in invalidSpecialCodes"
+                     "description":"Counts the number of invalid observations, including missing values, nulls, NA's and any observation with a value enumerated in invalidSpecialCodes."
                   },
                   "invalidSpecialCodes":{
                      "type":"array",
@@ -165,7 +165,7 @@
                   },
                   "validCount":{
                      "type":"integer",
-                     "description":"Counts the number of valid observations"
+                     "description":"Counts the number of valid observations. Excludes including missing values, nulls, NA's and any observation with a value enumerated in invalidSpecialCodes."
                   },
                   "uniqueCount":{
                      "type":"integer",
@@ -194,7 +194,7 @@
                         "number",
                         "string"
                      ],
-                     "description":"Average of all numeric values, which are not contained in invalidSpecialCodes",
+                     "description":"Average of all valid numeric values.",
                      "oneOf":[
                         {
                            "type":"number"
@@ -212,7 +212,7 @@
                         "number",
                         "string"
                      ],
-                     "description":"Largest numeric value observed in dataset, that is not contained in invalidSpecialCodes",
+                     "description":"Largest valid numeric value observed in dataset.",
                      "oneOf":[
                         {
                            "type":"number"
@@ -230,7 +230,7 @@
                         "number",
                         "string"
                      ],
-                     "description":"Least numeric value observed in dataset, that is not contained in invalidSpecialCodes",
+                     "description":"Smallest or lowest valid numeric value observed in dataset.",
                      "oneOf":[
                         {
                            "type":"number"
