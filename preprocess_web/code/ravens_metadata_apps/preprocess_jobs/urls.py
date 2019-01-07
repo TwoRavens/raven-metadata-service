@@ -24,7 +24,7 @@ urlpatterns = (
          schema_views.view_latest_dataset_schema,
          name='view_latest_dataset_schema'),
 
-    # Show saved workspaces for the logged in user
+    # Upload a file for preprocessing
     #
     path(r'form-basic-upload',
          views.view_basic_upload_form,
