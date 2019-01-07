@@ -5,7 +5,6 @@ import sys
 import subprocess
 
 from os.path import isfile, join, normpath
-import delegator    # helper package for subprocess
 import json
 
 from django.conf import settings
@@ -92,11 +91,6 @@ def run_r_preprocess(filename):
         print('-' * 40)
         print('failed to communicate with preprocess script')
         return
-
-
-    #sub = delegator.run(rscript_cmd)
-    #sub = Popen(rscript_cmd)
-    #print(p.read())
 
     #output_info = parse_preprocess_output(sub.out)
     output_info = parse_preprocess_output(preprocess_data[0].decode('utf-8'))
