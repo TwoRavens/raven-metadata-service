@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-12">
+        <h5>Upload a Data File for *R* Preprocessing</h5>
+
+        <p>Please upload a file to calculate summary statistics.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6  mb-4">
+       <div class="card">
+         <h5 class="card-header">upload file</h5>
+          <div class="card-body">
+            <form action="{% url 'view_r_preprocess_form' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+              {% csrf_token %}
+
+                <div class="form-group">
+                  {{ form.as_p }}
+                  <input class="btn btn-primary btn-sm text-right"  type="submit" value="submit"/>
+                </div>
+              </form>
+          </div>
+       </div>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

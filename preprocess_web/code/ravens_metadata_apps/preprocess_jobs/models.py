@@ -265,8 +265,8 @@ class PreprocessJob(TimeStampedModel):
             try:
                 return self.source_file.path
             except NotImplementedError:
-                return '(n/a for object storage)'
-        return 'n/a'
+                return '(not implemented for object storage)'
+        return None
 
 
     def source_filename(self):

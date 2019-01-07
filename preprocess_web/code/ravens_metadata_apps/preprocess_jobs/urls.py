@@ -1,6 +1,7 @@
 from django.urls import path, re_path
 
-from ravens_metadata_apps.preprocess_jobs import views, views_api
+from ravens_metadata_apps.preprocess_jobs import \
+ (views, views_api)
 from ravens_metadata_apps.dataverse_connect import views as dv_connect_views
 from ravens_metadata_apps.metadata_schemas import views as schema_views
 
@@ -24,7 +25,7 @@ urlpatterns = (
          schema_views.view_latest_dataset_schema,
          name='view_latest_dataset_schema'),
 
-    # Show saved workspaces for the logged in user
+    # Upload file through form and run preprocess
     #
     path(r'form-basic-upload',
          views.view_basic_upload_form,
