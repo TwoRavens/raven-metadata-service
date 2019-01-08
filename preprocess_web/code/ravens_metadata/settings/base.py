@@ -177,6 +177,11 @@ ALLOW_FAB_DELETE = False
 TEST_DIRECT_STATIC = None
 
 # -------------------------------
+# R related
+# -------------------------------
+R_SCRIPT_PATH = os.environ.get('R_SCRIPT_PATH', '/usr/local/bin/rscript')
+
+# -------------------------------
 # Web application, function specific
 # -------------------------------
 

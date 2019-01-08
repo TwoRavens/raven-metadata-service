@@ -147,7 +147,7 @@ class PreprocessUtil(BasicErrCheck):
                               ' found: %s' % script_path))
             return None
 
-        rscript_cmds = ['/usr/local/bin/rscript',
+        rscript_cmds = [settings.R_SCRIPT_PATH,
                         script_path,
                         self.source_file_path,
                         r_script_directory]
