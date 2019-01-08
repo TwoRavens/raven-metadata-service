@@ -16,7 +16,7 @@ from ravens_metadata_apps.preprocess_jobs.forms import \
 from django.utils.decorators import method_decorator
 from django.conf import settings
 
-from ravens_metadata_apps.r_preprocess.preprocess_util import run_preprocess
+from ravens_metadata_apps.r_preprocess.preprocess_util import PreprocessUtil
 
 def view_r_preprocess_form(request):
     """Basic test form"""
@@ -25,12 +25,16 @@ def view_r_preprocess_form(request):
         if form.is_valid():
             job = form.save()
 
-            run_preprocess(job.id)
+            putil = PreprocessUtil(job.id)
+            if putil.has_error():
+                return HttpResponse(putil.get_error_message())
+            else:
+                #return HttpResponse('worked great! %s' % job)
 
-            redirect_url = reverse('view_preprocess_job_status',
-                                   kwargs=dict(job_id=job.id))
+                redirect_url = reverse('view_job_versions',
+                                       kwargs=dict(preprocess_id=job.id))
 
-            return HttpResponseRedirect(redirect_url)
+                return HttpResponseRedirect(redirect_url)
     else:
         form = PreprocessJobForm()
 

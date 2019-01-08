@@ -26,6 +26,22 @@ def json_dump(data_dict, indent=None):
         return err_resp(user_msg)
 
 
+
+def json_loads(json_str):
+    """wrapper for json.loads that outputs an OrderedDict"""
+    try:
+        json_dict = json.loads(json_str,
+                               object_pairs_hook=OrderedDict)
+    except json.decoder.JSONDecodeError as err_obj:
+        err_msg = 'Failed to convert string to JSON: %s' % (err_obj)
+        return err_resp(err_msg)
+    except TypeError as err_obj:
+        err_msg = 'Failed to convert string to JSON: %s' % (err_obj)
+        return err_resp(err_msg)
+
+    return ok_resp(json_dict)
+
+
 def remove_nan_from_dict(info_dict):
     """For dict (or OrderedDict) objects, that contain np.Nan,
     change np.Nan to None

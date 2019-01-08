@@ -1,3 +1,9 @@
+# --------------------------------
+# Convenience class for running preprocess.R
+# with two arguments
+# (1) full path to the source file--the file to preprocess
+# (2) full path to the directory with the preprocess.R script
+# --------------------------------
 
 
 # --------------------------------
@@ -10,7 +16,7 @@ runPreprocess <- function(filename){
 
   writeLines("---START-PREPROCESS-JSON---")
   writeLines(ppJSON);
-  writeLines("---STOP-PREPROCESS-JSON---")
+  writeLines("---END-PREPROCESS-JSON---")
 
 }
 
