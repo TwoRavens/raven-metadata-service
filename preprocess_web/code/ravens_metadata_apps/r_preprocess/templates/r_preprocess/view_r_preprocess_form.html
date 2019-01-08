@@ -6,7 +6,10 @@
   <div class="row">
     <div class="col-sm-12">
         <h5>Upload a Data File for *R* Preprocessing</h5>
-
+        {% if NO_QUEUE %}
+        <h5 class='text-danger'>NOT for production, skips celery queue and blocks process</h5>
+        <h5><a href="{% url 'view_r_preprocess_form' %}" class='text-success'><u>Run regular preprocess.R</u></a></h5>
+        {% endif %}
         <p>Please upload a file to calculate summary statistics.</p>
     </div>
   </div>
@@ -16,7 +19,12 @@
        <div class="card">
          <h5 class="card-header">upload file</h5>
           <div class="card-body">
-            <form action="{% url 'view_r_preprocess_form' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            {% if NO_QUEUE %}
+              <form action="{% url 'view_r_preprocess_form_direct' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+
+            {% else %}
+              <form action="{% url 'view_r_preprocess_form' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            {% endif %}
               {% csrf_token %}
 
                 <div class="form-group">

@@ -18,8 +18,34 @@ from ravens_metadata_apps.r_preprocess.tasks import run_r_preprocess_file
 
 
 @csrf_exempt
+def view_r_preprocess_form_direct(request):
+    """Not for prod: Basic test form to run preprocess.R directly"""
+    if request.method == 'POST':
+        form = PreprocessJobForm(request.POST, request.FILES)
+        if form.is_valid():
+            job = form.save()
+
+            putil = PreprocessUtil(job.id)
+            if putil.has_error():
+                return HttpResponse(putil.get_error_message())
+
+            redirect_url = reverse('view_job_versions',
+                                   kwargs=dict(preprocess_id=job.id))
+            return HttpResponseRedirect(redirect_url)
+    else:
+        form = PreprocessJobForm()
+
+    info_dict = dict(form=form,
+                     NO_QUEUE=True)
+
+    return render(request,
+                  'r_preprocess/view_r_preprocess_form.html',
+                  info_dict)
+
+
+@csrf_exempt
 def view_r_preprocess_form(request):
-    """Basic test form"""
+    """Basic test form to run preprocess.R via celery queue"""
     if request.method == 'POST':
         form = PreprocessJobForm(request.POST, request.FILES)
         if form.is_valid():
