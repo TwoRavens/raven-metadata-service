@@ -1,23 +1,23 @@
 import json, collections
+from decimal import Decimal
+
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
-from decimal import Decimal
+from django.conf import settings
 from django.http import \
     (JsonResponse, HttpResponse,
-     Http404, HttpResponseRedirect,
-     QueryDict)
+     Http404, HttpResponseRedirect)
+
 from django.contrib.auth.decorators import login_required
-from django.core.files.base import ContentFile
 from ravens_metadata_apps.preprocess_jobs.forms import \
-    (PreprocessJobForm, RetrieveRowsForm, CustomStatisticsForm,
-     FORMAT_JSON, FORMAT_CSV,
-     DEFAULT_START_ROW, DEFAULT_NUM_ROWS)
-from django.utils.decorators import method_decorator
-from django.conf import settings
+    (PreprocessJobForm, FORMAT_JSON, FORMAT_CSV)
 
 from ravens_metadata_apps.r_preprocess.preprocess_util import PreprocessUtil
+from ravens_metadata_apps.r_preprocess.tasks import run_r_preprocess_file
 
+
+@csrf_exempt
 def view_r_preprocess_form(request):
     """Basic test form"""
     if request.method == 'POST':
@@ -25,16 +25,16 @@ def view_r_preprocess_form(request):
         if form.is_valid():
             job = form.save()
 
-            putil = PreprocessUtil(job.id)
-            if putil.has_error():
-                return HttpResponse(putil.get_error_message())
-            else:
-                #return HttpResponse('worked great! %s' % job)
-
-                redirect_url = reverse('view_job_versions',
-                                       kwargs=dict(preprocess_id=job.id))
-
-                return HttpResponseRedirect(redirect_url)
+            run_r_preprocess_file.delay(job.id)
+            #putil = PreprocessUtil(job.id)
+            #if putil.has_error():
+            #    return HttpResponse(putil.get_error_message())
+            #else:
+            #    redirect_url = reverse('view_job_versions',
+            #                           kwargs=dict(preprocess_id=job.id))
+            redirect_url = reverse('view_preprocess_job_status',
+                                   kwargs=dict(job_id=job.id))
+            return HttpResponseRedirect(redirect_url)
     else:
         form = PreprocessJobForm()
 
