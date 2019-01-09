@@ -1,5 +1,8 @@
 """
-Run the preprocess job
+Run the R preprocess script
+NOTE: The "preprocess.R" script is located at the top of this repository
+    - /rsripts/preprocess.R
+    - /rsripts/runPreprocess.R  # wrapper for preprocess.R
 """
 import logging
 import sys
@@ -132,8 +135,10 @@ class PreprocessUtil(BasicErrCheck):
         r_script_directory = normpath(join(\
                                 settings.BASE_DIR,
                                 '..',
-                                'ravens_metadata_apps',
-                                'r_preprocess',
+                                '..',
+                                '..',
+                                #'ravens_metadata_apps',
+                                #'r_preprocess',
                                 'rscripts'))
 
         if not isdir(r_script_directory):

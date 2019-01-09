@@ -185,7 +185,7 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
     datasetLevelInfo[["discovery"]] <- mydisco
 
     jsontest<-rjson:::toJSON(datasetLevelInfo)
-    write(jsontest,file="test.json")
+    #write(jsontest,file="test.json")
       ## Construct Metadata file that at highest level has list of dataset-level, and variable-level information
     largehold<- list(dataset=datasetLevelInfo, variables=hold)
 
