@@ -1,4 +1,4 @@
-FROM python:3.6.4
+FROM python:3.6.8
 MAINTAINER TwoRavens http://2ra.vn/
 
 LABEL organization="Two Ravens" \
@@ -15,6 +15,14 @@ RUN apt-get update && \
     iputils-ping \
     telnet \
     vim
+
+# -------------------------------------
+# Install R for preprocess.R
+# -------------------------------------
+RUN apt-get install -y r-base
+RUN R -e 'install.packages("rjson", repos="http://cran.rstudio.org")' && \
+    R -e 'install.packages("DescTools", repos="http://cran.rstudio.org")' && \
+    R -e 'install.packages("XML", repos="http://cran.rstudio.org")'
 
 # -------------------------------------
 # Set the workdir
@@ -39,9 +47,10 @@ VOLUME /raven_metadata
 EXPOSE 8080
 
 # -------------------------------------
-# Set env variable
+# Set env variables
 # -------------------------------------
-ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
+ENV DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings \
+    R_SCRIPT_PATH=/usr/bin/Rscript
 
 # -------------------------------------
 # Copy over the rest of the repository

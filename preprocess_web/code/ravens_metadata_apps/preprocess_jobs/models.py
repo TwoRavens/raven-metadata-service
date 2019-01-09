@@ -41,6 +41,8 @@ PREPROCESS_STATES = (STATE_RECEIVED,
 
 PREPROCESS_CHOICES = [(x, x) for x in PREPROCESS_STATES]
 
+NOT_IMPLEMENTED_FOR_OBJECT_STORAGE = ('Not implemented for object storage'
+                                      ' (e.g AWS S3, Google Buckets, etc)')
 
 class PreprocessJob(TimeStampedModel):
     """Initial, minimal model"""
@@ -263,11 +265,10 @@ class PreprocessJob(TimeStampedModel):
 
         if self.source_file:
             try:
-                return self.source_file.path
+                return ok_resp(self.source_file.path)
             except NotImplementedError:
-                return '(n/a for object storage)'
-        return 'n/a'
-
+                return err_resp(NOT_IMPLEMENTED_FOR_OBJECT_STORAGE)
+        return err_resp('The "source_file" is not set')
 
     def source_filename(self):
         """return the source filename (basename only)"""

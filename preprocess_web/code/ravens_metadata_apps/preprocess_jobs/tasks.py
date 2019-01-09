@@ -92,8 +92,8 @@ def preprocess_csv_file(job_id, **kwargs):
 
     updater = PreprocessResultUpdater(**result_info)
 
-    if updater.has_error:
-        return err_resp(updater.error_message)
+    if updater.has_error():
+        return err_resp(updater.get_error_message())
 
     return ok_resp('All set')
 

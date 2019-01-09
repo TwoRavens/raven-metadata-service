@@ -2,15 +2,17 @@
 the PreprocessJob appropriately"""
 import json
 from django.utils import timezone
+from django.core.files.base import ContentFile
+
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob,
      STATE_SUCCESS, STATE_FAILURE)
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.utils.json_util import json_dump
-from django.core.files.base import ContentFile
+from ravens_metadata_apps.utils.basic_err_check import \
+    (BasicErrCheck,)
 
-
-class PreprocessResultUpdater(object):
+class PreprocessResultUpdater(BasicErrCheck):
     """Convenience class for updating preprocess"""
     def __init__(self, success=False, job_id=None, user_message=None, **kwargs):
         self.success = success
@@ -20,16 +22,8 @@ class PreprocessResultUpdater(object):
         self.preprocess_data = kwargs.get('data', None)
         self.elapsed_time = kwargs.get('elapsed_time', None)
 
-        # ----------
-        self.has_error = False
-        self.error_message = None
-
         self.update_preprocess_job()
 
-    def add_error_message(self, err_msg):
-        """Add error message"""
-        self.has_error = True
-        self.error_message = err_msg
 
     def update_preprocess_job(self):
         """Retrieve the PreprocessJob and update it"""

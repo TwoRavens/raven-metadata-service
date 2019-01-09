@@ -30,6 +30,8 @@ urlpatterns = [
 
     path('preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
 
+    path('r-preprocess/', include('ravens_metadata_apps.r_preprocess.urls')),
+
     path('api/', include('ravens_metadata_apps.api_docs.urls')),
 
     path('metadata/', include('ravens_metadata_apps.metadata_schemas.urls')),

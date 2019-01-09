@@ -74,3 +74,9 @@ TEST_DIRECT_STATIC = join(dirname(BASE_DIR), 'static')
 EDITOR_URL = os.environ.get('EDITOR_URL', None) #'http://localhost:1234/')
 if not EDITOR_URL:
     EDITOR_URL = None   # Convert an empty string to None
+
+import logging
+logging.basicConfig(
+        level = logging.DEBUG,
+        format = '%(asctime)s %(levelname)s %(message)s',
+    )

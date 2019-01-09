@@ -20,8 +20,8 @@ BASE_DIR = dirname(dirname(os.path.abspath(__file__)))
 # Add path to celery task code
 #
 PREPROCESS_DIR = join(dirname(dirname(dirname(BASE_DIR))),
-                          'preprocess',
-                          'code')
+                      'preprocess',
+                      'code')
 sys.path.append(PREPROCESS_DIR)
 
 # Quick-start development settings - unsuitable for production
@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.metadata_schemas',
     'ravens_metadata_apps.preprocess_jobs',
+    'ravens_metadata_apps.r_preprocess',
     'ravens_metadata_apps.api_docs',
     'ravens_metadata_apps.content_pages', # user model
     'ravens_metadata_apps.dataverse_connect', # preprocess dataverse files
@@ -174,6 +175,11 @@ CELERY_RESULT_BACKEND = 'redis://%s:%d' % (REDIS_HOST, REDIS_PORT)
 ALLOW_FAB_DELETE = False
 
 TEST_DIRECT_STATIC = None
+
+# -------------------------------
+# R related
+# -------------------------------
+R_SCRIPT_PATH = os.environ.get('R_SCRIPT_PATH', '/usr/local/bin/rscript')
 
 # -------------------------------
 # Web application, function specific
