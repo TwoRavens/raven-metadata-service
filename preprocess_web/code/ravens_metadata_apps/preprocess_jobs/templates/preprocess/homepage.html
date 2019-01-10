@@ -15,11 +15,6 @@
                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a></p>
                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_r_preprocess_form' %}" role="button">Run "R" Preprocess</a></p>
 
-                    {% if debug %}{% endif %}
-                      <p><a class="btn btn-sm btn-warning" href="{% url 'view_r_preprocess_form_direct' %}" role="button">Run "R" Preprocess DIRECT
-                        <br />(for testing, holds up process)</a></p>
-
-
                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a></p>
                   </div>
                </div>
@@ -64,8 +59,15 @@
         <div class="col-lg-4 mb-4">
            <div class="card">
               <h5 class="card-header">Other Links</h5>
-              <div class="card-body">
-                - <a href="{% url 'view_variable_definitions' %}">variable defns (latest, .rst)
+              <div class="card-body text-left">
+                <ul>
+                  <li><a href="{% url 'view_variable_definitions' %}">variable defns (latest, .rst)</a></li>
+
+                  {% if debug %}
+                  <li><a class="btn btn-sm btn-warning" href="{% url 'view_r_preprocess_form_direct' %}" role="button">"R" Preprocess DIRECT</a>
+                      <br /><small>(for testing, *blocks* process)</small></li>
+                  {% endif %}
+                </ul>
               </div>
            </div>
         </div>
