@@ -3,7 +3,7 @@
 
     {% block extra_header %}
 
-        {% load staticfiles %}
+        {% load static %}
         <script src="{% static "js/app.js" %}"></script>
         <script>
         var input_json = "{{ job|escapejs }}";
