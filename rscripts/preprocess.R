@@ -9,7 +9,7 @@ library(DescTools)
 library(XML)
 
 
-preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, filename=NULL, filesep=","){
+preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, filename=NULL){
 
   #config=jsonlite::fromJSON("config.json")
   #metadataurl=config$metadata
@@ -22,7 +22,18 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
         mydata<-testdata
 
     }else if(!is.null(filename)){
+        # -----------------------------------
+        # Read an input file.
+        # -----------------------------------
+        filesep<-","  # default to comma delimited
+        if (endsWith(tolower(filename), '.csv')){
+          filesep<-","
+        } else if (endsWith(tolower(filename), '.tab')){
+          filesep<-"\t"
+        }
+
         mydata<-tryCatch(expr=read.delim(file=filename, sep=filesep), error=function(e) NULL)
+        
     }else{
         path<-paste("http://",hostname,"/api/access/datafile/",fileid,sep="")
         mydata<-tryCatch(expr=read.delim(file=path), error=function(e) NULL)

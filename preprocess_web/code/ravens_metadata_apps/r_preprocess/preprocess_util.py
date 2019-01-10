@@ -9,7 +9,8 @@ import sys
 import subprocess
 import time
 
-from os.path import isdir, isfile, join, normpath
+import os
+from os.path import isdir, isfile, join, normpath, splitext
 import json
 
 from django.conf import settings
@@ -20,8 +21,12 @@ from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.utils.json_util import \
     (json_loads,)
+from ravens_metadata_apps.utils.random_util import \
+    (get_alphanumeric_lowercase,)
 from ravens_metadata_apps.preprocess_jobs.job_util import \
     (JobUtil,)
+from ravens_metadata_apps.preprocess_jobs.models import \
+    (NOT_IMPLEMENTED_FOR_OBJECT_STORAGE,)
 from ravens_metadata_apps.preprocess_jobs.preprocess_result_updater import \
     (PreprocessResultUpdater)
 
@@ -40,6 +45,7 @@ class PreprocessUtil(BasicErrCheck):
         self.start_time = time.time()
 
         # Right now this isn't working for AWS S3, Google Buckets
+        self.is_temp_source_file = False
         self.source_file_path = None
 
         self.run_steps()
@@ -70,6 +76,19 @@ class PreprocessUtil(BasicErrCheck):
             print(updater.get_error_message())
 
 
+        # ---------------------------------
+        # Delete temporary source file, if there is one
+        # ---------------------------------
+        self.delete_temp_source_file()
+
+    def delete_temp_source_file(self):
+        """For cleanup, if appropriate, delete the temp source file"""
+
+        if self.is_temp_source_file and self.source_file_path:
+            if isfile(self.source_file_path):
+                os.remove(self.source_file_path)
+                LOGGER.debug('temp file deleted: %s', self.source_file_path)
+
     def run_steps(self):
         """Run Preprocss R on a file"""
         if self.has_error():
@@ -84,6 +103,10 @@ class PreprocessUtil(BasicErrCheck):
             return
 
         self.step_30_run_preprocess_script(rscript_commands)
+
+        # cleanup step
+        #
+        self.delete_temp_source_file()
 
 
     def step_10_retrieve_job(self):
@@ -105,14 +128,101 @@ class PreprocessUtil(BasicErrCheck):
 
         self.job_obj = job_info.result_obj
 
+        self.step_15_copy_source_to_temp()
+
+        return
         # Check for the source file path
         #
         filepath_info = self.job_obj.source_file_path()
-        if not filepath_info.success:
+        if filepath_info.success:
+            self.source_file_path = filepath_info.result_obj
+            return
+
+        # We didn't get a path--either there is no file or
+        #   its in object storage (S3, google buckets, etc)
+        #
+        if filepath_info.err_msg != NOT_IMPLEMENTED_FOR_OBJECT_STORAGE:
             self.add_err_msg(filepath_info.err_msg)
             return
 
-        self.source_file_path = filepath_info.result_obj
+        # It's object storage (S3, google buckets, etc)
+        # So copy it locally
+        #
+        self.step_15_copy_source_to_temp()
+
+
+    def step_15_copy_source_to_temp(self):
+        """For R preprocess, copy the file
+        from object storage (S3, google buckets, etc)
+        to a the local file system"""
+        if self.has_error():
+            return
+
+        # ------------------------------------
+        # Set the temp file flag
+        # ------------------------------------
+        self.is_temp_source_file = True
+
+        # ------------------------------------
+        # Get the temp directory name
+        # ------------------------------------
+        temp_src_dir = self.get_temp_directory()
+        if not temp_src_dir:
+            return
+
+        # ------------------------------------
+        # Format the full destination path
+        # ------------------------------------
+        _src_name, src_ext = splitext(self.job_obj.source_file.name)
+        temp_fname = 'temp_src_%s' % get_alphanumeric_lowercase(7)
+        if src_ext:
+            temp_fname += '.%s' % src_ext
+
+        self.source_file_path = join(temp_src_dir, temp_fname)
+
+        # ------------------------------------
+        # Get source content
+        # ------------------------------------
+        self.job_obj.source_file.open(mode='rb')
+        fcontent = self.job_obj.source_file.read()
+        self.job_obj.source_file.close()
+
+        # ------------------------------------
+        # Write to temp file`
+        # ------------------------------------
+        fh_out = open(self.source_file_path, 'wb')
+        fh_out.write(fcontent)
+        fh_out.close()
+
+        LOGGER.debug('Temp source file written: %s', self.source_file_path)
+
+
+    def get_temp_directory(self):
+        """
+        Create the directory for storing the source file for preprocess.R
+        If fail to create directory, return None
+        """
+        # dest file name
+        #
+        if not settings.PREPROCESS_DATA_DIR:
+            self.add_err_msg(('Could not copy source file to local system.'
+                              ' "PREPROCESS_DATA_DIR" not defined.'))
+            return None
+
+        # create the directory
+        #
+        temp_src_dir = join(settings.PREPROCESS_DATA_DIR, 'source_file_temp')
+        if not isdir(temp_src_dir):
+            try:
+                os.makedirs(temp_src_dir, exist_ok=True)
+            except OSError:
+                self.add_err_msg(\
+                    ('Could not copy source file to local system.'
+                     ' Unable to create directory: %s') % temp_src_dir)
+                return None
+
+        return temp_src_dir
+
 
     def step_20_get_script_commands(self):
         """Run R Preprocess via python subprocess"""

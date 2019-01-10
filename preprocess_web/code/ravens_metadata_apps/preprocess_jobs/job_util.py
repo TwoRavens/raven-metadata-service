@@ -28,7 +28,7 @@ class JobUtil(object):
     @staticmethod
     def get_preprocess_job_object(preprocess_id):
         """Return a PreprocessJob to check its status"""
-        print('preprocess_id for get_preprocess_job_dict ', preprocess_id )
+        #print('preprocess_id for get_preprocess_job_dict ', preprocess_id )
         try:
             ze_job = PreprocessJob.objects.get(pk=preprocess_id)
         except PreprocessJob.DoesNotExist:
@@ -39,7 +39,7 @@ class JobUtil(object):
     @staticmethod
     def get_preprocess_job_dict(preprocess_id):
         """Return a PreprocessJob to check its status"""
-        print('preprocess_id for get_preprocess_job_dict ', preprocess_id )
+        #print('preprocess_id for get_preprocess_job_dict ', preprocess_id )
         try:
             ze_job = PreprocessJob.objects.get(pk=preprocess_id)
         except PreprocessJob.DoesNotExist:
