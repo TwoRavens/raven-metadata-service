@@ -8,4 +8,4 @@ import m from 'mithril';
 var root = document.body
 var testDiv = document.getElementById("mdiv-test");
 
-m.render(testDiv, "Generated from Mithril in index.js")
+m.render(testDiv, 'Generated from Mithril in "index.js"')

@@ -5,12 +5,13 @@ from ravens_metadata_apps.utils.view_helper import get_json_success
 from django.conf import settings
 
 
-def view_datamart_test(request):
+def view_datamart_page(request):
     """Render page that has access to webpack, etc"""
 
-    info_dict = dict(VAR_FROM_DJANGO_SERVER=('(This text generated from'
-                                             ' Django server)'),
-                    )
+    info_text = ('Text generated from the Django server.'
+                 ' See "def view_datamart_page"')
+
+    info_dict = dict(VAR_FROM_DJANGO_SERVER=info_text)
 
     return render(request,
                   'datamart-test.html',
