@@ -128,9 +128,9 @@ class PreprocessUtil(BasicErrCheck):
 
         self.job_obj = job_info.result_obj
 
-        self.step_15_copy_source_to_temp()
+        #self.step_15_copy_source_to_temp()
+        #return
 
-        return
         # Check for the source file path
         #
         filepath_info = self.job_obj.source_file_path()
