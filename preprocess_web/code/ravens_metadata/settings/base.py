@@ -13,12 +13,15 @@ import sys, json
 import os
 from os.path import abspath, dirname, isfile, join
 
+
+# ---------------------------------------------
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# ---------------------------------------------
 BASE_DIR = dirname(dirname(os.path.abspath(__file__)))
 
-#
+# ---------------------------------------------
 # Add path to celery task code
-#
+# ---------------------------------------------
 PREPROCESS_DIR = join(dirname(dirname(dirname(BASE_DIR))),
                       'preprocess',
                       'code')
@@ -103,9 +106,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ravens_metadata.wsgi.application'
 
 
+# ---------------------------------------------
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
+# ---------------------------------------------
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -114,9 +118,10 @@ DATABASES = {
 }
 
 
+# ---------------------------------------------
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
-
+# ---------------------------------------------
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -169,21 +174,21 @@ CELERY_RESULT_BACKEND = 'redis://%s:%d' % (REDIS_HOST, REDIS_PORT)
 #CELERY_RESULT_BACKEND = 'redis://localhost'
 
 
-# -------------------------------
+# ---------------------------------------------
 # Fabric related
-# -------------------------------
+# ---------------------------------------------
 ALLOW_FAB_DELETE = False
 
 TEST_DIRECT_STATIC = None
 
-# -------------------------------
+# ---------------------------------------------
 # R related
-# -------------------------------
+# ---------------------------------------------
 R_SCRIPT_PATH = os.environ.get('R_SCRIPT_PATH', '/usr/local/bin/rscript')
 
-# -------------------------------
+# ---------------------------------------------
 # Web application, function specific
-# -------------------------------
+# ---------------------------------------------
 
 # The number of rows that may be retrieved from a
 # source file--though API or web form
@@ -191,11 +196,18 @@ R_SCRIPT_PATH = os.environ.get('R_SCRIPT_PATH', '/usr/local/bin/rscript')
 MAX_SOURCE_FILE_ROWS_TO_RETRIEVE = os.environ.get('MAX_SOURCE_FILE_ROWS_TO_RETRIEVE', 1000)
 REQUESTS_TIMEOUT = 7 # 1 second for server to respond
 
-# -------------------------------
+# ---------------------------------------------
 # Set this link if the editor is available
-# -------------------------------
+# ---------------------------------------------
 EDITOR_URL = os.environ.get('EDITOR_URL', None)
 if not EDITOR_URL:
     EDITOR_URL = None   # Convert an empty string to None
 
 TEST_ENV_VARIABLE = os.environ.get('TEST_ENV_VARIABLE', '(nothing set)')
+
+
+# ---------------------------------------------
+# Used for sharing data between docker containers
+# ---------------------------------------------
+PREPROCESS_DATA_DIR = join(dirname(dirname(dirname(BASE_DIR))),
+                           'test_data')

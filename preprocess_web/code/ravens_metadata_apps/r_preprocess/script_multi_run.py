@@ -59,3 +59,9 @@ def run_one():
 if __name__ == '__main__':
     #run_jobs()
     run_one()
+
+"""
+from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
+pj = PreprocessJob.objects.filter(is_success=True).first()
+pj.source_file
+"""
