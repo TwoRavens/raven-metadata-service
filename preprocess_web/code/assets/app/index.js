@@ -1,12 +1,11 @@
-/*
-import '../css/app.css';
-import '../pkgs/bootstrap/css/bootstrap-theme.min.css';
-import '../pkgs/Ladda/dist/ladda-themeless.min.css';
-import '../../node_modules/hopscotch/dist/css/hopscotch.css';
 
-import hopscotch from 'hopscotch';
-*/
-//import '../js/test.js';
+import '../pkgs/bootstrap4/css/bootstrap.min.css';
+
 import hopscotch from 'hopscotch';
 
 import m from 'mithril';
+
+var root = document.body
+var testDiv = document.getElementById("mdiv-test");
+
+m.render(testDiv, "Generated from Mithril in index.js")

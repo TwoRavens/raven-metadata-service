@@ -8,11 +8,14 @@ from django.conf import settings
 def view_datamart_test(request):
     """Render page that has access to webpack, etc"""
 
-    info_dict = dict(SOME_DJANGO_VAR='hello',)
+    info_dict = dict(VAR_FROM_DJANGO_SERVER=('(This text generated from'
+                                             ' Django server)'),
+                    )
 
     return render(request,
                   'datamart-test.html',
                   info_dict)
+
 
 def view_homepage(request):
     """landing page"""

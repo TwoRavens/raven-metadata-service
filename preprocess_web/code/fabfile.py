@@ -103,6 +103,12 @@ def run_shell():
     local(run_shell_cmd)
 
 @task
+def webpack_prod():
+    """Generate the webpack dist files for prod"""
+    cmd_webpack = './node_modules/.bin/webpack --config webpack.prod.config.js'
+    local(cmd_webpack)
+
+@task
 def run_web():
     """Start webpack + django dev server"""
     init_db()
