@@ -5,12 +5,22 @@ from ravens_metadata_apps.utils.view_helper import get_json_success
 from django.conf import settings
 
 
+def view_datamart_test(request):
+    """Render page that has access to webpack, etc"""
+
+    info_dict = dict(SOME_DJANGO_VAR='hello',)
+
+    return render(request,
+                  'datamart-test.html',
+                  info_dict)
+
 def view_homepage(request):
     """landing page"""
     return render(request,
                   'preprocess/homepage.html',
                   {'HIDE_HOME_BUTTON':True,
                    'TEST_ENV_VARIABLE': settings.TEST_ENV_VARIABLE})
+
 
 def view_monitoring_alive(request):
     """For kubernetes liveness check"""

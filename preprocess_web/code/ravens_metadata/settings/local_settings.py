@@ -37,7 +37,7 @@ SESSION_COOKIE_NAME = 'ravens_metadata_local'
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [join(dirname(BASE_DIR), 'static')]
+#STATICFILES_DIRS = [join(dirname(BASE_DIR), 'static')]
 
 # where static files are collected
 STATIC_ROOT = join(LOCAL_SETUP_DIR, 'staticfiles')

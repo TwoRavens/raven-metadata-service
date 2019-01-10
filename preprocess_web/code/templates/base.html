@@ -1,6 +1,7 @@
 {% load static %}
 <!doctype html>
 <html>
+  {% block page_head %}
   <head>
     <link rel="shortcut icon" type="image/png" href="{% static "images/TwoRavens_favicon.png" %}"/>
     <title>{% block title_block %}
@@ -30,6 +31,7 @@
     {% endblock %}
 
   </head>
+  {% endblock %}
 
   <body>
   {% block body_content %}
@@ -87,7 +89,7 @@
     </ul>
   </div>
 </nav>
-  <div class="container" id="main_block" style="xheight: 100%; xwidth: 100%;"><br />
+  <div class="container" id="main_block" style=""><br />
 
       {% block main_content %}
       {% endblock %}
@@ -97,9 +99,6 @@
 <script>
 function goBack() {
     window.history.back();
-}
-function home() {
-window.location.href = "http://127.0.0.1:8080/";
 }
 </script>
 </html>

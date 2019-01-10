@@ -31,7 +31,13 @@ Open a Terminal, from the top of this repository, run:
 # from within ~/raven-metadata-service
 workon preprocess
 cd preprocess_web/code
+npm install
+```
 
+
+
+
+```
 # -------------------------
 # Preprocess a single file,
 # Write output to screen
