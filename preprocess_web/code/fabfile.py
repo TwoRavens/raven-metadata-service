@@ -103,15 +103,34 @@ def run_shell():
     local(run_shell_cmd)
 
 @task
+def webpack_prod():
+    """Generate the webpack dist files for prod"""
+    cmd_webpack = './node_modules/.bin/webpack --config webpack.prod.config.js'
+    local(cmd_webpack)
+
+@task
 def run_web():
-    """Start web server"""
+    """Start webpack + django dev server"""
     init_db()
+
+    commands = [
+        # start webpack
+        'npm start',
+    ]
+    proc_list = [subprocess.Popen(command, shell=True,
+                                  stdin=sys.stdin, stdout=sys.stdout,
+                                  stderr=sys.stderr)
+                 for command in commands]
+
     print('init db complete; start web server')
     run_webserver_cmd = ('python manage.py runserver 8080')
 
-    print('run web server: %s' % run_webserver_cmd)
-
-    local(run_webserver_cmd)
+    try:
+        print('run web server: %s' % run_webserver_cmd)
+        local(run_webserver_cmd)
+    finally:
+        for proc in proc_list:
+            os.kill(proc.pid, signal.SIGKILL)
 
 @task
 def init_db():
