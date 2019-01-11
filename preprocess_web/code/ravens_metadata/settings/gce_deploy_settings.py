@@ -78,3 +78,13 @@ if not os.path.isdir(STATIC_ROOT):
 SESSION_COOKIE_NAME = os.environ.get('SESSION_COOKIE_NAME',
                                      '2ravens_metadata_gce')
 CSRF_COOKIE_NAME = '2ravens_metadata_gce_csrf'
+
+
+# -----------------------------------
+# Use the webpack "dist" directory in production:
+#  /preprocess_web/code/assets/dist
+# -----------------------------------
+WEBPACK_LOADER['DEFAULT'].update(\
+    dict(BUNDLE_DIR_NAME='dist/',
+         STATS_FILE=join(BASE_DIR, '..', 'webpack-stats-prod.json'))\
+    )
