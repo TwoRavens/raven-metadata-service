@@ -86,5 +86,5 @@ CSRF_COOKIE_NAME = '2ravens_metadata_gce_csrf'
 # -----------------------------------
 WEBPACK_LOADER['DEFAULT'].update(\
     dict(BUNDLE_DIR_NAME='dist/',
-         STATS_FILE=join(BASE_DIR, 'webpack-stats-prod.json'))\
+         STATS_FILE=join(BASE_DIR, '..', 'webpack-stats-prod.json'))\
     )
