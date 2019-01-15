@@ -153,9 +153,9 @@ class PreprocessJob(TimeStampedModel):
         if self.metadata_file:
             data_ok, data_or_err = self.get_metadata()
             if data_ok:
-                od['data'] = data_or_err
+                od['summary_metadata'] = data_or_err
             else:
-                od['data'] = 'ERROR: %s' % data_or_err
+                od['summary_metadata'] = 'ERROR: %s' % data_or_err
 
         return od
 

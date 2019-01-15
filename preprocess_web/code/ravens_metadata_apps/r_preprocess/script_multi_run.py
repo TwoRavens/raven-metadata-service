@@ -3,6 +3,7 @@ script to run multiple r preprocess jobs against the celery queue
 """
 import django
 import requests
+from django.urls import reverse
 import subprocess
 import sys
 import os
@@ -10,7 +11,7 @@ from os.path import \
     (abspath, basename, dirname, isdir, isfile, join, splitext)
 
 
-PROJECT_DIR = dirname(dirname(dirname(dirname(abspath(__file__)))))
+PROJECT_DIR = dirname(dirname(dirname(dirname(dirname(abspath(__file__))))))
 PREPROCESS_DIR = join(PROJECT_DIR, 'preprocess', 'code')
 sys.path.append(PREPROCESS_DIR)
 PREPROCESS_WEB_DIR = join(PROJECT_DIR, 'preprocess_web', 'code')
@@ -27,33 +28,37 @@ except Exception as e:
 
 
 def run_jobs():
+    """Run several R files at once"""
+    fnames = ['data_student.tab',
+              'fearonLaitin.csv',
+              'Census_Judicial_DP_Master_782015.tab',
+              'titanic.csv',
+              'census-demographics.tab']
 
-    for x in range(5):
-        pass
-    """
-    sub = subprocess.Popen(rscript_commands,
-                           stdout=subprocess.PIPE)
+    for fname in fnames:
+        print('-' * 40)
+        print('Process file: ', fname)
+        print('-' * 40)
+        fpath = join(PROJECT_DIR, 'test_data', fname)
+        run_one(fpath)
 
-    preprocess_data = sub.communicate()
 
-    if not preprocess_data:
-        error_msg = 'Failed to communicate with preprocess script'
-        self.add_err_msg(error_msg)
-        return
+def run_one(source_file=join(PROJECT_DIR, 'test_data', 'data_student.tab')):
+    """run preprocess R"""
+    print('source_file', source_file)
+    domain = 'http://127.0.0.1:8080'
 
-    try:
-        #preprocess_data = preprocess_data[0]
-        preprocess_utf8 = preprocess_data[0].decode('utf-8')
-    """
+    url = '%s%s' % (domain, reverse('api_r_preprocess_form'))
+    print('url', url)
 
-def run_one():
+    #fpath = join(PROJECT_DIR, 'test_data', 'data_student.tab')
+    #fpath = join(PROJECT_DIR, 'test_data', 'editor_test.csv')
+    files = dict(source_file=open(source_file, 'rb'))
 
-    source_file
-    url = 'https://httpbin.org/post'
->>> files = {'file': open('report.xls', 'rb')}
+    r = requests.post(url, files=files)
 
->>> r = requests.post(url, files=files)
->>> r.text
+    print(r.text)
+    print('status_code', r.status_code)
 
 
 if __name__ == '__main__':
@@ -64,4 +69,11 @@ if __name__ == '__main__':
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 pj = PreprocessJob.objects.filter(is_success=True).first()
 pj.source_file
+
+curl  -X POST  -i  -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/data_student.tab http://127.0.0.1:8080/r-preprocess/api-run-in-queue
+
+
+curl -i -X POST http://127.0.0.1:8080/r-preprocess/api-run-in-queue \
+  -H "Content-Type: text/xml" \
+  --data-binary "@path/to/file"
 """
