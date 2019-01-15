@@ -456,9 +456,11 @@ def show_job_info(request, job_id):
             return HttpResponse('<pre>%s</pre>' % jstring.result_obj)
         return JsonResponse(get_json_error(jstring.err_mg))
 
+    base_url = get_baseurl_from_request(request)
+
     user_msg = dict(success=True,
-                    message='some message',
-                    callback_url=job.get_job_status_link(),
+                    message='Preprocess Job data',
+                    callback_url=job.get_job_status_link(base_url),
                     data=job.as_dict())
 
     return JsonResponse(user_msg)
