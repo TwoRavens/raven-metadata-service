@@ -45,6 +45,7 @@ def run_jobs():
 
 def run_one(source_file=join(PROJECT_DIR, 'test_data', 'data_student.tab')):
     """run preprocess R"""
+    print('source_file', source_file)
     domain = 'http://127.0.0.1:8080'
 
     url = '%s%s' % (domain, reverse('api_r_preprocess_form'))
@@ -61,11 +62,18 @@ def run_one(source_file=join(PROJECT_DIR, 'test_data', 'data_student.tab')):
 
 
 if __name__ == '__main__':
-    run_jobs()
-    #run_one()
+    #run_jobs()
+    run_one()
 
 """
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 pj = PreprocessJob.objects.filter(is_success=True).first()
 pj.source_file
+
+curl  -X POST  -i  -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-metadata-service/test_data/data_student.tab http://127.0.0.1:8080/r-preprocess/api-run-in-queue
+
+
+curl -i -X POST http://127.0.0.1:8080/r-preprocess/api-run-in-queue \
+  -H "Content-Type: text/xml" \
+  --data-binary "@path/to/file"
 """

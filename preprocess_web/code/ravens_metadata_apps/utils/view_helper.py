@@ -48,14 +48,14 @@ def get_json_success(user_msg, **kwargs):
     info['success'] = True
     info['message'] = user_msg
 
-    if 'data' in kwargs:
-        info['data'] = kwargs['data']
-
     # add on additional data pieces
     for key, val in kwargs.items():
         if key == 'data':
             continue
         info[key] = val
+
+    if 'data' in kwargs:
+        info['data'] = kwargs['data']
 
     return info
 
