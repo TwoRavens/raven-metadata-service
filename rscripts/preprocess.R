@@ -1,7 +1,8 @@
 ##
 ##  preprocess.R
 ##
-##  May 29, 2015
+##  January 16, 2019
+##  revised from TwoRavens preprocess file, to work for Metadata and Datamart services
 ##
 
 library(rjson)
@@ -9,7 +10,7 @@ library(DescTools)
 library(XML)
 
 
-preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, filename=NULL){
+preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, filename=NULL, datamart=TRUE){
 
   #config=jsonlite::fromJSON("config.json")
   #metadataurl=config$metadata
@@ -137,73 +138,74 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
     #else, we initialise the keys with blank values.
 
     if(metadataflag==1){
-     dataseinf=list(stdyDscr=StudyDesc,fileDscr=FileDesc)
-      datasetLevelInfo<-list(private=FALSE,stdyDscr=StudyDesc,fileDscr=FileDesc)
+        dataseinf=list(stdyDscr=StudyDesc,fileDscr=FileDesc)
+        datasetLevelInfo<-list(private=FALSE,stdyDscr=StudyDesc,fileDscr=FileDesc)
 
-
-      jsontest<-rjson:::toJSON(datasetLevelInfo)
-    #  write(jsontest,file="test.json")
-
+    # jsontest<-rjson:::toJSON(datasetLevelInfo)
+    # write(jsontest,file="test.json")
     }
 
     else{
     datasetLevelInfo<-list(private=FALSE,stdyDscr=list(citation=list(titlStmt=list(titl="",IDNo=list("-agency"="","#text"="")),rspStmt=list(Authentry=""),biblcit="No Data Citation Provided")),fileDscr=list("-ID"="",fileTxt=list(fileName="",dimensns=list(caseQnty="",varQnty=""),fileType=""),notes=list("-level"="","-type"="","-subject"="","#text"="")))    # This signifies that that the metadata summaries are not privacy protecting
     }
     #datasetitationinfo
-
     print("dataset level info")
     print(datasetLevelInfo)
 
-    # adding the covariance matrix for all numeric variables to the datasetLevelInfo
-    # using 'complete.obs' is safer than 'pairwise.complete.obs', although it listwise deletes on entire data.frame
-    mydata2 <- mydata
-    # If only two unique (non-missing) values, coerce to numeric for correlation matrix
-    for(i in 1:ncol(mydata2)){
-        temp<-mydata2[,i]
-        if(!is.numeric(temp)){
-            if(length(unique(na.omit(temp)))==2){
-                mydata2[,i]<-as.numeric(as.factor(mydata2[,i]))
+    ## Only do problem discovery when being called by datamart
+    if(!datamart){
+
+        # adding the covariance matrix for all numeric variables to the datasetLevelInfo
+        # using 'complete.obs' is safer than 'pairwise.complete.obs', although it listwise deletes on entire data.frame
+        mydata2 <- mydata
+        # If only two unique (non-missing) values, coerce to numeric for correlation matrix
+        for(i in 1:ncol(mydata2)){
+            temp<-mydata2[,i]
+            if(!is.numeric(temp)){
+                if(length(unique(na.omit(temp)))==2){
+                    mydata2[,i]<-as.numeric(as.factor(mydata2[,i]))
+                }
             }
         }
+
+        # Only use numeric variables, and don't use d3mIndex if present
+        mydata2 <- mydata2[sapply(mydata2,is.numeric)]
+        if ("d3mIndex" %in% names(mydata)){
+            d3mIndex.pos <- match("d3mIndex", names(mydata))
+            mydata2 <- mydata2[, -d3mIndex.pos]
+        }
+
+        mycov <- tryCatch(cov(mydata2, use='complete.obs'), error=function(e) matrix(0)) # this will default to a 1x1 matrix with a 0
+        mycor <- tryCatch(cor(mydata2, use='pairwise.complete.obs'), error=function(e) matrix(0)) # this will default to a 1x1 matrix with a 0
+
+        if(!identical(mycor,0)){
+            mydisco<-disco(names(mydata2), mycor, n=3)
+
+            # Add problems that use discovered splits and constructed variables
+            mydisco2 <- tryCatch(disco2(mydata2, top=3), error=function(e) NULL)
+            mydisco3 <- tryCatch(disco3(mydata2, top=3), error=function(e) NULL)
+            mydisco <- c(mydisco, mydisco2, mydisco3)
+            cat("Successfully completed problem discovery \n")
+
+        }else{
+            mydisco<-NULL
+            cat("Problem discovery aborted\n")
+        }
+
+
+        datasetLevelInfo[["covarianceMatrix"]] <- mycov
+        datasetLevelInfo[["discovery"]] <- mydisco
     }
 
-    # Only use numeric variables, and don't use d3mIndex if present
-    mydata2 <- mydata2[sapply(mydata2,is.numeric)]
-    if ("d3mIndex" %in% names(mydata)){
-        d3mIndex.pos <- match("d3mIndex", names(mydata))
-        mydata2 <- mydata2[, -d3mIndex.pos]
-    }
 
-    mycov <- tryCatch(cov(mydata2, use='complete.obs'), error=function(e) matrix(0)) # this will default to a 1x1 matrix with a 0
-    mycor <- tryCatch(cor(mydata2, use='pairwise.complete.obs'), error=function(e) matrix(0)) # this will default to a 1x1 matrix with a 0
-
-    if(!identical(mycor,0)){
-        mydisco<-disco(names(mydata2), mycor, n=3)
-
-        # Add problems that use discovered splits and constructed variables
-        mydisco2 <- tryCatch(disco2(mydata2, top=3), error=function(e) NULL)
-        mydisco3 <- tryCatch(disco3(mydata2, top=3), error=function(e) NULL)
-        mydisco <- c(mydisco, mydisco2, mydisco3)
-        cat("Successfully completed problem discovery \n")
-
-    }else{
-        mydisco<-NULL
-        cat("Problem discovery aborted\n")
-    }
-
-
-    datasetLevelInfo[["covarianceMatrix"]] <- mycov
-    datasetLevelInfo[["discovery"]] <- mydisco
-
-    jsontest<-rjson:::toJSON(datasetLevelInfo)
-    #write(jsontest,file="test.json")
+    # jsontest<-rjson:::toJSON(datasetLevelInfo)
+    # write(jsontest,file="test.json")
       ## Construct Metadata file that at highest level has list of dataset-level, and variable-level information
     largehold<- list(dataset=datasetLevelInfo, variables=hold)
 
     jsonHold<-rjson:::toJSON(largehold)
 
-    #print("NOTHING GOING TO FINISH")
-    #stop()
+
 
     return(jsonHold)
 }
