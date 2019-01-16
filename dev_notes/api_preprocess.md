@@ -30,11 +30,15 @@ Note, the system has a queuing service to handle multiple requests.  Therefore, 
     ```
 3.  Check the value of the `data.state` which may have the following values:
     ```
-    "RECEIVED" - The data profiling is in process
+    "RECEIVED" - The profiling request has been received.
+
+    "PENDING" - The profiling request is in the queue
+
+    "PREPROCESS_STARTED" - The profiling process has started
 
     "FAILURE" - The profiling failed
 
-    "SUCCESS" - There will be a `data.summary_metadata` attribute containing the summary statistics
+    "SUCCESS" - Profiling succeeded.  There will be a "data.summary_metadata" attribute containing the summary statistics
     ```
 4. If the `data.state` is "RECEIVED", try the callback_url periodically until the state is either "FAILURE" or "SUCCESS":
     ```
@@ -53,6 +57,6 @@ For the python preprocessing, the steps are similar to R (above).  The first ste
     curl  -X POST -i -F source_file=@/path/to/datafile/fearonLaitin.csv http://127.0.0.1:8080/preprocess/api/process-single-file
 
     # Service
-    curl  -X POST -i -F source_file=@/path/to/datafile/fearonLaitin.csv http://metadata.2ravens.org/api/process-single-file
+    curl  -X POST -i -F source_file=@/path/to/datafile/fearonLaitin.csv http://metadata.2ravens.org/preprocess/api/process-single-file
     ```
 2.  Follow steps 2 to 4 above in **R Preprocess**
