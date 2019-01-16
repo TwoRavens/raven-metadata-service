@@ -76,4 +76,22 @@ curl  -X POST  -i  -F source_file=@/Users/ramanprasad/Documents/github-rp/raven-
 curl -i -X POST http://127.0.0.1:8080/r-preprocess/api-run-in-queue \
   -H "Content-Type: text/xml" \
   --data-binary "@path/to/file"
+
+
+import requests
+
+url = 'http://metadata.2ravens.org/preprocess/api/process-single-file'
+
+# replace "fearonLaitin.csv" with the path to your source file
+#
+files = dict(source_file=open("fearonLaitin.csv", 'rb'))
+
+r = requests.post(url, files=files)
+
+if r.status_code != 200:
+    print('Error: ', r.text)
+else:
+    resp_json = r.json()
+    print(resp_json)
+    print(resp_json['data']['state'])
 """

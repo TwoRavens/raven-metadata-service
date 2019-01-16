@@ -49,6 +49,27 @@ Limitation: the public service may be used for files 7MB in size of less. (This 
     curl http://127.0.0.1:8080/preprocess/job-info-json/179
     ```
 
+- Note: Using the python [requests library](http://docs.python-requests.org/en/master/), step 1 would be:
+
+    ```python
+    import requests
+
+    # Replace "fearonLaitin.csv" with the path to your source file
+    #
+    files = dict(source_file=open("fearonLaitin.csv", 'rb'))
+
+    url = 'http://metadata.2ravens.org/preprocess/api/process-single-file'
+
+    r = requests.post(url, files=files)
+
+    if r.status_code != 200:
+        print('Error: ', r.text)
+    else:
+        resp_json = r.json()
+        print(resp_json)
+        #if resp_json['data']['state'] not in ['FAILURE', 'SUCCESS']:
+        #try callback url: resp_json['callback_url']
+    ```
 
 ## R Preprocess
 
