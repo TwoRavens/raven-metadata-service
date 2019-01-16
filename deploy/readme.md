@@ -60,9 +60,9 @@ kubectl describe pod ravens-preprocess-app
 # Log into a running container with full admin rights
 #   - e.g. look around, see if files are being created, stop/start things, etc
 #
-kubectl exec -ti  ravens-preprocess-app -c redis /bin/bash
-kubectl exec -ti  ravens-preprocess-app -c celery-worker /bin/bash
 kubectl exec -ti  ravens-preprocess-app -c preprocess-web /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c celery-worker /bin/bash
+kubectl exec -ti  ravens-preprocess-app -c redis /bin/bash
 
 ```
 
