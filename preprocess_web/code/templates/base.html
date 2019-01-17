@@ -35,6 +35,7 @@
 
   <body>
   {% block body_content %}
+  {% block nav_content %}
   <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom:1px solid #ccc;">
   {#<a class="navbar-brand" href="#">Navbar</a>#}
   <a href="/" class="navbar-brand"><img src="{% static "images/TwoRavens.png" %}" alt="TwoRavens" width="100" style="margin-left: 1em; margin-top: -0.5em;" /></a>
@@ -89,6 +90,7 @@
     </ul>
   </div>
 </nav>
+{% endblock %}
   <div class="container" id="main_block" style=""><br />
 
       {% block main_content %}
