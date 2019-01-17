@@ -10,40 +10,11 @@ import Datamart from "../common/TwoRavens/Datamart";
 
 
 
-var root = document.body
+//var root = document.body
 var mithrilRoot = document.getElementById("mithrilRoot");
 
 
-//m.render(testDiv, 'Generated from Mithril in "index.js"')
 
-var Splash = {
-        view: function() {
-            return m("div",
-                    m("a", {href: "#!/hello"}, "Enter!"),
-                    m("hr"),
-                    m("p", m("a", {href: "#!/search"}, "Search!")),
-            )
-        }
-    }
-    /*
-    m.render(root, m("main", [
-      m("h1", {class: "title"}, "My first app"),
-      m("button", "A button"),
-    ]))
-    */
-    var count = 0 // added a variable
-
-    var Hello = {
-        view: function() {
-            return m("main", [
-                m("h1", {class: "title"}, "My first app"),
-                m("button", {onclick: function() {count++}}, count + " clicks"),
-                m("hr"),
-                m("div", m("a", {href: "#!/splash"}, "(back to splash)")),
-
-            ])
-        }
-    }
 
     export let augmentState = {
         dataset: {
@@ -88,8 +59,36 @@ var Splash = {
     }}
 
     //m.mount(root, Hello) mithrilRoot
-    m.route(mithrilRoot, "/splash", {
-        "/splash": Splash,
-        "/hello": Hello,
-        '/search': DatamartSearchPage,
+    m.route(mithrilRoot, "/search", {
+      '/search': DatamartSearchPage,
+        //"/splash": Splash,
+        //"/hello": Hello,
     })
+
+
+/*
+
+var Splash = {
+        view: function() {
+            return m("div",
+                    m("a", {href: "#!/hello"}, "Enter!"),
+                    m("hr"),
+                    m("p", m("a", {href: "#!/search"}, "Search!")),
+            )
+        }
+    }
+
+  var count = 0 // added a variable
+
+  var Hello = {
+      view: function() {
+          return m("main", [
+              m("h1", {class: "title"}, "(title here)"),
+              m("button", {onclick: function() {count++}}, count + " clicks"),
+              m("hr"),
+              m("div", m("a", {href: "#!/splash"}, "(back to splash)")),
+
+          ])
+      }
+  }
+*/
