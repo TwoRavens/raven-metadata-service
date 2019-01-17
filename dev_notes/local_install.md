@@ -28,6 +28,7 @@ To set this up in a development environment please use the instructions below.
     ```
     # cd into the top level of the `ravens-metadata-service` repository
     #
+    cd preprocess_web/code
     git submodule add --force -b master https://github.com/TwoRavens/common.git assets/common
     git submodule init
     git submodule update --remote
