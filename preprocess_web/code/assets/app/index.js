@@ -55,7 +55,7 @@ var mithrilRoot = document.getElementById("mithrilRoot");
                 image: '/static/images/TwoRavens.png',
                 aboutText: 'UI that exercises the Datamart Search API.',
                 attrsInterface: {style: {}}
-            }
+            },
             m('div', {style: {'flex-grow': 1}}),
             m('h4#dataName[style=display: inline-block; margin: .25em 1em]',
                 'Datamart Search'),
