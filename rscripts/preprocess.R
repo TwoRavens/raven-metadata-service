@@ -204,12 +204,21 @@ preprocess<-function(hostname=NULL, fileid=NULL, testdata=NULL, types=NULL, file
       ## Construct Metadata file that at highest level has list of dataset-level, and variable-level information
     largehold<- list(dataset=datasetLevelInfo, variables=hold)
 
+    if(datamart){
+        largehold <- mapSchema(largehold, datamart=TRUE)
+    }
+
     jsonHold<-rjson:::toJSON(largehold)
-
-
 
     return(jsonHold)
 }
+
+## mapSchema is a function to map metadata object names from previous TwoRavens definitions to current metadata service schema
+
+mapSchema <- function(mylist, datamart=TRUE){
+    return(mylist)
+}
+
 
 ## calcSumStats is a function that takes as input a dataset and the types for each variable, as returned by typeGuess()
 calcSumStats <- function(data, types) {
