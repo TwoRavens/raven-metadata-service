@@ -47,10 +47,15 @@ var mithrilRoot = document.getElementById("mithrilRoot");
 
       view: function() {
         return m("nav", m(Header, {
-                image: '/static/images/TwoRavens.png',
+                image: '/static/images/formal_viterbi_card_black_on_white.jpg',
                 aboutText: 'UI that exercises the Datamart Search API.',
                 attrsInterface: {style: {}}
             },
+            {
+                image: '/static/images/TwoRavens.png',
+                aboutText: 'UI that exercises the Datamart Search API.',
+                attrsInterface: {style: {}}
+            }
             m('div', {style: {'flex-grow': 1}}),
             m('h4#dataName[style=display: inline-block; margin: .25em 1em]',
                 'Datamart Search'),
