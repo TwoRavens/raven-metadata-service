@@ -57,8 +57,11 @@ var mithrilRoot = document.getElementById("mithrilRoot");
                 attrsInterface: {style: {}}
             },
             m('div', {style: {'flex-grow': 1}}),
-            m('h4#dataName[style=display: inline-block; margin: .25em 1em]',
-                'Datamart Search'),
+            m('h4#dataName[style=display: inline-block; margin: .25em 1em]', {
+                image: '/static/images/datamart_logo.png',
+                aboutText: 'Datamart',
+                attrsInterface: {style: {}}
+            }),
             m('div', {style: {'flex-grow': 1}}),
         ))
     }}
