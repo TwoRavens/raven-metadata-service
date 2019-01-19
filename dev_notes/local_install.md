@@ -18,10 +18,10 @@ To set this up in a development environment please use the instructions below.
 
 ### Get the repository
 
-- Use Github Desktop to pull down the [repository](https://github.com/TwoRavens/ravens-metadata-service)
+- Use Github Desktop to pull down the [repository](https://github.com/TwoRavens/raven-metadata-service)
 - Alternately, use the command line:
     ```
-    git clone https://github.com/TwoRavens/ravens-metadata-service.git
+    git clone https://github.com/TwoRavens/raven-metadata-service.git
 
     ```
 - From the command line, install the [TwoRavens common](https://github.com/TwoRavens/common) sub repository
@@ -72,7 +72,7 @@ This section requires that you have python 3.6+ on your machine.
 
 ### Make a virtualenv and install requirements
 
-- From the Terminal and within the `ravens-metadata-service` repository.
+- From the Terminal and within the `raven-metadata-service` repository.
 - Run the following commands (May take a couple of minutes)
 
   ```
@@ -97,7 +97,7 @@ This section requires that you have python 3.6+ on your machine.
 
 * Add this line to the end of the `postactivate` file and save the file
     ```
-    export DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
+    export DJANGO_SETTINGS_MODULE=raven_metadata.settings.local_settings
     ```
 
 * Test the `postactivate` script from your open Terminal:
@@ -107,11 +107,11 @@ This section requires that you have python 3.6+ on your machine.
     echo $DJANGO_SETTINGS_MODULE
     ```
 
-- You should see `ravens_metadata.settings.local_settings`
+- You should see `raven_metadata.settings.local_settings`
 
 ### Test the Django setup
 
-From the top of the `ravens-metadata-service` directory, run:
+From the top of the `raven-metadata-service` directory, run:
     ```
     cd preprocess_web/code
     fab init_db
@@ -120,7 +120,7 @@ If no errors are shown, you should be ok and a test sqlite database will have be
 
 ### Install node
 
-From the top of the `ravens-metadata-service` directory, run:
+From the top of the `raven-metadata-service` directory, run:
     ```
     cd preprocess_web/code
     npm install
@@ -138,7 +138,7 @@ From the top of the `ravens-metadata-service` directory, run:
 1. Open 3 Terminals.  
 1. Within each one:
     ```
-    cd ~/ravens-metadata-service/preprocess_web/code
+    cd ~/raven-metadata-service/preprocess_web/code
     workon metadata
     ```
 1. Next, run these commands`
@@ -154,7 +154,7 @@ From the top of the `ravens-metadata-service` directory, run:
 1. Open a Terminal
 1. Start the environment
     ```
-    cd ~/ravens-metadata-service/preprocess_web/code
+    cd ~/raven-metadata-service/preprocess_web/code
     workon metadata
 
     # -------------------------
