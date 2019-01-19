@@ -26,7 +26,7 @@ To set this up in a development environment please use the instructions below.
     ```
 - From the command line, install the [TwoRavens common](https://github.com/TwoRavens/common) sub repository
     ```
-    # cd into the top level of the `ravens-metadata-service` repository
+    # cd into the top level of the `raven-metadata-service` repository
     #
     cd preprocess_web/code
     git submodule add --force -b master https://github.com/TwoRavens/common.git assets/common
