@@ -93,7 +93,7 @@ class FileFormatUtil(object):
             return
 
 
-        # Is this a known/accepted extension
+        # Is this a known/accepted extension?
         #
         if self.fname_ext_check not in ACCEPTABLE_EXT_LIST:
             self.add_error(self.get_unaccepted_file_err())
@@ -133,8 +133,17 @@ class FileFormatUtil(object):
 
 
     def is_tab_delim_csv(self):
-        """Check if the CSV is tab-delimited"""
-        pass
+        """Check if the CSV is tab-delimited--the file itself, not the extension"""
+
+        # Read in the file header, using default csv
+        #
+        col_headers = pd.read_csv(self.input_file,
+                                  index_col=0,
+                                  nrows=0).columns.tolist()
+
+
+        #pd.read_csv('test.csv', index_col=0, nrows=0).columns.tolist()
+        #Out[4]: ['a', 'b', 'c', 'd']
 
     def get_unaccepted_file_err(self):
         """Error message used multiple times"""
