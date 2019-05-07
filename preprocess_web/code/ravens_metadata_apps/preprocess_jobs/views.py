@@ -1,5 +1,6 @@
 """Views for preprocess jobs"""
 import json, collections
+from django.core.paginator import Paginator
 from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
@@ -51,16 +52,53 @@ def test_view(request):
 
 def view_job_list(request):
     """Display a list of all jobs"""
+
+    # Retrieve all PreprocessJob objects
+    #
+    job_list = PreprocessJob.objects.all().order_by('-created')
+
+    # Set the number of files per page
+    #
+    paginator = Paginator(job_list, settings.NUM_FILES_PER_PAGE)
+
+    # What is the current page number in the url--default to 1
+    #
+    page = request.GET.get('page')
+
+    #
+    job_page = paginator.get_page(page)
+
+
+    # Content for dict
+    #
+    info_dict = {'job_page': job_page,
+                 KEY_EDITOR_URL: settings.EDITOR_URL}
+
+    return render(request,
+                  'preprocess/list.html',
+                  info_dict)
+
+
+def xview_job_list(request):
+    """Display a list of all jobs"""
+
+    # Create a dict that holds DataverseFileInfo objects
+    #  connected to PreprocessJob objects
+    #
     dv_lookup = {}
     for dv_info in DataverseFileInfo.objects.select_related('preprocess_job').all():
         dv_lookup[dv_info.preprocess_job.id] = dv_info
 
+    # Retrieve all PreprocessJob objects
+    #
     jobs = PreprocessJob.objects.all().order_by('-created')
     job_list = []
     for job in jobs:
         job.dv_info = dv_lookup.get(job.id, None)
         job_list.append(job)
 
+    # Content for dict
+    #
     info_dict = {'jobs': job_list,
                  KEY_EDITOR_URL: settings.EDITOR_URL}
 

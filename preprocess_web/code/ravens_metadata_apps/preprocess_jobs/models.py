@@ -95,6 +95,7 @@ class PreprocessJob(TimeStampedModel):
             ('view_preprocess_job', 'View Preprocess Job'),
             #('view_preprocess_job', 'View PreprocessJob'),
         )
+        ordering = ('-created',)
 
     def __str__(self):
         """minimal, change to name"""

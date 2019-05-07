@@ -209,6 +209,10 @@ if not EDITOR_URL:
 
 TEST_ENV_VARIABLE = os.environ.get('TEST_ENV_VARIABLE', '(nothing set)')
 
+# ---------------------------------------------
+# PreprocessJob listing page
+# ---------------------------------------------
+NUM_FILES_PER_PAGE = os.environ.get('NUM_FILES_PER_PAGE', 25)
 
 # ---------------------------------------------
 # Used for sharing data between docker containers

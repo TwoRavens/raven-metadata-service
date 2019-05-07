@@ -1,3 +1,6 @@
+"""
+Given an input file, return a dataframe
+"""
 from collections import OrderedDict
 import decimal
 import json, time, datetime
@@ -128,6 +131,10 @@ class FileFormatUtil(object):
         else:
             self.add_error(self.get_unaccepted_file_err())
 
+
+    def is_tab_delim_csv(self):
+        """Check if the CSV is tab-delimited"""
+        pass
 
     def get_unaccepted_file_err(self):
         """Error message used multiple times"""

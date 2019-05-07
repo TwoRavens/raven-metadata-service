@@ -97,7 +97,7 @@ This section requires that you have python 3.6+ on your machine.
 
 * Add this line to the end of the `postactivate` file and save the file
     ```
-    export DJANGO_SETTINGS_MODULE=raven_metadata.settings.local_settings
+    export DJANGO_SETTINGS_MODULE=ravens_metadata.settings.local_settings
     ```
 
 * Test the `postactivate` script from your open Terminal:
@@ -107,7 +107,7 @@ This section requires that you have python 3.6+ on your machine.
     echo $DJANGO_SETTINGS_MODULE
     ```
 
-- You should see `raven_metadata.settings.local_settings`
+- You should see `ravens_metadata.settings.local_settings`
 
 ### Test the Django setup
 
