@@ -1,0 +1,21 @@
+<hr />
+<div class="row">
+  <div class="col-sm">
+    {% if job_page.has_previous %}
+        <a class="btn btn-sm btn-info" href="?page=1">&laquo; first</a>
+        <a class="btn btn-sm btn-info" href="?page={{ job_page.previous_page_number }}">previous</a>
+
+    {% endif %}
+  </div>
+  <div class="col-sm font-weight-bold text-center">
+    Page {{ job_page.number }} of {{ job_page.paginator.num_pages }}
+  </div>
+
+  <div class="col-sm text-right">
+    {% if job_page.has_next %}
+        <a class="btn btn-sm btn-info" href="?page={{ job_page.next_page_number }}">next</a>
+        <a class="btn btn-sm btn-info" href="?page={{ job_page.paginator.num_pages }}">last &raquo;</a>
+    {% endif %}
+  </div>
+</div>
+<hr />
