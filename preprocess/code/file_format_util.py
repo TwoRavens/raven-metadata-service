@@ -14,7 +14,9 @@ from file_format_constants import \
     (CSV_FILE_EXT, TAB_FILE_EXT,
      XLS_FILE_EXT, XLSX_FILE_EXT,
      ACCEPTABLE_EXT_LIST,
+     TAB_DELIMITER,
      get_mime_type)
+
 
 
 class FileFormatUtil(object):
@@ -117,10 +119,14 @@ class FileFormatUtil(object):
             return
 
         if self.fname_ext_check == TAB_FILE_EXT:
-            self.set_dataframe('\t')
+            self.set_dataframe(TAB_DELIMITER)
 
         elif self.fname_ext_check == CSV_FILE_EXT:
             self.set_dataframe()
+            #if self.is_tab_delim_csv():
+            #    self.set_dataframe(TAB_DELIMITER)
+            #else:
+            #    self.set_dataframe()
 
         elif self.fname_ext_check == XLS_FILE_EXT:
             self.set_dataframe(is_excel=True)
@@ -132,18 +138,48 @@ class FileFormatUtil(object):
             self.add_error(self.get_unaccepted_file_err())
 
 
+    def get_csv_column_count(self, delimiter=None):
+        """Read in the first row of the file and get the column count"""
+        try:
+            data_frame = pd.read_csv(\
+                              self.input_file,
+                              delimiter=delimiter,
+                              nrows=0)
+            return len(data_frame.columns)
+        except FileNotFoundError as err_obj:
+            self.add_error('File not found: %s' % err_obj)
+            return -1
+        except pd.errors.EmptyDataError as err_obj:
+            self.add_error('The file has no data! %s' % err_obj)
+            return -1
+
+
     def is_tab_delim_csv(self):
         """Check if the CSV is tab-delimited--the file itself, not the extension"""
-
-        # Read in the file header, using default csv
+        print('is_tab_delim_csv? 1')
+        # (1) Read in the file header, using default csv delimiter
         #
-        col_headers = pd.read_csv(self.input_file,
-                                  index_col=0,
-                                  nrows=0).columns.tolist()
+        num_tab_cols = self.get_csv_column_count(delimiter=TAB_DELIMITER)
+        print('num_tab_cols', num_tab_cols)
+
+        num_csv_cols = self.get_csv_column_count()
+        print('num_csv_cols', num_csv_cols)
+        if num_csv_cols == -1:
+            return False
 
 
-        #pd.read_csv('test.csv', index_col=0, nrows=0).columns.tolist()
-        #Out[4]: ['a', 'b', 'c', 'd']
+        print('num_tab_cols', num_tab_cols)
+        print('num_csv_cols', num_csv_cols)
+
+        if num_csv_cols == 0 and num_tab_cols == 0:
+            self.add_error('No columns found in data frame')
+            return False
+
+        if (num_csv_cols < 2)  and (num_tab_cols > num_csv_cols):
+            return True
+
+        return False
+
 
     def get_unaccepted_file_err(self):
         """Error message used multiple times"""

@@ -12,6 +12,8 @@ ACCEPTABLE_FILE_TYPE_EXTS = (CSV_FILE_EXT,
 
 ACCEPTABLE_EXT_LIST = ', '.join(['"%s"' % x for x in ACCEPTABLE_FILE_TYPE_EXTS])
 
+TAB_DELIMITER = '\t'
+
 MIME_TYPE_PAIRS = (\
     (CSV_FILE_EXT, 'text/csv'),
     (TAB_FILE_EXT, 'text/tab-separated-values'),
