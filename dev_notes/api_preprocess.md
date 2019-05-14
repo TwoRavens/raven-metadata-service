@@ -73,7 +73,7 @@ Limitation: the public service may be used for files 7MB in size of less. (This 
 
 ## R Preprocess
 
-(1/16/2018 - Use python for now, this output for this is a bit older)
+(1/16/2018 - Use python for now, the output for this is a bit older)
 
 For the R preprocessing, the steps are similar to python (above).  The first step has a different url but steps 2 through 4 are the same
 
