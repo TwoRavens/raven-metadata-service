@@ -1,0 +1,4637 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        8194
+      ],
+      [
+        "variableCount",
+        10
+      ],
+      [
+        "dataSource",
+        {
+          "name": "0DLNBL_ca_city_2000-2016LobbyFull.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 275689
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.city.mode",
+    [
+      "Adelanto",
+      [
+        "Bellflower",
+        "Guadalupe",
+        "Angels",
+        "Lakeport",
+        "Mt. Shasta"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.city.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.city.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.city",
+    [
+      [
+        "variableName",
+        "city"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        8194
+      ],
+      [
+        "uniqueCount",
+        482
+      ],
+      [
+        "modeFreq",
+        17
+      ],
+      [
+        "fewestValues",
+        [
+          "Bellflower",
+          "Guadalupe",
+          "Angels",
+          "Lakeport",
+          "Mt. Shasta"
+        ]
+      ],
+      [
+        "fewestFreq",
+        17
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.002074688796680481
+      ],
+      [
+        "plotValues",
+        {
+          "Isleton": 17,
+          "Atwater": 17,
+          "Mammoth Lakes": 17,
+          "Palos Verdes Estates": 17,
+          "Richmond": 17,
+          "Lincoln": 17,
+          "San Dimas": 17,
+          "East Palo Alto": 17,
+          "Pasadena": 17,
+          "Murrieta": 17,
+          "Chino": 17,
+          "Monte Sereno": 17,
+          "Fremont": 17,
+          "Solana Beach": 17,
+          "Stanton": 17,
+          "Lemon Grove": 17,
+          "Redding": 17,
+          "Crescent City": 17,
+          "Woodside": 17,
+          "Emeryville": 17,
+          "Corte Madera": 17,
+          "Berkeley": 17,
+          "Buena Park": 17,
+          "Escondido": 17,
+          "Walnut Creek": 17,
+          "Riverbank": 17,
+          "Avenal": 17,
+          "Industry": 17,
+          "Sebastopol": 17,
+          "Patterson": 17,
+          "Kerman": 17,
+          "Tracy": 17,
+          "Santa Clara": 17,
+          "Colusa": 17,
+          "Modesto": 17,
+          "Simi Valley": 17,
+          "Dos Palos": 17,
+          "Fontana": 17,
+          "Dorris": 17,
+          "Hayward": 17,
+          "Irvine": 17,
+          "Palmdale": 17,
+          "Orange Cove": 17,
+          "Atherton": 17,
+          "San Diego": 17,
+          "Carlsbad": 17,
+          "Monterey Park": 17,
+          "Trinidad": 17,
+          "Fairfax": 17,
+          "Cloverdale": 17,
+          "Beverly Hills": 17,
+          "Shasta Lake": 17,
+          "Watsonville": 17,
+          "South San Francisco": 17,
+          "Dunsmuir": 17,
+          "Vacaville": 17,
+          "Fresno": 17,
+          "Williams": 17,
+          "Half Moon Bay": 17,
+          "Palo Alto": 17,
+          "Westmorland": 17,
+          "Paramount": 17,
+          "Fowler": 17,
+          "Rancho Palos Verdes": 17,
+          "San Bernardino": 17,
+          "Orinda": 17,
+          "Reedley": 17,
+          "Ojai": 17,
+          "Azusa": 17,
+          "Monrovia": 17,
+          "Arvin": 17,
+          "Arcata": 17,
+          "Huntington Park": 17,
+          "Loma Linda": 17,
+          "Placentia": 17,
+          "Visalia": 17,
+          "Citrus Heights": 17,
+          "Chino Hills": 17,
+          "Calimesa": 17,
+          "Ceres": 17,
+          "Clearlake": 17,
+          "La Mirada": 17,
+          "Highland": 17,
+          "San Pablo": 17,
+          "Imperial": 17,
+          "Lakewood": 17,
+          "Yountville": 17,
+          "West Hollywood": 17,
+          "Santa Monica": 17,
+          "Covina": 17,
+          "Brisbane": 17,
+          "Westlake Village": 17,
+          "Firebaugh": 17,
+          "Camarillo": 17,
+          "Rialto": 17,
+          "Canyon Lake": 17,
+          "Parlier": 17,
+          "South Lake Tahoe": 17,
+          "Signal Hill": 17,
+          "Rio Vista": 17,
+          "Oxnard": 17,
+          "Rosemead": 17,
+          "Inglewood": 17,
+          "Millbrae": 17,
+          "Ione": 17,
+          "Dana Point": 17,
+          "Corona": 17,
+          "Yuba City": 17,
+          "Maricopa": 17,
+          "Tustin": 17,
+          "San Marcos": 17,
+          "Loomis": 17,
+          "Fullerton": 17,
+          "Newark": 17,
+          "Gonzales": 17,
+          "Sutter Creek": 17,
+          "Redondo Beach": 17,
+          "Pittsburg": 17,
+          "Portola Valley": 17,
+          "Calistoga": 17,
+          "Glendora": 17,
+          "Healdsburg": 17,
+          "Hidden Hills": 17,
+          "Palm Springs": 17,
+          "Greenfield": 17,
+          "El Cajon": 17,
+          "Coronado": 17,
+          "Tehachapi": 17,
+          "Coachella": 17,
+          "Sierra Madre": 17,
+          "Victorville": 17,
+          "Orange": 17,
+          "Roseville": 17,
+          "El Paso De Robles": 17,
+          "Santa Maria": 17,
+          "La Puente": 17,
+          "Oakland": 17,
+          "Big Bear Lake": 17,
+          "La Canada Flintridge": 17,
+          "Los Altos": 17,
+          "Davis": 17,
+          "San Juan Capistrano": 17,
+          "Santee": 17,
+          "Solvang": 17,
+          "Milpitas": 17,
+          "Woodland": 17,
+          "Dublin": 17,
+          "Nevada City": 17,
+          "Vallejo": 17,
+          "Livermore": 17,
+          "Petaluma": 17,
+          "Mission Viejo": 17,
+          "Buellton": 17,
+          "Daly City": 17,
+          "Clovis": 17,
+          "Santa Ana": 17,
+          "Aliso Viejo": 17,
+          "American Canyon": 17,
+          "Adelanto": 17,
+          "Farmersville": 17,
+          "Temecula": 17,
+          "San Mateo": 17,
+          "Moorpark": 17,
+          "Palm Desert": 17,
+          "Morro Bay": 17,
+          "Yreka": 17,
+          "Avalon": 17,
+          "Norwalk": 17,
+          "Jurupa Valley": 17,
+          "Mountain View": 17,
+          "Poway": 17,
+          "Gustine": 17,
+          "Rohnert Park": 17,
+          "Sanger": 17,
+          "Oakley": 17,
+          "Rolling Hills": 17,
+          "Marina": 17,
+          "Loyalton": 17,
+          "Oceanside": 17,
+          "Belvedere": 17,
+          "Garden Grove": 17,
+          "El Centro": 17,
+          "Woodlake": 17,
+          "La Verne": 17,
+          "Chowchilla": 17,
+          "Eastvale": 17,
+          "Exeter": 17,
+          "Riverside": 17,
+          "Grand Terrace": 17,
+          "Fortuna": 17,
+          "Blythe": 17,
+          "Yucaipa": 17,
+          "Sonora": 17,
+          "Suisun City": 17,
+          "Lemoore": 17,
+          "San Joaquin": 17,
+          "Alturas": 17,
+          "Redwood City": 17,
+          "Temple City": 17,
+          "Wheatland": 17,
+          "Moraga": 17,
+          "Yucca Valley": 17,
+          "Encinitas": 17,
+          "Cudahy": 17,
+          "Sacramento": 17,
+          "Los Alamitos": 17,
+          "Cathedral City": 17,
+          "Orland": 17,
+          "Indio": 17,
+          "Barstow": 17,
+          "Amador": 17,
+          "South El Monte": 17,
+          "Anderson": 17,
+          "Tulelake": 17,
+          "El Segundo": 17,
+          "Sunnyvale": 17,
+          "Carpinteria": 17,
+          "Turlock": 17,
+          "Lake Forest": 17,
+          "Long Beach": 17,
+          "Indian Wells": 17,
+          "Montague": 17,
+          "Morgan Hill": 17,
+          "Cotati": 17,
+          "National City": 17,
+          "Hanford": 17,
+          "Manhattan Beach": 17,
+          "Arroyo Grande": 17,
+          "Rancho Mirage": 17,
+          "Fairfield": 17,
+          "Scotts Valley": 17,
+          "La Quinta": 17,
+          "Beaumont": 17,
+          "Rancho Cordova": 17,
+          "Rolling Hills Estates": 17,
+          "Colma": 17,
+          "Martinez": 17,
+          "Coalinga": 17,
+          "Benicia": 17,
+          "Danville": 17,
+          "Maywood": 17,
+          "Bishop": 17,
+          "Oroville": 17,
+          "Belmont": 17,
+          "Live Oak": 17,
+          "Newport Beach": 17,
+          "Huron": 17,
+          "Whittier": 17,
+          "Del Mar": 17,
+          "Monterey": 17,
+          "Perris": 17,
+          "Colfax": 17,
+          "Pismo Beach": 17,
+          "San Juan Bautista": 17,
+          "Tiburon": 17,
+          "Santa Barbara": 17,
+          "Saratoga": 17,
+          "Diamond Bar": 17,
+          "Placerville": 17,
+          "Santa Cruz": 17,
+          "Yorba Linda": 17,
+          "West Covina": 17,
+          "Lafayette": 17,
+          "San Luis Obispo": 17,
+          "South Pasadena": 17,
+          "Arcadia": 17,
+          "Selma": 17,
+          "Malibu": 17,
+          "Oakdale": 17,
+          "King City": 17,
+          "Calabasas": 17,
+          "Calipatria": 17,
+          "Sausalito": 17,
+          "Newman": 17,
+          "San Gabriel": 17,
+          "San Anselmo": 17,
+          "Costa Mesa": 17,
+          "Pleasant Hill": 17,
+          "Santa Paula": 17,
+          "Piedmont": 17,
+          "Clayton": 17,
+          "Laguna Niguel": 17,
+          "Foster City": 17,
+          "Bradbury": 17,
+          "Albany": 17,
+          "Pinole": 17,
+          "Moreno Valley": 17,
+          "Larkspur": 17,
+          "Gridley": 17,
+          "Fort Jones": 17,
+          "Vernon": 17,
+          "San Buenaventura": 17,
+          "Los Altos Hills": 17,
+          "Commerce": 17,
+          "Galt": 17,
+          "Corcoran": 17,
+          "Fillmore": 17,
+          "Merced": 17,
+          "Novato": 17,
+          "Ontario": 17,
+          "Plymouth": 17,
+          "Montclair": 17,
+          "Villa Park": 17,
+          "Compton": 17,
+          "Wasco": 17,
+          "Lomita": 17,
+          "Soledad": 17,
+          "Hughson": 17,
+          "Gilroy": 17,
+          "Kingsburg": 17,
+          "Lawndale": 17,
+          "Irwindale": 17,
+          "Jackson": 17,
+          "Elk Grove": 17,
+          "Eureka": 17,
+          "Napa": 17,
+          "San Jose": 17,
+          "Baldwin Park": 17,
+          "Marysville": 17,
+          "Red Bluff": 17,
+          "Carmel-By-The-Sea": 17,
+          "Lindsay": 17,
+          "Walnut": 17,
+          "Imperial Beach": 17,
+          "Banning": 17,
+          "Huntington Beach": 17,
+          "Hawthorne": 17,
+          "Twentynine Palms": 17,
+          "Pacifica": 17,
+          "Vista": 17,
+          "Dinuba": 17,
+          "Folsom": 17,
+          "Hillsborough": 17,
+          "Capitola": 17,
+          "Waterford": 17,
+          "South Gate": 17,
+          "Portola": 17,
+          "San Ramon": 17,
+          "Laguna Hills": 17,
+          "Stockton": 17,
+          "Menlo Park": 17,
+          "Pleasanton": 17,
+          "Dixon": 17,
+          "Point Arena": 17,
+          "Campbell": 17,
+          "Brawley": 17,
+          "Weed": 17,
+          "Desert Hot Springs": 17,
+          "Rancho Cucamonga": 17,
+          "La Habra": 17,
+          "Livingston": 17,
+          "Port Hueneme": 17,
+          "Bell Gardens": 17,
+          "Claremont": 17,
+          "Artesia": 17,
+          "Seal Beach": 17,
+          "Hemet": 17,
+          "Cypress": 17,
+          "Ridgecrest": 17,
+          "Santa Fe Springs": 17,
+          "Ferndale": 17,
+          "Atascadero": 17,
+          "Rio Dell": 17,
+          "California City": 17,
+          "Burlingame": 17,
+          "Madera": 17,
+          "Corning": 17,
+          "Norco": 17,
+          "La Palma": 17,
+          "Rancho Santa Margarita": 17,
+          "Chula Vista": 17,
+          "San Rafael": 17,
+          "Fountain Valley": 17,
+          "Lynwood": 17,
+          "Hawaiian Gardens": 17,
+          "Needles": 17,
+          "Winters": 17,
+          "Gardena": 17,
+          "Wildomar": 17,
+          "Los Angeles": 17,
+          "Fort Bragg": 17,
+          "Shafter": 17,
+          "Chico": 17,
+          "Lake Elsinore": 17,
+          "Seaside": 17,
+          "Goleta": 17,
+          "Manteca": 17,
+          "Hollister": 17,
+          "Delano": 17,
+          "Menifee": 17,
+          "Upland": 17,
+          "Cupertino": 17,
+          "Antioch": 17,
+          "Ukiah": 17,
+          "Hermosa Beach": 17,
+          "Lompoc": 17,
+          "Burbank": 17,
+          "Colton": 17,
+          "Auburn": 17,
+          "San Fernando": 17,
+          "El Cerrito": 17,
+          "Downey": 17,
+          "Lodi": 17,
+          "Pico Rivera": 17,
+          "Taft": 17,
+          "Union City": 17,
+          "Laguna Woods": 17,
+          "Susanville": 17,
+          "Rocklin": 17,
+          "Windsor": 17,
+          "Hercules": 17,
+          "Tulare": 17,
+          "Lathrop": 17,
+          "Bakersfield": 17,
+          "Alameda": 17,
+          "La Habra Heights": 17,
+          "Tehama": 17,
+          "West Sacramento": 17,
+          "Culver City": 17,
+          "Etna": 17,
+          "Porterville": 17,
+          "Ross": 17,
+          "Redlands": 17,
+          "Sonoma": 17,
+          "Laguna Beach": 17,
+          "Bell": 17,
+          "Salinas": 17,
+          "San Marino": 17,
+          "San Clemente": 17,
+          "Hesperia": 17,
+          "Ripon": 17,
+          "San Carlos": 17,
+          "Grover Beach": 17,
+          "Lancaster": 17,
+          "St. Helena": 17,
+          "Brea": 17,
+          "Pacific Grove": 17,
+          "Calexico": 17,
+          "San Jacinto": 17,
+          "Escalon": 17,
+          "Los Banos": 17,
+          "San Bruno": 17,
+          "Montebello": 17,
+          "Paradise": 17,
+          "Truckee": 17,
+          "Grass Valley": 17,
+          "Duarte": 17,
+          "Brentwood": 17,
+          "Carson": 17,
+          "Santa Clarita": 17,
+          "Los Gatos": 17,
+          "Santa Rosa": 17,
+          "Mendota": 17,
+          "Biggs": 17,
+          "Holtville": 17,
+          "Apple Valley": 17,
+          "Willows": 17,
+          "Del Rey Oaks": 17,
+          "Glendale": 17,
+          "La Mesa": 17,
+          "Torrance": 17,
+          "San Leandro": 17,
+          "Anaheim": 17,
+          "Sand City": 17,
+          "Agoura Hills": 17,
+          "Mill Valley": 17,
+          "El Monte": 17,
+          "Willits": 17,
+          "Alhambra": 17,
+          "Blue Lake": 17,
+          "San Francisco": 17,
+          "Thousand Oaks": 17,
+          "Concord": 17,
+          "Cerritos": 17,
+          "McFarland": 17,
+          "Pomona": 17,
+          "Westminster": 17,
+          "Mt. Shasta": 17,
+          "Lakeport": 17,
+          "Angels": 17,
+          "Guadalupe": 17,
+          "Bellflower": 17
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.city",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Adelanto": 17,
+          "Agoura Hills": 17,
+          "Alameda": 17,
+          "Albany": 17,
+          "Alhambra": 17,
+          "Aliso Viejo": 17,
+          "Alturas": 17,
+          "Amador": 17,
+          "American Canyon": 17,
+          "Anaheim": 17,
+          "Anderson": 17,
+          "Angels": 17,
+          "Antioch": 17,
+          "Apple Valley": 17,
+          "Arcadia": 17,
+          "Arcata": 17,
+          "Arroyo Grande": 17,
+          "Artesia": 17,
+          "Arvin": 17,
+          "Atascadero": 17,
+          "Atherton": 17,
+          "Atwater": 17,
+          "Auburn": 17,
+          "Avalon": 17,
+          "Avenal": 17,
+          "Azusa": 17,
+          "Bakersfield": 17,
+          "Baldwin Park": 17,
+          "Banning": 17,
+          "Barstow": 17,
+          "Beaumont": 17,
+          "Bell": 17,
+          "Bell Gardens": 17,
+          "Bellflower": 17,
+          "Belmont": 17,
+          "Belvedere": 17,
+          "Benicia": 17,
+          "Berkeley": 17,
+          "Beverly Hills": 17,
+          "Big Bear Lake": 17,
+          "Biggs": 17,
+          "Bishop": 17,
+          "Blue Lake": 17,
+          "Blythe": 17,
+          "Bradbury": 17,
+          "Brawley": 17,
+          "Brea": 17,
+          "Brentwood": 17,
+          "Brisbane": 17,
+          "Buellton": 17,
+          "Buena Park": 17,
+          "Burbank": 17,
+          "Burlingame": 17,
+          "Calabasas": 17,
+          "Calexico": 17,
+          "California City": 17,
+          "Calimesa": 17,
+          "Calipatria": 17,
+          "Calistoga": 17,
+          "Camarillo": 17,
+          "Campbell": 17,
+          "Canyon Lake": 17,
+          "Capitola": 17,
+          "Carlsbad": 17,
+          "Carmel-By-The-Sea": 17,
+          "Carpinteria": 17,
+          "Carson": 17,
+          "Cathedral City": 17,
+          "Ceres": 17,
+          "Cerritos": 17,
+          "Chico": 17,
+          "Chino": 17,
+          "Chino Hills": 17,
+          "Chowchilla": 17,
+          "Chula Vista": 17,
+          "Citrus Heights": 17,
+          "Claremont": 17,
+          "Clayton": 17,
+          "Clearlake": 17,
+          "Cloverdale": 17,
+          "Clovis": 17,
+          "Coachella": 17,
+          "Coalinga": 17,
+          "Colfax": 17,
+          "Colma": 17,
+          "Colton": 17,
+          "Colusa": 17,
+          "Commerce": 17,
+          "Compton": 17,
+          "Concord": 17,
+          "Corcoran": 17,
+          "Corning": 17,
+          "Corona": 17,
+          "Coronado": 17,
+          "Corte Madera": 17,
+          "Costa Mesa": 17,
+          "Cotati": 17,
+          "Covina": 17,
+          "Crescent City": 17,
+          "Cudahy": 17,
+          "Culver City": 17,
+          "Cupertino": 17,
+          "Cypress": 17,
+          "Daly City": 17,
+          "Dana Point": 17,
+          "Danville": 17,
+          "Davis": 17,
+          "Del Mar": 17,
+          "Del Rey Oaks": 17,
+          "Delano": 17,
+          "Desert Hot Springs": 17,
+          "Diamond Bar": 17,
+          "Dinuba": 17,
+          "Dixon": 17,
+          "Dorris": 17,
+          "Dos Palos": 17,
+          "Downey": 17,
+          "Duarte": 17,
+          "Dublin": 17,
+          "Dunsmuir": 17,
+          "East Palo Alto": 17,
+          "Eastvale": 17,
+          "El Cajon": 17,
+          "El Centro": 17,
+          "El Cerrito": 17,
+          "El Monte": 17,
+          "El Paso De Robles": 17,
+          "El Segundo": 17,
+          "Elk Grove": 17,
+          "Emeryville": 17,
+          "Encinitas": 17,
+          "Escalon": 17,
+          "Escondido": 17,
+          "Etna": 17,
+          "Eureka": 17,
+          "Exeter": 17,
+          "Fairfax": 17,
+          "Fairfield": 17,
+          "Farmersville": 17,
+          "Ferndale": 17,
+          "Fillmore": 17,
+          "Firebaugh": 17,
+          "Folsom": 17,
+          "Fontana": 17,
+          "Fort Bragg": 17,
+          "Fort Jones": 17,
+          "Fortuna": 17,
+          "Foster City": 17,
+          "Fountain Valley": 17,
+          "Fowler": 17,
+          "Fremont": 17,
+          "Fresno": 17,
+          "Fullerton": 17,
+          "Galt": 17,
+          "Garden Grove": 17,
+          "Gardena": 17,
+          "Gilroy": 17,
+          "Glendale": 17,
+          "Glendora": 17,
+          "Goleta": 17,
+          "Gonzales": 17,
+          "Grand Terrace": 17,
+          "Grass Valley": 17,
+          "Greenfield": 17,
+          "Gridley": 17,
+          "Grover Beach": 17,
+          "Guadalupe": 17,
+          "Gustine": 17,
+          "Half Moon Bay": 17,
+          "Hanford": 17,
+          "Hawaiian Gardens": 17,
+          "Hawthorne": 17,
+          "Hayward": 17,
+          "Healdsburg": 17,
+          "Hemet": 17,
+          "Hercules": 17,
+          "Hermosa Beach": 17,
+          "Hesperia": 17,
+          "Hidden Hills": 17,
+          "Highland": 17,
+          "Hillsborough": 17,
+          "Hollister": 17,
+          "Holtville": 17,
+          "Hughson": 17,
+          "Huntington Beach": 17,
+          "Huntington Park": 17,
+          "Huron": 17,
+          "Imperial": 17,
+          "Imperial Beach": 17,
+          "Indian Wells": 17,
+          "Indio": 17,
+          "Industry": 17,
+          "Inglewood": 17,
+          "Ione": 17,
+          "Irvine": 17,
+          "Irwindale": 17,
+          "Isleton": 17,
+          "Jackson": 17,
+          "Jurupa Valley": 17,
+          "Kerman": 17,
+          "King City": 17,
+          "Kingsburg": 17,
+          "La Canada Flintridge": 17,
+          "La Habra": 17,
+          "La Habra Heights": 17,
+          "La Mesa": 17,
+          "La Mirada": 17,
+          "La Palma": 17,
+          "La Puente": 17,
+          "La Quinta": 17,
+          "La Verne": 17,
+          "Lafayette": 17,
+          "Laguna Beach": 17,
+          "Laguna Hills": 17,
+          "Laguna Niguel": 17,
+          "Laguna Woods": 17,
+          "Lake Elsinore": 17,
+          "Lake Forest": 17,
+          "Lakeport": 17,
+          "Lakewood": 17,
+          "Lancaster": 17,
+          "Larkspur": 17,
+          "Lathrop": 17,
+          "Lawndale": 17,
+          "Lemon Grove": 17,
+          "Lemoore": 17,
+          "Lincoln": 17,
+          "Lindsay": 17,
+          "Live Oak": 17,
+          "Livermore": 17,
+          "Livingston": 17,
+          "Lodi": 17,
+          "Loma Linda": 17,
+          "Lomita": 17,
+          "Lompoc": 17,
+          "Long Beach": 17,
+          "Loomis": 17,
+          "Los Alamitos": 17,
+          "Los Altos": 17,
+          "Los Altos Hills": 17,
+          "Los Angeles": 17,
+          "Los Banos": 17,
+          "Los Gatos": 17,
+          "Loyalton": 17,
+          "Lynwood": 17,
+          "Madera": 17,
+          "Malibu": 17,
+          "Mammoth Lakes": 17,
+          "Manhattan Beach": 17,
+          "Manteca": 17,
+          "Maricopa": 17,
+          "Marina": 17,
+          "Martinez": 17,
+          "Marysville": 17,
+          "Maywood": 17,
+          "McFarland": 17,
+          "Mendota": 17,
+          "Menifee": 17,
+          "Menlo Park": 17,
+          "Merced": 17,
+          "Mill Valley": 17,
+          "Millbrae": 17,
+          "Milpitas": 17,
+          "Mission Viejo": 17,
+          "Modesto": 17,
+          "Monrovia": 17,
+          "Montague": 17,
+          "Montclair": 17,
+          "Monte Sereno": 17,
+          "Montebello": 17,
+          "Monterey": 17,
+          "Monterey Park": 17,
+          "Moorpark": 17,
+          "Moraga": 17,
+          "Moreno Valley": 17,
+          "Morgan Hill": 17,
+          "Morro Bay": 17,
+          "Mountain View": 17,
+          "Mt. Shasta": 17,
+          "Murrieta": 17,
+          "Napa": 17,
+          "National City": 17,
+          "Needles": 17,
+          "Nevada City": 17,
+          "Newark": 17,
+          "Newman": 17,
+          "Newport Beach": 17,
+          "Norco": 17,
+          "Norwalk": 17,
+          "Novato": 17,
+          "Oakdale": 17,
+          "Oakland": 17,
+          "Oakley": 17,
+          "Oceanside": 17,
+          "Ojai": 17,
+          "Ontario": 17,
+          "Orange": 17,
+          "Orange Cove": 17,
+          "Orinda": 17,
+          "Orland": 17,
+          "Oroville": 17,
+          "Oxnard": 17,
+          "Pacific Grove": 17,
+          "Pacifica": 17,
+          "Palm Desert": 17,
+          "Palm Springs": 17,
+          "Palmdale": 17,
+          "Palo Alto": 17,
+          "Palos Verdes Estates": 17,
+          "Paradise": 17,
+          "Paramount": 17,
+          "Parlier": 17,
+          "Pasadena": 17,
+          "Patterson": 17,
+          "Perris": 17,
+          "Petaluma": 17,
+          "Pico Rivera": 17,
+          "Piedmont": 17,
+          "Pinole": 17,
+          "Pismo Beach": 17,
+          "Pittsburg": 17,
+          "Placentia": 17,
+          "Placerville": 17,
+          "Pleasant Hill": 17,
+          "Pleasanton": 17,
+          "Plymouth": 17,
+          "Point Arena": 17,
+          "Pomona": 17,
+          "Port Hueneme": 17,
+          "Porterville": 17,
+          "Portola": 17,
+          "Portola Valley": 17,
+          "Poway": 17,
+          "Rancho Cordova": 17,
+          "Rancho Cucamonga": 17,
+          "Rancho Mirage": 17,
+          "Rancho Palos Verdes": 17,
+          "Rancho Santa Margarita": 17,
+          "Red Bluff": 17,
+          "Redding": 17,
+          "Redlands": 17,
+          "Redondo Beach": 17,
+          "Redwood City": 17,
+          "Reedley": 17,
+          "Rialto": 17,
+          "Richmond": 17,
+          "Ridgecrest": 17,
+          "Rio Dell": 17,
+          "Rio Vista": 17,
+          "Ripon": 17,
+          "Riverbank": 17,
+          "Riverside": 17,
+          "Rocklin": 17,
+          "Rohnert Park": 17,
+          "Rolling Hills": 17,
+          "Rolling Hills Estates": 17,
+          "Rosemead": 17,
+          "Roseville": 17,
+          "Ross": 17,
+          "Sacramento": 17,
+          "Salinas": 17,
+          "San Anselmo": 17,
+          "San Bernardino": 17,
+          "San Bruno": 17,
+          "San Buenaventura": 17,
+          "San Carlos": 17,
+          "San Clemente": 17,
+          "San Diego": 17,
+          "San Dimas": 17,
+          "San Fernando": 17,
+          "San Francisco": 17,
+          "San Gabriel": 17,
+          "San Jacinto": 17,
+          "San Joaquin": 17,
+          "San Jose": 17,
+          "San Juan Bautista": 17,
+          "San Juan Capistrano": 17,
+          "San Leandro": 17,
+          "San Luis Obispo": 17,
+          "San Marcos": 17,
+          "San Marino": 17,
+          "San Mateo": 17,
+          "San Pablo": 17,
+          "San Rafael": 17,
+          "San Ramon": 17,
+          "Sand City": 17,
+          "Sanger": 17,
+          "Santa Ana": 17,
+          "Santa Barbara": 17,
+          "Santa Clara": 17,
+          "Santa Clarita": 17,
+          "Santa Cruz": 17,
+          "Santa Fe Springs": 17,
+          "Santa Maria": 17,
+          "Santa Monica": 17,
+          "Santa Paula": 17,
+          "Santa Rosa": 17,
+          "Santee": 17,
+          "Saratoga": 17,
+          "Sausalito": 17,
+          "Scotts Valley": 17,
+          "Seal Beach": 17,
+          "Seaside": 17,
+          "Sebastopol": 17,
+          "Selma": 17,
+          "Shafter": 17,
+          "Shasta Lake": 17,
+          "Sierra Madre": 17,
+          "Signal Hill": 17,
+          "Simi Valley": 17,
+          "Solana Beach": 17,
+          "Soledad": 17,
+          "Solvang": 17,
+          "Sonoma": 17,
+          "Sonora": 17,
+          "South El Monte": 17,
+          "South Gate": 17,
+          "South Lake Tahoe": 17,
+          "South Pasadena": 17,
+          "South San Francisco": 17,
+          "St. Helena": 17,
+          "Stanton": 17,
+          "Stockton": 17,
+          "Suisun City": 17,
+          "Sunnyvale": 17,
+          "Susanville": 17,
+          "Sutter Creek": 17,
+          "Taft": 17,
+          "Tehachapi": 17,
+          "Tehama": 17,
+          "Temecula": 17,
+          "Temple City": 17,
+          "Thousand Oaks": 17,
+          "Tiburon": 17,
+          "Torrance": 17,
+          "Tracy": 17,
+          "Trinidad": 17,
+          "Truckee": 17,
+          "Tulare": 17,
+          "Tulelake": 17,
+          "Turlock": 17,
+          "Tustin": 17,
+          "Twentynine Palms": 17,
+          "Ukiah": 17,
+          "Union City": 17,
+          "Upland": 17,
+          "Vacaville": 17,
+          "Vallejo": 17,
+          "Vernon": 17,
+          "Victorville": 17,
+          "Villa Park": 17,
+          "Visalia": 17,
+          "Vista": 17,
+          "Walnut": 17,
+          "Walnut Creek": 17,
+          "Wasco": 17,
+          "Waterford": 17,
+          "Watsonville": 17,
+          "Weed": 17,
+          "West Covina": 17,
+          "West Hollywood": 17,
+          "West Sacramento": 17,
+          "Westlake Village": 17,
+          "Westminster": 17,
+          "Westmorland": 17,
+          "Wheatland": 17,
+          "Whittier": 17,
+          "Wildomar": 17,
+          "Williams": 17,
+          "Willits": 17,
+          "Willows": 17,
+          "Windsor": 17,
+          "Winters": 17,
+          "Woodlake": 17,
+          "Woodland": 17,
+          "Woodside": 17,
+          "Yorba Linda": 17,
+          "Yountville": 17,
+          "Yreka": 17,
+          "Yuba City": 17,
+          "Yucaipa": 17,
+          "Yucca Valley": 17
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "city"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        8194
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        482
+      ],
+      [
+        "herfindahl",
+        0.0020746887966805
+      ],
+      [
+        "freqmode",
+        17
+      ],
+      [
+        "fewest",
+        "Adelanto"
+      ],
+      [
+        "mid",
+        "Adelanto"
+      ],
+      [
+        "freqfewest",
+        "17"
+      ],
+      [
+        "freqmid",
+        "17"
+      ],
+      [
+        "varnamesTypes",
+        "city"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.year.median",
+    [
+      "2008",
+      2008.0
+    ]
+  ],
+  [
+    "change",
+    "variables.year.mean",
+    [
+      "2008",
+      2008.0
+    ]
+  ],
+  [
+    "change",
+    "variables.year.mode",
+    [
+      "2000",
+      [
+        2000,
+        2014,
+        2006,
+        2013,
+        2005
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.year.max",
+    [
+      "2016",
+      2016
+    ]
+  ],
+  [
+    "change",
+    "variables.year.min",
+    [
+      "2000",
+      2000
+    ]
+  ],
+  [
+    "change",
+    "variables.year.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.year.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.year",
+    [
+      [
+        "variableName",
+        "year"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        8194
+      ],
+      [
+        "uniqueCount",
+        17
+      ],
+      [
+        "modeFreq",
+        482
+      ],
+      [
+        "fewestValues",
+        [
+          2000,
+          2014,
+          2006,
+          2013,
+          2005
+        ]
+      ],
+      [
+        "fewestFreq",
+        482
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        4.899278449926661
+      ],
+      [
+        "herfindahlIndex",
+        0.00012204124387191313
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          1999.8350695636111,
+          2000.1683320304026,
+          2000.501594497194,
+          2000.8348569639852,
+          2001.1681194307766,
+          2001.501381897568,
+          2001.8346443643595,
+          2002.1679068311507,
+          2002.5011692979422,
+          2002.8344317647336,
+          2003.167694231525,
+          2003.5009566983163,
+          2003.8342191651077,
+          2004.1674816318991,
+          2004.5007440986906,
+          2004.8340065654818,
+          2005.1672690322732,
+          2005.5005314990647,
+          2005.833793965856,
+          2006.1670564326473,
+          2006.5003188994388,
+          2006.8335813662302,
+          2007.1668438330216,
+          2007.5001062998128,
+          2007.8333687666043,
+          2008.1666312333957,
+          2008.4998937001872,
+          2008.8331561669784,
+          2009.1664186337698,
+          2009.4996811005612,
+          2009.8329435673527,
+          2010.166206034144,
+          2010.4994685009353,
+          2010.8327309677268,
+          2011.1659934345182,
+          2011.4992559013094,
+          2011.8325183681009,
+          2012.1657808348923,
+          2012.4990433016837,
+          2012.832305768475,
+          2013.1655682352664,
+          2013.4988307020578,
+          2013.8320931688493,
+          2014.1653556356405,
+          2014.498618102432,
+          2014.8318805692234,
+          2015.1651430360148,
+          2015.498405502806,
+          2015.8316679695974,
+          2016.1649304363889
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.03953234877932869,
+          0.04780620303218026,
+          0.05341404092217293,
+          0.05655689398138747,
+          0.05801654354565241,
+          0.0585797267966203,
+          0.05876154324115734,
+          0.05881027892377555,
+          0.058820793031143945,
+          0.05882330505573956,
+          0.058823627816513305,
+          0.05882322675194917,
+          0.058823679025431876,
+          0.058823676726613934,
+          0.05882323206525215,
+          0.058823679173196745,
+          0.0588236771097026,
+          0.058823232066171925,
+          0.05882367883006265,
+          0.058823677454309366,
+          0.05882323206511105,
+          0.05882367848652273,
+          0.05882367779864546,
+          0.05882323206458046,
+          0.058823678142716794,
+          0.05882367814271678,
+          0.05882323206458046,
+          0.05882367779864546,
+          0.05882367848652273,
+          0.058823232065111045,
+          0.058823677454309366,
+          0.058823678830062655,
+          0.05882323206617194,
+          0.0588236771097026,
+          0.058823679173196745,
+          0.05882323206525213,
+          0.05882367672661394,
+          0.058823679025431876,
+          0.05882322675194917,
+          0.05882362781651332,
+          0.05882330505573954,
+          0.05882079303114395,
+          0.05881027892377555,
+          0.05876154324115733,
+          0.0585797267966203,
+          0.05801654354565241,
+          0.05655689398138747,
+          0.05341404092217293,
+          0.04780620303218026,
+          0.03953234877932868
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          2000.0,
+          2000.3265306122448,
+          2000.6530612244899,
+          2000.9795918367347,
+          2001.3061224489795,
+          2001.6326530612246,
+          2001.9591836734694,
+          2002.2857142857142,
+          2002.6122448979593,
+          2002.938775510204,
+          2003.265306122449,
+          2003.591836734694,
+          2003.9183673469388,
+          2004.2448979591836,
+          2004.5714285714287,
+          2004.8979591836735,
+          2005.2244897959183,
+          2005.5510204081634,
+          2005.8775510204082,
+          2006.204081632653,
+          2006.530612244898,
+          2006.857142857143,
+          2007.1836734693877,
+          2007.5102040816328,
+          2007.8367346938776,
+          2008.1632653061224,
+          2008.4897959183672,
+          2008.8163265306123,
+          2009.142857142857,
+          2009.469387755102,
+          2009.795918367347,
+          2010.1224489795918,
+          2010.4489795918366,
+          2010.7755102040817,
+          2011.1020408163265,
+          2011.4285714285713,
+          2011.7551020408164,
+          2012.0816326530612,
+          2012.408163265306,
+          2012.734693877551,
+          2013.061224489796,
+          2013.3877551020407,
+          2013.7142857142858,
+          2014.0408163265306,
+          2014.3673469387754,
+          2014.6938775510205,
+          2015.0204081632653,
+          2015.3469387755101,
+          2015.6734693877552,
+          2016.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.058823529411764705,
+          0.058823529411764705,
+          0.058823529411764705,
+          0.058823529411764705,
+          0.11764705882352941,
+          0.11764705882352941,
+          0.11764705882352941,
+          0.17647058823529413,
+          0.17647058823529413,
+          0.17647058823529413,
+          0.23529411764705882,
+          0.23529411764705882,
+          0.23529411764705882,
+          0.29411764705882354,
+          0.29411764705882354,
+          0.29411764705882354,
+          0.35294117647058826,
+          0.35294117647058826,
+          0.35294117647058826,
+          0.4117647058823529,
+          0.4117647058823529,
+          0.4117647058823529,
+          0.47058823529411764,
+          0.47058823529411764,
+          0.47058823529411764,
+          0.5294117647058824,
+          0.5294117647058824,
+          0.5294117647058824,
+          0.5882352941176471,
+          0.5882352941176471,
+          0.5882352941176471,
+          0.6470588235294118,
+          0.6470588235294118,
+          0.6470588235294118,
+          0.7058823529411765,
+          0.7058823529411765,
+          0.7058823529411765,
+          0.7647058823529411,
+          0.7647058823529411,
+          0.7647058823529411,
+          0.8235294117647058,
+          0.8235294117647058,
+          0.8235294117647058,
+          0.8823529411764706,
+          0.8823529411764706,
+          0.8823529411764706,
+          0.9411764705882353,
+          0.9411764705882353,
+          0.9411764705882353,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.year",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          1997.81829164161,
+          1998.2338715746,
+          1998.6494515076,
+          1999.0650314406,
+          1999.48061137359,
+          1999.89619130659,
+          2000.31177123958,
+          2000.72735117258,
+          2001.14293110557,
+          2001.55851103857,
+          2001.97409097156,
+          2002.38967090456,
+          2002.80525083756,
+          2003.22083077055,
+          2003.63641070355,
+          2004.05199063654,
+          2004.46757056954,
+          2004.88315050253,
+          2005.29873043553,
+          2005.71431036852,
+          2006.12989030152,
+          2006.54547023452,
+          2006.96105016751,
+          2007.37663010051,
+          2007.7922100335,
+          2008.2077899665,
+          2008.62336989949,
+          2009.03894983249,
+          2009.45452976548,
+          2009.87010969848,
+          2010.28568963148,
+          2010.70126956447,
+          2011.11684949747,
+          2011.53242943046,
+          2011.94800936346,
+          2012.36358929645,
+          2012.77916922945,
+          2013.19474916244,
+          2013.61032909544,
+          2014.02590902844,
+          2014.44148896143,
+          2014.85706889443,
+          2015.27264882742,
+          2015.68822876042,
+          2016.10380869341,
+          2016.51938862641,
+          2016.9349685594,
+          2017.3505484924,
+          2017.7661284254,
+          2018.18170835839
+        ]
+      ],
+      [
+        "ploty",
+        [
+          0.000366796877164232,
+          0.00173107105326082,
+          0.00595732913428356,
+          0.0151069471528497,
+          0.0287498367843589,
+          0.0426431195649024,
+          0.0522888084006047,
+          0.0569152013649528,
+          0.0584597804511366,
+          0.0588081173931068,
+          0.0588686148689318,
+          0.0588756074931587,
+          0.0588896965078742,
+          0.0588882344573748,
+          0.058874240073645,
+          0.0588744529744971,
+          0.0588775131980836,
+          0.0588938542475245,
+          0.0588859889843381,
+          0.0588723906039779,
+          0.0588726385089221,
+          0.0588806101750869,
+          0.0588975020751923,
+          0.0588837147333943,
+          0.0588717265503399,
+          0.0588717265503398,
+          0.0588837147333939,
+          0.0588975020751919,
+          0.0588806101750865,
+          0.0588726385089219,
+          0.0588723906039778,
+          0.0588859889843381,
+          0.0588938542475244,
+          0.0588775131980835,
+          0.0588744529744972,
+          0.0588742400736453,
+          0.0588882344573752,
+          0.0588896965078745,
+          0.0588756074931589,
+          0.0588686148689318,
+          0.0588081173931067,
+          0.0584597804511365,
+          0.0569152013649527,
+          0.0522888084006046,
+          0.0426431195649067,
+          0.0287498367843588,
+          0.0151069471528497,
+          0.00595732913428353,
+          0.0017310710532608,
+          0.000366796877164222
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.0588235294117647,
+          0.117647058823529,
+          0.176470588235294,
+          0.235294117647059,
+          0.294117647058824,
+          0.352941176470588,
+          0.411764705882353,
+          0.470588235294118,
+          0.529411764705882,
+          0.588235294117647,
+          0.647058823529412,
+          0.705882352941177,
+          0.764705882352941,
+          0.823529411764706,
+          0.882352941176471,
+          0.941176470588235,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "year"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        8194
+      ],
+      [
+        "sd",
+        "4.89927844992666"
+      ],
+      [
+        "uniques",
+        17
+      ],
+      [
+        "herfindahl",
+        0.0588235294117647
+      ],
+      [
+        "freqmode",
+        482
+      ],
+      [
+        "fewest",
+        "2000"
+      ],
+      [
+        "mid",
+        "2000"
+      ],
+      [
+        "freqfewest",
+        "482"
+      ],
+      [
+        "freqmid",
+        "482"
+      ],
+      [
+        "varnamesTypes",
+        "year"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "mean"
+    ],
+    [
+      "19441.0074444716",
+      19441.007444471565
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "max"
+    ],
+    [
+      "1773094",
+      1773094
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "min"
+    ],
+    [
+      "0",
+      0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "binary"
+    ],
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.amount",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.amount"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.amount"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        8194
+      ],
+      [
+        "uniqueCount",
+        1697
+      ],
+      [
+        "modeFreq",
+        5687
+      ],
+      [
+        "fewestValues",
+        [
+          16580,
+          39494,
+          33333,
+          129562,
+          55830
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        70480.46793021954
+      ],
+      [
+        "herfindahlIndex",
+        0.0017258436595954084
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          -0.1649304363889819,
+          36185.43363815285,
+          72371.0322067421,
+          108556.63077533133,
+          144742.22934392057,
+          180927.82791250982,
+          217113.42648109904,
+          253299.02504968827,
+          289484.6236182775,
+          325670.22218686674,
+          361855.820755456,
+          398041.4193240452,
+          434227.01789263444,
+          470412.6164612237,
+          506598.2150298129,
+          542783.8135984022,
+          578969.4121669914,
+          615155.0107355806,
+          651340.6093041699,
+          687526.2078727591,
+          723711.8064413484,
+          759897.4050099376,
+          796083.0035785268,
+          832268.6021471161,
+          868454.2007157053,
+          904639.7992842945,
+          940825.3978528838,
+          977010.996421473,
+          1013196.5949900622,
+          1049382.1935586515,
+          1085567.792127241,
+          1121753.39069583,
+          1157938.9892644193,
+          1194124.5878330085,
+          1230310.1864015977,
+          1266495.784970187,
+          1302681.3835387763,
+          1338866.9821073655,
+          1375052.5806759547,
+          1411238.179244544,
+          1447423.7778131333,
+          1483609.3763817225,
+          1519794.9749503117,
+          1555980.573518901,
+          1592166.17208749,
+          1628351.7706560793,
+          1664537.3692246687,
+          1700722.967793258,
+          1736908.566361847,
+          1773094.1649304363
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          2.502523010098961e-05,
+          4.7722819206600035e-06,
+          1.6075441782602592e-06,
+          5.516473663297134e-07,
+          2.080763891775334e-07,
+          7.829203252931211e-08,
+          6.40697702141708e-08,
+          2.8241194100599043e-08,
+          2.1431969914237818e-08,
+          1.5865808705298762e-08,
+          8.702929202365234e-09,
+          5.871841159284978e-09,
+          9.512244711472163e-09,
+          1.063123106113224e-08,
+          1.2940956288741654e-08,
+          6.040101969731091e-09,
+          2.1609307376061245e-08,
+          4.175163132239619e-08,
+          5.811887483620126e-09,
+          3.5329850351376343e-09,
+          3.990108698428929e-11,
+          4.186039644311602e-09,
+          3.548493931598205e-11,
+          3.667403655533759e-09,
+          4.994823193476157e-10,
+          2.812666082710416e-09,
+          1.2431062510274846e-09,
+          1.2530221605001913e-09,
+          7.825164033907905e-14,
+          1.4556058250336548e-17,
+          3.220778815429493e-11,
+          8.354839137786609e-09,
+          1.3780728853154634e-09,
+          4.175108625692866e-09,
+          3.354290275650933e-09,
+          2.158372154075574e-10,
+          8.65946480044976e-16,
+          2.150102708188326e-25,
+          3.303929531978502e-39,
+          2.6902046528519487e-43,
+          1.9509147600766664e-28,
+          8.816735060056446e-18,
+          2.6699122634724628e-11,
+          9.552832221257383e-09,
+          4.32992381166575e-09,
+          1.819509601664081e-10,
+          5.885669478297627e-16,
+          1.604315261129302e-17,
+          3.295075789029029e-11,
+          4.188364976514855e-09
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          36185.5918367347,
+          72371.1836734694,
+          108556.77551020408,
+          144742.3673469388,
+          180927.9591836735,
+          217113.55102040817,
+          253299.14285714287,
+          289484.7346938776,
+          325670.32653061225,
+          361855.918367347,
+          398041.51020408166,
+          434227.10204081633,
+          470412.69387755106,
+          506598.28571428574,
+          542783.8775510205,
+          578969.4693877551,
+          615155.0612244898,
+          651340.6530612245,
+          687526.2448979593,
+          723711.836734694,
+          759897.4285714286,
+          796083.0204081633,
+          832268.612244898,
+          868454.2040816327,
+          904639.7959183675,
+          940825.3877551021,
+          977010.9795918368,
+          1013196.5714285715,
+          1049382.1632653063,
+          1085567.755102041,
+          1121753.3469387756,
+          1157938.9387755103,
+          1194124.530612245,
+          1230310.1224489796,
+          1266495.7142857143,
+          1302681.306122449,
+          1338866.8979591837,
+          1375052.4897959186,
+          1411238.0816326533,
+          1447423.673469388,
+          1483609.2653061226,
+          1519794.8571428573,
+          1555980.448979592,
+          1592166.0408163266,
+          1628351.6326530613,
+          1664537.224489796,
+          1700722.8163265307,
+          1736908.4081632653,
+          1773094.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.6940444227483524,
+          0.8278008298755186,
+          0.943129118867464,
+          0.9736392482304125,
+          0.9824261654869416,
+          0.988162069807176,
+          0.9908469611911155,
+          0.9921894068830852,
+          0.9930436905052478,
+          0.9937759336099585,
+          0.9940200146448621,
+          0.9943861361972175,
+          0.9946302172321211,
+          0.9949963387844765,
+          0.9954845008542836,
+          0.9956065413717354,
+          0.9962167439589944,
+          0.997071027581157,
+          0.9980473517207713,
+          0.9982914327556749,
+          0.9982914327556749,
+          0.9984134732731267,
+          0.9984134732731267,
+          0.9984134732731267,
+          0.9985355137905785,
+          0.9986575543080303,
+          0.9986575543080303,
+          0.9987795948254821,
+          0.9987795948254821,
+          0.9987795948254821,
+          0.9987795948254821,
+          0.9987795948254821,
+          0.9991457163778374,
+          0.9992677568952892,
+          0.9992677568952892,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.9997559189650964,
+          0.9998779594825482,
+          0.9998779594825482,
+          0.9998779594825482,
+          0.9998779594825482,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.amount"
+    ],
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -6978.77294272782,
+          29491.6667692203,
+          65962.1064811683,
+          102432.546193116,
+          138902.985905065,
+          175373.425617013,
+          211843.865328961,
+          248314.305040909,
+          284784.744752857,
+          321255.184464805,
+          357725.624176753,
+          394196.063888701,
+          430666.503600649,
+          467136.943312597,
+          503607.383024545,
+          540077.822736493,
+          576548.262448441,
+          613018.70216039,
+          649489.141872338,
+          685959.581584286,
+          722430.021296234,
+          758900.461008182,
+          795370.90072013,
+          831841.340432078,
+          868311.780144026,
+          904782.219855974,
+          941252.659567922,
+          977723.09927987,
+          1014193.53899182,
+          1050663.97870377,
+          1087134.41841571,
+          1123604.85812766,
+          1160075.29783961,
+          1196545.73755156,
+          1233016.17726351,
+          1269486.61697545,
+          1305957.0566874,
+          1342427.49639935,
+          1378897.9361113,
+          1415368.37582325,
+          1451838.8155352,
+          1488309.25524714,
+          1524779.69495909,
+          1561250.13467104,
+          1597720.57438299,
+          1634191.01409494,
+          1670661.45380688,
+          1707131.89351883,
+          1743602.33323078,
+          1780072.77294273
+        ]
+      ],
+      [
+        "ploty",
+        [
+          9.96761061544882e-06,
+          4.85754016407506e-06,
+          1.95746978230642e-06,
+          6.95391384284788e-07,
+          2.09767791388528e-07,
+          6.5395278086296e-08,
+          5.87477595083355e-08,
+          1.68600278439939e-08,
+          1.35573818709412e-08,
+          2.67958532620181e-08,
+          4.51611990068435e-09,
+          4.18194365128611e-13,
+          3.47799309614196e-09,
+          9.15366119636549e-09,
+          3.29519345349805e-08,
+          2.96277706543089e-09,
+          3.23822576216471e-08,
+          4.66975029030202e-08,
+          5.26158070142569e-10,
+          1.91253995663431e-09,
+          2.13474797865988e-22,
+          1.36009313101982e-08,
+          0,
+          1.40927046472641e-09,
+          0,
+          4.89724760629984e-11,
+          1.94934096610042e-18,
+          4.75146263349951e-21,
+          5.85008932717063e-23,
+          9.63369329717116e-23,
+          6.48141045878682e-23,
+          1.28331006402113e-08,
+          1.80880226387253e-23,
+          8.30009067142864e-09,
+          3.68750560440583e-09,
+          0,
+          0,
+          5.04569967858199e-22,
+          0,
+          1.85401339111461e-22,
+          3.18816324824361e-22,
+          2.16410609964171e-23,
+          0,
+          1.44066124519473e-08,
+          1.51432616173383e-08,
+          0,
+          3.4117597639842e-22,
+          3.68948082225711e-22,
+          7.0025312090319e-22,
+          1.75240433390552e-09
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          36185.5918367347,
+          72371.1836734694,
+          108556.775510204,
+          144742.367346939,
+          180927.959183673,
+          217113.551020408,
+          253299.142857143,
+          289484.734693878,
+          325670.326530612,
+          361855.918367347,
+          398041.510204082,
+          434227.102040816,
+          470412.693877551,
+          506598.285714286,
+          542783.87755102,
+          578969.469387755,
+          615155.06122449,
+          651340.653061224,
+          687526.244897959,
+          723711.836734694,
+          759897.428571429,
+          796083.020408163,
+          832268.612244898,
+          868454.204081633,
+          904639.795918367,
+          940825.387755102,
+          977010.979591837,
+          1013196.57142857,
+          1049382.16326531,
+          1085567.75510204,
+          1121753.34693878,
+          1157938.93877551,
+          1194124.53061224,
+          1230310.12244898,
+          1266495.71428571,
+          1302681.30612245,
+          1338866.89795918,
+          1375052.48979592,
+          1411238.08163265,
+          1447423.67346939,
+          1483609.26530612,
+          1519794.85714286,
+          1555980.44897959,
+          1592166.04081633,
+          1628351.63265306,
+          1664537.2244898,
+          1700722.81632653,
+          1736908.40816327,
+          1773094
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.694044422748352,
+          0.827800829875519,
+          0.943129118867464,
+          0.973639248230412,
+          0.982426165486942,
+          0.988162069807176,
+          0.990846961191115,
+          0.992189406883085,
+          0.993043690505248,
+          0.993775933609959,
+          0.994020014644862,
+          0.994386136197217,
+          0.994630217232121,
+          0.994996338784476,
+          0.995484500854284,
+          0.995606541371735,
+          0.996216743958994,
+          0.997071027581157,
+          0.998047351720771,
+          0.998291432755675,
+          0.998291432755675,
+          0.998413473273127,
+          0.998413473273127,
+          0.998413473273127,
+          0.998535513790578,
+          0.99865755430803,
+          0.99865755430803,
+          0.998779594825482,
+          0.998779594825482,
+          0.998779594825482,
+          0.998779594825482,
+          0.998779594825482,
+          0.999145716377837,
+          0.999267756895289,
+          0.999267756895289,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999389797412741,
+          0.999755918965096,
+          0.999877959482548,
+          0.999877959482548,
+          0.999877959482548,
+          0.999877959482548,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.amount"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        8194
+      ],
+      [
+        "sd",
+        "70480.4679302195"
+      ],
+      [
+        "uniques",
+        1697
+      ],
+      [
+        "herfindahl",
+        0.482026234809053
+      ],
+      [
+        "freqmode",
+        5687
+      ],
+      [
+        "fewest",
+        "7332"
+      ],
+      [
+        "mid",
+        "7332"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.amount"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "mean"
+    ],
+    [
+      "0.305720213396562",
+      0.30572021339656197
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "max"
+    ],
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "min"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "binary"
+    ],
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag3",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.lag3"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.lag3"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1446
+      ],
+      [
+        "validCount",
+        6748
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        4685
+      ],
+      [
+        "fewestValues",
+        [
+          1.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        2063
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.46074594272590874
+      ],
+      [
+        "herfindahlIndex",
+        0.000484730974309276
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 4685,
+          "1.0": 2063
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.694279786603438,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.lag3"
+    ],
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 4685,
+          "1": 2063
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.694279786603438,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.lag3"
+      ],
+      [
+        "invalid",
+        1446
+      ],
+      [
+        "valid",
+        6748
+      ],
+      [
+        "sd",
+        "0.460745942725909"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.575489270965355
+      ],
+      [
+        "freqmode",
+        4685
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2063"
+      ],
+      [
+        "freqmid",
+        "3374"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.lag3"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "mean"
+    ],
+    [
+      "0.304149377593361",
+      0.30414937759336097
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "max"
+    ],
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "min"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "binary"
+    ],
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag2",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.lag2"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.lag2"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        964
+      ],
+      [
+        "validCount",
+        7230
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        5031
+      ],
+      [
+        "fewestValues",
+        [
+          1.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        2199
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.46007804835541843
+      ],
+      [
+        "herfindahlIndex",
+        0.00045475216007276857
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 5031,
+          "1.0": 2199
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.695850622406639,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.lag2"
+    ],
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 5031,
+          "1": 2199
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.695850622406639,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.lag2"
+      ],
+      [
+        "invalid",
+        964
+      ],
+      [
+        "valid",
+        7230
+      ],
+      [
+        "sd",
+        "0.460078048355418"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.576714932594136
+      ],
+      [
+        "freqmode",
+        5031
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2199"
+      ],
+      [
+        "freqmid",
+        "3615"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.lag2"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "mean"
+    ],
+    [
+      "0.305497925311203",
+      0.30549792531120334
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "max"
+    ],
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "min"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "binary"
+    ],
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lag1",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.lag1"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.lag1"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        482
+      ],
+      [
+        "validCount",
+        7712
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        5356
+      ],
+      [
+        "fewestValues",
+        [
+          1.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        2356
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.4606478677283126
+      ],
+      [
+        "herfindahlIndex",
+        0.00042444821731747506
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 5356,
+          "1.0": 2356
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.6945020746887967,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.lag1"
+    ],
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 5356,
+          "1": 2356
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.694502074688797,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.lag1"
+      ],
+      [
+        "invalid",
+        482
+      ],
+      [
+        "valid",
+        7712
+      ],
+      [
+        "sd",
+        "0.460647867728313"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.575662114116492
+      ],
+      [
+        "freqmode",
+        5356
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2356"
+      ],
+      [
+        "freqmid",
+        "3856"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.lag1"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.median",
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.mean",
+    [
+      "0.305955577251648",
+      0.30595557725164757
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.mode",
+    [
+      "0",
+      [
+        0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.max",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.min",
+    [
+      "0",
+      0
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.binary",
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    "variables.lobby.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.lobby",
+    [
+      [
+        "variableName",
+        "lobby"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        8194
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        5687
+      ],
+      [
+        "fewestValues",
+        [
+          1
+        ]
+      ],
+      [
+        "fewestFreq",
+        2507
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.4608391043217006
+      ],
+      [
+        "herfindahlIndex",
+        0.0003988831272437044
+      ],
+      [
+        "plotValues",
+        {
+          "0": 5687,
+          "1": 2507
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.6940444227483524,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.lobby",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 5687,
+          "1": 2507
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.694044422748352,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        8194
+      ],
+      [
+        "sd",
+        "0.460839104321701"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.575306475999483
+      ],
+      [
+        "freqmode",
+        5687
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2507"
+      ],
+      [
+        "freqmid",
+        "4097"
+      ],
+      [
+        "varnamesTypes",
+        "lobby"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "mean"
+    ],
+    [
+      "0.311332987551867",
+      0.3113329875518672
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "max"
+    ],
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "min"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "binary"
+    ],
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead1",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.lead1"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.lead1"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        482
+      ],
+      [
+        "validCount",
+        7712
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        5311
+      ],
+      [
+        "fewestValues",
+        [
+          1.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        2401
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.46306863796440884
+      ],
+      [
+        "herfindahlIndex",
+        0.0004164931278634153
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 5311,
+          "1.0": 2401
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.6886670124481328,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.lead1"
+    ],
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 5311,
+          "1": 2401
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.688667012448133,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.lead1"
+      ],
+      [
+        "invalid",
+        482
+      ],
+      [
+        "valid",
+        7712
+      ],
+      [
+        "sd",
+        "0.463068637964409"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.571190483172208
+      ],
+      [
+        "freqmode",
+        5311
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2401"
+      ],
+      [
+        "freqmid",
+        "3856"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.lead1"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "mean"
+    ],
+    [
+      "0.313692946058091",
+      0.3136929460580913
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "max"
+    ],
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "min"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "binary"
+    ],
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead2",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.lead2"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.lead2"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        964
+      ],
+      [
+        "validCount",
+        7230
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        4962
+      ],
+      [
+        "fewestValues",
+        [
+          1.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        2268
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.46402528276305405
+      ],
+      [
+        "herfindahlIndex",
+        0.00044091710758378556
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 4962,
+          "1.0": 2268
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.6863070539419087,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.lead2"
+    ],
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 4962,
+          "1": 2268
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.686307053941909,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.lead2"
+      ],
+      [
+        "invalid",
+        964
+      ],
+      [
+        "valid",
+        7230
+      ],
+      [
+        "sd",
+        "0.464025282763054"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.569420636697027
+      ],
+      [
+        "freqmode",
+        4962
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2268"
+      ],
+      [
+        "freqmid",
+        "3615"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.lead2"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "median"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "mean"
+    ],
+    [
+      "0.31520450503853",
+      0.3152045050385299
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "mode"
+    ],
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "max"
+    ],
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "min"
+    ],
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "binary"
+    ],
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "lobby.lead3",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "lobby.lead3"
+    ],
+    [
+      [
+        "variableName",
+        "lobby.lead3"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1446
+      ],
+      [
+        "validCount",
+        6748
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        4621
+      ],
+      [
+        "fewestValues",
+        [
+          1.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        2127
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.46463170052314356
+      ],
+      [
+        "herfindahlIndex",
+        0.0004701457451810217
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 4621,
+          "1.0": 2127
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.6847954949614701,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "lobby.lead3"
+    ],
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 4621,
+          "1": 2127
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.68479549496147,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "lobby.lead3"
+      ],
+      [
+        "invalid",
+        1446
+      ],
+      [
+        "valid",
+        6748
+      ],
+      [
+        "sd",
+        "0.464631700523144"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.568298749916109
+      ],
+      [
+        "freqmode",
+        4621
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "2127"
+      ],
+      [
+        "freqmid",
+        "3374"
+      ],
+      [
+        "varnamesTypes",
+        "lobby.lead3"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:30:22",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "city": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "year": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.amount": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.lag3": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.lag2": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.lag1": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.lead1": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.lead2": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "lobby.lead3": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

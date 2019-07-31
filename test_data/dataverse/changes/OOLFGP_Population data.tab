@@ -1,0 +1,3548 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        249
+      ],
+      [
+        "variableCount",
+        5
+      ],
+      [
+        "dataSource",
+        {
+          "name": "OOLFGP_Population data.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 11341
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.countryname.mode",
+    [
+      "Aruba",
+      [
+        "Latin America & Caribbean (developing only)",
+        "Upper middle income",
+        "High income",
+        "Georgia",
+        "Lower middle income"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.countryname.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.countryname.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.countryname",
+    [
+      [
+        "variableName",
+        "countryname"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        249
+      ],
+      [
+        "uniqueCount",
+        249
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Latin America & Caribbean (developing only)",
+          "Upper middle income",
+          "High income",
+          "Georgia",
+          "Lower middle income"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.004016064257028122
+      ],
+      [
+        "plotValues",
+        {
+          "Middle East & North Africa (developing only)": 1,
+          "Middle East & North Africa (all income levels)": 1,
+          "Bangladesh": 1,
+          "Mali": 1,
+          "Iraq": 1,
+          "Comoros": 1,
+          "Croatia": 1,
+          "Uganda": 1,
+          "Pakistan": 1,
+          "Fragile and conflict affected situations": 1,
+          "Ethiopia": 1,
+          "St. Martin (French part)": 1,
+          "Bosnia and Herzegovina": 1,
+          "Solomon Islands": 1,
+          "High income: nonOECD": 1,
+          "Mauritius": 1,
+          "Ghana": 1,
+          "Cuba": 1,
+          "High income: OECD": 1,
+          "Timor-Leste": 1,
+          "Marshall Islands": 1,
+          "Singapore": 1,
+          "China": 1,
+          "Central Europe and the Baltics": 1,
+          "Finland": 1,
+          "Argentina": 1,
+          "Korea, Dem. Rep.": 1,
+          "Indonesia": 1,
+          "European Union": 1,
+          "Tuvalu": 1,
+          "United Kingdom": 1,
+          "Maldives": 1,
+          "Uzbekistan": 1,
+          "Colombia": 1,
+          "Palau": 1,
+          "American Samoa": 1,
+          "Cameroon": 1,
+          "Macao SAR, China": 1,
+          "Netherlands": 1,
+          "Tajikistan": 1,
+          "Philippines": 1,
+          "Portugal": 1,
+          "Bahrain": 1,
+          "Romania": 1,
+          "Niger": 1,
+          "Russian Federation": 1,
+          "Mauritania": 1,
+          "Rwanda": 1,
+          "Congo, Rep.": 1,
+          "Oman": 1,
+          "Vietnam": 1,
+          "Kosovo": 1,
+          "Middle income": 1,
+          "Sint Maarten (Dutch part)": 1,
+          "Uruguay": 1,
+          "Arab World": 1,
+          "Chad": 1,
+          "Malaysia": 1,
+          "Luxembourg": 1,
+          "Malawi": 1,
+          "Spain": 1,
+          "Denmark": 1,
+          "Myanmar": 1,
+          "Gambia, The": 1,
+          "Czech Republic": 1,
+          "Central African Republic": 1,
+          "Samoa": 1,
+          "South Asia": 1,
+          "Eritrea": 1,
+          "Papua New Guinea": 1,
+          "Sierra Leone": 1,
+          "Azerbaijan": 1,
+          "Europe & Central Asia (all income levels)": 1,
+          "Taiwan, China": 1,
+          "Honduras": 1,
+          "Kuwait": 1,
+          "Low & middle income": 1,
+          "Nepal": 1,
+          "Belize": 1,
+          "Fiji": 1,
+          "Heavily indebted poor countries (HIPC)": 1,
+          "West Bank and Gaza": 1,
+          "Italy": 1,
+          "Mexico": 1,
+          "Kenya": 1,
+          "Zambia": 1,
+          "Guyana": 1,
+          "Cote d'Ivoire": 1,
+          "Not classified": 1,
+          "Dominican Republic": 1,
+          "Monaco": 1,
+          "Madagascar": 1,
+          "Botswana": 1,
+          "Costa Rica": 1,
+          "Libya": 1,
+          "Chile": 1,
+          "Benin": 1,
+          "North America": 1,
+          "Poland": 1,
+          "New Zealand": 1,
+          "San Marino": 1,
+          "Guatemala": 1,
+          "Curacao": 1,
+          "Yemen, Rep.": 1,
+          "Slovenia": 1,
+          "World": 1,
+          "Caribbean small states": 1,
+          "Guinea": 1,
+          "Antigua and Barbuda": 1,
+          "Jamaica": 1,
+          "South Africa": 1,
+          "Pacific island small states": 1,
+          "Germany": 1,
+          "Hungary": 1,
+          "Lithuania": 1,
+          "Hong Kong SAR, China": 1,
+          "Macedonia, FYR": 1,
+          "Channel Islands": 1,
+          "Tanzania": 1,
+          "Sri Lanka": 1,
+          "Guam": 1,
+          "Japan": 1,
+          "Barbados": 1,
+          "Morocco": 1,
+          "Dominica": 1,
+          "Tunisia": 1,
+          "Turkey": 1,
+          "Syrian Arab Republic": 1,
+          "St. Kitts and Nevis": 1,
+          "Bermuda": 1,
+          "Seychelles": 1,
+          "Mozambique": 1,
+          "Kyrgyz Republic": 1,
+          "Tonga": 1,
+          "Ukraine": 1,
+          "Iran, Islamic Rep.": 1,
+          "Djibouti": 1,
+          "Switzerland": 1,
+          "Liechtenstein": 1,
+          "Mongolia": 1,
+          "Peru": 1,
+          "Estonia": 1,
+          "Greece": 1,
+          "Other small states": 1,
+          "Belarus": 1,
+          "Grenada": 1,
+          "Iceland": 1,
+          "Angola": 1,
+          "Lao PDR": 1,
+          "Cambodia": 1,
+          "France": 1,
+          "Puerto Rico": 1,
+          "Australia": 1,
+          "Korea, Rep.": 1,
+          "Senegal": 1,
+          "Latvia": 1,
+          "Bulgaria": 1,
+          "Togo": 1,
+          "Burkina Faso": 1,
+          "Paraguay": 1,
+          "Serbia": 1,
+          "Latin America & Caribbean (all income levels)": 1,
+          "Israel": 1,
+          "Slovak Republic": 1,
+          "St. Lucia": 1,
+          "Ireland": 1,
+          "Zimbabwe": 1,
+          "Albania": 1,
+          "Brazil": 1,
+          "Jordan": 1,
+          "Brunei Darussalam": 1,
+          "Belgium": 1,
+          "Gabon": 1,
+          "Swaziland": 1,
+          "Bahamas, The": 1,
+          "Austria": 1,
+          "Congo, Dem. Rep.": 1,
+          "Small states": 1,
+          "Cyprus": 1,
+          "Micronesia, Fed. Sts.": 1,
+          "Cayman Islands": 1,
+          "Saudi Arabia": 1,
+          "Nicaragua": 1,
+          "Sao Tome and Principe": 1,
+          "Egypt, Arab Rep.": 1,
+          "Armenia": 1,
+          "South Sudan": 1,
+          "Somalia": 1,
+          "Ecuador": 1,
+          "Moldova": 1,
+          "Euro area": 1,
+          "Bolivia": 1,
+          "Europe & Central Asia (developing only)": 1,
+          "Guinea-Bissau": 1,
+          "United States": 1,
+          "Trinidad and Tobago": 1,
+          "Greenland": 1,
+          "India": 1,
+          "Venezuela, RB": 1,
+          "Virgin Islands (U.S.)": 1,
+          "East Asia & Pacific (all income levels)": 1,
+          "Algeria": 1,
+          "Montenegro": 1,
+          "Bhutan": 1,
+          "Sub-Saharan Africa (developing only)": 1,
+          "Vanuatu": 1,
+          "Upper middle income": 1,
+          "United Arab Emirates": 1,
+          "Turkmenistan": 1,
+          "French Polynesia": 1,
+          "Lebanon": 1,
+          "Faeroe Islands": 1,
+          "Haiti": 1,
+          "OECD members": 1,
+          "Lesotho": 1,
+          "Suriname": 1,
+          "Malta": 1,
+          "Equatorial Guinea": 1,
+          "Least developed countries: UN classification": 1,
+          "Nigeria": 1,
+          "Burundi": 1,
+          "Cabo Verde": 1,
+          "Turks and Caicos Islands": 1,
+          "Kiribati": 1,
+          "Sudan": 1,
+          "Northern Mariana Islands": 1,
+          "East Asia & Pacific (developing only)": 1,
+          "Panama": 1,
+          "Liberia": 1,
+          "Thailand": 1,
+          "Aruba": 1,
+          "Canada": 1,
+          "Low income": 1,
+          "New Caledonia": 1,
+          "Sub-Saharan Africa (all income levels)": 1,
+          "Isle of Man": 1,
+          "Namibia": 1,
+          "Sweden": 1,
+          "El Salvador": 1,
+          "Kazakhstan": 1,
+          "Norway": 1,
+          "Afghanistan": 1,
+          "Qatar": 1,
+          "Andorra": 1,
+          "Lower middle income": 1,
+          "Georgia": 1,
+          "High income": 1,
+          "St. Vincent and the Grenadines": 1,
+          "Latin America & Caribbean (developing only)": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.countryname",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Afghanistan": 1,
+          "Albania": 1,
+          "Algeria": 1,
+          "American Samoa": 1,
+          "Andorra": 1,
+          "Angola": 1,
+          "Antigua and Barbuda": 1,
+          "Arab World": 1,
+          "Argentina": 1,
+          "Armenia": 1,
+          "Aruba": 1,
+          "Australia": 1,
+          "Austria": 1,
+          "Azerbaijan": 1,
+          "Bahamas, The": 1,
+          "Bahrain": 1,
+          "Bangladesh": 1,
+          "Barbados": 1,
+          "Belarus": 1,
+          "Belgium": 1,
+          "Belize": 1,
+          "Benin": 1,
+          "Bermuda": 1,
+          "Bhutan": 1,
+          "Bolivia": 1,
+          "Bosnia and Herzegovina": 1,
+          "Botswana": 1,
+          "Brazil": 1,
+          "Brunei Darussalam": 1,
+          "Bulgaria": 1,
+          "Burkina Faso": 1,
+          "Burundi": 1,
+          "Cabo Verde": 1,
+          "Cambodia": 1,
+          "Cameroon": 1,
+          "Canada": 1,
+          "Caribbean small states": 1,
+          "Cayman Islands": 1,
+          "Central African Republic": 1,
+          "Central Europe and the Baltics": 1,
+          "Chad": 1,
+          "Channel Islands": 1,
+          "Chile": 1,
+          "China": 1,
+          "Colombia": 1,
+          "Comoros": 1,
+          "Congo, Dem. Rep.": 1,
+          "Congo, Rep.": 1,
+          "Costa Rica": 1,
+          "Cote d'Ivoire": 1,
+          "Croatia": 1,
+          "Cuba": 1,
+          "Curacao": 1,
+          "Cyprus": 1,
+          "Czech Republic": 1,
+          "Denmark": 1,
+          "Djibouti": 1,
+          "Dominica": 1,
+          "Dominican Republic": 1,
+          "East Asia & Pacific (all income levels)": 1,
+          "East Asia & Pacific (developing only)": 1,
+          "Ecuador": 1,
+          "Egypt, Arab Rep.": 1,
+          "El Salvador": 1,
+          "Equatorial Guinea": 1,
+          "Eritrea": 1,
+          "Estonia": 1,
+          "Ethiopia": 1,
+          "Euro area": 1,
+          "Europe & Central Asia (all income levels)": 1,
+          "Europe & Central Asia (developing only)": 1,
+          "European Union": 1,
+          "Faeroe Islands": 1,
+          "Fiji": 1,
+          "Finland": 1,
+          "Fragile and conflict affected situations": 1,
+          "France": 1,
+          "French Polynesia": 1,
+          "Gabon": 1,
+          "Gambia, The": 1,
+          "Georgia": 1,
+          "Germany": 1,
+          "Ghana": 1,
+          "Greece": 1,
+          "Greenland": 1,
+          "Grenada": 1,
+          "Guam": 1,
+          "Guatemala": 1,
+          "Guinea": 1,
+          "Guinea-Bissau": 1,
+          "Guyana": 1,
+          "Haiti": 1,
+          "Heavily indebted poor countries (HIPC)": 1,
+          "High income": 1,
+          "High income: nonOECD": 1,
+          "High income: OECD": 1,
+          "Honduras": 1,
+          "Hong Kong SAR, China": 1,
+          "Hungary": 1,
+          "Iceland": 1,
+          "India": 1,
+          "Indonesia": 1,
+          "Iran, Islamic Rep.": 1,
+          "Iraq": 1,
+          "Ireland": 1,
+          "Isle of Man": 1,
+          "Israel": 1,
+          "Italy": 1,
+          "Jamaica": 1,
+          "Japan": 1,
+          "Jordan": 1,
+          "Kazakhstan": 1,
+          "Kenya": 1,
+          "Kiribati": 1,
+          "Korea, Dem. Rep.": 1,
+          "Korea, Rep.": 1,
+          "Kosovo": 1,
+          "Kuwait": 1,
+          "Kyrgyz Republic": 1,
+          "Lao PDR": 1,
+          "Latin America & Caribbean (all income levels)": 1,
+          "Latin America & Caribbean (developing only)": 1,
+          "Latvia": 1,
+          "Least developed countries: UN classification": 1,
+          "Lebanon": 1,
+          "Lesotho": 1,
+          "Liberia": 1,
+          "Libya": 1,
+          "Liechtenstein": 1,
+          "Lithuania": 1,
+          "Low & middle income": 1,
+          "Low income": 1,
+          "Lower middle income": 1,
+          "Luxembourg": 1,
+          "Macao SAR, China": 1,
+          "Macedonia, FYR": 1,
+          "Madagascar": 1,
+          "Malawi": 1,
+          "Malaysia": 1,
+          "Maldives": 1,
+          "Mali": 1,
+          "Malta": 1,
+          "Marshall Islands": 1,
+          "Mauritania": 1,
+          "Mauritius": 1,
+          "Mexico": 1,
+          "Micronesia, Fed. Sts.": 1,
+          "Middle East & North Africa (all income levels)": 1,
+          "Middle East & North Africa (developing only)": 1,
+          "Middle income": 1,
+          "Moldova": 1,
+          "Monaco": 1,
+          "Mongolia": 1,
+          "Montenegro": 1,
+          "Morocco": 1,
+          "Mozambique": 1,
+          "Myanmar": 1,
+          "Namibia": 1,
+          "Nepal": 1,
+          "Netherlands": 1,
+          "New Caledonia": 1,
+          "New Zealand": 1,
+          "Nicaragua": 1,
+          "Niger": 1,
+          "Nigeria": 1,
+          "North America": 1,
+          "Northern Mariana Islands": 1,
+          "Norway": 1,
+          "Not classified": 1,
+          "OECD members": 1,
+          "Oman": 1,
+          "Other small states": 1,
+          "Pacific island small states": 1,
+          "Pakistan": 1,
+          "Palau": 1,
+          "Panama": 1,
+          "Papua New Guinea": 1,
+          "Paraguay": 1,
+          "Peru": 1,
+          "Philippines": 1,
+          "Poland": 1,
+          "Portugal": 1,
+          "Puerto Rico": 1,
+          "Qatar": 1,
+          "Romania": 1,
+          "Russian Federation": 1,
+          "Rwanda": 1,
+          "Samoa": 1,
+          "San Marino": 1,
+          "Sao Tome and Principe": 1,
+          "Saudi Arabia": 1,
+          "Senegal": 1,
+          "Serbia": 1,
+          "Seychelles": 1,
+          "Sierra Leone": 1,
+          "Singapore": 1,
+          "Sint Maarten (Dutch part)": 1,
+          "Slovak Republic": 1,
+          "Slovenia": 1,
+          "Small states": 1,
+          "Solomon Islands": 1,
+          "Somalia": 1,
+          "South Africa": 1,
+          "South Asia": 1,
+          "South Sudan": 1,
+          "Spain": 1,
+          "Sri Lanka": 1,
+          "St. Kitts and Nevis": 1,
+          "St. Lucia": 1,
+          "St. Martin (French part)": 1,
+          "St. Vincent and the Grenadines": 1,
+          "Sub-Saharan Africa (all income levels)": 1,
+          "Sub-Saharan Africa (developing only)": 1,
+          "Sudan": 1,
+          "Suriname": 1,
+          "Swaziland": 1,
+          "Sweden": 1,
+          "Switzerland": 1,
+          "Syrian Arab Republic": 1,
+          "Taiwan, China": 1,
+          "Tajikistan": 1,
+          "Tanzania": 1,
+          "Thailand": 1,
+          "Timor-Leste": 1,
+          "Togo": 1,
+          "Tonga": 1,
+          "Trinidad and Tobago": 1,
+          "Tunisia": 1,
+          "Turkey": 1,
+          "Turkmenistan": 1,
+          "Turks and Caicos Islands": 1,
+          "Tuvalu": 1,
+          "Uganda": 1,
+          "Ukraine": 1,
+          "United Arab Emirates": 1,
+          "United Kingdom": 1,
+          "United States": 1,
+          "Upper middle income": 1,
+          "Uruguay": 1,
+          "Uzbekistan": 1,
+          "Vanuatu": 1,
+          "Venezuela, RB": 1,
+          "Vietnam": 1,
+          "Virgin Islands (U.S.)": 1,
+          "West Bank and Gaza": 1,
+          "World": 1,
+          "Yemen, Rep.": 1,
+          "Zambia": 1,
+          "Zimbabwe": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "countryname"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        249
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        249
+      ],
+      [
+        "herfindahl",
+        0.00401606425702811
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Aruba"
+      ],
+      [
+        "mid",
+        "Aruba"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "countryname"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.countrycode.mode",
+    [
+      "ABW",
+      [
+        "BIH",
+        "PLW",
+        "MDA",
+        "SUR",
+        "WLD"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.countrycode.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.countrycode.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.countrycode",
+    [
+      [
+        "variableName",
+        "countrycode"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        249
+      ],
+      [
+        "uniqueCount",
+        249
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "BIH",
+          "PLW",
+          "MDA",
+          "SUR",
+          "WLD"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.004016064257028122
+      ],
+      [
+        "plotValues",
+        {
+          "MDG": 1,
+          "ARE": 1,
+          "LAO": 1,
+          "SLB": 1,
+          "SAS": 1,
+          "LUX": 1,
+          "BMU": 1,
+          "GNQ": 1,
+          "TUR": 1,
+          "EST": 1,
+          "ISR": 1,
+          "GIN": 1,
+          "POL": 1,
+          "SRB": 1,
+          "BRA": 1,
+          "SLE": 1,
+          "GTM": 1,
+          "LBN": 1,
+          "QAT": 1,
+          "CZE": 1,
+          "KOR": 1,
+          "UKR": 1,
+          "ARM": 1,
+          "FRO": 1,
+          "BTN": 1,
+          "COG": 1,
+          "NZL": 1,
+          "UZB": 1,
+          "SXM": 1,
+          "AUT": 1,
+          "SVN": 1,
+          "MIC": 1,
+          "CPV": 1,
+          "AFG": 1,
+          "MRT": 1,
+          "KIR": 1,
+          "PAN": 1,
+          "PNG": 1,
+          "ARB": 1,
+          "MLI": 1,
+          "EAP": 1,
+          "TKM": 1,
+          "JAM": 1,
+          "BLR": 1,
+          "GEO": 1,
+          "PRY": 1,
+          "ITA": 1,
+          "BGD": 1,
+          "BFA": 1,
+          "TCA": 1,
+          "EAS": 1,
+          "TUN": 1,
+          "RWA": 1,
+          "NPL": 1,
+          "LMY": 1,
+          "DNK": 1,
+          "IRN": 1,
+          "LDC": 1,
+          "GRD": 1,
+          "LMC": 1,
+          "CMR": 1,
+          "TGO": 1,
+          "MEA": 1,
+          "LBR": 1,
+          "GRC": 1,
+          "VIR": 1,
+          "TLS": 1,
+          "OSS": 1,
+          "PYF": 1,
+          "WSM": 1,
+          "TUV": 1,
+          "NER": 1,
+          "PRT": 1,
+          "ATG": 1,
+          "CHI": 1,
+          "GMB": 1,
+          "ARG": 1,
+          "ZWE": 1,
+          "CSS": 1,
+          "KNA": 1,
+          "KEN": 1,
+          "MCO": 1,
+          "PSE": 1,
+          "ALB": 1,
+          "MKD": 1,
+          "TON": 1,
+          "MNG": 1,
+          "BWA": 1,
+          "KWT": 1,
+          "TJK": 1,
+          "CYM": 1,
+          "YEM": 1,
+          "SYC": 1,
+          "VUT": 1,
+          "COM": 1,
+          "KSV": 1,
+          "JPN": 1,
+          "RUS": 1,
+          "MAC": 1,
+          "PRI": 1,
+          "HKG": 1,
+          "IND": 1,
+          "IRQ": 1,
+          "MNA": 1,
+          "IMN": 1,
+          "SYR": 1,
+          "CEB": 1,
+          "FIN": 1,
+          "MNP": 1,
+          "JOR": 1,
+          "CHN": 1,
+          "LCA": 1,
+          "BEN": 1,
+          "HND": 1,
+          "SEN": 1,
+          "MWI": 1,
+          "PER": 1,
+          "PHL": 1,
+          "CAN": 1,
+          "AUS": 1,
+          "DJI": 1,
+          "AZE": 1,
+          "EGY": 1,
+          "DZA": 1,
+          "MLT": 1,
+          "PAK": 1,
+          "USA": 1,
+          "STP": 1,
+          "CYP": 1,
+          "LAC": 1,
+          "VCT": 1,
+          "OMN": 1,
+          "UGA": 1,
+          "DEU": 1,
+          "NOC": 1,
+          "GNB": 1,
+          "UMC": 1,
+          "THA": 1,
+          "OED": 1,
+          "BGR": 1,
+          "MMR": 1,
+          "IDN": 1,
+          "SDN": 1,
+          "GRL": 1,
+          "NGA": 1,
+          "SAU": 1,
+          "COD": 1,
+          "GUY": 1,
+          "PRK": 1,
+          "SSA": 1,
+          "FRA": 1,
+          "BHS": 1,
+          "SSD": 1,
+          "EUU": 1,
+          "MEX": 1,
+          "ECU": 1,
+          "LVA": 1,
+          "ABW": 1,
+          "ETH": 1,
+          "GUM": 1,
+          "KAZ": 1,
+          "NAM": 1,
+          "EMU": 1,
+          "LBY": 1,
+          "FCS": 1,
+          "NOR": 1,
+          "ECS": 1,
+          "MOZ": 1,
+          "KHM": 1,
+          "URY": 1,
+          "ZMB": 1,
+          "ROU": 1,
+          "NAC": 1,
+          "LSO": 1,
+          "ZAF": 1,
+          "MAF": 1,
+          "LTU": 1,
+          "BLZ": 1,
+          "COL": 1,
+          "CHL": 1,
+          "ESP": 1,
+          "BEL": 1,
+          "CIV": 1,
+          "VEN": 1,
+          "SOM": 1,
+          "BDI": 1,
+          "LKA": 1,
+          "SLV": 1,
+          "LIC": 1,
+          "GHA": 1,
+          "SMR": 1,
+          "MUS": 1,
+          "DOM": 1,
+          "TTO": 1,
+          "BHR": 1,
+          "MAR": 1,
+          "CUW": 1,
+          "OEC": 1,
+          "MNE": 1,
+          "GAB": 1,
+          "BOL": 1,
+          "LCN": 1,
+          "CHE": 1,
+          "HPC": 1,
+          "SWE": 1,
+          "BRN": 1,
+          "SST": 1,
+          "MYS": 1,
+          "IRL": 1,
+          "AGO": 1,
+          "MHL": 1,
+          "CUB": 1,
+          "CRI": 1,
+          "LIE": 1,
+          "HUN": 1,
+          "HTI": 1,
+          "TWN": 1,
+          "ERI": 1,
+          "TZA": 1,
+          "AND": 1,
+          "SSF": 1,
+          "BRB": 1,
+          "GBR": 1,
+          "ASM": 1,
+          "MDV": 1,
+          "NLD": 1,
+          "INX": 1,
+          "HIC": 1,
+          "DMA": 1,
+          "ECA": 1,
+          "HRV": 1,
+          "FJI": 1,
+          "PSS": 1,
+          "VNM": 1,
+          "FSM": 1,
+          "SVK": 1,
+          "SWZ": 1,
+          "ISL": 1,
+          "CAF": 1,
+          "SGP": 1,
+          "KGZ": 1,
+          "NCL": 1,
+          "NIC": 1,
+          "TCD": 1,
+          "WLD": 1,
+          "SUR": 1,
+          "MDA": 1,
+          "PLW": 1,
+          "BIH": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.countrycode",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "ABW": 1,
+          "AFG": 1,
+          "AGO": 1,
+          "ALB": 1,
+          "AND": 1,
+          "ARB": 1,
+          "ARE": 1,
+          "ARG": 1,
+          "ARM": 1,
+          "ASM": 1,
+          "ATG": 1,
+          "AUS": 1,
+          "AUT": 1,
+          "AZE": 1,
+          "BDI": 1,
+          "BEL": 1,
+          "BEN": 1,
+          "BFA": 1,
+          "BGD": 1,
+          "BGR": 1,
+          "BHR": 1,
+          "BHS": 1,
+          "BIH": 1,
+          "BLR": 1,
+          "BLZ": 1,
+          "BMU": 1,
+          "BOL": 1,
+          "BRA": 1,
+          "BRB": 1,
+          "BRN": 1,
+          "BTN": 1,
+          "BWA": 1,
+          "CAF": 1,
+          "CAN": 1,
+          "CEB": 1,
+          "CHE": 1,
+          "CHI": 1,
+          "CHL": 1,
+          "CHN": 1,
+          "CIV": 1,
+          "CMR": 1,
+          "COD": 1,
+          "COG": 1,
+          "COL": 1,
+          "COM": 1,
+          "CPV": 1,
+          "CRI": 1,
+          "CSS": 1,
+          "CUB": 1,
+          "CUW": 1,
+          "CYM": 1,
+          "CYP": 1,
+          "CZE": 1,
+          "DEU": 1,
+          "DJI": 1,
+          "DMA": 1,
+          "DNK": 1,
+          "DOM": 1,
+          "DZA": 1,
+          "EAP": 1,
+          "EAS": 1,
+          "ECA": 1,
+          "ECS": 1,
+          "ECU": 1,
+          "EGY": 1,
+          "EMU": 1,
+          "ERI": 1,
+          "ESP": 1,
+          "EST": 1,
+          "ETH": 1,
+          "EUU": 1,
+          "FCS": 1,
+          "FIN": 1,
+          "FJI": 1,
+          "FRA": 1,
+          "FRO": 1,
+          "FSM": 1,
+          "GAB": 1,
+          "GBR": 1,
+          "GEO": 1,
+          "GHA": 1,
+          "GIN": 1,
+          "GMB": 1,
+          "GNB": 1,
+          "GNQ": 1,
+          "GRC": 1,
+          "GRD": 1,
+          "GRL": 1,
+          "GTM": 1,
+          "GUM": 1,
+          "GUY": 1,
+          "HIC": 1,
+          "HKG": 1,
+          "HND": 1,
+          "HPC": 1,
+          "HRV": 1,
+          "HTI": 1,
+          "HUN": 1,
+          "IDN": 1,
+          "IMN": 1,
+          "IND": 1,
+          "INX": 1,
+          "IRL": 1,
+          "IRN": 1,
+          "IRQ": 1,
+          "ISL": 1,
+          "ISR": 1,
+          "ITA": 1,
+          "JAM": 1,
+          "JOR": 1,
+          "JPN": 1,
+          "KAZ": 1,
+          "KEN": 1,
+          "KGZ": 1,
+          "KHM": 1,
+          "KIR": 1,
+          "KNA": 1,
+          "KOR": 1,
+          "KSV": 1,
+          "KWT": 1,
+          "LAC": 1,
+          "LAO": 1,
+          "LBN": 1,
+          "LBR": 1,
+          "LBY": 1,
+          "LCA": 1,
+          "LCN": 1,
+          "LDC": 1,
+          "LIC": 1,
+          "LIE": 1,
+          "LKA": 1,
+          "LMC": 1,
+          "LMY": 1,
+          "LSO": 1,
+          "LTU": 1,
+          "LUX": 1,
+          "LVA": 1,
+          "MAC": 1,
+          "MAF": 1,
+          "MAR": 1,
+          "MCO": 1,
+          "MDA": 1,
+          "MDG": 1,
+          "MDV": 1,
+          "MEA": 1,
+          "MEX": 1,
+          "MHL": 1,
+          "MIC": 1,
+          "MKD": 1,
+          "MLI": 1,
+          "MLT": 1,
+          "MMR": 1,
+          "MNA": 1,
+          "MNE": 1,
+          "MNG": 1,
+          "MNP": 1,
+          "MOZ": 1,
+          "MRT": 1,
+          "MUS": 1,
+          "MWI": 1,
+          "MYS": 1,
+          "NAC": 1,
+          "NAM": 1,
+          "NCL": 1,
+          "NER": 1,
+          "NGA": 1,
+          "NIC": 1,
+          "NLD": 1,
+          "NOC": 1,
+          "NOR": 1,
+          "NPL": 1,
+          "NZL": 1,
+          "OEC": 1,
+          "OED": 1,
+          "OMN": 1,
+          "OSS": 1,
+          "PAK": 1,
+          "PAN": 1,
+          "PER": 1,
+          "PHL": 1,
+          "PLW": 1,
+          "PNG": 1,
+          "POL": 1,
+          "PRI": 1,
+          "PRK": 1,
+          "PRT": 1,
+          "PRY": 1,
+          "PSE": 1,
+          "PSS": 1,
+          "PYF": 1,
+          "QAT": 1,
+          "ROU": 1,
+          "RUS": 1,
+          "RWA": 1,
+          "SAS": 1,
+          "SAU": 1,
+          "SDN": 1,
+          "SEN": 1,
+          "SGP": 1,
+          "SLB": 1,
+          "SLE": 1,
+          "SLV": 1,
+          "SMR": 1,
+          "SOM": 1,
+          "SRB": 1,
+          "SSA": 1,
+          "SSD": 1,
+          "SSF": 1,
+          "SST": 1,
+          "STP": 1,
+          "SUR": 1,
+          "SVK": 1,
+          "SVN": 1,
+          "SWE": 1,
+          "SWZ": 1,
+          "SXM": 1,
+          "SYC": 1,
+          "SYR": 1,
+          "TCA": 1,
+          "TCD": 1,
+          "TGO": 1,
+          "THA": 1,
+          "TJK": 1,
+          "TKM": 1,
+          "TLS": 1,
+          "TON": 1,
+          "TTO": 1,
+          "TUN": 1,
+          "TUR": 1,
+          "TUV": 1,
+          "TWN": 1,
+          "TZA": 1,
+          "UGA": 1,
+          "UKR": 1,
+          "UMC": 1,
+          "URY": 1,
+          "USA": 1,
+          "UZB": 1,
+          "VCT": 1,
+          "VEN": 1,
+          "VIR": 1,
+          "VNM": 1,
+          "VUT": 1,
+          "WLD": 1,
+          "WSM": 1,
+          "YEM": 1,
+          "ZAF": 1,
+          "ZMB": 1,
+          "ZWE": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "countrycode"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        249
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        249
+      ],
+      [
+        "herfindahl",
+        0.00401606425702811
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "ABW"
+      ],
+      [
+        "mid",
+        "ABW"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "countrycode"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.median",
+    [
+      "7647675",
+      7647675.0
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.mean",
+    [
+      "189660059.453441",
+      189660059.4534413
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.mode",
+    [
+      "101300",
+      [
+        29376.0,
+        4434508.0,
+        2975029.0,
+        101342.0,
+        48629.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.max",
+    [
+      "6758911727",
+      6758911727.0
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.min",
+    [
+      "9788",
+      9788.0
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2008.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.pop2008",
+    [
+      [
+        "variableName",
+        "pop2008"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        2
+      ],
+      [
+        "validCount",
+        247
+      ],
+      [
+        "uniqueCount",
+        247
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          29376.0,
+          4434508.0,
+          2975029.0,
+          101342.0,
+          48629.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        715696714.2277871
+      ],
+      [
+        "herfindahlIndex",
+        0.06146650653067426
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          9787.667753351036,
+          137946561.94662055,
+          275883336.22548777,
+          413820110.50435495,
+          551756884.7832222,
+          689693659.0620894,
+          827630433.3409566,
+          965567207.6198238,
+          1103503981.8986912,
+          1241440756.1775584,
+          1379377530.4564257,
+          1517314304.735293,
+          1655251079.01416,
+          1793187853.2930272,
+          1931124627.5718944,
+          2069061401.8507617,
+          2206998176.1296287,
+          2344934950.408496,
+          2482871724.687363,
+          2620808498.9662304,
+          2758745273.2450976,
+          2896682047.523965,
+          3034618821.802832,
+          3172555596.0816994,
+          3310492370.360566,
+          3448429144.6394334,
+          3586365918.9183006,
+          3724302693.197168,
+          3862239467.476035,
+          4000176241.7549024,
+          4138113016.0337696,
+          4276049790.312637,
+          4413986564.591504,
+          4551923338.870371,
+          4689860113.149239,
+          4827796887.428105,
+          4965733661.706973,
+          5103670435.98584,
+          5241607210.264708,
+          5379543984.543574,
+          5517480758.822442,
+          5655417533.101309,
+          5793354307.380177,
+          5931291081.659043,
+          6069227855.937911,
+          6207164630.216778,
+          6345101404.4956455,
+          6483038178.774512,
+          6620974953.053379,
+          6758911727.332247
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          1.4752322344181434e-09,
+          1.3343645693500778e-09,
+          8.95242115440897e-10,
+          4.670949012933755e-10,
+          2.1233996673341003e-10,
+          1.0397435695947347e-10,
+          6.568736940282567e-11,
+          5.167016988152814e-11,
+          4.5155920629229454e-11,
+          4.0191183109403344e-11,
+          3.368106044580808e-11,
+          2.569063479213718e-11,
+          1.9032760841781725e-11,
+          1.6096517443367665e-11,
+          1.669633788087426e-11,
+          1.842803230179086e-11,
+          1.862662007731849e-11,
+          1.651709766364233e-11,
+          1.332421400433786e-11,
+          1.0114211167762866e-11,
+          6.883668995976752e-12,
+          3.818064335553423e-12,
+          1.6067208196528914e-12,
+          4.949730990156343e-13,
+          1.0996327055432729e-13,
+          1.751375122448925e-14,
+          1.997777274075778e-15,
+          2.137549124180988e-16,
+          7.350540029254449e-16,
+          7.328800418992797e-15,
+          5.286869526523922e-14,
+          2.724686998344565e-13,
+          1.0035589672951808e-12,
+          2.6456099805887986e-12,
+          5.018778148930479e-12,
+          6.981046540675513e-12,
+          7.55878494376203e-12,
+          7.33967807400783e-12,
+          7.438800042867174e-12,
+          7.485017529022045e-12,
+          6.2974397280357275e-12,
+          3.990707209238006e-12,
+          1.836244722291291e-12,
+          6.208703760140233e-13,
+          2.438966612796756e-13,
+          4.842061667508952e-13,
+          1.4970617113166615e-12,
+          3.4655909581617864e-12,
+          5.740573695496964e-12,
+          6.7924042132726445e-12
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          9788.0,
+          137946562.26530612,
+          275883336.53061223,
+          413820110.79591835,
+          551756885.0612245,
+          689693659.3265306,
+          827630433.5918367,
+          965567207.8571428,
+          1103503982.122449,
+          1241440756.387755,
+          1379377530.6530612,
+          1517314304.9183674,
+          1655251079.1836734,
+          1793187853.4489794,
+          1931124627.7142856,
+          2069061401.9795918,
+          2206998176.244898,
+          2344934950.510204,
+          2482871724.77551,
+          2620808499.0408163,
+          2758745273.3061223,
+          2896682047.5714283,
+          3034618821.836735,
+          3172555596.102041,
+          3310492370.367347,
+          3448429144.6326528,
+          3586365918.8979588,
+          3724302693.163265,
+          3862239467.428571,
+          4000176241.693877,
+          4138113015.9591837,
+          4276049790.2244897,
+          4413986564.489796,
+          4551923338.755102,
+          4689860113.020408,
+          4827796887.285714,
+          4965733661.55102,
+          5103670435.816326,
+          5241607210.081633,
+          5379543984.346938,
+          5517480758.612245,
+          5655417532.877551,
+          5793354307.142857,
+          5931291081.408163,
+          6069227855.67347,
+          6207164629.938775,
+          6345101404.204082,
+          6483038178.469387,
+          6620974952.734694,
+          6758911727.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.004048582995951417,
+          0.8502024291497976,
+          0.8785425101214575,
+          0.9109311740890689,
+          0.9230769230769231,
+          0.9311740890688259,
+          0.9433198380566802,
+          0.9473684210526315,
+          0.951417004048583,
+          0.9595141700404858,
+          0.9676113360323887,
+          0.9676113360323887,
+          0.97165991902834,
+          0.97165991902834,
+          0.97165991902834,
+          0.9757085020242915,
+          0.979757085020243,
+          0.9838056680161943,
+          0.9838056680161943,
+          0.9838056680161943,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9919028340080972,
+          0.9919028340080972,
+          0.9919028340080972,
+          0.9919028340080972,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.pop2008",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -23516220.48514,
+          115380799.024458,
+          254277818.534055,
+          393174838.043653,
+          532071857.55325,
+          670968877.062848,
+          809865896.572445,
+          948762916.082043,
+          1087659935.59164,
+          1226556955.10124,
+          1365453974.61084,
+          1504350994.12043,
+          1643248013.63003,
+          1782145033.13963,
+          1921042052.64923,
+          2059939072.15882,
+          2198836091.66842,
+          2337733111.17802,
+          2476630130.68762,
+          2615527150.19721,
+          2754424169.70681,
+          2893321189.21641,
+          3032218208.72601,
+          3171115228.2356,
+          3310012247.7452,
+          3448909267.2548,
+          3587806286.7644,
+          3726703306.27399,
+          3865600325.78359,
+          4004497345.29319,
+          4143394364.80279,
+          4282291384.31238,
+          4421188403.82198,
+          4560085423.33158,
+          4698982442.84118,
+          4837879462.35077,
+          4976776481.86037,
+          5115673501.36997,
+          5254570520.87957,
+          5393467540.38916,
+          5532364559.89876,
+          5671261579.40836,
+          5810158598.91796,
+          5949055618.42755,
+          6087952637.93715,
+          6226849657.44675,
+          6365746676.95635,
+          6504643696.46594,
+          6643540715.97554,
+          6782437735.48514
+        ]
+      ],
+      [
+        "ploty",
+        [
+          1.57763973013623e-09,
+          3.43667084758767e-10,
+          2.17877077065606e-10,
+          7.27090470650819e-11,
+          1.31041448952361e-10,
+          1.86960882518513e-25,
+          2.41334014187223e-10,
+          3.23585980196281e-21,
+          1.49384999585706e-16,
+          1.48586989358598e-10,
+          6.38897350591073e-11,
+          6.16806645810631e-25,
+          7.27731743870143e-21,
+          5.12954566332502e-26,
+          3.96834173038794e-11,
+          5.33581660880658e-26,
+          1.53114539554516e-11,
+          1.06585487085082e-25,
+          2.00181876691561e-26,
+          8.72057357553067e-11,
+          1.35583723977784e-25,
+          1.20351903531718e-25,
+          0,
+          2.07427756450241e-25,
+          5.65461727326719e-26,
+          4.24356895619609e-25,
+          0,
+          4.2467691491556e-26,
+          1.03323456948787e-26,
+          1.20156386799599e-25,
+          2.37501829211432e-25,
+          9.69510321382078e-27,
+          0,
+          4.88472133140717e-26,
+          4.90573293730352e-26,
+          3.56228839108227e-16,
+          0,
+          0,
+          2.71609193242783e-29,
+          6.38277525196037e-11,
+          1.4777059922777e-25,
+          1.09029565099883e-26,
+          4.71203959383425e-27,
+          8.52126902657825e-26,
+          0,
+          3.25490649715287e-26,
+          0,
+          2.8063626598871e-29,
+          6.62661183219922e-26,
+          1.49040530600939e-11
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          9788,
+          137946562.265306,
+          275883336.530612,
+          413820110.795918,
+          551756885.061224,
+          689693659.326531,
+          827630433.591837,
+          965567207.857143,
+          1103503982.12245,
+          1241440756.38775,
+          1379377530.65306,
+          1517314304.91837,
+          1655251079.18367,
+          1793187853.44898,
+          1931124627.71429,
+          2069061401.97959,
+          2206998176.2449,
+          2344934950.5102,
+          2482871724.77551,
+          2620808499.04082,
+          2758745273.30612,
+          2896682047.57143,
+          3034618821.83673,
+          3172555596.10204,
+          3310492370.36735,
+          3448429144.63265,
+          3586365918.89796,
+          3724302693.16327,
+          3862239467.42857,
+          4000176241.69388,
+          4138113015.95918,
+          4276049790.22449,
+          4413986564.4898,
+          4551923338.7551,
+          4689860113.02041,
+          4827796887.28571,
+          4965733661.55102,
+          5103670435.81633,
+          5241607210.08163,
+          5379543984.34694,
+          5517480758.61224,
+          5655417532.87755,
+          5793354307.14286,
+          5931291081.40816,
+          6069227855.67347,
+          6207164629.93878,
+          6345101404.20408,
+          6483038178.46939,
+          6620974952.73469,
+          6758911727
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00404858299595142,
+          0.850202429149798,
+          0.878542510121457,
+          0.910931174089069,
+          0.923076923076923,
+          0.931174089068826,
+          0.94331983805668,
+          0.947368421052632,
+          0.951417004048583,
+          0.959514170040486,
+          0.967611336032389,
+          0.967611336032389,
+          0.97165991902834,
+          0.97165991902834,
+          0.97165991902834,
+          0.975708502024291,
+          0.979757085020243,
+          0.983805668016194,
+          0.983805668016194,
+          0.983805668016194,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.991902834008097,
+          0.991902834008097,
+          0.991902834008097,
+          0.991902834008097,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "pop2008"
+      ],
+      [
+        "invalid",
+        2
+      ],
+      [
+        "valid",
+        247
+      ],
+      [
+        "sd",
+        "715696714.227787"
+      ],
+      [
+        "uniques",
+        247
+      ],
+      [
+        "herfindahl",
+        0.00404858299595142
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "101342"
+      ],
+      [
+        "mid",
+        "101342"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "pop2008"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.median",
+    [
+      "8534492",
+      8534492.0
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.mean",
+    [
+      "204189568.052632",
+      204189568.0526316
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.mode",
+    [
+      "103400",
+      [
+        54944.0,
+        7129428.0,
+        2264079901.0,
+        1800513.0,
+        103455497.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.max",
+    [
+      "7260652256",
+      7260652256.0
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.min",
+    [
+      "9893",
+      9893.0
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.pop2014.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.pop2014",
+    [
+      [
+        "variableName",
+        "pop2014"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        2
+      ],
+      [
+        "validCount",
+        247
+      ],
+      [
+        "uniqueCount",
+        247
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          54944.0,
+          7129428.0,
+          2264079901.0,
+          1800513.0,
+          103455497.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        769063054.6017613
+      ],
+      [
+        "herfindahlIndex",
+        0.06124884220951135
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          9892.667753351036,
+          148186267.43641648,
+          296362642.2050796,
+          444539016.9737427,
+          592715391.7424059,
+          740891766.511069,
+          889068141.2797321,
+          1037244516.0483953,
+          1185420890.8170586,
+          1333597265.5857217,
+          1481773640.354385,
+          1629950015.123048,
+          1778126389.891711,
+          1926302764.6603742,
+          2074479139.4290373,
+          2222655514.1977005,
+          2370831888.9663634,
+          2519008263.7350264,
+          2667184638.50369,
+          2815361013.2723527,
+          2963537388.041016,
+          3111713762.809679,
+          3259890137.5783424,
+          3408066512.3470054,
+          3556242887.1156683,
+          3704419261.8843317,
+          3852595636.6529946,
+          4000772011.421658,
+          4148948386.190321,
+          4297124760.958984,
+          4445301135.727648,
+          4593477510.49631,
+          4741653885.264974,
+          4889830260.033637,
+          5038006634.8022995,
+          5186183009.570963,
+          5334359384.339626,
+          5482535759.10829,
+          5630712133.876952,
+          5778888508.645616,
+          5927064883.414279,
+          6075241258.182941,
+          6223417632.951605,
+          6371594007.720268,
+          6519770382.488932,
+          6667946757.257594,
+          6816123132.0262575,
+          6964299506.794921,
+          7112475881.563583,
+          7260652256.332247
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          1.3722368602936353e-09,
+          1.2410230136393195e-09,
+          8.317733765283419e-10,
+          4.3261873518766024e-10,
+          1.9571216788212025e-10,
+          9.668658717943651e-11,
+          6.410942361056157e-11,
+          5.3382451648747066e-11,
+          4.691020880157333e-11,
+          3.9439158398656394e-11,
+          3.0577890311803854e-11,
+          2.2532838307372957e-11,
+          1.7717765470151036e-11,
+          1.6504759309479915e-11,
+          1.7262892756134466e-11,
+          1.7550572275558753e-11,
+          1.571245348775137e-11,
+          1.2395370493829105e-11,
+          9.64691811940152e-12,
+          8.093651491068626e-12,
+          6.5326038100910594e-12,
+          4.287290245594882e-12,
+          2.0983846088656564e-12,
+          7.433137292595949e-13,
+          1.8883162445080356e-13,
+          3.431005747781269e-14,
+          4.457671240755299e-15,
+          4.627894893823482e-16,
+          7.232311302237348e-16,
+          6.995731000348079e-15,
+          5.0229391857292014e-14,
+          2.5771588569189565e-13,
+          9.449041497170595e-13,
+          2.477664300836336e-12,
+          4.661372525290447e-12,
+          6.374596793345175e-12,
+          6.653900430357407e-12,
+          6.126883572896633e-12,
+          6.160759726288748e-12,
+          6.67961105319153e-12,
+          6.288502915174099e-12,
+          4.4905729677736056e-12,
+          2.3283393207210223e-12,
+          8.794356820501321e-13,
+          3.2418558586221503e-13,
+          4.725690906938718e-13,
+          1.3977033827699685e-12,
+          3.226790302069029e-12,
+          5.3428075260155586e-12,
+          6.321071307905104e-12
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          9893.0,
+          148186267.75510204,
+          296362642.5102041,
+          444539017.2653061,
+          592715392.0204082,
+          740891766.7755102,
+          889068141.5306122,
+          1037244516.2857143,
+          1185420891.0408163,
+          1333597265.7959185,
+          1481773640.5510204,
+          1629950015.3061223,
+          1778126390.0612245,
+          1926302764.8163266,
+          2074479139.5714285,
+          2222655514.3265305,
+          2370831889.0816326,
+          2519008263.836735,
+          2667184638.591837,
+          2815361013.3469386,
+          2963537388.102041,
+          3111713762.857143,
+          3259890137.6122446,
+          3408066512.367347,
+          3556242887.122449,
+          3704419261.877551,
+          3852595636.632653,
+          4000772011.387755,
+          4148948386.142857,
+          4297124760.897959,
+          4445301135.653061,
+          4593477510.408163,
+          4741653885.163265,
+          4889830259.918367,
+          5038006634.67347,
+          5186183009.428572,
+          5334359384.183674,
+          5482535758.938775,
+          5630712133.693877,
+          5778888508.448979,
+          5927064883.204082,
+          6075241257.959184,
+          6223417632.714286,
+          6371594007.469388,
+          6519770382.224489,
+          6667946756.979591,
+          6816123131.734694,
+          6964299506.489796,
+          7112475881.244898,
+          7260652256.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.004048582995951417,
+          0.854251012145749,
+          0.8785425101214575,
+          0.9068825910931174,
+          0.9190283400809717,
+          0.9311740890688259,
+          0.9311740890688259,
+          0.9473684210526315,
+          0.951417004048583,
+          0.9595141700404858,
+          0.9676113360323887,
+          0.9676113360323887,
+          0.97165991902834,
+          0.97165991902834,
+          0.9757085020242915,
+          0.9757085020242915,
+          0.9838056680161943,
+          0.9838056680161943,
+          0.9838056680161943,
+          0.9838056680161943,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9878542510121457,
+          0.9919028340080972,
+          0.9919028340080972,
+          0.9919028340080972,
+          0.9919028340080972,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          0.9959514170040485,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.pop2014",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -25284754.3149261,
+          123924055.024459,
+          273132864.363843,
+          422341673.703228,
+          571550483.042613,
+          720759292.381998,
+          869968101.721382,
+          1019176911.06077,
+          1168385720.40015,
+          1317594529.73954,
+          1466803339.07892,
+          1616012148.41831,
+          1765220957.75769,
+          1914429767.09708,
+          2063638576.43646,
+          2212847385.77585,
+          2362056195.11523,
+          2511265004.45461,
+          2660473813.794,
+          2809682623.13338,
+          2958891432.47277,
+          3108100241.81215,
+          3257309051.15154,
+          3406517860.49092,
+          3555726669.83031,
+          3704935479.16969,
+          3854144288.50908,
+          4003353097.84846,
+          4152561907.18785,
+          4301770716.52723,
+          4450979525.86662,
+          4600188335.206,
+          4749397144.54539,
+          4898605953.88477,
+          5047814763.22415,
+          5197023572.56354,
+          5346232381.90292,
+          5495441191.24231,
+          5644650000.58169,
+          5793858809.92108,
+          5943067619.26046,
+          6092276428.59985,
+          6241485237.93923,
+          6390694047.27862,
+          6539902856.618,
+          6689111665.95739,
+          6838320475.29677,
+          6987529284.63616,
+          7136738093.97554,
+          7285946903.31493
+        ]
+      ],
+      [
+        "ploty",
+        [
+          1.46512478780369e-09,
+          3.69157009535147e-10,
+          1.33523265624474e-10,
+          1.42121859418244e-10,
+          8.37001716994812e-14,
+          3.03899805593962e-11,
+          5.75767669006283e-12,
+          1.93640081307927e-13,
+          7.24668094183376e-27,
+          2.36516130633173e-11,
+          4.11726797304819e-21,
+          3.54952940680621e-26,
+          9.90714947257099e-14,
+          5.12621854259604e-26,
+          1.37325351037185e-14,
+          2.17493717040248e-14,
+          1.21866945893627e-10,
+          4.06587825764228e-26,
+          0,
+          4.54054621659714e-21,
+          1.97166097294909e-29,
+          1.23760691769283e-25,
+          0,
+          8.01300879603627e-26,
+          0,
+          0,
+          8.31908927194002e-26,
+          1.02356934150632e-26,
+          0,
+          3.28846084701995e-29,
+          7.38449714859845e-26,
+          0,
+          1.23185958482463e-25,
+          1.79872815682761e-26,
+          8.18462183960812e-26,
+          1.83430674210199e-14,
+          0,
+          3.64090573532256e-26,
+          0,
+          4.12008639205464e-21,
+          1.79454693868194e-22,
+          0,
+          1.13692023504454e-25,
+          4.77255518442706e-26,
+          0,
+          0,
+          1.2133862832591e-25,
+          1.90600182641799e-25,
+          7.62075341698378e-26,
+          1.39275865124231e-11
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          9893,
+          148186267.755102,
+          296362642.510204,
+          444539017.265306,
+          592715392.020408,
+          740891766.77551,
+          889068141.530612,
+          1037244516.28571,
+          1185420891.04082,
+          1333597265.79592,
+          1481773640.55102,
+          1629950015.30612,
+          1778126390.06122,
+          1926302764.81633,
+          2074479139.57143,
+          2222655514.32653,
+          2370831889.08163,
+          2519008263.83673,
+          2667184638.59184,
+          2815361013.34694,
+          2963537388.10204,
+          3111713762.85714,
+          3259890137.61224,
+          3408066512.36735,
+          3556242887.12245,
+          3704419261.87755,
+          3852595636.63265,
+          4000772011.38775,
+          4148948386.14286,
+          4297124760.89796,
+          4445301135.65306,
+          4593477510.40816,
+          4741653885.16327,
+          4889830259.91837,
+          5038006634.67347,
+          5186183009.42857,
+          5334359384.18367,
+          5482535758.93878,
+          5630712133.69388,
+          5778888508.44898,
+          5927064883.20408,
+          6075241257.95918,
+          6223417632.71429,
+          6371594007.46939,
+          6519770382.22449,
+          6667946756.97959,
+          6816123131.73469,
+          6964299506.4898,
+          7112475881.2449,
+          7260652256
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00404858299595142,
+          0.854251012145749,
+          0.878542510121457,
+          0.906882591093117,
+          0.919028340080972,
+          0.931174089068826,
+          0.931174089068826,
+          0.947368421052632,
+          0.951417004048583,
+          0.959514170040486,
+          0.967611336032389,
+          0.967611336032389,
+          0.97165991902834,
+          0.97165991902834,
+          0.975708502024291,
+          0.975708502024291,
+          0.983805668016194,
+          0.983805668016194,
+          0.983805668016194,
+          0.983805668016194,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.987854251012146,
+          0.991902834008097,
+          0.991902834008097,
+          0.991902834008097,
+          0.991902834008097,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          0.995951417004049,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "pop2014"
+      ],
+      [
+        "invalid",
+        2
+      ],
+      [
+        "valid",
+        247
+      ],
+      [
+        "sd",
+        "769063054.601761"
+      ],
+      [
+        "uniques",
+        247
+      ],
+      [
+        "herfindahl",
+        0.00404858299595142
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "103441"
+      ],
+      [
+        "mid",
+        "103441"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "pop2014"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.median",
+    [
+      "424",
+      424.0
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.mean",
+    [
+      "429.6875",
+      429.6875
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.mode",
+    [
+      "533",
+      [
+        533.0,
+        616.0,
+        408.0,
+        620.0,
+        600.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.max",
+    [
+      "894",
+      894.0
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.min",
+    [
+      "4",
+      4.0
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.V3a.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.V3a",
+    [
+      [
+        "variableName",
+        "V3a"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        41
+      ],
+      [
+        "validCount",
+        208
+      ],
+      [
+        "uniqueCount",
+        208
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          533.0,
+          616.0,
+          408.0,
+          620.0,
+          600.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        256.71408076551825
+      ],
+      [
+        "herfindahlIndex",
+        0.0065154946960731585
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          3.656135507353727,
+          21.83343609889031,
+          40.01073669042689,
+          58.188037281963474,
+          76.36533787350005,
+          94.54263846503663,
+          112.71993905657322,
+          130.8972396481098,
+          149.07454023964638,
+          167.25184083118296,
+          185.42914142271954,
+          203.60644201425612,
+          221.78374260579272,
+          239.9610431973293,
+          258.1383437888659,
+          276.31564438040243,
+          294.49294497193904,
+          312.67024556347565,
+          330.8475461550122,
+          349.0248467465488,
+          367.20214733808535,
+          385.37944792962196,
+          403.5567485211585,
+          421.7340491126951,
+          439.9113497042317,
+          458.0886502957683,
+          476.2659508873049,
+          494.44325147884143,
+          512.620552070378,
+          530.7978526619146,
+          548.9751532534511,
+          567.1524538449878,
+          585.3297544365244,
+          603.5070550280609,
+          621.6843556195976,
+          639.8616562111341,
+          658.0389568026707,
+          676.2162573942072,
+          694.3935579857439,
+          712.5708585772804,
+          730.748159168817,
+          748.9254597603536,
+          767.1027603518902,
+          785.2800609434267,
+          803.4573615349633,
+          821.6346621265,
+          839.8119627180365,
+          857.9892633095731,
+          876.1665639011097,
+          894.3438644926463
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.0006443104477434277,
+          0.0007396346528378651,
+          0.0008277518484565398,
+          0.0009054576879010716,
+          0.0009708318360706019,
+          0.001023311213439573,
+          0.0010635037070725105,
+          0.001092826704562789,
+          0.0011130946875926116,
+          0.0011261752388814531,
+          0.0011337882274751738,
+          0.0011374582102865263,
+          0.001138570800769446,
+          0.0011384512959980134,
+          0.001138387727948403,
+          0.0011395558788485712,
+          0.0011428546165129126,
+          0.0011487057761619872,
+          0.00115689673342094,
+          0.001166537834854128,
+          0.001176174029440747,
+          0.0011840424401563397,
+          0.0011884215693301818,
+          0.0011879883377628468,
+          0.0011820951801161093,
+          0.0011709014372168981,
+          0.001155333580806315,
+          0.0011368942471878635,
+          0.001117376493803309,
+          0.0010985566039692911,
+          0.0010819326409307337,
+          0.0010685512207506951,
+          0.0010589320462581957,
+          0.0010530708771581171,
+          0.0010504862134366483,
+          0.001050276296691603,
+          0.001051167601603815,
+          0.0010515557571452604,
+          0.0010495559486019986,
+          0.0010430861180068883,
+          0.0010300009872509822,
+          0.00100828059622042,
+          0.0009762587852106722,
+          0.0009328605330227028,
+          0.0008778069515854728,
+          0.0008117458034872434,
+          0.0007362742308423376,
+          0.0006538374330749943,
+          0.0005675090075879413,
+          0.00048068108237659513
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          4.0,
+          22.163265306122447,
+          40.326530612244895,
+          58.48979591836734,
+          76.65306122448979,
+          94.81632653061223,
+          112.97959183673468,
+          131.14285714285714,
+          149.30612244897958,
+          167.46938775510202,
+          185.63265306122446,
+          203.79591836734693,
+          221.95918367346937,
+          240.1224489795918,
+          258.2857142857143,
+          276.4489795918367,
+          294.61224489795916,
+          312.7755102040816,
+          330.93877551020404,
+          349.1020408163265,
+          367.2653061224489,
+          385.4285714285714,
+          403.59183673469386,
+          421.75510204081627,
+          439.91836734693874,
+          458.0816326530612,
+          476.2448979591836,
+          494.4081632653061,
+          512.5714285714286,
+          530.734693877551,
+          548.8979591836734,
+          567.0612244897959,
+          585.2244897959183,
+          603.3877551020407,
+          621.5510204081633,
+          639.7142857142857,
+          657.8775510204081,
+          676.0408163265306,
+          694.204081632653,
+          712.3673469387754,
+          730.5306122448978,
+          748.6938775510204,
+          766.8571428571428,
+          785.0204081632652,
+          803.1836734693877,
+          821.3469387755101,
+          839.5102040816325,
+          857.6734693877551,
+          875.8367346938775,
+          894.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.004807692307692308,
+          0.02403846153846154,
+          0.052884615384615384,
+          0.08173076923076923,
+          0.11057692307692307,
+          0.1201923076923077,
+          0.14423076923076922,
+          0.15865384615384615,
+          0.18269230769230768,
+          0.1971153846153846,
+          0.21634615384615385,
+          0.2403846153846154,
+          0.2644230769230769,
+          0.2932692307692308,
+          0.3125,
+          0.34134615384615385,
+          0.34615384615384615,
+          0.36538461538461536,
+          0.38461538461538464,
+          0.40384615384615385,
+          0.4230769230769231,
+          0.44711538461538464,
+          0.46634615384615385,
+          0.4951923076923077,
+          0.5240384615384616,
+          0.5528846153846154,
+          0.5673076923076923,
+          0.5865384615384616,
+          0.6153846153846154,
+          0.6298076923076923,
+          0.6442307692307693,
+          0.6634615384615384,
+          0.6826923076923077,
+          0.7019230769230769,
+          0.7211538461538461,
+          0.7403846153846154,
+          0.75,
+          0.7692307692307693,
+          0.7932692307692307,
+          0.8221153846153846,
+          0.8365384615384616,
+          0.8509615384615384,
+          0.875,
+          0.8942307692307693,
+          0.9230769230769231,
+          0.9423076923076923,
+          0.9519230769230769,
+          0.9663461538461539,
+          0.9807692307692307,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.V3a",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -234.342114271491,
+          -206.450599403267,
+          -178.559084535043,
+          -150.667569666819,
+          -122.776054798595,
+          -94.8845399303704,
+          -66.9930250621463,
+          -39.1015101939222,
+          -11.209995325698,
+          16.6815195425261,
+          44.5730344107502,
+          72.4645492789743,
+          100.356064147198,
+          128.247579015423,
+          156.139093883647,
+          184.030608751871,
+          211.922123620095,
+          239.813638488319,
+          267.705153356543,
+          295.596668224767,
+          323.488183092991,
+          351.379697961216,
+          379.27121282944,
+          407.162727697664,
+          435.054242565888,
+          462.945757434112,
+          490.837272302336,
+          518.72878717056,
+          546.620302038784,
+          574.511816907009,
+          602.403331775233,
+          630.294846643457,
+          658.186361511681,
+          686.077876379905,
+          713.969391248129,
+          741.860906116353,
+          769.752420984577,
+          797.643935852802,
+          825.535450721026,
+          853.42696558925,
+          881.318480457474,
+          909.209995325698,
+          937.101510193922,
+          964.993025062146,
+          992.88453993037,
+          1020.77605479859,
+          1048.66756966682,
+          1076.55908453504,
+          1104.45059940327,
+          1132.34211427149
+        ]
+      ],
+      [
+        "ploty",
+        [
+          1.95329034104713e-06,
+          5.81523043477703e-06,
+          1.54455123279334e-05,
+          3.66621494302581e-05,
+          7.7929871489408e-05,
+          0.000148719538522667,
+          0.000255644472675085,
+          0.0003975530038913,
+          0.000562574005647391,
+          0.000730050968371848,
+          0.000877883967477604,
+          0.00099112952751018,
+          0.00106655681838655,
+          0.00111067918381136,
+          0.00113350428328082,
+          0.00114300853272962,
+          0.00114380776139352,
+          0.00113946142105839,
+          0.00113500101875072,
+          0.00113655367166502,
+          0.0011481812463099,
+          0.00116852822419373,
+          0.0011902763775653,
+          0.00120332817151404,
+          0.00119994548625148,
+          0.00117869411114282,
+          0.00114498050140201,
+          0.00110800398320842,
+          0.00107641782558996,
+          0.00105536684298412,
+          0.0010459449582903,
+          0.00104627170787539,
+          0.00105254743995627,
+          0.001059217316482,
+          0.00105867716159176,
+          0.00104174849813901,
+          0.000999389610683975,
+          0.000925440145623539,
+          0.00081930958170681,
+          0.000687321881135285,
+          0.000541856713120493,
+          0.000398331799246624,
+          0.000271091089060564,
+          0.000169673699715345,
+          9.70608419961967e-05,
+          5.04669591609656e-05,
+          2.37362602680967e-05,
+          1.00570315176958e-05,
+          3.82531091728503e-06,
+          1.30235030425597e-06
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          4,
+          22.1632653061224,
+          40.3265306122449,
+          58.4897959183673,
+          76.6530612244898,
+          94.8163265306122,
+          112.979591836735,
+          131.142857142857,
+          149.30612244898,
+          167.469387755102,
+          185.632653061224,
+          203.795918367347,
+          221.959183673469,
+          240.122448979592,
+          258.285714285714,
+          276.448979591837,
+          294.612244897959,
+          312.775510204082,
+          330.938775510204,
+          349.102040816327,
+          367.265306122449,
+          385.428571428571,
+          403.591836734694,
+          421.755102040816,
+          439.918367346939,
+          458.081632653061,
+          476.244897959184,
+          494.408163265306,
+          512.571428571429,
+          530.734693877551,
+          548.897959183673,
+          567.061224489796,
+          585.224489795918,
+          603.387755102041,
+          621.551020408163,
+          639.714285714286,
+          657.877551020408,
+          676.040816326531,
+          694.204081632653,
+          712.367346938775,
+          730.530612244898,
+          748.69387755102,
+          766.857142857143,
+          785.020408163265,
+          803.183673469388,
+          821.34693877551,
+          839.510204081633,
+          857.673469387755,
+          875.836734693877,
+          894
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00480769230769231,
+          0.0240384615384615,
+          0.0528846153846154,
+          0.0817307692307692,
+          0.110576923076923,
+          0.120192307692308,
+          0.144230769230769,
+          0.158653846153846,
+          0.182692307692308,
+          0.197115384615385,
+          0.216346153846154,
+          0.240384615384615,
+          0.264423076923077,
+          0.293269230769231,
+          0.3125,
+          0.341346153846154,
+          0.346153846153846,
+          0.365384615384615,
+          0.384615384615385,
+          0.403846153846154,
+          0.423076923076923,
+          0.447115384615385,
+          0.466346153846154,
+          0.495192307692308,
+          0.524038461538462,
+          0.552884615384615,
+          0.567307692307692,
+          0.586538461538462,
+          0.615384615384615,
+          0.629807692307692,
+          0.644230769230769,
+          0.663461538461538,
+          0.682692307692308,
+          0.701923076923077,
+          0.721153846153846,
+          0.740384615384615,
+          0.75,
+          0.769230769230769,
+          0.793269230769231,
+          0.822115384615385,
+          0.836538461538462,
+          0.850961538461538,
+          0.875,
+          0.894230769230769,
+          0.923076923076923,
+          0.942307692307692,
+          0.951923076923077,
+          0.966346153846154,
+          0.980769230769231,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "V3a"
+      ],
+      [
+        "invalid",
+        41
+      ],
+      [
+        "valid",
+        208
+      ],
+      [
+        "sd",
+        "256.714080765518"
+      ],
+      [
+        "uniques",
+        208
+      ],
+      [
+        "herfindahl",
+        0.00480769230769231
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "533"
+      ],
+      [
+        "mid",
+        "533"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "V3a"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:09:21",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "countryname": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "countrycode": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "pop2008": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "pop2014": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "V3a": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

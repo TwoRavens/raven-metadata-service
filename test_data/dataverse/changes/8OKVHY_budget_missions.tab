@@ -1,0 +1,2580 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        26
+      ],
+      [
+        "variableCount",
+        18
+      ],
+      [
+        "dataSource",
+        {
+          "name": "8OKVHY_budget_missions.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 2173
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.A.mode",
+    [
+      "Agricultural Marketing Service",
+      [
+        "Cooperative State Research, Education, and Extension Service",
+        "Rural Business - Cooperative Service",
+        "Rural Utilities Service",
+        "Foreign Agricultural Service",
+        "Departmental Administration"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.A.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.A.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.A",
+    [
+      [
+        "variableName",
+        "A"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1
+      ],
+      [
+        "validCount",
+        25
+      ],
+      [
+        "uniqueCount",
+        25
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Cooperative State Research, Education, and Extension Service",
+          "Rural Business - Cooperative Service",
+          "Rural Utilities Service",
+          "Foreign Agricultural Service",
+          "Departmental Administration"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.039999999999999994
+      ],
+      [
+        "plotValues",
+        {
+          "Risk Management Agency": 1,
+          "Animal and Plant Health Inspection Service": 1,
+          "Forest Service": 1,
+          "Grain Inspection, Packers and Stockyards Administration": 1,
+          "Food and Nutrition Service": 1,
+          "National Agricultural Statistics Service": 1,
+          "Office of the General Counsel": 1,
+          "Agricultural Research Service": 1,
+          "Food Safety and Inspection Service": 1,
+          "Office of the Inspector General": 1,
+          "Office of the Secretary": 1,
+          "Agricultural Marketing Service": 1,
+          "Natural Resources Conservation Service": 1,
+          "Office of Communications": 1,
+          "Rural Development": 1,
+          "Rural Housing Service": 1,
+          "Executive Operations": 1,
+          "Economic Research Service": 1,
+          "Farm Service Agency": 1,
+          "Total": 1,
+          "Departmental Administration": 1,
+          "Foreign Agricultural Service": 1,
+          "Rural Utilities Service": 1,
+          "Rural Business - Cooperative Service": 1,
+          "Cooperative State Research, Education, and Extension Service": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.A",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 1,
+          "Agricultural Marketing Service": 1,
+          "Agricultural Research Service": 1,
+          "Animal and Plant Health Inspection Service": 1,
+          "Cooperative State Research, Education, and Extension Service": 1,
+          "Departmental Administration": 1,
+          "Economic Research Service": 1,
+          "Executive Operations": 1,
+          "Farm Service Agency": 1,
+          "Food and Nutrition Service": 1,
+          "Food Safety and Inspection Service": 1,
+          "Foreign Agricultural Service": 1,
+          "Forest Service": 1,
+          "Grain Inspection, Packers and Stockyards Administration": 1,
+          "National Agricultural Statistics Service": 1,
+          "Natural Resources Conservation Service": 1,
+          "Office of Communications": 1,
+          "Office of the General Counsel": 1,
+          "Office of the Inspector General": 1,
+          "Office of the Secretary": 1,
+          "Risk Management Agency": 1,
+          "Rural Business - Cooperative Service": 1,
+          "Rural Development": 1,
+          "Rural Housing Service": 1,
+          "Rural Utilities Service": 1,
+          "Total": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "A"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        26
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        25
+      ],
+      [
+        "herfindahl",
+        0.04
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Agricultural Marketing Service"
+      ],
+      [
+        "mid",
+        "Agricultural Marketing Service"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "A"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Total.mode",
+    [
+      "1524",
+      [
+        "1451",
+        "78",
+        "1677",
+        "140",
+        "105,66"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Total.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Total.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Total",
+    [
+      [
+        "variableName",
+        "Total"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1
+      ],
+      [
+        "validCount",
+        25
+      ],
+      [
+        "uniqueCount",
+        25
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "1451",
+          "78",
+          "1677",
+          "140",
+          "105,66"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.039999999999999994
+      ],
+      [
+        "plotValues",
+        {
+          "6516": 1,
+          "1226": 1,
+          "2972": 1,
+          "267": 1,
+          "36": 1,
+          "9": 1,
+          "862": 1,
+          "2391": 1,
+          "71": 1,
+          "1447": 1,
+          "2044": 1,
+          "54": 1,
+          "586": 1,
+          "1451": 1,
+          "1131": 1,
+          "41776": 1,
+          "156": 1,
+          "2218": 1,
+          "140": 1,
+          "69": 1,
+          "78": 1,
+          "105,66": 1,
+          "36968": 1,
+          "1677": 1,
+          "1524": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Total",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 1,
+          "105,66": 1,
+          "1131": 1,
+          "1226": 1,
+          "140": 1,
+          "1447": 1,
+          "1451": 1,
+          "1524": 1,
+          "156": 1,
+          "1677": 1,
+          "2044": 1,
+          "2218": 1,
+          "2391": 1,
+          "267": 1,
+          "2972": 1,
+          "36": 1,
+          "36968": 1,
+          "41776": 1,
+          "54": 1,
+          "586": 1,
+          "6516": 1,
+          "69": 1,
+          "71": 1,
+          "78": 1,
+          "862": 1,
+          "9": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Total"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        26
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        25
+      ],
+      [
+        "herfindahl",
+        0.04
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "1524"
+      ],
+      [
+        "mid",
+        "1524"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "Total"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "Internationaldevelopmentandhumanitarianassistance(151)",
+        {
+          "variableName": "Internationaldevelopmentandhumanitarianassistance(151)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1888.0,
+          "mean": 1888.0,
+          "max": 1888.0,
+          "min": 1888.0,
+          "mode": [
+            1888.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1888.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1888.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1888.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Energysupply(271)",
+        {
+          "variableName": "Energysupply(271)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 23,
+          "validCount": 3,
+          "uniqueCount": 3,
+          "median": 1191.0,
+          "mean": 803.3333333333334,
+          "max": 1205.0,
+          "min": 14.0,
+          "mode": [
+            14.0,
+            1191.0,
+            1205.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            14.0,
+            1191.0,
+            1205.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 683.6185583593626,
+          "herfindahlIndex": 0.4942583633201908,
+          "plotValues": {
+            "1205.0": 1,
+            "1191.0": 1,
+            "14.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            14.0,
+            609.5,
+            1205.0
+          ],
+          "cdfPlotY": [
+            0.3333333333333333,
+            0.3333333333333333,
+            1.0
+          ]
+        }
+      ],
+      [
+        "Waterresources(301)",
+        {
+          "variableName": "Waterresources(301)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 241.0,
+          "mean": 241.0,
+          "max": 241.0,
+          "min": 241.0,
+          "mode": [
+            241.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            241.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "241.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            241.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Conservationandlandmanagement(302)",
+        {
+          "variableName": "Conservationandlandmanagement(302)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 22,
+          "validCount": 4,
+          "uniqueCount": 4,
+          "median": 4093.0,
+          "mean": 5031.0,
+          "max": 10062.0,
+          "min": 1876.0,
+          "mode": [
+            1876.0,
+            6051.0,
+            2135.0,
+            10062.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1876.0,
+            6051.0,
+            2135.0,
+            10062.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 3859.7151017486594,
+          "herfindahlIndex": 0.3603578258051917,
+          "plotValues": {
+            "10062.0": 1,
+            "6051.0": 1,
+            "2135.0": 1,
+            "1876.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1876.0,
+            4604.666666666666,
+            7333.333333333333,
+            10062.0
+          ],
+          "cdfPlotY": [
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ]
+        }
+      ],
+      [
+        "Recreationalresources(303)",
+        {
+          "variableName": "Recreationalresources(303)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 29.0,
+          "mean": 29.0,
+          "max": 29.0,
+          "min": 29.0,
+          "mode": [
+            29.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            29.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "29.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            29.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Pollutioncontrolandabatement(304)",
+        {
+          "variableName": "Pollutioncontrolandabatement(304)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 12.0,
+          "mean": 12.0,
+          "max": 12.0,
+          "min": 12.0,
+          "mode": [
+            12.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            12.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "12.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            12.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Farmincomestabilization(351)",
+        {
+          "variableName": "Farmincomestabilization(351)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 19,
+          "validCount": 7,
+          "uniqueCount": 7,
+          "median": 120.0,
+          "mean": 10915.714285714286,
+          "max": 38205.0,
+          "min": 1.0,
+          "mode": [
+            40.0,
+            7.0,
+            120.0,
+            35065.0,
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            40.0,
+            7.0,
+            120.0,
+            35065.0,
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 17625.52767734237,
+          "herfindahlIndex": 0.4621102309003593,
+          "plotValues": {
+            "38205.0": 1,
+            "35065.0": 1,
+            "2972.0": 1,
+            "120.0": 1,
+            "40.0": 1,
+            "7.0": 1,
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0,
+            6368.333333333333,
+            12735.666666666666,
+            19103.0,
+            25470.333333333332,
+            31837.666666666664,
+            38205.0
+          ],
+          "cdfPlotY": [
+            0.14285714285714285,
+            0.7142857142857143,
+            0.7142857142857143,
+            0.7142857142857143,
+            0.7142857142857143,
+            0.7142857142857143,
+            1.0
+          ]
+        }
+      ],
+      [
+        "Agriculturalresearchandservices(352)",
+        {
+          "variableName": "Agriculturalresearchandservices(352)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 10,
+          "validCount": 16,
+          "uniqueCount": 16,
+          "median": 177.0,
+          "mean": 690.75,
+          "max": 5526.0,
+          "min": 3.0,
+          "mode": [
+            198.0,
+            1226.0,
+            1451.0,
+            1124.0,
+            255.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            198.0,
+            1226.0,
+            1451.0,
+            1124.0,
+            255.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 1373.8172852797177,
+          "herfindahlIndex": 0.2942754640354438,
+          "plotValues": {},
+          "pdfPlotType": "continuous",
+          "pdfPlotX": [
+            2.4256508225014826,
+            115.16337936035856,
+            227.90110789821566,
+            340.6388364360727,
+            453.3765649739298,
+            566.1142935117869,
+            678.8520220496439,
+            791.589750587501,
+            904.3274791253581,
+            1017.0652076632151,
+            1129.8029362010723,
+            1242.5406647389293,
+            1355.2783932767863,
+            1468.0161218146434,
+            1580.7538503525006,
+            1693.4915788903577,
+            1806.2293074282147,
+            1918.9670359660718,
+            2031.7047645039288,
+            2144.4424930417863,
+            2257.1802215796433,
+            2369.9179501175004,
+            2482.6556786553574,
+            2595.3934071932144,
+            2708.1311357310715,
+            2820.8688642689285,
+            2933.6065928067856,
+            3046.344321344643,
+            3159.0820498825,
+            3271.819778420357,
+            3384.557506958214,
+            3497.295235496071,
+            3610.0329640339282,
+            3722.7706925717853,
+            3835.5084211096423,
+            3948.2461496474994,
+            4060.9838781853564,
+            4173.721606723214,
+            4286.459335261071,
+            4399.197063798928,
+            4511.934792336785,
+            4624.672520874642,
+            4737.410249412499,
+            4850.147977950356,
+            4962.885706488213,
+            5075.62343502607,
+            5188.361163563927,
+            5301.098892101784,
+            5413.836620639641,
+            5526.574349177498
+          ],
+          "pdfPlotY": [
+            0.000393823509455811,
+            0.0004053387682717276,
+            0.00041026191398590316,
+            0.00040857209630970815,
+            0.00040059391914518675,
+            0.00038695040503822963,
+            0.0003684915420198332,
+            0.0003462090850262784,
+            0.00032114922744009905,
+            0.0002943337155975004,
+            0.0002666973229976123,
+            0.00023904599832650945,
+            0.00021203624002360307,
+            0.00018617305209386002,
+            0.00016182170652583627,
+            0.00013922768392367584,
+            0.00011853949423948527,
+            9.983027408803243e-05,
+            8.311568068274383e-05,
+            6.83672236466913e-05,
+            5.5521463367706285e-05,
+            4.448627917881314e-05,
+            3.514565097547719e-05,
+            2.7364206423268846e-05,
+            2.0992333982446898e-05,
+            1.5872131793333503e-05,
+            1.1844001541905208e-05,
+            8.753392568028778e-06,
+            6.457079256500702e-06,
+            4.828388564020645e-06,
+            3.7609304971600078e-06,
+            3.1705630351772895e-06,
+            2.9954969927840874e-06,
+            3.1945895805305804e-06,
+            3.7439839309890495e-06,
+            4.632337615366e-06,
+            5.854964388350055e-06,
+            7.407304184721139e-06,
+            9.278238803142583e-06,
+            1.1443871132595288e-05,
+            1.386245659645165e-05,
+            1.647118180277859e-05,
+            1.9185395217770203e-05,
+            2.190069022677841e-05,
+            2.4497927836548386e-05,
+            2.685089782279028e-05,
+            2.883591170074292e-05,
+            3.0342271995345113e-05,
+            3.1282343125772536e-05,
+            3.1599915290722975e-05
+          ],
+          "cdfPlotType": "continuous",
+          "cdfPlotX": [
+            3.0,
+            115.71428571428571,
+            228.42857142857142,
+            341.1428571428571,
+            453.85714285714283,
+            566.5714285714286,
+            679.2857142857142,
+            792.0,
+            904.7142857142857,
+            1017.4285714285713,
+            1130.142857142857,
+            1242.857142857143,
+            1355.5714285714284,
+            1468.2857142857142,
+            1581.0,
+            1693.7142857142856,
+            1806.4285714285713,
+            1919.142857142857,
+            2031.8571428571427,
+            2144.5714285714284,
+            2257.285714285714,
+            2370.0,
+            2482.714285714286,
+            2595.428571428571,
+            2708.142857142857,
+            2820.8571428571427,
+            2933.5714285714284,
+            3046.285714285714,
+            3159.0,
+            3271.7142857142853,
+            3384.428571428571,
+            3497.142857142857,
+            3609.8571428571427,
+            3722.5714285714284,
+            3835.285714285714,
+            3948.0,
+            4060.7142857142853,
+            4173.428571428572,
+            4286.142857142857,
+            4398.857142857142,
+            4511.571428571428,
+            4624.285714285714,
+            4737.0,
+            4849.714285714285,
+            4962.428571428572,
+            5075.142857142857,
+            5187.857142857142,
+            5300.571428571428,
+            5413.285714285714,
+            5526.0
+          ],
+          "cdfPlotY": [
+            0.0625,
+            0.4375,
+            0.625,
+            0.6875,
+            0.6875,
+            0.6875,
+            0.75,
+            0.75,
+            0.75,
+            0.75,
+            0.8125,
+            0.875,
+            0.875,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            1.0
+          ]
+        }
+      ],
+      [
+        "Mortgagecredit(371)",
+        {
+          "variableName": "Mortgagecredit(371)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1198.0,
+          "mean": 1198.0,
+          "max": 1198.0,
+          "min": 1198.0,
+          "mode": [
+            1198.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1198.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1198.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1198.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Communitydevelopment(451)",
+        {
+          "variableName": "Communitydevelopment(451)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 22.0,
+          "mean": 22.0,
+          "max": 22.0,
+          "min": 22.0,
+          "mode": [
+            22.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            22.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "22.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            22.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Areaandregionaldevelopment(452)",
+        {
+          "variableName": "Areaandregionaldevelopment(452)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 22,
+          "validCount": 4,
+          "uniqueCount": 4,
+          "median": 966.5,
+          "mean": 1025.5,
+          "max": 2051.0,
+          "min": 118.0,
+          "mode": [
+            118.0,
+            1677.0,
+            256.0,
+            2051.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            118.0,
+            1677.0,
+            256.0,
+            2051.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 981.7991987502671,
+          "herfindahlIndex": 0.42186019068601943,
+          "plotValues": {
+            "2051.0": 1,
+            "1677.0": 1,
+            "256.0": 1,
+            "118.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            118.0,
+            762.3333333333334,
+            1406.6666666666667,
+            2051.0
+          ],
+          "cdfPlotY": [
+            0.25,
+            0.5,
+            0.5,
+            1.0
+          ]
+        }
+      ],
+      [
+        "Disasterreliefandinsurance(453)",
+        {
+          "variableName": "Disasterreliefandinsurance(453)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 27.0,
+          "mean": 27.0,
+          "max": 27.0,
+          "min": 27.0,
+          "mode": [
+            27.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            27.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "27.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            27.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Consumerandoccupationalhealthandsafety(554)",
+        {
+          "variableName": "Consumerandoccupationalhealthandsafety(554)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 859.0,
+          "mean": 859.0,
+          "max": 859.0,
+          "min": 859.0,
+          "mode": [
+            859.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            859.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "859.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            859.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Housingassistance(604)",
+        {
+          "variableName": "Housingassistance(604)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 846.0,
+          "mean": 846.0,
+          "max": 846.0,
+          "min": 846.0,
+          "mode": [
+            846.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            846.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "846.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            846.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "Foodandnutritionassistance(605)",
+        {
+          "variableName": "Foodandnutritionassistance(605)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 23,
+          "validCount": 3,
+          "uniqueCount": 3,
+          "median": 41776.0,
+          "mean": 28708.0,
+          "max": 43062.0,
+          "min": 1286.0,
+          "mode": [
+            1286.0,
+            41776.0,
+            43062.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1286.0,
+            41776.0,
+            43062.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 23756.85189582155,
+          "herfindahlIndex": 0.48551396820219156,
+          "plotValues": {
+            "43062.0": 1,
+            "41776.0": 1,
+            "1286.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1286.0,
+            22174.0,
+            43062.0
+          ],
+          "cdfPlotY": [
+            0.3333333333333333,
+            0.3333333333333333,
+            1.0
+          ]
+        }
+      ],
+      [
+        "Generalpurposefiscalassistance(806)",
+        {
+          "variableName": "Generalpurposefiscalassistance(806)",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 24,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 436.0,
+          "mean": 436.0,
+          "max": 436.0,
+          "min": 436.0,
+          "mode": [
+            436.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            436.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "436.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            436.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "Internationaldevelopmentandhumanitarianassistance.151.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1888": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1888,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Internationaldevelopmentandhumanitarianassistance.151.",
+          "median": "1888",
+          "mean": "1888",
+          "mode": "1888",
+          "max": "1888",
+          "min": "1888",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1888",
+          "mid": "1888",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Internationaldevelopmentandhumanitarianassistance.151.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Energysupply.271.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "14": 1,
+            "1191": 1,
+            "1205": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            14,
+            609.5,
+            1205
+          ],
+          "cdfploty": [
+            0.333333333333333,
+            0.333333333333333,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Energysupply.271.",
+          "median": "1191",
+          "mean": "803.333333333333",
+          "mode": "14",
+          "max": "1205",
+          "min": "14",
+          "invalid": 23,
+          "valid": 3,
+          "sd": "683.618558359363",
+          "uniques": 3,
+          "herfindahl": 0.333333333333333,
+          "freqmode": 1,
+          "fewest": "14",
+          "mid": "14",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Energysupply.271.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Waterresources.301.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "241": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 241,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Waterresources.301.",
+          "median": "241",
+          "mean": "241",
+          "mode": "241",
+          "max": "241",
+          "min": "241",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "241",
+          "mid": "241",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Waterresources.301.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Conservationandlandmanagement.302.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1876": 1,
+            "2135": 1,
+            "6051": 1,
+            "10062": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            1876,
+            4604.66666666667,
+            7333.33333333333,
+            10062
+          ],
+          "cdfploty": [
+            0.25,
+            0.5,
+            0.75,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Conservationandlandmanagement.302.",
+          "median": "4093",
+          "mean": "5031",
+          "mode": "1876",
+          "max": "10062",
+          "min": "1876",
+          "invalid": 22,
+          "valid": 4,
+          "sd": "3859.71510174866",
+          "uniques": 4,
+          "herfindahl": 0.25,
+          "freqmode": 1,
+          "fewest": "1876",
+          "mid": "1876",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Conservationandlandmanagement.302.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Recreationalresources.303.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "29": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 29,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Recreationalresources.303.",
+          "median": "29",
+          "mean": "29",
+          "mode": "29",
+          "max": "29",
+          "min": "29",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "29",
+          "mid": "29",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Recreationalresources.303.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Pollutioncontrolandabatement.304.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "12": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 12,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Pollutioncontrolandabatement.304.",
+          "median": "12",
+          "mean": "12",
+          "mode": "12",
+          "max": "12",
+          "min": "12",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "12",
+          "mid": "12",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Pollutioncontrolandabatement.304.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Farmincomestabilization.351.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1,
+            "7": 1,
+            "40": 1,
+            "120": 1,
+            "2972": 1,
+            "35065": 1,
+            "38205": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            1,
+            6368.33333333333,
+            12735.6666666667,
+            19103,
+            25470.3333333333,
+            31837.6666666667,
+            38205
+          ],
+          "cdfploty": [
+            0.142857142857143,
+            0.714285714285714,
+            0.714285714285714,
+            0.714285714285714,
+            0.714285714285714,
+            0.714285714285714,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Farmincomestabilization.351.",
+          "median": "120",
+          "mean": "10915.7142857143",
+          "mode": "40",
+          "max": "38205",
+          "min": "1",
+          "invalid": 19,
+          "valid": 7,
+          "sd": "17625.5276773424",
+          "uniques": 7,
+          "herfindahl": 0.142857142857143,
+          "freqmode": 1,
+          "fewest": "40",
+          "mid": "40",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Farmincomestabilization.351.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Agriculturalresearchandservices.352.",
+        {
+          "plottype": "continuous",
+          "plotx": [
+            -755.301646343985,
+            -611.636273023822,
+            -467.970899703659,
+            -324.305526383497,
+            -180.640153063334,
+            -36.9747797431716,
+            106.690593576991,
+            250.355966897154,
+            394.021340217316,
+            537.686713537479,
+            681.352086857642,
+            825.017460177804,
+            968.682833497967,
+            1112.34820681813,
+            1256.01358013829,
+            1399.67895345845,
+            1543.34432677862,
+            1687.00970009878,
+            1830.67507341894,
+            1974.34044673911,
+            2118.00582005927,
+            2261.67119337943,
+            2405.33656669959,
+            2549.00194001976,
+            2692.66731333992,
+            2836.33268666008,
+            2979.99805998024,
+            3123.66343330041,
+            3267.32880662057,
+            3410.99417994073,
+            3554.65955326089,
+            3698.32492658106,
+            3841.99029990122,
+            3985.65567322138,
+            4129.32104654155,
+            4272.98641986171,
+            4416.65179318187,
+            4560.31716650203,
+            4703.9825398222,
+            4847.64791314236,
+            4991.31328646252,
+            5134.97865978268,
+            5278.64403310285,
+            5422.30940642301,
+            5565.97477974317,
+            5709.64015306333,
+            5853.3055263835,
+            5996.97089970366,
+            6140.63627302382,
+            6284.30164634398
+          ],
+          "ploty": [
+            5.22550416460839e-06,
+            2.69708475307942e-05,
+            0.000102139303264914,
+            0.000284953538958046,
+            0.000588431381037894,
+            0.000904862419155364,
+            0.00104547007945307,
+            0.000922259810498358,
+            0.000642229990347509,
+            0.000379576914801033,
+            0.000223006495040863,
+            0.000171910030841038,
+            0.000193497551413383,
+            0.000240096964848866,
+            0.000260236687321028,
+            0.000229482364832884,
+            0.000162226107532545,
+            9.09531263919907e-05,
+            3.97285231273689e-05,
+            1.3240759850235e-05,
+            3.30990880991734e-06,
+            6.13744326213532e-07,
+            8.36107915604263e-08,
+            8.32313256796587e-09,
+            6.03305560342935e-10,
+            3.17653257658697e-11,
+            1.21252294780379e-12,
+            3.34924197174088e-14,
+            6.68050334922153e-16,
+            9.61745423535887e-18,
+            6.78602996874328e-18,
+            4.78568005443627e-16,
+            2.46264220770369e-14,
+            9.14498200269907e-13,
+            2.45501126641029e-11,
+            4.77015736774106e-10,
+            6.71419652424966e-09,
+            6.85015777408425e-08,
+            5.06788666277458e-07,
+            2.71939702591144e-06,
+            1.05973879024726e-05,
+            2.99157495028734e-05,
+            6.1165810953148e-05,
+            9.06228522712399e-05,
+            9.73213531433754e-05,
+            7.57634727004561e-05,
+            4.27517997750159e-05,
+            1.74812110038937e-05,
+            5.17725171940997e-06,
+            1.1097252479046e-06
+          ],
+          "cdfplottype": "continuous",
+          "cdfplotx": [
+            3,
+            371.2,
+            739.4,
+            1107.6,
+            1475.8,
+            1844,
+            2212.2,
+            2580.4,
+            2948.6,
+            3316.8,
+            3685,
+            4053.2,
+            4421.4,
+            4789.6,
+            5157.8,
+            5526
+          ],
+          "cdfploty": [
+            0.0625,
+            0.6875,
+            0.75,
+            0.75,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            0.9375,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Agriculturalresearchandservices.352.",
+          "median": "177",
+          "mean": "690.75",
+          "mode": "198",
+          "max": "5526",
+          "min": "3",
+          "invalid": 10,
+          "valid": 16,
+          "sd": "1373.81728527972",
+          "uniques": 16,
+          "herfindahl": 0.0625,
+          "freqmode": 1,
+          "fewest": "198",
+          "mid": "198",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Agriculturalresearchandservices.352.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Mortgagecredit.371.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1198": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1198,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Mortgagecredit.371.",
+          "median": "1198",
+          "mean": "1198",
+          "mode": "1198",
+          "max": "1198",
+          "min": "1198",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1198",
+          "mid": "1198",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Mortgagecredit.371.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Communitydevelopment.451.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "22": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 22,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Communitydevelopment.451.",
+          "median": "22",
+          "mean": "22",
+          "mode": "22",
+          "max": "22",
+          "min": "22",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "22",
+          "mid": "22",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Communitydevelopment.451.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Areaandregionaldevelopment.452.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "118": 1,
+            "256": 1,
+            "1677": 1,
+            "2051": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            118,
+            762.333333333333,
+            1406.66666666667,
+            2051
+          ],
+          "cdfploty": [
+            0.25,
+            0.5,
+            0.5,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Areaandregionaldevelopment.452.",
+          "median": "966.5",
+          "mean": "1025.5",
+          "mode": "118",
+          "max": "2051",
+          "min": "118",
+          "invalid": 22,
+          "valid": 4,
+          "sd": "981.799198750267",
+          "uniques": 4,
+          "herfindahl": 0.25,
+          "freqmode": 1,
+          "fewest": "118",
+          "mid": "118",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Areaandregionaldevelopment.452.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Disasterreliefandinsurance.453.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "27": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 27,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Disasterreliefandinsurance.453.",
+          "median": "27",
+          "mean": "27",
+          "mode": "27",
+          "max": "27",
+          "min": "27",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "27",
+          "mid": "27",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Disasterreliefandinsurance.453.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Consumerandoccupationalhealthandsafety.554.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "859": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 859,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Consumerandoccupationalhealthandsafety.554.",
+          "median": "859",
+          "mean": "859",
+          "mode": "859",
+          "max": "859",
+          "min": "859",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "859",
+          "mid": "859",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Consumerandoccupationalhealthandsafety.554.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Housingassistance.604.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "846": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 846,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Housingassistance.604.",
+          "median": "846",
+          "mean": "846",
+          "mode": "846",
+          "max": "846",
+          "min": "846",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "846",
+          "mid": "846",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Housingassistance.604.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Foodandnutritionassistance.605.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1286": 1,
+            "41776": 1,
+            "43062": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            1286,
+            22174,
+            43062
+          ],
+          "cdfploty": [
+            0.333333333333333,
+            0.333333333333333,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Foodandnutritionassistance.605.",
+          "median": "41776",
+          "mean": "28708",
+          "mode": "1286",
+          "max": "43062",
+          "min": "1286",
+          "invalid": 23,
+          "valid": 3,
+          "sd": "23756.8518958215",
+          "uniques": 3,
+          "herfindahl": 0.333333333333333,
+          "freqmode": 1,
+          "fewest": "1286",
+          "mid": "1286",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Foodandnutritionassistance.605.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Generalpurposefiscalassistance.806.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "436": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 436,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "Generalpurposefiscalassistance.806.",
+          "median": "436",
+          "mean": "436",
+          "mode": "436",
+          "max": "436",
+          "min": "436",
+          "invalid": 24,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "436",
+          "mid": "436",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Generalpurposefiscalassistance.806.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:17:21",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "A": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Internationaldevelopmentandhumanitarianassistance(151)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Energysupply(271)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Waterresources(301)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Conservationandlandmanagement(302)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Recreationalresources(303)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Pollutioncontrolandabatement(304)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Farmincomestabilization(351)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Agriculturalresearchandservices(352)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Mortgagecredit(371)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Communitydevelopment(451)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Areaandregionaldevelopment(452)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Disasterreliefandinsurance(453)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Consumerandoccupationalhealthandsafety(554)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Housingassistance(604)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Foodandnutritionassistance(605)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Generalpurposefiscalassistance(806)": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Total": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

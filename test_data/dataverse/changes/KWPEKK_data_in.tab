@@ -1,0 +1,1572 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        98
+      ],
+      [
+        "variableCount",
+        5
+      ],
+      [
+        "dataSource",
+        {
+          "name": "KWPEKK_data_in.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 2725
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.par_municipality.mode",
+    [
+      "K\u00f8benhavns Kommune",
+      [
+        "Lyngby-Taarb\u00e6k Kommune",
+        "Halsn\u00e6s Kommune",
+        "Ikast-Brande Kommune",
+        "Thisted Kommune",
+        "\u00c6r\u00f8 Kommune"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.par_municipality.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.par_municipality.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.par_municipality",
+    [
+      [
+        "variableName",
+        "par_municipality"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        98
+      ],
+      [
+        "uniqueCount",
+        98
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Lyngby-Taarb\u00e6k Kommune",
+          "Halsn\u00e6s Kommune",
+          "Ikast-Brande Kommune",
+          "Thisted Kommune",
+          "\u00c6r\u00f8 Kommune"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.010204081632653064
+      ],
+      [
+        "plotValues",
+        {
+          "Guldborgsund Kommune": 1,
+          "Faxe Kommune": 1,
+          "Ringbj\u00f8bing-Skjern Kommune": 1,
+          "Svendborg Kommune": 1,
+          "Roskilde Kommune": 1,
+          "Fredericia Kommune": 1,
+          "Fures\u00f8 Kommune": 1,
+          "Ballerup Kommune": 1,
+          "Frederikshavn Kommune": 1,
+          "Nordfyns Kommune": 1,
+          "Glostrup Kommune": 1,
+          "H\u00f8rsholm Kommune": 1,
+          "Solr\u00f8d Kommune": 1,
+          "Ringsted Kommune": 1,
+          "Vallensb\u00e6k Kommune": 1,
+          "Rebild Kommune": 1,
+          "Kerteminde Kommune": 1,
+          "Billund Kommune": 1,
+          "Bornholms Kommune": 1,
+          "Odsherred Kommune": 1,
+          "T\u00f8nder Kommune": 1,
+          "R\u00f8dovre Kommune": 1,
+          "Ish\u00f8j Kommune": 1,
+          "Sams\u00f8 Kommune": 1,
+          "Vesthimmerlands Kommune": 1,
+          "Esbjerg Kommune": 1,
+          "Hiller\u00f8d Kommune": 1,
+          "Aabenraa Kommune": 1,
+          "N\u00e6stved Kommune": 1,
+          "Randers Kommune": 1,
+          "Holb\u00e6k Kommune": 1,
+          "Odder Kommune": 1,
+          "L\u00e6s\u00f8 Kommune": 1,
+          "Lolland Kommune": 1,
+          "Frederiksberg Kommune": 1,
+          "Jammerbugt Kommune": 1,
+          "Middelfart Kommune": 1,
+          "Sor\u00f8 Kommune": 1,
+          "Viborg Kommune": 1,
+          "Hvidovre Kommune": 1,
+          "Rudersdal Kommune": 1,
+          "Herning Kommune": 1,
+          "K\u00f8ge Kommune": 1,
+          "T\u00e5rnby Kommune": 1,
+          "Kalundborg Kommune": 1,
+          "Fredensborg Kommune": 1,
+          "Greve Kommune": 1,
+          "K\u00f8benhavns Kommune": 1,
+          "Vejle Kommune": 1,
+          "Gribskov Kommune": 1,
+          "Skanderborg Kommune": 1,
+          "Mors\u00f8 Kommune": 1,
+          "Assens Kommune": 1,
+          "Nyborg Kommune": 1,
+          "Br\u00f8nderslev Kommune": 1,
+          "Faaborg-Midtfyn Kommune": 1,
+          "Langeland Kommune": 1,
+          "Stevns Kommune": 1,
+          "Gladsaxe Kommune": 1,
+          "Br\u00f8ndby Kommune": 1,
+          "Egedal Kommune": 1,
+          "Horsens Kommune": 1,
+          "Lejre Kommune": 1,
+          "Silkeborg Kommune": 1,
+          "Albertslund Kommune": 1,
+          "Mariagerfjord Kommune": 1,
+          "Favrskov Kommune": 1,
+          "Aalborg Kommune": 1,
+          "Hj\u00f8rring Kommune": 1,
+          "S\u00f8nderborg Kommune": 1,
+          "Slagelse Kommune": 1,
+          "Vejen Kommune": 1,
+          "Helsing\u00f8r Kommune": 1,
+          "Vordingborg Kommune": 1,
+          "Lemvig Kommune": 1,
+          "Herlev Kommune": 1,
+          "Fan\u00f8 Kommune": 1,
+          "H\u00f8je-Taastrup Kommune": 1,
+          "Drag\u00f8r Kommune": 1,
+          "Skive Kommune": 1,
+          "Syddjurs Kommune": 1,
+          "Struer Kommune": 1,
+          "Holstebro Kommune": 1,
+          "Gentofte Kommune": 1,
+          "Aller\u00f8d Kommune": 1,
+          "Odense Kommune": 1,
+          "Norddjurs Kommune": 1,
+          "Hedensted Kommune": 1,
+          "Varde Kommune": 1,
+          "\u00c5rhus Kommune": 1,
+          "Frederikssund Kommune": 1,
+          "Lyngby-Taarb\u00e6k Kommune": 1,
+          "Kolding Kommune": 1,
+          "Haderslev Kommune": 1,
+          "\u00c6r\u00f8 Kommune": 1,
+          "Thisted Kommune": 1,
+          "Ikast-Brande Kommune": 1,
+          "Halsn\u00e6s Kommune": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.par_municipality",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Aabenraa Kommune": 1,
+          "Aalborg Kommune": 1,
+          "\u00c6r\u00f8 Kommune": 1,
+          "Albertslund Kommune": 1,
+          "Aller\u00f8d Kommune": 1,
+          "\u00c5rhus Kommune": 1,
+          "Assens Kommune": 1,
+          "Ballerup Kommune": 1,
+          "Billund Kommune": 1,
+          "Bornholms Kommune": 1,
+          "Br\u00f8ndby Kommune": 1,
+          "Br\u00f8nderslev Kommune": 1,
+          "Drag\u00f8r Kommune": 1,
+          "Egedal Kommune": 1,
+          "Esbjerg Kommune": 1,
+          "Faaborg-Midtfyn Kommune": 1,
+          "Fan\u00f8 Kommune": 1,
+          "Favrskov Kommune": 1,
+          "Faxe Kommune": 1,
+          "Fredensborg Kommune": 1,
+          "Fredericia Kommune": 1,
+          "Frederiksberg Kommune": 1,
+          "Frederikshavn Kommune": 1,
+          "Frederikssund Kommune": 1,
+          "Fures\u00f8 Kommune": 1,
+          "Gentofte Kommune": 1,
+          "Gladsaxe Kommune": 1,
+          "Glostrup Kommune": 1,
+          "Greve Kommune": 1,
+          "Gribskov Kommune": 1,
+          "Guldborgsund Kommune": 1,
+          "Haderslev Kommune": 1,
+          "Halsn\u00e6s Kommune": 1,
+          "Hedensted Kommune": 1,
+          "Helsing\u00f8r Kommune": 1,
+          "Herlev Kommune": 1,
+          "Herning Kommune": 1,
+          "Hiller\u00f8d Kommune": 1,
+          "Hj\u00f8rring Kommune": 1,
+          "H\u00f8je-Taastrup Kommune": 1,
+          "Holb\u00e6k Kommune": 1,
+          "Holstebro Kommune": 1,
+          "Horsens Kommune": 1,
+          "H\u00f8rsholm Kommune": 1,
+          "Hvidovre Kommune": 1,
+          "Ikast-Brande Kommune": 1,
+          "Ish\u00f8j Kommune": 1,
+          "Jammerbugt Kommune": 1,
+          "Kalundborg Kommune": 1,
+          "Kerteminde Kommune": 1,
+          "K\u00f8benhavns Kommune": 1,
+          "K\u00f8ge Kommune": 1,
+          "Kolding Kommune": 1,
+          "L\u00e6s\u00f8 Kommune": 1,
+          "Langeland Kommune": 1,
+          "Lejre Kommune": 1,
+          "Lemvig Kommune": 1,
+          "Lolland Kommune": 1,
+          "Lyngby-Taarb\u00e6k Kommune": 1,
+          "Mariagerfjord Kommune": 1,
+          "Middelfart Kommune": 1,
+          "Mors\u00f8 Kommune": 1,
+          "N\u00e6stved Kommune": 1,
+          "Norddjurs Kommune": 1,
+          "Nordfyns Kommune": 1,
+          "Nyborg Kommune": 1,
+          "Odder Kommune": 1,
+          "Odense Kommune": 1,
+          "Odsherred Kommune": 1,
+          "Randers Kommune": 1,
+          "Rebild Kommune": 1,
+          "Ringbj\u00f8bing-Skjern Kommune": 1,
+          "Ringsted Kommune": 1,
+          "R\u00f8dovre Kommune": 1,
+          "Roskilde Kommune": 1,
+          "Rudersdal Kommune": 1,
+          "Sams\u00f8 Kommune": 1,
+          "Silkeborg Kommune": 1,
+          "Skanderborg Kommune": 1,
+          "Skive Kommune": 1,
+          "Slagelse Kommune": 1,
+          "Solr\u00f8d Kommune": 1,
+          "S\u00f8nderborg Kommune": 1,
+          "Sor\u00f8 Kommune": 1,
+          "Stevns Kommune": 1,
+          "Struer Kommune": 1,
+          "Svendborg Kommune": 1,
+          "Syddjurs Kommune": 1,
+          "T\u00e5rnby Kommune": 1,
+          "Thisted Kommune": 1,
+          "T\u00f8nder Kommune": 1,
+          "Vallensb\u00e6k Kommune": 1,
+          "Varde Kommune": 1,
+          "Vejen Kommune": 1,
+          "Vejle Kommune": 1,
+          "Vesthimmerlands Kommune": 1,
+          "Viborg Kommune": 1,
+          "Vordingborg Kommune": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "par_municipality"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        98
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        98
+      ],
+      [
+        "herfindahl",
+        0.0102040816326531
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "K\u00f8benhavns Kommune"
+      ],
+      [
+        "mid",
+        "K\u00f8benhavns Kommune"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "par_municipality"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.median",
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.mean",
+    [
+      "0.448979591836735",
+      0.4489795918367347
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.mode",
+    [
+      "0",
+      [
+        0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.max",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.min",
+    [
+      "0",
+      0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.binary",
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    "variables.in2009.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.in2009",
+    [
+      [
+        "variableName",
+        "in2009"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        98
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        54
+      ],
+      [
+        "fewestValues",
+        [
+          1
+        ]
+      ],
+      [
+        "fewestFreq",
+        44
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.49994739887419043
+      ],
+      [
+        "herfindahlIndex",
+        0.022727272727272707
+      ],
+      [
+        "plotValues",
+        {
+          "0": 54,
+          "1": 44
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.5510204081632653,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.in2009",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 54,
+          "1": 44
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.551020408163265,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "in2009"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        98
+      ],
+      [
+        "sd",
+        "0.49994739887419"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.505206164098292
+      ],
+      [
+        "freqmode",
+        54
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "44"
+      ],
+      [
+        "freqmid",
+        "49"
+      ],
+      [
+        "varnamesTypes",
+        "in2009"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.median",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.mean",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.mode",
+    [
+      "1",
+      [
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.max",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.min",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.in2013.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.in2013",
+    [
+      [
+        "variableName",
+        "in2013"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        98
+      ],
+      [
+        "uniqueCount",
+        1
+      ],
+      [
+        "modeFreq",
+        98
+      ],
+      [
+        "fewestValues",
+        [
+          1
+        ]
+      ],
+      [
+        "fewestFreq",
+        98
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.0
+      ],
+      [
+        "herfindahlIndex",
+        0.010204081632653064
+      ],
+      [
+        "plotValues",
+        {
+          "1": 98
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.in2013",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "1": 98
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        1
+      ],
+      [
+        "cdfploty",
+        1
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "in2013"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        98
+      ],
+      [
+        "sd",
+        "0"
+      ],
+      [
+        "uniques",
+        1
+      ],
+      [
+        "herfindahl",
+        1
+      ],
+      [
+        "freqmode",
+        98
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "1"
+      ],
+      [
+        "freqfewest",
+        "98"
+      ],
+      [
+        "freqmid",
+        "98"
+      ],
+      [
+        "varnamesTypes",
+        "in2013"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.median",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.mean",
+    [
+      "0.622448979591837",
+      0.6224489795918368
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.mode",
+    [
+      "1",
+      [
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.max",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.min",
+    [
+      "0",
+      0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.binary",
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    "variables.in2014.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.in2014",
+    [
+      [
+        "variableName",
+        "in2014"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        98
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        61
+      ],
+      [
+        "fewestValues",
+        [
+          0
+        ]
+      ],
+      [
+        "fewestFreq",
+        37
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.4872668593444899
+      ],
+      [
+        "herfindahlIndex",
+        0.016393442622950834
+      ],
+      [
+        "plotValues",
+        {
+          "1": 61,
+          "0": 37
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.37755102040816324,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.in2014",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 37,
+          "1": 61
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.377551020408163,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "in2014"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        98
+      ],
+      [
+        "sd",
+        "0.48726685934449"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.529987505206164
+      ],
+      [
+        "freqmode",
+        61
+      ],
+      [
+        "fewest",
+        "0"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "37"
+      ],
+      [
+        "freqmid",
+        "49"
+      ],
+      [
+        "varnamesTypes",
+        "in2014"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.median",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.mean",
+    [
+      "0.73469387755102",
+      0.7346938775510204
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.mode",
+    [
+      "1",
+      [
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.max",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.min",
+    [
+      "0",
+      0
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.binary",
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    "variables.in2015.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.in2015",
+    [
+      [
+        "variableName",
+        "in2015"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        98
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        72
+      ],
+      [
+        "fewestValues",
+        [
+          0
+        ]
+      ],
+      [
+        "fewestFreq",
+        26
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.4437659922058222
+      ],
+      [
+        "herfindahlIndex",
+        0.013888888888888916
+      ],
+      [
+        "plotValues",
+        {
+          "1": 72,
+          "0": 26
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.2653061224489796,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.in2015",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 26,
+          "1": 72
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.26530612244898,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "in2015"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        98
+      ],
+      [
+        "sd",
+        "0.443765992205822"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.610162432319867
+      ],
+      [
+        "freqmode",
+        72
+      ],
+      [
+        "fewest",
+        "0"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "26"
+      ],
+      [
+        "freqmid",
+        "49"
+      ],
+      [
+        "varnamesTypes",
+        "in2015"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:16:43",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "par_municipality": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "in2009": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "in2013": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "in2014": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "in2015": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

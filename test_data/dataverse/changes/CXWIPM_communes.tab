@@ -1,0 +1,1807 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        30
+      ],
+      [
+        "variableCount",
+        7
+      ],
+      [
+        "dataSource",
+        {
+          "name": "CXWIPM_communes.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 2790
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.commune_key.mode",
+    [
+      "ABOMEY-CALAVI",
+      [
+        "PERERE",
+        "SO-AVA",
+        "DJAKOTOME",
+        "KOUANDE",
+        "AVRANKOU"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.commune_key.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.commune_key.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.commune_key",
+    [
+      [
+        "variableName",
+        "commune_key"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        30
+      ],
+      [
+        "uniqueCount",
+        30
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "PERERE",
+          "SO-AVA",
+          "DJAKOTOME",
+          "KOUANDE",
+          "AVRANKOU"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.03333333333333333
+      ],
+      [
+        "plotValues",
+        {
+          "KPOMASSE": 1,
+          "GOGOUNOU": 1,
+          "PARAKOU": 1,
+          "BEMBEREKE": 1,
+          "TCHAOUROU": 1,
+          "BANTE": 1,
+          "MATERI": 1,
+          "KEROU": 1,
+          "GLAZOUE": 1,
+          "DASSA-ZOUME": 1,
+          "OUIDAH": 1,
+          "ZA-KPOTA": 1,
+          "MALANVILLE": 1,
+          "KANDI": 1,
+          "SAVALOU": 1,
+          "SEGBANA": 1,
+          "ABOMEY-CALAVI": 1,
+          "BOPA": 1,
+          "DANGBO": 1,
+          "KETOU": 1,
+          "HOUEYOGBE": 1,
+          "ADJA-OUERE": 1,
+          "COME": 1,
+          "ZE": 1,
+          "DJOUGOU": 1,
+          "AVRANKOU": 1,
+          "KOUANDE": 1,
+          "DJAKOTOME": 1,
+          "SO-AVA": 1,
+          "PERERE": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.commune_key",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "ABOMEY-CALAVI": 1,
+          "ADJA-OUERE": 1,
+          "AVRANKOU": 1,
+          "BANTE": 1,
+          "BEMBEREKE": 1,
+          "BOPA": 1,
+          "COME": 1,
+          "DANGBO": 1,
+          "DASSA-ZOUME": 1,
+          "DJAKOTOME": 1,
+          "DJOUGOU": 1,
+          "GLAZOUE": 1,
+          "GOGOUNOU": 1,
+          "HOUEYOGBE": 1,
+          "KANDI": 1,
+          "KEROU": 1,
+          "KETOU": 1,
+          "KOUANDE": 1,
+          "KPOMASSE": 1,
+          "MALANVILLE": 1,
+          "MATERI": 1,
+          "OUIDAH": 1,
+          "PARAKOU": 1,
+          "PERERE": 1,
+          "SAVALOU": 1,
+          "SEGBANA": 1,
+          "SO-AVA": 1,
+          "TCHAOUROU": 1,
+          "ZA-KPOTA": 1,
+          "ZE": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "commune_key"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        30
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        30
+      ],
+      [
+        "herfindahl",
+        0.0333333333333333
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "ABOMEY-CALAVI"
+      ],
+      [
+        "mid",
+        "ABOMEY-CALAVI"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "commune_key"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.nom.mode",
+    [
+      "prudencio",
+      [
+        "yehouetome",
+        "yorou",
+        "adam bagri",
+        "amoussou",
+        "bani"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.nom.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.nom.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.nom",
+    [
+      [
+        "variableName",
+        "nom"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1
+      ],
+      [
+        "validCount",
+        29
+      ],
+      [
+        "uniqueCount",
+        29
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "yehouetome",
+          "yorou",
+          "adam bagri",
+          "amoussou",
+          "bani"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.034482758620689634
+      ],
+      [
+        "plotValues",
+        {
+          " gonroudobou": 1,
+          "lafia": 1,
+          "houde": 1,
+          "agoua": 1,
+          "issa": 1,
+          "soule": 1,
+          "gbadamassi": 1,
+          "tchobo": 1,
+          "bada": 1,
+          "nago": 1,
+          "gnigla": 1,
+          "fikara": 1,
+          "prudencio": 1,
+          "dayori": 1,
+          "ahossi": 1,
+          "idji": 1,
+          "takpara": 1,
+          "el-hadj issa": 1,
+          "laourou": 1,
+          "fagnon": 1,
+          "mama debourou": 1,
+          "houndete": 1,
+          "fagbohoun": 1,
+          "domingo": 1,
+          "bani": 1,
+          "amoussou": 1,
+          "adam bagri": 1,
+          "yorou": 1,
+          "yehouetome": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.nom",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 1,
+          " gonroudobou": 1,
+          "adam bagri": 1,
+          "agoua": 1,
+          "ahossi": 1,
+          "amoussou": 1,
+          "bada": 1,
+          "bani": 1,
+          "dayori": 1,
+          "domingo": 1,
+          "el-hadj issa": 1,
+          "fagbohoun": 1,
+          "fagnon": 1,
+          "fikara": 1,
+          "gbadamassi": 1,
+          "gnigla": 1,
+          "houde": 1,
+          "houndete": 1,
+          "idji": 1,
+          "issa": 1,
+          "lafia": 1,
+          "laourou": 1,
+          "mama debourou": 1,
+          "nago": 1,
+          "prudencio": 1,
+          "soule": 1,
+          "takpara": 1,
+          "tchobo": 1,
+          "yehouetome": 1,
+          "yorou": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "nom"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        30
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        29
+      ],
+      [
+        "herfindahl",
+        0.0344827586206897
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "prudencio"
+      ],
+      [
+        "mid",
+        "prudencio"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "nom"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.prenom.mode",
+    [
+      "sacca",
+      [
+        "antoine",
+        "sacca"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.prenom.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.prenom.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.prenom",
+    [
+      [
+        "variableName",
+        "prenom"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1
+      ],
+      [
+        "validCount",
+        29
+      ],
+      [
+        "uniqueCount",
+        27
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          "moumoni",
+          "gregoire",
+          "orou deke",
+          "edmond",
+          "venance lubin"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.03923900118906062
+      ],
+      [
+        "plotValues",
+        {
+          "sacca": 2,
+          "antoine": 2,
+          "azizou": 1,
+          "kotchami nicaise": 1,
+          "salifou": 1,
+          "rachidi": 1,
+          "claudine": 1,
+          "leon comland": 1,
+          "daouda": 1,
+          "sabi moussa": 1,
+          "eric louis": 1,
+          "boniface": 1,
+          "samari": 1,
+          "g. gaston": 1,
+          "dibril": 1,
+          "aditi valentine": 1,
+          "valere": 1,
+          "ange marie bruno": 1,
+          "georges": 1,
+          "coffi mathurin": 1,
+          "cyriaque": 1,
+          "sefou ladekpo": 1,
+          "venance lubin": 1,
+          "edmond": 1,
+          "orou deke": 1,
+          "gregoire": 1,
+          "moumoni": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.prenom",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 1,
+          "aditi valentine": 1,
+          "ange marie bruno": 1,
+          "antoine": 2,
+          "azizou": 1,
+          "boniface": 1,
+          "claudine": 1,
+          "coffi mathurin": 1,
+          "cyriaque": 1,
+          "daouda": 1,
+          "dibril": 1,
+          "edmond": 1,
+          "eric louis": 1,
+          "g. gaston": 1,
+          "georges": 1,
+          "gregoire": 1,
+          "kotchami nicaise": 1,
+          "leon comland": 1,
+          "moumoni": 1,
+          "orou deke": 1,
+          "rachidi": 1,
+          "sabi moussa": 1,
+          "sacca": 2,
+          "salifou": 1,
+          "samari": 1,
+          "sefou ladekpo": 1,
+          "valere": 1,
+          "venance lubin": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "prenom"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        30
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        27
+      ],
+      [
+        "herfindahl",
+        0.0392390011890606
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "claudine"
+      ],
+      [
+        "mid",
+        "claudine"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "prenom"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.fullname.mode",
+    [
+      "Claudine Prudencio",
+      [
+        "Adam Bagri Moumouni",
+        "Claudine Prudencio",
+        "Gonroudobou Orou Deke",
+        "Ahossi Leon Comlan",
+        "Rachidi Gbadamassi"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.fullname.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.fullname.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.fullname",
+    [
+      [
+        "variableName",
+        "fullname"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        30
+      ],
+      [
+        "uniqueCount",
+        30
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Adam Bagri Moumouni",
+          "Claudine Prudencio",
+          "Gonroudobou Orou Deke",
+          "Ahossi Leon Comlan",
+          "Rachidi Gbadamassi"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.03333333333333333
+      ],
+      [
+        "plotValues",
+        {
+          "Kotchami Nicaise Fagnon": 1,
+          "Daouda Takpara": 1,
+          "Valere Tchobo": 1,
+          "Coffi Mathurin Nago": 1,
+          "Boniface Yehouetome": 1,
+          "Georges Bada": 1,
+          "Cyriaque Domingo": 1,
+          "Sabi Moussa Soule": 1,
+          "Sacca Fikara": 1,
+          "Aditi Valentine Houde": 1,
+          "Antoine Idji": 1,
+          "Antoine Dayori": 1,
+          "Samari Bani": 1,
+          "Salifou Issa": 1,
+          "Eric Louis Houndete": 1,
+          "Yorou G Gaston": 1,
+          "Ange Marie Bruno Amoussou": 1,
+          "Edmond Agoua": 1,
+          "Claudine Prudencio": 1,
+          "Sacca Lafia": 1,
+          "Augustin Ahouanvoebla": 1,
+          "Gnigla Venance Lubin": 1,
+          "Gregoire Laourou": 1,
+          "Azizou El-Hadj Issa": 1,
+          "Dibril Mama Debourou": 1,
+          "Rachidi Gbadamassi": 1,
+          "Ahossi Leon Comlan": 1,
+          "Sefou Ladekpo Fagbohoun": 1,
+          "Gonroudobou Orou Deke": 1,
+          "Adam Bagri Moumouni": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.fullname",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Adam Bagri Moumouni": 1,
+          "Aditi Valentine Houde": 1,
+          "Ahossi Leon Comlan": 1,
+          "Ange Marie Bruno Amoussou": 1,
+          "Antoine Dayori": 1,
+          "Antoine Idji": 1,
+          "Augustin Ahouanvoebla": 1,
+          "Azizou El-Hadj Issa": 1,
+          "Boniface Yehouetome": 1,
+          "Claudine Prudencio": 1,
+          "Coffi Mathurin Nago": 1,
+          "Cyriaque Domingo": 1,
+          "Daouda Takpara": 1,
+          "Dibril Mama Debourou": 1,
+          "Edmond Agoua": 1,
+          "Eric Louis Houndete": 1,
+          "Georges Bada": 1,
+          "Gnigla Venance Lubin": 1,
+          "Gonroudobou Orou Deke": 1,
+          "Gregoire Laourou": 1,
+          "Kotchami Nicaise Fagnon": 1,
+          "Rachidi Gbadamassi": 1,
+          "Sabi Moussa Soule": 1,
+          "Sacca Fikara": 1,
+          "Sacca Lafia": 1,
+          "Salifou Issa": 1,
+          "Samari Bani": 1,
+          "Sefou Ladekpo Fagbohoun": 1,
+          "Valere Tchobo": 1,
+          "Yorou G Gaston": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "fullname"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        30
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        30
+      ],
+      [
+        "herfindahl",
+        0.0333333333333333
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Claudine Prudencio"
+      ],
+      [
+        "mid",
+        "Claudine Prudencio"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "fullname"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.party.mode",
+    [
+      "FCBE",
+      [
+        "FCBE"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.party.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.party.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.party",
+    [
+      [
+        "variableName",
+        "party"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        30
+      ],
+      [
+        "uniqueCount",
+        5
+      ],
+      [
+        "modeFreq",
+        14
+      ],
+      [
+        "fewestValues",
+        [
+          "AFU"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.36222222222222217
+      ],
+      [
+        "plotValues",
+        {
+          "FCBE": 14,
+          "UN": 11,
+          "G13": 2,
+          "FE UPR": 2,
+          "AFU": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.party",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "AFU": 1,
+          "FCBE": 14,
+          "FE UPR": 2,
+          "G13": 2,
+          "UN": 11
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "party"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        30
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        5
+      ],
+      [
+        "herfindahl",
+        0.362222222222222
+      ],
+      [
+        "freqmode",
+        14
+      ],
+      [
+        "fewest",
+        "AFU"
+      ],
+      [
+        "mid",
+        "FE UPR"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        2
+      ],
+      [
+        "varnamesTypes",
+        "party"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.symbol.mode",
+    [
+      "Le soleil",
+      [
+        "Le soleil"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.symbol.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.symbol.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.symbol",
+    [
+      [
+        "variableName",
+        "symbol"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        30
+      ],
+      [
+        "uniqueCount",
+        9
+      ],
+      [
+        "modeFreq",
+        8
+      ],
+      [
+        "fewestValues",
+        [
+          "Une radio",
+          "Un arc-en-ciel"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.16888888888888892
+      ],
+      [
+        "plotValues",
+        {
+          "Le soleil": 8,
+          "La jarre trou\ufffde": 7,
+          "Une torche": 4,
+          "Une coquille cauris": 3,
+          "Une feuille": 2,
+          "Le B\ufffdnin entre deux mains": 2,
+          "le soleil qui sort": 2,
+          "Un arc-en-ciel": 1,
+          "Une radio": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.symbol",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "La jarre trou\ufffde": 7,
+          "Le B\ufffdnin entre deux mains": 2,
+          "Le soleil": 8,
+          "le soleil qui sort": 2,
+          "Un arc-en-ciel": 1,
+          "Une coquille cauris": 3,
+          "Une feuille": 2,
+          "Une radio": 1,
+          "Une torche": 4
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "symbol"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        30
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        9
+      ],
+      [
+        "herfindahl",
+        0.168888888888889
+      ],
+      [
+        "freqmode",
+        8
+      ],
+      [
+        "fewest",
+        "Un arc-en-ciel"
+      ],
+      [
+        "mid",
+        "Une feuille"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        2
+      ],
+      [
+        "varnamesTypes",
+        "symbol"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "2014_party",
+        {
+          "variableName": "2014_party",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 30,
+          "uniqueCount": 9,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "Alliance Soleil"
+          ],
+          "modeFreq": 8,
+          "fewestValues": [
+            "Prd",
+            "Alliance nationale pour la d\ufffdmocratie et le dev\ufffdloppement (And)"
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.16888888888888892,
+          "plotValues": {
+            "Alliance Soleil": 8,
+            "UN": 7,
+            "Alliance Eclaireur": 4,
+            "FCBE": 3,
+            "Force d\ufffdmocratique unie (Fdu)": 2,
+            "Ufedd-Benin Nouveau": 2,
+            "RB-RP": 2,
+            "Alliance nationale pour la d\ufffdmocratie et le dev\ufffdloppement (And)": 1,
+            "Prd": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "X2014_party",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "Alliance Eclaireur": 4,
+            "Alliance nationale pour la d\ufffdmocratie et le dev\ufffdloppement (And)": 1,
+            "Alliance Soleil": 8,
+            "FCBE": 3,
+            "Force d\ufffdmocratique unie (Fdu)": 2,
+            "Prd": 1,
+            "RB-RP": 2,
+            "Ufedd-Benin Nouveau": 2,
+            "UN": 7
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X2014_party",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "Alliance Soleil",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 30,
+          "sd": "NA",
+          "uniques": 9,
+          "herfindahl": 0.168888888888889,
+          "freqmode": 8,
+          "fewest": "Prd",
+          "mid": "Force d\ufffdmocratique unie (Fdu)",
+          "freqfewest": 1,
+          "freqmid": 2,
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2014_party",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:26:59",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "commune_key": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "nom": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "prenom": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "fullname": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "party": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "symbol": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2014_party": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

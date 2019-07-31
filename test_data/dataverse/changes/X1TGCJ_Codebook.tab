@@ -1,0 +1,695 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        67
+      ],
+      [
+        "variableCount",
+        2
+      ],
+      [
+        "dataSource",
+        {
+          "name": "X1TGCJ_Codebook.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 3244
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.ADMIN.mode",
+    [
+      "respid",
+      [
+        "echo_baseline",
+        "respid",
+        "hunger",
+        "muslim",
+        "coethnic"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.ADMIN.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.ADMIN.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.ADMIN",
+    [
+      [
+        "variableName",
+        "ADMIN"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        67
+      ],
+      [
+        "uniqueCount",
+        67
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "echo_baseline",
+          "respid",
+          "hunger",
+          "muslim",
+          "coethnic"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.014925373134328342
+      ],
+      [
+        "plotValues",
+        {
+          "woman_hh": 1,
+          "refviolconf_dum": 1,
+          "avg_commpressure": 1,
+          "hhprewar_business": 1,
+          "echo": 1,
+          "__OUTCOMES__": 1,
+          "host_Muslim_dum": 1,
+          "age3": 1,
+          "chiefrel": 1,
+          "coreligious": 1,
+          "avg_refhealth": 1,
+          "weprime": 1,
+          "nummonths_host": 1,
+          "contcomm": 1,
+          "hhearnings7d_gen": 1,
+          "warvict": 1,
+          "decision": 1,
+          "age1": 1,
+          "svillage": 1,
+          "lrefugee_coethnichost": 1,
+          "wealthindex": 1,
+          "Muslim": 1,
+          "male": 1,
+          "groupmember": 1,
+          "refhealth_dum": 1,
+          "avg_refviolconf": 1,
+          "muslim": 1,
+          "contsick": 1,
+          "age5": 1,
+          "__INDP_VARS__": 1,
+          "avg_reffoodsec": 1,
+          "groups": 1,
+          "hhlivestockbfrwar": 1,
+          "nummonths_host_Muslim": 1,
+          "mano": 1,
+          "motheredu": 1,
+          "avg_findself": 1,
+          "age4": 1,
+          "bornintown": 1,
+          "readpaper": 1,
+          "fatheredu": 1,
+          "grebo": 1,
+          "reffoodsec_dum": 1,
+          "towncode": 1,
+          "farm_size_to_labor": 1,
+          "nummonths_host_noncoeth": 1,
+          "warvict_high": 1,
+          "gio": 1,
+          "farmer": 1,
+          "lrefugee": 1,
+          "lrefugee_hostfam": 1,
+          "married_dum": 1,
+          "krahn": 1,
+          "chiefrelbfrwar": 1,
+          "__CONJOINT__": 1,
+          "per_nummonths_host_Muslim": 1,
+          "__COVARIATES__": 1,
+          "echo_endline": 1,
+          "per_nummonths_host_noncoethnic": 1,
+          "age2": 1,
+          "host_EthnicOutgroup_dum": 1,
+          "coethnic": 1,
+          "hhprewar_formal": 1,
+          "hunger": 1,
+          "respid": 1,
+          "avg_bigman": 1,
+          "echo_baseline": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.ADMIN",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "__CONJOINT__": 1,
+          "__COVARIATES__": 1,
+          "__INDP_VARS__": 1,
+          "__OUTCOMES__": 1,
+          "age1": 1,
+          "age2": 1,
+          "age3": 1,
+          "age4": 1,
+          "age5": 1,
+          "avg_bigman": 1,
+          "avg_commpressure": 1,
+          "avg_findself": 1,
+          "avg_reffoodsec": 1,
+          "avg_refhealth": 1,
+          "avg_refviolconf": 1,
+          "bornintown": 1,
+          "chiefrel": 1,
+          "chiefrelbfrwar": 1,
+          "coethnic": 1,
+          "contcomm": 1,
+          "contsick": 1,
+          "coreligious": 1,
+          "decision": 1,
+          "echo": 1,
+          "echo_baseline": 1,
+          "echo_endline": 1,
+          "farm_size_to_labor": 1,
+          "farmer": 1,
+          "fatheredu": 1,
+          "gio": 1,
+          "grebo": 1,
+          "groupmember": 1,
+          "groups": 1,
+          "hhearnings7d_gen": 1,
+          "hhlivestockbfrwar": 1,
+          "hhprewar_business": 1,
+          "hhprewar_formal": 1,
+          "host_EthnicOutgroup_dum": 1,
+          "host_Muslim_dum": 1,
+          "hunger": 1,
+          "krahn": 1,
+          "lrefugee": 1,
+          "lrefugee_coethnichost": 1,
+          "lrefugee_hostfam": 1,
+          "male": 1,
+          "mano": 1,
+          "married_dum": 1,
+          "motheredu": 1,
+          "muslim": 1,
+          "Muslim": 1,
+          "nummonths_host": 1,
+          "nummonths_host_Muslim": 1,
+          "nummonths_host_noncoeth": 1,
+          "per_nummonths_host_Muslim": 1,
+          "per_nummonths_host_noncoethnic": 1,
+          "readpaper": 1,
+          "reffoodsec_dum": 1,
+          "refhealth_dum": 1,
+          "refviolconf_dum": 1,
+          "respid": 1,
+          "svillage": 1,
+          "towncode": 1,
+          "warvict": 1,
+          "warvict_high": 1,
+          "wealthindex": 1,
+          "weprime": 1,
+          "woman_hh": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "ADMIN"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        67
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        67
+      ],
+      [
+        "herfindahl",
+        0.0149253731343284
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "respid"
+      ],
+      [
+        "mid",
+        "respid"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "ADMIN"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "=================================",
+        {
+          "variableName": "=================================",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 67,
+          "uniqueCount": 64,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "================================="
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            "ECHO endline survey",
+            "Age: 46-55",
+            "Proportion of refugees families the respondent found herself",
+            "Able to read a newspaper",
+            "Was a refugee and stayed with a coethnic host family in CDI"
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.017598574292715507,
+          "plotValues": {
+            "=================================": 4,
+            "Proportion of refugee families hosted food insecure": 1,
+            "Sixteen Villages town": 1,
+            "Mother: Years of education": 1,
+            "Number of violent acts experienced": 1,
+            "Number of months hosted ethnic outgroup": 1,
+            "Married": 1,
+            "Assigned to empathetic prime": 1,
+            "Proportion of refugees families the respondent felt pressured to host by bigman": 1,
+            "Tribe: Mano": 1,
+            "Number of months hosted Muslims": 1,
+            "Respondent ID": 1,
+            "Tribe: Krahn": 1,
+            "Male dummy": 1,
+            "Household was related to the chief before the war": 1,
+            "Age: 46-55": 1,
+            "ECHO NGO program town": 1,
+            "Was a refugee during the Liberian civil war": 1,
+            "Number of days doing community work in the past month": 1,
+            "Was a refugee and stayed with a host family in CDI": 1,
+            "Farmer refugee": 1,
+            "Number of refugee months hosted": 1,
+            "Towncode": 1,
+            "Refugee selected dummy": 1,
+            "Proportion of total refugee months hosted ethnic outgroup refugees": 1,
+            "Household weekly earnings in general": 1,
+            "Age: 36-45": 1,
+            "Household had a job in the formal sector before the war": 1,
+            "Coethnic refugee": 1,
+            "Proportion of refugees families the respondent felt pressured to host by others": 1,
+            "Born in town": 1,
+            "Hosted refugees with health problems": 1,
+            "Member of at least one social group": 1,
+            "Index of asset ownership": 1,
+            "Age: 18-25": 1,
+            "Related to chief": 1,
+            "Relgion: Muslim": 1,
+            "Contributed money to sick family in past month": 1,
+            "Hosted ethnic outgroup dummy": 1,
+            "Proportion of refugee families hosted with health problems": 1,
+            "Hosted Muslims dummy": 1,
+            "Proportion of total refugee months hosted religious outgroup refugees": 1,
+            "Hungry refugee": 1,
+            "Age: 56+": 1,
+            "Above median exposure to violence": 1,
+            "ECHO baseline survey": 1,
+            "Household had a business before the war": 1,
+            "Hosted refugees with food insecurity": 1,
+            "Proportion of refugee families hosted who fled direct violence": 1,
+            "Muslim refugee": 1,
+            "Ratio of farm acres to adults in household": 1,
+            "Number of social groups a member of": 1,
+            "Tribe: Gio": 1,
+            "Tribe: Grebo": 1,
+            "Hosted refugees fleeing direct violence": 1,
+            "Age: 25-35": 1,
+            "Coreligious refugee": 1,
+            "Father: Years of education": 1,
+            "Household had livestock before the war": 1,
+            "Was a refugee and stayed with a coethnic host family in CDI": 1,
+            "Able to read a newspaper": 1,
+            "Proportion of refugees families the respondent found herself": 1,
+            "Female refugee": 1,
+            "ECHO endline survey": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "X.................................",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "=================================": 4,
+            "Able to read a newspaper": 1,
+            "Above median exposure to violence": 1,
+            "Age: 18-25": 1,
+            "Age: 25-35": 1,
+            "Age: 36-45": 1,
+            "Age: 46-55": 1,
+            "Age: 56+": 1,
+            "Assigned to empathetic prime": 1,
+            "Born in town": 1,
+            "Coethnic refugee": 1,
+            "Contributed money to sick family in past month": 1,
+            "Coreligious refugee": 1,
+            "ECHO baseline survey": 1,
+            "ECHO endline survey": 1,
+            "ECHO NGO program town": 1,
+            "Farmer refugee": 1,
+            "Father: Years of education": 1,
+            "Female refugee": 1,
+            "Hosted ethnic outgroup dummy": 1,
+            "Hosted Muslims dummy": 1,
+            "Hosted refugees fleeing direct violence": 1,
+            "Hosted refugees with food insecurity": 1,
+            "Hosted refugees with health problems": 1,
+            "Household had a business before the war": 1,
+            "Household had a job in the formal sector before the war": 1,
+            "Household had livestock before the war": 1,
+            "Household was related to the chief before the war": 1,
+            "Household weekly earnings in general": 1,
+            "Hungry refugee": 1,
+            "Index of asset ownership": 1,
+            "Male dummy": 1,
+            "Married": 1,
+            "Member of at least one social group": 1,
+            "Mother: Years of education": 1,
+            "Muslim refugee": 1,
+            "Number of days doing community work in the past month": 1,
+            "Number of months hosted ethnic outgroup": 1,
+            "Number of months hosted Muslims": 1,
+            "Number of refugee months hosted": 1,
+            "Number of social groups a member of": 1,
+            "Number of violent acts experienced": 1,
+            "Proportion of refugee families hosted food insecure": 1,
+            "Proportion of refugee families hosted who fled direct violence": 1,
+            "Proportion of refugee families hosted with health problems": 1,
+            "Proportion of refugees families the respondent felt pressured to host by bigman": 1,
+            "Proportion of refugees families the respondent felt pressured to host by others": 1,
+            "Proportion of refugees families the respondent found herself": 1,
+            "Proportion of total refugee months hosted ethnic outgroup refugees": 1,
+            "Proportion of total refugee months hosted religious outgroup refugees": 1,
+            "Ratio of farm acres to adults in household": 1,
+            "Refugee selected dummy": 1,
+            "Related to chief": 1,
+            "Relgion: Muslim": 1,
+            "Respondent ID": 1,
+            "Sixteen Villages town": 1,
+            "Towncode": 1,
+            "Tribe: Gio": 1,
+            "Tribe: Grebo": 1,
+            "Tribe: Krahn": 1,
+            "Tribe: Mano": 1,
+            "Was a refugee and stayed with a coethnic host family in CDI": 1,
+            "Was a refugee and stayed with a host family in CDI": 1,
+            "Was a refugee during the Liberian civil war": 1
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X.................................",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "=================================",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 67,
+          "sd": "NA",
+          "uniques": 64,
+          "herfindahl": 0.0175985742927155,
+          "freqmode": 4,
+          "fewest": "Respondent ID",
+          "mid": "Respondent ID",
+          "freqfewest": 1,
+          "freqmid": 1,
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X.................................",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:23:40",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "ADMIN": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "=================================": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

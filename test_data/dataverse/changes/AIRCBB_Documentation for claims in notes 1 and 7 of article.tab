@@ -1,0 +1,1263 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        60
+      ],
+      [
+        "variableCount",
+        5
+      ],
+      [
+        "dataSource",
+        {
+          "name": "AIRCBB_Documentation for claims in notes 1 and 7 of article.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 9392
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.mode",
+    [
+      "no defense ",
+      [
+        "no defense "
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.B.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.B",
+    [
+      [
+        "variableName",
+        "B"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        10
+      ],
+      [
+        "validCount",
+        50
+      ],
+      [
+        "uniqueCount",
+        4
+      ],
+      [
+        "modeFreq",
+        30
+      ],
+      [
+        "fewestValues",
+        [
+          "NOTE 1:              What is the author's stated rationale for using logit or probit?           (1) No defense offered, (2) Defense is that the dependent variable is binary, (3) Other explicit defense is offered"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.4328
+      ],
+      [
+        "plotValues",
+        {
+          "no defense ": 30,
+          "defense: DV binary": 10,
+          "other defense": 9,
+          "NOTE 1:              What is the author's stated rationale for using logit or probit?           (1) No defense offered, (2) Defense is that the dependent variable is binary, (3) Other explicit defense is offered": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.B",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 10,
+          "defense: DV binary": 6,
+          "no defense ": 14,
+          "other defense": 3
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "B"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        33
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        3
+      ],
+      [
+        "herfindahl",
+        0.455576559546314
+      ],
+      [
+        "freqmode",
+        14
+      ],
+      [
+        "fewest",
+        "other defense"
+      ],
+      [
+        "mid",
+        "defense: DV binary"
+      ],
+      [
+        "freqfewest",
+        3
+      ],
+      [
+        "freqmid",
+        6
+      ],
+      [
+        "varnamesTypes",
+        "B"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.C.mode",
+    [
+      "Table 1 reports the MLE coefficients from a logistic regression using the data described in the previous section.\\ (815)\tY\tY\nHeller and Mershon, JOP (May)\tno defense \tWe then estimate a binary logit model of the decision to switch.\\ (544)",
+      [
+        "\u2026estimates a probit model of why facilities join ISO 14001.\\ (240)\"",
+        "\u2026three separate probit models are estimated.\\ (256)\"",
+        "We then estimate a binary logit model of the decision to switch.\\ (544)\"",
+        "As the dependent variable is dichotomous, I employ the Porbit model\u2026\\ (485)\"",
+        "Table 3 displays the results of a logistic regression analysis used to assess the influence of \u2026 variables on the likelihood that a group makes direct candidate contributions.\\ (899)\""
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.C.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.C.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.C",
+    [
+      [
+        "variableName",
+        "C"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        10
+      ],
+      [
+        "validCount",
+        50
+      ],
+      [
+        "uniqueCount",
+        50
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "\u2026estimates a probit model of why facilities join ISO 14001.\\ (240)\"",
+          "\u2026three separate probit models are estimated.\\ (256)\"",
+          "We then estimate a binary logit model of the decision to switch.\\ (544)\"",
+          "As the dependent variable is dichotomous, I employ the Porbit model\u2026\\ (485)\"",
+          "Table 3 displays the results of a logistic regression analysis used to assess the influence of \u2026 variables on the likelihood that a group makes direct candidate contributions.\\ (899)\""
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.02
+      ],
+      [
+        "plotValues",
+        {
+          "\u2026three separate probit models are estimated.\\ (256)\"": 1,
+          "[use heteroskedastic probit with a series of technical justifications]": 1,
+          "The censored probit technique estimates and controls for potential sample selection bias, which could otherwise lead to biased coefficient estimates in the war (second stage) equation.\\ (773)\"": 1,
+          "We developed two logistic regression equations,\u2026\\ (649)\"": 1,
+          "Coefficients for knowledge are\u2026probit estimates.\\ (table 4, p600)\"": 1,
+          "[table 1 heading:] Probit estimation, Marginal effects of the education variables on voter turnout": 1,
+          "Table 2 reports the results of six logistic regression models.\\ (831)\"": 1,
+          "For both models we employ a logistic regression analysis [fn21, which describes that this is because the DV is binary]\\ (64)\"": 1,
+          "has as a dependent variable whether a state adopts a lottery in a year\u2026[Therefore] we estimate each equation with probit.\\ (514)\"": 1,
+          "Logit Regression Results,\\ (heading of Table 4)\"": 1,
+          "I estimate two probit models that allow me to explore whether opinion leaders search for information differently\u2026\\ (117)\"": 1,
+          "Because it is binary, we estimate a logit model.\\ (416)\"": 1,
+          "The basic winnowing decision (attention or not) is a binary choice, which suggests that an MLE technique such as logit or probit is appropriate.\\ (321)\"": 1,
+          "I derive a statistical model that corresponds with the theoretical model.\\ (192)\"": 1,
+          "The dependent variable follows a binary distribution\u2026, which leads us to specify the use of the logit link.\\ (835)\"": 1,
+          "Using the absence or presence of a finite\u2026agreement as the dependent variable, I conduct three probit analyses.\\ (557)\"": 1,
+          "The dependent variable in the selection model is simply a measure of whether the candidate ran any advertisements in that particular market\u2026[and thus] the selection stage of the Heckman model is a modified probit estimation.\\ (808)\"": 1,
+          "We follow the literature and we first use logit analysis\\ (155)\"": 1,
+          "Table 1 reports the MLE coefficients from a logistic regression using the data described in the previous section.\\ (815)\"": 1,
+          "[note in Table 2:] \\Cell entries are logistic regression coefficients.\\\" (1174)\"": 1,
+          "The models in Table 2\u2026regress turnout in the 2002 congressional election on\u2026\\ (583)\"": 1,
+          "The estimation procedure I use is logistic regression with fixed effects.\\ (570)\"": 1,
+          "logit specification reported in Table 3": 1,
+          "One possibility to model the underlying data process is through the grouped duration approach [BKT 1998]\u2026BKT argue that estimation without considering temporal dependence leads to the underestimation of standard errors.\\ (723)\"": 1,
+          "Since INF is a binary variable, estimating\u2026by linear methods will not give consistent results\u2026[main analysis is TSLS, presents probit for comparison]\\ (110)\"": 1,
+          "Table 1 presents \u2026 the MLE estimates for the initial yes/no decision.\\ (464)\"": 1,
+          "Because our dependent variable is dichotomous, we use a probit model.\\ (77)\"": 1,
+          "I estimate the model with a conditional logit setup (Greene 2000, 858).\\ (126)\"": 1,
+          "NOTE 1:                             Specifically, what defense is offered for the choice of logit or probit?": 1,
+          "Table 2 contains a logit analysis of the vote decision\u2026\\ (175)\"": 1,
+          "We use logistic regression\u2026because each of the dependent variables is dichotomous.\\ (428)\"": 1,
+          "To answer these questions, I conduct a probit analysis\u2026\\ (614)\"": 1,
+          "The logistic regression results are presented in Table 3.\\ (369)\"": 1,
+          "We employ Beck, Katz and Tucker's (1998) method to measure temporal dependence.\\ (1236)\"": 1,
+          "The results of the logit models\u2026\\ (917)\"": 1,
+          "The results of four logit specifications are reported in Table 3.\\ (1087)\"": 1,
+          "I\u2026carried out a probit analysis to determine whether the stance taken by opposition parties correlates with the probability of deterrence success.\\ (469)\"": 1,
+          "We also fit a series of logit models estimating the likelihood that an incumbent would win an election.\\ (488)\"": 1,
+          "[uses STRAT to estimate a strategic probit model to capture a formal model.]": 1,
+          "[table 2 heading:] \\Logistic Regression Estimates of the Effects of Occupational Labels on Vote Choice.\\\" \"": 1,
+          "We use probit estimates with standard errors clustered for each coalition.\\ (560)\"": 1,
+          "[uses a Markov Chain transition model estimated with a logit link.]": 1,
+          "Both of our dependent variables are binary\u2026We estimate our models using probabilistic regression (probit).\\ (443)\"": 1,
+          "The most appropriate statistical means for testing hypotheses concerning coalition government formation is McFadden's (1973) conditional logit model, which estimates the effects of various traits on the odds of achieving some outcome conditional on being a member of the choice set or set of alternatives at play.\\ (378)\"": 1,
+          "The dependent variable in our study is whether or not an individual voted. We use a logit model to test the relative impacts of these factors\u2026\\ (564)\"": 1,
+          "Entries are unstandardized logistic regression coefficients\u2026\\ (note in table 3)\"": 1,
+          "Table 3 displays the results of a logistic regression analysis used to assess the influence of \u2026 variables on the likelihood that a group makes direct candidate contributions.\\ (899)\"": 1,
+          "As the dependent variable is dichotomous, I employ the Porbit model\u2026\\ (485)\"": 1,
+          "We then estimate a binary logit model of the decision to switch.\\ (544)\"": 1,
+          "\u2026estimates a probit model of why facilities join ISO 14001.\\ (240)\"": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.C",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 10,
+          "\u2026three separate probit models are estimated.\\ (256)\tN\t--\nGrossback, Peterson and Stimson, AJPS (April)\tno defense \tBecause it is binary, we estimate a logit model.\\ (416)": 1,
+          "[table 1 heading:] Probit estimation, Marginal effects of the education variables on voter turnout": 1,
+          "[use heteroskedastic probit with a series of technical justifications]": 1,
+          "[uses a Markov Chain transition model estimated with a logit link.]": 1,
+          "As the dependent variable is dichotomous, I employ the Porbit model\u2026\\ (485)\tN\t--\nCarson, JOP (February)\tother defense\t[uses STRAT to estimate a strategic probit model to capture a formal model.]\tN\t--\nChang, JOP (August)\tother defense\tOne possibility to model the underlying data process is through the grouped duration approach [BKT 1998]\u2026BKT argue that estimation without considering temporal dependence leads to the underestimation of standard errors.\\ (723)": 1,
+          "Both of our dependent variables are binary\u2026We estimate our models using probabilistic regression (probit).\\ (443)\tY\tN\nValentino and Sears, AJPS (July)\tno defense \tEntries are unstandardized logistic regression coefficients\u2026\\ (note in table 3)": 1,
+          "Coefficients for knowledge are\u2026probit estimates.\\ (table 4, p600)\tN\t--\nJennings and Zhang, JOP (November)\tno defense \t[note in Table 2:] \\Cell entries are logistic regression coefficients.\\ (1174)\tN\t--\nKarp and Brockingston, JOP (August)\tno defense \tTable 2 reports the results of six logistic regression models.\\ (831)": 1,
+          "For both models we employ a logistic regression analysis [fn21, which describes that this is because the DV is binary]\\ (64)\tN\t--\nHogan, JOP (August)\tno defense \tTable 3 displays the results of a logistic regression analysis used to assess the influence of \u2026 variables on the likelihood that a group makes direct candidate contributions.\\ (899)": 1,
+          "has as a dependent variable whether a state adopts a lottery in a year\u2026[Therefore] we estimate each equation with probit.\\ (514)\tN\t--\nBranton and Jones., AJPS (April)\tno defense \tThe logistic regression results are presented in Table 3.\\ (369)": 1,
+          "I derive a statistical model that corresponds with the theoretical model.\\ (192)\tN\t--\nKoromenos, APSR (November)\tdefense: DV binary\tUsing the absence or presence of a finite\u2026agreement as the dependent variable, I conduct three probit analyses.\\ (557)": 1,
+          "I estimate two probit models that allow me to explore whether opinion leaders search for information differently\u2026\\ (117)\tN\t--\nRosato, APSR (August)\tno defense \tI\u2026carried out a probit analysis to determine whether the stance taken by opposition parties correlates with the probability of deterrence success.\\ (469)": 1,
+          "logit specification reported in Table 3": 1,
+          "Table 1 presents \u2026 the MLE estimates for the initial yes/no decision.\\ (464)\tN\t--\nEnterline and Greig, JOP (November)\tno defense \tThe results of four logit specifications are reported in Table 3.\\ (1087)": 1,
+          "Table 1 reports the MLE coefficients from a logistic regression using the data described in the previous section.\\ (815)\tY\tY\nHeller and Mershon, JOP (May)\tno defense \tWe then estimate a binary logit model of the decision to switch.\\ (544)": 1,
+          "The basic winnowing decision (attention or not) is a binary choice, which suggests that an MLE technique such as logit or probit is appropriate.\\ (321)\tN\t--\nLassen, AJPS (January)\tother defense\tSince INF is a binary variable, estimating\u2026by linear methods will not give consistent results\u2026[main analysis is TSLS, presents probit for comparison]\\ (110)": 1,
+          "The dependent variable follows a binary distribution\u2026, which leads us to specify the use of the logit link.\\ (835)\tN\t--\nFox and Lawless, AJPS (July)\tno defense \tWe developed two logistic regression equations,\u2026\\ (649)": 1,
+          "The dependent variable in the selection model is simply a measure of whether the candidate ran any advertisements in that particular market\u2026[and thus] the selection stage of the Heckman model is a modified probit estimation.\\ (808)\tY\tN\nSenese, AJPS (October)\tother defense\tThe censored probit technique estimates and controls for potential sample selection bias, which could otherwise lead to biased coefficient estimates in the war (second stage) equation.\\ (773)": 1,
+          "The estimation procedure I use is logistic regression with fixed effects.\\ (570)\tN\t--\nMcDermott, JOP (February)\tno defense \t[table 2 heading:] \\Logistic Regression Estimates of the Effects of Occupational Labels on Vote Choice.\\ \tN\t--\nPotoski and Prakash, AJPS (April)\tno defense \t\u2026estimates a probit model of why facilities join ISO 14001.\\ (240)": 1,
+          "The models in Table 2\u2026regress turnout in the 2002 congressional election on\u2026\\ (583)\tY\tY\nRinge, AJPS (October)\tno defense \tLogit Regression Results,\\ (heading of Table 4)": 1,
+          "The results of the logit models\u2026\\ (917)\tN\t--\nHeath, Schwindt-Bayer, and Taylor-Robinson, AJPS (April)\tdefense: DV binary\tWe use logistic regression\u2026because each of the dependent variables is dichotomous.\\ (428)": 1,
+          "To answer these questions, I conduct a probit analysis\u2026\\ (614)\tN\t--\nWarwick, AJPS (April)\tother defense\tThe most appropriate statistical means for testing hypotheses concerning coalition government formation is McFadden's (1973) conditional logit model, which estimates the effects of various traits on the odds of achieving some outcome conditional on being a member of the choice set or set of alternatives at play.\\ (378)": 1,
+          "We follow the literature and we first use logit analysis\\ (155)\tN\t--\nHaspel and Knotts, JOP (May)\tdefense: DV binary\tThe dependent variable in our study is whether or not an individual voted. We use a logit model to test the relative impacts of these factors\u2026\\ (564)": 1,
+          "We use probit estimates with standard errors clustered for each coalition.\\ (560)\tN\t--\nBarbieri and Reuveny, JOP (November)\tother defense\tWe employ Beck, Katz and Tucker's (1998) method to measure temporal dependence.\\ (1236)": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "C"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        33
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        23
+      ],
+      [
+        "herfindahl",
+        0.0434782608695652
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Table 1 reports the MLE coefficients from a logistic regression using the data described in the previous section.\\ (815)\tY\tY\nHeller and Mershon, JOP (May)\tno defense \tWe then estimate a binary logit model of the decision to switch.\\ (544)"
+      ],
+      [
+        "mid",
+        "Table 1 reports the MLE coefficients from a logistic regression using the data described in the previous section.\\ (815)\tY\tY\nHeller and Mershon, JOP (May)\tno defense \tWe then estimate a binary logit model of the decision to switch.\\ (544)"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "C"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.D.mode",
+    [
+      "N",
+      [
+        "N"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.D.binary",
+    [
+      "yes",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.D.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.D",
+    [
+      [
+        "variableName",
+        "D"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        10
+      ],
+      [
+        "validCount",
+        50
+      ],
+      [
+        "uniqueCount",
+        3
+      ],
+      [
+        "modeFreq",
+        37
+      ],
+      [
+        "fewestValues",
+        [
+          "NOTE 7:                         Article advances a hypothesis that two independent variables interact in influencing the probaility of an event.                      [Yes,No]"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.6055999999999999
+      ],
+      [
+        "plotValues",
+        {
+          "N": 37,
+          "Y": 12,
+          "NOTE 7:                         Article advances a hypothesis that two independent variables interact in influencing the probaility of an event.                      [Yes,No]": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.D",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 10,
+          "N": 19,
+          "Y": 4
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "D"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        33
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.712665406427221
+      ],
+      [
+        "freqmode",
+        19
+      ],
+      [
+        "fewest",
+        "Y"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        4
+      ],
+      [
+        "freqmid",
+        11.5
+      ],
+      [
+        "varnamesTypes",
+        "D"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.E.mode",
+    [
+      "--",
+      [
+        "--"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.E.binary",
+    [
+      "yes",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.E.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.E",
+    [
+      [
+        "variableName",
+        "E"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        10
+      ],
+      [
+        "validCount",
+        50
+      ],
+      [
+        "uniqueCount",
+        4
+      ],
+      [
+        "modeFreq",
+        37
+      ],
+      [
+        "fewestValues",
+        [
+          "NOTE 7: Interactive hypothesis in column D predicts that the effects of the two variables are  monotonic. [Yes,No]"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.5896
+      ],
+      [
+        "plotValues",
+        {
+          "--": 37,
+          "Y": 10,
+          "N": 2,
+          "NOTE 7: Interactive hypothesis in column D predicts that the effects of the two variables are  monotonic. [Yes,No]": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.E",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 10,
+          "--": 19,
+          "Y": 4
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "E"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        33
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.712665406427221
+      ],
+      [
+        "freqmode",
+        19
+      ],
+      [
+        "fewest",
+        "Y"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        4
+      ],
+      [
+        "freqmid",
+        11.5
+      ],
+      [
+        "varnamesTypes",
+        "E"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "Thisfilecontainsthedatausedtoderivetheclaimsmadeinnotes1and7oftheBerry,DeMeritt,EsareyAJPSarticle.",
+        {
+          "variableName": "Thisfilecontainsthedatausedtoderivetheclaimsmadeinnotes1and7oftheBerry,DeMeritt,EsareyAJPSarticle.",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 4,
+          "validCount": 56,
+          "uniqueCount": 56,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "10 articles in which interactive hypothesis is monotonic",
+            "Jennings and Zhang, JOP (November)",
+            "Fox and Lawless, AJPS (July)",
+            "Clark and Nordstrom, JOP (February)",
+            "Heath, Schwindt-Bayer, and Taylor-Robinson, AJPS (April)"
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            "10 articles in which interactive hypothesis is monotonic",
+            "Jennings and Zhang, JOP (November)",
+            "Fox and Lawless, AJPS (July)",
+            "Clark and Nordstrom, JOP (February)",
+            "Heath, Schwindt-Bayer, and Taylor-Robinson, AJPS (April)"
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.01785714285714287,
+          "plotValues": {
+            "30 articles that offer no defense for the choice of binary logit or probit": 1,
+            "Hogan, JOP (August)": 1,
+            "Haspel and Knotts, JOP (May)": 1,
+            "Carson and Roberts, JOP (May)": 1,
+            "Chang, JOP (August)": 1,
+            "12 articles that advance a hypothesis that two independent variables interact in influencing the probability of an event": 1,
+            "Senese, AJPS (October)": 1,
+            "Ansolabehere, Snyder, Strauss and Ting, AJPS (July)": 1,
+            "Tenn, JOP (February)": 1,
+            "Hansen, Mitchell and Drope, AJPS (January)": 1,
+            "SUMMARY:": 1,
+            "10 articles that defend choice of binary logit or probit based solely on the dichotomous dependent variable": 1,
+            "Rosato, APSR (August)": 1,
+            "McDermott, JOP (February)": 1,
+            "Grossback, Peterson and Stimson, AJPS (April)": 1,
+            "Berry and Baybeck, APSR (November)": 1,
+            "Lassen, AJPS (January)": 1,
+            "Grieg, AJPS (April)": 1,
+            "Drury, Olson and Van Belle, JOP (May)": 1,
+            "Ringe, AJPS (October)": 1,
+            "Heller and Mershon, JOP (May)": 1,
+            "Potoski and Prakash, AJPS (April)": 1,
+            "Marinov, AJPS (July)": 1,
+            "Enterline and Greig, JOP (November)": 1,
+            "Basinger and Lavine, APSR (May)": 1,
+            "Broz, AJPS (July)": 1,
+            "Branton and Jones., AJPS (April)": 1,
+            "Roch, JOP (February)": 1,
+            "Schaffner, AJPS (October)": 1,
+            "Prior, AJPS (July)": 1,
+            "49 articles that use binary logit or probit": 1,
+            "Koromenos, APSR (November)": 1,
+            "Carson, JOP (February)": 1,
+            "Stokes, APSR (August)": 1,
+            "Karp and Brockingston, JOP (August)": 1,
+            "Valentino and Sears, AJPS (July)": 1,
+            "Hillygus, JOP (February)": 1,
+            "Escobar-Lemmon and Taylor-Robinson, AJPS (October)": 1,
+            "Hiskey and Bowler, AJPS (January)": 1,
+            "Bailey, APSR (February)": 1,
+            "Articles in 2005 issues of AJPS, APSR or JOP estimating at least one binary dependent variable model using logit or probit": 1,
+            "Barbieri and Reuveny, JOP (November)": 1,
+            "Huddy, Feldman, Taber and Lahav, AJPS (July)": 1,
+            "Jennings and Zhang, JOP (November)": 1,
+            "10 articles in which interactive hypothesis is monotonic": 1,
+            "Krutz, AJPS (April)": 1,
+            "Grafstein, JOP (August)": 1,
+            "Kedar, APSR (May)": 1,
+            "Shugart, Valdini and Suominen, AJPS (April)": 1,
+            "Von Stein, APSR (November)": 1,
+            "Bailey, Kamoie and Maltzman, AJPS (January)": 1,
+            "Heath, Schwindt-Bayer, and Taylor-Robinson, AJPS (April)": 1,
+            "Clark and Nordstrom, JOP (February)": 1,
+            "Hayes, AJPS (October)": 1,
+            "Fox and Lawless, AJPS (July)": 1,
+            "Warwick, AJPS (April)": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "Thisfilecontainsthedatausedtoderivetheclaimsmadeinnotes1and7oftheBerry.DeMeritt.EsareyAJPSarticle.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "": 4,
+            "10 articles in which interactive hypothesis is monotonic": 1,
+            "10 articles that defend choice of binary logit or probit based solely on the dichotomous dependent variable": 1,
+            "12 articles that advance a hypothesis that two independent variables interact in influencing the probability of an event": 1,
+            "30 articles that offer no defense for the choice of binary logit or probit": 1,
+            "49 articles that use binary logit or probit": 1,
+            "Ansolabehere, Snyder, Strauss and Ting, AJPS (July)": 1,
+            "Berry and Baybeck, APSR (November)": 1,
+            "Broz, AJPS (July)": 1,
+            "Clark and Nordstrom, JOP (February)": 1,
+            "Drury, Olson and Van Belle, JOP (May)": 1,
+            "Escobar-Lemmon and Taylor-Robinson, AJPS (October)": 1,
+            "Grafstein, JOP (August)": 1,
+            "Grieg, AJPS (April)": 1,
+            "Hansen, Mitchell and Drope, AJPS (January)": 1,
+            "Hayes, AJPS (October)": 1,
+            "Hillygus, JOP (February)": 1,
+            "Hiskey and Bowler, AJPS (January)": 1,
+            "Huddy, Feldman, Taber and Lahav, AJPS (July)": 1,
+            "Kedar, APSR (May)": 1,
+            "Krutz, AJPS (April)": 1,
+            "Marinov, AJPS (July)": 1,
+            "Prior, AJPS (July)": 1,
+            "Roch, JOP (February)": 1,
+            "Schaffner, AJPS (October)": 1,
+            "Shugart, Valdini and Suominen, AJPS (April)": 1,
+            "Stokes, APSR (August)": 1,
+            "SUMMARY:": 1,
+            "Tenn, JOP (February)": 1,
+            "Von Stein, APSR (November)": 1
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "Thisfilecontainsthedatausedtoderivetheclaimsmadeinnotes1and7oftheBerry.DeMeritt.EsareyAJPSarticle.",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "Grafstein, JOP (August)",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 33,
+          "sd": "NA",
+          "uniques": 29,
+          "herfindahl": 0.0344827586206897,
+          "freqmode": 1,
+          "fewest": "Grafstein, JOP (August)",
+          "mid": "Grafstein, JOP (August)",
+          "freqfewest": 1,
+          "freqmid": 1,
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Thisfilecontainsthedatausedtoderivetheclaimsmadeinnotes1and7oftheBerry.DeMeritt.EsareyAJPSarticle.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:19:12",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "Thisfilecontainsthedatausedtoderivetheclaimsmadeinnotes1and7oftheBerry,DeMeritt,EsareyAJPSarticle.": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "B": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "C": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "D": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "E": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

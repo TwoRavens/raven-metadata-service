@@ -1,0 +1,5191 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        667
+      ],
+      [
+        "variableCount",
+        13
+      ],
+      [
+        "dataSource",
+        {
+          "name": "XZUSNT_UN data on govt expenditures.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 130136
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.DatafromUNStatisticalDivision.mode",
+    [
+      "Botswana",
+      [
+        "Senegal",
+        "Zimbabwe",
+        "Uganda",
+        "Mauritius",
+        "Niger"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.DatafromUNStatisticalDivision.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.DatafromUNStatisticalDivision.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.DatafromUNStatisticalDivision",
+    [
+      [
+        "variableName",
+        "DatafromUNStatisticalDivision"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        667
+      ],
+      [
+        "uniqueCount",
+        33
+      ],
+      [
+        "modeFreq",
+        32
+      ],
+      [
+        "fewestValues",
+        [
+          "4",
+          "1",
+          "footnote_SeqID",
+          "5",
+          "Country or Area"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.04157216743951863
+      ],
+      [
+        "plotValues",
+        {
+          "Kenya": 32,
+          "Lesotho": 32,
+          "South Africa": 32,
+          "Namibia": 32,
+          "Botswana": 32,
+          "Cape Verde": 32,
+          "Malawi": 32,
+          "Mauritius": 32,
+          "Uganda": 32,
+          "Zimbabwe": 32,
+          "Senegal": 32,
+          "Niger": 32,
+          "Mozambique": 30,
+          "Mali": 26,
+          "Nigeria": 26,
+          "Zambia": 26,
+          "Benin": 24,
+          "Burkina Faso": 22,
+          "Madagascar": 22,
+          "Cote d'Ivoire": 22,
+          "Cameroon": 20,
+          "Tanzania - Mainland": 18,
+          "Togo": 16,
+          "Seychelles": 14,
+          "Ghana": 8,
+          "Guinea": 2,
+          "3": 1,
+          "2": 1,
+          "Country or Area": 1,
+          "5": 1,
+          "footnote_SeqID": 1,
+          "1": 1,
+          "4": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.DatafromUNStatisticalDivision",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "Benin": 24,
+          "Botswana": 32,
+          "Burkina Faso": 22,
+          "Cameroon": 20,
+          "Cape Verde": 32,
+          "Cote d'Ivoire": 22,
+          "Country or Area": 1,
+          "footnote_SeqID": 1,
+          "Ghana": 8,
+          "Guinea": 2,
+          "Kenya": 32,
+          "Lesotho": 32,
+          "Madagascar": 22,
+          "Malawi": 32,
+          "Mali": 26,
+          "Mauritius": 32,
+          "Mozambique": 30,
+          "Namibia": 32,
+          "Niger": 32,
+          "Nigeria": 26,
+          "Senegal": 32,
+          "Seychelles": 14,
+          "South Africa": 32,
+          "Tanzania - Mainland": 18,
+          "Togo": 16,
+          "Uganda": 32,
+          "Zambia": 26,
+          "Zimbabwe": 32
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "DatafromUNStatisticalDivision"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        33
+      ],
+      [
+        "herfindahl",
+        0.0415721674395186
+      ],
+      [
+        "freqmode",
+        32
+      ],
+      [
+        "fewest",
+        "Country or Area"
+      ],
+      [
+        "mid",
+        "Benin"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        24
+      ],
+      [
+        "varnamesTypes",
+        "DatafromUNStatisticalDivision"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.mode",
+    [
+      "1.2",
+      [
+        "1.2"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.B.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.B",
+    [
+      [
+        "variableName",
+        "B"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        667
+      ],
+      [
+        "uniqueCount",
+        7
+      ],
+      [
+        "modeFreq",
+        660
+      ],
+      [
+        "fewestValues",
+        [
+          "For the years prior to 1988, existing series expressed in 1985 prices have been linked to the new 1990 base year without re-weighing. As a result, for the periods before 1988, the converted sub-totals and totals are not equal to the sum of their components.  ",
+          "Footnote",
+          "See Country Notes for details on the Fiscal Year of constant price data.",
+          "SNA93 Table Code",
+          "Estimates are prepared by the South African Reserve Bank.  "
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.9791408643504332
+      ],
+      [
+        "plotValues",
+        {
+          "1.2": 660,
+          "Discrepancy between components and total.": 2,
+          "Estimates are prepared by the South African Reserve Bank.  ": 1,
+          "SNA93 Table Code": 1,
+          "See Country Notes for details on the Fiscal Year of constant price data.": 1,
+          "Footnote": 1,
+          "For the years prior to 1988, existing series expressed in 1985 prices have been linked to the new 1990 base year without re-weighing. As a result, for the periods before 1988, the converted sub-totals and totals are not equal to the sum of their components.  ": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.B",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "1.2": 660,
+          "Discrepancy between components and total.": 2,
+          "Estimates are prepared by the South African Reserve Bank.  ": 1,
+          "Footnote": 1,
+          "For the years prior to 1988, existing series expressed in 1985 prices have been linked to the new 1990 base year without re-weighing. As a result, for the periods before 1988, the converted sub-totals and totals are not equal to the sum of their components.  ": 1,
+          "See Country Notes for details on the Fiscal Year of constant price data.": 1,
+          "SNA93 Table Code": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "B"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        7
+      ],
+      [
+        "herfindahl",
+        0.979140864350433
+      ],
+      [
+        "freqmode",
+        660
+      ],
+      [
+        "fewest",
+        "SNA93 Table Code"
+      ],
+      [
+        "mid",
+        "SNA93 Table Code"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "B"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.C.mode",
+    [
+      "Expenditures of the gross domestic product",
+      [
+        "Expenditures of the gross domestic product"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.C.binary",
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    "variables.C.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.C",
+    [
+      [
+        "variableName",
+        "C"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        660
+      ],
+      [
+        "fewestValues",
+        [
+          "Sub Group"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.9969788588783783
+      ],
+      [
+        "plotValues",
+        {
+          "Expenditures of the gross domestic product": 660,
+          "Sub Group": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.C",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "Expenditures of the gross domestic product": 660,
+          "Sub Group": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "C"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.996978858878378
+      ],
+      [
+        "freqmode",
+        660
+      ],
+      [
+        "fewest",
+        "Sub Group"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        330.5
+      ],
+      [
+        "varnamesTypes",
+        "C"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.D.mode",
+    [
+      "General government final consumption expenditure",
+      [
+        "Equals: GROSS DOMESTIC PRODUCT",
+        "General government final consumption expenditure"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.D.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.D.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.D",
+    [
+      [
+        "variableName",
+        "D"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        3
+      ],
+      [
+        "modeFreq",
+        330
+      ],
+      [
+        "fewestValues",
+        [
+          "Item"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.4984905738108262
+      ],
+      [
+        "plotValues",
+        {
+          "General government final consumption expenditure": 330,
+          "Equals: GROSS DOMESTIC PRODUCT": 330,
+          "Item": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.D",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "Equals: GROSS DOMESTIC PRODUCT": 330,
+          "General government final consumption expenditure": 330,
+          "Item": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "D"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        3
+      ],
+      [
+        "herfindahl",
+        0.498490573810826
+      ],
+      [
+        "freqmode",
+        330
+      ],
+      [
+        "fewest",
+        "Item"
+      ],
+      [
+        "mid",
+        "General government final consumption expenditure"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        330
+      ],
+      [
+        "varnamesTypes",
+        "D"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.E.mode",
+    [
+      "P.3",
+      [
+        "P.3",
+        "B.1*g"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.E.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.E.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.E",
+    [
+      [
+        "variableName",
+        "E"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        3
+      ],
+      [
+        "modeFreq",
+        330
+      ],
+      [
+        "fewestValues",
+        [
+          "SNA93 Item Code"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.4984905738108262
+      ],
+      [
+        "plotValues",
+        {
+          "B.1*g": 330,
+          "P.3": 330,
+          "SNA93 Item Code": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.E",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "B.1*g": 330,
+          "P.3": 330,
+          "SNA93 Item Code": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "E"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        3
+      ],
+      [
+        "herfindahl",
+        0.498490573810826
+      ],
+      [
+        "freqmode",
+        330
+      ],
+      [
+        "fewest",
+        "SNA93 Item Code"
+      ],
+      [
+        "mid",
+        "P.3"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        330
+      ],
+      [
+        "varnamesTypes",
+        "E"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.F.mode",
+    [
+      "2005",
+      [
+        "1998",
+        "2005",
+        "1999",
+        "2000"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.F.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.F.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.F",
+    [
+      [
+        "variableName",
+        "F"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        17
+      ],
+      [
+        "modeFreq",
+        46
+      ],
+      [
+        "fewestValues",
+        [
+          "Fiscal Year"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.06311667326587644
+      ],
+      [
+        "plotValues",
+        {
+          "2000": 46,
+          "1999": 46,
+          "2005": 46,
+          "1998": 46,
+          "1996": 44,
+          "2002": 44,
+          "2004": 44,
+          "2003": 44,
+          "2001": 44,
+          "1997": 42,
+          "1995": 40,
+          "1994": 38,
+          "1990": 34,
+          "1991": 34,
+          "1992": 34,
+          "1993": 34,
+          "Fiscal Year": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.F",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "1990": 34,
+          "1991": 34,
+          "1992": 34,
+          "1993": 34,
+          "1994": 38,
+          "1995": 40,
+          "1996": 44,
+          "1997": 42,
+          "1998": 46,
+          "1999": 46,
+          "2000": 46,
+          "2001": 44,
+          "2002": 44,
+          "2003": 44,
+          "2004": 44,
+          "2005": 46,
+          "Fiscal Year": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "F"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        17
+      ],
+      [
+        "herfindahl",
+        0.0631166732658764
+      ],
+      [
+        "freqmode",
+        46
+      ],
+      [
+        "fewest",
+        "Fiscal Year"
+      ],
+      [
+        "mid",
+        "2004"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        44
+      ],
+      [
+        "varnamesTypes",
+        "F"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.G.mode",
+    [
+      "100",
+      [
+        "100"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.G.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.G.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.G",
+    [
+      [
+        "variableName",
+        "G"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        8
+      ],
+      [
+        "modeFreq",
+        194
+      ],
+      [
+        "fewestValues",
+        [
+          "Series"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.21009061134621593
+      ],
+      [
+        "plotValues",
+        {
+          "100": 194,
+          "20": 174,
+          "30": 112,
+          "10": 76,
+          "200": 68,
+          "300": 30,
+          "40": 6,
+          "Series": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.G",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "10": 76,
+          "100": 194,
+          "20": 174,
+          "200": 68,
+          "30": 112,
+          "300": 30,
+          "40": 6,
+          "Series": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "G"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        8
+      ],
+      [
+        "herfindahl",
+        0.210090611346216
+      ],
+      [
+        "freqmode",
+        194
+      ],
+      [
+        "fewest",
+        "Series"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        72
+      ],
+      [
+        "varnamesTypes",
+        "G"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.H.mode",
+    [
+      "CFA franc                               ",
+      [
+        "CFA franc                               "
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.H.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.H.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.H",
+    [
+      [
+        "variableName",
+        "H"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        28
+      ],
+      [
+        "modeFreq",
+        114
+      ],
+      [
+        "fewestValues",
+        [
+          "Currency"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.06507583750838254
+      ],
+      [
+        "plotValues",
+        {
+          "CFA franc                               ": 114,
+          "CFA franc": 58,
+          "escudo                                  ": 32,
+          "loti                                    ": 32,
+          "Namibia dollar                          ": 32,
+          "Zimbabwe dollar": 32,
+          "Mauritian rupee                         ": 32,
+          "Rand": 32,
+          "Metical": 30,
+          "pula                                    ": 28,
+          "Zambia kwacha                           ": 26,
+          "Uganda shilling": 24,
+          "CFA Franc": 22,
+          "Ariary": 22,
+          "Kenya Shillings": 20,
+          "Malawi kwacha": 18,
+          "Tanzanian Shilling": 16,
+          "Naira": 16,
+          "Seychelles rupee                        ": 14,
+          "Malawi kwacha                           ": 14,
+          "Kenya pound": 12,
+          "naira                                   ": 10,
+          "cedi                                    ": 8,
+          "Uganda shilling                         ": 8,
+          "pula": 4,
+          "Tanzania shilling": 2,
+          "Guinean franc": 2,
+          "Currency": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.H",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "Ariary": 22,
+          "cedi                                    ": 8,
+          "CFA franc": 58,
+          "CFA Franc": 22,
+          "CFA franc                               ": 114,
+          "Currency": 1,
+          "escudo                                  ": 32,
+          "Guinean franc": 2,
+          "Kenya pound": 12,
+          "Kenya Shillings": 20,
+          "loti                                    ": 32,
+          "Malawi kwacha": 18,
+          "Malawi kwacha                           ": 14,
+          "Mauritian rupee                         ": 32,
+          "Metical": 30,
+          "Naira": 16,
+          "naira                                   ": 10,
+          "Namibia dollar                          ": 32,
+          "pula": 4,
+          "pula                                    ": 28,
+          "Rand": 32,
+          "Seychelles rupee                        ": 14,
+          "Tanzania shilling": 2,
+          "Tanzanian Shilling": 16,
+          "Uganda shilling": 24,
+          "Uganda shilling                         ": 8,
+          "Zambia kwacha                           ": 26,
+          "Zimbabwe dollar": 32
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "H"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        28
+      ],
+      [
+        "herfindahl",
+        0.0650758375083825
+      ],
+      [
+        "freqmode",
+        114
+      ],
+      [
+        "fewest",
+        "Currency"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        21
+      ],
+      [
+        "varnamesTypes",
+        "H"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.I.mode",
+    [
+      "68",
+      [
+        "68"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.I.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.I.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.I",
+    [
+      [
+        "variableName",
+        "I"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        3
+      ],
+      [
+        "modeFreq",
+        368
+      ],
+      [
+        "fewestValues",
+        [
+          "SNA System"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.5051004643860103
+      ],
+      [
+        "plotValues",
+        {
+          "68": 368,
+          "93": 292,
+          "SNA System": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.I",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "68": 368,
+          "93": 292,
+          "SNA System": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "I"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        3
+      ],
+      [
+        "herfindahl",
+        0.50510046438601
+      ],
+      [
+        "freqmode",
+        368
+      ],
+      [
+        "fewest",
+        "SNA System"
+      ],
+      [
+        "mid",
+        "93"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        292
+      ],
+      [
+        "varnamesTypes",
+        "I"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.J.mode",
+    [
+      "1987",
+      [
+        "1987"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.J.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.J.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.J",
+    [
+      [
+        "variableName",
+        "J"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        21
+      ],
+      [
+        "modeFreq",
+        84
+      ],
+      [
+        "fewestValues",
+        [
+          "Base Year"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.07377306194941419
+      ],
+      [
+        "plotValues",
+        {
+          "1987": 84,
+          "1994": 70,
+          "2000": 68,
+          "1995": 58,
+          "1990": 54,
+          "2001": 36,
+          "1986": 36,
+          "1984": 32,
+          "1999": 32,
+          "1980": 32,
+          "2003": 30,
+          "1992": 30,
+          "1985": 28,
+          "1991": 26,
+          "1978": 14,
+          "1982": 12,
+          "1993": 8,
+          "2002": 6,
+          "1977": 2,
+          "2005": 2,
+          "Base Year": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.J",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "1977": 2,
+          "1978": 14,
+          "1980": 32,
+          "1982": 12,
+          "1984": 32,
+          "1985": 28,
+          "1986": 36,
+          "1987": 84,
+          "1990": 54,
+          "1991": 26,
+          "1992": 30,
+          "1993": 8,
+          "1994": 70,
+          "1995": 58,
+          "1999": 32,
+          "2000": 68,
+          "2001": 36,
+          "2002": 6,
+          "2003": 30,
+          "2005": 2,
+          "Base Year": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "J"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        21
+      ],
+      [
+        "herfindahl",
+        0.0737730619494142
+      ],
+      [
+        "freqmode",
+        84
+      ],
+      [
+        "fewest",
+        "Base Year"
+      ],
+      [
+        "mid",
+        "1992"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        30
+      ],
+      [
+        "varnamesTypes",
+        "J"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.K.mode",
+    [
+      "Value",
+      [
+        "3872500000000",
+        "10682000000",
+        "1851400000",
+        "22867835476.4776",
+        "1347070315338.05"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.K.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.K.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.K",
+    [
+      [
+        "variableName",
+        "K"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        661
+      ],
+      [
+        "uniqueCount",
+        661
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "3872500000000",
+          "10682000000",
+          "1851400000",
+          "22867835476.4776",
+          "1347070315338.05"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.0015128593040846967
+      ],
+      [
+        "plotValues",
+        {
+          "2413300000000": 1,
+          "84989266415.087006": 1,
+          "5303000000": 1,
+          "427000000000": 1,
+          "3269000000": 1,
+          "14371000000": 1,
+          "2872000000": 1,
+          "60396000000": 1,
+          "119721568843.75": 1,
+          "87422000000": 1,
+          "111446054503.246": 1,
+          "1678800000000": 1,
+          "2081000000": 1,
+          "12204000000": 1,
+          "838327000000": 1,
+          "9100274000000": 1,
+          "10422000000": 1,
+          "4531116869.7990398": 1,
+          "1062027000000": 1,
+          "977452875244.91394": 1,
+          "97603000000": 1,
+          "1074100000": 1,
+          "3317800000": 1,
+          "2510000000": 1,
+          "483386473.9267": 1,
+          "1012763000000": 1,
+          "9896430000000": 1,
+          "165648358939.561": 1,
+          "707175000000": 1,
+          "412000000000": 1,
+          "17099915000": 1,
+          "445134318702.04901": 1,
+          "725700000000": 1,
+          "122409000000": 1,
+          "7263000000": 1,
+          "13466727200000": 1,
+          "20496464000": 1,
+          "98890688381.149307": 1,
+          "1957441299592.74": 1,
+          "30363009596.252201": 1,
+          "1728170121037.97": 1,
+          "2222860000000": 1,
+          "555930695739.01294": 1,
+          "123492000000": 1,
+          "428392216.58429998": 1,
+          "778605000000": 1,
+          "49914621739.430496": 1,
+          "909661717813.20105": 1,
+          "5003000000": 1,
+          "1362500000": 1,
+          "69073700000": 1,
+          "748603181.09000003": 1,
+          "462468395333.29401": 1,
+          "951542606168.47998": 1,
+          "175588496149.979": 1,
+          "19468060000": 1,
+          "9391880000000": 1,
+          "3016951294.2737999": 1,
+          "1911000000": 1,
+          "977210000000": 1,
+          "253800000": 1,
+          "894147000000": 1,
+          "14195000000": 1,
+          "15286640000": 1,
+          "86735025509.022095": 1,
+          "25038000000": 1,
+          "34095974615.9683": 1,
+          "397000000000": 1,
+          "6661487241.0023603": 1,
+          "133307538839.291": 1,
+          "982121000000": 1,
+          "2030586173716.5": 1,
+          "205000000000": 1,
+          "134826000000": 1,
+          "23833720129.094299": 1,
+          "906140000000": 1,
+          "1022000600000": 1,
+          "1009032000000": 1,
+          "216001000000": 1,
+          "941615073488.25806": 1,
+          "18456084802.409599": 1,
+          "21026000000": 1,
+          "568200000000": 1,
+          "669600000": 1,
+          "373900000000": 1,
+          "1025853962879.61": 1,
+          "4117888105.0180998": 1,
+          "22817000000": 1,
+          "88507000000": 1,
+          "4098000000": 1,
+          "711216000000": 1,
+          "984862246904.19299": 1,
+          "15507660000": 1,
+          "3493483000": 1,
+          "11041300000": 1,
+          "8028185387.6402702": 1,
+          "466221351006.45099": 1,
+          "15449320000": 1,
+          "25520000000": 1,
+          "3681616222.77212": 1,
+          "1390300000": 1,
+          "6054000000": 1,
+          "4003515814.1995001": 1,
+          "2325781000000": 1,
+          "760574000000": 1,
+          "256300000": 1,
+          "1514600000000": 1,
+          "3512000000000": 1,
+          "1425300000": 1,
+          "344656594902.52899": 1,
+          "2369603250747.7998": 1,
+          "885365000000": 1,
+          "1836037000000": 1,
+          "213518000000": 1,
+          "2537392200099.4399": 1,
+          "3839000000": 1,
+          "3404814920.9295201": 1,
+          "35798657643.547897": 1,
+          "2707890000000": 1,
+          "3933637368.6669002": 1,
+          "7932700000000": 1,
+          "13665000000": 1,
+          "163672379402.25201": 1,
+          "4543222218.1516504": 1,
+          "100059000000": 1,
+          "3825000000000": 1,
+          "386659000000": 1,
+          "1153424300000": 1,
+          "90414000000": 1,
+          "2508000000": 1,
+          "4536291000000": 1,
+          "713881870.88689995": 1,
+          "663449000000": 1,
+          "1020021774364.3199": 1,
+          "359500000": 1,
+          "13099700000": 1,
+          "971569351416.55603": 1,
+          "607217880": 1,
+          "5043000000": 1,
+          "3155900000000": 1,
+          "353534050000": 1,
+          "518800000": 1,
+          "729281698323.172": 1,
+          "3835411647.4512": 1,
+          "662900000000": 1,
+          "1054000000": 1,
+          "7243135352.1712704": 1,
+          "119325486415.312": 1,
+          "2824630000000": 1,
+          "360222578211.138": 1,
+          "976404249623.22095": 1,
+          "445190723867.62299": 1,
+          "160876330821.591": 1,
+          "737025000000": 1,
+          "640400000": 1,
+          "2106862000000": 1,
+          "3417820250948.27": 1,
+          "10423735000000": 1,
+          "2405600000000": 1,
+          "5815016537257.8701": 1,
+          "8045000000": 1,
+          "1041997000000": 1,
+          "50250000000": 1,
+          "7754505798231.9199": 1,
+          "520520635248.80798": 1,
+          "206111000000": 1,
+          "4705000000": 1,
+          "221499171309.54401": 1,
+          "458547000000": 1,
+          "6595000000": 1,
+          "930356675635.35901": 1,
+          "13898000000": 1,
+          "162587000000": 1,
+          "894628200000": 1,
+          "4972000000": 1,
+          "10634200000": 1,
+          "92300000000": 1,
+          "729638000000": 1,
+          "1139800000000": 1,
+          "4160000000000": 1,
+          "45891269112.6511": 1,
+          "3126066495.4928002": 1,
+          "560155853855.59302": 1,
+          "918166712429.17896": 1,
+          "2374000000": 1,
+          "21456358000": 1,
+          "427800000": 1,
+          "4083000000000": 1,
+          "16135047304.4967": 1,
+          "77785000000": 1,
+          "168344430725.37799": 1,
+          "7862000000": 1,
+          "2956300000": 1,
+          "810422000000": 1,
+          "162096000000": 1,
+          "1680700000": 1,
+          "965495185564.51501": 1,
+          "220400000000": 1,
+          "122812000000": 1,
+          "394556624261.935": 1,
+          "4977598731.7945004": 1,
+          "1871100000000": 1,
+          "1241288800000": 1,
+          "1114758000000": 1,
+          "83706650811.863007": 1,
+          "849000000": 1,
+          "12029473713.592699": 1,
+          "495603295239.19702": 1,
+          "11459000000": 1,
+          "3376297494.5688": 1,
+          "2151000000": 1,
+          "4797588086.7090702": 1,
+          "21494000000": 1,
+          "18151695360.969299": 1,
+          "100171000000": 1,
+          "2773999480.3439999": 1,
+          "373800000000": 1,
+          "3187682000": 1,
+          "1269230100000": 1,
+          "5579100000": 1,
+          "199843900000": 1,
+          "966879400000": 1,
+          "419644347628.27301": 1,
+          "706418589130.49695": 1,
+          "3227989123.026": 1,
+          "172634800000": 1,
+          "550657599953.79895": 1,
+          "2213600000": 1,
+          "10323000000": 1,
+          "127360000000": 1,
+          "2687600000": 1,
+          "387801813436.55603": 1,
+          "3288343000": 1,
+          "2489918000000": 1,
+          "921394246283.46802": 1,
+          "166137000000": 1,
+          "4160000000": 1,
+          "8456110000000": 1,
+          "7072000000": 1,
+          "3969954005.80546": 1,
+          "191785000000": 1,
+          "180462000000": 1,
+          "992748000000": 1,
+          "588200000000": 1,
+          "1514793776815.3601": 1,
+          "1882023000000": 1,
+          "906590835513.77502": 1,
+          "3300000000": 1,
+          "448309019.00599998": 1,
+          "1008292000000": 1,
+          "717832000000": 1,
+          "1641796000000": 1,
+          "28203000000": 1,
+          "279314000000": 1,
+          "7803927000000": 1,
+          "18342362000": 1,
+          "3882700000": 1,
+          "1103748000000": 1,
+          "5369895380.07022": 1,
+          "129763503800": 1,
+          "94851000000": 1,
+          "547600000": 1,
+          "625324977097.40198": 1,
+          "947373000000": 1,
+          "4413000000": 1,
+          "461812589.83710003": 1,
+          "2159000000": 1,
+          "167348000000": 1,
+          "7477692533992.3096": 1,
+          "2499040000000": 1,
+          "4679000000": 1,
+          "11422000000": 1,
+          "431627981174.40601": 1,
+          "165559000000": 1,
+          "438000000000": 1,
+          "891502000000": 1,
+          "16724592781.465401": 1,
+          "203691000000": 1,
+          "249200000": 1,
+          "6347468614811.5": 1,
+          "4405256816.1545296": 1,
+          "2096560250662.3101": 1,
+          "1175133274533.8899": 1,
+          "713836102.04219997": 1,
+          "2073800000000": 1,
+          "1481800000000": 1,
+          "331018000000": 1,
+          "2887995698.4958": 1,
+          "4680000000": 1,
+          "77244051086.672806": 1,
+          "1888000000": 1,
+          "583100000000": 1,
+          "125883000000": 1,
+          "95404345013.761307": 1,
+          "22780000000": 1,
+          "4351200000000": 1,
+          "546380000000": 1,
+          "433839259536.953": 1,
+          "206300000000": 1,
+          "4228553858.2377": 1,
+          "16674460641.424101": 1,
+          "91200000000": 1,
+          "1578299000000": 1,
+          "156378000000": 1,
+          "9473000000": 1,
+          "1109534335638.3899": 1,
+          "425154372913.26801": 1,
+          "3999100000000": 1,
+          "69554000000": 1,
+          "4351914308.7812204": 1,
+          "2852581000": 1,
+          "82665000000": 1,
+          "44614305057.392799": 1,
+          "3279000000": 1,
+          "2399000000": 1,
+          "20907712173.394001": 1,
+          "123159000000": 1,
+          "521740900753.27502": 1,
+          "165470448191.142": 1,
+          "164645800000": 1,
+          "123065000000": 1,
+          "48424515607.907402": 1,
+          "10703666000000": 1,
+          "701495381073.56396": 1,
+          "409114671834.84601": 1,
+          "768235911013.81995": 1,
+          "122063948109.26401": 1,
+          "920648697377.396": 1,
+          "4501050000000": 1,
+          "214200000000": 1,
+          "631950574615.23401": 1,
+          "160373600000": 1,
+          "1481000000000": 1,
+          "2506900000": 1,
+          "16214000000": 1,
+          "479408000000": 1,
+          "12695127741.5121": 1,
+          "224500000000": 1,
+          "Value": 1,
+          "17069000000": 1,
+          "865934000000": 1,
+          "20203206036.257198": 1,
+          "6612385359952.1104": 1,
+          "13868000000": 1,
+          "587753349629.54395": 1,
+          "2710500000": 1,
+          "3885580887079.4102": 1,
+          "13020916000": 1,
+          "10800000000": 1,
+          "3573000000000": 1,
+          "3939000000": 1,
+          "762097000000": 1,
+          "6099682503303.7803": 1,
+          "3498000000000": 1,
+          "988522600000": 1,
+          "2907600000": 1,
+          "4601000000": 1,
+          "254200000000": 1,
+          "21531000000": 1,
+          "3729135043.1993499": 1,
+          "103269000000": 1,
+          "7729000000": 1,
+          "14100300000": 1,
+          "2240700000000": 1,
+          "14591000000": 1,
+          "898000000": 1,
+          "3259000000": 1,
+          "110972749328.125": 1,
+          "4469000000": 1,
+          "15133000000": 1,
+          "7932615386059.6699": 1,
+          "4314982000000": 1,
+          "79237000000": 1,
+          "3304837000": 1,
+          "6223000000": 1,
+          "175227358329.29199": 1,
+          "101037019336.845": 1,
+          "922148000000": 1,
+          "121958000000": 1,
+          "14530802190.6852": 1,
+          "4080859000": 1,
+          "292000000000": 1,
+          "1610480790292.1799": 1,
+          "75833000000": 1,
+          "9954000000": 1,
+          "41427515880.906197": 1,
+          "165130535542.147": 1,
+          "14115000000": 1,
+          "8928181869.2482204": 1,
+          "7255720000000": 1,
+          "8181672000000": 1,
+          "25395000000": 1,
+          "496100000000": 1,
+          "598840423.96210003": 1,
+          "3532000000000": 1,
+          "2220000000": 1,
+          "473871116958.36499": 1,
+          "4219400000": 1,
+          "511544327870.64801": 1,
+          "202100000000": 1,
+          "259600000": 1,
+          "14155725000": 1,
+          "160130600000": 1,
+          "569275820544.86206": 1,
+          "4193913983.8126502": 1,
+          "470430694995.17499": 1,
+          "135957459888.38": 1,
+          "8512000000": 1,
+          "382000000000": 1,
+          "11797260000": 1,
+          "6486693000000": 1,
+          "1523500000000": 1,
+          "333200000": 1,
+          "2509200000": 1,
+          "2002723018189.0901": 1,
+          "196529000000": 1,
+          "957429620899.50403": 1,
+          "164805000000": 1,
+          "54174318311.603203": 1,
+          "156155000000": 1,
+          "5021000000": 1,
+          "32826701748.919998": 1,
+          "893762501297.70898": 1,
+          "135654000000": 1,
+          "6890449000000": 1,
+          "593600000000": 1,
+          "1964600000000": 1,
+          "94013141171.167099": 1,
+          "46314812782.3041": 1,
+          "4912269299.0110598": 1,
+          "761233000000": 1,
+          "2186000000": 1,
+          "104212326937.5": 1,
+          "55016000000": 1,
+          "2328800000000": 1,
+          "14814398000000": 1,
+          "3534000000000": 1,
+          "34320483999.157902": 1,
+          "1301320000000": 1,
+          "41028586188.776604": 1,
+          "1272712000000": 1,
+          "256500000000": 1,
+          "654400000": 1,
+          "18983000000": 1,
+          "793636000000": 1,
+          "386256304502.43799": 1,
+          "355117000000": 1,
+          "3333400000": 1,
+          "9074000000": 1,
+          "115595630163.386": 1,
+          "2106610000000": 1,
+          "980000000": 1,
+          "162895000000": 1,
+          "541502884355.40302": 1,
+          "6910886361408.4404": 1,
+          "11371000000": 1,
+          "646486116.83609998": 1,
+          "4104051824454.8901": 1,
+          "803713000000": 1,
+          "10023000000": 1,
+          "12706000000": 1,
+          "1974300000": 1,
+          "168594100000": 1,
+          "4009764211.5602999": 1,
+          "757358598.28071201": 1,
+          "2999210000000": 1,
+          "1055657636458.5601": 1,
+          "1075365000000": 1,
+          "213100000000": 1,
+          "2282000000": 1,
+          "15569654658.773199": 1,
+          "797917998.64986002": 1,
+          "1203940000000": 1,
+          "1726800000": 1,
+          "88400000000": 1,
+          "15462000000": 1,
+          "7187946875903.0195": 1,
+          "4822000000": 1,
+          "3955203983.3463802": 1,
+          "52779000000": 1,
+          "3683000000": 1,
+          "201000000000": 1,
+          "4190000000": 1,
+          "852836900000": 1,
+          "11239734000000": 1,
+          "3828403145.4959002": 1,
+          "5521590469950.1104": 1,
+          "577399000000": 1,
+          "22720000000": 1,
+          "733850052516.39294": 1,
+          "9713873775.3243008": 1,
+          "12068090000000": 1,
+          "663000000": 1,
+          "22109000000": 1,
+          "1027930000000": 1,
+          "338598257244.07898": 1,
+          "1870154000000": 1,
+          "12278100000": 1,
+          "16681000000": 1,
+          "141312000000": 1,
+          "738832228511.18994": 1,
+          "63904000000": 1,
+          "2184800000000": 1,
+          "10056000000": 1,
+          "1031927000000": 1,
+          "122461000000": 1,
+          "119392992795.73199": 1,
+          "5929778000000": 1,
+          "34853271546.613297": 1,
+          "601406400426.55103": 1,
+          "1497000000": 1,
+          "598300000": 1,
+          "8585339000000": 1,
+          "22374690654.834099": 1,
+          "3669690523478.96": 1,
+          "1595500000000": 1,
+          "5380000000": 1,
+          "9752178000000": 1,
+          "2379000000": 1,
+          "9526000000": 1,
+          "3049000000": 1,
+          "2264666264724.1099": 1,
+          "321500561516.30798": 1,
+          "235768000000": 1,
+          "14660420000": 1,
+          "19077000000": 1,
+          "3707652358.1552": 1,
+          "366914070000": 1,
+          "9660000000": 1,
+          "4180000000": 1,
+          "5320388279.8415298": 1,
+          "103529528504.263": 1,
+          "1364497739502.9199": 1,
+          "4716000000": 1,
+          "3738000000": 1,
+          "143271535533.34201": 1,
+          "57446000000": 1,
+          "4329000000": 1,
+          "1950000000": 1,
+          "10612000000": 1,
+          "659931887798.65405": 1,
+          "718608341.83809996": 1,
+          "805584987083.02002": 1,
+          "220600000000": 1,
+          "344000000000": 1,
+          "18201000000": 1,
+          "6035930000": 1,
+          "486178000000": 1,
+          "1025900000": 1,
+          "172573000000": 1,
+          "90100000000": 1,
+          "2635000000": 1,
+          "10386273368.7722": 1,
+          "1965900000": 1,
+          "2965000000": 1,
+          "1487700000000": 1,
+          "661600000000": 1,
+          "131258857057.89301": 1,
+          "293600000000": 1,
+          "2621310000000": 1,
+          "162959210995.97699": 1,
+          "855921244446.07202": 1,
+          "22681000000": 1,
+          "231300000000": 1,
+          "19114000000": 1,
+          "1100000000": 1,
+          "4499491869.5262203": 1,
+          "52988794637.086899": 1,
+          "13112000000": 1,
+          "4624443000000": 1,
+          "156158200000": 1,
+          "368000000000": 1,
+          "755011000000": 1,
+          "709740000000": 1,
+          "2985526002.3614001": 1,
+          "4224000000": 1,
+          "779429000000": 1,
+          "8102000000": 1,
+          "133646000000": 1,
+          "215498600000": 1,
+          "635900000000": 1,
+          "494141006039.745": 1,
+          "24602000000": 1,
+          "318300000000": 1,
+          "161883000000": 1,
+          "1937900000": 1,
+          "745811000000": 1,
+          "1862000000": 1,
+          "16273332000": 1,
+          "6550000000": 1,
+          "18253010530.899399": 1,
+          "16404753972.9604": 1,
+          "453000000000": 1,
+          "101173000000": 1,
+          "62400000000": 1,
+          "741296753.93410003": 1,
+          "4988610000": 1,
+          "67785000000": 1,
+          "464854000000": 1,
+          "898076730755.15698": 1,
+          "15100000000": 1,
+          "363876823245.78497": 1,
+          "498782538739.04999": 1,
+          "159912000000": 1,
+          "8853170000000": 1,
+          "1178900000": 1,
+          "2234000000": 1,
+          "1105705400000": 1,
+          "14598000000": 1,
+          "12728073500000": 1,
+          "3162000000": 1,
+          "155848900000": 1,
+          "126621000000": 1,
+          "2360800000000": 1,
+          "16494000000": 1,
+          "62181100000": 1,
+          "957836000000": 1,
+          "31556334584.597698": 1,
+          "319983080355.97101": 1,
+          "3440200262615.27": 1,
+          "21086000000": 1,
+          "176610034685.66299": 1,
+          "7017000000": 1,
+          "90546000000": 1,
+          "2121754878572.1899": 1,
+          "290865000000": 1,
+          "8844000000": 1,
+          "1050200000": 1,
+          "1770100000000": 1,
+          "724103948.39530003": 1,
+          "119634453775.73199": 1,
+          "326600000": 1,
+          "1177600000": 1,
+          "860516000000": 1,
+          "1363000000": 1,
+          "6841000000": 1,
+          "11398000000": 1,
+          "146489095949.80801": 1,
+          "769937000000": 1,
+          "915146000000": 1,
+          "404905030000": 1,
+          "532903539.75080001": 1,
+          "106891065423.491": 1,
+          "2345000000": 1,
+          "1014494000000": 1,
+          "682898759381.61902": 1,
+          "144398000000": 1,
+          "14267000000": 1,
+          "4465847226.6781101": 1,
+          "78515345809.522903": 1,
+          "6132000000": 1,
+          "928462904960.13904": 1,
+          "10682000000": 1,
+          "29367000000": 1,
+          "864968000000": 1,
+          "5153000000": 1,
+          "297597000000": 1,
+          "1347070315338.05": 1,
+          "22867835476.4776": 1,
+          "1851400000": 1,
+          "3872500000000": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.K",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "100059000000": 1,
+          "100171000000": 1,
+          "10023000000": 1,
+          "10056000000": 1,
+          "1008292000000": 1,
+          "1009032000000": 1,
+          "101037019336.845": 1,
+          "101173000000": 1,
+          "1012763000000": 1,
+          "1014494000000": 1,
+          "1020021774364.3199": 1,
+          "1022000600000": 1,
+          "1025853962879.61": 1,
+          "1025900000": 1,
+          "1027930000000": 1,
+          "1031927000000": 1,
+          "10323000000": 1,
+          "103269000000": 1,
+          "103529528504.263": 1,
+          "10386273368.7722": 1,
+          "1041997000000": 1,
+          "104212326937.5": 1,
+          "10422000000": 1,
+          "10423735000000": 1,
+          "1050200000": 1,
+          "1054000000": 1,
+          "1055657636458.5601": 1,
+          "10612000000": 1,
+          "1062027000000": 1,
+          "10634200000": 1,
+          "10682000000": 1,
+          "106891065423.491": 1,
+          "10703666000000": 1,
+          "1074100000": 1,
+          "1075365000000": 1,
+          "10800000000": 1,
+          "1100000000": 1,
+          "1103748000000": 1,
+          "11041300000": 1,
+          "1105705400000": 1,
+          "1109534335638.3899": 1,
+          "110972749328.125": 1,
+          "111446054503.246": 1,
+          "1114758000000": 1,
+          "11239734000000": 1,
+          "11371000000": 1,
+          "11398000000": 1,
+          "1139800000000": 1,
+          "11422000000": 1,
+          "11459000000": 1,
+          "1153424300000": 1,
+          "115595630163.386": 1,
+          "1175133274533.8899": 1,
+          "1177600000": 1,
+          "1178900000": 1,
+          "11797260000": 1,
+          "119325486415.312": 1,
+          "119392992795.73199": 1,
+          "119634453775.73199": 1,
+          "119721568843.75": 1,
+          "12029473713.592699": 1,
+          "1203940000000": 1,
+          "12068090000000": 1,
+          "121958000000": 1,
+          "12204000000": 1,
+          "122063948109.26401": 1,
+          "122409000000": 1,
+          "122461000000": 1,
+          "12278100000": 1,
+          "122812000000": 1,
+          "123065000000": 1,
+          "123159000000": 1,
+          "123492000000": 1,
+          "1241288800000": 1,
+          "125883000000": 1,
+          "126621000000": 1,
+          "1269230100000": 1,
+          "12695127741.5121": 1,
+          "12706000000": 1,
+          "1272712000000": 1,
+          "12728073500000": 1,
+          "127360000000": 1,
+          "129763503800": 1,
+          "1301320000000": 1,
+          "13020916000": 1,
+          "13099700000": 1,
+          "13112000000": 1,
+          "131258857057.89301": 1,
+          "133307538839.291": 1,
+          "133646000000": 1,
+          "13466727200000": 1,
+          "1347070315338.05": 1,
+          "134826000000": 1,
+          "135654000000": 1,
+          "135957459888.38": 1,
+          "1362500000": 1,
+          "1363000000": 1,
+          "1364497739502.9199": 1,
+          "13665000000": 1,
+          "13868000000": 1,
+          "13898000000": 1,
+          "1390300000": 1,
+          "14100300000": 1,
+          "14115000000": 1,
+          "141312000000": 1,
+          "14155725000": 1,
+          "14195000000": 1,
+          "1425300000": 1,
+          "14267000000": 1,
+          "143271535533.34201": 1,
+          "14371000000": 1,
+          "144398000000": 1,
+          "14530802190.6852": 1,
+          "14591000000": 1,
+          "14598000000": 1,
+          "146489095949.80801": 1,
+          "14660420000": 1,
+          "1481000000000": 1,
+          "14814398000000": 1,
+          "1481800000000": 1,
+          "1487700000000": 1,
+          "1497000000": 1,
+          "15100000000": 1,
+          "15133000000": 1,
+          "1514600000000": 1,
+          "1514793776815.3601": 1,
+          "1523500000000": 1,
+          "15286640000": 1,
+          "15449320000": 1,
+          "15462000000": 1,
+          "15507660000": 1,
+          "15569654658.773199": 1,
+          "155848900000": 1,
+          "156155000000": 1,
+          "156158200000": 1,
+          "156378000000": 1,
+          "1578299000000": 1,
+          "1595500000000": 1,
+          "159912000000": 1,
+          "160130600000": 1,
+          "160373600000": 1,
+          "160876330821.591": 1,
+          "1610480790292.1799": 1,
+          "16135047304.4967": 1,
+          "161883000000": 1,
+          "162096000000": 1,
+          "16214000000": 1,
+          "162587000000": 1,
+          "16273332000": 1,
+          "162895000000": 1,
+          "162959210995.97699": 1,
+          "163672379402.25201": 1,
+          "16404753972.9604": 1,
+          "1641796000000": 1,
+          "164645800000": 1,
+          "164805000000": 1,
+          "16494000000": 1,
+          "165130535542.147": 1,
+          "165470448191.142": 1,
+          "165559000000": 1,
+          "165648358939.561": 1,
+          "166137000000": 1,
+          "16674460641.424101": 1,
+          "16681000000": 1,
+          "16724592781.465401": 1,
+          "167348000000": 1,
+          "1678800000000": 1,
+          "1680700000": 1,
+          "168344430725.37799": 1,
+          "168594100000": 1,
+          "17069000000": 1,
+          "17099915000": 1,
+          "172573000000": 1,
+          "172634800000": 1,
+          "1726800000": 1,
+          "1728170121037.97": 1,
+          "175227358329.29199": 1,
+          "175588496149.979": 1,
+          "176610034685.66299": 1,
+          "1770100000000": 1,
+          "180462000000": 1,
+          "18151695360.969299": 1,
+          "18201000000": 1,
+          "18253010530.899399": 1,
+          "18342362000": 1,
+          "1836037000000": 1,
+          "18456084802.409599": 1,
+          "1851400000": 1,
+          "1862000000": 1,
+          "1870154000000": 1,
+          "1871100000000": 1,
+          "1882023000000": 1,
+          "1888000000": 1,
+          "18983000000": 1,
+          "19077000000": 1,
+          "1911000000": 1,
+          "19114000000": 1,
+          "191785000000": 1,
+          "1937900000": 1,
+          "19468060000": 1,
+          "1950000000": 1,
+          "1957441299592.74": 1,
+          "1964600000000": 1,
+          "196529000000": 1,
+          "1965900000": 1,
+          "1974300000": 1,
+          "199843900000": 1,
+          "2002723018189.0901": 1,
+          "201000000000": 1,
+          "20203206036.257198": 1,
+          "202100000000": 1,
+          "2030586173716.5": 1,
+          "203691000000": 1,
+          "20496464000": 1,
+          "205000000000": 1,
+          "206111000000": 1,
+          "206300000000": 1,
+          "2073800000000": 1,
+          "2081000000": 1,
+          "20907712173.394001": 1,
+          "2096560250662.3101": 1,
+          "21026000000": 1,
+          "2106610000000": 1,
+          "2106862000000": 1,
+          "21086000000": 1,
+          "2121754878572.1899": 1,
+          "213100000000": 1,
+          "213518000000": 1,
+          "214200000000": 1,
+          "21456358000": 1,
+          "21494000000": 1,
+          "2151000000": 1,
+          "21531000000": 1,
+          "215498600000": 1,
+          "2159000000": 1,
+          "216001000000": 1,
+          "2184800000000": 1,
+          "2186000000": 1,
+          "220400000000": 1,
+          "220600000000": 1,
+          "22109000000": 1,
+          "2213600000": 1,
+          "221499171309.54401": 1,
+          "2220000000": 1,
+          "2222860000000": 1,
+          "2234000000": 1,
+          "22374690654.834099": 1,
+          "2240700000000": 1,
+          "224500000000": 1,
+          "2264666264724.1099": 1,
+          "22681000000": 1,
+          "22720000000": 1,
+          "22780000000": 1,
+          "22817000000": 1,
+          "2282000000": 1,
+          "22867835476.4776": 1,
+          "231300000000": 1,
+          "2325781000000": 1,
+          "2328800000000": 1,
+          "2345000000": 1,
+          "235768000000": 1,
+          "2360800000000": 1,
+          "2369603250747.7998": 1,
+          "2374000000": 1,
+          "2379000000": 1,
+          "23833720129.094299": 1,
+          "2399000000": 1,
+          "2405600000000": 1,
+          "2413300000000": 1,
+          "24602000000": 1,
+          "2489918000000": 1,
+          "249200000": 1,
+          "2499040000000": 1,
+          "25038000000": 1,
+          "2506900000": 1,
+          "2508000000": 1,
+          "2509200000": 1,
+          "2510000000": 1,
+          "2537392200099.4399": 1,
+          "253800000": 1,
+          "25395000000": 1,
+          "254200000000": 1,
+          "25520000000": 1,
+          "256300000": 1,
+          "256500000000": 1,
+          "259600000": 1,
+          "2621310000000": 1,
+          "2635000000": 1,
+          "2687600000": 1,
+          "2707890000000": 1,
+          "2710500000": 1,
+          "2773999480.3439999": 1,
+          "279314000000": 1,
+          "28203000000": 1,
+          "2824630000000": 1,
+          "2852581000": 1,
+          "2872000000": 1,
+          "2887995698.4958": 1,
+          "2907600000": 1,
+          "290865000000": 1,
+          "292000000000": 1,
+          "293600000000": 1,
+          "29367000000": 1,
+          "2956300000": 1,
+          "2965000000": 1,
+          "297597000000": 1,
+          "2985526002.3614001": 1,
+          "2999210000000": 1,
+          "3016951294.2737999": 1,
+          "30363009596.252201": 1,
+          "3049000000": 1,
+          "3126066495.4928002": 1,
+          "31556334584.597698": 1,
+          "3155900000000": 1,
+          "3162000000": 1,
+          "318300000000": 1,
+          "3187682000": 1,
+          "319983080355.97101": 1,
+          "321500561516.30798": 1,
+          "3227989123.026": 1,
+          "3259000000": 1,
+          "326600000": 1,
+          "3269000000": 1,
+          "3279000000": 1,
+          "32826701748.919998": 1,
+          "3288343000": 1,
+          "3300000000": 1,
+          "3304837000": 1,
+          "331018000000": 1,
+          "3317800000": 1,
+          "333200000": 1,
+          "3333400000": 1,
+          "3376297494.5688": 1,
+          "338598257244.07898": 1,
+          "3404814920.9295201": 1,
+          "34095974615.9683": 1,
+          "3417820250948.27": 1,
+          "34320483999.157902": 1,
+          "344000000000": 1,
+          "3440200262615.27": 1,
+          "344656594902.52899": 1,
+          "34853271546.613297": 1,
+          "3493483000": 1,
+          "3498000000000": 1,
+          "3512000000000": 1,
+          "3532000000000": 1,
+          "3534000000000": 1,
+          "353534050000": 1,
+          "355117000000": 1,
+          "3573000000000": 1,
+          "35798657643.547897": 1,
+          "359500000": 1,
+          "360222578211.138": 1,
+          "363876823245.78497": 1,
+          "366914070000": 1,
+          "3669690523478.96": 1,
+          "368000000000": 1,
+          "3681616222.77212": 1,
+          "3683000000": 1,
+          "3707652358.1552": 1,
+          "3729135043.1993499": 1,
+          "3738000000": 1,
+          "373800000000": 1,
+          "373900000000": 1,
+          "382000000000": 1,
+          "3825000000000": 1,
+          "3828403145.4959002": 1,
+          "3835411647.4512": 1,
+          "3839000000": 1,
+          "386256304502.43799": 1,
+          "386659000000": 1,
+          "3872500000000": 1,
+          "387801813436.55603": 1,
+          "3882700000": 1,
+          "3885580887079.4102": 1,
+          "3933637368.6669002": 1,
+          "3939000000": 1,
+          "394556624261.935": 1,
+          "3955203983.3463802": 1,
+          "3969954005.80546": 1,
+          "397000000000": 1,
+          "3999100000000": 1,
+          "4003515814.1995001": 1,
+          "4009764211.5602999": 1,
+          "404905030000": 1,
+          "4080859000": 1,
+          "4083000000000": 1,
+          "409114671834.84601": 1,
+          "4098000000": 1,
+          "41028586188.776604": 1,
+          "4104051824454.8901": 1,
+          "4117888105.0180998": 1,
+          "412000000000": 1,
+          "41427515880.906197": 1,
+          "4160000000": 1,
+          "4160000000000": 1,
+          "4180000000": 1,
+          "4190000000": 1,
+          "4193913983.8126502": 1,
+          "419644347628.27301": 1,
+          "4219400000": 1,
+          "4224000000": 1,
+          "4228553858.2377": 1,
+          "425154372913.26801": 1,
+          "427000000000": 1,
+          "427800000": 1,
+          "428392216.58429998": 1,
+          "4314982000000": 1,
+          "431627981174.40601": 1,
+          "4329000000": 1,
+          "433839259536.953": 1,
+          "4351200000000": 1,
+          "4351914308.7812204": 1,
+          "438000000000": 1,
+          "4405256816.1545296": 1,
+          "4413000000": 1,
+          "445134318702.04901": 1,
+          "445190723867.62299": 1,
+          "44614305057.392799": 1,
+          "4465847226.6781101": 1,
+          "4469000000": 1,
+          "448309019.00599998": 1,
+          "4499491869.5262203": 1,
+          "4501050000000": 1,
+          "453000000000": 1,
+          "4531116869.7990398": 1,
+          "4536291000000": 1,
+          "4543222218.1516504": 1,
+          "458547000000": 1,
+          "45891269112.6511": 1,
+          "4601000000": 1,
+          "461812589.83710003": 1,
+          "4624443000000": 1,
+          "462468395333.29401": 1,
+          "46314812782.3041": 1,
+          "464854000000": 1,
+          "466221351006.45099": 1,
+          "4679000000": 1,
+          "4680000000": 1,
+          "470430694995.17499": 1,
+          "4705000000": 1,
+          "4716000000": 1,
+          "473871116958.36499": 1,
+          "479408000000": 1,
+          "4797588086.7090702": 1,
+          "4822000000": 1,
+          "483386473.9267": 1,
+          "48424515607.907402": 1,
+          "486178000000": 1,
+          "4912269299.0110598": 1,
+          "494141006039.745": 1,
+          "495603295239.19702": 1,
+          "496100000000": 1,
+          "4972000000": 1,
+          "4977598731.7945004": 1,
+          "498782538739.04999": 1,
+          "4988610000": 1,
+          "49914621739.430496": 1,
+          "5003000000": 1,
+          "5021000000": 1,
+          "50250000000": 1,
+          "5043000000": 1,
+          "511544327870.64801": 1,
+          "5153000000": 1,
+          "518800000": 1,
+          "520520635248.80798": 1,
+          "521740900753.27502": 1,
+          "52779000000": 1,
+          "52988794637.086899": 1,
+          "5303000000": 1,
+          "5320388279.8415298": 1,
+          "532903539.75080001": 1,
+          "5369895380.07022": 1,
+          "5380000000": 1,
+          "541502884355.40302": 1,
+          "54174318311.603203": 1,
+          "546380000000": 1,
+          "547600000": 1,
+          "55016000000": 1,
+          "550657599953.79895": 1,
+          "5521590469950.1104": 1,
+          "555930695739.01294": 1,
+          "5579100000": 1,
+          "560155853855.59302": 1,
+          "568200000000": 1,
+          "569275820544.86206": 1,
+          "57446000000": 1,
+          "577399000000": 1,
+          "5815016537257.8701": 1,
+          "583100000000": 1,
+          "587753349629.54395": 1,
+          "588200000000": 1,
+          "5929778000000": 1,
+          "593600000000": 1,
+          "598300000": 1,
+          "598840423.96210003": 1,
+          "601406400426.55103": 1,
+          "6035930000": 1,
+          "60396000000": 1,
+          "6054000000": 1,
+          "607217880": 1,
+          "6099682503303.7803": 1,
+          "6132000000": 1,
+          "62181100000": 1,
+          "6223000000": 1,
+          "62400000000": 1,
+          "625324977097.40198": 1,
+          "631950574615.23401": 1,
+          "6347468614811.5": 1,
+          "635900000000": 1,
+          "63904000000": 1,
+          "640400000": 1,
+          "646486116.83609998": 1,
+          "6486693000000": 1,
+          "654400000": 1,
+          "6550000000": 1,
+          "6595000000": 1,
+          "659931887798.65405": 1,
+          "6612385359952.1104": 1,
+          "661600000000": 1,
+          "662900000000": 1,
+          "663000000": 1,
+          "663449000000": 1,
+          "6661487241.0023603": 1,
+          "669600000": 1,
+          "67785000000": 1,
+          "682898759381.61902": 1,
+          "6841000000": 1,
+          "6890449000000": 1,
+          "69073700000": 1,
+          "6910886361408.4404": 1,
+          "69554000000": 1,
+          "701495381073.56396": 1,
+          "7017000000": 1,
+          "706418589130.49695": 1,
+          "707175000000": 1,
+          "7072000000": 1,
+          "709740000000": 1,
+          "711216000000": 1,
+          "713836102.04219997": 1,
+          "713881870.88689995": 1,
+          "717832000000": 1,
+          "718608341.83809996": 1,
+          "7187946875903.0195": 1,
+          "724103948.39530003": 1,
+          "7243135352.1712704": 1,
+          "7255720000000": 1,
+          "725700000000": 1,
+          "7263000000": 1,
+          "729281698323.172": 1,
+          "729638000000": 1,
+          "733850052516.39294": 1,
+          "737025000000": 1,
+          "738832228511.18994": 1,
+          "741296753.93410003": 1,
+          "745811000000": 1,
+          "7477692533992.3096": 1,
+          "748603181.09000003": 1,
+          "755011000000": 1,
+          "757358598.28071201": 1,
+          "75833000000": 1,
+          "760574000000": 1,
+          "761233000000": 1,
+          "762097000000": 1,
+          "768235911013.81995": 1,
+          "769937000000": 1,
+          "77244051086.672806": 1,
+          "7729000000": 1,
+          "7754505798231.9199": 1,
+          "77785000000": 1,
+          "778605000000": 1,
+          "779429000000": 1,
+          "7803927000000": 1,
+          "78515345809.522903": 1,
+          "7862000000": 1,
+          "79237000000": 1,
+          "7932615386059.6699": 1,
+          "7932700000000": 1,
+          "793636000000": 1,
+          "797917998.64986002": 1,
+          "8028185387.6402702": 1,
+          "803713000000": 1,
+          "8045000000": 1,
+          "805584987083.02002": 1,
+          "8102000000": 1,
+          "810422000000": 1,
+          "8181672000000": 1,
+          "82665000000": 1,
+          "83706650811.863007": 1,
+          "838327000000": 1,
+          "8456110000000": 1,
+          "849000000": 1,
+          "84989266415.087006": 1,
+          "8512000000": 1,
+          "852836900000": 1,
+          "855921244446.07202": 1,
+          "8585339000000": 1,
+          "860516000000": 1,
+          "864968000000": 1,
+          "865934000000": 1,
+          "86735025509.022095": 1,
+          "87422000000": 1,
+          "88400000000": 1,
+          "8844000000": 1,
+          "88507000000": 1,
+          "8853170000000": 1,
+          "885365000000": 1,
+          "891502000000": 1,
+          "8928181869.2482204": 1,
+          "893762501297.70898": 1,
+          "894147000000": 1,
+          "894628200000": 1,
+          "898000000": 1,
+          "898076730755.15698": 1,
+          "90100000000": 1,
+          "90414000000": 1,
+          "90546000000": 1,
+          "906140000000": 1,
+          "906590835513.77502": 1,
+          "9074000000": 1,
+          "909661717813.20105": 1,
+          "9100274000000": 1,
+          "91200000000": 1,
+          "915146000000": 1,
+          "918166712429.17896": 1,
+          "920648697377.396": 1,
+          "921394246283.46802": 1,
+          "922148000000": 1,
+          "92300000000": 1,
+          "928462904960.13904": 1,
+          "930356675635.35901": 1,
+          "9391880000000": 1,
+          "94013141171.167099": 1,
+          "941615073488.25806": 1,
+          "9473000000": 1,
+          "947373000000": 1,
+          "94851000000": 1,
+          "951542606168.47998": 1,
+          "9526000000": 1,
+          "95404345013.761307": 1,
+          "957429620899.50403": 1,
+          "957836000000": 1,
+          "965495185564.51501": 1,
+          "9660000000": 1,
+          "966879400000": 1,
+          "9713873775.3243008": 1,
+          "971569351416.55603": 1,
+          "9752178000000": 1,
+          "97603000000": 1,
+          "976404249623.22095": 1,
+          "977210000000": 1,
+          "977452875244.91394": 1,
+          "980000000": 1,
+          "982121000000": 1,
+          "984862246904.19299": 1,
+          "988522600000": 1,
+          "98890688381.149307": 1,
+          "9896430000000": 1,
+          "992748000000": 1,
+          "9954000000": 1,
+          "Value": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "K"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        661
+      ],
+      [
+        "herfindahl",
+        0.00151285930408472
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Value"
+      ],
+      [
+        "mid",
+        "Value"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "K"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.L.mode",
+    [
+      "5",
+      [
+        "5"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.L.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.L.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.L",
+    [
+      [
+        "variableName",
+        "L"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        658
+      ],
+      [
+        "validCount",
+        9
+      ],
+      [
+        "uniqueCount",
+        3
+      ],
+      [
+        "modeFreq",
+        7
+      ],
+      [
+        "fewestValues",
+        [
+          "1",
+          "Value Footnotes"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.6296296296296298
+      ],
+      [
+        "plotValues",
+        {
+          "5": 7,
+          "Value Footnotes": 1,
+          "1": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.L",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 658,
+          "1": 1,
+          "5": 7,
+          "Value Footnotes": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "L"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        3
+      ],
+      [
+        "herfindahl",
+        0.62962962962963
+      ],
+      [
+        "freqmode",
+        7
+      ],
+      [
+        "fewest",
+        "Value Footnotes"
+      ],
+      [
+        "mid",
+        "Value Footnotes"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "L"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.M.mode",
+    [
+      "Govt expenditure as % of GDP",
+      [
+        "19.325984821105891",
+        "16.122796322343753",
+        "11.211573236889691",
+        "26.936461185087758",
+        "12.462572736003615"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.M.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.M.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.M",
+    [
+      [
+        "variableName",
+        "M"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        336
+      ],
+      [
+        "validCount",
+        331
+      ],
+      [
+        "uniqueCount",
+        331
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "19.325984821105891",
+          "16.122796322343753",
+          "11.211573236889691",
+          "26.936461185087758",
+          "12.462572736003615"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.0030211480362537894
+      ],
+      [
+        "plotValues",
+        {
+          "14.429414197338685": 1,
+          "30.873626090097527": 1,
+          "11.131542207239418": 1,
+          "10.505069929234406": 1,
+          "17.830230606568264": 1,
+          "Govt expenditure as % of GDP": 1,
+          "32.389411661243514": 1,
+          "22.044836956521738": 1,
+          "9.2872458756864891": 1,
+          "16.055479216763999": 1,
+          "12.994683992911989": 1,
+          "23.780304865554378": 1,
+          "19.429199229078044": 1,
+          "13.149388213729599": 1,
+          "11.731207289293849": 1,
+          "12.851939025009825": 1,
+          "11.349342481417953": 1,
+          "14.322248386820647": 1,
+          "29.989023051591658": 1,
+          "22.458341134618987": 1,
+          "8.7383910229218937": 1,
+          "10.801435220670733": 1,
+          "12.136483282988051": 1,
+          "31.637451902522447": 1,
+          "27.858085186581228": 1,
+          "19.685943229056381": 1,
+          "14.499524947680825": 1,
+          "14.890566691634136": 1,
+          "8.1697914614617027": 1,
+          "12.851060550600113": 1,
+          "26.450611294391617": 1,
+          "21.430352242583943": 1,
+          "16.744373131962021": 1,
+          "29.756823179407583": 1,
+          "11.09478324761205": 1,
+          "20.109738896229594": 1,
+          "11.761526716183516": 1,
+          "15.534609296301626": 1,
+          "12.278128070422756": 1,
+          "14.278565031870622": 1,
+          "11.09030322138749": 1,
+          "17.936324247516534": 1,
+          "19.335653032766452": 1,
+          "34.590039969752617": 1,
+          "30.244671372764032": 1,
+          "12.848746081504704": 1,
+          "18.215950845126471": 1,
+          "15.090408012368083": 1,
+          "19.782608695652172": 1,
+          "9.5908572494248041": 1,
+          "7.3614140418642089": 1,
+          "21.828158795037421": 1,
+          "12.17844057337533": 1,
+          "13.414795681833233": 1,
+          "15.523188598913073": 1,
+          "15.803329343402025": 1,
+          "14.551696817641622": 1,
+          "15.078542422070448": 1,
+          "19.230171611964153": 1,
+          "12.323339379138115": 1,
+          "21.841324410608049": 1,
+          "15.047059528805226": 1,
+          "15.750553904142805": 1,
+          "16.447642729731076": 1,
+          "16.633091078565009": 1,
+          "23.072727272727274": 1,
+          "12.270344704615734": 1,
+          "20.418991055962103": 1,
+          "12.075951192575991": 1,
+          "8.0900693276490507": 1,
+          "13.627874938390139": 1,
+          "15.307260369553344": 1,
+          "12.469314201639763": 1,
+          "12.400906002265005": 1,
+          "12.434564490330086": 1,
+          "17.984726789531624": 1,
+          "9.7737150724831761": 1,
+          "9.328043317502523": 1,
+          "10.301167307483222": 1,
+          "18.660614759031414": 1,
+          "13.345763243037981": 1,
+          "18.310441304779378": 1,
+          "5.0424688975888889": 1,
+          "9.5491642213048884": 1,
+          "28.367891354431912": 1,
+          "13.560012353049226": 1,
+          "8.0196692750291714": 1,
+          "28.30393915805519": 1,
+          "8.021337220860115": 1,
+          "9.0675239709641833": 1,
+          "16.373906799136638": 1,
+          "14.986819278945104": 1,
+          "18.936809500347071": 1,
+          "4.1468198042027353": 1,
+          "13.151821971392771": 1,
+          "23.200819290568848": 1,
+          "13.401818986646783": 1,
+          "9.4568743812887952": 1,
+          "13.807167641270782": 1,
+          "14.504757386870381": 1,
+          "13.784764207980654": 1,
+          "12.318756539387598": 1,
+          "19.447287615148415": 1,
+          "18.017510503827154": 1,
+          "30.86809067650384": 1,
+          "12.073538110799626": 1,
+          "19.179455889539533": 1,
+          "10.80708487545008": 1,
+          "16.697534004952342": 1,
+          "19.239502809941943": 1,
+          "20.814875739102749": 1,
+          "8.9513182277941521": 1,
+          "12.48842298483523": 1,
+          "29.188552893167312": 1,
+          "15.484088028718915": 1,
+          "13.103048154594546": 1,
+          "11.096169472515651": 1,
+          "10.29946823397705": 1,
+          "14.080432057093258": 1,
+          "7.695475814922589": 1,
+          "22.440025360676604": 1,
+          "15.077117915780905": 1,
+          "26.422334973085736": 1,
+          "18.363838642819626": 1,
+          "12.133803457288437": 1,
+          "8.2938686102194321": 1,
+          "17.044320425220665": 1,
+          "14.974654062200301": 1,
+          "12.572159893508175": 1,
+          "8.2257462926627607": 1,
+          "12.384079601990051": 1,
+          "13.901556848561095": 1,
+          "23.491332805869234": 1,
+          "29.925611052072266": 1,
+          "10.886583171106162": 1,
+          "16.147362581178704": 1,
+          "22.594297643237891": 1,
+          "4.2265100381677927": 1,
+          "17.075623491552694": 1,
+          "24.905514196444205": 1,
+          "10.727778458940893": 1,
+          "16.099710236650811": 1,
+          "11.786214355703519": 1,
+          "14.672692059393158": 1,
+          "12.904374833379512": 1,
+          "16.614745586708203": 1,
+          "12.61087222890753": 1,
+          "10.038833594553314": 1,
+          "26.38532110091743": 1,
+          "8.2887897860855446": 1,
+          "23.377534554128957": 1,
+          "12.310691780106534": 1,
+          "25.380046226589158": 1,
+          "9.4635309020429865": 1,
+          "18.331939501272508": 1,
+          "15.745148297326987": 1,
+          "17.312969358978421": 1,
+          "9.2596495594803088": 1,
+          "31.711836923789672": 1,
+          "8.0430885460016643": 1,
+          "17.806860995439223": 1,
+          "13.659278987919718": 1,
+          "19.153753550097868": 1,
+          "9.3138541647887276": 1,
+          "12.462572736003615": 1,
+          "12.107087940428217": 1,
+          "18.02893950394246": 1,
+          "12.494602493435471": 1,
+          "13.050541120147724": 1,
+          "11.96576688249179": 1,
+          "11.163398692810457": 1,
+          "26.936461185087758": 1,
+          "16.151471770132797": 1,
+          "24.54801859322696": 1,
+          "13.923668728314981": 1,
+          "12.234832140198403": 1,
+          "15.658512651573561": 1,
+          "23.573940681950685": 1,
+          "21.740605649334125": 1,
+          "13.892224159622133": 1,
+          "16.443029646448583": 1,
+          "10.77302292338647": 1,
+          "12.540761865587047": 1,
+          "30.214072091925075": 1,
+          "12.156062302879219": 1,
+          "9.5006094392681035": 1,
+          "16.846185932441813": 1,
+          "30.0411836485662": 1,
+          "15.468113975576662": 1,
+          "27.825278810408921": 1,
+          "16.021113115169729": 1,
+          "14.616832678139346": 1,
+          "14.6134771157021": 1,
+          "12.818945727585957": 1,
+          "27.152848117053924": 1,
+          "12.963253408536918": 1,
+          "20.983155687530587": 1,
+          "15.976052187467621": 1,
+          "12.288539432928282": 1,
+          "25.910664249217074": 1,
+          "18.02183045313846": 1,
+          "19.019346153713506": 1,
+          "8.38374378457757": 1,
+          "24.889794757548465": 1,
+          "25.276510981810556": 1,
+          "18.715490052811202": 1,
+          "10.628599842539261": 1,
+          "18.374721648350864": 1,
+          "18.147629230882679": 1,
+          "30.75652461182689": 1,
+          "34": 1,
+          "8.5510461213563875": 1,
+          "20.129413539821499": 1,
+          "16.51990137372314": 1,
+          "12.946998542488164": 1,
+          "10.809281267685341": 1,
+          "28.592735567643444": 1,
+          "23.091979826120387": 1,
+          "21.88938027870762": 1,
+          "8.0227110810197964": 1,
+          "20.430246489402538": 1,
+          "9.0276436462970882": 1,
+          "17.691738618330554": 1,
+          "14.463200540175558": 1,
+          "12.848636790974616": 1,
+          "16.476406251168065": 1,
+          "17.4560348820733": 1,
+          "14.139423076923077": 1,
+          "15.538742933155969": 1,
+          "15.44312533653307": 1,
+          "30.629301868239921": 1,
+          "12.495500104208112": 1,
+          "12.415598732258509": 1,
+          "12.23797337320643": 1,
+          "31.770992366412216": 1,
+          "14.38115805101903": 1,
+          "20.620837854513734": 1,
+          "16.508839387018831": 1,
+          "19.15463712909456": 1,
+          "22.104646255963459": 1,
+          "14.60299295774648": 1,
+          "27.61450191553531": 1,
+          "29.000229834108055": 1,
+          "29.080906762780995": 1,
+          "13.577771525190185": 1,
+          "11.701344251100416": 1,
+          "18.407999531504782": 1,
+          "12.851471932109593": 1,
+          "12.353869735306903": 1,
+          "7.3745609740085163": 1,
+          "9.4689062049432948": 1,
+          "15.879201169020945": 1,
+          "12.304642770774892": 1,
+          "20.675249204076245": 1,
+          "14.580780675652022": 1,
+          "21.609403254972875": 1,
+          "33.1459251380236": 1,
+          "21.766811891377198": 1,
+          "17.697153707884247": 1,
+          "9.3769490987001767": 1,
+          "10.108412357143754": 1,
+          "12.939020665784383": 1,
+          "12.05186570197545": 1,
+          "4.9245559552317175": 1,
+          "13.294297547976683": 1,
+          "19.113196381773605": 1,
+          "11.816841998383785": 1,
+          "17.530739320961239": 1,
+          "12.147328639288373": 1,
+          "15.765840861908467": 1,
+          "12.36171236171236": 1,
+          "17.192155415398261": 1,
+          "2.9135869218517731": 1,
+          "29.596026490066222": 1,
+          "13.916905062143089": 1,
+          "17.450895301462822": 1,
+          "13.482717722805829": 1,
+          "18.957110076263749": 1,
+          "21.315219218171251": 1,
+          "15.692123859809866": 1,
+          "5.1025584202994541": 1,
+          "27.1649198130944": 1,
+          "9.0611968894398736": 1,
+          "13.852128206106098": 1,
+          "12.649393591377766": 1,
+          "34.060735540973603": 1,
+          "11.868407464778343": 1,
+          "11.816586392220506": 1,
+          "20.310492936435061": 1,
+          "25.258861552096505": 1,
+          "20.620589911031249": 1,
+          "17.609742180083042": 1,
+          "12.094704556835254": 1,
+          "14.911275352899436": 1,
+          "17.854843116938888": 1,
+          "23.279192273924494": 1,
+          "12.131560441384874": 1,
+          "18.473612274591066": 1,
+          "12.874484506679529": 1,
+          "9.4470130447225387": 1,
+          "19.819441528448458": 1,
+          "27.418126428027417": 1,
+          "17.899122786426808": 1,
+          "12.487751769188895": 1,
+          "9.2723338401878657": 1,
+          "16.978686528155926": 1,
+          "15.378928316156722": 1,
+          "20.105893827504527": 1,
+          "20.784451059359132": 1,
+          "19.55392764658885": 1,
+          "18.612913984377816": 1,
+          "19.588247051768938": 1,
+          "15.720610586136258": 1,
+          "13.265507056120773": 1,
+          "15.91749160101903": 1,
+          "19.000576867608885": 1,
+          "27.320955537818499": 1,
+          "15.463089944620576": 1,
+          "20.991834295956981": 1,
+          "15.984475911990156": 1,
+          "8.5191937483686928": 1,
+          "12.920315630835605": 1,
+          "9.264438039267878": 1,
+          "10.986972637827987": 1,
+          "11.211573236889691": 1,
+          "16.122796322343753": 1,
+          "12.858046680225007": 1,
+          "12.756037032248567": 1,
+          "13.64221364221364": 1,
+          "10.989995900867465": 1,
+          "19.325984821105891": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.M",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 336,
+          "10.038833594553314": 1,
+          "10.108412357143754": 1,
+          "10.29946823397705": 1,
+          "10.301167307483222": 1,
+          "10.505069929234406": 1,
+          "10.628599842539261": 1,
+          "10.727778458940893": 1,
+          "10.77302292338647": 1,
+          "10.801435220670733": 1,
+          "10.80708487545008": 1,
+          "10.809281267685341": 1,
+          "10.886583171106162": 1,
+          "10.986972637827987": 1,
+          "10.989995900867465": 1,
+          "11.09030322138749": 1,
+          "11.09478324761205": 1,
+          "11.096169472515651": 1,
+          "11.131542207239418": 1,
+          "11.163398692810457": 1,
+          "11.211573236889691": 1,
+          "11.349342481417953": 1,
+          "11.701344251100416": 1,
+          "11.731207289293849": 1,
+          "11.761526716183516": 1,
+          "11.786214355703519": 1,
+          "11.816586392220506": 1,
+          "11.816841998383785": 1,
+          "11.868407464778343": 1,
+          "11.96576688249179": 1,
+          "12.05186570197545": 1,
+          "12.073538110799626": 1,
+          "12.075951192575991": 1,
+          "12.094704556835254": 1,
+          "12.107087940428217": 1,
+          "12.131560441384874": 1,
+          "12.133803457288437": 1,
+          "12.136483282988051": 1,
+          "12.147328639288373": 1,
+          "12.156062302879219": 1,
+          "12.17844057337533": 1,
+          "12.234832140198403": 1,
+          "12.23797337320643": 1,
+          "12.270344704615734": 1,
+          "12.278128070422756": 1,
+          "12.288539432928282": 1,
+          "12.304642770774892": 1,
+          "12.310691780106534": 1,
+          "12.318756539387598": 1,
+          "12.323339379138115": 1,
+          "12.353869735306903": 1,
+          "12.36171236171236": 1,
+          "12.384079601990051": 1,
+          "12.400906002265005": 1,
+          "12.415598732258509": 1,
+          "12.434564490330086": 1,
+          "12.462572736003615": 1,
+          "12.469314201639763": 1,
+          "12.487751769188895": 1,
+          "12.48842298483523": 1,
+          "12.494602493435471": 1,
+          "12.495500104208112": 1,
+          "12.540761865587047": 1,
+          "12.572159893508175": 1,
+          "12.61087222890753": 1,
+          "12.649393591377766": 1,
+          "12.756037032248567": 1,
+          "12.818945727585957": 1,
+          "12.848636790974616": 1,
+          "12.848746081504704": 1,
+          "12.851060550600113": 1,
+          "12.851471932109593": 1,
+          "12.851939025009825": 1,
+          "12.858046680225007": 1,
+          "12.874484506679529": 1,
+          "12.904374833379512": 1,
+          "12.920315630835605": 1,
+          "12.939020665784383": 1,
+          "12.946998542488164": 1,
+          "12.963253408536918": 1,
+          "12.994683992911989": 1,
+          "13.050541120147724": 1,
+          "13.103048154594546": 1,
+          "13.149388213729599": 1,
+          "13.151821971392771": 1,
+          "13.265507056120773": 1,
+          "13.294297547976683": 1,
+          "13.345763243037981": 1,
+          "13.401818986646783": 1,
+          "13.414795681833233": 1,
+          "13.482717722805829": 1,
+          "13.560012353049226": 1,
+          "13.577771525190185": 1,
+          "13.627874938390139": 1,
+          "13.64221364221364": 1,
+          "13.659278987919718": 1,
+          "13.784764207980654": 1,
+          "13.807167641270782": 1,
+          "13.852128206106098": 1,
+          "13.892224159622133": 1,
+          "13.901556848561095": 1,
+          "13.916905062143089": 1,
+          "13.923668728314981": 1,
+          "14.080432057093258": 1,
+          "14.139423076923077": 1,
+          "14.278565031870622": 1,
+          "14.322248386820647": 1,
+          "14.38115805101903": 1,
+          "14.429414197338685": 1,
+          "14.463200540175558": 1,
+          "14.499524947680825": 1,
+          "14.504757386870381": 1,
+          "14.551696817641622": 1,
+          "14.580780675652022": 1,
+          "14.60299295774648": 1,
+          "14.6134771157021": 1,
+          "14.616832678139346": 1,
+          "14.672692059393158": 1,
+          "14.890566691634136": 1,
+          "14.911275352899436": 1,
+          "14.974654062200301": 1,
+          "14.986819278945104": 1,
+          "15.047059528805226": 1,
+          "15.077117915780905": 1,
+          "15.078542422070448": 1,
+          "15.090408012368083": 1,
+          "15.307260369553344": 1,
+          "15.378928316156722": 1,
+          "15.44312533653307": 1,
+          "15.463089944620576": 1,
+          "15.468113975576662": 1,
+          "15.484088028718915": 1,
+          "15.523188598913073": 1,
+          "15.534609296301626": 1,
+          "15.538742933155969": 1,
+          "15.658512651573561": 1,
+          "15.692123859809866": 1,
+          "15.720610586136258": 1,
+          "15.745148297326987": 1,
+          "15.750553904142805": 1,
+          "15.765840861908467": 1,
+          "15.803329343402025": 1,
+          "15.879201169020945": 1,
+          "15.91749160101903": 1,
+          "15.976052187467621": 1,
+          "15.984475911990156": 1,
+          "16.021113115169729": 1,
+          "16.055479216763999": 1,
+          "16.099710236650811": 1,
+          "16.122796322343753": 1,
+          "16.147362581178704": 1,
+          "16.151471770132797": 1,
+          "16.373906799136638": 1,
+          "16.443029646448583": 1,
+          "16.447642729731076": 1,
+          "16.476406251168065": 1,
+          "16.508839387018831": 1,
+          "16.51990137372314": 1,
+          "16.614745586708203": 1,
+          "16.633091078565009": 1,
+          "16.697534004952342": 1,
+          "16.744373131962021": 1,
+          "16.846185932441813": 1,
+          "16.978686528155926": 1,
+          "17.044320425220665": 1,
+          "17.075623491552694": 1,
+          "17.192155415398261": 1,
+          "17.312969358978421": 1,
+          "17.450895301462822": 1,
+          "17.4560348820733": 1,
+          "17.530739320961239": 1,
+          "17.609742180083042": 1,
+          "17.691738618330554": 1,
+          "17.697153707884247": 1,
+          "17.806860995439223": 1,
+          "17.830230606568264": 1,
+          "17.854843116938888": 1,
+          "17.899122786426808": 1,
+          "17.936324247516534": 1,
+          "17.984726789531624": 1,
+          "18.017510503827154": 1,
+          "18.02183045313846": 1,
+          "18.02893950394246": 1,
+          "18.147629230882679": 1,
+          "18.215950845126471": 1,
+          "18.310441304779378": 1,
+          "18.331939501272508": 1,
+          "18.363838642819626": 1,
+          "18.374721648350864": 1,
+          "18.407999531504782": 1,
+          "18.473612274591066": 1,
+          "18.612913984377816": 1,
+          "18.660614759031414": 1,
+          "18.715490052811202": 1,
+          "18.936809500347071": 1,
+          "18.957110076263749": 1,
+          "19.000576867608885": 1,
+          "19.019346153713506": 1,
+          "19.113196381773605": 1,
+          "19.153753550097868": 1,
+          "19.15463712909456": 1,
+          "19.179455889539533": 1,
+          "19.230171611964153": 1,
+          "19.239502809941943": 1,
+          "19.325984821105891": 1,
+          "19.335653032766452": 1,
+          "19.429199229078044": 1,
+          "19.447287615148415": 1,
+          "19.55392764658885": 1,
+          "19.588247051768938": 1,
+          "19.685943229056381": 1,
+          "19.782608695652172": 1,
+          "19.819441528448458": 1,
+          "2.9135869218517731": 1,
+          "20.105893827504527": 1,
+          "20.109738896229594": 1,
+          "20.129413539821499": 1,
+          "20.310492936435061": 1,
+          "20.418991055962103": 1,
+          "20.430246489402538": 1,
+          "20.620589911031249": 1,
+          "20.620837854513734": 1,
+          "20.675249204076245": 1,
+          "20.784451059359132": 1,
+          "20.814875739102749": 1,
+          "20.983155687530587": 1,
+          "20.991834295956981": 1,
+          "21.315219218171251": 1,
+          "21.430352242583943": 1,
+          "21.609403254972875": 1,
+          "21.740605649334125": 1,
+          "21.766811891377198": 1,
+          "21.828158795037421": 1,
+          "21.841324410608049": 1,
+          "21.88938027870762": 1,
+          "22.044836956521738": 1,
+          "22.104646255963459": 1,
+          "22.440025360676604": 1,
+          "22.458341134618987": 1,
+          "22.594297643237891": 1,
+          "23.072727272727274": 1,
+          "23.091979826120387": 1,
+          "23.200819290568848": 1,
+          "23.279192273924494": 1,
+          "23.377534554128957": 1,
+          "23.491332805869234": 1,
+          "23.573940681950685": 1,
+          "23.780304865554378": 1,
+          "24.54801859322696": 1,
+          "24.889794757548465": 1,
+          "24.905514196444205": 1,
+          "25.258861552096505": 1,
+          "25.276510981810556": 1,
+          "25.380046226589158": 1,
+          "25.910664249217074": 1,
+          "26.38532110091743": 1,
+          "26.422334973085736": 1,
+          "26.450611294391617": 1,
+          "26.936461185087758": 1,
+          "27.152848117053924": 1,
+          "27.1649198130944": 1,
+          "27.320955537818499": 1,
+          "27.418126428027417": 1,
+          "27.61450191553531": 1,
+          "27.825278810408921": 1,
+          "27.858085186581228": 1,
+          "28.30393915805519": 1,
+          "28.367891354431912": 1,
+          "28.592735567643444": 1,
+          "29.000229834108055": 1,
+          "29.080906762780995": 1,
+          "29.188552893167312": 1,
+          "29.596026490066222": 1,
+          "29.756823179407583": 1,
+          "29.925611052072266": 1,
+          "29.989023051591658": 1,
+          "30.0411836485662": 1,
+          "30.214072091925075": 1,
+          "30.244671372764032": 1,
+          "30.629301868239921": 1,
+          "30.75652461182689": 1,
+          "30.86809067650384": 1,
+          "30.873626090097527": 1,
+          "31.637451902522447": 1,
+          "31.711836923789672": 1,
+          "31.770992366412216": 1,
+          "32.389411661243514": 1,
+          "33.1459251380236": 1,
+          "34": 1,
+          "34.060735540973603": 1,
+          "34.590039969752617": 1,
+          "4.1468198042027353": 1,
+          "4.2265100381677927": 1,
+          "4.9245559552317175": 1,
+          "5.0424688975888889": 1,
+          "5.1025584202994541": 1,
+          "7.3614140418642089": 1,
+          "7.3745609740085163": 1,
+          "7.695475814922589": 1,
+          "8.0196692750291714": 1,
+          "8.021337220860115": 1,
+          "8.0227110810197964": 1,
+          "8.0430885460016643": 1,
+          "8.0900693276490507": 1,
+          "8.1697914614617027": 1,
+          "8.2257462926627607": 1,
+          "8.2887897860855446": 1,
+          "8.2938686102194321": 1,
+          "8.38374378457757": 1,
+          "8.5191937483686928": 1,
+          "8.5510461213563875": 1,
+          "8.7383910229218937": 1,
+          "8.9513182277941521": 1,
+          "9.0276436462970882": 1,
+          "9.0611968894398736": 1,
+          "9.0675239709641833": 1,
+          "9.2596495594803088": 1,
+          "9.264438039267878": 1,
+          "9.2723338401878657": 1,
+          "9.2872458756864891": 1,
+          "9.3138541647887276": 1,
+          "9.328043317502523": 1,
+          "9.3769490987001767": 1,
+          "9.4470130447225387": 1,
+          "9.4568743812887952": 1,
+          "9.4635309020429865": 1,
+          "9.4689062049432948": 1,
+          "9.5006094392681035": 1,
+          "9.5491642213048884": 1,
+          "9.5908572494248041": 1,
+          "9.7737150724831761": 1,
+          "Govt expenditure as % of GDP": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "M"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        667
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        331
+      ],
+      [
+        "herfindahl",
+        0.00302114803625378
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Govt expenditure as % of GDP"
+      ],
+      [
+        "mid",
+        "Govt expenditure as % of GDP"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "M"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:15:47",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "DatafromUNStatisticalDivision": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "B": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "C": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "D": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "E": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "F": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "G": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "H": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "I": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "J": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "K": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "L": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "M": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

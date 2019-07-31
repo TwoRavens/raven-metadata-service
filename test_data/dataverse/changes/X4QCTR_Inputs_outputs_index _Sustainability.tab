@@ -1,0 +1,597 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        10
+      ],
+      [
+        "variableCount",
+        2
+      ],
+      [
+        "dataSource",
+        {
+          "name": "X4QCTR_Inputs_outputs_index _Sustainability.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 677
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.mode",
+    [
+      "Indices",
+      [
+        "Eco_benchmark",
+        "Env_raw_indic",
+        "Eco_raw_indic",
+        "Env_norm_indic+index",
+        "Soc_benchmark"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Summary",
+    [
+      [
+        "variableName",
+        "Summary"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        10
+      ],
+      [
+        "uniqueCount",
+        10
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Eco_benchmark",
+          "Env_raw_indic",
+          "Eco_raw_indic",
+          "Env_norm_indic+index",
+          "Soc_benchmark"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.10000000000000003
+      ],
+      [
+        "plotValues",
+        {
+          "Env_benchmark": 1,
+          "Eco_norm_indic+index": 1,
+          "Indices": 1,
+          "Soc_norm_indic+index": 1,
+          "Soc_raw_indic": 1,
+          "Soc_benchmark": 1,
+          "Env_norm_indic+index": 1,
+          "Eco_raw_indic": 1,
+          "Env_raw_indic": 1,
+          "Eco_benchmark": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Summary",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Eco_benchmark": 1,
+          "Eco_norm_indic+index": 1,
+          "Eco_raw_indic": 1,
+          "Env_benchmark": 1,
+          "Env_norm_indic+index": 1,
+          "Env_raw_indic": 1,
+          "Indices": 1,
+          "Soc_benchmark": 1,
+          "Soc_norm_indic+index": 1,
+          "Soc_raw_indic": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Summary"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        10
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        10
+      ],
+      [
+        "herfindahl",
+        0.1
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Indices"
+      ],
+      [
+        "mid",
+        "Indices"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "Summary"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.mode",
+    [
+      "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)",
+      [
+        "benchmarks for environmental indicators",
+        "normalized social indicators and index (Score Soc)",
+        "raw environmental indicators",
+        "raw economic indicators",
+        "benchmarks for social indicators"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.B.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.B",
+    [
+      [
+        "variableName",
+        "B"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        10
+      ],
+      [
+        "uniqueCount",
+        10
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "benchmarks for environmental indicators",
+          "normalized social indicators and index (Score Soc)",
+          "raw environmental indicators",
+          "raw economic indicators",
+          "benchmarks for social indicators"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.10000000000000003
+      ],
+      [
+        "plotValues",
+        {
+          "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)": 1,
+          "raw environmental indicators": 1,
+          "benchmarks for economic indicators": 1,
+          "normalized environmental indicators and index (Score Env)": 1,
+          "normalized economic indicators and index (Score Eco)": 1,
+          "raw social indicators": 1,
+          "benchmarks for environmental indicators": 1,
+          "normalized social indicators and index (Score Soc)": 1,
+          "raw economic indicators": 1,
+          "benchmarks for social indicators": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.B",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "benchmarks for economic indicators": 1,
+          "benchmarks for environmental indicators": 1,
+          "benchmarks for social indicators": 1,
+          "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)": 1,
+          "normalized economic indicators and index (Score Eco)": 1,
+          "normalized environmental indicators and index (Score Env)": 1,
+          "normalized social indicators and index (Score Soc)": 1,
+          "raw economic indicators": 1,
+          "raw environmental indicators": 1,
+          "raw social indicators": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "B"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        10
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        10
+      ],
+      [
+        "herfindahl",
+        0.1
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)"
+      ],
+      [
+        "mid",
+        "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "B"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:28:25",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "Summary": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "B": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

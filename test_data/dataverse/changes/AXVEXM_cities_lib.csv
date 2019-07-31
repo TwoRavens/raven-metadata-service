@@ -1,0 +1,2453 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        234
+      ],
+      [
+        "variableCount",
+        4
+      ],
+      [
+        "dataSource",
+        {
+          "name": "AXVEXM_cities_lib.csv",
+          "type": "File",
+          "format": "text/csv",
+          "filesize": 8268
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.city.mode",
+    [
+      "Springfield",
+      [
+        "Springfield"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.city.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.city.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.city",
+    [
+      [
+        "variableName",
+        "city"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        234
+      ],
+      [
+        "uniqueCount",
+        225
+      ],
+      [
+        "modeFreq",
+        3
+      ],
+      [
+        "fewestValues",
+        [
+          "Los Angeles",
+          "Eugene",
+          "Sioux Falls",
+          "Irving",
+          "Milwaukee"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.004638761049017464
+      ],
+      [
+        "plotValues",
+        {
+          "Springfield": 3,
+          "Glendale": 2,
+          "Peoria": 2,
+          "Pasadena": 2,
+          "Aurora": 2,
+          "Kansas City": 2,
+          "Columbus": 2,
+          "Jackson": 2,
+          "Pittsburgh": 1,
+          "Phoenix": 1,
+          "Boston": 1,
+          "Erie": 1,
+          "Greensboro": 1,
+          "Philadelphia": 1,
+          "McAllen": 1,
+          "Santa Ana": 1,
+          "Chandler": 1,
+          "Fullerton": 1,
+          "Reno": 1,
+          "Lafayette": 1,
+          "Bridgeport": 1,
+          "Brownsville": 1,
+          "Lansing": 1,
+          "Escondido": 1,
+          "Madison": 1,
+          "Plano": 1,
+          "Chula Vista": 1,
+          "Raleigh": 1,
+          "Austin": 1,
+          "Coral Springs": 1,
+          "Modesto": 1,
+          "Norwalk": 1,
+          "New Orleands": 1,
+          "Colorado Springs": 1,
+          "Anchorage": 1,
+          "Louisville": 1,
+          "Sunnyvale": 1,
+          "Cape Coral": 1,
+          "Mesa": 1,
+          "Carrollton": 1,
+          "San Buenaventura": 1,
+          "Memphis": 1,
+          "Moreno Valley": 1,
+          "Fort Wayne": 1,
+          "Riverside": 1,
+          "San Bernadino": 1,
+          "Santa Rosa": 1,
+          "South Bend": 1,
+          "Detroit": 1,
+          "St. Paul": 1,
+          "Savannah": 1,
+          "Provo": 1,
+          "Huntington Beach": 1,
+          "Chicago": 1,
+          "Rancho Cucamonga": 1,
+          "Las Vegas": 1,
+          "Huntsville": 1,
+          "Albuquerque": 1,
+          "Pembroke Pines": 1,
+          "Portland": 1,
+          "Newark": 1,
+          "Orange": 1,
+          "San Jose": 1,
+          "Portsmouth": 1,
+          "Little Rock": 1,
+          "Gary": 1,
+          "Bakersfield": 1,
+          "Ontario": 1,
+          "Omaha": 1,
+          "West Valley City": 1,
+          "St. Louis": 1,
+          "Arlington": 1,
+          "Athens": 1,
+          "Fort Worth": 1,
+          "Indianapolis": 1,
+          "Naperville": 1,
+          "Vallejo": 1,
+          "Salinas": 1,
+          "Knoxville": 1,
+          "Fort Lauderdale": 1,
+          "Abilene": 1,
+          "West Covina": 1,
+          "Rockford": 1,
+          "Montgomery": 1,
+          "Minneapolis": 1,
+          "North Las Vegas": 1,
+          "Mobile": 1,
+          "Syracuse": 1,
+          "Elizabeth": 1,
+          "Birmingham": 1,
+          "Durham": 1,
+          "Corpus Christi": 1,
+          "Orlando": 1,
+          "Yonkers": 1,
+          "San Diego": 1,
+          "Green Bay": 1,
+          "Tucson": 1,
+          "Joliet": 1,
+          "Costa Mesa": 1,
+          "El Paso": 1,
+          "Waco": 1,
+          "Sacramento": 1,
+          "Fresno": 1,
+          "Warren": 1,
+          "Rochester": 1,
+          "Westminster": 1,
+          "Arvada": 1,
+          "Jacksonville": 1,
+          "Mesquite": 1,
+          "Allentown": 1,
+          "Baton Rouge": 1,
+          "Lakewood": 1,
+          "Torrance": 1,
+          "Dayton": 1,
+          "Overland Park": 1,
+          "Lancaster": 1,
+          "Dallas": 1,
+          "Nashville-Davidson": 1,
+          "New York": 1,
+          "Lowell": 1,
+          "Los Angeles": 1,
+          "Fayetteville": 1,
+          "Des Moines": 1,
+          "Oceanside": 1,
+          "Baltimore": 1,
+          "San Antonio": 1,
+          "Stockton": 1,
+          "Concord": 1,
+          "Hampton": 1,
+          "Santa Clarita": 1,
+          "Daly City": 1,
+          "Evansville": 1,
+          "Newport News": 1,
+          "Hialeah": 1,
+          "Providence": 1,
+          "Houston": 1,
+          "Fremont": 1,
+          "Chattanooga": 1,
+          "Paterson": 1,
+          "Downey": 1,
+          "Winston-Salem": 1,
+          "Salem": 1,
+          "Jersey City": 1,
+          "Clarksville": 1,
+          "El Monte": 1,
+          "Ann Arbor": 1,
+          "Gilbert": 1,
+          "Waterbury": 1,
+          "Hartford": 1,
+          "Grand Rapids": 1,
+          "Virginia Beach": 1,
+          "Oxnard": 1,
+          "Fontana": 1,
+          "Richmond": 1,
+          "Cincinnati": 1,
+          "Sterling Heights": 1,
+          "Columbia ": 1,
+          "Cedar Rapids": 1,
+          "Corona": 1,
+          "Oakland": 1,
+          "Augusta": 1,
+          "Garland": 1,
+          "Lexington-Fayette": 1,
+          "Tempe": 1,
+          "Miami": 1,
+          "Vancouver": 1,
+          "Charlotte": 1,
+          "Salt Lake City": 1,
+          "Toledo": 1,
+          "San Francisco": 1,
+          "New Haven": 1,
+          "Hayward": 1,
+          "Sioux Falls": 1,
+          "Eugene": 1,
+          "Oklahoma City": 1,
+          "Akron": 1,
+          "Irvine": 1,
+          "Anaheim": 1,
+          "Scottsdale": 1,
+          "Honolulu": 1,
+          "Berkeley": 1,
+          "Norfolk": 1,
+          "Livonia": 1,
+          "Laredo": 1,
+          "Milwaukee": 1,
+          "Henderson": 1,
+          "Manchester": 1,
+          "Long Beach": 1,
+          "Cleveland": 1,
+          "Simi Valley": 1,
+          "Inglewood": 1,
+          "Buffalo": 1,
+          "Stamford": 1,
+          "Alexandria": 1,
+          "Hollywood": 1,
+          "Garden Grove": 1,
+          "Irving": 1,
+          "Pomona": 1,
+          "Lubbock": 1,
+          "Boise City": 1,
+          "Atlanta": 1,
+          "Tulsa": 1,
+          "Burbank": 1,
+          "Independence": 1,
+          "District of Columbia": 1,
+          "Chesapeake": 1,
+          "Grand Prairie": 1,
+          "Beaumont": 1,
+          "Tampa": 1,
+          "Spokane": 1,
+          "Shreveport": 1,
+          "Topeka": 1,
+          "Thousand Oaks": 1,
+          "Denver": 1,
+          "Lincoln": 1,
+          "St. Petersburg": 1,
+          "Worcester": 1,
+          "Palmdale": 1,
+          "Flint": 1,
+          "Pueblo": 1,
+          "Clearwater": 1,
+          "Fort Collins": 1,
+          "Tallahassee": 1,
+          "Wichita": 1,
+          "Cambridge": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.city",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Abilene": 1,
+          "Akron": 1,
+          "Albuquerque": 1,
+          "Alexandria": 1,
+          "Allentown": 1,
+          "Anaheim": 1,
+          "Anchorage": 1,
+          "Ann Arbor": 1,
+          "Arlington": 1,
+          "Arvada": 1,
+          "Athens": 1,
+          "Atlanta": 1,
+          "Augusta": 1,
+          "Aurora": 2,
+          "Austin": 1,
+          "Bakersfield": 1,
+          "Baltimore": 1,
+          "Baton Rouge": 1,
+          "Beaumont": 1,
+          "Berkeley": 1,
+          "Birmingham": 1,
+          "Boise City": 1,
+          "Boston": 1,
+          "Bridgeport": 1,
+          "Brownsville": 1,
+          "Buffalo": 1,
+          "Burbank": 1,
+          "Cambridge": 1,
+          "Cape Coral": 1,
+          "Carrollton": 1,
+          "Cedar Rapids": 1,
+          "Chandler": 1,
+          "Charlotte": 1,
+          "Chattanooga": 1,
+          "Chesapeake": 1,
+          "Chicago": 1,
+          "Chula Vista": 1,
+          "Cincinnati": 1,
+          "Clarksville": 1,
+          "Clearwater": 1,
+          "Cleveland": 1,
+          "Colorado Springs": 1,
+          "Columbia ": 1,
+          "Columbus": 2,
+          "Concord": 1,
+          "Coral Springs": 1,
+          "Corona": 1,
+          "Corpus Christi": 1,
+          "Costa Mesa": 1,
+          "Dallas": 1,
+          "Daly City": 1,
+          "Dayton": 1,
+          "Denver": 1,
+          "Des Moines": 1,
+          "Detroit": 1,
+          "District of Columbia": 1,
+          "Downey": 1,
+          "Durham": 1,
+          "El Monte": 1,
+          "El Paso": 1,
+          "Elizabeth": 1,
+          "Erie": 1,
+          "Escondido": 1,
+          "Eugene": 1,
+          "Evansville": 1,
+          "Fayetteville": 1,
+          "Flint": 1,
+          "Fontana": 1,
+          "Fort Collins": 1,
+          "Fort Lauderdale": 1,
+          "Fort Wayne": 1,
+          "Fort Worth": 1,
+          "Fremont": 1,
+          "Fresno": 1,
+          "Fullerton": 1,
+          "Garden Grove": 1,
+          "Garland": 1,
+          "Gary": 1,
+          "Gilbert": 1,
+          "Glendale": 2,
+          "Grand Prairie": 1,
+          "Grand Rapids": 1,
+          "Green Bay": 1,
+          "Greensboro": 1,
+          "Hampton": 1,
+          "Hartford": 1,
+          "Hayward": 1,
+          "Henderson": 1,
+          "Hialeah": 1,
+          "Hollywood": 1,
+          "Honolulu": 1,
+          "Houston": 1,
+          "Huntington Beach": 1,
+          "Huntsville": 1,
+          "Independence": 1,
+          "Indianapolis": 1,
+          "Inglewood": 1,
+          "Irvine": 1,
+          "Irving": 1,
+          "Jackson": 2,
+          "Jacksonville": 1,
+          "Jersey City": 1,
+          "Joliet": 1,
+          "Kansas City": 2,
+          "Knoxville": 1,
+          "Lafayette": 1,
+          "Lakewood": 1,
+          "Lancaster": 1,
+          "Lansing": 1,
+          "Laredo": 1,
+          "Las Vegas": 1,
+          "Lexington-Fayette": 1,
+          "Lincoln": 1,
+          "Little Rock": 1,
+          "Livonia": 1,
+          "Long Beach": 1,
+          "Los Angeles": 1,
+          "Louisville": 1,
+          "Lowell": 1,
+          "Lubbock": 1,
+          "Madison": 1,
+          "Manchester": 1,
+          "McAllen": 1,
+          "Memphis": 1,
+          "Mesa": 1,
+          "Mesquite": 1,
+          "Miami": 1,
+          "Milwaukee": 1,
+          "Minneapolis": 1,
+          "Mobile": 1,
+          "Modesto": 1,
+          "Montgomery": 1,
+          "Moreno Valley": 1,
+          "Naperville": 1,
+          "Nashville-Davidson": 1,
+          "New Haven": 1,
+          "New Orleands": 1,
+          "New York": 1,
+          "Newark": 1,
+          "Newport News": 1,
+          "Norfolk": 1,
+          "North Las Vegas": 1,
+          "Norwalk": 1,
+          "Oakland": 1,
+          "Oceanside": 1,
+          "Oklahoma City": 1,
+          "Omaha": 1,
+          "Ontario": 1,
+          "Orange": 1,
+          "Orlando": 1,
+          "Overland Park": 1,
+          "Oxnard": 1,
+          "Palmdale": 1,
+          "Pasadena": 2,
+          "Paterson": 1,
+          "Pembroke Pines": 1,
+          "Peoria": 2,
+          "Philadelphia": 1,
+          "Phoenix": 1,
+          "Pittsburgh": 1,
+          "Plano": 1,
+          "Pomona": 1,
+          "Portland": 1,
+          "Portsmouth": 1,
+          "Providence": 1,
+          "Provo": 1,
+          "Pueblo": 1,
+          "Raleigh": 1,
+          "Rancho Cucamonga": 1,
+          "Reno": 1,
+          "Richmond": 1,
+          "Riverside": 1,
+          "Rochester": 1,
+          "Rockford": 1,
+          "Sacramento": 1,
+          "Salem": 1,
+          "Salinas": 1,
+          "Salt Lake City": 1,
+          "San Antonio": 1,
+          "San Bernadino": 1,
+          "San Buenaventura": 1,
+          "San Diego": 1,
+          "San Francisco": 1,
+          "San Jose": 1,
+          "Santa Ana": 1,
+          "Santa Clarita": 1,
+          "Santa Rosa": 1,
+          "Savannah": 1,
+          "Scottsdale": 1,
+          "Shreveport": 1,
+          "Simi Valley": 1,
+          "Sioux Falls": 1,
+          "South Bend": 1,
+          "Spokane": 1,
+          "Springfield": 3,
+          "St. Louis": 1,
+          "St. Paul": 1,
+          "St. Petersburg": 1,
+          "Stamford": 1,
+          "Sterling Heights": 1,
+          "Stockton": 1,
+          "Sunnyvale": 1,
+          "Syracuse": 1,
+          "Tallahassee": 1,
+          "Tampa": 1,
+          "Tempe": 1,
+          "Thousand Oaks": 1,
+          "Toledo": 1,
+          "Topeka": 1,
+          "Torrance": 1,
+          "Tucson": 1,
+          "Tulsa": 1,
+          "Vallejo": 1,
+          "Vancouver": 1,
+          "Virginia Beach": 1,
+          "Waco": 1,
+          "Warren": 1,
+          "Waterbury": 1,
+          "West Covina": 1,
+          "West Valley City": 1,
+          "Westminster": 1,
+          "Wichita": 1,
+          "Winston-Salem": 1,
+          "Worcester": 1,
+          "Yonkers": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "city"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        234
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        225
+      ],
+      [
+        "herfindahl",
+        0.00463876104901746
+      ],
+      [
+        "freqmode",
+        3
+      ],
+      [
+        "fewest",
+        "Detroit"
+      ],
+      [
+        "mid",
+        "Detroit"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "city"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.mode",
+    [
+      "California",
+      [
+        "California"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.state.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.state",
+    [
+      [
+        "variableName",
+        "state"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        234
+      ],
+      [
+        "uniqueCount",
+        44
+      ],
+      [
+        "modeFreq",
+        55
+      ],
+      [
+        "fewestValues",
+        [
+          "Rhode Island",
+          "New Mexico",
+          "Idaho",
+          "South Dakota",
+          "Arkansas"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.0803564906129009
+      ],
+      [
+        "plotValues",
+        {
+          "California": 55,
+          "Texas": 22,
+          "Florida": 13,
+          "Arizona": 9,
+          "Virginia": 8,
+          "Michigan": 8,
+          "Colorado": 8,
+          "Illinois": 7,
+          "North Carolina": 6,
+          "Ohio": 6,
+          "Tennessee": 5,
+          "Massachusetts": 5,
+          "Georgia": 5,
+          "Indiana": 5,
+          "Connecticut": 5,
+          "New York": 5,
+          "Louisiana": 4,
+          "New Jersey": 4,
+          "Pennsylvania": 4,
+          "Alabama": 4,
+          "Missouri": 4,
+          "Nevada": 4,
+          "Kansas": 4,
+          "Utah": 3,
+          "Wisconsin": 3,
+          "Oregon": 3,
+          "Kentucky": 2,
+          "Nebraska": 2,
+          "Washington": 2,
+          "Iowa": 2,
+          "Oklahoma": 2,
+          "Mississippi": 2,
+          "Minnesota": 2,
+          "New Mexico": 1,
+          "DC": 1,
+          "Arkansas": 1,
+          "South Dakota": 1,
+          "South Carolina": 1,
+          "Maryland": 1,
+          "New Hampshire": 1,
+          "Alaska": 1,
+          "Hawaii": 1,
+          "Idaho": 1,
+          "Rhode Island": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.state",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Alabama": 4,
+          "Alaska": 1,
+          "Arizona": 9,
+          "Arkansas": 1,
+          "California": 55,
+          "Colorado": 8,
+          "Connecticut": 5,
+          "DC": 1,
+          "Florida": 13,
+          "Georgia": 5,
+          "Hawaii": 1,
+          "Idaho": 1,
+          "Illinois": 7,
+          "Indiana": 5,
+          "Iowa": 2,
+          "Kansas": 4,
+          "Kentucky": 2,
+          "Louisiana": 4,
+          "Maryland": 1,
+          "Massachusetts": 5,
+          "Michigan": 8,
+          "Minnesota": 2,
+          "Mississippi": 2,
+          "Missouri": 4,
+          "Nebraska": 2,
+          "Nevada": 4,
+          "New Hampshire": 1,
+          "New Jersey": 4,
+          "New Mexico": 1,
+          "New York": 5,
+          "North Carolina": 6,
+          "Ohio": 6,
+          "Oklahoma": 2,
+          "Oregon": 3,
+          "Pennsylvania": 4,
+          "Rhode Island": 1,
+          "South Carolina": 1,
+          "South Dakota": 1,
+          "Tennessee": 5,
+          "Texas": 22,
+          "Utah": 3,
+          "Virginia": 8,
+          "Washington": 2,
+          "Wisconsin": 3
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "state"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        234
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        44
+      ],
+      [
+        "herfindahl",
+        0.0803564906129009
+      ],
+      [
+        "freqmode",
+        55
+      ],
+      [
+        "fewest",
+        "DC"
+      ],
+      [
+        "mid",
+        "New Jersey"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "4"
+      ],
+      [
+        "varnamesTypes",
+        "state"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.pop.mode",
+    [
+      "184,256",
+      [
+        "184,256"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.pop.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.pop.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.pop",
+    [
+      [
+        "variableName",
+        "pop"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        234
+      ],
+      [
+        "uniqueCount",
+        233
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          "208,054",
+          "529,121",
+          "540,828",
+          "650,100",
+          "112,580"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.004310029951055602
+      ],
+      [
+        "plotValues",
+        {
+          "184,256": 2,
+          "260,283": 1,
+          "334,563": 1,
+          "183,133": 1,
+          "139,357": 1,
+          "118,652": 1,
+          "102,121": 1,
+          "200,145": 1,
+          "185,776": 1,
+          "951,270": 1,
+          "115,930": 1,
+          "124,523": 1,
+          "105,080": 1,
+          "146,866": 1,
+          "177,648": 1,
+          "152,082": 1,
+          "191,615": 1,
+          "173,618": 1,
+          "478,403": 1,
+          "256,231": 1,
+          "198,682": 1,
+          "113,866": 1,
+          "390,007": 1,
+          "142,381": 1,
+          "128,821": 1,
+          "441,545": 1,
+          "243,771": 1,
+          "107,789": 1,
+          "217,074": 1,
+          "100,565": 1,
+          "776,733": 1,
+          "448,607": 1,
+          "248,232": 1,
+          "194,973": 1,
+          "337,977": 1,
+          "461,552": 1,
+          "111,454": 1,
+          "201,568": 1,
+          "197,800": 1,
+          "147,306": 1,
+          "173,556": 1,
+          "203,413": 1,
+          "126,003": 1,
+          "223,891": 1,
+          "116,760": 1,
+          "247,057": 1,
+          "127,743": 1,
+          "102,153": 1,
+          "175,381": 1,
+          "486,699": 1,
+          "107,006": 1,
+          "133,936": 1,
+          "137,893": 1,
+          "152,397": 1,
+          "196,086": 1,
+          "100,266": 1,
+          "195,629": 1,
+          "128,358": 1,
+          "185,787": 1,
+          "328,014": 1,
+          "117,083": 1,
+          "103,298": 1,
+          "161,029": 1,
+          "181,743": 1,
+          "534,694": 1,
+          "563,662": 1,
+          "121,015": 1,
+          "131,510": 1,
+          "218,812": 1,
+          "113,288": 1,
+          "120,758": 1,
+          "197,790": 1,
+          "287,151": 1,
+          "143,072": 1,
+          "1,321,045": 1,
+          "185,951": 1,
+          "137,946": 1,
+          "149,222": 1,
+          "149,080": 1,
+          "1,223,400": 1,
+          "105,167": 1,
+          "106,632": 1,
+          "106,221": 1,
+          "118,718": 1,
+          "3,694,820": 1,
+          "108,896": 1,
+          "1,188,580": 1,
+          "205,727": 1,
+          "146,437": 1,
+          "150,115": 1,
+          "332,969": 1,
+          "123,975": 1,
+          "100,545": 1,
+          "176,581": 1,
+          "158,007": 1,
+          "150,624": 1,
+          "107,271": 1,
+          "176,576": 1,
+          "399,484": 1,
+          "225,581": 1,
+          "344,284": 1,
+          "106,414": 1,
+          "362,470": 1,
+          "133,559": 1,
+          "396,375": 1,
+          "136,924": 1,
+          "158,216": 1,
+          "117,549": 1,
+          "185,781": 1,
+          "554,636": 1,
+          "100,916": 1,
+          "894,943": 1,
+          "102,286": 1,
+          "1,517,550": 1,
+          "180,480": 1,
+          "202,705": 1,
+          "121,582": 1,
+          "151,060": 1,
+          "227,818": 1,
+          "292,648": 1,
+          "188,856": 1,
+          "484,674": 1,
+          "545,524": 1,
+          "138,247": 1,
+          "102,313": 1,
+          "109,697": 1,
+          "166,179": 1,
+          "139,722": 1,
+          "144,126": 1,
+          "100,940": 1,
+          "276,393": 1,
+          "781,870": 1,
+          "102,743": 1,
+          "187,035": 1,
+          "158,625": 1,
+          "107,323": 1,
+          "105,166": 1,
+          "101,355": 1,
+          "124,471": 1,
+          "122,377": 1,
+          "711,470": 1,
+          "8,008,278": 1,
+          "425,257": 1,
+          "303,447": 1,
+          "149,473": 1,
+          "128,283": 1,
+          "189,594": 1,
+          "651,154": 1,
+          "151,088": 1,
+          "2,896,016": 1,
+          "407,018": 1,
+          "120,568": 1,
+          "143,560": 1,
+          "155,554": 1,
+          "222,030": 1,
+          "110,257": 1,
+          "313,619": 1,
+          "234,403": 1,
+          "276,093": 1,
+          "165,196": 1,
+          "103,455": 1,
+          "109,576": 1,
+          "360,890": 1,
+          "478,434": 1,
+          "1,144,646": 1,
+          "108,724": 1,
+          "240,055": 1,
+          "111,351": 1,
+          "195,182": 1,
+          "273,546": 1,
+          "656,652": 1,
+          "131,760": 1,
+          "173,890": 1,
+          "199,564": 1,
+          "113,726": 1,
+          "260,512": 1,
+          "540,828": 1,
+          "226,419": 1,
+          "121,780": 1,
+          "215,768": 1,
+          "331,285": 1,
+          "242,820": 1,
+          "115,488": 1,
+          "170,358": 1,
+          "108,787": 1,
+          "124,943": 1,
+          "115,965": 1,
+          "123,626": 1,
+          "393,049": 1,
+          "371,657": 1,
+          "124,966": 1,
+          "416,474": 1,
+          "596,974": 1,
+          "100,316": 1,
+          "151,580": 1,
+          "141,674": 1,
+          "382,618": 1,
+          "427,652": 1,
+          "180,150": 1,
+          "103,621": 1,
+          "572,059": 1,
+          "589,141": 1,
+          "140,030": 1,
+          "198,915": 1,
+          "529,121": 1,
+          "199,184": 1,
+          "102,746": 1,
+          "128,929": 1,
+          "185,401": 1,
+          "119,128": 1,
+          "103,717": 1,
+          "112,936": 1,
+          "108,364": 1,
+          "147,595": 1,
+          "127,427": 1,
+          "1,953,631": 1,
+          "219,773": 1,
+          "121,578": 1,
+          "255,166": 1,
+          "137,427": 1,
+          "116,278": 1,
+          "139,529": 1,
+          "735,617": 1,
+          "277,454": 1,
+          "142,990": 1,
+          "114,024": 1,
+          "506,132": 1,
+          "117,005": 1,
+          "348,189": 1,
+          "208,054": 1,
+          "112,580": 1,
+          "650,100": 1,
+          "116,670": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.pop",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "1,144,646": 1,
+          "1,188,580": 1,
+          "1,223,400": 1,
+          "1,321,045": 1,
+          "1,517,550": 1,
+          "1,953,631": 1,
+          "100,266": 1,
+          "100,316": 1,
+          "100,545": 1,
+          "100,565": 1,
+          "100,916": 1,
+          "100,940": 1,
+          "101,355": 1,
+          "102,121": 1,
+          "102,153": 1,
+          "102,286": 1,
+          "102,313": 1,
+          "102,743": 1,
+          "102,746": 1,
+          "103,298": 1,
+          "103,455": 1,
+          "103,621": 1,
+          "103,717": 1,
+          "105,080": 1,
+          "105,166": 1,
+          "105,167": 1,
+          "106,221": 1,
+          "106,414": 1,
+          "106,632": 1,
+          "107,006": 1,
+          "107,271": 1,
+          "107,323": 1,
+          "107,789": 1,
+          "108,364": 1,
+          "108,724": 1,
+          "108,787": 1,
+          "108,896": 1,
+          "109,576": 1,
+          "109,697": 1,
+          "110,257": 1,
+          "111,351": 1,
+          "111,454": 1,
+          "112,580": 1,
+          "112,936": 1,
+          "113,288": 1,
+          "113,726": 1,
+          "113,866": 1,
+          "114,024": 1,
+          "115,488": 1,
+          "115,930": 1,
+          "115,965": 1,
+          "116,278": 1,
+          "116,670": 1,
+          "116,760": 1,
+          "117,005": 1,
+          "117,083": 1,
+          "117,549": 1,
+          "118,652": 1,
+          "118,718": 1,
+          "119,128": 1,
+          "120,568": 1,
+          "120,758": 1,
+          "121,015": 1,
+          "121,578": 1,
+          "121,582": 1,
+          "121,780": 1,
+          "122,377": 1,
+          "123,626": 1,
+          "123,975": 1,
+          "124,471": 1,
+          "124,523": 1,
+          "124,943": 1,
+          "124,966": 1,
+          "126,003": 1,
+          "127,427": 1,
+          "127,743": 1,
+          "128,283": 1,
+          "128,358": 1,
+          "128,821": 1,
+          "128,929": 1,
+          "131,510": 1,
+          "131,760": 1,
+          "133,559": 1,
+          "133,936": 1,
+          "136,924": 1,
+          "137,427": 1,
+          "137,893": 1,
+          "137,946": 1,
+          "138,247": 1,
+          "139,357": 1,
+          "139,529": 1,
+          "139,722": 1,
+          "140,030": 1,
+          "141,674": 1,
+          "142,381": 1,
+          "142,990": 1,
+          "143,072": 1,
+          "143,560": 1,
+          "144,126": 1,
+          "146,437": 1,
+          "146,866": 1,
+          "147,306": 1,
+          "147,595": 1,
+          "149,080": 1,
+          "149,222": 1,
+          "149,473": 1,
+          "150,115": 1,
+          "150,624": 1,
+          "151,060": 1,
+          "151,088": 1,
+          "151,580": 1,
+          "152,082": 1,
+          "152,397": 1,
+          "155,554": 1,
+          "158,007": 1,
+          "158,216": 1,
+          "158,625": 1,
+          "161,029": 1,
+          "165,196": 1,
+          "166,179": 1,
+          "170,358": 1,
+          "173,556": 1,
+          "173,618": 1,
+          "173,890": 1,
+          "175,381": 1,
+          "176,576": 1,
+          "176,581": 1,
+          "177,648": 1,
+          "180,150": 1,
+          "180,480": 1,
+          "181,743": 1,
+          "183,133": 1,
+          "184,256": 2,
+          "185,401": 1,
+          "185,776": 1,
+          "185,781": 1,
+          "185,787": 1,
+          "185,951": 1,
+          "187,035": 1,
+          "188,856": 1,
+          "189,594": 1,
+          "191,615": 1,
+          "194,973": 1,
+          "195,182": 1,
+          "195,629": 1,
+          "196,086": 1,
+          "197,790": 1,
+          "197,800": 1,
+          "198,682": 1,
+          "198,915": 1,
+          "199,184": 1,
+          "199,564": 1,
+          "2,896,016": 1,
+          "200,145": 1,
+          "201,568": 1,
+          "202,705": 1,
+          "203,413": 1,
+          "205,727": 1,
+          "208,054": 1,
+          "215,768": 1,
+          "217,074": 1,
+          "218,812": 1,
+          "219,773": 1,
+          "222,030": 1,
+          "223,891": 1,
+          "225,581": 1,
+          "226,419": 1,
+          "227,818": 1,
+          "234,403": 1,
+          "240,055": 1,
+          "242,820": 1,
+          "243,771": 1,
+          "247,057": 1,
+          "248,232": 1,
+          "255,166": 1,
+          "256,231": 1,
+          "260,283": 1,
+          "260,512": 1,
+          "273,546": 1,
+          "276,093": 1,
+          "276,393": 1,
+          "277,454": 1,
+          "287,151": 1,
+          "292,648": 1,
+          "3,694,820": 1,
+          "303,447": 1,
+          "313,619": 1,
+          "328,014": 1,
+          "331,285": 1,
+          "332,969": 1,
+          "334,563": 1,
+          "337,977": 1,
+          "344,284": 1,
+          "348,189": 1,
+          "360,890": 1,
+          "362,470": 1,
+          "371,657": 1,
+          "382,618": 1,
+          "390,007": 1,
+          "393,049": 1,
+          "396,375": 1,
+          "399,484": 1,
+          "407,018": 1,
+          "416,474": 1,
+          "425,257": 1,
+          "427,652": 1,
+          "441,545": 1,
+          "448,607": 1,
+          "461,552": 1,
+          "478,403": 1,
+          "478,434": 1,
+          "484,674": 1,
+          "486,699": 1,
+          "506,132": 1,
+          "529,121": 1,
+          "534,694": 1,
+          "540,828": 1,
+          "545,524": 1,
+          "554,636": 1,
+          "563,662": 1,
+          "572,059": 1,
+          "589,141": 1,
+          "596,974": 1,
+          "650,100": 1,
+          "651,154": 1,
+          "656,652": 1,
+          "711,470": 1,
+          "735,617": 1,
+          "776,733": 1,
+          "781,870": 1,
+          "8,008,278": 1,
+          "894,943": 1,
+          "951,270": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "pop"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        234
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        233
+      ],
+      [
+        "herfindahl",
+        0.00431002995105559
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "951,270"
+      ],
+      [
+        "mid",
+        "951,270"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "pop"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.median",
+    [
+      "44.71",
+      44.71
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.mean",
+    [
+      "43.081452991453",
+      43.08145299145299
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.mode",
+    [
+      "21.93",
+      [
+        43.46,
+        21.93,
+        57.55,
+        28.29,
+        61.42
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.max",
+    [
+      "86",
+      86.0
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.min",
+    [
+      "6.04",
+      6.04
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.nature",
+    [
+      "percent",
+      "ordinal"
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.conservatism.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.conservatism",
+    [
+      [
+        "variableName",
+        "conservatism"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        234
+      ],
+      [
+        "uniqueCount",
+        226
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          32.0,
+          38.93,
+          41.64,
+          38.66,
+          43.05
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        14.839261359922236
+      ],
+      [
+        "herfindahlIndex",
+        0.0047783609336540436
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          5.704141125315942,
+          7.349686385507129,
+          8.995231645698315,
+          10.640776905889501,
+          12.286322166080687,
+          13.931867426271873,
+          15.57741268646306,
+          17.222957946654248,
+          18.868503206845432,
+          20.514048467036616,
+          22.159593727227804,
+          23.805138987418992,
+          25.450684247610177,
+          27.09622950780136,
+          28.74177476799255,
+          30.387320028183737,
+          32.03286528837492,
+          33.678410548566106,
+          35.32395580875729,
+          36.96950106894848,
+          38.615046329139666,
+          40.26059158933085,
+          41.90613684952204,
+          43.55168210971323,
+          45.19722736990441,
+          46.842772630095595,
+          48.48831789028678,
+          50.13386315047797,
+          51.779408410669156,
+          53.42495367086034,
+          55.07049893105153,
+          56.716044191242716,
+          58.3615894514339,
+          60.007134711625085,
+          61.65267997181627,
+          63.29822523200746,
+          64.94377049219864,
+          66.58931575238984,
+          68.23486101258102,
+          69.8804062727722,
+          71.52595153296339,
+          73.17149679315457,
+          74.81704205334576,
+          76.46258731353694,
+          78.10813257372814,
+          79.75367783391933,
+          81.39922309411051,
+          83.0447683543017,
+          84.69031361449288,
+          86.33585887468406
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.0021909206699603284,
+          0.002773355162053157,
+          0.0033837860164073405,
+          0.004045913528275864,
+          0.004798345779884137,
+          0.00567034750981796,
+          0.006662644221091338,
+          0.007746200687759393,
+          0.00887781069484618,
+          0.010018867567854752,
+          0.011143233613034036,
+          0.012231026662603377,
+          0.01325737279917141,
+          0.01418921937465197,
+          0.0149973853278996,
+          0.015680015366881052,
+          0.01628398264583688,
+          0.016907856691808037,
+          0.017676843172794665,
+          0.018694748252175646,
+          0.019992433452544537,
+          0.021497025979478276,
+          0.023038446753143527,
+          0.024394655863076757,
+          0.02536141160213829,
+          0.025820748244337256,
+          0.025778400232555215,
+          0.02534885041156387,
+          0.024689306302668485,
+          0.023912327272088175,
+          0.023023339213269226,
+          0.021919464302985713,
+          0.020452636845461176,
+          0.01852307631878544,
+          0.016152137554774192,
+          0.013496384121302659,
+          0.010798461435445947,
+          0.008303861713215814,
+          0.006186490842559307,
+          0.004514512182685299,
+          0.003262065756629285,
+          0.0023497885558787365,
+          0.001688964231718228,
+          0.0012102898312983167,
+          0.0008710423237106066,
+          0.0006459950734291704,
+          0.000513257241176068,
+          0.0004453184140768959,
+          0.0004098113280143947,
+          0.00037754259910748885
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          6.04,
+          7.671836734693877,
+          9.303673469387755,
+          10.935510204081632,
+          12.56734693877551,
+          14.199183673469388,
+          15.831020408163266,
+          17.462857142857143,
+          19.09469387755102,
+          20.726530612244897,
+          22.358367346938774,
+          23.99020408163265,
+          25.62204081632653,
+          27.253877551020405,
+          28.885714285714283,
+          30.51755102040816,
+          32.14938775510204,
+          33.78122448979592,
+          35.413061224489795,
+          37.04489795918367,
+          38.67673469387755,
+          40.308571428571426,
+          41.9404081632653,
+          43.57224489795918,
+          45.20408163265306,
+          46.835918367346935,
+          48.46775510204081,
+          50.09959183673469,
+          51.731428571428566,
+          53.36326530612244,
+          54.99510204081632,
+          56.6269387755102,
+          58.258775510204075,
+          59.89061224489795,
+          61.52244897959183,
+          63.154285714285706,
+          64.78612244897958,
+          66.41795918367346,
+          68.04979591836734,
+          69.68163265306121,
+          71.3134693877551,
+          72.94530612244898,
+          74.57714285714286,
+          76.20897959183674,
+          77.84081632653061,
+          79.47265306122449,
+          81.10448979591837,
+          82.73632653061225,
+          84.36816326530612,
+          86.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.004273504273504274,
+          0.01282051282051282,
+          0.01282051282051282,
+          0.02564102564102564,
+          0.02564102564102564,
+          0.03418803418803419,
+          0.038461538461538464,
+          0.05982905982905983,
+          0.06837606837606838,
+          0.0811965811965812,
+          0.10683760683760683,
+          0.11965811965811966,
+          0.1452991452991453,
+          0.1581196581196581,
+          0.19658119658119658,
+          0.21367521367521367,
+          0.2564102564102564,
+          0.28205128205128205,
+          0.3034188034188034,
+          0.32051282051282054,
+          0.358974358974359,
+          0.38461538461538464,
+          0.41025641025641024,
+          0.4700854700854701,
+          0.5085470085470085,
+          0.5555555555555556,
+          0.6068376068376068,
+          0.6666666666666666,
+          0.6923076923076923,
+          0.717948717948718,
+          0.7649572649572649,
+          0.7991452991452992,
+          0.8461538461538461,
+          0.8760683760683761,
+          0.9273504273504274,
+          0.9529914529914529,
+          0.9658119658119658,
+          0.9700854700854701,
+          0.9786324786324786,
+          0.9829059829059829,
+          0.9871794871794872,
+          0.9914529914529915,
+          0.9914529914529915,
+          0.9957264957264957,
+          0.9957264957264957,
+          0.9957264957264957,
+          0.9957264957264957,
+          0.9957264957264957,
+          0.9957264957264957,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.conservatism",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -7.41652357801249,
+          -5.23544098299157,
+          -3.05435838797065,
+          -0.873275792949733,
+          1.30780680207118,
+          3.4888893970921,
+          5.66997199211302,
+          7.85105458713394,
+          10.0321371821549,
+          12.2132197771758,
+          14.3943023721967,
+          16.5753849672176,
+          18.7564675622385,
+          20.9375501572594,
+          23.1186327522804,
+          25.2997153473013,
+          27.4807979423222,
+          29.6618805373431,
+          31.842963132364,
+          34.024045727385,
+          36.2051283224059,
+          38.3862109174268,
+          40.5672935124477,
+          42.7483761074686,
+          44.9294587024895,
+          47.1105412975105,
+          49.2916238925314,
+          51.4727064875523,
+          53.6537890825732,
+          55.8348716775941,
+          58.015954272615,
+          60.197036867636,
+          62.3781194626569,
+          64.5592020576778,
+          66.7402846526987,
+          68.9213672477196,
+          71.1024498427406,
+          73.2835324377615,
+          75.4646150327824,
+          77.6456976278033,
+          79.8267802228242,
+          82.0078628178451,
+          84.1889454128661,
+          86.370028007887,
+          88.5511106029079,
+          90.7321931979288,
+          92.9132757929497,
+          95.0943583879707,
+          97.2754409829916,
+          99.4565235780125
+        ]
+      ],
+      [
+        "ploty",
+        [
+          9.2272915780756e-06,
+          3.83568599838108e-05,
+          0.000128577408806802,
+          0.00034812440682419,
+          0.000768084557842052,
+          0.00140135857476772,
+          0.00216536603896695,
+          0.00294625122505505,
+          0.00373158478872261,
+          0.00464861508268529,
+          0.00583018508452625,
+          0.00726324412425655,
+          0.00880759910608253,
+          0.0103412146595449,
+          0.0118305304446173,
+          0.0132561483878747,
+          0.0145294664371874,
+          0.0155285239071528,
+          0.0162449099624838,
+          0.0169086130086492,
+          0.0179187212045112,
+          0.019571656816238,
+          0.0217896346106543,
+          0.0240757882005053,
+          0.0257511546634836,
+          0.0263461585236344,
+          0.0258990089171908,
+          0.0249041219026019,
+          0.0238649431240386,
+          0.0228098976485917,
+          0.021264708342752,
+          0.0187294671928271,
+          0.0152018779856585,
+          0.0112678698782707,
+          0.00771033880054601,
+          0.00502043487704737,
+          0.00323369070162554,
+          0.00210164401368124,
+          0.00135628827006415,
+          0.000853635113276503,
+          0.000555798513336107,
+          0.000435003106385346,
+          0.000415058873189928,
+          0.00039770951870572,
+          0.000327810284465364,
+          0.00021900187163804,
+          0.000116441216018398,
+          4.89892738243418e-05,
+          1.62801092989927e-05,
+          4.2870668745885e-06
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          6.04,
+          7.67183673469388,
+          9.30367346938776,
+          10.9355102040816,
+          12.5673469387755,
+          14.1991836734694,
+          15.8310204081633,
+          17.4628571428571,
+          19.094693877551,
+          20.7265306122449,
+          22.3583673469388,
+          23.9902040816327,
+          25.6220408163265,
+          27.2538775510204,
+          28.8857142857143,
+          30.5175510204082,
+          32.149387755102,
+          33.7812244897959,
+          35.4130612244898,
+          37.0448979591837,
+          38.6767346938775,
+          40.3085714285714,
+          41.9404081632653,
+          43.5722448979592,
+          45.2040816326531,
+          46.8359183673469,
+          48.4677551020408,
+          50.0995918367347,
+          51.7314285714286,
+          53.3632653061224,
+          54.9951020408163,
+          56.6269387755102,
+          58.2587755102041,
+          59.890612244898,
+          61.5224489795918,
+          63.1542857142857,
+          64.7861224489796,
+          66.4179591836735,
+          68.0497959183673,
+          69.6816326530612,
+          71.3134693877551,
+          72.945306122449,
+          74.5771428571429,
+          76.2089795918367,
+          77.8408163265306,
+          79.4726530612245,
+          81.1044897959184,
+          82.7363265306122,
+          84.3681632653061,
+          86
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00427350427350427,
+          0.0128205128205128,
+          0.0128205128205128,
+          0.0256410256410256,
+          0.0256410256410256,
+          0.0341880341880342,
+          0.0384615384615385,
+          0.0598290598290598,
+          0.0683760683760684,
+          0.0811965811965812,
+          0.106837606837607,
+          0.11965811965812,
+          0.145299145299145,
+          0.158119658119658,
+          0.196581196581197,
+          0.213675213675214,
+          0.256410256410256,
+          0.282051282051282,
+          0.303418803418803,
+          0.320512820512821,
+          0.358974358974359,
+          0.384615384615385,
+          0.41025641025641,
+          0.47008547008547,
+          0.508547008547009,
+          0.555555555555556,
+          0.606837606837607,
+          0.666666666666667,
+          0.692307692307692,
+          0.717948717948718,
+          0.764957264957265,
+          0.799145299145299,
+          0.846153846153846,
+          0.876068376068376,
+          0.927350427350427,
+          0.952991452991453,
+          0.965811965811966,
+          0.97008547008547,
+          0.978632478632479,
+          0.982905982905983,
+          0.987179487179487,
+          0.991452991452991,
+          0.991452991452991,
+          0.995726495726496,
+          0.995726495726496,
+          0.995726495726496,
+          0.995726495726496,
+          0.995726495726496,
+          0.995726495726496,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "conservatism"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        234
+      ],
+      [
+        "sd",
+        "14.8392613599222"
+      ],
+      [
+        "uniques",
+        226
+      ],
+      [
+        "herfindahl",
+        0.00456570969391482
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "6.04"
+      ],
+      [
+        "mid",
+        "6.04"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "conservatism"
+      ],
+      [
+        "defaultInterval",
+        "continuous"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "percent"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:30:19",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "city": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "state": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "pop": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "conservatism": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,6781 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        1002
+      ],
+      [
+        "variableCount",
+        10
+      ],
+      [
+        "dataSource",
+        {
+          "name": "BZ9Z2D_consanguinity.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 85620
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.municipality.mode",
+    [
+      "Marau",
+      [
+        "Toledo",
+        "Araruna",
+        "Indianopolis",
+        "Santo Antonio",
+        "Itabaiana"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.municipality.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.municipality.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.municipality",
+    [
+      [
+        "variableName",
+        "municipality"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        1002
+      ],
+      [
+        "uniqueCount",
+        992
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          "Assis",
+          "Carpina",
+          "Aroeiras",
+          "Camacari",
+          "Reserva"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.0010179242313775644
+      ],
+      [
+        "plotValues",
+        {
+          "Araruna": 2,
+          "Alagoinha": 2,
+          "Toledo": 2,
+          "Bom Jardim": 2,
+          "Valenca": 2,
+          "Indianopolis": 2,
+          "Marau": 2,
+          "Santo Antonio": 2,
+          "Itapecerica": 2,
+          "Itabaiana": 2,
+          "Itapui": 1,
+          "Ouricuri": 1,
+          "Pedralva": 1,
+          "Jaborandi": 1,
+          "Nilo Pecanha": 1,
+          "Vinhedo": 1,
+          "Tocantins": 1,
+          "Nazare": 1,
+          "Itacare": 1,
+          "Pompeu": 1,
+          "Vertentes": 1,
+          "Nova Ponte": 1,
+          "Silvianopolis": 1,
+          "Paulistana": 1,
+          "Carlos Chagas": 1,
+          "Socorro": 1,
+          "Itabuna": 1,
+          "Petrolina": 1,
+          "Virginia": 1,
+          "Valinhos": 1,
+          "Pitangueiras": 1,
+          "Pirai": 1,
+          "Almirante Tamandare": 1,
+          "Itajuba": 1,
+          "Ibitinga": 1,
+          "Cordeiropolis": 1,
+          "Conceicao da Aparecida": 1,
+          "Sarandi": 1,
+          "Jerumenha": 1,
+          "Carmo do Rio Claro": 1,
+          "Monte Alto": 1,
+          "Orobo": 1,
+          "Sete Lagoas": 1,
+          "Santa Adelia": 1,
+          "Itambacuri": 1,
+          "Itirapina": 1,
+          "Passo Fundo": 1,
+          "Cascalho Rico": 1,
+          "Presidente Venceslau": 1,
+          "Monte Mor": 1,
+          "Bilac": 1,
+          "Itutinga": 1,
+          "Sao Joao do Triunfo": 1,
+          "Conquista": 1,
+          "Nova Petropolis": 1,
+          "Aguas de Lindoia": 1,
+          "Sao Lourenco": 1,
+          "Sao Goncalo do Abaete": 1,
+          "Jordania": 1,
+          "Arceburgo": 1,
+          "Guanambi": 1,
+          "Nazare da Mata": 1,
+          "Campos Novos Paulista": 1,
+          "Jaguariuna": 1,
+          "Guaxupe": 1,
+          "Candelaria": 1,
+          "Sabara": 1,
+          "Jurema": 1,
+          "Guaicara": 1,
+          "Lupercio": 1,
+          "Torres": 1,
+          "Cabreuva": 1,
+          "Betim": 1,
+          "Itabaianinha.Tomar do Geru": 1,
+          "Caicara": 1,
+          "Lajeado": 1,
+          "Leopolis": 1,
+          "Ibicarai": 1,
+          "Registro": 1,
+          "Itubera": 1,
+          "Barra Mansa": 1,
+          "Erechim": 1,
+          "Capetinga": 1,
+          "Colina": 1,
+          "Itainopolis": 1,
+          "Echapora": 1,
+          "Joanopolis": 1,
+          "Flores da Cunha": 1,
+          "Bernardino de Campos": 1,
+          "Maraba Paulista": 1,
+          "Itariri": 1,
+          "Alpinopolis": 1,
+          "Cruz do Espirito Santo": 1,
+          "Irara": 1,
+          "Santa Cruz do Sul": 1,
+          "Prata": 1,
+          "Ariranha": 1,
+          "Piui": 1,
+          "Formiga": 1,
+          "Macaparana": 1,
+          "Campina Grande do Sul": 1,
+          "Sao Goncalo do Sapucai": 1,
+          "Sanharo": 1,
+          "Bituruna": 1,
+          "Eugenopolis": 1,
+          "Abaete": 1,
+          "Rolante": 1,
+          "Palmeiras": 1,
+          "Abatia": 1,
+          "Pedra Azul": 1,
+          "Simoes": 1,
+          "Carmo": 1,
+          "Para de Minas": 1,
+          "Ilheus": 1,
+          "Lavras": 1,
+          "Saquarema": 1,
+          "Cairu": 1,
+          "Morada Nova de Minas": 1,
+          "Claraval": 1,
+          "Riacho de Santana": 1,
+          "Contenda": 1,
+          "Itatiba": 1,
+          "Botelhos": 1,
+          "Rio do Prado": 1,
+          "Coroados": 1,
+          "Guaraci": 1,
+          "Paulo de Faria": 1,
+          "Olimpia": 1,
+          "Ibirarema": 1,
+          "Caxambu": 1,
+          "Wenceslau Braz": 1,
+          "Franco da Rocha": 1,
+          "Duas Barras": 1,
+          "Almenara": 1,
+          "Carmo do Cajuru": 1,
+          "Maraial": 1,
+          "Neves Paulista": 1,
+          "Buique": 1,
+          "Cassia": 1,
+          "Ribeiro Goncalves": 1,
+          "Agua Preta": 1,
+          "Visconde do Rio Branco": 1,
+          "Palestina": 1,
+          "Veranopolis": 1,
+          "Ribeirao do Pinhal": 1,
+          "Jacinto": 1,
+          "Itajuipe": 1,
+          "Rio Acima": 1,
+          "Bom Despacho": 1,
+          "Cabo Frio": 1,
+          "Cabrobo": 1,
+          "Paripiranga": 1,
+          "Rio Real": 1,
+          "Dom Vicoso": 1,
+          "Marilia": 1,
+          "Sao Sebastiao do Paraiso": 1,
+          "Itaju": 1,
+          "Tres Coracoes": 1,
+          "Floriano": 1,
+          "Nipoa": 1,
+          "Tapes": 1,
+          "Cruzilia": 1,
+          "Coqueiral": 1,
+          "Sao Felipe": 1,
+          "Avai": 1,
+          "Nossa Senhora das Dores.Cumbe.Siriri": 1,
+          "Quipapa": 1,
+          "Teixeira Soares": 1,
+          "Ituiutaba": 1,
+          "Mogi-Mirim": 1,
+          "Rio Paranaiba": 1,
+          "Manduri": 1,
+          "Alfenas": 1,
+          "Morro do Chapeu": 1,
+          "Muritiba": 1,
+          "Pote": 1,
+          "Frutal": 1,
+          "Promissao": 1,
+          "Laranjeiras do Sul": 1,
+          "Monte Carmelo": 1,
+          "Nilopolis": 1,
+          "Lins": 1,
+          "Ponta Grossa": 1,
+          "Sao Jose dos Pinhais": 1,
+          "Foz do iguacu": 1,
+          "Taiacu": 1,
+          "Novo Cruzeiro": 1,
+          "Itapolis": 1,
+          "Carlopolis": 1,
+          "Caetite": 1,
+          "Tres Rios": 1,
+          "Irapua": 1,
+          "Bebedouro": 1,
+          "Picos": 1,
+          "Ubata": 1,
+          "Taquaritinga do Norte": 1,
+          "Capanema": 1,
+          "Oeiras": 1,
+          "Osorio": 1,
+          "Campanha": 1,
+          "Braganca Paulista": 1,
+          "Tres Pontas": 1,
+          "Pedro de Toledo": 1,
+          "Piraju": 1,
+          "Cachoeiras de Macacu": 1,
+          "Pocos de Caldas": 1,
+          "Guaranta": 1,
+          "Nova Prata": 1,
+          "Papagaios": 1,
+          "Pains": 1,
+          "Quata": 1,
+          "Palmares": 1,
+          "Rondon": 1,
+          "Guarani": 1,
+          "Suzano": 1,
+          "Irati": 1,
+          "Taiuva": 1,
+          "Bom Conselho": 1,
+          "Torrinha": 1,
+          "Guapore": 1,
+          "Panelas": 1,
+          "Presidente Bernardes": 1,
+          "Piraquara": 1,
+          "General Camara": 1,
+          "Andradas": 1,
+          "Fernandopolis": 1,
+          "Vassouras": 1,
+          "Jales": 1,
+          "Aguas Formosas": 1,
+          "Sao Bento do Una": 1,
+          "Paraiba do Sul": 1,
+          "Itaquaquecetuba": 1,
+          "Icem": 1,
+          "Lagoa dos Gatos": 1,
+          "Pirajuba": 1,
+          "Bariri": 1,
+          "Bento de Abreu": 1,
+          "Itu": 1,
+          "Moema": 1,
+          "Cataguases": 1,
+          "Indaiatuba": 1,
+          "Eldorado": 1,
+          "Corumbatai": 1,
+          "Lagarto": 1,
+          "Juruaia": 1,
+          "Presidente Alves": 1,
+          "Centralina": 1,
+          "Juquia": 1,
+          "Pirassununga": 1,
+          "Uchoa": 1,
+          "Queimadas": 1,
+          "Estiva": 1,
+          "Rancharia": 1,
+          "Campos Altos": 1,
+          "Lapa": 1,
+          "Guariba": 1,
+          "Platina": 1,
+          "Itaocara": 1,
+          "Sao Pedro da Aldeia": 1,
+          "Avare": 1,
+          "Pimenta": 1,
+          "Condeuba": 1,
+          "Ipira": 1,
+          "Tomazina": 1,
+          "Aguas de Sao Pedro": 1,
+          "Malacacheta": 1,
+          "Ilicinea": 1,
+          "Aracaju.Barra dos Coqueiros": 1,
+          "Itamogi": 1,
+          "Sao Jeronimo da Serra": 1,
+          "Sao Manuel": 1,
+          "Itanhaem": 1,
+          "General Salgado": 1,
+          "Ibiuna": 1,
+          "Brumado": 1,
+          "Itatinga": 1,
+          "Caravelas": 1,
+          "Alagoinhas": 1,
+          "Guaraniacu": 1,
+          "Livramento do Brumado": 1,
+          "Paraiso": 1,
+          "Ribeirao Claro": 1,
+          "Serrita": 1,
+          "Ilhabela": 1,
+          "Guiricema": 1,
+          "Cantagalo": 1,
+          "Murutinga do Sul": 1,
+          "Corrego Danta": 1,
+          "Feira de Santana": 1,
+          "Lajedo": 1,
+          "Jequitinhonha": 1,
+          "Cruzeiro do Oeste": 1,
+          "Galia": 1,
+          "Campo do Meio": 1,
+          "Sao Joao Batista do Gloria": 1,
+          "Jaguarari": 1,
+          "Conchal": 1,
+          "Sao Felix": 1,
+          "Iguatama": 1,
+          "Borborema": 1,
+          "Pirajui": 1,
+          "Riolandia": 1,
+          "Mangueirinha": 1,
+          "Brejo da Madre de Deus": 1,
+          "Vargem Bonita": 1,
+          "Campo Largo": 1,
+          "Cerro Azul": 1,
+          "Salto": 1,
+          "Lencois Paulista": 1,
+          "Arcos": 1,
+          "Mogi das Cruzes": 1,
+          "Cacule": 1,
+          "Ruy Barbosa": 1,
+          "Araras": 1,
+          "Nova Soure": 1,
+          "Ne\u00f3polis.Brejo Grande.Pacatuba.Ilha das Fl\u00f4res": 1,
+          "Lencois": 1,
+          "Caiua": 1,
+          "Pocao": 1,
+          "Porto Alegre": 1,
+          "Macatuba": 1,
+          "Alterosa": 1,
+          "Uniao da Vitoria": 1,
+          "Mamanguape": 1,
+          "Santa Barbara d'Oeste": 1,
+          "Belmonte": 1,
+          "Nova Iguacu": 1,
+          "Santa Rita de Caldas": 1,
+          "Santa Cruz do Rio Pardo": 1,
+          "Guararapes": 1,
+          "Caiabu": 1,
+          "Tapejara": 1,
+          "Alvares Florence": 1,
+          "Nao-me-toque": 1,
+          "Tabapua": 1,
+          "Capivari": 1,
+          "Maria da Fe": 1,
+          "Canavieiras": 1,
+          "Siqueira Campos": 1,
+          "Serra Redonda": 1,
+          "Marica": 1,
+          "Monte Azul Paulista": 1,
+          "Eloi Mendes": 1,
+          "Anhumas": 1,
+          "Urucuca": 1,
+          "Cambui": 1,
+          "Palma": 1,
+          "Duartina": 1,
+          "Lagoa Santa": 1,
+          "Novo Hamburgo": 1,
+          "Lucianopolis": 1,
+          "Aquidab\u00e3.Canhoba.Gracho Cardoso": 1,
+          "Araujos": 1,
+          "Botucatu": 1,
+          "Araraquara": 1,
+          "Planalto": 1,
+          "Potiragua": 1,
+          "Mallet": 1,
+          "Extrema": 1,
+          "Balbinos": 1,
+          "Timbauba": 1,
+          "Baependi": 1,
+          "Peabiru": 1,
+          "Amparo": 1,
+          "Conceicao do Rio Verde": 1,
+          "Itambaraca": 1,
+          "Rio De Janeiro": 1,
+          "Cupira": 1,
+          "Guaira": 1,
+          "Ouro Fino": 1,
+          "Cajobi": 1,
+          "Macajuba": 1,
+          "Americana": 1,
+          "Bom Jesus": 1,
+          "Triunfo": 1,
+          "Prudentopolis": 1,
+          "Indaia": 1,
+          "Birigui": 1,
+          "Rio Claro": 1,
+          "Matao": 1,
+          "Propri\u00e1.Amparo de S\u00e3o Francisco.Cedro de S\u00e3o Jo\u00e3o": 1,
+          "Laranjal": 1,
+          "Fartura": 1,
+          "Monte Siao": 1,
+          "Solanea": 1,
+          "Barreiros": 1,
+          "Santa Fe do Sul": 1,
+          "Penapolis": 1,
+          "Dores do Indaia": 1,
+          "Itajobi": 1,
+          "Quartel Geral": 1,
+          "Pirangi": 1,
+          "Guia Lopes": 1,
+          "Palmas": 1,
+          "Araucaria": 1,
+          "Limoeiro": 1,
+          "Patrocinio do Muriae": 1,
+          "Recreio": 1,
+          "Santa Cruz Cabralia": 1,
+          "Venancio Aires": 1,
+          "Candido de Abreu": 1,
+          "Nova Friburgo": 1,
+          "Pirai do Sul": 1,
+          "Charqueada": 1,
+          "Nanuque": 1,
+          "Laranjeiras.Nossa Senhora do Socorro": 1,
+          "Crucilandia": 1,
+          "Clevelandia": 1,
+          "Custodia": 1,
+          "Americo de Campos": 1,
+          "Joaima": 1,
+          "Agudos": 1,
+          "Aguas Belas": 1,
+          "Itiuba": 1,
+          "Pitangui": 1,
+          "Buquim.Pedrinhas": 1,
+          "Delfim Moreira": 1,
+          "Vacaria": 1,
+          "Santa Luzia do Itanhy.Indiaroba.Umba\u00faba": 1,
+          "Una": 1,
+          "Francisco Beltrao": 1,
+          "Santos": 1,
+          "Alfredo Marcondes": 1,
+          "Cipo": 1,
+          "Esplanada": 1,
+          "Quatigua": 1,
+          "Brauna": 1,
+          "Jaboticabal": 1,
+          "Virgem da Lapa": 1,
+          "Catanduva": 1,
+          "Sim\u00e3o Dias.Po\u00e7o Verde": 1,
+          "Uru": 1,
+          "Alcobaca": 1,
+          "Itavera": 1,
+          "Salto Grande": 1,
+          "Serra Negra": 1,
+          "Novo Horizonte": 1,
+          "Sumidouro": 1,
+          "Sao Jose do Alegre": 1,
+          "Corrego do Bom Jesus": 1,
+          "Piracaia": 1,
+          "Carvalhos": 1,
+          "Encruzilhada do Sul": 1,
+          "Surubim": 1,
+          "Pirapozinho": 1,
+          "Conde": 1,
+          "Machado": 1,
+          "Bom Repouso": 1,
+          "Agua Comprida": 1,
+          "Santo Antonio da Platina": 1,
+          "Cascavel": 1,
+          "Caete": 1,
+          "Jesuania": 1,
+          "Itaueira": 1,
+          "Jacutinga": 1,
+          "Cachoeira": 1,
+          "Cruz Machado": 1,
+          "Pereira Barreto": 1,
+          "Pirauba": 1,
+          "Sao Pedro": 1,
+          "Gloria": 1,
+          "Paramirim": 1,
+          "Coracao de Maria": 1,
+          "Assai": 1,
+          "Pedreira": 1,
+          "Piratininga": 1,
+          "Pedras de Fogo": 1,
+          "Riachao do Jacuipe": 1,
+          "Rubiacea": 1,
+          "Igaracu do Tiete": 1,
+          "Jundiai": 1,
+          "Rio Novo": 1,
+          "Guapiacu": 1,
+          "Ubaitaba": 1,
+          "Fronteiras": 1,
+          "Iracemapolis": 1,
+          "Iacanga": 1,
+          "Heliodora": 1,
+          "Capinopolis": 1,
+          "Auriflama": 1,
+          "Curaca": 1,
+          "Castilho": 1,
+          "Curitiba": 1,
+          "Monte Alegre de Minas": 1,
+          "Mirai": 1,
+          "Alianca": 1,
+          "Brotas": 1,
+          "Muzambinho": 1,
+          "Morretes": 1,
+          "Sao Sebastiao": 1,
+          "Miguel Calmon": 1,
+          "Itaporanga D'Ajuda.Salgado": 1,
+          "Guararema": 1,
+          "Cafelandia": 1,
+          "Garanhuns": 1,
+          "Poco Fundo": 1,
+          "Santa Barbara do Rio Pardo": 1,
+          "Irece": 1,
+          "Ipaucu": 1,
+          "Mata de Sao Joao": 1,
+          "Curiuva": 1,
+          "Bananeiras": 1,
+          "Indiapora": 1,
+          "Gararu.Itabi": 1,
+          "Estrela do Sul": 1,
+          "Sao Gotardo": 1,
+          "Umbuzeiro": 1,
+          "Chopinzinho": 1,
+          "Niteroi": 1,
+          "Gramado": 1,
+          "Estrela d'Oeste": 1,
+          "Capela.Malhada dos Bois.Muribeca": 1,
+          "Arapoti": 1,
+          "Cornelio Procopio": 1,
+          "Timburi": 1,
+          "Itapira": 1,
+          "Ribeirao Bonito": 1,
+          "Carazinho": 1,
+          "Piloes": 1,
+          "Leme": 1,
+          "Uba": 1,
+          "Piata": 1,
+          "Guarapuava": 1,
+          "Julio Mesquita": 1,
+          "Viradouro": 1,
+          "Montenegro": 1,
+          "Cosmopolis": 1,
+          "Santa Rita do Sapucai": 1,
+          "Jacupiranga": 1,
+          "Ferraz de Vasconcelos": 1,
+          "Miracatu": 1,
+          "Sao Vicente": 1,
+          "Camamu": 1,
+          "Canhotinho": 1,
+          "Castro": 1,
+          "Campos Gerais": 1,
+          "Tibagi": 1,
+          "Utinga": 1,
+          "Caraguatatuba": 1,
+          "Apiai": 1,
+          "Riachuelo.Divina Pastora.Malhador.Santa Rosa de Lima": 1,
+          "Sumare": 1,
+          "Joao Pessoa": 1,
+          "Dois Corregos": 1,
+          "Cabralia Paulista": 1,
+          "Bauru": 1,
+          "Aparecida do Norte": 1,
+          "Igapora": 1,
+          "Santa Amelia": 1,
+          "Cordeiro": 1,
+          "Monte Santo": 1,
+          "Pedro Leopoldo": 1,
+          "Careacu": 1,
+          "Exu": 1,
+          "Conceicao da Feira": 1,
+          "Buritama": 1,
+          "Ituacu": 1,
+          "Ibiraci": 1,
+          "Andira": 1,
+          "Volta Redonda": 1,
+          "Correntes": 1,
+          "Taciba": 1,
+          "Farroupilha": 1,
+          "Munhoz": 1,
+          "Itapecerica da Serra": 1,
+          "Simplicio Mendes": 1,
+          "Alvares Machado": 1,
+          "Guaratuba": 1,
+          "Guarabira": 1,
+          "Ourinhos": 1,
+          "Guaimbe": 1,
+          "Tremedal": 1,
+          "Divisa Nova": 1,
+          "Baixa Grande": 1,
+          "Sao Goncalo": 1,
+          "Aiuruoca": 1,
+          "Estrela": 1,
+          "Barra Bonita": 1,
+          "Sao Pedro da Uniao": 1,
+          "Sabino": 1,
+          "Catu": 1,
+          "Severinia": 1,
+          "Muriae": 1,
+          "Mundo Novo": 1,
+          "Senhor do Bonfim": 1,
+          "Sao Tomas de Aquino": 1,
+          "Palmeirina": 1,
+          "Taquaritinga": 1,
+          "Paulo Frontin": 1,
+          "Sao Jose do Rio Preto": 1,
+          "Nova Resende": 1,
+          "Reboucas": 1,
+          "Conceicao do Caninde": 1,
+          "Entre Rios": 1,
+          "Pederneiras": 1,
+          "Conceicao dos Ouros": 1,
+          "Sape": 1,
+          "Sao Roque": 1,
+          "Sananduva": 1,
+          "Iturama": 1,
+          "Mirante do Paranapanema": 1,
+          "Porto Amazonas": 1,
+          "Machacalis": 1,
+          "Coronel Murta": 1,
+          "Bodoco": 1,
+          "Cachoeira de Minas": 1,
+          "Teofilo Otoni": 1,
+          "Sao Geraldo": 1,
+          "Oleo": 1,
+          "Uberlandia": 1,
+          "Sapucaia": 1,
+          "Araguari": 1,
+          "Resende": 1,
+          "Itaguai": 1,
+          "Antonina": 1,
+          "Palmeira": 1,
+          "Mucuri": 1,
+          "Petrolandia": 1,
+          "Miradouro": 1,
+          "Camanducaia": 1,
+          "Sao Pedro do Turvo": 1,
+          "Perdigao": 1,
+          "Guaruja": 1,
+          "Itaguara": 1,
+          "Valentim Gentil": 1,
+          "Minduri": 1,
+          "Taquari": 1,
+          "Lavinia": 1,
+          "Igarassu": 1,
+          "Tiros": 1,
+          "Lutecia": 1,
+          "Guidoval": 1,
+          "Barracao": 1,
+          "Carmo de Minas": 1,
+          "Parnamirim": 1,
+          "Paraisopolis": 1,
+          "Santa Isabel": 1,
+          "Rio Azul": 1,
+          "Sao Francisco do Conde": 1,
+          "Itapagipe": 1,
+          "Cristina": 1,
+          "Catende": 1,
+          "Analandia": 1,
+          "Araripina": 1,
+          "Cotia": 1,
+          "Tambe": 1,
+          "Pato Branco": 1,
+          "Borda da Mata": 1,
+          "Monte Belo": 1,
+          "Chorrocho": 1,
+          "Jose Bonifacio": 1,
+          "Itanhandu": 1,
+          "Cambuquira": 1,
+          "Potirendaba": 1,
+          "Piquerobi": 1,
+          "Lambari": 1,
+          "Maragogipe": 1,
+          "Bento Goncalves": 1,
+          "Salinas": 1,
+          "Pouso Alegre": 1,
+          "Salvador": 1,
+          "Jaguaripe": 1,
+          "Guadalupe": 1,
+          "Monsenhor Paulo": 1,
+          "Salgueiro": 1,
+          "Iepe": 1,
+          "Santaluz": 1,
+          "Bueno Brandao": 1,
+          "Limeira": 1,
+          "Itauna": 1,
+          "Passa Quatro": 1,
+          "Jataizinho": 1,
+          "Sao Jeronimo": 1,
+          "Serranos": 1,
+          "Presidente Epitacio": 1,
+          "Santo Estevao": 1,
+          "Tucano": 1,
+          "Descalvado": 1,
+          "Casca": 1,
+          "Urucui": 1,
+          "Monte Aprazivel": 1,
+          "Ubirajara": 1,
+          "Porto Seguro": 1,
+          "Ibate": 1,
+          "Boa Esperanca do Sul": 1,
+          "Rio Bonito": 1,
+          "Fama": 1,
+          "Goiana": 1,
+          "Arealva": 1,
+          "Macaubas": 1,
+          "Riachao do Dantas": 1,
+          "Guaracai": 1,
+          "Verissimo": 1,
+          "Porto da F\u00f4lha.Canind\u00e9 de S\u00e3o Francisco.Po\u00e7o Redondo": 1,
+          "Aracatuba": 1,
+          "Tupaciguara": 1,
+          "Sao Francisco de Paula": 1,
+          "Matutina": 1,
+          "Nova Alianca": 1,
+          "Silva Jardim": 1,
+          "Cardoso": 1,
+          "Mairipora": 1,
+          "Carai": 1,
+          "Gaurama": 1,
+          "Ribeira do Pombal": 1,
+          "Congonhal": 1,
+          "Paranagua": 1,
+          "Euclides da Cunha": 1,
+          "Getulio Vargas": 1,
+          "Sao Sebastiao do Cural": 1,
+          "Santa Gertrudes": 1,
+          "Campo Florido": 1,
+          "Sao Vicente Ferrer": 1,
+          "Marcelino Ramos": 1,
+          "Bambui": 1,
+          "Porto Ferreira": 1,
+          "Jaicos": 1,
+          "Ipiau": 1,
+          "Areia": 1,
+          "Tobias Barreto": 1,
+          "Reginopolis": 1,
+          "Jau": 1,
+          "Pongai": 1,
+          "Canela": 1,
+          "Cicero Dantas": 1,
+          "Pratapolis": 1,
+          "Pesqueira": 1,
+          "Garibaldi": 1,
+          "Pilar": 1,
+          "Mirandopolis": 1,
+          "Nova Fatima": 1,
+          "Piritiba": 1,
+          "Rio das Flores": 1,
+          "Divinopolis": 1,
+          "Camaqua": 1,
+          "Inhambupe": 1,
+          "Luminarias": 1,
+          "Cosmorama": 1,
+          "Antonio Prado": 1,
+          "Macaubal": 1,
+          "Aratiba": 1,
+          "Fernando Prestes": 1,
+          "Piracicaba": 1,
+          "Bandeirantes": 1,
+          "Luz": 1,
+          "Campo Formoso": 1,
+          "Santo Antonio do Monte": 1,
+          "Santa Juliana": 1,
+          "Uniao de Caete": 1,
+          "Colombo": 1,
+          "Cedral": 1,
+          "Rio de Contas": 1,
+          "Pitanga": 1,
+          "Brazopolis": 1,
+          "Conceicao do Coite": 1,
+          "Poa": 1,
+          "Vieiras": 1,
+          "Jarinu": 1,
+          "Salto da Divisa": 1,
+          "Arcoverde": 1,
+          "Cruz das Almas": 1,
+          "Barretos": 1,
+          "Bocaina": 1,
+          "Tabatinga": 1,
+          "Martinho Campos": 1,
+          "Gravatai": 1,
+          "Cerqueira Cesar": 1,
+          "Urupes": 1,
+          "Ibira": 1,
+          "Nossa Senhora da Gl\u00f3ria.Monte Alegre de Sergipe": 1,
+          "Acajutiba": 1,
+          "Campo Mourao": 1,
+          "Urandi": 1,
+          "Aparecida": 1,
+          "Tapera": 1,
+          "Valparaiso": 1,
+          "Glicerio": 1,
+          "Magda": 1,
+          "Maracai": 1,
+          "Guaraquecaba": 1,
+          "Serrania": 1,
+          "Uberaba": 1,
+          "Uaua": 1,
+          "Canapolis": 1,
+          "Itaborai": 1,
+          "Ortigueira": 1,
+          "Engenheiro Beltrao": 1,
+          "Campo do Brito.Macambira": 1,
+          "Santa Rita": 1,
+          "Regente Feijo": 1,
+          "Sacramento": 1,
+          "Campestre": 1,
+          "Frei Paulo.Carira.Pinh\u00e3o.Ribeir\u00f3polis": 1,
+          "Tapirai": 1,
+          "Oscar Bressane": 1,
+          "Sao Sebastiao do Passe": 1,
+          "Sertaneja": 1,
+          "Jandaira": 1,
+          "Atibaia": 1,
+          "Santo Amaro": 1,
+          "Anhembi": 1,
+          "Ipuiuna": 1,
+          "Alagoa Grande": 1,
+          "Belem do Sao Francisco": 1,
+          "Itapicuru": 1,
+          "Comercinho": 1,
+          "Caxias do Sul": 1,
+          "Rio do Peixe": 1,
+          "Jundiai do Sul": 1,
+          "Sao Cristovao": 1,
+          "Varginha": 1,
+          "Sao Goncalo dos Campos": 1,
+          "Pojuca": 1,
+          "Leopoldina": 1,
+          "Joaquim Nabuco": 1,
+          "Sao Leopoldo": 1,
+          "Sao Vicente de Minas": 1,
+          "Ibaiti": 1,
+          "Rio das Pedras": 1,
+          "Cana do Reino": 1,
+          "Santo Antonio de Posse": 1,
+          "Carmo da Cachoeira": 1,
+          "Piacatu": 1,
+          "Itumirim": 1,
+          "Pindorama": 1,
+          "Itinga": 1,
+          "Angelim": 1,
+          "Araruama": 1,
+          "Japira": 1,
+          "Rincao": 1,
+          "Mirassol": 1,
+          "Imbituva": 1,
+          "Sao Francisco de Sales": 1,
+          "Natercia": 1,
+          "Guaranesia": 1,
+          "Presidente Prudente": 1,
+          "Martinopolis": 1,
+          "Passos": 1,
+          "Santa Cruz da Conceicao": 1,
+          "Itaberaba": 1,
+          "Palmas de Monte Alto": 1,
+          "Getulina": 1,
+          "Belo Jardim": 1,
+          "Esteio": 1,
+          "Balsamo": 1,
+          "Clementina": 1,
+          "Toritama": 1,
+          "Monte Alegre do Sul": 1,
+          "Campina Verde": 1,
+          "Congonhinhas": 1,
+          "Coronel Vivida": 1,
+          "Belo Horizonte": 1,
+          "Nhandeara": 1,
+          "Viamao": 1,
+          "Lagoa Vermelha": 1,
+          "Pinhalao": 1,
+          "Santa Luzia": 1,
+          "Terra Roxa": 1,
+          "Monte Santo de Minas": 1,
+          "Ipiranga": 1,
+          "Estrela do Indaia": 1,
+          "Alto Alegre": 1,
+          "Guarulhos": 1,
+          "Guape": 1,
+          "Sao Mateus do Sul": 1,
+          "Soledade de Minas": 1,
+          "Votuporanga": 1,
+          "Barra da Estiva": 1,
+          "Rio Negro": 1,
+          "Rio Branco do Sul": 1,
+          "Camacho": 1,
+          "Nepomuceno": 1,
+          "Candido Mota": 1,
+          "Pouso Alto": 1,
+          "Jacaraci": 1,
+          "Nazare Paulista": 1,
+          "Andarai": 1,
+          "Barra do Pirai": 1,
+          "Comendador Gomes": 1,
+          "Paraguacu": 1,
+          "Conceicao das Alagoas": 1,
+          "Gastao Vidigal": 1,
+          "Mateus Leme": 1,
+          "Rio Pardo": 1,
+          "Sao Sebastiao do Cai": 1,
+          "Santo Anastacio": 1,
+          "Arroio do Meio": 1,
+          "Caldas": 1,
+          "Nova Europa": 1,
+          "Ribeira": 1,
+          "Elias Fausto": 1,
+          "Indiana": 1,
+          "Santana de Parnaiba": 1,
+          "Trajano de Morais": 1,
+          "Roca Sales": 1,
+          "Pirpirituba": 1,
+          "Xavantes": 1,
+          "Bofete": 1,
+          "Manoel Ribas": 1,
+          "Artur Nogueira": 1,
+          "Florinea": 1,
+          "Jacobina": 1,
+          "Cambara": 1,
+          "Boa Esperanca": 1,
+          "Cabo Verde": 1,
+          "Serrinha": 1,
+          "Areado": 1,
+          "Bocaiuva do Sul": 1,
+          "Dourado": 1,
+          "Estancia.Arau\u00e1.Cristin\u00e1polis": 1,
+          "Jacui": 1,
+          "Tacaratu": 1,
+          "Rubim": 1,
+          "Ladainha": 1,
+          "Santa Mariana": 1,
+          "Tanabi": 1,
+          "Avanhandava": 1,
+          "Muruim.Ros\u00e1rio do Catete": 1,
+          "Floresta": 1,
+          "Ubatuba": 1,
+          "Pedra": 1,
+          "Cubatao": 1,
+          "Capitolio": 1,
+          "Mantena": 1,
+          "Taquara": 1,
+          "Mendes": 1,
+          "Sao Paulo": 1,
+          "Nova Granada": 1,
+          "Mairi": 1,
+          "Mendes Pimentel": 1,
+          "Iporanga": 1,
+          "Pariquera-Acu": 1,
+          "Inaja": 1,
+          "Jaguariaiva": 1,
+          "Reserva": 1,
+          "Serra Preta": 1,
+          "Camacari": 1,
+          "Aroeiras": 1,
+          "Carpina": 1,
+          "Antas": 1,
+          "Carrancas": 1,
+          "Poloni": 1,
+          "Saude": 1,
+          "Bertolinia": 1,
+          "Mucuge": 1,
+          "Pindobacu": 1,
+          "Turmalina": 1,
+          "Aracuai": 1,
+          "Lagoa da Prata": 1,
+          "Sertania": 1,
+          "Inga": 1,
+          "Sapiranga": 1,
+          "Jeremoabo": 1,
+          "Iguape": 1,
+          "Campinas": 1,
+          "Serraria": 1,
+          "Mineiros do Tiete": 1,
+          "Vicencia": 1,
+          "Palmital": 1,
+          "Ibitiara": 1,
+          "Canoas": 1,
+          "Andradina": 1,
+          "Santa Vitoria": 1,
+          "Encantado": 1,
+          "Minas Novas": 1,
+          "Senges": 1,
+          "Parati": 1,
+          "Itamonte": 1,
+          "Joao Alfredo": 1,
+          "Ataleia": 1,
+          "Sapucai-Mirim": 1,
+          "Japaratuba.Carm\u00f3polis.Japoat\u00e3": 1,
+          "Urai": 1,
+          "Jaboti": 1,
+          "Angra dos Reis": 1,
+          "Astolfo Dutra": 1,
+          "Itaparica": 1,
+          "Amoreira": 1,
+          "Baldim": 1,
+          "Guaiba": 1,
+          "Cananeia": 1,
+          "Taperoa": 1,
+          "Paraguacu Paulista": 1,
+          "Coaraci": 1,
+          "Joaquim Tavora": 1,
+          "Medina": 1,
+          "Barueri": 1,
+          "Mangaratiba": 1,
+          "Jacarezinho": 1,
+          "Sao Carlos": 1,
+          "Prado": 1,
+          "Assis": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.municipality",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Abaete": 1,
+          "Abatia": 1,
+          "Acajutiba": 1,
+          "Agua Comprida": 1,
+          "Agua Preta": 1,
+          "Aguas Belas": 1,
+          "Aguas de Lindoia": 1,
+          "Aguas de Sao Pedro": 1,
+          "Aguas Formosas": 1,
+          "Agudos": 1,
+          "Aiuruoca": 1,
+          "Alagoa Grande": 1,
+          "Alagoinha": 2,
+          "Alagoinhas": 1,
+          "Alcobaca": 1,
+          "Alfenas": 1,
+          "Alfredo Marcondes": 1,
+          "Alianca": 1,
+          "Almenara": 1,
+          "Almirante Tamandare": 1,
+          "Alpinopolis": 1,
+          "Alterosa": 1,
+          "Alto Alegre": 1,
+          "Alvares Florence": 1,
+          "Alvares Machado": 1,
+          "Americana": 1,
+          "Americo de Campos": 1,
+          "Amoreira": 1,
+          "Amparo": 1,
+          "Analandia": 1,
+          "Andarai": 1,
+          "Andira": 1,
+          "Andradas": 1,
+          "Andradina": 1,
+          "Angelim": 1,
+          "Angra dos Reis": 1,
+          "Anhembi": 1,
+          "Anhumas": 1,
+          "Antas": 1,
+          "Antonina": 1,
+          "Antonio Prado": 1,
+          "Aparecida": 1,
+          "Aparecida do Norte": 1,
+          "Apiai": 1,
+          "Aquidab\u00e3.Canhoba.Gracho Cardoso": 1,
+          "Aracaju.Barra dos Coqueiros": 1,
+          "Aracatuba": 1,
+          "Aracuai": 1,
+          "Araguari": 1,
+          "Arapoti": 1,
+          "Araraquara": 1,
+          "Araras": 1,
+          "Araripina": 1,
+          "Araruama": 1,
+          "Araruna": 2,
+          "Aratiba": 1,
+          "Araucaria": 1,
+          "Araujos": 1,
+          "Arceburgo": 1,
+          "Arcos": 1,
+          "Arcoverde": 1,
+          "Areado": 1,
+          "Arealva": 1,
+          "Areia": 1,
+          "Ariranha": 1,
+          "Aroeiras": 1,
+          "Arroio do Meio": 1,
+          "Artur Nogueira": 1,
+          "Assai": 1,
+          "Assis": 1,
+          "Astolfo Dutra": 1,
+          "Ataleia": 1,
+          "Atibaia": 1,
+          "Auriflama": 1,
+          "Avai": 1,
+          "Avanhandava": 1,
+          "Avare": 1,
+          "Baependi": 1,
+          "Baixa Grande": 1,
+          "Balbinos": 1,
+          "Baldim": 1,
+          "Balsamo": 1,
+          "Bambui": 1,
+          "Bananeiras": 1,
+          "Bandeirantes": 1,
+          "Bariri": 1,
+          "Barra Bonita": 1,
+          "Barra da Estiva": 1,
+          "Barra do Pirai": 1,
+          "Barra Mansa": 1,
+          "Barracao": 1,
+          "Barreiros": 1,
+          "Barretos": 1,
+          "Barueri": 1,
+          "Bauru": 1,
+          "Bebedouro": 1,
+          "Belem do Sao Francisco": 1,
+          "Belmonte": 1,
+          "Belo Horizonte": 1,
+          "Belo Jardim": 1,
+          "Bento de Abreu": 1,
+          "Bento Goncalves": 1,
+          "Bernardino de Campos": 1,
+          "Bertolinia": 1,
+          "Betim": 1,
+          "Bilac": 1,
+          "Birigui": 1,
+          "Bituruna": 1,
+          "Boa Esperanca": 1,
+          "Boa Esperanca do Sul": 1,
+          "Bocaina": 1,
+          "Bocaiuva do Sul": 1,
+          "Bodoco": 1,
+          "Bofete": 1,
+          "Bom Conselho": 1,
+          "Bom Despacho": 1,
+          "Bom Jardim": 2,
+          "Bom Jesus": 1,
+          "Bom Repouso": 1,
+          "Borborema": 1,
+          "Borda da Mata": 1,
+          "Botelhos": 1,
+          "Botucatu": 1,
+          "Braganca Paulista": 1,
+          "Brauna": 1,
+          "Brazopolis": 1,
+          "Brejo da Madre de Deus": 1,
+          "Brotas": 1,
+          "Brumado": 1,
+          "Bueno Brandao": 1,
+          "Buique": 1,
+          "Buquim.Pedrinhas": 1,
+          "Buritama": 1,
+          "Cabo Frio": 1,
+          "Cabo Verde": 1,
+          "Cabralia Paulista": 1,
+          "Cabreuva": 1,
+          "Cabrobo": 1,
+          "Cachoeira": 1,
+          "Cachoeira de Minas": 1,
+          "Cachoeiras de Macacu": 1,
+          "Cacule": 1,
+          "Caete": 1,
+          "Caetite": 1,
+          "Cafelandia": 1,
+          "Caiabu": 1,
+          "Caicara": 1,
+          "Cairu": 1,
+          "Caiua": 1,
+          "Cajobi": 1,
+          "Caldas": 1,
+          "Camacari": 1,
+          "Camacho": 1,
+          "Camamu": 1,
+          "Camanducaia": 1,
+          "Camaqua": 1,
+          "Cambara": 1,
+          "Cambui": 1,
+          "Cambuquira": 1,
+          "Campanha": 1,
+          "Campestre": 1,
+          "Campina Grande do Sul": 1,
+          "Campina Verde": 1,
+          "Campinas": 1,
+          "Campo do Brito.Macambira": 1,
+          "Campo do Meio": 1,
+          "Campo Florido": 1,
+          "Campo Formoso": 1,
+          "Campo Largo": 1,
+          "Campo Mourao": 1,
+          "Campos Altos": 1,
+          "Campos Gerais": 1,
+          "Campos Novos Paulista": 1,
+          "Cana do Reino": 1,
+          "Cananeia": 1,
+          "Canapolis": 1,
+          "Canavieiras": 1,
+          "Candelaria": 1,
+          "Candido de Abreu": 1,
+          "Candido Mota": 1,
+          "Canela": 1,
+          "Canhotinho": 1,
+          "Canoas": 1,
+          "Cantagalo": 1,
+          "Capanema": 1,
+          "Capela.Malhada dos Bois.Muribeca": 1,
+          "Capetinga": 1,
+          "Capinopolis": 1,
+          "Capitolio": 1,
+          "Capivari": 1,
+          "Caraguatatuba": 1,
+          "Carai": 1,
+          "Caravelas": 1,
+          "Carazinho": 1,
+          "Cardoso": 1,
+          "Careacu": 1,
+          "Carlopolis": 1,
+          "Carlos Chagas": 1,
+          "Carmo": 1,
+          "Carmo da Cachoeira": 1,
+          "Carmo de Minas": 1,
+          "Carmo do Cajuru": 1,
+          "Carmo do Rio Claro": 1,
+          "Carpina": 1,
+          "Carrancas": 1,
+          "Carvalhos": 1,
+          "Casca": 1,
+          "Cascalho Rico": 1,
+          "Cascavel": 1,
+          "Cassia": 1,
+          "Castilho": 1,
+          "Castro": 1,
+          "Cataguases": 1,
+          "Catanduva": 1,
+          "Catende": 1,
+          "Catu": 1,
+          "Caxambu": 1,
+          "Caxias do Sul": 1,
+          "Cedral": 1,
+          "Centralina": 1,
+          "Cerqueira Cesar": 1,
+          "Cerro Azul": 1,
+          "Charqueada": 1,
+          "Chopinzinho": 1,
+          "Chorrocho": 1,
+          "Cicero Dantas": 1,
+          "Cipo": 1,
+          "Claraval": 1,
+          "Clementina": 1,
+          "Clevelandia": 1,
+          "Coaraci": 1,
+          "Colina": 1,
+          "Colombo": 1,
+          "Comendador Gomes": 1,
+          "Comercinho": 1,
+          "Conceicao da Aparecida": 1,
+          "Conceicao da Feira": 1,
+          "Conceicao das Alagoas": 1,
+          "Conceicao do Caninde": 1,
+          "Conceicao do Coite": 1,
+          "Conceicao do Rio Verde": 1,
+          "Conceicao dos Ouros": 1,
+          "Conchal": 1,
+          "Conde": 1,
+          "Condeuba": 1,
+          "Congonhal": 1,
+          "Congonhinhas": 1,
+          "Conquista": 1,
+          "Contenda": 1,
+          "Coqueiral": 1,
+          "Coracao de Maria": 1,
+          "Cordeiro": 1,
+          "Cordeiropolis": 1,
+          "Cornelio Procopio": 1,
+          "Coroados": 1,
+          "Coronel Murta": 1,
+          "Coronel Vivida": 1,
+          "Corrego Danta": 1,
+          "Corrego do Bom Jesus": 1,
+          "Correntes": 1,
+          "Corumbatai": 1,
+          "Cosmopolis": 1,
+          "Cosmorama": 1,
+          "Cotia": 1,
+          "Cristina": 1,
+          "Crucilandia": 1,
+          "Cruz das Almas": 1,
+          "Cruz do Espirito Santo": 1,
+          "Cruz Machado": 1,
+          "Cruzeiro do Oeste": 1,
+          "Cruzilia": 1,
+          "Cubatao": 1,
+          "Cupira": 1,
+          "Curaca": 1,
+          "Curitiba": 1,
+          "Curiuva": 1,
+          "Custodia": 1,
+          "Delfim Moreira": 1,
+          "Descalvado": 1,
+          "Divinopolis": 1,
+          "Divisa Nova": 1,
+          "Dois Corregos": 1,
+          "Dom Vicoso": 1,
+          "Dores do Indaia": 1,
+          "Dourado": 1,
+          "Duartina": 1,
+          "Duas Barras": 1,
+          "Echapora": 1,
+          "Eldorado": 1,
+          "Elias Fausto": 1,
+          "Eloi Mendes": 1,
+          "Encantado": 1,
+          "Encruzilhada do Sul": 1,
+          "Engenheiro Beltrao": 1,
+          "Entre Rios": 1,
+          "Erechim": 1,
+          "Esplanada": 1,
+          "Estancia.Arau\u00e1.Cristin\u00e1polis": 1,
+          "Esteio": 1,
+          "Estiva": 1,
+          "Estrela": 1,
+          "Estrela d'Oeste": 1,
+          "Estrela do Indaia": 1,
+          "Estrela do Sul": 1,
+          "Euclides da Cunha": 1,
+          "Eugenopolis": 1,
+          "Extrema": 1,
+          "Exu": 1,
+          "Fama": 1,
+          "Farroupilha": 1,
+          "Fartura": 1,
+          "Feira de Santana": 1,
+          "Fernando Prestes": 1,
+          "Fernandopolis": 1,
+          "Ferraz de Vasconcelos": 1,
+          "Flores da Cunha": 1,
+          "Floresta": 1,
+          "Floriano": 1,
+          "Florinea": 1,
+          "Formiga": 1,
+          "Foz do iguacu": 1,
+          "Francisco Beltrao": 1,
+          "Franco da Rocha": 1,
+          "Frei Paulo.Carira.Pinh\u00e3o.Ribeir\u00f3polis": 1,
+          "Fronteiras": 1,
+          "Frutal": 1,
+          "Galia": 1,
+          "Garanhuns": 1,
+          "Gararu.Itabi": 1,
+          "Garibaldi": 1,
+          "Gastao Vidigal": 1,
+          "Gaurama": 1,
+          "General Camara": 1,
+          "General Salgado": 1,
+          "Getulina": 1,
+          "Getulio Vargas": 1,
+          "Glicerio": 1,
+          "Gloria": 1,
+          "Goiana": 1,
+          "Gramado": 1,
+          "Gravatai": 1,
+          "Guadalupe": 1,
+          "Guaiba": 1,
+          "Guaicara": 1,
+          "Guaimbe": 1,
+          "Guaira": 1,
+          "Guanambi": 1,
+          "Guape": 1,
+          "Guapiacu": 1,
+          "Guapore": 1,
+          "Guarabira": 1,
+          "Guaracai": 1,
+          "Guaraci": 1,
+          "Guaranesia": 1,
+          "Guarani": 1,
+          "Guaraniacu": 1,
+          "Guaranta": 1,
+          "Guarapuava": 1,
+          "Guaraquecaba": 1,
+          "Guararapes": 1,
+          "Guararema": 1,
+          "Guaratuba": 1,
+          "Guariba": 1,
+          "Guaruja": 1,
+          "Guarulhos": 1,
+          "Guaxupe": 1,
+          "Guia Lopes": 1,
+          "Guidoval": 1,
+          "Guiricema": 1,
+          "Heliodora": 1,
+          "Iacanga": 1,
+          "Ibaiti": 1,
+          "Ibate": 1,
+          "Ibicarai": 1,
+          "Ibira": 1,
+          "Ibiraci": 1,
+          "Ibirarema": 1,
+          "Ibitiara": 1,
+          "Ibitinga": 1,
+          "Ibiuna": 1,
+          "Icem": 1,
+          "Iepe": 1,
+          "Igapora": 1,
+          "Igaracu do Tiete": 1,
+          "Igarassu": 1,
+          "Iguape": 1,
+          "Iguatama": 1,
+          "Ilhabela": 1,
+          "Ilheus": 1,
+          "Ilicinea": 1,
+          "Imbituva": 1,
+          "Inaja": 1,
+          "Indaia": 1,
+          "Indaiatuba": 1,
+          "Indiana": 1,
+          "Indianopolis": 2,
+          "Indiapora": 1,
+          "Inga": 1,
+          "Inhambupe": 1,
+          "Ipaucu": 1,
+          "Ipiau": 1,
+          "Ipira": 1,
+          "Ipiranga": 1,
+          "Iporanga": 1,
+          "Ipuiuna": 1,
+          "Iracemapolis": 1,
+          "Irapua": 1,
+          "Irara": 1,
+          "Irati": 1,
+          "Irece": 1,
+          "Itabaiana": 2,
+          "Itabaianinha.Tomar do Geru": 1,
+          "Itaberaba": 1,
+          "Itaborai": 1,
+          "Itabuna": 1,
+          "Itacare": 1,
+          "Itaguai": 1,
+          "Itaguara": 1,
+          "Itainopolis": 1,
+          "Itajobi": 1,
+          "Itaju": 1,
+          "Itajuba": 1,
+          "Itajuipe": 1,
+          "Itambacuri": 1,
+          "Itambaraca": 1,
+          "Itamogi": 1,
+          "Itamonte": 1,
+          "Itanhaem": 1,
+          "Itanhandu": 1,
+          "Itaocara": 1,
+          "Itapagipe": 1,
+          "Itaparica": 1,
+          "Itapecerica": 2,
+          "Itapecerica da Serra": 1,
+          "Itapicuru": 1,
+          "Itapira": 1,
+          "Itapolis": 1,
+          "Itaporanga D'Ajuda.Salgado": 1,
+          "Itapui": 1,
+          "Itaquaquecetuba": 1,
+          "Itariri": 1,
+          "Itatiba": 1,
+          "Itatinga": 1,
+          "Itaueira": 1,
+          "Itauna": 1,
+          "Itavera": 1,
+          "Itinga": 1,
+          "Itirapina": 1,
+          "Itiuba": 1,
+          "Itu": 1,
+          "Ituacu": 1,
+          "Itubera": 1,
+          "Ituiutaba": 1,
+          "Itumirim": 1,
+          "Iturama": 1,
+          "Itutinga": 1,
+          "Jaborandi": 1,
+          "Jaboti": 1,
+          "Jaboticabal": 1,
+          "Jacaraci": 1,
+          "Jacarezinho": 1,
+          "Jacinto": 1,
+          "Jacobina": 1,
+          "Jacui": 1,
+          "Jacupiranga": 1,
+          "Jacutinga": 1,
+          "Jaguarari": 1,
+          "Jaguariaiva": 1,
+          "Jaguaripe": 1,
+          "Jaguariuna": 1,
+          "Jaicos": 1,
+          "Jales": 1,
+          "Jandaira": 1,
+          "Japaratuba.Carm\u00f3polis.Japoat\u00e3": 1,
+          "Japira": 1,
+          "Jarinu": 1,
+          "Jataizinho": 1,
+          "Jau": 1,
+          "Jequitinhonha": 1,
+          "Jeremoabo": 1,
+          "Jerumenha": 1,
+          "Jesuania": 1,
+          "Joaima": 1,
+          "Joanopolis": 1,
+          "Joao Alfredo": 1,
+          "Joao Pessoa": 1,
+          "Joaquim Nabuco": 1,
+          "Joaquim Tavora": 1,
+          "Jordania": 1,
+          "Jose Bonifacio": 1,
+          "Julio Mesquita": 1,
+          "Jundiai": 1,
+          "Jundiai do Sul": 1,
+          "Juquia": 1,
+          "Jurema": 1,
+          "Juruaia": 1,
+          "Ladainha": 1,
+          "Lagarto": 1,
+          "Lagoa da Prata": 1,
+          "Lagoa dos Gatos": 1,
+          "Lagoa Santa": 1,
+          "Lagoa Vermelha": 1,
+          "Lajeado": 1,
+          "Lajedo": 1,
+          "Lambari": 1,
+          "Lapa": 1,
+          "Laranjal": 1,
+          "Laranjeiras do Sul": 1,
+          "Laranjeiras.Nossa Senhora do Socorro": 1,
+          "Lavinia": 1,
+          "Lavras": 1,
+          "Leme": 1,
+          "Lencois": 1,
+          "Lencois Paulista": 1,
+          "Leopoldina": 1,
+          "Leopolis": 1,
+          "Limeira": 1,
+          "Limoeiro": 1,
+          "Lins": 1,
+          "Livramento do Brumado": 1,
+          "Lucianopolis": 1,
+          "Luminarias": 1,
+          "Lupercio": 1,
+          "Lutecia": 1,
+          "Luz": 1,
+          "Macajuba": 1,
+          "Macaparana": 1,
+          "Macatuba": 1,
+          "Macaubal": 1,
+          "Macaubas": 1,
+          "Machacalis": 1,
+          "Machado": 1,
+          "Magda": 1,
+          "Mairi": 1,
+          "Mairipora": 1,
+          "Malacacheta": 1,
+          "Mallet": 1,
+          "Mamanguape": 1,
+          "Manduri": 1,
+          "Mangaratiba": 1,
+          "Mangueirinha": 1,
+          "Manoel Ribas": 1,
+          "Mantena": 1,
+          "Maraba Paulista": 1,
+          "Maracai": 1,
+          "Maragogipe": 1,
+          "Maraial": 1,
+          "Marau": 2,
+          "Marcelino Ramos": 1,
+          "Maria da Fe": 1,
+          "Marica": 1,
+          "Marilia": 1,
+          "Martinho Campos": 1,
+          "Martinopolis": 1,
+          "Mata de Sao Joao": 1,
+          "Matao": 1,
+          "Mateus Leme": 1,
+          "Matutina": 1,
+          "Medina": 1,
+          "Mendes": 1,
+          "Mendes Pimentel": 1,
+          "Miguel Calmon": 1,
+          "Minas Novas": 1,
+          "Minduri": 1,
+          "Mineiros do Tiete": 1,
+          "Miracatu": 1,
+          "Miradouro": 1,
+          "Mirai": 1,
+          "Mirandopolis": 1,
+          "Mirante do Paranapanema": 1,
+          "Mirassol": 1,
+          "Moema": 1,
+          "Mogi das Cruzes": 1,
+          "Mogi-Mirim": 1,
+          "Monsenhor Paulo": 1,
+          "Monte Alegre de Minas": 1,
+          "Monte Alegre do Sul": 1,
+          "Monte Alto": 1,
+          "Monte Aprazivel": 1,
+          "Monte Azul Paulista": 1,
+          "Monte Belo": 1,
+          "Monte Carmelo": 1,
+          "Monte Mor": 1,
+          "Monte Santo": 1,
+          "Monte Santo de Minas": 1,
+          "Monte Siao": 1,
+          "Montenegro": 1,
+          "Morada Nova de Minas": 1,
+          "Morretes": 1,
+          "Morro do Chapeu": 1,
+          "Mucuge": 1,
+          "Mucuri": 1,
+          "Mundo Novo": 1,
+          "Munhoz": 1,
+          "Muriae": 1,
+          "Muritiba": 1,
+          "Muruim.Ros\u00e1rio do Catete": 1,
+          "Murutinga do Sul": 1,
+          "Muzambinho": 1,
+          "Nanuque": 1,
+          "Nao-me-toque": 1,
+          "Natercia": 1,
+          "Nazare": 1,
+          "Nazare da Mata": 1,
+          "Nazare Paulista": 1,
+          "Ne\u00f3polis.Brejo Grande.Pacatuba.Ilha das Fl\u00f4res": 1,
+          "Nepomuceno": 1,
+          "Neves Paulista": 1,
+          "Nhandeara": 1,
+          "Nilo Pecanha": 1,
+          "Nilopolis": 1,
+          "Nipoa": 1,
+          "Niteroi": 1,
+          "Nossa Senhora da Gl\u00f3ria.Monte Alegre de Sergipe": 1,
+          "Nossa Senhora das Dores.Cumbe.Siriri": 1,
+          "Nova Alianca": 1,
+          "Nova Europa": 1,
+          "Nova Fatima": 1,
+          "Nova Friburgo": 1,
+          "Nova Granada": 1,
+          "Nova Iguacu": 1,
+          "Nova Petropolis": 1,
+          "Nova Ponte": 1,
+          "Nova Prata": 1,
+          "Nova Resende": 1,
+          "Nova Soure": 1,
+          "Novo Cruzeiro": 1,
+          "Novo Hamburgo": 1,
+          "Novo Horizonte": 1,
+          "Oeiras": 1,
+          "Oleo": 1,
+          "Olimpia": 1,
+          "Orobo": 1,
+          "Ortigueira": 1,
+          "Oscar Bressane": 1,
+          "Osorio": 1,
+          "Ouricuri": 1,
+          "Ourinhos": 1,
+          "Ouro Fino": 1,
+          "Pains": 1,
+          "Palestina": 1,
+          "Palma": 1,
+          "Palmares": 1,
+          "Palmas": 1,
+          "Palmas de Monte Alto": 1,
+          "Palmeira": 1,
+          "Palmeiras": 1,
+          "Palmeirina": 1,
+          "Palmital": 1,
+          "Panelas": 1,
+          "Papagaios": 1,
+          "Para de Minas": 1,
+          "Paraguacu": 1,
+          "Paraguacu Paulista": 1,
+          "Paraiba do Sul": 1,
+          "Paraiso": 1,
+          "Paraisopolis": 1,
+          "Paramirim": 1,
+          "Paranagua": 1,
+          "Parati": 1,
+          "Paripiranga": 1,
+          "Pariquera-Acu": 1,
+          "Parnamirim": 1,
+          "Passa Quatro": 1,
+          "Passo Fundo": 1,
+          "Passos": 1,
+          "Pato Branco": 1,
+          "Patrocinio do Muriae": 1,
+          "Paulistana": 1,
+          "Paulo de Faria": 1,
+          "Paulo Frontin": 1,
+          "Peabiru": 1,
+          "Pederneiras": 1,
+          "Pedra": 1,
+          "Pedra Azul": 1,
+          "Pedralva": 1,
+          "Pedras de Fogo": 1,
+          "Pedreira": 1,
+          "Pedro de Toledo": 1,
+          "Pedro Leopoldo": 1,
+          "Penapolis": 1,
+          "Perdigao": 1,
+          "Pereira Barreto": 1,
+          "Pesqueira": 1,
+          "Petrolandia": 1,
+          "Petrolina": 1,
+          "Piacatu": 1,
+          "Piata": 1,
+          "Picos": 1,
+          "Pilar": 1,
+          "Piloes": 1,
+          "Pimenta": 1,
+          "Pindobacu": 1,
+          "Pindorama": 1,
+          "Pinhalao": 1,
+          "Piquerobi": 1,
+          "Piracaia": 1,
+          "Piracicaba": 1,
+          "Pirai": 1,
+          "Pirai do Sul": 1,
+          "Piraju": 1,
+          "Pirajuba": 1,
+          "Pirajui": 1,
+          "Pirangi": 1,
+          "Pirapozinho": 1,
+          "Piraquara": 1,
+          "Pirassununga": 1,
+          "Piratininga": 1,
+          "Pirauba": 1,
+          "Piritiba": 1,
+          "Pirpirituba": 1,
+          "Pitanga": 1,
+          "Pitangueiras": 1,
+          "Pitangui": 1,
+          "Piui": 1,
+          "Planalto": 1,
+          "Platina": 1,
+          "Poa": 1,
+          "Pocao": 1,
+          "Poco Fundo": 1,
+          "Pocos de Caldas": 1,
+          "Pojuca": 1,
+          "Poloni": 1,
+          "Pompeu": 1,
+          "Pongai": 1,
+          "Ponta Grossa": 1,
+          "Porto Alegre": 1,
+          "Porto Amazonas": 1,
+          "Porto da F\u00f4lha.Canind\u00e9 de S\u00e3o Francisco.Po\u00e7o Redondo": 1,
+          "Porto Ferreira": 1,
+          "Porto Seguro": 1,
+          "Pote": 1,
+          "Potiragua": 1,
+          "Potirendaba": 1,
+          "Pouso Alegre": 1,
+          "Pouso Alto": 1,
+          "Prado": 1,
+          "Prata": 1,
+          "Pratapolis": 1,
+          "Presidente Alves": 1,
+          "Presidente Bernardes": 1,
+          "Presidente Epitacio": 1,
+          "Presidente Prudente": 1,
+          "Presidente Venceslau": 1,
+          "Promissao": 1,
+          "Propri\u00e1.Amparo de S\u00e3o Francisco.Cedro de S\u00e3o Jo\u00e3o": 1,
+          "Prudentopolis": 1,
+          "Quartel Geral": 1,
+          "Quata": 1,
+          "Quatigua": 1,
+          "Queimadas": 1,
+          "Quipapa": 1,
+          "Rancharia": 1,
+          "Reboucas": 1,
+          "Recreio": 1,
+          "Regente Feijo": 1,
+          "Reginopolis": 1,
+          "Registro": 1,
+          "Resende": 1,
+          "Reserva": 1,
+          "Riachao do Dantas": 1,
+          "Riachao do Jacuipe": 1,
+          "Riacho de Santana": 1,
+          "Riachuelo.Divina Pastora.Malhador.Santa Rosa de Lima": 1,
+          "Ribeira": 1,
+          "Ribeira do Pombal": 1,
+          "Ribeirao Bonito": 1,
+          "Ribeirao Claro": 1,
+          "Ribeirao do Pinhal": 1,
+          "Ribeiro Goncalves": 1,
+          "Rincao": 1,
+          "Rio Acima": 1,
+          "Rio Azul": 1,
+          "Rio Bonito": 1,
+          "Rio Branco do Sul": 1,
+          "Rio Claro": 1,
+          "Rio das Flores": 1,
+          "Rio das Pedras": 1,
+          "Rio de Contas": 1,
+          "Rio De Janeiro": 1,
+          "Rio do Peixe": 1,
+          "Rio do Prado": 1,
+          "Rio Negro": 1,
+          "Rio Novo": 1,
+          "Rio Paranaiba": 1,
+          "Rio Pardo": 1,
+          "Rio Real": 1,
+          "Riolandia": 1,
+          "Roca Sales": 1,
+          "Rolante": 1,
+          "Rondon": 1,
+          "Rubiacea": 1,
+          "Rubim": 1,
+          "Ruy Barbosa": 1,
+          "Sabara": 1,
+          "Sabino": 1,
+          "Sacramento": 1,
+          "Salgueiro": 1,
+          "Salinas": 1,
+          "Salto": 1,
+          "Salto da Divisa": 1,
+          "Salto Grande": 1,
+          "Salvador": 1,
+          "Sananduva": 1,
+          "Sanharo": 1,
+          "Santa Adelia": 1,
+          "Santa Amelia": 1,
+          "Santa Barbara d'Oeste": 1,
+          "Santa Barbara do Rio Pardo": 1,
+          "Santa Cruz Cabralia": 1,
+          "Santa Cruz da Conceicao": 1,
+          "Santa Cruz do Rio Pardo": 1,
+          "Santa Cruz do Sul": 1,
+          "Santa Fe do Sul": 1,
+          "Santa Gertrudes": 1,
+          "Santa Isabel": 1,
+          "Santa Juliana": 1,
+          "Santa Luzia": 1,
+          "Santa Luzia do Itanhy.Indiaroba.Umba\u00faba": 1,
+          "Santa Mariana": 1,
+          "Santa Rita": 1,
+          "Santa Rita de Caldas": 1,
+          "Santa Rita do Sapucai": 1,
+          "Santa Vitoria": 1,
+          "Santaluz": 1,
+          "Santana de Parnaiba": 1,
+          "Santo Amaro": 1,
+          "Santo Anastacio": 1,
+          "Santo Antonio": 2,
+          "Santo Antonio da Platina": 1,
+          "Santo Antonio de Posse": 1,
+          "Santo Antonio do Monte": 1,
+          "Santo Estevao": 1,
+          "Santos": 1,
+          "Sao Bento do Una": 1,
+          "Sao Carlos": 1,
+          "Sao Cristovao": 1,
+          "Sao Felipe": 1,
+          "Sao Felix": 1,
+          "Sao Francisco de Paula": 1,
+          "Sao Francisco de Sales": 1,
+          "Sao Francisco do Conde": 1,
+          "Sao Geraldo": 1,
+          "Sao Goncalo": 1,
+          "Sao Goncalo do Abaete": 1,
+          "Sao Goncalo do Sapucai": 1,
+          "Sao Goncalo dos Campos": 1,
+          "Sao Gotardo": 1,
+          "Sao Jeronimo": 1,
+          "Sao Jeronimo da Serra": 1,
+          "Sao Joao Batista do Gloria": 1,
+          "Sao Joao do Triunfo": 1,
+          "Sao Jose do Alegre": 1,
+          "Sao Jose do Rio Preto": 1,
+          "Sao Jose dos Pinhais": 1,
+          "Sao Leopoldo": 1,
+          "Sao Lourenco": 1,
+          "Sao Manuel": 1,
+          "Sao Mateus do Sul": 1,
+          "Sao Paulo": 1,
+          "Sao Pedro": 1,
+          "Sao Pedro da Aldeia": 1,
+          "Sao Pedro da Uniao": 1,
+          "Sao Pedro do Turvo": 1,
+          "Sao Roque": 1,
+          "Sao Sebastiao": 1,
+          "Sao Sebastiao do Cai": 1,
+          "Sao Sebastiao do Cural": 1,
+          "Sao Sebastiao do Paraiso": 1,
+          "Sao Sebastiao do Passe": 1,
+          "Sao Tomas de Aquino": 1,
+          "Sao Vicente": 1,
+          "Sao Vicente de Minas": 1,
+          "Sao Vicente Ferrer": 1,
+          "Sape": 1,
+          "Sapiranga": 1,
+          "Sapucai-Mirim": 1,
+          "Sapucaia": 1,
+          "Saquarema": 1,
+          "Sarandi": 1,
+          "Saude": 1,
+          "Senges": 1,
+          "Senhor do Bonfim": 1,
+          "Serra Negra": 1,
+          "Serra Preta": 1,
+          "Serra Redonda": 1,
+          "Serrania": 1,
+          "Serranos": 1,
+          "Serraria": 1,
+          "Serrinha": 1,
+          "Serrita": 1,
+          "Sertaneja": 1,
+          "Sertania": 1,
+          "Sete Lagoas": 1,
+          "Severinia": 1,
+          "Silva Jardim": 1,
+          "Silvianopolis": 1,
+          "Sim\u00e3o Dias.Po\u00e7o Verde": 1,
+          "Simoes": 1,
+          "Simplicio Mendes": 1,
+          "Siqueira Campos": 1,
+          "Socorro": 1,
+          "Solanea": 1,
+          "Soledade de Minas": 1,
+          "Sumare": 1,
+          "Sumidouro": 1,
+          "Surubim": 1,
+          "Suzano": 1,
+          "Tabapua": 1,
+          "Tabatinga": 1,
+          "Tacaratu": 1,
+          "Taciba": 1,
+          "Taiacu": 1,
+          "Taiuva": 1,
+          "Tambe": 1,
+          "Tanabi": 1,
+          "Tapejara": 1,
+          "Tapera": 1,
+          "Taperoa": 1,
+          "Tapes": 1,
+          "Tapirai": 1,
+          "Taquara": 1,
+          "Taquari": 1,
+          "Taquaritinga": 1,
+          "Taquaritinga do Norte": 1,
+          "Teixeira Soares": 1,
+          "Teofilo Otoni": 1,
+          "Terra Roxa": 1,
+          "Tibagi": 1,
+          "Timbauba": 1,
+          "Timburi": 1,
+          "Tiros": 1,
+          "Tobias Barreto": 1,
+          "Tocantins": 1,
+          "Toledo": 2,
+          "Tomazina": 1,
+          "Toritama": 1,
+          "Torres": 1,
+          "Torrinha": 1,
+          "Trajano de Morais": 1,
+          "Tremedal": 1,
+          "Tres Coracoes": 1,
+          "Tres Pontas": 1,
+          "Tres Rios": 1,
+          "Triunfo": 1,
+          "Tucano": 1,
+          "Tupaciguara": 1,
+          "Turmalina": 1,
+          "Uaua": 1,
+          "Uba": 1,
+          "Ubaitaba": 1,
+          "Ubata": 1,
+          "Ubatuba": 1,
+          "Uberaba": 1,
+          "Uberlandia": 1,
+          "Ubirajara": 1,
+          "Uchoa": 1,
+          "Umbuzeiro": 1,
+          "Una": 1,
+          "Uniao da Vitoria": 1,
+          "Uniao de Caete": 1,
+          "Urai": 1,
+          "Urandi": 1,
+          "Uru": 1,
+          "Urucuca": 1,
+          "Urucui": 1,
+          "Urupes": 1,
+          "Utinga": 1,
+          "Vacaria": 1,
+          "Valenca": 2,
+          "Valentim Gentil": 1,
+          "Valinhos": 1,
+          "Valparaiso": 1,
+          "Vargem Bonita": 1,
+          "Varginha": 1,
+          "Vassouras": 1,
+          "Venancio Aires": 1,
+          "Veranopolis": 1,
+          "Verissimo": 1,
+          "Vertentes": 1,
+          "Viamao": 1,
+          "Vicencia": 1,
+          "Vieiras": 1,
+          "Vinhedo": 1,
+          "Viradouro": 1,
+          "Virgem da Lapa": 1,
+          "Virginia": 1,
+          "Visconde do Rio Branco": 1,
+          "Volta Redonda": 1,
+          "Votuporanga": 1,
+          "Wenceslau Braz": 1,
+          "Xavantes": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "municipality"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        1002
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        992
+      ],
+      [
+        "herfindahl",
+        0.00101792423137756
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "Acajutiba"
+      ],
+      [
+        "mid",
+        "Acajutiba"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "municipality"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.mode",
+    [
+      "SP",
+      [
+        "SP"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.state.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.state",
+    [
+      [
+        "variableName",
+        "state"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        1002
+      ],
+      [
+        "uniqueCount",
+        11
+      ],
+      [
+        "modeFreq",
+        295
+      ],
+      [
+        "fewestValues",
+        [
+          "DF"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.1858638013394369
+      ],
+      [
+        "plotValues",
+        {
+          "SP": 295,
+          "MG": 252,
+          "BA": 121,
+          "PR": 103,
+          "PE": 63,
+          "RS": 62,
+          "RJ": 39,
+          "SE": 26,
+          "PB": 23,
+          "PI": 17,
+          "DF": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.state",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "BA": 121,
+          "DF": 1,
+          "MG": 252,
+          "PB": 23,
+          "PE": 63,
+          "PI": 17,
+          "PR": 103,
+          "RJ": 39,
+          "RS": 62,
+          "SE": 26,
+          "SP": 295
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "state"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        1002
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        11
+      ],
+      [
+        "herfindahl",
+        0.185863801339437
+      ],
+      [
+        "freqmode",
+        295
+      ],
+      [
+        "fewest",
+        "DF"
+      ],
+      [
+        "mid",
+        "RS"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "62"
+      ],
+      [
+        "varnamesTypes",
+        "state"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.diocese.mode",
+    [
+      "Salvador",
+      [
+        "Salvador"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.diocese.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.diocese.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.diocese",
+    [
+      [
+        "variableName",
+        "diocese"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        996
+      ],
+      [
+        "uniqueCount",
+        55
+      ],
+      [
+        "modeFreq",
+        46
+      ],
+      [
+        "fewestValues",
+        [
+          "Rio de Janeiro",
+          "Rio Preto.Sao Carlos",
+          "Campinas.Sao Paulo",
+          "Caxias do Sul.Porto Alegre",
+          "Foz de Iguacu.Ponta Grossa"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.028203174142352544
+      ],
+      [
+        "plotValues",
+        {
+          "Salvador": 46,
+          "Campanha": 45,
+          "Rio Preto": 44,
+          "Lins": 39,
+          "Assis": 38,
+          "Jacarezinho": 36,
+          "Porto Alegre": 36,
+          "Guaxupe": 32,
+          "Arassuai": 32,
+          "Pouso Alegre": 31,
+          "Aterrado": 31,
+          "Campinas": 30,
+          "Uberaba": 30,
+          "Sao Carlos": 30,
+          "Botucatu": 29,
+          "Belo Horizonte": 27,
+          "Ilheus": 27,
+          "Aracaju": 26,
+          "Bonfim": 25,
+          "Curitiba": 23,
+          "Caetete": 23,
+          "Joao Pessoa": 23,
+          "Santos": 22,
+          "Jaboticabal": 21,
+          "Leopoldina": 20,
+          "Garanhuns": 20,
+          "Niteroi": 18,
+          "Ponta Grossa": 18,
+          "Nazare": 18,
+          "Oeiras": 17,
+          "Sao Paulo": 17,
+          "Pesqueira": 16,
+          "Foz de Iguacu": 14,
+          "Barra do Pirai": 13,
+          "Palmas": 11,
+          "Passo Fundo": 10,
+          "Braganca Paulista": 9,
+          "Caxias do Sul": 9,
+          "Petrolina": 9,
+          "Valenca": 7,
+          "Piracicaba": 7,
+          "Vacaria": 4,
+          "Caxias do Sul.Porto Alegre": 1,
+          "Passo Fundo.Porto Alegre": 1,
+          "Guaxupe.Pouso Alegre": 1,
+          "Campinas.Sao Paulo": 1,
+          "Campanha.Guaxupe": 1,
+          "Campanha.Pouso Alegre": 1,
+          "Aterrado.Campanha": 1,
+          "Passo Fundo.Vacaria": 1,
+          "Barra do Pirai.Valenca": 1,
+          "Rio de Janeiro": 1,
+          "Botucatu.Sao Carlos": 1,
+          "Rio Preto.Sao Carlos": 1,
+          "Foz de Iguacu.Ponta Grossa": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.diocese",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "Aracaju": 26,
+          "Arassuai": 32,
+          "Assis": 38,
+          "Aterrado": 31,
+          "Aterrado.Campanha": 1,
+          "Barra do Pirai": 13,
+          "Barra do Pirai.Valenca": 1,
+          "Belo Horizonte": 27,
+          "Bonfim": 25,
+          "Botucatu": 29,
+          "Botucatu.Sao Carlos": 1,
+          "Braganca Paulista": 9,
+          "Caetete": 23,
+          "Campanha": 45,
+          "Campanha.Guaxupe": 1,
+          "Campanha.Pouso Alegre": 1,
+          "Campinas": 30,
+          "Campinas.Sao Paulo": 1,
+          "Caxias do Sul": 9,
+          "Caxias do Sul.Porto Alegre": 1,
+          "Curitiba": 23,
+          "Foz de Iguacu": 14,
+          "Foz de Iguacu.Ponta Grossa": 1,
+          "Garanhuns": 20,
+          "Guaxupe": 32,
+          "Guaxupe.Pouso Alegre": 1,
+          "Ilheus": 27,
+          "Jaboticabal": 21,
+          "Jacarezinho": 36,
+          "Joao Pessoa": 23,
+          "Leopoldina": 20,
+          "Lins": 39,
+          "Nazare": 18,
+          "Niteroi": 18,
+          "Oeiras": 17,
+          "Palmas": 11,
+          "Passo Fundo": 10,
+          "Passo Fundo.Porto Alegre": 1,
+          "Passo Fundo.Vacaria": 1,
+          "Pesqueira": 16,
+          "Petrolina": 9,
+          "Piracicaba": 7,
+          "Ponta Grossa": 18,
+          "Porto Alegre": 36,
+          "Pouso Alegre": 31,
+          "Rio de Janeiro": 1,
+          "Rio Preto": 44,
+          "Rio Preto.Sao Carlos": 1,
+          "Salvador": 46,
+          "Santos": 22,
+          "Sao Carlos": 30,
+          "Sao Paulo": 17,
+          "Uberaba": 30,
+          "Vacaria": 4,
+          "Valenca": 7
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "diocese"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        1002
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        55
+      ],
+      [
+        "herfindahl",
+        0.0282031741423525
+      ],
+      [
+        "freqmode",
+        46
+      ],
+      [
+        "fewest",
+        "Rio de Janeiro"
+      ],
+      [
+        "mid",
+        "Nazare"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "18"
+      ],
+      [
+        "varnamesTypes",
+        "diocese"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.granularity.mode",
+    [
+      "diocese",
+      [
+        "diocese"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.granularity.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.granularity.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.granularity",
+    [
+      [
+        "variableName",
+        "granularity"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        1002
+      ],
+      [
+        "uniqueCount",
+        3
+      ],
+      [
+        "modeFreq",
+        960
+      ],
+      [
+        "fewestValues",
+        [
+          "parish"
+        ]
+      ],
+      [
+        "fewestFreq",
+        6
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.9192513177238338
+      ],
+      [
+        "plotValues",
+        {
+          "diocese": 960,
+          "locality": 36,
+          "parish": 6
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.granularity",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "diocese": 960,
+          "locality": 36,
+          "parish": 6
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "granularity"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        1002
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        3
+      ],
+      [
+        "herfindahl",
+        0.919251317723834
+      ],
+      [
+        "freqmode",
+        960
+      ],
+      [
+        "fewest",
+        "parish"
+      ],
+      [
+        "mid",
+        "locality"
+      ],
+      [
+        "freqfewest",
+        "6"
+      ],
+      [
+        "freqmid",
+        "36"
+      ],
+      [
+        "varnamesTypes",
+        "granularity"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.median",
+    [
+      "30",
+      30.0
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.mean",
+    [
+      "27.976023976024",
+      27.976023976023978
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.mode",
+    [
+      "32",
+      [
+        32.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.max",
+    [
+      "48",
+      48.0
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.min",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Nmuncons.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Nmuncons",
+    [
+      [
+        "variableName",
+        "Nmuncons"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        1
+      ],
+      [
+        "validCount",
+        1001
+      ],
+      [
+        "uniqueCount",
+        32
+      ],
+      [
+        "modeFreq",
+        93
+      ],
+      [
+        "fewestValues",
+        [
+          5.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        4
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        12.058334237174908
+      ],
+      [
+        "herfindahlIndex",
+        0.0011844115725218967
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          0.7488615644571219,
+          1.7182957863160149,
+          2.687730008174908,
+          3.6571642300338008,
+          4.6265984518926935,
+          5.596032673751586,
+          6.56546689561048,
+          7.5349011174693725,
+          8.504335339328266,
+          9.47376956118716,
+          10.443203783046052,
+          11.412638004904945,
+          12.382072226763839,
+          13.35150644862273,
+          14.320940670481624,
+          15.290374892340516,
+          16.25980911419941,
+          17.229243336058303,
+          18.198677557917197,
+          19.168111779776087,
+          20.13754600163498,
+          21.106980223493874,
+          22.076414445352768,
+          23.04584866721166,
+          24.015282889070555,
+          24.984717110929445,
+          25.95415133278834,
+          26.923585554647232,
+          27.893019776506126,
+          28.86245399836502,
+          29.83188822022391,
+          30.801322442082803,
+          31.770756663941697,
+          32.74019088580059,
+          33.709625107659484,
+          34.679059329518374,
+          35.64849355137727,
+          36.61792777323616,
+          37.58736199509505,
+          38.55679621695395,
+          39.52623043881284,
+          40.495664660671736,
+          41.465098882530626,
+          42.434533104389516,
+          43.40396732624841,
+          44.3734015481073,
+          45.3428357699662,
+          46.31226999182509,
+          47.28170421368399,
+          48.25113843554288
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.007382231812790756,
+          0.0074348003476815885,
+          0.00695621811956726,
+          0.00621462899107557,
+          0.005550667812883516,
+          0.005243015668251266,
+          0.005416633881979956,
+          0.006028224777852541,
+          0.0069223321944337605,
+          0.007924297688998556,
+          0.008927657402089628,
+          0.009939972940865353,
+          0.011070313109915369,
+          0.012468787188013595,
+          0.014250877713726464,
+          0.01644284959819577,
+          0.018967059880947636,
+          0.021660754461217437,
+          0.024307136268855476,
+          0.02666231905116838,
+          0.02847982767972764,
+          0.029548110558903093,
+          0.029751032376150753,
+          0.029137900226576845,
+          0.027967160870913974,
+          0.026686160105322685,
+          0.02583077226489592,
+          0.02586085746797232,
+          0.02697937776828811,
+          0.029008223104736653,
+          0.03139699360761365,
+          0.033398840219706495,
+          0.034360229836117646,
+          0.033987913914290575,
+          0.032446302893322974,
+          0.030227969981918165,
+          0.027876621831512623,
+          0.02573088074959896,
+          0.02383635046592918,
+          0.02205841038397091,
+          0.020297164667490604,
+          0.018644333608393432,
+          0.017368190614659898,
+          0.016735075107138973,
+          0.01679138205751757,
+          0.017258682533940767,
+          0.017618241619790427,
+          0.017336784309668236,
+          0.016101076592716194,
+          0.013936202481028651
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          1.0,
+          1.9591836734693877,
+          2.9183673469387754,
+          3.877551020408163,
+          4.836734693877551,
+          5.795918367346939,
+          6.755102040816326,
+          7.7142857142857135,
+          8.673469387755102,
+          9.63265306122449,
+          10.591836734693878,
+          11.551020408163264,
+          12.510204081632653,
+          13.46938775510204,
+          14.428571428571427,
+          15.387755102040815,
+          16.346938775510203,
+          17.30612244897959,
+          18.26530612244898,
+          19.224489795918366,
+          20.183673469387756,
+          21.142857142857142,
+          22.10204081632653,
+          23.06122448979592,
+          24.020408163265305,
+          24.97959183673469,
+          25.93877551020408,
+          26.897959183673468,
+          27.857142857142854,
+          28.816326530612244,
+          29.77551020408163,
+          30.73469387755102,
+          31.693877551020407,
+          32.65306122448979,
+          33.61224489795918,
+          34.57142857142857,
+          35.53061224489796,
+          36.48979591836734,
+          37.44897959183673,
+          38.40816326530612,
+          39.36734693877551,
+          40.326530612244895,
+          41.285714285714285,
+          42.244897959183675,
+          43.20408163265306,
+          44.16326530612245,
+          45.12244897959184,
+          46.08163265306122,
+          47.04081632653061,
+          48.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.053946053946053944,
+          0.053946053946053944,
+          0.053946053946053944,
+          0.053946053946053944,
+          0.053946053946053944,
+          0.057942057942057944,
+          0.057942057942057944,
+          0.057942057942057944,
+          0.06493506493506493,
+          0.07192807192807193,
+          0.0899100899100899,
+          0.1008991008991009,
+          0.1108891108891109,
+          0.1108891108891109,
+          0.12387612387612387,
+          0.13786213786213786,
+          0.15384615384615385,
+          0.17082917082917082,
+          0.20679320679320679,
+          0.22477522477522477,
+          0.2647352647352647,
+          0.2857142857142857,
+          0.3246753246753247,
+          0.3936063936063936,
+          0.3936063936063936,
+          0.3936063936063936,
+          0.41858141858141856,
+          0.44455544455544455,
+          0.47152847152847155,
+          0.47152847152847155,
+          0.47152847152847155,
+          0.5304695304695305,
+          0.5604395604395604,
+          0.6533466533466533,
+          0.6843156843156843,
+          0.7162837162837162,
+          0.7162837162837162,
+          0.7522477522477522,
+          0.7522477522477522,
+          0.7902097902097902,
+          0.8261738261738262,
+          0.8651348651348651,
+          0.8651348651348651,
+          0.8651348651348651,
+          0.8651348651348651,
+          0.8651348651348651,
+          0.9090909090909091,
+          0.955044955044955,
+          0.955044955044955,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Nmuncons",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -7.09640329511368,
+          -5.80675418102741,
+          -4.51710506694113,
+          -3.22745595285486,
+          -1.93780683876859,
+          -0.648157724682316,
+          0.641491389403956,
+          1.93114050349023,
+          3.2207896175765,
+          4.51043873166278,
+          5.80008784574905,
+          7.08973695983532,
+          8.37938607392159,
+          9.66903518800787,
+          10.9586843020941,
+          12.2483334161804,
+          13.5379825302667,
+          14.827631644353,
+          16.1172807584392,
+          17.4069298725255,
+          18.6965789866118,
+          19.986228100698,
+          21.2758772147843,
+          22.5655263288706,
+          23.8551754429569,
+          25.1448245570431,
+          26.4344736711294,
+          27.7241227852157,
+          29.013771899302,
+          30.3034210133882,
+          31.5930701274745,
+          32.8827192415608,
+          34.172368355647,
+          35.4620174697333,
+          36.7516665838196,
+          38.0413156979059,
+          39.3309648119921,
+          40.6206139260784,
+          41.9102630401647,
+          43.199912154251,
+          44.4895612683372,
+          45.7792103824235,
+          47.0688594965098,
+          48.358508610596,
+          49.6481577246823,
+          50.9378068387686,
+          52.2274559528549,
+          53.5171050669411,
+          54.8067541810274,
+          56.0964032951137
+        ]
+      ],
+      [
+        "ploty",
+        [
+          8.96460101256288e-05,
+          0.000334549640837125,
+          0.000994166118351941,
+          0.00235210447696035,
+          0.00443843712426354,
+          0.00669440157784886,
+          0.00810250040067722,
+          0.00797497133140861,
+          0.00663230507439452,
+          0.00518368371520869,
+          0.00465037476121383,
+          0.00530771770454641,
+          0.00672277044415513,
+          0.00822845863009708,
+          0.00946523848127592,
+          0.010646841489942,
+          0.0123311950625211,
+          0.0149224837390686,
+          0.0183719931694796,
+          0.022256792848535,
+          0.0260101539580163,
+          0.0290242205921502,
+          0.0306501044921241,
+          0.0304101118459758,
+          0.0284846810717094,
+          0.0259630397675348,
+          0.0245041234390056,
+          0.025496456739034,
+          0.0290315421322753,
+          0.0333898848054485,
+          0.0359547541512553,
+          0.0351737285958595,
+          0.0317845349350112,
+          0.0279481707440948,
+          0.0251313768114649,
+          0.0230851222037937,
+          0.0207723216184971,
+          0.0180465615913301,
+          0.0160860151207982,
+          0.0160451253804175,
+          0.017526399760521,
+          0.0186476702398577,
+          0.0176531906899374,
+          0.014288984852627,
+          0.00973748019105677,
+          0.00554145611819787,
+          0.00261507890126927,
+          0.00101485116298703,
+          0.000321169238549431,
+          8.24132408131238e-05
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          1,
+          2.51612903225806,
+          4.03225806451613,
+          5.54838709677419,
+          7.06451612903226,
+          8.58064516129032,
+          10.0967741935484,
+          11.6129032258065,
+          13.1290322580645,
+          14.6451612903226,
+          16.1612903225806,
+          17.6774193548387,
+          19.1935483870968,
+          20.7096774193548,
+          22.2258064516129,
+          23.741935483871,
+          25.258064516129,
+          26.7741935483871,
+          28.2903225806452,
+          29.8064516129032,
+          31.3225806451613,
+          32.8387096774194,
+          34.3548387096774,
+          35.8709677419355,
+          37.3870967741936,
+          38.9032258064516,
+          40.4193548387097,
+          41.9354838709677,
+          43.4516129032258,
+          44.9677419354839,
+          46.4838709677419,
+          48
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.0539460539460539,
+          0.0539460539460539,
+          0.0539460539460539,
+          0.0579420579420579,
+          0.0579420579420579,
+          0.0649350649350649,
+          0.0899100899100899,
+          0.100899100899101,
+          0.110889110889111,
+          0.123876123876124,
+          0.153846153846154,
+          0.170829170829171,
+          0.224775224775225,
+          0.264735264735265,
+          0.324675324675325,
+          0.393606393606394,
+          0.418581418581419,
+          0.444555444555445,
+          0.471528471528472,
+          0.471528471528472,
+          0.56043956043956,
+          0.653346653346653,
+          0.716283716283716,
+          0.716283716283716,
+          0.752247752247752,
+          0.79020979020979,
+          0.865134865134865,
+          0.865134865134865,
+          0.865134865134865,
+          0.865134865134865,
+          0.955044955044955,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Nmuncons"
+      ],
+      [
+        "invalid",
+        1
+      ],
+      [
+        "valid",
+        1001
+      ],
+      [
+        "sd",
+        "12.0583342371749"
+      ],
+      [
+        "uniques",
+        32
+      ],
+      [
+        "herfindahl",
+        0.0430209151487873
+      ],
+      [
+        "freqmode",
+        93
+      ],
+      [
+        "fewest",
+        "5"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "4"
+      ],
+      [
+        "freqmid",
+        "30.5"
+      ],
+      [
+        "varnamesTypes",
+        "Nmuncons"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.period.mode",
+    [
+      "1954",
+      [
+        "1954"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.period.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.period.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.period",
+    [
+      [
+        "variableName",
+        "period"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        1002
+      ],
+      [
+        "uniqueCount",
+        31
+      ],
+      [
+        "modeFreq",
+        442
+      ],
+      [
+        "fewestValues",
+        [
+          "1946-56",
+          "1946-54",
+          "1951-54",
+          "1940-1949",
+          "1939-51"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.21451508161322058
+      ],
+      [
+        "plotValues",
+        {
+          "1954": 442,
+          "1951": 57,
+          "1932-52": 46,
+          "1954-55": 45,
+          "1951-52": 45,
+          "1955": 39,
+          "1952-53": 38,
+          "1947-49": 36,
+          "1946-51": 36,
+          "1953": 32,
+          "1948-49": 30,
+          "1945-49": 27,
+          "1957": 25,
+          "1945-51": 23,
+          "1944": 22,
+          "1951-53": 19,
+          "1939-50": 17,
+          "1950-51": 9,
+          "1951-55": 2,
+          "1939-1944": 1,
+          "1956-54": 1,
+          "1944-1947": 1,
+          "1930-1944": 1,
+          "1936-1947": 1,
+          "1953-54": 1,
+          "1940-1946": 1,
+          "1940-1949": 1,
+          "1939-51": 1,
+          "1951-54": 1,
+          "1946-54": 1,
+          "1946-56": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.period",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "1930-1944": 1,
+          "1932-52": 46,
+          "1936-1947": 1,
+          "1939-1944": 1,
+          "1939-50": 17,
+          "1939-51": 1,
+          "1940-1946": 1,
+          "1940-1949": 1,
+          "1944": 22,
+          "1944-1947": 1,
+          "1945-49": 27,
+          "1945-51": 23,
+          "1946-51": 36,
+          "1946-54": 1,
+          "1946-56": 1,
+          "1947-49": 36,
+          "1948-49": 30,
+          "1950-51": 9,
+          "1951": 57,
+          "1951-52": 45,
+          "1951-53": 19,
+          "1951-54": 1,
+          "1951-55": 2,
+          "1952-53": 38,
+          "1953": 32,
+          "1953-54": 1,
+          "1954": 442,
+          "1954-55": 45,
+          "1955": 39,
+          "1956-54": 1,
+          "1957": 25
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "period"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        1002
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        31
+      ],
+      [
+        "herfindahl",
+        0.214515081613221
+      ],
+      [
+        "freqmode",
+        442
+      ],
+      [
+        "fewest",
+        "1946-56"
+      ],
+      [
+        "mid",
+        "1951-53"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "19"
+      ],
+      [
+        "varnamesTypes",
+        "period"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "median"
+    ],
+    [
+      "2.79",
+      2.79
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "mean"
+    ],
+    [
+      "4.97966098373354",
+      4.979660983733539
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "mode"
+    ],
+    [
+      "1.18",
+      [
+        1.18
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "max"
+    ],
+    [
+      "31.58",
+      31.58
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "min"
+    ],
+    [
+      "0.65",
+      0.65
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "nature"
+    ],
+    [
+      "ratio",
+      "ordinal"
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "binary"
+    ],
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "interval"
+    ],
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "T.consanguinity",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "T.consanguinity"
+    ],
+    [
+      [
+        "variableName",
+        "T.consanguinity"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        30
+      ],
+      [
+        "validCount",
+        972
+      ],
+      [
+        "uniqueCount",
+        92
+      ],
+      [
+        "modeFreq",
+        61
+      ],
+      [
+        "fewestValues",
+        [
+          10.25,
+          1.6,
+          23.19,
+          15.66,
+          6.06
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        5.108290047209106
+      ],
+      [
+        "herfindahlIndex",
+        0.002110335768591515
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          0.397380572248267,
+          1.0389160590952764,
+          1.680451545942286,
+          2.3219870327892953,
+          2.963522519636305,
+          3.6050580064833144,
+          4.246593493330323,
+          4.888128980177333,
+          5.529664467024342,
+          6.171199953871351,
+          6.812735440718361,
+          7.4542709275653705,
+          8.09580641441238,
+          8.73734190125939,
+          9.3788773881064,
+          10.020412874953408,
+          10.661948361800418,
+          11.303483848647428,
+          11.945019335494436,
+          12.586554822341446,
+          13.228090309188456,
+          13.869625796035464,
+          14.511161282882474,
+          15.152696769729484,
+          15.794232256576493,
+          16.435767743423504,
+          17.077303230270513,
+          17.71883871711752,
+          18.360374203964533,
+          19.00190969081154,
+          19.64344517765855,
+          20.28498066450556,
+          20.92651615135257,
+          21.568051638199577,
+          22.20958712504659,
+          22.851122611893597,
+          23.492658098740606,
+          24.134193585587617,
+          24.775729072434626,
+          25.417264559281634,
+          26.058800046128646,
+          26.700335532975654,
+          27.341871019822662,
+          27.983406506669674,
+          28.624941993516682,
+          29.26647748036369,
+          29.908012967210702,
+          30.54954845405771,
+          31.19108394090472,
+          31.83261942775173
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.09972393552659642,
+          0.1339079934372351,
+          0.14933854190981083,
+          0.14215220695074923,
+          0.12135148159926606,
+          0.10039746560972132,
+          0.08701917259026097,
+          0.08038712004456332,
+          0.0752086019882715,
+          0.06707919435096811,
+          0.05541497498481446,
+          0.04310044961236601,
+          0.03358893651242543,
+          0.027983771367901502,
+          0.024796970849804555,
+          0.02226492396364423,
+          0.020204574702018033,
+          0.019180455772813326,
+          0.01861398076363623,
+          0.016905442076171624,
+          0.013345405082862572,
+          0.008937814544072078,
+          0.0052093168774785805,
+          0.0028531020117616482,
+          0.0016209435661526566,
+          0.000986631405423901,
+          0.0006409164539718732,
+          0.0005896791280791629,
+          0.0010970263353748256,
+          0.002585809374744773,
+          0.005333457581099579,
+          0.008932280762849902,
+          0.012043662294077733,
+          0.013084761566986318,
+          0.0114869858907907,
+          0.008203575269494195,
+          0.0048570940541805005,
+          0.0025175242861259946,
+          0.0013169912968532052,
+          0.0008744726177156336,
+          0.0007707955032480658,
+          0.0007239636480647928,
+          0.0006092092276732333,
+          0.0004452104135061483,
+          0.00032678206381488617,
+          0.00032519879716083594,
+          0.00042919733112683475,
+          0.0005545568489611186,
+          0.0006031213222346735,
+          0.0005315990052388603
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.65,
+          1.2812244897959184,
+          1.912448979591837,
+          2.543673469387755,
+          3.1748979591836735,
+          3.806122448979592,
+          4.4373469387755105,
+          5.068571428571429,
+          5.6997959183673474,
+          6.3310204081632655,
+          6.962244897959184,
+          7.5934693877551025,
+          8.22469387755102,
+          8.85591836734694,
+          9.487142857142858,
+          10.118367346938776,
+          10.749591836734695,
+          11.380816326530613,
+          12.01204081632653,
+          12.64326530612245,
+          13.274489795918369,
+          13.905714285714286,
+          14.536938775510205,
+          15.168163265306124,
+          15.79938775510204,
+          16.430612244897958,
+          17.061836734693877,
+          17.693061224489796,
+          18.324285714285715,
+          18.95551020408163,
+          19.58673469387755,
+          20.217959183673468,
+          20.849183673469387,
+          21.480408163265306,
+          22.111632653061225,
+          22.742857142857144,
+          23.37408163265306,
+          24.005306122448978,
+          24.636530612244897,
+          25.267755102040816,
+          25.898979591836735,
+          26.530204081632654,
+          27.16142857142857,
+          27.792653061224488,
+          28.423877551020407,
+          29.055102040816326,
+          29.686326530612245,
+          30.317551020408164,
+          30.94877551020408,
+          31.58
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.030864197530864196,
+          0.17181069958847736,
+          0.3333333333333333,
+          0.44650205761316875,
+          0.5113168724279835,
+          0.5534979423868313,
+          0.5895061728395061,
+          0.6378600823045267,
+          0.691358024691358,
+          0.75,
+          0.808641975308642,
+          0.8096707818930041,
+          0.8364197530864198,
+          0.838477366255144,
+          0.8395061728395061,
+          0.8899176954732511,
+          0.8909465020576132,
+          0.8940329218106996,
+          0.8940329218106996,
+          0.926954732510288,
+          0.9434156378600823,
+          0.9454732510288066,
+          0.9465020576131687,
+          0.9475308641975309,
+          0.948559670781893,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9495884773662552,
+          0.9691358024691358,
+          0.9938271604938271,
+          0.9938271604938271,
+          0.9948559670781894,
+          0.9948559670781894,
+          0.9958847736625515,
+          0.9958847736625515,
+          0.9958847736625515,
+          0.9958847736625515,
+          0.9979423868312757,
+          0.9979423868312757,
+          0.9979423868312757,
+          0.9979423868312757,
+          0.9979423868312757,
+          0.9979423868312757,
+          0.9989711934156379,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "T.consanguinity"
+    ],
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -1.84287302090903,
+          -1.10989861189234,
+          -0.376924202875642,
+          0.356050206141053,
+          1.08902461515775,
+          1.82199902417444,
+          2.55497343319114,
+          3.28794784220783,
+          4.02092225122453,
+          4.75389666024122,
+          5.48687106925792,
+          6.21984547827461,
+          6.95281988729131,
+          7.685794296308,
+          8.4187687053247,
+          9.15174311434139,
+          9.88471752335809,
+          10.6176919323748,
+          11.3506663413915,
+          12.0836407504082,
+          12.8166151594249,
+          13.5495895684416,
+          14.2825639774583,
+          15.015538386475,
+          15.7485127954916,
+          16.4814872045083,
+          17.214461613525,
+          17.9474360225417,
+          18.6804104315584,
+          19.4133848405751,
+          20.1463592495918,
+          20.8793336586085,
+          21.6123080676252,
+          22.3452824766419,
+          23.0782568856586,
+          23.8112312946753,
+          24.544205703692,
+          25.2771801127087,
+          26.0101545217254,
+          26.7431289307421,
+          27.4761033397588,
+          28.2090777487755,
+          28.9420521577922,
+          29.6750265668089,
+          30.4080009758256,
+          31.1409753848422,
+          31.8739497938589,
+          32.6069242028756,
+          33.3398986118923,
+          34.072873020909
+        ]
+      ],
+      [
+        "ploty",
+        [
+          0.000362237520205682,
+          0.00452731398950578,
+          0.0286801797449818,
+          0.0953861337631438,
+          0.175078964003977,
+          0.191948428984615,
+          0.142521341200664,
+          0.0919369208825598,
+          0.0763736822605635,
+          0.0798913011030569,
+          0.0828118877382157,
+          0.0750190787090112,
+          0.0518598420051485,
+          0.0306988467337563,
+          0.0240777795606457,
+          0.0272170282627406,
+          0.0251238508244637,
+          0.0161762185301714,
+          0.0164759926961378,
+          0.0230492946709709,
+          0.0199810483099904,
+          0.00983998067017067,
+          0.00354021538406292,
+          0.0017359939028057,
+          0.00133076139443994,
+          0.000870523839222045,
+          0.000340691248046741,
+          8.2596619663658e-05,
+          0.000225511649857721,
+          0.00176606505767228,
+          0.00714489763393686,
+          0.015351061375956,
+          0.0185208883739593,
+          0.0126514080833752,
+          0.00493908732975539,
+          0.00148640702432489,
+          0.000717160627266128,
+          0.000549323716573938,
+          0.000769489899106603,
+          0.000995717267713658,
+          0.000661079792740921,
+          0.000210715931473335,
+          8.35466773529186e-05,
+          0.000262664819263405,
+          0.00064322943132606,
+          0.000863548807452918,
+          0.000652279571958844,
+          0.000268706509118605,
+          5.64985433007275e-05,
+          5.73452784416555e-06
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          0.65,
+          1.28122448979592,
+          1.91244897959184,
+          2.54367346938775,
+          3.17489795918367,
+          3.80612244897959,
+          4.43734693877551,
+          5.06857142857143,
+          5.69979591836735,
+          6.33102040816327,
+          6.96224489795918,
+          7.5934693877551,
+          8.22469387755102,
+          8.85591836734694,
+          9.48714285714286,
+          10.1183673469388,
+          10.7495918367347,
+          11.3808163265306,
+          12.0120408163265,
+          12.6432653061224,
+          13.2744897959184,
+          13.9057142857143,
+          14.5369387755102,
+          15.1681632653061,
+          15.799387755102,
+          16.430612244898,
+          17.0618367346939,
+          17.6930612244898,
+          18.3242857142857,
+          18.9555102040816,
+          19.5867346938775,
+          20.2179591836735,
+          20.8491836734694,
+          21.4804081632653,
+          22.1116326530612,
+          22.7428571428571,
+          23.3740816326531,
+          24.005306122449,
+          24.6365306122449,
+          25.2677551020408,
+          25.8989795918367,
+          26.5302040816327,
+          27.1614285714286,
+          27.7926530612245,
+          28.4238775510204,
+          29.0551020408163,
+          29.6863265306122,
+          30.3175510204082,
+          30.9487755102041,
+          31.58
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.0308641975308642,
+          0.171810699588477,
+          0.333333333333333,
+          0.446502057613169,
+          0.511316872427984,
+          0.553497942386831,
+          0.589506172839506,
+          0.637860082304527,
+          0.691358024691358,
+          0.75,
+          0.808641975308642,
+          0.809670781893004,
+          0.83641975308642,
+          0.838477366255144,
+          0.839506172839506,
+          0.889917695473251,
+          0.890946502057613,
+          0.8940329218107,
+          0.8940329218107,
+          0.926954732510288,
+          0.943415637860082,
+          0.945473251028807,
+          0.946502057613169,
+          0.947530864197531,
+          0.948559670781893,
+          0.949588477366255,
+          0.949588477366255,
+          0.949588477366255,
+          0.949588477366255,
+          0.949588477366255,
+          0.949588477366255,
+          0.949588477366255,
+          0.949588477366255,
+          0.969135802469136,
+          0.993827160493827,
+          0.993827160493827,
+          0.994855967078189,
+          0.994855967078189,
+          0.995884773662551,
+          0.995884773662551,
+          0.995884773662551,
+          0.995884773662551,
+          0.997942386831276,
+          0.997942386831276,
+          0.997942386831276,
+          0.997942386831276,
+          0.997942386831276,
+          0.997942386831276,
+          0.998971193415638,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "T.consanguinity"
+      ],
+      [
+        "invalid",
+        30
+      ],
+      [
+        "valid",
+        972
+      ],
+      [
+        "sd",
+        "5.10829004720911"
+      ],
+      [
+        "uniques",
+        92
+      ],
+      [
+        "herfindahl",
+        0.0296660400684178
+      ],
+      [
+        "freqmode",
+        61
+      ],
+      [
+        "fewest",
+        "0.77"
+      ],
+      [
+        "mid",
+        "0.77"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "T.consanguinity"
+      ],
+      [
+        "defaultInterval",
+        "continuous"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ratio"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.median",
+    [
+      "0.157489783",
+      0.157489783
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.mean",
+    [
+      "0.179427058485804",
+      0.17942705848580442
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.mode",
+    [
+      "0.1625",
+      [
+        0.16245606699999998,
+        0.127338633
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.max",
+    [
+      "0.726504946",
+      0.7265049459999999
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.min",
+    [
+      "0.017122467",
+      0.017122467
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.nature",
+    [
+      "percent",
+      "ordinal"
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI54.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.VCI54",
+    [
+      [
+        "variableName",
+        "VCI54"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        368
+      ],
+      [
+        "validCount",
+        634
+      ],
+      [
+        "uniqueCount",
+        632
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          0.11078229099999999,
+          0.177479684,
+          0.120656674,
+          0.127390433,
+          0.10110690300000001
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.09462737723299752
+      ],
+      [
+        "herfindahlIndex",
+        0.0020152959565213533
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          -0.2580355357410201,
+          -0.23232740340465197,
+          -0.2066192710682838,
+          -0.1809111387319156,
+          -0.15520300639554746,
+          -0.1294948740591793,
+          -0.10378674172281113,
+          -0.07807860938644295,
+          -0.052370477050074804,
+          -0.026662344713706654,
+          -0.0009542123773385036,
+          0.024753919959029702,
+          0.05046205229539785,
+          0.076170184631766,
+          0.10187831696813421,
+          0.12758644930450236,
+          0.1532945816408705,
+          0.17900271397723866,
+          0.2047108463136068,
+          0.23041897864997501,
+          0.2561271109863431,
+          0.28183524332271137,
+          0.3075433756590795,
+          0.33325150799544767,
+          0.3589596403318158,
+          0.38466777266818397,
+          0.4103759050045521,
+          0.43608403734092027,
+          0.46179216967728853,
+          0.4875003020136567,
+          0.5132084343500248,
+          0.538916566686393,
+          0.5646246990227611,
+          0.5903328313591293,
+          0.6160409636954974,
+          0.6417490960318656,
+          0.6674572283682337,
+          0.693165360704602,
+          0.7188734930409701,
+          0.7445816253773382,
+          0.7702897577137063,
+          0.7959978900500747,
+          0.8217060223864429,
+          0.847414154722811,
+          0.8731222870591792,
+          0.8988304193955473,
+          0.9245385517319155,
+          0.9502466840682836,
+          0.9759548164046518,
+          1.00166294874102
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          1.3577338881205807e-26,
+          2.836075463939542e-22,
+          2.2356614241128743e-18,
+          6.654284649094735e-15,
+          7.487587185903803e-12,
+          3.1949259333692097e-09,
+          5.210222518215482e-07,
+          3.314785735551222e-05,
+          0.0008687403842814223,
+          0.010694980741657034,
+          0.0772783661055453,
+          0.3884476573163684,
+          1.373560316506489,
+          3.269106336919765,
+          5.103979230463916,
+          5.557601386171498,
+          4.960095640380514,
+          4.283875358489486,
+          3.575164581386331,
+          2.6972575180708236,
+          1.9143870120790911,
+          1.3567516141488056,
+          1.054760315726193,
+          0.8780392219724708,
+          0.6421528895781601,
+          0.40734313120762905,
+          0.2919474410524666,
+          0.24116216753088082,
+          0.1947794552231087,
+          0.1718773225690372,
+          0.13190214964343902,
+          0.07684254407109706,
+          0.04242856573959677,
+          0.0294236790109151,
+          0.026437012493699806,
+          0.01442867131223072,
+          0.008098032581917913,
+          0.025286229439027072,
+          0.04731407505026885,
+          0.034284731849396836,
+          0.009529813167441675,
+          0.0010152327716757266,
+          4.140417454618838e-05,
+          6.454858679053605e-07,
+          3.840508094734439e-09,
+          8.706237098603032e-12,
+          7.507969314358602e-15,
+          2.45943016027117e-18,
+          3.056410218173915e-22,
+          1.4393928773295883e-26
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.017122467,
+          0.03159966044897959,
+          0.04607685389795918,
+          0.06055404734693877,
+          0.07503124079591836,
+          0.08950843424489796,
+          0.10398562769387755,
+          0.11846282114285714,
+          0.1329400145918367,
+          0.14741720804081632,
+          0.16189440148979592,
+          0.1763715949387755,
+          0.1908487883877551,
+          0.20532598183673467,
+          0.21980317528571428,
+          0.23428036873469385,
+          0.24875756218367345,
+          0.26323475563265303,
+          0.2777119490816326,
+          0.2921891425306122,
+          0.3066663359795918,
+          0.3211435294285714,
+          0.33562072287755096,
+          0.35009791632653053,
+          0.36457510977551016,
+          0.37905230322448974,
+          0.3935294966734693,
+          0.40800669012244895,
+          0.4224838835714285,
+          0.4369610770204081,
+          0.45143827046938767,
+          0.4659154639183673,
+          0.4803926573673469,
+          0.49486985081632645,
+          0.5093470442653061,
+          0.5238242377142857,
+          0.5383014311632652,
+          0.5527786246122448,
+          0.5672558180612244,
+          0.581733011510204,
+          0.5962102049591836,
+          0.6106873984081632,
+          0.6251645918571428,
+          0.6396417853061224,
+          0.6541189787551019,
+          0.6685961722040815,
+          0.6830733656530611,
+          0.6975505591020408,
+          0.7120277525510204,
+          0.7265049459999999
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.0015772870662460567,
+          0.0015772870662460567,
+          0.006309148264984227,
+          0.01892744479495268,
+          0.04258675078864353,
+          0.0946372239747634,
+          0.19873817034700317,
+          0.2807570977917981,
+          0.3785488958990536,
+          0.4589905362776025,
+          0.5220820189274448,
+          0.5867507886435331,
+          0.6419558359621451,
+          0.7082018927444795,
+          0.7586750788643533,
+          0.7917981072555205,
+          0.8249211356466877,
+          0.8470031545741324,
+          0.8738170347003155,
+          0.889589905362776,
+          0.9022082018927445,
+          0.916403785488959,
+          0.9321766561514195,
+          0.943217665615142,
+          0.9574132492113565,
+          0.9605678233438486,
+          0.9668769716088328,
+          0.9684542586750788,
+          0.9716088328075709,
+          0.9794952681388013,
+          0.9810725552050473,
+          0.9826498422712934,
+          0.9858044164037855,
+          0.9873817034700315,
+          0.9921135646687698,
+          0.9921135646687698,
+          0.9936908517350158,
+          0.9936908517350158,
+          0.9952681388012619,
+          0.9952681388012619,
+          0.9952681388012619,
+          0.9952681388012619,
+          0.9968454258675079,
+          0.9968454258675079,
+          0.9968454258675079,
+          0.9968454258675079,
+          0.9968454258675079,
+          0.9968454258675079,
+          0.9968454258675079,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.VCI54",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -0.0398666163888666,
+          -0.0230633379036067,
+          -0.00626005941834683,
+          0.010543219066913,
+          0.0273464975521729,
+          0.0441497760374328,
+          0.0609530545226926,
+          0.0777563330079525,
+          0.0945596114932123,
+          0.111362889978472,
+          0.128166168463732,
+          0.144969446948992,
+          0.161772725434252,
+          0.178576003919512,
+          0.195379282404771,
+          0.212182560890031,
+          0.228985839375291,
+          0.245789117860551,
+          0.262592396345811,
+          0.279395674831071,
+          0.296198953316331,
+          0.313002231801591,
+          0.32980551028685,
+          0.34660878877211,
+          0.36341206725737,
+          0.38021534574263,
+          0.39701862422789,
+          0.41382190271315,
+          0.43062518119841,
+          0.447428459683669,
+          0.464231738168929,
+          0.481035016654189,
+          0.497838295139449,
+          0.514641573624709,
+          0.531444852109969,
+          0.548248130595229,
+          0.565051409080488,
+          0.581854687565748,
+          0.598657966051008,
+          0.615461244536268,
+          0.632264523021528,
+          0.649067801506788,
+          0.665871079992048,
+          0.682674358477308,
+          0.699477636962567,
+          0.716280915447827,
+          0.733084193933087,
+          0.749887472418347,
+          0.766690750903607,
+          0.783494029388867
+        ]
+      ],
+      [
+        "ploty",
+        [
+          0.000392954448002717,
+          0.00405503488318881,
+          0.0225314815186355,
+          0.0852055261236423,
+          0.275776479867906,
+          0.771135007267034,
+          1.7862226446061,
+          3.40096575170789,
+          5.07623294568799,
+          5.93938157535223,
+          5.83198266588259,
+          5.21059074379129,
+          4.63890999268568,
+          4.30300123778732,
+          3.95673845885408,
+          3.37784261791559,
+          2.69888249351809,
+          2.15058340418228,
+          1.70788820082892,
+          1.32572320198054,
+          1.09205681124898,
+          1.00007850944141,
+          0.93275450941057,
+          0.798743667251031,
+          0.585927190662304,
+          0.399658872193186,
+          0.302122775828502,
+          0.273524646484223,
+          0.265364314483156,
+          0.213724278485906,
+          0.174929282219239,
+          0.181025395999882,
+          0.175854724211798,
+          0.132671233512719,
+          0.0828502803455735,
+          0.0553461120558967,
+          0.0388451311266819,
+          0.0246931486008398,
+          0.0274564453281361,
+          0.0334193266170453,
+          0.0212374084353826,
+          0.00631160421434354,
+          0.00167662541984484,
+          0.00741951837030893,
+          0.0309347518064763,
+          0.0612097308487912,
+          0.0569517307371691,
+          0.0249742954276884,
+          0.00515338796508762,
+          0.000497380406465872
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          0.017122467,
+          0.0315996604489796,
+          0.0460768538979592,
+          0.0605540473469388,
+          0.0750312407959184,
+          0.089508434244898,
+          0.103985627693878,
+          0.118462821142857,
+          0.132940014591837,
+          0.147417208040816,
+          0.161894401489796,
+          0.176371594938776,
+          0.190848788387755,
+          0.205325981836735,
+          0.219803175285714,
+          0.234280368734694,
+          0.248757562183673,
+          0.263234755632653,
+          0.277711949081633,
+          0.292189142530612,
+          0.306666335979592,
+          0.321143529428571,
+          0.335620722877551,
+          0.350097916326531,
+          0.36457510977551,
+          0.37905230322449,
+          0.393529496673469,
+          0.408006690122449,
+          0.422483883571429,
+          0.436961077020408,
+          0.451438270469388,
+          0.465915463918367,
+          0.480392657367347,
+          0.494869850816327,
+          0.509347044265306,
+          0.523824237714286,
+          0.538301431163265,
+          0.552778624612245,
+          0.567255818061224,
+          0.581733011510204,
+          0.596210204959184,
+          0.610687398408163,
+          0.625164591857143,
+          0.639641785306122,
+          0.654118978755102,
+          0.668596172204082,
+          0.683073365653061,
+          0.697550559102041,
+          0.71202775255102,
+          0.726504946
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00157728706624606,
+          0.00157728706624606,
+          0.00630914826498423,
+          0.0189274447949527,
+          0.0425867507886435,
+          0.0946372239747634,
+          0.198738170347003,
+          0.280757097791798,
+          0.378548895899054,
+          0.458990536277603,
+          0.522082018927445,
+          0.586750788643533,
+          0.641955835962145,
+          0.70820189274448,
+          0.758675078864353,
+          0.79179810725552,
+          0.824921135646688,
+          0.847003154574132,
+          0.873817034700315,
+          0.889589905362776,
+          0.902208201892745,
+          0.916403785488959,
+          0.93217665615142,
+          0.943217665615142,
+          0.957413249211357,
+          0.960567823343849,
+          0.966876971608833,
+          0.968454258675079,
+          0.971608832807571,
+          0.979495268138801,
+          0.981072555205047,
+          0.982649842271293,
+          0.985804416403785,
+          0.987381703470032,
+          0.99211356466877,
+          0.99211356466877,
+          0.993690851735016,
+          0.993690851735016,
+          0.995268138801262,
+          0.995268138801262,
+          0.995268138801262,
+          0.995268138801262,
+          0.996845425867508,
+          0.996845425867508,
+          0.996845425867508,
+          0.996845425867508,
+          0.996845425867508,
+          0.996845425867508,
+          0.996845425867508,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "VCI54"
+      ],
+      [
+        "invalid",
+        368
+      ],
+      [
+        "valid",
+        634
+      ],
+      [
+        "sd",
+        "0.0946273772329975"
+      ],
+      [
+        "uniques",
+        632
+      ],
+      [
+        "herfindahl",
+        0.00158723840420345
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "0.191489"
+      ],
+      [
+        "mid",
+        "0.191489"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "VCI54"
+      ],
+      [
+        "defaultInterval",
+        "continuous"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "percent"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.median",
+    [
+      "0.187317288",
+      0.187317288
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.mean",
+    [
+      "0.220219286463059",
+      0.22021928646305933
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.mode",
+    [
+      "0.08462",
+      [
+        0.08461559699999999
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.max",
+    [
+      "0.820005039",
+      0.8200050390000001
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.min",
+    [
+      "0.032065351",
+      0.032065351
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.nature",
+    [
+      "percent",
+      "ordinal"
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.VCI58.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.VCI58",
+    [
+      [
+        "variableName",
+        "VCI58"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        41
+      ],
+      [
+        "validCount",
+        961
+      ],
+      [
+        "uniqueCount",
+        960
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          0.638375181,
+          0.16126051800000002,
+          0.251690103,
+          0.285745391,
+          0.233560259
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        0.12349203118470187
+      ],
+      [
+        "herfindahlIndex",
+        0.0013674651905559165
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          -0.22112976403877524,
+          -0.19471486775147828,
+          -0.16829997146418132,
+          -0.14188507517688437,
+          -0.11547017888958742,
+          -0.08905528260229048,
+          -0.06264038631499352,
+          -0.036225490027696566,
+          -0.009810593740399609,
+          0.016604302546897348,
+          0.04301919883419428,
+          0.06943409512149126,
+          0.09584899140878819,
+          0.12226388769608518,
+          0.1486787839833821,
+          0.1750936802706791,
+          0.20150857655797602,
+          0.22792347284527295,
+          0.2543383691325699,
+          0.2807532654198669,
+          0.30716816170716377,
+          0.33358305799446075,
+          0.35999795428175774,
+          0.3864128505690547,
+          0.4128277468563516,
+          0.4392426431436486,
+          0.46565753943094557,
+          0.49207243571824244,
+          0.5184873320055394,
+          0.5449022282928364,
+          0.5713171245801334,
+          0.5977320208674303,
+          0.6241469171547273,
+          0.6505618134420242,
+          0.6769767097293211,
+          0.7033916060166181,
+          0.7298065023039151,
+          0.7562213985912121,
+          0.782636294878509,
+          0.809051191165806,
+          0.8354660874531028,
+          0.8618809837403998,
+          0.8882958800276968,
+          0.9147107763149938,
+          0.9411256726022907,
+          0.9675405688895877,
+          0.9939554651768847,
+          1.0203703614641815,
+          1.0467852577514785,
+          1.0732001540387754
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          8.462236992280475e-17,
+          5.803024868735325e-14,
+          1.992061154158022e-11,
+          3.457942143135176e-09,
+          3.0800032416025516e-07,
+          1.437149782251878e-05,
+          0.00036128864252212,
+          0.005068878808332025,
+          0.0413536363847724,
+          0.2060575425740384,
+          0.6709742093412755,
+          1.559831841658375,
+          2.7907454838779286,
+          3.976853005949794,
+          4.614700333009237,
+          4.499017841653144,
+          3.8740015475474947,
+          3.1746005522974916,
+          2.610883280498921,
+          2.143433062858193,
+          1.7274005640549313,
+          1.3448718881035364,
+          0.992169877265953,
+          0.7071219881902859,
+          0.5010005998492575,
+          0.38474390812449405,
+          0.3269892759073633,
+          0.2687299617693812,
+          0.18775946581678463,
+          0.11659674235600337,
+          0.09705830723088325,
+          0.12711222984097972,
+          0.17419476598193717,
+          0.18425882401013216,
+          0.138047789340701,
+          0.08495617652631582,
+          0.0667191008767383,
+          0.0700457286655059,
+          0.07148063633845823,
+          0.06323008245260235,
+          0.038777714510859825,
+          0.013534850254022714,
+          0.0024839178622367334,
+          0.000233690585303309,
+          1.1155014678812552e-05,
+          2.6833015699689987e-07,
+          3.234158824814237e-09,
+          1.9436421981574276e-11,
+          5.800545078030608e-14,
+          8.568580263352072e-17
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.032065351,
+          0.04814575279591837,
+          0.06422615459183674,
+          0.08030655638775511,
+          0.09638695818367349,
+          0.11246735997959184,
+          0.12854776177551022,
+          0.1446281635714286,
+          0.16070856536734696,
+          0.17678896716326534,
+          0.1928693689591837,
+          0.20894977075510207,
+          0.22503017255102045,
+          0.2411105743469388,
+          0.2571909761428572,
+          0.27327137793877554,
+          0.28935177973469395,
+          0.3054321815306123,
+          0.3215125833265307,
+          0.33759298512244906,
+          0.3536733869183674,
+          0.3697537887142858,
+          0.3858341905102042,
+          0.40191459230612253,
+          0.41799499410204094,
+          0.4340753958979593,
+          0.45015579769387765,
+          0.466236199489796,
+          0.4823166012857144,
+          0.49839700308163276,
+          0.5144774048775511,
+          0.5305578066734695,
+          0.5466382084693878,
+          0.5627186102653062,
+          0.5787990120612245,
+          0.5948794138571429,
+          0.6109598156530613,
+          0.6270402174489796,
+          0.643120619244898,
+          0.6592010210408165,
+          0.6752814228367348,
+          0.6913618246326532,
+          0.7074422264285716,
+          0.7235226282244899,
+          0.7396030300204083,
+          0.7556834318163267,
+          0.771763833612245,
+          0.7878442354081634,
+          0.8039246372040818,
+          0.8200050390000001
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.001040582726326743,
+          0.005202913631633715,
+          0.013527575442247659,
+          0.04162330905306972,
+          0.06867845993756504,
+          0.12486992715920915,
+          0.20395421436004163,
+          0.2757544224765869,
+          0.3610822060353798,
+          0.4474505723204995,
+          0.5192507804370448,
+          0.5806451612903226,
+          0.63579604578564,
+          0.6784599375650364,
+          0.7242455775234131,
+          0.7617065556711758,
+          0.7991675338189386,
+          0.8220603537981269,
+          0.8449531737773153,
+          0.8772112382934444,
+          0.8917793964620188,
+          0.9042663891779397,
+          0.918834547346514,
+          0.9292403746097815,
+          0.9354838709677419,
+          0.9396462018730489,
+          0.9458896982310093,
+          0.9521331945889698,
+          0.9552549427679501,
+          0.9614984391259105,
+          0.9667013527575442,
+          0.9687825182101977,
+          0.9698231009365245,
+          0.9698231009365245,
+          0.9719042663891779,
+          0.9739854318418314,
+          0.9739854318418314,
+          0.9781477627471384,
+          0.9823100936524454,
+          0.9875130072840791,
+          0.9885535900104059,
+          0.9906347554630593,
+          0.991675338189386,
+          0.991675338189386,
+          0.991675338189386,
+          0.9937565036420395,
+          0.9958376690946931,
+          0.9958376690946931,
+          0.9968782518210197,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.VCI58",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -0.0329848984869354,
+          -0.0142493844670605,
+          0.00448612955281445,
+          0.0232216435726894,
+          0.0419571575925643,
+          0.0606926716124392,
+          0.0794281856323141,
+          0.098163699652189,
+          0.116899213672064,
+          0.135634727691939,
+          0.154370241711814,
+          0.173105755731689,
+          0.191841269751564,
+          0.210576783771439,
+          0.229312297791313,
+          0.248047811811188,
+          0.266783325831063,
+          0.285518839850938,
+          0.304254353870813,
+          0.322989867890688,
+          0.341725381910563,
+          0.360460895930438,
+          0.379196409950313,
+          0.397931923970188,
+          0.416667437990063,
+          0.435402952009938,
+          0.454138466029812,
+          0.472873980049687,
+          0.491609494069562,
+          0.510345008089437,
+          0.529080522109312,
+          0.547816036129187,
+          0.566551550149062,
+          0.585287064168937,
+          0.604022578188812,
+          0.622758092208687,
+          0.641493606228562,
+          0.660229120248436,
+          0.678964634268311,
+          0.697700148288186,
+          0.716435662308061,
+          0.735171176327936,
+          0.753906690347811,
+          0.772642204367686,
+          0.791377718387561,
+          0.810113232407436,
+          0.828848746427311,
+          0.847584260447186,
+          0.866319774467061,
+          0.885055288486935
+        ]
+      ],
+      [
+        "ploty",
+        [
+          0.000349989321259907,
+          0.00444090793513922,
+          0.0327249977974868,
+          0.151732943441323,
+          0.47159415244365,
+          1.05042887257577,
+          1.87235761663263,
+          2.92052963316368,
+          3.97435416781255,
+          4.69650852216144,
+          4.97456257495908,
+          4.76715646411581,
+          4.19616853579841,
+          3.57237770912159,
+          3.06296059195553,
+          2.69489786647187,
+          2.38236228601727,
+          2.04392736809265,
+          1.74701453698379,
+          1.5106804329325,
+          1.22073741039672,
+          0.944381432220978,
+          0.758002388660015,
+          0.583430225752925,
+          0.43122702718682,
+          0.367543978118493,
+          0.348224984971352,
+          0.319098282770998,
+          0.285806797963162,
+          0.223960995675768,
+          0.138334296250568,
+          0.084064110211928,
+          0.07718635701827,
+          0.0939178616121096,
+          0.130727389393989,
+          0.187039629223536,
+          0.221998261709725,
+          0.195700000486117,
+          0.130194635772656,
+          0.0751264385778754,
+          0.0527841419360219,
+          0.0632061391711165,
+          0.0763139545156254,
+          0.0708929386994823,
+          0.0728267903861421,
+          0.0756719287674969,
+          0.0499774814172465,
+          0.0177400077598633,
+          0.00326976465357916,
+          0.00030620969309173
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          0.032065351,
+          0.0481457527959184,
+          0.0642261545918367,
+          0.0803065563877551,
+          0.0963869581836735,
+          0.112467359979592,
+          0.12854776177551,
+          0.144628163571429,
+          0.160708565367347,
+          0.176788967163265,
+          0.192869368959184,
+          0.208949770755102,
+          0.22503017255102,
+          0.241110574346939,
+          0.257190976142857,
+          0.273271377938776,
+          0.289351779734694,
+          0.305432181530612,
+          0.321512583326531,
+          0.337592985122449,
+          0.353673386918367,
+          0.369753788714286,
+          0.385834190510204,
+          0.401914592306122,
+          0.417994994102041,
+          0.434075395897959,
+          0.450155797693878,
+          0.466236199489796,
+          0.482316601285714,
+          0.498397003081633,
+          0.514477404877551,
+          0.530557806673469,
+          0.546638208469388,
+          0.562718610265306,
+          0.578799012061224,
+          0.594879413857143,
+          0.610959815653061,
+          0.62704021744898,
+          0.643120619244898,
+          0.659201021040816,
+          0.675281422836735,
+          0.691361824632653,
+          0.707442226428571,
+          0.72352262822449,
+          0.739603030020408,
+          0.755683431816326,
+          0.771763833612245,
+          0.787844235408163,
+          0.803924637204082,
+          0.820005039
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00104058272632674,
+          0.00520291363163371,
+          0.0135275754422477,
+          0.0416233090530697,
+          0.068678459937565,
+          0.124869927159209,
+          0.203954214360042,
+          0.275754422476587,
+          0.36108220603538,
+          0.4474505723205,
+          0.519250780437045,
+          0.580645161290323,
+          0.63579604578564,
+          0.678459937565036,
+          0.724245577523413,
+          0.761706555671176,
+          0.799167533818939,
+          0.822060353798127,
+          0.844953173777315,
+          0.877211238293444,
+          0.891779396462019,
+          0.90426638917794,
+          0.918834547346514,
+          0.929240374609781,
+          0.935483870967742,
+          0.939646201873049,
+          0.945889698231009,
+          0.95213319458897,
+          0.95525494276795,
+          0.96149843912591,
+          0.966701352757544,
+          0.968782518210198,
+          0.969823100936524,
+          0.969823100936524,
+          0.971904266389178,
+          0.973985431841831,
+          0.973985431841831,
+          0.978147762747138,
+          0.982310093652445,
+          0.987513007284079,
+          0.988553590010406,
+          0.990634755463059,
+          0.991675338189386,
+          0.991675338189386,
+          0.991675338189386,
+          0.993756503642039,
+          0.995837669094693,
+          0.995837669094693,
+          0.99687825182102,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "VCI58"
+      ],
+      [
+        "invalid",
+        41
+      ],
+      [
+        "valid",
+        961
+      ],
+      [
+        "sd",
+        "0.123492031184702"
+      ],
+      [
+        "uniques",
+        960
+      ],
+      [
+        "herfindahl",
+        0.0010427483511474
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "0.11757"
+      ],
+      [
+        "mid",
+        "0.11757"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "VCI58"
+      ],
+      [
+        "defaultInterval",
+        "continuous"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "percent"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "median"
+    ],
+    [
+      "16545",
+      16545.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "mean"
+    ],
+    [
+      "33056.282542886",
+      33056.28254288597
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "mode"
+    ],
+    [
+      "21700",
+      [
+        7712.0,
+        23365.0,
+        5526.0,
+        6623.0,
+        24784.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "max"
+    ],
+    [
+      "3781446",
+      3781446.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "min"
+    ],
+    [
+      "566",
+      566.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "binary"
+    ],
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "pop.60",
+      "time"
+    ],
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "pop.60"
+    ],
+    [
+      [
+        "variableName",
+        "pop.60"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        11
+      ],
+      [
+        "validCount",
+        991
+      ],
+      [
+        "uniqueCount",
+        980
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          16320.0,
+          9284.0,
+          14840.0,
+          18249.0,
+          13793.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        164152.8359801073
+      ],
+      [
+        "herfindahlIndex",
+        0.025867680364243615
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          565.7483567595066,
+          77726.57495444278,
+          154887.40155212607,
+          232048.22814980935,
+          309209.0547474926,
+          386369.88134517585,
+          463530.70794285915,
+          540691.5345405425,
+          617852.3611382258,
+          695013.187735909,
+          772174.0143335923,
+          849334.8409312756,
+          926495.6675289589,
+          1003656.4941266421,
+          1080817.3207243255,
+          1157978.1473220086,
+          1235138.973919692,
+          1312299.8005173753,
+          1389460.6271150585,
+          1466621.4537127418,
+          1543782.280310425,
+          1620943.1069081083,
+          1698103.9335057917,
+          1775264.7601034748,
+          1852425.5867011582,
+          1929586.4132988416,
+          2006747.2398965247,
+          2083908.066494208,
+          2161068.8930918914,
+          2238229.7196895746,
+          2315390.5462872577,
+          2392551.3728849413,
+          2469712.1994826244,
+          2546873.0260803076,
+          2624033.852677991,
+          2701194.6792756743,
+          2778355.5058733574,
+          2855516.332471041,
+          2932677.159068724,
+          3009837.9856664073,
+          3086998.8122640904,
+          3164159.638861774,
+          3241320.465459457,
+          3318481.2920571403,
+          3395642.118654824,
+          3472802.945252507,
+          3549963.77185019,
+          3627124.5984478737,
+          3704285.425045557,
+          3781446.2516432405
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          8.03966362704119e-06,
+          3.818600005619534e-06,
+          2.3245632095377792e-07,
+          4.150127307311859e-08,
+          2.1685782581226825e-08,
+          1.5235069977082997e-08,
+          6.91645677667118e-10,
+          1.0436979256155682e-09,
+          1.8916324202648546e-08,
+          1.8111173751778098e-08,
+          1.151681891933277e-09,
+          3.302403964632744e-12,
+          3.178945248844078e-16,
+          9.517149820213001e-22,
+          8.729194122949461e-29,
+          2.44577995330172e-37,
+          2.0921053839801951e-47,
+          5.462871686254816e-59,
+          4.3543066087612566e-72,
+          1.0594375072979054e-86,
+          7.868456430733099e-103,
+          1.7838630459590858e-120,
+          1.2345003487709433e-139,
+          2.6078263208208026e-160,
+          1.681604458343625e-182,
+          3.309990703679151e-206,
+          1.1532895100460832e-215,
+          2.2224494221917327e-191,
+          1.3073238032351672e-168,
+          2.347427507122411e-147,
+          1.2866456263931719e-127,
+          2.152699673455237e-109,
+          1.0994251814841519e-92,
+          1.7139796175228079e-77,
+          8.156491055303516e-64,
+          1.1848375613841472e-51,
+          5.253781429507602e-41,
+          7.11120054836511e-32,
+          2.938133942816955e-24,
+          3.705595345783835e-18,
+          1.426599712628347e-13,
+          1.6765017468583845e-10,
+          6.014002807312678e-09,
+          6.58538212973929e-09,
+          2.2011826108795218e-10,
+          2.245892257980303e-13,
+          1.4853453226779716e-15,
+          9.08088366939527e-12,
+          1.702693832939904e-09,
+          9.745469172229662e-09
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          566.0,
+          77726.8163265306,
+          154887.6326530612,
+          232048.44897959183,
+          309209.2653061224,
+          386370.081632653,
+          463530.89795918367,
+          540691.7142857142,
+          617852.5306122449,
+          695013.3469387755,
+          772174.163265306,
+          849334.9795918367,
+          926495.7959183673,
+          1003656.6122448979,
+          1080817.4285714284,
+          1157978.244897959,
+          1235139.0612244897,
+          1312299.8775510204,
+          1389460.693877551,
+          1466621.5102040814,
+          1543782.326530612,
+          1620943.1428571427,
+          1698103.9591836734,
+          1775264.775510204,
+          1852425.5918367347,
+          1929586.408163265,
+          2006747.2244897957,
+          2083908.0408163264,
+          2161068.857142857,
+          2238229.6734693875,
+          2315390.489795918,
+          2392551.3061224488,
+          2469712.1224489794,
+          2546872.93877551,
+          2624033.7551020407,
+          2701194.5714285714,
+          2778355.387755102,
+          2855516.2040816327,
+          2932677.020408163,
+          3009837.8367346935,
+          3086998.653061224,
+          3164159.469387755,
+          3241320.2857142854,
+          3318481.102040816,
+          3395641.9183673467,
+          3472802.7346938774,
+          3549963.551020408,
+          3627124.3673469387,
+          3704285.1836734693,
+          3781446.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.0010090817356205853,
+          0.958627648839556,
+          0.9889001009081736,
+          0.9899091826437941,
+          0.992936427850656,
+          0.9949545913218971,
+          0.9949545913218971,
+          0.9949545913218971,
+          0.9949545913218971,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9979818365287588,
+          0.9989909182643795,
+          0.9989909182643795,
+          0.9989909182643795,
+          0.9989909182643795,
+          0.9989909182643795,
+          0.9989909182643795,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    [
+      "variables",
+      "pop.60"
+    ],
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -9165.4103071328,
+          68392.6064400971,
+          145950.623187327,
+          223508.639934557,
+          301066.656681787,
+          378624.673429017,
+          456182.690176247,
+          533740.706923477,
+          611298.723670707,
+          688856.740417936,
+          766414.757165166,
+          843972.773912396,
+          921530.790659626,
+          999088.807406856,
+          1076646.82415409,
+          1154204.84090132,
+          1231762.85764855,
+          1309320.87439578,
+          1386878.89114301,
+          1464436.90789024,
+          1541994.92463747,
+          1619552.9413847,
+          1697110.95813192,
+          1774668.97487915,
+          1852226.99162638,
+          1929785.00837361,
+          2007343.02512084,
+          2084901.04186807,
+          2162459.0586153,
+          2240017.07536253,
+          2317575.09210976,
+          2395133.10885699,
+          2472691.12560422,
+          2550249.14235145,
+          2627807.15909868,
+          2705365.17584591,
+          2782923.19259314,
+          2860481.20934037,
+          2938039.2260876,
+          3015597.24283483,
+          3093155.25958206,
+          3170713.27632929,
+          3248271.29307652,
+          3325829.30982375,
+          3403387.32657098,
+          3480945.34331821,
+          3558503.36006544,
+          3636061.37681267,
+          3713619.3935599,
+          3791177.41030713
+        ]
+      ],
+      [
+        "ploty",
+        [
+          3.42491334803349e-07,
+          9.40446294623241e-07,
+          1.42765470926125e-07,
+          3.00527945415322e-08,
+          0,
+          1.7076612190819e-12,
+          3.75488884383159e-23,
+          0,
+          3.95071358460562e-13,
+          4.46808140033629e-08,
+          0,
+          1.01264271986671e-22,
+          6.63625991999044e-22,
+          2.41663921104355e-22,
+          0,
+          1.42772682941478e-22,
+          0,
+          1.17812638866847e-22,
+          1.29569993827379e-22,
+          3.20410301275185e-22,
+          1.18726061556027e-22,
+          1.51192198882432e-22,
+          0,
+          1.07098158066208e-22,
+          0,
+          1.20180452427585e-22,
+          3.18209675317881e-23,
+          0,
+          0,
+          1.4300693692863e-22,
+          1.31089864485823e-23,
+          8.07224951341491e-23,
+          0,
+          0,
+          1.41123983603855e-23,
+          0,
+          3.16440889883113e-23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7.81151772186785e-23,
+          0,
+          0,
+          3.08380820346514e-23,
+          0,
+          3.89139446913968e-22,
+          0,
+          6.16177679270078e-09
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          566,
+          77726.8163265306,
+          154887.632653061,
+          232048.448979592,
+          309209.265306122,
+          386370.081632653,
+          463530.897959184,
+          540691.714285714,
+          617852.530612245,
+          695013.346938776,
+          772174.163265306,
+          849334.979591837,
+          926495.795918367,
+          1003656.6122449,
+          1080817.42857143,
+          1157978.24489796,
+          1235139.06122449,
+          1312299.87755102,
+          1389460.69387755,
+          1466621.51020408,
+          1543782.32653061,
+          1620943.14285714,
+          1698103.95918367,
+          1775264.7755102,
+          1852425.59183673,
+          1929586.40816327,
+          2006747.2244898,
+          2083908.04081633,
+          2161068.85714286,
+          2238229.67346939,
+          2315390.48979592,
+          2392551.30612245,
+          2469712.12244898,
+          2546872.93877551,
+          2624033.75510204,
+          2701194.57142857,
+          2778355.3877551,
+          2855516.20408163,
+          2932677.02040816,
+          3009837.83673469,
+          3086998.65306122,
+          3164159.46938775,
+          3241320.28571429,
+          3318481.10204082,
+          3395641.91836735,
+          3472802.73469388,
+          3549963.55102041,
+          3627124.36734694,
+          3704285.18367347,
+          3781446
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.00100908173562059,
+          0.958627648839556,
+          0.988900100908174,
+          0.989909182643794,
+          0.992936427850656,
+          0.994954591321897,
+          0.994954591321897,
+          0.994954591321897,
+          0.994954591321897,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.997981836528759,
+          0.998990918264379,
+          0.998990918264379,
+          0.998990918264379,
+          0.998990918264379,
+          0.998990918264379,
+          0.998990918264379,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "pop.60"
+      ],
+      [
+        "invalid",
+        11
+      ],
+      [
+        "valid",
+        991
+      ],
+      [
+        "sd",
+        "164152.835980107"
+      ],
+      [
+        "uniques",
+        980
+      ],
+      [
+        "herfindahl",
+        0.00103148314650217
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "9256"
+      ],
+      [
+        "mid",
+        "9256"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "pop.60"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:15:04",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "municipality": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "state": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "diocese": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "granularity": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Nmuncons": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "period": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "T.consanguinity": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "VCI54": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "VCI58": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "pop.60": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

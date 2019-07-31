@@ -1,0 +1,643 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        9
+      ],
+      [
+        "variableCount",
+        4
+      ],
+      [
+        "dataSource",
+        {
+          "name": "R8PNCP_MTurk_postings.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 323
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "   Search Term ",
+        {
+          "variableName": "   Search Term ",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 9,
+          "uniqueCount": 9,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "    Psychology ",
+            "    Politics ",
+            "    Political Science ",
+            "    Economics ",
+            "    TOTAL "
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            "    Psychology ",
+            "    Politics ",
+            "    Political Science ",
+            "    Economics ",
+            "    TOTAL "
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.1111111111111111,
+          "plotValues": {
+            "    Research ": 1,
+            "    Survey ": 1,
+            "    University ": 1,
+            "    Economics ": 1,
+            "    Political Science ": 1,
+            "    Academic ": 1,
+            "    Psychology ": 1,
+            "    Politics ": 1,
+            "    TOTAL ": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        " Accounts Using Real Names ",
+        {
+          "variableName": " Accounts Using Real Names ",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 9,
+          "uniqueCount": 7,
+          "median": 5.0,
+          "mean": 39.111111111111114,
+          "max": 176,
+          "min": 1,
+          "mode": [
+            1
+          ],
+          "modeFreq": 3,
+          "fewestValues": [
+            176,
+            3,
+            21,
+            23,
+            121
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 64.08674676648138,
+          "herfindahlIndex": 0.3762913223140496,
+          "plotValues": {
+            "1": 3,
+            "176": 1,
+            "121": 1,
+            "23": 1,
+            "5": 1,
+            "3": 1,
+            "21": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0,
+            30.166666666666668,
+            59.333333333333336,
+            88.5,
+            117.66666666666667,
+            146.83333333333334,
+            176.0
+          ],
+          "cdfPlotY": [
+            0.3333333333333333,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.8888888888888888,
+            1.0
+          ]
+        }
+      ],
+      [
+        " Total Accounts ",
+        {
+          "variableName": " Total Accounts ",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 9,
+          "uniqueCount": 8,
+          "median": 9.0,
+          "mean": 58.0,
+          "max": 261,
+          "min": 1,
+          "mode": [
+            1
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            9,
+            4,
+            5,
+            41,
+            169
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 92.98655816837184,
+          "herfindahlIndex": 0.3649682183174058,
+          "plotValues": {
+            "1": 2,
+            "31": 1,
+            "261": 1,
+            "9": 1,
+            "41": 1,
+            "5": 1,
+            "4": 1,
+            "169": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0,
+            38.142857142857146,
+            75.28571428571429,
+            112.42857142857144,
+            149.57142857142858,
+            186.71428571428572,
+            223.8571428571429,
+            261.0
+          ],
+          "cdfPlotY": [
+            0.2222222222222222,
+            0.6666666666666666,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.8888888888888888,
+            0.8888888888888888,
+            1.0
+          ]
+        }
+      ],
+      [
+        " Proportion Using Name",
+        {
+          "variableName": " Proportion Using Name",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 9,
+          "uniqueCount": 8,
+          "median": 0.67,
+          "mean": 0.6722222222222222,
+          "max": 1.0,
+          "min": 0.25,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            0.25,
+            0.72,
+            0.67,
+            0.51,
+            0.74
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.2356256447088144,
+          "herfindahlIndex": 0.12324567993989481,
+          "plotValues": {
+            "1.0": 2,
+            "0.56": 1,
+            "0.6": 1,
+            "0.74": 1,
+            "0.51": 1,
+            "0.67": 1,
+            "0.72": 1,
+            "0.25": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            0.25,
+            0.35714285714285715,
+            0.4642857142857143,
+            0.5714285714285714,
+            0.6785714285714286,
+            0.7857142857142857,
+            0.8928571428571428,
+            1.0
+          ],
+          "cdfPlotY": [
+            0.1111111111111111,
+            0.1111111111111111,
+            0.1111111111111111,
+            0.3333333333333333,
+            0.5555555555555556,
+            0.7777777777777778,
+            0.7777777777777778,
+            1.0
+          ]
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "Search.Term",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "    Academic ": 1,
+            "    Economics ": 1,
+            "    Political Science ": 1,
+            "    Politics ": 1,
+            "    Psychology ": 1,
+            "    Research ": 1,
+            "    Survey ": 1,
+            "    TOTAL ": 1,
+            "    University ": 1
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "Search.Term",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "    Politics ",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 9,
+          "sd": "NA",
+          "uniques": 9,
+          "herfindahl": 0.111111111111111,
+          "freqmode": 1,
+          "fewest": "    Politics ",
+          "mid": "    Politics ",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Search.Term",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Accounts.Using.Real.Names",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 3,
+            "3": 1,
+            "5": 1,
+            "21": 1,
+            "23": 1,
+            "121": 1,
+            "176": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            1,
+            30.1666666666667,
+            59.3333333333333,
+            88.5,
+            117.666666666667,
+            146.833333333333,
+            176
+          ],
+          "cdfploty": [
+            0.333333333333333,
+            0.777777777777778,
+            0.777777777777778,
+            0.777777777777778,
+            0.777777777777778,
+            0.888888888888889,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Accounts.Using.Real.Names",
+          "median": "5",
+          "mean": "39.1111111111111",
+          "mode": "1",
+          "max": "176",
+          "min": "1",
+          "invalid": 0,
+          "valid": 9,
+          "sd": "64.0867467664814",
+          "uniques": 7,
+          "herfindahl": 0.185185185185185,
+          "freqmode": 3,
+          "fewest": "3",
+          "mid": "3",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Accounts.Using.Real.Names",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Total.Accounts",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2,
+            "4": 1,
+            "5": 1,
+            "9": 1,
+            "31": 1,
+            "41": 1,
+            "169": 1,
+            "261": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            1,
+            38.1428571428571,
+            75.2857142857143,
+            112.428571428571,
+            149.571428571429,
+            186.714285714286,
+            223.857142857143,
+            261
+          ],
+          "cdfploty": [
+            0.222222222222222,
+            0.666666666666667,
+            0.777777777777778,
+            0.777777777777778,
+            0.777777777777778,
+            0.888888888888889,
+            0.888888888888889,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Total.Accounts",
+          "median": "9",
+          "mean": "58",
+          "mode": "1",
+          "max": "261",
+          "min": "1",
+          "invalid": 0,
+          "valid": 9,
+          "sd": "92.9865581683718",
+          "uniques": 8,
+          "herfindahl": 0.135802469135802,
+          "freqmode": 2,
+          "fewest": "5",
+          "mid": "5",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Total.Accounts",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Proportion.Using.Name",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "0.25": 1,
+            "0.51": 1,
+            "0.56": 1,
+            "0.6": 1,
+            "0.67": 1,
+            "0.72": 1,
+            "0.74": 1,
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": [
+            0.25,
+            0.357142857142857,
+            0.464285714285714,
+            0.571428571428571,
+            0.678571428571429,
+            0.785714285714286,
+            0.892857142857143,
+            1
+          ],
+          "cdfploty": [
+            0.111111111111111,
+            0.111111111111111,
+            0.111111111111111,
+            0.333333333333333,
+            0.555555555555556,
+            0.777777777777778,
+            0.777777777777778,
+            1
+          ],
+          "labl": "",
+          "varnamesSumStat": "Proportion.Using.Name",
+          "median": "0.67",
+          "mean": "0.672222222222222",
+          "mode": "1",
+          "max": "1",
+          "min": "0.25",
+          "invalid": 0,
+          "valid": 9,
+          "sd": "0.235625644708814",
+          "uniques": 8,
+          "herfindahl": 0.135802469135802,
+          "freqmode": 2,
+          "fewest": "0.6",
+          "mid": "0.6",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "percent",
+          "binary": "no",
+          "interval": "continuous",
+          "time": "no",
+          "varnamesTypes": "Proportion.Using.Name",
+          "defaultInterval": "continuous",
+          "defaultNumchar": "numeric",
+          "defaultNature": "percent",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:28:37",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "   Search Term ": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          " Accounts Using Real Names ": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          " Total Accounts ": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          " Proportion Using Name": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,212 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        2
+      ],
+      [
+        "variableCount",
+        1
+      ],
+      [
+        "dataSource",
+        {
+          "name": "IIYGGX_CCES Election File (House and Senate Notes).tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 244
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        " LA-2 and LA-4 not included because general election not conducted on 11-4.  GA Sen included with 11-4 results.",
+        {
+          "variableName": " LA-2 and LA-4 not included because general election not conducted on 11-4.  GA Sen included with 11-4 results.",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": true,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 2,
+          "uniqueCount": 2,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat",
+            "Winning Party: 1-D, 2-R, 3-Other"
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat",
+            "Winning Party: 1-D, 2-R, 3-Other"
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "Winning Party: 1-D, 2-R, 3-Other": 1,
+            "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "LA.2.and.LA.4.not.included.because.general.election.not.conducted.on.11.4...GA.Sen.included.with.11.4.results.",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat": 1,
+            "Winning Party: 1-D, 2-R, 3-Other": 1
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "LA.2.and.LA.4.not.included.because.general.election.not.conducted.on.11.4...GA.Sen.included.with.11.4.results.",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 2,
+          "sd": "NA",
+          "uniques": 2,
+          "herfindahl": 0.5,
+          "freqmode": 1,
+          "fewest": "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat",
+          "mid": "Seat Status: 1-Democ. Incumbent, 2- Repub. Incumbent, 3- Democ. Open Seat, 4- Repub. Open Seat",
+          "freqfewest": 1,
+          "freqmid": 1,
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "yes",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "LA.2.and.LA.4.not.included.because.general.election.not.conducted.on.11.4...GA.Sen.included.with.11.4.results.",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "yes",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:29:09",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          " LA-2 and LA-4 not included because general election not conducted on 11-4.  GA Sen included with 11-4 results.": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

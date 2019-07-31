@@ -1,0 +1,908 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        10
+      ],
+      [
+        "variableCount",
+        3
+      ],
+      [
+        "dataSource",
+        {
+          "name": "1SBYFJ_gun_nodes.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 268
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.ID.mode",
+    [
+      "December Strongly Agree",
+      [
+        "January Disagree",
+        "January Strongly Agree",
+        "December Strongly Agree",
+        "January Agree",
+        "January Strongly Disagree"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.ID.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.ID.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.ID",
+    [
+      [
+        "variableName",
+        "ID"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        10
+      ],
+      [
+        "uniqueCount",
+        10
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "January Disagree",
+          "January Strongly Agree",
+          "December Strongly Agree",
+          "January Agree",
+          "January Strongly Disagree"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.10000000000000003
+      ],
+      [
+        "plotValues",
+        {
+          "December Disagree": 1,
+          "December Agree": 1,
+          "December Strongly Disagree": 1,
+          "January Neither": 1,
+          "December Neither": 1,
+          "January Strongly Disagree": 1,
+          "January Agree": 1,
+          "December Strongly Agree": 1,
+          "January Strongly Agree": 1,
+          "January Disagree": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.ID",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "December Agree": 1,
+          "December Disagree": 1,
+          "December Neither": 1,
+          "December Strongly Agree": 1,
+          "December Strongly Disagree": 1,
+          "January Agree": 1,
+          "January Disagree": 1,
+          "January Neither": 1,
+          "January Strongly Agree": 1,
+          "January Strongly Disagree": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "ID"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        10
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        10
+      ],
+      [
+        "herfindahl",
+        0.1
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "December Strongly Agree"
+      ],
+      [
+        "mid",
+        "December Strongly Agree"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "ID"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.x.median",
+    [
+      "2.5",
+      2.5
+    ]
+  ],
+  [
+    "change",
+    "variables.x.mean",
+    [
+      "2.5",
+      2.5
+    ]
+  ],
+  [
+    "change",
+    "variables.x.mode",
+    [
+      "1",
+      [
+        1,
+        4
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.x.max",
+    [
+      "4",
+      4
+    ]
+  ],
+  [
+    "change",
+    "variables.x.min",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.x.binary",
+    [
+      "yes",
+      true
+    ]
+  ],
+  [
+    "change",
+    "variables.x.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.x",
+    [
+      [
+        "variableName",
+        "x"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        10
+      ],
+      [
+        "uniqueCount",
+        2
+      ],
+      [
+        "modeFreq",
+        5
+      ],
+      [
+        "fewestValues",
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        "fewestFreq",
+        5
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        1.5811388300841898
+      ],
+      [
+        "herfindahlIndex",
+        0.136
+      ],
+      [
+        "plotValues",
+        {
+          "4": 5,
+          "1": 5
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          1.0,
+          4.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.x",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "1": 5,
+          "4": 5
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.5,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "x"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        10
+      ],
+      [
+        "sd",
+        "1.58113883008419"
+      ],
+      [
+        "uniques",
+        2
+      ],
+      [
+        "herfindahl",
+        0.5
+      ],
+      [
+        "freqmode",
+        5
+      ],
+      [
+        "fewest",
+        "1"
+      ],
+      [
+        "mid",
+        "1"
+      ],
+      [
+        "freqfewest",
+        "5"
+      ],
+      [
+        "freqmid",
+        "5"
+      ],
+      [
+        "varnamesTypes",
+        "x"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "yes"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.y.median",
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    "variables.y.mean",
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    "variables.y.mode",
+    [
+      "-2",
+      [
+        -1,
+        -2,
+        0,
+        2,
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.y.max",
+    [
+      "2",
+      2
+    ]
+  ],
+  [
+    "change",
+    "variables.y.min",
+    [
+      "-2",
+      -2
+    ]
+  ],
+  [
+    "change",
+    "variables.y.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.y.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.y",
+    [
+      [
+        "variableName",
+        "y"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        10
+      ],
+      [
+        "uniqueCount",
+        5
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          -1,
+          -2,
+          0,
+          2,
+          1
+        ]
+      ],
+      [
+        "fewestFreq",
+        2
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        1.4907119849998598
+      ],
+      [
+        "herfindahlIndex",
+        0
+      ],
+      [
+        "plotValues",
+        {
+          "1": 2,
+          "2": 2,
+          "0": 2,
+          "-2": 2,
+          "-1": 2
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          -2.0,
+          -1.0,
+          0.0,
+          1.0,
+          2.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.y",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "-2": 2,
+          "-1": 2,
+          "0": 2,
+          "1": 2,
+          "2": 2
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "y"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        10
+      ],
+      [
+        "sd",
+        "1.49071198499986"
+      ],
+      [
+        "uniques",
+        5
+      ],
+      [
+        "herfindahl",
+        0.2
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "-2"
+      ],
+      [
+        "mid",
+        "-2"
+      ],
+      [
+        "freqfewest",
+        "2"
+      ],
+      [
+        "freqmid",
+        "2"
+      ],
+      [
+        "varnamesTypes",
+        "y"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:25:08",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "ID": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "x": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "y": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

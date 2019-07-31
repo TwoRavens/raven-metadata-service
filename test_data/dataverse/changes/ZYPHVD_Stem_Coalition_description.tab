@@ -1,0 +1,325 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        8
+      ],
+      [
+        "variableCount",
+        2
+      ],
+      [
+        "dataSource",
+        {
+          "name": "ZYPHVD_Stem_Coalition_description.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 696
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "Coalition short name",
+        {
+          "variableName": "Coalition short name",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 8,
+          "uniqueCount": 8,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "AppellateAmici",
+            "MESCoal3",
+            "MESCoal1",
+            "Prop71 NO",
+            "IP3"
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            "AppellateAmici",
+            "MESCoal3",
+            "MESCoal1",
+            "Prop71 NO",
+            "IP3"
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.125,
+          "plotValues": {
+            "Prop71 YES": 1,
+            "Prop71 NO": 1,
+            "IP2": 1,
+            "MESCoal2": 1,
+            "IP3": 1,
+            "AppellateAmici": 1,
+            "MESCoal1": 1,
+            "MESCoal3": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "Coalition description",
+        {
+          "variableName": "Coalition description",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 0,
+          "validCount": 8,
+          "uniqueCount": 5,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [
+            "co-submitters of comments to CIRM rules on Medical and Ethical Standards"
+          ],
+          "modeFreq": 3,
+          "fewestValues": [
+            "supporters of Proposition 71, who funded the same ballot campaign",
+            "co-signers of the same amicus brief in the Court of Appeal's decision",
+            "opponents to Proposition 71, who funded the same ballot campaign"
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "co-submitters of comments to CIRM rules on Medical and Ethical Standards": 3,
+            "co-submitters of comments to CIRM rules on Intellectual Property": 2,
+            "opponents to Proposition 71, who funded the same ballot campaign": 1,
+            "co-signers of the same amicus brief in the Court of Appeal's decision": 1,
+            "supporters of Proposition 71, who funded the same ballot campaign": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "Coalition.short.name",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "AppellateAmici": 1,
+            "IP2": 1,
+            "IP3": 1,
+            "MESCoal1": 1,
+            "MESCoal2": 1,
+            "MESCoal3": 1,
+            "Prop71 NO": 1,
+            "Prop71 YES": 1
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "Coalition.short.name",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "Prop71 YES",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 8,
+          "sd": "NA",
+          "uniques": 8,
+          "herfindahl": 0.125,
+          "freqmode": 1,
+          "fewest": "Prop71 YES",
+          "mid": "Prop71 YES",
+          "freqfewest": 1,
+          "freqmid": 1,
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Coalition.short.name",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "Coalition.description",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "co-signers of the same amicus brief in the Court of Appeal's decision": 1,
+            "co-submitters of comments to CIRM rules on Intellectual Property": 2,
+            "co-submitters of comments to CIRM rules on Medical and Ethical Standards": 3,
+            "opponents to Proposition 71, who funded the same ballot campaign": 1,
+            "supporters of Proposition 71, who funded the same ballot campaign": 1
+          },
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "Coalition.description",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "co-submitters of comments to CIRM rules on Medical and Ethical Standards",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 0,
+          "valid": 8,
+          "sd": "NA",
+          "uniques": 5,
+          "herfindahl": 0.25,
+          "freqmode": 3,
+          "fewest": "supporters of Proposition 71, who funded the same ballot campaign",
+          "mid": "supporters of Proposition 71, who funded the same ballot campaign",
+          "freqfewest": 1,
+          "freqmid": 1,
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "Coalition.description",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:22:44",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "Coalition short name": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Coalition description": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

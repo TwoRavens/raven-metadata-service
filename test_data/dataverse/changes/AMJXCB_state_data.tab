@@ -1,0 +1,2707 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        55
+      ],
+      [
+        "variableCount",
+        6
+      ],
+      [
+        "dataSource",
+        {
+          "name": "AMJXCB_state_data.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 2080
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.State.mode",
+    [
+      "AK",
+      [
+        "TX",
+        "OR",
+        "WI",
+        "GA",
+        "KY"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.State.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.State.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.State",
+    [
+      [
+        "variableName",
+        "State"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        55
+      ],
+      [
+        "uniqueCount",
+        55
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "TX",
+          "OR",
+          "WI",
+          "GA",
+          "KY"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.01818181818181817
+      ],
+      [
+        "plotValues",
+        {
+          "MS": 1,
+          "FL": 1,
+          "TN": 1,
+          "OH": 1,
+          "UT": 1,
+          "HI": 1,
+          "NV": 1,
+          "NC": 1,
+          "GU": 1,
+          "MN": 1,
+          "NH": 1,
+          "NE": 1,
+          "ME": 1,
+          "PA": 1,
+          "WY": 1,
+          "ND": 1,
+          "NY": 1,
+          "IA": 1,
+          "AS": 1,
+          "MD": 1,
+          "VA": 1,
+          "WA": 1,
+          "IN": 1,
+          "RI": 1,
+          "KS": 1,
+          "AK": 1,
+          "AL": 1,
+          "OK": 1,
+          "DC": 1,
+          "PR": 1,
+          "MO": 1,
+          "VI": 1,
+          "CA": 1,
+          "SD": 1,
+          "MI": 1,
+          "MA": 1,
+          "CT": 1,
+          "AZ": 1,
+          "VT": 1,
+          "NJ": 1,
+          "SC": 1,
+          "MT": 1,
+          "CO": 1,
+          "ID": 1,
+          "AR": 1,
+          "DE": 1,
+          "WV": 1,
+          "LA": 1,
+          "IL": 1,
+          "NM": 1,
+          "KY": 1,
+          "GA": 1,
+          "WI": 1,
+          "OR": 1,
+          "TX": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.State",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "AK": 1,
+          "AL": 1,
+          "AR": 1,
+          "AS": 1,
+          "AZ": 1,
+          "CA": 1,
+          "CO": 1,
+          "CT": 1,
+          "DC": 1,
+          "DE": 1,
+          "FL": 1,
+          "GA": 1,
+          "GU": 1,
+          "HI": 1,
+          "IA": 1,
+          "ID": 1,
+          "IL": 1,
+          "IN": 1,
+          "KS": 1,
+          "KY": 1,
+          "LA": 1,
+          "MA": 1,
+          "MD": 1,
+          "ME": 1,
+          "MI": 1,
+          "MN": 1,
+          "MO": 1,
+          "MS": 1,
+          "MT": 1,
+          "NC": 1,
+          "ND": 1,
+          "NE": 1,
+          "NH": 1,
+          "NJ": 1,
+          "NM": 1,
+          "NV": 1,
+          "NY": 1,
+          "OH": 1,
+          "OK": 1,
+          "OR": 1,
+          "PA": 1,
+          "PR": 1,
+          "RI": 1,
+          "SC": 1,
+          "SD": 1,
+          "TN": 1,
+          "TX": 1,
+          "UT": 1,
+          "VA": 1,
+          "VI": 1,
+          "VT": 1,
+          "WA": 1,
+          "WI": 1,
+          "WV": 1,
+          "WY": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "State"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        55
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        55
+      ],
+      [
+        "herfindahl",
+        0.0181818181818182
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "AK"
+      ],
+      [
+        "mid",
+        "AK"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "State"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.median",
+    [
+      "31",
+      31.0
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.mean",
+    [
+      "31.8727272727273",
+      31.87272727272727
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.mode",
+    [
+      "2",
+      [
+        1,
+        33,
+        34,
+        35,
+        36
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.max",
+    [
+      "78",
+      78
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.min",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Code.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Code",
+    [
+      [
+        "variableName",
+        "Code"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        55
+      ],
+      [
+        "uniqueCount",
+        55
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          1,
+          33,
+          34,
+          35,
+          36
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        18.589178996329444
+      ],
+      [
+        "herfindahlIndex",
+        0.02425407800627983
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          0.5513295553650404,
+          2.141071206166467,
+          3.730812856967894,
+          5.32055450776932,
+          6.910296158570747,
+          8.500037809372175,
+          10.0897794601736,
+          11.679521110975028,
+          13.269262761776455,
+          14.859004412577882,
+          16.44874606337931,
+          18.038487714180736,
+          19.62822936498216,
+          21.21797101578359,
+          22.807712666585015,
+          24.397454317386444,
+          25.98719596818787,
+          27.576937618989295,
+          29.166679269790723,
+          30.75642092059215,
+          32.34616257139358,
+          33.935904222195006,
+          35.525645872996435,
+          37.115387523797864,
+          38.705129174599286,
+          40.294870825400714,
+          41.88461247620214,
+          43.474354127003565,
+          45.064095777804994,
+          46.65383742860642,
+          48.24357907940785,
+          49.83332073020927,
+          51.4230623810107,
+          53.01280403181213,
+          54.60254568261355,
+          56.19228733341498,
+          57.78202898421641,
+          59.37177063501784,
+          60.96151228581926,
+          62.55125393662069,
+          64.14099558742211,
+          65.73073723822354,
+          67.32047888902497,
+          68.9102205398264,
+          70.49996219062783,
+          72.08970384142926,
+          73.67944549223068,
+          75.2691871430321,
+          76.85892879383353,
+          78.44867044463496
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.0074205898753147955,
+          0.008594287568263529,
+          0.009754259894761518,
+          0.010868233027229592,
+          0.011909994655204504,
+          0.012861244702816648,
+          0.013712093724850587,
+          0.014460286646467964,
+          0.01510948469457363,
+          0.01566708510799617,
+          0.016142070561213154,
+          0.016543273708786884,
+          0.01687826454390038,
+          0.01715288037684771,
+          0.017371273341113977,
+          0.017536277733319894,
+          0.017649898939585594,
+          0.017713773068832785,
+          0.01772950755685918,
+          0.017698859670945193,
+          0.017623731062869713,
+          0.017505961004274855,
+          0.01734690990354351,
+          0.017146858521785553,
+          0.01690431316972744,
+          0.016615388049124092,
+          0.016273499638420615,
+          0.015869616038850683,
+          0.015393229997751967,
+          0.014834068330055,
+          0.014184345360123665,
+          0.013441171446413833,
+          0.012608604168868085,
+          0.011698828425700771,
+          0.01073208773013478,
+          0.009735236311074565,
+          0.008739079099143222,
+          0.0077749363896638495,
+          0.006871041031646026,
+          0.006049406024111634,
+          0.005323687362219659,
+          0.00469834751889332,
+          0.004169160487472399,
+          0.003724855432714232,
+          0.0033495231036460467,
+          0.0030253311286069545,
+          0.002735107973246657,
+          0.002464438751951029,
+          0.002203040188370309,
+          0.001945320066736111
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          1.0,
+          2.571428571428571,
+          4.142857142857142,
+          5.714285714285714,
+          7.285714285714286,
+          8.857142857142858,
+          10.428571428571429,
+          12.0,
+          13.571428571428571,
+          15.142857142857142,
+          16.714285714285715,
+          18.285714285714285,
+          19.857142857142858,
+          21.428571428571427,
+          23.0,
+          24.57142857142857,
+          26.142857142857142,
+          27.714285714285715,
+          29.285714285714285,
+          30.857142857142858,
+          32.42857142857143,
+          34.0,
+          35.57142857142857,
+          37.14285714285714,
+          38.714285714285715,
+          40.285714285714285,
+          41.857142857142854,
+          43.42857142857143,
+          45.0,
+          46.57142857142857,
+          48.14285714285714,
+          49.714285714285715,
+          51.285714285714285,
+          52.857142857142854,
+          54.42857142857143,
+          56.0,
+          57.57142857142857,
+          59.14285714285714,
+          60.714285714285715,
+          62.285714285714285,
+          63.857142857142854,
+          65.42857142857143,
+          67.0,
+          68.57142857142857,
+          70.14285714285714,
+          71.71428571428571,
+          73.28571428571428,
+          74.85714285714286,
+          76.42857142857143,
+          78.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.01818181818181818,
+          0.03636363636363636,
+          0.05454545454545454,
+          0.07272727272727272,
+          0.09090909090909091,
+          0.10909090909090909,
+          0.14545454545454545,
+          0.18181818181818182,
+          0.2,
+          0.21818181818181817,
+          0.23636363636363636,
+          0.2727272727272727,
+          0.2909090909090909,
+          0.32727272727272727,
+          0.36363636363636365,
+          0.38181818181818183,
+          0.41818181818181815,
+          0.43636363636363634,
+          0.4727272727272727,
+          0.4909090909090909,
+          0.5272727272727272,
+          0.5636363636363636,
+          0.5818181818181818,
+          0.6181818181818182,
+          0.6363636363636364,
+          0.6727272727272727,
+          0.6909090909090909,
+          0.7090909090909091,
+          0.7454545454545455,
+          0.7636363636363637,
+          0.8,
+          0.8181818181818182,
+          0.8545454545454545,
+          0.8545454545454545,
+          0.8909090909090909,
+          0.9272727272727272,
+          0.9272727272727272,
+          0.9272727272727272,
+          0.9454545454545454,
+          0.9454545454545454,
+          0.9454545454545454,
+          0.9454545454545454,
+          0.9636363636363636,
+          0.9636363636363636,
+          0.9636363636363636,
+          0.9636363636363636,
+          0.9818181818181818,
+          0.9818181818181818,
+          0.9818181818181818,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Code",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          -21.5191210553414,
+          -19.0285446857356,
+          -16.5379683161298,
+          -14.047391946524,
+          -11.5568155769183,
+          -9.06623920731251,
+          -6.57566283770674,
+          -4.08508646810097,
+          -1.5945100984952,
+          0.89606627111057,
+          3.38664264071634,
+          5.87721901032211,
+          8.36779537992788,
+          10.8583717495337,
+          13.3489481191394,
+          15.8395244887452,
+          18.330100858351,
+          20.8206772279567,
+          23.3112535975625,
+          25.8018299671683,
+          28.292406336774,
+          30.7829827063798,
+          33.2735590759856,
+          35.7641354455914,
+          38.2547118151971,
+          40.7452881848029,
+          43.2358645544087,
+          45.7264409240144,
+          48.2170172936202,
+          50.707593663226,
+          53.1981700328317,
+          55.6887464024375,
+          58.1793227720433,
+          60.6698991416491,
+          63.1604755112548,
+          65.6510518808606,
+          68.1416282504664,
+          70.6322046200721,
+          73.1227809896779,
+          75.6133573592837,
+          78.1039337288894,
+          80.5945100984952,
+          83.085086468101,
+          85.5756628377067,
+          88.0662392073125,
+          90.5568155769183,
+          93.0473919465241,
+          95.5379683161298,
+          98.0285446857356,
+          100.519121055341
+        ]
+      ],
+      [
+        "ploty",
+        [
+          2.52448131116359e-05,
+          6.92200030924804e-05,
+          0.000171753614278079,
+          0.000386388174987263,
+          0.000789965432915585,
+          0.00147204858430032,
+          0.00250914848640052,
+          0.00392954839125484,
+          0.00568492240708928,
+          0.00764758177333454,
+          0.00964130531722527,
+          0.0114942651901044,
+          0.0130883045554947,
+          0.0143809338188092,
+          0.0153934853813056,
+          0.0161782525781962,
+          0.0167859645609635,
+          0.0172488439135284,
+          0.0175808230507696,
+          0.0177862937962861,
+          0.0178680465268984,
+          0.0178309913169416,
+          0.0176832816150932,
+          0.0174360281242668,
+          0.0170993620831976,
+          0.0166724224640726,
+          0.0161307809740803,
+          0.0154220057055426,
+          0.0144800561276472,
+          0.0132585530046941,
+          0.0117679028752611,
+          0.0100939815268911,
+          0.00838358730884332,
+          0.00680035602364766,
+          0.00547195827802341,
+          0.00445365650457457,
+          0.00372265174917221,
+          0.00320066166248158,
+          0.00279031589241152,
+          0.00240933745623312,
+          0.00201187941222144,
+          0.00159313840718384,
+          0.00117896559279009,
+          0.000806749578193608,
+          0.000506537181138915,
+          0.000290161227386513,
+          0.000150995983701281,
+          7.11515932985612e-05,
+          3.02850750421621e-05,
+          1.16220359472908e-05
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          1,
+          2.57142857142857,
+          4.14285714285714,
+          5.71428571428571,
+          7.28571428571429,
+          8.85714285714286,
+          10.4285714285714,
+          12,
+          13.5714285714286,
+          15.1428571428571,
+          16.7142857142857,
+          18.2857142857143,
+          19.8571428571429,
+          21.4285714285714,
+          23,
+          24.5714285714286,
+          26.1428571428571,
+          27.7142857142857,
+          29.2857142857143,
+          30.8571428571429,
+          32.4285714285714,
+          34,
+          35.5714285714286,
+          37.1428571428571,
+          38.7142857142857,
+          40.2857142857143,
+          41.8571428571429,
+          43.4285714285714,
+          45,
+          46.5714285714286,
+          48.1428571428571,
+          49.7142857142857,
+          51.2857142857143,
+          52.8571428571429,
+          54.4285714285714,
+          56,
+          57.5714285714286,
+          59.1428571428571,
+          60.7142857142857,
+          62.2857142857143,
+          63.8571428571429,
+          65.4285714285714,
+          67,
+          68.5714285714286,
+          70.1428571428571,
+          71.7142857142857,
+          73.2857142857143,
+          74.8571428571429,
+          76.4285714285714,
+          78
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.0181818181818182,
+          0.0363636363636364,
+          0.0545454545454545,
+          0.0727272727272727,
+          0.0909090909090909,
+          0.109090909090909,
+          0.145454545454545,
+          0.181818181818182,
+          0.2,
+          0.218181818181818,
+          0.236363636363636,
+          0.272727272727273,
+          0.290909090909091,
+          0.327272727272727,
+          0.363636363636364,
+          0.381818181818182,
+          0.418181818181818,
+          0.436363636363636,
+          0.472727272727273,
+          0.490909090909091,
+          0.527272727272727,
+          0.563636363636364,
+          0.581818181818182,
+          0.618181818181818,
+          0.636363636363636,
+          0.672727272727273,
+          0.690909090909091,
+          0.709090909090909,
+          0.745454545454545,
+          0.763636363636364,
+          0.8,
+          0.818181818181818,
+          0.854545454545454,
+          0.854545454545454,
+          0.890909090909091,
+          0.927272727272727,
+          0.927272727272727,
+          0.927272727272727,
+          0.945454545454545,
+          0.945454545454545,
+          0.945454545454545,
+          0.945454545454545,
+          0.963636363636364,
+          0.963636363636364,
+          0.963636363636364,
+          0.963636363636364,
+          0.981818181818182,
+          0.981818181818182,
+          0.981818181818182,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Code"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        55
+      ],
+      [
+        "sd",
+        "18.5891789963294"
+      ],
+      [
+        "uniques",
+        55
+      ],
+      [
+        "herfindahl",
+        0.0181818181818182
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "2"
+      ],
+      [
+        "mid",
+        "2"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "Code"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Name.mode",
+    [
+      "ALASKA",
+      [
+        "OREGON",
+        "IDAHO",
+        "KENTUCKY",
+        "MICHIGAN",
+        "OKLAHOMA"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Name.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Name.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Name",
+    [
+      [
+        "variableName",
+        "Name"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        55
+      ],
+      [
+        "uniqueCount",
+        55
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "OREGON",
+          "IDAHO",
+          "KENTUCKY",
+          "MICHIGAN",
+          "OKLAHOMA"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.01818181818181817
+      ],
+      [
+        "plotValues",
+        {
+          "MASSACHUSETTS": 1,
+          "ARIZONA": 1,
+          "AMERICAN SAMOA": 1,
+          "MISSISSIPPI": 1,
+          "MARYLAND": 1,
+          "MINNESOTA": 1,
+          "FLORIDA": 1,
+          "GUAM": 1,
+          "UTAH": 1,
+          "DISTRICT OF COLUMBIA": 1,
+          "ILLINOIS": 1,
+          "SOUTH CAROLINA": 1,
+          "DELAWARE": 1,
+          "IOWA": 1,
+          "SOUTH DAKOTA": 1,
+          "INDIANA": 1,
+          "WASHINGTON": 1,
+          "KANSAS": 1,
+          "RHODE ISLAND": 1,
+          "NORTH DAKOTA": 1,
+          "VERMONT": 1,
+          "MONTANA": 1,
+          "WEST VIRGINIA": 1,
+          "CONNECTICUT": 1,
+          "LOUISIANA": 1,
+          "HAWAII": 1,
+          "NEVADA": 1,
+          "NORTH CAROLINA": 1,
+          "ALABAMA": 1,
+          "TEXAS": 1,
+          "NEW YORK": 1,
+          "GEORGIA": 1,
+          "NEW MEXICO": 1,
+          "OHIO": 1,
+          "PENNSYLVANIA": 1,
+          "VIRGINIA": 1,
+          "NEW JERSEY": 1,
+          "ARKANSAS": 1,
+          "VIRGIN ISLANDS": 1,
+          "NEBRASKA": 1,
+          "MISSOURI": 1,
+          "MAINE": 1,
+          "WYOMING": 1,
+          "CALIFORNIA": 1,
+          "NEW HAMPSHIRE": 1,
+          "COLORADO": 1,
+          "TENNESSEE": 1,
+          "ALASKA": 1,
+          "WISCONSIN": 1,
+          "PUERTO RICO": 1,
+          "OKLAHOMA": 1,
+          "MICHIGAN": 1,
+          "KENTUCKY": 1,
+          "IDAHO": 1,
+          "OREGON": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Name",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "ALABAMA": 1,
+          "ALASKA": 1,
+          "AMERICAN SAMOA": 1,
+          "ARIZONA": 1,
+          "ARKANSAS": 1,
+          "CALIFORNIA": 1,
+          "COLORADO": 1,
+          "CONNECTICUT": 1,
+          "DELAWARE": 1,
+          "DISTRICT OF COLUMBIA": 1,
+          "FLORIDA": 1,
+          "GEORGIA": 1,
+          "GUAM": 1,
+          "HAWAII": 1,
+          "IDAHO": 1,
+          "ILLINOIS": 1,
+          "INDIANA": 1,
+          "IOWA": 1,
+          "KANSAS": 1,
+          "KENTUCKY": 1,
+          "LOUISIANA": 1,
+          "MAINE": 1,
+          "MARYLAND": 1,
+          "MASSACHUSETTS": 1,
+          "MICHIGAN": 1,
+          "MINNESOTA": 1,
+          "MISSISSIPPI": 1,
+          "MISSOURI": 1,
+          "MONTANA": 1,
+          "NEBRASKA": 1,
+          "NEVADA": 1,
+          "NEW HAMPSHIRE": 1,
+          "NEW JERSEY": 1,
+          "NEW MEXICO": 1,
+          "NEW YORK": 1,
+          "NORTH CAROLINA": 1,
+          "NORTH DAKOTA": 1,
+          "OHIO": 1,
+          "OKLAHOMA": 1,
+          "OREGON": 1,
+          "PENNSYLVANIA": 1,
+          "PUERTO RICO": 1,
+          "RHODE ISLAND": 1,
+          "SOUTH CAROLINA": 1,
+          "SOUTH DAKOTA": 1,
+          "TENNESSEE": 1,
+          "TEXAS": 1,
+          "UTAH": 1,
+          "VERMONT": 1,
+          "VIRGIN ISLANDS": 1,
+          "VIRGINIA": 1,
+          "WASHINGTON": 1,
+          "WEST VIRGINIA": 1,
+          "WISCONSIN": 1,
+          "WYOMING": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Name"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        55
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        55
+      ],
+      [
+        "herfindahl",
+        0.0181818181818182
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "ALASKA"
+      ],
+      [
+        "mid",
+        "ALASKA"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "Name"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.mode",
+    [
+      "Alaska",
+      [
+        "New Jersey",
+        "Tennessee",
+        "New Hampshire",
+        "Hawaii",
+        "Louisiana"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.state.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.state",
+    [
+      [
+        "variableName",
+        "state"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        55
+      ],
+      [
+        "uniqueCount",
+        55
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "New Jersey",
+          "Tennessee",
+          "New Hampshire",
+          "Hawaii",
+          "Louisiana"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.01818181818181817
+      ],
+      [
+        "plotValues",
+        {
+          "New Mexico": 1,
+          "Connecticut": 1,
+          "New York": 1,
+          "Colorado": 1,
+          "Kentucky": 1,
+          "Wisconsin": 1,
+          "California": 1,
+          "Delaware": 1,
+          "Florida": 1,
+          "Vermont": 1,
+          "Maine": 1,
+          "Maryland": 1,
+          "North Dakota": 1,
+          "Oklahoma": 1,
+          "North Carolina": 1,
+          "Iowa": 1,
+          "Minnesota": 1,
+          "Arkansas": 1,
+          "Wyoming": 1,
+          "Washington": 1,
+          "Nebraska": 1,
+          "American Samoa": 1,
+          "Missouri": 1,
+          "Pennsylvania": 1,
+          "West Virginia": 1,
+          "Ohio": 1,
+          "Massachusetts": 1,
+          "Rhode Island": 1,
+          "Texas": 1,
+          "Illinois": 1,
+          "Arizona": 1,
+          "Alaska": 1,
+          "Mississippi": 1,
+          "Alabama": 1,
+          "Nevada": 1,
+          "Oregon": 1,
+          "Indiana": 1,
+          "South Carolina": 1,
+          "Guam": 1,
+          "Virginia": 1,
+          "Puerto Rico": 1,
+          "Georgia": 1,
+          "South Dakota": 1,
+          "Michigan": 1,
+          "District Of Columbia": 1,
+          "Idaho": 1,
+          "Kansas": 1,
+          "Montana": 1,
+          "Virgin Islands": 1,
+          "Utah": 1,
+          "Louisiana": 1,
+          "Hawaii": 1,
+          "New Hampshire": 1,
+          "Tennessee": 1,
+          "New Jersey": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.state",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Alabama": 1,
+          "Alaska": 1,
+          "American Samoa": 1,
+          "Arizona": 1,
+          "Arkansas": 1,
+          "California": 1,
+          "Colorado": 1,
+          "Connecticut": 1,
+          "Delaware": 1,
+          "District Of Columbia": 1,
+          "Florida": 1,
+          "Georgia": 1,
+          "Guam": 1,
+          "Hawaii": 1,
+          "Idaho": 1,
+          "Illinois": 1,
+          "Indiana": 1,
+          "Iowa": 1,
+          "Kansas": 1,
+          "Kentucky": 1,
+          "Louisiana": 1,
+          "Maine": 1,
+          "Maryland": 1,
+          "Massachusetts": 1,
+          "Michigan": 1,
+          "Minnesota": 1,
+          "Mississippi": 1,
+          "Missouri": 1,
+          "Montana": 1,
+          "Nebraska": 1,
+          "Nevada": 1,
+          "New Hampshire": 1,
+          "New Jersey": 1,
+          "New Mexico": 1,
+          "New York": 1,
+          "North Carolina": 1,
+          "North Dakota": 1,
+          "Ohio": 1,
+          "Oklahoma": 1,
+          "Oregon": 1,
+          "Pennsylvania": 1,
+          "Puerto Rico": 1,
+          "Rhode Island": 1,
+          "South Carolina": 1,
+          "South Dakota": 1,
+          "Tennessee": 1,
+          "Texas": 1,
+          "Utah": 1,
+          "Vermont": 1,
+          "Virgin Islands": 1,
+          "Virginia": 1,
+          "Washington": 1,
+          "West Virginia": 1,
+          "Wisconsin": 1,
+          "Wyoming": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "state"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        55
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        55
+      ],
+      [
+        "herfindahl",
+        0.0181818181818182
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Alaska"
+      ],
+      [
+        "mid",
+        "Alaska"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "state"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.median",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.mean",
+    [
+      "1.20408163265306",
+      1.2040816326530612
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.mode",
+    [
+      "0",
+      [
+        0.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.max",
+    [
+      "3",
+      3.0
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.min",
+    [
+      "0",
+      0.0
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.VoterID.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.VoterID",
+    [
+      [
+        "variableName",
+        "VoterID"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        49
+      ],
+      [
+        "uniqueCount",
+        4
+      ],
+      [
+        "modeFreq",
+        17
+      ],
+      [
+        "fewestValues",
+        [
+          3.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        7
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        1.0797297469879268
+      ],
+      [
+        "herfindahlIndex",
+        0.0364837690318874
+      ],
+      [
+        "plotValues",
+        {
+          "0.0": 17,
+          "2.0": 13,
+          "1.0": 12,
+          "3.0": 7
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        "bar"
+      ],
+      [
+        "cdfPlotX",
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.3469387755102041,
+          0.5918367346938775,
+          0.8571428571428571,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.VoterID",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "0": 17,
+          "1": 12,
+          "2": 13,
+          "3": 7
+        }
+      ],
+      [
+        "cdfplottype",
+        "bar"
+      ],
+      [
+        "cdfplotx",
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.346938775510204,
+          0.591836734693878,
+          0.857142857142857,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "VoterID"
+      ],
+      [
+        "invalid",
+        6
+      ],
+      [
+        "valid",
+        49
+      ],
+      [
+        "sd",
+        "1.07972974698793"
+      ],
+      [
+        "uniques",
+        4
+      ],
+      [
+        "herfindahl",
+        0.271137026239067
+      ],
+      [
+        "freqmode",
+        17
+      ],
+      [
+        "fewest",
+        "3"
+      ],
+      [
+        "mid",
+        "NA"
+      ],
+      [
+        "freqfewest",
+        "7"
+      ],
+      [
+        "freqmid",
+        "12.5"
+      ],
+      [
+        "varnamesTypes",
+        "VoterID"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.median",
+    [
+      "453",
+      453.0
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.mean",
+    [
+      "466.32",
+      466.32
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.mode",
+    [
+      "541",
+      [
+        279.0,
+        407.0,
+        541.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.max",
+    [
+      "818",
+      818.0
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.min",
+    [
+      "231",
+      231.0
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.PunRate.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.PunRate",
+    [
+      [
+        "variableName",
+        "PunRate"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        5
+      ],
+      [
+        "validCount",
+        50
+      ],
+      [
+        "uniqueCount",
+        47
+      ],
+      [
+        "modeFreq",
+        2
+      ],
+      [
+        "fewestValues",
+        [
+          348.0,
+          463.0,
+          372.0,
+          317.0,
+          333.0
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        147.83173556721954
+      ],
+      [
+        "herfindahlIndex",
+        0.02196980546478156
+      ],
+      [
+        "plotValues",
+        {}
+      ],
+      [
+        "pdfPlotType",
+        "continuous"
+      ],
+      [
+        "pdfPlotX",
+        [
+          230.54269494807266,
+          242.54095229713093,
+          254.5392096461892,
+          266.5374669952474,
+          278.53572434430566,
+          290.53398169336396,
+          302.5322390424222,
+          314.5304963914805,
+          326.5287537405387,
+          338.52701108959695,
+          350.52526843865525,
+          362.5235257877135,
+          374.5217831367718,
+          386.52004048583,
+          398.51829783488824,
+          410.5165551839465,
+          422.5148125330048,
+          434.51306988206306,
+          446.5113272311213,
+          458.50958458017953,
+          470.50784192923777,
+          482.50609927829606,
+          494.5043566273543,
+          506.5026139764126,
+          518.5008713254708,
+          530.4991286745291,
+          542.4973860235873,
+          554.4956433726456,
+          566.4939007217038,
+          578.4921580707621,
+          590.4904154198204,
+          602.4886727688786,
+          614.4869301179369,
+          626.4851874669951,
+          638.4834448160534,
+          650.4817021651116,
+          662.4799595141699,
+          674.4782168632282,
+          686.4764742122863,
+          698.4747315613447,
+          710.4729889104029,
+          722.4712462594612,
+          734.4695036085195,
+          746.4677609575776,
+          758.466018306636,
+          770.4642756556941,
+          782.4625330047525,
+          794.4607903538108,
+          806.4590477028689,
+          818.4573050519273
+        ]
+      ],
+      [
+        "pdfPlotY",
+        [
+          0.001075519035736442,
+          0.0012030674412036395,
+          0.0013229097393081925,
+          0.001433401134853118,
+          0.0015343087368832355,
+          0.0016266705636124848,
+          0.0017124060858541635,
+          0.0017937599479903204,
+          0.0018727016043805676,
+          0.0019504157351408196,
+          0.002026997213849226,
+          0.0021014145578117124,
+          0.002171739473590023,
+          0.0022355743725041063,
+          0.002290561972609684,
+          0.0023348442999025715,
+          0.0023673572660830866,
+          0.00238789626726503,
+          0.002396953812445964,
+          0.0023953930531962664,
+          0.0023840630822610422,
+          0.002363471385228458,
+          0.0023336045168473305,
+          0.002293939142718165,
+          0.0022436284853202515,
+          0.0021818018595091836,
+          0.0021078906980813573,
+          0.0020218978516704745,
+          0.00192455313786888,
+          0.001817335507963152,
+          0.0017023773342158327,
+          0.0015822888768091796,
+          0.001459946971556934,
+          0.001338284047114264,
+          0.0012200987598972944,
+          0.0011078955877757625,
+          0.0010037528630603473,
+          0.0009092180107845979,
+          0.0008252325941141648,
+          0.0007520939383479427,
+          0.0006894611507550436,
+          0.0006364101219883485,
+          0.0005915358437877763,
+          0.0005530936454699456,
+          0.0005191659943928572,
+          0.0004878392176619165,
+          0.00045737434043188036,
+          0.00042635702606852097,
+          0.00039381260592653345,
+          0.00035927370405630866
+        ]
+      ],
+      [
+        "cdfPlotType",
+        "continuous"
+      ],
+      [
+        "cdfPlotX",
+        [
+          231.0,
+          242.9795918367347,
+          254.9591836734694,
+          266.9387755102041,
+          278.9183673469388,
+          290.8979591836735,
+          302.8775510204082,
+          314.85714285714283,
+          326.83673469387753,
+          338.81632653061223,
+          350.7959183673469,
+          362.7755102040816,
+          374.7551020408163,
+          386.734693877551,
+          398.71428571428567,
+          410.69387755102036,
+          422.67346938775506,
+          434.65306122448976,
+          446.63265306122446,
+          458.61224489795916,
+          470.59183673469386,
+          482.57142857142856,
+          494.55102040816325,
+          506.53061224489795,
+          518.5102040816327,
+          530.4897959183673,
+          542.469387755102,
+          554.4489795918366,
+          566.4285714285713,
+          578.408163265306,
+          590.3877551020407,
+          602.3673469387754,
+          614.3469387755101,
+          626.3265306122448,
+          638.3061224489795,
+          650.2857142857142,
+          662.2653061224489,
+          674.2448979591836,
+          686.2244897959183,
+          698.204081632653,
+          710.1836734693877,
+          722.1632653061224,
+          734.1428571428571,
+          746.1224489795918,
+          758.1020408163265,
+          770.0816326530612,
+          782.0612244897959,
+          794.0408163265306,
+          806.0204081632653,
+          818.0
+        ]
+      ],
+      [
+        "cdfPlotY",
+        [
+          0.02,
+          0.04,
+          0.06,
+          0.1,
+          0.12,
+          0.16,
+          0.16,
+          0.16,
+          0.2,
+          0.22,
+          0.24,
+          0.24,
+          0.28,
+          0.28,
+          0.32,
+          0.4,
+          0.42,
+          0.48,
+          0.5,
+          0.5,
+          0.54,
+          0.56,
+          0.56,
+          0.6,
+          0.64,
+          0.68,
+          0.74,
+          0.74,
+          0.78,
+          0.8,
+          0.8,
+          0.82,
+          0.84,
+          0.88,
+          0.88,
+          0.9,
+          0.9,
+          0.92,
+          0.92,
+          0.92,
+          0.92,
+          0.92,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          1.0
+        ]
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.PunRate",
+    [
+      [
+        "plottype",
+        "continuous"
+      ],
+      [
+        "plotx",
+        [
+          56.6183217100257,
+          75.7155330688002,
+          94.8127444275746,
+          113.909955786349,
+          133.007167145124,
+          152.104378503898,
+          171.201589862672,
+          190.298801221447,
+          209.396012580221,
+          228.493223938996,
+          247.59043529777,
+          266.687646656545,
+          285.784858015319,
+          304.882069374094,
+          323.979280732868,
+          343.076492091643,
+          362.173703450417,
+          381.270914809191,
+          400.368126167966,
+          419.46533752674,
+          438.562548885515,
+          457.659760244289,
+          476.756971603064,
+          495.854182961838,
+          514.951394320613,
+          534.048605679387,
+          553.145817038162,
+          572.243028396936,
+          591.340239755711,
+          610.437451114485,
+          629.534662473259,
+          648.631873832034,
+          667.729085190808,
+          686.826296549583,
+          705.923507908357,
+          725.020719267132,
+          744.117930625906,
+          763.215141984681,
+          782.312353343455,
+          801.40956470223,
+          820.506776061004,
+          839.603987419778,
+          858.701198778553,
+          877.798410137327,
+          896.895621496102,
+          915.992832854876,
+          935.090044213651,
+          954.187255572425,
+          973.2844669312,
+          992.381678289974
+        ]
+      ],
+      [
+        "ploty",
+        [
+          4.05388738203468e-06,
+          1.10533245046941e-05,
+          2.72861964060552e-05,
+          6.10498395753852e-05,
+          0.00012395664943192,
+          0.000228764568302772,
+          0.000384544783033161,
+          0.000590460794678195,
+          0.000831581284760021,
+          0.00108068428388518,
+          0.00130738202147876,
+          0.0014909911858028,
+          0.00162990134831385,
+          0.00174117793283096,
+          0.00184979839720356,
+          0.00197349595985683,
+          0.00211215134240638,
+          0.00224807343221969,
+          0.00235688174111356,
+          0.0024219597296299,
+          0.00244296225622786,
+          0.00243287260057691,
+          0.00240633157376725,
+          0.00236826618432895,
+          0.00231105229661644,
+          0.00222127057536112,
+          0.0020899238170444,
+          0.00191846296952553,
+          0.00171772019670694,
+          0.00150284367668742,
+          0.00128889406032686,
+          0.00108912270906593,
+          0.000914541428035997,
+          0.000772799838737524,
+          0.000666376855369554,
+          0.000591731542099746,
+          0.00054045675731044,
+          0.000501750132308846,
+          0.000464889559399434,
+          0.000421254849683601,
+          0.000366145523497122,
+          0.000300118401038337,
+          0.000228785470084395,
+          0.000160484370613427,
+          0.000102786812316067,
+          5.97845559157622e-05,
+          3.14622856389973e-05,
+          1.49443731923698e-05,
+          6.39662896605327e-06,
+          2.46462999591626e-06
+        ]
+      ],
+      [
+        "cdfplottype",
+        "continuous"
+      ],
+      [
+        "cdfplotx",
+        [
+          231,
+          243.760869565217,
+          256.521739130435,
+          269.282608695652,
+          282.04347826087,
+          294.804347826087,
+          307.565217391304,
+          320.326086956522,
+          333.086956521739,
+          345.847826086957,
+          358.608695652174,
+          371.369565217391,
+          384.130434782609,
+          396.891304347826,
+          409.652173913043,
+          422.413043478261,
+          435.173913043478,
+          447.934782608696,
+          460.695652173913,
+          473.45652173913,
+          486.217391304348,
+          498.978260869565,
+          511.739130434783,
+          524.5,
+          537.260869565217,
+          550.021739130435,
+          562.782608695652,
+          575.54347826087,
+          588.304347826087,
+          601.065217391304,
+          613.826086956522,
+          626.586956521739,
+          639.347826086957,
+          652.108695652174,
+          664.869565217391,
+          677.630434782609,
+          690.391304347826,
+          703.152173913043,
+          715.913043478261,
+          728.673913043478,
+          741.434782608696,
+          754.195652173913,
+          766.95652173913,
+          779.717391304348,
+          792.478260869565,
+          805.239130434783,
+          818
+        ]
+      ],
+      [
+        "cdfploty",
+        [
+          0.02,
+          0.04,
+          0.06,
+          0.1,
+          0.16,
+          0.16,
+          0.16,
+          0.18,
+          0.22,
+          0.22,
+          0.24,
+          0.26,
+          0.28,
+          0.32,
+          0.4,
+          0.42,
+          0.48,
+          0.5,
+          0.5,
+          0.54,
+          0.56,
+          0.58,
+          0.64,
+          0.66,
+          0.7,
+          0.74,
+          0.78,
+          0.8,
+          0.8,
+          0.82,
+          0.84,
+          0.88,
+          0.88,
+          0.9,
+          0.9,
+          0.92,
+          0.92,
+          0.92,
+          0.92,
+          0.92,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          1
+        ]
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "PunRate"
+      ],
+      [
+        "invalid",
+        5
+      ],
+      [
+        "valid",
+        50
+      ],
+      [
+        "sd",
+        "147.83173556722"
+      ],
+      [
+        "uniques",
+        47
+      ],
+      [
+        "herfindahl",
+        0.0224
+      ],
+      [
+        "freqmode",
+        2
+      ],
+      [
+        "fewest",
+        "348"
+      ],
+      [
+        "mid",
+        "348"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "PunRate"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "numeric"
+      ],
+      [
+        "defaultNature",
+        "ordinal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:23:48",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "State": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Code": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Name": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "state": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "VoterID": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "PunRate": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

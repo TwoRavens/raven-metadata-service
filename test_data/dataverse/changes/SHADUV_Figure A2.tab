@@ -1,0 +1,603 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        32
+      ],
+      [
+        "variableCount",
+        2
+      ],
+      [
+        "dataSource",
+        {
+          "name": "SHADUV_Figure A2.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 421
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Electorate.mode",
+    [
+      "Source: Statistisches Jahrbuch f\u00fcr die Bundesrepublik Deutschland 2012 (Statistical Yearbook 2012)",
+      [
+        "Male",
+        "18-21",
+        "Female",
+        "70 and above",
+        "50-59"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Electorate.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Electorate.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Electorate",
+    [
+      [
+        "variableName",
+        "Electorate"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        20
+      ],
+      [
+        "validCount",
+        12
+      ],
+      [
+        "uniqueCount",
+        12
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Male",
+          "18-21",
+          "Female",
+          "70 and above",
+          "50-59"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.08333333333333336
+      ],
+      [
+        "plotValues",
+        {
+          "30-39": 1,
+          "21-29": 1,
+          "Sex": 1,
+          "60-69": 1,
+          "40-49": 1,
+          "Age": 1,
+          "50-59": 1,
+          "70 and above": 1,
+          "Source: Statistisches Jahrbuch f\u00fcr die Bundesrepublik Deutschland 2012 (Statistical Yearbook 2012)": 1,
+          "Female": 1,
+          "18-21": 1,
+          "Male": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Electorate",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 20,
+          "18-21": 1,
+          "21-29": 1,
+          "30-39": 1,
+          "40-49": 1,
+          "50-59": 1,
+          "60-69": 1,
+          "70 and above": 1,
+          "Age": 1,
+          "Female": 1,
+          "Male": 1,
+          "Sex": 1,
+          "Source: Statistisches Jahrbuch f\u00fcr die Bundesrepublik Deutschland 2012 (Statistical Yearbook 2012)": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Electorate"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        32
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        12
+      ],
+      [
+        "herfindahl",
+        0.0833333333333333
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Source: Statistisches Jahrbuch f\u00fcr die Bundesrepublik Deutschland 2012 (Statistical Yearbook 2012)"
+      ],
+      [
+        "mid",
+        "Source: Statistisches Jahrbuch f\u00fcr die Bundesrepublik Deutschland 2012 (Statistical Yearbook 2012)"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "Electorate"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.mode",
+    [
+      "Percentage",
+      [
+        "51.5",
+        "12.5",
+        "13.2",
+        "48.5",
+        "Percentage"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.B.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.B",
+    [
+      [
+        "variableName",
+        "B"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        22
+      ],
+      [
+        "validCount",
+        10
+      ],
+      [
+        "uniqueCount",
+        10
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "51.5",
+          "12.5",
+          "13.2",
+          "48.5",
+          "Percentage"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.10000000000000003
+      ],
+      [
+        "plotValues",
+        {
+          "3.6": 1,
+          "18.7": 1,
+          "20.100000000000001": 1,
+          "18.3": 1,
+          "13.6": 1,
+          "48.5": 1,
+          "13.2": 1,
+          "12.5": 1,
+          "51.5": 1,
+          "Percentage": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.B",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 22,
+          "12.5": 1,
+          "13.2": 1,
+          "13.6": 1,
+          "18.3": 1,
+          "18.7": 1,
+          "20.100000000000001": 1,
+          "3.6": 1,
+          "48.5": 1,
+          "51.5": 1,
+          "Percentage": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "B"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        32
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        10
+      ],
+      [
+        "herfindahl",
+        0.1
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Percentage"
+      ],
+      [
+        "mid",
+        "Percentage"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "B"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:09:00",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "Electorate": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "B": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,959 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        48
+      ],
+      [
+        "variableCount",
+        3
+      ],
+      [
+        "dataSource",
+        {
+          "name": "9RTI0V_codebook.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 2164
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.mode",
+    [
+      "Outcomes and Instruments",
+      [
+        "Additional Rain Measures",
+        "Fixed Effects",
+        "Outcomes and Instruments",
+        "Political Covariates",
+        "Census Covariates"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Type",
+    [
+      [
+        "variableName",
+        "Type"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        43
+      ],
+      [
+        "validCount",
+        5
+      ],
+      [
+        "uniqueCount",
+        5
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Additional Rain Measures",
+          "Fixed Effects",
+          "Outcomes and Instruments",
+          "Political Covariates",
+          "Census Covariates"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.20000000000000004
+      ],
+      [
+        "plotValues",
+        {
+          "Census Covariates": 1,
+          "Fixed Effects": 1,
+          "Political Covariates": 1,
+          "Outcomes and Instruments": 1,
+          "Additional Rain Measures": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Type",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 43,
+          "Additional Rain Measures": 1,
+          "Census Covariates": 1,
+          "Fixed Effects": 1,
+          "Outcomes and Instruments": 1,
+          "Political Covariates": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Type"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        48
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        5
+      ],
+      [
+        "herfindahl",
+        0.2
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Outcomes and Instruments"
+      ],
+      [
+        "mid",
+        "Outcomes and Instruments"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "Type"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.mode",
+    [
+      "dose",
+      [
+        "comp_cq",
+        "inc_win_prv",
+        "construction",
+        "d_inc",
+        "rain_weekend"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Variable",
+    [
+      [
+        "variableName",
+        "Variable"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        6
+      ],
+      [
+        "validCount",
+        42
+      ],
+      [
+        "uniqueCount",
+        42
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "comp_cq",
+          "inc_win_prv",
+          "construction",
+          "d_inc",
+          "rain_weekend"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.02380952380952379
+      ],
+      [
+        "plotValues",
+        {
+          "turnout_prv": 1,
+          "rain_day_prev_prv": 1,
+          "dose": 1,
+          "midterm": 1,
+          "rain_day_prev": 1,
+          "unempld": 1,
+          "rain_weekend_prev": 1,
+          "rain_weekend_prev_prv": 1,
+          "rain_day": 1,
+          "retail": 1,
+          "gvtwkr": 1,
+          "educ": 1,
+          "dose_prv": 1,
+          "manuf": 1,
+          "rain_elec_prev": 1,
+          "dist_prev": 1,
+          "inc_win": 1,
+          "minc": 1,
+          "as.factor(fe_id_num)": 1,
+          "comp_cq": 1,
+          "forborn": 1,
+          "extremist": 1,
+          "rain_elec": 1,
+          "gov": 1,
+          "black": 1,
+          "rain_day_next": 1,
+          "redistricted": 1,
+          "urban": 1,
+          "farmer": 1,
+          "pop": 1,
+          "rain_elec_next": 1,
+          "rain_weekend_next": 1,
+          "rain_elec_prev_prv": 1,
+          "sos": 1,
+          "rain_weekend": 1,
+          "d_inc": 1,
+          "construction": 1,
+          "inc_win_prv": 1,
+          "vote_prv": 1,
+          "pres_party": 1,
+          "vote": 1,
+          "turnout": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Variable",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 6,
+          "as.factor(fe_id_num)": 1,
+          "black": 1,
+          "comp_cq": 1,
+          "construction": 1,
+          "d_inc": 1,
+          "dist_prev": 1,
+          "dose": 1,
+          "dose_prv": 1,
+          "educ": 1,
+          "extremist": 1,
+          "farmer": 1,
+          "forborn": 1,
+          "gov": 1,
+          "gvtwkr": 1,
+          "inc_win": 1,
+          "inc_win_prv": 1,
+          "manuf": 1,
+          "midterm": 1,
+          "minc": 1,
+          "pop": 1,
+          "pres_party": 1,
+          "rain_day": 1,
+          "rain_day_next": 1,
+          "rain_day_prev": 1,
+          "rain_day_prev_prv": 1,
+          "rain_elec": 1,
+          "rain_elec_next": 1,
+          "rain_elec_prev": 1,
+          "rain_elec_prev_prv": 1,
+          "rain_weekend": 1,
+          "rain_weekend_next": 1,
+          "rain_weekend_prev": 1,
+          "rain_weekend_prev_prv": 1,
+          "redistricted": 1,
+          "retail": 1,
+          "sos": 1,
+          "turnout": 1,
+          "turnout_prv": 1,
+          "unempld": 1,
+          "urban": 1,
+          "vote": 1,
+          "vote_prv": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Variable"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        48
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        42
+      ],
+      [
+        "herfindahl",
+        0.0238095238095238
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "dose"
+      ],
+      [
+        "mid",
+        "dose"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "Variable"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.mode",
+    [
+      "difference in democratic vote share",
+      [
+        "rain on prior election weekend at next election",
+        "party of governor ",
+        "prior normalized presidential vote",
+        "incumbent ideal point",
+        "rain on election day and day prior two elections prior"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.Desciption",
+    [
+      [
+        "variableName",
+        "Desciption"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        7
+      ],
+      [
+        "validCount",
+        41
+      ],
+      [
+        "uniqueCount",
+        41
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "rain on prior election weekend at next election",
+          "party of governor ",
+          "prior normalized presidential vote",
+          "incumbent ideal point",
+          "rain on election day and day prior two elections prior"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.024390243902439015
+      ],
+      [
+        "plotValues",
+        {
+          "incumbent win previously  indicator": 1,
+          "party of governor ": 1,
+          "% block": 1,
+          "% urban": 1,
+          "% foreign born": 1,
+          "% govt workers": 1,
+          "rain on prior election weekend at next election": 1,
+          "redistricting indicator": 1,
+          "midterm election indicator": 1,
+          "deviated rain instrument on prior weekend of election day": 1,
+          "prior deviated rain instrument on election day and day prior": 1,
+          "manufacturing": 1,
+          "deviated rain instrument on election day and day prior": 1,
+          "incumbent policy extremist indicator": 1,
+          "median income in district": 1,
+          "prior rain instrument just on election day": 1,
+          "$ construction workers": 1,
+          "farmer population": 1,
+          "CQ competitiveness": 1,
+          "difference in democratic vote share": 1,
+          "party of sec. of state": 1,
+          "prior deviated rain instrument on prior weekend of election day": 1,
+          "election turnout": 1,
+          "incumbent win indicator": 1,
+          "party of the president": 1,
+          "rain on election day and prior day at next election": 1,
+          "prior turnout": 1,
+          "% unemployed": 1,
+          "rain on prior election weekend two elections prior": 1,
+          "log district population": 1,
+          "democratic incumbent indicator": 1,
+          "education": 1,
+          "rain just on election day two elections prior": 1,
+          "rain just on election day at next election": 1,
+          "prior differeence in democratic vote share": 1,
+          "% retail workers": 1,
+          "rain instrument just on election day": 1,
+          "incumbent ideal point": 1,
+          "prior normalized presidential vote": 1,
+          "prior incumbent ideal point": 1,
+          "rain on election day and day prior two elections prior": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.Desciption",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "": 7,
+          "% block": 1,
+          "% foreign born": 1,
+          "% govt workers": 1,
+          "% retail workers": 1,
+          "% unemployed": 1,
+          "% urban": 1,
+          "$ construction workers": 1,
+          "CQ competitiveness": 1,
+          "democratic incumbent indicator": 1,
+          "deviated rain instrument on election day and day prior": 1,
+          "deviated rain instrument on prior weekend of election day": 1,
+          "difference in democratic vote share": 1,
+          "education": 1,
+          "election turnout": 1,
+          "farmer population": 1,
+          "incumbent ideal point": 1,
+          "incumbent policy extremist indicator": 1,
+          "incumbent win indicator": 1,
+          "incumbent win previously  indicator": 1,
+          "log district population": 1,
+          "manufacturing": 1,
+          "median income in district": 1,
+          "midterm election indicator": 1,
+          "party of governor ": 1,
+          "party of sec. of state": 1,
+          "party of the president": 1,
+          "prior deviated rain instrument on election day and day prior": 1,
+          "prior deviated rain instrument on prior weekend of election day": 1,
+          "prior differeence in democratic vote share": 1,
+          "prior incumbent ideal point": 1,
+          "prior normalized presidential vote": 1,
+          "prior rain instrument just on election day": 1,
+          "prior turnout": 1,
+          "rain instrument just on election day": 1,
+          "rain just on election day at next election": 1,
+          "rain just on election day two elections prior": 1,
+          "rain on election day and day prior two elections prior": 1,
+          "rain on election day and prior day at next election": 1,
+          "rain on prior election weekend at next election": 1,
+          "rain on prior election weekend two elections prior": 1,
+          "redistricting indicator": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "Desciption"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        48
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        41
+      ],
+      [
+        "herfindahl",
+        0.024390243902439
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "difference in democratic vote share"
+      ],
+      [
+        "mid",
+        "difference in democratic vote share"
+      ],
+      [
+        "freqfewest",
+        1
+      ],
+      [
+        "freqmid",
+        1
+      ],
+      [
+        "varnamesTypes",
+        "Desciption"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:21:43",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "Type": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Variable": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "Desciption": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]

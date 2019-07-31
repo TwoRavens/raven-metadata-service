@@ -1,0 +1,6348 @@
+[
+  [
+    "add",
+    "dataset",
+    [
+      [
+        "description",
+        ""
+      ],
+      [
+        "unitOfAnalysis",
+        ""
+      ],
+      [
+        "structure",
+        "long"
+      ],
+      [
+        "rowCount",
+        48
+      ],
+      [
+        "variableCount",
+        71
+      ],
+      [
+        "dataSource",
+        {
+          "name": "PC6CQC_LISData_missing.tab",
+          "type": "File",
+          "format": "text/tab-separated-values",
+          "filesize": 4458
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "dataset",
+    [
+      [
+        "private",
+        false
+      ],
+      [
+        "stdyDscr",
+        {
+          "citation": {
+            "titlStmt": {
+              "titl": "",
+              "IDNo": {
+                "-agency": "",
+                "#text": ""
+              }
+            },
+            "rspStmt": {
+              "Authentry": ""
+            },
+            "biblcit": "No Data Citation Provided"
+          }
+        }
+      ],
+      [
+        "fileDscr",
+        {
+          "-ID": "",
+          "fileTxt": {
+            "fileName": "",
+            "dimensns": {
+              "caseQnty": "",
+              "varQnty": ""
+            },
+            "fileType": ""
+          },
+          "notes": {
+            "-level": "",
+            "-type": "",
+            "-subject": "",
+            "#text": ""
+          }
+        }
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.country.mode",
+    [
+      "Australia",
+      [
+        "Denmark",
+        "Greece",
+        "Georgia",
+        "Hungary",
+        "Netherlands"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.country.binary",
+    [
+      "no",
+      false
+    ]
+  ],
+  [
+    "change",
+    "variables.country.time",
+    [
+      "no",
+      "unknown"
+    ]
+  ],
+  [
+    "add",
+    "variables.country",
+    [
+      [
+        "variableName",
+        "country"
+      ],
+      [
+        "description",
+        ""
+      ],
+      [
+        "invalidCount",
+        0
+      ],
+      [
+        "validCount",
+        48
+      ],
+      [
+        "uniqueCount",
+        48
+      ],
+      [
+        "modeFreq",
+        1
+      ],
+      [
+        "fewestValues",
+        [
+          "Denmark",
+          "Greece",
+          "Georgia",
+          "Hungary",
+          "Netherlands"
+        ]
+      ],
+      [
+        "fewestFreq",
+        1
+      ],
+      [
+        "midpoint",
+        null
+      ],
+      [
+        "midpointFreq",
+        null
+      ],
+      [
+        "stdDev",
+        "NA"
+      ],
+      [
+        "herfindahlIndex",
+        0.02083333333333332
+      ],
+      [
+        "plotValues",
+        {
+          "Australia": 1,
+          "Finland": 1,
+          "Estonia": 1,
+          "Serbia": 1,
+          "Slovakia": 1,
+          "Austria": 1,
+          "Egypt": 1,
+          "SAfrica": 1,
+          "Israel": 1,
+          "Brazil": 1,
+          "Slovenia": 1,
+          "Sweden": 1,
+          "Japan": 1,
+          "SKorea": 1,
+          "Panama": 1,
+          "Peru": 1,
+          "Taiwan": 1,
+          "Dominican": 1,
+          "China": 1,
+          "Italy": 1,
+          "Ireland": 1,
+          "France": 1,
+          "Colombia": 1,
+          "Mexico": 1,
+          "US": 1,
+          "Belgium": 1,
+          "UK": 1,
+          "Lithuania": 1,
+          "Russia": 1,
+          "Uruguay": 1,
+          "Canada": 1,
+          "Romania": 1,
+          "Iceland": 1,
+          "Poland": 1,
+          "Norway": 1,
+          "Luxembourg": 1,
+          "India": 1,
+          "Czech": 1,
+          "Spain": 1,
+          "Germany": 1,
+          "Paraguay": 1,
+          "Switzerland": 1,
+          "Netherlands": 1,
+          "Hungary": 1,
+          "Georgia": 1,
+          "Greece": 1,
+          "Guatemala": 1,
+          "Denmark": 1
+        }
+      ],
+      [
+        "pdfPlotType",
+        null
+      ],
+      [
+        "pdfPlotX",
+        null
+      ],
+      [
+        "pdfPlotY",
+        null
+      ],
+      [
+        "cdfPlotType",
+        null
+      ],
+      [
+        "cdfPlotX",
+        null
+      ],
+      [
+        "cdfPlotY",
+        null
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables.country",
+    [
+      [
+        "plottype",
+        "bar"
+      ],
+      [
+        "plotvalues",
+        {
+          "Australia": 1,
+          "Austria": 1,
+          "Belgium": 1,
+          "Brazil": 1,
+          "Canada": 1,
+          "China": 1,
+          "Colombia": 1,
+          "Czech": 1,
+          "Denmark": 1,
+          "Dominican": 1,
+          "Egypt": 1,
+          "Estonia": 1,
+          "Finland": 1,
+          "France": 1,
+          "Georgia": 1,
+          "Germany": 1,
+          "Greece": 1,
+          "Guatemala": 1,
+          "Hungary": 1,
+          "Iceland": 1,
+          "India": 1,
+          "Ireland": 1,
+          "Israel": 1,
+          "Italy": 1,
+          "Japan": 1,
+          "Lithuania": 1,
+          "Luxembourg": 1,
+          "Mexico": 1,
+          "Netherlands": 1,
+          "Norway": 1,
+          "Panama": 1,
+          "Paraguay": 1,
+          "Peru": 1,
+          "Poland": 1,
+          "Romania": 1,
+          "Russia": 1,
+          "SAfrica": 1,
+          "Serbia": 1,
+          "SKorea": 1,
+          "Slovakia": 1,
+          "Slovenia": 1,
+          "Spain": 1,
+          "Sweden": 1,
+          "Switzerland": 1,
+          "Taiwan": 1,
+          "UK": 1,
+          "Uruguay": 1,
+          "US": 1
+        }
+      ],
+      [
+        "cdfplottype",
+        "NULL"
+      ],
+      [
+        "cdfplotx",
+        "NULL"
+      ],
+      [
+        "cdfploty",
+        "NULL"
+      ],
+      [
+        "labl",
+        ""
+      ],
+      [
+        "varnamesSumStat",
+        "country"
+      ],
+      [
+        "invalid",
+        0
+      ],
+      [
+        "valid",
+        48
+      ],
+      [
+        "sd",
+        "NA"
+      ],
+      [
+        "uniques",
+        48
+      ],
+      [
+        "herfindahl",
+        0.0208333333333333
+      ],
+      [
+        "freqmode",
+        1
+      ],
+      [
+        "fewest",
+        "Australia"
+      ],
+      [
+        "mid",
+        "Australia"
+      ],
+      [
+        "freqfewest",
+        "1"
+      ],
+      [
+        "freqmid",
+        "1"
+      ],
+      [
+        "varnamesTypes",
+        "country"
+      ],
+      [
+        "defaultInterval",
+        "discrete"
+      ],
+      [
+        "defaultNumchar",
+        "character"
+      ],
+      [
+        "defaultNature",
+        "nominal"
+      ],
+      [
+        "defaultBinary",
+        "no"
+      ],
+      [
+        "defaultTime",
+        "no"
+      ]
+    ]
+  ],
+  [
+    "add",
+    "variables",
+    [
+      [
+        "1947",
+        {
+          "variableName": "1947",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1948",
+        {
+          "variableName": "1948",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1949",
+        {
+          "variableName": "1949",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1950",
+        {
+          "variableName": "1950",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1951",
+        {
+          "variableName": "1951",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1952",
+        {
+          "variableName": "1952",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1953",
+        {
+          "variableName": "1953",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1954",
+        {
+          "variableName": "1954",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1955",
+        {
+          "variableName": "1955",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1956",
+        {
+          "variableName": "1956",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1957",
+        {
+          "variableName": "1957",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1958",
+        {
+          "variableName": "1958",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1959",
+        {
+          "variableName": "1959",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1960",
+        {
+          "variableName": "1960",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1961",
+        {
+          "variableName": "1961",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1962",
+        {
+          "variableName": "1962",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1963",
+        {
+          "variableName": "1963",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1964",
+        {
+          "variableName": "1964",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1965",
+        {
+          "variableName": "1965",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1966",
+        {
+          "variableName": "1966",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1967",
+        {
+          "variableName": "1967",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1968",
+        {
+          "variableName": "1968",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1969",
+        {
+          "variableName": "1969",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1970",
+        {
+          "variableName": "1970",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1971",
+        {
+          "variableName": "1971",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1972",
+        {
+          "variableName": "1972",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1973",
+        {
+          "variableName": "1973",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1974",
+        {
+          "variableName": "1974",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1975",
+        {
+          "variableName": "1975",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1976",
+        {
+          "variableName": "1976",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1977",
+        {
+          "variableName": "1977",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "1978",
+        {
+          "variableName": "1978",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1979",
+        {
+          "variableName": "1979",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 44,
+          "validCount": 4,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 4,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "1.0": 4
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1980",
+        {
+          "variableName": "1980",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1981",
+        {
+          "variableName": "1981",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 43,
+          "validCount": 5,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 5,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 5,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.20000000000000004,
+          "plotValues": {
+            "1.0": 5
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1982",
+        {
+          "variableName": "1982",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1983",
+        {
+          "variableName": "1983",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1984",
+        {
+          "variableName": "1984",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 45,
+          "validCount": 3,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 3,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 3,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.3333333333333333,
+          "plotValues": {
+            "1.0": 3
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1985",
+        {
+          "variableName": "1985",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 44,
+          "validCount": 4,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 4,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "1.0": 4
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1986",
+        {
+          "variableName": "1986",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 41,
+          "validCount": 7,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 7,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 7,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.14285714285714285,
+          "plotValues": {
+            "1.0": 7
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1987",
+        {
+          "variableName": "1987",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 40,
+          "validCount": 8,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 8,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 8,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.125,
+          "plotValues": {
+            "1.0": 8
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1988",
+        {
+          "variableName": "1988",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1989",
+        {
+          "variableName": "1989",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 43,
+          "validCount": 5,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 5,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 5,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.20000000000000004,
+          "plotValues": {
+            "1.0": 5
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1990",
+        {
+          "variableName": "1990",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1991",
+        {
+          "variableName": "1991",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 39,
+          "validCount": 9,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 9,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 9,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.1111111111111111,
+          "plotValues": {
+            "1.0": 9
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1992",
+        {
+          "variableName": "1992",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 39,
+          "validCount": 9,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 9,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 9,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.1111111111111111,
+          "plotValues": {
+            "1.0": 9
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1993",
+        {
+          "variableName": "1993",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1994",
+        {
+          "variableName": "1994",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 38,
+          "validCount": 10,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 10,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 10,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.10000000000000003,
+          "plotValues": {
+            "1.0": 10
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1995",
+        {
+          "variableName": "1995",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 33,
+          "validCount": 15,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 15,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 15,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.06666666666666667,
+          "plotValues": {
+            "1.0": 15
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1996",
+        {
+          "variableName": "1996",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 44,
+          "validCount": 4,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 4,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "1.0": 4
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1997",
+        {
+          "variableName": "1997",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 39,
+          "validCount": 9,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 9,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 9,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.1111111111111111,
+          "plotValues": {
+            "1.0": 9
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1998",
+        {
+          "variableName": "1998",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 45,
+          "validCount": 3,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 3,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 3,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.3333333333333333,
+          "plotValues": {
+            "1.0": 3
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "1999",
+        {
+          "variableName": "1999",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 44,
+          "validCount": 4,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 4,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "1.0": 4
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2000",
+        {
+          "variableName": "2000",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 28,
+          "validCount": 20,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 20,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 20,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.05000000000000003,
+          "plotValues": {
+            "1.0": 20
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2001",
+        {
+          "variableName": "2001",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2002",
+        {
+          "variableName": "2002",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 44,
+          "validCount": 4,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 4,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "1.0": 4
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2003",
+        {
+          "variableName": "2003",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 47,
+          "validCount": 1,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 1,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 1,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": NaN,
+          "herfindahlIndex": 1.0,
+          "plotValues": {
+            "1.0": 1
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2004",
+        {
+          "variableName": "2004",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 23,
+          "validCount": 25,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 25,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 25,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.039999999999999994,
+          "plotValues": {
+            "1.0": 25
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2005",
+        {
+          "variableName": "2005",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 43,
+          "validCount": 5,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 5,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 5,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.20000000000000004,
+          "plotValues": {
+            "1.0": 5
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2006",
+        {
+          "variableName": "2006",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 45,
+          "validCount": 3,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 3,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 3,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.3333333333333333,
+          "plotValues": {
+            "1.0": 3
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2007",
+        {
+          "variableName": "2007",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 22,
+          "validCount": 26,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 26,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 26,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.03846153846153847,
+          "plotValues": {
+            "1.0": 26
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2008",
+        {
+          "variableName": "2008",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 44,
+          "validCount": 4,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 4,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 4,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.25,
+          "plotValues": {
+            "1.0": 4
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2009",
+        {
+          "variableName": "2009",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2010",
+        {
+          "variableName": "2010",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 15,
+          "validCount": 33,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 33,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 33,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.030303030303030318,
+          "plotValues": {
+            "1.0": 33
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2011",
+        {
+          "variableName": "2011",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 45,
+          "validCount": 3,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 3,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 3,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.3333333333333333,
+          "plotValues": {
+            "1.0": 3
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2012",
+        {
+          "variableName": "2012",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 43,
+          "validCount": 5,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 5,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 5,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.20000000000000004,
+          "plotValues": {
+            "1.0": 5
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2013",
+        {
+          "variableName": "2013",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 23,
+          "validCount": 25,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 25,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 25,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.039999999999999994,
+          "plotValues": {
+            "1.0": 25
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2014",
+        {
+          "variableName": "2014",
+          "description": "",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 46,
+          "validCount": 2,
+          "uniqueCount": 1,
+          "median": 1.0,
+          "mean": 1.0,
+          "max": 1.0,
+          "min": 1.0,
+          "mode": [
+            1.0
+          ],
+          "modeFreq": 2,
+          "fewestValues": [
+            1.0
+          ],
+          "fewestFreq": 2,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": 0.0,
+          "herfindahlIndex": 0.5,
+          "plotValues": {
+            "1.0": 2
+          },
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": "bar",
+          "cdfPlotX": [
+            1.0
+          ],
+          "cdfPlotY": [
+            1.0
+          ]
+        }
+      ],
+      [
+        "2015",
+        {
+          "variableName": "2015",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ],
+      [
+        "2016",
+        {
+          "variableName": "2016",
+          "description": "",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": false,
+          "interval": "discrete",
+          "time": "unknown",
+          "invalidCount": 48,
+          "validCount": 0,
+          "uniqueCount": 0,
+          "median": "NA",
+          "mean": "NA",
+          "max": "NA",
+          "min": "NA",
+          "mode": [],
+          "modeFreq": null,
+          "fewestValues": [],
+          "fewestFreq": null,
+          "midpoint": null,
+          "midpointFreq": null,
+          "stdDev": "NA",
+          "herfindahlIndex": 0,
+          "plotValues": {},
+          "pdfPlotType": null,
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "cdfPlotType": null,
+          "cdfPlotX": null,
+          "cdfPlotY": null
+        }
+      ]
+    ]
+  ],
+  [
+    "remove",
+    "variables",
+    [
+      [
+        "X1947",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1947",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1947",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1948",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1948",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1948",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1949",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1949",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1949",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1950",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1950",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1950",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1951",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1951",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1951",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1952",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1952",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1952",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1953",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1953",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1953",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1954",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1954",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1954",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1955",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1955",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1955",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1956",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1956",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1956",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1957",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1957",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1957",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1958",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1958",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1958",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1959",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1959",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1959",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1960",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1960",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1960",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1961",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1961",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1961",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1962",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1962",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1962",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1963",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1963",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1963",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1964",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1964",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1964",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1965",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1965",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1965",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1966",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1966",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1966",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1967",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1967",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1967",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1968",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1968",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1968",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1969",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1969",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1969",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1970",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1970",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1970",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1971",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1971",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1971",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1972",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1972",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1972",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1973",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1973",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1973",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1974",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1974",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1974",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1975",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1975",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1975",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1976",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1976",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1976",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1977",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X1977",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1977",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1978",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1978",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1978",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1979",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 4
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1979",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 44,
+          "valid": 4,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 4,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "4",
+          "freqmid": "4",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1979",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1980",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1980",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1980",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1981",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 5
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1981",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 43,
+          "valid": 5,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 5,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "5",
+          "freqmid": "5",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1981",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1982",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1982",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1982",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1983",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1983",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1983",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1984",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 3
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1984",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 45,
+          "valid": 3,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 3,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "3",
+          "freqmid": "3",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1984",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1985",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 4
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1985",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 44,
+          "valid": 4,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 4,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "4",
+          "freqmid": "4",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1985",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1986",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 7
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1986",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 41,
+          "valid": 7,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 7,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "7",
+          "freqmid": "7",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1986",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1987",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 8
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1987",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 40,
+          "valid": 8,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 8,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "8",
+          "freqmid": "8",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1987",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1988",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1988",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1988",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1989",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 5
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1989",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 43,
+          "valid": 5,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 5,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "5",
+          "freqmid": "5",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1989",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1990",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1990",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1990",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1991",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 9
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1991",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 39,
+          "valid": 9,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 9,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "9",
+          "freqmid": "9",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1991",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1992",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 9
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1992",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 39,
+          "valid": 9,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 9,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "9",
+          "freqmid": "9",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1992",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1993",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1993",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1993",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1994",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 10
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1994",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 38,
+          "valid": 10,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 10,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "10",
+          "freqmid": "10",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1994",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1995",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 15
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1995",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 33,
+          "valid": 15,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 15,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "15",
+          "freqmid": "15",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1995",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1996",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 4
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1996",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 44,
+          "valid": 4,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 4,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "4",
+          "freqmid": "4",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1996",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1997",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 9
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1997",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 39,
+          "valid": 9,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 9,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "9",
+          "freqmid": "9",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1997",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1998",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 3
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1998",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 45,
+          "valid": 3,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 3,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "3",
+          "freqmid": "3",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1998",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X1999",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 4
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X1999",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 44,
+          "valid": 4,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 4,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "4",
+          "freqmid": "4",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X1999",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2000",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 20
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2000",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 28,
+          "valid": 20,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 20,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "20",
+          "freqmid": "20",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2000",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2001",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2001",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2001",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2002",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 4
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2002",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 44,
+          "valid": 4,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 4,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "4",
+          "freqmid": "4",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2002",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2003",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 1
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2003",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 47,
+          "valid": 1,
+          "sd": "NA",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 1,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "1",
+          "freqmid": "1",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2003",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2004",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 25
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2004",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 23,
+          "valid": 25,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 25,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "25",
+          "freqmid": "25",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2004",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2005",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 5
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2005",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 43,
+          "valid": 5,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 5,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "5",
+          "freqmid": "5",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2005",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2006",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 3
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2006",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 45,
+          "valid": 3,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 3,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "3",
+          "freqmid": "3",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2006",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2007",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 26
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2007",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 22,
+          "valid": 26,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 26,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "26",
+          "freqmid": "26",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2007",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2008",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 4
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2008",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 44,
+          "valid": 4,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 4,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "4",
+          "freqmid": "4",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2008",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2009",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2009",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2009",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2010",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 33
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2010",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 15,
+          "valid": 33,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 33,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "33",
+          "freqmid": "33",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2010",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2011",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 3
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2011",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 45,
+          "valid": 3,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 3,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "3",
+          "freqmid": "3",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2011",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2012",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 5
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2012",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 43,
+          "valid": 5,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 5,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "5",
+          "freqmid": "5",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2012",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2013",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 25
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2013",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 23,
+          "valid": 25,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 25,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "25",
+          "freqmid": "25",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2013",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2014",
+        {
+          "plottype": "bar",
+          "plotvalues": {
+            "1": 2
+          },
+          "cdfplottype": "bar",
+          "cdfplotx": 1,
+          "cdfploty": 1,
+          "labl": "",
+          "varnamesSumStat": "X2014",
+          "median": "1",
+          "mean": "1",
+          "mode": "1",
+          "max": "1",
+          "min": "1",
+          "invalid": 46,
+          "valid": 2,
+          "sd": "0",
+          "uniques": 1,
+          "herfindahl": 1,
+          "freqmode": 2,
+          "fewest": "1",
+          "mid": "1",
+          "freqfewest": "2",
+          "freqmid": "2",
+          "numchar": "numeric",
+          "nature": "ordinal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2014",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "numeric",
+          "defaultNature": "ordinal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2015",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X2015",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2015",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ],
+      [
+        "X2016",
+        {
+          "plottype": "bar",
+          "plotvalues": [],
+          "cdfplottype": "NULL",
+          "cdfplotx": "NULL",
+          "cdfploty": "NULL",
+          "labl": "",
+          "varnamesSumStat": "X2016",
+          "median": "NA",
+          "mean": "NA",
+          "mode": "NA",
+          "max": "NA",
+          "min": "NA",
+          "invalid": 48,
+          "valid": 0,
+          "sd": "NA",
+          "uniques": 0,
+          "herfindahl": 0,
+          "freqmode": 0,
+          "fewest": "NA",
+          "mid": "NA",
+          "freqfewest": "0",
+          "freqmid": "0",
+          "numchar": "character",
+          "nature": "nominal",
+          "binary": "no",
+          "interval": "discrete",
+          "time": "no",
+          "varnamesTypes": "X2016",
+          "defaultInterval": "discrete",
+          "defaultNumchar": "character",
+          "defaultNature": "nominal",
+          "defaultBinary": "no",
+          "defaultTime": "no"
+        }
+      ]
+    ]
+  ],
+  [
+    "add",
+    "",
+    [
+      [
+        "self",
+        {
+          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
+          "created": "2019-07-31 06:19:03",
+          "preprocessId": null,
+          "version": 1
+        }
+      ],
+      [
+        "variableDisplay",
+        {
+          "editable": [
+            "description",
+            "numchar",
+            "nature",
+            "time"
+          ],
+          "country": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1947": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1948": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1949": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1950": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1951": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1952": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1953": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1954": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1955": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1956": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1957": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1958": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1959": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1960": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1961": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1962": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1963": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1964": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1965": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1966": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1967": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1968": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1969": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1970": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1971": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1972": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1973": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1974": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1975": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1976": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1977": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1978": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1979": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1980": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1981": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1982": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1983": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1984": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1985": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1986": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1987": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1988": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1989": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1990": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1991": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1992": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1993": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1994": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1995": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1996": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1997": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1998": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "1999": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2000": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2001": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2002": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2003": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2004": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2005": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2006": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2007": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2008": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2009": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2010": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2011": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2012": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2013": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2014": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2015": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          },
+          "2016": {
+            "viewable": true,
+            "omit": [],
+            "images": []
+          }
+        }
+      ]
+    ]
+  ]
+]
