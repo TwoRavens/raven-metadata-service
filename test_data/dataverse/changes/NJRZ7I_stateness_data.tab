@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        198
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "NJRZ7I_stateness_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 15103
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "Argentina",
       [
+        "Costa Rica",
+        "Dominican Republic",
         "Panama",
-        "Guatemala",
-        "Brazil",
-        "Argentina",
-        "Peru"
+        "Jamaica",
+        "Chile"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Costa Rica",
+          "Dominican Republic",
           "Panama",
-          "Guatemala",
-          "Brazil",
-          "Argentina",
-          "Peru"
+          "Jamaica",
+          "Chile"
         ]
       ],
       [
@@ -173,24 +74,24 @@
       [
         "plotValues",
         {
-          "Dominican Republic": 11,
-          "Chile": 11,
-          "Costa Rica": 11,
-          "Ecuador": 11,
-          "Venezuela": 11,
-          "El Salvador": 11,
-          "Jamaica": 11,
-          "Colombia": 11,
-          "Nicaragua": 11,
           "Mexico": 11,
-          "Paraguay": 11,
-          "Uruguay": 11,
-          "Bolivia": 11,
           "Peru": 11,
-          "Argentina": 11,
-          "Brazil": 11,
+          "Venezuela": 11,
+          "Bolivia": 11,
           "Guatemala": 11,
-          "Panama": 11
+          "Brazil": 11,
+          "Uruguay": 11,
+          "Colombia": 11,
+          "Ecuador": 11,
+          "Nicaragua": 11,
+          "Argentina": 11,
+          "Paraguay": 11,
+          "El Salvador": 11,
+          "Chile": 11,
+          "Jamaica": 11,
+          "Panama": 11,
+          "Dominican Republic": 11,
+          "Costa Rica": 11
         }
       ],
       [
@@ -380,22 +281,6 @@
     [
       "5",
       5
-    ]
-  ],
-  [
-    "change",
-    "variables.codpa1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.codpa1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -984,26 +869,10 @@
   ],
   [
     "change",
-    "variables.capacity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.capacity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.capacity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1656,26 +1525,10 @@
   ],
   [
     "change",
-    "variables.diff14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2319,22 +2172,6 @@
     ]
   ],
   [
-    "change",
-    "variables.oild.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.oild.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.oild",
     [
@@ -2574,22 +2411,6 @@
     [
       "-2",
       -2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.polity_p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.polity_p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2873,26 +2694,10 @@
   ],
   [
     "change",
-    "variables.lgdp94.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgdp94.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgdp94.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3549,26 +3354,10 @@
   ],
   [
     "change",
-    "variables.lamp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lamp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lamp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4221,26 +4010,10 @@
   ],
   [
     "change",
-    "variables.epb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.epb.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.epb.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4897,26 +4670,10 @@
   ],
   [
     "change",
-    "variables.fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5514,82 +5271,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:21:11",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "codpa1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "capacity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oild": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polity_p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgdp94": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lamp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "epb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

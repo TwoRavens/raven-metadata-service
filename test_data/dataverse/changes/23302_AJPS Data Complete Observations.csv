@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        57
-      ],
-      [
-        "variableCount",
-        26
-      ],
-      [
-        "dataSource",
-        {
-          "name": "23302_AJPS Data Complete Observations.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 12118
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.FSCode.mode",
     [
       "AG",
       [
-        "AU",
-        "FM",
-        "HS",
-        "TR",
-        "VA"
+        "TC",
+        "GS",
+        "EP",
+        "DJ",
+        "NS"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.FSCode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FSCode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "AU",
-          "FM",
-          "HS",
-          "TR",
-          "VA"
+          "TC",
+          "GS",
+          "EP",
+          "DJ",
+          "NS"
         ]
       ],
       [
@@ -173,63 +74,63 @@
       [
         "plotValues",
         {
-          "TC": 1,
-          "NS": 1,
-          "EQ": 1,
-          "QQ": 1,
-          "MC": 1,
-          "DN": 1,
-          "CE": 1,
-          "NL": 1,
-          "CM": 1,
-          "ST": 1,
-          "DD": 1,
-          "AM": 1,
-          "NU": 1,
-          "CU": 1,
-          "IN": 1,
-          "FL": 1,
-          "LF": 1,
-          "GS": 1,
-          "IB": 1,
-          "TS": 1,
-          "PU": 1,
-          "AP": 1,
-          "FC": 1,
-          "EE": 1,
-          "NM": 1,
-          "SZ": 1,
-          "RS": 1,
-          "TN": 1,
-          "SK": 1,
-          "ED": 1,
-          "BD": 1,
-          "EB": 1,
           "HU": 1,
-          "SB": 1,
-          "OS": 1,
+          "EE": 1,
+          "RS": 1,
+          "QQ": 1,
+          "AP": 1,
+          "IN": 1,
+          "CM": 1,
+          "FM": 1,
           "FT": 1,
-          "EP": 1,
-          "AG": 1,
-          "HE": 1,
+          "TR": 1,
+          "OS": 1,
+          "SB": 1,
+          "TD": 1,
+          "NL": 1,
           "BO": 1,
-          "SE": 1,
-          "FD": 1,
+          "FC": 1,
+          "HE": 1,
+          "IB": 1,
+          "NU": 1,
           "NN": 1,
           "CC": 1,
-          "DJ": 1,
-          "AH": 1,
-          "TB": 1,
-          "EW": 1,
-          "DL": 1,
           "CT": 1,
+          "DL": 1,
+          "ED": 1,
+          "SZ": 1,
+          "AH": 1,
+          "PU": 1,
+          "AG": 1,
+          "TB": 1,
+          "NM": 1,
+          "FD": 1,
           "OM": 1,
-          "TD": 1,
+          "MC": 1,
+          "AU": 1,
+          "EB": 1,
+          "TS": 1,
+          "SE": 1,
+          "CE": 1,
           "VA": 1,
-          "TR": 1,
           "HS": 1,
-          "FM": 1,
-          "AU": 1
+          "LF": 1,
+          "BD": 1,
+          "DD": 1,
+          "FL": 1,
+          "ST": 1,
+          "EQ": 1,
+          "EW": 1,
+          "CU": 1,
+          "TN": 1,
+          "DN": 1,
+          "SK": 1,
+          "AM": 1,
+          "NS": 1,
+          "DJ": 1,
+          "EP": 1,
+          "GS": 1,
+          "TC": 1
         }
       ],
       [
@@ -420,28 +321,12 @@
     [
       "Department of Agriculture",
       [
-        "Trade and Development Agency",
-        "Federal Mine Safety and Health Review Commission",
-        "Federal Mediation and Conciliation Service",
-        "Merit Systems Protection Board",
-        "Department of Justice"
+        "Council of Economic Advisors",
+        "Farm Credit Administration",
+        "General Services Administration",
+        "Department of Health and Human Services",
+        "Federal Maritime Commission"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.FSAgency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FSAgency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -475,11 +360,11 @@
       [
         "fewestValues",
         [
-          "Trade and Development Agency",
-          "Federal Mine Safety and Health Review Commission",
-          "Federal Mediation and Conciliation Service",
-          "Merit Systems Protection Board",
-          "Department of Justice"
+          "Council of Economic Advisors",
+          "Farm Credit Administration",
+          "General Services Administration",
+          "Department of Health and Human Services",
+          "Federal Maritime Commission"
         ]
       ],
       [
@@ -505,63 +390,63 @@
       [
         "plotValues",
         {
-          "Council on Environmental Quality": 1,
-          "Office of Personnel Management": 1,
-          "Equal Employment Opportunity Commission": 1,
           "Department of the Treasury": 1,
-          "National Security Council": 1,
-          "Council of Economic Advisors": 1,
-          "General Services Administration": 1,
-          "National Credit Union Administration": 1,
-          "Commodity Futures Trading Commission": 1,
-          "Department of State": 1,
-          "Department of Education": 1,
-          "Broadcasting Board of Governors": 1,
-          "Nuclear Regulatory Commission": 1,
-          "Federal Mediation and Conciliation Service": 1,
-          "Department of Veterans Affairs": 1,
-          "Federal Election Commission": 1,
-          "National Aeronautics and Space Administration": 1,
-          "Small Business Administration": 1,
-          "Office of Science and Technology Policy": 1,
-          "National Transportation Safety Board": 1,
-          "Export-Import Bank": 1,
-          "Department of Commerce": 1,
-          "Office of Management and Budget": 1,
-          "Department of Labor": 1,
-          "Department of Agriculture": 1,
-          "Federal Labor Relations Authority": 1,
-          "United States Agency for International Development": 1,
-          "Federal Trade Commission": 1,
-          "Federal Mine Safety and Health Review Commission": 1,
-          "Federal Maritime Commission": 1,
-          "Department of the Interior": 1,
-          "Federal Deposit Insurance Corporation": 1,
-          "Office of the United States Trade Representative": 1,
-          "Department of Housing and Urban Development": 1,
-          "Social Security Administration": 1,
-          "United States International Trade Commission": 1,
-          "Occupational Safety and Health Review Commission": 1,
-          "Trade and Development Agency": 1,
-          "Environmental Protection Agency": 1,
-          "Appalachian Regional Commission": 1,
-          "Department of Homeland Security": 1,
-          "Department of Health and Human Services": 1,
-          "Federal Communications Commission": 1,
-          "Peace Corps": 1,
-          "National Mediation Board": 1,
-          "National Labor Relations Board": 1,
-          "Department of Defense": 1,
           "National Foundation on the Arts and the Humanities": 1,
-          "Department of Transportation": 1,
-          "Commission on Civil Rights": 1,
-          "Farm Credit Administration": 1,
-          "Department of Energy": 1,
-          "Office of National Drug Control Policy": 1,
-          "Securities and Exchange Commission": 1,
+          "Environmental Protection Agency": 1,
+          "Department of State": 1,
+          "United States International Trade Commission": 1,
+          "National Mediation Board": 1,
+          "Office of Personnel Management": 1,
+          "Appalachian Regional Commission": 1,
+          "National Aeronautics and Space Administration": 1,
+          "National Security Council": 1,
+          "Department of Homeland Security": 1,
+          "Commodity Futures Trading Commission": 1,
+          "Nuclear Regulatory Commission": 1,
+          "United States Agency for International Development": 1,
+          "Trade and Development Agency": 1,
+          "Department of Education": 1,
+          "Social Security Administration": 1,
+          "Broadcasting Board of Governors": 1,
+          "National Labor Relations Board": 1,
           "Department of Justice": 1,
+          "Office of Science and Technology Policy": 1,
           "Merit Systems Protection Board": 1,
-          "Consumer Product Safety Commission": 1
+          "Securities and Exchange Commission": 1,
+          "National Transportation Safety Board": 1,
+          "Federal Communications Commission": 1,
+          "Occupational Safety and Health Review Commission": 1,
+          "Office of National Drug Control Policy": 1,
+          "Federal Mediation and Conciliation Service": 1,
+          "Consumer Product Safety Commission": 1,
+          "Office of the United States Trade Representative": 1,
+          "Farm Credit Administration": 1,
+          "Equal Employment Opportunity Commission": 1,
+          "Federal Election Commission": 1,
+          "Federal Trade Commission": 1,
+          "Department of Transportation": 1,
+          "Peace Corps": 1,
+          "Council on Environmental Quality": 1,
+          "Federal Mine Safety and Health Review Commission": 1,
+          "Export-Import Bank": 1,
+          "Department of Energy": 1,
+          "Department of the Interior": 1,
+          "Department of Commerce": 1,
+          "Department of Housing and Urban Development": 1,
+          "Department of Defense": 1,
+          "Federal Labor Relations Authority": 1,
+          "Department of Labor": 1,
+          "Commission on Civil Rights": 1,
+          "National Credit Union Administration": 1,
+          "Federal Deposit Insurance Corporation": 1,
+          "Office of Management and Budget": 1,
+          "Department of Agriculture": 1,
+          "Small Business Administration": 1,
+          "Department of Veterans Affairs": 1,
+          "Federal Maritime Commission": 1,
+          "Department of Health and Human Services": 1,
+          "General Services Administration": 1,
+          "Council of Economic Advisors": 1
         }
       ],
       [
@@ -786,22 +671,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.Commission.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Commission.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1044,22 +913,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.NumberofAppointees.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NumberofAppointees.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1663,26 +1516,10 @@
   ],
   [
     "change",
-    "variables.ClintonLewisIdeo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ClintonLewisIdeo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ClintonLewisIdeo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2326,22 +2163,6 @@
     ]
   ],
   [
-    "change",
-    "variables.SOTUPriority.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.SOTUPriority.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.SOTUPriority",
     [
@@ -2585,22 +2406,6 @@
     [
       "10",
       10
-    ]
-  ],
-  [
-    "change",
-    "variables.WorkforceSize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.WorkforceSize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3257,26 +3062,10 @@
   ],
   [
     "change",
-    "variables.LnWorkforceSize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LnWorkforceSize.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LnWorkforceSize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3920,22 +3709,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Clerical.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Clerical.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Clerical",
     [
@@ -4573,26 +4346,10 @@
   ],
   [
     "change",
-    "variables.ClericalPct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ClericalPct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ClericalPct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5236,22 +4993,6 @@
     ]
   ],
   [
-    "change",
-    "variables.BlueCollar.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.BlueCollar.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.BlueCollar",
     [
@@ -5849,26 +5590,10 @@
   ],
   [
     "change",
-    "variables.BlueCollarPct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.BlueCollarPct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.BlueCollarPct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6521,26 +6246,10 @@
   ],
   [
     "change",
-    "variables.ClericalBlueCollarPct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ClericalBlueCollarPct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ClericalBlueCollarPct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7181,22 +6890,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Professional.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Professional.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7853,26 +7546,10 @@
   ],
   [
     "change",
-    "variables.ProfessionalPct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ProfessionalPct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ProfessionalPct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8525,26 +8202,10 @@
   ],
   [
     "change",
-    "variables.AvgCampaignWork.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgCampaignWork.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgCampaignWork.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9197,26 +8858,10 @@
   ],
   [
     "change",
-    "variables.AvgPhD.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgPhD.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgPhD.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9869,26 +9514,10 @@
   ],
   [
     "change",
-    "variables.AvgAgency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgAgency.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgAgency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10541,26 +10170,10 @@
   ],
   [
     "change",
-    "variables.AvgGovt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgGovt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgGovt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11213,26 +10826,10 @@
   ],
   [
     "change",
-    "variables.AvgPolitics.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgPolitics.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgPolitics.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11885,26 +11482,10 @@
   ],
   [
     "change",
-    "variables.AvgSubjectAll.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgSubjectAll.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgSubjectAll.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12557,26 +12138,10 @@
   ],
   [
     "change",
-    "variables.AvgBushorClinton.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AvgBushorClinton.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AvgBushorClinton.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13229,26 +12794,10 @@
   ],
   [
     "change",
-    "variables.LatentPatron.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LatentPatron.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LatentPatron.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13901,26 +13450,10 @@
   ],
   [
     "change",
-    "variables.LatentExpert.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LatentExpert.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LatentExpert.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14573,26 +14106,10 @@
   ],
   [
     "change",
-    "variables.ExpertPatron.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ExpertPatron.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ExpertPatron.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15245,26 +14762,10 @@
   ],
   [
     "change",
-    "variables.lnprobias.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnprobias.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnprobias.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15862,162 +15363,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:56",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "FSCode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FSAgency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Commission": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NumberofAppointees": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ClintonLewisIdeo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "SOTUPriority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "WorkforceSize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LnWorkforceSize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Clerical": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ClericalPct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BlueCollar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BlueCollarPct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ClericalBlueCollarPct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Professional": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProfessionalPct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgCampaignWork": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgPhD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgAgency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgGovt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgPolitics": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgSubjectAll": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AvgBushorClinton": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LatentPatron": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LatentExpert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ExpertPatron": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnprobias": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

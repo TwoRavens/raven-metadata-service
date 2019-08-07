@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        36
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "V9VEBM_GMS Manuscript's Original Dataset.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2027
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Variables.mode",
     [
       "Obs.",
       [
-        "ln(Opennessj)",
-        "PartnerID",
-        "Popi",
+        "ln(Opennessi)",
+        "Obs.",
         "DPerCapitaGDPij",
-        "Opennessi"
+        "ln(Distance)",
+        "t"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Variables.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Variables.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "ln(Opennessj)",
-          "PartnerID",
-          "Popi",
+          "ln(Opennessi)",
+          "Obs.",
           "DPerCapitaGDPij",
-          "Opennessi"
+          "ln(Distance)",
+          "t"
         ]
       ],
       [
@@ -173,42 +74,42 @@
       [
         "plotValues",
         {
-          "RealGDPj2010": 1,
-          "ln(DPerCapitaGDPij)": 1,
-          "ln(Distance)": 1,
-          "ln(ChinaExportFlow)": 1,
-          "Distance": 1,
-          "ChinaImportFlow": 1,
           "RealPerCapitaGDPj2010": 1,
-          "ln(BExchPerj)": 1,
-          "Home": 1,
-          "Obs.": 1,
-          "ln(RealPerCapitaGDPi2010)": 1,
-          "WTOj": 1,
-          "ln(Popi)": 1,
-          "ln(ChinaImportFlow)": 1,
-          "Partner": 1,
-          "ln(RealGDPi2010)": 1,
-          "t": 1,
-          "BExchPerCN": 1,
-          "ChinaExportFlow": 1,
-          "PartnerID": 1,
-          "ln(Opennessi)": 1,
-          "Popi": 1,
-          "Opennessj": 1,
-          "ln(RealGDPj2010)": 1,
           "ln(BExchPerCN)": 1,
-          "RealPerCapitaGDPi2010": 1,
-          "ln(Popj)": 1,
-          "BExchPerj": 1,
-          "WTOi": 1,
-          "Popj": 1,
-          "Opennessi": 1,
-          "Year": 1,
           "ln(RealPerCapitaGDPj2010)": 1,
-          "DPerCapitaGDPij": 1,
+          "PartnerID": 1,
+          "Opennessj": 1,
+          "ln(Popj)": 1,
+          "ChinaExportFlow": 1,
+          "t": 1,
+          "WTOi": 1,
+          "Obs.": 1,
+          "Opennessi": 1,
+          "ln(ChinaImportFlow)": 1,
+          "ln(Opennessj)": 1,
+          "ln(Popi)": 1,
+          "ln(BExchPerj)": 1,
+          "Popi": 1,
+          "Distance": 1,
+          "ln(RealPerCapitaGDPi2010)": 1,
+          "Partner": 1,
+          "ChinaImportFlow": 1,
+          "ln(RealGDPj2010)": 1,
+          "WTOj": 1,
           "RealGDPi2010": 1,
-          "ln(Opennessj)": 1
+          "BExchPerj": 1,
+          "Popj": 1,
+          "Year": 1,
+          "RealPerCapitaGDPi2010": 1,
+          "RealGDPj2010": 1,
+          "ln(ChinaExportFlow)": 1,
+          "ln(Distance)": 1,
+          "Home": 1,
+          "DPerCapitaGDPij": 1,
+          "BExchPerCN": 1,
+          "ln(Opennessi)": 1,
+          "ln(RealGDPi2010)": 1,
+          "ln(DPerCapitaGDPij)": 1
         }
       ],
       [
@@ -378,28 +279,12 @@
     [
       "Number of observation",
       [
-        "China's Import Flow (USD)",
-        "Distance between China's capital, Beijng, and country j's capital (Km)",
+        "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)",
         "Population of Country j",
         "Bilateral Exchange Rate againt Chinese Yuan",
-        "GDP of China (Constant 2010 price)"
+        "GDP of China's Trading Partner Country j (Constant 2010 price)",
+        "Degree of Trade Openness of Country j"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -433,11 +318,11 @@
       [
         "fewestValues",
         [
-          "China's Import Flow (USD)",
-          "Distance between China's capital, Beijng, and country j's capital (Km)",
+          "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)",
           "Population of Country j",
           "Bilateral Exchange Rate againt Chinese Yuan",
-          "GDP of China (Constant 2010 price)"
+          "GDP of China's Trading Partner Country j (Constant 2010 price)",
+          "Degree of Trade Openness of Country j"
         ]
       ],
       [
@@ -463,28 +348,28 @@
       [
         "plotValues",
         {
-          "Trading Partner Country": 1,
-          "Time Period": 1,
           "Absolute Different between China's Per capita GDP and its Partner's Per capita GDP": 1,
-          "Degree of Trade Openness of China": 1,
-          "Number of observation": 1,
-          "Degree of Trade Openness of Country j": 1,
-          "WTO membership of China": 1,
-          "GDP of China's Trading Partner Country j (Constant 2010 price)": 1,
-          "Year": 1,
-          "WTO membership of Country j": 1,
           "Per capita GDP of China (Constant 2010 price)": 1,
-          "Trading Partner Country's ID": 1,
-          "China's Export Flow (USD)": 1,
-          "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)": 1,
-          "Home Country": 1,
+          "Number of observation": 1,
+          "GDP of China's Trading Partner Country j (Constant 2010 price)": 1,
+          "WTO membership of Country j": 1,
           "Population of China": 1,
+          "Time Period": 1,
+          "Trading Partner Country's ID": 1,
           "Bilateral Exchange Rate againt Country j's currency": 1,
-          "GDP of China (Constant 2010 price)": 1,
+          "Trading Partner Country": 1,
+          "Year": 1,
+          "China's Export Flow (USD)": 1,
+          "Degree of Trade Openness of China": 1,
+          "Home Country": 1,
           "Bilateral Exchange Rate againt Chinese Yuan": 1,
-          "Population of Country j": 1,
           "Distance between China's capital, Beijng, and country j's capital (Km)": 1,
-          "China's Import Flow (USD)": 1
+          "WTO membership of China": 1,
+          "GDP of China (Constant 2010 price)": 1,
+          "Degree of Trade Openness of Country j": 1,
+          "China's Import Flow (USD)": 1,
+          "Population of Country j": 1,
+          "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)": 1
         }
       ],
       [
@@ -643,22 +528,6 @@
       [
         "World Development Indicator"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.DataSource.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.DataSource.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -871,22 +740,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Dummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Dummy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Dummy",
     [
@@ -1073,52 +926,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:31:17",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Variables": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Description": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DataSource": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Dummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

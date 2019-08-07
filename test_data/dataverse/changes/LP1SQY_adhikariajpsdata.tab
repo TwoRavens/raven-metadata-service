@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1804
-      ],
-      [
-        "variableCount",
-        41
-      ],
-      [
-        "dataSource",
-        {
-          "name": "LP1SQY_adhikariajpsdata.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 211939
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.respid.median",
     [
@@ -124,22 +41,6 @@
     [
       "1001801001",
       1001801001
-    ]
-  ],
-  [
-    "change",
-    "variables.respid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.respid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -783,22 +684,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dcode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dcode.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dcode",
     [
@@ -1379,22 +1264,6 @@
     ]
   ],
   [
-    "change",
-    "variables.district.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.district.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.district",
     [
@@ -1425,11 +1294,11 @@
       [
         "fewestValues",
         [
-          "Baglung",
-          "Pyuthan",
-          "Rupandehi",
+          "Sunsari",
+          "Siraha",
+          "Kavre",
           "Udaypur",
-          "Sindhupalchok"
+          "Baglung"
         ]
       ],
       [
@@ -1467,30 +1336,30 @@
           "Chitawan": 60,
           "Banke": 51,
           "Jhapa": 36,
-          "Dang": 10,
           "Kanchanpur": 10,
-          "Nuwakot": 4,
+          "Dang": 10,
           "Khotang": 4,
+          "Nuwakot": 4,
           "Dolakha": 3,
-          "Parsa": 2,
-          "Salyan": 2,
-          "Gorkha": 2,
           "Baitadi": 2,
-          "Pyuthan": 1,
-          "Rukum": 1,
-          "Siraha": 1,
-          "Bhojpur": 1,
-          "Tanahu": 1,
-          "Bara": 1,
-          "Kavre": 1,
-          "Sunsari": 1,
-          "Jajarkot": 1,
-          "Darchula": 1,
-          "Sindhupalchok": 1,
-          "Udaypur": 1,
+          "Parsa": 2,
+          "Gorkha": 2,
+          "Salyan": 2,
           "Rupandehi": 1,
+          "Pyuthan": 1,
+          "Bara": 1,
           "Achham": 1,
-          "Baglung": 1
+          "Darchula": 1,
+          "Jajarkot": 1,
+          "Bhojpur": 1,
+          "Sindhupalchok": 1,
+          "Rukum": 1,
+          "Tanahu": 1,
+          "Baglung": 1,
+          "Udaypur": 1,
+          "Kavre": 1,
+          "Siraha": 1,
+          "Sunsari": 1
         }
       ],
       [
@@ -1694,22 +1563,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.vcode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vcode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2321,22 +2174,6 @@
     ]
   ],
   [
-    "change",
-    "variables.village.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.village.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.village",
     [
@@ -2367,11 +2204,11 @@
       [
         "fewestValues",
         [
-          "THOSE",
-          "GODAWARI",
-          "PRITEE",
+          "PACHHAWANG",
+          "CHISAPANI",
+          "JUBIKA",
           "SUBARNAPUR",
-          "DHUNKHARKA"
+          "PAKHAPANI"
         ]
       ],
       [
@@ -2408,15 +2245,15 @@
           "SAPPATA": 50,
           "THAWANG": 48,
           "URMA": 47,
-          "GELA": 40,
-          "HARDUONA": 40,
           "UWA": 40,
+          "HARDUONA": 40,
+          "GELA": 40,
           "DORAMBA": 40,
           "BIRPUR": 36,
-          "BIJULIKOT": 31,
-          "LINGTEP": 31,
           "BHARTA": 31,
+          "BIJULIKOT": 31,
           "NAYAGAUN": 31,
+          "LINGTEP": 31,
           "SADEPANI": 30,
           "VIDHYANAGAR": 29,
           "CHANAKHU": 28,
@@ -2425,116 +2262,116 @@
           "TILPUNG": 25,
           "MALING": 24,
           "BHIRUL": 22,
-          "GOLA": 21,
+          "PANDUSAIN": 21,
           "SAIPU": 21,
           "MIJHING": 21,
-          "PANDUSAIN": 21,
+          "GOLA": 21,
           "DODODHARA": 19,
           "LINKHIM": 19,
-          "PHAKUMBA": 18,
           "GANESHPUR": 18,
-          "SHREEBHANJYANG": 16,
+          "PHAKUMBA": 18,
           "JAILWANG": 16,
+          "SHREEBHANJYANG": 16,
           "PASUPATINAGAR": 15,
           "SUKRANAGAR": 15,
           "PIPLE": 14,
           "TOPGACHCHI": 13,
           "ISANESHWOR": 13,
           "DAHAKOT": 12,
-          "RUGIN": 12,
           "SAWALAKHU": 12,
-          "KAULE": 11,
+          "RUGIN": 12,
           "BHAWANG": 11,
           "MADIKALYANPUR": 11,
-          "SANTHAKRA": 10,
+          "KAULE": 11,
           "GAUNSHAHAR": 10,
           "KOLKI": 10,
+          "SANTHAKRA": 10,
           "BHANDARA": 9,
-          "JYAMIRGADHI": 9,
           "GHODAGAUN": 9,
+          "JYAMIRGADHI": 9,
           "TEWANG": 8,
-          "KHUNGRI": 7,
           "BAIGUNDHURA": 7,
           "WHAMA": 7,
           "BAI": 7,
+          "KHUNGRI": 7,
           "WADACHAUR": 7,
           "MAHENDRANAGAR": 6,
           "JANKOT": 6,
           "MIRUL": 6,
           "SERAM": 6,
-          "SHANTINAGAR": 5,
           "JUROPANI": 5,
+          "SHANTINAGAR": 5,
           "JAIMAKASALA": 4,
           "GUMCHAL": 4,
           "RANGSI": 3,
+          "KHUMEL": 3,
+          "DHAWANG": 3,
+          "GAM": 3,
           "PANG": 3,
           "GELU": 3,
-          "DHAWANG": 3,
-          "KHUMEL": 3,
-          "GAM": 3,
-          "BULUNG": 2,
-          "LIWANG": 2,
+          "ANARMANI": 2,
+          "JINAWANG": 2,
+          "GAJUL": 2,
+          "DHANGADHI": 2,
           "DIKTEL": 2,
           "ERIWANG": 2,
-          "LAKHANPUR": 2,
-          "GAJUL": 2,
-          "JINAWANG": 2,
-          "ANARMANI": 2,
-          "DHANGADHI": 2,
           "PAWANNAGAR": 2,
-          "PRITHBINARAYAN": 1,
-          "KUIKA": 1,
-          "SUBARNAPUR": 1,
-          "GUNSIBHADAURE": 1,
-          "FASKU": 1,
-          "LAXMIPUR": 1,
-          "PRITEE": 1,
-          "CHAUGHADA": 1,
-          "DHORFIRDI": 1,
-          "BELKOT": 1,
-          "DAIJEE": 1,
-          "SAPAHI": 1,
+          "LAKHANPUR": 2,
+          "BULUNG": 2,
+          "LIWANG": 2,
           "RAKATHUM": 1,
-          "MANMA": 1,
-          "NAGADAHA": 1,
-          "BHAGABATI": 1,
-          "DHUNKHARKA": 1,
-          "THOSE": 1,
-          "GODAWARI": 1,
           "GOKULESWOR": 1,
-          "BELDANGI": 1,
-          "BATASE": 1,
-          "DURCHHIM": 1,
-          "KHALANGA": 1,
-          "KOTMALA": 1,
-          "GOBARDIYA": 1,
-          "KUDAKKAULE": 1,
           "HEKULI": 1,
+          "KUMARI": 1,
+          "GOBARDIYA": 1,
           "GARKHAKOT": 1,
-          "SOBHA": 1,
-          "HARJANG": 1,
+          "BHAGABATI": 1,
+          "SUDA": 1,
+          "PRITHBINARAYAN": 1,
+          "SURYAPATAWA": 1,
+          "GUNSIBHADAURE": 1,
+          "DHUNKHARKA": 1,
+          "NAGADAHA": 1,
+          "DHAWA": 1,
+          "BUTWAL MUNI": 1,
           "PIDARIGUTHI": 1,
           "KRISHNAPUR": 1,
-          "KUWAKOT": 1,
+          "FASKU": 1,
+          "DHORFIRDI": 1,
+          "KUDAKKAULE": 1,
+          "BELDANGI": 1,
           "TRIYUGA ": 1,
-          "PANCHAKULE": 1,
-          "BHADAURE": 1,
-          "SAMUNDRATAR": 1,
-          "BUTWAL MUNI": 1,
-          "PACHHAWANG": 1,
-          "SUDA": 1,
-          "SURYAPATAWA": 1,
-          "AMALACHAUR": 1,
-          "PAKHAPANI": 1,
-          "DAMACHAUR": 1,
-          "DHAWA": 1,
-          "INARUWA MUNIC": 1,
-          "LICHKIRAMCHE": 1,
+          "KHALANGA": 1,
           "CHISAPANI": 1,
-          "KUMARI": 1,
-          "JUBIKA": 1,
+          "LAXMIPUR": 1,
+          "DURCHHIM": 1,
+          "THOSE": 1,
+          "SUBARNAPUR": 1,
+          "INARUWA MUNIC": 1,
+          "PRITEE": 1,
+          "PANCHAKULE": 1,
+          "MASURIYA": 1,
+          "DAIJEE": 1,
+          "BHADAURE": 1,
+          "HARJANG": 1,
+          "BATASE": 1,
+          "PAKHAPANI": 1,
+          "KUWAKOT": 1,
           "PINKHURI": 1,
-          "MASURIYA": 1
+          "SOBHA": 1,
+          "DAMACHAUR": 1,
+          "CHAUGHADA": 1,
+          "JUBIKA": 1,
+          "KOTMALA": 1,
+          "KUIKA": 1,
+          "SAMUNDRATAR": 1,
+          "MANMA": 1,
+          "LICHKIRAMCHE": 1,
+          "BELKOT": 1,
+          "GODAWARI": 1,
+          "AMALACHAUR": 1,
+          "SAPAHI": 1,
+          "PACHHAWANG": 1
         }
       ],
       [
@@ -2840,22 +2677,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.ward.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ward.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3423,22 +3244,6 @@
     ]
   ],
   [
-    "change",
-    "variables.elev.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.elev.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.elev",
     [
@@ -3687,22 +3492,6 @@
     ]
   ],
   [
-    "change",
-    "variables.phase.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.phase.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.phase",
     [
@@ -3942,22 +3731,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.resptype.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.resptype.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4209,22 +3982,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -4464,22 +4221,6 @@
     [
       "15",
       15.0
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5123,22 +4864,6 @@
     ]
   ],
   [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.education",
     [
@@ -5408,22 +5133,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5708,26 +5417,10 @@
   ],
   [
     "change",
-    "variables.land.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.land.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.land.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6371,22 +6064,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party",
     [
@@ -6964,22 +6641,6 @@
     ]
   ],
   [
-    "change",
-    "variables.industry.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.industry.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.industry",
     [
@@ -7225,22 +6886,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.motorroad.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.motorroad.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7492,22 +7137,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cfugpr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cfugpr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cfugpr",
     [
@@ -7747,22 +7376,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.aamapr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.aamapr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8008,22 +7621,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sfdppr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sfdppr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sfdppr",
     [
@@ -8263,22 +7860,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.landseized_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.landseized_self.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8524,22 +8105,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cropseized_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cropseized_self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cropseized_self",
     [
@@ -8782,22 +8347,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cattleseized_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cattleseized_self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cattleseized_self",
     [
@@ -9037,22 +8586,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.children_totl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.children_totl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9632,22 +9165,6 @@
     ]
   ],
   [
-    "change",
-    "variables.homedestr_cause.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.homedestr_cause.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.homedestr_cause",
     [
@@ -9887,22 +9404,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fmmurder_cause.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fmmurder_cause.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10148,22 +9649,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dstryd_indstry.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dstryd_indstry.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dstryd_indstry",
     [
@@ -10403,22 +9888,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.phythreat_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.phythreat_imp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10676,22 +10145,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pcoercion_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pcoercion_imp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pcoercion_imp",
     [
@@ -10943,22 +10396,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.frecruit_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.frecruit_imp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11216,22 +10653,6 @@
     ]
   ],
   [
-    "change",
-    "variables.homedestr_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.homedestr_imp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.homedestr_imp",
     [
@@ -11483,22 +10904,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fmmurder_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fmmurder_imp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11756,22 +11161,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pmtorture_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pmtorture_imp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pmtorture_imp",
     [
@@ -12023,22 +11412,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sxlhrsmnt_imp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sxlhrsmnt_imp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12296,22 +11669,6 @@
     ]
   ],
   [
-    "change",
-    "variables.phythreat_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.phythreat_self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.phythreat_self",
     [
@@ -12554,22 +11911,6 @@
     ]
   ],
   [
-    "change",
-    "variables.abductn_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.abductn_self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.abductn_self",
     [
@@ -12809,22 +12150,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.frecruit_self.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.frecruit_self.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13076,22 +12401,6 @@
     ]
   ],
   [
-    "change",
-    "variables.f_mtortre_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.f_mtortre_self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.f_mtortre_self",
     [
@@ -13331,22 +12640,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sxlhrsmnt_self.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sxlhrsmnt_self.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13598,22 +12891,6 @@
     ]
   ],
   [
-    "change",
-    "variables.thrtqarmy_self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thrtqarmy_self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.thrtqarmy_self",
     [
@@ -13856,22 +13133,6 @@
     ]
   ],
   [
-    "change",
-    "variables.idp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.idp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.idp",
     [
@@ -14068,237 +13329,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:05",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "respid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dcode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "district": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vcode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "village": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ward": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elev": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "phase": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "resptype": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "land": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "industry": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "motorroad": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cfugpr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aamapr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sfdppr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "landseized_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cropseized_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cattleseized_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "children_totl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "homedestr_cause": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fmmurder_cause": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dstryd_indstry": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "phythreat_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pcoercion_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "frecruit_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "homedestr_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fmmurder_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pmtorture_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sxlhrsmnt_imp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "phythreat_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abductn_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "frecruit_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "f_mtortre_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sxlhrsmnt_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thrtqarmy_self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "idp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

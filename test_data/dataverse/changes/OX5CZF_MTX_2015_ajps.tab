@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        309
-      ],
-      [
-        "variableCount",
-        20
-      ],
-      [
-        "dataSource",
-        {
-          "name": "OX5CZF_MTX_2015_ajps.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 26842
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.yearnum.median",
     [
@@ -134,26 +51,10 @@
   ],
   [
     "change",
-    "variables.yearnum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.yearnum.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.yearnum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -756,25 +657,9 @@
     [
       "Australia",
       [
-        "Australia",
-        "Denmark"
+        "Denmark",
+        "Australia"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -834,27 +719,27 @@
       [
         "plotValues",
         {
-          "Denmark": 19,
           "Australia": 19,
+          "Denmark": 19,
           "New Zealand": 16,
           "Sweden": 15,
-          "Canada": 15,
-          "Netherlands": 15,
           "Japan": 15,
+          "Netherlands": 15,
           "Belgium": 15,
-          "Austria": 14,
+          "Canada": 15,
           "Iceland": 14,
-          "Ireland": 13,
+          "Austria": 14,
           "Germany": 13,
+          "Ireland": 13,
           "Finland": 13,
           "USA": 13,
+          "Italy": 12,
           "UK": 12,
           "Portugal": 12,
-          "Italy": 12,
           "France": 12,
+          "Greece": 11,
           "Norway": 11,
           "Switzerland": 11,
-          "Greece": 11,
           "Luxembourg": 10,
           "Spain": 9
         }
@@ -1048,22 +933,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.countryn.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryn.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1649,22 +1518,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gov_new.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_new.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gov_new",
     [
@@ -1904,22 +1757,6 @@
     [
       "-3",
       -3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_gap.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_gap.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2195,22 +2032,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gov_type.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_type.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gov_type",
     [
@@ -2474,22 +2295,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_chan.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_chan.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2760,26 +2565,10 @@
   ],
   [
     "change",
-    "variables.ENP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ENP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ENP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3423,22 +3212,6 @@
     ]
   ],
   [
-    "change",
-    "variables.instcons.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.instcons.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.instcons",
     [
@@ -3714,26 +3487,10 @@
   ],
   [
     "change",
-    "variables.polarisation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polarisation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polarisation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4386,26 +4143,10 @@
   ],
   [
     "change",
-    "variables.dist_magn.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dist_magn.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dist_magn.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5052,22 +4793,6 @@
     ]
   ],
   [
-    "change",
-    "variables.age_democracy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age_democracy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.age_democracy",
     [
@@ -5708,22 +5433,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pig",
     [
@@ -5987,22 +5696,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.num_parties.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_parties.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6318,26 +6011,10 @@
   ],
   [
     "change",
-    "variables.polarisation2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polarisation2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polarisation2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6981,22 +6658,6 @@
     ]
   ],
   [
-    "change",
-    "variables.yearnum2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.yearnum2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.yearnum2",
     [
@@ -7596,25 +7257,9 @@
     [
       "Australia",
       [
-        "Australia",
-        "Denmark"
+        "Denmark",
+        "Australia"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7675,23 +7320,23 @@
       [
         "plotValues",
         {
-          "Denmark": 19,
           "Australia": 19,
+          "Denmark": 19,
           "New Zealand": 16,
           "Sweden": 15,
-          "Canada": 15,
-          "Netherlands": 15,
           "Japan": 15,
+          "Netherlands": 15,
           "Belgium": 15,
-          "Austria": 14,
+          "Canada": 15,
           "Iceland": 14,
-          "Ireland": 13,
+          "Austria": 14,
           "Germany": 13,
+          "Ireland": 13,
           "Finland": 13,
           "USA": 13,
+          "Italy": 12,
           "UK": 12,
           "Portugal": 12,
-          "Italy": 12,
           "France": 12,
           "Norway": 11,
           "Switzerland": 11,
@@ -7889,22 +7534,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fptp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fptp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8163,26 +7792,10 @@
   ],
   [
     "change",
-    "variables.n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.n.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8826,22 +8439,6 @@
     ]
   ],
   [
-    "change",
-    "variables.regime.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regime.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.regime",
     [
@@ -9044,132 +8641,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:18",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "yearnum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryn": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_new": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_gap": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_chan": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ENP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "instcons": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polarisation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist_magn": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age_democracy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_parties": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polarisation2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "yearnum2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fptp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regime": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

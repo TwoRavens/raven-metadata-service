@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2400
-      ],
-      [
-        "variableCount",
-        25
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SQH6IF_MTurkPilot.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 406986
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.id.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -786,22 +687,6 @@
     ]
   ],
   [
-    "change",
-    "variables.duration.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.duration.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.duration",
     [
@@ -1410,22 +1295,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -1654,22 +1523,6 @@
     [
       "1947",
       1947
-    ]
-  ],
-  [
-    "change",
-    "variables.yob.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.yob.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2267,22 +2120,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state",
     [
@@ -2313,11 +2150,11 @@
       [
         "fewestValues",
         [
-          "North Dakota",
-          "Maine",
           "Wisconsin",
-          "Nebraska",
-          "Mississippi"
+          "Minnesota",
+          "Maine",
+          "Utah",
+          "South Dakota"
         ]
       ],
       [
@@ -2349,42 +2186,42 @@
           "New York": 120,
           "North Carolina": 108,
           "Pennsylvania": 108,
-          "Washington": 96,
           "Illinois": 96,
-          "Alabama": 84,
-          "Oregon": 84,
+          "Washington": 96,
           "Georgia": 84,
-          "Indiana": 72,
+          "Oregon": 84,
+          "Alabama": 84,
           "Tennessee": 72,
-          "Kentucky": 60,
+          "Indiana": 72,
           "Arkansas": 60,
-          "South Carolina": 60,
-          "Arizona": 60,
           "Oklahoma": 60,
+          "Kentucky": 60,
+          "Arizona": 60,
+          "South Carolina": 60,
           "Ohio": 48,
           "Missouri": 48,
           "Virginia": 48,
+          "Colorado": 36,
           "Michigan": 36,
           "New Jersey": 36,
-          "Colorado": 36,
-          "Montana": 24,
-          "Idaho": 24,
-          "Maryland": 24,
-          "Iowa": 24,
           "Massachusetts": 24,
-          "New Mexico": 24,
-          "Nevada": 24,
+          "Idaho": 24,
           "West Virginia": 24,
-          "Nebraska": 12,
-          "Maine": 12,
-          "Wisconsin": 12,
-          "Mississippi": 12,
+          "Maryland": 24,
+          "Nevada": 24,
+          "New Mexico": 24,
+          "Iowa": 24,
+          "Montana": 24,
           "South Dakota": 12,
+          "Wisconsin": 12,
+          "Louisiana": 12,
           "Utah": 12,
           "Minnesota": 12,
-          "Rhode Island": 12,
-          "Louisiana": 12,
-          "North Dakota": 12
+          "Nebraska": 12,
+          "Mississippi": 12,
+          "North Dakota": 12,
+          "Maine": 12,
+          "Rhode Island": 12
         }
       ],
       [
@@ -2563,22 +2400,6 @@
       [
         "4-year College Degree"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.edu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.edu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2792,22 +2613,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income",
     [
@@ -2838,9 +2643,9 @@
       [
         "fewestValues",
         [
+          "140,000-149,999",
           "110,000-119,999",
-          "130,000-139,999",
-          "140,000-149,999"
+          "130,000-139,999"
         ]
       ],
       [
@@ -2873,14 +2678,14 @@
           "60,000-69,999": 228,
           "40,000-49,999": 204,
           "50,000-59,999": 132,
+          "90,000-99,999": 60,
           "100,000-109,999": 60,
           "150,000+": 60,
-          "90,000-99,999": 60,
-          "80,000-89,999": 48,
           "120,000-129,999": 48,
-          "140,000-149,999": 24,
+          "80,000-89,999": 48,
           "130,000-139,999": 24,
-          "110,000-119,999": 24
+          "110,000-119,999": 24,
+          "140,000-149,999": 24
         }
       ],
       [
@@ -3032,22 +2837,6 @@
       [
         "Moderate"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3259,22 +3048,6 @@
     ]
   ],
   [
-    "change",
-    "variables.am_identity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.am_identity.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.am_identity",
     [
@@ -3476,22 +3249,6 @@
       [
         "White/Caucasian"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.race.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.race.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3734,22 +3491,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.task_number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.task_number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4024,22 +3765,6 @@
     ]
   ],
   [
-    "change",
-    "variables.settle_binary.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.settle_binary.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.settle_binary",
     [
@@ -4251,22 +3976,6 @@
     ]
   ],
   [
-    "change",
-    "variables.group_edu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group_edu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.group_edu",
     [
@@ -4466,22 +4175,6 @@
       [
         "0%"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group_eng.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group_eng.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4687,22 +4380,6 @@
     ]
   ],
   [
-    "change",
-    "variables.group_work.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group_work.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.group_work",
     [
@@ -4902,22 +4579,6 @@
       [
         "25%"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group_men.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group_men.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5154,22 +4815,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.men0.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.men0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5415,22 +5060,6 @@
     ]
   ],
   [
-    "change",
-    "variables.men25.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.men25.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.men25",
     [
@@ -5670,22 +5299,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.men50.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.men50.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5931,22 +5544,6 @@
     ]
   ],
   [
-    "change",
-    "variables.men75.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.men75.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.men75",
     [
@@ -6186,22 +5783,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.men100.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.men100.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6447,22 +6028,6 @@
     ]
   ],
   [
-    "change",
-    "variables.workLess1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.workLess1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.workLess1",
     [
@@ -6702,22 +6267,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.work1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.work1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6963,22 +6512,6 @@
     ]
   ],
   [
-    "change",
-    "variables.work3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.work3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.work3",
     [
@@ -7221,22 +6754,6 @@
     ]
   ],
   [
-    "change",
-    "variables.work5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.work5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.work5",
     [
@@ -7433,157 +6950,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:06",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "duration": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "yob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "edu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "am_identity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "race": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "task_number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "settle_binary": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group_edu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group_eng": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group_work": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group_men": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "men0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "men25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "men50": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "men75": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "men100": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "workLess1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "work1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "work3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "work5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        12
-      ],
-      [
-        "variableCount",
-        18
-      ],
-      [
-        "dataSource",
-        {
-          "name": "RKQEJD_ANES_2008_2012.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2119
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.question.mode",
     [
       "health insurance scale",
       [
+        "defense spending scale",
+        "abortion",
         "guaranteed jobs scale",
         "health insurance scale",
-        "aid to blacks scale",
-        "defense spending scale",
-        "goverment spending scale"
+        "aid to blacks scale"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.question.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.question.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "defense spending scale",
+          "abortion",
           "guaranteed jobs scale",
           "health insurance scale",
-          "aid to blacks scale",
-          "defense spending scale",
-          "goverment spending scale"
+          "aid to blacks scale"
         ]
       ],
       [
@@ -173,12 +74,12 @@
       [
         "plotValues",
         {
-          "abortion": 2,
-          "goverment spending scale": 2,
           "defense spending scale": 2,
           "aid to blacks scale": 2,
+          "goverment spending scale": 2,
           "health insurance scale": 2,
-          "guaranteed jobs scale": 2
+          "guaranteed jobs scale": 2,
+          "abortion": 2
         }
       ],
       [
@@ -318,28 +219,12 @@
     [
       "VCF0806",
       [
-        "VCF0843",
-        "VCF0830",
-        "VCF0838",
         "VCF0809",
-        "VCF0839"
+        "VCF0838",
+        "VCF0806",
+        "VCF0839",
+        "VCF0843"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.vname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -373,11 +258,11 @@
       [
         "fewestValues",
         [
-          "VCF0843",
-          "VCF0830",
-          "VCF0838",
           "VCF0809",
-          "VCF0839"
+          "VCF0838",
+          "VCF0806",
+          "VCF0839",
+          "VCF0843"
         ]
       ],
       [
@@ -403,12 +288,12 @@
       [
         "plotValues",
         {
-          "VCF0806": 2,
-          "VCF0839": 2,
-          "VCF0809": 2,
-          "VCF0838": 2,
           "VCF0830": 2,
-          "VCF0843": 2
+          "VCF0843": 2,
+          "VCF0839": 2,
+          "VCF0806": 2,
+          "VCF0838": 2,
+          "VCF0809": 2
         }
       ],
       [
@@ -583,22 +468,6 @@
     [
       "2008",
       2008.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -855,26 +724,10 @@
   ],
   [
     "change",
-    "variables.unit.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.unit.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unit.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1134,26 +987,10 @@
   ],
   [
     "change",
-    "variables.abs_d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_d.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1476,26 +1313,10 @@
   ],
   [
     "change",
-    "variables.d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1818,26 +1639,10 @@
   ],
   [
     "change",
-    "variables.d_lower.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d_lower.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d_lower.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2160,26 +1965,10 @@
   ],
   [
     "change",
-    "variables.d_upper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d_upper.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d_upper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2502,26 +2291,10 @@
   ],
   [
     "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2832,22 +2605,6 @@
     [
       "842",
       842
-    ]
-  ],
-  [
-    "change",
-    "variables.df.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.df.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3166,26 +2923,10 @@
   ],
   [
     "change",
-    "variables.p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3478,26 +3219,10 @@
   ],
   [
     "change",
-    "variables.mean_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3820,26 +3545,10 @@
   ],
   [
     "change",
-    "variables.sd_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4150,22 +3859,6 @@
     [
       "289",
       289
-    ]
-  ],
-  [
-    "change",
-    "variables.n_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4488,26 +4181,10 @@
   ],
   [
     "change",
-    "variables.mean_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4830,26 +4507,10 @@
   ],
   [
     "change",
-    "variables.sd_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5160,22 +4821,6 @@
     [
       "555",
       555
-    ]
-  ],
-  [
-    "change",
-    "variables.n_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5498,26 +5143,10 @@
   ],
   [
     "change",
-    "variables.dif.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dif.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dif.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5781,122 +5410,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "question": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d_lower": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d_upper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "df": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dif": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

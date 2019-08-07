@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        51
-      ],
-      [
-        "variableCount",
-        20
-      ],
-      [
-        "dataSource",
-        {
-          "name": "XZLGAZ_states_icpsr.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 4500
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.STATEAB.mode",
     [
       "AL",
       [
-        "MD",
         "PA",
-        "AR",
-        "RI",
-        "WA"
+        "CA",
+        "ME",
+        "AK",
+        "NV"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEAB.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEAB.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "MD",
           "PA",
-          "AR",
-          "RI",
-          "WA"
+          "CA",
+          "ME",
+          "AK",
+          "NV"
         ]
       ],
       [
@@ -174,56 +75,56 @@
         "plotValues",
         {
           "OH": 1,
-          "VT": 1,
-          "UT": 1,
-          "VA": 1,
-          "NV": 1,
-          "NJ": 1,
-          "CA": 1,
-          "IN": 1,
-          "ID": 1,
-          "WI": 1,
-          "MA": 1,
-          "CT": 1,
-          "MS": 1,
-          "LA": 1,
-          "IA": 1,
+          "OR": 1,
+          "GA": 1,
+          "RI": 1,
           "AL": 1,
+          "SC": 1,
+          "MI": 1,
+          "SD": 1,
+          "NH": 1,
+          "UT": 1,
+          "VT": 1,
+          "ND": 1,
+          "DE": 1,
+          "NC": 1,
+          "DC": 1,
+          "NE": 1,
+          "LA": 1,
+          "MO": 1,
+          "MS": 1,
+          "CT": 1,
+          "NJ": 1,
+          "WV": 1,
+          "MA": 1,
+          "WI": 1,
+          "HI": 1,
+          "CO": 1,
           "NM": 1,
           "MN": 1,
           "MT": 1,
-          "TN": 1,
-          "AZ": 1,
-          "CO": 1,
           "NY": 1,
-          "KS": 1,
-          "WY": 1,
-          "OK": 1,
-          "FL": 1,
-          "GA": 1,
-          "SD": 1,
-          "DC": 1,
-          "HI": 1,
-          "SC": 1,
-          "AK": 1,
-          "OR": 1,
-          "MI": 1,
-          "KY": 1,
-          "ME": 1,
           "IL": 1,
           "TX": 1,
-          "NC": 1,
-          "DE": 1,
-          "MO": 1,
-          "ND": 1,
-          "NE": 1,
-          "WV": 1,
-          "NH": 1,
+          "VA": 1,
+          "KS": 1,
+          "IA": 1,
+          "MD": 1,
+          "ID": 1,
+          "KY": 1,
+          "FL": 1,
           "WA": 1,
-          "RI": 1,
           "AR": 1,
-          "PA": 1,
-          "MD": 1
+          "WY": 1,
+          "TN": 1,
+          "AZ": 1,
+          "OK": 1,
+          "IN": 1,
+          "NV": 1,
+          "AK": 1,
+          "ME": 1,
+          "CA": 1,
+          "PA": 1
         }
       ],
       [
@@ -408,28 +309,12 @@
     [
       "Alabama ",
       [
-        "Connecticut ",
-        "Massachusetts ",
-        "Indiana ",
-        "Pennsylvania ",
-        "Michigan "
+        "Washington ",
+        "Kentucky ",
+        "Iowa ",
+        "Nebraska ",
+        "Oklahoma "
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.NAME.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NAME.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -463,11 +348,11 @@
       [
         "fewestValues",
         [
-          "Connecticut ",
-          "Massachusetts ",
-          "Indiana ",
-          "Pennsylvania ",
-          "Michigan "
+          "Washington ",
+          "Kentucky ",
+          "Iowa ",
+          "Nebraska ",
+          "Oklahoma "
         ]
       ],
       [
@@ -493,57 +378,57 @@
       [
         "plotValues",
         {
-          "Vermont ": 1,
-          "Mississippi ": 1,
+          "Wisconsin ": 1,
+          "Idaho ": 1,
+          "Massachusetts ": 1,
+          "Alaska ": 1,
+          "Michigan ": 1,
+          "New Mexico ": 1,
+          "Maryland ": 1,
+          "North Dakota ": 1,
+          "Florida ": 1,
+          "Indiana ": 1,
+          "California ": 1,
+          "New Hampshire ": 1,
           "Delaware ": 1,
           "Tennessee ": 1,
-          "Colorado ": 1,
-          "North Carolina ": 1,
-          "Ohio ": 1,
-          "Louisiana ": 1,
-          "Oklahoma ": 1,
-          "Maryland ": 1,
-          "Illinois ": 1,
-          "Washington ": 1,
-          "Wisconsin ": 1,
-          "Iowa ": 1,
-          "Virginia ": 1,
-          "South Carolina ": 1,
-          "District of Columbia ": 1,
-          "Alabama ": 1,
-          "Maine ": 1,
-          "Georgia ": 1,
-          "Oregon ": 1,
-          "North Dakota ": 1,
-          "Arizona ": 1,
-          "Montana ": 1,
-          "New Mexico ": 1,
-          "California ": 1,
-          "Missouri ": 1,
-          "South Dakota ": 1,
+          "Mississippi ": 1,
           "West Virginia ": 1,
-          "Utah ": 1,
-          "Florida ": 1,
-          "Alaska ": 1,
-          "Texas ": 1,
-          "Idaho ": 1,
-          "New Jersey ": 1,
-          "New Hampshire ": 1,
-          "Nebraska ": 1,
-          "Arkansas ": 1,
-          "Kentucky ": 1,
-          "New York ": 1,
-          "Rhode Island ": 1,
-          "Hawaii ": 1,
+          "Colorado ": 1,
+          "Missouri ": 1,
+          "North Carolina ": 1,
+          "Alabama ": 1,
+          "District of Columbia ": 1,
           "Wyoming ": 1,
+          "Virginia ": 1,
+          "Maine ": 1,
+          "South Dakota ": 1,
+          "Georgia ": 1,
+          "Connecticut ": 1,
+          "Texas ": 1,
           "Kansas ": 1,
-          "Nevada ": 1,
+          "Hawaii ": 1,
+          "Louisiana ": 1,
+          "Oregon ": 1,
+          "Vermont ": 1,
+          "South Carolina ": 1,
+          "Rhode Island ": 1,
+          "Montana ": 1,
+          "Arizona ": 1,
+          "New Jersey ": 1,
           "Minnesota ": 1,
-          "Michigan ": 1,
+          "Ohio ": 1,
+          "Utah ": 1,
+          "New York ": 1,
           "Pennsylvania ": 1,
-          "Indiana ": 1,
-          "Massachusetts ": 1,
-          "Connecticut ": 1
+          "Illinois ": 1,
+          "Nevada ": 1,
+          "Arkansas ": 1,
+          "Oklahoma ": 1,
+          "Nebraska ": 1,
+          "Iowa ": 1,
+          "Kentucky ": 1,
+          "Washington ": 1
         }
       ],
       [
@@ -766,22 +651,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEICP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEICP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1429,22 +1298,6 @@
     ]
   ],
   [
-    "change",
-    "variables.STATEFIP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEFIP.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.STATEFIP",
     [
@@ -2086,22 +1939,6 @@
     [
       "11",
       11
-    ]
-  ],
-  [
-    "change",
-    "variables.STATECEN.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.STATECEN.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2749,22 +2586,6 @@
     ]
   ],
   [
-    "change",
-    "variables.WrightID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.WrightID.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.WrightID",
     [
@@ -3406,22 +3227,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEALPHA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.STATEALPHA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4069,22 +3874,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GALLUP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GALLUP.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GALLUP",
     [
@@ -4729,22 +4518,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ABC_Regions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ABC_Regions.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ABC_Regions",
     [
@@ -5364,11 +5137,11 @@
     [
       "1",
       [
-        "23",
-        "20",
-        "26",
-        "49",
-        "15"
+        "31",
+        "9",
+        "29",
+        "28",
+        "39"
       ]
     ]
   ],
@@ -5405,22 +5178,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Time_pre1985.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Time_pre1985.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Time_pre1985",
     [
@@ -5451,11 +5208,11 @@
       [
         "fewestValues",
         [
-          "23",
-          "20",
-          "26",
-          "49",
-          "15"
+          "31",
+          "9",
+          "29",
+          "28",
+          "39"
         ]
       ],
       [
@@ -5482,55 +5239,55 @@
         "plotValues",
         {
           "46": 1,
-          "41": 1,
-          "1": 1,
-          "44": 1,
-          "16": 1,
-          "36": 1,
-          "2": 1,
-          "28": 1,
-          "6": 1,
-          "8": 1,
-          "14": 1,
-          "13": 1,
-          "7": 1,
-          "4": 1,
-          "18": 1,
-          "47": 1,
-          "19": 1,
-          "33": 1,
-          "22": 1,
-          "38": 1,
-          "12": 1,
-          " ": 1,
-          "40": 1,
-          "35": 1,
-          "25": 1,
-          "10": 1,
-          "27": 1,
-          "29": 1,
-          "17": 1,
-          "48": 1,
-          "3": 1,
-          "34": 1,
-          "24": 1,
-          "31": 1,
-          "11": 1,
-          "42": 1,
-          "45": 1,
-          "9": 1,
-          "21": 1,
-          "5": 1,
-          "43": 1,
-          "30": 1,
-          "39": 1,
-          "15": 1,
-          "49": 1,
-          "26": 1,
           "32": 1,
-          "20": 1,
+          "33": 1,
+          "29": 1,
+          "30": 1,
+          "22": 1,
+          "48": 1,
+          "8": 1,
+          "2": 1,
           "37": 1,
-          "23": 1
+          "18": 1,
+          "19": 1,
+          "35": 1,
+          "47": 1,
+          "10": 1,
+          "1": 1,
+          "20": 1,
+          "38": 1,
+          "11": 1,
+          "23": 1,
+          "49": 1,
+          "42": 1,
+          "21": 1,
+          "44": 1,
+          "12": 1,
+          "15": 1,
+          "14": 1,
+          "43": 1,
+          "45": 1,
+          "27": 1,
+          "5": 1,
+          "26": 1,
+          "13": 1,
+          "24": 1,
+          "34": 1,
+          "17": 1,
+          " ": 1,
+          "7": 1,
+          "40": 1,
+          "36": 1,
+          "3": 1,
+          "4": 1,
+          "16": 1,
+          "6": 1,
+          "41": 1,
+          "39": 1,
+          "28": 1,
+          "25": 1,
+          "9": 1,
+          "31": 1
         }
       ],
       [
@@ -5874,22 +5631,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Gallup_1950s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gallup_1950s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Gallup_1950s",
     [
@@ -5920,11 +5661,11 @@
       [
         "fewestValues",
         [
-          "23",
-          "45",
-          "42",
-          "14",
-          "54"
+          "31",
+          "51",
+          "64",
+          "21",
+          "81"
         ]
       ],
       [
@@ -5951,54 +5692,54 @@
         "plotValues",
         {
           ".": 3,
-          "86": 1,
-          "68": 1,
-          "21": 1,
-          "32": 1,
-          "62": 1,
-          "51": 1,
-          "47": 1,
-          "56": 1,
           "63": 1,
-          "65": 1,
-          "85": 1,
-          "33": 1,
+          "61": 1,
+          "55": 1,
+          "57": 1,
+          "32": 1,
+          "34": 1,
+          "62": 1,
+          "11": 1,
+          "73": 1,
+          "23": 1,
+          "16": 1,
           "41": 1,
           "54": 1,
-          "64": 1,
-          "22": 1,
-          "43": 1,
-          "45": 1,
-          "15": 1,
-          "26": 1,
-          "83": 1,
-          "55": 1,
-          "67": 1,
-          "73": 1,
-          "42": 1,
-          "46": 1,
-          "48": 1,
-          "66": 1,
-          "72": 1,
-          "14": 1,
-          "71": 1,
-          "12": 1,
-          "84": 1,
+          "21": 1,
+          "85": 1,
           "82": 1,
-          "52": 1,
-          "13": 1,
-          "44": 1,
-          "11": 1,
           "25": 1,
-          "34": 1,
-          "16": 1,
-          "24": 1,
+          "44": 1,
+          "43": 1,
+          "14": 1,
+          "15": 1,
+          "12": 1,
+          "86": 1,
           "31": 1,
-          "57": 1,
+          "67": 1,
+          "72": 1,
+          "42": 1,
+          "33": 1,
+          "46": 1,
+          "47": 1,
+          "45": 1,
+          "71": 1,
+          "52": 1,
+          "26": 1,
+          "13": 1,
+          "84": 1,
+          "24": 1,
+          "65": 1,
+          "22": 1,
+          "48": 1,
           "53": 1,
+          "68": 1,
+          "83": 1,
+          "56": 1,
           "81": 1,
-          "61": 1,
-          "23": 1
+          "64": 1,
+          "51": 1,
+          "66": 1
         }
       ],
       [
@@ -6181,28 +5922,12 @@
     [
       "58",
       [
-        "23",
+        "44",
+        "50",
+        "31",
         "61",
-        "63",
-        "68",
-        "43"
+        "25"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Gallup_1950s2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gallup_1950s2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6236,11 +5961,11 @@
       [
         "fewestValues",
         [
-          "23",
+          "44",
+          "50",
+          "31",
           "61",
-          "63",
-          "68",
-          "43"
+          "25"
         ]
       ],
       [
@@ -6266,57 +5991,57 @@
       [
         "plotValues",
         {
-          "46": 1,
-          "14": 1,
-          "72": 1,
-          "33": 1,
-          "27": 1,
-          "25": 1,
-          "44": 1,
-          "56": 1,
-          "16": 1,
-          "50": 1,
-          "5-": 1,
-          "61": 1,
-          "13": 1,
-          "15": 1,
-          "41": 1,
-          "5V": 1,
-          "47": 1,
-          "65": 1,
-          "67": 1,
-          "58": 1,
-          "54": 1,
-          "22": 1,
-          "66": 1,
-          "5X": 1,
-          "26": 1,
           "63": 1,
-          "31": 1,
-          "62": 1,
-          "57": 1,
-          "71": 1,
-          "12": 1,
-          "75": 1,
-          "52": 1,
           "64": 1,
+          "15": 1,
+          "12": 1,
+          "16": 1,
+          "67": 1,
+          "31": 1,
+          "65": 1,
+          "22": 1,
           "48": 1,
-          "51": 1,
-          "34": 1,
-          "74": 1,
-          "24": 1,
-          "68": 1,
-          "59": 1,
-          "53": 1,
-          "11": 1,
-          "42": 1,
-          "45": 1,
-          "73": 1,
-          "21": 1,
-          "32": 1,
-          "55": 1,
+          "5-": 1,
+          "58": 1,
+          "5V": 1,
           "43": 1,
-          "23": 1
+          "74": 1,
+          "55": 1,
+          "32": 1,
+          "11": 1,
+          "24": 1,
+          "23": 1,
+          "42": 1,
+          "21": 1,
+          "66": 1,
+          "44": 1,
+          "14": 1,
+          "68": 1,
+          "46": 1,
+          "56": 1,
+          "47": 1,
+          "45": 1,
+          "27": 1,
+          "52": 1,
+          "26": 1,
+          "13": 1,
+          "33": 1,
+          "73": 1,
+          "71": 1,
+          "53": 1,
+          "5X": 1,
+          "50": 1,
+          "57": 1,
+          "54": 1,
+          "72": 1,
+          "34": 1,
+          "62": 1,
+          "75": 1,
+          "59": 1,
+          "25": 1,
+          "61": 1,
+          "41": 1,
+          "51": 1
         }
       ],
       [
@@ -6539,22 +6264,6 @@
     [
       "11",
       11
-    ]
-  ],
-  [
-    "change",
-    "variables.Gallup_1960s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gallup_1960s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7214,22 +6923,6 @@
     ]
   ],
   [
-    "change",
-    "variables.NORC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NORC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.NORC",
     [
@@ -7260,11 +6953,11 @@
       [
         "fewestValues",
         [
-          "23",
-          "55",
+          "84",
+          "31",
+          "41",
           "16",
-          "21",
-          "73"
+          "59"
         ]
       ],
       [
@@ -7291,55 +6984,55 @@
         "plotValues",
         {
           " ": 2,
-          "46": 1,
-          "81": 1,
-          "52": 1,
-          "72": 1,
-          "33": 1,
-          "44": 1,
-          "91": 1,
-          "56": 1,
-          "16": 1,
-          "14": 1,
-          "13": 1,
-          "41": 1,
-          "47": 1,
-          "31": 1,
-          "65": 1,
-          "67": 1,
-          "58": 1,
-          "54": 1,
-          "22": 1,
-          "66": 1,
           "93": 1,
-          "94": 1,
-          "83": 1,
-          "15": 1,
-          "63": 1,
-          "68": 1,
-          "43": 1,
-          "84": 1,
-          "61": 1,
-          "71": 1,
-          "12": 1,
           "82": 1,
-          "64": 1,
+          "31": 1,
+          "84": 1,
+          "65": 1,
+          "22": 1,
           "48": 1,
+          "83": 1,
+          "58": 1,
+          "64": 1,
+          "91": 1,
+          "81": 1,
+          "55": 1,
           "51": 1,
+          "32": 1,
+          "11": 1,
+          "23": 1,
+          "42": 1,
+          "21": 1,
+          "66": 1,
+          "44": 1,
+          "94": 1,
+          "12": 1,
+          "67": 1,
+          "15": 1,
+          "46": 1,
+          "14": 1,
+          "47": 1,
+          "45": 1,
+          "52": 1,
+          "13": 1,
+          "33": 1,
+          "73": 1,
+          "71": 1,
+          "63": 1,
+          "53": 1,
+          "56": 1,
           "57": 1,
+          "54": 1,
+          "72": 1,
           "34": 1,
           "62": 1,
           "59": 1,
-          "92": 1,
-          "53": 1,
-          "11": 1,
-          "42": 1,
-          "45": 1,
-          "73": 1,
-          "21": 1,
-          "32": 1,
-          "55": 1,
-          "23": 1
+          "16": 1,
+          "61": 1,
+          "41": 1,
+          "68": 1,
+          "43": 1,
+          "92": 1
         }
       ],
       [
@@ -7731,22 +7424,6 @@
     ]
   ],
   [
-    "change",
-    "variables.NORC_1960s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NORC_1960s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.NORC_1960s",
     [
@@ -7777,11 +7454,11 @@
       [
         "fewestValues",
         [
-          "23",
-          "55",
-          "16",
-          "21",
-          "73"
+          "84",
+          "68",
+          "31",
+          "61",
+          "16"
         ]
       ],
       [
@@ -7808,55 +7485,55 @@
         "plotValues",
         {
           " ": 2,
-          "46": 1,
-          "47": 1,
-          "52": 1,
-          "72": 1,
-          "33": 1,
-          "44": 1,
-          "91": 1,
-          "56": 1,
-          "16": 1,
-          "14": 1,
-          "13": 1,
-          "81": 1,
-          "65": 1,
-          "31": 1,
-          "67": 1,
-          "58": 1,
-          "54": 1,
-          "22": 1,
-          "66": 1,
           "93": 1,
-          "94": 1,
-          "83": 1,
-          "35": 1,
-          "15": 1,
-          "63": 1,
-          "68": 1,
-          "43": 1,
+          "55": 1,
           "84": 1,
-          "61": 1,
-          "71": 1,
-          "12": 1,
-          "82": 1,
-          "64": 1,
+          "65": 1,
+          "22": 1,
           "48": 1,
+          "83": 1,
+          "58": 1,
+          "64": 1,
+          "91": 1,
+          "81": 1,
+          "82": 1,
+          "35": 1,
+          "67": 1,
+          "32": 1,
+          "11": 1,
+          "23": 1,
+          "42": 1,
+          "21": 1,
+          "66": 1,
+          "44": 1,
+          "94": 1,
+          "12": 1,
+          "33": 1,
           "51": 1,
+          "46": 1,
+          "15": 1,
+          "47": 1,
+          "45": 1,
+          "52": 1,
+          "13": 1,
+          "73": 1,
+          "71": 1,
+          "63": 1,
+          "53": 1,
+          "56": 1,
           "57": 1,
+          "54": 1,
+          "72": 1,
           "34": 1,
           "62": 1,
           "59": 1,
-          "92": 1,
-          "53": 1,
-          "11": 1,
-          "42": 1,
-          "45": 1,
-          "73": 1,
-          "21": 1,
-          "32": 1,
-          "55": 1,
-          "23": 1
+          "16": 1,
+          "61": 1,
+          "31": 1,
+          "68": 1,
+          "43": 1,
+          "14": 1,
+          "92": 1
         }
       ],
       [
@@ -8195,28 +7872,12 @@
     [
       "ALA",
       [
-        "KEN",
-        "CAL",
-        "UTA",
-        "GEO",
-        "KAN"
+        "NEV",
+        "WAS",
+        "N/C",
+        "WYO",
+        "ARK"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Letters.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Letters.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8250,11 +7911,11 @@
       [
         "fewestValues",
         [
-          "KEN",
-          "CAL",
-          "UTA",
-          "GEO",
-          "KAN"
+          "NEV",
+          "WAS",
+          "N/C",
+          "WYO",
+          "ARK"
         ]
       ],
       [
@@ -8280,57 +7941,57 @@
       [
         "plotValues",
         {
-          "N/Y": 1,
-          "LOU": 1,
-          "MAS": 1,
-          "HAW": 1,
-          "N/M": 1,
-          "D/C": 1,
-          "NEV": 1,
-          "WYO": 1,
-          "KEN": 1,
-          "WIS": 1,
-          "OHI": 1,
-          "TEX": 1,
-          "ARK": 1,
-          "IOW": 1,
-          "MIC": 1,
-          "S/C": 1,
-          "MIN": 1,
-          "MIS": 1,
-          "N/D": 1,
-          "MON": 1,
           "LAS": 1,
-          "N/H": 1,
-          "OKL": 1,
-          "ISS": 1,
-          "ARI": 1,
-          "ILL": 1,
-          "S/D": 1,
-          "ALA": 1,
-          "NEB": 1,
-          "VIR": 1,
-          "W/V": 1,
-          "IDA": 1,
-          "DEL": 1,
           "IND": 1,
-          "N/J": 1,
-          "VER": 1,
-          "CON": 1,
-          "TEN": 1,
-          "MAI": 1,
-          "COL": 1,
-          "N/C": 1,
-          "PEN": 1,
-          "WAS": 1,
+          "OHI": 1,
+          "NEB": 1,
           "FLO": 1,
-          "R/I": 1,
-          "ORE": 1,
-          "KAN": 1,
-          "GEO": 1,
+          "D/C": 1,
+          "ISS": 1,
           "UTA": 1,
+          "OKL": 1,
+          "MIC": 1,
+          "PEN": 1,
+          "N/J": 1,
+          "WIS": 1,
+          "KAN": 1,
+          "CON": 1,
+          "MIS": 1,
+          "IDA": 1,
+          "ARI": 1,
+          "MON": 1,
+          "DEL": 1,
+          "MAS": 1,
+          "R/I": 1,
+          "ALA": 1,
+          "MIN": 1,
+          "TEN": 1,
+          "COL": 1,
+          "IOW": 1,
+          "VER": 1,
+          "N/H": 1,
+          "HAW": 1,
+          "KEN": 1,
           "CAL": 1,
-          "MAR": 1
+          "N/Y": 1,
+          "TEX": 1,
+          "S/C": 1,
+          "VIR": 1,
+          "ORE": 1,
+          "ILL": 1,
+          "N/D": 1,
+          "GEO": 1,
+          "N/M": 1,
+          "W/V": 1,
+          "S/D": 1,
+          "LOU": 1,
+          "MAR": 1,
+          "MAI": 1,
+          "ARK": 1,
+          "WYO": 1,
+          "N/C": 1,
+          "WAS": 1,
+          "NEV": 1
         }
       ],
       [
@@ -8553,22 +8214,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.NBC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NBC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9228,22 +8873,6 @@
     ]
   ],
   [
-    "change",
-    "variables.AP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.AP.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.AP",
     [
@@ -9274,11 +8903,11 @@
       [
         "fewestValues",
         [
-          "23",
-          "20",
-          "26",
-          "49",
-          "15"
+          "31",
+          "43",
+          "9",
+          "29",
+          "28"
         ]
       ],
       [
@@ -9306,54 +8935,54 @@
         {
           " ": 2,
           "46": 1,
-          "41": 1,
-          "1": 1,
-          "44": 1,
-          "16": 1,
-          "36": 1,
-          "2": 1,
-          "28": 1,
-          "6": 1,
-          "8": 1,
-          "14": 1,
-          "13": 1,
-          "7": 1,
-          "4": 1,
-          "18": 1,
-          "47": 1,
-          "19": 1,
-          "33": 1,
-          "22": 1,
-          "38": 1,
-          "12": 1,
-          "40": 1,
           "35": 1,
-          "25": 1,
-          "10": 1,
-          "27": 1,
           "29": 1,
-          "17": 1,
-          "48": 1,
-          "3": 1,
-          "34": 1,
-          "24": 1,
-          "31": 1,
-          "11": 1,
-          "42": 1,
-          "45": 1,
-          "9": 1,
-          "21": 1,
-          "5": 1,
-          "43": 1,
           "30": 1,
-          "39": 1,
-          "15": 1,
-          "49": 1,
-          "26": 1,
-          "32": 1,
-          "20": 1,
+          "22": 1,
+          "48": 1,
+          "8": 1,
+          "2": 1,
           "37": 1,
-          "23": 1
+          "18": 1,
+          "19": 1,
+          "32": 1,
+          "10": 1,
+          "12": 1,
+          "1": 1,
+          "20": 1,
+          "38": 1,
+          "11": 1,
+          "23": 1,
+          "49": 1,
+          "42": 1,
+          "21": 1,
+          "44": 1,
+          "33": 1,
+          "15": 1,
+          "47": 1,
+          "14": 1,
+          "45": 1,
+          "27": 1,
+          "5": 1,
+          "26": 1,
+          "13": 1,
+          "24": 1,
+          "34": 1,
+          "17": 1,
+          "7": 1,
+          "40": 1,
+          "36": 1,
+          "3": 1,
+          "4": 1,
+          "16": 1,
+          "6": 1,
+          "41": 1,
+          "39": 1,
+          "28": 1,
+          "25": 1,
+          "9": 1,
+          "43": 1,
+          "31": 1
         }
       ],
       [
@@ -9730,22 +9359,6 @@
     [
       "10",
       10
-    ]
-  ],
-  [
-    "change",
-    "variables.MOR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.MOR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10393,22 +10006,6 @@
     ]
   ],
   [
-    "change",
-    "variables.NCDC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NCDC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.NCDC",
     [
@@ -11001,132 +10598,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "STATEAB": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NAME": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "STATEICP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "STATEFIP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "STATECEN": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "WrightID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "STATEALPHA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GALLUP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ABC_Regions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Time_pre1985": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gallup_1950s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gallup_1950s2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gallup_1960s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NORC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NORC_1960s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Letters": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NBC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MOR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NCDC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

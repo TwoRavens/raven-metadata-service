@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        15
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WDA163_macrodata.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 797
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cntry.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cntry.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cntry.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -678,28 +579,12 @@
     [
       "AUSTRIA       ",
       [
-        "NETHERLANDS   ",
-        "ITALY         ",
+        "UNITED KINGDOM",
         "BELGIUM       ",
-        "AUSTRIA       ",
-        "FINLAND       "
+        "DENMARK       ",
+        "SWEDEN        ",
+        "IRELAND       "
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -733,11 +618,11 @@
       [
         "fewestValues",
         [
-          "NETHERLANDS   ",
-          "ITALY         ",
+          "UNITED KINGDOM",
           "BELGIUM       ",
-          "AUSTRIA       ",
-          "FINLAND       "
+          "DENMARK       ",
+          "SWEDEN        ",
+          "IRELAND       "
         ]
       ],
       [
@@ -763,21 +648,21 @@
       [
         "plotValues",
         {
-          "IRELAND       ": 1,
-          "FRANCE        ": 1,
+          "DENMARK       ": 1,
+          "GREECE        ": 1,
+          "AUSTRIA       ": 1,
+          "SPAIN         ": 1,
+          "NETHERLANDS   ": 1,
           "PORTUGAL      ": 1,
           "LUXEMBOURG    ": 1,
-          "GREECE        ": 1,
-          "UNITED KINGDOM": 1,
-          "Germany": 1,
-          "DENMARK       ": 1,
-          "SWEDEN        ": 1,
-          "SPAIN         ": 1,
-          "FINLAND       ": 1,
-          "AUSTRIA       ": 1,
-          "BELGIUM       ": 1,
           "ITALY         ": 1,
-          "NETHERLANDS   ": 1
+          "FINLAND       ": 1,
+          "Germany": 1,
+          "FRANCE        ": 1,
+          "IRELAND       ": 1,
+          "SWEDEN        ": 1,
+          "BELGIUM       ": 1,
+          "UNITED KINGDOM": 1
         }
       ],
       [
@@ -964,22 +849,6 @@
     [
       "5080",
       5080.0
-    ]
-  ],
-  [
-    "change",
-    "variables.intra.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.intra.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1552,22 +1421,6 @@
     [
       "3371",
       3371.0
-    ]
-  ],
-  [
-    "change",
-    "variables.extra.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.extra.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2148,26 +2001,10 @@
   ],
   [
     "change",
-    "variables.eutrade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eutrade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eutrade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2811,22 +2648,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tenure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tenure.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tenure",
     [
@@ -3088,22 +2909,6 @@
     [
       "12379",
       12379
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3690,26 +3495,10 @@
   ],
   [
     "change",
-    "variables.infl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infl.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4307,72 +4096,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:04",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cntry": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "intra": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "extra": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eutrade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tenure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

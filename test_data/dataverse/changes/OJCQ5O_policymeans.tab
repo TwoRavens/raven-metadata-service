@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        14
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "OJCQ5O_policymeans.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1012
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.poltype.mode",
     [
       "Euthanasia (p=.003)",
       [
         "Private op to pub activities (p=.395)",
-        "Accept wage diffs (p=0.32)",
+        "Pub service over red tax (p=.246)",
         "Comp relig educ (p=.162)",
-        "Abortion self det (p=.398)",
-        "Reduce ec diffs (p=0.318)"
+        "High income more tax (p=.737)",
+        "Abortion self det (p=.398)"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.poltype.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.poltype.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -144,10 +45,10 @@
         "fewestValues",
         [
           "Private op to pub activities (p=.395)",
-          "Accept wage diffs (p=0.32)",
+          "Pub service over red tax (p=.246)",
           "Comp relig educ (p=.162)",
-          "Abortion self det (p=.398)",
-          "Reduce ec diffs (p=0.318)"
+          "High income more tax (p=.737)",
+          "Abortion self det (p=.398)"
         ]
       ],
       [
@@ -173,19 +74,19 @@
       [
         "plotValues",
         {
-          "Pub service over red tax (p=.246)": 1,
-          "Gay rights (p=.005)": 1,
-          "Sep church state (p=.004)": 1,
-          "Christian val (p=.002)": 1,
-          "Cities keep more tax (p<.001)": 1,
-          "Allow private schools (p=.090)": 1,
-          "High income more tax (p=.737)": 1,
           "Euthanasia (p=.003)": 1,
-          "Abolish wealth tax (p=.178)": 1,
           "Reduce ec diffs (p=0.318)": 1,
-          "Abortion self det (p=.398)": 1,
-          "Comp relig educ (p=.162)": 1,
+          "Allow private schools (p=.090)": 1,
+          "Christian val (p=.002)": 1,
+          "Abolish wealth tax (p=.178)": 1,
+          "Gay rights (p=.005)": 1,
+          "Cities keep more tax (p<.001)": 1,
+          "Sep church state (p=.004)": 1,
           "Accept wage diffs (p=0.32)": 1,
+          "Abortion self det (p=.398)": 1,
+          "High income more tax (p=.737)": 1,
+          "Comp relig educ (p=.162)": 1,
+          "Pub service over red tax (p=.246)": 1,
           "Private op to pub activities (p=.395)": 1
         }
       ],
@@ -384,26 +285,10 @@
   ],
   [
     "change",
-    "variables.labwest.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.labwest.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.labwest.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1060,26 +945,10 @@
   ],
   [
     "change",
-    "variables.labgen.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.labgen.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.labgen.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1736,26 +1605,10 @@
   ],
   [
     "change",
-    "variables.laboslo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.laboslo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.laboslo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2412,26 +2265,10 @@
   ],
   [
     "change",
-    "variables.conswest.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.conswest.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.conswest.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3088,26 +2925,10 @@
   ],
   [
     "change",
-    "variables.consgen.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.consgen.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.consgen.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3761,26 +3582,10 @@
   ],
   [
     "change",
-    "variables.consoslo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.consoslo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.consoslo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4053,28 +3858,12 @@
     [
       "p=.030",
       [
-        "p<.001",
-        "p=.241",
         "p=.257",
-        "p=.782",
+        "p=.080",
+        "p=.414",
+        "p=.007",
         "p=.103"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.consp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.consp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4108,10 +3897,10 @@
       [
         "fewestValues",
         [
-          "p<.001",
-          "p=.241",
           "p=.257",
-          "p=.782",
+          "p=.080",
+          "p=.414",
+          "p=.007",
           "p=.103"
         ]
       ],
@@ -4138,20 +3927,20 @@
       [
         "plotValues",
         {
-          "p=.053": 1,
-          "p=.006": 1,
+          "p=.030": 1,
           "p=.028": 1,
-          "p=.080": 1,
-          "p=.039": 1,
+          "p=.241": 1,
+          "p=.006": 1,
           "p=.782": 1,
-          "p=.414": 1,
+          "p=.053": 1,
           "p=.061": 1,
+          "p=.039": 1,
+          "p<.001": 1,
           "p=.103": 1,
           "p=.007": 1,
-          "p=.030": 1,
-          "p=.257": 1,
-          "p=.241": 1,
-          "p<.001": 1
+          "p=.414": 1,
+          "p=.080": 1,
+          "p=.257": 1
         }
       ],
       [
@@ -4290,72 +4079,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:08:39",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "poltype": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "labwest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "labgen": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "laboslo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conswest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "consgen": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "consoslo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "consp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

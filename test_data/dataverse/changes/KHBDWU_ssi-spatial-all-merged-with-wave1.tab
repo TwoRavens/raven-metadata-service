@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1137
-      ],
-      [
-        "variableCount",
-        36
-      ],
-      [
-        "dataSource",
-        {
-          "name": "KHBDWU_ssi-spatial-all-merged-with-wave1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 96877
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
@@ -90,22 +7,6 @@
       [
         "CA"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,8 +40,8 @@
       [
         "fewestValues",
         [
-          "VT",
-          "RI"
+          "RI",
+          "VT"
         ]
       ],
       [
@@ -186,11 +87,11 @@
           "TN": 20,
           "OR": 17,
           "SC": 16,
-          "WI": 15,
           "MN": 15,
+          "WI": 15,
           "IN": 15,
-          "AL": 15,
           "MA": 15,
+          "AL": 15,
           "LA": 13,
           "NV": 12,
           "HI": 12,
@@ -198,23 +99,23 @@
           "UT": 10,
           "WV": 8,
           "NE": 7,
-          "IA": 6,
           "CT": 6,
           "ID": 6,
-          "KS": 5,
+          "IA": 6,
           "AR": 5,
+          "KS": 5,
           "MS": 4,
           "NM": 4,
+          "DE": 4,
           "OK": 4,
           "ME": 4,
-          "DE": 4,
           "AK": 3,
           "DC": 2,
-          "NH": 2,
           "MT": 2,
           "SD": 2,
-          "RI": 1,
-          "VT": 1
+          "NH": 2,
+          "VT": 1,
+          "RI": 1
         }
       ],
       [
@@ -431,22 +332,6 @@
     [
       "18",
       18
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1089,22 +974,6 @@
     ]
   ],
   [
-    "change",
-    "variables.female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.female",
     [
@@ -1312,22 +1181,6 @@
       [
         "White"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.race.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.race.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1566,22 +1419,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1860,22 +1697,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2163,22 +1984,6 @@
     ]
   ],
   [
-    "change",
-    "variables.personalideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.personalideology.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.personalideology",
     [
@@ -2448,22 +2253,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.partyid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2748,26 +2537,10 @@
   ],
   [
     "change",
-    "variables.pkscale.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pkscale.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pkscale.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3416,26 +3189,10 @@
   ],
   [
     "change",
-    "variables.weight.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.weight.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.weight.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4079,22 +3836,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_marijuana.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_marijuana.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_marijuana",
     [
@@ -4364,22 +4105,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_environment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_environment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4655,22 +4380,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_socialsecurity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_socialsecurity.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_socialsecurity",
     [
@@ -4940,22 +4649,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_guns.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_guns.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5231,22 +4924,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_health.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_health.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_health",
     [
@@ -5516,22 +5193,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_immigration.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_immigration.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5807,22 +5468,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_taxes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_taxes.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_taxes",
     [
@@ -6092,22 +5737,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_abortion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_abortion.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6383,22 +6012,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_medicare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_medicare.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_medicare",
     [
@@ -6668,22 +6281,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_gays.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_gays.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6959,22 +6556,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_unions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_unions.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_unions",
     [
@@ -7244,22 +6825,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_contraception.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_contraception.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7535,22 +7100,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_education.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_education",
     [
@@ -7820,22 +7369,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_marijuana_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_marijuana_POST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8111,22 +7644,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_environment_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_environment_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_environment_POST",
     [
@@ -8399,22 +7916,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_socialsecurity_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_socialsecurity_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_socialsecurity_POST",
     [
@@ -8684,22 +8185,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_guns_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_guns_POST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8976,22 +8461,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_health_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_health_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_health_POST",
     [
@@ -9261,22 +8730,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_immigration_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_immigration_POST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9552,22 +9005,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_taxes_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_taxes_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_taxes_POST",
     [
@@ -9840,22 +9277,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_abortion_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_abortion_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_abortion_POST",
     [
@@ -10125,22 +9546,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_medicare_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_medicare_POST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10417,22 +9822,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_gays_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_gays_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_gays_POST",
     [
@@ -10702,22 +10091,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_unions_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_unions_POST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10993,22 +10366,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_contraception_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_contraception_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_contraception_POST",
     [
@@ -11281,22 +10638,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eq_education_POST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eq_education_POST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eq_education_POST",
     [
@@ -11523,212 +10864,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:31:25",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "race": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "personalideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pkscale": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "weight": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_marijuana": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_environment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_socialsecurity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_guns": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_health": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_immigration": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_taxes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_abortion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_medicare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_gays": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_unions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_contraception": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_marijuana_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_environment_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_socialsecurity_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_guns_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_health_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_immigration_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_taxes_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_abortion_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_medicare_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_gays_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_unions_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_contraception_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eq_education_POST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

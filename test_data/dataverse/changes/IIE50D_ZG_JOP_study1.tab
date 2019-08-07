@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        404
-      ],
-      [
-        "variableCount",
-        30
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IIE50D_ZG_JOP_study1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 103836
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.kkziff.median",
     [
@@ -126,22 +43,6 @@
     [
       "1001",
       1001.0
-    ]
-  ],
-  [
-    "change",
-    "variables.kkziff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.kkziff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -798,26 +699,10 @@
   ],
   [
     "change",
-    "variables.right.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.right.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.right.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1424,25 +1309,9 @@
     [
       "Heilbronn",
       [
-        "Heilbronn",
-        "Karlsruhe"
+        "Karlsruhe",
+        "Heilbronn"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.kname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.kname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1476,11 +1345,11 @@
       [
         "fewestValues",
         [
-          "M\u00c3\u00bcnchen",
-          "Mayen-Koblenz",
-          "Kusel",
-          "Regionalverband Saarbr\u00c3\u00bccken",
-          "Donau-Ries"
+          "Memmingen, Stadt",
+          "Trier, Stadt",
+          "Uelzen",
+          "Augsburg, Stadt",
+          "Leipzig"
         ]
       ],
       [
@@ -1506,406 +1375,406 @@
       [
         "plotValues",
         {
-          "Karlsruhe": 2,
           "Heilbronn": 2,
-          "Kyffh\u00c3\u00a4userkreis": 1,
-          "Kaiserslautern, Stadt": 1,
+          "Karlsruhe": 2,
           "Jena, Stadt": 1,
-          "Trier-Saarburg": 1,
-          "Merzig-Wadern": 1,
-          "Alt\u00c3\u00b6tting": 1,
-          "Uckermark": 1,
-          "Hildburghausen": 1,
-          "Weiden i.d.OPf., Stadt": 1,
-          "Ortenaukreis": 1,
-          "Olpe": 1,
-          "Heidenheim": 1,
-          "L\u00c3\u00bcbeck, Stadt": 1,
-          "Reutlingen": 1,
-          "Ostprignitz-Ruppin": 1,
-          "Saale-Holzland-Kreis": 1,
-          "Leer": 1,
-          "Stormarn": 1,
-          "Mettmann": 1,
-          "Zollernalbkreis": 1,
-          "Krefeld, Stadt": 1,
-          "Mecklenburgische Seenplatte": 1,
-          "Ennepe-Ruhr-Kreis": 1,
-          "Coburg": 1,
-          "Esslingen": 1,
-          "Neustadt a.d.Waldnaab": 1,
-          "Offenbach": 1,
-          "Schmalkalden-Meiningen": 1,
-          "Westerwaldkreis": 1,
-          "Rottweil": 1,
-          "Neuwied": 1,
-          "Pirmasens, Stadt": 1,
-          "Bonn, Stadt": 1,
-          "Vogtlandkreis": 1,
-          "Schaumburg": 1,
-          "Bad D\u00c3\u00bcrkheim": 1,
-          "Stuttgart": 1,
-          "Oberhausen, Stadt": 1,
-          "Anhalt-Bitterfeld": 1,
-          "Birkenfeld": 1,
-          "Schweinfurt, Stadt": 1,
-          "Landshut": 1,
-          "Gifhorn": 1,
-          "Vorpommern-Greifswald": 1,
-          "Bodenseekreis": 1,
-          "Mayen-Koblenz": 1,
-          "Stendal": 1,
-          "Donau-Ries": 1,
-          "Cloppenburg": 1,
-          "Main-Kinzig-Kreis": 1,
-          "Neunkirchen": 1,
-          "Remscheid, Stadt": 1,
-          "Leipzig": 1,
-          "Wartburgkreis": 1,
-          "Altenkirchen (Westerwald)": 1,
-          "Warendorf": 1,
-          "Darmstadt-Dieburg": 1,
-          "Cochem-Zell": 1,
-          "Osterode am Harz": 1,
-          "M\u00c3\u00bcnchen, Stadt": 1,
-          "Teltow-Fl\u00c3\u00a4ming": 1,
-          "Kaufbeuren, Stadt": 1,
-          "Oldenburg (Oldenburg), Stadt": 1,
-          "Mainz-Bingen": 1,
-          "Bielefeld, Stadt": 1,
-          "Weimarer Land": 1,
-          "Mainz, kreisfreie Stadt": 1,
-          "Neuburg-Schrobenhausen": 1,
-          "Rostock, Stadt": 1,
-          "Kleve": 1,
-          "Berchtesgadener Land": 1,
-          "G\u00c3\u00bcnzburg": 1,
-          "Euskirchen": 1,
-          "Barnim": 1,
-          "D\u00c3\u00bcsseldorf, Stadt": 1,
-          "Vechta": 1,
-          "Marburg-Biedenkopf": 1,
-          "Werra-Mei\u00c3\u009fner-Kreis": 1,
-          "Eisenach, Stadt": 1,
-          "Gera, Stadt": 1,
-          "Oberbergischer Kreis": 1,
-          "Garmisch-Partenkirchen": 1,
-          "Vulkaneifel": 1,
-          "Rhein-Kreis Neuss": 1,
-          "Viersen": 1,
-          "Sonneberg": 1,
-          "Ludwigslust-Parchim": 1,
-          "Main-Tauber-Kreis": 1,
-          "L\u00c3\u00b6rrach": 1,
-          "Freising": 1,
-          "Regensburg": 1,
-          "Vogelsbergkreis": 1,
-          "Wetteraukreis": 1,
-          "Rhein-Hunsr\u00c3\u00bcck-Kreis": 1,
-          "Rh\u00c3\u00b6n-Grabfeld": 1,
-          "S\u00c3\u00a4chsische Schweiz-Osterzgebirge": 1,
-          "Steinfurt": 1,
-          "M\u00c3\u00bclheim an der Ruhr, Stadt": 1,
-          "Dingolfing-Landau": 1,
-          "Kitzingen": 1,
-          "Wesel": 1,
-          "Erlangen-H\u00c3\u00b6chstadt": 1,
-          "Prignitz": 1,
-          "Roth": 1,
-          "Bayreuth": 1,
-          "Kassel, Stadt": 1,
-          "Neum\u00c3\u00bcnster, Stadt": 1,
-          "B\u00c3\u00b6rde": 1,
-          "Erlangen, Stadt": 1,
-          "Herne, Stadt": 1,
-          "Bremerhaven, Stadt": 1,
-          "Potsdam-Mittelmark": 1,
-          "Oder-Spree": 1,
-          "Fulda": 1,
-          "Ahrweiler": 1,
-          "Delmenhorst, Stadt": 1,
-          "Alzey-Worms": 1,
-          "Bremen, Stadt": 1,
-          "Chemnitz, Stadt": 1,
-          "Landau in der Pfalz, Stadt": 1,
-          "Zwickau": 1,
-          "Hildesheim": 1,
-          "Breisgau-Hochschwarzwald": 1,
-          "Stade": 1,
-          "Donnersbergkreis": 1,
-          "Ludwigshafen am Rhein, Stadt": 1,
-          "D\u00c3\u00bcren": 1,
-          "Main-Taunus-Kreis": 1,
-          "Eifelkreis Bitburg-Pr\u00c3\u00bcm": 1,
-          "G\u00c3\u00b6rlitz": 1,
-          "Frankfurt (Oder), Stadt": 1,
-          "Brandenburg an der Havel, Stadt": 1,
-          "Offenbach am Main, Stadt": 1,
-          "Lippe": 1,
-          "Darmstadt, Stadt": 1,
-          "Waldeck-Frankenberg": 1,
-          "Kelheim": 1,
-          "Baden-Baden": 1,
-          "Ravensburg": 1,
-          "Nordfriesland": 1,
-          "Germersheim": 1,
-          "Ostalbkreis": 1,
-          "Ostallg\u00c3\u00a4u": 1,
-          "Kaiserslautern": 1,
-          "Borken": 1,
-          "G\u00c3\u00b6ttingen": 1,
-          "Landsberg am Lech": 1,
-          "Heinsberg": 1,
-          "Wilhelmshaven, Stadt": 1,
-          "Aschaffenburg": 1,
-          "Unna": 1,
-          "Frankfurt am Main, Stadt": 1,
-          "Saalfeld-Rudolstadt": 1,
-          "Soest": 1,
-          "Saalekreis": 1,
-          "Segeberg": 1,
-          "Miltenberg": 1,
-          "Oberspreewald-Lausitz": 1,
-          "Suhl, Stadt": 1,
-          "W\u00c3\u00bcrzburg": 1,
-          "Ilm-Kreis": 1,
-          "Verden": 1,
-          "Steinburg": 1,
-          "Rotenburg (W\u00c3\u00bcmme)": 1,
-          "S\u00c3\u00b6mmerda": 1,
-          "Neustadt a.d.Aisch-Bad Windsheim": 1,
-          "Coburg, Stadt": 1,
-          "Erding": 1,
-          "Passau, Stadt": 1,
-          "Celle": 1,
-          "Cottbus, Stadt": 1,
-          "Limburg-Weilburg": 1,
-          "Aichach-Friedberg": 1,
-          "Nienburg (Weser)": 1,
-          "Landshut, Stadt": 1,
-          "Leipzig, Stadt": 1,
-          "Coesfeld": 1,
-          "Bergstra\u00c3\u009fe": 1,
-          "Mei\u00c3\u009fen": 1,
-          "Hamburg, Stadt": 1,
-          "Flensburg, Stadt": 1,
-          "Duisburg, Stadt": 1,
-          "Biberach": 1,
-          "Tuttlingen": 1,
-          "Frankenthal (Pfalz), Stadt": 1,
-          "Weilheim-Schongau": 1,
-          "Elbe-Elster": 1,
-          "Kassel": 1,
-          "Enzkreis": 1,
-          "M\u00c3\u00bchldorf a.Inn": 1,
-          "Main-Spessart": 1,
-          "Paderborn": 1,
-          "Cham": 1,
-          "Ansbach": 1,
-          "Bottrop, Stadt": 1,
-          "H\u00c3\u00b6xter": 1,
-          "Helmstedt": 1,
-          "Miesbach": 1,
-          "Nordsachsen": 1,
-          "Saarpfalz-Kreis": 1,
-          "Minden-L\u00c3\u00bcbbecke": 1,
-          "W\u00c3\u00bcrzburg, Stadt": 1,
-          "Aurich": 1,
-          "K\u00c3\u00b6ln, Stadt": 1,
-          "Ostholstein": 1,
-          "Kiel, Stadt": 1,
-          "Burgenlandkreis": 1,
-          "Gotha": 1,
-          "Peine": 1,
-          "Landkreis Rostock": 1,
-          "L\u00c3\u00bcneburg": 1,
-          "Erzgebirgskreis": 1,
-          "Freudenstadt": 1,
-          "Bayreuth, Stadt": 1,
-          "Hohenlohekreis": 1,
-          "Tirschenreuth": 1,
-          "B\u00c3\u00b6blingen": 1,
-          "Nordwestmecklenburg": 1,
-          "Rastatt": 1,
-          "Schwerin, Stadt": 1,
-          "Lahn-Dill-Kreis": 1,
-          "Gro\u00c3\u009f-Gerau": 1,
-          "Waldshut": 1,
-          "Starnberg": 1,
-          "Rottal-Inn": 1,
-          "Harz": 1,
-          "Solingen, Stadt": 1,
           "Dithmarschen": 1,
-          "Harburg": 1,
-          "Unstrut-Hainich-Kreis": 1,
-          "Pinneberg": 1,
-          "S\u00c3\u00bcdwestpfalz": 1,
-          "Emden, Stadt": 1,
-          "Herford": 1,
-          "Salzgitter, Stadt": 1,
-          "Oberallg\u00c3\u00a4u": 1,
-          "Eichst\u00c3\u00a4tt": 1,
-          "Greiz": 1,
-          "N\u00c3\u00bcrnberg, Stadt": 1,
-          "Hagen, Stadt": 1,
-          "Straubing-Bogen": 1,
-          "Osterholz": 1,
-          "Hof, Stadt": 1,
-          "Altmarkkreis Salzwedel": 1,
-          "Nordhausen": 1,
-          "Schwabach, Stadt": 1,
-          "Bad T\u00c3\u00b6lz-Wolfratshausen": 1,
-          "Gie\u00c3\u009fen": 1,
-          "Koblenz, Stadt": 1,
-          "Schwandorf": 1,
-          "Salzlandkreis": 1,
-          "Trier, Stadt": 1,
-          "Dessau-Ro\u00c3\u009flau, Stadt": 1,
-          "F\u00c3\u00bcrstenfeldbruck": 1,
-          "Recklinghausen": 1,
-          "Saale-Orla-Kreis": 1,
-          "Kulmbach": 1,
-          "St\u00c3\u00a4dteregion Aachen": 1,
-          "Ulm": 1,
-          "Schweinfurt": 1,
-          "Bad Kissingen": 1,
-          "Worms, Stadt": 1,
-          "Schwarzwald-Baar-Kreis": 1,
-          "Holzminden": 1,
-          "Neustadt an der Weinstra\u00c3\u009fe, Stadt": 1,
-          "Leverkusen, Stadt": 1,
-          "Rheingau-Taunus-Kreis": 1,
-          "Dillingen a.d.Donau": 1,
-          "Rosenheim, Stadt": 1,
-          "Rosenheim": 1,
-          "M\u00c3\u00bcnster, Stadt": 1,
-          "Friesland": 1,
-          "Schwalm-Eder-Kreis": 1,
-          "Oberhavel": 1,
-          "Wunsiedel i.Fichtelgebirge": 1,
-          "Erfurt, Stadt": 1,
-          "Emsland": 1,
-          "Alb-Donau-Kreis": 1,
-          "Wiesbaden, Stadt": 1,
-          "Rems-Murr-Kreis": 1,
-          "Bochum, Stadt": 1,
-          "Hamm, Stadt": 1,
-          "Traunstein": 1,
-          "Wolfsburg, Stadt": 1,
-          "Hersfeld-Rotenburg": 1,
-          "Halle (Saale), Stadt": 1,
-          "Ansbach, Stadt": 1,
-          "Forchheim": 1,
-          "S\u00c3\u00bcdliche Weinstra\u00c3\u009fe": 1,
-          "G\u00c3\u00b6ppingen": 1,
-          "Pforzheim": 1,
-          "Bad Kreuznach": 1,
-          "Region Hannover": 1,
-          "St. Wendel": 1,
-          "Ebersberg": 1,
-          "Essen, Stadt": 1,
-          "Straubing, Stadt": 1,
-          "Diepholz": 1,
-          "Potsdam, Stadt": 1,
-          "Hof": 1,
-          "Braunschweig, Stadt": 1,
-          "Wittenberg": 1,
-          "Hochtaunuskreis": 1,
-          "Regensburg, Stadt": 1,
-          "Mannheim": 1,
-          "Mittelsachsen": 1,
-          "Sigmaringen": 1,
-          "Kronach": 1,
-          "Schw\u00c3\u00a4bisch Hall": 1,
-          "Passau": 1,
-          "Kempten (Allg\u00c3\u00a4u), Stadt": 1,
-          "Eichsfeld": 1,
-          "Wuppertal, Stadt": 1,
-          "Osnabr\u00c3\u00bcck": 1,
-          "F\u00c3\u00bcrth, Stadt": 1,
-          "Zweibr\u00c3\u00bccken, Stadt": 1,
-          "Schleswig-Flensburg": 1,
-          "Cuxhaven": 1,
-          "Pfaffenhofen a.d.Ilm": 1,
-          "Osnabr\u00c3\u00bcck, Stadt": 1,
-          "L\u00c3\u00bcchow-Dannenberg": 1,
-          "Mansfeld-S\u00c3\u00bcdharz": 1,
-          "Speyer, Stadt": 1,
-          "Altenburger Land": 1,
-          "Dahme-Spreewald": 1,
-          "Pl\u00c3\u00b6n": 1,
-          "Grafschaft Bentheim": 1,
-          "Goslar": 1,
-          "Amberg, Stadt": 1,
-          "Rhein-Erft-Kreis": 1,
-          "Amberg-Sulzbach": 1,
-          "M\u00c3\u00b6nchengladbach, Stadt": 1,
-          "Dachau": 1,
-          "Wesermarsch": 1,
+          "Neuwied": 1,
           "Jerichower Land": 1,
-          "Emmendingen": 1,
-          "Siegen-Wittgenstein": 1,
-          "Magdeburg, Stadt": 1,
-          "Unterallg\u00c3\u00a4u": 1,
-          "Memmingen, Stadt": 1,
-          "Bautzen": 1,
-          "G\u00c3\u00bctersloh": 1,
-          "Augsburg, Stadt": 1,
-          "Hochsauerlandkreis": 1,
-          "Rhein-Sieg-Kreis": 1,
-          "Konstanz": 1,
-          "Bamberg, Stadt": 1,
-          "Odenwaldkreis": 1,
-          "Neu-Ulm": 1,
-          "M\u00c3\u00a4rkischer Kreis": 1,
-          "Heidelberg": 1,
-          "Spree-Nei\u00c3\u009fe": 1,
-          "Wolfenb\u00c3\u00bcttel": 1,
-          "Ammerland": 1,
-          "Berlin, Stadt": 1,
-          "Aschaffenburg, Stadt": 1,
-          "Rhein-Pfalz-Kreis": 1,
-          "Dresden, Stadt": 1,
-          "Ludwigsburg": 1,
-          "Northeim": 1,
-          "Rhein-Neckar-Kreis": 1,
-          "Lichtenfels": 1,
-          "Vorpommern-R\u00c3\u00bcgen": 1,
-          "Saarlouis": 1,
-          "Regen": 1,
-          "Bamberg": 1,
-          "Neumarkt i.d.OPf.": 1,
-          "Calw": 1,
-          "Deggendorf": 1,
-          "Augsburg": 1,
+          "Ravensburg": 1,
+          "Neustadt a.d.Aisch-Bad Windsheim": 1,
+          "Ebersberg": 1,
           "Hameln-Pyrmont": 1,
-          "Gelsenkirchen, Stadt": 1,
-          "T\u00c3\u00bcbingen": 1,
-          "Uelzen": 1,
-          "Rendsburg-Eckernf\u00c3\u00b6rde": 1,
-          "Oldenburg": 1,
-          "Rheinisch-Bergischer Kreis": 1,
-          "Lindau (Bodensee)": 1,
-          "Havelland": 1,
-          "Herzogtum Lauenburg": 1,
-          "Rhein-Lahn-Kreis": 1,
+          "Kleve": 1,
+          "Freising": 1,
+          "L\u00c3\u00bcneburg": 1,
+          "G\u00c3\u00b6rlitz": 1,
+          "Erlangen-H\u00c3\u00b6chstadt": 1,
           "Dortmund, Stadt": 1,
-          "Freiburg im Breisgau": 1,
-          "M\u00c3\u00a4rkisch-Oderland": 1,
-          "Freyung-Grafenau": 1,
-          "Bernkastel-Wittlich": 1,
-          "Ingolstadt, Stadt": 1,
-          "Wei\u00c3\u009fenburg-Gunzenhausen": 1,
+          "Emmendingen": 1,
+          "Hamburg, Stadt": 1,
+          "Wiesbaden, Stadt": 1,
           "N\u00c3\u00bcrnberger Land": 1,
+          "Kelheim": 1,
+          "Mecklenburgische Seenplatte": 1,
+          "Eichst\u00c3\u00a4tt": 1,
+          "M\u00c3\u00bcnchen, Stadt": 1,
+          "Salzlandkreis": 1,
+          "Dessau-Ro\u00c3\u009flau, Stadt": 1,
+          "Unstrut-Hainich-Kreis": 1,
+          "Neuburg-Schrobenhausen": 1,
+          "Saale-Orla-Kreis": 1,
+          "Bad Kreuznach": 1,
+          "Rosenheim": 1,
+          "Ludwigslust-Parchim": 1,
+          "Neumarkt i.d.OPf.": 1,
+          "Koblenz, Stadt": 1,
+          "Wetteraukreis": 1,
+          "Unna": 1,
+          "Nienburg (Weser)": 1,
+          "Merzig-Wadern": 1,
+          "Freiburg im Breisgau": 1,
+          "Bodenseekreis": 1,
+          "Steinburg": 1,
+          "Schaumburg": 1,
+          "Coburg, Stadt": 1,
+          "Greiz": 1,
+          "Emden, Stadt": 1,
+          "Saarpfalz-Kreis": 1,
+          "Ostalbkreis": 1,
+          "Rh\u00c3\u00b6n-Grabfeld": 1,
+          "Sonneberg": 1,
+          "Kempten (Allg\u00c3\u00a4u), Stadt": 1,
+          "Landkreis Rostock": 1,
+          "Regionalverband Saarbr\u00c3\u00bccken": 1,
+          "Oberhausen, Stadt": 1,
+          "Wittenberg": 1,
+          "Waldeck-Frankenberg": 1,
+          "M\u00c3\u00bclheim an der Ruhr, Stadt": 1,
+          "Friesland": 1,
+          "Passau, Stadt": 1,
+          "Donau-Ries": 1,
+          "F\u00c3\u00bcrstenfeldbruck": 1,
+          "Aurich": 1,
+          "B\u00c3\u00b6blingen": 1,
+          "Heinsberg": 1,
+          "Mainz, kreisfreie Stadt": 1,
+          "Nordhausen": 1,
+          "Vogtlandkreis": 1,
+          "Main-Spessart": 1,
+          "Vorpommern-Greifswald": 1,
+          "Main-Kinzig-Kreis": 1,
+          "Peine": 1,
+          "Saarlouis": 1,
+          "Osnabr\u00c3\u00bcck, Stadt": 1,
+          "Alt\u00c3\u00b6tting": 1,
+          "M\u00c3\u00bcnchen": 1,
+          "Burgenlandkreis": 1,
+          "Hildburghausen": 1,
+          "Segeberg": 1,
+          "Tirschenreuth": 1,
+          "Cottbus, Stadt": 1,
+          "Wolfsburg, Stadt": 1,
+          "Hagen, Stadt": 1,
+          "Herzogtum Lauenburg": 1,
+          "Rheinisch-Bergischer Kreis": 1,
+          "G\u00c3\u00b6ppingen": 1,
+          "Minden-L\u00c3\u00bcbbecke": 1,
+          "G\u00c3\u00bcnzburg": 1,
+          "Starnberg": 1,
+          "Ha\u00c3\u009fberge": 1,
+          "St\u00c3\u00a4dteregion Aachen": 1,
+          "Cham": 1,
+          "Regensburg": 1,
+          "Bremerhaven, Stadt": 1,
+          "Vechta": 1,
+          "Schw\u00c3\u00a4bisch Hall": 1,
+          "Kiel, Stadt": 1,
+          "D\u00c3\u00bcren": 1,
+          "Rhein-Erft-Kreis": 1,
+          "Straubing-Bogen": 1,
+          "M\u00c3\u00b6nchengladbach, Stadt": 1,
+          "Rhein-Sieg-Kreis": 1,
+          "Barnim": 1,
+          "Rostock, Stadt": 1,
+          "Nordwestmecklenburg": 1,
+          "Wartburgkreis": 1,
+          "Unterallg\u00c3\u00a4u": 1,
+          "Heidekreis": 1,
+          "Cloppenburg": 1,
+          "Paderborn": 1,
+          "Rendsburg-Eckernf\u00c3\u00b6rde": 1,
+          "Region Hannover": 1,
+          "Essen, Stadt": 1,
+          "Tuttlingen": 1,
+          "Passau": 1,
+          "Osnabr\u00c3\u00bcck": 1,
+          "Wunsiedel i.Fichtelgebirge": 1,
+          "Saalekreis": 1,
+          "Straubing, Stadt": 1,
+          "Schmalkalden-Meiningen": 1,
+          "W\u00c3\u00bcrzburg, Stadt": 1,
+          "Enzkreis": 1,
+          "Ennepe-Ruhr-Kreis": 1,
+          "Rastatt": 1,
+          "Schleswig-Flensburg": 1,
+          "G\u00c3\u00b6ttingen": 1,
+          "Vogelsbergkreis": 1,
+          "Dresden, Stadt": 1,
+          "Frankfurt (Oder), Stadt": 1,
+          "Dingolfing-Landau": 1,
+          "Bochum, Stadt": 1,
+          "Schwalm-Eder-Kreis": 1,
+          "Garmisch-Partenkirchen": 1,
+          "Landsberg am Lech": 1,
+          "Schwarzwald-Baar-Kreis": 1,
+          "Erlangen, Stadt": 1,
+          "Stade": 1,
+          "Landshut, Stadt": 1,
+          "L\u00c3\u00b6rrach": 1,
+          "Verden": 1,
+          "Rhein-Neckar-Kreis": 1,
+          "Rhein-Lahn-Kreis": 1,
+          "Krefeld, Stadt": 1,
+          "Potsdam-Mittelmark": 1,
+          "Schweinfurt, Stadt": 1,
+          "Pirmasens, Stadt": 1,
+          "Roth": 1,
+          "Breisgau-Hochschwarzwald": 1,
+          "Goslar": 1,
+          "Duisburg, Stadt": 1,
+          "Birkenfeld": 1,
+          "Ammerland": 1,
+          "Neustadt a.d.Waldnaab": 1,
+          "Lahn-Dill-Kreis": 1,
+          "Mansfeld-S\u00c3\u00bcdharz": 1,
+          "Kaufbeuren, Stadt": 1,
+          "Mittelsachsen": 1,
+          "Germersheim": 1,
+          "Eichsfeld": 1,
+          "Rhein-Hunsr\u00c3\u00bcck-Kreis": 1,
+          "Vorpommern-R\u00c3\u00bcgen": 1,
+          "H\u00c3\u00b6xter": 1,
+          "Chemnitz, Stadt": 1,
+          "Schwandorf": 1,
+          "Dahme-Spreewald": 1,
+          "Rosenheim, Stadt": 1,
+          "Cochem-Zell": 1,
+          "Rheingau-Taunus-Kreis": 1,
+          "Neckar-Odenwald-Kreis": 1,
+          "K\u00c3\u00b6ln, Stadt": 1,
+          "Gera, Stadt": 1,
+          "Recklinghausen": 1,
+          "Hochsauerlandkreis": 1,
+          "Oberallg\u00c3\u00a4u": 1,
+          "L\u00c3\u00bcbeck, Stadt": 1,
+          "N\u00c3\u00bcrnberg, Stadt": 1,
+          "Kitzingen": 1,
+          "Odenwaldkreis": 1,
+          "Nordfriesland": 1,
+          "Frankenthal (Pfalz), Stadt": 1,
+          "Gie\u00c3\u009fen": 1,
+          "Steinfurt": 1,
+          "Oberspreewald-Lausitz": 1,
+          "Konstanz": 1,
+          "Stuttgart": 1,
+          "S\u00c3\u00a4chsische Schweiz-Osterzgebirge": 1,
+          "Cuxhaven": 1,
+          "Alb-Donau-Kreis": 1,
+          "Bamberg": 1,
+          "Hohenlohekreis": 1,
+          "Osterholz": 1,
+          "Weimar, Stadt": 1,
+          "Bamberg, Stadt": 1,
+          "M\u00c3\u00a4rkischer Kreis": 1,
+          "Brandenburg an der Havel, Stadt": 1,
+          "Alzey-Worms": 1,
+          "Halle (Saale), Stadt": 1,
+          "Dillingen a.d.Donau": 1,
+          "Ansbach, Stadt": 1,
+          "Miltenberg": 1,
+          "Aschaffenburg, Stadt": 1,
+          "L\u00c3\u00bcchow-Dannenberg": 1,
+          "Bremen, Stadt": 1,
+          "Warendorf": 1,
+          "St. Wendel": 1,
+          "Celle": 1,
+          "Erzgebirgskreis": 1,
+          "Bautzen": 1,
+          "Rhein-Kreis Neuss": 1,
+          "Altenkirchen (Westerwald)": 1,
+          "Siegen-Wittgenstein": 1,
+          "Rottweil": 1,
+          "Baden-Baden": 1,
+          "Mei\u00c3\u009fen": 1,
+          "Weiden i.d.OPf., Stadt": 1,
+          "Ostprignitz-Ruppin": 1,
+          "Bad T\u00c3\u00b6lz-Wolfratshausen": 1,
+          "Gelsenkirchen, Stadt": 1,
+          "Westerwaldkreis": 1,
+          "Salzgitter, Stadt": 1,
+          "Eifelkreis Bitburg-Pr\u00c3\u00bcm": 1,
+          "Wesel": 1,
+          "Frankfurt am Main, Stadt": 1,
+          "Amberg-Sulzbach": 1,
+          "Hildesheim": 1,
+          "Harburg": 1,
+          "Ostallg\u00c3\u00a4u": 1,
+          "Marburg-Biedenkopf": 1,
+          "M\u00c3\u00a4rkisch-Oderland": 1,
+          "B\u00c3\u00b6rde": 1,
+          "Landau in der Pfalz, Stadt": 1,
+          "Kassel": 1,
+          "M\u00c3\u00bchldorf a.Inn": 1,
+          "Speyer, Stadt": 1,
+          "Freyung-Grafenau": 1,
+          "Pforzheim": 1,
+          "Ingolstadt, Stadt": 1,
+          "Berlin, Stadt": 1,
+          "Aschaffenburg": 1,
+          "Neu-Ulm": 1,
+          "S\u00c3\u00bcdwestpfalz": 1,
+          "Viersen": 1,
+          "Darmstadt-Dieburg": 1,
+          "Ludwigsburg": 1,
+          "Herford": 1,
+          "Offenbach": 1,
+          "Northeim": 1,
+          "Oberhavel": 1,
+          "Ortenaukreis": 1,
+          "Holzminden": 1,
+          "Herne, Stadt": 1,
+          "Diepholz": 1,
+          "Coesfeld": 1,
+          "W\u00c3\u00bcrzburg": 1,
+          "Wilhelmshaven, Stadt": 1,
+          "G\u00c3\u00bctersloh": 1,
+          "Ostholstein": 1,
+          "Prignitz": 1,
+          "Sigmaringen": 1,
+          "Flensburg, Stadt": 1,
+          "Anhalt-Bitterfeld": 1,
+          "Schweinfurt": 1,
+          "Trier-Saarburg": 1,
+          "Heidenheim": 1,
+          "Wesermarsch": 1,
+          "Schwabach, Stadt": 1,
+          "Offenbach am Main, Stadt": 1,
+          "Oberbergischer Kreis": 1,
+          "Werra-Mei\u00c3\u009fner-Kreis": 1,
+          "Reutlingen": 1,
+          "Berchtesgadener Land": 1,
+          "Schwerin, Stadt": 1,
+          "Regensburg, Stadt": 1,
+          "Helmstedt": 1,
+          "Wuppertal, Stadt": 1,
+          "Bottrop, Stadt": 1,
+          "Erding": 1,
+          "Forchheim": 1,
+          "Oder-Spree": 1,
+          "Teltow-Fl\u00c3\u00a4ming": 1,
+          "Kronach": 1,
+          "Zwickau": 1,
+          "Ilm-Kreis": 1,
+          "Main-Taunus-Kreis": 1,
+          "Gro\u00c3\u009f-Gerau": 1,
+          "Calw": 1,
+          "Kaiserslautern": 1,
+          "Bonn, Stadt": 1,
+          "Olpe": 1,
+          "Limburg-Weilburg": 1,
+          "Soest": 1,
+          "Kusel": 1,
+          "D\u00c3\u00bcsseldorf, Stadt": 1,
+          "Donnersbergkreis": 1,
+          "Wolfenb\u00c3\u00bcttel": 1,
+          "Freudenstadt": 1,
+          "Pinneberg": 1,
+          "Dachau": 1,
+          "Weilheim-Schongau": 1,
+          "Leer": 1,
+          "Amberg, Stadt": 1,
+          "Hersfeld-Rotenburg": 1,
+          "Ulm": 1,
+          "Uckermark": 1,
+          "Stendal": 1,
+          "Main-Tauber-Kreis": 1,
+          "Bergstra\u00c3\u009fe": 1,
+          "Euskirchen": 1,
+          "Oldenburg": 1,
+          "Ansbach": 1,
+          "Kyffh\u00c3\u00a4userkreis": 1,
+          "Hamm, Stadt": 1,
+          "Pl\u00c3\u00b6n": 1,
+          "Neum\u00c3\u00bcnster, Stadt": 1,
+          "Gotha": 1,
+          "Solingen, Stadt": 1,
+          "Heidelberg": 1,
+          "Suhl, Stadt": 1,
+          "Esslingen": 1,
+          "Landshut": 1,
+          "Rottal-Inn": 1,
+          "S\u00c3\u00b6mmerda": 1,
+          "Augsburg": 1,
+          "Lindau (Bodensee)": 1,
+          "Kaiserslautern, Stadt": 1,
+          "Braunschweig, Stadt": 1,
+          "Ludwigshafen am Rhein, Stadt": 1,
+          "Zollernalbkreis": 1,
+          "Bielefeld, Stadt": 1,
+          "M\u00c3\u00bcnster, Stadt": 1,
+          "Spree-Nei\u00c3\u009fe": 1,
+          "Altmarkkreis Salzwedel": 1,
           "Wittmund": 1,
           "F\u00c3\u00bcrth": 1,
-          "Neckar-Odenwald-Kreis": 1,
-          "Heidekreis": 1,
-          "Weimar, Stadt": 1,
-          "Regionalverband Saarbr\u00c3\u00bccken": 1,
-          "Kusel": 1,
-          "Ha\u00c3\u009fberge": 1,
-          "M\u00c3\u00bcnchen": 1
+          "Mettmann": 1,
+          "Borken": 1,
+          "Oldenburg (Oldenburg), Stadt": 1,
+          "Hof, Stadt": 1,
+          "Worms, Stadt": 1,
+          "Eisenach, Stadt": 1,
+          "Osterode am Harz": 1,
+          "Stormarn": 1,
+          "Altenburger Land": 1,
+          "Rems-Murr-Kreis": 1,
+          "Erfurt, Stadt": 1,
+          "Magdeburg, Stadt": 1,
+          "Kassel, Stadt": 1,
+          "Saale-Holzland-Kreis": 1,
+          "Delmenhorst, Stadt": 1,
+          "Remscheid, Stadt": 1,
+          "Rhein-Pfalz-Kreis": 1,
+          "Gifhorn": 1,
+          "Bernkastel-Wittlich": 1,
+          "Deggendorf": 1,
+          "Wei\u00c3\u009fenburg-Gunzenhausen": 1,
+          "Hof": 1,
+          "F\u00c3\u00bcrth, Stadt": 1,
+          "S\u00c3\u00bcdliche Weinstra\u00c3\u009fe": 1,
+          "Traunstein": 1,
+          "Nordsachsen": 1,
+          "Vulkaneifel": 1,
+          "Aichach-Friedberg": 1,
+          "Mannheim": 1,
+          "T\u00c3\u00bcbingen": 1,
+          "Miesbach": 1,
+          "Leverkusen, Stadt": 1,
+          "Coburg": 1,
+          "Lippe": 1,
+          "Mainz-Bingen": 1,
+          "Darmstadt, Stadt": 1,
+          "Bayreuth, Stadt": 1,
+          "Elbe-Elster": 1,
+          "Hochtaunuskreis": 1,
+          "Zweibr\u00c3\u00bccken, Stadt": 1,
+          "Fulda": 1,
+          "Neunkirchen": 1,
+          "Bad Kissingen": 1,
+          "Trier, Stadt": 1,
+          "Neustadt an der Weinstra\u00c3\u009fe, Stadt": 1,
+          "Uelzen": 1,
+          "Waldshut": 1,
+          "Emsland": 1,
+          "Havelland": 1,
+          "Lichtenfels": 1,
+          "Potsdam, Stadt": 1,
+          "Bayreuth": 1,
+          "Rotenburg (W\u00c3\u00bcmme)": 1,
+          "Kulmbach": 1,
+          "Mayen-Koblenz": 1,
+          "Saalfeld-Rudolstadt": 1,
+          "Bad D\u00c3\u00bcrkheim": 1,
+          "Ahrweiler": 1,
+          "Regen": 1,
+          "Leipzig, Stadt": 1,
+          "Pfaffenhofen a.d.Ilm": 1,
+          "Harz": 1,
+          "Weimarer Land": 1,
+          "Biberach": 1,
+          "Grafschaft Bentheim": 1,
+          "Leipzig": 1,
+          "Augsburg, Stadt": 1,
+          "Memmingen, Stadt": 1
         }
       ],
       [
@@ -2486,26 +2355,10 @@
   ],
   [
     "change",
-    "variables.popdens.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.popdens.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.popdens.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3159,26 +3012,10 @@
   ],
   [
     "change",
-    "variables.gdppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3822,22 +3659,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vio.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vio",
     [
@@ -4451,26 +4272,10 @@
   ],
   [
     "change",
-    "variables.age65_13r.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.age65_13r.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.age65_13r.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5115,22 +4920,6 @@
     [
       "34011",
       34011.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5787,26 +5576,10 @@
   ],
   [
     "change",
-    "variables.sgb2q_2014_r.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sgb2q_2014_r.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sgb2q_2014_r.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6459,26 +6232,10 @@
   ],
   [
     "change",
-    "variables.unemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7131,26 +6888,10 @@
   ],
   [
     "change",
-    "variables.nonnat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nonnat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nonnat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7807,26 +7548,10 @@
   ],
   [
     "change",
-    "variables.crime.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.crime.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.crime.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8483,26 +8208,10 @@
   ],
   [
     "change",
-    "variables.refugees.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.refugees.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.refugees.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9150,22 +8859,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tax_13r.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tax_13r.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tax_13r",
     [
@@ -9807,22 +9500,6 @@
     [
       "73231744",
       73231744.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ausg_br2014_2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ausg_br2014_2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10479,26 +10156,10 @@
   ],
   [
     "change",
-    "variables.siedl2014_r.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.siedl2014_r.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.siedl2014_r.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11151,26 +10812,10 @@
   ],
   [
     "change",
-    "variables.left.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.left.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.left.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11827,26 +11472,10 @@
   ],
   [
     "change",
-    "variables.geshaushalt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.geshaushalt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.geshaushalt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12500,26 +12129,10 @@
   ],
   [
     "change",
-    "variables.dis_ov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dis_ov.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dis_ov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13176,26 +12789,10 @@
   ],
   [
     "change",
-    "variables.dis_gs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dis_gs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dis_gs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13852,26 +13449,10 @@
   ],
   [
     "change",
-    "variables.dis_ss.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dis_ss.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dis_ss.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14528,26 +14109,10 @@
   ],
   [
     "change",
-    "variables.dis_ha2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dis_ha2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dis_ha2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15191,22 +14756,6 @@
     ]
   ],
   [
-    "change",
-    "variables.land2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.land2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.land2",
     [
@@ -15776,22 +15325,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vio2014.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vio2014.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vio2014",
     [
@@ -16107,26 +15640,10 @@
   ],
   [
     "change",
-    "variables.lge.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lge.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lge.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16738,22 +16255,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -16784,11 +16285,11 @@
       [
         "fewestValues",
         [
-          "BY4",
-          "W15",
           "BE1",
-          "BE2",
-          "HH1"
+          "NW4",
+          "NI2",
+          "W15",
+          "BY4"
         ]
       ],
       [
@@ -16816,85 +16317,85 @@
         {
           "TH2": 14,
           "BY9": 13,
-          "BY8": 11,
           "BY11": 11,
+          "BY8": 11,
           "BY1": 11,
-          "RP3": 10,
           "RP1": 10,
+          "RP3": 10,
           "TH1": 9,
           "RP2": 9,
           "BY6": 8,
+          "NI7": 8,
           "NI6": 8,
           "BY10": 8,
-          "NI7": 8,
           "BY7": 7,
-          "NI1": 7,
-          "BY2": 7,
-          "BY12": 7,
-          "BY3": 7,
-          "NI3": 7,
           "RP4": 7,
-          "BR3": 7,
+          "BY12": 7,
+          "BY2": 7,
+          "NI3": 7,
           "ST2": 7,
           "SH1": 7,
+          "NI1": 7,
           "ST1": 7,
-          "NI4": 6,
-          "BW10": 6,
-          "BR1": 6,
+          "BY3": 7,
+          "BR3": 7,
           "SL1": 6,
-          "BW2": 5,
+          "BW10": 6,
+          "NI4": 6,
+          "BR1": 6,
           "BR2": 5,
           "NI8": 5,
-          "HE4": 5,
-          "BY5": 5,
-          "HE1": 5,
-          "HE2": 5,
-          "BW1": 5,
-          "BW4": 5,
           "HE6": 5,
-          "BW6": 5,
+          "BY5": 5,
+          "BW1": 5,
           "NW5": 5,
-          "NW9": 4,
-          "BW9": 4,
-          "NW7": 4,
-          "NW16": 4,
-          "MV1": 4,
-          "BW3": 4,
-          "MV2": 4,
-          "NI5": 4,
+          "BW2": 5,
+          "BW4": 5,
+          "HE2": 5,
+          "BW6": 5,
+          "HE4": 5,
+          "HE1": 5,
           "SH3": 4,
           "NW13": 4,
-          "SN4": 4,
           "NW17": 4,
+          "NW7": 4,
+          "NI5": 4,
+          "MV1": 4,
+          "MV2": 4,
+          "BW9": 4,
+          "SN4": 4,
+          "NW16": 4,
+          "NW9": 4,
+          "BW3": 4,
           "SH2": 4,
-          "SN3": 3,
+          "HE3": 3,
           "HE5": 3,
-          "SN2": 3,
-          "BW11": 3,
+          "BW5": 3,
+          "SN3": 3,
           "SN1": 3,
+          "BW11": 3,
           "NW8": 3,
           "NW1": 3,
           "NW18": 3,
-          "BW5": 3,
           "NW14": 3,
-          "HE3": 3,
-          "NW10": 2,
-          "NW12": 2,
-          "BW7": 2,
+          "SN2": 3,
           "NW15": 2,
+          "NW6": 2,
+          "NW12": 2,
+          "NW10": 2,
+          "NW2": 2,
           "NW11": 2,
           "NW3": 2,
-          "NW2": 2,
-          "BW8": 2,
-          "NW6": 2,
+          "BW7": 2,
           "HB1": 2,
-          "W15": 1,
-          "NI2": 1,
+          "BW8": 2,
+          "BY4": 1,
           "HH1": 1,
           "BE2": 1,
-          "BE1": 1,
+          "W15": 1,
+          "NI2": 1,
           "NW4": 1,
-          "BY4": 1
+          "BE1": 1
         }
       ],
       [
@@ -17156,26 +16657,10 @@
   ],
   [
     "change",
-    "variables.assoc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.assoc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.assoc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17828,26 +17313,10 @@
   ],
   [
     "change",
-    "variables.trust.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.trust.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.trust.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18500,26 +17969,10 @@
   ],
   [
     "change",
-    "variables.volunt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.volunt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.volunt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19176,26 +18629,10 @@
   ],
   [
     "change",
-    "variables.lge_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lge_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lge_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19793,182 +19230,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "kkziff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "right": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "popdens": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age65_13r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sgb2q_2014_r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nonnat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "crime": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "refugees": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tax_13r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ausg_br2014_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "siedl2014_r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "geshaushalt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dis_ov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dis_gs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dis_ss": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dis_ha2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "land2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vio2014": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "assoc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trust": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "volunt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lge_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

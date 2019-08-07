@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1174
-      ],
-      [
-        "variableCount",
-        33
-      ],
-      [
-        "dataSource",
-        {
-          "name": "PEXMHA_CHACO_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 112116
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.prov.median",
     [
@@ -122,22 +39,6 @@
     [
       "6",
       6
-    ]
-  ],
-  [
-    "change",
-    "variables.prov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.prov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -370,22 +271,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.comuna.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.comuna.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -944,22 +829,6 @@
     ]
   ],
   [
-    "change",
-    "variables.circ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.circ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.circ",
     [
@@ -990,11 +859,11 @@
       [
         "fewestValues",
         [
+          "64",
+          "75",
           "51",
-          "28",
-          "37",
-          "0028A",
-          "67"
+          "67",
+          "129"
         ]
       ],
       [
@@ -1028,122 +897,122 @@
           "98": 34,
           "65": 29,
           "136": 28,
-          "94": 23,
           "108": 23,
+          "94": 23,
           "89": 23,
+          "0011B": 21,
           "0013B": 21,
           "0016B": 21,
-          "0011B": 21,
           "78": 20,
           "15": 19,
           "18": 18,
+          "0008B": 17,
           "104": 17,
           "0007B": 17,
           "0008A": 17,
-          "0008B": 17,
-          "79": 16,
           "29": 16,
+          "79": 16,
           "113": 15,
-          "0022B": 14,
-          "112": 14,
-          "74": 14,
-          "126": 14,
           "0007A": 14,
+          "74": 14,
           "80": 14,
+          "126": 14,
+          "112": 14,
+          "0022B": 14,
           "91": 13,
-          "0022A": 13,
           "0011A": 13,
-          "12": 13,
           "122": 13,
+          "0022A": 13,
+          "12": 13,
+          "17": 11,
           "133": 11,
           "1": 11,
-          "38": 11,
           "53": 11,
-          "17": 11,
+          "38": 11,
           "52": 11,
           "40": 10,
+          "93": 9,
+          "0005A": 9,
           "2": 9,
           "3": 9,
-          "93": 9,
           "0013A": 9,
-          "0005A": 9,
-          "0005B": 8,
-          "10": 8,
-          "54": 8,
-          "0019A": 8,
           "92": 8,
-          "111": 7,
+          "10": 8,
+          "0005B": 8,
+          "0019A": 8,
+          "54": 8,
           "21": 7,
-          "26": 7,
           "23": 7,
+          "111": 7,
+          "26": 7,
           "90": 7,
-          "4": 6,
-          "84": 6,
           "100": 6,
-          "60": 6,
           "61": 6,
-          "130": 6,
+          "60": 6,
           "115": 6,
-          "14": 5,
-          "131": 5,
-          "44": 5,
-          "0135B": 5,
+          "4": 6,
+          "130": 6,
+          "84": 6,
           "103": 5,
           "128": 5,
-          "0019B": 5,
           "0134B": 5,
+          "0019B": 5,
+          "131": 5,
           "47": 5,
+          "14": 5,
           "0016C": 5,
-          "86": 4,
-          "43": 4,
-          "6": 4,
-          "32": 4,
-          "49": 4,
-          "66": 4,
+          "44": 5,
+          "0135B": 5,
           "0138B": 4,
+          "49": 4,
+          "43": 4,
           "41": 4,
+          "66": 4,
+          "86": 4,
+          "121": 4,
+          "6": 4,
+          "9": 4,
+          "32": 4,
           "99": 4,
           "101": 4,
-          "121": 4,
-          "9": 4,
+          "82": 3,
           "134.0": 3,
           "68": 3,
-          "0134A": 3,
-          "0055B": 3,
           "77": 3,
-          "0118A": 3,
-          "132": 3,
-          "82": 3,
           "34": 3,
-          "58": 2,
-          "95": 2,
-          "124": 2,
+          "0055B": 3,
+          "132": 3,
+          "0118A": 3,
+          "0134A": 3,
           "109": 2,
-          "123": 2,
-          "0135A": 2,
           "137": 2,
-          "107": 2,
-          "42": 2,
+          "123": 2,
+          "58": 2,
           "125": 2,
-          "97": 2,
-          "0055A": 2,
+          "124": 2,
+          "42": 2,
           "85": 2,
-          "0028A": 1,
-          "28": 1,
+          "107": 2,
+          "95": 2,
+          "97": 2,
+          "0135A": 2,
+          "0055A": 2,
           "75": 1,
-          "110": 1,
+          "33": 1,
+          "70": 1,
+          "129": 1,
           "51": 1,
+          "118": 1,
           "63": 1,
+          "64": 1,
+          "37": 1,
+          "28": 1,
+          "0028A": 1,
+          "0117A": 1,
+          "69": 1,
           "67": 1,
           "30": 1,
-          "118": 1,
-          "64": 1,
-          "69": 1,
-          "0117A": 1,
-          "37": 1,
-          "129": 1,
-          "33": 1,
-          "70": 1
+          "110": 1
         }
       ],
       [
@@ -1439,22 +1308,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.mesa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mesa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2098,22 +1951,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gral_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gral_14",
     [
@@ -2738,22 +2575,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_501.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_501.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3397,22 +3218,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gral_519.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_519.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gral_519",
     [
@@ -4050,22 +3855,6 @@
     [
       "199",
       199
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9001.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9001.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4709,22 +4498,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gral_9002.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9002.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gral_9002",
     [
@@ -5365,22 +5138,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gral_9003.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9003.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gral_9003",
     [
@@ -5639,22 +5396,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9004.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9004.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6292,22 +6033,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gral_9005.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9005.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gral_9005",
     [
@@ -6886,22 +6611,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gral_9006.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gral_9006.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gral_9006",
     [
@@ -7173,22 +6882,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7791,22 +7484,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_60.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_60.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_60",
     [
@@ -8384,22 +8061,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_179.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_179.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8989,22 +8650,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_182.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_182.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_182",
     [
@@ -9587,22 +9232,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_518.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_518.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10200,22 +9829,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3118.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3118.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10859,22 +10472,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_3119.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3119.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_3119",
     [
@@ -11461,22 +11058,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_3120.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3120.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_3120",
     [
@@ -12052,22 +11633,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3122.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3122.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12704,22 +12269,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3123.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3123.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13363,22 +12912,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_3124.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_3124.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_3124",
     [
@@ -14016,22 +13549,6 @@
     [
       "199",
       199
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9001.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9001.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14675,22 +14192,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_9002.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9002.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_9002",
     [
@@ -15331,22 +14832,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_9003.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9003.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_9003",
     [
@@ -15623,22 +15108,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9004.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9004.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16278,22 +15747,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_9005.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9005.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_9005",
     [
@@ -16884,22 +16337,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_9006.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_9006.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_9006",
     [
@@ -17165,22 +16602,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_501.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_501.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17824,22 +17245,6 @@
     ]
   ],
   [
-    "change",
-    "variables.paso_519.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paso_519.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.paso_519",
     [
@@ -18480,22 +17885,6 @@
     ]
   ],
   [
-    "change",
-    "variables.votantes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.votantes.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.votantes",
     [
@@ -19090,197 +18479,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:44",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "prov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comuna": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "circ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mesa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_501": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_519": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_9001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_9002": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_9003": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_9004": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_9005": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gral_9006": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_60": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_179": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_182": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_518": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_3118": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_3119": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_3120": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_3122": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_3123": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_3124": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_9001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_9002": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_9003": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_9004": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_9005": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_9006": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_501": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paso_519": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "votantes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

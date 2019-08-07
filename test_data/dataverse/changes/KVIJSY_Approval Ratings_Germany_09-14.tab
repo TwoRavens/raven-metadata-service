@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        255
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "KVIJSY_Approval Ratings_Germany_09-14.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 16149
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -125,22 +42,6 @@
     [
       "2009",
       2009
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -367,26 +268,10 @@
     [
       "Oktober",
       [
-        "Dezember",
+        "Oktober",
         "November",
-        "Oktober"
+        "Dezember"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.month.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.month.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -420,11 +305,11 @@
       [
         "fewestValues",
         [
-          "September",
-          "Februar",
           "April",
-          "Mai",
-          "Januar"
+          "Juli",
+          "Februar",
+          "Januar",
+          "September"
         ]
       ],
       [
@@ -450,18 +335,18 @@
       [
         "plotValues",
         {
-          "Oktober": 25,
           "November": 25,
           "Dezember": 25,
-          "M\ufffd\ufffdrz": 20,
+          "Oktober": 25,
           "Mai": 20,
-          "Juli": 20,
-          "Juni": 20,
-          "Januar": 20,
           "August": 20,
-          "April": 20,
+          "M\ufffd\ufffdrz": 20,
+          "Juni": 20,
+          "September": 20,
+          "Januar": 20,
           "Februar": 20,
-          "September": 20
+          "Juli": 20,
+          "April": 20
         }
       ],
       [
@@ -643,22 +528,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.month_no.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.month_no.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -931,28 +800,12 @@
     [
       "SPD",
       [
-        "Grune",
         "SPD",
         "FDP",
-        "CDU",
-        "CSU"
+        "Grune",
+        "CSU",
+        "CDU"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -986,11 +839,11 @@
       [
         "fewestValues",
         [
-          "Grune",
           "SPD",
           "FDP",
-          "CDU",
-          "CSU"
+          "Grune",
+          "CSU",
+          "CDU"
         ]
       ],
       [
@@ -1016,11 +869,11 @@
       [
         "plotValues",
         {
-          "CSU": 51,
           "CDU": 51,
+          "CSU": 51,
+          "Grune": 51,
           "FDP": 51,
-          "SPD": 51,
-          "Grune": 51
+          "SPD": 51
         }
       ],
       [
@@ -1159,28 +1012,12 @@
     [
       "v8",
       [
-        "v9",
+        "v11",
         "v8",
         "v10",
         "v12",
-        "v11"
+        "v9"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.variable.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.variable.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1214,11 +1051,11 @@
       [
         "fewestValues",
         [
-          "v9",
+          "v11",
           "v8",
           "v10",
           "v12",
-          "v11"
+          "v9"
         ]
       ],
       [
@@ -1244,11 +1081,11 @@
       [
         "plotValues",
         {
-          "v11": 51,
           "v12": 51,
           "v10": 51,
+          "v9": 51,
           "v8": 51,
-          "v9": 51
+          "v11": 51
         }
       ],
       [
@@ -1421,22 +1258,6 @@
     [
       "882",
       882
-    ]
-  ],
-  [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2093,26 +1914,10 @@
   ],
   [
     "change",
-    "variables.mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2769,26 +2574,10 @@
   ],
   [
     "change",
-    "variables.sd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3436,22 +3225,6 @@
     ]
   ],
   [
-    "change",
-    "variables.partyid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.partyid",
     [
@@ -3717,22 +3490,6 @@
     [
       "597",
       597.0
-    ]
-  ],
-  [
-    "change",
-    "variables.modate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.modate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4389,26 +4146,10 @@
   ],
   [
     "change",
-    "variables.mean_cdu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_cdu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_cdu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5061,26 +4802,10 @@
   ],
   [
     "change",
-    "variables.mean_csu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_csu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_csu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5734,26 +5459,10 @@
   ],
   [
     "change",
-    "variables.mean_fdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_fdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_fdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6351,97 +6060,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:18:22",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "month": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "month_no": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "variable": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "modate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_cdu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_csu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_fdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

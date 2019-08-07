@@ -1,114 +1,15 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        4
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "T8OYHT_representation_aff.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 545
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.affiliation.mode",
     [
       "FDP",
       [
-        "SP",
-        "FDP",
         "CVP",
-        "SVP"
+        "SVP",
+        "SP",
+        "FDP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.affiliation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.affiliation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -142,10 +43,10 @@
       [
         "fewestValues",
         [
-          "SP",
-          "FDP",
           "CVP",
-          "SVP"
+          "SVP",
+          "SP",
+          "FDP"
         ]
       ],
       [
@@ -171,10 +72,10 @@
       [
         "plotValues",
         {
-          "SVP": 1,
-          "CVP": 1,
+          "SP": 1,
           "FDP": 1,
-          "SP": 1
+          "SVP": 1,
+          "CVP": 1
         }
       ],
       [
@@ -361,26 +262,10 @@
   ],
   [
     "change",
-    "variables.pe0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pe0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pe0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -653,26 +538,10 @@
   ],
   [
     "change",
-    "variables.se0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -945,26 +814,10 @@
   ],
   [
     "change",
-    "variables.pe1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pe1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pe1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1237,26 +1090,10 @@
   ],
   [
     "change",
-    "variables.se1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1529,26 +1366,10 @@
   ],
   [
     "change",
-    "variables.pe2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pe2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pe2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1821,26 +1642,10 @@
   ],
   [
     "change",
-    "variables.se2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2113,26 +1918,10 @@
   ],
   [
     "change",
-    "variables.pe3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pe3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pe3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2405,26 +2194,10 @@
   ],
   [
     "change",
-    "variables.se3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2697,26 +2470,10 @@
   ],
   [
     "change",
-    "variables.pe4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pe4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pe4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2989,26 +2746,10 @@
   ],
   [
     "change",
-    "variables.se4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3281,26 +3022,10 @@
   ],
   [
     "change",
-    "variables.pe5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pe5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pe5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3573,26 +3298,10 @@
   ],
   [
     "change",
-    "variables.se5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3807,97 +3516,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:02",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "affiliation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pe0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pe1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pe2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pe3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pe4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pe5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

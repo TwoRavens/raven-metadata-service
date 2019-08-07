@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        341
-      ],
-      [
-        "variableCount",
-        76
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ECGSUB_replication_data_tscs.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 171205
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country_name.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Netherlands"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -342,22 +243,6 @@
     [
       "1977",
       1977.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -909,22 +794,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party_name_short.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_name_short.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party_name_short",
     [
@@ -955,11 +824,11 @@
       [
         "fewestValues",
         [
-          "U55",
-          "one",
-          "TOP",
+          "EVP",
+          "Sbf",
+          "DLF",
           "DS70",
-          "DLF"
+          "no-seat"
         ]
       ],
       [
@@ -989,74 +858,74 @@
           "KrF": 15,
           "PvdA": 10,
           "D66": 10,
-          "VVD": 10,
-          "CDA": 10,
-          "SGP": 10,
           "RV": 10,
-          "H": 9,
-          "FP": 9,
-          "DNA": 9,
-          "C": 9,
-          "Fr": 9,
-          "SV": 9,
-          "KD": 9,
+          "VVD": 10,
+          "SGP": 10,
+          "CDA": 10,
           "SAP": 9,
-          "M": 9,
+          "Fr": 9,
+          "H": 9,
+          "SV": 9,
+          "C": 9,
           "Sp": 9,
+          "DNA": 9,
+          "FP": 9,
+          "M": 9,
+          "KD": 9,
           "SP": 8,
           "MP": 8,
           "GL": 7,
-          "CD": 6,
-          "Sd": 6,
           "SF": 6,
-          "RPF": 6,
           "KF": 6,
           "GPV": 6,
+          "Sd": 6,
+          "CD": 6,
+          "RPF": 6,
           "En/O": 5,
           "DF": 5,
           "G/F": 5,
-          "B90/Gru": 4,
-          "CU": 4,
+          "CDU/CSU": 4,
           "SPD": 4,
           "FDP": 4,
-          "CDU/CSU": 4,
-          "PSP": 3,
+          "CU": 4,
+          "B90/Gru": 4,
           "PPR": 3,
-          "CPN": 3,
           "PvdD": 3,
+          "PSP": 3,
+          "CPN": 3,
           "FrP": 3,
-          "NyD": 2,
-          "SD": 2,
-          "AOV/VSP": 2,
-          "NPD": 2,
-          "PDS": 2,
-          "CP": 2,
-          "PVV": 2,
-          "Linke": 2,
           "LPF": 2,
+          "NPD": 2,
           "Kp": 2,
+          "CP": 2,
           "NLA": 2,
-          "Jf": 1,
-          "TOP": 1,
-          "DVU": 1,
-          "Si": 1,
-          "one": 1,
-          "LN": 1,
-          "Pi": 1,
-          "no-seat": 1,
-          "Enh": 1,
+          "AOV/VSP": 2,
+          "Linke": 2,
+          "PVV": 2,
+          "SD": 2,
+          "NyD": 2,
+          "PDS": 2,
           "SPI": 1,
-          "R": 1,
-          "U55": 1,
-          "EVP": 1,
-          "Sbf": 1,
-          "P": 1,
-          "DLF": 1,
-          "ENL": 1,
-          "IA": 1,
-          "Rep": 1,
+          "Si": 1,
+          "Pi": 1,
           "none": 1,
-          "DS70": 1
+          "LN": 1,
+          "U55": 1,
+          "one": 1,
+          "IA": 1,
+          "DVU": 1,
+          "no-seat": 1,
+          "DS70": 1,
+          "R": 1,
+          "Enh": 1,
+          "Rep": 1,
+          "Jf": 1,
+          "Sbf": 1,
+          "DLF": 1,
+          "TOP": 1,
+          "ENL": 1,
+          "P": 1,
+          "EVP": 1
         }
       ],
       [
@@ -1267,22 +1136,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country_name_short.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name_short.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country_name_short",
     [
@@ -1482,26 +1335,10 @@
     [
       "2011-09-15",
       [
-        "1994-05-03",
+        "1982-09-08",
         "2011-09-15",
-        "1982-09-08"
+        "1994-05-03"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.election_date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1561,40 +1398,40 @@
       [
         "plotValues",
         {
+          "2011-09-15": 13,
           "1982-09-08": 13,
           "1994-05-03": 13,
-          "2011-09-15": 13,
           "1998-03-11": 12,
+          "2002-05-15": 11,
           "2006-11-22": 11,
           "1994-09-21": 11,
-          "2002-05-15": 11,
-          "1981-05-26": 11,
           "2010-06-09": 11,
-          "1989-09-06": 10,
-          "2003-01-22": 10,
-          "2001-11-20": 10,
-          "1986-05-21": 10,
-          "1998-05-06": 10,
+          "1981-05-26": 11,
           "2005-02-08": 10,
+          "2003-01-22": 10,
           "2007-11-13": 10,
-          "1993-09-13": 9,
+          "1986-05-21": 10,
+          "2001-11-20": 10,
+          "1989-09-06": 10,
+          "1998-05-06": 10,
           "1997-09-16": 9,
+          "1993-09-13": 9,
+          "2001-09-10": 8,
+          "2002-09-15": 8,
           "1994-09-18": 8,
-          "1998-09-21": 8,
-          "1991-09-15": 8,
+          "2009-09-24": 8,
           "1981-09-14": 8,
           "2005-09-12": 8,
           "1989-09-11": 8,
-          "2009-09-24": 8,
+          "1991-09-15": 8,
+          "1998-09-21": 8,
           "1977-09-11": 8,
-          "2002-09-15": 8,
-          "2001-09-10": 8,
           "2006-09-17": 8,
+          "1985-09-08": 7,
+          "1988-09-18": 7,
           "1998-09-27": 7,
           "1985-09-15": 7,
           "1982-09-19": 7,
-          "1988-09-18": 7,
-          "1985-09-08": 7,
           "2009-09-27": 7,
           "1979-09-16": 6,
           "2005-09-18": 6,
@@ -1816,26 +1653,10 @@
   ],
   [
     "change",
-    "variables.vote_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2479,22 +2300,6 @@
     ]
   ],
   [
-    "change",
-    "variables.seats.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seats.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.seats",
     [
@@ -3135,22 +2940,6 @@
     ]
   ],
   [
-    "change",
-    "variables.seats_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seats_total.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.seats_total",
     [
@@ -3415,22 +3204,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party_name",
     [
@@ -3461,11 +3234,11 @@
       [
         "fewestValues",
         [
-          "Die Republikaner",
-          "Sambandsflokkurin",
+          "Unie 55+",
           "Pensjonistpartiet",
-          "Leefbaar Nederland",
-          "Trots op Nederland"
+          "Evangelische Volkspartij",
+          "Sveriges pension\ufffdrers intresseparti",
+          "Javna\ufffdarflokkurin"
         ]
       ],
       [
@@ -3492,81 +3265,81 @@
         "plotValues",
         {
           "Venstre": 15,
-          "Democraten 66": 10,
+          "Volkspartij voor Vrijheid en Democratie": 10,
           "Staatkundig Gereformeerde Partij": 10,
           "Partij van de Arbeid": 10,
           "Christen Democratisch App\ufffdl": 10,
-          "Volkspartij voor Vrijheid en Democratie": 10,
-          "Kristelig Folkeparti": 9,
-          "Sosialistisk Venstreparti": 9,
-          "Folkpartiet": 9,
-          "Moderaterna": 9,
+          "Democraten 66": 10,
+          "Socialdemokraterna": 9,
           "Fremskrittspartiet": 9,
-          "Senterpartiet": 9,
+          "Folkpartiet": 9,
           "Centerpartiet": 9,
+          "V\ufffdnsterpartiet (kommunisterna)": 9,
           "Kristdemokraterna": 9,
           "H\ufffdyre": 9,
+          "Kristelig Folkeparti": 9,
+          "Moderaterna": 9,
           "Det norske Arbeiderparti": 9,
-          "V\ufffdnsterpartiet (kommunisterna)": 9,
-          "Socialdemokraterna": 9,
+          "Senterpartiet": 9,
+          "Sosialistisk Venstreparti": 9,
           "Milj\ufffdpartiet de Gr\ufffdna": 8,
           "Socialistiese Partij": 7,
           "GroenLinks": 7,
-          "Det Radikale Venstre": 6,
+          "Socialdemokraterne": 6,
+          "Reformatorisch Politieke Federatie": 6,
           "Kristeligt Folkeparti": 6,
           "Enhedslisten / De R\ufffdd-Gr\ufffdnne": 6,
-          "Gereformeerd Politiek Verbond": 6,
-          "Socialdemokraterne": 6,
           "Socialistisk Folkeparti": 6,
           "Konservative": 6,
-          "Reformatorisch Politieke Federatie": 6,
-          "Dansk Folkeparti": 5,
+          "Det Radikale Venstre": 6,
+          "Gereformeerd Politiek Verbond": 6,
           "Gr\ufffdnland og F\ufffdr\ufffderne": 5,
-          "B\ufffdndnis 90 / Die Gr\ufffdnen": 4,
+          "Dansk Folkeparti": 5,
           "Freie Demokratische Partei": 4,
-          "ChristenUnie \ufffd Staatkundig Gereformeerde Partij": 4,
+          "B\ufffdndnis 90 / Die Gr\ufffdnen": 4,
           "R\ufffdd Valgallianse": 4,
-          "Sozialdemokratische Partei Deutschlands": 4,
           "Christlich Demokratische Union / Christlich Soziale Union": 4,
-          "Pacifistisch Socialistische Partij": 3,
-          "Fremskridtspartiet": 3,
-          "Centrumdemokraterne": 3,
+          "ChristenUnie \ufffd Staatkundig Gereformeerde Partij": 4,
+          "Sozialdemokratische Partei Deutschlands": 4,
           "Centrum Democraten": 3,
-          "Politieke Partij Radikalen": 3,
+          "Centrumdemokraterne": 3,
           "Communistische Partij Nederland": 3,
+          "Politieke Partij Radikalen": 3,
+          "Pacifistisch Socialistische Partij": 3,
           "Partij voor de Dieren": 3,
-          "Ny/Liberal Alliance": 2,
-          "Kystpartiet": 2,
-          "Partij voor de Vrijheid": 2,
-          "Centrumpartij": 2,
+          "Fremskridtspartiet": 3,
           "Lijst Pim Fortuyn": 2,
-          "Nationaldemokratische Partei Deutschlands": 2,
-          "Partei des Demokratischen Sozialismus": 2,
-          "Algemeen Ouderen Verbond / Verenigde Senioren Partij": 2,
           "Ny Demokrati": 2,
-          "Die Linke": 2,
+          "Ny/Liberal Alliance": 2,
+          "Nationaldemokratische Partei Deutschlands": 2,
+          "Algemeen Ouderen Verbond / Verenigde Senioren Partij": 2,
+          "Kystpartiet": 2,
+          "Partei des Demokratischen Sozialismus": 2,
+          "Centrumpartij": 2,
           "Sverigedemokraterna": 2,
-          "Trots op Nederland": 1,
-          "Socialistische Partij": 1,
-          "Det Liberale Folkepartiet": 1,
-          "Democratisch Socialisten 70": 1,
-          "Javna\ufffdarflokkurin": 1,
-          "one seat": 1,
-          "Siumut": 1,
-          "Unie 55+": 1,
-          "Inuit Ataqatigiit": 1,
-          "Evangelische Volkspartij": 1,
-          "Leefbaar Nederland": 1,
-          "Deutsche Volksunion": 1,
-          "Sambandsflokkurin": 1,
-          "ingen": 1,
-          "Pensjonistpartiet": 1,
-          "no seat": 1,
-          "Sveriges pension\ufffdrers intresseparti": 1,
-          "E\ufffdn NL": 1,
+          "Die Linke": 2,
+          "Partij voor de Vrijheid": 2,
           "Piratenpartei Deutschland": 1,
+          "Inuit Ataqatigiit": 1,
+          "Socialistische Partij": 1,
+          "Democratisch Socialisten 70": 1,
+          "Det Liberale Folkepartiet": 1,
+          "Deutsche Volksunion": 1,
           "Die Republikaner": 1,
-          "R\ufffddt": 1
+          "Pensjonistpartiet": 1,
+          "Evangelische Volkspartij": 1,
+          "ingen": 1,
+          "Sambandsflokkurin": 1,
+          "E\ufffdn NL": 1,
+          "one seat": 1,
+          "Unie 55+": 1,
+          "R\ufffddt": 1,
+          "Siumut": 1,
+          "Trots op Nederland": 1,
+          "no seat": 1,
+          "Javna\ufffdarflokkurin": 1,
+          "Leefbaar Nederland": 1,
+          "Sveriges pension\ufffdrers intresseparti": 1
         }
       ],
       [
@@ -3781,22 +3554,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party_name_english.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_name_english.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party_name_english",
     [
@@ -3827,11 +3584,11 @@
       [
         "fewestValues",
         [
-          "Union 55+",
-          "one seat",
-          "German People's Union",
-          "Evangelical Peoples Party",
-          "Community of the People"
+          "Red",
+          "Swedish Senior Citizen Interest Party",
+          "Labour",
+          "Union Party (Faroe Islands)",
+          "Union 55+"
         ]
       ],
       [
@@ -3862,72 +3619,72 @@
           "Social Democrats": 15,
           "Progress Party": 12,
           "Political Reformed Party": 10,
-          "Libertarians": 10,
           "People's Party for Freedom and Democracy": 10,
-          "Left Party (Communists)": 9,
-          "Conservative Party": 9,
+          "Libertarians": 10,
           "Labour Party": 9,
-          "Liberals": 9,
           "Christian Democratic Party": 9,
-          "Norwegian Labour Party": 9,
+          "Liberals": 9,
           "Moderate Party": 9,
           "Liberal Party of Norway": 9,
+          "Left Party (Communists)": 9,
+          "Conservative Party": 9,
           "Socialist Left Party": 9,
-          "Greens": 8,
+          "Norwegian Labour Party": 9,
           "Socialist Party": 8,
+          "Greens": 8,
           "GreenLeft": 7,
-          "Socialist Peoples Party": 6,
-          "Reformed Political League": 6,
-          "Reformatory Political Federation": 6,
-          "Danish Social-Liberal Party": 6,
-          "Christian People's Party": 6,
-          "Liberal Party of Denmark": 6,
           "Centre Democrats": 6,
-          "Conservatives": 6,
           "Red-Green Alliance": 6,
-          "Greenland and Faroe Islands": 5,
+          "Reformatory Political Federation": 6,
+          "Conservatives": 6,
+          "Reformed Political League": 6,
+          "Danish Social-Liberal Party": 6,
+          "Liberal Party of Denmark": 6,
+          "Christian People's Party": 6,
+          "Socialist Peoples Party": 6,
           "Danish Peoples Party": 5,
-          "Alliance 90 / Greens": 4,
+          "Greenland and Faroe Islands": 5,
           "Christian Democratic Union / Christian Social Union": 4,
           "Red Electoral Alliance": 4,
           "Free Democratic Party": 4,
           "Social Democratic Party of Germany": 4,
           "ChristianUnion -- Reformed Political Party": 4,
-          "Party for the Animals": 3,
+          "Alliance 90 / Greens": 4,
+          "Communist Party of the Netherlands": 3,
           "Pacifist Socialist Party": 3,
           "Radical Political Party": 3,
-          "Communist Party of the Netherlands": 3,
-          "Party for Freedom": 2,
-          "Coastal Party": 2,
-          "Fortuyn List": 2,
-          "Sweden Democrats": 2,
-          "National Democratic Party": 2,
-          "General Senior Union / United Seniors Party": 2,
+          "Party for the Animals": 3,
           "New/Liberal Alliance": 2,
-          "The Left": 2,
-          "Party for Democratic Socialism": 2,
+          "Coastal Party": 2,
+          "Sweden Democrats": 2,
+          "Party for Freedom": 2,
           "New Democracy": 2,
-          "Community of the People": 1,
-          "Labour": 1,
-          "Red": 1,
-          "Swedish Senior Citizen Interest Party": 1,
-          "Forward (Greenland)": 1,
-          "German Pirate Party": 1,
+          "The Left": 2,
+          "National Democratic Party": 2,
+          "Fortuyn List": 2,
+          "Party for Democratic Socialism": 2,
+          "General Senior Union / United Seniors Party": 2,
           "Evangelical Peoples Party": 1,
-          "The Republicans": 1,
           "Democratic Socialists 70": 1,
-          "one seat": 1,
-          "no seat": 1,
-          "Livable Netherlands": 1,
-          "Proud of the Netherlands": 1,
-          "Pensioners Party": 1,
-          "One NL": 1,
-          "Union 55+": 1,
-          "Union Party (Faroe Islands)": 1,
-          "German People's Union": 1,
           "no party affiliation": 1,
+          "Social Democratic Party (Faroe Islands)": 1,
+          "Community of the People": 1,
+          "German Pirate Party": 1,
+          "Pensioners Party": 1,
+          "Proud of the Netherlands": 1,
+          "one seat": 1,
+          "German People's Union": 1,
+          "Union 55+": 1,
+          "One NL": 1,
+          "The Republicans": 1,
+          "Livable Netherlands": 1,
+          "no seat": 1,
           "Liberal People's Party": 1,
-          "Social Democratic Party (Faroe Islands)": 1
+          "Union Party (Faroe Islands)": 1,
+          "Red": 1,
+          "Labour": 1,
+          "Swedish Senior Citizen Interest Party": 1,
+          "Forward (Greenland)": 1
         }
       ],
       [
@@ -4166,22 +3923,6 @@
     [
       "8",
       8
-    ]
-  ],
-  [
-    "change",
-    "variables.country_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4444,22 +4185,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.election_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5077,22 +4802,6 @@
     ]
   ],
   [
-    "change",
-    "variables.previous_parliament_election_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.previous_parliament_election_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.previous_parliament_election_id",
     [
@@ -5704,22 +5413,6 @@
     [
       "6",
       6
-    ]
-  ],
-  [
-    "change",
-    "variables.previous_cabinet_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.previous_cabinet_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6336,22 +6029,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6995,22 +6672,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mwc_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mwc_total.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mwc_total",
     [
@@ -7561,22 +7222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.real_gov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.real_gov.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.real_gov",
     [
@@ -7607,8 +7252,8 @@
       [
         "fewestValues",
         [
-          "MSP-C-FP",
-          "CDU/CSU-SPD"
+          "CDU/CSU-SPD",
+          "MSP-C-FP"
         ]
       ],
       [
@@ -7644,21 +7289,21 @@
           "Sd-RV-SF": 13,
           "SPD-B90/Gru": 12,
           "Sd-RV": 12,
+          "CDA-PvdA-D66": 11,
           "CDA-PvdA-CU": 11,
+          "VVD-CDA": 11,
           "CDA-LPF-VVD": 11,
           "Sd-RV-CD": 11,
-          "CDA-PvdA-D66": 11,
-          "VVD-CDA": 11,
-          "CDA-VVD-D66": 10,
           "CDA-PvdA": 10,
+          "CDA-VVD-D66": 10,
           "KrF-SP-V": 9,
+          "H-KrF-V": 8,
+          "H": 8,
           "MSP-C-FP-Kd": 8,
           "MSP-FP-C-Ks": 8,
-          "H": 8,
-          "H-KrF-V": 8,
           "CDU/CSU-FDP": 7,
-          "CDU/CSU-SPD": 6,
-          "MSP-C-FP": 6
+          "MSP-C-FP": 6,
+          "CDU/CSU-SPD": 6
         }
       ],
       [
@@ -7867,26 +7512,10 @@
   ],
   [
     "change",
-    "variables.left_right_postelection.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.left_right_postelection.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.left_right_postelection.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8543,26 +8172,10 @@
   ],
   [
     "change",
-    "variables.serrorlr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.serrorlr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.serrorlr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9215,26 +8828,10 @@
   ],
   [
     "change",
-    "variables.sdlr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sdlr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sdlr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9887,26 +9484,10 @@
   ],
   [
     "change",
-    "variables.meanvoter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.meanvoter.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.meanvoter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10555,26 +10136,10 @@
   ],
   [
     "change",
-    "variables.medianvoter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.medianvoter.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.medianvoter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10800,22 +10365,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -11019,22 +10568,6 @@
     ]
   ],
   [
-    "change",
-    "variables.field_date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.field_date.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.field_date",
     [
@@ -11220,28 +10753,12 @@
     [
       "cda",
       [
-        "cda",
+        "reformedparty neth",
         "vvd",
         "d66",
-        "pvda",
-        "reformedparty neth"
+        "cda",
+        "pvda"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11275,10 +10792,10 @@
       [
         "fewestValues",
         [
+          "livableneth neth",
           "oneNL neth",
-          "republican ger",
           "demsocialist70 neth",
-          "livableneth neth"
+          "republican ger"
         ]
       ],
       [
@@ -11304,36 +10821,36 @@
       [
         "plotValues",
         {
-          "d66": 10,
           "pvda": 10,
           "vvd": 10,
+          "d66": 10,
           "reformedparty neth": 10,
           "cda": 10,
-          "center swe": 9,
           "conservative no": 9,
-          "socialist no": 9,
-          "liberal swe": 9,
-          "socdem swe": 9,
-          "moderate swe": 9,
           "left party swe": 9,
-          "progress no": 9,
-          "christdem swe": 9,
-          "center no": 9,
-          "christian no": 9,
-          "liberal no": 9,
+          "socialist no": 9,
+          "moderate swe": 9,
+          "center swe": 9,
           "labor no": 9,
+          "liberal no": 9,
+          "socdem swe": 9,
+          "center no": 9,
+          "liberal swe": 9,
+          "christdem swe": 9,
+          "progress no": 9,
+          "christian no": 9,
           "socialist neth": 8,
           "green swe": 8,
           "green neth": 7,
-          "socdem dk": 6,
+          "radlib dk": 6,
+          "conservative dk": 6,
           "reformatoryfed neth": 6,
-          "christian dk": 6,
+          "socdem dk": 6,
+          "redgreen dk": 6,
+          "socialist dk": 6,
           "liberal dk": 6,
           "reformedleague neth": 6,
-          "conservative dk": 6,
-          "socialist dk": 6,
-          "redgreen dk": 6,
-          "radlib dk": 6,
+          "christian dk": 6,
           "people dk": 5,
           "left ger": 4,
           "liberal ger": 4,
@@ -11341,23 +10858,23 @@
           "green ger": 4,
           "christian ger": 4,
           "socdem ger": 4,
+          "centredem neth": 3,
+          "center dk": 3,
           "prog dk": 3,
           "radical neth": 3,
-          "centredem neth": 3,
-          "communist neth": 3,
-          "center dk": 3,
           "pacifist neth": 3,
-          "swedendemocrats swe": 2,
-          "fortuyn neth": 2,
+          "communist neth": 3,
           "newdemocrats swe": 2,
           "national ger": 2,
           "centre neth": 2,
+          "fortuyn neth": 2,
           "freedom neth": 2,
           "alliance dk": 2,
+          "swedendemocrats swe": 2,
           "republican ger": 1,
-          "livableneth neth": 1,
           "oneNL neth": 1,
-          "demsocialist70 neth": 1
+          "demsocialist70 neth": 1,
+          "livableneth neth": 1
         }
       ],
       [
@@ -11580,22 +11097,6 @@
     [
       "197709",
       197709.0
-    ]
-  ],
-  [
-    "change",
-    "variables.date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12196,22 +11697,6 @@
     [
       "11110",
       11110.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cparty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cparty.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12849,22 +12334,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.partynumeric.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partynumeric.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13507,22 +12976,6 @@
     ]
   ],
   [
-    "change",
-    "variables.election.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.election",
     [
@@ -13826,26 +13279,10 @@
   ],
   [
     "change",
-    "variables.left_right.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.left_right.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.left_right.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14500,26 +13937,10 @@
   ],
   [
     "change",
-    "variables.rg_posu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rg_posu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rg_posu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15170,26 +14591,10 @@
   ],
   [
     "change",
-    "variables.rg_posw.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rg_posw.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rg_posw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15829,22 +15234,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rg_st.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rg_st.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rg_st",
     [
@@ -16460,26 +15849,10 @@
   ],
   [
     "change",
-    "variables.dist_posu_rg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dist_posu_rg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dist_posu_rg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17132,26 +16505,10 @@
   ],
   [
     "change",
-    "variables.dist_posw_rg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dist_posw_rg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dist_posw_rg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17804,26 +17161,10 @@
   ],
   [
     "change",
-    "variables.distabs_posu_rg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distabs_posu_rg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distabs_posu_rg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18476,26 +17817,10 @@
   ],
   [
     "change",
-    "variables.distabs_posw_rg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distabs_posw_rg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distabs_posw_rg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19139,22 +18464,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party_rg_part.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.party_rg_part.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party_rg_part",
     [
@@ -19394,22 +18703,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.caltumwc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.caltumwc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19655,22 +18948,6 @@
     ]
   ],
   [
-    "change",
-    "variables.caltwmwc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.caltwmwc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.caltwmwc",
     [
@@ -19910,22 +19187,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20174,26 +19435,10 @@
   ],
   [
     "change",
-    "variables.update.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.update.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.update.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20837,22 +20082,6 @@
     ]
   ],
   [
-    "change",
-    "variables.update_right.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.update_right.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.update_right",
     [
@@ -21092,22 +20321,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.update_left.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.update_left.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21362,26 +20575,10 @@
   ],
   [
     "change",
-    "variables.distu_rg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distu_rg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distu_rg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22034,26 +21231,10 @@
   ],
   [
     "change",
-    "variables.distw_rg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distw_rg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distw_rg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22710,26 +21891,10 @@
   ],
   [
     "change",
-    "variables.updateabs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.updateabs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.updateabs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23384,26 +22549,10 @@
   ],
   [
     "change",
-    "variables.lrgov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrgov.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrgov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24058,26 +23207,10 @@
   ],
   [
     "change",
-    "variables.lrgovw.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrgovw.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrgovw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24732,26 +23865,10 @@
   ],
   [
     "change",
-    "variables.cprob.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cprob.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cprob.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25361,22 +24478,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cprob_byc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cprob_byc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cprob_byc",
     [
@@ -25596,22 +24697,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.viable_ap90.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.viable_ap90.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25854,22 +24939,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.viable_ap75.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.viable_ap75.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26124,26 +25193,10 @@
   ],
   [
     "change",
-    "variables.distgov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distgov.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distgov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26796,26 +25849,10 @@
   ],
   [
     "change",
-    "variables.distgovw.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distgovw.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27468,26 +26505,10 @@
   ],
   [
     "change",
-    "variables.diffgov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diffgov.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diffgov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28140,26 +27161,10 @@
   ],
   [
     "change",
-    "variables.diffgovw.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diffgovw.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diffgovw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28803,22 +27808,6 @@
     ]
   ],
   [
-    "change",
-    "variables.distgovmin_ap90_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovmin_ap90_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.distgovmin_ap90_",
     [
@@ -29058,22 +28047,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovwmin_ap90_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovwmin_ap90_.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29319,22 +28292,6 @@
     ]
   ],
   [
-    "change",
-    "variables.calt_ap90_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.calt_ap90_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.calt_ap90_",
     [
@@ -29574,22 +28531,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.caltw_ap90_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.caltw_ap90_.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29835,22 +28776,6 @@
     ]
   ],
   [
-    "change",
-    "variables.distgovmin_ap75_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovmin_ap75_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.distgovmin_ap75_",
     [
@@ -30090,22 +29015,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovwmin_ap75_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.distgovwmin_ap75_.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30351,22 +29260,6 @@
     ]
   ],
   [
-    "change",
-    "variables.calt_ap75_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.calt_ap75_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.calt_ap75_",
     [
@@ -30606,22 +29499,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.caltw_ap75_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.caltw_ap75_.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30867,22 +29744,6 @@
     ]
   ],
   [
-    "change",
-    "variables.viablepart_ap90_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.viablepart_ap90_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.viablepart_ap90_",
     [
@@ -31125,22 +29986,6 @@
     ]
   ],
   [
-    "change",
-    "variables.viablepart_ap75_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.viablepart_ap75_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.viablepart_ap75_",
     [
@@ -31380,22 +30225,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.nviable_ap90_.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nviable_ap90_.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32039,22 +30868,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nviable_ap75_.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nviable_ap75_.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nviable_ap75_",
     [
@@ -32695,22 +31508,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rug_where.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rug_where.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rug_where",
     [
@@ -32908,22 +31705,6 @@
       [
         "|"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.rug_pipe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rug_pipe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33152,22 +31933,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.tag_distrgw.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tag_distrgw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33410,22 +32175,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.tag_distrgu.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tag_distrgu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33680,26 +32429,10 @@
   ],
   [
     "change",
-    "variables.diffgovw_abs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diffgovw_abs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diffgovw_abs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34352,26 +33085,10 @@
   ],
   [
     "change",
-    "variables.diffgov_abs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diffgov_abs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diffgov_abs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35074,412 +33791,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "yes",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_name_short": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_name_short": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seats": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seats_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_name_english": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "previous_parliament_election_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "previous_cabinet_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mwc_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "real_gov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left_right_postelection": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "serrorlr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sdlr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "meanvoter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "medianvoter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "field_date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cparty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partynumeric": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left_right": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rg_posu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rg_posw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rg_st": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist_posu_rg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist_posw_rg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distabs_posu_rg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distabs_posw_rg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_rg_part": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "caltumwc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "caltwmwc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "update": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "update_right": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "update_left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distu_rg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distw_rg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "updateabs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrgov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrgovw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cprob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cprob_byc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "viable_ap90": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "viable_ap75": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distgov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distgovw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffgov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffgovw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distgovmin_ap90_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distgovwmin_ap90_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "calt_ap90_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "caltw_ap90_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distgovmin_ap75_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distgovwmin_ap75_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "calt_ap75_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "caltw_ap75_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "viablepart_ap90_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "viablepart_ap75_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nviable_ap90_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nviable_ap75_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_merge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rug_where": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rug_pipe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tag_distrgw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tag_distrgu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffgovw_abs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffgov_abs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

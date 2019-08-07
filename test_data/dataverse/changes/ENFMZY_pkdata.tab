@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        5
-      ],
-      [
-        "variableCount",
-        45
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ENFMZY_pkdata.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1464
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.group.mode",
     [
       "militant.groups",
       [
-        "militant.groups",
-        "afghan.tal",
-        "edhi",
         "ssp",
-        "pak.tal"
+        "afghan.tal",
+        "pak.tal",
+        "militant.groups",
+        "edhi"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "militant.groups",
-          "afghan.tal",
-          "edhi",
           "ssp",
-          "pak.tal"
+          "afghan.tal",
+          "pak.tal",
+          "militant.groups",
+          "edhi"
         ]
       ],
       [
@@ -173,11 +74,11 @@
       [
         "plotValues",
         {
-          "pak.tal": 1,
           "ssp": 1,
-          "edhi": 1,
+          "militant.groups": 1,
+          "pak.tal": 1,
           "afghan.tal": 1,
-          "militant.groups": 1
+          "edhi": 1
         }
       ],
       [
@@ -393,35 +294,11 @@
     [
       "variables",
       "overall.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -735,35 +612,11 @@
     [
       "variables",
       "overall.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1076,35 +929,11 @@
     [
       "variables",
       "gknow.low.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.low.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.low.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1410,35 +1239,11 @@
     [
       "variables",
       "gknow.low.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.low.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.low.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1744,35 +1549,11 @@
     [
       "variables",
       "gknow.high.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.high.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.high.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2078,35 +1859,11 @@
     [
       "variables",
       "gknow.high.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.high.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gknow.high.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2409,35 +2166,11 @@
     [
       "variables",
       "support.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "support.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "support.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2715,35 +2448,11 @@
     [
       "variables",
       "support.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "support.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "support.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3021,35 +2730,11 @@
     [
       "variables",
       "nosupport.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "nosupport.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "nosupport.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3327,35 +3012,11 @@
     [
       "variables",
       "nosupport.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "nosupport.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "nosupport.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3633,35 +3294,11 @@
     [
       "variables",
       "upper.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "upper.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "upper.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3939,35 +3576,11 @@
     [
       "variables",
       "upper.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "upper.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "upper.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4245,35 +3858,11 @@
     [
       "variables",
       "middle.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "middle.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "middle.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4551,35 +4140,11 @@
     [
       "variables",
       "middle.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "middle.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "middle.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4857,35 +4422,11 @@
     [
       "variables",
       "lower.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lower.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lower.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5163,35 +4704,11 @@
     [
       "variables",
       "lower.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lower.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lower.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5469,35 +4986,11 @@
     [
       "variables",
       "ul.diff.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "ul.diff.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "ul.diff.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5775,35 +5268,11 @@
     [
       "variables",
       "ul.diff.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "ul.diff.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "ul.diff.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6081,35 +5550,11 @@
     [
       "variables",
       "lowpov.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowpov.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowpov.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6387,35 +5832,11 @@
     [
       "variables",
       "lowpov.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowpov.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowpov.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6693,35 +6114,11 @@
     [
       "variables",
       "highpov.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highpov.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highpov.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6999,35 +6396,11 @@
     [
       "variables",
       "highpov.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highpov.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highpov.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7305,35 +6678,11 @@
     [
       "variables",
       "pov.diff.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "pov.diff.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "pov.diff.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7611,35 +6960,11 @@
     [
       "variables",
       "pov.diff.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "pov.diff.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "pov.diff.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7917,35 +7242,11 @@
     [
       "variables",
       "lowviol.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowviol.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowviol.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8223,35 +7524,11 @@
     [
       "variables",
       "lowviol.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowviol.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lowviol.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8529,35 +7806,11 @@
     [
       "variables",
       "highviol.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highviol.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highviol.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8835,35 +8088,11 @@
     [
       "variables",
       "highviol.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highviol.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "highviol.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9141,35 +8370,11 @@
     [
       "variables",
       "viol.diff.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "viol.diff.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "viol.diff.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9447,35 +8652,11 @@
     [
       "variables",
       "viol.diff.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "viol.diff.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "viol.diff.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9753,35 +8934,11 @@
     [
       "variables",
       "hphv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10059,35 +9216,11 @@
     [
       "variables",
       "hphv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10365,35 +9498,11 @@
     [
       "variables",
       "lphv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lphv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lphv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10671,35 +9780,11 @@
     [
       "variables",
       "lphv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lphv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lphv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10977,35 +10062,11 @@
     [
       "variables",
       "hplv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hplv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hplv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11283,35 +10344,11 @@
     [
       "variables",
       "hplv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hplv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hplv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11589,35 +10626,11 @@
     [
       "variables",
       "lplv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lplv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lplv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11895,35 +10908,11 @@
     [
       "variables",
       "lplv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lplv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "lplv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12201,35 +11190,11 @@
     [
       "variables",
       "hphv.lplv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lplv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lplv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12507,35 +11472,11 @@
     [
       "variables",
       "hphv.lplv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lplv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lplv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12813,35 +11754,11 @@
     [
       "variables",
       "hphv.hplv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.hplv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.hplv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13119,35 +12036,11 @@
     [
       "variables",
       "hphv.hplv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.hplv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.hplv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13425,35 +12318,11 @@
     [
       "variables",
       "hphv.lphv.coef",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lphv.coef",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lphv.coef",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13731,35 +12600,11 @@
     [
       "variables",
       "hphv.lphv.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lphv.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "hphv.lphv.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13955,257 +12800,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:07",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "overall.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "overall.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gknow.low.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gknow.low.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gknow.high.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gknow.high.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "support.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "support.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nosupport.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nosupport.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "upper.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "upper.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "middle.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "middle.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lower.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lower.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ul.diff.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ul.diff.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lowpov.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lowpov.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highpov.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highpov.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pov.diff.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pov.diff.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lowviol.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lowviol.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highviol.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highviol.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "viol.diff.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "viol.diff.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lphv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lphv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hplv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hplv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lplv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lplv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.lplv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.lplv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.hplv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.hplv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.lphv.coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hphv.lphv.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        370
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HQ1N6A_Myers all.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 17174
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccode.median",
     [
@@ -123,22 +40,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -745,25 +646,9 @@
     [
       "France",
       [
-        "Philippines",
-        "France"
+        "France",
+        "Philippines"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -797,11 +682,11 @@
       [
         "fewestValues",
         [
-          "Cyprus",
-          "Germany",
-          "Sweden",
-          "Cuba",
-          "Luxembourg"
+          "Poland",
+          "Somalia",
+          "Denmark",
+          "Norway",
+          "Cuba"
         ]
       ],
       [
@@ -827,129 +712,129 @@
       [
         "plotValues",
         {
-          "France": 8,
           "Philippines": 8,
-          "South Africa": 7,
+          "France": 8,
           "Mexico": 7,
-          "South Korea": 6,
-          "United States": 6,
-          "Brazil": 6,
-          "Panama": 6,
-          "Ecuador": 6,
+          "South Africa": 7,
           "India": 6,
+          "Brazil": 6,
+          "United States": 6,
+          "Panama": 6,
+          "South Korea": 6,
+          "Ecuador": 6,
+          "Kenya": 5,
+          "Dominican Republic": 5,
           "Argentina": 5,
+          "Uruguay": 5,
           "Costa Rica": 5,
+          "Tanzania": 5,
+          "Greece": 5,
+          "Indonesia": 5,
+          "Fiji": 5,
+          "Colombia": 5,
+          "Zambia": 5,
+          "Switzerland": 5,
           "Thailand": 5,
           "Iran": 5,
-          "Greece": 5,
-          "Kenya": 5,
-          "Chile": 5,
-          "Switzerland": 5,
-          "Fiji": 5,
-          "Uruguay": 5,
           "Ghana": 5,
           "Singapore": 5,
-          "Colombia": 5,
-          "Venezuela": 5,
-          "Dominican Republic": 5,
           "Turkey": 5,
-          "Zambia": 5,
-          "Indonesia": 5,
-          "Tanzania": 5,
-          "Canada": 4,
-          "Sri Lanka": 4,
-          "Maldives": 4,
-          "Bangladesh": 4,
-          "Lesotho": 4,
-          "Mali": 4,
-          "Spain": 4,
+          "Venezuela": 5,
+          "Chile": 5,
           "Malaysia": 4,
           "Malawi": 4,
-          "Congo": 4,
           "Morocco": 4,
-          "Romania": 4,
-          "Austria": 4,
-          "Bolivia": 4,
-          "Nicaragua": 4,
+          "Bangladesh": 4,
+          "Maldives": 4,
           "Swaziland": 4,
           "China": 4,
-          "Haiti": 3,
-          "Nepal": 3,
+          "Spain": 4,
+          "Romania": 4,
+          "Congo": 4,
+          "Canada": 4,
+          "Sri Lanka": 4,
+          "Austria": 4,
+          "Nicaragua": 4,
+          "Mali": 4,
+          "Bolivia": 4,
+          "Lesotho": 4,
+          "Portugal": 3,
+          "Vietnam": 3,
+          "Botswana": 3,
+          "Benin": 3,
+          "Pakistan": 3,
+          "Senegal": 3,
+          "Cambodia": 3,
+          "Namibia": 3,
+          "Jamaica": 3,
+          "Papua New Guinea": 3,
           "Niger": 3,
+          "Nigeria": 3,
           "Burundi": 3,
           "Uganda": 3,
-          "Botswana": 3,
-          "Burkina Faso": 3,
-          "Senegal": 3,
-          "Rwanda": 3,
-          "Nigeria": 3,
-          "Jamaica": 3,
-          "Pakistan": 3,
-          "Namibia": 3,
           "Cameroon": 3,
-          "Benin": 3,
-          "Vietnam": 3,
-          "Cambodia": 3,
-          "Portugal": 3,
-          "Papua New Guinea": 3,
-          "Honduras": 2,
-          "Estonia": 2,
-          "Cote d'Ivoire": 2,
-          "El Salvador": 2,
-          "Guatemala": 2,
-          "Iraq": 2,
-          "Lithuania": 2,
-          "Egypt": 2,
-          "Slovenia": 2,
-          "Ethiopia": 2,
-          "Togo": 2,
-          "Syria": 2,
-          "Kyrgyz Republic": 2,
-          "Algeria": 2,
-          "Mauritania": 2,
-          "Mozambique": 2,
-          "Gabon": 2,
-          "Cape Verde": 2,
-          "Central African Republic": 2,
+          "Haiti": 3,
+          "Rwanda": 3,
+          "Nepal": 3,
+          "Burkina Faso": 3,
           "Equatorial Guinea": 2,
-          "Sudan": 2,
-          "Mongolia": 2,
+          "Egypt": 2,
+          "Cote d'Ivoire": 2,
+          "Slovenia": 2,
+          "Iraq": 2,
           "Liberia": 2,
+          "El Salvador": 2,
+          "Honduras": 2,
+          "Mongolia": 2,
+          "Ethiopia": 2,
+          "Kyrgyz Republic": 2,
+          "Estonia": 2,
+          "Guinea": 2,
+          "Mozambique": 2,
+          "Togo": 2,
+          "Guatemala": 2,
+          "Sudan": 2,
+          "Gabon": 2,
+          "Mauritania": 2,
+          "Syria": 2,
+          "Algeria": 2,
+          "Central African Republic": 2,
+          "Cape Verde": 2,
+          "Lithuania": 2,
           "Armenia": 2,
           "Peru": 2,
-          "Guinea": 2,
-          "Poland": 1,
-          "Bhutan": 1,
-          "Jordan": 1,
-          "Italy": 1,
-          "Denmark": 1,
-          "Cyprus": 1,
-          "Chad": 1,
-          "Czech Republic": 1,
-          "Luxembourg": 1,
-          "Somalia": 1,
-          "Slovak Republic": 1,
-          "Myanmar": 1,
-          "Germany": 1,
-          "Netherlands": 1,
-          "Liechtenstein": 1,
-          "Croatia": 1,
-          "Belize": 1,
-          "Finland": 1,
-          "Gambia": 1,
-          "Latvia": 1,
-          "Cuba": 1,
-          "Belgium": 1,
-          "Norway": 1,
-          "Sierra Leone": 1,
-          "Malta": 1,
-          "Kuwait": 1,
-          "Bulgaria": 1,
-          "United Kingdom": 1,
-          "Guinea-Bissau": 1,
           "Belarus": 1,
           "Paraguay": 1,
-          "Sweden": 1
+          "Chad": 1,
+          "Malta": 1,
+          "Jordan": 1,
+          "Italy": 1,
+          "Croatia": 1,
+          "Cyprus": 1,
+          "Sierra Leone": 1,
+          "Belgium": 1,
+          "Belize": 1,
+          "Myanmar": 1,
+          "Finland": 1,
+          "Denmark": 1,
+          "Latvia": 1,
+          "Czech Republic": 1,
+          "Bhutan": 1,
+          "Luxembourg": 1,
+          "Liechtenstein": 1,
+          "Guinea-Bissau": 1,
+          "Gambia": 1,
+          "Slovak Republic": 1,
+          "Poland": 1,
+          "Norway": 1,
+          "Kuwait": 1,
+          "Sweden": 1,
+          "United Kingdom": 1,
+          "Netherlands": 1,
+          "Germany": 1,
+          "Cuba": 1,
+          "Somalia": 1,
+          "Bulgaria": 1
         }
       ],
       [
@@ -1244,22 +1129,6 @@
     [
       "21",
       21.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1903,22 +1772,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -2559,22 +2412,6 @@
     ]
   ],
   [
-    "change",
-    "variables.source.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.source.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.source",
     [
@@ -2842,26 +2679,10 @@
   ],
   [
     "change",
-    "variables.myers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.myers.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.myers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3505,22 +3326,6 @@
     ]
   ],
   [
-    "change",
-    "variables.flregion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.flregion.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.flregion",
     [
@@ -3741,67 +3546,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "source": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "myers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "flregion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

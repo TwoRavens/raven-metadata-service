@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        44
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "8WCOCN_codebook.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 5456
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.position.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.position.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.position.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -736,28 +637,12 @@
     [
       "V103",
       [
-        "CC332G",
-        "CC326_5",
-        "CC417a_4",
-        "CC401",
-        "race"
+        "V103",
+        "CC316",
+        "pid7",
+        "CC421a",
+        "countyfips"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -791,11 +676,11 @@
       [
         "fewestValues",
         [
-          "CC332G",
-          "CC326_5",
-          "CC417a_4",
-          "CC401",
-          "race"
+          "V103",
+          "CC316",
+          "pid7",
+          "CC421a",
+          "countyfips"
         ]
       ],
       [
@@ -822,49 +707,49 @@
         "plotValues",
         {
           "CC334F": 1,
-          "CC326_3": 1,
-          "CC417a_1": 1,
-          "CC417a_4": 1,
-          "CC309b": 1,
-          "gender": 1,
-          "inputstate": 1,
-          "V103": 1,
-          "CC326_1": 1,
-          "CurrentHouseFreshman": 1,
-          "CC334C": 1,
-          "CC334D": 1,
-          "pid7": 1,
-          "faminc": 1,
-          "race": 1,
-          "CC332F": 1,
-          "hispanic": 1,
-          "StateAbbr": 1,
-          "votereg_post": 1,
-          "CC309a": 1,
-          "CC334E": 1,
-          "CC332A": 1,
-          "CC417a_2": 1,
-          "CC326_2": 1,
-          "CC332B": 1,
-          "CC334A": 1,
           "educ": 1,
-          "CC332H": 1,
+          "votereg_post": 1,
+          "CC309b": 1,
+          "CC417a_4": 1,
+          "CurrentHouseFreshman": 1,
+          "CC332G": 1,
+          "CC332B": 1,
+          "V103": 1,
+          "faminc": 1,
+          "CC326_2": 1,
+          "CC334C": 1,
+          "CC417a_2": 1,
+          "CC326_6": 1,
+          "CC326_1": 1,
+          "cdid": 1,
+          "inputstate": 1,
+          "ownhome": 1,
+          "CC309a": 1,
+          "gender": 1,
+          "birthyr": 1,
+          "CC326_3": 1,
+          "CC334A": 1,
           "CC401": 1,
           "CC417a_3": 1,
-          "countyfips": 1,
           "CC421a": 1,
-          "cdid": 1,
-          "birthyr": 1,
-          "CurrentHouseGender": 1,
-          "ideo5": 1,
-          "ownhome": 1,
-          "CC326_5": 1,
-          "pid3": 1,
-          "CC326_6": 1,
-          "CC316": 1,
+          "CC332A": 1,
           "newsint": 1,
+          "hispanic": 1,
+          "CC417a_1": 1,
+          "CC326_5": 1,
+          "CC334D": 1,
+          "CurrentHouseGender": 1,
+          "race": 1,
+          "pid7": 1,
+          "CC334E": 1,
+          "CC332H": 1,
+          "StateAbbr": 1,
+          "CC332F": 1,
           "genhealth": 1,
-          "CC332G": 1
+          "countyfips": 1,
+          "pid3": 1,
+          "ideo5": 1,
+          "CC316": 1
         }
       ],
       [
@@ -1047,22 +932,6 @@
     ]
   ],
   [
-    "change",
-    "variables.type.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.type.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.type",
     [
@@ -1093,9 +962,9 @@
       [
         "fewestValues",
         [
-          "int",
           "double",
-          "str5"
+          "str5",
+          "int"
         ]
       ],
       [
@@ -1122,11 +991,11 @@
         "plotValues",
         {
           "byte": 37,
-          "str2": 2,
           "str1": 2,
+          "str2": 2,
+          "int": 1,
           "str5": 1,
-          "double": 1,
-          "int": 1
+          "double": 1
         }
       ],
       [
@@ -1300,22 +1169,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.isnumeric.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.isnumeric.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1529,22 +1382,6 @@
     ]
   ],
   [
-    "change",
-    "variables.format.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.format.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.format",
     [
@@ -1745,22 +1582,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vallab.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vallab.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vallab",
     [
@@ -1791,11 +1612,11 @@
       [
         "fewestValues",
         [
-          "RACE",
-          "BIRTHYR",
-          "PID7",
-          "INPUTSTA",
-          "NEWSINT"
+          "CC401",
+          "IDEO5",
+          "PID3",
+          "FAMINC",
+          "RACE"
         ]
       ],
       [
@@ -1825,23 +1646,23 @@
           "LABJ": 5,
           "LABI": 5,
           "LABE": 2,
-          "GENHEALT": 1,
-          "IDEO5": 1,
           "CC401": 1,
-          "CC421A": 1,
+          "OWNHOME": 1,
           "V244_A": 1,
           "FAMINC": 1,
-          "CC316": 1,
-          "PID3": 1,
-          "OWNHOME": 1,
-          "GENDER": 1,
-          "LABB": 1,
-          "EDUC": 1,
-          "NEWSINT": 1,
           "INPUTSTA": 1,
-          "PID7": 1,
+          "LABB": 1,
+          "PID3": 1,
+          "GENDER": 1,
           "BIRTHYR": 1,
-          "RACE": 1
+          "PID7": 1,
+          "CC421A": 1,
+          "IDEO5": 1,
+          "GENHEALT": 1,
+          "EDUC": 1,
+          "RACE": 1,
+          "NEWSINT": 1,
+          "CC316": 1
         }
       ],
       [
@@ -1997,28 +1818,12 @@
     [
       "Common Content weights",
       [
-        "Roll Call Votes - Simpson-Bowles Budget Plan",
-        "Home ownership",
-        "Education",
-        "Heart disease",
-        "7 point Party ID"
+        "3 point party ID",
+        "Ideology - Yourself",
+        "Family income",
+        "StateAbbr",
+        "112th CD"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.varlab.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.varlab.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2052,11 +1857,11 @@
       [
         "fewestValues",
         [
-          "Roll Call Votes - Simpson-Bowles Budget Plan",
-          "Home ownership",
-          "Education",
-          "Heart disease",
-          "7 point Party ID"
+          "3 point party ID",
+          "Ideology - Yourself",
+          "Family income",
+          "StateAbbr",
+          "112th CD"
         ]
       ],
       [
@@ -2082,50 +1887,50 @@
       [
         "plotValues",
         {
-          "Work for a candidate or campaign": 1,
-          "Arthritis": 1,
-          "Which of the following statements best describes you?": 1,
-          "Donate money to a candidate, campaign, or political organization": 1,
-          "Put up a political sign (such as a lawn sign or bumper sticker)": 1,
-          "Common Content weights": 1,
           "Family income": 1,
-          "Roll Call Votes - Keystone Pipeline": 1,
-          "Roll Call Votes - Repeal Affordable Care Ac": 1,
-          "CurrentHouseFreshman": 1,
+          "Which of the following statements best describes you?": 1,
           "Party of Government Knowledge - Reps": 1,
-          "Ideology - Dem party": 1,
-          "Roll Call Votes - Ryan Budget Bill": 1,
-          "Party of Government Knowledge - Senate": 1,
-          "Attend local political meetings (such as school board or city council)": 1,
-          "Gender": 1,
-          "High blood pressure": 1,
-          "3 point party ID": 1,
-          "StateAbbr": 1,
+          "CurrentHouseFreshman": 1,
+          "Roll Call Votes - Repeal Affordable Care Ac": 1,
+          "Common Content weights": 1,
           "Interest in news and public affairs": 1,
-          "Generally speaking, do you think of yourself as a ... ?": 1,
-          "In what year were you born?": 1,
-          "Ideology - Romney": 1,
-          "Ideology - Obama": 1,
-          "Would you say that in general your health is...": 1,
-          "Are you of Spanish, Latino, or Hispanic origin or descent?": 1,
-          "Race": 1,
-          "Ideology - Rep party": 1,
-          "Vote 2008": 1,
-          "Voter Registration Status": 1,
-          "countyfips": 1,
-          "112th CD": 1,
-          "State": 1,
-          "Ideology": 1,
-          "CurrentHouseGender": 1,
-          "High cholesterol": 1,
-          "Roll Call Votes - U.S.-Korea Free Trade Agreement": 1,
-          "Pre-diabetes or diabetes": 1,
-          "Ideology - Yourself": 1,
           "7 point Party ID": 1,
+          "Roll Call Votes - Simpson-Bowles Budget Plan": 1,
+          "Vote 2008": 1,
+          "Work for a candidate or campaign": 1,
+          "Would you say that in general your health is...": 1,
+          "Race": 1,
+          "Party of Government Knowledge - Senate": 1,
+          "Pre-diabetes or diabetes": 1,
+          "Roll Call Votes - Keystone Pipeline": 1,
+          "In what year were you born?": 1,
+          "Roll Call Votes - Ryan Budget Bill": 1,
+          "Ideology - Rep party": 1,
+          "Arthritis": 1,
+          "countyfips": 1,
+          "Generally speaking, do you think of yourself as a ... ?": 1,
+          "Attend local political meetings (such as school board or city council)": 1,
+          "Ideology - Dem party": 1,
+          "112th CD": 1,
+          "CurrentHouseGender": 1,
+          "Ideology - Yourself": 1,
           "Heart disease": 1,
           "Education": 1,
+          "Voter Registration Status": 1,
+          "High cholesterol": 1,
+          "Roll Call Votes - U.S.-Korea Free Trade Agreement": 1,
+          "Put up a political sign (such as a lawn sign or bumper sticker)": 1,
+          "Gender": 1,
+          "Ideology - Romney": 1,
+          "High blood pressure": 1,
+          "Ideology": 1,
           "Home ownership": 1,
-          "Roll Call Votes - Simpson-Bowles Budget Plan": 1
+          "Are you of Spanish, Latino, or Hispanic origin or descent?": 1,
+          "StateAbbr": 1,
+          "Donate money to a candidate, campaign, or political organization": 1,
+          "State": 1,
+          "Ideology - Obama": 1,
+          "3 point party ID": 1
         }
       ],
       [
@@ -2303,26 +2108,10 @@
     [
       "1 = support; 2 = oppose",
       [
-        "1 = very liberal; 2 = liberal; 3 = somewhat liberal; 4 = middle of the road; 5 = somewhat conservative; 6 = conservative; 7 = very conservative; 8 = not sure",
         "1 = yes; 2 = no",
-        "1 = support; 2 = oppose"
+        "1 = support; 2 = oppose",
+        "1 = very liberal; 2 = liberal; 3 = somewhat liberal; 4 = middle of the road; 5 = somewhat conservative; 6 = conservative; 7 = very conservative; 8 = not sure"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.code.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2356,11 +2145,11 @@
       [
         "fewestValues",
         [
-          "2 = female; 1 = male",
-          "1 = democrat, 2 = republican; 3 = independent; 4 = other",
-          "1 = dem; 2 = rep; 3 = independent; 4 = other; 5 = not sure",
-          "1 = no; 2 = I usually vote, but did not in 2008; 3 = I am not sure; 4 = Yes, I definitely voted",
-          "0=not freshman; 1=freshman"
+          "6=post-grad; 5=4-year;4=2-year;3=some college; 2=HS; 1=no HS",
+          "1 = strong dem; 2 = not very strong dem; 3 = lean dem; 4 = independent; 5 = lean rep; 6 = not very strong rep; 7 = strong rep; 8 = not sure",
+          "1 = very liberal; 2 = liberal; 3 = moderate; 4 = conservative; 5 = very conservative; 6 = not sure",
+          "1 = I did not vote; 2 = I thought about voting; 3 = I usually vote but didn't; 4 = I attempted to vote but did not; 5 = I definitely voted",
+          "2 = female; 1 = male"
         ]
       ],
       [
@@ -2387,26 +2176,26 @@
         "plotValues",
         {
           "1 = support; 2 = oppose": 5,
-          "1 = very liberal; 2 = liberal; 3 = somewhat liberal; 4 = middle of the road; 5 = somewhat conservative; 6 = conservative; 7 = very conservative; 8 = not sure": 5,
           "1 = yes; 2 = no": 5,
+          "1 = very liberal; 2 = liberal; 3 = somewhat liberal; 4 = middle of the road; 5 = somewhat conservative; 6 = conservative; 7 = very conservative; 8 = not sure": 5,
           "1=Yes; 2=no": 4,
           "1= Republicans; 2 = Democrats; 3 = Neither; 4 = Not Sure": 2,
-          "1 = excellent; 2 = very good; 3 = good; 4 = fair; 5 = poor": 1,
-          "1 = very liberal; 2 = liberal; 3 = moderate; 4 = conservative; 5 = very conservative; 6 = not sure": 1,
-          "1=yes; 2=no; 3 = don't know": 1,
-          "1 = democrat, 2 = republican; 3 = independent; 4 = other": 1,
-          "M=male; F=female": 1,
-          "1 = own; 2 = rent; 3 = other": 1,
-          "1= yes; 2 = no": 1,
           "6=post-grad; 5=4-year;4=2-year;3=some college; 2=HS; 1=no HS": 1,
-          "1 = I did not vote; 2 = I thought about voting; 3 = I usually vote but didn't; 4 = I attempted to vote but did not; 5 = I definitely voted": 1,
+          "1 = democrat, 2 = republican; 3 = independent; 4 = other": 1,
           "1 = most of the time; 2 = some of the time; 3 = only now and then; 4 = hardly at all; 5 = don\u2019t know": 1,
-          "0=not freshman; 1=freshman": 1,
           "1 = dem; 2 = rep; 3 = independent; 4 = other; 5 = not sure": 1,
-          "1 = no; 2 = I usually vote, but did not in 2008; 3 = I am not sure; 4 = Yes, I definitely voted": 1,
+          "1 = own; 2 = rent; 3 = other": 1,
+          "1=yes; 2=no; 3 = don't know": 1,
           "1 = strong dem; 2 = not very strong dem; 3 = lean dem; 4 = independent; 5 = lean rep; 6 = not very strong rep; 7 = strong rep; 8 = not sure": 1,
-          "2 = female; 1 = male": 1,
-          "1= white; 2 = black; 3 = Hispanic; 4 = asian; 5 = native american; 6 = mixed; 7 = other; 8 = middle eastern": 1
+          "1= white; 2 = black; 3 = Hispanic; 4 = asian; 5 = native american; 6 = mixed; 7 = other; 8 = middle eastern": 1,
+          "0=not freshman; 1=freshman": 1,
+          "1 = no; 2 = I usually vote, but did not in 2008; 3 = I am not sure; 4 = Yes, I definitely voted": 1,
+          "1= yes; 2 = no": 1,
+          "1 = excellent; 2 = very good; 3 = good; 4 = fair; 5 = poor": 1,
+          "M=male; F=female": 1,
+          "1 = I did not vote; 2 = I thought about voting; 3 = I usually vote but didn't; 4 = I attempted to vote but did not; 5 = I definitely voted": 1,
+          "1 = very liberal; 2 = liberal; 3 = moderate; 4 = conservative; 5 = very conservative; 6 = not sure": 1,
+          "2 = female; 1 = male": 1
         }
       ],
       [
@@ -2553,72 +2342,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:16",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "position": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "isnumeric": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "format": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vallab": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "varlab": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

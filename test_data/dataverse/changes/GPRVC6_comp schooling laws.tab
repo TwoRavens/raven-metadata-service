@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        4508
-      ],
-      [
-        "variableCount",
-        3
-      ],
-      [
-        "dataSource",
-        {
-          "name": "GPRVC6_comp schooling laws.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 58624
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "AL",
       [
-        "MO",
-        "PA",
-        "NM",
-        "DE",
-        "MT"
+        "MS",
+        "MD",
+        "WI",
+        "MT",
+        "OR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "MO",
-          "PA",
-          "NM",
-          "DE",
-          "MT"
+          "MS",
+          "MD",
+          "WI",
+          "MT",
+          "OR"
         ]
       ],
       [
@@ -173,55 +74,55 @@
       [
         "plotValues",
         {
-          "AR": 92,
-          "WV": 92,
-          "WA": 92,
-          "GA": 92,
-          "WI": 92,
-          "IA": 92,
-          "MA": 92,
-          "SC": 92,
-          "CT": 92,
-          "MI": 92,
-          "OR": 92,
-          "DC": 92,
-          "VT": 92,
-          "ID": 92,
-          "NH": 92,
-          "ND": 92,
-          "IN": 92,
-          "KY": 92,
-          "WY": 92,
-          "MN": 92,
-          "NV": 92,
-          "RI": 92,
-          "CO": 92,
           "NY": 92,
-          "CA": 92,
-          "NJ": 92,
-          "SD": 92,
-          "AL": 92,
-          "VA": 92,
-          "IL": 92,
-          "MD": 92,
+          "IA": 92,
           "OK": 92,
-          "AZ": 92,
-          "LA": 92,
-          "TN": 92,
-          "NC": 92,
-          "FL": 92,
-          "NE": 92,
-          "MS": 92,
-          "TX": 92,
-          "KS": 92,
-          "OH": 92,
+          "CA": 92,
+          "WA": 92,
+          "IL": 92,
+          "SC": 92,
+          "SD": 92,
+          "VT": 92,
           "UT": 92,
-          "ME": 92,
-          "MT": 92,
-          "DE": 92,
+          "CT": 92,
+          "NJ": 92,
+          "VA": 92,
+          "TN": 92,
+          "CO": 92,
+          "AL": 92,
           "NM": 92,
+          "MI": 92,
+          "ND": 92,
+          "RI": 92,
+          "DE": 92,
+          "DC": 92,
+          "LA": 92,
+          "MN": 92,
+          "ID": 92,
+          "TX": 92,
+          "WV": 92,
+          "KS": 92,
+          "WY": 92,
+          "AZ": 92,
+          "IN": 92,
+          "NH": 92,
+          "MA": 92,
           "PA": 92,
-          "MO": 92
+          "OH": 92,
+          "KY": 92,
+          "FL": 92,
+          "AR": 92,
+          "NE": 92,
+          "NV": 92,
+          "ME": 92,
+          "GA": 92,
+          "MO": 92,
+          "NC": 92,
+          "OR": 92,
+          "MT": 92,
+          "WI": 92,
+          "MD": 92,
+          "MS": 92
         }
       ],
       [
@@ -442,22 +343,6 @@
     [
       "1914",
       1914
-    ]
-  ],
-  [
-    "change",
-    "variables.yearat14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.yearat14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1101,22 +986,6 @@
     ]
   ],
   [
-    "change",
-    "variables.drop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.drop.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.drop",
     [
@@ -1343,47 +1212,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:43",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "yearat14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "drop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

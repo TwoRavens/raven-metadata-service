@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        109
-      ],
-      [
-        "variableCount",
-        34
-      ],
-      [
-        "dataSource",
-        {
-          "name": "29242_bolton_thrower_ajps_data_v12.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 12887
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1905",
       1905
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.president.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.president.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.president",
     [
@@ -826,21 +711,21 @@
         "plotValues",
         {
           "fdr": 12,
-          "reagan": 8,
-          "eisenhowe": 8,
           "wbush": 8,
+          "reagan": 8,
           "truman": 8,
-          "clinton": 8,
           "wilson": 8,
+          "eisenhowe": 8,
+          "clinton": 8,
           "nixon": 6,
-          "coolidge": 5,
           "obama": 5,
+          "coolidge": 5,
           "lbj": 5,
           "hwbush": 4,
-          "taft": 4,
-          "tr": 4,
-          "carter": 4,
           "hoover": 4,
+          "tr": 4,
+          "taft": 4,
+          "carter": 4,
           "harding": 3,
           "jfk": 3,
           "ford": 2
@@ -1030,22 +915,6 @@
     [
       "20",
       20
-    ]
-  ],
-  [
-    "change",
-    "variables.allnoncerm_eo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.allnoncerm_eo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1689,22 +1558,6 @@
     ]
   ],
   [
-    "change",
-    "variables.divided.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.divided.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.divided",
     [
@@ -1947,22 +1800,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lame_duck.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lame_duck.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lame_duck",
     [
@@ -2202,22 +2039,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.war.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.war.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2464,22 +2285,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.trend.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.trend.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3123,22 +2928,6 @@
     ]
   ],
   [
-    "change",
-    "variables.administration_change.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.administration_change.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.administration_change",
     [
@@ -3393,26 +3182,10 @@
   ],
   [
     "change",
-    "variables.spending_percent_gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.spending_percent_gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.spending_percent_gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4065,26 +3838,10 @@
   ],
   [
     "change",
-    "variables.inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4741,26 +4498,10 @@
   ],
   [
     "change",
-    "variables.averagemajsize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.averagemajsize.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.averagemajsize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5413,26 +5154,10 @@
   ],
   [
     "change",
-    "variables.lnlegexp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnlegexp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnlegexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6089,26 +5814,10 @@
   ],
   [
     "change",
-    "variables.lncommtot1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lncommtot1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lncommtot1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6761,26 +6470,10 @@
   ],
   [
     "change",
-    "variables.lneopexp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lneopexp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lneopexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7424,22 +7117,6 @@
     ]
   ],
   [
-    "change",
-    "variables.postlra.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.postlra.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.postlra",
     [
@@ -7679,22 +7356,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.tr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7940,22 +7601,6 @@
     ]
   ],
   [
-    "change",
-    "variables.taft.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.taft.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.taft",
     [
@@ -8195,22 +7840,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wilson.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.wilson.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8456,22 +8085,6 @@
     ]
   ],
   [
-    "change",
-    "variables.harding.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.harding.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.harding",
     [
@@ -8711,22 +8324,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.coolidge.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.coolidge.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8972,22 +8569,6 @@
     ]
   ],
   [
-    "change",
-    "variables.hoover.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.hoover.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.hoover",
     [
@@ -9227,22 +8808,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.fdr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fdr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9488,22 +9053,6 @@
     ]
   ],
   [
-    "change",
-    "variables.truman.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.truman.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.truman",
     [
@@ -9743,22 +9292,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ike.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ike.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10004,22 +9537,6 @@
     ]
   ],
   [
-    "change",
-    "variables.jfk.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.jfk.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.jfk",
     [
@@ -10259,22 +9776,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.lbj.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lbj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10520,22 +10021,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nixon.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nixon.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nixon",
     [
@@ -10775,22 +10260,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ford.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ford.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11036,22 +10505,6 @@
     ]
   ],
   [
-    "change",
-    "variables.carter.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.carter.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.carter",
     [
@@ -11291,22 +10744,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.reagan.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.reagan.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11552,22 +10989,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bush41.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.bush41.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bush41",
     [
@@ -11807,22 +11228,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.clinton.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.clinton.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12068,22 +11473,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bush43.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.bush43.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bush43",
     [
@@ -12326,22 +11715,6 @@
     ]
   ],
   [
-    "change",
-    "variables.obama.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.obama.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.obama",
     [
@@ -12538,202 +11911,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:08:38",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "president": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "allnoncerm_eo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "divided": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lame_duck": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "war": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trend": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "administration_change": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spending_percent_gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "averagemajsize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnlegexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lncommtot1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lneopexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "postlra": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taft": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wilson": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "harding": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coolidge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hoover": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fdr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "truman": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ike": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "jfk": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lbj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nixon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ford": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "carter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reagan": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bush41": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "clinton": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bush43": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "obama": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

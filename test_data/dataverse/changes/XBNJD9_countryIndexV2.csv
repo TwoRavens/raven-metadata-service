@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        125
-      ],
-      [
-        "variableCount",
-        5
-      ],
-      [
-        "dataSource",
-        {
-          "name": "XBNJD9_countryIndexV2.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 3715
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.CowCode.median",
     [
@@ -126,22 +43,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.CowCode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CowCode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -789,22 +690,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ccode",
     [
@@ -1408,28 +1293,12 @@
     [
       "USA",
       [
-        "BRA",
         "CEN",
-        "ECU",
-        "DRV",
-        "COS"
+        "NOR",
+        "SAF",
+        "AZE",
+        "LAT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.StateAbb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.StateAbb.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1463,11 +1332,11 @@
       [
         "fewestValues",
         [
-          "BRA",
           "CEN",
-          "ECU",
-          "DRV",
-          "COS"
+          "NOR",
+          "SAF",
+          "AZE",
+          "LAT"
         ]
       ],
       [
@@ -1493,131 +1362,131 @@
       [
         "plotValues",
         {
-          "NIR": 1,
-          "IND": 1,
-          "DRC": 1,
-          "TAZ": 1,
-          "CAO": 1,
-          "DOM": 1,
-          "GRC": 1,
-          "ARM": 1,
-          "UGA": 1,
-          "KEN": 1,
-          "CAN": 1,
-          "MYA": 1,
-          "COL": 1,
-          "CUB": 1,
-          "SLV": 1,
-          "JPN": 1,
-          "CAM": 1,
-          "GUY": 1,
-          "AZE": 1,
-          "BHU": 1,
-          "UKG": 1,
-          "BRA": 1,
-          "TAJ": 1,
-          "CDI": 1,
-          "POL": 1,
-          "GRG": 1,
-          "INS": 1,
-          "KUW": 1,
-          "BNG": 1,
-          "VEN": 1,
-          "IRN": 1,
-          "ERI": 1,
-          "PHI": 1,
-          "EGY": 1,
-          "MAA": 1,
-          "CRO": 1,
-          "CON": 1,
           "YEM": 1,
-          "SOM": 1,
-          "HUN": 1,
+          "GAM": 1,
+          "COL": 1,
+          "THI": 1,
+          "POL": 1,
           "NEP": 1,
-          "ALG": 1,
-          "YUG": 1,
-          "HAI": 1,
-          "PER": 1,
-          "ANG": 1,
-          "ETH": 1,
-          "ZAM": 1,
-          "POR": 1,
-          "FRN": 1,
-          "IRQ": 1,
-          "HON": 1,
-          "ITA": 1,
-          "AUL": 1,
-          "MAL": 1,
-          "BEN": 1,
-          "RUS": 1,
-          "CYP": 1,
-          "NOR": 1,
+          "PNG": 1,
           "SYR": 1,
-          "BEL": 1,
+          "SWA": 1,
+          "SLV": 1,
+          "POR": 1,
+          "GHA": 1,
+          "ARM": 1,
+          "SIE": 1,
+          "NIC": 1,
+          "GUY": 1,
+          "TOG": 1,
+          "PRK": 1,
+          "SAU": 1,
+          "CYP": 1,
+          "AFG": 1,
+          "SIN": 1,
           "LES": 1,
           "GMY": 1,
-          "MLI": 1,
-          "LIB": 1,
-          "SUD": 1,
-          "NTH": 1,
-          "CHL": 1,
-          "AFG": 1,
-          "BUL": 1,
-          "UZB": 1,
-          "MON": 1,
-          "CHN": 1,
-          "GHA": 1,
-          "SWA": 1,
-          "PNG": 1,
-          "MOR": 1,
-          "BUI": 1,
-          "RWA": 1,
-          "SIN": 1,
-          "ROK": 1,
-          "LEB": 1,
-          "CHA": 1,
-          "ZIM": 1,
-          "UKR": 1,
-          "BOT": 1,
-          "SPN": 1,
-          "NIC": 1,
-          "TOG": 1,
-          "JOR": 1,
-          "GUI": 1,
-          "SUR": 1,
-          "KYR": 1,
-          "SAL": 1,
-          "SEN": 1,
-          "BLR": 1,
-          "MLD": 1,
-          "TKM": 1,
-          "GAM": 1,
-          "QAT": 1,
-          "DEN": 1,
-          "SAF": 1,
-          "LAT": 1,
+          "CDI": 1,
+          "KEN": 1,
+          "GRC": 1,
+          "ALG": 1,
+          "PHI": 1,
+          "CON": 1,
           "DJI": 1,
-          "NAM": 1,
-          "THI": 1,
-          "LBR": 1,
-          "ARG": 1,
-          "LIT": 1,
-          "ISR": 1,
-          "SIE": 1,
-          "BOS": 1,
-          "PAK": 1,
-          "ROM": 1,
-          "ALB": 1,
-          "DRV": 1,
-          "ECU": 1,
+          "BUL": 1,
+          "DOM": 1,
+          "ROK": 1,
           "CEN": 1,
-          "PRK": 1,
-          "TUR": 1,
-          "SAU": 1,
+          "AUL": 1,
           "COS": 1,
-          "MZM": 1,
+          "JPN": 1,
+          "FRN": 1,
+          "BRA": 1,
+          "CAO": 1,
+          "SUD": 1,
+          "MAL": 1,
+          "DRC": 1,
+          "NTH": 1,
+          "LIT": 1,
+          "CHA": 1,
+          "IND": 1,
+          "NIG": 1,
+          "PER": 1,
+          "DRV": 1,
+          "ZIM": 1,
+          "HAI": 1,
+          "KUW": 1,
+          "CRO": 1,
+          "BOS": 1,
+          "CUB": 1,
+          "NIR": 1,
           "USA": 1,
-          "NIG": 1
+          "SPN": 1,
+          "ALB": 1,
+          "SEN": 1,
+          "HON": 1,
+          "CHN": 1,
+          "ARG": 1,
+          "BEL": 1,
+          "IRN": 1,
+          "TKM": 1,
+          "DEN": 1,
+          "YUG": 1,
+          "UKR": 1,
+          "TAJ": 1,
+          "HUN": 1,
+          "MZM": 1,
+          "VEN": 1,
+          "MLD": 1,
+          "LIB": 1,
+          "MYA": 1,
+          "RWA": 1,
+          "ROM": 1,
+          "TAZ": 1,
+          "UKG": 1,
+          "BNG": 1,
+          "CAN": 1,
+          "ITA": 1,
+          "LEB": 1,
+          "BEN": 1,
+          "ERI": 1,
+          "CHL": 1,
+          "BLR": 1,
+          "JOR": 1,
+          "ECU": 1,
+          "BOT": 1,
+          "MOR": 1,
+          "ISR": 1,
+          "GRG": 1,
+          "IRQ": 1,
+          "MAA": 1,
+          "SAL": 1,
+          "NAM": 1,
+          "ANG": 1,
+          "KYR": 1,
+          "SOM": 1,
+          "MON": 1,
+          "MLI": 1,
+          "UGA": 1,
+          "RUS": 1,
+          "GUI": 1,
+          "QAT": 1,
+          "LBR": 1,
+          "CAM": 1,
+          "BUI": 1,
+          "ETH": 1,
+          "SUR": 1,
+          "PAK": 1,
+          "UZB": 1,
+          "BHU": 1,
+          "ZAM": 1,
+          "INS": 1,
+          "TUR": 1,
+          "LAT": 1,
+          "AZE": 1,
+          "SAF": 1,
+          "NOR": 1,
+          "EGY": 1
         }
       ],
       [
@@ -1876,28 +1745,12 @@
     [
       "United States of America",
       [
-        "Philippines",
-        "Liberia",
-        "Zimbabwe",
-        "Djibouti",
-        "Belgium"
+        "Poland",
+        "Jordan",
+        "Peru",
+        "South Korea",
+        "United States of America"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.StateNme.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.StateNme.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1931,11 +1784,11 @@
       [
         "fewestValues",
         [
-          "Philippines",
-          "Liberia",
-          "Zimbabwe",
-          "Djibouti",
-          "Belgium"
+          "Poland",
+          "Jordan",
+          "Peru",
+          "South Korea",
+          "United States of America"
         ]
       ],
       [
@@ -1961,131 +1814,131 @@
       [
         "plotValues",
         {
-          "Armenia": 1,
-          "Myanmar": 1,
-          "Peru": 1,
-          "Suriname": 1,
-          "Yugoslavia": 1,
-          "China": 1,
-          "Georgia": 1,
-          "Croatia": 1,
-          "Australia": 1,
-          "Algeria": 1,
-          "Italy": 1,
-          "North Korea": 1,
-          "Colombia": 1,
-          "Dominican Republic": 1,
-          "Guyana": 1,
-          "Singapore": 1,
-          "Denmark": 1,
-          "Belarus": 1,
-          "Spain": 1,
-          "Hungary": 1,
-          "Lesotho": 1,
-          "India": 1,
-          "Libya": 1,
-          "Haiti": 1,
-          "Uganda": 1,
-          "Mozambique": 1,
-          "Congo": 1,
-          "Mauritania": 1,
-          "Papua New Guinea": 1,
-          "Israel": 1,
-          "United States of America": 1,
-          "Senegal": 1,
-          "Kuwait": 1,
-          "Nicaragua": 1,
-          "Syria": 1,
-          "Japan": 1,
-          "Kenya": 1,
-          "Swaziland": 1,
-          "Egypt": 1,
-          "Costa Rica": 1,
-          "Somalia": 1,
-          "Romania": 1,
-          "Chile": 1,
-          "Iraq": 1,
-          "Albania": 1,
-          "Brazil": 1,
-          "Netherlands": 1,
-          "Sierra Leone": 1,
-          "Tajikistan": 1,
-          "Ecuador": 1,
-          "Botswana": 1,
-          "Ukraine": 1,
-          "Kyrgyzstan": 1,
-          "Cyprus": 1,
-          "Uzbekistan": 1,
-          "Honduras": 1,
-          "Mali": 1,
-          "Tanzania": 1,
-          "Zambia": 1,
-          "Bhutan": 1,
-          "Saudi Arabia": 1,
-          "Togo": 1,
-          "Lithuania": 1,
-          "Moldova": 1,
-          "Eritrea": 1,
-          "Liberia": 1,
-          "El Salvador": 1,
-          "Portugal": 1,
-          "Namibia": 1,
-          "Bosnia and Herzegovina": 1,
-          "Angola": 1,
-          "Ghana": 1,
-          "France": 1,
-          "Gambia": 1,
-          "Rwanda": 1,
-          "Sudan": 1,
-          "Qatar": 1,
-          "Nigeria": 1,
-          "Canada": 1,
-          "Turkey": 1,
-          "Mongolia": 1,
-          "Russia": 1,
-          "Argentina": 1,
-          "United Kingdom": 1,
-          "Germany": 1,
-          "Vietnam": 1,
-          "Nepal": 1,
-          "Greece": 1,
-          "Jordan": 1,
-          "Lebanon": 1,
-          "Bulgaria": 1,
-          "Guinea": 1,
-          "Benin": 1,
-          "Zimbabwe": 1,
-          "Yemen": 1,
-          "Djibouti": 1,
-          "Belgium": 1,
-          "Burundi": 1,
-          "Slovenia": 1,
-          "Niger": 1,
-          "Indonesia": 1,
-          "Malaysia": 1,
-          "Chad": 1,
           "Iran": 1,
-          "Cameroon": 1,
-          "South Africa": 1,
-          "Cuba": 1,
-          "Venezuela": 1,
-          "Morocco": 1,
-          "Latvia": 1,
-          "Central African Republic": 1,
-          "Turkmenistan": 1,
-          "Azerbaijan": 1,
-          "Thailand": 1,
-          "South Korea": 1,
-          "Afghanistan": 1,
-          "Democratic Republic of the Congo": 1,
-          "Norway": 1,
           "Poland": 1,
-          "Cambodia": 1,
-          "Bangladesh": 1,
+          "Senegal": 1,
+          "Netherlands": 1,
           "Ethiopia": 1,
-          "Pakistan": 1,
+          "Spain": 1,
+          "Greece": 1,
+          "Mongolia": 1,
+          "Honduras": 1,
+          "Georgia": 1,
+          "El Salvador": 1,
+          "Tanzania": 1,
+          "Iraq": 1,
+          "Suriname": 1,
+          "Slovenia": 1,
+          "Bangladesh": 1,
+          "Armenia": 1,
+          "Botswana": 1,
+          "Togo": 1,
+          "Australia": 1,
+          "Brazil": 1,
+          "Swaziland": 1,
+          "Syria": 1,
+          "Ecuador": 1,
+          "Qatar": 1,
+          "Lebanon": 1,
           "Ivory Coast": 1,
-          "Philippines": 1
+          "Vietnam": 1,
+          "Kyrgyzstan": 1,
+          "Malaysia": 1,
+          "Costa Rica": 1,
+          "Kuwait": 1,
+          "Indonesia": 1,
+          "Namibia": 1,
+          "North Korea": 1,
+          "United Kingdom": 1,
+          "Mali": 1,
+          "Nicaragua": 1,
+          "Saudi Arabia": 1,
+          "Central African Republic": 1,
+          "Cyprus": 1,
+          "France": 1,
+          "Myanmar": 1,
+          "Canada": 1,
+          "Zambia": 1,
+          "Italy": 1,
+          "Sierra Leone": 1,
+          "Nigeria": 1,
+          "Gambia": 1,
+          "Angola": 1,
+          "Bosnia and Herzegovina": 1,
+          "Colombia": 1,
+          "Albania": 1,
+          "China": 1,
+          "Afghanistan": 1,
+          "Burundi": 1,
+          "Niger": 1,
+          "Russia": 1,
+          "Nepal": 1,
+          "Somalia": 1,
+          "Yugoslavia": 1,
+          "Rwanda": 1,
+          "Uganda": 1,
+          "Japan": 1,
+          "Bulgaria": 1,
+          "Belgium": 1,
+          "Zimbabwe": 1,
+          "Uzbekistan": 1,
+          "Benin": 1,
+          "Ghana": 1,
+          "Yemen": 1,
+          "Egypt": 1,
+          "Tajikistan": 1,
+          "Israel": 1,
+          "South Africa": 1,
+          "Lithuania": 1,
+          "Mauritania": 1,
+          "Hungary": 1,
+          "Ukraine": 1,
+          "Chad": 1,
+          "Pakistan": 1,
+          "Libya": 1,
+          "Singapore": 1,
+          "Germany": 1,
+          "Portugal": 1,
+          "Cambodia": 1,
+          "Venezuela": 1,
+          "Chile": 1,
+          "Turkey": 1,
+          "Eritrea": 1,
+          "Congo": 1,
+          "Croatia": 1,
+          "Philippines": 1,
+          "Guinea": 1,
+          "Cameroon": 1,
+          "Democratic Republic of the Congo": 1,
+          "Moldova": 1,
+          "Sudan": 1,
+          "Azerbaijan": 1,
+          "Papua New Guinea": 1,
+          "Guyana": 1,
+          "Morocco": 1,
+          "Bhutan": 1,
+          "Argentina": 1,
+          "Latvia": 1,
+          "Haiti": 1,
+          "Lesotho": 1,
+          "Liberia": 1,
+          "Djibouti": 1,
+          "United States of America": 1,
+          "Dominican Republic": 1,
+          "Mozambique": 1,
+          "Turkmenistan": 1,
+          "Kenya": 1,
+          "Cuba": 1,
+          "Belarus": 1,
+          "Norway": 1,
+          "Denmark": 1,
+          "Thailand": 1,
+          "Algeria": 1,
+          "South Korea": 1,
+          "Peru": 1,
+          "Jordan": 1,
+          "Romania": 1,
+          "India": 1
         }
       ],
       [
@@ -2839,57 +2692,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:27:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CowCode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "StateAbb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "StateNme": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

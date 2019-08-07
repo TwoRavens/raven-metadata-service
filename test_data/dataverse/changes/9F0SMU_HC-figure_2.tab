@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        475
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "9F0SMU_HC-figure_2.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 71758
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1985",
       1985.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -698,28 +599,12 @@
     [
       "ARG",
       [
-        "JAM",
-        "PER",
         "TRI",
-        "GUA",
-        "PRY"
+        "CHL",
+        "PER",
+        "PRY",
+        "JAM"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,11 +638,11 @@
       [
         "fewestValues",
         [
-          "JAM",
-          "PER",
           "TRI",
-          "GUA",
-          "PRY"
+          "CHL",
+          "PER",
+          "PRY",
+          "JAM"
         ]
       ],
       [
@@ -783,25 +668,25 @@
       [
         "plotValues",
         {
-          "CHL": 25,
-          "NIC": 25,
-          "HON": 25,
-          "VEN": 25,
-          "BRA": 25,
-          "ECU": 25,
-          "COL": 25,
-          "CRI": 25,
-          "BOL": 25,
-          "SLV": 25,
-          "MEX": 25,
           "DR": 25,
           "ARG": 25,
-          "URU": 25,
-          "PRY": 25,
           "GUA": 25,
-          "TRI": 25,
+          "COL": 25,
+          "ECU": 25,
+          "VEN": 25,
+          "BRA": 25,
+          "URU": 25,
+          "SLV": 25,
+          "MEX": 25,
+          "CHL": 25,
+          "HON": 25,
+          "CRI": 25,
+          "BOL": 25,
+          "JAM": 25,
+          "PRY": 25,
           "PER": 25,
-          "JAM": 25
+          "TRI": 25,
+          "NIC": 25
         }
       ],
       [
@@ -992,22 +877,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countryid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1591,26 +1460,10 @@
   ],
   [
     "change",
-    "variables.finref.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.finref.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.finref.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2263,26 +2116,10 @@
   ],
   [
     "change",
-    "variables.privatization.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.privatization.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.privatization.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2935,26 +2772,10 @@
   ],
   [
     "change",
-    "variables.taxref.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.taxref.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.taxref.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3607,26 +3428,10 @@
   ],
   [
     "change",
-    "variables.traderef.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.traderef.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.traderef.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4279,26 +4084,10 @@
   ],
   [
     "change",
-    "variables.govcon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.govcon.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.govcon.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4951,26 +4740,10 @@
   ],
   [
     "change",
-    "variables.wwelfarer.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wwelfarer.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wwelfarer.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5627,26 +5400,10 @@
   ],
   [
     "change",
-    "variables.dfa4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dfa4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dfa4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6303,26 +6060,10 @@
   ],
   [
     "change",
-    "variables.dfa2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dfa2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dfa2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6920,87 +6661,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:54",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "finref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "privatization": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "traderef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govcon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wwelfarer": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dfa4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dfa2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

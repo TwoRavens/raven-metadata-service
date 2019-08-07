@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        400
-      ],
-      [
-        "variableCount",
-        63
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HQ1N6A_Taxation (contemporaneous) data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 215800
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccode.median",
     [
@@ -122,22 +39,6 @@
     [
       "140",
       140.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -405,22 +306,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -481,8 +366,8 @@
           "Turkey": 61,
           "Indonesia": 56,
           "Tanzania": 42,
-          "India": 32,
           "Philippines": 32,
+          "India": 32,
           "Brazil": 27,
           "Argentina": 24,
           "Italy": 19,
@@ -666,22 +551,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1288,28 +1157,12 @@
     [
       "Dodoma",
       [
-        "DI Yogyakarta",
-        "Mpumalanga",
-        "Iringa",
-        "Central Visayas",
-        "Rukwa"
+        "Bicol Region",
+        "Papua",
+        "Maluku",
+        "Western Cape",
+        "Jawa Timur"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.regionname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regionname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1343,11 +1196,11 @@
       [
         "fewestValues",
         [
-          "Prachuap Khiri Khan",
-          "La Pampa",
-          "Chanthaburi",
-          "Nigde",
-          "Uthai Thani"
+          "Nakhon Sawan",
+          "Ang Thong",
+          "Madhya Pradesh",
+          "Yala",
+          "Mae Hong Son"
         ]
       ],
       [
@@ -1373,337 +1226,337 @@
       [
         "plotValues",
         {
-          "North West": 2,
-          "Maluku": 2,
-          "National Capital Region": 2,
-          "SOCCSKSARGEN": 2,
-          "Sulawesi Selatan": 2,
-          "Morogoro": 2,
-          "DKI Jakarta": 2,
-          "Ruvuma": 2,
-          "Sulawesi Tengah": 2,
-          "Bicol Region": 2,
-          "Jawa Timur": 2,
-          "Shinyanga": 2,
-          "Dar es Salaam": 2,
-          "Nusa Tenggara Timur": 2,
-          "Sulawesi Utara": 2,
-          "Dodoma": 2,
-          "Eastern Cape": 2,
-          "DI Yogyakarta": 2,
-          "Iringa": 2,
-          "Davao Region": 2,
-          "Northern Mindanao": 2,
-          "Western Cape": 2,
-          "Mpumalanga": 2,
-          "Tanga": 2,
-          "Arusha": 2,
-          "Mara": 2,
-          "ARMM": 2,
-          "Lampung": 2,
-          "Cagayan Valley": 2,
-          "Singida": 2,
-          "Manyara": 2,
-          "Kalimantan Barat": 2,
-          "Caraga": 2,
-          "Sumatera Utara": 2,
-          "KwaZulu-Natal": 2,
-          "Lindi": 2,
-          "Tabora": 2,
-          "Nusa Tenggara Barat": 2,
-          "Mbeya": 2,
-          "Rukwa": 2,
-          "Kalimantan Selatan": 2,
-          "Bali": 2,
-          "Kagera": 2,
-          "Ilocos Region": 2,
-          "Limpopo": 2,
-          "Central Visayas": 2,
-          "Western Visayas": 2,
-          "Kigoma": 2,
-          "Free State": 2,
-          "Riau": 2,
-          "Aceh": 2,
-          "Coast": 2,
-          "Kalimantan Tengah": 2,
-          "Papua": 2,
-          "Eastern Visayas": 2,
-          "Sumatera Selatan": 2,
-          "Northern Cape": 2,
-          "Kilimanjaro": 2,
-          "Kalimantan Timur": 2,
-          "Sumatera Barat": 2,
-          "Bengkulu": 2,
-          "Cordillera Administrative Region": 2,
-          "Central Luzon": 2,
-          "Mtwara": 2,
-          "Sulawesi Tenggara": 2,
-          "Mwanza": 2,
-          "Gauteng": 2,
           "Zamboanga Peninsula": 2,
+          "Eastern Visayas": 2,
+          "Morogoro": 2,
+          "Bengkulu": 2,
+          "Bali": 2,
+          "Davao Region": 2,
+          "Manyara": 2,
+          "Western Visayas": 2,
+          "Singida": 2,
+          "Bicol Region": 2,
+          "Eastern Cape": 2,
+          "Tabora": 2,
+          "National Capital Region": 2,
+          "Shinyanga": 2,
+          "Coast": 2,
+          "Central Luzon": 2,
+          "Mara": 2,
+          "SOCCSKSARGEN": 2,
+          "Nusa Tenggara Timur": 2,
+          "Northern Mindanao": 2,
+          "Iringa": 2,
+          "Cordillera Administrative Region": 2,
+          "Lindi": 2,
+          "Mpumalanga": 2,
+          "Sumatera Selatan": 2,
+          "Mtwara": 2,
+          "Central Visayas": 2,
+          "Limpopo": 2,
+          "Sulawesi Tenggara": 2,
+          "Arusha": 2,
+          "Tanga": 2,
+          "Aceh": 2,
+          "North West": 2,
+          "Mbeya": 2,
           "Jawa Tengah": 2,
-          "Agri": 1,
-          "Songkhla": 1,
-          "Jawa Barat": 1,
-          "Lop Buri": 1,
-          "Trentino-Alto Adige": 1,
-          "Phangnga": 1,
-          "MIMAROPA": 1,
-          "Tierra del Fuego": 1,
-          "Lamphun": 1,
-          "Misiones": 1,
-          "Pernambuco": 1,
-          "Himachal Pradesh": 1,
-          "Artvin": 1,
-          "Sukhothai": 1,
-          "Jharkhand": 1,
-          "Emilia-Romagna": 1,
-          "Samut Songkhram": 1,
-          "Kentriki Makedonia": 1,
-          "Mizoram": 1,
-          "Kirklareli": 1,
-          "Bolu": 1,
-          "Minas Gerais": 1,
-          "Tripura": 1,
-          "Amazonas": 1,
-          "Tamil Nadu (Madras until 1968)": 1,
-          "Nakhon Sawan": 1,
-          "Santa Fe": 1,
-          "Hatay": 1,
-          "Antalya": 1,
-          "Umbria": 1,
-          "Nakhon Phanom": 1,
-          "C\ufffd\ufffdrdoba": 1,
-          "Kirsehir": 1,
-          "Pattani": 1,
-          "Liguria": 1,
-          "Acre": 1,
-          "Abruzzo": 1,
-          "Apulia": 1,
-          "Chiang Mai": 1,
-          "Malatya": 1,
-          "Phuket": 1,
-          "Rio Grande do Sul": 1,
-          "Neuqu\ufffd\ufffdn": 1,
+          "DKI Jakarta": 2,
+          "Papua": 2,
+          "Sulawesi Utara": 2,
+          "Kalimantan Barat": 2,
+          "Kigoma": 2,
+          "Dodoma": 2,
+          "Kalimantan Tengah": 2,
+          "Rukwa": 2,
+          "Sumatera Barat": 2,
+          "Ruvuma": 2,
+          "Sulawesi Selatan": 2,
+          "Sulawesi Tengah": 2,
+          "Kalimantan Timur": 2,
+          "Riau": 2,
+          "Free State": 2,
+          "ARMM": 2,
+          "Kilimanjaro": 2,
+          "Dar es Salaam": 2,
+          "Nusa Tenggara Barat": 2,
+          "Caraga": 2,
+          "KwaZulu-Natal": 2,
+          "Jawa Timur": 2,
+          "Mwanza": 2,
+          "Ilocos Region": 2,
+          "DI Yogyakarta": 2,
+          "Cagayan Valley": 2,
+          "Maluku": 2,
+          "Lampung": 2,
+          "Kalimantan Selatan": 2,
+          "Western Cape": 2,
+          "Sumatera Utara": 2,
+          "Northern Cape": 2,
+          "Kagera": 2,
+          "Gauteng": 2,
           "Nong Khai": 1,
-          "Bingol": 1,
-          "Samut Prakan": 1,
-          "Maranh\ufffd\ufffdo": 1,
-          "Adiyaman": 1,
-          "Phitsanulok": 1,
-          "Molise": 1,
-          "Izmir": 1,
-          "Udon Thani": 1,
-          "Maha Sarakham": 1,
-          "Kerala": 1,
-          "Diyarbaki": 1,
-          "Lombardia": 1,
-          "Konya": 1,
-          "Edirne": 1,
-          "Adana": 1,
-          "Bilecik": 1,
-          "Catamarca": 1,
-          "Ionia Nisia": 1,
-          "Kayseri": 1,
-          "Khon Kaen": 1,
-          "Sicily": 1,
-          "Tucum\ufffd\ufffdn": 1,
-          "Piemonte": 1,
-          "Phichit": 1,
-          "Samsun": 1,
-          "Usak": 1,
-          "Puducherry (Pondicherry until 2006)": 1,
-          "Peloponnisos": 1,
-          "Si Sa Ket": 1,
-          "Rajasthan": 1,
-          "Erzurum": 1,
-          "Cear\ufffd\ufffd": 1,
-          "Ranong": 1,
-          "Bahia": 1,
-          "Mus": 1,
-          "Sivas": 1,
-          "Giresun": 1,
-          "Punjab": 1,
-          "Sulawesi Barat": 1,
-          "Jammu and Kashmir": 1,
-          "Chon Buri": 1,
-          "Madhya Pradesh": 1,
-          "Chaco": 1,
-          "Zonguldak": 1,
-          "Piau\ufffd\ufffd": 1,
-          "Phrae": 1,
-          "Phayao": 1,
-          "Mato Grosso do Sul": 1,
-          "Notio Aigaio": 1,
-          "La Pampa": 1,
-          "Gorontalo": 1,
-          "Buenos Aires": 1,
-          "Kanchanaburi": 1,
-          "Santiago del Estero": 1,
-          "Goa": 1,
-          "Nakhon Pathom": 1,
-          "Mato Grosso": 1,
-          "Surin": 1,
-          "Ankara": 1,
-          "Narathiwat": 1,
-          "Kastamonu": 1,
-          "Yozgat": 1,
-          "Veneto": 1,
-          "Salta": 1,
-          "Manisa": 1,
-          "Nong Bua Lam Phu": 1,
-          "Formosa": 1,
-          "Pathum Thani": 1,
-          "Haryana": 1,
-          "Kep. Bangka Belitung": 1,
-          "Rond\ufffd\ufffdnia": 1,
-          "Nan": 1,
-          "Elazig": 1,
-          "Chachoengsao": 1,
-          "Trat": 1,
-          "Satun": 1,
-          "Nakhon Si Thammarat": 1,
-          "Campania": 1,
-          "Bihar": 1,
-          "Prachuap Khiri Khan": 1,
-          "Loei": 1,
-          "Tocantins": 1,
-          "Uttarakhand (Uttaranchal until 2007)": 1,
-          "Kepulauan Riau": 1,
-          "Chhattisgarh": 1,
-          "Tunceli": 1,
-          "Aydin": 1,
-          "Mardin": 1,
-          "Denizli": 1,
-          "Kars": 1,
-          "Buri Ram": 1,
-          "Anat. Makedonia & Thraki": 1,
-          "Maharashtra": 1,
-          "Nagaland": 1,
-          "Yala": 1,
-          "Roi Et": 1,
-          "Afyonkarahisar": 1,
-          "Attiki": 1,
-          "Bitlis": 1,
-          "Kutahya": 1,
-          "Orissa (Odisha since 2011)": 1,
-          "Nakhon Ratchasima": 1,
-          "Isparta": 1,
-          "Trang": 1,
-          "Sardegna": 1,
-          "Van": 1,
-          "Trabzon": 1,
-          "Sikkim": 1,
-          "Phatthalung": 1,
-          "Prachin Buri": 1,
-          "Uttar Pradesh": 1,
-          "Roraima": 1,
-          "Andaman and Nicobar Islands": 1,
-          "Canakkale": 1,
-          "Rio de Janeiro": 1,
-          "R\ufffd\ufffdo Negro": 1,
-          "Basilicata": 1,
-          "Sergipe": 1,
-          "Alagoas": 1,
-          "Tokat": 1,
-          "Par\ufffd\ufffd": 1,
-          "Tak": 1,
-          "Chiang Rai": 1,
-          "Kriti": 1,
-          "Gumushane": 1,
-          "Arunachal Pradesh": 1,
-          "Istanbul": 1,
-          "Ordu": 1,
-          "Marche": 1,
-          "Sterea Ellada": 1,
-          "Friuli-Venezia Giulia": 1,
-          "Uthai Thani": 1,
-          "Chanthaburi": 1,
-          "Samut Sakhon": 1,
-          "S\ufffd\ufffdo Paulo": 1,
-          "San Luis": 1,
-          "Santa Catarina": 1,
-          "Ratchaburi": 1,
-          "Mae Hong Son": 1,
-          "Distrito Federal": 1,
-          "Esp\ufffd\ufffdrito Santo": 1,
-          "Ubon Ratchathani": 1,
-          "Jujuy": 1,
-          "San Juan": 1,
-          "Delhi": 1,
-          "Gujarat": 1,
-          "Sinop": 1,
-          "Calabria": 1,
-          "Burdur": 1,
-          "Para\ufffd\ufffdba": 1,
-          "Lazio": 1,
-          "Chai Nat": 1,
-          "Phra Nakhon Si Ayutthaya": 1,
-          "Voreio Aigaio": 1,
-          "Eskisehir": 1,
-          "Sa Kaeo": 1,
-          "Bangkok ": 1,
-          "Mugla": 1,
-          "Dytiki Ellada": 1,
-          "Ciudad de Buenos Aires (City)": 1,
-          "Maluku Utara": 1,
-          "Corum": 1,
-          "Krabi": 1,
-          "Nigde": 1,
-          "Amasya": 1,
-          "Balikesir": 1,
-          "Amap\ufffd\ufffd": 1,
-          "Phetchabun": 1,
-          "Chaiyaphum": 1,
-          "Chandigarh": 1,
-          "Paran\ufffd\ufffd": 1,
-          "Nevsehir": 1,
-          "Chumphon": 1,
-          "Kahramanmaras": 1,
-          "Nonthaburi": 1,
-          "Sakon Nakhon": 1,
-          "Tekirdag": 1,
-          "Uttaradit": 1,
-          "West Bengal": 1,
-          "Rayong": 1,
-          "Chubut": 1,
-          "Mendoza": 1,
-          "Nakhon Nayok": 1,
-          "Mersin": 1,
-          "Ang Thong": 1,
-          "CALABARZON": 1,
-          "Dytiki Makedonia": 1,
-          "Assam": 1,
-          "Sakarya": 1,
-          "Banten": 1,
-          "Corrientes": 1,
-          "Yasothon": 1,
-          "Saraburi": 1,
-          "Goi\ufffd\ufffds": 1,
-          "Mukdahan": 1,
-          "Phetchaburi": 1,
-          "Thessalia": 1,
-          "Rize": 1,
-          "Karnataka (Mysore until 1973)": 1,
           "Kalasin": 1,
-          "Kamphaeng Phet": 1,
-          "Papua Barat": 1,
-          "Suphan Buri": 1,
-          "Erzincan": 1,
-          "Ipeiros": 1,
-          "Andhra Pradesh": 1,
-          "Manipur": 1,
-          "Toscana": 1,
-          "Lampang": 1,
-          "Sing Buri": 1,
-          "La Rioja": 1,
-          "Sanliurfa": 1,
+          "Chaiyaphum": 1,
+          "Sergipe": 1,
+          "Minas Gerais": 1,
+          "Emilia-Romagna": 1,
+          "Buri Ram": 1,
+          "Kayseri": 1,
+          "Nakhon Phanom": 1,
+          "Corum": 1,
+          "Isparta": 1,
+          "Santa Catarina": 1,
+          "Basilicata": 1,
+          "San Juan": 1,
+          "Uttaradit": 1,
+          "Maha Sarakham": 1,
+          "Mendoza": 1,
+          "Corrientes": 1,
+          "La Pampa": 1,
+          "Hatay": 1,
+          "Haryana": 1,
+          "Rond\ufffd\ufffdnia": 1,
+          "Neuqu\ufffd\ufffdn": 1,
+          "Kutahya": 1,
+          "Veneto": 1,
           "Surat Thani": 1,
-          "Santa Cruz": 1,
+          "CALABARZON": 1,
+          "Surin": 1,
+          "Chubut": 1,
+          "Andaman and Nicobar Islands": 1,
+          "Tokat": 1,
+          "Catamarca": 1,
+          "Suphan Buri": 1,
+          "Nakhon Si Thammarat": 1,
+          "Eskisehir": 1,
+          "Ang Thong": 1,
+          "Orissa (Odisha since 2011)": 1,
+          "Sikkim": 1,
           "Entre R\ufffd\ufffdos": 1,
+          "Mato Grosso do Sul": 1,
+          "Van": 1,
+          "Santiago del Estero": 1,
+          "Artvin": 1,
+          "Kahramanmaras": 1,
+          "Nigde": 1,
+          "Mersin": 1,
+          "S\ufffd\ufffdo Paulo": 1,
+          "Acre": 1,
+          "Kepulauan Riau": 1,
+          "Jujuy": 1,
+          "Bilecik": 1,
+          "Anat. Makedonia & Thraki": 1,
+          "Manisa": 1,
+          "Narathiwat": 1,
+          "Samsun": 1,
+          "Rio de Janeiro": 1,
+          "Uttar Pradesh": 1,
+          "Attiki": 1,
+          "Erzurum": 1,
+          "Tucum\ufffd\ufffdn": 1,
+          "Ranong": 1,
+          "Bolu": 1,
+          "Chai Nat": 1,
+          "Paran\ufffd\ufffd": 1,
+          "Ipeiros": 1,
+          "Tak": 1,
+          "Khon Kaen": 1,
+          "Yasothon": 1,
+          "Tekirdag": 1,
+          "Phichit": 1,
+          "Chiang Mai": 1,
+          "Kriti": 1,
+          "Mus": 1,
+          "Nan": 1,
+          "Trang": 1,
+          "Karnataka (Mysore until 1973)": 1,
+          "Krabi": 1,
+          "Phetchaburi": 1,
+          "Chanthaburi": 1,
+          "Voreio Aigaio": 1,
+          "Usak": 1,
+          "Punjab": 1,
+          "Sinop": 1,
+          "Lop Buri": 1,
+          "Sterea Ellada": 1,
+          "Chumphon": 1,
+          "Lamphun": 1,
+          "Kentriki Makedonia": 1,
+          "Bangkok ": 1,
+          "Saraburi": 1,
+          "Istanbul": 1,
+          "Sing Buri": 1,
+          "Nong Bua Lam Phu": 1,
+          "Mae Hong Son": 1,
+          "Ankara": 1,
+          "Salta": 1,
+          "Izmir": 1,
+          "West Bengal": 1,
+          "Udon Thani": 1,
+          "Manipur": 1,
+          "Apulia": 1,
+          "Himachal Pradesh": 1,
+          "Friuli-Venezia Giulia": 1,
+          "Tierra del Fuego": 1,
+          "Kep. Bangka Belitung": 1,
+          "Sakarya": 1,
+          "Jammu and Kashmir": 1,
+          "Rayong": 1,
+          "Bahia": 1,
+          "Arunachal Pradesh": 1,
+          "Lazio": 1,
+          "Gorontalo": 1,
+          "Phayao": 1,
+          "Phetchabun": 1,
+          "Kamphaeng Phet": 1,
+          "Phra Nakhon Si Ayutthaya": 1,
+          "Giresun": 1,
+          "Roi Et": 1,
+          "Chiang Rai": 1,
+          "Erzincan": 1,
+          "Rio Grande do Sul": 1,
+          "Papua Barat": 1,
+          "Nevsehir": 1,
+          "Sa Kaeo": 1,
+          "La Rioja": 1,
+          "Rajasthan": 1,
+          "Konya": 1,
+          "Chandigarh": 1,
+          "Zonguldak": 1,
+          "Phatthalung": 1,
+          "Malatya": 1,
+          "Nakhon Pathom": 1,
+          "Kirsehir": 1,
+          "Jawa Barat": 1,
+          "Buenos Aires": 1,
+          "Tunceli": 1,
+          "Campania": 1,
+          "Gumushane": 1,
+          "Pattani": 1,
+          "Tamil Nadu (Madras until 1968)": 1,
+          "Piemonte": 1,
+          "Phitsanulok": 1,
+          "Loei": 1,
+          "Para\ufffd\ufffdba": 1,
+          "Afyonkarahisar": 1,
+          "Trabzon": 1,
+          "Prachuap Khiri Khan": 1,
+          "San Luis": 1,
+          "Par\ufffd\ufffd": 1,
+          "Marche": 1,
+          "Lombardia": 1,
+          "Formosa": 1,
+          "Nagaland": 1,
+          "Mugla": 1,
+          "Puducherry (Pondicherry until 2006)": 1,
+          "Sardegna": 1,
+          "Edirne": 1,
+          "Kirklareli": 1,
+          "Liguria": 1,
+          "Maharashtra": 1,
+          "Chhattisgarh": 1,
+          "Misiones": 1,
+          "Prachin Buri": 1,
+          "Kastamonu": 1,
+          "Balikesir": 1,
+          "Chaco": 1,
+          "Roraima": 1,
+          "Mardin": 1,
+          "Ratchaburi": 1,
+          "Cear\ufffd\ufffd": 1,
+          "Agri": 1,
+          "Piau\ufffd\ufffd": 1,
+          "Dytiki Ellada": 1,
+          "Gujarat": 1,
+          "Bitlis": 1,
+          "Trat": 1,
+          "Samut Songkhram": 1,
+          "Diyarbaki": 1,
+          "Jharkhand": 1,
+          "Songkhla": 1,
+          "Mukdahan": 1,
+          "Assam": 1,
+          "R\ufffd\ufffdo Negro": 1,
+          "Mato Grosso": 1,
+          "Thessalia": 1,
+          "Bingol": 1,
+          "Mizoram": 1,
+          "Phangnga": 1,
+          "Samut Sakhon": 1,
+          "Maranh\ufffd\ufffdo": 1,
+          "Banten": 1,
+          "Tocantins": 1,
+          "Molise": 1,
+          "Sivas": 1,
+          "Lampang": 1,
+          "Sukhothai": 1,
+          "Elazig": 1,
+          "Distrito Federal": 1,
+          "Nonthaburi": 1,
           "Rio Grande do Norte": 1,
+          "Antalya": 1,
+          "Abruzzo": 1,
+          "Ciudad de Buenos Aires (City)": 1,
+          "Nakhon Nayok": 1,
+          "Dytiki Makedonia": 1,
+          "C\ufffd\ufffdrdoba": 1,
+          "Uthai Thani": 1,
+          "Delhi": 1,
+          "Chachoengsao": 1,
+          "Santa Fe": 1,
+          "Denizli": 1,
+          "Andhra Pradesh": 1,
+          "Yozgat": 1,
+          "Canakkale": 1,
+          "Tripura": 1,
+          "Alagoas": 1,
+          "Phrae": 1,
+          "Uttarakhand (Uttaranchal until 2007)": 1,
+          "Yala": 1,
+          "Maluku Utara": 1,
+          "Goi\ufffd\ufffds": 1,
+          "Amap\ufffd\ufffd": 1,
+          "Trentino-Alto Adige": 1,
+          "Kerala": 1,
+          "Madhya Pradesh": 1,
+          "Esp\ufffd\ufffdrito Santo": 1,
+          "Sulawesi Barat": 1,
+          "Pernambuco": 1,
+          "Kanchanaburi": 1,
+          "Adana": 1,
+          "Satun": 1,
+          "Ionia Nisia": 1,
+          "Ordu": 1,
+          "Notio Aigaio": 1,
+          "Amnat Charoen": 1,
+          "Nakhon Ratchasima": 1,
+          "Rize": 1,
+          "Peloponnisos": 1,
+          "Aydin": 1,
+          "Goa": 1,
+          "Bihar": 1,
           "Meghalaya": 1,
-          "Amnat Charoen": 1
+          "Chon Buri": 1,
+          "Amazonas": 1,
+          "Ubon Ratchathani": 1,
+          "Phuket": 1,
+          "Umbria": 1,
+          "Sicily": 1,
+          "Kars": 1,
+          "Samut Prakan": 1,
+          "Pathum Thani": 1,
+          "Sanliurfa": 1,
+          "Calabria": 1,
+          "Si Sa Ket": 1,
+          "Santa Cruz": 1,
+          "Toscana": 1,
+          "Amasya": 1,
+          "Burdur": 1,
+          "Adiyaman": 1,
+          "MIMAROPA": 1,
+          "Sakon Nakhon": 1,
+          "Nakhon Sawan": 1
         }
       ],
       [
@@ -2205,22 +2058,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -2506,26 +2343,10 @@
   ],
   [
     "change",
-    "variables.revenue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.revenue.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3169,22 +2990,6 @@
     ]
   ],
   [
-    "change",
-    "variables.revenue_unit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_unit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.revenue_unit",
     [
@@ -3401,22 +3206,6 @@
     ]
   ],
   [
-    "change",
-    "variables.revenue_currency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_currency.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.revenue_currency",
     [
@@ -3477,8 +3266,8 @@
           "Turkish lira": 61,
           "rupiahs": 56,
           "shillings": 42,
-          "rupees": 32,
           "euros": 32,
+          "rupees": 32,
           "Argentine pesos": 24,
           "rand": 18,
           "pesos": 17
@@ -3627,22 +3416,6 @@
       [
         "current"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_level.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_level.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3884,26 +3657,10 @@
   ],
   [
     "change",
-    "variables.xrat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.xrat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xrat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4553,26 +4310,10 @@
   ],
   [
     "change",
-    "variables.grdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.grdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5216,22 +4957,6 @@
     ]
   ],
   [
-    "change",
-    "variables.grdp_unit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_unit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.grdp_unit",
     [
@@ -5454,22 +5179,6 @@
     ]
   ],
   [
-    "change",
-    "variables.grdp_currency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_currency.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.grdp_currency",
     [
@@ -5530,9 +5239,9 @@
           "Turkish liras": 60,
           "rupiahs": 56,
           "shillings": 42,
-          "pesos": 32,
-          "rupees": 32,
           "euros": 32,
+          "rupees": 32,
+          "pesos": 32,
           "reals": 27,
           "Argentine pesos": 24,
           "rand": 18,
@@ -5683,22 +5392,6 @@
       [
         "current"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_level.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_level.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5929,22 +5622,6 @@
     [
       "2002",
       2002.0
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6193,22 +5870,6 @@
     [
       "1996",
       1996.0
-    ]
-  ],
-  [
-    "change",
-    "variables.decade.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.decade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6467,26 +6128,10 @@
   ],
   [
     "change",
-    "variables.revenue_usd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.revenue_usd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_usd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7127,22 +6772,6 @@
     [
       "124333080",
       124333080.0
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_usd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_usd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7795,26 +7424,10 @@
   ],
   [
     "change",
-    "variables.usd_deflator.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.usd_deflator.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.usd_deflator.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8099,26 +7712,10 @@
   ],
   [
     "change",
-    "variables.usd_deflator2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.usd_deflator2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.usd_deflator2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8383,26 +7980,10 @@
   ],
   [
     "change",
-    "variables.revenue_constant.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.revenue_constant.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_constant.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9046,22 +8627,6 @@
     ]
   ],
   [
-    "change",
-    "variables.grdp_constant.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_constant.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.grdp_constant",
     [
@@ -9702,22 +9267,6 @@
     ]
   ],
   [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.age",
     [
@@ -9978,22 +9527,6 @@
     [
       "32",
       32.0
-    ]
-  ],
-  [
-    "change",
-    "variables.count.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.count.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10637,22 +10170,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sample.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sample",
     [
@@ -11221,22 +10738,6 @@
     [
       "14050011",
       14050011
-    ]
-  ],
-  [
-    "change",
-    "variables.geocode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.geocode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11880,22 +11381,6 @@
     ]
   ],
   [
-    "change",
-    "variables.source.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.source.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.source",
     [
@@ -12145,22 +11630,6 @@
     [
       "96320",
       96320.0
-    ]
-  ],
-  [
-    "change",
-    "variables.poptotal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.poptotal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12817,26 +12286,10 @@
   ],
   [
     "change",
-    "variables.myers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.myers.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.myers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13493,26 +12946,10 @@
   ],
   [
     "change",
-    "variables.distance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14156,22 +13593,6 @@
     ]
   ],
   [
-    "change",
-    "variables.capital.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.capital.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.capital",
     [
@@ -14427,26 +13848,10 @@
   ],
   [
     "change",
-    "variables.area.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.area.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.area.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15103,26 +14508,10 @@
   ],
   [
     "change",
-    "variables.slopedness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.slopedness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.slopedness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15770,22 +15159,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ccoderegion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccoderegion.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ccoderegion",
     [
@@ -16426,22 +15799,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ccodeyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccodeyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ccodeyear",
     [
@@ -17022,26 +16379,10 @@
   ],
   [
     "change",
-    "variables.density.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.density.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.density.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17698,26 +17039,10 @@
   ],
   [
     "change",
-    "variables.taxratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.taxratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.taxratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18374,26 +17699,10 @@
   ],
   [
     "change",
-    "variables.revenue_constant_pc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.revenue_constant_pc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue_constant_pc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19050,26 +18359,10 @@
   ],
   [
     "change",
-    "variables.grdp_constant_pc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.grdp_constant_pc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.grdp_constant_pc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19726,26 +19019,10 @@
   ],
   [
     "change",
-    "variables.ltaxratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ltaxratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ltaxratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20402,26 +19679,10 @@
   ],
   [
     "change",
-    "variables.ltaxratio_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ltaxratio_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ltaxratio_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21078,26 +20339,10 @@
   ],
   [
     "change",
-    "variables.lrevenue_constant.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrevenue_constant.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrevenue_constant.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21754,26 +20999,10 @@
   ],
   [
     "change",
-    "variables.lrevenue_constant_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrevenue_constant_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrevenue_constant_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22426,26 +21655,10 @@
   ],
   [
     "change",
-    "variables.lgrdp_constant.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgrdp_constant.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgrdp_constant.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23098,26 +22311,10 @@
   ],
   [
     "change",
-    "variables.lgrdp_constant_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgrdp_constant_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgrdp_constant_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23774,26 +22971,10 @@
   ],
   [
     "change",
-    "variables.lrevenue_constant_pc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrevenue_constant_pc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrevenue_constant_pc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24450,26 +23631,10 @@
   ],
   [
     "change",
-    "variables.lrevenue_constant_pc_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrevenue_constant_pc_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrevenue_constant_pc_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25126,26 +24291,10 @@
   ],
   [
     "change",
-    "variables.lgrdp_constant_pc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgrdp_constant_pc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgrdp_constant_pc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25802,26 +24951,10 @@
   ],
   [
     "change",
-    "variables.lgrdp_constant_pc_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgrdp_constant_pc_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgrdp_constant_pc_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26478,26 +25611,10 @@
   ],
   [
     "change",
-    "variables.lmyers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lmyers.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lmyers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27154,26 +26271,10 @@
   ],
   [
     "change",
-    "variables.lmyers_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lmyers_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lmyers_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27830,26 +26931,10 @@
   ],
   [
     "change",
-    "variables.lpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28506,26 +27591,10 @@
   ],
   [
     "change",
-    "variables.lpop_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lpop_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lpop_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29182,26 +28251,10 @@
   ],
   [
     "change",
-    "variables.ldistance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ldistance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ldistance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29858,26 +28911,10 @@
   ],
   [
     "change",
-    "variables.ldistance_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ldistance_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ldistance_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30534,26 +29571,10 @@
   ],
   [
     "change",
-    "variables.ldensity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ldensity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ldensity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31210,26 +30231,10 @@
   ],
   [
     "change",
-    "variables.ldensity_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ldensity_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ldensity_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31886,26 +30891,10 @@
   ],
   [
     "change",
-    "variables.lslopedness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lslopedness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lslopedness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32562,26 +31551,10 @@
   ],
   [
     "change",
-    "variables.lslopedness_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lslopedness_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lslopedness_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33238,26 +32211,10 @@
   ],
   [
     "change",
-    "variables.inv_lmyers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inv_lmyers.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inv_lmyers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33914,26 +32871,10 @@
   ],
   [
     "change",
-    "variables.inv_lmyers_std.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inv_lmyers_std.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inv_lmyers_std.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34577,22 +33518,6 @@
     ]
   ],
   [
-    "change",
-    "variables.insample.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.insample.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.insample",
     [
@@ -34884,347 +33809,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:22:52",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regionname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue_unit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue_currency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue_level": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xrat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_unit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_currency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_level": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue_usd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_usd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "usd_deflator": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "usd_deflator2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue_constant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_constant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "count": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "geocode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "source": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "poptotal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "myers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "capital": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "area": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "slopedness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_merge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccoderegion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccodeyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "density": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue_constant_pc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grdp_constant_pc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ltaxratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ltaxratio_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrevenue_constant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrevenue_constant_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgrdp_constant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgrdp_constant_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrevenue_constant_pc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrevenue_constant_pc_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgrdp_constant_pc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgrdp_constant_pc_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lmyers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lmyers_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lpop_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ldistance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ldistance_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ldensity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ldensity_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lslopedness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lslopedness_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inv_lmyers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inv_lmyers_std": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "insample": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

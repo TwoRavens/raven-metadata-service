@@ -1,112 +1,13 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IZKZET_Fig3_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 342
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Attribute.mode",
     [
       "Presidential election",
       [
-        "Presidential election",
-        "Congressional election"
+        "Congressional election",
+        "Presidential election"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -140,8 +41,8 @@
       [
         "fewestValues",
         [
-          "Presidential election",
-          "Congressional election"
+          "Congressional election",
+          "Presidential election"
         ]
       ],
       [
@@ -167,8 +68,8 @@
       [
         "plotValues",
         {
-          "Congressional election": 1,
-          "Presidential election": 1
+          "Presidential election": 1,
+          "Congressional election": 1
         }
       ],
       [
@@ -304,25 +205,9 @@
     [
       "Presidential election",
       [
-        "Presidential election",
-        "Congressional election"
+        "Congressional election",
+        "Presidential election"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -356,8 +241,8 @@
       [
         "fewestValues",
         [
-          "Presidential election",
-          "Congressional election"
+          "Congressional election",
+          "Presidential election"
         ]
       ],
       [
@@ -383,8 +268,8 @@
       [
         "plotValues",
         {
-          "Congressional election": 1,
-          "Presidential election": 1
+          "Presidential election": 1,
+          "Congressional election": 1
         }
       ],
       [
@@ -567,26 +452,10 @@
   ],
   [
     "change",
-    "variables.Estimate.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.Estimate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -843,26 +712,10 @@
   ],
   [
     "change",
-    "variables.p_raw.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.p_raw.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_raw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1078,22 +931,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sig.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sig",
     [
@@ -1288,25 +1125,9 @@
     [
       "data2",
       [
-        "data2",
-        "data3"
+        "data3",
+        "data2"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.data.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.data.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1340,8 +1161,8 @@
       [
         "fewestValues",
         [
-          "data2",
-          "data3"
+          "data3",
+          "data2"
         ]
       ],
       [
@@ -1367,8 +1188,8 @@
       [
         "plotValues",
         {
-          "data3": 1,
-          "data2": 1
+          "data2": 1,
+          "data3": 1
         }
       ],
       [
@@ -1538,22 +1359,6 @@
     [
       "1583",
       1583
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1790,22 +1595,6 @@
     ]
   ],
   [
-    "change",
-    "variables.order.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.order.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.order",
     [
@@ -2016,33 +1805,9 @@
     [
       "Presidential election",
       [
-        "Presidential election",
-        "Congressional election"
+        "Congressional election",
+        "Presidential election"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2079,8 +1844,8 @@
       [
         "fewestValues",
         [
-          "Presidential election",
-          "Congressional election"
+          "Congressional election",
+          "Presidential election"
         ]
       ],
       [
@@ -2106,8 +1871,8 @@
       [
         "plotValues",
         {
-          "Congressional election": 1,
-          "Presidential election": 1
+          "Presidential election": 1,
+          "Congressional election": 1
         }
       ],
       [
@@ -2344,82 +2109,6 @@
           "defaultNature": "percent",
           "defaultBinary": "yes",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:42",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Attribute": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Level": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Estimate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Std. Err": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_raw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "data": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "respondents": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "order": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "var.names": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

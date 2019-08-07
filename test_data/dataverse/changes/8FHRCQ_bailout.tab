@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        59
-      ],
-      [
-        "variableCount",
-        14
-      ],
-      [
-        "dataSource",
-        {
-          "name": "8FHRCQ_bailout.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 4133
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.countryid.median",
     [
@@ -123,22 +40,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.countryid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -754,22 +655,6 @@
     ]
   ],
   [
-    "change",
-    "variables.unit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.unit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.unit",
     [
@@ -1373,25 +1258,9 @@
     [
       "Italy",
       [
-        "Italy",
-        "Spain"
+        "Spain",
+        "Italy"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1425,11 +1294,11 @@
       [
         "fewestValues",
         [
-          "Estonia",
-          "Croatia",
-          "Greece",
           "Serbia",
-          "Turkey"
+          "Macedonia",
+          "Kazakhstan",
+          "Mexico",
+          "Greece"
         ]
       ],
       [
@@ -1455,40 +1324,40 @@
       [
         "plotValues",
         {
-          "Spain": 5,
           "Italy": 5,
+          "Spain": 5,
           "France": 4,
           "Canada": 3,
-          "Russia": 2,
-          "Australia": 2,
           "Slovakia": 2,
+          "Australia": 2,
+          "Brazil": 2,
           "Argentina": 2,
+          "Japan": 2,
+          "South Africa": 2,
+          "Russia": 2,
+          "Czech Republic": 2,
           "Belgium": 2,
           "Poland": 2,
-          "Japan": 2,
-          "Brazil": 2,
           "Portugal": 2,
-          "South Africa": 2,
           "Germany": 2,
-          "Czech Republic": 2,
-          "Latvia": 1,
           "Switzerland": 1,
+          "Latvia": 1,
+          "UK": 1,
+          "Austria": 1,
+          "Ukraine": 1,
+          "Bulgaria": 1,
+          "Croatia": 1,
+          "Turkey": 1,
           "Colombia": 1,
           "US": 1,
-          "Bulgaria": 1,
-          "Ukraine": 1,
           "Sweden": 1,
+          "Estonia": 1,
           "Malaysia": 1,
-          "Austria": 1,
-          "Macedonia": 1,
-          "Kazakhstan": 1,
-          "Mexico": 1,
-          "UK": 1,
-          "Turkey": 1,
-          "Serbia": 1,
           "Greece": 1,
-          "Croatia": 1,
-          "Estonia": 1
+          "Mexico": 1,
+          "Kazakhstan": 1,
+          "Macedonia": 1,
+          "Serbia": 1
         }
       ],
       [
@@ -1661,22 +1530,6 @@
     ]
   ],
   [
-    "change",
-    "variables.group.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.group",
     [
@@ -1707,11 +1560,11 @@
       [
         "fewestValues",
         [
-          "Aprovinces",
-          "Inter-municipalities",
+          "Cabildo",
+          "pregions",
+          "Prefectures",
           "Lander",
-          "Sates",
-          "Departments"
+          "Aprovinces"
         ]
       ],
       [
@@ -1739,28 +1592,28 @@
         {
           "Cities": 22,
           "Regions": 7,
-          "States": 3,
           "Provinces": 3,
+          "States": 3,
           "Municipalities": 3,
           "Territories": 2,
           "City": 2,
-          "Municipalities (under Cordoba)": 1,
           "District Municipalities": 1,
           "rregions": 1,
-          "pregions": 1,
-          "Prefectures": 1,
-          "Foral Regions": 1,
-          "Communities": 1,
+          "Municipalities (under Cordoba)": 1,
           "State": 1,
+          "Foral Regions": 1,
           "Foral Provinces": 1,
-          "Cabildo": 1,
-          "Councils": 1,
-          "Special Regions": 1,
           "Departments": 1,
           "Sates": 1,
+          "Councils": 1,
+          "Special Regions": 1,
+          "Communities": 1,
+          "Aprovinces": 1,
           "Lander": 1,
+          "Prefectures": 1,
           "Inter-municipalities": 1,
-          "Aprovinces": 1
+          "pregions": 1,
+          "Cabildo": 1
         }
       ],
       [
@@ -1965,26 +1818,10 @@
   ],
   [
     "change",
-    "variables.effectiveness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.effectiveness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.effectiveness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2628,22 +2465,6 @@
     ]
   ],
   [
-    "change",
-    "variables.default.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.default.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.default",
     [
@@ -2895,26 +2716,10 @@
   ],
   [
     "change",
-    "variables.dv_prob_con.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dv_prob_con.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_prob_con.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3206,26 +3011,10 @@
   ],
   [
     "change",
-    "variables.bprob_ll.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bprob_ll.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bprob_ll.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3517,26 +3306,10 @@
   ],
   [
     "change",
-    "variables.bprob_ul.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bprob_ul.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bprob_ul.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3828,26 +3601,10 @@
   ],
   [
     "change",
-    "variables.sen_rep_num.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sen_rep_num.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sen_rep_num.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4127,26 +3884,10 @@
   ],
   [
     "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4790,22 +4531,6 @@
     ]
   ],
   [
-    "change",
-    "variables.t2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.t2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.t2",
     [
@@ -5045,22 +4770,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.t3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.t3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5306,22 +5015,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_ord.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_ord.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_ord",
     [
@@ -5537,102 +5230,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:59",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "countryid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "effectiveness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "default": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_prob_con": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bprob_ll": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bprob_ul": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sen_rep_num": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_ord": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        324
-      ],
-      [
-        "variableCount",
-        31
-      ],
-      [
-        "dataSource",
-        {
-          "name": "XGYF0P_Dataset Chiaramonte Emanuele IPSR 2017.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 68261
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Denmark"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -166,19 +67,19 @@
         "plotValues",
         {
           "Denmark": 25,
-          "Belgium": 20,
           "Sweden": 20,
+          "Belgium": 20,
+          "Austria": 19,
           "Netherlands": 19,
           "Iceland": 19,
-          "Austria": 19,
           "Ireland": 18,
           "Finland": 18,
+          "UK": 17,
           "France": 17,
           "Switzerland": 17,
-          "UK": 17,
           "Italy": 16,
-          "Norway": 16,
           "Germany": 16,
+          "Norway": 16,
           "Greece": 15,
           "Malta": 15,
           "Luxembourg": 14,
@@ -370,22 +271,6 @@
     [
       "1946",
       1946
-    ]
-  ],
-  [
-    "change",
-    "variables.election_year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1026,22 +911,6 @@
     [
       "17116",
       17116
-    ]
-  ],
-  [
-    "change",
-    "variables.election_date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1694,26 +1563,10 @@
   ],
   [
     "change",
-    "variables.turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2366,26 +2219,10 @@
   ],
   [
     "change",
-    "variables.turnout_change.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_change.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_change.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3038,26 +2875,10 @@
   ],
   [
     "change",
-    "variables.enep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.enep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.enep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3710,26 +3531,10 @@
   ],
   [
     "change",
-    "variables.elf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4382,26 +4187,10 @@
   ],
   [
     "change",
-    "variables.tu_density.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tu_density.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tu_density.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5058,26 +4847,10 @@
   ],
   [
     "change",
-    "variables.memb_el.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.memb_el.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.memb_el.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5734,26 +5507,10 @@
   ],
   [
     "change",
-    "variables.class.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.class.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.class.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6406,26 +6163,10 @@
   ],
   [
     "change",
-    "variables.mdm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mdm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mdm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7078,26 +6819,10 @@
   ],
   [
     "change",
-    "variables.ln_mdm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ln_mdm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ln_mdm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7753,26 +7478,10 @@
   ],
   [
     "change",
-    "variables.gdp_rate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp_rate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp_rate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8416,22 +8125,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cntry.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cntry.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cntry",
     [
@@ -9007,22 +8700,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.election.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9666,22 +9343,6 @@
     ]
   ],
   [
-    "change",
-    "variables.minel.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.minel.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.minel",
     [
@@ -10257,22 +9918,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cntryelection.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cntryelection.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10866,22 +10511,6 @@
     ]
   ],
   [
-    "change",
-    "variables.phase.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.phase.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.phase",
     [
@@ -11139,26 +10768,10 @@
   ],
   [
     "change",
-    "variables.ipelf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ipelf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ipelf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11812,26 +11425,10 @@
   ],
   [
     "change",
-    "variables.iptud.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.iptud.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.iptud.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12488,26 +12085,10 @@
   ],
   [
     "change",
-    "variables.ipmel.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ipmel.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ipmel.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13148,22 +12729,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13812,26 +13377,10 @@
   ],
   [
     "change",
-    "variables.lag_enep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_enep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_enep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14475,22 +14024,6 @@
     ]
   ],
   [
-    "change",
-    "variables.birthyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.birthyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.birthyear",
     [
@@ -15062,26 +14595,10 @@
   ],
   [
     "change",
-    "variables.ln_birthyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ln_birthyear.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ln_birthyear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15718,22 +15235,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.time_sq.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_sq.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16382,26 +15883,10 @@
   ],
   [
     "change",
-    "variables.timebetelec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.timebetelec.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.timebetelec.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17057,26 +16542,10 @@
   ],
   [
     "change",
-    "variables.psi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.psi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.psi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17720,22 +17189,6 @@
     ]
   ],
   [
-    "change",
-    "variables.decade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.decade.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.decade",
     [
@@ -18017,26 +17470,10 @@
   ],
   [
     "change",
-    "variables.regv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.regv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.regv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18692,26 +18129,10 @@
   ],
   [
     "change",
-    "variables.tv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19309,187 +18730,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:22:06",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_change": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "enep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tu_density": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "memb_el": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "class": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mdm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ln_mdm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp_rate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cntry": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "minel": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cntryelection": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "phase": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ipelf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "iptud": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ipmel": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_enep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "birthyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ln_birthyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_sq": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timebetelec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "psi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

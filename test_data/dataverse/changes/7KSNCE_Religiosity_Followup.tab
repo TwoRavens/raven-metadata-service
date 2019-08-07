@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        456
-      ],
-      [
-        "variableCount",
-        23
-      ],
-      [
-        "dataSource",
-        {
-          "name": "7KSNCE_Religiosity_Followup.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 35012
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.surveyid.median",
     [
@@ -126,22 +43,6 @@
     [
       "102602",
       102602
-    ]
-  ],
-  [
-    "change",
-    "variables.surveyid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.surveyid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -785,22 +686,6 @@
     ]
   ],
   [
-    "change",
-    "variables.kiberalocation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.kiberalocation.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.kiberalocation",
     [
@@ -1088,22 +973,6 @@
     [
       "1938",
       1938
-    ]
-  ],
-  [
-    "change",
-    "variables.birthyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.birthyear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1741,22 +1610,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -1996,22 +1849,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2601,22 +2438,6 @@
     ]
   ],
   [
-    "change",
-    "variables.occupation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.occupation.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.occupation",
     [
@@ -3162,22 +2983,6 @@
     ]
   ],
   [
-    "change",
-    "variables.occupation_spec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.occupation_spec.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.occupation_spec",
     [
@@ -3208,11 +3013,11 @@
       [
         "fewestValues",
         [
-          "Hairdressing",
-          "Bussinessman",
-          "Cartering",
-          "Cargo handler",
-          "Handcart pusher"
+          "Football Coach",
+          "Casual",
+          "butcher",
+          "Catering and house keeping",
+          "Businesslady"
         ]
       ],
       [
@@ -3243,56 +3048,56 @@
           "hawker": 4,
           "casual worker": 4,
           "Businessman": 4,
-          "salonist": 3,
           "Business": 3,
-          "Business lady": 2,
-          "Business woman": 2,
-          "Barber": 2,
+          "salonist": 3,
           "Artist": 2,
+          "Business lady": 2,
+          "Barber": 2,
           "vegetable vendor": 2,
-          "Salon": 1,
-          "Selling soap": 1,
-          "Casual laborer": 1,
-          "casual work around kibera": 1,
-          "Consultant": 1,
-          "Technician": 1,
-          "pharmacist": 1,
-          "Part time tuition": 1,
-          "Timam Checker": 1,
-          "Handcart pusher": 1,
-          "Bar tender": 1,
-          "Owns a hardware": 1,
-          "Businesslady": 1,
-          "Embroidery": 1,
-          "Business Lady": 1,
-          "Community health worker": 1,
-          "Grocery": 1,
-          "shoerepairman": 1,
-          "businesswoman": 1,
-          "Lawyer": 1,
-          "Bussinessman": 1,
-          "Catering and house keeping": 1,
-          "buthery": 1,
-          "running a kiosk": 1,
-          "Running a hotel": 1,
-          "cobbler": 1,
-          "voluntary job": 1,
-          "Football Coach": 1,
-          "Hand cart Puller": 1,
-          "green grocer": 1,
+          "Business woman": 2,
+          "charcoal seller": 1,
           "Interior designer": 1,
           "Butchery Saler": 1,
-          "butcher": 1,
-          "artist": 1,
-          "Casual": 1,
-          "charcoal seller": 1,
-          "brewing": 1,
-          "Busines": 1,
-          "BUsiness": 1,
-          "Hawker": 1,
+          "running a kiosk": 1,
+          "Grocery": 1,
+          "green grocer": 1,
+          "Timam Checker": 1,
           "Cargo handler": 1,
+          "brewing": 1,
+          "Handcart pusher": 1,
+          "Business Lady": 1,
+          "casual work around kibera": 1,
+          "Embroidery": 1,
+          "Technician": 1,
+          "Owns a hardware": 1,
+          "voluntary job": 1,
+          "Casual laborer": 1,
+          "artist": 1,
+          "cobbler": 1,
+          "BUsiness": 1,
+          "Busines": 1,
+          "butcher": 1,
+          "Community health worker": 1,
+          "pharmacist": 1,
+          "buthery": 1,
+          "Selling soap": 1,
+          "shoerepairman": 1,
+          "Hairdressing": 1,
+          "Football Coach": 1,
+          "Consultant": 1,
+          "Hawker": 1,
           "Cartering": 1,
-          "Hairdressing": 1
+          "Lawyer": 1,
+          "Bussinessman": 1,
+          "Running a hotel": 1,
+          "Hand cart Puller": 1,
+          "Part time tuition": 1,
+          "Bar tender": 1,
+          "Businesslady": 1,
+          "Catering and house keeping": 1,
+          "Salon": 1,
+          "Casual": 1,
+          "businesswoman": 1
         }
       ],
       [
@@ -3516,22 +3321,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.nativelanguage.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nativelanguage.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3802,28 +3591,12 @@
     [
       "Ugandan",
       [
-        "Ugandan",
-        "Kuria",
+        "nubian",
         "Nubian",
+        "Ugandan",
         "gisuu",
         "Sabaot"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.nativelanguage_spec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nativelanguage_spec.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3857,9 +3630,9 @@
       [
         "fewestValues",
         [
-          "Ugandan",
-          "Kuria",
+          "nubian",
           "Nubian",
+          "Ugandan",
           "gisuu",
           "Sabaot"
         ]
@@ -3887,12 +3660,12 @@
       [
         "plotValues",
         {
-          "gisuu": 1,
-          "Sabaot": 1,
-          "nubian": 1,
-          "Nubian": 1,
           "Kuria": 1,
-          "Ugandan": 1
+          "Sabaot": 1,
+          "gisuu": 1,
+          "Ugandan": 1,
+          "Nubian": 1,
+          "nubian": 1
         }
       ],
       [
@@ -4067,22 +3840,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.marital.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.marital.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4331,22 +4088,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.children.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.children.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4653,22 +4394,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ChurchAttendance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ChurchAttendance.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ChurchAttendance",
     [
@@ -4920,22 +4645,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.PrayerFrequency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.PrayerFrequency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5193,22 +4902,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ScriptureReading.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ScriptureReading.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ScriptureReading",
     [
@@ -5463,22 +5156,6 @@
     ]
   ],
   [
-    "change",
-    "variables.CallStatus.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CallStatus.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.CallStatus",
     [
@@ -5726,22 +5403,6 @@
     ]
   ],
   [
-    "change",
-    "variables.FOName.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FOName.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.FOName",
     [
@@ -5772,8 +5433,8 @@
       [
         "fewestValues",
         [
-          "Sylvia",
-          "Joel"
+          "Joel",
+          "Sylvia"
         ]
       ],
       [
@@ -5803,10 +5464,10 @@
           "Isaac": 136,
           "pauline": 90,
           "Shani": 22,
-          "shani": 3,
           "Debbie": 3,
-          "Joel": 2,
-          "Sylvia": 2
+          "shani": 3,
+          "Sylvia": 2,
+          "Joel": 2
         }
       ],
       [
@@ -5948,28 +5609,12 @@
     [
       "respondent died",
       [
+        "Catherine travelled back to the village",
+        "request his numberto be changed to this 0717774797",
         "busy",
-        "wrong number",
-        "Her number is the alternative one",
-        "Still mteja",
+        "Wrong no.",
         "respondent died"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Comments.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Comments.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6003,10 +5648,10 @@
       [
         "fewestValues",
         [
+          "Catherine travelled back to the village",
+          "request his numberto be changed to this 0717774797",
           "busy",
-          "wrong number",
-          "Her number is the alternative one",
-          "Still mteja",
+          "Wrong no.",
           "respondent died"
         ]
       ],
@@ -6034,28 +5679,28 @@
         "plotValues",
         {
           "Did not attend": 1,
-          "voice mail": 1,
-          "Brenda went to upcountry and no contacts": 1,
-          "Brother can not be reached and he hasno phone": 1,
           "6 times, still not pick": 1,
           "Catherine travelled back to the village": 1,
-          "in court, call later": 1,
-          "Can not be traced": 1,
-          "Her number is the alternative one": 1,
-          "respondent died": 1,
-          "Cant find her no.": 1,
-          "Change no to721348517": 1,
           "Peter not around": 1,
-          "\\n": 1,
-          "She did not take part in the previous survey": 1,
-          "Wrong no.": 1,
-          "change number to 0717710728": 1,
-          "Went to Mombasa, cant be tressed": 1,
-          "Still mteja": 1,
+          "in court, call later": 1,
           "Was sent his number and he is mteja": 1,
-          "request his numberto be changed to this 0717774797": 1,
+          "Change no to721348517": 1,
+          "change number to 0717710728": 1,
+          "Cant find her no.": 1,
+          "respondent died": 1,
+          "She did not take part in the previous survey": 1,
+          "Still mteja": 1,
+          "Brother can not be reached and he hasno phone": 1,
+          "Went to Mombasa, cant be tressed": 1,
+          "\\n": 1,
           "wrong number": 1,
-          "busy": 1
+          "Can not be traced": 1,
+          "Brenda went to upcountry and no contacts": 1,
+          "Her number is the alternative one": 1,
+          "voice mail": 1,
+          "Wrong no.": 1,
+          "busy": 1,
+          "request his numberto be changed to this 0717774797": 1
         }
       ],
       [
@@ -6247,22 +5892,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.BackCheck.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.BackCheck.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6473,22 +6102,6 @@
       [
         "2015-03-27"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.DateLastAttempt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.DateLastAttempt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6733,22 +6346,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.CallAttempts.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CallAttempts.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7006,22 +6603,6 @@
     ]
   ],
   [
-    "change",
-    "variables.answered.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.answered.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.answered",
     [
@@ -7261,22 +6842,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.beforeeaster.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.beforeeaster.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7571,147 +7136,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:27:33",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "surveyid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kiberalocation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "birthyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "occupation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "occupation_spec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nativelanguage": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nativelanguage_spec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "marital": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "children": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_14religiosityattend": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ChurchAttendance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PrayerFrequency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ScriptureReading": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CallStatus": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FOName": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Comments": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BackCheck": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DateLastAttempt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CallAttempts": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "answered": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "beforeeaster": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

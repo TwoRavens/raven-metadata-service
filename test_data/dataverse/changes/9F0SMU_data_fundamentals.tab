@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        680
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "9F0SMU_data_fundamentals.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 83723
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -92,36 +9,12 @@
     [
       "ARG",
       [
+        "URY",
+        "HND",
+        "BOL",
         "CRI",
-        "PAN",
-        "VEN",
-        "SLV",
-        "ARG"
+        "NIC"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.wb",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.wb",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -158,11 +51,11 @@
       [
         "fewestValues",
         [
+          "URY",
+          "HND",
+          "BOL",
           "CRI",
-          "PAN",
-          "VEN",
-          "SLV",
-          "ARG"
+          "NIC"
         ]
       ],
       [
@@ -188,26 +81,26 @@
       [
         "plotValues",
         {
-          "BOL": 34,
-          "DOM": 34,
+          "USA": 34,
+          "CHL": 34,
+          "PAN": 34,
+          "BRA": 34,
+          "GTM": 34,
           "MEX": 34,
           "PRY": 34,
           "PER": 34,
-          "HND": 34,
-          "URY": 34,
-          "BRA": 34,
-          "USA": 34,
-          "COL": 34,
           "LCN": 34,
-          "NIC": 34,
+          "DOM": 34,
+          "COL": 34,
           "ECU": 34,
-          "CHL": 34,
-          "GTM": 34,
-          "ARG": 34,
-          "SLV": 34,
           "VEN": 34,
-          "PAN": 34,
-          "CRI": 34
+          "SLV": 34,
+          "ARG": 34,
+          "NIC": 34,
+          "CRI": 34,
+          "BOL": 34,
+          "HND": 34,
+          "URY": 34
         }
       ],
       [
@@ -402,22 +295,6 @@
     [
       "1980",
       1980
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1030,22 +907,6 @@
     ]
   ],
   [
-    "change",
-    "variables.startyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.startyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.startyear",
     [
@@ -1288,28 +1149,12 @@
     [
       "AR",
       [
-        "US",
-        "UY",
+        "CO",
+        "PE",
+        "EC",
         "BO",
-        "SV",
-        "HN"
+        "AR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1369,24 +1214,24 @@
       [
         "plotValues",
         {
-          "CR": 34,
-          "PA": 34,
-          "PE": 34,
-          "PY": 34,
-          "CL": 34,
-          "EC": 34,
-          "VE": 34,
-          "BR": 34,
           "GT": 34,
+          "CL": 34,
+          "PA": 34,
           "NI": 34,
-          "CO": 34,
-          "MX": 34,
-          "AR": 34,
+          "US": 34,
+          "PY": 34,
+          "CR": 34,
+          "BR": 34,
           "HN": 34,
           "SV": 34,
-          "BO": 34,
           "UY": 34,
-          "US": 34,
+          "VE": 34,
+          "MX": 34,
+          "AR": 34,
+          "BO": 34,
+          "EC": 34,
+          "PE": 34,
+          "CO": 34,
           "DO": 33
         }
       ],
@@ -1579,22 +1424,6 @@
     [
       "3958296",
       3958296.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ManufactureExports.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ManufactureExports.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2238,22 +2067,6 @@
     [
       "2.2e+07",
       22000000.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ServicesExports.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ServicesExports.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2901,22 +2714,6 @@
     ]
   ],
   [
-    "change",
-    "variables.MerchandiseExports.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.MerchandiseExports.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.MerchandiseExports",
     [
@@ -3520,28 +3317,12 @@
     [
       "arg",
       [
-        "bra",
-        "col",
-        "ecu",
+        "ven",
+        "mex",
         "usa",
-        "chi"
+        "hon",
+        "nic"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3601,24 +3382,24 @@
       [
         "plotValues",
         {
-          "gua": 34,
-          "pan": 34,
-          "par": 34,
-          "arg": 34,
-          "uru": 34,
-          "cri": 34,
-          "nic": 34,
-          "mex": 34,
-          "els": 34,
-          "bol": 34,
-          "hon": 34,
-          "ven": 34,
           "per": 34,
           "chi": 34,
-          "usa": 34,
           "ecu": 34,
-          "col": 34,
+          "arg": 34,
+          "par": 34,
           "bra": 34,
+          "bol": 34,
+          "col": 34,
+          "els": 34,
+          "uru": 34,
+          "cri": 34,
+          "pan": 34,
+          "gua": 34,
+          "nic": 34,
+          "hon": 34,
+          "usa": 34,
+          "mex": 34,
+          "ven": 34,
           "dom": 33
         }
       ],
@@ -3823,26 +3604,10 @@
   ],
   [
     "change",
-    "variables.CommDep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CommDep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CommDep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4453,36 +4218,12 @@
     [
       "AR",
       [
-        "US",
-        "UY",
-        "BO",
-        "SV",
-        "HN"
+        "CO",
+        "DO",
+        "PE",
+        "EC",
+        "BO"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.wto",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.wto",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4519,11 +4260,11 @@
       [
         "fewestValues",
         [
-          "US",
-          "UY",
-          "BO",
-          "SV",
-          "HN"
+          "CO",
+          "DO",
+          "PE",
+          "EC",
+          "BO"
         ]
       ],
       [
@@ -4549,25 +4290,25 @@
       [
         "plotValues",
         {
-          "CR": 34,
           "GT": 34,
-          "PE": 34,
-          "PY": 34,
           "CL": 34,
-          "EC": 34,
-          "DO": 34,
-          "VE": 34,
-          "BR": 34,
-          "NI": 34,
           "PA": 34,
-          "CO": 34,
-          "MX": 34,
-          "AR": 34,
+          "NI": 34,
+          "US": 34,
+          "PY": 34,
+          "CR": 34,
+          "BR": 34,
           "HN": 34,
           "SV": 34,
-          "BO": 34,
           "UY": 34,
-          "US": 34
+          "VE": 34,
+          "MX": 34,
+          "AR": 34,
+          "BO": 34,
+          "EC": 34,
+          "PE": 34,
+          "DO": 34,
+          "CO": 34
         }
       ],
       [
@@ -4770,26 +4511,10 @@
   ],
   [
     "change",
-    "variables.ServiceExports.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ServiceExports.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ServiceExports.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5442,26 +5167,10 @@
   ],
   [
     "change",
-    "variables.PrivateDebtShare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PrivateDebtShare.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PrivateDebtShare.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6114,26 +5823,10 @@
   ],
   [
     "change",
-    "variables.MarketExposure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MarketExposure.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MarketExposure.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6731,97 +6424,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:34",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country.wb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "startyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ManufactureExports": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ServicesExports": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MerchandiseExports": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CommDep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country.wto": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ServiceExports": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PrivateDebtShare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MarketExposure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

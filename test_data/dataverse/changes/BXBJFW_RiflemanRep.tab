@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        20
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "BXBJFW_RiflemanRep.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1933
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.FrequencyTotals.mode",
     [
       "Identity Forming Language",
       [
+        "Proportion of documents with identity-forming language of either type that use at least one of the top 10 in-group positive words",
         "Proportion of documents with out-group negative language that use at least one of the politicians words",
-        "Policy Discussion",
-        "Call to action",
-        "Identity Forming Language",
-        "Proportion of documents with out-group negative language that use at least one of the top out-group negative words"
+        "Threat",
+        "Proportion of documents with out-group negative language that use at least one of the top out-group negative words",
+        "In-Group Positive Language"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.FrequencyTotals.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FrequencyTotals.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Proportion of documents with identity-forming language of either type that use at least one of the top 10 in-group positive words",
           "Proportion of documents with out-group negative language that use at least one of the politicians words",
-          "Policy Discussion",
-          "Call to action",
-          "Identity Forming Language",
-          "Proportion of documents with out-group negative language that use at least one of the top out-group negative words"
+          "Threat",
+          "Proportion of documents with out-group negative language that use at least one of the top out-group negative words",
+          "In-Group Positive Language"
         ]
       ],
       [
@@ -173,20 +74,20 @@
       [
         "plotValues",
         {
-          "Proportion of documents with out-group negative language that use at least one of the top out-group negative words": 1,
           "Proportion of documents with in-group positive language that use at least one of the top 10 in-group positive words": 1,
-          "Proportion of documents with out-group negative language that use at least one of the media words": 1,
-          "Proportion of documents with identity-forming language of either type that use at least one of the top out-group negative words": 1,
-          "Out--Group Negative Language": 1,
-          "Identity Frame for Policy Discussion (Denominator is the number of documents that discuss policy)": 1,
           "Proportion of documents with out-group negative language that use at least one of the lawyers words": 1,
-          "In-Group Positive Language": 1,
-          "Threat": 1,
-          "Proportion of documents with identity-forming language of either type that use at least one of the top 10 in-group positive words": 1,
           "Identity Forming Language": 1,
           "Call to action": 1,
+          "Out--Group Negative Language": 1,
+          "Proportion of documents with identity-forming language of either type that use at least one of the top out-group negative words": 1,
+          "Proportion of documents with out-group negative language that use at least one of the media words": 1,
           "Policy Discussion": 1,
-          "Proportion of documents with out-group negative language that use at least one of the politicians words": 1
+          "Identity Frame for Policy Discussion (Denominator is the number of documents that discuss policy)": 1,
+          "In-Group Positive Language": 1,
+          "Proportion of documents with out-group negative language that use at least one of the top out-group negative words": 1,
+          "Threat": 1,
+          "Proportion of documents with out-group negative language that use at least one of the politicians words": 1,
+          "Proportion of documents with identity-forming language of either type that use at least one of the top 10 in-group positive words": 1
         }
       ],
       [
@@ -340,22 +241,6 @@
     ]
   ],
   [
-    "change",
-    "variables.B.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.B.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.B",
     [
@@ -386,11 +271,11 @@
       [
         "fewestValues",
         [
-          "0.80094786729857825",
-          "0.47857142857142859",
-          "NRA Editorials",
           "0.86428571428571432",
-          "0.54976303317535546"
+          "0.73947368421052628",
+          "NRA Editorials",
+          "0.41785714285714287",
+          "0.47857142857142859"
         ]
       ],
       [
@@ -417,17 +302,17 @@
         "plotValues",
         {
           "0.6635071090047393": 2,
+          "0.79741379310344829": 1,
           "0.90047393364928907": 1,
-          "0.41785714285714287": 1,
+          "0.80094786729857825": 1,
+          "0.73947368421052628": 1,
+          "0.36018957345971564": 1,
+          "0.47857142857142859": 1,
+          "0.54976303317535546": 1,
           "0.65": 1,
           "NRA Editorials": 1,
-          "0.79741379310344829": 1,
-          "0.36018957345971564": 1,
-          "0.54976303317535546": 1,
-          "0.80094786729857825": 1,
-          "0.47857142857142859": 1,
-          "0.86428571428571432": 1,
-          "0.73947368421052628": 1
+          "0.41785714285714287": 1,
+          "0.86428571428571432": 1
         }
       ],
       [
@@ -574,28 +459,12 @@
     [
       "Pro-Gun Letters",
       [
-        "0.1918819188191882",
-        "0.38079625292740049",
-        "0.96206088992974237",
-        "0.79207920792079212",
+        "Pro-Gun Letters",
+        "0.63981264637002344",
+        "0.42576112412177985",
+        "0.54040895813047707",
         "6.1500615006150061E-2"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.C.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.C.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -629,10 +498,10 @@
       [
         "fewestValues",
         [
-          "0.1918819188191882",
-          "0.38079625292740049",
-          "0.96206088992974237",
-          "0.79207920792079212",
+          "Pro-Gun Letters",
+          "0.63981264637002344",
+          "0.42576112412177985",
+          "0.54040895813047707",
           "6.1500615006150061E-2"
         ]
       ],
@@ -659,17 +528,17 @@
       [
         "plotValues",
         {
-          "0.54040895813047707": 1,
-          "0.36531365313653136": 1,
-          "0.12423124231242312": 1,
-          "0.63981264637002344": 1,
-          "Pro-Gun Letters": 1,
-          "0.1918819188191882": 1,
-          "6.1500615006150061E-2": 1,
           "0.79207920792079212": 1,
           "0.96206088992974237": 1,
+          "0.36531365313653136": 1,
+          "0.1918819188191882": 1,
           "0.38079625292740049": 1,
-          "0.42576112412177985": 1
+          "0.12423124231242312": 1,
+          "6.1500615006150061E-2": 1,
+          "0.54040895813047707": 1,
+          "0.42576112412177985": 1,
+          "0.63981264637002344": 1,
+          "Pro-Gun Letters": 1
         }
       ],
       [
@@ -815,28 +684,12 @@
     [
       "Anti-Gun Letters",
       [
-        "0.35559921414538309",
-        "6.9744597249508836E-2",
+        "0.25187032418952621",
         "0.39390962671905699",
+        "0.35559921414538309",
         "0.13466334164588528",
-        "0.23164426059979318"
+        "6.9744597249508836E-2"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.D.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.D.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -870,11 +723,11 @@
       [
         "fewestValues",
         [
-          "0.35559921414538309",
-          "6.9744597249508836E-2",
+          "0.25187032418952621",
           "0.39390962671905699",
+          "0.35559921414538309",
           "0.13466334164588528",
-          "0.23164426059979318"
+          "6.9744597249508836E-2"
         ]
       ],
       [
@@ -900,14 +753,14 @@
       [
         "plotValues",
         {
-          "Anti-Gun Letters": 1,
-          "0.94990176817288796": 1,
-          "0.25187032418952621": 1,
           "0.23164426059979318": 1,
-          "0.13466334164588528": 1,
-          "0.39390962671905699": 1,
+          "0.94990176817288796": 1,
           "6.9744597249508836E-2": 1,
-          "0.35559921414538309": 1
+          "0.13466334164588528": 1,
+          "Anti-Gun Letters": 1,
+          "0.35559921414538309": 1,
+          "0.39390962671905699": 1,
+          "0.25187032418952621": 1
         }
       ],
       [
@@ -1050,22 +903,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.E.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.E.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1257,22 +1094,6 @@
     ]
   ],
   [
-    "change",
-    "variables.F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.F",
     [
@@ -1461,22 +1282,6 @@
     ]
   ],
   [
-    "change",
-    "variables.G.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.G.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.G",
     [
@@ -1653,67 +1458,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:43",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "FrequencyTotals": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "B": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "C": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "E": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "G": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

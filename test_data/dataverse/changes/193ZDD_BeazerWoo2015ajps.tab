@@ -1,114 +1,15 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        85
-      ],
-      [
-        "variableCount",
-        44
-      ],
-      [
-        "dataSource",
-        {
-          "name": "193ZDD_BeazerWoo2015ajps.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 20032
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "BGR",
       [
-        "ARM",
         "UKR",
-        "ROM",
-        "BGR"
+        "BGR",
+        "ARM",
+        "ROM"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -142,9 +43,9 @@
       [
         "fewestValues",
         [
+          "SVK",
           "UZB",
-          "POL",
-          "SVK"
+          "POL"
         ]
       ],
       [
@@ -170,28 +71,28 @@
       [
         "plotValues",
         {
-          "BGR": 6,
           "ROM": 6,
-          "UKR": 6,
           "ARM": 6,
-          "GEO": 5,
-          "MKD": 5,
+          "BGR": 6,
+          "UKR": 6,
           "KGZ": 5,
+          "GEO": 5,
+          "LVA": 5,
           "MDA": 5,
           "HRV": 5,
-          "LVA": 5,
+          "MKD": 5,
           "TJK": 4,
-          "EST": 4,
           "KAZ": 4,
+          "EST": 4,
           "LTU": 3,
           "AZE": 3,
-          "ALB": 3,
           "RUS": 3,
+          "ALB": 3,
           "BLR": 2,
           "HUN": 2,
-          "SVK": 1,
+          "POL": 1,
           "UZB": 1,
-          "POL": 1
+          "SVK": 1
         }
       ],
       [
@@ -384,22 +285,6 @@
     [
       "290",
       290
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -986,22 +871,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1579,26 +1448,10 @@
   ],
   [
     "change",
-    "variables.reform_df2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.reform_df2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.reform_df2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2244,22 +2097,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totcon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totcon.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totcon",
     [
@@ -2871,22 +2708,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pubcon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pubcon.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pubcon",
     [
@@ -3470,26 +3291,10 @@
   ],
   [
     "change",
-    "variables.ltotcon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ltotcon.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ltotcon.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4143,26 +3948,10 @@
   ],
   [
     "change",
-    "variables.lpubcon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lpubcon.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lpubcon.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4806,22 +4595,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totcon3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totcon3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totcon3",
     [
@@ -5070,22 +4843,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pubcon3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pubcon3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pubcon3",
     [
@@ -5331,22 +5088,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.part.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.part.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5607,26 +5348,10 @@
   ],
   [
     "change",
-    "variables.reform.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.reform.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.reform.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6283,26 +6008,10 @@
   ],
   [
     "change",
-    "variables.lgdppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgdppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgdppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6947,22 +6656,6 @@
     ]
   ],
   [
-    "change",
-    "variables.hist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.hist.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.hist",
     [
@@ -7241,22 +6934,6 @@
     ]
   ],
   [
-    "change",
-    "variables.durat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.durat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.durat",
     [
@@ -7517,22 +7194,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem",
     [
@@ -7788,26 +7449,10 @@
   ],
   [
     "change",
-    "variables.linfl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.linfl.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.linfl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8460,26 +8105,10 @@
   ],
   [
     "change",
-    "variables.gdpgrow.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpgrow.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpgrow.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9132,26 +8761,10 @@
   ],
   [
     "change",
-    "variables.reform91.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.reform91.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.reform91.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9462,26 +9075,10 @@
   ],
   [
     "change",
-    "variables.oilprice.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.oilprice.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.oilprice.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10122,22 +9719,6 @@
     ]
   ],
   [
-    "change",
-    "variables.time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.time",
     [
@@ -10716,26 +10297,10 @@
   ],
   [
     "change",
-    "variables.disburse.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.disburse.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.disburse.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11375,22 +10940,6 @@
     ]
   ],
   [
-    "change",
-    "variables.review.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.review.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.review",
     [
@@ -11662,26 +11211,10 @@
   ],
   [
     "change",
-    "variables.unemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12338,26 +11871,10 @@
   ],
   [
     "change",
-    "variables.debtexp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.debtexp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.debtexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13010,26 +12527,10 @@
   ],
   [
     "change",
-    "variables.ebrdcomp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdcomp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdcomp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13314,26 +12815,10 @@
   ],
   [
     "change",
-    "variables.comp_df2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.comp_df2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.comp_df2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13611,22 +13096,6 @@
     ]
   ],
   [
-    "change",
-    "variables.comp91.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.comp91.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.comp91",
     [
@@ -13878,26 +13347,10 @@
   ],
   [
     "change",
-    "variables.ebrdlarge.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdlarge.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdlarge.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14195,26 +13648,10 @@
   ],
   [
     "change",
-    "variables.large_df2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.large_df2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.large_df2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14507,26 +13944,10 @@
   ],
   [
     "change",
-    "variables.large91.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.large91.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.large91.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14787,26 +14208,10 @@
   ],
   [
     "change",
-    "variables.ebrdsm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdsm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdsm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15459,26 +14864,10 @@
   ],
   [
     "change",
-    "variables.ebrdsm_df2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdsm_df2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdsm_df2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16131,26 +15520,10 @@
   ],
   [
     "change",
-    "variables.ebrdsm91.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdsm91.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdsm91.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16424,26 +15797,10 @@
   ],
   [
     "change",
-    "variables.ebrdbig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdbig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdbig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17096,26 +16453,10 @@
   ],
   [
     "change",
-    "variables.ebrdbig_df2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdbig_df2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdbig_df2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17768,26 +17109,10 @@
   ],
   [
     "change",
-    "variables.ebrdbig91.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ebrdbig91.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ebrdbig91.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18079,22 +17404,6 @@
     [
       "15",
       15.0
-    ]
-  ],
-  [
-    "change",
-    "variables.priv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.priv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18660,22 +17969,6 @@
     ]
   ],
   [
-    "change",
-    "variables.priv_df2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.priv_df2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.priv_df2",
     [
@@ -18955,22 +18248,6 @@
     ]
   ],
   [
-    "change",
-    "variables.priv91.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.priv91.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.priv91",
     [
@@ -19243,22 +18520,6 @@
     ]
   ],
   [
-    "change",
-    "variables.imfprog.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.imfprog.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.imfprog",
     [
@@ -19488,22 +18749,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.partchange.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.partchange.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19746,22 +18991,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.moveleft.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.moveleft.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20008,22 +19237,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fmoveleft.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fmoveleft.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fmoveleft",
     [
@@ -20221,252 +19434,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:49",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reform_df2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totcon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pubcon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ltotcon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lpubcon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totcon3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pubcon3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "part": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reform": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgdppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "durat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "linfl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpgrow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reform91": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oilprice": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "disburse": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "review": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "debtexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdcomp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comp_df2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comp91": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdlarge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "large_df2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "large91": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdsm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdsm_df2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdsm91": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdbig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdbig_df2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ebrdbig91": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "priv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "priv_df2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "priv91": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "imfprog": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partchange": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moveleft": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fmoveleft": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

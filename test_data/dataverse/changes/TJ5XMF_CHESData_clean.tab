@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1228
-      ],
-      [
-        "variableCount",
-        20
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TJ5XMF_CHESData_clean.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 92152
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.expert.median",
     [
@@ -126,22 +43,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.expert.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.expert.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -785,22 +686,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -1336,22 +1221,6 @@
     ]
   ],
   [
-    "change",
-    "variables.partyname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.partyname",
     [
@@ -1382,11 +1251,11 @@
       [
         "fewestValues",
         [
-          "SPO",
-          "KESK",
+          "REM",
+          "VAS",
           "SKL",
-          "OVP",
-          "LIF"
+          "SPO",
+          "KESK"
         ]
       ],
       [
@@ -1413,133 +1282,133 @@
         "plotValues",
         {
           "V": 41,
-          "SP": 26,
           "PS": 26,
+          "SP": 26,
           "CDU": 26,
           "PDS": 21,
           "PSC": 21,
           "PC": 20,
           "LAB": 19,
-          "RPF": 18,
           "CD": 18,
+          "RPF": 18,
           "FN": 16,
           "ND": 16,
           "FDP": 15,
-          "CSU": 15,
-          "G": 15,
           "DVU": 15,
+          "G": 15,
           "SPD": 15,
           "REP": 15,
-          "SNP": 13,
-          "UKIP": 13,
-          "LD": 13,
-          "GP": 13,
+          "CSU": 15,
           "CON": 13,
-          "SF": 13,
+          "GP": 13,
+          "LD": 13,
           "DL": 13,
-          "UV": 12,
+          "UKIP": 13,
+          "SNP": 13,
+          "SF": 13,
+          "ERC": 12,
+          "EH": 12,
           "IU": 12,
-          "CIU": 12,
+          "IC": 12,
           "PP": 12,
           "PNV": 12,
-          "CC": 12,
-          "EH": 12,
-          "ERC": 12,
-          "IC": 12,
-          "PAR": 12,
-          "PSOE": 12,
           "BNG": 12,
+          "PSOE": 12,
+          "CIU": 12,
+          "CC": 12,
+          "PAR": 12,
+          "UV": 12,
           "EA": 12,
-          "SGP": 11,
-          "CDA": 11,
-          "VVD": 11,
-          "GPV": 11,
           "PvdA": 11,
-          "GL": 11,
+          "CDA": 11,
+          "GPV": 11,
           "D'66": 11,
-          "PRL": 9,
-          "KD": 9,
-          "FDF": 9,
-          "FP": 9,
-          "MCC": 9,
+          "SGP": 11,
+          "GL": 11,
+          "VVD": 11,
           "C": 9,
-          "CVP": 9,
-          "M": 9,
-          "VLD": 9,
+          "FP": 9,
+          "KD": 9,
+          "PRL": 9,
+          "FDF": 9,
+          "AGA": 9,
           "SAP": 9,
+          "VLD": 9,
+          "M": 9,
           "ID21": 9,
           "VB": 9,
-          "MP": 9,
-          "VU": 9,
+          "CVP": 9,
           "ECO": 9,
-          "AGA": 9,
-          "FolkB": 7,
-          "MEI": 7,
-          "LO-LCR": 7,
+          "VU": 9,
+          "MP": 9,
+          "MCC": 9,
+          "DF": 7,
           "PRG": 7,
-          "CPNT": 7,
-          "RPR": 7,
-          "KF": 7,
+          "FrP": 7,
+          "LO-LCR": 7,
           "D": 7,
           "SD": 7,
-          "DF": 7,
-          "KrF": 7,
-          "MN": 7,
-          "E": 7,
-          "RV": 7,
-          "FrP": 7,
-          "JuniB": 7,
-          "UDF": 7,
           "MDC": 7,
-          "SEG": 6,
-          "GR": 6,
-          "SVP": 6,
-          "DIKKI": 6,
+          "MN": 7,
+          "MEI": 7,
+          "FolkB": 7,
+          "CPNT": 7,
+          "UDF": 7,
+          "KF": 7,
+          "RV": 7,
+          "RPR": 7,
+          "E": 7,
+          "KrF": 7,
+          "JuniB": 7,
+          "FF": 6,
           "PsDA": 6,
+          "CCD": 6,
+          "RI": 6,
+          "GR": 6,
+          "PPI": 6,
+          "PASOK": 6,
+          "PdCI": 6,
+          "RC": 6,
+          "PD": 6,
+          "SYN": 6,
+          "SEG": 6,
+          "KKE": 6,
+          "LN": 6,
           "AN": 6,
           "CSV": 6,
-          "FG": 6,
-          "PASOK": 6,
-          "LB": 6,
-          "DEM": 6,
-          "LN": 6,
-          "PPI": 6,
-          "PD": 6,
-          "PRI": 6,
-          "RC": 6,
-          "DG": 6,
-          "PdCI": 6,
           "DP": 6,
-          "MS": 6,
-          "SDI": 6,
-          "CCD": 6,
-          "KKE": 6,
-          "FF": 6,
-          "ADR": 6,
-          "RI": 6,
+          "PRI": 6,
+          "DEM": 6,
           "UD": 6,
-          "LSAP": 6,
-          "SYN": 6,
+          "DG": 6,
+          "SVP": 6,
+          "LB": 6,
           "POLA": 6,
+          "LSAP": 6,
+          "MS": 6,
           "FI": 6,
-          "EKA": 5,
-          "PPD/PSD": 5,
-          "SPO": 5,
-          "GAL": 5,
-          "KESK": 5,
-          "REM": 5,
-          "SDP": 5,
+          "FG": 6,
+          "SDI": 6,
+          "DIKKI": 6,
+          "ADR": 6,
           "LIF": 5,
-          "BE": 5,
-          "VIHR": 5,
-          "KOK": 5,
-          "KIPU": 5,
-          "RKP/SFP": 5,
-          "SKL": 5,
-          "OVP": 5,
-          "FPO": 5,
           "VAS": 5,
-          "CDS-PP": 5
+          "KOK": 5,
+          "CDS-PP": 5,
+          "PPD/PSD": 5,
+          "OVP": 5,
+          "VIHR": 5,
+          "FPO": 5,
+          "BE": 5,
+          "KESK": 5,
+          "KIPU": 5,
+          "SDP": 5,
+          "EKA": 5,
+          "SPO": 5,
+          "SKL": 5,
+          "GAL": 5,
+          "RKP/SFP": 5,
+          "REM": 5
         }
       ],
       [
@@ -1859,30 +1728,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "party.",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "party.",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2541,26 +2386,10 @@
   ],
   [
     "change",
-    "variables.q1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2858,26 +2687,10 @@
   ],
   [
     "change",
-    "variables.q2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3156,26 +2969,10 @@
   ],
   [
     "change",
-    "variables.q3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3411,22 +3208,6 @@
     ]
   ],
   [
-    "change",
-    "variables.q4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.q4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.q4",
     [
@@ -3658,26 +3439,10 @@
   ],
   [
     "change",
-    "variables.q5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3987,26 +3752,10 @@
   ],
   [
     "change",
-    "variables.q6a.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q6a.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q6a.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4316,26 +4065,10 @@
   ],
   [
     "change",
-    "variables.q6b.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q6b.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q6b.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4620,22 +4353,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.q6c.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.q6c.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4926,26 +4643,10 @@
   ],
   [
     "change",
-    "variables.q6d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q6d.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q6d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5248,26 +4949,10 @@
   ],
   [
     "change",
-    "variables.q6e.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q6e.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q6e.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5578,26 +5263,10 @@
   ],
   [
     "change",
-    "variables.q6f.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q6f.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q6f.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5894,26 +5563,10 @@
   ],
   [
     "change",
-    "variables.q6g.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q6g.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q6g.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6229,26 +5882,10 @@
   ],
   [
     "change",
-    "variables.q8a.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q8a.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q8a.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6897,26 +6534,10 @@
   ],
   [
     "change",
-    "variables.q8b.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q8b.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q8b.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7568,26 +7189,10 @@
   ],
   [
     "change",
-    "variables.q8c.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q8c.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q8c.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8198,22 +7803,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countryname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countryname",
     [
@@ -8424,132 +8013,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:56",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "expert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party.": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6a": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6b": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6e": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6f": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q6g": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q8a": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q8b": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q8c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

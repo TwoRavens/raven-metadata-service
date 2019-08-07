@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2000
-      ],
-      [
-        "variableCount",
-        21
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ACYZIC_framing-ajps-replication.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 179222
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.case_id.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.case_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.case_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -785,22 +686,6 @@
     ]
   ],
   [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.age",
     [
@@ -1429,22 +1314,6 @@
     ]
   ],
   [
-    "change",
-    "variables.female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.female",
     [
@@ -1687,22 +1556,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sunni.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sunni.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sunni",
     [
@@ -1942,22 +1795,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.kurd.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.kurd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2212,26 +2049,10 @@
   ],
   [
     "change",
-    "variables.leb_rd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.leb_rd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.leb_rd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2881,26 +2702,10 @@
   ],
   [
     "change",
-    "variables.syr_rd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.syr_rd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.syr_rd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3508,22 +3313,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educ",
     [
@@ -3721,22 +3510,6 @@
       [
         "Low"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.engaged.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.engaged.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3940,22 +3713,6 @@
     ]
   ],
   [
-    "change",
-    "variables.religious.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.religious.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.religious",
     [
@@ -4153,22 +3910,6 @@
       [
         "govt"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.faction.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.faction.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4371,22 +4112,6 @@
       [
         "sect-vs-foreign"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4629,22 +4354,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4902,22 +4611,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fight_sect.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_sect.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fight_sect",
     [
@@ -5169,22 +4862,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_foreign.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_foreign.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5442,22 +5119,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fight_rel.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_rel.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fight_rel",
     [
@@ -5709,22 +5370,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_minority.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_minority.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5982,22 +5627,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fight_terror.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_terror.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fight_terror",
     [
@@ -6249,22 +5878,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_econ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_econ.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6522,22 +6135,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fight_corruption.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fight_corruption.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fight_corruption",
     [
@@ -6792,22 +6389,6 @@
     ]
   ],
   [
-    "change",
-    "variables.id_syrian.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.id_syrian.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.id_syrian",
     [
@@ -7004,137 +6585,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "case_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sunni": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kurd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leb_rd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "syr_rd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "engaged": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "religious": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "faction": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_sect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_foreign": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_rel": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_minority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_terror": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_econ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fight_corruption": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "id_syrian": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

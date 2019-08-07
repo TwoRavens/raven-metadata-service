@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        104
-      ],
-      [
-        "variableCount",
-        27
-      ],
-      [
-        "dataSource",
-        {
-          "name": "AW6L1P_Appendix_Crime.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 13312
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -94,30 +11,6 @@
       [
         "Wroclaw"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Woj.",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Woj.",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -183,8 +76,8 @@
           "Wroclaw": 30,
           "Olsztyn": 19,
           "Gdansk": 16,
-          "Koszalin": 15,
           "Opole": 15,
+          "Koszalin": 15,
           "Katowice": 6,
           "Bialystok": 3
         }
@@ -364,22 +257,6 @@
     [
       "1961",
       1961
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -588,28 +465,12 @@
     [
       "Elk",
       [
-        "Nidzica",
-        "Grodkow",
-        "Ostroda",
-        "Kwidzyn",
-        "Krapkowice"
+        "Namyslow",
+        "Pisz",
+        "Prudnik",
+        "Zgorzelec",
+        "Ketrzyn"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Powiat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Powiat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -643,11 +504,11 @@
       [
         "fewestValues",
         [
-          "Nidzica",
-          "Grodkow",
-          "Ostroda",
-          "Kwidzyn",
-          "Krapkowice"
+          "Namyslow",
+          "Pisz",
+          "Prudnik",
+          "Zgorzelec",
+          "Ketrzyn"
         ]
       ],
       [
@@ -673,110 +534,110 @@
       [
         "plotValues",
         {
-          "Kozle": 1,
-          "Lubliniec": 1,
-          "Szczecinek": 1,
-          "Mragowo": 1,
-          "Koszalin": 1,
-          "Raciborz": 1,
-          "Lubin": 1,
-          "Gora": 1,
-          "Olesnica": 1,
-          "Kartuzy": 1,
-          "Prudnik": 1,
-          "Bytom m.": 1,
-          "Sycow": 1,
-          "Koszalin m.": 1,
-          "Milicz": 1,
-          "Ilawa": 1,
-          "Niemodlin": 1,
-          "Bystrzyca Klodzka": 1,
-          "Morag": 1,
-          "Ketrzyn": 1,
-          "Gliwice": 1,
-          "Gdansk": 1,
-          "Wegorzewo": 1,
-          "Biskupiec": 1,
-          "Sopot m.": 1,
-          "Zlotow": 1,
-          "Paslek": 1,
-          "Gdynia m.": 1,
-          "Strzelce Op.": 1,
-          "Dzierzoniow": 1,
-          "Goldap": 1,
-          "Sroda Slaska": 1,
-          "Gizycko": 1,
-          "Lwowek Slaski": 1,
-          "Namyslow": 1,
-          "Walbrzych": 1,
-          "Zabkowice Slaskie": 1,
-          "Trzebnica": 1,
-          "Drawsko": 1,
-          "Braniewo": 1,
-          "Walcz": 1,
-          "Olesno": 1,
-          "Szczytno": 1,
-          "Puck": 1,
-          "Wolow": 1,
-          "Kamienna Gora": 1,
-          "Zgorzelec": 1,
-          "Jelenia Gora": 1,
-          "Nowa Ruda": 1,
-          "Bialogard": 1,
-          "Glubczyce": 1,
-          "Nysa": 1,
-          "Olecko": 1,
-          "Luban": 1,
-          "Pisz": 1,
-          "Slawno": 1,
-          "Czluchow": 1,
           "Walbrzych m.": 1,
-          "Tarnowskie Gory": 1,
-          "Boleslawiec": 1,
-          "Gdansk m.": 1,
-          "Bytow": 1,
-          "Kluczbork": 1,
-          "Zabrze m.": 1,
-          "Wroclaw m.": 1,
-          "Sztum": 1,
-          "Olawa": 1,
-          "Starogard": 1,
-          "Nidzica": 1,
-          "Gliwice m.": 1,
-          "Bartoszyce": 1,
-          "Strzelin": 1,
-          "Olsztyn": 1,
-          "Wejherowo": 1,
-          "Zlotoryja": 1,
-          "Wroclaw": 1,
-          "Swidwin": 1,
-          "Slupsk": 1,
-          "Elblag (m. + p.)": 1,
-          "Jelenia Gora m.": 1,
-          "Lebork": 1,
-          "Dzialdowo": 1,
-          "Miastko": 1,
-          "Lidzbark Warminski": 1,
-          "Olsztyn m.": 1,
-          "Slupsk m.": 1,
-          "Klodzko": 1,
-          "Kolobrzeg": 1,
-          "Swidnica (m. +p.)": 1,
-          "Nowe Miasto Lubawskie": 1,
-          "Malbork": 1,
-          "Tczew (m.+p.)": 1,
-          "Legnica (m.+p.)": 1,
-          "Koscierzyna": 1,
-          "Elk": 1,
-          "Brzeg": 1,
-          "Opole": 1,
-          "Opole m.": 1,
-          "Krapkowice": 1,
+          "Strzelce Op.": 1,
+          "Gdansk": 1,
+          "Walbrzych": 1,
+          "Olesnica": 1,
           "Kwidzyn": 1,
-          "Nowy Dwor": 1,
+          "Paslek": 1,
+          "Ilawa": 1,
+          "Klodzko": 1,
+          "Nowe Miasto Lubawskie": 1,
           "Ostroda": 1,
+          "Olawa": 1,
+          "Raciborz": 1,
+          "Jelenia Gora": 1,
+          "Bartoszyce": 1,
+          "Olsztyn": 1,
+          "Czluchow": 1,
+          "Gora": 1,
+          "Gliwice": 1,
+          "Milicz": 1,
+          "Walcz": 1,
+          "Slupsk m.": 1,
+          "Sztum": 1,
+          "Zlotow": 1,
+          "Jelenia Gora m.": 1,
+          "Opole m.": 1,
+          "Kozle": 1,
+          "Jawor": 1,
+          "Szczytno": 1,
+          "Koscierzyna": 1,
+          "Swidwin": 1,
+          "Starogard": 1,
+          "Lubin": 1,
+          "Biskupiec": 1,
+          "Tarnowskie Gory": 1,
+          "Brzeg": 1,
+          "Swidnica (m. +p.)": 1,
+          "Olsztyn m.": 1,
+          "Sroda Slaska": 1,
+          "Olesno": 1,
+          "Koszalin": 1,
+          "Mragowo": 1,
+          "Gizycko": 1,
+          "Kolobrzeg": 1,
+          "Slupsk": 1,
+          "Bytow": 1,
+          "Olecko": 1,
+          "Nidzica": 1,
+          "Sycow": 1,
+          "Elblag (m. + p.)": 1,
+          "Zabkowice Slaskie": 1,
+          "Kartuzy": 1,
+          "Bialogard": 1,
+          "Gdansk m.": 1,
+          "Morag": 1,
+          "Kamienna Gora": 1,
+          "Zlotoryja": 1,
+          "Dzialdowo": 1,
+          "Koszalin m.": 1,
+          "Szczecinek": 1,
+          "Malbork": 1,
+          "Elk": 1,
+          "Gliwice m.": 1,
+          "Wolow": 1,
+          "Goldap": 1,
+          "Wroclaw m.": 1,
+          "Strzelin": 1,
+          "Glubczyce": 1,
+          "Sopot m.": 1,
+          "Tczew (m.+p.)": 1,
+          "Bystrzyca Klodzka": 1,
+          "Prudnik": 1,
+          "Niemodlin": 1,
+          "Bytom m.": 1,
+          "Legnica (m.+p.)": 1,
+          "Opole": 1,
+          "Lwowek Slaski": 1,
+          "Kluczbork": 1,
+          "Wegorzewo": 1,
+          "Nysa": 1,
+          "Boleslawiec": 1,
+          "Lidzbark Warminski": 1,
+          "Luban": 1,
+          "Gdynia m.": 1,
+          "Trzebnica": 1,
+          "Krapkowice": 1,
+          "Lebork": 1,
+          "Nowa Ruda": 1,
+          "Puck": 1,
+          "Zabrze m.": 1,
+          "Braniewo": 1,
+          "Drawsko": 1,
+          "Wejherowo": 1,
           "Grodkow": 1,
-          "Jawor": 1
+          "Miastko": 1,
+          "Nowy Dwor": 1,
+          "Slawno": 1,
+          "Wroclaw": 1,
+          "Ketrzyn": 1,
+          "Zgorzelec": 1,
+          "Dzierzoniow": 1,
+          "Pisz": 1,
+          "Lubliniec": 1,
+          "Namyslow": 1
         }
       ],
       [
@@ -1051,22 +912,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Border.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Border.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Border",
     [
@@ -1309,22 +1154,6 @@
     [
       "343",
       343
-    ]
-  ],
-  [
-    "change",
-    "variables.Ogolem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Ogolem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1968,22 +1797,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Zabojstwa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Zabojstwa.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Zabojstwa",
     [
@@ -2278,22 +2091,6 @@
     [
       "145",
       145
-    ]
-  ],
-  [
-    "change",
-    "variables.KradziezAll.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.KradziezAll.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2937,22 +2734,6 @@
     ]
   ],
   [
-    "change",
-    "variables.KradziezZWlamaniem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.KradziezZWlamaniem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.KradziezZWlamaniem",
     [
@@ -3589,22 +3370,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Rozboj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Rozboj.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Rozboj",
     [
@@ -4192,22 +3957,6 @@
     [
       "9",
       9.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Chuliganstwo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Chuliganstwo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4864,26 +4613,10 @@
   ],
   [
     "change",
-    "variables.LudnoscTys.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LudnoscTys.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LudnoscTys.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5531,22 +5264,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totpop1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totpop1950",
     [
@@ -6191,22 +5908,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totUrb1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totUrb1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totUrb1950",
     [
@@ -6845,22 +6546,6 @@
     [
       "73",
       73.0
-    ]
-  ],
-  [
-    "change",
-    "variables.autochtpop1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.autochtpop1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7504,22 +7189,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fromCentrPoland1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fromCentrPoland1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fromCentrPoland1950",
     [
@@ -8157,22 +7826,6 @@
     [
       "269",
       269.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fromUSSR1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fromUSSR1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8815,22 +8468,6 @@
     [
       "24",
       24.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fromAbroad1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fromAbroad1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9478,22 +9115,6 @@
     ]
   ],
   [
-    "change",
-    "variables.LudnoscOgolem39.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LudnoscOgolem39.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.LudnoscOgolem39",
     [
@@ -10135,22 +9756,6 @@
     [
       "1026",
       1026.0
-    ]
-  ],
-  [
-    "change",
-    "variables.LudnoscRoln39.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LudnoscRoln39.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10798,22 +10403,6 @@
     ]
   ],
   [
-    "change",
-    "variables.LudnoscPrzemysl39.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LudnoscPrzemysl39.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.LudnoscPrzemysl39",
     [
@@ -11458,22 +11047,6 @@
     ]
   ],
   [
-    "change",
-    "variables.LudnoscHandel39.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LudnoscHandel39.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.LudnoscHandel39",
     [
@@ -12111,22 +11684,6 @@
     [
       "185",
       185.0
-    ]
-  ],
-  [
-    "change",
-    "variables.GospodRolne39.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GospodRolne39.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12769,22 +12326,6 @@
     [
       "48",
       48.0
-    ]
-  ],
-  [
-    "change",
-    "variables.GospUnder539.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GospUnder539.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13431,22 +12972,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Gosp5to1039.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gosp5to1039.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Gosp5to1039",
     [
@@ -14087,22 +13612,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Gosp10to2039.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gosp10to2039.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Gosp10to2039",
     [
@@ -14740,22 +14249,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Gosp20to10039.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gosp20to10039.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15400,22 +14893,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GospOver10039.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GospOver10039.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GospOver10039",
     [
@@ -16010,167 +15487,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:10",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Woj.": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Powiat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Border": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ogolem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Zabojstwa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "KradziezAll": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "KradziezZWlamaniem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rozboj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Chuliganstwo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LudnoscTys": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totUrb1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "autochtpop1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fromCentrPoland1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fromUSSR1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fromAbroad1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LudnoscOgolem39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LudnoscRoln39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LudnoscPrzemysl39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LudnoscHandel39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GospodRolne39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GospUnder539": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gosp5to1039": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gosp10to2039": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gosp20to10039": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GospOver10039": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

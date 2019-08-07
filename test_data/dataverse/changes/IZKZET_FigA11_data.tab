@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        8
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IZKZET_FigA11_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 654
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Attribute.mode",
     [
@@ -91,22 +8,6 @@
         "Partisanship_female",
         "Partisanship_male"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -304,27 +205,11 @@
     [
       "Independents",
       [
-        "Republicans",
         "Democrats",
         "Independents",
+        "Republicans",
         "Partisanship"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -358,9 +243,9 @@
       [
         "fewestValues",
         [
-          "Republicans",
           "Democrats",
           "Independents",
+          "Republicans",
           "Partisanship"
         ]
       ],
@@ -388,9 +273,9 @@
         "plotValues",
         {
           "Partisanship": 2,
+          "Republicans": 2,
           "Independents": 2,
-          "Democrats": 2,
-          "Republicans": 2
+          "Democrats": 2
         }
       ],
       [
@@ -578,26 +463,10 @@
   ],
   [
     "change",
-    "variables.Estimate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Estimate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -872,22 +741,6 @@
     ]
   ],
   [
-    "change",
-    "variables.respondents.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.respondents",
     [
@@ -1132,22 +985,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.order.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.order.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1400,34 +1237,10 @@
     [
       "    Independents",
       [
-        "    Democrats",
         "    Republicans",
-        "    Independents"
+        "    Independents",
+        "    Democrats"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1464,8 +1277,8 @@
       [
         "fewestValues",
         [
-          "Female respondents",
-          "Male respondents"
+          "Male respondents",
+          "Female respondents"
         ]
       ],
       [
@@ -1491,11 +1304,11 @@
       [
         "plotValues",
         {
+          "    Democrats": 2,
           "    Independents": 2,
           "    Republicans": 2,
-          "    Democrats": 2,
-          "Male respondents": 1,
-          "Female respondents": 1
+          "Female respondents": 1,
+          "Male respondents": 1
         }
       ],
       [
@@ -1765,67 +1578,6 @@
           "defaultNature": "percent",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:25:03",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Attribute": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Level": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Estimate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Std. Err": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "respondents": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "order": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "var.names": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

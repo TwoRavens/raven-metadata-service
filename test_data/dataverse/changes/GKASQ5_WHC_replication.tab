@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        195
-      ],
-      [
-        "variableCount",
-        37
-      ],
-      [
-        "dataSource",
-        {
-          "name": "GKASQ5_WHC_replication.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 52065
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cowid.median",
     [
@@ -122,22 +39,6 @@
     [
       "404",
       404
-    ]
-  ],
-  [
-    "change",
-    "variables.cowid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cowid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -728,22 +629,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countryname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countryname",
     [
@@ -806,42 +691,42 @@
           "Sudan": 13,
           "Myanmar": 11,
           "Kenya": 8,
-          "Zambia": 7,
           "Botswana": 7,
+          "Zambia": 7,
           "Cameroon": 6,
           "Nigeria": 6,
-          "Laos": 5,
-          "Niger": 5,
-          "Pakistan": 5,
-          "Congo": 5,
           "Angola": 5,
           "Senegal": 5,
+          "Pakistan": 5,
+          "Laos": 5,
           "Ghana": 5,
-          "Gambia": 4,
-          "Uganda": 4,
-          "Sri Lanka": 4,
-          "Cambodia": 4,
+          "Niger": 5,
+          "Congo": 5,
           "Ivory Coast": 4,
+          "Gambia": 4,
+          "Cambodia": 4,
+          "Uganda": 4,
           "Chad": 4,
-          "Mauritania": 3,
-          "Gabon": 3,
-          "Guinea": 3,
-          "Guinea-Bissau": 3,
+          "Sri Lanka": 4,
           "Mali": 3,
+          "Gabon": 3,
           "Benin": 3,
+          "Guinea": 3,
           "Malawi": 3,
-          "Sierra Leone": 3,
+          "Mauritania": 3,
           "Mozambique": 3,
+          "Guinea-Bissau": 3,
           "Malaysia": 3,
-          "Togo": 2,
-          "Morocco": 2,
+          "Sierra Leone": 3,
+          "Madagascar": 2,
           "Djibouti": 2,
+          "Togo": 2,
+          "Central African Republic": 2,
+          "Morocco": 2,
           "Algeria": 2,
           "Vietnam": 2,
-          "Central African Republic": 2,
-          "Madagascar": 2,
-          "Democratic Republic of the Congo": 1,
-          "Republic of Vietnam": 1
+          "Republic of Vietnam": 1,
+          "Democratic Republic of the Congo": 1
         }
       ],
       [
@@ -1054,22 +939,6 @@
     [
       "40401000",
       40401000
-    ]
-  ],
-  [
-    "change",
-    "variables.cowgroupid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cowgroupid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1681,22 +1550,6 @@
     ]
   ],
   [
-    "change",
-    "variables.groupname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.groupname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.groupname",
     [
@@ -1727,11 +1580,11 @@
       [
         "fewestValues",
         [
-          "Northern Groups (Temne, Limba)",
-          "Hoa (Chinese)",
+          "Black Africans",
+          "Bat\u00c3\u0083\u00c2\u00a9k\u00c3\u0083\u00c2\u00a9",
           "Southerners (Lomwe, Mang'anja, Nyanja, Yao)",
-          "Mizo",
-          "Kikuyu-Meru-Emb"
+          "Shilluk",
+          "Highlanders"
         ]
       ],
       [
@@ -1759,188 +1612,188 @@
         {
           "Arabs": 3,
           "Toubou": 2,
-          "Wolof": 2,
-          "Kinh (Vietnamese)": 2,
-          "Bakongo": 2,
-          "Diola": 2,
-          "Tuareg": 2,
-          "Berbers": 2,
-          "Chinese": 2,
           "Other Akans": 2,
-          "Sundanese": 1,
-          "Bamileke": 1,
-          "Buddhist Arakanese": 1,
-          "Marathi (non-SC/ST/OBCs)": 1,
-          "Luba Kasai": 1,
-          "Hausa-Fulani and Muslim Middle Belt": 1,
-          "Haratins (Black Moors)": 1,
-          "Mbochi": 1,
-          "Other Arab groups": 1,
-          "Mbundu-Mestico": 1,
-          "Tsonga-Chopi": 1,
-          "Telugu (non-SC/ST)": 1,
-          "Riverine groups (Mbaka, Yakoma, Banziri etc.)": 1,
-          "Vili": 1,
-          "Khmer": 1,
-          "Nuba": 1,
-          "Azande": 1,
-          "Dayak": 1,
-          "South/Central (Fon)": 1,
-          "Kabr\u00c3\u0083\u00c2\u00a9 (and related groups)": 1,
-          "Northerners (Tumbuka, Tonga, Ngonde)": 1,
-          "Luhya": 1,
-          "Fur": 1,
-          "Mandinka": 1,
-          "Vietnamese": 1,
-          "Bat\u00c3\u0083\u00c2\u00a9k\u00c3\u0083\u00c2\u00a9": 1,
-          "Indigenous Tripuri": 1,
-          "Punjabi": 1,
-          "Ternate": 1,
-          "Muslim Sahel groups": 1,
-          "Other Southern groups": 1,
+          "Bakongo": 2,
+          "Berbers": 2,
+          "Kinh (Vietnamese)": 2,
+          "Tuareg": 2,
+          "Chinese": 2,
+          "Wolof": 2,
+          "Diola": 2,
           "Tamil (non-SC/ST/OBCs)": 1,
-          "Fang": 1,
-          "Luvale (NW Province)": 1,
-          "Kalenjin-Masai-Turkana-Samburu": 1,
-          "Eshira/Bapounou": 1,
-          "Yoruba": 1,
-          "Luo": 1,
-          "Thai-Lao": 1,
-          "Nuer": 1,
-          "Ogoni": 1,
-          "Highlanders": 1,
-          "Kono": 1,
-          "Mandingue (and other eastern groups)": 1,
-          "White Moors (Beydan)": 1,
-          "Beti (and related peoples)": 1,
-          "Southerners (Lomwe, Mang'anja, Nyanja, Yao)": 1,
-          "Dinka": 1,
-          "Ewe": 1,
-          "Basoga": 1,
-          "Malays": 1,
-          "Susu": 1,
-          "Balanta": 1,
-          "Chinese (Han)": 1,
-          "Sinhalese": 1,
-          "Makonde-Yao": 1,
-          "C\u00c3\u0083\u00c2\u00b4tiers": 1,
-          "Assamese (non-SC/ST/OBCs)": 1,
-          "Papel": 1,
-          "Ijaw": 1,
-          "Amboinese": 1,
-          "Manjaco": 1,
-          "My\u00c3\u0083\u00c2\u00a8n\u00c3\u0083\u00c2\u00a8": 1,
-          "Kamba": 1,
-          "Lao Tai": 1,
-          "Tonga-Ila-Lenje": 1,
-          "Sri Lankan Tamils": 1,
-          "Cabindan Mayombe": 1,
-          "Black Africans": 1,
-          "Sindhi": 1,
-          "Lao (incl. Phuan)": 1,
-          "Moors (Muslims)": 1,
-          "Isaas (Somali)": 1,
-          "Other Muslims": 1,
-          "Muslim Arakanese": 1,
-          "Blacks (Mande, Peul, Voltaic etc.)": 1,
-          "Kikuyu-Meru-Emb": 1,
-          "Other Northern groups": 1,
-          "Bamar (Barman)": 1,
-          "Indian Tamils": 1,
-          "Kayin (Karens)": 1,
-          "Mende": 1,
-          "Tiv": 1,
-          "Mbukushu": 1,
-          "Hausa": 1,
-          "Minahasa": 1,
-          "Northerners (Langi, Acholi, Teso, Madi, Kakwa-Nubian, Lugbara, Alur)": 1,
-          "Oriya (non-SC/ST/OBCs)": 1,
-          "Kashmiri Muslims": 1,
-          "Tswana": 1,
-          "Lozi (Barotse)": 1,
-          "Peul": 1,
-          "Djerma-Songhai": 1,
-          "Ovimbundu-Ovambo": 1,
-          "Northern Groups (Mole-Dagbani, Gurma, Grusi)": 1,
-          "Hindi (non-SC/ST)": 1,
-          "Karenni (Red Karens)": 1,
-          "Bari": 1,
-          "Lao Sung (excl. Hmong)": 1,
-          "Kaonde": 1,
-          "Scheduled Castes & Tribes": 1,
-          "Manipuri": 1,
-          "Shaygiyya, Ja'aliyyin and Danagla (Arab)": 1,
-          "Bassa/Duala": 1,
-          "Bataks": 1,
-          "Nyanja speakers (Easterners)": 1,
-          "Lunda (NW Province)": 1,
-          "Southwestern Anglophones (Bakweri etc.)": 1,
-          "Gujarati (non-SC/ST)": 1,
-          "Cham and Malays": 1,
-          "Minangkabaus": 1,
-          "Kachins": 1,
-          "Makassarese and Bugis": 1,
-          "Beja": 1,
-          "Igbo": 1,
-          "Lao Thoeng (excl. Khmou)": 1,
-          "Naga": 1,
-          "South-Westeners (Ankole, Banyoro, Toro, Banyarwanda)": 1,
-          "Yeyi": 1,
-          "Sara": 1,
-          "Kanouri": 1,
-          "Mijikenda": 1,
-          "Kannada (non-SC/ST/OBCs)": 1,
-          "Wa": 1,
-          "Kru": 1,
-          "East Indians": 1,
-          "Kisii": 1,
-          "Tswapong": 1,
-          "Khmou": 1,
-          "Shona-Ndau": 1,
-          "Madura": 1,
-          "Balinese": 1,
-          "Lunda-Chokwe": 1,
-          "Shan": 1,
-          "Somali": 1,
-          "Bengali": 1,
-          "Malyalam (non-SC/ST/OBCs)": 1,
-          "Arabs/Moors": 1,
           "Southeastern (Yoruba/Nagot and Goun)": 1,
-          "Birwa": 1,
-          "Punjabi-Sikhs (non-SC/ST/OBCs)": 1,
-          "Lari": 1,
-          "Ga-Adangbe": 1,
-          "Baluchis": 1,
-          "Mons": 1,
-          "Afar": 1,
-          "Northern groups (Baya, Banda, Mandjia, Sara, Goula)": 1,
-          "Pulaar (Peul, Toucouleur)": 1,
-          "Kalanga": 1,
-          "Latoka": 1,
-          "Zomis (Chins)": 1,
-          "Acehnese": 1,
-          "Northwestern Anglophones (Grassfielders)": 1,
-          "Bengali (non-SC/ST)": 1,
-          "Northerners (Mande and Voltaic/Gur)": 1,
-          "Baule": 1,
-          "Javanese": 1,
-          "Serer": 1,
-          "Baganda": 1,
-          "Asante (Akan)": 1,
-          "Kgalagadi": 1,
-          "Gorontalos": 1,
+          "Nuer": 1,
+          "Peul": 1,
+          "Makassarese and Bugis": 1,
+          "White Moors (Beydan)": 1,
+          "Bari": 1,
           "Shilluk": 1,
-          "Mizo": 1,
-          "Northern (Bariba, Gurmanch\u00c3\u0083\u00c2\u00a9/Betamaribe etc.)": 1,
-          "Central (Chewa)": 1,
-          "Hoa (Chinese)": 1,
+          "Malyalam (non-SC/ST/OBCs)": 1,
+          "Bassa/Duala": 1,
+          "Amboinese": 1,
+          "Somali": 1,
+          "South/Central (Fon)": 1,
+          "Northerners (Langi, Acholi, Teso, Madi, Kakwa-Nubian, Lugbara, Alur)": 1,
           "Ewe (and related groups)": 1,
-          "Fulani (and other northern Muslim peoples)": 1,
-          "Bemba speakers": 1,
-          "Pashtuns": 1,
+          "Highlanders": 1,
+          "Bataks": 1,
+          "Other Muslims": 1,
+          "Khmou": 1,
+          "Afar": 1,
+          "Igbo": 1,
+          "Dinka": 1,
+          "Blacks (Mande, Peul, Voltaic etc.)": 1,
+          "Nuba": 1,
+          "Kashmiri Muslims": 1,
+          "Sindhi": 1,
+          "Acehnese": 1,
+          "Sri Lankan Tamils": 1,
+          "Assamese (non-SC/ST/OBCs)": 1,
+          "Wa": 1,
+          "Punjabi": 1,
+          "Ijaw": 1,
+          "Punjabi-Sikhs (non-SC/ST/OBCs)": 1,
+          "Tiv": 1,
+          "Djerma-Songhai": 1,
+          "Minangkabaus": 1,
           "Fula": 1,
+          "Khmer": 1,
+          "Bemba speakers": 1,
+          "Bamar (Barman)": 1,
+          "Buddhist Arakanese": 1,
+          "Arabs/Moors": 1,
+          "Hausa": 1,
+          "Lao (incl. Phuan)": 1,
+          "Ewe": 1,
+          "Kabr\u00c3\u0083\u00c2\u00a9 (and related groups)": 1,
+          "Marathi (non-SC/ST/OBCs)": 1,
+          "Mbundu-Mestico": 1,
+          "Lao Sung (excl. Hmong)": 1,
+          "Southwestern Anglophones (Bakweri etc.)": 1,
+          "Mende": 1,
+          "Northern (Bariba, Gurmanch\u00c3\u0083\u00c2\u00a9/Betamaribe etc.)": 1,
+          "Shan": 1,
+          "Thai-Lao": 1,
+          "Cham and Malays": 1,
+          "Sundanese": 1,
+          "Ga-Adangbe": 1,
+          "Susu": 1,
+          "Fang": 1,
+          "Pashtuns": 1,
+          "Sinhalese": 1,
+          "Hoa (Chinese)": 1,
+          "Kachins": 1,
+          "Gujarati (non-SC/ST)": 1,
+          "Kamba": 1,
+          "Kgalagadi": 1,
+          "Central (Chewa)": 1,
+          "Madura": 1,
+          "Manjaco": 1,
+          "Lao Tai": 1,
+          "Kono": 1,
+          "Oriya (non-SC/ST/OBCs)": 1,
+          "Fulani (and other northern Muslim peoples)": 1,
+          "Tonga-Ila-Lenje": 1,
+          "Other Arab groups": 1,
+          "Northern Groups (Mole-Dagbani, Gurma, Grusi)": 1,
+          "Kru": 1,
+          "Beti (and related peoples)": 1,
+          "Birwa": 1,
+          "Zomis (Chins)": 1,
+          "Tswapong": 1,
+          "Malays": 1,
+          "Cabindan Mayombe": 1,
+          "Gorontalos": 1,
+          "Mons": 1,
+          "Lunda (NW Province)": 1,
+          "Kalenjin-Masai-Turkana-Samburu": 1,
+          "Nyanja speakers (Easterners)": 1,
+          "Lari": 1,
+          "Makonde-Yao": 1,
+          "Bamileke": 1,
+          "Lao Thoeng (excl. Khmou)": 1,
+          "Pulaar (Peul, Toucouleur)": 1,
+          "Manipuri": 1,
+          "Chinese (Han)": 1,
+          "Minahasa": 1,
+          "Ternate": 1,
+          "Kayin (Karens)": 1,
+          "Luvale (NW Province)": 1,
+          "Kanouri": 1,
+          "Azande": 1,
+          "Hindi (non-SC/ST)": 1,
+          "Lunda-Chokwe": 1,
+          "Eshira/Bapounou": 1,
+          "Tswana": 1,
+          "Yeyi": 1,
+          "Fur": 1,
+          "Mandingue (and other eastern groups)": 1,
+          "Southerners (Lomwe, Mang'anja, Nyanja, Yao)": 1,
+          "Luo": 1,
+          "Haratins (Black Moors)": 1,
+          "Luhya": 1,
+          "Ovimbundu-Ovambo": 1,
+          "Telugu (non-SC/ST)": 1,
+          "Yoruba": 1,
+          "Beja": 1,
+          "Kikuyu-Meru-Emb": 1,
+          "Javanese": 1,
+          "Indian Tamils": 1,
+          "Asante (Akan)": 1,
+          "Other Southern groups": 1,
+          "Lozi (Barotse)": 1,
+          "Serer": 1,
+          "Basoga": 1,
+          "Moors (Muslims)": 1,
+          "Northern Groups (Temne, Limba)": 1,
+          "Muslim Arakanese": 1,
+          "Mbukushu": 1,
+          "Balanta": 1,
+          "Papel": 1,
+          "Dayak": 1,
+          "Ogoni": 1,
+          "Baluchis": 1,
+          "Northerners (Mande and Voltaic/Gur)": 1,
+          "Latoka": 1,
+          "Baule": 1,
+          "Karenni (Red Karens)": 1,
+          "Indigenous Tripuri": 1,
+          "C\u00c3\u0083\u00c2\u00b4tiers": 1,
+          "Other Northern groups": 1,
+          "Bengali": 1,
+          "Hausa-Fulani and Muslim Middle Belt": 1,
+          "Tsonga-Chopi": 1,
+          "Mbochi": 1,
+          "Mizo": 1,
+          "Baganda": 1,
+          "Northern groups (Baya, Banda, Mandjia, Sara, Goula)": 1,
+          "Balinese": 1,
+          "Kalanga": 1,
+          "South-Westeners (Ankole, Banyoro, Toro, Banyarwanda)": 1,
+          "Northwestern Anglophones (Grassfielders)": 1,
+          "Shona-Ndau": 1,
+          "East Indians": 1,
+          "Bat\u00c3\u0083\u00c2\u00a9k\u00c3\u0083\u00c2\u00a9": 1,
+          "Vietnamese": 1,
+          "Northerners (Tumbuka, Tonga, Ngonde)": 1,
+          "Luba Kasai": 1,
+          "Muslim Sahel groups": 1,
+          "Scheduled Castes & Tribes": 1,
+          "Kisii": 1,
+          "Vili": 1,
+          "Bengali (non-SC/ST)": 1,
+          "Shaygiyya, Ja'aliyyin and Danagla (Arab)": 1,
+          "Mandinka": 1,
+          "Naga": 1,
           "Malinke": 1,
-          "Northern Groups (Temne, Limba)": 1
+          "Isaas (Somali)": 1,
+          "Sara": 1,
+          "Mijikenda": 1,
+          "Riverine groups (Mbaka, Yakoma, Banziri etc.)": 1,
+          "Kaonde": 1,
+          "Kannada (non-SC/ST/OBCs)": 1,
+          "My\u00c3\u0083\u00c2\u00a8n\u00c3\u0083\u00c2\u00a8": 1,
+          "Black Africans": 1
         }
       ],
       [
@@ -2304,26 +2157,10 @@
   ],
   [
     "change",
-    "variables.groupsize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.groupsize.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.groupsize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2967,22 +2804,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nafrica.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nafrica.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nafrica",
     [
@@ -3222,22 +3043,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.britishcol_flag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.britishcol_flag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3483,22 +3288,6 @@
     ]
   ],
   [
-    "change",
-    "variables.indep_viol.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.indep_viol.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.indep_viol",
     [
@@ -3738,22 +3527,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.family_onset_f10y_flag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.family_onset_f10y_flag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3999,22 +3772,6 @@
     ]
   ],
   [
-    "change",
-    "variables.family_onset_fe_flag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.family_onset_fe_flag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.family_onset_fe_flag",
     [
@@ -4254,22 +4011,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.family_onset_p10y_flag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.family_onset_p10y_flag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4524,26 +4265,10 @@
   ],
   [
     "change",
-    "variables.cntrd_latitude.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cntrd_latitude.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cntrd_latitude.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5196,26 +4921,10 @@
   ],
   [
     "change",
-    "variables.agricult6_frac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.agricult6_frac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.agricult6_frac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5868,26 +5577,10 @@
   ],
   [
     "change",
-    "variables.statehistn10v3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.statehistn10v3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.statehistn10v3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6527,22 +6220,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sample1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sample1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sample1",
     [
@@ -6772,22 +6449,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.islamic.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.islamic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7042,26 +6703,10 @@
   ],
   [
     "change",
-    "variables.agri50.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.agri50.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.agri50.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7705,22 +7350,6 @@
     ]
   ],
   [
-    "change",
-    "variables.status_egip.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.status_egip.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.status_egip",
     [
@@ -7972,26 +7601,10 @@
   ],
   [
     "change",
-    "variables.lngdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lngdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lngdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8641,26 +8254,10 @@
   ],
   [
     "change",
-    "variables.lnpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9310,26 +8907,10 @@
   ],
   [
     "change",
-    "variables.lngrps.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lngrps.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lngrps.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9978,26 +9559,10 @@
   ],
   [
     "change",
-    "variables.coastdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.coastdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.coastdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10650,26 +10215,10 @@
   ],
   [
     "change",
-    "variables.brit_coastdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.brit_coastdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.brit_coastdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11322,26 +10871,10 @@
   ],
   [
     "change",
-    "variables.lnarea.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnarea.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnarea.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11994,26 +11527,10 @@
   ],
   [
     "change",
-    "variables.lncarea.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lncarea.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lncarea.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12663,26 +12180,10 @@
   ],
   [
     "change",
-    "variables.lnelevation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnelevation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnelevation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13326,22 +12827,6 @@
     ]
   ],
   [
-    "change",
-    "variables.landlock.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.landlock.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.landlock",
     [
@@ -13593,26 +13078,10 @@
   ],
   [
     "change",
-    "variables.lncolonyears.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lncolonyears.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lncolonyears.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14264,26 +13733,10 @@
   ],
   [
     "change",
-    "variables.lncity_avdist_km.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lncity_avdist_km.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lncity_avdist_km.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14936,26 +14389,10 @@
   ],
   [
     "change",
-    "variables.brit_lncity_avdist_km.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.brit_lncity_avdist_km.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.brit_lncity_avdist_km.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15608,26 +15045,10 @@
   ],
   [
     "change",
-    "variables.inclgrpsharej.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inclgrpsharej.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inclgrpsharej.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16270,22 +15691,6 @@
     ]
   ],
   [
-    "change",
-    "variables.othercol_flag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.othercol_flag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.othercol_flag",
     [
@@ -16537,26 +15942,10 @@
   ],
   [
     "change",
-    "variables.other_coastdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.other_coastdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.other_coastdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17200,22 +16589,6 @@
     ]
   ],
   [
-    "change",
-    "variables.brit_oth_col_flag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.brit_oth_col_flag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.brit_oth_col_flag",
     [
@@ -17467,26 +16840,10 @@
   ],
   [
     "change",
-    "variables.brit_oth_coastdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.brit_oth_coastdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.brit_oth_coastdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18139,26 +17496,10 @@
   ],
   [
     "change",
-    "variables.lnagripc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnagripc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnagripc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18811,26 +18152,10 @@
   ],
   [
     "change",
-    "variables.lnrgdp90.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnrgdp90.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnrgdp90.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19428,217 +18753,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:31:13",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cowid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cowgroupid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "groupname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "groupsize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nafrica": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "britishcol_flag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "indep_viol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "family_onset_f10y_flag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "family_onset_fe_flag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "family_onset_p10y_flag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cntrd_latitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agricult6_frac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "statehistn10v3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "islamic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agri50": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "status_egip": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lngdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lngrps": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coastdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brit_coastdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnarea": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lncarea": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnelevation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "landlock": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lncolonyears": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lncity_avdist_km": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brit_lncity_avdist_km": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inclgrpsharej": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "othercol_flag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_coastdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brit_oth_col_flag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brit_oth_coastdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnagripc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnrgdp90": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

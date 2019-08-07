@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        593
-      ],
-      [
-        "variableCount",
-        37
-      ],
-      [
-        "dataSource",
-        {
-          "name": "AJHFHU_census2001.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 128044
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.statenam.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Uttar Pradesh"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.statenam.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.statenam.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,9 +40,9 @@
       [
         "fewestValues",
         [
+          "Chandigarh",
           "Dadra & Nagar Haveli",
-          "Lakshadweep",
-          "Chandigarh"
+          "Lakshadweep"
         ]
       ],
       [
@@ -172,8 +73,8 @@
           "Bihar": 37,
           "Maharashtra": 35,
           "Rajasthan": 32,
-          "Orissa": 30,
           "Tamil Nadu": 30,
+          "Orissa": 30,
           "Karnataka": 27,
           "Gujarat": 25,
           "Andhra Pradesh": 23,
@@ -183,13 +84,13 @@
           "Jharkhand": 18,
           "Punjab": 17,
           "Chhattisgarh": 16,
-          "Jammu & Kashmir": 14,
           "Kerala": 14,
-          "Arunachal Pradesh": 13,
+          "Jammu & Kashmir": 14,
           "Uttaranchal": 13,
+          "Arunachal Pradesh": 13,
           "Himachal Pradesh": 12,
-          "Manipur (Excl. 3 Sub-Divisions)": 9,
           "Delhi": 9,
+          "Manipur (Excl. 3 Sub-Divisions)": 9,
           "Mizoram": 8,
           "Nagaland": 8,
           "Meghalaya": 7,
@@ -199,9 +100,9 @@
           "Daman & Diu": 2,
           "Goa": 2,
           "Andaman & Nicobar Islands": 2,
-          "Chandigarh": 1,
+          "Dadra & Nagar Haveli": 1,
           "Lakshadweep": 1,
-          "Dadra & Nagar Haveli": 1
+          "Chandigarh": 1
         }
       ],
       [
@@ -404,22 +305,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.statenum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.statenum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -994,28 +879,12 @@
     [
       "Hamirpur",
       [
-        "West",
-        "South",
-        "Raigarh",
+        "Hamirpur",
+        "Bilaspur",
         "North",
+        "Raigarh",
         "Aurangabad"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.districtnam.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.districtnam.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1049,11 +918,11 @@
       [
         "fewestValues",
         [
+          "Theni",
+          "Maldah",
           "Nandurbar",
-          "Amravati",
-          "Uttar Dinajpur",
-          "Rampur",
-          "Mirzapur"
+          "Dhemaji",
+          "Bareilly"
         ]
       ],
       [
@@ -1079,591 +948,591 @@
       [
         "plotValues",
         {
-          "North": 2,
-          "Bilaspur": 2,
-          "South": 2,
           "Aurangabad": 2,
+          "Bilaspur": 2,
+          "Raigarh": 2,
           "East": 2,
           "West": 2,
-          "Raigarh": 2,
+          "South": 2,
           "Hamirpur": 2,
-          "Sangrur": 1,
-          "Jaintia Hills": 1,
-          "Bongaigaon": 1,
-          "Jalaun": 1,
-          "Guntur": 1,
-          "Punch": 1,
-          "Shahjahanpur": 1,
-          "Lohit": 1,
-          "Phek": 1,
-          "Lakhimpur": 1,
-          "Panch Mahals": 1,
-          "Sheikhpura": 1,
-          "Bhadrak": 1,
-          "Yanam": 1,
-          "Fatehpur": 1,
-          "Vellore": 1,
-          "Gadag": 1,
-          "Srinagar": 1,
-          "Zunheboto": 1,
-          "Ambala": 1,
-          "Viluppuram": 1,
-          "Gurdaspur": 1,
-          "Ariyalur": 1,
-          "Ratlam": 1,
-          "Kushinagar": 1,
-          "Seoni": 1,
-          "Bargarh": 1,
-          "Sonapur": 1,
-          "Ambedkar Nagar": 1,
-          "Idukki": 1,
-          "Kollam": 1,
-          "Kanpur Dehat": 1,
-          "Aligarh": 1,
-          "Madurai": 1,
-          "Nellore": 1,
-          "Thane": 1,
-          "Madhubani": 1,
-          "Pashchim Champaran": 1,
-          "Barabanki": 1,
-          "Lucknow": 1,
-          "Uttara Kannada": 1,
-          "Moga": 1,
-          "Krishna": 1,
-          "Cachar": 1,
-          "Dantewada": 1,
-          "Theni": 1,
-          "Kheri": 1,
-          "Panipat": 1,
-          "Ujjain": 1,
-          "Rampur": 1,
-          "Tinsukia": 1,
-          "North Tripura": 1,
-          "Kamrup": 1,
-          "Lalitpur": 1,
-          "Leh (Ladakh)": 1,
-          "Cuddalore": 1,
-          "Uttarkashi": 1,
-          "Jammu": 1,
-          "Anand": 1,
-          "Baramula": 1,
-          "Panchkula": 1,
-          "Firozpur": 1,
-          "Rajnandgaon": 1,
-          "Araria": 1,
-          "Nayagarh": 1,
-          "Dakshin Dinajpur": 1,
-          "North East": 1,
-          "South Garo Hills": 1,
-          "Korba": 1,
-          "Hugli": 1,
-          "Maldah": 1,
-          "West Khasi Hills": 1,
-          "Bangalore Rural": 1,
-          "Barwani": 1,
-          "Barpeta": 1,
-          "Palamu": 1,
-          "Raichur": 1,
-          "Thanjavur": 1,
-          "Barmer": 1,
-          "Kannur": 1,
-          "Jamnagar": 1,
-          "Purbi Singhbhum": 1,
-          "Sawai Madhopur": 1,
-          "Siddharthnagar": 1,
-          "Namakkal": 1,
-          "Mainpuri": 1,
-          "Sonbhadra": 1,
-          "Morena": 1,
-          "Koppal": 1,
-          "Gulbarga": 1,
-          "Gonda": 1,
-          "Chikmagalur": 1,
-          "Nalgonda": 1,
-          "Lahul & Spiti": 1,
-          "Darrang": 1,
-          "Lakshadweep": 1,
-          "Sonipat": 1,
-          "Ranchi": 1,
-          "Davanagere": 1,
-          "Tawang": 1,
-          "Muzaffarnagar": 1,
-          "Chennai": 1,
-          "Surat": 1,
-          "Pithoragarh": 1,
-          "Jyotiba Phule Nagar": 1,
-          "Chatra": 1,
-          "Bageshwar": 1,
-          "Kupwara": 1,
-          "Jamui": 1,
-          "Jabalpur": 1,
-          "Balaghat": 1,
-          "Daman": 1,
-          "Wokha": 1,
-          "Saran": 1,
-          "Virudhunagar": 1,
-          "Sagar": 1,
-          "Narsimhapur": 1,
-          "Chamoli": 1,
-          "Chittaurgarh": 1,
-          "Ganjam": 1,
-          "Ballia": 1,
-          "Erode": 1,
-          "Gwalior": 1,
-          "Tiruchirappalli": 1,
-          "East Kameng": 1,
-          "Pakaur": 1,
-          "Patna": 1,
-          "Dumka": 1,
-          "Tamenglong": 1,
-          "Hardwar": 1,
-          "Kendrapara": 1,
-          "East Nimar": 1,
-          "Junagadh": 1,
-          "Kargil": 1,
-          "Dhanbad": 1,
-          "Hisar": 1,
-          "Kathua": 1,
-          "Bid": 1,
-          "Godda": 1,
-          "Nicobars": 1,
-          "Lakhisarai": 1,
-          "Badgam": 1,
-          "Sabar Kantha": 1,
-          "Jhansi": 1,
-          "Darbhanga": 1,
-          "Tuensang": 1,
-          "Bijapur": 1,
-          "North West": 1,
-          "Marigaon": 1,
-          "Mon": 1,
-          "Kishanganj": 1,
-          "Gondiya": 1,
-          "Narmada": 1,
-          "Ahmadabad": 1,
-          "Udham Singh Nagar": 1,
-          "Shahdol": 1,
-          "Pathanamthitta": 1,
-          "Hingoli": 1,
-          "Satara": 1,
-          "Sant Ravidas Nagar Bhadohi": 1,
-          "Ahmadnagar": 1,
-          "Mandi": 1,
-          "Nalanda": 1,
-          "Betul": 1,
-          "Thiruvananthapuram": 1,
-          "Sant Kabir Nagar": 1,
-          "Mansa": 1,
-          "Balangir": 1,
-          "Hoshangabad": 1,
-          "Jaipur": 1,
-          "New Delhi": 1,
-          "Chamba": 1,
-          "Prakasam": 1,
-          "Kozhikode": 1,
-          "Kota": 1,
-          "Visakhapatnam": 1,
-          "Bangalore": 1,
-          "Durg": 1,
-          "Chittoor": 1,
-          "Mahrajganj": 1,
-          "Vaishali": 1,
-          "Ghazipur": 1,
-          "Nandurbar": 1,
-          "Moradabad": 1,
-          "South Tripura": 1,
-          "Pulwama": 1,
-          "Rudraprayag": 1,
-          "Anantapur": 1,
-          "Jagatsinghapur": 1,
-          "Kodagu": 1,
-          "Haveri": 1,
-          "North Cachar Hills": 1,
-          "Bathinda": 1,
-          "Alappuzha": 1,
-          "Rajgarh": 1,
-          "Kancheepuram": 1,
-          "Aizawl": 1,
-          "Rohtak": 1,
-          "Rajsamand": 1,
-          "Datia": 1,
-          "Auraiya": 1,
-          "Jalgaon": 1,
-          "Bhavnagar": 1,
-          "Dharwad": 1,
-          "Nadia": 1,
-          "Kanker": 1,
-          "Churu": 1,
-          "Bidar": 1,
-          "Perambalur": 1,
-          "Koraput": 1,
-          "Diu": 1,
-          "Sikar": 1,
-          "Bahraich": 1,
-          "Lunglei": 1,
-          "Palakkad": 1,
-          "Rewa": 1,
-          "Dungarpur": 1,
-          "Navsari": 1,
-          "Udupi": 1,
-          "Jehanabad": 1,
-          "Osmanabad": 1,
-          "Damoh": 1,
-          "Rajauri": 1,
-          "Bhandara": 1,
-          "Tumkur": 1,
-          "Hassan": 1,
-          "Hyderabad": 1,
-          "Nawada": 1,
-          "Baudh": 1,
-          "Alwar": 1,
-          "Karur": 1,
-          "Debagarh": 1,
-          "Belgaum": 1,
-          "Banas Kantha": 1,
-          "Thrissur": 1,
-          "Nagaur": 1,
-          "Birbhum": 1,
-          "Kandhamal": 1,
-          "Ajmer": 1,
-          "Kolar": 1,
-          "Kurukshetra": 1,
-          "Ghaziabad": 1,
-          "Akola": 1,
-          "Puruliya": 1,
-          "Khammam": 1,
-          "Dadra & Nagar Haveli": 1,
-          "Pondicherry": 1,
-          "Kasaragod": 1,
-          "Rayagada": 1,
-          "Mahasamund": 1,
-          "Farrukhabad": 1,
-          "Kanniyakumari": 1,
-          "Dimapur": 1,
-          "Central": 1,
-          "Ukhrul": 1,
-          "Agra": 1,
-          "Shrawasti": 1,
-          "Budaun": 1,
-          "Jalandhar": 1,
-          "Saharanpur": 1,
-          "Dibang Valley": 1,
-          "Dhubri": 1,
-          "Gajapati": 1,
-          "Chhindwara": 1,
-          "Koriya": 1,
-          "Saharsa": 1,
-          "Shivpuri": 1,
-          "Rewari": 1,
-          "Jaisalmer": 1,
-          "Karimganj": 1,
-          "Hailakandi": 1,
-          "Karnal": 1,
-          "Gurgaon": 1,
-          "Ratnagiri": 1,
-          "Dhamtari": 1,
-          "Porbandar": 1,
-          "Vadodara": 1,
-          "Indore": 1,
-          "Rae Bareli": 1,
-          "Pratapgarh": 1,
-          "Janjgir - Champa": 1,
-          "Malkangiri": 1,
-          "Jind": 1,
-          "Purnia": 1,
-          "Chamarajanagar": 1,
-          "Papum Pare": 1,
-          "Jhunjhunun": 1,
-          "Lohardaga": 1,
-          "Thoubal": 1,
-          "Dakshina Kannada": 1,
-          "Nalbari": 1,
-          "Jhalawar": 1,
-          "Raisen": 1,
-          "Bellary": 1,
-          "Muktsar": 1,
-          "Tirunelveli": 1,
-          "Amritsar": 1,
-          "Patan": 1,
-          "Solapur": 1,
-          "Siwan": 1,
-          "Baleshwar": 1,
-          "Raipur": 1,
-          "Dhaulpur": 1,
-          "Deoghar": 1,
-          "Senapati (Excl. 3 Sub-Divisions)": 1,
-          "Kheda": 1,
-          "Yavatmal": 1,
-          "Cuttack": 1,
-          "Dohad": 1,
-          "Mathura": 1,
-          "Jajapur": 1,
-          "Jhabua": 1,
-          "Bulandshahar": 1,
-          "Hoshiarpur": 1,
-          "Bagalkot": 1,
-          "Faridabad": 1,
-          "Mahendragarh": 1,
-          "North Goa": 1,
-          "Amreli": 1,
-          "Kokrajhar": 1,
-          "Chandigarh": 1,
-          "Shimoga": 1,
-          "Rohtas": 1,
-          "Solan": 1,
-          "Thiruvallur": 1,
-          "Sahibganj": 1,
-          "Munger": 1,
-          "Bundi": 1,
-          "Puri": 1,
-          "Mamit": 1,
-          "South  Twenty Four Parganas": 1,
-          "Bankura": 1,
-          "East Khasi  Hills": 1,
-          "Kaimur (Bhabua)": 1,
-          "Churachandpur": 1,
-          "Satna": 1,
-          "Kanpur Nagar": 1,
-          "Jalpaiguri": 1,
-          "Bastar": 1,
-          "Pudukkottai": 1,
-          "Nanded": 1,
-          "Sivaganga": 1,
-          "Chitradurga": 1,
-          "Dharmapuri": 1,
-          "East Godavari": 1,
-          "Guna": 1,
-          "Shimla": 1,
-          "Fatehabad": 1,
-          "Chhatarpur": 1,
-          "Latur": 1,
-          "Jashpur": 1,
-          "Nabarangapur": 1,
-          "Bhopal": 1,
-          "Deoria": 1,
-          "Umaria": 1,
-          "Kaithal": 1,
-          "Katni": 1,
-          "Sultanpur": 1,
-          "Kolasib": 1,
-          "Wayanad": 1,
-          "Jharsuguda": 1,
-          "Sidhi": 1,
-          "Anantnag": 1,
-          "Nuapada": 1,
-          "Nagapattinam": 1,
-          "Kalahandi": 1,
-          "Kohima": 1,
-          "Champawat": 1,
-          "Dhemaji": 1,
-          "Sirmaur": 1,
-          "Una": 1,
-          "Mahe": 1,
-          "Lawngtlai": 1,
-          "Sitamarhi": 1,
-          "Kurnool": 1,
-          "Neemuch": 1,
-          "Chandrapur": 1,
-          "Upper Subansiri": 1,
-          "Mahesana": 1,
-          "North Twenty Four Parganas": 1,
-          "Mayurbhanj": 1,
-          "Mandla": 1,
-          "Shajapur": 1,
-          "Saiha": 1,
-          "Yamunanagar": 1,
-          "Patiala": 1,
-          "Allahabad": 1,
-          "Gopalganj": 1,
-          "Madhepura": 1,
-          "Khagaria": 1,
-          "Giridih": 1,
-          "Hanumangarh": 1,
-          "Jalor": 1,
-          "Ramanathapuram": 1,
-          "Garhwa": 1,
-          "Cuddapah": 1,
-          "Sibsagar": 1,
-          "Anugul": 1,
-          "Bharuch": 1,
-          "Ganganagar": 1,
-          "Washim": 1,
-          "Barddhaman": 1,
-          "West Kameng": 1,
-          "Lower Subansiri": 1,
-          "Sonitpur": 1,
-          "Almora": 1,
-          "Dindigul": 1,
-          "Jaunpur": 1,
-          "Nashik": 1,
-          "Mokokchung": 1,
-          "Khordha": 1,
-          "Chandel": 1,
-          "Kaushambi": 1,
-          "West Tripura": 1,
-          "Jhajjar": 1,
-          "Kolkata": 1,
-          "Dehradun": 1,
-          "Mandsaur": 1,
-          "Dindori": 1,
-          "Medak": 1,
-          "Azamgarh": 1,
-          "Serchhip": 1,
-          "Bhiwani": 1,
-          "Katihar": 1,
-          "Sitapur": 1,
-          "Vidisha": 1,
-          "Surguja": 1,
-          "Bishnupur": 1,
-          "Jorhat": 1,
-          "Mysore": 1,
-          "Pali": 1,
-          "Meerut": 1,
-          "Darjiling": 1,
-          "Mumbai (Suburban)": 1,
-          "Bareilly": 1,
-          "Tiruvannamalai": 1,
-          "Ri Bhoi": 1,
-          "Gadchiroli": 1,
-          "Murshidabad": 1,
-          "East Garo Hills": 1,
-          "Kapurthala": 1,
-          "Sheohar": 1,
-          "Sehore": 1,
-          "Haora": 1,
-          "Garhwal": 1,
-          "Bhojpur": 1,
-          "Pashchimi Singhbhum": 1,
-          "Basti": 1,
-          "Mahoba": 1,
-          "Faizabad": 1,
-          "Dausa": 1,
-          "Nagpur": 1,
-          "Sirohi": 1,
-          "Andamans": 1,
-          "Buxar": 1,
-          "Bijnor": 1,
-          "Bhilwara": 1,
-          "Baghpat": 1,
-          "Karauli": 1,
-          "West Garo Hills": 1,
-          "Buldana": 1,
-          "Bhind": 1,
-          "Hathras": 1,
-          "Thoothukkudi": 1,
-          "The Nilgiris": 1,
-          "Udhampur": 1,
-          "Samastipur": 1,
-          "Imphal East": 1,
-          "South West": 1,
-          "Fatehgarh Sahib": 1,
-          "Karaikal": 1,
-          "Kodarma": 1,
-          "Warangal": 1,
-          "Bikaner": 1,
-          "Karbi Anglong": 1,
-          "Kannauj": 1,
-          "Koch Bihar": 1,
-          "Firozabad": 1,
-          "Gumla": 1,
-          "Ludhiana": 1,
-          "Sirsa": 1,
-          "Malappuram": 1,
-          "Parbhani": 1,
-          "Coimbatore": 1,
-          "Mahbubnagar": 1,
-          "Golaghat": 1,
-          "Thiruvarur": 1,
-          "Champhai": 1,
-          "Supaul": 1,
-          "Sindhudurg": 1,
-          "Balrampur": 1,
-          "Etah": 1,
-          "Rajkot": 1,
-          "Purba Champaran": 1,
-          "Gaya": 1,
-          "Changlang": 1,
-          "Unnao": 1,
-          "Kullu": 1,
-          "South Goa": 1,
-          "West Siang": 1,
-          "The Dangs": 1,
-          "Gautam Buddha Nagar": 1,
-          "Udaipur": 1,
-          "East Siang": 1,
-          "Kendujhar": 1,
-          "Doda": 1,
-          "Nainital": 1,
-          "Nawanshahr": 1,
-          "Wardha": 1,
-          "Tirap": 1,
+          "North": 2,
           "Mumbai": 1,
-          "Dewas": 1,
-          "Gandhinagar": 1,
-          "Pilibhit": 1,
-          "Salem": 1,
-          "Upper Siang": 1,
-          "Jalna": 1,
-          "Tikamgarh": 1,
-          "Kangra": 1,
-          "Banswara": 1,
-          "Begusarai": 1,
-          "Bharatpur": 1,
-          "Hazaribagh": 1,
-          "Muzaffarpur": 1,
-          "Rupnagar": 1,
-          "Tonk": 1,
-          "Chitrakoot": 1,
-          "Dhule": 1,
-          "Kottayam": 1,
-          "Kawardha": 1,
-          "Bokaro": 1,
-          "Banda": 1,
-          "Imphal West": 1,
-          "Jodhpur": 1,
-          "Kachchh": 1,
-          "Sangli": 1,
-          "Surendranagar": 1,
-          "Nizamabad": 1,
-          "Sheopur": 1,
-          "Faridkot": 1,
-          "Chandauli": 1,
-          "Nagaon": 1,
-          "Sundargarh": 1,
-          "Hardoi": 1,
-          "Dhenkanal": 1,
-          "Pune": 1,
-          "Mandya": 1,
-          "Dhar": 1,
-          "West Godavari": 1,
-          "Varanasi": 1,
-          "Kolhapur": 1,
-          "Dibrugarh": 1,
-          "Goalpara": 1,
-          "Banka": 1,
-          "West Nimar": 1,
-          "Karimnagar": 1,
-          "Srikakulam": 1,
-          "Adilabad": 1,
-          "Tehri Garhwal": 1,
-          "Uttar Dinajpur": 1,
-          "Vizianagaram": 1,
-          "Bhagalpur": 1,
-          "Harda": 1,
-          "Baran": 1,
-          "Sambalpur": 1,
+          "Janjgir - Champa": 1,
+          "Barddhaman": 1,
+          "Leh (Ladakh)": 1,
+          "Lower Subansiri": 1,
+          "Purnia": 1,
+          "Chandel": 1,
+          "Dhubri": 1,
+          "Sangrur": 1,
+          "Solapur": 1,
           "Etawah": 1,
+          "Dungarpur": 1,
+          "Nalgonda": 1,
+          "West Tripura": 1,
+          "Kangra": 1,
+          "Nawada": 1,
+          "Ghaziabad": 1,
+          "Tirunelveli": 1,
+          "Hanumangarh": 1,
+          "Dohad": 1,
+          "Sahibganj": 1,
+          "Mansa": 1,
+          "Cachar": 1,
+          "Baleshwar": 1,
+          "Champawat": 1,
+          "South Tripura": 1,
+          "Karnal": 1,
+          "Shahdol": 1,
+          "Guntur": 1,
+          "Ujjain": 1,
+          "Lakhisarai": 1,
+          "Kawardha": 1,
+          "Nashik": 1,
+          "Chhatarpur": 1,
+          "Deoria": 1,
+          "Auraiya": 1,
+          "Viluppuram": 1,
+          "Ganjam": 1,
+          "Thiruvananthapuram": 1,
+          "Jalgaon": 1,
+          "Kheda": 1,
+          "Ajmer": 1,
+          "Dharwad": 1,
+          "Gondiya": 1,
+          "Nabarangapur": 1,
+          "Lohit": 1,
+          "Sirohi": 1,
+          "Zunheboto": 1,
+          "Gadchiroli": 1,
+          "Mahasamund": 1,
+          "Porbandar": 1,
+          "Mumbai (Suburban)": 1,
+          "Neemuch": 1,
+          "Kanniyakumari": 1,
+          "Rajsamand": 1,
+          "Nalanda": 1,
+          "Bhilwara": 1,
+          "Meerut": 1,
+          "Patna": 1,
+          "Bangalore Rural": 1,
+          "Ludhiana": 1,
+          "Hassan": 1,
+          "Dhar": 1,
+          "Nagapattinam": 1,
+          "Sabar Kantha": 1,
+          "Hingoli": 1,
+          "Bathinda": 1,
+          "Patan": 1,
+          "Ratlam": 1,
+          "Banda": 1,
+          "Garhwal": 1,
+          "Nainital": 1,
+          "Nellore": 1,
+          "Patiala": 1,
+          "Dhenkanal": 1,
+          "Ukhrul": 1,
+          "Sheopur": 1,
+          "Prakasam": 1,
+          "Aligarh": 1,
+          "Mokokchung": 1,
+          "Chikmagalur": 1,
+          "Mathura": 1,
+          "Bhandara": 1,
+          "Kolasib": 1,
+          "Imphal West": 1,
+          "Dantewada": 1,
+          "Azamgarh": 1,
+          "Firozabad": 1,
+          "Bongaigaon": 1,
+          "Buxar": 1,
+          "Bhiwani": 1,
+          "Kannur": 1,
+          "Bharatpur": 1,
+          "Pondicherry": 1,
+          "Karimganj": 1,
+          "Nanded": 1,
+          "Almora": 1,
+          "Damoh": 1,
+          "Sitapur": 1,
+          "Mon": 1,
+          "Rae Bareli": 1,
+          "Tiruchirappalli": 1,
+          "Udham Singh Nagar": 1,
+          "Changlang": 1,
+          "Gulbarga": 1,
+          "Thane": 1,
+          "Gadag": 1,
+          "Thoothukkudi": 1,
+          "New Delhi": 1,
           "Ernakulam": 1,
-          "Kinnaur": 1,
-          "Rangareddi": 1,
-          "Mau": 1,
-          "Gorakhpur": 1,
+          "Barabanki": 1,
+          "Kishanganj": 1,
+          "Nadia": 1,
+          "Hardwar": 1,
+          "Palakkad": 1,
+          "Satna": 1,
+          "Tiruvannamalai": 1,
+          "Vizianagaram": 1,
           "Panna": 1,
-          "Dhalai": 1,
-          "Medinipur": 1,
-          "Valsad": 1,
+          "Kandhamal": 1,
+          "Godda": 1,
+          "Chatra": 1,
+          "Tikamgarh": 1,
+          "Thrissur": 1,
+          "Bid": 1,
+          "Virudhunagar": 1,
+          "Kanker": 1,
+          "Jalor": 1,
+          "Saran": 1,
+          "Namakkal": 1,
+          "Chandrapur": 1,
+          "Wardha": 1,
+          "Malappuram": 1,
+          "Jammu": 1,
+          "Lunglei": 1,
+          "Bhagalpur": 1,
+          "Mainpuri": 1,
+          "Rupnagar": 1,
+          "Adilabad": 1,
+          "Upper Subansiri": 1,
+          "Senapati (Excl. 3 Sub-Divisions)": 1,
+          "Marigaon": 1,
+          "Papum Pare": 1,
+          "Doda": 1,
+          "Sonapur": 1,
+          "Kushinagar": 1,
+          "South Garo Hills": 1,
+          "Tinsukia": 1,
+          "Kota": 1,
           "Mirzapur": 1,
-          "Amravati": 1
+          "Vellore": 1,
+          "Samastipur": 1,
+          "Shimla": 1,
+          "Wokha": 1,
+          "Ambedkar Nagar": 1,
+          "Hoshangabad": 1,
+          "Katihar": 1,
+          "Khagaria": 1,
+          "Sibsagar": 1,
+          "Chitrakoot": 1,
+          "Baudh": 1,
+          "North Cachar Hills": 1,
+          "Chhindwara": 1,
+          "Morena": 1,
+          "Pashchimi Singhbhum": 1,
+          "Rangareddi": 1,
+          "Pune": 1,
+          "Jagatsinghapur": 1,
+          "Dausa": 1,
+          "Jorhat": 1,
+          "Darrang": 1,
+          "Perambalur": 1,
+          "Ratnagiri": 1,
+          "Serchhip": 1,
+          "Moradabad": 1,
+          "Jaintia Hills": 1,
+          "Murshidabad": 1,
+          "Srikakulam": 1,
+          "Birbhum": 1,
+          "Sonitpur": 1,
+          "Anand": 1,
+          "Tehri Garhwal": 1,
+          "Barpeta": 1,
+          "Lakhimpur": 1,
+          "Purbi Singhbhum": 1,
+          "Kollam": 1,
+          "Fatehabad": 1,
+          "Dehradun": 1,
+          "Pulwama": 1,
+          "Baramula": 1,
+          "Haora": 1,
+          "Daman": 1,
+          "Tamenglong": 1,
+          "Shajapur": 1,
+          "West Siang": 1,
+          "Debagarh": 1,
+          "Surendranagar": 1,
+          "Koch Bihar": 1,
+          "Puruliya": 1,
+          "Hazaribagh": 1,
+          "Sultanpur": 1,
+          "Banka": 1,
+          "Warangal": 1,
+          "Katni": 1,
+          "North Tripura": 1,
+          "Central": 1,
+          "Seoni": 1,
+          "Rewa": 1,
+          "Bhavnagar": 1,
+          "Cuttack": 1,
+          "Belgaum": 1,
+          "Madurai": 1,
+          "Giridih": 1,
+          "Muzaffarpur": 1,
+          "Bastar": 1,
+          "Mayurbhanj": 1,
+          "Visakhapatnam": 1,
+          "Dharmapuri": 1,
+          "Mau": 1,
+          "Shrawasti": 1,
+          "Alappuzha": 1,
+          "Chamba": 1,
+          "Churachandpur": 1,
+          "Rohtas": 1,
+          "Jabalpur": 1,
+          "Una": 1,
+          "Kupwara": 1,
+          "Jhajjar": 1,
+          "Tonk": 1,
+          "Gajapati": 1,
+          "Medinipur": 1,
+          "Fatehgarh Sahib": 1,
+          "Junagadh": 1,
+          "Mamit": 1,
+          "Kalahandi": 1,
+          "Ranchi": 1,
+          "Anantapur": 1,
+          "Uttarkashi": 1,
+          "West Godavari": 1,
+          "Goalpara": 1,
+          "Farrukhabad": 1,
+          "Balangir": 1,
+          "Saiha": 1,
+          "Puri": 1,
+          "Gumla": 1,
+          "Chamarajanagar": 1,
+          "South West": 1,
+          "Dhemaji": 1,
+          "Vidisha": 1,
+          "Chandauli": 1,
+          "Araria": 1,
+          "Sawai Madhopur": 1,
+          "Srinagar": 1,
+          "Erode": 1,
+          "Sagar": 1,
+          "Basti": 1,
+          "Gautam Buddha Nagar": 1,
+          "Tumkur": 1,
+          "Datia": 1,
+          "Purba Champaran": 1,
+          "Mandi": 1,
+          "Dhaulpur": 1,
+          "Ambala": 1,
+          "Dibrugarh": 1,
+          "Allahabad": 1,
+          "Kheri": 1,
+          "Pakaur": 1,
+          "Koraput": 1,
+          "Vadodara": 1,
+          "Kohima": 1,
+          "Jhunjhunun": 1,
+          "Churu": 1,
+          "Kullu": 1,
+          "Bikaner": 1,
+          "Sirsa": 1,
+          "Betul": 1,
+          "Sambalpur": 1,
+          "Umaria": 1,
+          "Mysore": 1,
+          "Davanagere": 1,
+          "Faridabad": 1,
+          "Uttar Dinajpur": 1,
+          "Agra": 1,
+          "Kanpur Nagar": 1,
+          "Punch": 1,
+          "Dimapur": 1,
+          "Bhind": 1,
+          "Sheikhpura": 1,
+          "West Nimar": 1,
+          "Gwalior": 1,
+          "Dadra & Nagar Haveli": 1,
+          "Kanpur Dehat": 1,
+          "Aizawl": 1,
+          "Ahmadnagar": 1,
+          "Rajnandgaon": 1,
+          "Bankura": 1,
+          "Kasaragod": 1,
+          "Cuddapah": 1,
+          "Sheohar": 1,
+          "Pithoragarh": 1,
+          "Bhojpur": 1,
+          "Rajkot": 1,
+          "Medak": 1,
+          "Dakshin Dinajpur": 1,
+          "Jashpur": 1,
+          "Bokaro": 1,
+          "Yanam": 1,
+          "Osmanabad": 1,
+          "Kurnool": 1,
+          "Kinnaur": 1,
+          "North West": 1,
+          "Chitradurga": 1,
+          "Nagaur": 1,
+          "Shimoga": 1,
+          "Moga": 1,
+          "Hyderabad": 1,
+          "Indore": 1,
+          "Tawang": 1,
+          "Nuapada": 1,
+          "Hisar": 1,
+          "Rudraprayag": 1,
+          "Ghazipur": 1,
+          "Pudukkottai": 1,
+          "Bharuch": 1,
+          "Yamunanagar": 1,
+          "Rayagada": 1,
+          "Kolkata": 1,
+          "Jaunpur": 1,
+          "Lakshadweep": 1,
+          "East Siang": 1,
+          "Kamrup": 1,
+          "Imphal East": 1,
+          "East Khasi  Hills": 1,
+          "Siddharthnagar": 1,
+          "Amreli": 1,
+          "North Goa": 1,
+          "Mahesana": 1,
+          "Bageshwar": 1,
+          "Sikar": 1,
+          "Bidar": 1,
+          "Kokrajhar": 1,
+          "Akola": 1,
+          "Khammam": 1,
+          "Kendujhar": 1,
+          "Barwani": 1,
+          "Baghpat": 1,
+          "Sonipat": 1,
+          "Kodagu": 1,
+          "Shahjahanpur": 1,
+          "Ri Bhoi": 1,
+          "Lucknow": 1,
+          "Bulandshahar": 1,
+          "Vaishali": 1,
+          "Panch Mahals": 1,
+          "Saharsa": 1,
+          "Jyotiba Phule Nagar": 1,
+          "Hugli": 1,
+          "Parbhani": 1,
+          "Kachchh": 1,
+          "Nagpur": 1,
+          "Uttara Kannada": 1,
+          "Hathras": 1,
+          "East Garo Hills": 1,
+          "Raipur": 1,
+          "Andamans": 1,
+          "Champhai": 1,
+          "Mandla": 1,
+          "Raisen": 1,
+          "Udupi": 1,
+          "Ramanathapuram": 1,
+          "Satara": 1,
+          "Idukki": 1,
+          "Jaisalmer": 1,
+          "Upper Siang": 1,
+          "Jamnagar": 1,
+          "Kozhikode": 1,
+          "Dewas": 1,
+          "Jalaun": 1,
+          "Karbi Anglong": 1,
+          "Palamu": 1,
+          "Nizamabad": 1,
+          "Harda": 1,
+          "Bellary": 1,
+          "Pali": 1,
+          "Korba": 1,
+          "Rajauri": 1,
+          "Surguja": 1,
+          "Dhanbad": 1,
+          "Washim": 1,
+          "Surat": 1,
+          "Balaghat": 1,
+          "Sant Ravidas Nagar Bhadohi": 1,
+          "Muktsar": 1,
+          "Latur": 1,
+          "Fatehpur": 1,
+          "Dhalai": 1,
+          "Mahe": 1,
+          "Cuddalore": 1,
+          "Bundi": 1,
+          "Supaul": 1,
+          "Gaya": 1,
+          "Hoshiarpur": 1,
+          "Koriya": 1,
+          "Pashchim Champaran": 1,
+          "Valsad": 1,
+          "Nayagarh": 1,
+          "Jalpaiguri": 1,
+          "Karaikal": 1,
+          "North Twenty Four Parganas": 1,
+          "Firozpur": 1,
+          "Mahoba": 1,
+          "Darbhanga": 1,
+          "Deoghar": 1,
+          "Hailakandi": 1,
+          "Unnao": 1,
+          "Mandya": 1,
+          "Wayanad": 1,
+          "Sivaganga": 1,
+          "Dumka": 1,
+          "Jodhpur": 1,
+          "Gandhinagar": 1,
+          "Kathua": 1,
+          "Faizabad": 1,
+          "Karauli": 1,
+          "Golaghat": 1,
+          "Gonda": 1,
+          "Rohtak": 1,
+          "Bijapur": 1,
+          "East Nimar": 1,
+          "Darjiling": 1,
+          "Kolhapur": 1,
+          "Banswara": 1,
+          "West Garo Hills": 1,
+          "Bahraich": 1,
+          "Durg": 1,
+          "Haveri": 1,
+          "Anugul": 1,
+          "Mahbubnagar": 1,
+          "Sundargarh": 1,
+          "Ballia": 1,
+          "Rewari": 1,
+          "Jharsuguda": 1,
+          "The Dangs": 1,
+          "Alwar": 1,
+          "Bargarh": 1,
+          "Begusarai": 1,
+          "Jalna": 1,
+          "Mahrajganj": 1,
+          "Kargil": 1,
+          "Anantnag": 1,
+          "Kaithal": 1,
+          "Jhabua": 1,
+          "Kancheepuram": 1,
+          "Sehore": 1,
+          "Jaipur": 1,
+          "Saharanpur": 1,
+          "Lawngtlai": 1,
+          "Gorakhpur": 1,
+          "West Kameng": 1,
+          "Lahul & Spiti": 1,
+          "Dakshina Kannada": 1,
+          "Raichur": 1,
+          "Badgam": 1,
+          "Koppal": 1,
+          "Coimbatore": 1,
+          "Navsari": 1,
+          "Narsimhapur": 1,
+          "Sangli": 1,
+          "Thiruvallur": 1,
+          "Etah": 1,
+          "Ahmadabad": 1,
+          "Balrampur": 1,
+          "Madhubani": 1,
+          "Sonbhadra": 1,
+          "Lohardaga": 1,
+          "Sirmaur": 1,
+          "Dhamtari": 1,
+          "Phek": 1,
+          "East Kameng": 1,
+          "Kannauj": 1,
+          "Malkangiri": 1,
+          "Gurdaspur": 1,
+          "Jind": 1,
+          "Barmer": 1,
+          "Sindhudurg": 1,
+          "Dindori": 1,
+          "Kodarma": 1,
+          "Sitamarhi": 1,
+          "Shivpuri": 1,
+          "Varanasi": 1,
+          "Diu": 1,
+          "South Goa": 1,
+          "Bhopal": 1,
+          "Chennai": 1,
+          "Ganganagar": 1,
+          "Nagaon": 1,
+          "Sant Kabir Nagar": 1,
+          "Bangalore": 1,
+          "Ariyalur": 1,
+          "Chittoor": 1,
+          "Madhepura": 1,
+          "Budaun": 1,
+          "Sidhi": 1,
+          "Krishna": 1,
+          "Amritsar": 1,
+          "Panipat": 1,
+          "Bijnor": 1,
+          "Pilibhit": 1,
+          "Nawanshahr": 1,
+          "Chittaurgarh": 1,
+          "Lalitpur": 1,
+          "Kapurthala": 1,
+          "Kottayam": 1,
+          "Bishnupur": 1,
+          "Tirap": 1,
+          "Narmada": 1,
+          "Buldana": 1,
+          "Yavatmal": 1,
+          "Jehanabad": 1,
+          "Thoubal": 1,
+          "Rajgarh": 1,
+          "Salem": 1,
+          "West Khasi Hills": 1,
+          "Hardoi": 1,
+          "The Nilgiris": 1,
+          "Jhalawar": 1,
+          "Rampur": 1,
+          "Udhampur": 1,
+          "Bagalkot": 1,
+          "Nicobars": 1,
+          "Gurgaon": 1,
+          "Jhansi": 1,
+          "Siwan": 1,
+          "Gopalganj": 1,
+          "Guna": 1,
+          "Panchkula": 1,
+          "Khordha": 1,
+          "Karimnagar": 1,
+          "Amravati": 1,
+          "Nalbari": 1,
+          "Baran": 1,
+          "Dhule": 1,
+          "Mahendragarh": 1,
+          "Bhadrak": 1,
+          "Dindigul": 1,
+          "Dibang Valley": 1,
+          "Mandsaur": 1,
+          "Kaushambi": 1,
+          "Chandigarh": 1,
+          "East Godavari": 1,
+          "Kaimur (Bhabua)": 1,
+          "Jajapur": 1,
+          "South  Twenty Four Parganas": 1,
+          "Solan": 1,
+          "Muzaffarnagar": 1,
+          "Udaipur": 1,
+          "Thanjavur": 1,
+          "Garhwa": 1,
+          "Thiruvarur": 1,
+          "Kurukshetra": 1,
+          "Karur": 1,
+          "Nandurbar": 1,
+          "Munger": 1,
+          "Pratapgarh": 1,
+          "Tuensang": 1,
+          "North East": 1,
+          "Kolar": 1,
+          "Bareilly": 1,
+          "Maldah": 1,
+          "Jalandhar": 1,
+          "Banas Kantha": 1,
+          "Jamui": 1,
+          "Faridkot": 1,
+          "Kendrapara": 1,
+          "Chamoli": 1,
+          "Pathanamthitta": 1,
+          "Theni": 1
         }
       ],
       [
@@ -2419,22 +2288,6 @@
     ]
   ],
   [
-    "change",
-    "variables.districtnum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.districtnum.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.districtnum",
     [
@@ -3076,22 +2929,6 @@
     [
       "31394",
       31394
-    ]
-  ],
-  [
-    "change",
-    "variables.persons.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.persons.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3747,26 +3584,10 @@
   ],
   [
     "change",
-    "variables.growth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.growth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4410,22 +4231,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rural.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rural.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rural",
     [
@@ -5066,22 +4871,6 @@
     ]
   ],
   [
-    "change",
-    "variables.urban.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.urban.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.urban",
     [
@@ -5719,22 +5508,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.scp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.scp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6382,22 +6155,6 @@
     ]
   ],
   [
-    "change",
-    "variables.littotal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.littotal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.littotal",
     [
@@ -7039,22 +6796,6 @@
     [
       "8733",
       8733
-    ]
-  ],
-  [
-    "change",
-    "variables.litmales.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.litmales.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7702,22 +7443,6 @@
     ]
   ],
   [
-    "change",
-    "variables.litfemales.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.litfemales.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.litfemales",
     [
@@ -8362,22 +8087,6 @@
     ]
   ],
   [
-    "change",
-    "variables.numhouseholds.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.numhouseholds.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.numhouseholds",
     [
@@ -9018,22 +8727,6 @@
     ]
   ],
   [
-    "change",
-    "variables.housesize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.housesize.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.housesize",
     [
@@ -9291,22 +8984,6 @@
     [
       "591",
       591
-    ]
-  ],
-  [
-    "change",
-    "variables.sexratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sexratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9951,22 +9628,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sexratio06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sexratio06.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sexratio06",
     [
@@ -10604,22 +10265,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.stp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.stp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11267,22 +10912,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educlevel1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educlevel1",
     [
@@ -11924,22 +11553,6 @@
     [
       "105",
       105
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12587,22 +12200,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educlevel3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educlevel3",
     [
@@ -13244,22 +12841,6 @@
     [
       "3146",
       3146
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13907,22 +13488,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educlevel5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educlevel5",
     [
@@ -14567,22 +14132,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educlevel6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educlevel6",
     [
@@ -15223,22 +14772,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educlevel7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educlevel7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educlevel7",
     [
@@ -15876,22 +15409,6 @@
     [
       "2547",
       2547
-    ]
-  ],
-  [
-    "change",
-    "variables.agegroups1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agegroups1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16539,22 +16056,6 @@
     ]
   ],
   [
-    "change",
-    "variables.agegroups2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agegroups2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.agegroups2",
     [
@@ -17199,22 +16700,6 @@
     ]
   ],
   [
-    "change",
-    "variables.agegroups3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agegroups3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.agegroups3",
     [
@@ -17852,22 +17337,6 @@
     [
       "2178",
       2178
-    ]
-  ],
-  [
-    "change",
-    "variables.agegroups4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agegroups4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18511,22 +17980,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totalinhvill.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totalinhvill.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totalinhvill",
     [
@@ -19164,22 +18617,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.primaryschool.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.primaryschool.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19823,22 +19260,6 @@
     ]
   ],
   [
-    "change",
-    "variables.middleschool.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.middleschool.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.middleschool",
     [
@@ -20476,22 +19897,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.secondaryschool.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.secondaryschool.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21135,22 +20540,6 @@
     ]
   ],
   [
-    "change",
-    "variables.college.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.college.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.college",
     [
@@ -21768,22 +21157,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.phone.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.phone.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22427,22 +21800,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bus.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bus.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bus",
     [
@@ -23080,22 +22437,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.paved.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paved.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23739,22 +23080,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mud.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mud.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mud",
     [
@@ -24349,217 +23674,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:22:52",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "statenam": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "statenum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "districtnam": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "districtnum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "persons": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rural": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urban": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "scp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "littotal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "litmales": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "litfemales": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "numhouseholds": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "housesize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sexratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sexratio06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educlevel7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agegroups1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agegroups2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agegroups3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agegroups4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totalinhvill": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "primaryschool": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "middleschool": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "secondaryschool": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "college": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "phone": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bus": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paved": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mud": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

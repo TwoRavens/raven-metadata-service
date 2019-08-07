@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        3972
-      ],
-      [
-        "variableCount",
-        36
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HSELCA_HKS_AJPS_conflictmonth.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 670693
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.conflict_id.median",
     [
@@ -126,22 +43,6 @@
     [
       "70",
       70.0
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -754,22 +655,6 @@
     [
       "701",
       701
-    ]
-  ],
-  [
-    "change",
-    "variables.id_ep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.id_ep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1409,22 +1294,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gwnoloc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gwnoloc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gwnoloc",
     [
@@ -2016,22 +1885,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -2611,22 +2464,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mon.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mon",
     [
@@ -2901,22 +2738,6 @@
     ]
   ],
   [
-    "change",
-    "variables.location.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.location.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.location",
     [
@@ -2977,27 +2798,27 @@
         {
           "Ethiopia": 624,
           "Angola": 372,
-          "Sudan": 216,
-          "Uganda": 216,
-          "Burundi": 216,
           "Chad": 216,
+          "Burundi": 216,
+          "Uganda": 216,
+          "Sudan": 216,
           "Niger": 204,
-          "Senegal": 180,
           "Somalia": 180,
+          "Senegal": 180,
           "Rwanda": 168,
           "Democratic Republic of Congo (Zaire)": 156,
           "Liberia": 156,
-          "Sierra Leone": 144,
           "Congo": 144,
+          "Sierra Leone": 144,
           "Central African Republic": 132,
           "Djibouti": 108,
           "Eritrea": 96,
           "Nigeria": 72,
-          "Cote D_Ivoire": 60,
           "Mali": 60,
-          "Guinea": 48,
-          "Guinea-Bissau": 48,
+          "Cote D_Ivoire": 60,
           "Mozambique": 48,
+          "Guinea-Bissau": 48,
+          "Guinea": 48,
           "Lesotho": 36,
           "Comoros": 36,
           "Togo": 36
@@ -3165,22 +2986,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sidea.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sidea.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sidea",
     [
@@ -3241,27 +3046,27 @@
         {
           "Ethiopia": 624,
           "Angola": 372,
-          "Sudan": 216,
-          "Uganda": 216,
-          "Burundi": 216,
           "Chad": 216,
+          "Burundi": 216,
+          "Uganda": 216,
+          "Sudan": 216,
           "Niger": 204,
-          "Senegal": 180,
           "Somalia": 180,
+          "Senegal": 180,
           "Rwanda": 168,
           "Democratic Republic of Congo (Zaire)": 156,
           "Liberia": 156,
-          "Sierra Leone": 144,
           "Congo": 144,
+          "Sierra Leone": 144,
           "Central African Republic": 132,
           "Djibouti": 108,
           "Eritrea": 96,
           "Nigeria": 72,
-          "Cote D_Ivoire": 60,
           "Mali": 60,
-          "Guinea": 48,
-          "Guinea-Bissau": 48,
+          "Cote D_Ivoire": 60,
           "Mozambique": 48,
+          "Guinea-Bissau": 48,
+          "Guinea": 48,
           "Lesotho": 36,
           "Comoros": 36,
           "Togo": 36
@@ -3429,22 +3234,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sidea2nd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sidea2nd.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sidea2nd",
     [
@@ -3506,12 +3295,12 @@
           "Namibia": 72,
           "Angola, Chad": 60,
           "Guinea, Senegal": 48,
+          "United Kingdom": 36,
           "Botswana, South Africa": 36,
           "Angola": 36,
           "Ethiopia": 36,
-          "United Kingdom": 36,
-          "Sudan": 12,
-          "Libya": 12
+          "Libya": 12,
+          "Sudan": 12
         }
       ],
       [
@@ -3661,22 +3450,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sideb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sideb.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sideb",
     [
@@ -3707,11 +3480,11 @@
       [
         "fewestValues",
         [
-          "LRA, UPA",
-          "MLC, RCD",
-          "FUCD",
-          "ADF, LRA, WNBF",
-          "AFRC, RUF"
+          "AFRC, RUF",
+          "RAFD, FUCD, UFDD",
+          "FDR",
+          "SPLM/A, SAF, NDA",
+          "CNDD, Frolina, Palipehutu_FNL"
         ]
       ],
       [
@@ -3738,98 +3511,98 @@
         "plotValues",
         {
           "OLF": 216,
-          "MFDC": 180,
           "ONLF": 180,
+          "MFDC": 180,
           "UNITA": 168,
           "FLEC_FAC": 108,
           "EIJM _ AS": 96,
           "FDLR": 96,
-          "USC/SNA": 84,
-          "al-Itahad al-Islami": 84,
           "INPFL, NPFL": 84,
-          "RUF": 72,
-          "FPR": 72,
-          "MDJT": 72,
-          "FRUD": 72,
-          "SPLM/A, NDA": 72,
+          "al-Itahad al-Islami": 84,
+          "USC/SNA": 84,
           "LRA": 72,
-          " Palipehutu_FNL": 60,
-          "CNDD_FDD, Palipehutu_FNL": 60,
+          "FPR": 72,
+          "RUF": 72,
+          "MDJT": 72,
+          "SPLM/A, NDA": 72,
+          "FRUD": 72,
           "MLC, RCD, RCD_ML": 60,
           "SPLM/A": 60,
           "FLEC_FAC, FLEC_R": 60,
-          "Military Junta for the Consolidation of Democracy, Peace and Justice": 48,
-          "Renamo": 48,
-          "Cocoyes, Ninjas, Ntsiloulous": 48,
-          "ADF, LRA": 48,
-          "Military faction (forces of Cyriac Souke)": 48,
-          "FLAA": 48,
-          "RFDG": 48,
+          " Palipehutu_FNL": 60,
+          "CNDD_FDD, Palipehutu_FNL": 60,
           "SRRC": 48,
+          "FLAA": 48,
+          "Cocoyes, Ninjas, Ntsiloulous": 48,
           "CRA": 48,
-          "MPA/Republic of Anjouan": 36,
-          "FLEC_R": 36,
+          "Military faction (forces of Cyriac Souke)": 48,
+          "Renamo": 48,
+          "Military Junta for the Consolidation of Democracy, Peace and Justice": 48,
+          "ADF, LRA": 48,
+          "RFDG": 48,
           "EPLF": 36,
-          "FARS": 36,
-          "Ahlul Sunnah Jamaa": 36,
-          "FIAA": 36,
-          "ARDUF": 36,
-          "LURD": 36,
-          "Ntsiloulous": 36,
           "CNDD": 36,
-          "Forces of Francois Bozize": 36,
-          "FRUD _ AD": 36,
-          "LURD, MODEL": 36,
-          "Military faction": 36,
-          "CNR, CSNPD, FNT": 36,
-          "NDPVF": 36,
-          "EPRDF": 36,
-          "RUF, WSB": 36,
-          "FN": 36,
           "Military faction (forces loyal to Gnassingbe Eyadema)": 36,
-          "ALF": 36,
+          "Forces of Francois Bozize": 36,
+          "EPRDF": 36,
           "UFDR": 36,
-          "CNDP": 36,
-          "ADF": 36,
-          "Palipehutu": 36,
           "UFRA": 36,
+          "ADF": 36,
+          "NDPVF": 36,
+          "CNR, CSNPD, FNT": 36,
+          "RUF, WSB": 36,
           "Ninjas": 36,
+          "FLEC_R": 36,
+          "ALF": 36,
+          "CNDP": 36,
+          "MPA/Republic of Anjouan": 36,
+          "LURD": 36,
+          "Palipehutu": 36,
+          "FRUD _ AD": 36,
+          "ARDUF": 36,
+          "Ahlul Sunnah Jamaa": 36,
+          "LURD, MODEL": 36,
+          "Ntsiloulous": 36,
+          "Military faction": 36,
+          "FARS": 36,
+          "FN": 36,
+          "FIAA": 36,
+          "UPA": 24,
+          "ATNMC": 24,
+          "BDK": 24,
+          "MNJ": 24,
+          "JEM, SLM/A, SPLM/A": 24,
           "CNR, CSNPD, FNT, MDD": 24,
           "ARS/UIC": 24,
-          "AFRC, Kamajors, RUF": 24,
-          "MNJ": 24,
           "AFDL": 24,
-          "ATNMC": 24,
-          "JEM, SLM/A, SPLM/A": 24,
-          "BDK": 24,
-          "UPA": 24,
-          "Cobras, Cocoyes": 12,
-          "SNM, SPM, SSDF, USC, USC/SNA": 12,
+          "AFRC, Kamajors, RUF": 24,
+          "MLC, RCD": 12,
+          "LRA, UPA": 12,
           "JEM, SLM/A - Unity": 12,
           "Al-Shabaab, ARS/UIC, Harakat Ras Kamboni": 12,
-          "Cobras, Ninjas": 12,
-          "FDR": 12,
-          "Military faction (forces of Andr\u00e9 Kolingba)": 12,
-          "FARF": 12,
           "MJP, MPIGO": 12,
           "ADF, LRA, UNRF II": 12,
-          "MDD, Military faction (forces of Maldoum Bada Abbas)": 12,
-          "CNDD, Frolina, Palipehutu_FNL": 12,
-          "UFDD": 12,
-          "RAFD, FUCD, UFDD": 12,
-          "NRF, SLM/A, SLM/A _ MM": 12,
-          "AN": 12,
-          "SLM/A": 12,
           "CNDD, Palipehutu_FNL": 12,
+          "UFDD": 12,
+          "Cobras, Cocoyes": 12,
           "FARF, MDD": 12,
+          "Cobras, Ninjas": 12,
+          "JEM, SLM/A, SLM/A_Unity": 12,
+          "Military faction (forces of Andr\u00e9 Kolingba)": 12,
+          "RAFD, FUCD, UFDD": 12,
+          "SNM, SPM, SSDF, USC, USC/SNA": 12,
+          "NRF, SLM/A, SLM/A _ MM": 12,
+          "SLM/A": 12,
           "MJP, MPCI, MPIGO": 12,
           "SPLM/A, SAF, NDA": 12,
-          "AFRC, RUF": 12,
-          "ADF, LRA, WNBF": 12,
+          "AN": 12,
+          "MDD, Military faction (forces of Maldoum Bada Abbas)": 12,
           "FUCD": 12,
-          "JEM, SLM/A, SLM/A_Unity": 12,
-          "MLC, RCD": 12,
-          "LRA, UPA": 12
+          "AFRC, RUF": 12,
+          "CNDD, Frolina, Palipehutu_FNL": 12,
+          "FDR": 12,
+          "ADF, LRA, WNBF": 12,
+          "FARF": 12
         }
       ],
       [
@@ -4061,22 +3834,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sideb2nd.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sideb2nd.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sideb2nd",
     [
@@ -4276,22 +4033,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mission.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mission.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mission",
     [
@@ -4353,11 +4094,11 @@
           "UNOMIL": 48,
           "UNMIS": 46,
           "UNAMSIL": 39,
-          "UNOCI": 34,
           "MINURCAT": 34,
+          "UNOCI": 34,
           "MONUA": 31,
-          "ONUB": 30,
           "UNAMIR": 30,
+          "ONUB": 30,
           "UNMIL": 27,
           "UNOSOM": 26,
           "BINUB": 24,
@@ -4556,22 +4297,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.PKOdum.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.PKOdum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4814,22 +4539,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.osvAll.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.osvAll.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5473,22 +5182,6 @@
     ]
   ],
   [
-    "change",
-    "variables.osvAllLagDum.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.osvAllLagDum.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.osvAllLagDum",
     [
@@ -5728,22 +5421,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.osvreb1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.osvreb1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6387,22 +6064,6 @@
     ]
   ],
   [
-    "change",
-    "variables.osvreb1Lag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.osvreb1Lag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.osvreb1Lag",
     [
@@ -7043,22 +6704,6 @@
     ]
   ],
   [
-    "change",
-    "variables.osvreb1LagDum.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.osvreb1LagDum.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.osvreb1LagDum",
     [
@@ -7298,22 +6943,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.osvgov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.osvgov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7957,22 +7586,6 @@
     ]
   ],
   [
-    "change",
-    "variables.osvgovLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.osvgovLag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.osvgovLag",
     [
@@ -8613,22 +8226,6 @@
     ]
   ],
   [
-    "change",
-    "variables.osvgovLagDum.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.osvgovLagDum.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.osvgovLagDum",
     [
@@ -8880,26 +8477,10 @@
   ],
   [
     "change",
-    "variables.troopLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.troopLag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.troopLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9552,26 +9133,10 @@
   ],
   [
     "change",
-    "variables.policeLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.policeLag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.policeLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10224,26 +9789,10 @@
   ],
   [
     "change",
-    "variables.militaryobserversLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.militaryobserversLag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.militaryobserversLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10887,22 +10436,6 @@
     ]
   ],
   [
-    "change",
-    "variables.brv_AllLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.brv_AllLag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.brv_AllLag",
     [
@@ -11540,22 +11073,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.brv_bLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.brv_bLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12199,22 +11716,6 @@
     ]
   ],
   [
-    "change",
-    "variables.brv_aLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.brv_aLag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.brv_aLag",
     [
@@ -12855,22 +12356,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incomp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.incomp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incomp",
     [
@@ -13114,22 +12599,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.epduration.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.epduration.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13786,26 +13255,10 @@
   ],
   [
     "change",
-    "variables.lntpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lntpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lntpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14449,22 +13902,6 @@
     ]
   ],
   [
-    "change",
-    "variables.PKOatsomept_con.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.PKOatsomept_con.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.PKOatsomept_con",
     [
@@ -14704,22 +14141,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.unscres_prearrivalLag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.unscres_prearrivalLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14965,22 +14386,6 @@
     ]
   ],
   [
-    "change",
-    "variables.unscresLag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.unscresLag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.unscresLag",
     [
@@ -15220,22 +14625,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.active_year.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.active_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15481,22 +14870,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ceasefire.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ceasefire.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ceasefire",
     [
@@ -15736,22 +15109,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pocmandate.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pocmandate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15997,22 +15354,6 @@
     ]
   ],
   [
-    "change",
-    "variables.robustmandate.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.robustmandate.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.robustmandate",
     [
@@ -16209,212 +15550,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:34",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "conflict_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "id_ep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gwnoloc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "location": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sidea": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sidea2nd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sideb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sideb2nd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mission": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PKOdum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvAll": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvAllLagDum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvreb1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvreb1Lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvreb1LagDum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvgov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvgovLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osvgovLagDum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "troopLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "policeLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "militaryobserversLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brv_AllLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brv_bLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brv_aLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incomp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "epduration": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lntpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PKOatsomept_con": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unscres_prearrivalLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unscresLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "active_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ceasefire": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pocmandate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "robustmandate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

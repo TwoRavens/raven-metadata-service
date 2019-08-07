@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        56
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "8XPBSA_aut_2008_predict.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3477
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.choice.mode",
     [
       "SPO",
       [
-        "SPO",
-        "Fritz",
+        "Gruene",
         "BZO",
-        "FPO",
-        "LIF"
+        "Fritz",
+        "SPO",
+        "OVP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.choice.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.choice.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "SPO",
-          "Fritz",
+          "Gruene",
           "BZO",
-          "FPO",
-          "LIF"
+          "Fritz",
+          "SPO",
+          "OVP"
         ]
       ],
       [
@@ -173,13 +74,13 @@
       [
         "plotValues",
         {
-          "Fritz": 8,
+          "FPO": 8,
           "Gruene": 8,
           "LIF": 8,
+          "OVP": 8,
           "SPO": 8,
-          "FPO": 8,
-          "BZO": 8,
-          "OVP": 8
+          "Fritz": 8,
+          "BZO": 8
         }
       ],
       [
@@ -320,28 +221,12 @@
     [
       "LIF",
       [
-        "OVP",
-        "NoID",
+        "Gruene",
         "BZO",
-        "FPO",
-        "SPO"
+        "Fritz",
+        "SPO",
+        "OVP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -375,11 +260,11 @@
       [
         "fewestValues",
         [
-          "OVP",
-          "NoID",
+          "Gruene",
           "BZO",
-          "FPO",
-          "SPO"
+          "Fritz",
+          "SPO",
+          "OVP"
         ]
       ],
       [
@@ -405,14 +290,14 @@
       [
         "plotValues",
         {
-          "Fritz": 7,
           "Gruene": 7,
+          "LIF": 7,
           "NoID": 7,
-          "SPO": 7,
           "FPO": 7,
-          "BZO": 7,
           "OVP": 7,
-          "LIF": 7
+          "SPO": 7,
+          "Fritz": 7,
+          "BZO": 7
         }
       ],
       [
@@ -604,26 +489,10 @@
   ],
   [
     "change",
-    "variables.Phat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Phat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Phat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1276,26 +1145,10 @@
   ],
   [
     "change",
-    "variables.nrpid_prop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nrpid_prop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nrpid_prop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1575,22 +1428,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nobs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nobs.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nobs",
     [
@@ -1832,26 +1669,10 @@
   ],
   [
     "change",
-    "variables.pseudo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pseudo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pseudo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2100,26 +1921,10 @@
   ],
   [
     "change",
-    "variables.share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2353,67 +2158,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:17",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "choice": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Phat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nrpid_prop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nobs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pseudo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

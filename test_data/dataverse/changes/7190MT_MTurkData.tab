@@ -1,113 +1,14 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2844
-      ],
-      [
-        "variableCount",
-        27
-      ],
-      [
-        "dataSource",
-        {
-          "name": "7190MT_MTurkData.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 371591
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.TreatName.mode",
     [
       "GBPHarrassIncrease",
       [
-        "GBPHarrassDecrease",
+        "GBPHarrassIncrease",
         "AMPHarrassDecrease",
-        "GBPHarrassIncrease"
+        "GBPHarrassDecrease"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.TreatName.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TreatName.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -167,9 +68,9 @@
       [
         "plotValues",
         {
-          "GBPHarrassIncrease": 243,
-          "AMPHarrassDecrease": 243,
           "GBPHarrassDecrease": 243,
+          "AMPHarrassDecrease": 243,
+          "GBPHarrassIncrease": 243,
           "AMPHeadlineIncrease": 242,
           "AMPHeadlineDecrease": 240,
           "AMPAnimalIncrease": 238,
@@ -360,22 +261,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -681,22 +566,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RightDecision.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RightDecision.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RightDecision",
     [
@@ -948,22 +817,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.RightDecisionGroup.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RightDecisionGroup.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1227,22 +1080,6 @@
     ]
   ],
   [
-    "change",
-    "variables.FairDecision.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FairDecision.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.FairDecision",
     [
@@ -1500,22 +1337,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.FairProcess.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FairProcess.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1779,22 +1600,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Overturn.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Overturn.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Overturn",
     [
@@ -2052,22 +1857,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.TrustCommittee.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TrustCommittee.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2331,22 +2120,6 @@
     ]
   ],
   [
-    "change",
-    "variables.AcceptRecommendation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.AcceptRecommendation.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.AcceptRecommendation",
     [
@@ -2598,22 +2371,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.TrustLegislature.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TrustLegislature.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2871,22 +2628,6 @@
     ]
   ],
   [
-    "change",
-    "variables.IncreaseConfidence.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.IncreaseConfidence.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.IncreaseConfidence",
     [
@@ -3138,22 +2879,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.PersonalAgree.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.PersonalAgree.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3411,22 +3136,6 @@
     ]
   ],
   [
-    "change",
-    "variables.PreventSexHarass.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.PreventSexHarass.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.PreventSexHarass",
     [
@@ -3649,22 +3358,6 @@
     ]
   ],
   [
-    "change",
-    "variables.PartyID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.PartyID.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.PartyID",
     [
@@ -3868,22 +3561,6 @@
     ]
   ],
   [
-    "change",
-    "variables.StrongDem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.StrongDem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.StrongDem",
     [
@@ -4083,22 +3760,6 @@
     ]
   ],
   [
-    "change",
-    "variables.StrongRep.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.StrongRep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.StrongRep",
     [
@@ -4295,22 +3956,6 @@
       [
         "Neither"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.CloseDemRep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CloseDemRep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4514,22 +4159,6 @@
       [
         "Liberal"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Ideo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Ideo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4776,22 +4405,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Female.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Female",
     [
@@ -5034,22 +4647,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Edu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Edu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Edu",
     [
@@ -5281,22 +4878,6 @@
       [
         " White"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.RaceEth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RaceEth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5540,22 +5121,6 @@
     [
       "18",
       18
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6196,22 +5761,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Check1Women.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Check1Women.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Check1Women",
     [
@@ -6491,22 +6040,6 @@
     ]
   ],
   [
-    "change",
-    "variables.White.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.White.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.White",
     [
@@ -6746,22 +6279,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.Dem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7007,22 +6524,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Rep.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Rep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Rep",
     [
@@ -7265,22 +6766,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Ind.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Ind.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Ind",
     [
@@ -7477,167 +6962,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:29:01",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "TreatName": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RightDecision": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RightDecisionGroup": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FairDecision": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FairProcess": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Overturn": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TrustCommittee": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AcceptRecommendation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TrustLegislature": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IncreaseConfidence": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PersonalAgree": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PreventSexHarass": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PartyID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "StrongDem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "StrongRep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CloseDemRep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ideo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Edu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RaceEth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Check1Women": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "White": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ind": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2528
-      ],
-      [
-        "variableCount",
-        41
-      ],
-      [
-        "dataSource",
-        {
-          "name": "W4WE3X_Replication_data_set_AnayaNunezPonce_JHR.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 592335
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -91,22 +8,6 @@
         "ukraine",
         "colombia"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -140,11 +41,11 @@
       [
         "fewestValues",
         [
-          "bosnia&herzegovina",
-          "brazil",
-          "moldova",
           "bulgaria",
-          "albania"
+          "croatia",
+          "belarus",
+          "albania",
+          "moldova"
         ]
       ],
       [
@@ -174,39 +75,39 @@
           "ukraine": 128,
           "uruguay": 96,
           "poland": 96,
-          "elsalvador": 96,
-          "chile": 96,
-          "peru": 96,
+          "argentina": 96,
+          "mexico": 96,
           "azerbaijan": 96,
           "crica": 96,
-          "georgia": 96,
-          "slovakia": 96,
-          "mexico": 96,
+          "chile": 96,
+          "peru": 96,
           "russia": 96,
-          "argentina": 96,
-          "latvia": 64,
-          "romania": 64,
-          "paraguay": 64,
-          "estonia": 64,
-          "venezuela": 64,
-          "ecuador": 64,
+          "georgia": 96,
+          "elsalvador": 96,
+          "slovakia": 96,
+          "macedonia": 64,
           "czech republic": 64,
+          "latvia": 64,
+          "ecuador": 64,
           "guatemala": 64,
           "slovenia": 64,
           "hungary": 64,
-          "macedonia": 64,
+          "venezuela": 64,
+          "estonia": 64,
+          "paraguay": 64,
+          "romania": 64,
           "lithuania": 64,
+          "brazil": 32,
+          "armenia": 32,
           "nicaragua": 32,
           "serbia": 32,
           "bolivia": 32,
-          "croatia": 32,
-          "belarus": 32,
-          "armenia": 32,
-          "albania": 32,
-          "bulgaria": 32,
+          "bosnia&herzegovina": 32,
           "moldova": 32,
-          "brazil": 32,
-          "bosnia&herzegovina": 32
+          "albania": 32,
+          "belarus": 32,
+          "croatia": 32,
+          "bulgaria": 32
         }
       ],
       [
@@ -412,22 +313,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.country_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1045,22 +930,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cicle.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cicle.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cicle",
     [
@@ -1291,27 +1160,11 @@
       "amn",
       [
         "dis",
-        "freed",
-        "rural",
-        "prison",
-        "penal"
+        "labour",
+        "milit",
+        "legal",
+        "tort"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cluster.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cluster.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1346,10 +1199,10 @@
         "fewestValues",
         [
           "dis",
-          "freed",
-          "rural",
-          "prison",
-          "penal"
+          "labour",
+          "milit",
+          "legal",
+          "tort"
         ]
       ],
       [
@@ -1375,37 +1228,37 @@
       [
         "plotValues",
         {
-          "victims": 79,
-          "women": 79,
-          "labour": 79,
-          "rel": 79,
-          "libdet": 79,
-          "edu": 79,
-          "viol": 79,
-          "armcon": 79,
-          "disap": 79,
-          "lgtbi": 79,
-          "exec": 79,
-          "dueproc": 79,
-          "invest": 79,
-          "legal": 79,
-          "disc": 79,
-          "indig": 79,
-          "reforms": 79,
-          "legrec": 79,
-          "freexp": 79,
-          "electo": 79,
-          "milit": 79,
-          "sexrep": 79,
-          "foregin": 79,
           "amn": 79,
-          "tort": 79,
           "childr": 79,
-          "freeassoc": 79,
-          "penal": 79,
+          "viol": 79,
+          "electo": 79,
+          "sexrep": 79,
+          "libdet": 79,
+          "rel": 79,
+          "edu": 79,
           "prison": 79,
           "rural": 79,
+          "indig": 79,
+          "invest": 79,
+          "disc": 79,
+          "lgtbi": 79,
+          "legrec": 79,
+          "victims": 79,
+          "reforms": 79,
+          "exec": 79,
+          "disap": 79,
+          "foregin": 79,
+          "freeassoc": 79,
+          "freexp": 79,
+          "penal": 79,
+          "dueproc": 79,
           "freed": 79,
+          "women": 79,
+          "armcon": 79,
+          "tort": 79,
+          "legal": 79,
+          "milit": 79,
+          "labour": 79,
           "dis": 79
         }
       ],
@@ -1610,22 +1463,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cluster_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cluster_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2233,22 +2070,6 @@
     ]
   ],
   [
-    "change",
-    "variables.depyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.depyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.depyear",
     [
@@ -2836,22 +2657,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.depconteo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.depconteo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3504,26 +3309,10 @@
   ],
   [
     "change",
-    "variables.deptasa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.deptasa.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.deptasa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4168,22 +3957,6 @@
     ]
   ],
   [
-    "change",
-    "variables.indepyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.indepyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.indepyear",
     [
@@ -4771,22 +4544,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.indepconteo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.indepconteo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5439,26 +5196,10 @@
   ],
   [
     "change",
-    "variables.indeptasa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.indeptasa.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.indeptasa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6102,22 +5843,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diffyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diffyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diffyear",
     [
@@ -6688,22 +6413,6 @@
     ]
   ],
   [
-    "change",
-    "variables.shamingI.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.shamingI.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.shamingI",
     [
@@ -6972,26 +6681,10 @@
   ],
   [
     "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7648,26 +7341,10 @@
   ],
   [
     "change",
-    "variables.pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8324,26 +8001,10 @@
   ],
   [
     "change",
-    "variables.trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8987,22 +8648,6 @@
     ]
   ],
   [
-    "change",
-    "variables.democ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.democ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.democ",
     [
@@ -9301,22 +8946,6 @@
     ]
   ],
   [
-    "change",
-    "variables.autoc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.autoc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.autoc",
     [
@@ -9577,22 +9206,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xrcomp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xrcomp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xrcomp",
     [
@@ -9844,22 +9457,6 @@
     [
       "-66",
       -66
-    ]
-  ],
-  [
-    "change",
-    "variables.xconst.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xconst.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10135,22 +9732,6 @@
     ]
   ],
   [
-    "change",
-    "variables.parcomp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.parcomp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.parcomp",
     [
@@ -10408,22 +9989,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_a.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_a.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10726,22 +10291,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pr_b.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_b.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pr_b",
     [
@@ -11036,22 +10585,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_c.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_c.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11351,22 +10884,6 @@
     [
       "4",
       4.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11675,22 +11192,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cl_e.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_e.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cl_e",
     [
@@ -11988,22 +11489,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_f.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_f.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12569,22 +12054,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cl_g.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_g.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cl_g",
     [
@@ -12889,26 +12358,10 @@
   ],
   [
     "change",
-    "variables.goveff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.goveff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.goveff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13552,22 +13005,6 @@
     ]
   ],
   [
-    "change",
-    "variables.civil_l.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.civil_l.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.civil_l",
     [
@@ -13831,22 +13268,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.poli_r.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.poli_r.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14117,22 +13538,6 @@
     [
       "378",
       378.0
-    ]
-  ],
-  [
-    "change",
-    "variables.INGO.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.INGO.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14789,26 +14194,10 @@
   ],
   [
     "change",
-    "variables.cinc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cinc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cinc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15461,26 +14850,10 @@
   ],
   [
     "change",
-    "variables.ODA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ODA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ODA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16124,22 +15497,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -16391,26 +15748,10 @@
   ],
   [
     "change",
-    "variables.tasa_agg_ind.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tasa_agg_ind.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tasa_agg_ind.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17067,26 +16408,10 @@
   ],
   [
     "change",
-    "variables.l_gdp_pc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_gdp_pc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_gdp_pc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17743,26 +17068,10 @@
   ],
   [
     "change",
-    "variables.l_gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18419,26 +17728,10 @@
   ],
   [
     "change",
-    "variables.l_pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19091,26 +18384,10 @@
   ],
   [
     "change",
-    "variables.deptasa_change.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.deptasa_change.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.deptasa_change.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19763,26 +19040,10 @@
   ],
   [
     "change",
-    "variables.indeptasa_change.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.indeptasa_change.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.indeptasa_change.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20380,237 +19641,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:48",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cicle": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cluster": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cluster_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "depyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "depconteo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "deptasa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "indepyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "indepconteo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "indeptasa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "shamingI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "democ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "autoc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xrcomp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xconst": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "parcomp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr_a": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr_b": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr_c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cl_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cl_e": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cl_f": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cl_g": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "goveff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "civil_l": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "poli_r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "INGO": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cinc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ODA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tasa_agg_ind": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_gdp_pc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "deptasa_change": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "indeptasa_change": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

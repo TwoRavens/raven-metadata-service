@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        748
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "24714_repgermany.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 41959
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.index.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.index.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.index.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -682,28 +583,12 @@
     [
       "USA",
       [
-        "USA",
-        "Italy",
-        "Switzerland",
-        "Belgium",
-        "New Zealand"
+        "UK",
+        "France",
+        "West Germany",
+        "Australia",
+        "Greece"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -737,11 +622,11 @@
       [
         "fewestValues",
         [
-          "USA",
-          "Italy",
-          "Switzerland",
-          "Belgium",
-          "New Zealand"
+          "UK",
+          "France",
+          "West Germany",
+          "Australia",
+          "Greece"
         ]
       ],
       [
@@ -767,23 +652,23 @@
       [
         "plotValues",
         {
-          "Spain": 44,
-          "Australia": 44,
           "Japan": 44,
-          "West Germany": 44,
-          "Norway": 44,
-          "Austria": 44,
-          "Greece": 44,
-          "Denmark": 44,
-          "Netherlands": 44,
-          "UK": 44,
-          "France": 44,
           "Portugal": 44,
+          "Spain": 44,
+          "Austria": 44,
           "New Zealand": 44,
-          "Belgium": 44,
-          "Switzerland": 44,
           "Italy": 44,
-          "USA": 44
+          "Norway": 44,
+          "Denmark": 44,
+          "Switzerland": 44,
+          "USA": 44,
+          "Netherlands": 44,
+          "Belgium": 44,
+          "Greece": 44,
+          "Australia": 44,
+          "West Germany": 44,
+          "France": 44,
+          "UK": 44
         }
       ],
       [
@@ -972,22 +857,6 @@
     [
       "1960",
       1960.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1620,22 +1489,6 @@
     [
       "707",
       707
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2288,26 +2141,10 @@
   ],
   [
     "change",
-    "variables.infrate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infrate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infrate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2964,26 +2801,10 @@
   ],
   [
     "change",
-    "variables.trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3640,26 +3461,10 @@
   ],
   [
     "change",
-    "variables.schooling.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.schooling.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.schooling.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4316,26 +4121,10 @@
   ],
   [
     "change",
-    "variables.invest60.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.invest60.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.invest60.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4992,26 +4781,10 @@
   ],
   [
     "change",
-    "variables.invest70.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.invest70.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.invest70.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5668,26 +5441,10 @@
   ],
   [
     "change",
-    "variables.invest80.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.invest80.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.invest80.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6340,26 +6097,10 @@
   ],
   [
     "change",
-    "variables.industry.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.industry.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.industry.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6957,87 +6698,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:17:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "index": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infrate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "schooling": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "invest60": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "invest70": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "invest80": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "industry": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

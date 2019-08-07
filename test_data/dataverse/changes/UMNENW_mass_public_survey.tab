@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2000
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "UMNENW_mass_public_survey.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 101129
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.weight.median",
     [
@@ -134,26 +51,10 @@
   ],
   [
     "change",
-    "variables.weight.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.weight.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.weight.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -797,22 +698,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educ",
     [
@@ -1076,22 +961,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.V259.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.V259.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1731,22 +1600,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pid7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pid7",
     [
@@ -2025,22 +1878,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pid3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pid3",
     [
@@ -2298,22 +2135,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ideo5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideo5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2583,22 +2404,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cces.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cces.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cces",
     [
@@ -2828,22 +2633,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.obama_st_pred.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.obama_st_pred.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3451,22 +3240,6 @@
     ]
   ],
   [
-    "change",
-    "variables.stateusps.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.stateusps.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.stateusps",
     [
@@ -3534,8 +3307,8 @@
           "NC": 70,
           "GA": 61,
           "VA": 60,
-          "WA": 55,
           "AZ": 55,
+          "WA": 55,
           "NJ": 50,
           "WI": 43,
           "MN": 43,
@@ -3550,23 +3323,23 @@
           "KS": 27,
           "KY": 25,
           "SC": 23,
-          "AL": 22,
           "NM": 22,
+          "AL": 22,
           "OK": 21,
           "UT": 19,
           "NE": 19,
           "NV": 15,
-          "CT": 15,
-          "ME": 15,
           "WV": 15,
+          "ME": 15,
+          "CT": 15,
           "AR": 14,
           "IA": 14,
           "ID": 13,
-          "NH": 12,
           "MS": 12,
+          "NH": 12,
           "RI": 11,
-          "SD": 10,
           "DE": 10,
+          "SD": 10,
           "MT": 9,
           "VT": 8,
           "AK": 7,
@@ -3804,26 +3577,10 @@
   ],
   [
     "change",
-    "variables.dem_cand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_cand.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_cand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4472,26 +4229,10 @@
   ],
   [
     "change",
-    "variables.rep_cand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_cand.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_cand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5085,87 +4826,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:29:26",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "weight": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "V259": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideo5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cces": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "obama_st_pred": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stateusps": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_cand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_cand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

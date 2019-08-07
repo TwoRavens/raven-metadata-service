@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1400
-      ],
-      [
-        "variableCount",
-        3
-      ],
-      [
-        "dataSource",
-        {
-          "name": "29375_Procurements_1983_2010.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 40837
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "AK",
       [
-        "MD",
-        "NY",
-        "KY",
-        "FL",
-        "ID"
+        "WI",
+        "MA",
+        "NJ",
+        "CT",
+        "UT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "MD",
-          "NY",
-          "KY",
-          "FL",
-          "ID"
+          "WI",
+          "MA",
+          "NJ",
+          "CT",
+          "UT"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "MA": 28,
-          "OR": 28,
-          "LA": 28,
-          "IA": 28,
-          "AK": 28,
-          "MT": 28,
-          "NC": 28,
-          "AL": 28,
-          "RI": 28,
-          "VA": 28,
-          "PA": 28,
-          "AZ": 28,
-          "NM": 28,
-          "WI": 28,
-          "MI": 28,
-          "CT": 28,
-          "CA": 28,
-          "SC": 28,
-          "MO": 28,
-          "IL": 28,
-          "OH": 28,
-          "NJ": 28,
-          "MN": 28,
-          "OK": 28,
-          "UT": 28,
-          "ND": 28,
-          "IN": 28,
-          "VT": 28,
-          "SD": 28,
-          "NE": 28,
-          "WA": 28,
+          "MD": 28,
           "GA": 28,
-          "HI": 28,
+          "KY": 28,
+          "FL": 28,
           "AR": 28,
-          "NH": 28,
           "TN": 28,
-          "WV": 28,
-          "CO": 28,
+          "NE": 28,
+          "NV": 28,
+          "RI": 28,
           "ME": 28,
+          "CO": 28,
+          "HI": 28,
+          "AL": 28,
+          "MT": 28,
+          "NM": 28,
+          "MI": 28,
+          "MO": 28,
+          "NC": 28,
+          "ND": 28,
+          "OR": 28,
+          "DE": 28,
+          "LA": 28,
+          "MS": 28,
+          "WV": 28,
+          "NY": 28,
+          "VA": 28,
+          "OH": 28,
+          "PA": 28,
+          "ID": 28,
           "TX": 28,
           "KS": 28,
-          "DE": 28,
-          "MS": 28,
-          "NV": 28,
+          "IA": 28,
+          "MN": 28,
           "WY": 28,
-          "ID": 28,
-          "FL": 28,
-          "KY": 28,
-          "NY": 28,
-          "MD": 28
+          "AZ": 28,
+          "OK": 28,
+          "AK": 28,
+          "CA": 28,
+          "WA": 28,
+          "IL": 28,
+          "IN": 28,
+          "SC": 28,
+          "SD": 28,
+          "NH": 28,
+          "VT": 28,
+          "UT": 28,
+          "CT": 28,
+          "NJ": 28,
+          "MA": 28,
+          "WI": 28
         }
       ],
       [
@@ -444,22 +345,6 @@
     [
       "1983",
       1983.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1072,26 +957,10 @@
   ],
   [
     "change",
-    "variables.procurement.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.procurement.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.procurement.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1689,47 +1558,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:35",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "procurement": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

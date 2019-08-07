@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        102
-      ],
-      [
-        "variableCount",
-        17
-      ],
-      [
-        "dataSource",
-        {
-          "name": "NFMXO1_Preferences for policy vs office.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 13181
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "IT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -167,17 +68,17 @@
         {
           "IT": 10,
           "FI": 9,
-          "BE": 8,
           "NL": 8,
+          "BE": 8,
           "DK": 8,
           "ES": 7,
-          "IE": 7,
           "NO": 7,
+          "IE": 7,
           "FR": 7,
           "SE": 6,
           "IS": 6,
-          "UK": 5,
           "AT": 5,
+          "UK": 5,
           "LU": 5,
           "DE": 4
         }
@@ -333,22 +234,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Party.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Party",
     [
@@ -379,11 +264,11 @@
       [
         "fewestValues",
         [
-          "FP",
-          "LSAP",
-          "PSOE",
-          "GL",
-          "RPF"
+          "IU",
+          "AE",
+          "CDS",
+          "PLI",
+          "D66"
         ]
       ],
       [
@@ -415,81 +300,81 @@
           "PP": 3,
           "SDP": 2,
           "FRP": 2,
-          "SP": 2,
-          "PS": 2,
-          "DP": 2,
+          "LAB": 2,
           "SD": 2,
           "V": 2,
-          "LAB": 2,
-          "IP": 1,
-          "FDP": 1,
-          "RV": 1,
-          "KRF": 1,
-          "DA": 1,
-          "HB": 1,
-          "CDS": 1,
-          "KPO": 1,
-          "LAB (A)": 1,
-          "CDA": 1,
-          "AC": 1,
-          "FG": 1,
-          "PLI": 1,
-          "FPO": 1,
-          "FPDL": 1,
-          "PD": 1,
-          "FF": 1,
-          "RPR": 1,
-          "KF": 1,
-          "FDF": 1,
-          "PRI": 1,
-          "SGP": 1,
+          "PS": 2,
+          "DP": 2,
+          "SP": 2,
           "EAJ-PNV": 1,
-          "CIU": 1,
+          "WP": 1,
+          "DA": 1,
+          "KrF": 1,
+          "RPF": 1,
+          "OVP": 1,
+          "CD": 1,
+          "GPV": 1,
+          "FF": 1,
+          "PR ": 1,
+          "PvDA": 1,
           "SPP": 1,
-          "SNP": 1,
-          "MSI": 1,
-          "M": 1,
-          "PSDI": 1,
-          "ALL": 1,
-          "COM": 1,
-          "FB": 1,
+          "CDA": 1,
+          "D66": 1,
+          "PRI": 1,
+          "HB": 1,
+          "RV": 1,
+          "RPR": 1,
+          "PCI": 1,
+          "FP": 1,
           "FCL": 1,
           "CC": 1,
-          "WA": 1,
-          "DC": 1,
-          "CSP": 1,
+          "UDF": 1,
           "PCF": 1,
           "GL": 1,
-          "KPL": 1,
-          "PCI": 1,
-          "SPO": 1,
-          "WP": 1,
-          "IU": 1,
-          "SPD": 1,
-          "GPV": 1,
-          "D66": 1,
-          "CON": 1,
-          "KOK": 1,
-          "PSI": 1,
-          "H": 1,
-          "PvDA": 1,
+          "FG": 1,
+          "IP": 1,
+          "M": 1,
           "MRG": 1,
-          "UDF": 1,
-          "CD": 1,
-          "DSP": 1,
-          "FN": 1,
-          "OVP": 1,
-          "AE": 1,
-          "PA(da)": 1,
-          "PC": 1,
-          "PR ": 1,
-          "RPF": 1,
-          "VU": 1,
+          "H": 1,
+          "DC": 1,
+          "PSDI": 1,
+          "FPDL": 1,
+          "KRF": 1,
           "PSOE": 1,
-          "VVD": 1,
+          "FDP": 1,
           "LSAP": 1,
-          "KrF": 1,
-          "FP": 1
+          "AC": 1,
+          "SPD": 1,
+          "SGP": 1,
+          "FPO": 1,
+          "KF": 1,
+          "KOK": 1,
+          "MSI": 1,
+          "SNP": 1,
+          "CON": 1,
+          "KPL": 1,
+          "ALL": 1,
+          "KPO": 1,
+          "PA(da)": 1,
+          "AE": 1,
+          "PSI": 1,
+          "VU": 1,
+          "FB": 1,
+          "COM": 1,
+          "FN": 1,
+          "PD": 1,
+          "LAB (A)": 1,
+          "VVD": 1,
+          "CIU": 1,
+          "DSP": 1,
+          "PC": 1,
+          "CSP": 1,
+          "FDF": 1,
+          "SPO": 1,
+          "WA": 1,
+          "PLI": 1,
+          "CDS": 1,
+          "IU": 1
         }
       ],
       [
@@ -750,26 +635,10 @@
   ],
   [
     "change",
-    "variables.LHscore.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LHscore.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LHscore.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1413,22 +1282,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N",
     [
@@ -2010,26 +1863,10 @@
   ],
   [
     "change",
-    "variables.gamma.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gamma.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gamma.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2682,26 +2519,10 @@
   ],
   [
     "change",
-    "variables.alpha.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.alpha.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.alpha.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3354,26 +3175,10 @@
   ],
   [
     "change",
-    "variables.gammaadj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gammaadj.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gammaadj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4053,35 +3858,11 @@
     [
       "variables",
       "GammaAdjconf.interval",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "GammaAdjconf.interval",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "GammaAdjconf.interval",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4740,26 +4521,10 @@
   ],
   [
     "change",
-    "variables.K.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.K.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.K.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5369,22 +5134,6 @@
     ]
   ],
   [
-    "change",
-    "variables.L.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.L.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.L",
     [
@@ -5570,22 +5319,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5778,30 +5511,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "N.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "N.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5999,22 +5708,6 @@
     ]
   ],
   [
-    "change",
-    "variables.O.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.O.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.O",
     [
@@ -6203,22 +5896,6 @@
     ]
   ],
   [
-    "change",
-    "variables.P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.P",
     [
@@ -6404,22 +6081,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7588,117 +7249,6 @@
           "defaultNature": "percent",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:27:45",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LHscore": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "std.dev.(LHScore)": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gamma": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "alpha": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "std.dev.(alpha)": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gammaadj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GammaAdjconf.interval": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "K": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "O": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

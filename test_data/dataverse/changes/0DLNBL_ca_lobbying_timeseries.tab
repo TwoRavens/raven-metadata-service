@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        171
-      ],
-      [
-        "variableCount",
-        5
-      ],
-      [
-        "dataSource",
-        {
-          "name": "0DLNBL_ca_lobbying_timeseries.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 7702
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Sector.mode",
     [
       "Agriculture",
       [
-        "Retail",
-        "Real Estate",
+        "Agriculture",
+        "Local Government",
         "Finance",
-        "Transportation",
-        "Lodging/ Restaurants"
+        "Health Care",
+        "Public Employees"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Sector.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Sector.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Retail",
-          "Real Estate",
+          "Agriculture",
+          "Local Government",
           "Finance",
-          "Transportation",
-          "Lodging/ Restaurants"
+          "Health Care",
+          "Public Employees"
         ]
       ],
       [
@@ -173,25 +74,25 @@
       [
         "plotValues",
         {
-          "Local Government": 9,
-          "Miscellaneous": 9,
-          "Labor Unions": 9,
-          "Oil and Gas": 9,
-          "Political Organizations": 9,
-          "Professional/ Trade": 9,
-          "Entertainment": 9,
-          "Health Care": 9,
           "Legal": 9,
           "Manufacturing": 9,
-          "Agriculture": 9,
-          "Public Employees": 9,
-          "Education": 9,
-          "Utilities": 9,
-          "Lodging/ Restaurants": 9,
           "Transportation": 9,
-          "Finance": 9,
+          "Miscellaneous": 9,
+          "Utilities": 9,
+          "Entertainment": 9,
+          "Political Organizations": 9,
+          "Retail": 9,
+          "Lodging/ Restaurants": 9,
+          "Oil and Gas": 9,
           "Real Estate": 9,
-          "Retail": 9
+          "Professional/ Trade": 9,
+          "Education": 9,
+          "Labor Unions": 9,
+          "Public Employees": 9,
+          "Health Care": 9,
+          "Finance": 9,
+          "Local Government": 9,
+          "Agriculture": 9
         }
       ],
       [
@@ -394,26 +295,10 @@
   ],
   [
     "change",
-    "variables.lobby.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lobby.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lobby.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1061,22 +946,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1374,26 +1243,10 @@
   ],
   [
     "change",
-    "variables.inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1680,22 +1533,6 @@
     [
       "168672",
       168672
-    ]
-  ],
-  [
-    "change",
-    "variables.dollars_2013.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dollars_2013.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2293,57 +2130,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:18:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Sector": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lobby": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dollars_2013": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

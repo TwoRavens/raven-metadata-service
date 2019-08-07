@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        24
-      ],
-      [
-        "variableCount",
-        12
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26642_Africa_qualCI.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 1384
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cname.mode",
     [
       "Angola",
       [
-        "Nigeria",
-        "Congo",
-        "Mozambique",
-        "Benin",
-        "Malawi"
+        "Cameroon",
+        "Guinea-Bissau",
+        "Malawi",
+        "Burkina Faso",
+        "Congo"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Nigeria",
-          "Congo",
-          "Mozambique",
-          "Benin",
-          "Malawi"
+          "Cameroon",
+          "Guinea-Bissau",
+          "Malawi",
+          "Burkina Faso",
+          "Congo"
         ]
       ],
       [
@@ -173,30 +74,30 @@
       [
         "plotValues",
         {
-          "Zambia": 1,
-          "Mali": 1,
-          "Sierra Leone": 1,
-          "Burkina Faso": 1,
-          "Kenya": 1,
-          "Angola": 1,
-          "Cameroon": 1,
-          "Burundi": 1,
-          "Guinea-Bissau": 1,
-          "Tanzania": 1,
-          "Madagascar": 1,
-          "Cote d'Ivoire": 1,
-          "Togo": 1,
-          "Ghana": 1,
-          "Niger": 1,
           "Guinea": 1,
-          "Central African Republic": 1,
-          "Chad": 1,
-          "Gabon": 1,
-          "Malawi": 1,
-          "Benin": 1,
           "Mozambique": 1,
+          "Chad": 1,
+          "Kenya": 1,
+          "Ghana": 1,
+          "Zambia": 1,
+          "Tanzania": 1,
+          "Angola": 1,
+          "Nigeria": 1,
+          "Mali": 1,
+          "Togo": 1,
+          "Gabon": 1,
+          "Central African Republic": 1,
+          "Sierra Leone": 1,
+          "Benin": 1,
+          "Niger": 1,
+          "Burundi": 1,
+          "Cote d'Ivoire": 1,
+          "Madagascar": 1,
           "Congo": 1,
-          "Nigeria": 1
+          "Burkina Faso": 1,
+          "Malawi": 1,
+          "Guinea-Bissau": 1,
+          "Cameroon": 1
         }
       ],
       [
@@ -389,22 +290,6 @@
     [
       "1990",
       1990
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -681,22 +566,6 @@
     ]
   ],
   [
-    "change",
-    "variables.t.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.t",
     [
@@ -952,26 +821,10 @@
   ],
   [
     "change",
-    "variables.fe_etfra.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fe_etfra.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fe_etfra.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1628,26 +1481,10 @@
   ],
   [
     "change",
-    "variables.loggdppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.loggdppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.loggdppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2291,22 +2128,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fr",
     [
@@ -2546,22 +2367,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2807,22 +2612,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mil_olig.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mil_olig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mil_olig",
     [
@@ -3062,22 +2851,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.protest.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.protest.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3338,26 +3111,10 @@
   ],
   [
     "change",
-    "variables.perc_mil.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.perc_mil.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.perc_mil.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4001,22 +3758,6 @@
     ]
   ],
   [
-    "change",
-    "variables.oppharass.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.oppharass.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.oppharass",
     [
@@ -4272,26 +4013,10 @@
   ],
   [
     "change",
-    "variables.priv1_mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.priv1_mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.priv1_mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4889,92 +4614,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:21",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fe_etfra": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "loggdppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conflict": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mil_olig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "protest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "perc_mil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oppharass": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "priv1_mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

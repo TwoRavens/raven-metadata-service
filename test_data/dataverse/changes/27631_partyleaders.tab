@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2665
-      ],
-      [
-        "variableCount",
-        36
-      ],
-      [
-        "dataSource",
-        {
-          "name": "27631_partyleaders.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 396080
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Obs.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Obs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Obs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Country",
     [
@@ -981,28 +866,12 @@
     [
       "Australian Labor Party",
       [
+        "Labour Party (Ireland)",
+        "KF (Conservative People's Party)",
         "RV (Radical Party)",
-        "Venstre",
-        "LDP",
-        "Liberal Party of Canada",
-        "SPO"
+        "Australian Labor Party",
+        "LDP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1062,42 +931,42 @@
       [
         "plotValues",
         {
-          "JSP/SDP": 50,
-          "SF (Socialist People's Party)": 50,
-          "Labour Party (Ireland)": 50,
-          "Labour Party (UK)": 50,
-          "FpL (Liberal People's Party)": 50,
-          "FDP": 50,
-          "Fianna Fail": 50,
-          "M (Moderate Party)": 50,
-          "KOK": 50,
-          "SKL/KD": 50,
-          "National Party (New Zealand)": 50,
-          "SKP/VKP/Vp (Left Party)": 50,
           "RKP/SFP": 50,
-          "FPO": 50,
-          "SAP (Social Democratic Labour Party)": 50,
-          "KF (Conservative People's Party)": 50,
-          "Conservative Party (UK)": 50,
-          "CDU": 50,
-          "SPD": 50,
-          "Fine Gael": 50,
-          "Social Democrats (SD)": 50,
-          "Liberal Party (Australia)": 50,
-          "C (Centre Party)": 50,
-          "KESK": 50,
-          "JCP": 50,
-          "OVP": 50,
-          "Australian Labor Party": 50,
-          "RV (Radical Party)": 50,
-          "Venstre": 50,
-          "Liberal Party of Canada": 50,
-          "SPO": 50,
           "SDP": 50,
-          "New Democratic Party": 50,
-          "LDP": 50,
-          "National Party (Australia)": 50,
+          "SAP (Social Democratic Labour Party)": 50,
+          "SF (Socialist People's Party)": 50,
+          "Fine Gael": 50,
+          "National Party (New Zealand)": 50,
+          "M (Moderate Party)": 50,
+          "Social Democrats (SD)": 50,
+          "Liberal Party of Canada": 50,
+          "OVP": 50,
+          "CDU": 50,
+          "Venstre": 50,
+          "KESK": 50,
+          "KOK": 50,
           "New Zealand Labour Party": 50,
+          "Labour Party (UK)": 50,
+          "FPO": 50,
+          "National Party (Australia)": 50,
+          "FpL (Liberal People's Party)": 50,
+          "JCP": 50,
+          "SKL/KD": 50,
+          "SPD": 50,
+          "Conservative Party (UK)": 50,
+          "New Democratic Party": 50,
+          "JSP/SDP": 50,
+          "RV (Radical Party)": 50,
+          "KF (Conservative People's Party)": 50,
+          "C (Centre Party)": 50,
+          "Labour Party (Ireland)": 50,
+          "Australian Labor Party": 50,
+          "LDP": 50,
+          "SPO": 50,
+          "Fianna Fail": 50,
+          "Liberal Party (Australia)": 50,
+          "FDP": 50,
+          "SKP/VKP/Vp (Left Party)": 50,
           "KD (Christian Democrats)": 49,
           "KrF/KD (Christian People's Party)": 44,
           "FP/FrP (Progress Party)": 42,
@@ -1112,21 +981,21 @@
           "LKP/Liberals": 27,
           "VIHR": 27,
           "Liberal Democrats (UK)": 26,
-          "Liberal Party (UK)": 25,
           "Progressive Democrats": 25,
+          "Liberal Party (UK)": 25,
           "VAS": 24,
           "Bloc Quebecois": 23,
-          "LIF": 21,
           "New Zealand First": 21,
+          "LIF": 21,
           "ACT Party (New Zealand)": 20,
-          "DF (Danish People's Party)": 19,
           "PS": 19,
           "Green Party (New Zealand) 0": 19,
           "Green Party (New Zealand) 1": 19,
-          "Reform Party / Canadian Alliance": 17,
+          "DF (Danish People's Party)": 19,
           "SDF": 17,
-          "K": 16,
+          "Reform Party / Canadian Alliance": 17,
           "DPJ": 16,
+          "K": 16,
           "United Future": 14,
           "Green Party": 13,
           "NLC": 11,
@@ -1343,28 +1212,12 @@
     [
       "Australia Australian Labor Party",
       [
-        "United Kingdom Conservative Party (UK)",
-        "United Kingdom Labour Party (UK)",
-        "Australia Australian Labor Party",
-        "Germany CDU",
-        "Finland SKL/KD"
+        "Canada Liberal Party of Canada",
+        "New Zealand National Party (New Zealand)",
+        "Japan LDP",
+        "Finland KESK",
+        "Canada New Democratic Party"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.countrypartyid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrypartyid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1424,42 +1277,42 @@
       [
         "plotValues",
         {
-          "Canada Liberal Party of Canada": 50,
-          "Ireland Labour Party (Ireland)": 50,
-          "Denmark RV (Radical Party)": 50,
           "Germany FDP": 50,
-          "Sweden FpL (Liberal People's Party)": 50,
-          "Japan LDP": 50,
-          "Finland SDP": 50,
-          "Ireland Fianna Fail": 50,
           "Ireland Fine Gael": 50,
-          "Germany SPD": 50,
-          "New Zealand National Party (New Zealand)": 50,
-          "Denmark KF (Conservative People's Party)": 50,
-          "Australia Liberal Party (Australia)": 50,
-          "Sweden SKP/VKP/Vp (Left Party)": 50,
+          "United Kingdom Conservative Party (UK)": 50,
           "Austria SPO": 50,
-          "Denmark SF (Socialist People's Party)": 50,
+          "Denmark KF (Conservative People's Party)": 50,
           "New Zealand New Zealand Labour Party": 50,
-          "Sweden SAP (Social Democratic Labour Party)": 50,
-          "Finland KESK": 50,
-          "Sweden M (Moderate Party)": 50,
-          "Sweden C (Centre Party)": 50,
-          "Austria OVP": 50,
           "Finland RKP/SFP": 50,
+          "Austria FPO": 50,
+          "Denmark Social Democrats (SD)": 50,
+          "Ireland Labour Party (Ireland)": 50,
+          "Australia Liberal Party (Australia)": 50,
+          "Denmark RV (Radical Party)": 50,
+          "Denmark Venstre": 50,
+          "Denmark SF (Socialist People's Party)": 50,
+          "Austria OVP": 50,
+          "Sweden SKP/VKP/Vp (Left Party)": 50,
+          "Ireland Fianna Fail": 50,
+          "Germany CDU": 50,
+          "Germany SPD": 50,
+          "Australia Australian Labor Party": 50,
+          "Finland SKL/KD": 50,
           "Japan JSP/SDP": 50,
           "Australia National Party (Australia)": 50,
-          "Denmark Venstre": 50,
-          "Denmark Social Democrats (SD)": 50,
-          "Japan JCP": 50,
+          "Sweden M (Moderate Party)": 50,
+          "Sweden FpL (Liberal People's Party)": 50,
+          "Finland SDP": 50,
+          "Sweden C (Centre Party)": 50,
+          "Sweden SAP (Social Democratic Labour Party)": 50,
           "Finland KOK": 50,
-          "Canada New Democratic Party": 50,
-          "Austria FPO": 50,
-          "Finland SKL/KD": 50,
-          "Germany CDU": 50,
-          "Australia Australian Labor Party": 50,
           "United Kingdom Labour Party (UK)": 50,
-          "United Kingdom Conservative Party (UK)": 50,
+          "Japan JCP": 50,
+          "Canada New Democratic Party": 50,
+          "Finland KESK": 50,
+          "Japan LDP": 50,
+          "New Zealand National Party (New Zealand)": 50,
+          "Canada Liberal Party of Canada": 50,
           "Sweden KD (Christian Democrats)": 49,
           "Denmark KrF/KD (Christian People's Party)": 44,
           "Denmark FP/FrP (Progress Party)": 42,
@@ -1470,32 +1323,32 @@
           "Sweden MPG (Green Ecology Party) 1": 30,
           "Sweden MPG (Green Ecology Party) 0": 30,
           "Austria Die Grunen": 28,
-          "Finland VIHR": 27,
           "Finland SKDL": 27,
           "Finland LKP/Liberals": 27,
+          "Finland VIHR": 27,
           "United Kingdom Liberal Democrats (UK)": 26,
-          "Ireland Progressive Democrats": 25,
           "United Kingdom Liberal Party (UK)": 25,
+          "Ireland Progressive Democrats": 25,
           "Finland VAS": 24,
           "Canada Bloc Quebecois": 23,
           "Austria LIF": 21,
           "New Zealand New Zealand First": 21,
           "New Zealand ACT Party (New Zealand)": 20,
-          "New Zealand Green Party (New Zealand) 1": 19,
-          "Finland PS": 19,
-          "Denmark DF (Danish People's Party)": 19,
           "New Zealand Green Party (New Zealand) 0": 19,
-          "Canada Reform Party / Canadian Alliance": 17,
+          "Finland PS": 19,
+          "New Zealand Green Party (New Zealand) 1": 19,
+          "Denmark DF (Danish People's Party)": 19,
           "Japan SDF": 17,
+          "Canada Reform Party / Canadian Alliance": 17,
           "Japan K": 16,
           "Japan DPJ": 16,
           "New Zealand United Future": 14,
           "Ireland Green Party": 13,
           "Japan NLC": 11,
-          "Sweden NyD (New Democracy)": 10,
           "Canada Conservative Party of Canada": 10,
-          "New Zealand Maori Party 1": 10,
           "New Zealand Maori Party 0": 10,
+          "New Zealand Maori Party 1": 10,
+          "Sweden NyD (New Democracy)": 10,
           "Austria BZO": 9,
           "United Kingdom Social Democratic Party": 7
         }
@@ -1710,22 +1563,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Leader.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Leader.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Leader",
     [
@@ -1756,11 +1593,11 @@
       [
         "fewestValues",
         [
-          "Ruairi Quinn/Pat Rabbitte",
-          "Matthias Platzeck/Kurt Beck",
-          "Helmut Kohl/Wolfgang Schauble",
-          "Bruno Kreisky/Alfred Sinowatz",
-          "John Bruton/Michael Noonan"
+          "Karin SOder",
+          "Poul Syrensen/Poul Myller",
+          "Uffe Ellemen-Jensen/Anders Fogh Rasmussen",
+          "Justin Trudeau",
+          "Ingvar GOsta Carlsson/GOran Persson"
         ]
       ],
       [
@@ -1789,738 +1626,738 @@
           "Alf Robert Svensson": 31,
           "Pia Kjorsgaard": 25,
           "Helmut Kohl": 24,
-          "Willy Brandt": 21,
           "Winston Peters": 21,
+          "Willy Brandt": 21,
           "Poul Holmskov Schluter": 18,
           "Lars Werner": 17,
           "Kenji Miyamoto": 17,
           "Sven Olof Joachim Palme": 16,
-          "Timo Juhani Soini": 16,
           "Gert Petersen": 16,
-          "Erhard Jakobsen": 16,
+          "Timo Juhani Soini": 16,
           "Marianne Bruus Jelved": 16,
-          "Bruno Kreisky": 15,
+          "Erhard Jakobsen": 16,
           "Pierre Trudeau": 15,
+          "Bruno Kreisky": 15,
           "Mimi Jakobsen": 15,
-          "Helen Clark": 14,
-          "John Howard": 14,
           "Peter Dunne": 14,
+          "Dick Spring": 14,
+          "Jeanette Fitzsimons": 14,
+          "Helen Clark": 14,
           "Margaret Thatcher": 14,
           "Anker Jyrgensen": 14,
-          "Jeanette Fitzsimons": 14,
-          "Dick Spring": 14,
-          "JOrg Haider": 13,
-          "Gilles Duceppe": 13,
-          "Ed Broadbent": 13,
-          "Preston Manning": 13,
-          "Bertie Ahern": 13,
-          "Friedrich Peter": 13,
-          "Mogens Glistrup": 13,
+          "John Howard": 14,
           "Uffe Ellemen-Jensen": 13,
-          "Holger Kirkholm Nielsen": 13,
-          "ThorbjOrn F_lldin": 13,
+          "Preston Manning": 13,
+          "Friedrich Peter": 13,
+          "Bertie Ahern": 13,
           "Angela Merkel": 13,
+          "JOrg Haider": 13,
+          "ThorbjOrn F_lldin": 13,
+          "Ed Broadbent": 13,
+          "Mogens Glistrup": 13,
           "Fuwa Tetsuzo": 13,
+          "Gilles Duceppe": 13,
+          "Holger Kirkholm Nielsen": 13,
           "Kazuo Shii": 13,
-          "Brendan Corish": 12,
-          "Carl Bildt": 12,
-          "Tony Blair": 12,
-          "Mary Harney": 12,
-          "Jack Lynch": 12,
-          "Doug Anthony": 12,
-          "Charles Haughey": 12,
+          "Jean Chratien": 12,
           "David Steel": 12,
           "Poul Hartling": 12,
-          "Jean Chratien": 12,
+          "Tony Blair": 12,
+          "Doug Anthony": 12,
+          "Carl Bildt": 12,
+          "Charles Haughey": 12,
+          "Jack Lynch": 12,
+          "Brendan Corish": 12,
+          "Mary Harney": 12,
+          "Bengt Carl Westerberg": 11,
           "Wolfgang Schussel": 11,
           "Rod Donald": 11,
-          "Niels Helveg Petersen": 11,
-          "Liam Cosgrave": 11,
+          "Paddy Ashdown": 11,
+          "Enda Kenny": 11,
           "Stephen Harper": 11,
           "Harold Wilson": 11,
-          "Enda Kenny": 11,
-          "Bengt Carl Westerberg": 11,
+          "Niels Helveg Petersen": 11,
           "Jann Jacob Sjursen": 11,
-          "Paddy Ashdown": 11,
-          "GOsta Bohman": 10,
-          "Takako Doi": 10,
+          "Liam Cosgrave": 11,
           "John Bruton": 10,
           "Jim Bolger": 10,
-          "Olof Johansson": 10,
-          "Joe Clark": 10,
-          "Carl-Henrik Hermansson": 10,
-          "Hilmar Baunsgaard": 10,
-          "Anders Fogh Rasmussen": 10,
-          "GOran Persson": 10,
-          "Alex Van der Bellen": 10,
-          "Hans-Dietrich Genscher": 10,
-          "Tariana Turia": 10,
-          "Birger Schlaug": 10,
           "John Fredrik Reinfeldt": 10,
-          "Alois Mock": 9,
+          "Anders Fogh Rasmussen": 10,
+          "Joe Clark": 10,
+          "Olof Johansson": 10,
+          "Hilmar Baunsgaard": 10,
+          "Birger Schlaug": 10,
+          "Alex Van der Bellen": 10,
+          "GOsta Bohman": 10,
+          "Hans-Dietrich Genscher": 10,
+          "Carl-Henrik Hermansson": 10,
+          "Takako Doi": 10,
+          "GOran Persson": 10,
+          "Tariana Turia": 10,
           "Garret FitzGerald": 9,
-          "Gudrun Schyman": 9,
-          "Guido Westerwelle": 9,
-          "Brian Mulroney": 9,
-          "Poul Nyrup Rasmussen": 9,
-          "Pita Sharples": 9,
-          "Edward Heath": 9,
-          "Satsuki Eda": 9,
-          "Robert Muldoon": 9,
-          "GOran H_gglund": 9,
-          "Mizuho Fukushima": 9,
           "Maud Olofsson": 9,
+          "Guido Westerwelle": 9,
+          "Poul Nyrup Rasmussen": 9,
           "Gough Whitlam": 9,
+          "GOran H_gglund": 9,
+          "David Cameron": 9,
+          "Brian Mulroney": 9,
+          "Mizuho Fukushima": 9,
+          "Satsuki Eda": 9,
+          "Gudrun Schyman": 9,
           "Ingvar GOsta Carlsson": 9,
           "Lars Leijonborg": 9,
-          "David Cameron": 9,
-          "Bill Rowling": 8,
-          "Franz Vranitzky": 8,
-          "Robert Stanfield": 8,
-          "Peter Eriksson": 8,
-          "Neil Kinnock": 8,
-          "Birger Ekstedt": 8,
-          "Jack Layton": 8,
-          "Takenori Kanzaki": 8,
-          "Christian Christensen": 8,
-          "Jeremy Thorpe": 8,
-          "Tim Fischer": 8,
+          "Edward Heath": 9,
+          "Alois Mock": 9,
+          "Robert Muldoon": 9,
+          "Pita Sharples": 9,
           "Norman Kirk": 8,
-          "Bendt Bendtsen": 8,
+          "Peter Eriksson": 8,
           "Russel Norman": 8,
           "Desmond O'Malley": 8,
-          "Helle Throning-Schmidt": 8,
           "Maria Wetterstrand": 8,
-          "Heinz-Christian Strache": 8,
+          "Tim Fischer": 8,
+          "Helle Throning-Schmidt": 8,
+          "Jeremy Thorpe": 8,
+          "Robert Stanfield": 8,
           "Tomomi Narita": 8,
-          "Keith Holyoake": 7,
+          "Neil Kinnock": 8,
+          "Franz Vranitzky": 8,
+          "Jack Layton": 8,
+          "Christian Christensen": 8,
+          "Birger Ekstedt": 8,
+          "Takenori Kanzaki": 8,
+          "Bendt Bendtsen": 8,
+          "Bill Rowling": 8,
+          "Heinz-Christian Strache": 8,
           "Jens Otto Krag": 7,
-          "Robert Hawke": 7,
-          "Hideo Den": 7,
-          "Alexa McDonough": 7,
-          "Sasaki KiRyosaku": 7,
-          "Lars Ohly": 7,
           "Richard Prebble": 7,
+          "Keith Holyoake": 7,
+          "Robert Hawke": 7,
           "Malcolm Fraser": 7,
-          "Eisaku Sato": 7,
-          "John Key": 7,
           "Alfred Gusenbauer": 7,
           "Heide Schmidt": 7,
-          "Henning Christophersen": 6,
-          "Tommy Douglas": 6,
-          "Margrethe Vestager": 6,
-          "Walter Scheel": 6,
-          "Alexander Zach": 6,
-          "Jan Arne BjOrklund": 6,
-          "Nick Clegg": 6,
-          "Rodney Hide": 6,
-          "Trevor Sargent": 6,
-          "Norbert Steger": 6,
+          "John Key": 7,
+          "Sasaki KiRyosaku": 7,
+          "Hideo Den": 7,
+          "Eisaku Sato": 7,
+          "Alexa McDonough": 7,
+          "Lars Ohly": 7,
           "Warren Truss": 6,
+          "Walter Scheel": 6,
+          "Henning Christophersen": 6,
           "Marianne Samuelsson": 6,
-          "John Major": 6,
-          "Yohei Kono": 6,
-          "Gunnar Hedlund": 6,
-          "John McEwen": 6,
-          "Gunnar Helan": 6,
-          "Charles Kennedy": 6,
-          "Eamon Gilmore": 6,
           "Villy Syvndal": 6,
-          "Audrey McLaughlin": 5,
-          "Josef Klaus": 5,
-          "William Hayden": 5,
-          "Wolfgang Gerhardt": 5,
+          "Gunnar Hedlund": 6,
+          "Trevor Sargent": 6,
+          "Tommy Douglas": 6,
+          "Alexander Zach": 6,
+          "Norbert Steger": 6,
+          "John Major": 6,
+          "Margrethe Vestager": 6,
+          "Yohei Kono": 6,
+          "Rodney Hide": 6,
+          "Nick Clegg": 6,
+          "John McEwen": 6,
+          "Jan Arne BjOrklund": 6,
+          "Eamon Gilmore": 6,
+          "Charles Kennedy": 6,
+          "Gunnar Helan": 6,
+          "Lucien Bouchard": 5,
+          "Kazuyuki Kasuga": 5,
+          "Ichio Asukata": 5,
+          "David Lange": 5,
           "Eva Glawischnig-Piesczek": 5,
+          "Wolfgang Gerhardt": 5,
           "John Turner": 5,
           "Werner Faymann": 5,
-          "Ichio Asukata": 5,
+          "Audrey McLaughlin": 5,
           "Sigurd ?mann": 5,
-          "David Lange": 5,
-          "Kazuyuki Kasuga": 5,
-          "Lucien Bouchard": 5,
+          "Josef Klaus": 5,
           "John Anderson": 5,
-          "Kim Beazley": 4,
+          "William Hayden": 5,
+          "Ulf Adelsohn": 4,
+          "Junichiro Koizumi": 4,
           "Poul Syrensen": 4,
           "Jean Charest": 4,
-          "Ian Sinclair": 4,
-          "Ola Ullsten": 4,
-          "Angelika Mlinar": 4,
-          "Otto Lambsdorff": 4,
-          "Jens Myller": 4,
+          "Paul Keating": 4,
           "Ed Milliband": 4,
-          "Metiria Turei": 4,
-          "Gerard SchrOder": 4,
-          "Junichiro Koizumi": 4,
-          "Natsuo Yamaguchi": 4,
-          "Lars Lykke Rasmussen": 4,
-          "Yasuhiro Nakasone": 4,
-          "Alfred Sinowatz": 4,
-          "Ruairi Quinn": 4,
-          "Hans Jochen-Vogel": 4,
           "Seiichi Tagawa": 4,
-          "Svend Gunnarsyn Auken": 4,
           "Yngve Holmberg": 4,
           "Tage Fritiof Erlander": 4,
-          "Jacob Christensen": 4,
-          "Paul Keating": 4,
+          "Gerard SchrOder": 4,
+          "Svend Gunnarsyn Auken": 4,
           "Pat Rabbitte": 4,
+          "Yasuhiro Nakasone": 4,
+          "Kim Beazley": 4,
+          "Lars Lykke Rasmussen": 4,
+          "Ruairi Quinn": 4,
+          "Metiria Turei": 4,
+          "Ian Sinclair": 4,
+          "Otto Lambsdorff": 4,
+          "Alfred Sinowatz": 4,
+          "Angelika Mlinar": 4,
+          "Jens Myller": 4,
+          "Ola Ullsten": 4,
           "Josef Bucher": 4,
-          "Ulf Adelsohn": 4,
           "Tony Abbott": 4,
+          "Natsuo Yamaguchi": 4,
+          "Hans Jochen-Vogel": 4,
+          "Jacob Christensen": 4,
           "Sigmar Gabriel": 4,
-          "Kurt Kiesinger": 3,
-          "William Hague": 3,
-          "Mona Ingeborg Sahlin": 3,
-          "Johannes Voggenhuber": 3,
-          "Bo Lundgren": 3,
-          "John Hewson": 3,
-          "Julia Gillard": 3,
-          "Jenny Shipley": 3,
-          "Karl Schleinzer": 3,
-          "Saburo Tsukamoto": 3,
-          "Josef Taus": 3,
-          "Hans Engell": 3,
-          "Erich Mende": 3,
-          "Erhard Busek": 3,
-          "Aksel Larsen": 3,
-          "James Callaghan": 3,
-          "David Owen": 3,
-          "David Lewis": 3,
-          "Kirsten Jacobsen": 3,
           "Oskar Lafontaine": 3,
+          "James Callaghan": 3,
+          "David Lewis": 3,
+          "John Gorton": 3,
+          "Julia Gillard": 3,
+          "Johannes Voggenhuber": 3,
+          "Keigo Ouchi": 3,
+          "Mona Ingeborg Sahlin": 3,
+          "David Owen": 3,
+          "Erich Mende": 3,
+          "Jenny Shipley": 3,
+          "Lester Pearson": 3,
+          "Niels Hyjland": 3,
+          "John Hewson": 3,
+          "Kirsten Jacobsen": 3,
+          "Hans Engell": 3,
+          "Kurt Kiesinger": 3,
+          "Bo Lundgren": 3,
+          "William Hague": 3,
+          "John Gormley": 3,
           "Frank Cluskey": 3,
           "Nishimura Eiichi": 3,
-          "Kevin Rudd": 3,
-          "Keigo Ouchi": 3,
-          "Lester Pearson": 3,
-          "John Gormley": 3,
-          "John Gorton": 3,
-          "Niels Hyjland": 3,
+          "Saburo Tsukamoto": 3,
+          "Josef Taus": 3,
           "Gordon Brown": 3,
-          "Lotta Nilsson HedstrOm": 2,
-          "Raimo Viljam Vistbacka": 2,
-          "Viktor Klima": 2,
-          "Bodil Holmgren Kornbek": 2,
-          "Phil Goff": 2,
-          "Seiichi Katsumata": 2,
+          "Kevin Rudd": 3,
+          "Karl Schleinzer": 3,
+          "Erhard Busek": 3,
+          "Aksel Larsen": 3,
           "Jyrn Herkild": 2,
-          "Gustav Fridolin": 2,
-          "Lene Espersen": 2,
-          "Per Ahlmark": 2,
-          "Bill Snedden": 2,
-          "Masashi Ishibashi": 2,
-          "Martin Bangemann": 2,
-          "Akihiro Ota": 2,
-          "Vivianne Franzan": 2,
-          "Lars Barfoed": 2,
-          "Michael Moore": 2,
-          "Mogens Lykketoft": 2,
-          "Nishio Suehiro": 2,
-          "Naoto Kan": 2,
-          "Freda Meissner-Blau": 2,
-          "Svend Haugaard": 2,
-          "Aage Brusgaard": 2,
-          "Lennart Dalaus": 2,
-          "Yukio Hatoyama/Naoto Kan": 2,
+          "Lotta Nilsson HedstrOm": 2,
           "Thomas Mulcair": 2,
           "Yukio Hatoyama": 2,
-          "Ian Wachtmeister": 2,
-          "Eamon Ryan": 2,
-          "Hiroshi Murakami": 2,
-          "Sadakazu Tanigaki": 2,
-          "Philipp ROsler": 2,
-          "Bruno Pitterman": 2,
-          "Micheal Martin": 2,
-          "Tomiichi Murayama": 2,
-          "Daniel Pailla": 2,
-          "Alan Dukes": 2,
-          "Michael Spindelegger": 2,
           "Brian Cowen": 2,
           "Marianne Karlsmose": 2,
-          "Michael Foot": 2,
+          "Eamon Ryan": 2,
           "John Diefenbaker": 2,
-          "Roger Douglas": 2,
-          "Ichiro Ozawa": 2,
-          "?sa Romson": 2,
-          "Arthur Calwell": 2,
-          "Michael Ignatieff": 2,
-          "Ragnhild Pohanka": 2,
-          "Don Brash": 2,
-          "Ryutaro Hashimoto": 2,
-          "Erik Ninn-Hansen": 2,
-          "Carl Haglund": 2,
-          "Paul Martin": 2,
-          "David Shearer": 2,
-          "Josef PrOll": 2,
-          "Annie LOOf": 2,
-          "Bertil Gotthard Ohlin": 2,
-          "Joseph Grimond": 2,
-          "Juha Sipil_": 2,
+          "Michael Spindelegger": 2,
           "Jonas Sj_stedt": 2,
+          "Bodil Holmgren Kornbek": 2,
+          "Bertil Gotthard Ohlin": 2,
+          "Micheal Martin": 2,
+          "Hiroshi Murakami": 2,
+          "Juha Sipil_": 2,
+          "Masashi Ishibashi": 2,
+          "Alan Dukes": 2,
+          "Carl Haglund": 2,
+          "Nishio Suehiro": 2,
+          "Svend Haugaard": 2,
+          "Lennart Dalaus": 2,
+          "?sa Romson": 2,
+          "Michael Foot": 2,
+          "Bill Snedden": 2,
+          "Paul Martin": 2,
+          "Don Brash": 2,
+          "Viktor Klima": 2,
+          "Mogens Lykketoft": 2,
+          "Per Ahlmark": 2,
+          "Raimo Viljam Vistbacka": 2,
+          "Joseph Grimond": 2,
+          "Philipp ROsler": 2,
+          "Arthur Calwell": 2,
+          "Seiichi Katsumata": 2,
+          "Roger Douglas": 2,
+          "Lene Espersen": 2,
+          "Michael Moore": 2,
+          "Akihiro Ota": 2,
+          "Sadakazu Tanigaki": 2,
+          "Vivianne Franzan": 2,
+          "Annie LOOf": 2,
+          "Josef PrOll": 2,
+          "Michael Ignatieff": 2,
           "Bjarne Hartung Kirkegaard": 2,
-          "Roy Jenkins/David Owen": 1,
-          "Sigurd ?mann/Gert Petersen": 1,
-          "Johannes Voggenhuber/Peter Pilz": 1,
-          "Marianne Bruus Jelved/Margrethe Vestager": 1,
-          "Saburo Tsukamoto/Eiichi Nagasue": 1,
-          "John McEwen/Doug Anthony": 1,
-          "Alf Robert Svensson/GOran H_gglund": 1,
-          "Charles Haughey/Albert Reynolds": 1,
-          "Fuwa Tetsuzo/Kazuo Shii": 1,
-          "Anders Nordin/Jan Axelsson": 1,
-          "Alexander Downer/John Howard": 1,
-          "Klaus Kinkel": 1,
-          "Bruno Kreisky/Alfred Sinowatz": 1,
-          "Menzies Campbell/Vince Cable (acting/interim)/Nick Clegg": 1,
-          "_/Marianne Samuelsson": 1,
-          "James Dillon/Liam Cosgrave": 1,
-          "Seiichi Katsumata/Tomomi Narita": 1,
-          "Alexander Zach/Heide Schmidt (Interim)/Werner Becher": 1,
-          "Ville Heimo Antero It_l_ /Jyrki Tapani Katainen": 1,
-          "Kalevi Johannes Kivist_": 1,
-          "Hans Jochen-Vogel/Bjorn Engholm": 1,
-          "Lars Olof Kristian Gestrin": 1,
-          "Preston Manning/Deborah Grey (Interim)/Stockwell Day": 1,
-          "Martin Bangemann/Otto Lambsdorff": 1,
-          "Takeo Miki": 1,
-          "Simon Crean": 1,
-          "Ryutaro Hashimoto/Keizo Obuchi": 1,
-          "Friedhelm Frischenschlager (Interim)/Alexander Zach": 1,
-          "Eisaku Sato/Tanaka Kakuei": 1,
-          "Joe Clark/Peter MacKay": 1,
-          "Jim McLay/Jim Bolger": 1,
-          "Tanaka Kakuei/Takeo Miki": 1,
-          "Heikki Anssi Riihij_rvi  ": 1,
-          "John Gorton/William McMahon": 1,
-          "Josef Taus/Alois Mock": 1,
-          "Reijo Kalevi K_kel_ ": 1,
-          "Tim Fischer/John Anderson": 1,
-          "Claes-Johan Rudolf Andersson": 1,
-          "Ingvar GOsta Carlsson/GOran Persson": 1,
-          "Masashi Ishibashi/Takako Doi": 1,
-          "Ichiro Ozawa/Yukio Hatoyama": 1,
-          "Masayoshi ohira/Zenko Suzuki": 1,
-          "Alex Van der Bellen/Eva Glawischnig-Piesczek (acting)": 1,
-          "H_kan Juholt": 1,
-          "Pekka Veikko Vennamo": 1,
-          "Raimo Viljam Vistbacka ": 1,
-          "Jacob Christensen/Jens Myller": 1,
-          "Yohei Kono/Ryutaro Hashimoto": 1,
-          "Pia Kjorsgaard/Kristian Thulesen Dahl": 1,
-          "Jens Otto Krag/Anker Jyrgensen": 1,
-          "Maria Leissner/Lars Leijonborg": 1,
-          "Pia Kjorsgaard/Kirsten Jacobsen/Pia Kjorsgaard": 1,
-          "Gough Whitlam/William Hayden": 1,
-          "Nishimura Eiichi/Kazuyuki Kasuga": 1,
-          "Ola Ullsten/Bengt Carl Westerberg": 1,
-          "Taisto Kalevi Sorsa/Pertti Kullervo Paasio": 1,
-          "Bjorn Engholm/Rudolf Scharping": 1,
-          "Takako Doi/Tanabe Makoto": 1,
-          "Mark Vaile": 1,
-          "Mark Vaile/Warren Truss": 1,
-          "Esko Tapani Aho": 1,
-          "Tage Fritiof Erlander/Sven Olof Joachim Palme": 1,
-          "Mona Ingeborg Sahlin/H_kan Juholt": 1,
-          "Malcolm Turnbull/Tony Abbott": 1,
-          "Flemming Kofyd-Svendsen": 1,
-          "Osmo Heikki K. Soininvaara ": 1,
-          "Mary Harney/Michael McDowell": 1,
-          "Raimo Viljam Vistbacka/Timo Juhani Soini": 1,
-          "Jack Marshall/Robert Muldoon": 1,
-          "Mari Johanna Kiviniemi": 1,
-          "Carl-Henrik Hermansson/Lars Werner": 1,
-          "Gunnar Heckscher/Yngve Holmberg": 1,
-          "Madeleine Petrovic/Christoph Chorherr": 1,
-          "Ove Jensen/Ernst Simonsen": 1,
-          "Hideo Den/Satsuki Eda": 1,
-          "Susanne Riess-Passer/Herbert Scheibner (Acting)/Mathias Reichhold/Herbert Haupt": 1,
-          "Wolfgang Schussel/Wilhelm Molterer": 1,
-          "Jack Lynch/Charles Haughey": 1,
-          "Per Stig Myller/Pia Christmas-Myller": 1,
-          "Bjarne Mygelhyj": 1,
-          "Jeremy Thorpe/David Steel": 1,
-          "Bjarne Mygelhyj/Ben Haddou": 1,
-          "Bertie Ahern/Brian Cowen": 1,
-          "Mogens Glistrup/Pia Kjorsgaard": 1,
-          "Alexander GOtz/Norbert Steger": 1,
-          "Guido Westerwelle/Philipp ROsler": 1,
-          "Justin Trudeau": 1,
-          "Stockwell Day/Stephen Harper": 1,
-          "Pekka Johannes Tarjanne": 1,
-          "Pertti Kullervo Paasio/Ulf Ludwig Sundqvist": 1,
+          "Gustav Fridolin": 2,
+          "Phil Goff": 2,
+          "Daniel Pailla": 2,
+          "Ichiro Ozawa": 2,
+          "Ryutaro Hashimoto": 2,
+          "Bruno Pitterman": 2,
+          "David Shearer": 2,
+          "Lars Barfoed": 2,
+          "Ragnhild Pohanka": 2,
+          "Freda Meissner-Blau": 2,
+          "Aage Brusgaard": 2,
+          "Martin Bangemann": 2,
+          "Erik Ninn-Hansen": 2,
+          "Naoto Kan": 2,
+          "Ian Wachtmeister": 2,
+          "Yukio Hatoyama/Naoto Kan": 2,
+          "Tomiichi Murayama": 2,
+          "Kiichi Miyazawa/Yohei Kono": 1,
+          "Madeleine Petrovic": 1,
+          "Gunnar Helan/Per Ahlmark": 1,
           "Lars Werner/Gudrun Schyman": 1,
-          "Paavo Tapio Lipponen /Eero Olavi Hein_luoma": 1,
-          "Ragnhild Pohanka/Eva Go_s": 1,
-          "Ursula Haubner/Hilmar Kabas (Interim)/Heinz-Christian Strache": 1,
-          "Susanne Riess-Passer": 1,
-          "Veikko Emil Aleksander Vennamo": 1,
-          "Jan-Erik Enestam": 1,
-          "Michael Foot/Neil Kinnock": 1,
-          "Tarja Anneli Cronberg  ": 1,
-          "Bill Rowling/David Lange": 1,
-          "Ulla Hoffmann (acting)/Lars Ohly": 1,
-          "Kim Campbell/Jean Charest": 1,
-          "Franz Vranitzky/Viktor Klima": 1,
-          "Pertti Edvard Salolainen/Sauli V_in_m_ Niinist_": 1,
-          "Robert Stanfield/Joe Clark": 1,
-          "Hilmar Baunsgaard/Svend Haugaard": 1,
-          "Juha Rihtniemi/Harri Hermanni Holkeri": 1,
-          "Bertil Gotthard Ohlin/Sven Wedan": 1,
-          "Naoto Kan/Katsuya Okada": 1,
-          "Trevor Sargent/John Gormley": 1,
-          "Ben Haddou_Dissolved": 1,
-          "Kjell Stefan L_fven": 1,
-          "Bert Karlsson/Ian Wachtmeister": 1,
-          "Brendan Corish/Frank Cluskey": 1,
-          "Sean Lemass": 1,
-          "Juha Rihtniemi  ": 1,
-          "Henrik Synderg_rd/Ove Jensen": 1,
-          "Bill English": 1,
-          "Esko Helle": 1,
-          "Rudolf Scharping/Oskar Lafontaine": 1,
-          "Jaakko It_l_  ": 1,
-          "Shinzo Abe/ Yasuo Fukuda": 1,
-          "Willy Brandt/Hans Jochen-Vogel": 1,
-          "Mikko Einar Juva ": 1,
-          "Maud Olofsson/Annie LOOf": 1,
-          "Johannes Virolainen": 1,
-          "Zenko Suzuki/Yasuhiro Nakasone": 1,
-          "Tanabe Makoto": 1,
-          "Margaret Thatcher/John Major": 1,
-          "Mizuho Fukushima/Tadatomo Yoshida": 1,
-          "Konrad Adenauer": 1,
-          "Erhard Busek/Wolfgang Schussel": 1,
-          "Alexa McDonough/Jack Layton": 1,
-          "Hans-Dietrich Genscher/Martin Bangemann": 1,
-          "Rodney Hide/Don Brash": 1,
-          "David Lange/Geoffrey Palmer": 1,
-          "Tuija Kaarina Brax  ": 1,
-          "Takeo Fukuda/Masayoshi ohira": 1,
-          "Ciaran Cannon/Noel Grealish (Interim)/DISSOLVED": 1,
-          "Sauli V_in_m_ Niinist_/Ville Heimo Antero It_l_ ": 1,
-          "Taro Aso/Sadakazu Tanigaki": 1,
-          "John Bruton/Michael Noonan": 1,
-          "Poul Syrensen/Poul Myller": 1,
-          "John Major/William Hague": 1,
+          "Frank Cluskey/Michael O'Leary": 1,
+          "Sven Wedan/Gunnar Helan": 1,
+          "Ed Broadbent/Audrey McLaughlin": 1,
+          "Stig Grenov": 1,
+          "Robert Menzies/Harold Holt": 1,
+          "Mark Vaile/Warren Truss": 1,
+          "Pierre Trudeau/John Turner": 1,
           "Pekka Olavi Haavisto": 1,
-          "Takeo Miki/Takeo Fukuda": 1,
+          "Flemming Kofyd-Svendsen": 1,
+          "Alexa McDonough/Jack Layton": 1,
+          "Yasuhiro Nakasone/Noboru Takeshita": 1,
+          "Alec Douglas-Home/Edward Heath": 1,
+          "Hans-Dietrich Genscher/Martin Bangemann": 1,
+          "Hilmar Baunsgaard/Svend Haugaard": 1,
+          "Yoshihiko Noda/Banri Kaieda": 1,
+          "Esko Kalevi Almgren": 1,
+          "Tomomi Narita/Ichio Asukata": 1,
+          "Banri Kaieda": 1,
+          "Mark Latham": 1,
+          "Jacob Christensen/Jens Myller": 1,
+          "Tommy Douglas/David Lewis": 1,
+          "Lene Espersen/Lars Barfoed": 1,
+          "Jan-Erik Enestam": 1,
+          "Seiji Maehara/Ichiro Ozawa": 1,
+          "Wilhelm Molterer/Josef PrOll": 1,
+          "Osmo Heikki K. Soininvaara ": 1,
+          "John Bruton/Michael Noonan": 1,
+          "Eisaku Sato/Tanaka Kakuei": 1,
+          "Naoto Kan/Yoshihiko Noda": 1,
+          "Andrew Peacock/John Howard": 1,
+          "Alfred Gusenbauer/Werner Faymann": 1,
+          "Suvi-Anne Siimes": 1,
+          "Birger Schlaug/Matz HammarstrOm": 1,
+          "Don Brash/John Key": 1,
+          "Tanabe Makoto": 1,
+          "Aase Heskjor/Jyrn Herkild": 1,
+          "Jack Marshall": 1,
+          "Michael Moore/Helen Clark": 1,
+          "Christoph Chorherr/Alex Van der Bellen": 1,
+          "Roger Douglas/Richard Prebble": 1,
+          "Michael McDowell/Mary Harney": 1,
+          "Paul Keating/Kim Beazley": 1,
+          "Menzies Campbell/Vince Cable (acting/interim)/Nick Clegg": 1,
+          "Rudolf Scharping": 1,
           "Rainer Barzel": 1,
           "Wolfgang Gerhardt/Guido Westerwelle": 1,
-          "Yasuo Fukuda/ Taro Aso": 1,
-          "Bill English/Don Brash": 1,
-          "Anneli Tuulikki J__tteenm_ki": 1,
-          "Wolfgang Schauble": 1,
-          "Peter Westenthaler": 1,
-          "Mogens Lykketoft/Helle Throning-Schmidt": 1,
-          "Gustaf Ludvik (Kusti) Kulo": 1,
-          "Bjorn Engholm": 1,
-          "Ulf Christer Eriksson/Dissolved": 1,
-          "David Owen/Robert Maclennan": 1,
-          "Fuwa Tetsuzo/Hiroshi Murakami": 1,
-          "Per ?rum J?rgensen/Stig Grenov": 1,
-          "Bo Lundgren/John Fredrik Reinfeldt": 1,
-          "Liam Cosgrave/Garret FitzGerald": 1,
-          "Per Gahrton/Birger Schlaug": 1,
-          "Desmond O'Malley/Mary Harney": 1,
-          "Bruno Pitterman/Bruno Kreisky": 1,
-          "Richard Prebble/Rodney Hide": 1,
-          "Jan Axelsson": 1,
-          "Rainer Barzel/Helmut Kohl": 1,
-          "Kristian Thulesen Dahl": 1,
-          "Matthias Platzeck/Kurt Beck": 1,
-          "Zenko Suzuki": 1,
-          "Josef Riegler/Erhard Busek": 1,
-          "Keith Holyoake/Jack Marshall": 1,
-          "Lucien Bouchard/Michel Gauthier": 1,
-          "Sadakazu Tanigaki/Shinzo Abe": 1,
-          "Aase Heskjor/Jyrn Herkild": 1,
-          "Christian Christensen/Flemming Kofyd-Svendsen": 1,
-          "Audrey McLaughlin/Alexa McDonough": 1,
-          "Naoto Kan/Yoshihiko Noda": 1,
-          "Mark Latham": 1,
-          "Jean Chratien/Paul Martin": 1,
-          "Brian Mulroney/Kim Campbel": 1,
-          "Joe Clark/Brian Mulroney": 1,
-          "Lennart Dalaus/Maud Olofsson": 1,
-          "Jeanette Fitzsimons/Metiria Turei": 1,
-          "Pia Christmas-Myller/Bendt Bendtsen": 1,
-          "Yngve Holmberg/GOsta Bohman": 1,
-          "Harri Hermanni Holkeri/Ilkka Olavi Suominen": 1,
-          "Karin SOder/Olof Johansson": 1,
-          "Herbert Haupt/Ursula Haubner": 1,
-          "Erhard Jakobsen/Mimi Jakobsen": 1,
-          "Eero Olavi Hein_luoma/Jutta Pauliina Urpilainen": 1,
-          "Jenny Shipley/Bill English": 1,
-          "Lester Pearson/Pierre Trudeau": 1,
-          "Norman Kirk/Bill Rowling": 1,
-          "Robert Muldoon/Jim McLay": 1,
-          "Kustaa Rafael Paasio/Taisto Kalevi Sorsa   ": 1,
-          "John Smith/Margaret Beckett/Tony Blair": 1,
-          "Marianne Samuelsson/Lotta Nilsson HedstrOm": 1,
-          "Arne Morten Berner": 1,
-          "Iain Duncan Smith": 1,
-          "Pierre Trudeau/John Turner": 1,
-          "Klaus Kinkel/Wolfgang Gerhardt": 1,
-          "Michael Ignatieff/Bob Rae (Interim)": 1,
-          "Sean Lemass/Jack Lynch": 1,
-          "Lars Evald Christoffer Taxell": 1,
-          "Ky_sti Lallukka": 1,
-          "Andrew Peacock/John Hewson": 1,
-          "Uffe Ellemen-Jensen/Anders Fogh Rasmussen": 1,
-          "Gerard SchrOder/Franz Muntefering": 1,
-          "Don Brash/John Banks": 1,
-          "Dick Spring/Ruairi Quinn": 1,
-          "Norbert Steger/JOrg Haider": 1,
-          "Yoshihiko Noda/Banri Kaieda": 1,
-          "Niels Helveg Petersen/Marianne Bruus Jelved": 1,
-          "Sven Wedan/Gunnar Helan": 1,
-          "James Callaghan/Michael Foot": 1,
-          "Andrew Peacock/John Howard": 1,
-          "Sven Olof Joachim Palme/Ingvar GOsta Carlsson": 1,
-          "Harold Wilson/James Callaghan": 1,
-          "Bill Snedden/Malcolm Fraser": 1,
-          "Kiichi Miyazawa/Yohei Kono": 1,
-          "Michael Moore/Helen Clark": 1,
-          "William Hague/Iain Duncan Smith": 1,
-          "Christoph Chorherr/Alex Van der Bellen": 1,
-          "Ulf Adelsohn/Carl Bildt": 1,
-          "Albert Reynolds": 1,
-          "Ilkka Olavi Suominen/Pertti Edvard Salolainen": 1,
-          "Akihiro Ota/Natsuo Yamaguchi": 1,
-          "Maria Leissner": 1,
-          "Robert Menzies": 1,
-          "Birger Schlaug/Matz HammarstrOm": 1,
-          "Werner Becher/Angelika Mlinar": 1,
-          "Per Gahrton": 1,
-          "Rudolf Scharping": 1,
-          "Ed Broadbent/Audrey McLaughlin": 1,
-          "Olof Johansson/Lennart Dalaus": 1,
-          "Maria Wetterstrand/?sa Romson": 1,
-          "John Bouvin/Per Anders Gustavsson": 1,
-          "Keizo Obuchi": 1,
-          "Matz HammarstrOm": 1,
-          "Andrew Peacock": 1,
-          "Arnold Nordmeyer/Norman Kirk": 1,
-          "Staphane Dion": 1,
-          "Peter Westenthaler/Jorg Haider": 1,
-          "Wolfgang Schauble/Angela Merkel": 1,
-          "GOsta Bohman/Ulf Adelsohn": 1,
-          "Roger Douglas/Richard Prebble": 1,
-          "Satu Maijastiina Hassi": 1,
-          "Kim Beazley/Kevin Rudd": 1,
-          "Svend Gunnarsyn Auken/Poul Nyrup Rasmussen": 1,
-          "Stockwell Day": 1,
-          "Aage Brusgaard/Aase Heskjor": 1,
-          "Keigo Ouchi/Takashi Yonezawa": 1,
-          "Michael O'Leary/Dick Spring": 1,
-          "Mimi Jakobsen/Bjarne Mygelhyj": 1,
-          "Fiona BjOrling": 1,
-          "Bob Rae (Interim)": 1,
-          "Jann Jacob Sjursen/Marianne Karlsmose": 1,
-          "Aase Heskjor": 1,
-          "Noboru Takeshita": 1,
-          "Takako Doi/ Mizuho Fukushima": 1,
-          "Paddy Ashdown/Charles Kennedy": 1,
-          "Kiichi Miyazawa": 1,
-          "Aksel Larsen/Sigurd ?mann": 1,
-          "Paul Keating/Kim Beazley": 1,
-          "Franz Muntefering/Matthias Platzeck": 1,
-          "Pekka Markus Sauri": 1,
-          "Poul Hartling/Henning Christophersen": 1,
-          "Poul Nyrup Rasmussen/Mogens Lykketoft": 1,
-          "GOran Persson/Mona Ingeborg Sahlin": 1,
-          "Gunnar Helan/Per Ahlmark": 1,
-          "Karl Schleinzer/Josef Taus": 1,
-          "Kazuyuki Kasuga/Sasaki KiRyosaku": 1,
-          "Staphane Dion/Michael Ignatieff": 1,
-          "Alec Douglas-Home/Edward Heath": 1,
-          "Ove Jensen": 1,
-          "Keizo Obuchi/Yoshiro Mori": 1,
-          "Carl Bildt/Bo Lundgren": 1,
-          "Banri Kaieda": 1,
-          "Aune Kaarina Koivistoinen": 1,
-          "Tommy Douglas/David Lewis": 1,
-          "Anders Fogh Rasmussen/Lars Lykke Rasmussen": 1,
-          "Ian Wachtmeister/Harriet Colliander/Vivianne Franzan": 1,
-          "Alan Dukes/John Bruton": 1,
-          "Joseph Grimond/Jeremy Thorpe": 1,
-          "Alfred Sinowatz/Franz Vranitzky": 1,
-          "Lotta Nilsson HedstrOm/Maria Wetterstrand": 1,
-          "Albert Reynolds/Bertie Ahern": 1,
-          "Michel Gauthier/Gilles Duceppe": 1,
-          "Annette Lilja Vilhelmsen": 1,
-          "Svend Haugaard/Niels Helveg Petersen": 1,
-          "Don Brash/John Key": 1,
-          "Poul Myller/Erik Ninn-Hansen": 1,
-          "Holger Kirkholm Nielsen/Villy Syvndal": 1,
-          "Peter Pilz": 1,
-          "Yohei Kono/Seiichi Tagawa": 1,
-          "Konrad Adenauer/Ludwig Erhard": 1,
-          "Peter Eriksson/Gustav Fridolin": 1,
-          "John Anderson/Mark Vaile": 1,
-          "Walter Scheel/Hans-Dietrich Genscher": 1,
-          "Roy Jenkins": 1,
-          "Anders Nordin": 1,
-          "Eva Go_s/Fiona BjOrling": 1,
-          "Naoto Kan/Yukio Hatoyama": 1,
-          "Hans Engell/Per Stig Myller": 1,
-          "Geoffrey Palmer/Michael Moore": 1,
-          "Charles Blunt/Tim Fischer": 1,
-          "Hermann Withalm/Karl Schleinzer": 1,
-          "Kim Beazley/Simon Crean": 1,
-          "Martti Allan Korhonen": 1,
-          "Ian Sinclair/Charles Blunt": 1,
-          "Jack Marshall": 1,
-          "Noboru Takeshita/Sosuke Uno/Toshiki Kaifu": 1,
-          "Phil Goff/David Shearer": 1,
-          "Wilhelm Molterer/Josef PrOll": 1,
-          "Esko Kalevi Almgren": 1,
-          "Jan-Magnus Jansson": 1,
-          "Kurt Kiesinger/Rainer Barzel": 1,
-          "Eino Sares": 1,
-          "Stig Grenov": 1,
-          "Fiona BjOrling/Margareta Gisselberg": 1,
-          "JOrg Haider/Susanne Riess-Passer": 1,
-          "Kurt Beck/Frank-Walter Steinmeier (Acting/Interim)/Franz Muntefering": 1,
-          "Jorg Haider/Peter Westenthaler": 1,
-          "Brian Cowen/Micheal Martin": 1,
-          "Robert Hawke/Paul Keating": 1,
-          "Josef Klaus/Hermann Withalm": 1,
-          "Tanaka Kakuei": 1,
-          "Tina Elise M_kel_   ": 1,
-          "Bendt Bendtsen/Lene Espersen": 1,
-          "Paavo Erkki Arhinm_ki": 1,
-          "Ruairi Quinn/Pat Rabbitte": 1,
-          "John Hewson/Alexander Downer": 1,
-          "Carl Olof Tallgren": 1,
-          "Marianne Karlsmose/Bodil Holmgren Kornbek": 1,
-          "Jorg Haider": 1,
-          "Anni Milja Maaria Sinnem_ki  ": 1,
-          "Iain Duncan Smith/Michael Howard": 1,
-          "John Smith": 1,
-          "Matz HammarstrOm/Peter Eriksson": 1,
-          "Flemming Kofyd-Svendsen/Jann Jacob Sjursen": 1,
-          "P_r Olav Mikael Stenb_ck": 1,
-          "Michael McDowell/Mary Harney": 1,
-          "Edward Heath/Margaret Thatcher": 1,
-          "John Gormley/Eamon Ryan": 1,
-          "Heidi Anneli Hautala": 1,
-          "Garret FitzGerald/Alan Dukes": 1,
-          "Doug Anthony/Ian Sinclair": 1,
-          "John Turner/Jean Chratien": 1,
-          "Herbert Haupt": 1,
-          "William Hayden/Robert Hawke": 1,
-          "Brendan Nelson/Malcolm Turnbull": 1,
-          "Alois Mock/Josef Riegler": 1,
-          "Poul Holmskov Schluter/Henning Dyremose/Hans Engell": 1,
-          "Toshiki Kaifu": 1,
-          "Kustaa Rafael Paasio ": 1,
-          "Anker/Jyrgensen/Svend Gunnarsyn Auken": 1,
-          "Birger Schlaug/Anders Nordin": 1,
-          "Suvi-Anne Siimes": 1,
-          "Sasaki KiRyosaku/Saburo Tsukamoto": 1,
-          "Raino Olavi Westerholm": 1,
-          "Karin SOder": 1,
-          "Friedrich Peter/Alexander GOtz": 1,
-          "Johan Bjarne Kallis": 1,
-          "Gert Petersen/Holger Kirkholm Nielsen": 1,
-          "Per Anders Gustavsson/Ulf Christer Eriksson": 1,
-          "John Banks": 1,
-          "Josef Riegler": 1,
-          "Kouzou Sasaki/Seiichi Katsumata": 1,
-          "Paavo Matti V_yrynen": 1,
-          "Mary Harney/Ciaran Cannon": 1,
-          "Helen Clark/Phil Goff": 1,
-          "John Howard/Brendan Nelson": 1,
-          "Lene Espersen/Lars Barfoed": 1,
-          "Ele Allan Alenius": 1,
-          "Gilles Duceppe/Daniel Pailla": 1,
-          "Jim McLay": 1,
-          "Bengt Carl Westerberg/Maria Leissner": 1,
-          "Ole Norrback ": 1,
-          "Heide Schmidt/Christian KOck/Friedhelm Frischenschlager (Interim)": 1,
-          "Henning/Christophersen/Uffe Ellemen-Jensen": 1,
-          "Mark Latham/Kim Beazley": 1,
-          "Poul Myller": 1,
-          "Bodil Holmgren Kornbek/Bjarne Hartung Kirkegaard": 1,
-          "Matti Taneli Vanhanen   ": 1,
-          "Harold Holt": 1,
-          "Kenji Miyamoto/Fuwa Tetsuzo": 1,
-          "Oskar Lafontaine/Gerard SchrOder": 1,
-          "Stefan Erik Wallin ": 1,
-          "Eva Go_s": 1,
-          "Takenori Kanzaki/Akihiro Ota": 1,
-          "Nishio Suehiro/Nishimura Eiichi": 1,
-          "Jyrn Herkild/Henrik Synderg_rd": 1,
-          "Peter Pilz/Madeleine Petrovic": 1,
-          "Katsuya Okada/Seiji Maehara": 1,
-          "Simon Crean/Mark Latham": 1,
-          "Frank Cluskey/Michael O'Leary": 1,
-          "Lars Leijonborg/Jan Arne BjOrklund": 1,
-          "Michael Howard": 1,
-          "Pia Kjorsgaard/Kirsten Jacobsen": 1,
-          "John Diefenbaker/Robert Stanfield": 1,
-          "Toimi Olavi Kankaanniemi": 1,
-          "Jens Myller/Christian Christensen": 1,
-          "Bjarne Hartung Kirkegaard/Per ?rum J?rgensen": 1,
-          "Paul Martin/Bill Graham (Interim)/Staphane Dion": 1,
-          "Jim Bolger/Jenny Shipley": 1,
-          "Kalle Kustaa Topias K_nkk_l_": 1,
-          "Ernst Simonsen/Niels Hyjland": 1,
-          "Gunnar Hedlund/ThorbjOrn F_lldin": 1,
-          "Michael Noonan/Enda Kenny": 1,
-          "Shinzo Abe": 1,
           "Ahti Tele ": 1,
-          "John Howard/Andrew Peacock": 1,
-          "Tomomi Narita/Ichio Asukata": 1,
-          "Junichiro Koizumi/Shinzo Abe": 1,
-          "Villy Syvndal/Annette Lilja Vilhelmsen": 1,
-          "Tomiichi Murayama/Takako Doi": 1,
-          "William McMahon/Bill Snedden": 1,
-          "Yoshiro Mori/Junichiro Koizumi": 1,
-          "David Lewis/Ed Broadbent": 1,
-          "Josef PrOll/Michael Spindelegger": 1,
-          "Alfred Gusenbauer/Werner Faymann": 1,
-          "Margareta Gisselberg/_": 1,
-          "Seiichi Tagawa/Yohei Kono": 1,
-          " Hiroshi Murakami/Fuwa Tetsuzo": 1,
-          "Arthur Calwell/Gough Whitlam": 1,
-          "Seiji Maehara/Ichiro Ozawa": 1,
-          "Ville Matti Niinist_ ": 1,
-          "Olavi Enok Majlander ": 1,
-          "ThorbjOrn F_lldin/Karin SOder": 1,
-          "Yasuhiro Nakasone/Noboru Takeshita": 1,
-          "Lars Erik Taxell ": 1,
-          "Ludwig Erhard/Kurt Kiesinger": 1,
-          "Erik Ninn-Hansen/Poul Holmskov Schluter": 1,
+          "Marianne Samuelsson/Lotta Nilsson HedstrOm": 1,
+          "Juha Rihtniemi  ": 1,
+          "Uffe Ellemen-Jensen/Anders Fogh Rasmussen": 1,
+          "Michael Howard": 1,
+          "Pia Kjorsgaard/Kristian Thulesen Dahl": 1,
+          "Mikko Einar Juva ": 1,
+          "Bill Snedden/Malcolm Fraser": 1,
+          "Esko Helle": 1,
+          "Maud Olofsson/Annie LOOf": 1,
+          "Ichiro Ozawa/Yukio Hatoyama": 1,
+          "Carl Bildt/Bo Lundgren": 1,
+          "Bill English/Don Brash": 1,
+          "Ove Jensen/Ernst Simonsen": 1,
+          "Michael Foot/Neil Kinnock": 1,
+          "Kenji Miyamoto/Fuwa Tetsuzo": 1,
+          "Kim Beazley/Simon Crean": 1,
+          "Johannes Voggenhuber/Peter Pilz": 1,
           "Ola Ullsten/Per Ahlmark": 1,
-          "Malcolm Fraser/Andrew Peacock": 1,
-          "Franz Muntefering/Sigmar Gabriel": 1,
-          "Vivianne Franzan/Bengt Gunnar Andersson/John Bouvin": 1,
-          "P_ivi Maria R_s_nen ": 1,
-          "Otto Lambsdorff/Klaus Kinkel": 1,
+          "Olof Johansson/Lennart Dalaus": 1,
+          "Kristian Thulesen Dahl": 1,
+          "Lars Evald Christoffer Taxell": 1,
+          "John McEwen/Doug Anthony": 1,
+          "GOran Persson/Mona Ingeborg Sahlin": 1,
+          "Bert Karlsson/Ian Wachtmeister": 1,
+          "John Smith": 1,
+          "Lars Olof Kristian Gestrin": 1,
+          "Jenny Shipley/Bill English": 1,
+          "Masayoshi ohira/Zenko Suzuki": 1,
+          "Holger Kirkholm Nielsen/Villy Syvndal": 1,
+          "Jeanette Fitzsimons/Metiria Turei": 1,
+          "Alexander Downer/John Howard": 1,
+          "Simon Crean": 1,
+          "Fiona BjOrling/Margareta Gisselberg": 1,
+          "John Bouvin/Per Anders Gustavsson": 1,
+          "Josef Riegler/Erhard Busek": 1,
+          "Karl Schleinzer/Josef Taus": 1,
+          "Michael Noonan/Enda Kenny": 1,
           "Charles Kennedy/Menzies Campbell": 1,
-          "Tanabe Makoto/Sadao Yamahana/Tomiichi Murayama": 1,
-          "Madeleine Petrovic": 1,
-          "Viktor Klima/Alfred Gusenbauer": 1,
-          "Gudrun Schyman/Ulla Hoffmann (acting/interim)": 1,
-          "Takeo Fukuda": 1,
-          "Jean Charest/Elsie Wayne (interim)/Joe Clark": 1,
-          "Josef Bucher/Gerald Grosz": 1,
-          "Helmut Kohl/Wolfgang Schauble": 1,
-          "Kurt Beck": 1,
-          "Toshiki Kaifu/Kiichi Miyazawa": 1,
+          "P_r Olav Mikael Stenb_ck": 1,
+          "Bertie Ahern/Brian Cowen": 1,
+          "Kim Campbell/Jean Charest": 1,
+          "Anneli Tuulikki J__tteenm_ki": 1,
+          "John Turner/Jean Chratien": 1,
+          "Jorg Haider/Peter Westenthaler": 1,
+          "Michael Ignatieff/Bob Rae (Interim)": 1,
+          "Friedhelm Frischenschlager (Interim)/Alexander Zach": 1,
+          "Susanne Riess-Passer": 1,
+          "Bo Lundgren/John Fredrik Reinfeldt": 1,
+          "Svend Gunnarsyn Auken/Poul Nyrup Rasmussen": 1,
+          "Kurt Beck/Frank-Walter Steinmeier (Acting/Interim)/Franz Muntefering": 1,
+          "Shinzo Abe": 1,
+          "John Anderson/Mark Vaile": 1,
+          "Peter Eriksson/Gustav Fridolin": 1,
+          "Peter Pilz/Madeleine Petrovic": 1,
+          "Aune Kaarina Koivistoinen": 1,
+          "Fuwa Tetsuzo/Hiroshi Murakami": 1,
+          "Christian Christensen/Flemming Kofyd-Svendsen": 1,
+          "Tanaka Kakuei": 1,
+          "Yohei Kono/Ryutaro Hashimoto": 1,
+          "Taisto Kalevi Sorsa/Pertti Kullervo Paasio": 1,
+          "Per ?rum J?rgensen/Stig Grenov": 1,
+          "Gunnar Hedlund/ThorbjOrn F_lldin": 1,
+          "Roy Jenkins": 1,
+          "Desmond O'Malley/Mary Harney": 1,
+          "Jan Axelsson": 1,
+          "Aksel Larsen/Sigurd ?mann": 1,
+          "Jens Otto Krag/Anker Jyrgensen": 1,
+          "Malcolm Turnbull/Tony Abbott": 1,
+          "Pekka Markus Sauri": 1,
+          "Alexander Zach/Heide Schmidt (Interim)/Werner Becher": 1,
+          "Pia Kjorsgaard/Kirsten Jacobsen/Pia Kjorsgaard": 1,
+          "Rudolf Scharping/Oskar Lafontaine": 1,
+          "Wolfgang Schauble": 1,
+          "Lennart Dalaus/Maud Olofsson": 1,
+          "Malcolm Fraser/Andrew Peacock": 1,
+          "Bertil Gotthard Ohlin/Sven Wedan": 1,
+          "William McMahon/Bill Snedden": 1,
+          "John Howard/Andrew Peacock": 1,
+          "Pekka Johannes Tarjanne": 1,
+          "Nishio Suehiro/Nishimura Eiichi": 1,
+          "Sigurd ?mann/Gert Petersen": 1,
+          "Michel Gauthier/Gilles Duceppe": 1,
+          "Marianne Karlsmose/Bodil Holmgren Kornbek": 1,
+          "Robert Muldoon/Jim McLay": 1,
+          "Per Gahrton/Birger Schlaug": 1,
+          "Mizuho Fukushima/Tadatomo Yoshida": 1,
+          "Margareta Gisselberg/_": 1,
+          "Mogens Lykketoft/Helle Throning-Schmidt": 1,
+          "Bill Rowling/David Lange": 1,
+          "Roy Jenkins/David Owen": 1,
+          "Jim McLay": 1,
+          "Wolfgang Schussel/Wilhelm Molterer": 1,
+          "Geoffrey Palmer/Michael Moore": 1,
+          "Jaakko It_l_  ": 1,
+          "Peter Westenthaler": 1,
+          "Jack Marshall/Robert Muldoon": 1,
+          "Mary Harney/Ciaran Cannon": 1,
+          "Ragnhild Pohanka/Eva Go_s": 1,
+          "Ernst Simonsen/Niels Hyjland": 1,
+          "Audrey McLaughlin/Alexa McDonough": 1,
+          "Henning/Christophersen/Uffe Ellemen-Jensen": 1,
+          "Jim Bolger/Jenny Shipley": 1,
+          "Tarja Anneli Cronberg  ": 1,
+          "Albert Reynolds/Bertie Ahern": 1,
+          "Johannes Virolainen": 1,
+          "Gilles Duceppe/Daniel Pailla": 1,
+          "Ulf Christer Eriksson/Dissolved": 1,
+          "Simon Crean/Mark Latham": 1,
+          "Alexander GOtz/Norbert Steger": 1,
+          "Bjarne Hartung Kirkegaard/Per ?rum J?rgensen": 1,
+          "Poul Nyrup Rasmussen/Mogens Lykketoft": 1,
+          "Paul Martin/Bill Graham (Interim)/Staphane Dion": 1,
+          "Peter Pilz": 1,
+          "Phil Goff/David Shearer": 1,
+          "Juha Rihtniemi/Harri Hermanni Holkeri": 1,
+          "Heidi Anneli Hautala": 1,
+          "_/Marianne Samuelsson": 1,
+          "Takako Doi/Tanabe Makoto": 1,
+          "Madeleine Petrovic/Christoph Chorherr": 1,
+          "Anni Milja Maaria Sinnem_ki  ": 1,
+          "Ulla Hoffmann (acting)/Lars Ohly": 1,
+          "Takeo Miki": 1,
+          "Poul Syrensen/Poul Myller": 1,
+          "Joe Clark/Brian Mulroney": 1,
+          "William Hague/Iain Duncan Smith": 1,
+          "Masashi Ishibashi/Takako Doi": 1,
+          "Karin SOder": 1,
+          "Guido Westerwelle/Philipp ROsler": 1,
+          "Willy Brandt/Hans Jochen-Vogel": 1,
+          "William Hayden/Robert Hawke": 1,
+          "Takeo Miki/Takeo Fukuda": 1,
+          "Satu Maijastiina Hassi": 1,
+          "Masayoshi ohira": 1,
+          "Per Anders Gustavsson/Ulf Christer Eriksson": 1,
+          " Hiroshi Murakami/Fuwa Tetsuzo": 1,
+          "Sadakazu Tanigaki/Shinzo Abe": 1,
+          "Friedrich Peter/Alexander GOtz": 1,
+          "Brian Mulroney/Kim Campbel": 1,
+          "Ville Heimo Antero It_l_ /Jyrki Tapani Katainen": 1,
+          "Bjorn Engholm/Rudolf Scharping": 1,
+          "Mona Ingeborg Sahlin/H_kan Juholt": 1,
+          "Tuija Kaarina Brax  ": 1,
+          "Reijo Kalevi K_kel_ ": 1,
+          "Konrad Adenauer/Ludwig Erhard": 1,
           "Neil Kinnock/John Smith": 1,
-          "Ulf Ludwig Sundqvist/Paavo Tapio Lipponen  ": 1,
+          "Martti Allan Korhonen": 1,
+          "Flemming Kofyd-Svendsen/Jann Jacob Sjursen": 1,
+          "Martin Bangemann/Otto Lambsdorff": 1,
+          "Sasaki KiRyosaku/Saburo Tsukamoto": 1,
+          "Jens Myller/Christian Christensen": 1,
+          "Keith Holyoake/Jack Marshall": 1,
+          "Eero Olavi Hein_luoma/Jutta Pauliina Urpilainen": 1,
+          "Vivianne Franzan/Bengt Gunnar Andersson/John Bouvin": 1,
+          "Shinzo Abe/ Yasuo Fukuda": 1,
+          "Sven Olof Joachim Palme/Ingvar GOsta Carlsson": 1,
+          "Eva Go_s/Fiona BjOrling": 1,
+          "Paddy Ashdown/Charles Kennedy": 1,
+          "Paavo Matti V_yrynen": 1,
+          "Paavo Erkki Arhinm_ki": 1,
+          "Keizo Obuchi": 1,
+          "Rodney Hide/Don Brash": 1,
+          "Poul Myller/Erik Ninn-Hansen": 1,
+          "Hideo Den/Satsuki Eda": 1,
+          "Karin SOder/Olof Johansson": 1,
+          "Tim Fischer/John Anderson": 1,
+          "Lester Pearson/Pierre Trudeau": 1,
+          "Herbert Haupt": 1,
+          "Kustaa Rafael Paasio/Taisto Kalevi Sorsa   ": 1,
+          "David Owen/Robert Maclennan": 1,
+          "Kazuyuki Kasuga/Sasaki KiRyosaku": 1,
+          "Wolfgang Schauble/Angela Merkel": 1,
+          "Kalle Kustaa Topias K_nkk_l_": 1,
+          "Yasuo Fukuda/ Taro Aso": 1,
+          "Raimo Viljam Vistbacka ": 1,
+          "Ursula Haubner/Hilmar Kabas (Interim)/Heinz-Christian Strache": 1,
+          "Josef PrOll/Michael Spindelegger": 1,
+          "Hermann Withalm/Karl Schleinzer": 1,
+          "Poul Myller": 1,
+          "JOrg Haider/Susanne Riess-Passer": 1,
+          "Carl Olof Tallgren": 1,
+          "Mimi Jakobsen/Bjarne Mygelhyj": 1,
+          "Helmut Kohl/Wolfgang Schauble": 1,
+          "Harold Holt": 1,
+          "Robert Hawke/Paul Keating": 1,
+          "Alois Mock/Josef Riegler": 1,
+          "Justin Trudeau": 1,
+          "Per Stig Myller/Pia Christmas-Myller": 1,
+          "Peter Westenthaler/Jorg Haider": 1,
+          "Pertti Kullervo Paasio/Ulf Ludwig Sundqvist": 1,
+          "Ciaran Cannon/Noel Grealish (Interim)/DISSOLVED": 1,
+          "John Gormley/Eamon Ryan": 1,
+          "Anders Nordin/Jan Axelsson": 1,
+          "Jim McLay/Jim Bolger": 1,
+          "Joe Clark/Peter MacKay": 1,
           "Te Ururoa Flavell": 1,
-          "Kevin Rudd/Julia Gillard": 1,
-          "Robert Maclennan": 1,
+          "Eino Sares": 1,
+          "Oskar Lafontaine/Gerard SchrOder": 1,
           "Ichio Asukata/Masashi Ishibashi": 1,
-          "Robert Menzies/Harold Holt": 1,
-          "Freda Meissner-Blau/Johannes Voggenhuber": 1,
+          "Tanaka Kakuei/Takeo Miki": 1,
+          "Staphane Dion": 1,
+          "Dick Spring/Ruairi Quinn": 1,
+          "Tomiichi Murayama/Takako Doi": 1,
+          "Aase Heskjor": 1,
+          "Stefan Erik Wallin ": 1,
+          "Arne Morten Berner": 1,
+          "Arthur Calwell/Gough Whitlam": 1,
+          "James Dillon/Liam Cosgrave": 1,
+          "Norman Kirk/Bill Rowling": 1,
+          "Bendt Bendtsen/Lene Espersen": 1,
+          "Josef Riegler": 1,
+          "Ville Matti Niinist_ ": 1,
+          "Naoto Kan/Yukio Hatoyama": 1,
+          "Trevor Sargent/John Gormley": 1,
+          "Claes-Johan Rudolf Andersson": 1,
+          "Ole Norrback ": 1,
+          "Junichiro Koizumi/Shinzo Abe": 1,
+          "Alan Dukes/John Bruton": 1,
+          "Fuwa Tetsuzo/Kazuo Shii": 1,
+          "Gough Whitlam/William Hayden": 1,
+          "Lars Erik Taxell ": 1,
+          "Paavo Tapio Lipponen /Eero Olavi Hein_luoma": 1,
+          "Seiichi Tagawa/Yohei Kono": 1,
           "Pat Rabbitte/Eamon Gilmore": 1,
+          "Takeo Fukuda": 1,
+          "Mari Johanna Kiviniemi": 1,
+          "Tage Fritiof Erlander/Sven Olof Joachim Palme": 1,
+          "Pertti Edvard Salolainen/Sauli V_in_m_ Niinist_": 1,
+          "Ky_sti Lallukka": 1,
+          "Ulf Ludwig Sundqvist/Paavo Tapio Lipponen  ": 1,
+          "Josef Bucher/Gerald Grosz": 1,
+          "Ben Haddou_Dissolved": 1,
+          "James Callaghan/Michael Foot": 1,
+          "Esko Tapani Aho": 1,
+          "Nishimura Eiichi/Kazuyuki Kasuga": 1,
+          "Susanne Riess-Passer/Herbert Scheibner (Acting)/Mathias Reichhold/Herbert Haupt": 1,
+          "Andrew Peacock/John Hewson": 1,
+          "Bill English": 1,
+          "Noboru Takeshita": 1,
+          "Konrad Adenauer": 1,
+          "Erhard Busek/Wolfgang Schussel": 1,
+          "Mark Vaile": 1,
+          "Franz Muntefering/Sigmar Gabriel": 1,
+          "Hans Engell/Per Stig Myller": 1,
+          "Gert Petersen/Holger Kirkholm Nielsen": 1,
+          "Sauli V_in_m_ Niinist_/Ville Heimo Antero It_l_ ": 1,
+          "Harri Hermanni Holkeri/Ilkka Olavi Suominen": 1,
+          "Kurt Kiesinger/Rainer Barzel": 1,
+          "Per Gahrton": 1,
+          "Franz Muntefering/Matthias Platzeck": 1,
+          "Matz HammarstrOm/Peter Eriksson": 1,
+          "Brian Cowen/Micheal Martin": 1,
+          "Raimo Viljam Vistbacka/Timo Juhani Soini": 1,
+          "Andrew Peacock": 1,
+          "Bjorn Engholm": 1,
+          "Anders Nordin": 1,
+          "Richard Prebble/Rodney Hide": 1,
+          "Stockwell Day": 1,
+          "Akihiro Ota/Natsuo Yamaguchi": 1,
+          "Sean Lemass/Jack Lynch": 1,
+          "Lars Leijonborg/Jan Arne BjOrklund": 1,
+          "Olavi Enok Majlander ": 1,
+          "Annette Lilja Vilhelmsen": 1,
+          "Jorg Haider": 1,
+          "Carl-Henrik Hermansson/Lars Werner": 1,
+          "Takeo Fukuda/Masayoshi ohira": 1,
+          "Don Brash/John Banks": 1,
+          "Robert Maclennan": 1,
+          "GOsta Bohman/Ulf Adelsohn": 1,
+          "Pekka Veikko Vennamo": 1,
+          "H_kan Juholt": 1,
+          "Maria Leissner/Lars Leijonborg": 1,
+          "Josef Klaus/Hermann Withalm": 1,
+          "John Diefenbaker/Robert Stanfield": 1,
+          "Bodil Holmgren Kornbek/Bjarne Hartung Kirkegaard": 1,
+          "John Banks": 1,
+          "Albert Reynolds": 1,
+          "Bob Rae (Interim)": 1,
+          "Anders Fogh Rasmussen/Lars Lykke Rasmussen": 1,
+          "Yohei Kono/Seiichi Tagawa": 1,
+          "Gustaf Ludvik (Kusti) Kulo": 1,
+          "Kurt Beck": 1,
+          "Kevin Rudd/Julia Gillard": 1,
+          "Poul Holmskov Schluter/Henning Dyremose/Hans Engell": 1,
+          "Klaus Kinkel/Wolfgang Gerhardt": 1,
+          "Saburo Tsukamoto/Eiichi Nagasue": 1,
+          "Charles Blunt/Tim Fischer": 1,
+          "Gerard SchrOder/Franz Muntefering": 1,
+          "Gunnar Heckscher/Yngve Holmberg": 1,
+          "Kim Beazley/Kevin Rudd": 1,
+          "Henrik Synderg_rd/Ove Jensen": 1,
+          "Staphane Dion/Michael Ignatieff": 1,
+          "Michael O'Leary/Dick Spring": 1,
+          "Johan Bjarne Kallis": 1,
+          "Tanabe Makoto/Sadao Yamahana/Tomiichi Murayama": 1,
+          "Jack Lynch/Charles Haughey": 1,
+          "Fiona BjOrling": 1,
+          "Ilkka Olavi Suominen/Pertti Edvard Salolainen": 1,
+          "Erik Ninn-Hansen/Poul Holmskov Schluter": 1,
+          "Bjarne Mygelhyj": 1,
+          "Katsuya Okada/Seiji Maehara": 1,
+          "Norbert Steger/JOrg Haider": 1,
+          "Joseph Grimond/Jeremy Thorpe": 1,
+          "Charles Haughey/Albert Reynolds": 1,
+          "Otto Lambsdorff/Klaus Kinkel": 1,
+          "Ruairi Quinn/Pat Rabbitte": 1,
           "Eiichi Nagasue/Keigo Ouchi": 1,
-          "Masayoshi ohira": 1
+          "Keizo Obuchi/Yoshiro Mori": 1,
+          "Freda Meissner-Blau/Johannes Voggenhuber": 1,
+          "Jyrn Herkild/Henrik Synderg_rd": 1,
+          "Kjell Stefan L_fven": 1,
+          "Alf Robert Svensson/GOran H_gglund": 1,
+          "David Lewis/Ed Broadbent": 1,
+          "Jean Charest/Elsie Wayne (interim)/Joe Clark": 1,
+          "Raino Olavi Westerholm": 1,
+          "Jan-Magnus Jansson": 1,
+          "John Gorton/William McMahon": 1,
+          "Ryutaro Hashimoto/Keizo Obuchi": 1,
+          "Matthias Platzeck/Kurt Beck": 1,
+          "Taro Aso/Sadakazu Tanigaki": 1,
+          "Heikki Anssi Riihij_rvi  ": 1,
+          "Marianne Bruus Jelved/Margrethe Vestager": 1,
+          "Seiichi Katsumata/Tomomi Narita": 1,
+          "Anker/Jyrgensen/Svend Gunnarsyn Auken": 1,
+          "John Smith/Margaret Beckett/Tony Blair": 1,
+          "Garret FitzGerald/Alan Dukes": 1,
+          "Tina Elise M_kel_   ": 1,
+          "Iain Duncan Smith": 1,
+          "Alex Van der Bellen/Eva Glawischnig-Piesczek (acting)": 1,
+          "Noboru Takeshita/Sosuke Uno/Toshiki Kaifu": 1,
+          "Herbert Haupt/Ursula Haubner": 1,
+          "Klaus Kinkel": 1,
+          "Ian Sinclair/Charles Blunt": 1,
+          "Jann Jacob Sjursen/Marianne Karlsmose": 1,
+          "Ingvar GOsta Carlsson/GOran Persson": 1,
+          "Zenko Suzuki/Yasuhiro Nakasone": 1,
+          "Franz Vranitzky/Viktor Klima": 1,
+          "Aage Brusgaard/Aase Heskjor": 1,
+          "Arnold Nordmeyer/Norman Kirk": 1,
+          "John Hewson/Alexander Downer": 1,
+          "Bengt Carl Westerberg/Maria Leissner": 1,
+          "Yoshiro Mori/Junichiro Koizumi": 1,
+          "Birger Schlaug/Anders Nordin": 1,
+          "Takenori Kanzaki/Akihiro Ota": 1,
+          "Pia Christmas-Myller/Bendt Bendtsen": 1,
+          "ThorbjOrn F_lldin/Karin SOder": 1,
+          "Helen Clark/Phil Goff": 1,
+          "Gudrun Schyman/Ulla Hoffmann (acting/interim)": 1,
+          "Brendan Corish/Frank Cluskey": 1,
+          "John Major/William Hague": 1,
+          "Ulf Adelsohn/Carl Bildt": 1,
+          "Kalevi Johannes Kivist_": 1,
+          "Preston Manning/Deborah Grey (Interim)/Stockwell Day": 1,
+          "P_ivi Maria R_s_nen ": 1,
+          "Josef Taus/Alois Mock": 1,
+          "Viktor Klima/Alfred Gusenbauer": 1,
+          "Edward Heath/Margaret Thatcher": 1,
+          "Sean Lemass": 1,
+          "Mogens Glistrup/Pia Kjorsgaard": 1,
+          "Keigo Ouchi/Takashi Yonezawa": 1,
+          "Yngve Holmberg/GOsta Bohman": 1,
+          "Werner Becher/Angelika Mlinar": 1,
+          "Doug Anthony/Ian Sinclair": 1,
+          "Liam Cosgrave/Garret FitzGerald": 1,
+          "Maria Leissner": 1,
+          "Ian Wachtmeister/Harriet Colliander/Vivianne Franzan": 1,
+          "Ele Allan Alenius": 1,
+          "Ove Jensen": 1,
+          "Mark Latham/Kim Beazley": 1,
+          "Jeremy Thorpe/David Steel": 1,
+          "Veikko Emil Aleksander Vennamo": 1,
+          "Pia Kjorsgaard/Kirsten Jacobsen": 1,
+          "Erhard Jakobsen/Mimi Jakobsen": 1,
+          "Toshiki Kaifu": 1,
+          "Heide Schmidt/Christian KOck/Friedhelm Frischenschlager (Interim)": 1,
+          "Alfred Sinowatz/Franz Vranitzky": 1,
+          "Iain Duncan Smith/Michael Howard": 1,
+          "Ludwig Erhard/Kurt Kiesinger": 1,
+          "Eva Go_s": 1,
+          "Maria Wetterstrand/?sa Romson": 1,
+          "Stockwell Day/Stephen Harper": 1,
+          "Bruno Pitterman/Bruno Kreisky": 1,
+          "Naoto Kan/Katsuya Okada": 1,
+          "Mary Harney/Michael McDowell": 1,
+          "Matz HammarstrOm": 1,
+          "Hans Jochen-Vogel/Bjorn Engholm": 1,
+          "Toimi Olavi Kankaanniemi": 1,
+          "Kouzou Sasaki/Seiichi Katsumata": 1,
+          "Takako Doi/ Mizuho Fukushima": 1,
+          "Niels Helveg Petersen/Marianne Bruus Jelved": 1,
+          "Robert Menzies": 1,
+          "Poul Hartling/Henning Christophersen": 1,
+          "Brendan Nelson/Malcolm Turnbull": 1,
+          "Robert Stanfield/Joe Clark": 1,
+          "Bjarne Mygelhyj/Ben Haddou": 1,
+          "John Howard/Brendan Nelson": 1,
+          "David Lange/Geoffrey Palmer": 1,
+          "Rainer Barzel/Helmut Kohl": 1,
+          "Toshiki Kaifu/Kiichi Miyazawa": 1,
+          "Svend Haugaard/Niels Helveg Petersen": 1,
+          "Jean Chratien/Paul Martin": 1,
+          "Lucien Bouchard/Michel Gauthier": 1,
+          "Kiichi Miyazawa": 1,
+          "Harold Wilson/James Callaghan": 1,
+          "Ola Ullsten/Bengt Carl Westerberg": 1,
+          "Bruno Kreisky/Alfred Sinowatz": 1,
+          "Zenko Suzuki": 1,
+          "Margaret Thatcher/John Major": 1,
+          "Walter Scheel/Hans-Dietrich Genscher": 1,
+          "Villy Syvndal/Annette Lilja Vilhelmsen": 1,
+          "Kustaa Rafael Paasio ": 1,
+          "Matti Taneli Vanhanen   ": 1,
+          "Lotta Nilsson HedstrOm/Maria Wetterstrand": 1
         }
       ],
       [
@@ -3430,22 +3267,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Year",
     [
@@ -4082,22 +3903,6 @@
     ]
   ],
   [
-    "change",
-    "variables.majoritarian.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.majoritarian.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.majoritarian",
     [
@@ -4337,22 +4142,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gov.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4598,22 +4387,6 @@
     ]
   ],
   [
-    "change",
-    "variables.majorparty.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.majorparty.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.majorparty",
     [
@@ -4856,22 +4629,6 @@
     ]
   ],
   [
-    "change",
-    "variables.seatdiff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seatdiff.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.seatdiff",
     [
@@ -5104,22 +4861,6 @@
     ]
   ],
   [
-    "change",
-    "variables.seatshare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seatshare.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.seatshare",
     [
@@ -5349,22 +5090,6 @@
     [
       "10",
       10.0
-    ]
-  ],
-  [
-    "change",
-    "variables.groups.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.groups.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5646,22 +5371,6 @@
     ]
   ],
   [
-    "change",
-    "variables.FoundedAfter1980.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.FoundedAfter1980.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.FoundedAfter1980",
     [
@@ -5901,22 +5610,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.FoundedAfter1965.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.FoundedAfter1965.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6162,22 +5855,6 @@
     ]
   ],
   [
-    "change",
-    "variables.FoundedAfter1970.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.FoundedAfter1970.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.FoundedAfter1970",
     [
@@ -6420,22 +6097,6 @@
     ]
   ],
   [
-    "change",
-    "variables.FoundedAfter1975.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.FoundedAfter1975.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.FoundedAfter1975",
     [
@@ -6641,22 +6302,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.perfemmp2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.perfemmp2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6899,30 +6544,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "fem.mandate",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "fem.mandate",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7174,22 +6795,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Female.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Female",
     [
@@ -7429,22 +7034,6 @@
     [
       "24",
       24.0
-    ]
-  ],
-  [
-    "change",
-    "variables.leaderage.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.leaderage.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8088,22 +7677,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Died.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Died.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Died",
     [
@@ -8346,22 +7919,6 @@
     ]
   ],
   [
-    "change",
-    "variables.died2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.died2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.died2",
     [
@@ -8601,22 +8158,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Party_Death.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Party_Death.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8879,30 +8420,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FFL.new",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FFL.new",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9174,30 +8691,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "AFFL.new",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "AFFL.new",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -9444,22 +8937,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10101,22 +9578,6 @@
     ]
   ],
   [
-    "change",
-    "variables.LeaderDeath.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.LeaderDeath.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.LeaderDeath",
     [
@@ -10356,22 +9817,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.LeaderYearFirst.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LeaderYearFirst.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10976,22 +10421,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.LeaderYear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LeaderYear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11619,30 +11048,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.woC.woPD",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.woC.woPD",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -11908,30 +11313,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.woC.wPD",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.woC.wPD",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12203,30 +11584,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.wC.woPD",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.wC.woPD",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -12495,30 +11852,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.wC.wPD",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "LeaderInclude.wC.wPD",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -12764,22 +12097,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.FemLeaderNum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FemLeaderNum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13061,22 +12378,6 @@
     ]
   ],
   [
-    "change",
-    "variables.NewLeader.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.NewLeader.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.NewLeader",
     [
@@ -13319,22 +12620,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rbgroup.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rbgroup.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rbgroup",
     [
@@ -13567,212 +12852,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:47",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Obs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrypartyid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Leader": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "majoritarian": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "majorparty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seatdiff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seatshare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "groups": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FoundedAfter1980": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FoundedAfter1965": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FoundedAfter1970": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FoundedAfter1975": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "perfemmp2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fem.mandate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leaderage": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Died": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "died2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Party_Death": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FFL.new": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AFFL.new": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderDeath": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderYearFirst": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderYear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderInclude.woC.woPD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderInclude.woC.wPD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderInclude.wC.woPD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LeaderInclude.wC.wPD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FemLeaderNum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NewLeader": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rbgroup": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

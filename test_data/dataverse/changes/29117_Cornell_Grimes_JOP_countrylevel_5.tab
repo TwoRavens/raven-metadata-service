@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        19
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "29117_Cornell_Grimes_JOP_countrylevel_5.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1672
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccode.median",
     [
@@ -126,22 +43,6 @@
     [
       "32",
       32
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -736,26 +637,10 @@
   ],
   [
     "change",
-    "variables.q2_b.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.q2_b.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.q2_b.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1400,22 +1285,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nresp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nresp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nresp",
     [
@@ -1685,28 +1554,12 @@
     [
       "Brazil",
       [
-        "Venezuela",
-        "Honduras",
-        "Ecuador",
-        "Suriname",
-        "Argentina"
+        "Costa Rica",
+        "Dominican Republic",
+        "Jamaica",
+        "Chile",
+        "El Salvador"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1740,11 +1593,11 @@
       [
         "fewestValues",
         [
-          "Venezuela",
-          "Honduras",
-          "Ecuador",
-          "Suriname",
-          "Argentina"
+          "Costa Rica",
+          "Dominican Republic",
+          "Jamaica",
+          "Chile",
+          "El Salvador"
         ]
       ],
       [
@@ -1770,25 +1623,25 @@
       [
         "plotValues",
         {
-          "Dominican Republic": 1,
-          "Argentina": 1,
-          "Venezuela": 1,
-          "Paraguay": 1,
-          "Peru": 1,
-          "Chile": 1,
+          "Mexico": 1,
           "Ecuador": 1,
-          "Brazil": 1,
+          "Venezuela": 1,
+          "Suriname": 1,
+          "Bolivia": 1,
           "Guatemala": 1,
+          "Brazil": 1,
+          "Uruguay": 1,
           "Colombia": 1,
           "Honduras": 1,
-          "Mexico": 1,
-          "Costa Rica": 1,
-          "Jamaica": 1,
-          "El Salvador": 1,
-          "Bolivia": 1,
-          "Suriname": 1,
+          "Peru": 1,
           "Nicaragua": 1,
-          "Uruguay": 1
+          "Argentina": 1,
+          "Paraguay": 1,
+          "El Salvador": 1,
+          "Chile": 1,
+          "Jamaica": 1,
+          "Dominican Republic": 1,
+          "Costa Rica": 1
         }
       ],
       [
@@ -1975,22 +1828,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.gd_ptss_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gd_ptss_2011.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2261,26 +2098,10 @@
   ],
   [
     "change",
-    "variables.unna_gdp_cap_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unna_gdp_cap_2011.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unna_gdp_cap_2011.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2937,26 +2758,10 @@
   ],
   [
     "change",
-    "variables.growth_gdp_cap_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.growth_gdp_cap_2011.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.growth_gdp_cap_2011.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3600,22 +3405,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rev_fh_cl_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rev_fh_cl_2011.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rev_fh_cl_2011",
     [
@@ -3889,26 +3678,10 @@
   ],
   [
     "change",
-    "variables.van_comp_2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.van_comp_2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.van_comp_2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4552,22 +4325,6 @@
     ]
   ],
   [
-    "change",
-    "variables.p_polity2_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.p_polity2_2011.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.p_polity2_2011",
     [
@@ -4847,26 +4604,10 @@
   ],
   [
     "change",
-    "variables.recel_gol_enep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.recel_gol_enep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.recel_gol_enep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5510,22 +5251,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rev_fh_pr_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rev_fh_pr_2011.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rev_fh_pr_2011",
     [
@@ -5799,26 +5524,10 @@
   ],
   [
     "change",
-    "variables.party_inst_2013.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_inst_2013.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_inst_2013.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6416,97 +6125,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:25:37",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q2_b": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nresp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gd_ptss_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unna_gdp_cap_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "growth_gdp_cap_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rev_fh_cl_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "van_comp_2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_polity2_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "recel_gol_enep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rev_fh_pr_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_inst_2013": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

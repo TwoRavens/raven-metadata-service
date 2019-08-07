@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2270
-      ],
-      [
-        "variableCount",
-        42
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IAPQ3X_country_analysis.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 845835
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccode.median",
     [
@@ -123,22 +40,6 @@
     [
       "404",
       404.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -738,22 +639,6 @@
     ]
   ],
   [
-    "change",
-    "variables.name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.name",
     [
@@ -810,32 +695,32 @@
       [
         "plotValues",
         {
-          "Liberia": 71,
           "South Africa": 71,
+          "Liberia": 71,
           "Sudan": 61,
           "Ghana": 60,
           "Guinea": 59,
-          "Central African Republic": 57,
-          "Mali": 57,
-          "Mauritania": 57,
-          "Chad": 57,
-          "Ivory Coast": 57,
-          "Benin": 57,
-          "Cameroon": 57,
-          "Nigeria": 57,
-          "Togo": 57,
           "Gabon": 57,
-          "Somalia": 57,
-          "Congo": 57,
-          "Burkina Faso": 57,
-          "Democratic Republic of the Congo": 57,
+          "Central African Republic": 57,
+          "Ivory Coast": 57,
+          "Nigeria": 57,
           "Niger": 57,
+          "Somalia": 57,
           "Senegal": 57,
-          "Tanzania": 56,
+          "Mauritania": 57,
+          "Togo": 57,
+          "Chad": 57,
+          "Mali": 57,
+          "Burkina Faso": 57,
+          "Benin": 57,
+          "Congo": 57,
+          "Cameroon": 57,
+          "Democratic Republic of the Congo": 57,
           "Sierra Leone": 56,
-          "Burundi": 55,
-          "Rwanda": 55,
+          "Tanzania": 56,
           "Uganda": 55,
+          "Rwanda": 55,
+          "Burundi": 55,
           "Kenya": 54,
           "Malawi": 53,
           "Zambia": 53,
@@ -851,8 +736,8 @@
           "Mozambique": 42,
           "Djibouti": 40,
           "Namibia": 27,
-          "Eritrea": 24,
           "ETHIOPIA POST93": 24,
+          "Eritrea": 24,
           "South Sudan": 6
         }
       ],
@@ -1031,25 +916,9 @@
     [
       "LBR",
       [
-        "LBR",
-        "ZAF"
+        "ZAF",
+        "LBR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.iso3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.iso3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1114,27 +983,27 @@
           "SDN": 61,
           "GHA": 60,
           "GIN": 59,
-          "NGA": 57,
-          "COG": 57,
-          "BEN": 57,
-          "NER": 57,
-          "MRT": 57,
-          "TCD": 57,
           "BFA": 57,
-          "TGO": 57,
-          "CMR": 57,
-          "SEN": 57,
-          "CAF": 57,
-          "CIV": 57,
-          "MLI": 57,
-          "COD": 57,
-          "GAB": 57,
+          "MRT": 57,
           "SOM": 57,
-          "TZA": 56,
+          "TGO": 57,
+          "TCD": 57,
+          "NER": 57,
+          "CMR": 57,
+          "CIV": 57,
+          "SEN": 57,
+          "MLI": 57,
+          "GAB": 57,
+          "CAF": 57,
+          "COG": 57,
+          "COD": 57,
+          "BEN": 57,
+          "NGA": 57,
           "SLE": 56,
-          "BDI": 55,
-          "RWA": 55,
+          "TZA": 56,
           "UGA": 55,
+          "RWA": 55,
+          "BDI": 55,
           "KEN": 54,
           "MWI": 53,
           "ZMB": 53,
@@ -1368,22 +1237,6 @@
     [
       "1946",
       1946.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2040,26 +1893,10 @@
   ],
   [
     "change",
-    "variables.lnrgdppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnrgdppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnrgdppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2712,26 +2549,10 @@
   ],
   [
     "change",
-    "variables.infantmort.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infantmort.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infantmort.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3376,22 +3197,6 @@
     [
       "244485",
       244485.0
-    ]
-  ],
-  [
-    "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4044,26 +3849,10 @@
   ],
   [
     "change",
-    "variables.goveffect.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.goveffect.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.goveffect.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4720,26 +4509,10 @@
   ],
   [
     "change",
-    "variables.transparency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.transparency.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.transparency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5396,26 +5169,10 @@
   ],
   [
     "change",
-    "variables.totrev.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.totrev.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.totrev.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6072,26 +5829,10 @@
   ],
   [
     "change",
-    "variables.popdensity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.popdensity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.popdensity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6745,26 +6486,10 @@
   ],
   [
     "change",
-    "variables.lnarea.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnarea.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnarea.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7415,26 +7140,10 @@
   ],
   [
     "change",
-    "variables.lon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lon.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lon.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8085,26 +7794,10 @@
   ],
   [
     "change",
-    "variables.lat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8755,26 +8448,10 @@
   ],
   [
     "change",
-    "variables.elev_mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elev_mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elev_mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9415,22 +9092,6 @@
     ]
   ],
   [
-    "change",
-    "variables.conflict.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.conflict",
     [
@@ -9670,22 +9331,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict_lag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict_lag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9931,22 +9576,6 @@
     ]
   ],
   [
-    "change",
-    "variables.preconflict.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.preconflict.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.preconflict",
     [
@@ -10188,26 +9817,10 @@
   ],
   [
     "change",
-    "variables.mconflict6190.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mconflict6190.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mconflict6190.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10847,22 +10460,6 @@
     ]
   ],
   [
-    "change",
-    "variables.conflict1200.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.conflict1200.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.conflict1200",
     [
@@ -11114,26 +10711,10 @@
   ],
   [
     "change",
-    "variables.mconflict.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mconflict.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mconflict.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11782,26 +11363,10 @@
   ],
   [
     "change",
-    "variables.mconflict1200.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mconflict1200.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mconflict1200.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12450,26 +12015,10 @@
   ],
   [
     "change",
-    "variables.best_stn0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.best_stn0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.best_stn0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13123,26 +12672,10 @@
   ],
   [
     "change",
-    "variables.best_stn1200.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.best_stn1200.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.best_stn1200.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13795,26 +13328,10 @@
   ],
   [
     "change",
-    "variables.cru_dummy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cru_dummy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cru_dummy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14468,26 +13985,10 @@
   ],
   [
     "change",
-    "variables.cru_stn1200.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cru_stn1200.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cru_stn1200.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15140,26 +14641,10 @@
   ],
   [
     "change",
-    "variables.cru_stn0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cru_stn0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cru_stn0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15816,26 +15301,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16492,26 +15961,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17168,26 +16621,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17844,26 +17281,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18516,26 +17937,10 @@
   ],
   [
     "change",
-    "variables.cru_stations_per.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cru_stations_per.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cru_stations_per.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19188,26 +18593,10 @@
   ],
   [
     "change",
-    "variables.best_stations_per.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.best_stations_per.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.best_stations_per.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19864,26 +19253,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly_reg1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly_reg1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly_reg1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20540,26 +19913,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly_reg2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly_reg2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly_reg2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21216,26 +20573,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly_reg3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly_reg3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly_reg3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21892,26 +21233,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly_reg4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly_reg4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly_reg4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22568,26 +21893,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly_mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly_mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly_mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23244,26 +22553,10 @@
   ],
   [
     "change",
-    "variables.temp_anomaly_sd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_anomaly_sd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_anomaly_sd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23917,26 +23210,10 @@
   ],
   [
     "change",
-    "variables.temp_mean_sd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.temp_mean_sd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.temp_mean_sd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24590,26 +23867,10 @@
   ],
   [
     "change",
-    "variables.reliability.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.reliability.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.reliability.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25266,26 +24527,10 @@
   ],
   [
     "change",
-    "variables.lnsignoise.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnsignoise.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnsignoise.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25883,242 +25128,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:25:49",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "iso3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnrgdppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infantmort": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "goveffect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "transparency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totrev": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "popdensity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnarea": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elev_mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conflict": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conflict_lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "preconflict": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mconflict6190": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conflict1200": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mconflict": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mconflict1200": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "best_stn0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "best_stn1200": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cru_dummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cru_stn1200": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cru_stn0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cru_stations_per": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "best_stations_per": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly_reg1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly_reg2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly_reg3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly_reg4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly_mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_anomaly_sd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "temp_mean_sd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reliability": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnsignoise": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        9
-      ],
-      [
-        "variableCount",
-        17
-      ],
-      [
-        "dataSource",
-        {
-          "name": "I4KVD1_Figure 6 Replication Excel Sheet.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 546
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.A.mode",
     [
       "Woman",
       [
         "Woman x Out-party",
-        "Woman x Out-party x Gender-salient issue",
+        "Woman x Gender-Salient Issue",
         "Out-party x Gender-salient issue",
-        "Woman",
-        "Woman x Gender-Salient Issue"
+        "Gender-salient issue",
+        "Out-party"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.A.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.A.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -144,10 +45,10 @@
         "fewestValues",
         [
           "Woman x Out-party",
-          "Woman x Out-party x Gender-salient issue",
+          "Woman x Gender-Salient Issue",
           "Out-party x Gender-salient issue",
-          "Woman",
-          "Woman x Gender-Salient Issue"
+          "Gender-salient issue",
+          "Out-party"
         ]
       ],
       [
@@ -173,12 +74,12 @@
       [
         "plotValues",
         {
-          "Gender-salient issue": 1,
-          "Out-party": 1,
-          "Woman": 1,
-          "Woman x Gender-Salient Issue": 1,
-          "Out-party x Gender-salient issue": 1,
           "Woman x Out-party x Gender-salient issue": 1,
+          "Woman": 1,
+          "Out-party": 1,
+          "Gender-salient issue": 1,
+          "Out-party x Gender-salient issue": 1,
+          "Woman x Gender-Salient Issue": 1,
           "Woman x Out-party": 1
         }
       ],
@@ -371,26 +272,10 @@
   ],
   [
     "change",
-    "variables.Coefficient.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Coefficient.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -670,22 +555,6 @@
     ]
   ],
   [
-    "change",
-    "variables.C.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.C.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.C",
     [
@@ -931,26 +800,10 @@
   ],
   [
     "change",
-    "variables.StandardError.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.StandardError.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1236,22 +1089,6 @@
     ]
   ],
   [
-    "change",
-    "variables.E.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.E.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.E",
     [
@@ -1481,22 +1318,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1732,22 +1553,6 @@
     ]
   ],
   [
-    "change",
-    "variables.G.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.G.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.G",
     [
@@ -1977,22 +1782,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.H.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.H.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2228,22 +2017,6 @@
     ]
   ],
   [
-    "change",
-    "variables.I.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.I.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.I",
     [
@@ -2442,22 +2215,6 @@
     ]
   ],
   [
-    "change",
-    "variables.J.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.J.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.J",
     [
@@ -2643,22 +2400,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.K.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.K.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2850,22 +2591,6 @@
     ]
   ],
   [
-    "change",
-    "variables.L.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.L.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.L",
     [
@@ -3051,22 +2776,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3258,22 +2967,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N",
     [
@@ -3462,22 +3155,6 @@
     ]
   ],
   [
-    "change",
-    "variables.O.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.O.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.O",
     [
@@ -3663,22 +3340,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3913,26 +3574,10 @@
   ],
   [
     "change",
-    "variables.Q.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Q.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4122,117 +3767,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:25:14",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "A": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Coefficient": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "C": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "StandardError": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "E": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "G": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "H": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "I": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "J": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "K": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "O": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

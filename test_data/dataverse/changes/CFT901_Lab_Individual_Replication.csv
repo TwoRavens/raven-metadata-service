@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        333
-      ],
-      [
-        "variableCount",
-        33
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CFT901_Lab_Individual_Replication.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 29945
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.obsvid.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.obsvid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.obsvid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -789,22 +690,6 @@
     ]
   ],
   [
-    "change",
-    "variables.subjectID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.subjectID.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.subjectID",
     [
@@ -1407,26 +1292,10 @@
     [
       "A",
       [
-        "A",
         "F",
+        "A",
         "B"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.subjectletter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.subjectletter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1487,12 +1356,12 @@
         "plotValues",
         {
           "B": 38,
-          "F": 38,
           "A": 38,
-          "D": 37,
+          "F": 38,
           "I": 37,
-          "E": 37,
           "H": 37,
+          "D": 37,
+          "E": 37,
           "G": 36,
           "C": 35
         }
@@ -1675,22 +1544,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.groupid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.groupid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2338,22 +2191,6 @@
     ]
   ],
   [
-    "change",
-    "variables.session.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.session.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.session",
     [
@@ -2916,22 +2753,6 @@
     ]
   ],
   [
-    "change",
-    "variables.round.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.round.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.round",
     [
@@ -3177,22 +2998,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.scenario.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.scenario.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3444,22 +3249,6 @@
     ]
   ],
   [
-    "change",
-    "variables.privsigmaj.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.privsigmaj.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.privsigmaj",
     [
@@ -3699,22 +3488,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.fexp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3960,22 +3733,6 @@
     ]
   ],
   [
-    "change",
-    "variables.whiteexp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.whiteexp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.whiteexp",
     [
@@ -4215,22 +3972,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.asianexp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.asianexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4476,22 +4217,6 @@
     ]
   ],
   [
-    "change",
-    "variables.otherexp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.otherexp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.otherexp",
     [
@@ -4731,22 +4456,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.leaning.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.leaning.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4992,22 +4701,6 @@
     ]
   ],
   [
-    "change",
-    "variables.expert.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.expert.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.expert",
     [
@@ -5247,22 +4940,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5517,22 +5194,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5796,22 +5457,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -6063,26 +5708,10 @@
   ],
   [
     "change",
-    "variables.prepubchance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prepubchance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prepubchance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6735,26 +6364,10 @@
   ],
   [
     "change",
-    "variables.postpubchance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.postpubchance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.postpubchance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7407,26 +7020,10 @@
   ],
   [
     "change",
-    "variables.difpubchance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.difpubchance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.difpubchance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8079,26 +7676,10 @@
   ],
   [
     "change",
-    "variables.preprivchance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.preprivchance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.preprivchance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8751,26 +8332,10 @@
   ],
   [
     "change",
-    "variables.postprivchance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.postprivchance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.postprivchance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9423,26 +8988,10 @@
   ],
   [
     "change",
-    "variables.difprivchance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.difprivchance.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.difprivchance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10086,22 +9635,6 @@
     ]
   ],
   [
-    "change",
-    "variables.condMinMajAll.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.condMinMajAll.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.condMinMajAll",
     [
@@ -10350,22 +9883,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rdum1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rdum1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rdum1",
     [
@@ -10605,22 +10122,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.rdum2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rdum2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10866,22 +10367,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rdum3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rdum3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rdum3",
     [
@@ -11121,22 +10606,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.sdum1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sdum1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11382,22 +10851,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sdum2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sdum2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sdum2",
     [
@@ -11637,22 +11090,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.sdum3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sdum3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11898,22 +11335,6 @@
     ]
   ],
   [
-    "change",
-    "variables.racewhitedum.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.racewhitedum.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.racewhitedum",
     [
@@ -12153,22 +11574,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.raceasiandum.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.raceasiandum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12872,197 +12277,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:03",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "obsvid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "subjectID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "subjectletter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "groupid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "session": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "round": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "scenario": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "privsigmaj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whiteexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "asianexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "otherexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leaning": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "expert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prepubchance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "postpubchance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "difpubchance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "preprivchance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "postprivchance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "difprivchance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "condMinMajAll": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rdum1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rdum2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rdum3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sdum1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sdum2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sdum3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "racewhitedum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "raceasiandum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

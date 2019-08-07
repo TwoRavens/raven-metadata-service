@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        348
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ML0PTA_Annual.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 22586
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.YEAR.median",
     [
@@ -126,22 +43,6 @@
     [
       "1945",
       1945
-    ]
-  ],
-  [
-    "change",
-    "variables.YEAR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.YEAR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "Belgium",
       [
-        "Belgium",
         "Denmark             ",
+        "Belgium",
         "UK",
         "Sweden",
-        "US"
+        "Canada              "
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "Belgium",
           "Denmark             ",
+          "Belgium",
           "UK",
           "Sweden",
-          "US"
+          "Canada              "
         ]
       ],
       [
@@ -833,12 +718,12 @@
       [
         "plotValues",
         {
-          "Canada              ": 58,
           "US": 58,
+          "Canada              ": 58,
           "Sweden": 58,
           "UK": 58,
-          "Denmark             ": 58,
-          "Belgium": 58
+          "Belgium": 58,
+          "Denmark             ": 58
         }
       ],
       [
@@ -1028,26 +913,10 @@
   ],
   [
     "change",
-    "variables.CAPFORM.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CAPFORM.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CAPFORM.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1704,26 +1573,10 @@
   ],
   [
     "change",
-    "variables.CONSO.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CONSO.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CONSO.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2380,26 +2233,10 @@
   ],
   [
     "change",
-    "variables.GDP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3052,26 +2889,10 @@
   ],
   [
     "change",
-    "variables.GDP1995.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP1995.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP1995.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3724,26 +3545,10 @@
   ],
   [
     "change",
-    "variables.GNP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GNP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GNP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4399,26 +4204,10 @@
   ],
   [
     "change",
-    "variables.GOV.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GOV.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GOV.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5072,26 +4861,10 @@
   ],
   [
     "change",
-    "variables.INVENT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.INVENT.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.INVENT.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5745,26 +5518,10 @@
   ],
   [
     "change",
-    "variables.POPU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.POPU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.POPU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6362,82 +6119,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:23",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "YEAR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CAPFORM": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CONSO": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP1995": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GNP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GOV": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "INVENT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "POPU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

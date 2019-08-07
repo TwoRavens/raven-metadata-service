@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        28
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SGB8FE_policy_rate_validation.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1930
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Number.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -704,28 +605,12 @@
     [
       "guynn",
       [
-        "warsh",
+        "broaddus",
         "pianalto",
-        "kohn",
-        "kroszner",
-        "kelley"
+        "mishkin",
+        "jordan",
+        "olson"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -759,11 +644,11 @@
       [
         "fewestValues",
         [
-          "warsh",
+          "broaddus",
           "pianalto",
-          "kohn",
-          "kroszner",
-          "kelley"
+          "mishkin",
+          "jordan",
+          "olson"
         ]
       ],
       [
@@ -789,34 +674,34 @@
       [
         "plotValues",
         {
-          "jordan": 1,
-          "yellen": 1,
-          "rivlin": 1,
-          "bernanke": 1,
-          "parry": 1,
-          "stern": 1,
-          "gramlich": 1,
-          "santomero": 1,
-          "hoenig": 1,
-          "mcdonough": 1,
-          "ferguson": 1,
           "bies": 1,
-          "geithner": 1,
-          "mcteer": 1,
           "meyer": 1,
-          "olson": 1,
-          "broaddus": 1,
-          "phillips": 1,
-          "poole": 1,
           "minehan": 1,
-          "moskow": 1,
-          "mishkin": 1,
-          "guynn": 1,
-          "kelley": 1,
           "kroszner": 1,
+          "yellen": 1,
+          "mcdonough": 1,
+          "warsh": 1,
+          "hoenig": 1,
           "kohn": 1,
+          "gramlich": 1,
+          "stern": 1,
+          "geithner": 1,
+          "phillips": 1,
+          "guynn": 1,
+          "rivlin": 1,
+          "santomero": 1,
+          "ferguson": 1,
+          "bernanke": 1,
+          "moskow": 1,
+          "mcteer": 1,
+          "parry": 1,
+          "kelley": 1,
+          "poole": 1,
+          "olson": 1,
+          "jordan": 1,
+          "mishkin": 1,
           "pianalto": 1,
-          "warsh": 1
+          "broaddus": 1
         }
       ],
       [
@@ -978,25 +863,9 @@
     [
       "President",
       [
-        "President",
-        "Governor"
+        "Governor",
+        "President"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Position.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Position.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1030,8 +899,8 @@
       [
         "fewestValues",
         [
-          "President",
-          "Governor"
+          "Governor",
+          "President"
         ]
       ],
       [
@@ -1057,8 +926,8 @@
       [
         "plotValues",
         {
-          "Governor": 14,
-          "President": 14
+          "President": 14,
+          "Governor": 14
         }
       ],
       [
@@ -1194,27 +1063,11 @@
     [
       "Boston",
       [
-        "Boston",
         "New York",
+        "Boston",
         "Richmond",
         "Chicago"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.District.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.District.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1248,11 +1101,11 @@
       [
         "fewestValues",
         [
-          "Minneapolis",
           "Cleveland",
-          "San Francisco",
-          "Philadelphia",
-          "Dallas"
+          "Dallas",
+          "St. Louis",
+          "Atlanta",
+          "Minneapolis"
         ]
       ],
       [
@@ -1280,16 +1133,16 @@
         {
           "Chicago": 3,
           "Richmond": 3,
-          "New York": 3,
           "Boston": 3,
-          "St. Louis": 2,
-          "Atlanta": 2,
-          "Kansas city": 2,
-          "Dallas": 2,
+          "New York": 3,
           "Philadelphia": 2,
           "San Francisco": 2,
-          "Cleveland": 2,
-          "Minneapolis": 2
+          "Kansas city": 2,
+          "Minneapolis": 2,
+          "Atlanta": 2,
+          "St. Louis": 2,
+          "Dallas": 2,
+          "Cleveland": 2
         }
       ],
       [
@@ -1483,26 +1336,10 @@
   ],
   [
     "change",
-    "variables.IR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.IR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.IR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2186,35 +2023,11 @@
     [
       "variables",
       "IR.Median",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "IR.Median",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "IR.Median",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2904,35 +2717,11 @@
     [
       "variables",
       "IR.STD",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "IR.STD",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "IR.STD",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3619,35 +3408,11 @@
     [
       "variables",
       "Pref.Policy",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pref.Policy",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pref.Policy",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4335,35 +4100,11 @@
     [
       "variables",
       "Pref.Median",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pref.Median",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pref.Median",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5053,35 +4794,11 @@
     [
       "variables",
       "Pref.STD",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pref.STD",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pref.STD",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5685,82 +5402,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:32",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Position": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "District": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IR.Median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IR.STD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pref.Policy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pref.Median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pref.STD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

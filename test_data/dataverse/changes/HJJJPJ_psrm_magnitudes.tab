@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        29
-      ],
-      [
-        "variableCount",
-        16
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HJJJPJ_psrm_magnitudes.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3017
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "Australia",
       [
-        "Italy",
-        "Belgium",
-        "Austria",
-        "Latvia",
-        "Norway"
+        "Iceland",
+        "France",
+        "Ireland",
+        "Luxembourg",
+        "Sweden"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Italy",
-          "Belgium",
-          "Austria",
-          "Latvia",
-          "Norway"
+          "Iceland",
+          "France",
+          "Ireland",
+          "Luxembourg",
+          "Sweden"
         ]
       ],
       [
@@ -173,35 +74,35 @@
       [
         "plotValues",
         {
-          "United States": 1,
-          "Denmark": 1,
-          "Finland": 1,
-          "Spain": 1,
-          "Iceland": 1,
-          "Hungary": 1,
-          "Ireland": 1,
-          "Australia": 1,
-          "Sweden": 1,
-          "Czechoslovakia": 1,
-          "New Zealand": 1,
-          "Greece": 1,
-          "Poland": 1,
-          "Germany": 1,
-          "Italy": 1,
           "Japan": 1,
-          "France": 1,
+          "Canada": 1,
           "Netherlands": 1,
-          "Switzerland": 1,
+          "Finland": 1,
+          "Belgium": 1,
+          "Greece": 1,
           "United Kingdom": 1,
-          "Luxembourg": 1,
-          "Estonia": 1,
-          "Romania": 1,
-          "Norway": 1,
+          "Spain": 1,
+          "United States": 1,
+          "Germany": 1,
           "Latvia": 1,
           "Austria": 1,
+          "Hungary": 1,
+          "New Zealand": 1,
           "Lithuania": 1,
-          "Belgium": 1,
-          "Canada": 1
+          "Switzerland": 1,
+          "Poland": 1,
+          "Romania": 1,
+          "Italy": 1,
+          "Czechoslovakia": 1,
+          "Estonia": 1,
+          "Australia": 1,
+          "Norway": 1,
+          "Denmark": 1,
+          "Luxembourg": 1,
+          "Sweden": 1,
+          "Ireland": 1,
+          "France": 1,
+          "Iceland": 1
         }
       ],
       [
@@ -366,22 +267,6 @@
       [
         "parliamentary"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.procedure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.procedure.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -585,22 +470,6 @@
     ]
   ],
   [
-    "change",
-    "variables.electoralsystem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.electoralsystem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.electoralsystem",
     [
@@ -631,11 +500,11 @@
       [
         "fewestValues",
         [
-          "SMD-preferential",
+          "PR, SMD-majority",
           "PR, MMD-majority",
-          "PR, upper tier (D)",
           "SMD-plurality, PR for upper tier (N)",
-          "PR, SMD-majority"
+          "PR, upper tier (D)",
+          "SMD-preferential"
         ]
       ],
       [
@@ -664,12 +533,12 @@
           "PR": 13,
           "PR, upper tier (N)": 4,
           "SMD-plurality": 3,
-          "PR, SMD-plurality": 2,
           "SMD/MMD-plurality": 2,
-          "SMD-preferential": 1,
-          "PR, SMD-majority": 1,
+          "PR, SMD-plurality": 2,
           "PR, MMD-majority": 1,
           "PR, upper tier (D)": 1,
+          "SMD-preferential": 1,
+          "PR, SMD-majority": 1,
           "SMD-plurality, PR for upper tier (N)": 1
         }
       ],
@@ -819,22 +688,6 @@
     ]
   ],
   [
-    "change",
-    "variables.yearofreformofobservation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.yearofreformofobservation.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.yearofreformofobservation",
     [
@@ -865,11 +718,11 @@
       [
         "fewestValues",
         [
+          "[1921]",
           "1922",
-          "1926",
-          "1931",
+          "1915",
           "1921",
-          "[1920]"
+          "1926"
         ]
       ],
       [
@@ -899,18 +752,18 @@
           "1920": 5,
           "1918": 3,
           "[1922]": 2,
-          "[1919]": 1,
-          "1909": 1,
-          "1907": 1,
-          "1915": 1,
-          "[1921]": 1,
-          "1900": 1,
-          "1925": 1,
-          "1926": 1,
-          "[1920]": 1,
           "1921": 1,
+          "1907": 1,
+          "1925": 1,
+          "[1919]": 1,
+          "[1920]": 1,
           "1931": 1,
-          "1922": 1
+          "1909": 1,
+          "1926": 1,
+          "1900": 1,
+          "1915": 1,
+          "1922": 1,
+          "[1921]": 1
         }
       ],
       [
@@ -1110,26 +963,10 @@
   ],
   [
     "change",
-    "variables.populationmill.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.populationmill.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.populationmill.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1773,22 +1610,6 @@
     ]
   ],
   [
-    "change",
-    "variables.seatsbefore.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seatsbefore.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.seatsbefore",
     [
@@ -2364,22 +2185,6 @@
     [
       "42",
       42.0
-    ]
-  ],
-  [
-    "change",
-    "variables.seatsafter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seatsafter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2962,22 +2767,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.districtspost_allocation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.districtspost_allocation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3570,22 +3359,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.districtspost_nomination.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.districtspost_nomination.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4194,26 +3967,10 @@
   ],
   [
     "change",
-    "variables.magavg_allocation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.magavg_allocation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.magavg_allocation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4866,26 +4623,10 @@
   ],
   [
     "change",
-    "variables.magavg_nomination.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.magavg_nomination.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.magavg_nomination.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5529,22 +5270,6 @@
     ]
   ],
   [
-    "change",
-    "variables.magmedian_nomination.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.magmedian_nomination.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.magmedian_nomination",
     [
@@ -5845,22 +5570,6 @@
     ]
   ],
   [
-    "change",
-    "variables.magmin_nomination.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.magmin_nomination.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.magmin_nomination",
     [
@@ -6152,22 +5861,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.magmax_nomination.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.magmax_nomination.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6746,22 +6439,6 @@
     [
       "4",
       4.0
-    ]
-  ],
-  [
-    "change",
-    "variables.popavg_allocation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.popavg_allocation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7361,22 +7038,6 @@
     ]
   ],
   [
-    "change",
-    "variables.popavg_nomination.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.popavg_nomination.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.popavg_nomination",
     [
@@ -7927,112 +7588,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:45",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "procedure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "electoralsystem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "yearofreformofobservation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "populationmill": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seatsbefore": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seatsafter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "districtspost_allocation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "districtspost_nomination": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "magavg_allocation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "magavg_nomination": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "magmedian_nomination": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "magmin_nomination": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "magmax_nomination": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "popavg_allocation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "popavg_nomination": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1150
-      ],
-      [
-        "variableCount",
-        23
-      ],
-      [
-        "dataSource",
-        {
-          "name": "8JW4Q7_data.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 302036
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cod.mode",
     [
       "AG",
       [
-        "AR",
-        "FR",
-        "SZ",
-        "GL",
-        "BS"
+        "ZH",
+        "BE",
+        "NW",
+        "BS",
+        "TG"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cod.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cod.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "AR",
-          "FR",
-          "SZ",
-          "GL",
-          "BS"
+          "ZH",
+          "BE",
+          "NW",
+          "BS",
+          "TG"
         ]
       ],
       [
@@ -173,31 +74,31 @@
       [
         "plotValues",
         {
-          "BL": 46,
-          "ZG": 46,
-          "LU": 46,
-          "AG": 46,
-          "TG": 46,
-          "SH": 46,
-          "NE": 46,
-          "NW": 46,
-          "VD": 46,
-          "UR": 46,
-          "BE": 46,
-          "SG": 46,
-          "GR": 46,
-          "GE": 46,
-          "SO": 46,
-          "ZH": 46,
-          "OW": 46,
-          "VS": 46,
-          "AI": 46,
-          "TI": 46,
-          "BS": 46,
-          "GL": 46,
           "SZ": 46,
+          "GE": 46,
+          "VD": 46,
+          "GR": 46,
+          "UR": 46,
+          "TI": 46,
+          "SG": 46,
+          "GL": 46,
+          "ZG": 46,
           "FR": 46,
-          "AR": 46
+          "BL": 46,
+          "OW": 46,
+          "AG": 46,
+          "SO": 46,
+          "LU": 46,
+          "NE": 46,
+          "SH": 46,
+          "AR": 46,
+          "AI": 46,
+          "VS": 46,
+          "TG": 46,
+          "BS": 46,
+          "NW": 46,
+          "BE": 46,
+          "ZH": 46
         }
       ],
       [
@@ -394,22 +295,6 @@
     [
       "1930",
       1930
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1057,26 +942,10 @@
   ],
   [
     "change",
-    "variables.infantmor.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infantmor.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infantmor.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1733,26 +1602,10 @@
   ],
   [
     "change",
-    "variables.ind_sh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ind_sh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_sh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2405,26 +2258,10 @@
   ],
   [
     "change",
-    "variables.lesocsppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lesocsppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lesocsppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3078,26 +2915,10 @@
   ],
   [
     "change",
-    "variables.diflesocsppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diflesocsppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diflesocsppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3750,26 +3571,10 @@
   ],
   [
     "change",
-    "variables.socsppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.socsppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.socsppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4413,22 +4218,6 @@
     ]
   ],
   [
-    "change",
-    "variables.conc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.conc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.conc",
     [
@@ -4668,22 +4457,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.concalt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.concalt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4954,26 +4727,10 @@
   ],
   [
     "change",
-    "variables.concmigou.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.concmigou.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.concmigou.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5630,26 +5387,10 @@
   ],
   [
     "change",
-    "variables.concmigin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.concmigin.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.concmigin.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6306,26 +6047,10 @@
   ],
   [
     "change",
-    "variables.depratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.depratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.depratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6978,26 +6703,10 @@
   ],
   [
     "change",
-    "variables.urban.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urban.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urban.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7650,26 +7359,10 @@
   ],
   [
     "change",
-    "variables.lnpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8326,26 +8019,10 @@
   ],
   [
     "change",
-    "variables.lnPCfedsub.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnPCfedsub.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnPCfedsub.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9002,26 +8679,10 @@
   ],
   [
     "change",
-    "variables.sigperpop20_gini.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sigperpop20_gini.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sigperpop20_gini.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9665,22 +9326,6 @@
     ]
   ],
   [
-    "change",
-    "variables.numpar.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.numpar.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.numpar",
     [
@@ -9950,26 +9595,10 @@
   ],
   [
     "change",
-    "variables.left.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.left.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.left.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10275,22 +9904,6 @@
     ]
   ],
   [
-    "change",
-    "variables.femsuff.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.femsuff.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.femsuff",
     [
@@ -10533,22 +10146,6 @@
     ]
   ],
   [
-    "change",
-    "variables.PR_dummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.PR_dummy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.PR_dummy",
     [
@@ -10788,22 +10385,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.Mandbugref.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Mandbugref.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11062,26 +10643,10 @@
   ],
   [
     "change",
-    "variables.splag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.splag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.splag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12183,147 +11748,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:31:50",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cod": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infantmor": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_sh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lesocsppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diflesocsppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "socsppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "concalt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "concmigou": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "concmigin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "depratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urban": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnPCfedsub": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sigperpop20_gini": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "numpar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "femsuff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PR_dummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Mandbugref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "splag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

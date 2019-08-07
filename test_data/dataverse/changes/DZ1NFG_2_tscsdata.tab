@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        552
-      ],
-      [
-        "variableCount",
-        22
-      ],
-      [
-        "dataSource",
-        {
-          "name": "DZ1NFG_2_tscsdata.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 77199
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.countryname.mode",
     [
       "Belgium",
       [
-        "Italy",
-        "Germany",
-        "Belgium",
         "Luxembourg",
-        "Denmark"
+        "Denmark",
+        "Netherlands",
+        "Italy",
+        "Germany"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.countryname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,10 +44,10 @@
       [
         "fewestValues",
         [
-          "Slovenia",
           "Romania",
-          "Bulgaria",
-          "Poland"
+          "Slovenia",
+          "Poland",
+          "Bulgaria"
         ]
       ],
       [
@@ -172,23 +73,23 @@
       [
         "plotValues",
         {
-          "France": 44,
           "United Kingdom": 44,
-          "Netherlands": 44,
-          "Denmark": 44,
-          "Luxembourg": 44,
+          "France": 44,
           "Belgium": 44,
           "Germany": 44,
           "Italy": 44,
+          "Netherlands": 44,
+          "Denmark": 44,
+          "Luxembourg": 44,
           "Greece": 37,
-          "Portugal": 32,
           "Spain": 32,
+          "Portugal": 32,
           "Finland": 24,
           "Sweden": 23,
-          "Poland": 13,
           "Bulgaria": 13,
-          "Romania": 13,
-          "Slovenia": 13
+          "Poland": 13,
+          "Slovenia": 13,
+          "Romania": 13
         }
       ],
       [
@@ -377,22 +278,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -970,22 +855,6 @@
     [
       "1973",
       1973.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1617,22 +1486,6 @@
     ]
   ],
   [
-    "change",
-    "variables.decade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.decade.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.decade",
     [
@@ -1894,22 +1747,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cltreat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cltreat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2566,26 +2403,10 @@
   ],
   [
     "change",
-    "variables.polarization.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polarization.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polarization.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3242,26 +3063,10 @@
   ],
   [
     "change",
-    "variables.lpolarization.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lpolarization.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lpolarization.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3918,26 +3723,10 @@
   ],
   [
     "change",
-    "variables.disagreement.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.disagreement.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.disagreement.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4581,22 +4370,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rtreatment.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rtreatment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rtreatment",
     [
@@ -4839,22 +4612,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ltreatment.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ltreatment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ltreatment",
     [
@@ -5094,22 +4851,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gtreatment.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gtreatment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5368,26 +5109,10 @@
   ],
   [
     "change",
-    "variables.gdpgrowth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpgrowth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpgrowth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6040,26 +5765,10 @@
   ],
   [
     "change",
-    "variables.unemployment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemployment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemployment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6712,26 +6421,10 @@
   ],
   [
     "change",
-    "variables.lunemployment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lunemployment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lunemployment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7388,26 +7081,10 @@
   ],
   [
     "change",
-    "variables.parpol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.parpol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.parpol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8060,26 +7737,10 @@
   ],
   [
     "change",
-    "variables.lparpol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lparpol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lparpol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8732,26 +8393,10 @@
   ],
   [
     "change",
-    "variables.enp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.enp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.enp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9401,26 +9046,10 @@
   ],
   [
     "change",
-    "variables.lenp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lenp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lenp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10058,22 +9687,6 @@
     [
       "-44",
       -44.0
-    ]
-  ],
-  [
-    "change",
-    "variables.treatplotter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.treatplotter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10717,22 +10330,6 @@
     ]
   ],
   [
-    "change",
-    "variables.threshold.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.threshold.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.threshold",
     [
@@ -10986,26 +10583,10 @@
   ],
   [
     "change",
-    "variables.treatedpol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.treatedpol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.treatedpol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11300,26 +10881,10 @@
   ],
   [
     "change",
-    "variables.controlpol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.controlpol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.controlpol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11556,142 +11121,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:11",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "countryname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cltreat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polarization": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lpolarization": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "disagreement": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rtreatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ltreatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gtreatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpgrowth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemployment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lunemployment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "parpol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lparpol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "enp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lenp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatplotter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "threshold": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatedpol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "controlpol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

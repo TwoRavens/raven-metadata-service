@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2938
-      ],
-      [
-        "variableCount",
-        28
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ZT7SIU_PSRM Dyad.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 362487
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccode1.median",
     [
@@ -122,22 +39,6 @@
     [
       "78",
       78
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -759,22 +660,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ccode2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ccode2",
     [
@@ -1357,22 +1242,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -1433,11 +1302,11 @@
           "U. ARAB EMIRATES": 210,
           "INDONESIA": 190,
           "OMAN": 168,
-          "IRAN": 126,
-          "LAOS": 126,
           "AFGHANISTAN": 126,
+          "LAOS": 126,
           "BAHRAIN": 126,
           "Qatar": 126,
+          "IRAN": 126,
           "IRAQ": 105,
           "VIETNAM": 105,
           "BURMA": 105,
@@ -1445,25 +1314,25 @@
           "NEPAL": 88,
           "KAZAKHSTAN": 80,
           "CAMBODIA": 63,
-          "GEORGIA": 60,
           "TAJIKISTAN": 60,
           "UZBEKISTAN": 60,
+          "GEORGIA": 60,
           "PAKISTAN": 54,
           "KYRGYZSTAN": 50,
           "MONGOLIA": 48,
-          "LEBANON": 42,
-          "SYRIA": 42,
           "SINGAPORE": 42,
-          "MALAYSIA": 42,
-          "W. SAMOA": 42,
           "FIJI": 42,
+          "SYRIA": 42,
+          "LEBANON": 42,
+          "W. SAMOA": 42,
+          "MALAYSIA": 42,
           "AZERBAIJAN": 40,
           "PHILIPPINES": 30,
           "TURKMENISTAN": 30,
           "SRI LANKA": 27,
           "BANGLADESH": 22,
-          "CHINA": 21,
           "JORDAN": 21,
+          "CHINA": 21,
           "YEMEN": 20,
           "TAIWAN": 16,
           "THAILAND": 12,
@@ -1649,22 +1518,6 @@
     ]
   ],
   [
-    "change",
-    "variables.majority.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.majority.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.majority",
     [
@@ -1734,17 +1587,17 @@
           "Kazakh": 80,
           "Chinese": 79,
           "Khmer": 63,
+          "Tajik": 60,
           "Georgian": 60,
           "Uzbek": 60,
-          "Tajik": 60,
           "Urdu": 54,
           "Kyrgyz": 50,
           "Mongol": 48,
           "Samoan": 42,
           "Fijian": 42,
           "Azeri": 40,
-          "Turkmen": 30,
           "Tagalog": 30,
+          "Turkmen": 30,
           "Sinhalese": 27,
           "Bengali": 22,
           "Thai": 12,
@@ -1919,22 +1772,6 @@
     ]
   ],
   [
-    "change",
-    "variables.minority.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.minority.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.minority",
     [
@@ -1998,8 +1835,8 @@
           "English": 101,
           "Filipino": 84,
           "Russian": 70,
-          "Turkmen": 63,
           "Urdu": 63,
+          "Turkmen": 63,
           "Armenian": 62,
           "Uzbek": 61,
           "Azeri": 55,
@@ -2007,99 +1844,99 @@
           "Tamil": 51,
           "Khmer": 46,
           "Malay": 44,
-          "Hmong": 42,
-          "Thai": 42,
           "Bengali": 42,
+          "Hmong": 42,
           "Sinhalese": 42,
+          "Thai": 42,
           "Tatar": 40,
           "Kazakh": 32,
-          "Telangu": 30,
-          "Sindhi": 30,
-          "Brahui": 30,
-          "Kyrgyz": 30,
           "Punjabi": 30,
+          "Sindhi": 30,
+          "Telangu": 30,
+          "Brahui": 30,
           "Pashtu": 30,
-          "Dzalakha": 21,
+          "Kyrgyz": 30,
+          "Hindustani": 21,
+          "Arakan/Rohingya": 21,
+          "Phuan": 21,
+          "Hazara": 21,
           "Shan": 21,
-          "Gurung": 21,
+          "Karen": 21,
+          "Tshangla": 21,
+          "Circassian/Kabardian": 21,
+          "Kurtokha": 21,
+          "Hindi": 21,
+          "Arabic": 21,
+          "Polynesian": 21,
+          "Zhouang": 21,
+          "Vietnamese": 21,
           "Swahili": 21,
+          "Nepali": 21,
           "Assamese": 21,
+          "Gurung": 21,
+          "Kuy": 21,
+          "Bumthangka": 21,
           "Kachin/Jingpho": 21,
+          "Dari": 21,
+          "Assyrian": 21,
           "Gujarati": 21,
+          "Yao": 21,
+          "Khengkha": 21,
+          "Mon": 21,
+          "Cham": 21,
+          "Luri": 21,
           "Lepcha": 21,
           "Brokpake": 21,
+          "Mehri": 21,
+          "Dzalakha": 21,
           "Limbu": 21,
           "So": 21,
-          "Assyrian": 21,
-          "Mon": 21,
-          "Zhouang": 21,
-          "Hazara": 21,
-          "Vietnamese": 21,
-          "Luri": 21,
-          "Yao": 21,
-          "Dari": 21,
-          "Polynesian": 21,
-          "Bumthangka": 21,
-          "Arakan/Rohingya": 21,
-          "Hindustani": 21,
-          "Mehri": 21,
-          "Cham": 21,
-          "Arabic": 21,
-          "Tshangla": 21,
-          "Kuy": 21,
-          "Hindi": 21,
-          "Kurtokha": 21,
-          "Nepali": 21,
-          "Phuan": 21,
-          "Karen": 21,
-          "Circassian/Kabardian": 21,
-          "Khengkha": 21,
           "Ukrainian": 20,
           "German": 20,
-          "Pendalungan": 19,
-          "Bugis": 19,
-          "Sundanese": 19,
-          "Minangkabau": 19,
-          "Banjar": 19,
-          "Sasak": 19,
-          "Acehnese": 19,
           "Balinese": 19,
           "Madurese": 19,
-          "Bisyaya/Tutong": 17,
+          "Pendalungan": 19,
+          "Sundanese": 19,
+          "Bugis": 19,
+          "Acehnese": 19,
+          "Minangkabau": 19,
+          "Sasak": 19,
+          "Banjar": 19,
           "Lun Bawan/Lundaya": 17,
           "Iban": 17,
           "Korean": 17,
+          "Bisyaya/Tutong": 17,
           "Aboriginese": 16,
-          "Buriat": 12,
           "Kalymyk": 12,
-          "Maithili": 11,
-          "Bhojpouri": 11,
-          "Awadhi": 11,
-          "Magar": 11,
-          "Limbu/Yakha": 11,
-          "Tamang": 11,
+          "Buriat": 12,
           "Sylhetti": 11,
-          "Tharu": 11,
+          "Maithili": 11,
+          "Tamang": 11,
           "Newari": 11,
+          "Magar": 11,
+          "Awadhi": 11,
+          "Bhojpouri": 11,
+          "Limbu/Yakha": 11,
+          "Tharu": 11,
           "Chittagonien": 11,
-          "Abkhazian": 10,
           "Tajik": 10,
-          "Lezgin": 10,
-          "Karakalpak": 10,
-          "Pamir": 10,
-          "Talysh": 10,
-          "Greek": 10,
           "Belarussian": 10,
           "Ossetian": 10,
           "Uyghur": 10,
+          "Pamir": 10,
           "Somali": 10,
+          "Karakalpak": 10,
+          "Abkhazian": 10,
+          "Greek": 10,
+          "Lezgin": 10,
           "Hebrew": 10,
+          "Talysh": 10,
           "Hindko": 9,
-          "Bicolano": 6,
-          "Pampangan": 6,
           "Ilocano": 6,
-          "Visayan": 6,
+          "Pampangan": 6,
           "Pangasinan": 6,
+          "Visayan": 6,
+          "Bicolano": 6,
           "Turkish": 3
         }
       ],
@@ -2378,22 +2215,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.mincode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mincode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2701,22 +2522,6 @@
     [
       "781",
       781.0
-    ]
-  ],
-  [
-    "change",
-    "variables.c1mincode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.c1mincode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3358,22 +3163,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -3954,22 +3743,6 @@
     [
       "78198001",
       78198001
-    ]
-  ],
-  [
-    "change",
-    "variables.cmyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cmyear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4613,22 +4386,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educ_dj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educ_dj.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educ_dj",
     [
@@ -4877,22 +4634,6 @@
     ]
   ],
   [
-    "change",
-    "variables.educ_dj1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educ_dj1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.educ_dj1",
     [
@@ -5138,22 +4879,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lparty2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lparty2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5414,26 +5139,10 @@
   ],
   [
     "change",
-    "variables.minsize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.minsize.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.minsize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6073,22 +5782,6 @@
     ]
   ],
   [
-    "change",
-    "variables.immigrant.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.immigrant.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.immigrant",
     [
@@ -6328,22 +6021,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ecdifxx.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ecdifxx.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6604,26 +6281,10 @@
   ],
   [
     "change",
-    "variables.majsize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.majsize.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.majsize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7263,22 +6924,6 @@
     ]
   ],
   [
-    "change",
-    "variables.legalbrit.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.legalbrit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.legalbrit",
     [
@@ -7518,22 +7163,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.legalfra.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.legalfra.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7792,26 +7421,10 @@
   ],
   [
     "change",
-    "variables.gdppc10k.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdppc10k.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdppc10k.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8455,22 +8068,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mil.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mil.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mil",
     [
@@ -8710,22 +8307,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.mon.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mon.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8971,22 +8552,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mil_pers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mil_pers.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mil_pers",
     [
@@ -9216,22 +8781,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pers.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9477,22 +9026,6 @@
     ]
   ],
   [
-    "change",
-    "variables.part_mil.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.part_mil.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.part_mil",
     [
@@ -9722,22 +9255,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.part_pers.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.part_pers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9980,22 +9497,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.part.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.part.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10250,26 +9751,10 @@
   ],
   [
     "change",
-    "variables.lnumlang.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnumlang.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnumlang.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10557,22 +10042,6 @@
     ]
   ],
   [
-    "change",
-    "variables.all_three.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.all_three.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.all_three",
     [
@@ -10769,172 +10238,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:29",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccode1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "majority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "minority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mincode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "c1mincode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educ_dj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educ_dj1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lparty2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "minsize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "immigrant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ecdifxx": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "majsize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legalbrit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legalfra": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdppc10k": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mil_pers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "part_mil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "part_pers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "part": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnumlang": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "all_three": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

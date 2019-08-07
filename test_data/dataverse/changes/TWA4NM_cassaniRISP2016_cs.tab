@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        295
-      ],
-      [
-        "variableCount",
-        26
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TWA4NM_cassaniRISP2016_cs.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 50957
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cow.median",
     [
@@ -124,22 +41,6 @@
     [
       "40",
       40
-    ]
-  ],
-  [
-    "change",
-    "variables.cow.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cow.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -746,26 +647,10 @@
     [
       "Burundi",
       [
-        "Burundi",
         "Niger",
-        "Comoros"
+        "Comoros",
+        "Burundi"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -799,11 +684,11 @@
       [
         "fewestValues",
         [
-          "Bolivia",
-          "United Arab Emirates",
-          "Morocco",
-          "Oman",
-          "Jamaica"
+          "India",
+          "Bahrain",
+          "Laos",
+          "Latvia",
+          "Morocco"
         ]
       ],
       [
@@ -829,145 +714,145 @@
       [
         "plotValues",
         {
+          "Burundi": 5,
           "Comoros": 5,
           "Niger": 5,
-          "Burundi": 5,
-          "Uganda": 4,
-          "Haiti": 4,
-          "Thailand": 4,
+          "Guinea": 4,
           "Peru": 4,
-          "Albania": 4,
+          "Fiji": 4,
           "Nepal": 4,
+          "Guinea-Bissau": 4,
+          "Bangladesh": 4,
+          "Uganda": 4,
+          "Thailand": 4,
+          "Albania": 4,
+          "Pakistan": 4,
+          "Kenya": 4,
+          "Sierra Leone": 4,
+          "Haiti": 4,
           "Liberia": 4,
           "Zambia": 4,
-          "Sierra Leone": 4,
-          "Bangladesh": 4,
-          "Guinea-Bissau": 4,
-          "Kenya": 4,
-          "Pakistan": 4,
-          "Fiji": 4,
           "Central African Republic": 4,
-          "Guinea": 4,
-          "Benin": 3,
-          "Ecuador": 3,
-          "Georgia": 3,
-          "Indonesia": 3,
-          "Madagascar": 3,
-          "Serbia": 3,
           "Paraguay": 3,
-          "Turkey": 3,
-          "Korea South": 3,
-          "Uruguay": 3,
-          "Rwanda": 3,
-          "Philippines": 3,
-          "Taiwan": 3,
-          "Kazakhstan": 3,
-          "Sudan": 3,
-          "Mauritania": 3,
-          "Equatorial Guinea": 3,
-          "Moldova": 3,
-          "Mali": 3,
           "Gambia": 3,
           "Romania": 3,
-          "Suriname": 3,
           "Mexico": 3,
-          "Congo Rep": 3,
-          "Ghana": 3,
-          "Nigeria": 3,
+          "Rwanda": 3,
+          "Taiwan": 3,
           "Lesotho": 3,
+          "Congo Rep": 3,
+          "Nigeria": 3,
+          "Kazakhstan": 3,
+          "Benin": 3,
+          "Equatorial Guinea": 3,
+          "Serbia": 3,
           "Nicaragua": 3,
-          "Singapore": 2,
+          "Moldova": 3,
+          "Philippines": 3,
+          "Korea South": 3,
+          "Sudan": 3,
+          "Mali": 3,
+          "Ecuador": 3,
+          "Uruguay": 3,
+          "Indonesia": 3,
+          "Ghana": 3,
+          "Georgia": 3,
+          "Madagascar": 3,
+          "Suriname": 3,
+          "Mauritania": 3,
+          "Turkey": 3,
+          "Argentina": 2,
+          "Bhutan": 2,
+          "Iraq": 2,
+          "Tanzania": 2,
+          "Malawi": 2,
+          "Guyana": 2,
+          "Kyrgyzstan": 2,
+          "Senegal": 2,
+          "Poland": 2,
+          "Togo": 2,
           "Armenia": 2,
           "Guatemala": 2,
-          "Angola": 2,
-          "Guyana": 2,
-          "Iraq": 2,
-          "Brazil": 2,
-          "Belarus": 2,
-          "Mongolia": 2,
-          "Cameroon": 2,
-          "Cape Verde": 2,
-          "Cote d'Ivoire": 2,
-          "Tanzania": 2,
-          "Kyrgyzstan": 2,
           "Malaysia": 2,
-          "Gabon": 2,
-          "Poland": 2,
-          "Tunisia": 2,
-          "Argentina": 2,
-          "Cambodia": 2,
-          "Bhutan": 2,
-          "Burkina Faso": 2,
-          "Togo": 2,
-          "Senegal": 2,
-          "Croatia": 2,
-          "Honduras": 2,
-          "Venezuela": 2,
-          "Egypt": 2,
-          "Mozambique": 2,
-          "Malawi": 2,
           "Panama": 2,
-          "Hungary": 2,
-          "Algeria": 2,
+          "Cape Verde": 2,
+          "Gabon": 2,
+          "Belarus": 2,
+          "Egypt": 2,
           "Congo Dem Rep": 2,
+          "Chile": 2,
+          "Venezuela": 2,
+          "Cambodia": 2,
+          "Singapore": 2,
           "Ukraine": 2,
           "Bulgaria": 2,
+          "Hungary": 2,
+          "Brazil": 2,
+          "Burkina Faso": 2,
           "Ethiopia": 2,
-          "Tajikistan": 2,
-          "Chile": 2,
+          "Cote d'Ivoire": 2,
+          "Tunisia": 2,
+          "Honduras": 2,
           "Macedonia": 2,
-          "Czech Republic": 1,
-          "Lithuania": 1,
-          "India": 1,
-          "Lebanon": 1,
-          "Mauritius": 1,
-          "Chad": 1,
-          "Kuwait": 1,
-          "Botswana": 1,
-          "Turkmenistan": 1,
-          "Timor-Leste": 1,
-          "Eritrea": 1,
-          "Cyprus": 1,
-          "Zimbabwe": 1,
-          "Korea North": 1,
-          "Dominican Republic": 1,
-          "Yemen": 1,
-          "Djibouti": 1,
-          "Libya": 1,
-          "El Salvador": 1,
-          "Bahrain": 1,
-          "Jordan": 1,
-          "Qatar": 1,
-          "China": 1,
-          "Viet Nam": 1,
+          "Mozambique": 2,
+          "Mongolia": 2,
+          "Angola": 2,
+          "Cameroon": 2,
+          "Croatia": 2,
+          "Algeria": 2,
+          "Tajikistan": 2,
           "Cuba": 1,
-          "Papua New Guinea": 1,
-          "Swaziland": 1,
-          "Somalia": 1,
-          "Trinidad and Tobago": 1,
-          "Namibia": 1,
-          "Saudi Arabia": 1,
-          "Iran": 1,
-          "Costa Rica": 1,
-          "Latvia": 1,
-          "Slovenia": 1,
-          "Syria": 1,
           "Myanmar": 1,
-          "Uzbekistan": 1,
-          "South Africa": 1,
-          "Slovakia": 1,
-          "Sri Lanka": 1,
-          "Russia": 1,
-          "Colombia": 1,
-          "Laos": 1,
-          "Montenegro": 1,
-          "Estonia": 1,
-          "Azerbaijan": 1,
-          "Jamaica": 1,
+          "Saudi Arabia": 1,
           "Oman": 1,
-          "Morocco": 1,
+          "Cyprus": 1,
+          "Costa Rica": 1,
+          "Jamaica": 1,
+          "Somalia": 1,
+          "Colombia": 1,
+          "Slovakia": 1,
+          "Kuwait": 1,
+          "Mauritius": 1,
+          "China": 1,
+          "Namibia": 1,
+          "Russia": 1,
+          "Papua New Guinea": 1,
+          "Estonia": 1,
+          "El Salvador": 1,
+          "Sri Lanka": 1,
           "United Arab Emirates": 1,
-          "Bolivia": 1
+          "Zimbabwe": 1,
+          "Uzbekistan": 1,
+          "Viet Nam": 1,
+          "Iran": 1,
+          "Yemen": 1,
+          "Qatar": 1,
+          "Lithuania": 1,
+          "Libya": 1,
+          "Montenegro": 1,
+          "Turkmenistan": 1,
+          "Eritrea": 1,
+          "Trinidad and Tobago": 1,
+          "Timor-Leste": 1,
+          "Jordan": 1,
+          "South Africa": 1,
+          "Bolivia": 1,
+          "Lebanon": 1,
+          "Slovenia": 1,
+          "Djibouti": 1,
+          "Botswana": 1,
+          "Korea North": 1,
+          "Swaziland": 1,
+          "Syria": 1,
+          "Chad": 1,
+          "Dominican Republic": 1,
+          "Azerbaijan": 1,
+          "Czech Republic": 1,
+          "Morocco": 1,
+          "Latvia": 1,
+          "Laos": 1,
+          "Bahrain": 1,
+          "India": 1
         }
       ],
       [
@@ -1240,28 +1125,12 @@
     [
       "Albania 05-10",
       [
-        "Korea South 88-10",
-        "Niger 79-90",
-        "Suriname 92-99",
-        "Thailand 88-05",
-        "Uganda 89-95"
+        "Philippines 82-85",
+        "Comoros 79-89",
+        "Yemen 93-10",
+        "Bhutan 08-10",
+        "Ecuador 79-99"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.case.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.case.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1295,11 +1164,11 @@
       [
         "fewestValues",
         [
-          "Korea South 88-10",
-          "Niger 79-90",
-          "Suriname 92-99",
-          "Thailand 88-05",
-          "Uganda 89-95"
+          "Philippines 82-85",
+          "Comoros 79-89",
+          "Yemen 93-10",
+          "Bhutan 08-10",
+          "Ecuador 79-99"
         ]
       ],
       [
@@ -1325,301 +1194,301 @@
       [
         "plotValues",
         {
-          "Comoros 04-10": 1,
-          "Bolivia 83-10": 1,
-          "Bulgaria 79-89": 1,
-          "Bulgaria 90-10": 1,
-          "Guinea 84-94": 1,
-          "Kyrgyzstan 91-94": 1,
-          "Gabon 93-10": 1,
-          "Pakistan 99-01": 1,
-          "Burundi 87-92": 1,
-          "Djibouti 79-10": 1,
-          "Cape Verde 91-10": 1,
-          "Ukraine 91-93": 1,
-          "Rwanda 00-02": 1,
-          "Sierra Leone 02-06": 1,
-          "Burkina Faso 92-10": 1,
-          "Mali 82-90": 1,
           "Egypt 79-04": 1,
-          "United Arab Emirates 79-10": 1,
-          "Peru 91-94": 1,
-          "Romania 79-88": 1,
-          "Qatar 79-10": 1,
-          "Haiti 94-03": 1,
-          "Tanzania 95-10": 1,
-          "Guinea-Bissau 05-09": 1,
-          "Sri Lanka 79-10": 1,
-          "Honduras 82-98": 1,
           "Russia 92-10": 1,
-          "Fiji 79-86": 1,
-          "Venezuela 09-10": 1,
-          "Chad 96-10": 1,
-          "Turkey 80-85": 1,
-          "Bangladesh 79-81": 1,
-          "Korea South 81-87": 1,
-          "Gambia 94-96": 1,
-          "Niger 96-98": 1,
-          "Kuwait 79-10": 1,
-          "Serbia 93-96": 1,
-          "Serbia 97-05": 1,
-          "Mauritania 79-91": 1,
-          "Iraq 79-95": 1,
-          "Uruguay 79-84": 1,
-          "Somalia 80-90": 1,
+          "Namibia 90-10": 1,
           "Ecuador 06-10": 1,
-          "Tunisia 79-98": 1,
-          "Cape Verde 79-90": 1,
-          "Guinea 79-83": 1,
-          "Ecuador 79-99": 1,
-          "Albania 91-95": 1,
-          "Mali 79-81": 1,
-          "Lesotho 86-92": 1,
-          "Uganda 06-10": 1,
-          "Senegal 79-99": 1,
-          "Montenegro 06-11": 1,
-          "Nepal 90-01": 1,
-          "Madagascar 92-08": 1,
+          "Brazil 85-10": 1,
+          "Timor-Leste 02-10": 1,
+          "Thailand 88-05": 1,
+          "Hungary 79-88": 1,
+          "Haiti 06-09": 1,
+          "Gambia 94-96": 1,
+          "Rwanda 03-10": 1,
+          "Peru 91-94": 1,
+          "Niger 96-98": 1,
+          "Chad 96-10": 1,
           "Panama 79-88": 1,
-          "Zambia 91-95": 1,
-          "Mozambique 94-10": 1,
-          "Georgia 92-94": 1,
-          "Rwanda 79-99": 1,
-          "Ethiopia 79-90": 1,
-          "Benin 06-10": 1,
-          "Thailand 08-10": 1,
-          "Mexico 82-99": 1,
-          "Cameroon 79-91": 1,
-          "Estonia 91-10": 1,
-          "Angola 08-10": 1,
-          "Moldova 91-93": 1,
-          "Romania 96-10": 1,
-          "Cote d'Ivoire 90-98": 1,
-          "Liberia 80-89": 1,
-          "Guatemala 79-83": 1,
+          "Bangladesh 91-06": 1,
+          "Suriname 80-90": 1,
+          "Brazil 79-84": 1,
+          "Jamaica 79-10": 1,
+          "Algeria 79-96": 1,
+          "Croatia 91-99": 1,
+          "Uzbekistan 91-10": 1,
+          "Cape Verde 79-90": 1,
+          "Zambia 79-90": 1,
+          "Ghana 92-03": 1,
+          "Slovenia 91-10": 1,
+          "Argentina 79-82": 1,
+          "Nepal 02-05": 1,
+          "Rwanda 00-02": 1,
+          "Malawi 94-10": 1,
+          "Burkina Faso 92-10": 1,
           "Equatorial Guinea 96-10": 1,
-          "Cuba 79-10": 1,
+          "Guinea 84-94": 1,
+          "Azerbaijan 92-10": 1,
+          "Macedonia 93-01": 1,
+          "Lesotho 92-10": 1,
+          "Malaysia 08-10": 1,
+          "Gambia 80-93": 1,
+          "Mauritius 79-10": 1,
+          "Thailand 79-87": 1,
+          "Kenya 02-07": 1,
+          "Korea South 88-10": 1,
+          "Mexico 00-10": 1,
+          "Guinea 08-09": 1,
+          "Guyana 92-10": 1,
+          "Burundi 05-10": 1,
+          "Niger 93-95": 1,
+          "Burundi 79-81": 1,
+          "United Arab Emirates 79-10": 1,
+          "Turkey 89-10": 1,
+          "Suriname 00-10": 1,
+          "Peru 95-00": 1,
+          "Myanmar 79-10": 1,
+          "Egypt 05-10": 1,
+          "Cape Verde 91-10": 1,
+          "Lesotho 93-97": 1,
+          "Moldova 91-93": 1,
+          "Burkina Faso 80-91": 1,
+          "Paraguay 89-92": 1,
+          "Nepal 08-10": 1,
+          "Nicaragua 84-89": 1,
+          "Mauritania 79-91": 1,
+          "Malawi 79-93": 1,
+          "Guyana 80-91": 1,
+          "Congo Dem Rep 79-91": 1,
+          "Algeria 97-10": 1,
+          "Senegal 00-10": 1,
+          "Haiti 86-93": 1,
+          "Venezuela 09-10": 1,
+          "Indonesia 04-10": 1,
+          "Nepal 79-89": 1,
+          "Serbia 06-10": 1,
+          "Madagascar 09-10": 1,
+          "Nicaragua 81-83": 1,
+          "Pakistan 02-10": 1,
+          "Nicaragua 90-10": 1,
+          "Guinea 79-83": 1,
+          "Gabon 79-92": 1,
+          "Bhutan 79-07": 1,
+          "Fiji 92-05": 1,
+          "Viet Nam 79-10": 1,
+          "Cameroon 79-91": 1,
+          "Philippines 79-81": 1,
+          "Tajikistan 94-10": 1,
+          "Liberia 01-02": 1,
+          "Kyrgyzstan 95-09": 1,
+          "Equatorial Guinea 79-82": 1,
+          "Kazakhstan 91-98": 1,
+          "Central African Republic 93-02": 1,
+          "Laos 79-10": 1,
+          "Uruguay 89-10": 1,
+          "China 79-10": 1,
+          "Tanzania 79-94": 1,
+          "Singapore 79-83": 1,
+          "Ukraine 91-93": 1,
+          "Belarus 91-93": 1,
+          "Libya 79-10": 1,
+          "Mozambique 94-10": 1,
+          "Albania 05-10": 1,
+          "Czech Republic 93-10": 1,
+          "Zambia 91-95": 1,
+          "Congo Rep 92-96": 1,
+          "Uganda 96-05": 1,
+          "Korea South 79-80": 1,
+          "South Africa 94-10": 1,
+          "Burundi 87-92": 1,
+          "Zimbabwe 80-10": 1,
+          "Latvia 91-10": 1,
+          "Guatemala 86-10": 1,
+          "Mongolia 79-89": 1,
+          "Gabon 93-10": 1,
+          "Qatar 79-10": 1,
+          "Zambia 08-10": 1,
+          "Bolivia 83-10": 1,
+          "Cyprus 79-10": 1,
+          "Turkey 80-85": 1,
+          "Central African Republic 03-04": 1,
+          "Ecuador 00-05": 1,
+          "Comoros 99-01": 1,
+          "Cameroon 92-10": 1,
+          "Armenia 96-10": 1,
+          "Saudi Arabia 79-10": 1,
+          "Mexico 79-81": 1,
+          "Taiwan 91-95": 1,
+          "Turkmenistan 91-10": 1,
+          "Honduras 99-08": 1,
+          "Ethiopia 79-90": 1,
+          "Benin 91-05": 1,
+          "Fiji 06-10": 1,
+          "Nigeria 99-10": 1,
+          "Lesotho 86-92": 1,
+          "Peru 80-90": 1,
+          "Sudan 86-88": 1,
+          "Benin 06-10": 1,
+          "Gambia 97-10": 1,
+          "Bangladesh 79-81": 1,
+          "Mexico 82-99": 1,
+          "Malaysia 79-07": 1,
+          "Syria 79-10": 1,
+          "Togo 79-90": 1,
+          "Burundi 96-00": 1,
+          "Niger 99-03": 1,
+          "Korea North 79-10": 1,
+          "Guinea-Bissau 84-93": 1,
+          "Kenya 79-91": 1,
+          "Serbia 93-96": 1,
+          "Central African Republic 81-92": 1,
+          "Singapore 84-10": 1,
+          "Bangladesh 07-10": 1,
+          "Sierra Leone 79-91": 1,
+          "Colombia 79-10": 1,
+          "Mauritania 05-10": 1,
+          "Iraq 79-95": 1,
+          "Liberia 80-89": 1,
+          "Madagascar 92-08": 1,
+          "Lithuania 91-10": 1,
+          "Madagascar 79-90": 1,
+          "Guatemala 79-83": 1,
+          "Hungary 90-10": 1,
+          "Burundi 82-86": 1,
+          "Poland 90-10": 1,
+          "Kuwait 79-10": 1,
+          "Niger 79-90": 1,
           "Ethiopia 95-10": 1,
           "Panama 89-10": 1,
-          "Egypt 05-10": 1,
-          "Kyrgyzstan 95-09": 1,
-          "Brazil 85-10": 1,
-          "Suriname 00-10": 1,
-          "Benin 91-05": 1,
-          "Azerbaijan 92-10": 1,
-          "Oman 79-10": 1,
-          "Trin & Tob 79-10": 1,
-          "Yemen 93-10": 1,
-          "Sudan 79-94": 1,
-          "Togo 79-90": 1,
-          "Turkey 89-10": 1,
-          "Comoros 96-98": 1,
-          "Burundi 96-00": 1,
-          "Sierra Leone 79-91": 1,
-          "Armenia 91-95": 1,
-          "Peru 00-10": 1,
-          "Tanzania 79-94": 1,
-          "Korea North 79-10": 1,
-          "Ghana 81-90": 1,
-          "Cyprus 79-10": 1,
-          "Ecuador 00-05": 1,
-          "Guinea-Bissau 84-93": 1,
-          "Haiti 86-93": 1,
-          "Serbia 06-10": 1,
-          "Congo Rep 02-10": 1,
-          "Zimbabwe 80-10": 1,
-          "Jordan 79-10": 1,
-          "Poland 90-10": 1,
-          "Guyana 80-91": 1,
-          "Pakistan 79-87": 1,
-          "Brazil 79-84": 1,
-          "Nicaragua 81-83": 1,
-          "Kenya 92-01": 1,
-          "Dom Rep 79-10": 1,
-          "Ghana 04-10": 1,
-          "Macedonia 02-10": 1,
-          "Sudan 89-10": 1,
-          "Korea South 79-80": 1,
-          "Niger 99-03": 1,
-          "Bangladesh 82-90": 1,
-          "Mauritius 79-10": 1,
-          "Zambia 96-07": 1,
-          "Thailand 79-87": 1,
-          "Georgia 04-10": 1,
-          "Moldova 94-00": 1,
-          "Paraguay 89-92": 1,
-          "Nigeria 79-82": 1,
-          "Namibia 90-10": 1,
-          "Uruguay 85-88": 1,
-          "Angola 80-90": 1,
-          "Nigeria 83-97": 1,
-          "Slovenia 91-10": 1,
-          "Cambodia 98-10": 1,
-          "Iraq 96-02": 1,
-          "Libya 79-10": 1,
-          "Paraguay 79-88": 1,
-          "Mongolia 79-89": 1,
-          "Latvia 91-10": 1,
-          "Congo Dem Rep 79-91": 1,
-          "Uzbekistan 91-10": 1,
-          "Sudan 86-88": 1,
-          "Pakistan 02-10": 1,
-          "Kazakhstan 07-10": 1,
-          "Haiti 06-09": 1,
-          "Hungary 79-88": 1,
-          "Burundi 05-10": 1,
-          "Tajikistan 91-93": 1,
-          "Bangladesh 91-06": 1,
-          "Cambodia 93-97": 1,
-          "Albania 05-10": 1,
-          "Kenya 79-91": 1,
-          "El Salvador 84-10": 1,
-          "Central African Republic 81-92": 1,
-          "Papua New Guinea 79-10": 1,
-          "Bahrain 79-10": 1,
-          "Armenia 96-10": 1,
-          "Guinea 08-09": 1,
-          "Indonesia 04-10": 1,
-          "Kazakhstan 91-98": 1,
-          "Venezuela 79-08": 1,
-          "Burundi 79-81": 1,
-          "Peru 80-90": 1,
-          "Fiji 06-10": 1,
-          "Equatorial Guinea 79-82": 1,
-          "Albania 79-90": 1,
-          "Romania 90-95": 1,
-          "Lesotho 93-97": 1,
-          "Mongolia 90-10": 1,
-          "Macedonia 93-01": 1,
-          "Philippines 82-85": 1,
-          "Fiji 92-05": 1,
-          "Poland 79-88": 1,
-          "Belarus 91-93": 1,
-          "Tunisia 99-10": 1,
-          "Uruguay 89-10": 1,
-          "Guatemala 86-10": 1,
-          "Algeria 97-10": 1,
-          "Cameroon 92-10": 1,
-          "Viet Nam 79-10": 1,
-          "Mexico 79-81": 1,
-          "Benin 79-89": 1,
-          "Guinea 95-07": 1,
-          "Central African Republic 05-10": 1,
-          "Mauritania 92-04": 1,
-          "Algeria 79-96": 1,
-          "India 79-10": 1,
-          "Nepal 08-10": 1,
-          "Sierra Leone 07-10": 1,
-          "Singapore 79-83": 1,
-          "Rwanda 03-10": 1,
-          "Sierra Leone 92-95": 1,
-          "Paraguay 93-10": 1,
-          "Ukraine 94-10": 1,
-          "Liberia 97-00": 1,
-          "Iran 79-10": 1,
-          "Mauritania 05-10": 1,
-          "Central African Republic 03-04": 1,
-          "Togo 94-10": 1,
-          "Cote d'Ivoire 79-89": 1,
-          "Guinea-Bissau 94-97": 1,
-          "Chile 79-88": 1,
-          "Honduras 99-08": 1,
-          "Indonesia 97-03": 1,
-          "Nicaragua 90-10": 1,
-          "Taiwan 91-95": 1,
-          "Malaysia 79-07": 1,
-          "Zambia 08-10": 1,
-          "Costa Rica 79-10": 1,
-          "Pakistan 88-98": 1,
-          "Singapore 84-10": 1,
-          "Botswana 79-10": 1,
-          "Slovakia 93-10": 1,
-          "Taiwan 79-90": 1,
-          "Indonesia 79-96": 1,
-          "Argentina 79-82": 1,
-          "Philippines 79-81": 1,
-          "Nigeria 99-10": 1,
-          "Uganda 80-84": 1,
-          "Bangladesh 07-10": 1,
-          "Myanmar 79-10": 1,
-          "Morocco 79-10": 1,
-          "Comoros 90-94": 1,
-          "Lebanon 05-10": 1,
-          "Madagascar 09-10": 1,
-          "Zambia 79-90": 1,
-          "Congo Dem Rep 06-10": 1,
-          "South Africa 94-10": 1,
-          "Turkey 86-88": 1,
-          "Nicaragua 84-89": 1,
-          "Comoros 79-89": 1,
-          "Central African Republic 93-02": 1,
-          "Malaysia 08-10": 1,
-          "Suriname 80-90": 1,
-          "Bhutan 08-10": 1,
-          "Tajikistan 94-10": 1,
-          "Guyana 92-10": 1,
-          "Congo Rep 79-90": 1,
-          "Syria 79-10": 1,
-          "Fiji 87-91": 1,
-          "Nepal 79-89": 1,
-          "Eritrea 93-10": 1,
-          "Mexico 00-10": 1,
-          "Moldova 01-10": 1,
-          "Jamaica 79-10": 1,
-          "Burkina Faso 80-91": 1,
-          "Swaziland 79-10": 1,
-          "Gabon 79-92": 1,
-          "Haiti 79-85": 1,
-          "China 79-10": 1,
-          "Burundi 82-86": 1,
-          "Croatia 00-10": 1,
-          "Malawi 79-93": 1,
-          "Gambia 97-10": 1,
-          "Colombia 79-10": 1,
-          "Saudi Arabia 79-10": 1,
-          "Uganda 96-05": 1,
-          "Turkmenistan 91-10": 1,
-          "Czech Republic 93-10": 1,
-          "Argentina 84-10": 1,
-          "Niger 93-95": 1,
-          "Croatia 91-99": 1,
-          "Hungary 90-10": 1,
-          "Liberia 01-02": 1,
-          "Malawi 94-10": 1,
-          "Guinea-Bissau 80-83": 1,
-          "Equatorial Guinea 83-95": 1,
-          "Senegal 00-10": 1,
-          "Nepal 02-05": 1,
-          "Kenya 02-07": 1,
-          "Liberia 06-10": 1,
-          "Kazakhstan 99-06": 1,
-          "Chile 90-10": 1,
-          "Thailand 06-07": 1,
-          "Philippines 87-10": 1,
-          "Laos 79-10": 1,
-          "Timor-Leste 02-10": 1,
-          "Niger 04-08": 1,
-          "Comoros 99-01": 1,
-          "Kenya 08-10": 1,
-          "Gambia 80-93": 1,
-          "Ghana 92-03": 1,
-          "Madagascar 79-90": 1,
-          "Congo Rep 92-96": 1,
-          "Belarus 94-10": 1,
-          "Mali 92-10": 1,
-          "Georgia 95-03": 1,
-          "Mozambique 79-93": 1,
-          "Taiwan 96-10": 1,
-          "Peru 95-00": 1,
-          "Albania 96-04": 1,
-          "Lithuania 91-10": 1,
-          "Lesotho 92-10": 1,
-          "Bhutan 79-07": 1,
           "Uganda 89-95": 1,
-          "Thailand 88-05": 1,
+          "Morocco 79-10": 1,
+          "Paraguay 93-10": 1,
+          "Kazakhstan 07-10": 1,
+          "Georgia 92-94": 1,
+          "Comoros 96-98": 1,
+          "Sierra Leone 02-06": 1,
+          "Taiwan 96-10": 1,
+          "Niger 04-08": 1,
+          "Albania 91-95": 1,
+          "Georgia 04-10": 1,
+          "Mongolia 90-10": 1,
+          "Macedonia 02-10": 1,
+          "Senegal 79-99": 1,
+          "Iraq 96-02": 1,
+          "Uruguay 79-84": 1,
           "Suriname 92-99": 1,
-          "Niger 79-90": 1,
-          "Korea South 88-10": 1
+          "Sudan 89-10": 1,
+          "Paraguay 79-88": 1,
+          "Mauritania 92-04": 1,
+          "Ghana 81-90": 1,
+          "Cambodia 93-97": 1,
+          "Cambodia 98-10": 1,
+          "Zambia 96-07": 1,
+          "Ukraine 94-10": 1,
+          "Kazakhstan 99-06": 1,
+          "Indonesia 79-96": 1,
+          "Pakistan 99-01": 1,
+          "Cote d'Ivoire 79-89": 1,
+          "Trin & Tob 79-10": 1,
+          "Dom Rep 79-10": 1,
+          "Indonesia 97-03": 1,
+          "Venezuela 79-08": 1,
+          "Tanzania 95-10": 1,
+          "Haiti 79-85": 1,
+          "Taiwan 79-90": 1,
+          "Philippines 87-10": 1,
+          "Equatorial Guinea 83-95": 1,
+          "Central African Republic 05-10": 1,
+          "Georgia 95-03": 1,
+          "Peru 00-10": 1,
+          "Rwanda 79-99": 1,
+          "Nigeria 83-97": 1,
+          "Argentina 84-10": 1,
+          "Lebanon 05-10": 1,
+          "Romania 79-88": 1,
+          "Angola 80-90": 1,
+          "Cote d'Ivoire 90-98": 1,
+          "Bangladesh 82-90": 1,
+          "Nepal 90-01": 1,
+          "Benin 79-89": 1,
+          "Papua New Guinea 79-10": 1,
+          "Ghana 04-10": 1,
+          "Mali 82-90": 1,
+          "Uganda 80-84": 1,
+          "Nigeria 79-82": 1,
+          "Oman 79-10": 1,
+          "Kenya 92-01": 1,
+          "Uganda 06-10": 1,
+          "Mali 79-81": 1,
+          "Slovakia 93-10": 1,
+          "Pakistan 88-98": 1,
+          "El Salvador 84-10": 1,
+          "Chile 79-88": 1,
+          "Cuba 79-10": 1,
+          "India 79-10": 1,
+          "Botswana 79-10": 1,
+          "Sri Lanka 79-10": 1,
+          "Serbia 97-05": 1,
+          "Liberia 06-10": 1,
+          "Swaziland 79-10": 1,
+          "Turkey 86-88": 1,
+          "Tunisia 79-98": 1,
+          "Belarus 94-10": 1,
+          "Romania 90-95": 1,
+          "Poland 79-88": 1,
+          "Fiji 87-91": 1,
+          "Comoros 04-10": 1,
+          "Guinea-Bissau 80-83": 1,
+          "Kyrgyzstan 91-94": 1,
+          "Moldova 01-10": 1,
+          "Tajikistan 91-93": 1,
+          "Costa Rica 79-10": 1,
+          "Guinea 95-07": 1,
+          "Thailand 08-10": 1,
+          "Mali 92-10": 1,
+          "Comoros 90-94": 1,
+          "Romania 96-10": 1,
+          "Uruguay 85-88": 1,
+          "Sierra Leone 07-10": 1,
+          "Togo 94-10": 1,
+          "Congo Rep 79-90": 1,
+          "Chile 90-10": 1,
+          "Montenegro 06-11": 1,
+          "Haiti 94-03": 1,
+          "Sudan 79-94": 1,
+          "Bahrain 79-10": 1,
+          "Congo Rep 02-10": 1,
+          "Estonia 91-10": 1,
+          "Djibouti 79-10": 1,
+          "Armenia 91-95": 1,
+          "Albania 96-04": 1,
+          "Mozambique 79-93": 1,
+          "Jordan 79-10": 1,
+          "Tunisia 99-10": 1,
+          "Croatia 00-10": 1,
+          "Congo Dem Rep 06-10": 1,
+          "Bulgaria 90-10": 1,
+          "Bulgaria 79-89": 1,
+          "Guinea-Bissau 94-97": 1,
+          "Moldova 94-00": 1,
+          "Sierra Leone 92-95": 1,
+          "Pakistan 79-87": 1,
+          "Liberia 97-00": 1,
+          "Thailand 06-07": 1,
+          "Iran 79-10": 1,
+          "Eritrea 93-10": 1,
+          "Guinea-Bissau 05-09": 1,
+          "Kenya 08-10": 1,
+          "Albania 79-90": 1,
+          "Fiji 79-86": 1,
+          "Honduras 82-98": 1,
+          "Korea South 81-87": 1,
+          "Somalia 80-90": 1,
+          "Angola 08-10": 1,
+          "Ecuador 79-99": 1,
+          "Bhutan 08-10": 1,
+          "Yemen 93-10": 1,
+          "Comoros 79-89": 1,
+          "Philippines 82-85": 1
         }
       ],
       [
@@ -2082,22 +1951,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dur_ac8.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dur_ac8.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2754,26 +2607,10 @@
   ],
   [
     "change",
-    "variables.spendhealgdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.spendhealgdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.spendhealgdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3430,26 +3267,10 @@
   ],
   [
     "change",
-    "variables.spendhealgov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.spendhealgov.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.spendhealgov.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4106,26 +3927,10 @@
   ],
   [
     "change",
-    "variables.enr2tot.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.enr2tot.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.enr2tot.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4779,26 +4584,10 @@
   ],
   [
     "change",
-    "variables.mortu1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mortu1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mortu1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5455,26 +5244,10 @@
   ],
   [
     "change",
-    "variables.gdppc_log.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdppc_log.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdppc_log.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6131,26 +5904,10 @@
   ],
   [
     "change",
-    "variables.gdpgr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpgr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpgr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6807,26 +6564,10 @@
   ],
   [
     "change",
-    "variables.odapc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.odapc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.odapc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7483,26 +7224,10 @@
   ],
   [
     "change",
-    "variables.poptot_log.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.poptot_log.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.poptot_log.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8155,26 +7880,10 @@
   ],
   [
     "change",
-    "variables.popurb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.popurb.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.popurb.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8831,26 +8540,10 @@
   ],
   [
     "change",
-    "variables.ethnic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ethnic.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ethnic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9494,22 +9187,6 @@
     ]
   ],
   [
-    "change",
-    "variables.natresfx.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.natresfx.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.natresfx",
     [
@@ -9749,22 +9426,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.commrule.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.commrule.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10010,22 +9671,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fullaut.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fullaut.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fullaut",
     [
@@ -10265,22 +9910,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.other1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10526,22 +10155,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other2",
     [
@@ -10781,22 +10394,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.military.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.military.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11042,22 +10639,6 @@
     ]
   ],
   [
-    "change",
-    "variables.singlep.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.singlep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.singlep",
     [
@@ -11297,22 +10878,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.hereditary.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.hereditary.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11558,22 +11123,6 @@
     ]
   ],
   [
-    "change",
-    "variables.elaut_ac8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.elaut_ac8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.elaut_ac8",
     [
@@ -11813,22 +11362,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_ac8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_ac8.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12074,22 +11607,6 @@
     ]
   ],
   [
-    "change",
-    "variables.compaut_ac8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.compaut_ac8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.compaut_ac8",
     [
@@ -12332,22 +11849,6 @@
     ]
   ],
   [
-    "change",
-    "variables.hegaut_ac8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.hegaut_ac8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.hegaut_ac8",
     [
@@ -12544,162 +12045,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:54",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "case": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dur_ac8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spendhealgdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spendhealgov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "enr2tot": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mortu1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdppc_log": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpgr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "odapc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "poptot_log": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "popurb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ethnic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "natresfx": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "commrule": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fullaut": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "military": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "singlep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hereditary": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elaut_ac8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_ac8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "compaut_ac8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hegaut_ac8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

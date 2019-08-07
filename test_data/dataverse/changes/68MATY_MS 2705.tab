@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        192
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "68MATY_MS 2705.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 16068
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.t.median",
     [
@@ -126,22 +43,6 @@
     [
       "2002",
       2002
-    ]
-  ],
-  [
-    "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -452,22 +353,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.i.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.i.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1007,27 +892,11 @@
       "Algeria ",
       [
         "UAE",
-        "Egypt",
-        "Tunisia",
-        "Bahrain ",
-        "Morocco"
+        "Jordan",
+        "Oman",
+        "Qatar",
+        "Lebanon"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1062,10 +931,10 @@
         "fewestValues",
         [
           "UAE",
-          "Egypt",
-          "Tunisia",
-          "Bahrain ",
-          "Morocco"
+          "Jordan",
+          "Oman",
+          "Qatar",
+          "Lebanon"
         ]
       ],
       [
@@ -1091,21 +960,21 @@
       [
         "plotValues",
         {
-          "Qatar": 12,
-          "Algeria ": 12,
-          "Libya": 12,
-          "Saudi Arabia": 12,
-          "Oman": 12,
-          "Sudan": 12,
-          "Lebanon": 12,
-          "Kuwait": 12,
-          "Jordan": 12,
-          "Yemen": 12,
           "Syria": 12,
-          "Morocco": 12,
-          "Bahrain ": 12,
-          "Tunisia": 12,
+          "Sudan": 12,
+          "Kuwait": 12,
           "Egypt": 12,
+          "Bahrain ": 12,
+          "Yemen": 12,
+          "Libya": 12,
+          "Tunisia": 12,
+          "Algeria ": 12,
+          "Morocco": 12,
+          "Saudi Arabia": 12,
+          "Lebanon": 12,
+          "Qatar": 12,
+          "Oman": 12,
+          "Jordan": 12,
           "UAE": 12
         }
       ],
@@ -1306,26 +1175,10 @@
   ],
   [
     "change",
-    "variables.trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1978,26 +1831,10 @@
   ],
   [
     "change",
-    "variables.demf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.demf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.demf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2270,26 +2107,10 @@
   ],
   [
     "change",
-    "variables.demp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.demp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.demp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2944,26 +2765,10 @@
   ],
   [
     "change",
-    "variables.growth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.growth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3620,26 +3425,10 @@
   ],
   [
     "change",
-    "variables.inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4296,26 +4085,10 @@
   ],
   [
     "change",
-    "variables.debt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.debt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.debt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4968,26 +4741,10 @@
   ],
   [
     "change",
-    "variables.unemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5644,26 +5401,10 @@
   ],
   [
     "change",
-    "variables.budget.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.budget.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.budget.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6261,87 +6002,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:31:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "i": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "demf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "demp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "debt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "budget": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1008
-      ],
-      [
-        "variableCount",
-        36
-      ],
-      [
-        "dataSource",
-        {
-          "name": "VWPPVQ_attrition_players.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 137372
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.player_id.median",
     [
@@ -126,22 +43,6 @@
     [
       "5571",
       5571
-    ]
-  ],
-  [
-    "change",
-    "variables.player_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.player_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -789,22 +690,6 @@
     ]
   ],
   [
-    "change",
-    "variables.user_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.user_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.user_id",
     [
@@ -1441,22 +1326,6 @@
     ]
   ],
   [
-    "change",
-    "variables.experiment_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.experiment_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.experiment_id",
     [
@@ -1679,22 +1548,6 @@
     ]
   ],
   [
-    "change",
-    "variables.experiment_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.experiment_name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.experiment_name",
     [
@@ -1752,8 +1605,8 @@
         "plotValues",
         {
           "2/12 - Session 1 - 14": 294,
-          "4/13 Session - 12": 252,
           "2/26 - Session 2 - 12": 252,
+          "4/13 Session - 12": 252,
           "4/27 - 10 Participants": 210
         }
       ],
@@ -1926,22 +1779,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.quiz_score.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.quiz_score.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2208,22 +2045,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.share_amount.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.share_amount.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2527,22 +2348,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -2782,22 +2587,6 @@
     [
       "18",
       18
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3367,22 +3156,6 @@
     ]
   ],
   [
-    "change",
-    "variables.major.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.major.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.major",
     [
@@ -3599,22 +3372,6 @@
     ]
   ],
   [
-    "change",
-    "variables.major_other.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.major_other.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.major_other",
     [
@@ -3646,10 +3403,10 @@
         "fewestValues",
         [
           "law enforcement",
-          "undeclared",
-          "Veterinary Technology",
-          "Nutrition Science",
-          "sociology "
+          "radiologic technology",
+          "general education",
+          "Psychology with Poli Sci, and a Photo minor",
+          "viticulture/enology"
         ]
       ],
       [
@@ -3676,31 +3433,31 @@
         "plotValues",
         {
           "Psychology": 168,
-          "Computer Science": 42,
           "Sociology": 42,
+          "Nursing": 42,
+          "Computer Science": 42,
           "psychology": 42,
           "radiology": 42,
-          "Nursing": 42,
-          "sociology": 21,
-          "health": 21,
-          "general education": 21,
-          "undecided": 21,
-          "teaching": 21,
-          "Graphic Design": 21,
-          "viticulture/enology": 21,
-          "criminal justice": 21,
-          "respiratory therapy": 21,
-          "Psychology with Poli Sci, and a Photo minor": 21,
-          "Communication": 21,
-          "Public Health ": 21,
-          "business": 21,
-          "Early Childhood Education": 21,
-          "radiologic technology": 21,
-          "Dental Hygiene": 21,
-          "sociology ": 21,
-          "Nutrition Science": 21,
           "Veterinary Technology": 21,
+          "undecided": 21,
+          "criminal justice": 21,
+          "sociology ": 21,
+          "Graphic Design": 21,
+          "respiratory therapy": 21,
+          "Dental Hygiene": 21,
+          "Communication": 21,
+          "sociology": 21,
           "undeclared": 21,
+          "Early Childhood Education": 21,
+          "teaching": 21,
+          "Public Health ": 21,
+          "viticulture/enology": 21,
+          "business": 21,
+          "Nutrition Science": 21,
+          "radiologic technology": 21,
+          "Psychology with Poli Sci, and a Photo minor": 21,
+          "general education": 21,
+          "health": 21,
           "law enforcement": 21
         }
       ],
@@ -3897,22 +3654,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.has_training.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.has_training.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4155,22 +3896,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_a.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_a.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4432,22 +4157,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_b.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_b.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4718,22 +4427,6 @@
     ]
   ],
   [
-    "change",
-    "variables.time_pref_c.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_c.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.time_pref_c",
     [
@@ -4997,22 +4690,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5289,22 +4966,6 @@
     ]
   ],
   [
-    "change",
-    "variables.time_pref_e.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_e.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.time_pref_e",
     [
@@ -5578,22 +5239,6 @@
     ]
   ],
   [
-    "change",
-    "variables.time_pref_f.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time_pref_f.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.time_pref_f",
     [
@@ -5857,22 +5502,6 @@
     [
       "-999",
       -999
-    ]
-  ],
-  [
-    "change",
-    "variables.risk_aversion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.risk_aversion.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6457,26 +6086,10 @@
   ],
   [
     "change",
-    "variables.experiment_payoff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.experiment_payoff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.experiment_payoff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7119,22 +6732,6 @@
     [
       "2786",
       2786
-    ]
-  ],
-  [
-    "change",
-    "variables.game_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.game_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7798,30 +7395,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "experiment_id.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "experiment_id.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -8054,30 +7627,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "experiment_name.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "experiment_name.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -8138,8 +7687,8 @@
         "plotValues",
         {
           "2/12 - Session 1 - 14": 294,
-          "4/13 Session - 12": 252,
           "2/26 - Session 2 - 12": 252,
+          "4/13 Session - 12": 252,
           "4/27 - 10 Participants": 210
         }
       ],
@@ -8316,22 +7865,6 @@
     [
       "5",
       5
-    ]
-  ],
-  [
-    "change",
-    "variables.num_turns.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.num_turns.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8579,22 +8112,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.game_number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.game_number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9180,22 +8697,6 @@
     ]
   ],
   [
-    "change",
-    "variables.num_concedes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_concedes.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.num_concedes",
     [
@@ -9441,22 +8942,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.turns_in_effect.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.turns_in_effect.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9724,22 +9209,6 @@
     ]
   ],
   [
-    "change",
-    "variables.turn_1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.turn_1",
     [
@@ -9935,22 +9404,6 @@
       [
         "High"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10153,22 +9606,6 @@
     ]
   ],
   [
-    "change",
-    "variables.turn_3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.turn_3",
     [
@@ -10365,22 +9802,6 @@
       [
         "High"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10583,22 +10004,6 @@
     ]
   ],
   [
-    "change",
-    "variables.turn_5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.turn_5",
     [
@@ -10795,22 +10200,6 @@
       [
         "High"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11013,22 +10402,6 @@
     ]
   ],
   [
-    "change",
-    "variables.turn_7.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.turn_7",
     [
@@ -11225,22 +10598,6 @@
       [
         "High"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_8.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11443,22 +10800,6 @@
     ]
   ],
   [
-    "change",
-    "variables.turn_9.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_9.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.turn_9",
     [
@@ -11658,22 +10999,6 @@
     ]
   ],
   [
-    "change",
-    "variables.turn_10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.turn_10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.turn_10",
     [
@@ -11859,212 +11184,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:07:43",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "player_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "user_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "experiment_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "experiment_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "quiz_score": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share_amount": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "major": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "major_other": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "has_training": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_pref_a": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_pref_b": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_pref_c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_pref_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_pref_e": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time_pref_f": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "risk_aversion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "experiment_payoff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "game_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "experiment_id.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "experiment_name.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_turns": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "game_number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_concedes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turns_in_effect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turn_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

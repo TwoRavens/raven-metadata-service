@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1140
-      ],
-      [
-        "variableCount",
-        57
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ORTDUM_final data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 284243
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.number.median",
     [
@@ -122,22 +39,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -745,27 +646,11 @@
       "Elif",
       [
         "Ece",
-        "Erdem",
+        "Sabri",
         "Elif",
-        "Ahmet",
-        "Nur"
+        "Ipek",
+        "Erdem"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.enumerator.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.enumerator.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -799,9 +684,9 @@
       [
         "fewestValues",
         [
+          "Erol",
           "Yusuf",
           "Cem",
-          "Erol",
           "Aycan"
         ]
       ],
@@ -828,20 +713,20 @@
       [
         "plotValues",
         {
-          "Sabri": 90,
-          "Ipek": 90,
-          "Ceren": 90,
-          "Mustafa": 90,
           "Oznur": 90,
+          "Ceren": 90,
           "Nur": 90,
+          "Mustafa": 90,
           "Ahmet": 90,
-          "Elif": 90,
           "Erdem": 90,
+          "Ipek": 90,
+          "Elif": 90,
+          "Sabri": 90,
           "Ece": 90,
           "Aycan": 60,
-          "Erol": 60,
           "Cem": 60,
-          "Yusuf": 60
+          "Yusuf": 60,
+          "Erol": 60
         }
       ],
       [
@@ -1027,22 +912,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.surveytype.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.surveytype.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1284,22 +1153,6 @@
     ]
   ],
   [
-    "change",
-    "variables.city.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.city.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.city",
     [
@@ -1330,8 +1183,8 @@
       [
         "fewestValues",
         [
-          "Gaziantep",
-          "gaziantep"
+          "gaziantep",
+          "Gaziantep"
         ]
       ],
       [
@@ -1358,8 +1211,8 @@
         "plotValues",
         {
           "istanbul": 900,
-          "gaziantep": 120,
-          "Gaziantep": 120
+          "Gaziantep": 120,
+          "gaziantep": 120
         }
       ],
       [
@@ -1499,22 +1352,6 @@
         "besiktas",
         "fatih"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.district.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.district.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1722,22 +1559,6 @@
     ]
   ],
   [
-    "change",
-    "variables.location.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.location.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.location",
     [
@@ -1768,11 +1589,11 @@
       [
         "fewestValues",
         [
-          "cerrahpasa",
-          "university neighborhood",
-          "204 nolu street",
+          "levent",
+          "merkez belediye",
           "itfahye?",
-          "merkez belediye"
+          "university neighborhood",
+          "topkapi"
         ]
       ],
       [
@@ -1809,82 +1630,82 @@
           "Yavuz Selim": 19,
           "Beyazit": 17,
           "beyazit": 16,
-          "Edirnekapi": 15,
           "Balat": 15,
           "beylik street": 15,
+          "Edirnekapi": 15,
           "mehmetcik street": 14,
           "eminiyet": 13,
           "bebek": 12,
-          "karagumruk": 11,
           "inonu street": 11,
           "Karagumruk": 11,
-          "Sirkesi": 11,
           "karacaoplan street": 11,
-          "eminonu": 10,
+          "Sirkesi": 11,
+          "karagumruk": 11,
           "Vefa": 10,
+          "eminonu": 10,
+          "72 street": 9,
           "kavaklik street": 9,
           "Beyazit ": 9,
-          "72 street": 9,
-          "Ayazaga": 8,
-          "kocamustafapasa": 8,
-          "Aksaray": 8,
           "hoegor street": 8,
-          "Auvansaray": 8,
-          "204 street": 8,
+          "Ayazaga": 8,
+          "Aksaray": 8,
           "merkez": 8,
-          "Unhaponi": 7,
+          "Auvansaray": 8,
+          "kocamustafapasa": 8,
+          "204 street": 8,
           "sehitler street": 7,
-          "yenikapi": 7,
           "sultanahmet": 7,
-          "yusufpasa": 6,
-          "gaziantep": 6,
+          "Unhaponi": 7,
+          "yenikapi": 7,
           "Unkapani": 6,
           "Kusukpark": 6,
+          "gaziantep": 6,
+          "yusufpasa": 6,
           "besiktas park": 5,
-          "Carsamba": 5,
-          "yeditepe": 5,
-          "Akcemseddin Mahal.": 5,
-          "Kabatas": 5,
-          "university street": 5,
           "oguz gogus street": 5,
-          "sirkeci": 4,
-          "kumkapi": 4,
-          "cemberlitas": 4,
-          "yedikale": 4,
+          "university street": 5,
+          "Akcemseddin Mahal.": 5,
+          "yeditepe": 5,
+          "Kabatas": 5,
+          "Carsamba": 5,
           "gulhane": 4,
+          "cemberlitas": 4,
+          "kumkapi": 4,
           "university square": 4,
           "216 street": 4,
+          "sirkeci": 4,
+          "yedikale": 4,
           "aksemseddin": 4,
-          "fatih": 3,
-          "Besiktas": 3,
           "samatya": 3,
-          "laleli": 3,
+          "fatih": 3,
           "yavuz selim": 3,
+          "Besiktas": 3,
+          "laleli": 3,
+          "Maslak": 2,
+          "unkaponi": 2,
+          "sehremini": 2,
+          "haseki": 2,
           "hirekai eerif": 2,
-          "Konaklar": 2,
-          "unspecified": 2,
+          "cagaloglu": 2,
           "Rumeli": 2,
           "findikzade": 2,
-          "haseki": 2,
-          "Maslak": 2,
-          "sehremini": 2,
-          "cagaloglu": 2,
           "Dogatepe": 2,
-          "unkaponi": 2,
+          "Konaklar": 2,
+          "unspecified": 2,
+          "merkez belediye": 1,
+          "204 nolu street": 1,
           "gapa": 1,
           "hirkai eerif": 1,
-          "merkez belediye": 1,
-          "merkez ": 1,
-          "204 stret": 1,
-          "itfahye?": 1,
-          "hurka-I eerif": 1,
-          "topkapi": 1,
-          "204 nolu street": 1,
-          "cerrahpasa": 1,
+          "oguzgogus street": 1,
           "203 street": 1,
-          "levent": 1,
           "university neighborhood": 1,
-          "oguzgogus street": 1
+          "topkapi": 1,
+          "204 stret": 1,
+          "levent": 1,
+          "merkez ": 1,
+          "cerrahpasa": 1,
+          "hurka-I eerif": 1,
+          "itfahye?": 1
         }
       ],
       [
@@ -2142,22 +1963,6 @@
     ]
   ],
   [
-    "change",
-    "variables.daycoded.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.daycoded.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.daycoded",
     [
@@ -2401,22 +2206,6 @@
       [
         "Friday"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.day.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.day.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2669,22 +2458,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.donation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.donation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2945,22 +2718,6 @@
     [
       "18",
       18.0
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3604,22 +3361,6 @@
     ]
   ],
   [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.education",
     [
@@ -3854,22 +3595,6 @@
     ]
   ],
   [
-    "change",
-    "variables.employment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.employment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.employment",
     [
@@ -4072,22 +3797,6 @@
       [
         "2"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.employmentstatus.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.employmentstatus.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4298,22 +4007,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bUnemploymentperiod.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bUnemploymentperiod.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bUnemploymentperiod",
     [
@@ -4344,11 +4037,11 @@
       [
         "fewestValues",
         [
-          "l",
           "13",
-          "9 months",
-          "12",
-          ".25"
+          "l",
+          "4 years",
+          "1  year",
+          "1 year"
         ]
       ],
       [
@@ -4380,31 +4073,31 @@
           "2": 7,
           "2 months": 7,
           "4 months": 4,
-          "3 months": 4,
           "1 month": 4,
-          "4": 3,
+          "3 months": 4,
           "6": 3,
+          "4": 3,
           "7 months": 3,
           "10": 2,
-          "8 months": 2,
-          "7 years": 2,
-          "5 months": 2,
-          "3": 2,
           "8": 2,
-          "12": 1,
-          "13": 1,
-          "1  year": 1,
-          "3 years": 1,
-          "2 years": 1,
-          ".5": 1,
-          "0": 1,
-          "4 years": 1,
-          "9 months": 1,
-          "l": 1,
+          "7 years": 2,
+          "3": 2,
+          "5 months": 2,
+          "8 months": 2,
           "25": 1,
-          "1 year": 1,
+          "13": 1,
+          "4 years": 1,
+          "1  year": 1,
+          ".25": 1,
+          ".5": 1,
+          "3 years": 1,
           "7": 1,
-          ".25": 1
+          "1 year": 1,
+          "9 months": 1,
+          "0": 1,
+          "12": 1,
+          "2 years": 1,
+          "l": 1
         }
       ],
       [
@@ -4572,22 +4265,6 @@
       [
         "3"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.finincialsituation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.finincialsituation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4800,22 +4477,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income",
     [
@@ -5023,22 +4684,6 @@
     ]
   ],
   [
-    "change",
-    "variables.prayers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.prayers.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.prayers",
     [
@@ -5241,22 +4886,6 @@
       [
         "3"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.law.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.law.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5497,22 +5126,6 @@
     ]
   ],
   [
-    "change",
-    "variables.spending.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.spending.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.spending",
     [
@@ -5741,22 +5354,6 @@
     ]
   ],
   [
-    "change",
-    "variables.neighborhood.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.neighborhood.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.neighborhood",
     [
@@ -5957,22 +5554,6 @@
       [
         "1"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.contact.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.contact.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6181,22 +5762,6 @@
     ]
   ],
   [
-    "change",
-    "variables.staygo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.staygo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.staygo",
     [
@@ -6397,22 +5962,6 @@
       [
         "3"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.trust.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.trust.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6621,22 +6170,6 @@
     ]
   ],
   [
-    "change",
-    "variables.guess.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.guess.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.guess",
     [
@@ -6667,11 +6200,11 @@
       [
         "fewestValues",
         [
-          "9 billion lira",
-          "35 million lira",
-          "more than 3 billion lira",
-          "25 million lira",
-          "70 million lira"
+          "60 million lira",
+          "50 trillions",
+          "200 billion lira",
+          "800 millions",
+          "750 million dollars"
         ]
       ],
       [
@@ -6707,175 +6240,175 @@
           "1 billion lira": 28,
           "3 billion ": 23,
           "10 billion lira": 19,
-          "1 billion dollars": 19,
           "10 billions": 19,
+          "1 billion dollars": 19,
           "5 billion lira": 17,
           "2 billions": 15,
           "4 billions": 13,
           "100 million lira": 11,
-          "300 millions": 10,
-          "5 billions": 10,
           "100 millions": 10,
-          "10 million lira": 8,
+          "5 billions": 10,
+          "300 millions": 10,
           "4 billion lira": 8,
-          "500 millions": 7,
-          "6 billion lira": 7,
-          "2 billion lira": 7,
-          "2 billion": 7,
+          "10 million lira": 8,
           "20 billions": 7,
+          "2 billion": 7,
+          "6 billion lira": 7,
+          "500 millions": 7,
+          "2 billion lira": 7,
           "1 billion ": 6,
+          "a lot": 5,
+          "5 million lira": 5,
+          "400 millions": 5,
           "200 millions": 5,
           "5 billion dollars": 5,
-          "a lot": 5,
-          "400 millions": 5,
-          "5 million lira": 5,
           "100 billion lira": 4,
-          "8 billions": 4,
-          "1 trillion": 4,
-          "20 million lira": 4,
           "15 to 20 million lira": 4,
-          "50 billion lira": 4,
-          "40 billions": 4,
-          "30 billions": 4,
+          "20 million lira": 4,
           "10 billion dollars": 4,
+          "1 trillion": 4,
+          "30 billions": 4,
+          "40 billions": 4,
+          "50 billion lira": 4,
+          "8 billions": 4,
+          "1 million lira": 3,
           "50 billions": 3,
           "more than 1 billion lira": 3,
           "700 millions": 3,
-          "millions of dolars": 3,
-          "1 million lira": 3,
-          "40 billion lira": 3,
-          "200 million lira": 3,
           "n": 3,
+          "200 million lira": 3,
+          "40 billion lira": 3,
+          "millions of dolars": 3,
+          "2.5 billion lira": 2,
+          "8 billion lira": 2,
           "70 millions": 2,
           "15 billion dollars": 2,
-          "20 millions": 2,
-          "3 million lira": 2,
-          "50 million lira": 2,
-          "100 billion": 2,
-          "more than 1 billion dollars": 2,
-          "6 billions": 2,
-          "7 billion dollars": 2,
-          "100 billion dollars": 2,
-          "20 million euro": 2,
-          "2 to 3 billion lira": 2,
-          "more than 3 billion": 2,
-          "300 billion lira": 2,
-          "500 million lira": 2,
-          "8 billion lira": 2,
-          "2 billion dollars": 2,
-          "2 billion ": 2,
-          "2.5 billion lira": 2,
-          "250 millions": 2,
-          "15 millions": 2,
-          " no idea": 2,
-          "5 billion": 2,
           "500 billions": 2,
-          "1 to 2 trillion lira": 1,
-          "40 thousand lira": 1,
-          "10 trillions": 1,
-          "450 million lira": 1,
-          "50 billion dollars": 1,
-          "1.5 billions": 1,
-          "120 millions": 1,
-          "150 million lira": 1,
-          "4 billion or more": 1,
-          "10 milliards": 1,
-          "30 billion lira": 1,
-          "1.5 billion dollars": 1,
-          "150 millions": 1,
-          "less than 3 billion": 1,
-          "more than 3 billion lira": 1,
-          "2 billion to 3 billion": 1,
-          "10 million per month": 1,
-          "50 trillions": 1,
+          "50 million lira": 2,
+          "500 million lira": 2,
+          " no idea": 2,
+          "300 billion lira": 2,
+          "20 millions": 2,
+          "2 to 3 billion lira": 2,
+          "2 billion dollars": 2,
+          "15 millions": 2,
+          "100 billion dollars": 2,
+          "2 billion ": 2,
+          "5 billion": 2,
+          "20 million euro": 2,
+          "more than 3 billion": 2,
+          "more than 1 billion dollars": 2,
+          "250 millions": 2,
+          "100 billion": 2,
+          "3 million lira": 2,
+          "7 billion dollars": 2,
+          "6 billions": 2,
           "more than 50 billion dollars": 1,
-          "no idea ": 1,
-          "more than 20 trillion ": 1,
-          "9 billion lira": 1,
-          "1.2 billions": 1,
-          "3.5 trillion": 1,
-          "3 to 5 trillion": 1,
-          "200 trillions": 1,
-          "50 to 100 million lira": 1,
-          "15 trillions": 1,
-          "60 billions": 1,
-          "1 billion dollars ": 1,
-          "200 million ": 1,
-          "4 trillions": 1,
-          "more than 500 billion dollars": 1,
-          "60 million lira": 1,
-          "more than 500,000 dollars": 1,
-          "more than 400 billion lira": 1,
-          "1000 per person per week": 1,
-          "more than 1 trillion lira": 1,
-          "150 billion lira": 1,
-          "145 million dollars": 1,
-          "80 billion": 1,
-          "3.5 billion lira": 1,
-          "70 million lira": 1,
-          "100 million ": 1,
-          "100 billion dollar": 1,
-          "more than 400 trillion lira": 1,
-          "10 billionlira": 1,
-          "130 billions": 1,
-          "200 million": 1,
-          "4 billion": 1,
-          "100 billions": 1,
-          "more than 1 billion": 1,
-          "more than 5 billion ": 1,
-          "20 trillions": 1,
-          "1.7 billion lira": 1,
-          "2.5 billions": 1,
-          "200 billions": 1,
-          "150 billions": 1,
-          "10 millionws": 1,
-          "100 trillion (?)": 1,
-          "280 billion lira": 1,
-          "1 bilion lira": 1,
-          "more than 2 billion": 1,
-          "200 billion lira": 1,
-          "more than 1 billion per month": 1,
-          "800 billion lira": 1,
-          "12 million dollars": 1,
-          "more than 80 billion lira": 1,
-          "750 million dollars": 1,
-          "50 milion lira": 1,
-          "35 million lira": 1,
-          "1o trillions": 1,
-          "46 million": 1,
-          "no": 1,
-          "trillions": 1,
           "more than 2 billion lira": 1,
-          "60 billion dollars": 1,
-          "more than 4 trillion": 1,
-          "60 billion lira": 1,
-          "25 million lira": 1,
-          "7 billions": 1,
-          "30 billiob lira": 1,
-          "12 billions": 1,
-          "50 billiopns": 1,
-          "800 million lira": 1,
-          "23 billion lira": 1,
-          "350 millions": 1,
-          "more than 100 billion EURO": 1,
-          "800 millions": 1,
-          "200 million dollars": 1,
-          "800 million DOLLARS": 1,
-          "more than 2 billion dollars": 1,
-          "1.3 million": 1,
-          "more than 3 billion dollars": 1,
-          "80 billion lira": 1,
-          "20tl per person": 1,
-          "15 billions": 1,
+          "10 million per month": 1,
+          "3.5 trillion": 1,
+          "more than 2 billion": 1,
           "2 trillions": 1,
-          "15 bilion lira": 1,
+          "10 billionlira": 1,
+          "1.5 billion dollars": 1,
+          "7 billions": 1,
+          "20 trillions": 1,
+          "more than 80 billion lira": 1,
+          "more than 4 trillion": 1,
+          "40 thousand lira": 1,
+          "12 billions": 1,
+          "280 billion lira": 1,
+          "450 million lira": 1,
+          "60 billions": 1,
+          "15 billions": 1,
           "3 bilion lira": 1,
-          "300 million lira": 1,
-          "900 millions": 1,
+          "100 trillion (?)": 1,
+          "1o trillions": 1,
+          "4 billion or more": 1,
+          "50 trillions": 1,
+          "200 million ": 1,
+          "1.5 trillion": 1,
+          "80 billion lira": 1,
+          "more than 1 trillion lira": 1,
+          "20tl per person": 1,
+          "more than 20 trillion ": 1,
+          "more than 400 trillion lira": 1,
+          "100 million ": 1,
+          "130 billions": 1,
+          "less than 3 billion": 1,
+          "50 billiopns": 1,
+          "15 trillions": 1,
+          "60 billion dollars": 1,
+          "200 million dollars": 1,
+          "150 billions": 1,
+          "50 milion lira": 1,
+          "1 to 2 trillion lira": 1,
+          "2.5 billions": 1,
           "2 billion lira ": 1,
-          "300 billion dollars": 1,
+          "35 million lira": 1,
+          "3.5 billion lira": 1,
+          "no idea ": 1,
+          "150 billion lira": 1,
+          "23 billion lira": 1,
+          "more than 2 billion dollars": 1,
+          "100 billions": 1,
+          "2 billion to 3 billion": 1,
+          "1000 per person per week": 1,
+          "200 million": 1,
+          "150 millions": 1,
+          "10 trillions": 1,
+          "70 million lira": 1,
+          "more than 3 billion dollars": 1,
+          "3 to 5 trillion": 1,
+          "9 billion lira": 1,
+          "15 bilion lira": 1,
+          "145 million dollars": 1,
+          "1 bilion lira": 1,
+          "more than 1 billion": 1,
+          "350 millions": 1,
+          "no": 1,
+          "4 billion": 1,
+          "1 billion dollars ": 1,
+          "800 million lira": 1,
+          "50 billion dollars": 1,
+          "150 million lira": 1,
+          "more than 100 billion EURO": 1,
+          "800 million DOLLARS": 1,
+          "25 million lira": 1,
+          "10 millionws": 1,
+          "80 billion": 1,
+          "more than 5 billion ": 1,
+          "10 milliards": 1,
+          "800 billion lira": 1,
+          "100 billion dollar": 1,
+          "750 million dollars": 1,
+          "300 million lira": 1,
+          "30 billiob lira": 1,
           "500 to 600 billion lira": 1,
-          "1.5 trillion": 1
+          "1.2 billions": 1,
+          "trillions": 1,
+          "1.7 billion lira": 1,
+          "300 billion dollars": 1,
+          "200 billions": 1,
+          "800 millions": 1,
+          "120 millions": 1,
+          "200 billion lira": 1,
+          "1.5 billions": 1,
+          "46 million": 1,
+          "60 billion lira": 1,
+          "more than 400 billion lira": 1,
+          "50 to 100 million lira": 1,
+          "60 million lira": 1,
+          "900 millions": 1,
+          "30 billion lira": 1,
+          "12 million dollars": 1,
+          "4 trillions": 1,
+          "200 trillions": 1,
+          "more than 1 billion per month": 1,
+          "1.3 million": 1,
+          "more than 500,000 dollars": 1,
+          "more than 3 billion lira": 1,
+          "more than 500 billion dollars": 1
         }
       ],
       [
@@ -7230,22 +6763,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treatment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treatment",
     [
@@ -7516,22 +7033,6 @@
     ]
   ],
   [
-    "change",
-    "variables.control.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.control.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.control",
     [
@@ -7772,22 +7273,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Sunni.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Sunni.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8035,22 +7520,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treatment_Muslim.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Muslim.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treatment_Muslim",
     [
@@ -8292,22 +7761,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Cost.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Cost.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8555,22 +8008,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treatment_Sunni_Cost.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Sunni_Cost.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treatment_Sunni_Cost",
     [
@@ -8812,22 +8249,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Muslim_Cost.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment_Muslim_Cost.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9074,22 +8495,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treatment0.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment0.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treatment0",
     [
@@ -9332,22 +8737,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treatment1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treatment1",
     [
@@ -9587,22 +8976,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9849,22 +9222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treatment3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treatment3",
     [
@@ -10105,22 +9462,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.t1_t3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.t1_t3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10366,22 +9707,6 @@
     ]
   ],
   [
-    "change",
-    "variables.t2_t3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.t2_t3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.t2_t3",
     [
@@ -10624,22 +9949,6 @@
     ]
   ],
   [
-    "change",
-    "variables.shouldstay.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.shouldstay.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.shouldstay",
     [
@@ -10879,22 +10188,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.spend_ref.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.spend_ref.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11146,22 +10439,6 @@
     ]
   ],
   [
-    "change",
-    "variables.trust_ref.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.trust_ref.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.trust_ref",
     [
@@ -11407,22 +10684,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.neighborhood_ref.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.neighborhood_ref.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11674,22 +10935,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n_support_general.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n_support_general.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n_support_general",
     [
@@ -11931,26 +11176,10 @@
   ],
   [
     "change",
-    "variables.support_general.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.support_general.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.support_general.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12594,22 +11823,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income_real.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income_real.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income_real",
     [
@@ -12870,22 +12083,6 @@
     ]
   ],
   [
-    "change",
-    "variables.religiosity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.religiosity.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.religiosity",
     [
@@ -13140,22 +12337,6 @@
     ]
   ],
   [
-    "change",
-    "variables.religiosity_dummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.religiosity_dummy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.religiosity_dummy",
     [
@@ -13395,22 +12576,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sharia.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sharia.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13668,22 +12833,6 @@
     ]
   ],
   [
-    "change",
-    "variables.unemployed.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.unemployed.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.unemployed",
     [
@@ -13926,22 +13075,6 @@
     ]
   ],
   [
-    "change",
-    "variables.retired.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.retired.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.retired",
     [
@@ -14181,22 +13314,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.finance_situation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.finance_situation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14460,22 +13577,6 @@
     ]
   ],
   [
-    "change",
-    "variables.contact_ref.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.contact_ref.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.contact_ref",
     [
@@ -14724,22 +13825,6 @@
     ]
   ],
   [
-    "change",
-    "variables.contact_dummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.contact_dummy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.contact_dummy",
     [
@@ -14979,22 +14064,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Gaziantep.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Gaziantep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15240,22 +14309,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Fatih.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Fatih.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Fatih",
     [
@@ -15495,22 +14548,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Bagcilar.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Bagcilar.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15756,22 +14793,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Besiktas.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Besiktas.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Besiktas",
     [
@@ -16014,22 +15035,6 @@
     ]
   ],
   [
-    "change",
-    "variables.friday.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.friday.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.friday",
     [
@@ -16226,317 +15231,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:18:50",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "enumerator": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "surveytype": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "city": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "district": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "location": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "daycoded": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "day": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "donation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employmentstatus": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bUnemploymentperiod": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "finincialsituation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prayers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "law": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spending": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "neighborhood": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "contact": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "staygo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trust": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "guess": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "control": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment_Sunni": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment_Muslim": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment_Cost": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment_Sunni_Cost": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment_Muslim_Cost": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t1_t3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t2_t3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "shouldstay": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spend_ref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trust_ref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "neighborhood_ref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_support_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "support_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income_real": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "religiosity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "religiosity_dummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sharia": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemployed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "retired": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "finance_situation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "contact_ref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "contact_dummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gaziantep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Fatih": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Bagcilar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Besiktas": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "friday": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

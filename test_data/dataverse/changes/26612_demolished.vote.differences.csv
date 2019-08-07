@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        14
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26612_demolished.vote.differences.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 2311
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.election.mode",
     [
       "dole_pct_ei",
       [
+        "dole_pct_ei",
         "mccain_pct_ei",
-        "obama_sen_primary_pct_ei",
         "bush2004_pct_ei",
-        "bush2000_pct_ei",
-        "dole_pct_ei"
+        "obama_sen_primary_pct_ei",
+        "bush2000_pct_ei"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.election.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "dole_pct_ei",
           "mccain_pct_ei",
-          "obama_sen_primary_pct_ei",
           "bush2004_pct_ei",
-          "bush2000_pct_ei",
-          "dole_pct_ei"
+          "obama_sen_primary_pct_ei",
+          "bush2000_pct_ei"
         ]
       ],
       [
@@ -173,13 +74,13 @@
       [
         "plotValues",
         {
-          "obama_pres_primary_pct_ei": 2,
           "keyes_pct_ei": 2,
-          "dole_pct_ei": 2,
+          "obama_pres_primary_pct_ei": 2,
           "bush2000_pct_ei": 2,
-          "bush2004_pct_ei": 2,
           "obama_sen_primary_pct_ei": 2,
-          "mccain_pct_ei": 2
+          "bush2004_pct_ei": 2,
+          "mccain_pct_ei": 2,
+          "dole_pct_ei": 2
         }
       ],
       [
@@ -323,22 +224,6 @@
         "black",
         "white"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -613,35 +498,11 @@
     [
       "variables",
       "t.value",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "t.value",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "t.value",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1304,26 +1165,10 @@
   ],
   [
     "change",
-    "variables.df.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.df.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.df.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1980,26 +1825,10 @@
   ],
   [
     "change",
-    "variables.p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2656,26 +2485,10 @@
   ],
   [
     "change",
-    "variables.diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3359,35 +3172,11 @@
     [
       "variables",
       "x.mean",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "x.mean",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "x.mean",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4077,35 +3866,11 @@
     [
       "variables",
       "y.mean",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "y.mean",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "y.mean",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4768,26 +4533,10 @@
   ],
   [
     "change",
-    "variables.sd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5452,30 +5201,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "treated.N",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "treated.N",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -5691,82 +5416,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:44",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "election": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t.value": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "df": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "x.mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y.mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treated.N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

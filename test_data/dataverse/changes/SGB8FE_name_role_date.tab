@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        643
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SGB8FE_name_role_date.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 20591
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Number.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.name",
     [
@@ -801,9 +686,9 @@
         [
           "REIFSCHNEIDER",
           "RUDEBUSCH",
-          "GAGNON",
-          "PEACH",
-          "WILLIAMS"
+          "GALLIN",
+          "DOYLE",
+          "PEACH"
         ]
       ],
       [
@@ -830,66 +715,66 @@
         "plotValues",
         {
           "GEITHNER": 29,
-          "KOHN": 27,
           "LACKER": 27,
           "HOENIG": 27,
-          "POOLE": 26,
-          "FISHER": 26,
+          "KOHN": 27,
           "YELLEN": 26,
           "STERN": 26,
+          "FISHER": 26,
+          "POOLE": 26,
           "PIANALTO": 25,
-          "DANKER": 22,
           "MOSKOW": 22,
+          "DANKER": 22,
           "JOHNSON": 21,
+          "STOCKTON": 20,
           "MINEHAN": 20,
           "BERNANKE": 20,
-          "STOCKTON": 20,
           "KROSZNER": 18,
-          "REINHART": 17,
           "WARSH": 17,
+          "REINHART": 17,
           "BIES": 17,
           "KOS": 16,
           "PLOSSER": 15,
           "GUYNN": 14,
           "MISHKIN": 14,
-          "MADIGAN": 12,
           "WILCOX": 12,
-          "OLSON": 11,
+          "MADIGAN": 12,
           "DUDLEY": 11,
+          "OLSON": 11,
           "LOCKHART": 10,
           "GREENSPAN": 9,
           "SANTOMERO": 9,
           "FERGUSON": 9,
-          "SMITH": 6,
           "ROSENGREN": 6,
+          "SMITH": 6,
           "SHEETS": 5,
           "GRAMLICH": 4,
           "EVANS": 4,
           "OLINER": 3,
           "SLIFMAN": 3,
-          "STRUCKMEYER": 3,
           "STONE": 3,
           "BARRON": 3,
+          "STRUCKMEYER": 3,
           "ALVAREZ": 3,
-          "LEAHY": 2,
-          "KRIEGER": 2,
-          "KAMIN": 2,
           "HILTON": 2,
+          "KRIEGER": 2,
           "MOSSER": 2,
+          "LEAHY": 2,
+          "KAMIN": 2,
           "HOLCOMB": 2,
-          "DOYLE": 1,
-          "WILLIAMS": 1,
+          "LEHNERT": 1,
           "GALLIN": 1,
+          "WASCHER": 1,
+          "LIANG": 1,
+          "WILLIAMS": 1,
+          "ELMENDORF": 1,
+          "DRIGGINS": 1,
+          "LUECKE": 1,
           "GAGNON": 1,
           "PEACH": 1,
-          "LUECKE": 1,
-          "WASCHER": 1,
-          "LEHNERT": 1,
-          "DRIGGINS": 1,
+          "DOYLE": 1,
           "RUDEBUSCH": 1,
-          "ELMENDORF": 1,
-          "REIFSCHNEIDER": 1,
-          "LIANG": 1
+          "REIFSCHNEIDER": 1
         }
       ],
       [
@@ -1089,22 +974,6 @@
     ]
   ],
   [
-    "change",
-    "variables.role.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.role.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.role",
     [
@@ -1135,8 +1004,8 @@
       [
         "fewestValues",
         [
-          "DAVID",
-          "PRESIDENT"
+          "PRESIDENT",
+          "DAVID"
         ]
       ],
       [
@@ -1167,8 +1036,8 @@
           "VICE CHAIRMAN": 28,
           "CHAIRMAN": 27,
           "GOVERNOR": 2,
-          "PRESIDENT": 1,
-          "DAVID": 1
+          "DAVID": 1,
+          "PRESIDENT": 1
         }
       ],
       [
@@ -1314,22 +1183,6 @@
     ]
   ],
   [
-    "change",
-    "variables.date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.date.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.date",
     [
@@ -1391,26 +1244,26 @@
           "02/02/2005": 28,
           "29/06/2006": 27,
           "28/06/2007": 26,
+          "22/03/2005": 25,
           "09/08/2005": 25,
           "20/09/2006": 25,
-          "22/03/2005": 25,
           "10/05/2006": 25,
           "31/10/2007": 25,
-          "07/08/2007": 24,
-          "03/05/2005": 24,
-          "08/08/2006": 24,
-          "12/12/2006": 24,
           "18/09/2007": 24,
+          "08/08/2006": 24,
+          "03/05/2005": 24,
           "25/10/2006": 24,
+          "07/08/2007": 24,
           "28/03/2006": 24,
-          "06/12/2007": 23,
-          "31/01/2006": 23,
+          "12/12/2006": 24,
           "11/12/2007": 23,
-          "13/12/2005": 22,
-          "09/05/2007": 22,
-          "20/09/2005": 22,
+          "31/01/2006": 23,
+          "06/12/2007": 23,
           "01/11/2005": 22,
+          "20/09/2005": 22,
+          "13/12/2005": 22,
           "21/03/2007": 22,
+          "09/05/2007": 22,
           "16/08/2007": 18,
           "10/08/2007": 11
         }
@@ -1564,52 +1417,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:55",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "role": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

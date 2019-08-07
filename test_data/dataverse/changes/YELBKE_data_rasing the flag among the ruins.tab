@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        263
-      ],
-      [
-        "variableCount",
-        46
-      ],
-      [
-        "dataSource",
-        {
-          "name": "YELBKE_data_rasing the flag among the ruins.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 87665
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.median",
     [
@@ -122,22 +39,6 @@
     [
       "32",
       32
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -363,22 +264,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countryname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countryname",
     [
@@ -576,26 +461,10 @@
     [
       "200105_CDL",
       [
+        "200105_RC",
         "200105_CDL",
-        "200105_Ulivo",
-        "200105_RC"
+        "200105_Ulivo"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party_date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -629,11 +498,11 @@
       [
         "fewestValues",
         [
-          "201302_CD",
-          "201302_PDL-LN",
-          "201302_PD",
           "201302_SC",
-          "201302_M5S"
+          "201302_SEL",
+          "201302_CD",
+          "201302_M5S",
+          "201302_PD"
         ]
       ],
       [
@@ -659,82 +528,82 @@
       [
         "plotValues",
         {
-          "200105_CDL": 6,
-          "200105_RC": 6,
           "200105_Ulivo": 6,
+          "200105_RC": 6,
+          "200105_CDL": 6,
+          "200502_BE": 5,
+          "200804_UDC": 5,
           "200502_PEV": 5,
           "200804_PDL": 5,
-          "200502_BE": 5,
-          "200502_PSD": 5,
-          "200804_UDC": 5,
-          "200502_CDS-PP": 5,
           "200804_PD": 5,
-          "200804_LN": 5,
-          "200502_PCP": 5,
+          "200502_CDS-PP": 5,
           "200502_PS": 5,
+          "200804_LN": 5,
           "200804_IDV": 5,
+          "200502_PSD": 5,
+          "200502_PCP": 5,
+          "200403_PNV/EAJ": 4,
+          "201111_IU": 4,
           "201111_UPYD": 4,
-          "200003_IU": 4,
-          "200403_ERC": 4,
           "200803_PNV/EAJ": 4,
-          "200803_IU-ERC": 4,
+          "201111_PSOE": 4,
+          "200003_IU": 4,
           "201111_CIU": 4,
+          "200803_PP": 4,
+          "201111_PNV/EAJ": 4,
+          "200403_CIU": 4,
+          "200403_PSOE": 4,
+          "200403_PP": 4,
+          "200803_PSOE": 4,
+          "200003_PP": 4,
+          "200403_IU": 4,
+          "201111_PP": 4,
+          "200003_CC": 4,
+          "200803_CIU": 4,
+          "200003_CIU": 4,
+          "200803_IU-ERC": 4,
+          "200003_PSOE": 4,
+          "200403_ERC": 4,
           "200003_PNV/EAJ": 4,
           "200403_CC": 4,
-          "200403_CIU": 4,
-          "201111_PSOE": 4,
-          "200003_PSOE": 4,
-          "200003_CIU": 4,
-          "200003_PP": 4,
-          "201111_IU": 4,
-          "201111_PP": 4,
-          "200803_PSOE": 4,
-          "200403_PSOE": 4,
-          "200403_IU": 4,
-          "200803_PP": 4,
-          "200803_CIU": 4,
-          "200003_CC": 4,
-          "200403_PNV/EAJ": 4,
-          "200403_PP": 4,
-          "201111_PNV/EAJ": 4,
-          "201206_DIMAR": 3,
+          "200910_ND": 3,
+          "201106_PS": 3,
+          "201106_CDS-PP": 3,
+          "201206_KKE": 3,
+          "200909_PEV": 3,
           "200909_CDS-PP": 3,
-          "200604_CDL": 3,
-          "201206_SYRIZA": 3,
-          "200910_SYRIZA": 3,
-          "201106_BE": 3,
           "201106_PEV": 3,
           "200604_Unione": 3,
-          "200909_PCP": 3,
-          "201206_KKE": 3,
-          "201206_ND": 3,
-          "201206_ANEL": 3,
-          "200910_ND": 3,
-          "200910_PASOK": 3,
-          "201106_PS": 3,
-          "201206_XA": 3,
-          "200909_PS": 3,
-          "201106_PSD": 3,
-          "200909_PSD": 3,
-          "200909_PEV": 3,
+          "200910_SYRIZA": 3,
           "200909_BE": 3,
-          "201106_CDS-PP": 3,
+          "201106_BE": 3,
+          "200910_PASOK": 3,
+          "200909_PCP": 3,
+          "201206_DIMAR": 3,
+          "201206_XA": 3,
+          "200909_PSD": 3,
+          "201206_SYRIZA": 3,
+          "201206_ANEL": 3,
+          "201106_PCP": 3,
+          "201206_ND": 3,
+          "200604_CDL": 3,
           "200910_KKE": 3,
           "201206_PASOK": 3,
-          "201106_PCP": 3,
-          "200203_BE": 2,
-          "200203_PS": 2,
-          "200203_PSD": 2,
+          "200909_PS": 3,
+          "201106_PSD": 3,
           "200203_PCP": 2,
-          "200203_PEV": 2,
+          "200203_PSD": 2,
+          "200203_PS": 2,
+          "200203_BE": 2,
           "200203_CDS-PP": 2,
+          "200203_PEV": 2,
           "201302_CD": 1,
-          "201302_FDI": 1,
-          "201302_SEL": 1,
-          "201302_PDL-LN": 1,
           "201302_M5S": 1,
+          "201302_SEL": 1,
+          "201302_FDI": 1,
           "201302_PD": 1,
-          "201302_SC": 1
+          "201302_SC": 1,
+          "201302_PDL-LN": 1
         }
       ],
       [
@@ -980,22 +849,6 @@
     [
       "43",
       43
-    ]
-  ],
-  [
-    "change",
-    "variables.party_date_code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_date_code.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1607,22 +1460,6 @@
     ]
   ],
   [
-    "change",
-    "variables.edate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.edate.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.edate",
     [
@@ -1689,8 +1526,8 @@
           "2009-09-27": 18,
           "2001-05-13": 18,
           "2011-06-05": 18,
-          "2002-03-17": 12,
           "2009-10-04": 12,
+          "2002-03-17": 12,
           "2013-02-24": 7,
           "2006-04-10": 6
         }
@@ -1874,22 +1711,6 @@
     [
       "200003",
       200003.0
-    ]
-  ],
-  [
-    "change",
-    "variables.date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2457,22 +2278,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -2769,22 +2574,6 @@
     [
       "32061",
       32061
-    ]
-  ],
-  [
-    "change",
-    "variables.party_cmpcode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_cmpcode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3362,26 +3151,10 @@
       "CiU Convergence and Union",
       [
         "PP Popular Party",
-        "CiU Convergence and Union",
         "PNV/EAJ Basque Nationalist Party",
-        "PSOE Spanish Socialist Workers\ufffd Party"
+        "PSOE Spanish Socialist Workers\ufffd Party",
+        "CiU Convergence and Union"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.partyname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3415,11 +3188,11 @@
       [
         "fewestValues",
         [
-          "M5S Five Star Movement",
-          "SEL Left Ecology Freedom",
           "CD Democratic Centre",
+          "SC Civic Choice",
           "FDI-CDN Brothers of Italy - National Centre-right",
-          "SC Civic Choice"
+          "M5S Five Star Movement",
+          "SEL Left Ecology Freedom"
         ]
       ],
       [
@@ -3445,41 +3218,41 @@
       [
         "plotValues",
         {
-          "PSOE Spanish Socialist Workers\ufffd Party": 16,
           "CiU Convergence and Union": 16,
-          "PP Popular Party": 16,
           "PNV/EAJ Basque Nationalist Party": 16,
+          "PSOE Spanish Socialist Workers\ufffd Party": 16,
+          "PP Popular Party": 16,
+          "PEV Ecologist Party \ufffdThe Greens'": 13,
+          "CDS-PP Social Democratic Center-Popular Party": 13,
           "PCP Portuguese Communist Party": 13,
-          "PS Socialist Party": 13,
           "PSD Social Democratic Party": 13,
           "BE Left Bloc": 13,
-          "CDS-PP Social Democratic Center-Popular Party": 13,
-          "PEV Ecologist Party \ufffdThe Greens'": 13,
+          "PS Socialist Party": 13,
           "IU United Left": 12,
           "House of Freedom": 9,
           "CC Canarian Coalition": 8,
           "ERC Catalan Republican Left": 8,
-          "PRC Communist Refoundation Party": 6,
-          "KKE Communist Party of Greece": 6,
-          "PdL People of Freedom": 6,
           "Olive Tree": 6,
+          "KKE Communist Party of Greece": 6,
           "PD Democratic Party": 6,
           "ND New Democracy": 6,
+          "PRC Communist Refoundation Party": 6,
+          "PdL People of Freedom": 6,
           "PASOK Panhellenic Socialist Movement": 6,
           "SYRIZA Coalition of the Radical Left": 6,
-          "LN Northern League": 5,
-          "IdV List Di Pietro - Italy of Values": 5,
           "UdC Union of the Center": 5,
+          "IdV List Di Pietro - Italy of Values": 5,
+          "LN Northern League": 5,
           "UPyD Union, Progress and Democracy": 4,
-          "XA Golden Dawn": 3,
-          "The Union \ufffd Prodi": 3,
           "DIMAR Democratic Left": 3,
           "ANEL Independent Greeks": 3,
-          "SEL Left Ecology Freedom": 1,
+          "XA Golden Dawn": 3,
+          "The Union \ufffd Prodi": 3,
           "SC Civic Choice": 1,
-          "FDI-CDN Brothers of Italy - National Centre-right": 1,
           "CD Democratic Centre": 1,
-          "M5S Five Star Movement": 1
+          "FDI-CDN Brothers of Italy - National Centre-right": 1,
+          "M5S Five Star Movement": 1,
+          "SEL Left Ecology Freedom": 1
         }
       ],
       [
@@ -3648,27 +3421,11 @@
     [
       "CIU",
       [
-        "CIU",
         "PNV/EAJ",
-        "PSOE",
-        "PP"
+        "PP",
+        "CIU",
+        "PSOE"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3702,11 +3459,11 @@
       [
         "fewestValues",
         [
-          "SEL",
-          "CD",
           "SC",
-          "FDI",
-          "M5S"
+          "PDL-LN",
+          "CD",
+          "M5S",
+          "FDI"
         ]
       ],
       [
@@ -3732,43 +3489,43 @@
       [
         "plotValues",
         {
-          "CIU": 16,
           "PNV/EAJ": 16,
-          "PP": 16,
+          "CIU": 16,
           "PSOE": 16,
-          "PEV": 13,
+          "PP": 16,
           "PSD": 13,
-          "PCP": 13,
-          "BE": 13,
           "CDS-PP": 13,
+          "BE": 13,
           "PS": 13,
+          "PCP": 13,
+          "PEV": 13,
           "IU": 12,
           "CDL": 9,
           "CC": 8,
-          "KKE": 6,
-          "PD": 6,
-          "RC": 6,
-          "ND": 6,
           "PASOK": 6,
-          "Ulivo": 6,
+          "RC": 6,
+          "PD": 6,
+          "ND": 6,
           "SYRIZA": 6,
+          "Ulivo": 6,
+          "KKE": 6,
+          "PDL": 5,
           "LN": 5,
           "UDC": 5,
           "IDV": 5,
-          "PDL": 5,
-          "ERC": 4,
-          "IU-ERC": 4,
           "UPYD": 4,
+          "IU-ERC": 4,
+          "ERC": 4,
           "ANEL": 3,
           "DIMAR": 3,
           "XA": 3,
           "Unione": 3,
-          "PDL-LN": 1,
-          "SEL": 1,
-          "SC": 1,
-          "M5S": 1,
           "FDI": 1,
-          "CD": 1
+          "SEL": 1,
+          "PDL-LN": 1,
+          "CD": 1,
+          "SC": 1,
+          "M5S": 1
         }
       ],
       [
@@ -3973,22 +3730,6 @@
     [
       "7",
       7.0
-    ]
-  ],
-  [
-    "change",
-    "variables.legislature.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.legislature.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4288,22 +4029,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ordyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ordyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ordyear",
     [
@@ -4567,22 +4292,6 @@
     [
       "2000",
       2000.0
-    ]
-  ],
-  [
-    "change",
-    "variables.actualyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.actualyear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5118,28 +4827,12 @@
     [
       "14_2001_CDL",
       [
-        "8_2005_CC",
-        "10_2008_PS",
-        "10_2006_PEV",
-        "9_2011_PSOE",
-        "17_2013_SEL"
+        "15_2006_Unione",
+        "10_2013_IU",
+        "14_2002_RC",
+        "17_2013_PD",
+        "17_2013_FDI"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.lyp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lyp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5173,11 +4866,11 @@
       [
         "fewestValues",
         [
-          "8_2005_CC",
-          "10_2008_PS",
-          "10_2006_PEV",
-          "9_2011_PSOE",
-          "17_2013_SEL"
+          "15_2006_Unione",
+          "10_2013_IU",
+          "14_2002_RC",
+          "17_2013_PD",
+          "17_2013_FDI"
         ]
       ],
       [
@@ -5203,269 +4896,269 @@
       [
         "plotValues",
         {
-          "10_2006_CDS": 1,
-          "15_2014_DIMAR": 1,
-          "9_2009_PP": 1,
-          "10_2014_PP": 1,
-          "14_2004_RC": 1,
-          "8_2005_IU": 1,
-          "10_2012_CIU": 1,
-          "12_2011_CDS": 1,
-          "15_2008_Unione": 1,
-          "10_2007_CDS": 1,
-          "11_2009_PCP": 1,
-          "10_2012_PSOE": 1,
-          "15_2014_ND": 1,
-          "15_2012_GD": 1,
-          "7_2001_PSOE": 1,
-          "14_2003_RC": 1,
-          "14_2006_RC": 1,
-          "16_2010_LN": 1,
-          "10_2006_BE": 1,
-          "10_2007_PSD": 1,
-          "8_2007_PNV/EAJ": 1,
-          "8_2007_PP": 1,
-          "15_2012_ANEL": 1,
-          "16_2011_PDL": 1,
-          "11_2009_CDS": 1,
-          "12_2012_BE": 1,
-          "17_2013_CD": 1,
-          "9_2008_PP": 1,
-          "10_2015_CIU": 1,
-          "12_2012_PEV": 1,
-          "14_2002_RC": 1,
-          "7_2000_PSOE": 1,
-          "16_2009_IDV": 1,
-          "8_2007_CIU": 1,
-          "14_2005_RC": 1,
-          "16_2012_PDL": 1,
-          "14_2003_Ulivo": 1,
-          "16_2011_LN": 1,
-          "16_2012_LN": 1,
-          "7_2001_PNV/EAJ": 1,
-          "8_2005_PSOE": 1,
-          "9_2010_PP": 1,
-          "10_2005_PSD": 1,
-          "7_2001_IU": 1,
-          "7_2001_CC": 1,
-          "16_2009_LN": 1,
-          "16_2008_UDC": 1,
-          "7_2003_PNV/EAJ": 1,
-          "14_2001_RC": 1,
-          "10_2005_CDS": 1,
-          "14_2002_CDL": 1,
-          "13_2011_KKE": 1,
-          "15_2013_ANEL": 1,
-          "10_2009_BE": 1,
-          "12_2011_BE": 1,
-          "17_2013_SC": 1,
-          "15_2014_PASOK": 1,
-          "10_2007_BE": 1,
-          "15_2013_GD": 1,
-          "15_2012_DIMAR": 1,
-          "10_2015_PP": 1,
-          "17_2013_PDL-LN": 1,
-          "17_2013_M5S": 1,
-          "7_2000_CC": 1,
-          "8_2006_CC": 1,
-          "16_2012_PD": 1,
-          "10_2009_PEV": 1,
-          "14_2004_CDL": 1,
-          "8_2005_PP": 1,
-          "14_2006_Ulivo": 1,
-          "10_2013_PNV/EAJ": 1,
-          "7_2003_CIU": 1,
-          "11_2011_PS": 1,
-          "11_2009_PS": 1,
-          "8_2006_PSOE": 1,
-          "16_2008_IDV": 1,
-          "8_2006_IU": 1,
-          "8_2004_PSOE": 1,
-          "9_2010_IU-ERC": 1,
-          "15_2013_KKE": 1,
-          "10_2009_CDS": 1,
-          "10_2005_PCP": 1,
-          "9_2010_PSOE": 1,
-          "17_2013_PD": 1,
-          "7_2000_PP": 1,
-          "9_2011_PP": 1,
-          "8_2006_PP": 1,
-          "13_2012_PASOK": 1,
-          "8_2007_PSOE": 1,
-          "16_2009_UDC": 1,
-          "11_2010_BE": 1,
-          "9_2003_PSD": 1,
-          "9_2008_PSOE": 1,
-          "12_2011_PSD": 1,
-          "14_2004_Ulivo": 1,
-          "14_2001_CDL": 1,
-          "13_2010_ND": 1,
-          "11_2010_PCP": 1,
-          "15_2012_SYRIZA": 1,
-          "12_2011_PCP": 1,
-          "13_2012_SYRIZA": 1,
-          "8_2004_IU": 1,
-          "8_2007_ERC": 1,
-          "15_2012_KKE": 1,
-          "10_2008_PSD": 1,
-          "10_2007_PCP": 1,
-          "9_2011_IU-ERC": 1,
-          "8_2005_CIU": 1,
-          "15_2006_CDL": 1,
-          "14_2005_Ulivo": 1,
-          "10_2015_UPYD": 1,
-          "15_2012_PASOK": 1,
-          "9_2011_CIU": 1,
-          "9_2003_BE": 1,
-          "10_2013_PSOE": 1,
-          "16_2011_UDC": 1,
-          "9_2009_IU-ERC": 1,
-          "7_2003_IU": 1,
-          "10_2006_PCP": 1,
-          "7_2003_CC": 1,
-          "9_2004_BE": 1,
-          "11_2011_BE": 1,
           "9_2004_PCP": 1,
           "10_2005_BE": 1,
-          "10_2012_PP": 1,
-          "11_2011_CDS": 1,
-          "7_2002_PSOE": 1,
-          "7_2002_IU": 1,
-          "9_2004_CDS": 1,
-          "10_2014_UPYD": 1,
-          "12_2011_PS": 1,
-          "11_2011_PSD": 1,
-          "11_2009_PSD": 1,
-          "10_2015_IU": 1,
-          "10_2008_PCP": 1,
-          "9_2009_PSOE": 1,
-          "15_2013_SYRIZA": 1,
-          "15_2013_DIMAR": 1,
-          "8_2004_CIU": 1,
-          "13_2012_KKE": 1,
-          "8_2004_CC": 1,
-          "12_2011_PEV": 1,
-          "16_2010_UDC": 1,
-          "13_2010_SYRIZA": 1,
-          "10_2009_PS": 1,
-          "7_2003_PP": 1,
-          "9_2004_PS": 1,
-          "10_2013_CIU": 1,
-          "15_2007_Unione": 1,
-          "7_2000_PNV/EAJ": 1,
-          "16_2008_PD": 1,
-          "12_2012_PCP": 1,
-          "15_2013_PASOK": 1,
-          "9_2009_PNV/EAJ": 1,
-          "16_2010_PD": 1,
-          "14_2002_Ulivo": 1,
-          "7_2001_PP": 1,
-          "7_2003_PSOE": 1,
-          "11_2010_PEV": 1,
-          "14_2006_CDL": 1,
-          "16_2011_PD": 1,
-          "8_2005_PNV/EAJ": 1,
-          "13_2011_PASOK": 1,
-          "9_2003_PS": 1,
-          "16_2012_UDC": 1,
-          "15_2012_ND": 1,
-          "15_2008_CDL": 1,
-          "8_2004_PP": 1,
-          "8_2004_PNV/EAJ": 1,
-          "10_2008_BE": 1,
-          "16_2009_PDL": 1,
-          "12_2013_PEV": 1,
-          "10_2009_PCP": 1,
-          "10_2009_PSD": 1,
-          "12_2013_PSD": 1,
-          "10_2006_PSD": 1,
-          "12_2013_BE": 1,
-          "7_2002_PP": 1,
-          "12_2012_PSD": 1,
-          "10_2008_PEV": 1,
-          "10_2013_IU": 1,
-          "11_2011_PEV": 1,
-          "8_2004_ERC": 1,
-          "10_2012_PNV/EAJ": 1,
-          "11_2011_PCP": 1,
-          "9_2010_CIU": 1,
-          "11_2009_PEV": 1,
-          "10_2014_IU": 1,
-          "15_2014_GD": 1,
-          "14_2003_CDL": 1,
-          "11_2010_PS": 1,
-          "7_2002_CC": 1,
-          "7_2001_CIU": 1,
-          "8_2007_CC": 1,
-          "10_2013_PP": 1,
-          "9_2008_CIU": 1,
-          "9_2008_IU-ERC": 1,
-          "14_2001_Ulivo": 1,
-          "13_2010_PASOK": 1,
-          "14_2005_CDL": 1,
-          "10_2005_PEV": 1,
-          "10_2006_PS": 1,
-          "12_2013_PCP": 1,
-          "16_2011_IDV": 1,
-          "8_2006_CIU": 1,
-          "15_2006_Unione": 1,
-          "15_2007_CDL": 1,
-          "10_2014_CIU": 1,
-          "13_2010_KKE": 1,
-          "11_2010_PSD": 1,
-          "11_2009_BE": 1,
-          "12_2012_PS": 1,
-          "10_2014_PSOE": 1,
-          "8_2006_ERC": 1,
-          "12_2013_CDS": 1,
-          "9_2003_PCP": 1,
-          "11_2010_CDS": 1,
-          "10_2005_PS": 1,
-          "15_2014_KKE": 1,
-          "8_2006_PNV/EAJ": 1,
-          "17_2013_FDI": 1,
-          "7_2000_CIU": 1,
-          "7_2000_IU": 1,
-          "10_2015_PSOE": 1,
-          "10_2007_PEV": 1,
-          "9_2003_CDS": 1,
-          "15_2014_ANEL": 1,
           "16_2008_LN": 1,
+          "10_2007_CDS": 1,
+          "15_2008_Unione": 1,
+          "9_2009_PNV/EAJ": 1,
+          "16_2011_PDL": 1,
           "16_2008_PDL": 1,
-          "12_2013_PS": 1,
-          "16_2010_IDV": 1,
-          "9_2004_PSD": 1,
-          "10_2008_PS": 1,
-          "13_2011_SYRIZA": 1,
-          "16_2009_PD": 1,
-          "9_2009_CIU": 1,
-          "10_2014_PNV/EAJ": 1,
-          "9_2011_PNV/EAJ": 1,
-          "10_2007_PS": 1,
-          "10_2008_CDS": 1,
-          "8_2007_IU": 1,
-          "9_2004_PEV": 1,
-          "9_2003_PEV": 1,
-          "15_2013_ND": 1,
-          "13_2012_ND": 1,
-          "8_2005_ERC": 1,
-          "10_2013_UPYD": 1,
-          "15_2014_SYRIZA": 1,
-          "16_2010_PDL": 1,
-          "12_2012_CDS": 1,
-          "13_2011_ND": 1,
-          "10_2012_IU": 1,
+          "10_2014_IU": 1,
+          "14_2005_RC": 1,
+          "11_2010_PCP": 1,
+          "7_2000_PP": 1,
+          "8_2007_PP": 1,
           "16_2012_IDV": 1,
-          "9_2008_PNV/EAJ": 1,
-          "9_2010_PNV/EAJ": 1,
+          "16_2010_UDC": 1,
+          "17_2013_PD": 1,
+          "10_2005_PS": 1,
+          "10_2009_PS": 1,
+          "8_2006_ERC": 1,
+          "16_2012_LN": 1,
+          "10_2006_PSD": 1,
+          "8_2005_PSOE": 1,
+          "12_2012_PCP": 1,
+          "16_2009_PDL": 1,
+          "10_2008_BE": 1,
           "10_2015_PNV/EAJ": 1,
-          "7_2002_PNV/EAJ": 1,
-          "7_2002_CIU": 1,
+          "11_2011_PS": 1,
+          "14_2003_CDL": 1,
+          "8_2007_CC": 1,
           "10_2012_UPYD": 1,
+          "12_2013_PCP": 1,
+          "10_2007_PS": 1,
+          "15_2007_Unione": 1,
+          "13_2010_PASOK": 1,
+          "7_2001_PSOE": 1,
+          "8_2007_PNV/EAJ": 1,
+          "9_2003_PCP": 1,
+          "14_2001_Ulivo": 1,
+          "9_2008_PNV/EAJ": 1,
+          "14_2001_RC": 1,
+          "12_2012_PSD": 1,
           "17_2013_SEL": 1,
-          "9_2011_PSOE": 1,
+          "16_2012_PD": 1,
+          "13_2012_PASOK": 1,
+          "9_2010_PSOE": 1,
+          "7_2003_PSOE": 1,
+          "10_2007_PSD": 1,
+          "10_2015_PP": 1,
+          "15_2008_CDL": 1,
+          "10_2014_PNV/EAJ": 1,
+          "16_2010_PDL": 1,
+          "7_2002_IU": 1,
+          "12_2013_CDS": 1,
+          "7_2002_PNV/EAJ": 1,
+          "10_2012_PNV/EAJ": 1,
+          "14_2005_CDL": 1,
+          "10_2013_PSOE": 1,
+          "9_2010_CIU": 1,
+          "8_2006_PP": 1,
+          "11_2011_PSD": 1,
+          "8_2006_PSOE": 1,
+          "15_2013_ND": 1,
+          "15_2012_SYRIZA": 1,
+          "10_2005_PSD": 1,
+          "12_2013_PS": 1,
+          "13_2010_SYRIZA": 1,
+          "13_2012_SYRIZA": 1,
+          "10_2009_PEV": 1,
+          "15_2006_Unione": 1,
+          "9_2004_PSD": 1,
+          "8_2006_CC": 1,
+          "9_2003_PS": 1,
+          "16_2010_IDV": 1,
+          "9_2003_PSD": 1,
+          "10_2006_CDS": 1,
+          "15_2012_ND": 1,
+          "12_2011_CDS": 1,
+          "14_2002_CDL": 1,
+          "15_2013_KKE": 1,
+          "16_2011_IDV": 1,
+          "11_2010_PSD": 1,
+          "9_2008_PP": 1,
+          "12_2011_PEV": 1,
+          "10_2009_PSD": 1,
+          "11_2010_PS": 1,
+          "16_2009_IDV": 1,
+          "8_2005_PP": 1,
+          "8_2005_CC": 1,
+          "8_2004_PNV/EAJ": 1,
+          "10_2009_CDS": 1,
+          "9_2010_PNV/EAJ": 1,
+          "8_2004_IU": 1,
+          "14_2006_Ulivo": 1,
+          "13_2011_SYRIZA": 1,
+          "16_2012_UDC": 1,
+          "8_2005_PNV/EAJ": 1,
+          "14_2005_Ulivo": 1,
+          "10_2012_PP": 1,
+          "13_2011_PASOK": 1,
+          "8_2005_ERC": 1,
+          "16_2009_LN": 1,
+          "14_2003_Ulivo": 1,
+          "7_2000_PNV/EAJ": 1,
+          "15_2012_GD": 1,
+          "12_2012_BE": 1,
+          "11_2011_BE": 1,
+          "10_2007_BE": 1,
+          "13_2010_KKE": 1,
+          "13_2011_ND": 1,
+          "12_2012_PS": 1,
+          "9_2003_BE": 1,
+          "10_2015_IU": 1,
+          "7_2001_CC": 1,
+          "15_2013_PASOK": 1,
+          "11_2009_PCP": 1,
+          "8_2007_CIU": 1,
+          "11_2010_CDS": 1,
+          "16_2009_UDC": 1,
+          "14_2004_Ulivo": 1,
+          "10_2014_PP": 1,
+          "14_2006_CDL": 1,
+          "16_2008_UDC": 1,
+          "15_2013_SYRIZA": 1,
+          "9_2008_PSOE": 1,
+          "15_2012_KKE": 1,
+          "8_2004_CC": 1,
+          "15_2014_KKE": 1,
+          "8_2004_PSOE": 1,
+          "8_2004_ERC": 1,
+          "7_2000_CC": 1,
+          "10_2009_BE": 1,
+          "10_2014_CIU": 1,
+          "11_2010_BE": 1,
+          "9_2011_PNV/EAJ": 1,
+          "7_2003_CIU": 1,
+          "10_2014_PSOE": 1,
+          "15_2012_DIMAR": 1,
+          "15_2014_SYRIZA": 1,
+          "7_2003_PNV/EAJ": 1,
+          "12_2011_BE": 1,
+          "10_2012_PSOE": 1,
+          "9_2010_PP": 1,
+          "15_2007_CDL": 1,
+          "8_2004_PP": 1,
+          "12_2011_PCP": 1,
+          "9_2003_CDS": 1,
+          "16_2008_PD": 1,
+          "10_2015_CIU": 1,
+          "10_2008_PEV": 1,
+          "14_2006_RC": 1,
+          "10_2014_UPYD": 1,
+          "7_2002_CIU": 1,
+          "7_2001_PP": 1,
+          "8_2005_CIU": 1,
+          "10_2006_PS": 1,
+          "7_2003_IU": 1,
+          "12_2013_PSD": 1,
+          "9_2009_CIU": 1,
+          "7_2000_IU": 1,
+          "9_2011_PP": 1,
+          "16_2010_LN": 1,
+          "14_2001_CDL": 1,
+          "15_2014_ND": 1,
+          "8_2005_IU": 1,
+          "9_2004_CDS": 1,
+          "12_2012_PEV": 1,
+          "17_2013_M5S": 1,
+          "14_2004_CDL": 1,
+          "7_2001_CIU": 1,
+          "10_2008_CDS": 1,
+          "10_2008_PSD": 1,
+          "17_2013_FDI": 1,
+          "16_2011_UDC": 1,
+          "9_2010_IU-ERC": 1,
+          "10_2012_IU": 1,
+          "17_2013_PDL-LN": 1,
+          "10_2006_PCP": 1,
+          "13_2011_KKE": 1,
+          "17_2013_CD": 1,
+          "16_2008_IDV": 1,
+          "7_2001_PNV/EAJ": 1,
+          "15_2006_CDL": 1,
+          "8_2006_PNV/EAJ": 1,
+          "16_2010_PD": 1,
+          "15_2013_ANEL": 1,
+          "14_2003_RC": 1,
+          "10_2007_PEV": 1,
+          "10_2012_CIU": 1,
+          "15_2013_DIMAR": 1,
+          "13_2010_ND": 1,
+          "7_2001_IU": 1,
+          "9_2009_PP": 1,
+          "10_2015_UPYD": 1,
+          "8_2006_IU": 1,
+          "15_2013_GD": 1,
+          "8_2007_ERC": 1,
           "10_2006_PEV": 1,
-          "8_2005_CC": 1
+          "9_2009_IU-ERC": 1,
+          "12_2011_PS": 1,
+          "14_2002_RC": 1,
+          "12_2013_BE": 1,
+          "8_2004_CIU": 1,
+          "15_2012_ANEL": 1,
+          "11_2009_PS": 1,
+          "10_2005_PEV": 1,
+          "10_2013_PNV/EAJ": 1,
+          "11_2011_PCP": 1,
+          "9_2008_IU-ERC": 1,
+          "16_2011_PD": 1,
+          "9_2004_PEV": 1,
+          "16_2011_LN": 1,
+          "12_2012_CDS": 1,
+          "16_2012_PDL": 1,
+          "11_2011_PEV": 1,
+          "11_2011_CDS": 1,
+          "10_2005_PCP": 1,
+          "10_2008_PS": 1,
+          "7_2000_PSOE": 1,
+          "15_2012_PASOK": 1,
+          "11_2009_PSD": 1,
+          "14_2004_RC": 1,
+          "15_2014_DIMAR": 1,
+          "8_2006_CIU": 1,
+          "9_2011_CIU": 1,
+          "8_2007_IU": 1,
+          "9_2011_PSOE": 1,
+          "15_2014_GD": 1,
+          "13_2012_KKE": 1,
+          "15_2014_PASOK": 1,
+          "10_2013_IU": 1,
+          "10_2005_CDS": 1,
+          "9_2004_PS": 1,
+          "10_2013_UPYD": 1,
+          "14_2002_Ulivo": 1,
+          "9_2004_BE": 1,
+          "7_2002_PP": 1,
+          "10_2008_PCP": 1,
+          "10_2013_PP": 1,
+          "17_2013_SC": 1,
+          "11_2009_PEV": 1,
+          "9_2003_PEV": 1,
+          "7_2003_CC": 1,
+          "9_2011_IU-ERC": 1,
+          "7_2003_PP": 1,
+          "10_2013_CIU": 1,
+          "9_2008_CIU": 1,
+          "15_2014_ANEL": 1,
+          "11_2010_PEV": 1,
+          "7_2002_PSOE": 1,
+          "9_2009_PSOE": 1,
+          "13_2012_ND": 1,
+          "10_2009_PCP": 1,
+          "10_2006_BE": 1,
+          "10_2007_PCP": 1,
+          "12_2011_PSD": 1,
+          "10_2015_PSOE": 1,
+          "16_2009_PD": 1,
+          "12_2013_PEV": 1,
+          "11_2009_BE": 1,
+          "7_2000_CIU": 1,
+          "11_2009_CDS": 1,
+          "8_2007_PSOE": 1,
+          "7_2002_CC": 1
         }
       ],
       [
@@ -5900,22 +5593,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.lyp_encode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lyp_encode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6559,22 +6236,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tot_bdim_question_yearly.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tot_bdim_question_yearly.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tot_bdim_question_yearly",
     [
@@ -7212,22 +6873,6 @@
     [
       "7",
       7.0
-    ]
-  ],
-  [
-    "change",
-    "variables.tot_bdim_question.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tot_bdim_question.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7878,26 +7523,10 @@
   ],
   [
     "change",
-    "variables.share_seat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.share_seat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.share_seat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8540,22 +8169,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totseats.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totseats.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totseats",
     [
@@ -8816,22 +8429,6 @@
     ]
   ],
   [
-    "change",
-    "variables.joint.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.joint.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.joint",
     [
@@ -9077,22 +8674,6 @@
     [
       "43",
       43.0
-    ]
-  ],
-  [
-    "change",
-    "variables.total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9747,26 +9328,10 @@
   ],
   [
     "change",
-    "variables.rile.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rile.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rile.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10410,22 +9975,6 @@
     ]
   ],
   [
-    "change",
-    "variables.extr_left.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.extr_left.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.extr_left",
     [
@@ -10665,22 +10214,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.extr_right.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.extr_right.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10937,26 +10470,10 @@
   ],
   [
     "change",
-    "variables.duncan.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.duncan.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.duncan.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11610,26 +11127,10 @@
   ],
   [
     "change",
-    "variables.duncan_yearly.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.duncan_yearly.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.duncan_yearly.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12284,26 +11785,10 @@
   ],
   [
     "change",
-    "variables.entropy_manifesto.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.entropy_manifesto.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.entropy_manifesto.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12958,26 +12443,10 @@
   ],
   [
     "change",
-    "variables.entropy_question.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.entropy_question.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.entropy_question.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13630,26 +13099,10 @@
   ],
   [
     "change",
-    "variables.entropy_question_yearly.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.entropy_question_yearly.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.entropy_question_yearly.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14293,22 +13746,6 @@
     ]
   ],
   [
-    "change",
-    "variables.greece.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.greece.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.greece",
     [
@@ -14548,22 +13985,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.italy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.italy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14809,22 +14230,6 @@
     ]
   ],
   [
-    "change",
-    "variables.portugal.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.portugal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.portugal",
     [
@@ -15064,22 +14469,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.spain.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.spain.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15334,26 +14723,10 @@
   ],
   [
     "change",
-    "variables.growth_lag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.growth_lag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.growth_lag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16002,26 +15375,10 @@
   ],
   [
     "change",
-    "variables.unemployment_lag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemployment_lag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemployment_lag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16670,26 +16027,10 @@
   ],
   [
     "change",
-    "variables.inflation_lag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflation_lag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflation_lag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17338,26 +16679,10 @@
   ],
   [
     "change",
-    "variables.deficit_lag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.deficit_lag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.deficit_lag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18007,26 +17332,10 @@
   ],
   [
     "change",
-    "variables.epi_weighted_lag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.epi_weighted_lag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.epi_weighted_lag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18666,22 +17975,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gov_party_yearly_before.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_party_yearly_before.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gov_party_yearly_before",
     [
@@ -18921,22 +18214,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_party.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19182,22 +18459,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gov_party_yearly.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_party_yearly.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gov_party_yearly",
     [
@@ -19437,22 +18698,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.altern_typo_year_yearly.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.altern_typo_year_yearly.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19721,26 +18966,10 @@
   ],
   [
     "change",
-    "variables.memphasis_macroeco.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.memphasis_macroeco.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.memphasis_macroeco.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20393,26 +19622,10 @@
   ],
   [
     "change",
-    "variables.qemphasis_macroeco.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.qemphasis_macroeco.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.qemphasis_macroeco.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21065,26 +20278,10 @@
   ],
   [
     "change",
-    "variables.qemphasis_macroeco_yearly.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.qemphasis_macroeco_yearly.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.qemphasis_macroeco_yearly.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21728,22 +20925,6 @@
     ]
   ],
   [
-    "change",
-    "variables.snap.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.snap.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.snap",
     [
@@ -21940,262 +21121,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:33",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_date_code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "edate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_cmpcode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legislature": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ordyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "actualyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lyp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lyp_encode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tot_bdim_question_yearly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tot_bdim_question": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share_seat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totseats": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "joint": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rile": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "extr_left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "extr_right": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "duncan": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "duncan_yearly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "entropy_manifesto": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "entropy_question": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "entropy_question_yearly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "greece": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "italy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "portugal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spain": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "growth_lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemployment_lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation_lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "deficit_lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "epi_weighted_lag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_party_yearly_before": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_party_yearly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "altern_typo_year_yearly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "memphasis_macroeco": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qemphasis_macroeco": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qemphasis_macroeco_yearly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "snap": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

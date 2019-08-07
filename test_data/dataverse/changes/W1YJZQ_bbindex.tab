@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        51
-      ],
-      [
-        "variableCount",
-        5
-      ],
-      [
-        "dataSource",
-        {
-          "name": "W1YJZQ_bbindex.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1423
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
       "Michigan",
       [
-        "Arkansas",
-        "Arizona",
+        "Michigan",
+        "Indiana",
+        "New_Jersey",
         "New_Hampshire",
-        "North_Dakota",
-        "Indiana"
+        "New_Mexico"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Arkansas",
-          "Arizona",
+          "Michigan",
+          "Indiana",
+          "New_Jersey",
           "New_Hampshire",
-          "North_Dakota",
-          "Indiana"
+          "New_Mexico"
         ]
       ],
       [
@@ -173,57 +74,57 @@
       [
         "plotValues",
         {
-          "Georgia": 1,
-          "Illinois": 1,
-          "Texas": 1,
-          "Alabama": 1,
-          "New_York": 1,
-          "Michigan": 1,
-          "Montana": 1,
-          "South_Carolina": 1,
-          "New_Jersey": 1,
-          "Virginia": 1,
-          "North_Carolina": 1,
-          "Kansas": 1,
-          "Rhode_Island": 1,
-          "California": 1,
-          "Massachusetts": 1,
-          "Washington": 1,
-          "Vermont": 1,
-          "Oklahoma": 1,
-          "Wyoming": 1,
-          "Connecticut": 1,
-          "Kentucky": 1,
-          "Colorado": 1,
-          "Iowa": 1,
-          "New_Mexico": 1,
-          "South_Dakota": 1,
-          "Nebraska": 1,
-          "District of Columbia": 1,
-          "Minnesota": 1,
-          "West_Virginia": 1,
-          "Tennessee": 1,
-          "Oregon": 1,
-          "Missouri": 1,
-          "Mississippi": 1,
-          "Utah": 1,
-          "Delaware": 1,
-          "Arkansas": 1,
-          "Hawaii": 1,
-          "Nevada": 1,
-          "Alaska": 1,
-          "Arizona": 1,
           "Wisconsin": 1,
-          "Pennsylvania": 1,
-          "Ohio": 1,
-          "Louisiana": 1,
-          "Maryland": 1,
-          "Idaho": 1,
-          "Maine": 1,
-          "Indiana": 1,
-          "North_Dakota": 1,
           "New_Hampshire": 1,
-          "Florida": 1
+          "Hawaii": 1,
+          "Kansas": 1,
+          "Washington": 1,
+          "Montana": 1,
+          "Utah": 1,
+          "Arizona": 1,
+          "Ohio": 1,
+          "Pennsylvania": 1,
+          "Alabama": 1,
+          "Louisiana": 1,
+          "Kentucky": 1,
+          "Mississippi": 1,
+          "Tennessee": 1,
+          "Texas": 1,
+          "South_Carolina": 1,
+          "Minnesota": 1,
+          "Oklahoma": 1,
+          "Florida": 1,
+          "District of Columbia": 1,
+          "North_Carolina": 1,
+          "Maryland": 1,
+          "Colorado": 1,
+          "North_Dakota": 1,
+          "Virginia": 1,
+          "New_York": 1,
+          "Maine": 1,
+          "Massachusetts": 1,
+          "Rhode_Island": 1,
+          "Wyoming": 1,
+          "South_Dakota": 1,
+          "Vermont": 1,
+          "Arkansas": 1,
+          "Illinois": 1,
+          "Missouri": 1,
+          "Idaho": 1,
+          "Iowa": 1,
+          "Nevada": 1,
+          "Oregon": 1,
+          "Delaware": 1,
+          "Alaska": 1,
+          "California": 1,
+          "Georgia": 1,
+          "Connecticut": 1,
+          "New_Mexico": 1,
+          "New_Jersey": 1,
+          "Indiana": 1,
+          "West_Virginia": 1,
+          "Nebraska": 1,
+          "Michigan": 1
         }
       ],
       [
@@ -455,26 +356,10 @@
   ],
   [
     "change",
-    "variables.Total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Total.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1127,26 +1012,10 @@
   ],
   [
     "change",
-    "variables.Deployment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Deployment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Deployment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1445,26 +1314,10 @@
   ],
   [
     "change",
-    "variables.Supply.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Supply.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Supply.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1775,26 +1628,10 @@
   ],
   [
     "change",
-    "variables.Demand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Demand.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Demand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2392,57 +2229,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:29:05",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Deployment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Supply": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Demand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

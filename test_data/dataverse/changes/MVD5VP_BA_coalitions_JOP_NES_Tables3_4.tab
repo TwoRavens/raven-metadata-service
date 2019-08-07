@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        254
-      ],
-      [
-        "variableCount",
-        21
-      ],
-      [
-        "dataSource",
-        {
-          "name": "MVD5VP_BA_coalitions_JOP_NES_Tables3_4.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 35966
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Norway"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -342,22 +243,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -618,22 +503,6 @@
     [
       "1973",
       1973
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1234,22 +1103,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_n.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party_n",
     [
@@ -1819,28 +1672,12 @@
     [
       "NOR: SV Left Socialists",
       [
-        "NOR: V Liberals",
-        "NOR: KrF Christian Peoples Party",
-        "NOR: DNA Labour",
         "NOR: SV Left Socialists",
-        "NOR: SP Centre Party"
+        "NOR: KrF Christian Peoples Party",
+        "NOR: V Liberals",
+        "NOR: H Conservatives",
+        "NOR: DNA Labour"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1876,8 +1713,8 @@
         [
           "LPF List Pim Fortuyn",
           "UK: Liberals",
-          "UK: Conservatives",
-          "UK: Labour"
+          "UK: Labour",
+          "UK: Conservatives"
         ]
       ],
       [
@@ -1903,66 +1740,66 @@
       [
         "plotValues",
         {
-          "NOR: H Conservatives": 7,
-          "NOR: KrF Christian Peoples Party": 7,
-          "NOR: SV Left Socialists": 7,
-          "NOR: DNA Labour": 7,
           "NOR: V Liberals": 7,
+          "NOR: KrF Christian Peoples Party": 7,
+          "NOR: H Conservatives": 7,
+          "NOR: SV Left Socialists": 7,
           "NOR: SP Centre Party": 7,
+          "NOR: DNA Labour": 7,
           "SWE: Vp Communists": 6,
-          "SWE: CP Centre Party": 6,
-          "SWE: FP Liberals": 6,
-          "SWE: MSP Conservatives": 6,
           "SWE: SdaP Social Democrats": 6,
-          "NOR: FrP Progress Party": 5,
-          "NET: VVD Liberals": 5,
-          "90/Greens Alliance '90/Greens": 5,
-          "NET: D 66 Libertarians": 5,
+          "SWE: FP Liberals": 6,
+          "SWE: CP Centre Party": 6,
+          "SWE: MSP Conservatives": 6,
           "SPD Social Democratic Party": 5,
-          "PDS Party of Democratic Socialism": 5,
-          "CDU/CSU Christian Democratic Union/Social Union": 5,
-          "SWE: KdS Christian Democrats": 5,
-          "NET: PvdA Labour": 5,
-          "NET: CDA Christian Democrats": 5,
           "FDP Free Democratic Party": 5,
-          "Socialist People's Party": 4,
-          "Farmers' Party": 4,
-          "Communist Party": 4,
-          "FP People's Party": 4,
-          "MSP Conservatives": 4,
-          "D'66 Democrats 66": 4,
-          "VVD People's Party for Freedom and Democracy": 4,
-          "KdS Christian Democratic Community": 4,
-          "H Conservative Party": 4,
-          "Labour Party": 4,
-          "LDP Liberal Democratic Party": 4,
-          "CP Centre Party": 4,
+          "NOR: FrP Progress Party": 5,
+          "CDU/CSU Christian Democratic Union/Social Union": 5,
+          "NET: D 66 Libertarians": 5,
+          "SWE: KdS Christian Democrats": 5,
+          "PDS Party of Democratic Socialism": 5,
+          "90/Greens Alliance '90/Greens": 5,
+          "NET: PvdA Labour": 5,
+          "NET: VVD Liberals": 5,
+          "NET: CDA Christian Democrats": 5,
           "Conservative Party": 4,
-          "KrF Christian People's Party": 4,
-          "SdaP Social Democrats": 4,
-          "PvdA Labour Party": 4,
-          "V Liberal Party": 4,
-          "DNA Labour Party": 4,
-          "GER: FDP Free Democrats": 4,
-          "GER: SPD Social Democrats": 4,
-          "FrP Progress Party": 4,
-          "SP Socialist Party": 4,
-          "CDA Christian Democratic Appeal": 4,
           "GER: CDU-CSU Christian Democrats": 4,
+          "VVD People's Party for Freedom and Democracy": 4,
+          "FrP Progress Party": 4,
+          "Labour Party": 4,
+          "GER: FDP Free Democrats": 4,
+          "V Liberal Party": 4,
+          "H Conservative Party": 4,
+          "KdS Christian Democratic Community": 4,
+          "Farmers' Party": 4,
+          "Socialist People's Party": 4,
+          "KrF Christian People's Party": 4,
+          "FP People's Party": 4,
+          "Communist Party": 4,
+          "LDP Liberal Democratic Party": 4,
+          "D'66 Democrats 66": 4,
+          "CP Centre Party": 4,
+          "PvdA Labour Party": 4,
+          "SP Socialist Party": 4,
+          "MSP Conservatives": 4,
           "GL Green Left": 4,
-          "SNP Scottish National Party": 3,
-          "GER: Greens": 3,
-          "SGP Reformed Political Party": 3,
-          "SWE: Greens": 3,
+          "GER: SPD Social Democrats": 4,
+          "SdaP Social Democrats": 4,
+          "CDA Christian Democratic Appeal": 4,
+          "DNA Labour Party": 4,
           "CU Christian Union": 3,
+          "GER: Greens": 3,
+          "SNP Scottish National Party": 3,
+          "SWE: Greens": 3,
+          "SGP Reformed Political Party": 3,
           "DZ Centre Party": 2,
           "PVV Party of Freedom": 2,
-          "SD Sweden Democrats": 2,
           "Green Ecology Party": 2,
-          "UK: Conservatives": 1,
+          "SD Sweden Democrats": 2,
+          "UK: Liberals": 1,
           "UK: Labour": 1,
           "LPF List Pim Fortuyn": 1,
-          "UK: Liberals": 1
+          "UK: Conservatives": 1
         }
       ],
       [
@@ -2190,22 +2027,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2462,26 +2283,10 @@
   ],
   [
     "change",
-    "variables.d_pm_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d_pm_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d_pm_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3132,26 +2937,10 @@
   ],
   [
     "change",
-    "variables.l_pm_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_pm_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_pm_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3804,26 +3593,10 @@
   ],
   [
     "change",
-    "variables.pm_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pm_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pm_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4478,26 +4251,10 @@
   ],
   [
     "change",
-    "variables.pm_LR_new.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pm_LR_new.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pm_LR_new.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5139,22 +4896,6 @@
     ]
   ],
   [
-    "change",
-    "variables.govt.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.govt.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.govt",
     [
@@ -5410,26 +5151,10 @@
   ],
   [
     "change",
-    "variables.party_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6082,26 +5807,10 @@
   ],
   [
     "change",
-    "variables.d_party_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d_party_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d_party_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6757,26 +6466,10 @@
   ],
   [
     "change",
-    "variables.l_party_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_party_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_party_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7424,22 +7117,6 @@
     ]
   ],
   [
-    "change",
-    "variables.code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.code.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.code",
     [
@@ -8059,26 +7736,10 @@
   ],
   [
     "change",
-    "variables.distance_PM_partners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distance_PM_partners.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distance_PM_partners.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8735,26 +8396,10 @@
   ],
   [
     "change",
-    "variables.l_distance_PM_partners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_distance_PM_partners.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_distance_PM_partners.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9408,26 +9053,10 @@
   ],
   [
     "change",
-    "variables.distance_PM_opposition.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distance_PM_opposition.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distance_PM_opposition.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10084,26 +9713,10 @@
   ],
   [
     "change",
-    "variables.l_distance_PM_opposition.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_distance_PM_opposition.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_distance_PM_opposition.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10760,26 +10373,10 @@
   ],
   [
     "change",
-    "variables.d_junior_party_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d_junior_party_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d_junior_party_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11435,26 +11032,10 @@
   ],
   [
     "change",
-    "variables.d_opp_party_LR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d_opp_party_LR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d_opp_party_LR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12052,137 +11633,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:08",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d_pm_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_pm_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm_LR_new": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d_party_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_party_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distance_PM_partners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_distance_PM_partners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distance_PM_opposition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_distance_PM_opposition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d_junior_party_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d_opp_party_LR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

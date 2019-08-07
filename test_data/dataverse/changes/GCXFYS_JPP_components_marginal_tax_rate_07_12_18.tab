@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1550
-      ],
-      [
-        "variableCount",
-        25
-      ],
-      [
-        "dataSource",
-        {
-          "name": "GCXFYS_JPP_components_marginal_tax_rate_07_12_18.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 243296
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1980",
       1980
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -751,22 +652,6 @@
     ]
   ],
   [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.State",
     [
@@ -1370,28 +1255,12 @@
     [
       "AL",
       [
+        "WI",
+        "MA",
         "NJ",
-        "UT",
-        "MS",
-        "MI",
-        "KY"
+        "CT",
+        "UT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.scode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.scode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1425,11 +1294,11 @@
       [
         "fewestValues",
         [
+          "WI",
+          "MA",
           "NJ",
-          "UT",
-          "MS",
-          "MI",
-          "KY"
+          "CT",
+          "UT"
         ]
       ],
       [
@@ -1455,56 +1324,56 @@
       [
         "plotValues",
         {
-          "IA": 31,
-          "ND": 31,
-          "OH": 31,
-          "TX": 31,
-          "GA": 31,
-          "PA": 31,
-          "LA": 31,
-          "ME": 31,
-          "VT": 31,
-          "MN": 31,
-          "WA": 31,
-          "MA": 31,
-          "AR": 31,
-          "KS": 31,
-          "WI": 31,
-          "WV": 31,
-          "SC": 31,
-          "NY": 31,
-          "WY": 31,
-          "DE": 31,
-          "NV": 31,
-          "CO": 31,
-          "VA": 31,
-          "NC": 31,
-          "AZ": 31,
-          "AL": 31,
-          "MO": 31,
-          "IL": 31,
-          "SD": 31,
-          "RI": 31,
-          "OR": 31,
-          "CT": 31,
-          "ID": 31,
-          "OK": 31,
-          "CA": 31,
-          "AK": 31,
-          "NE": 31,
-          "TN": 31,
-          "IN": 31,
-          "HI": 31,
-          "NH": 31,
-          "NM": 31,
-          "MT": 31,
           "MD": 31,
-          "FL": 31,
+          "GA": 31,
           "KY": 31,
+          "FL": 31,
+          "AR": 31,
+          "TN": 31,
+          "NE": 31,
+          "NV": 31,
+          "RI": 31,
+          "ME": 31,
+          "CO": 31,
+          "HI": 31,
+          "AL": 31,
+          "MT": 31,
+          "NM": 31,
           "MI": 31,
+          "MO": 31,
+          "NC": 31,
+          "ND": 31,
+          "OR": 31,
+          "DE": 31,
+          "LA": 31,
           "MS": 31,
+          "WV": 31,
+          "NY": 31,
+          "VA": 31,
+          "OH": 31,
+          "PA": 31,
+          "ID": 31,
+          "TX": 31,
+          "KS": 31,
+          "IA": 31,
+          "MN": 31,
+          "WY": 31,
+          "AZ": 31,
+          "OK": 31,
+          "AK": 31,
+          "CA": 31,
+          "WA": 31,
+          "IL": 31,
+          "IN": 31,
+          "SC": 31,
+          "SD": 31,
+          "NH": 31,
+          "VT": 31,
           "UT": 31,
-          "NJ": 31
+          "CT": 31,
+          "NJ": 31,
+          "MA": 31,
+          "WI": 31
         }
       ],
       [
@@ -1688,28 +1557,12 @@
     [
       "Alabama",
       [
-        "Vermont",
-        "Connecticut",
-        "Idaho",
+        "Michigan",
         "Minnesota",
-        "Nevada"
+        "Texas",
+        "Tennessee",
+        "Arizona"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State_label.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State_label.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1743,11 +1596,11 @@
       [
         "fewestValues",
         [
-          "Vermont",
-          "Connecticut",
-          "Idaho",
+          "Michigan",
           "Minnesota",
-          "Nevada"
+          "Texas",
+          "Tennessee",
+          "Arizona"
         ]
       ],
       [
@@ -1773,56 +1626,56 @@
       [
         "plotValues",
         {
-          "Alaska": 31,
-          "Ohio": 31,
-          "Iowa": 31,
-          "Washington": 31,
-          "Montana": 31,
-          "Alabama": 31,
-          "Hawaii": 31,
-          "Oregon": 31,
-          "New Mexico": 31,
-          "Virginia": 31,
-          "Wyoming": 31,
-          "Mississippi": 31,
-          "Illinois": 31,
-          "South Carolina": 31,
-          "Indiana": 31,
-          "Delaware": 31,
-          "New York": 31,
-          "Colorado": 31,
-          "South Dakota": 31,
-          "Tennessee": 31,
           "North Carolina": 31,
-          "Utah": 31,
-          "Kansas": 31,
-          "Georgia": 31,
-          "Kentucky": 31,
-          "Massachusetts": 31,
-          "Louisiana": 31,
-          "Nebraska": 31,
-          "New Hampshire": 31,
-          "Maine": 31,
+          "Washington": 31,
+          "Delaware": 31,
+          "Vermont": 31,
           "California": 31,
-          "North Dakota": 31,
-          "Oklahoma": 31,
-          "Arkansas": 31,
-          "New Jersey": 31,
-          "Missouri": 31,
-          "West Virginia": 31,
-          "Florida": 31,
-          "Michigan": 31,
-          "Rhode Island": 31,
-          "Arizona": 31,
-          "Wisconsin": 31,
-          "Texas": 31,
-          "Maryland": 31,
-          "Pennsylvania": 31,
-          "Nevada": 31,
-          "Minnesota": 31,
+          "New Hampshire": 31,
+          "Georgia": 31,
+          "Maine": 31,
+          "Mississippi": 31,
+          "Virginia": 31,
+          "South Carolina": 31,
+          "Kansas": 31,
           "Idaho": 31,
+          "Massachusetts": 31,
+          "Pennsylvania": 31,
+          "Alabama": 31,
+          "Louisiana": 31,
+          "Oklahoma": 31,
+          "Kentucky": 31,
+          "Oregon": 31,
+          "Missouri": 31,
+          "Maryland": 31,
+          "North Dakota": 31,
+          "Colorado": 31,
+          "Arkansas": 31,
+          "Iowa": 31,
+          "Wisconsin": 31,
+          "Florida": 31,
+          "Wyoming": 31,
+          "West Virginia": 31,
+          "Nebraska": 31,
+          "Nevada": 31,
+          "New York": 31,
+          "Alaska": 31,
+          "New Jersey": 31,
           "Connecticut": 31,
-          "Vermont": 31
+          "Indiana": 31,
+          "New Mexico": 31,
+          "Rhode Island": 31,
+          "Illinois": 31,
+          "Hawaii": 31,
+          "South Dakota": 31,
+          "Montana": 31,
+          "Utah": 31,
+          "Ohio": 31,
+          "Arizona": 31,
+          "Tennessee": 31,
+          "Texas": 31,
+          "Minnesota": 31,
+          "Michigan": 31
         }
       ],
       [
@@ -2040,22 +1893,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_pincome_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_pincome_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2699,22 +2536,6 @@
     ]
   ],
   [
-    "change",
-    "variables.taxes_cincome_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_cincome_s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.taxes_cincome_s",
     [
@@ -3352,22 +3173,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_sales_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_sales_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4011,22 +3816,6 @@
     ]
   ],
   [
-    "change",
-    "variables.taxes_property_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_property_s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.taxes_property_s",
     [
@@ -4664,22 +4453,6 @@
     [
       "266317",
       266317
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_total_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_total_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5323,22 +5096,6 @@
     ]
   ],
   [
-    "change",
-    "variables.taxes_pincome_sl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_pincome_sl.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.taxes_pincome_sl",
     [
@@ -5979,22 +5736,6 @@
     ]
   ],
   [
-    "change",
-    "variables.taxes_cincome_sl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_cincome_sl.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.taxes_cincome_sl",
     [
@@ -6632,22 +6373,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_sales_sl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_sales_sl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7295,22 +7020,6 @@
     ]
   ],
   [
-    "change",
-    "variables.taxes_property_sl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_property_sl.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.taxes_property_sl",
     [
@@ -7952,22 +7661,6 @@
     [
       "459909",
       459909.0
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_total_sl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.taxes_total_sl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8615,22 +8308,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y_fiscal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.y_fiscal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y_fiscal",
     [
@@ -9275,22 +8952,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y_calendar.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.y_calendar.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y_calendar",
     [
@@ -9928,22 +9589,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y_us_census.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.y_us_census.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10587,22 +10232,6 @@
     ]
   ],
   [
-    "change",
-    "variables.number_cbrackets.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.number_cbrackets.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.number_cbrackets",
     [
@@ -10896,26 +10525,10 @@
   ],
   [
     "change",
-    "variables.max_crate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.max_crate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.max_crate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11568,26 +11181,10 @@
   ],
   [
     "change",
-    "variables.mtr_wages.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mtr_wages.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mtr_wages.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12240,26 +11837,10 @@
   ],
   [
     "change",
-    "variables.mtr_dividends.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mtr_dividends.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mtr_dividends.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12912,26 +12493,10 @@
   ],
   [
     "change",
-    "variables.mtr_pension.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mtr_pension.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mtr_pension.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13584,26 +13149,10 @@
   ],
   [
     "change",
-    "variables.Rate_sales.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Rate_sales.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Rate_sales.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14255,26 +13804,10 @@
   ],
   [
     "change",
-    "variables.Rate_Food.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Rate_Food.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Rate_Food.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14924,26 +14457,10 @@
   ],
   [
     "change",
-    "variables.Rate_property.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Rate_property.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Rate_property.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15541,157 +15058,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:18:38",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "scode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "State_label": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_pincome_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_cincome_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_sales_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_property_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_total_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_pincome_sl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_cincome_sl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_sales_sl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_property_sl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "taxes_total_sl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y_fiscal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y_calendar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y_us_census": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "number_cbrackets": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "max_crate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mtr_wages": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mtr_dividends": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mtr_pension": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rate_sales": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rate_Food": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rate_property": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

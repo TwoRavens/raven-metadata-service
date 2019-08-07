@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        30
-      ],
-      [
-        "variableCount",
-        17
-      ],
-      [
-        "dataSource",
-        {
-          "name": "VXCUOU_wmodels.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2408
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.model.median",
     [
@@ -122,22 +39,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.model.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.model.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -375,22 +276,6 @@
     ]
   ],
   [
-    "change",
-    "variables.outcome.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.outcome.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.outcome",
     [
@@ -604,28 +489,12 @@
     [
       "W2",
       [
-        "W12",
         "W14",
-        "W2",
         "W10",
+        "W2",
+        "W12",
         "W7"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.w.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.w.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -659,10 +528,10 @@
       [
         "fewestValues",
         [
-          "W12",
           "W14",
-          "W2",
           "W10",
+          "W2",
+          "W12",
           "W7"
         ]
       ],
@@ -689,10 +558,10 @@
       [
         "plotValues",
         {
-          "W7": 6,
           "W12": 6,
-          "W10": 6,
+          "W7": 6,
           "W2": 6,
+          "W10": 6,
           "W14": 6
         }
       ],
@@ -835,22 +704,6 @@
         "GSP SL",
         "GSP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.v.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.v.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1094,26 +947,10 @@
   ],
   [
     "change",
-    "variables.d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1770,26 +1607,10 @@
   ],
   [
     "change",
-    "variables.lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2446,26 +2267,10 @@
   ],
   [
     "change",
-    "variables.hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3122,26 +2927,10 @@
   ],
   [
     "change",
-    "variables.epcp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.epcp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.epcp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3422,26 +3211,10 @@
   ],
   [
     "change",
-    "variables.worse_class.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.worse_class.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.worse_class.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3722,26 +3495,10 @@
   ],
   [
     "change",
-    "variables.model_class.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.model_class.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.model_class.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4018,26 +3775,10 @@
   ],
   [
     "change",
-    "variables.naive_class.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.naive_class.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.naive_class.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4286,26 +4027,10 @@
   ],
   [
     "change",
-    "variables.aic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.aic.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.aic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4586,26 +4311,10 @@
   ],
   [
     "change",
-    "variables.bic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bic.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4882,26 +4591,10 @@
   ],
   [
     "change",
-    "variables.auc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.auc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.auc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5170,26 +4863,10 @@
   ],
   [
     "change",
-    "variables.auc_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.auc_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.auc_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5458,26 +5135,10 @@
   ],
   [
     "change",
-    "variables.auc_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.auc_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.auc_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5702,26 +5363,10 @@
       [
         "Cross-Border Employment",
         "Economic Similarity",
-        "Contiguity",
+        "Media Mentions",
         "House Co-Sponsorship",
-        "Media Mentions"
+        "Contiguity"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.w2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.w2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5757,9 +5402,9 @@
         [
           "Cross-Border Employment",
           "Economic Similarity",
-          "Contiguity",
+          "Media Mentions",
           "House Co-Sponsorship",
-          "Media Mentions"
+          "Contiguity"
         ]
       ],
       [
@@ -5785,10 +5430,10 @@
       [
         "plotValues",
         {
-          "Media Mentions": 6,
-          "House Co-Sponsorship": 6,
           "Contiguity": 6,
+          "House Co-Sponsorship": 6,
           "Economic Similarity": 6,
+          "Media Mentions": 6,
           "Cross-Border Employment": 6
         }
       ],
@@ -5919,117 +5564,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:15",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "model": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "outcome": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "w": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "epcp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "worse_class": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "model_class": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "naive_class": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "auc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "auc_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "auc_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "w2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

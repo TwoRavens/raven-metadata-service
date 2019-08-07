@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        211
-      ],
-      [
-        "variableCount",
-        56
-      ],
-      [
-        "dataSource",
-        {
-          "name": "25540_Kasara Suryanarayan 2014 Replication Dataset.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 90272
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Mexico"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,11 +40,11 @@
       [
         "fewestValues",
         [
-          "Philippines",
-          "Cyprus",
-          "Finland",
-          "Liberia",
-          "Georgia"
+          "Indonesia",
+          "Malaysia",
+          "Ukraine",
+          "Lithuania",
+          "Egypt"
         ]
       ],
       [
@@ -171,80 +72,80 @@
         {
           "Mexico": 10,
           "Brazil": 7,
-          "Costa Rica": 6,
-          "Colombia": 6,
           "Guatemala": 6,
-          "Panama": 6,
-          "Chile": 6,
-          "Nicaragua": 6,
           "Honduras": 6,
+          "Nicaragua": 6,
+          "Panama": 6,
           "El Salvador": 6,
-          "Ecuador": 5,
-          "Bolivia": 5,
-          "Uruguay": 5,
+          "Chile": 6,
+          "Colombia": 6,
+          "Costa Rica": 6,
           "Peru": 5,
-          "Argentina": 4,
+          "Bolivia": 5,
+          "Ecuador": 5,
+          "Uruguay": 5,
           "Dominican Republic": 4,
-          "Spain": 3,
-          "Ghana": 3,
-          "Sweden": 3,
-          "Slovenia": 3,
-          "Zambia": 3,
-          "Mali": 3,
-          "Jamaica": 3,
+          "Argentina": 4,
           "Australia": 3,
-          "Poland": 3,
-          "Romania": 3,
-          "Germany": 3,
+          "Ghana": 3,
+          "Mali": 3,
           "United States": 3,
+          "Germany": 3,
+          "Spain": 3,
+          "Romania": 3,
+          "Slovenia": 3,
+          "Sweden": 3,
           "Norway": 3,
+          "Jamaica": 3,
           "Haiti": 3,
-          "Lesotho": 2,
-          "Madagascar": 2,
-          "Zimbabwe": 2,
-          "Canada": 2,
-          "Cape Verde": 2,
-          "Malawi": 2,
-          "Korea, Republic of": 2,
-          "Namibia": 2,
-          "Israel": 2,
-          "France": 2,
-          "Benin": 2,
-          "Nigeria": 2,
-          "Senegal": 2,
-          "Uganda": 2,
-          "Botswana": 2,
-          "Hungary": 2,
-          "South Africa": 2,
-          "Venezuela, RB": 2,
-          "Mozambique": 2,
-          "Trinidad and Tobago": 2,
-          "United Kingdom": 2,
-          "Kenya": 2,
-          "New Zealand": 2,
-          "Guyana": 2,
-          "Netherlands": 2,
-          "Bulgaria": 2,
-          "Switzerland": 2,
+          "Zambia": 3,
+          "Poland": 3,
           "Portugal": 2,
-          "Czech Republic": 2,
+          "Uganda": 2,
+          "Kenya": 2,
+          "Botswana": 2,
           "Denmark": 2,
-          "India": 1,
-          "Malaysia": 1,
-          "Ireland": 1,
-          "Egypt": 1,
-          "Ukraine": 1,
-          "Ethiopia": 1,
-          "Lithuania": 1,
-          "Japan": 1,
-          "Moldova": 1,
-          "Italy": 1,
-          "Indonesia": 1,
-          "Georgia": 1,
-          "Liberia": 1,
-          "Finland": 1,
+          "Cape Verde": 2,
+          "Mozambique": 2,
+          "France": 2,
+          "Lesotho": 2,
+          "Canada": 2,
+          "Korea, Republic of": 2,
+          "Zimbabwe": 2,
+          "United Kingdom": 2,
+          "Namibia": 2,
+          "Trinidad and Tobago": 2,
+          "Nigeria": 2,
+          "Venezuela, RB": 2,
+          "Czech Republic": 2,
+          "Bulgaria": 2,
+          "Madagascar": 2,
+          "South Africa": 2,
+          "Israel": 2,
+          "Malawi": 2,
+          "Guyana": 2,
+          "Hungary": 2,
+          "Benin": 2,
+          "Netherlands": 2,
+          "Switzerland": 2,
+          "Senegal": 2,
+          "New Zealand": 2,
           "Cyprus": 1,
-          "Philippines": 1
+          "India": 1,
+          "Japan": 1,
+          "Liberia": 1,
+          "Italy": 1,
+          "Ethiopia": 1,
+          "Ireland": 1,
+          "Philippines": 1,
+          "Moldova": 1,
+          "Finland": 1,
+          "Georgia": 1,
+          "Egypt": 1,
+          "Lithuania": 1,
+          "Ukraine": 1,
+          "Malaysia": 1,
+          "Indonesia": 1
         }
       ],
       [
@@ -454,25 +355,9 @@
     [
       "cses02",
       [
-        "cses02",
-        "wvs05"
+        "wvs05",
+        "cses02"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.source.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.source.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -739,26 +624,10 @@
   ],
   [
     "change",
-    "variables.beta_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.beta_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.beta_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1415,26 +1284,10 @@
   ],
   [
     "change",
-    "variables.stderror_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stderror_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stderror_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2091,26 +1944,10 @@
   ],
   [
     "change",
-    "variables.rep_beta_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_beta_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_beta_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2767,26 +2604,10 @@
   ],
   [
     "change",
-    "variables.rep_stderror_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_stderror_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_stderror_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3443,26 +3264,10 @@
   ],
   [
     "change",
-    "variables.edu_beta_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.edu_beta_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.edu_beta_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4119,26 +3924,10 @@
   ],
   [
     "change",
-    "variables.edu_stderror_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.edu_stderror_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.edu_stderror_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4782,22 +4571,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pr",
     [
@@ -5040,22 +4813,6 @@
     ]
   ],
   [
-    "change",
-    "variables.concurrent.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.concurrent.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.concurrent",
     [
@@ -5295,22 +5052,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.compulsory.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.compulsory.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5565,26 +5306,10 @@
   ],
   [
     "change",
-    "variables.prs2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prs2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prs2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5875,26 +5600,10 @@
   ],
   [
     "change",
-    "variables.ge_est.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ge_est.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ge_est.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6551,26 +6260,10 @@
   ],
   [
     "change",
-    "variables.dtax_per_rev.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dtax_per_rev.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dtax_per_rev.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7227,26 +6920,10 @@
   ],
   [
     "change",
-    "variables.gdp_pc_ln.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp_pc_ln.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp_pc_ln.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7903,26 +7580,10 @@
   ],
   [
     "change",
-    "variables.VP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.VP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.VP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8579,26 +8240,10 @@
   ],
   [
     "change",
-    "variables.elec_dist_1_5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elec_dist_1_5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elec_dist_1_5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9251,26 +8896,10 @@
   ],
   [
     "change",
-    "variables.giniall_gross.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.giniall_gross.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.giniall_gross.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9923,26 +9552,10 @@
   ],
   [
     "change",
-    "variables.giniall_net.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.giniall_net.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.giniall_net.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10595,26 +10208,10 @@
   ],
   [
     "change",
-    "variables.polity_score.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polity_score.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polity_score.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11267,26 +10864,10 @@
   ],
   [
     "change",
-    "variables.infantmortality.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infantmortality.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infantmortality.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11939,26 +11520,10 @@
   ],
   [
     "change",
-    "variables.homicide.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.homicide.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.homicide.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12611,26 +12176,10 @@
   ],
   [
     "change",
-    "variables.ef.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ef.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ef.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13287,26 +12836,10 @@
   ],
   [
     "change",
-    "variables.VP_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.VP_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.VP_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13963,26 +13496,10 @@
   ],
   [
     "change",
-    "variables.elec_dist_1_5_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elec_dist_1_5_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elec_dist_1_5_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14626,22 +14143,6 @@
     ]
   ],
   [
-    "change",
-    "variables.startyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.startyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.startyear",
     [
@@ -15281,26 +14782,10 @@
   ],
   [
     "change",
-    "variables.bgi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bgi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bgi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15953,26 +15438,10 @@
   ],
   [
     "change",
-    "variables.ethnicvoting.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ethnicvoting.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ethnicvoting.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16616,22 +16085,6 @@
     ]
   ],
   [
-    "change",
-    "variables.factor_outlier.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.factor_outlier.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.factor_outlier",
     [
@@ -16877,26 +16330,10 @@
   ],
   [
     "change",
-    "variables.nat_secondary.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nat_secondary.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nat_secondary.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17540,22 +16977,6 @@
     ]
   ],
   [
-    "change",
-    "variables.war_premodern_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.war_premodern_share.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.war_premodern_share",
     [
@@ -18161,26 +17582,10 @@
   ],
   [
     "change",
-    "variables.prs2_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prs2_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prs2_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18475,26 +17880,10 @@
   ],
   [
     "change",
-    "variables.ge_est_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ge_est_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ge_est_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19151,26 +18540,10 @@
   ],
   [
     "change",
-    "variables.dtax_per_rev_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dtax_per_rev_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dtax_per_rev_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19827,26 +19200,10 @@
   ],
   [
     "change",
-    "variables.gdp_pc_ln_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp_pc_ln_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp_pc_ln_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20503,26 +19860,10 @@
   ],
   [
     "change",
-    "variables.VP_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.VP_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.VP_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21179,26 +20520,10 @@
   ],
   [
     "change",
-    "variables.elec_dist_1_5_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elec_dist_1_5_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elec_dist_1_5_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21851,26 +21176,10 @@
   ],
   [
     "change",
-    "variables.giniall_gross_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.giniall_gross_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.giniall_gross_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22523,26 +21832,10 @@
   ],
   [
     "change",
-    "variables.giniall_net_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.giniall_net_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.giniall_net_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23195,26 +22488,10 @@
   ],
   [
     "change",
-    "variables.polity_score_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polity_score_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polity_score_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23867,26 +23144,10 @@
   ],
   [
     "change",
-    "variables.infantmortality_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infantmortality_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infantmortality_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24539,26 +23800,10 @@
   ],
   [
     "change",
-    "variables.homicide_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.homicide_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.homicide_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25211,26 +24456,10 @@
   ],
   [
     "change",
-    "variables.ef_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ef_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ef_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25887,26 +25116,10 @@
   ],
   [
     "change",
-    "variables.VP_rep_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.VP_rep_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.VP_rep_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26563,26 +25776,10 @@
   ],
   [
     "change",
-    "variables.elec_dist_1_5_rep_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elec_dist_1_5_rep_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elec_dist_1_5_rep_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27239,26 +26436,10 @@
   ],
   [
     "change",
-    "variables.bgi_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bgi_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bgi_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27911,26 +27092,10 @@
   ],
   [
     "change",
-    "variables.ethnicvoting_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ethnicvoting_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ethnicvoting_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28587,26 +27752,10 @@
   ],
   [
     "change",
-    "variables.nat_secondary_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nat_secondary_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nat_secondary_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29259,26 +28408,10 @@
   ],
   [
     "change",
-    "variables.war_premodern_share_z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.war_premodern_share_z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.war_premodern_share_z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29920,22 +29053,6 @@
     ]
   ],
   [
-    "change",
-    "variables.laam.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.laam.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.laam",
     [
@@ -30175,22 +29292,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.africa.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.africa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30436,22 +29537,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cses.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cses.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cses",
     [
@@ -30691,22 +29776,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.wvs.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.wvs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30952,22 +30021,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lapop.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lapop.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lapop",
     [
@@ -31207,22 +30260,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.latinob.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.latinob.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31468,22 +30505,6 @@
     ]
   ],
   [
-    "change",
-    "variables.afrob.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.afrob.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.afrob",
     [
@@ -31680,312 +30701,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:23:17",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "source": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "beta_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stderror_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_beta_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_stderror_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "edu_beta_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "edu_stderror_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "concurrent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "compulsory": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prs2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ge_est": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dtax_per_rev": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp_pc_ln": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "VP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elec_dist_1_5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "giniall_gross": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "giniall_net": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polity_score": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infantmortality": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "homicide": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "VP_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elec_dist_1_5_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "startyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bgi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ethnicvoting": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "factor_outlier": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nat_secondary": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "war_premodern_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prs2_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ge_est_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dtax_per_rev_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp_pc_ln_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "VP_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elec_dist_1_5_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "giniall_gross_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "giniall_net_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polity_score_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infantmortality_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "homicide_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ef_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "VP_rep_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elec_dist_1_5_rep_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bgi_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ethnicvoting_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nat_secondary_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "war_premodern_share_z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "laam": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "africa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cses": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wvs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lapop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "latinob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "afrob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

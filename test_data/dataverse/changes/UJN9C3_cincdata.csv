@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        14199
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "UJN9C3_cincdata.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 750379
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.stateabb.mode",
     [
       "USA",
       [
-        "POR",
-        "SPN",
+        "ITA",
         "SWD",
-        "USA",
-        "ITA"
+        "SPN",
+        "POR",
+        "TUR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.stateabb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.stateabb.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -170,22 +71,22 @@
       [
         "plotValues",
         {
+          "USA": 192,
           "RUS": 192,
           "ITA": 192,
-          "SWZ": 192,
-          "SWD": 192,
           "SPN": 192,
-          "TUR": 192,
-          "POR": 192,
+          "SWD": 192,
           "UKG": 192,
-          "USA": 192,
+          "POR": 192,
+          "TUR": 192,
+          "SWZ": 192,
           "FRN": 191,
           "NTH": 188,
           "DEN": 188,
           "BRA": 186,
           "GRC": 178,
-          "MEX": 177,
           "COL": 177,
+          "MEX": 177,
           "BEL": 174,
           "CHL": 169,
           "PER": 169,
@@ -195,8 +96,8 @@
           "PAR": 157,
           "ECU": 154,
           "IRN": 153,
-          "CHN": 148,
           "GMY": 148,
+          "CHN": 148,
           "JPN": 142,
           "GUA": 140,
           "SAL": 133,
@@ -206,8 +107,8 @@
           "URU": 126,
           "THI": 121,
           "MOR": 118,
-          "HON": 109,
           "TUN": 109,
+          "HON": 109,
           "NIC": 108,
           "DOM": 107,
           "ETH": 106,
@@ -221,13 +122,13 @@
           "HUN": 90,
           "ALB": 90,
           "AFG": 89,
-          "NEW": 88,
+          "CAN": 88,
           "SAF": 88,
-          "COS": 88,
-          "NEP": 88,
           "LBR": 88,
           "AUL": 88,
-          "CAN": 88,
+          "COS": 88,
+          "NEW": 88,
+          "NEP": 88,
           "MON": 87,
           "IRE": 86,
           "LUX": 85,
@@ -238,144 +139,144 @@
           "CZE": 70,
           "YAR": 65,
           "ICE": 64,
-          "JOR": 62,
-          "PHI": 62,
           "LEB": 62,
+          "PHI": 62,
+          "JOR": 62,
           "PAK": 61,
           "IND": 61,
-          "SRI": 60,
-          "PRK": 60,
-          "SYR": 60,
           "ISR": 60,
           "MYA": 60,
+          "SRI": 60,
+          "SYR": 60,
+          "PRK": 60,
+          "TAW": 59,
           "ROK": 59,
           "INS": 59,
-          "TAW": 59,
           "LIB": 57,
-          "BAD": 56,
           "WRT": 56,
           "BAV": 56,
-          "LAO": 55,
+          "BAD": 56,
           "CAM": 55,
+          "LAO": 55,
           "DRV": 54,
-          "SUD": 52,
           "HSG": 52,
           "SAX": 52,
-          "HSE": 51,
+          "SUD": 52,
           "GHA": 51,
           "MAL": 51,
+          "HSE": 51,
           "GUI": 50,
-          "CHA": 48,
-          "CON": 48,
-          "SOM": 48,
-          "BFO": 48,
-          "MAA": 48,
-          "BEN": 48,
-          "SEN": 48,
-          "CEN": 48,
-          "NIG": 48,
-          "CYP": 48,
-          "TOG": 48,
-          "MLI": 48,
-          "DRC": 48,
-          "CAO": 48,
-          "NIR": 48,
-          "CDI": 48,
           "MAG": 48,
           "GAB": 48,
+          "NIR": 48,
+          "CEN": 48,
+          "SEN": 48,
+          "CYP": 48,
+          "BFO": 48,
+          "CON": 48,
+          "TOG": 48,
+          "CHA": 48,
+          "MAA": 48,
+          "CAO": 48,
+          "MLI": 48,
+          "BEN": 48,
+          "NIG": 48,
+          "SOM": 48,
+          "DRC": 48,
+          "CDI": 48,
           "SIE": 47,
-          "TAZ": 47,
           "KUW": 47,
+          "TAZ": 47,
           "RWA": 46,
+          "UGA": 46,
+          "ALG": 46,
+          "SIC": 46,
           "BUI": 46,
           "TRI": 46,
-          "SIC": 46,
-          "ALG": 46,
-          "UGA": 46,
           "JAM": 46,
+          "PAP": 45,
           "KEN": 45,
           "TUS": 45,
-          "PAP": 45,
-          "ZAM": 44,
           "MAW": 44,
           "MLT": 44,
-          "SIN": 43,
-          "GAM": 43,
+          "ZAM": 44,
           "ZIM": 43,
           "MAD": 43,
-          "BOT": 42,
-          "GUY": 42,
-          "BAR": 42,
+          "GAM": 43,
+          "SIN": 43,
           "LES": 42,
-          "SWA": 40,
-          "EST": 40,
+          "GUY": 42,
+          "BOT": 42,
+          "BAR": 42,
           "LAT": 40,
-          "MAS": 40,
           "EQG": 40,
+          "EST": 40,
+          "SWA": 40,
+          "MAS": 40,
           "LIT": 40,
           "FIJ": 38,
-          "BNG": 37,
-          "BAH": 37,
-          "OMA": 37,
-          "GDR": 37,
-          "BHU": 37,
-          "QAT": 37,
           "UAE": 37,
+          "BAH": 37,
+          "QAT": 37,
+          "GDR": 37,
+          "BNG": 37,
+          "OMA": 37,
+          "BHU": 37,
           "GFR": 36,
           "BHM": 35,
-          "GNB": 34,
           "GRN": 34,
-          "ANG": 33,
+          "GNB": 34,
           "PNG": 33,
-          "COM": 33,
           "MZM": 33,
           "CAP": 33,
+          "ANG": 33,
           "SUR": 33,
+          "COM": 33,
           "STP": 33,
-          "WSM": 32,
           "SEY": 32,
+          "WSM": 32,
           "DJI": 31,
+          "HAN": 30,
           "DMA": 30,
           "SOL": 30,
-          "HAN": 30,
-          "SLU": 29,
           "SVG": 29,
+          "SLU": 29,
           "AAB": 27,
           "BLZ": 27,
           "VAN": 27,
-          "MEC": 25,
           "SKN": 25,
-          "BRU": 24,
+          "MEC": 25,
           "YPR": 24,
+          "BRU": 24,
           "RVN": 22,
           "KOR": 19,
           "MOD": 19,
-          "LIE": 18,
-          "YEM": 18,
           "NAM": 18,
-          "GRG": 17,
-          "AZE": 17,
-          "BLR": 17,
-          "UKR": 17,
-          "FSM": 17,
+          "YEM": 18,
+          "LIE": 18,
           "KZK": 17,
-          "KYR": 17,
-          "TAJ": 17,
-          "MSI": 17,
-          "TKM": 17,
-          "MLD": 17,
-          "ARM": 17,
           "UZB": 17,
-          "BOS": 16,
+          "FSM": 17,
+          "TAJ": 17,
+          "KYR": 17,
+          "MSI": 17,
+          "MLD": 17,
+          "BLR": 17,
+          "AZE": 17,
+          "TKM": 17,
+          "ARM": 17,
+          "GRG": 17,
+          "UKR": 17,
           "CRO": 16,
           "SLV": 16,
           "SNM": 16,
-          "SLO": 15,
-          "AND": 15,
+          "BOS": 16,
           "CZR": 15,
-          "ERI": 15,
           "MAC": 15,
           "MNC": 15,
+          "ERI": 15,
+          "AND": 15,
+          "SLO": 15,
           "PAL": 14,
           "PMA": 10,
           "TON": 9,
@@ -771,22 +672,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1425,22 +1310,6 @@
     [
       "1816",
       1816
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2084,22 +1953,6 @@
     ]
   ],
   [
-    "change",
-    "variables.irst.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.irst.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.irst",
     [
@@ -2740,22 +2593,6 @@
     ]
   ],
   [
-    "change",
-    "variables.milex.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.milex.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.milex",
     [
@@ -3393,22 +3230,6 @@
     [
       "-9",
       -9
-    ]
-  ],
-  [
-    "change",
-    "variables.milper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.milper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4061,26 +3882,10 @@
   ],
   [
     "change",
-    "variables.pec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pec.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pec.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4726,22 +4531,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tpop.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tpop",
     [
@@ -5379,22 +5168,6 @@
     [
       "-9",
       -9.0
-    ]
-  ],
-  [
-    "change",
-    "variables.upop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.upop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6047,26 +5820,10 @@
   ],
   [
     "change",
-    "variables.cinc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cinc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cinc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6710,22 +6467,6 @@
     ]
   ],
   [
-    "change",
-    "variables.version.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.version.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.version",
     [
@@ -6912,87 +6653,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:55",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "stateabb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irst": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "milex": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "milper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "upop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cinc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "version": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

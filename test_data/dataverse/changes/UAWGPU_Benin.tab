@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        24
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "UAWGPU_Benin.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1921
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Village.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Village.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Village.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -697,27 +598,11 @@
       "Kandi",
       [
         "Perere",
-        "Bembereke",
-        "Dogbo",
         "Aplahoue",
-        "Kandi"
+        "Ouidah",
+        "Bembereke",
+        "Abomey"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.District.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.District.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -752,10 +637,10 @@
         "fewestValues",
         [
           "Perere",
-          "Bembereke",
-          "Dogbo",
           "Aplahoue",
-          "Kandi"
+          "Ouidah",
+          "Bembereke",
+          "Abomey"
         ]
       ],
       [
@@ -781,13 +666,13 @@
       [
         "plotValues",
         {
-          "Ouidah": 3,
-          "Nikki": 3,
-          "Abomey": 3,
           "Kandi": 3,
-          "Aplahoue": 3,
           "Dogbo": 3,
+          "Ouidah": 3,
+          "Abomey": 3,
           "Bembereke": 3,
+          "Nikki": 3,
+          "Aplahoue": 3,
           "Perere": 3
         }
       ],
@@ -930,27 +815,11 @@
     [
       "Kerekou",
       [
-        "Kerekou",
+        "Lafia",
         "Amoussou",
         "Soglo",
-        "Lafia"
+        "Kerekou"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Candidate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Candidate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -984,10 +853,10 @@
       [
         "fewestValues",
         [
-          "Kerekou",
+          "Lafia",
           "Amoussou",
           "Soglo",
-          "Lafia"
+          "Kerekou"
         ]
       ],
       [
@@ -1013,10 +882,10 @@
       [
         "plotValues",
         {
-          "Lafia": 6,
+          "Kerekou": 6,
           "Soglo": 6,
           "Amoussou": 6,
-          "Kerekou": 6
+          "Lafia": 6
         }
       ],
       [
@@ -1188,22 +1057,6 @@
     [
       "321",
       321
-    ]
-  ],
-  [
-    "change",
-    "variables.reg_voters.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.reg_voters.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1805,26 +1658,10 @@
   ],
   [
     "change",
-    "variables.vote_pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2477,26 +2314,10 @@
   ],
   [
     "change",
-    "variables.vote_male.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_male.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_male.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3149,26 +2970,10 @@
   ],
   [
     "change",
-    "variables.vote_male96.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_male96.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_male96.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3821,26 +3626,10 @@
   ],
   [
     "change",
-    "variables.vote_female.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_female.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_female.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4493,26 +4282,10 @@
   ],
   [
     "change",
-    "variables.vote_female96.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_female96.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_female96.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4792,22 +4565,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Treatment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Treatment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Treatment",
     [
@@ -4866,9 +4623,9 @@
       [
         "plotValues",
         {
-          "both": 8,
+          "program": 8,
           "client": 8,
-          "program": 8
+          "both": 8
         }
       ],
       [
@@ -5007,22 +4764,6 @@
       [
         "To correct an apparent error in Table III.H of Watchekon (2002), the vote totals by gender for Kerekou and Saka Lafia have been transposed."
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Note.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Note.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5209,87 +4950,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:07:51",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Village": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "District": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Candidate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reg_voters": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_male": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_male96": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_female96": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Treatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Note": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

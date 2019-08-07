@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        567
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "KL7J6Z_8213-Risk By Wage Quantiles, 2009-2011.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 67140
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "AT",
       [
-        "AT",
-        "NO",
-        "FI",
-        "DK",
-        "IS"
+        "IT",
+        "SE",
+        "DE",
+        "PL",
+        "FR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -169,24 +70,24 @@
       [
         "plotValues",
         {
-          "CH": 30,
-          "GR": 30,
-          "BE": 30,
-          "ES": 30,
-          "NL": 30,
-          "SE": 30,
-          "FR": 30,
           "IE": 30,
           "PT": 30,
-          "DE": 30,
+          "ES": 30,
           "LU": 30,
-          "PL": 30,
-          "IT": 30,
-          "IS": 30,
-          "DK": 30,
+          "GR": 30,
           "FI": 30,
-          "NO": 30,
           "AT": 30,
+          "NO": 30,
+          "BE": 30,
+          "CH": 30,
+          "DK": 30,
+          "NL": 30,
+          "IS": 30,
+          "FR": 30,
+          "PL": 30,
+          "DE": 30,
+          "SE": 30,
+          "IT": 30,
           "UK": 27
         }
       ],
@@ -376,22 +277,6 @@
     [
       "2009",
       2009
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -646,22 +531,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.income_pred.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income_pred.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -958,26 +827,10 @@
   ],
   [
     "change",
-    "variables.unemployed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemployed.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemployed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1634,26 +1487,10 @@
   ],
   [
     "change",
-    "variables.employed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.employed.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.employed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2306,26 +2143,10 @@
   ],
   [
     "change",
-    "variables.ltunemp1yr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ltunemp1yr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ltunemp1yr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2978,26 +2799,10 @@
   ],
   [
     "change",
-    "variables.underemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.underemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.underemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3650,26 +3455,10 @@
   ],
   [
     "change",
-    "variables.incpredcorrect.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.incpredcorrect.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.incpredcorrect.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4322,26 +4111,10 @@
   ],
   [
     "change",
-    "variables.wage_ur.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_ur.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_ur.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4994,26 +4767,10 @@
   ],
   [
     "change",
-    "variables.wage_urlt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_urlt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_urlt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5670,26 +5427,10 @@
   ],
   [
     "change",
-    "variables.wage_urunderemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_urunderemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_urunderemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6287,87 +6028,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:49",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income_pred": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemployed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ltunemp1yr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "underemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incpredcorrect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_ur": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_urlt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_urunderemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

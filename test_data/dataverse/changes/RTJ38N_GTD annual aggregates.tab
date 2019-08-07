@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        130
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "RTJ38N_GTD annual aggregates.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 10557
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cname.mode",
     [
@@ -91,22 +8,6 @@
         "Colombia",
         "United Kingdom"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -140,11 +41,11 @@
       [
         "fewestValues",
         [
-          "France",
-          "Turkey",
-          "Angola",
+          "Sri Lanka",
           "Lebanon",
-          "Sri Lanka"
+          "Chile",
+          "Turkey",
+          "Spain"
         ]
       ],
       [
@@ -170,17 +71,17 @@
       [
         "plotValues",
         {
-          "United Kingdom": 20,
           "Colombia": 20,
-          "Philippines": 10,
-          "Chile": 10,
+          "United Kingdom": 20,
           "Peru": 10,
+          "Lebanon": 10,
+          "Philippines": 10,
+          "France": 10,
+          "Angola": 10,
           "Spain": 10,
           "Sri Lanka": 10,
-          "Lebanon": 10,
-          "Angola": 10,
           "Turkey": 10,
-          "France": 10
+          "Chile": 10
         }
       ],
       [
@@ -363,22 +264,6 @@
     [
       "1986",
       1986
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -639,28 +524,12 @@
     [
       "Revolutionary Armed Forces of Colombia (FARC)",
       [
+        "Revolutionary Armed Forces of Colombia (FARC)",
         "Ulster Volunteer Force (UVF)",
-        "National Union for the Total Independence of Angola (UNITA)",
-        "Irish Republican Army (IRA)",
-        "Shining Path (SL)",
-        "Basque Fatherland and Freedom (ETA)"
+        "Kurdistan Workers' Party (PKK)",
+        "Corsican National Liberation Front (FLNC)",
+        "Shining Path (SL)"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.gname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -694,11 +563,11 @@
       [
         "fewestValues",
         [
+          "Revolutionary Armed Forces of Colombia (FARC)",
           "Ulster Volunteer Force (UVF)",
-          "National Union for the Total Independence of Angola (UNITA)",
-          "Irish Republican Army (IRA)",
-          "Shining Path (SL)",
-          "Basque Fatherland and Freedom (ETA)"
+          "Kurdistan Workers' Party (PKK)",
+          "Corsican National Liberation Front (FLNC)",
+          "Shining Path (SL)"
         ]
       ],
       [
@@ -724,19 +593,19 @@
       [
         "plotValues",
         {
-          "Liberation Tigers of Tamil Eelam (LTTE)": 10,
+          "Ulster Volunteer Force (UVF)": 10,
           "Manuel Rodriguez Patriotic Front (FPMR)": 10,
-          "Kurdistan Workers' Party (PKK)": 10,
-          "Revolutionary Armed Forces of Colombia (FARC)": 10,
-          "Corsican National Liberation Front (FLNC)": 10,
           "Hizballah": 10,
+          "Liberation Tigers of Tamil Eelam (LTTE)": 10,
           "National Liberation Army of Colombia (ELN)": 10,
-          "Moro National Liberation Front (MNLF)": 10,
           "Basque Fatherland and Freedom (ETA)": 10,
+          "Moro National Liberation Front (MNLF)": 10,
           "Shining Path (SL)": 10,
+          "Revolutionary Armed Forces of Colombia (FARC)": 10,
           "Irish Republican Army (IRA)": 10,
+          "Kurdistan Workers' Party (PKK)": 10,
           "National Union for the Total Independence of Angola (UNITA)": 10,
-          "Ulster Volunteer Force (UVF)": 10
+          "Corsican National Liberation Front (FLNC)": 10
         }
       ],
       [
@@ -917,22 +786,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_armed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_armed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1576,22 +1429,6 @@
     ]
   ],
   [
-    "change",
-    "variables.annual_unarmed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_unarmed.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.annual_unarmed",
     [
@@ -2229,22 +2066,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_ng_civ_narrow.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_ng_civ_narrow.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2888,22 +2709,6 @@
     ]
   ],
   [
-    "change",
-    "variables.annual_gov_civ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_gov_civ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.annual_gov_civ",
     [
@@ -3497,22 +3302,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_gov_security.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_gov_security.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4156,22 +3945,6 @@
     ]
   ],
   [
-    "change",
-    "variables.annual_infrastructure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.annual_infrastructure.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.annual_infrastructure",
     [
@@ -4736,77 +4509,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:25",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "annual_armed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "annual_unarmed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "annual_ng_civ_narrow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "annual_gov_civ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "annual_gov_security": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "annual_infrastructure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        178
-      ],
-      [
-        "variableCount",
-        58
-      ],
-      [
-        "dataSource",
-        {
-          "name": "INR9AQ_histseat.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 51407
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Sweden"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,11 +40,11 @@
       [
         "fewestValues",
         [
-          "Estonia",
           "Portugal",
-          "Bulgaria",
-          "Latvia",
-          "Ireland"
+          "Wallonia",
+          "Ireland",
+          "Estonia",
+          "Latvia"
         ]
       ],
       [
@@ -170,31 +71,31 @@
         "plotValues",
         {
           "Sweden": 10,
-          "Croatia": 9,
+          "Spain": 9,
           "Greece": 9,
           "Slovakia": 9,
-          "Spain": 9,
+          "Croatia": 9,
           "Italy": 8,
-          "The Netherlands": 8,
-          "Czech Republic": 8,
           "Finland": 8,
-          "Denmark": 7,
-          "Romania": 7,
-          "Germany": 7,
+          "Czech Republic": 8,
+          "The Netherlands": 8,
           "United Kingdom": 7,
-          "Poland": 7,
+          "Germany": 7,
           "Lithuania": 7,
-          "Flanders": 6,
+          "Romania": 7,
+          "Denmark": 7,
+          "Poland": 7,
           "Hungary": 6,
+          "Flanders": 6,
           "Austria": 6,
-          "Wallonia": 5,
+          "Bulgaria": 5,
           "France": 5,
           "Slovenia": 5,
-          "Ireland": 5,
           "Latvia": 5,
-          "Bulgaria": 5,
-          "Portugal": 5,
-          "Estonia": 5
+          "Estonia": 5,
+          "Ireland": 5,
+          "Wallonia": 5,
+          "Portugal": 5
         }
       ],
       [
@@ -354,28 +255,12 @@
     [
       "Alliance for the Future of Austria",
       [
-        "Democrats '66",
-        "Slovenian People's Party",
-        "Estonian Reform Party",
-        "Citizens for European Development of Bulgaria",
-        "Danish People's Party"
+        "FIDESZ-KDNP Alliance",
+        "Reform Movement W",
+        "Slovenian Democratic Party",
+        "Social Democratic Party POR",
+        "Croatian Peasant Party"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -409,11 +294,11 @@
       [
         "fewestValues",
         [
-          "Democrats '66",
-          "Slovenian People's Party",
-          "Estonian Reform Party",
-          "Citizens for European Development of Bulgaria",
-          "Danish People's Party"
+          "FIDESZ-KDNP Alliance",
+          "Reform Movement W",
+          "Slovenian Democratic Party",
+          "Social Democratic Party POR",
+          "Croatian Peasant Party"
         ]
       ],
       [
@@ -439,184 +324,184 @@
       [
         "plotValues",
         {
-          "New Flemish Alliance F": 1,
-          "Hungarian Democratic Alliance of Romania": 1,
-          "Podemos (We Can)": 1,
-          "Austrian Freedom Party": 1,
-          "Feminist Initiative": 1,
-          "Election Action of Lithuania's Poles": 1,
           "Panhellenic Socialist Movement": 1,
           "Christian and Democratic Union / Czechoslovak People's Party": 1,
-          "Jobbik": 1,
-          "Democratic Party ITL": 1,
-          "Christian Democratic and Flemish Party F": 1,
-          "Centre Party": 1,
-          "Labour Party LITH": 1,
-          "Democratic Coalition HUN": 1,
-          "Coalition of the Radical Left": 1,
-          "Union, Progress and Democracy": 1,
-          "Popular Party": 1,
-          "Francophone Socialist Party W": 1,
-          "Green Party UK": 1,
-          "Basque Nationalist Party": 1,
-          "Austrian People's Party": 1,
-          "Open Flemish Liberals and Democrats F": 1,
-          "Citizens - Party of the Citizenry": 1,
-          "Together 2014 - Dialogue for Hungary": 1,
-          "Ecologists W": 1,
-          "Green Party IRL": 1,
-          "Brothers of Italy - National Centre-right": 1,
-          "Lithuanian Social Democratic Party": 1,
-          "Social Democratic Party DE": 1,
-          "Democratic Party of Pensioners of Slovenia": 1,
-          "Swedish People's Party": 1,
-          "Spanish Socialist Workers' Party": 1,
-          "Independent Greeks": 1,
-          "Social Democratic Party of Croatia": 1,
-          "Conservative Party UK": 1,
-          "Democrats '66": 1,
-          "Attack": 1,
-          "Unity": 1,
-          "The River (Greece)": 1,
-          "Galician Nationalist Bloc": 1,
-          "Green Union": 1,
           "Polish Peasants' Party": 1,
-          "People's Party for Freedom and Democracy": 1,
-          "United Kingdom Independence Party": 1,
-          "Left Wing Alliance": 1,
-          "Christian Democrats": 1,
-          "Party of Free Citizens": 1,
-          "Northern League": 1,
-          "Liberal Alliance": 1,
-          "People's Party POR": 1,
-          "Christian Democratic Union / Christian Social Union": 1,
-          "Finnish Centre": 1,
-          "Direction": 1,
-          "Coalition of the Democratic Left Alliance and the Union of Labour": 1,
-          "Alternative for Bulgarian Revival": 1,
-          "Slovakian National Party": 1,
-          "Sinn Fein": 1,
-          "Reform Movement W": 1,
-          "Labour Party NET": 1,
-          "Liberals": 1,
-          "Fine Gael": 1,
-          "Citizens for European Development of Bulgaria": 1,
-          "Moderate Coalition Party": 1,
-          "The Left DE": 1,
-          "Order and Justice": 1,
-          "Istrian Democratic Assembly": 1,
-          "Socialist Party IRL": 1,
-          "Pirate Party SWE": 1,
-          "Socialist Party FR": 1,
-          "Left Party": 1,
-          "Golden Dawn": 1,
-          "Law and Justice": 1,
-          "Liberal Democrats": 1,
-          "Communist Party of Bohemia and Moravia": 1,
-          "Social Democratic Party POR": 1,
-          "Finnish Social Democrats": 1,
-          "Popular Orthodox Rally": 1,
-          "Congress of the New Right": 1,
-          "Left Front": 1,
-          "Conservative Party ROM": 1,
-          "Socialist People's Party": 1,
-          "ANO 2011": 1,
-          "Socialist Party POR": 1,
-          "Alliance 90 / The Greens": 1,
-          "Bridge": 1,
-          "Estonian Center Party": 1,
-          "Conservative People's Party": 1,
-          "Harmony Centre (Concord Centre)": 1,
-          "Christian Democrats in Finland": 1,
-          "Communist Party of Greece": 1,
-          "Europe Ecology - The Greens": 1,
-          "People's Movement Party": 1,
-          "Democratic Liberal Party": 1,
-          "Green F": 1,
-          "Party of Freedom": 1,
-          "Socialist Party Different F": 1,
-          "Green Party CZ": 1,
-          "Forward Italy": 1,
-          "Party of the Hungarian Community": 1,
-          "Lithuanian Peasant and Greens Union": 1,
-          "Democratic Party SLE": 1,
-          "National Coalition": 1,
-          "Party of Wales": 1,
-          "Union for a Popular Movement": 1,
-          "Czech Social Democratic Party": 1,
-          "Left Bloc": 1,
-          "National Front": 1,
-          "Positive Slovenia": 1,
-          "Canarian Coalition": 1,
-          "People's Party - Dan Dianconescu": 1,
-          "Flemish Interest F": 1,
-          "Socialist Party NET": 1,
-          "Croatian Democratic Assembly of Slavonia and Baranja": 1,
-          "Catalan Republican Left": 1,
-          "Civic Democratic Party": 1,
-          "True Finns": 1,
-          "Homeland Union - Lithuanian Christian Democrats": 1,
-          "Estonian Greens": 1,
-          "Green Ecology Party": 1,
-          "Christian Democratic Movement": 1,
-          "Democratic Left": 1,
-          "Christian Democratic Appeal": 1,
-          "Movement for Rights and Freedom": 1,
-          "Croatian Party of Rights": 1,
-          "Free Democratic Party": 1,
-          "Green and Farmers' Union": 1,
-          "New Democracy": 1,
-          "New Majority": 1,
-          "Alternative for Germany": 1,
-          "Social Democratic Party ROM": 1,
-          "Latvian Russian Union": 1,
-          "Liberal Movement": 1,
-          "Union for Christian and Center Democrats": 1,
-          "Five Star Movement": 1,
-          "Green Left": 1,
-          "Left Ecology Movement": 1,
-          "New Centre-Right": 1,
-          "Tradition, Responsibility, Prosperity 09 (TOP 09)": 1,
-          "Freedom and Solidarity": 1,
-          "People's Party BEL W": 1,
-          "Labour Party UK": 1,
-          "Humanist Democratic Centre W": 1,
-          "Radical Party DEN": 1,
-          "National Liberal Party": 1,
-          "Civic Platform": 1,
-          "Social Democratic Party DEN": 1,
-          "Union of Democratic Forces": 1,
-          "Liberal People's Party": 1,
-          "For Fatherland and Freedom - National Independence Movement of Latvia": 1,
-          "Pro Patria and Res Publica Union": 1,
-          "Austrian Social Democratic Party": 1,
-          "Scottish National Party": 1,
-          "The Greens AT": 1,
-          "Social Democratic Labour Party": 1,
-          "Social Democratic Party SLE": 1,
-          "Croatian Labouristi - Labour Party": 1,
+          "Francophone Socialist Party W": 1,
+          "Spanish Socialist Workers' Party": 1,
           "Pirates": 1,
-          "Your Movement": 1,
-          "Slovenian Democratic Party": 1,
-          "Fianna Fail": 1,
-          "Politics Can Be Different": 1,
-          "Slovenian People's Party": 1,
-          "FIDESZ-KDNP Alliance": 1,
-          "Croatian Peasant Party": 1,
-          "Hungarian Socialist Party": 1,
+          "New Majority": 1,
+          "Socialist Party IRL": 1,
+          "Liberals": 1,
+          "Brothers of Italy - National Centre-right": 1,
+          "Congress of the New Right": 1,
+          "Citizens - Party of the Citizenry": 1,
+          "Democratic Left": 1,
+          "New Centre-Right": 1,
+          "Conservative People's Party": 1,
+          "Coalition of the Radical Left": 1,
+          "Green and Farmers' Union": 1,
+          "Socialist Party Different F": 1,
+          "Five Star Movement": 1,
+          "Labour Party NET": 1,
           "United Poland": 1,
-          "Party for the Animals": 1,
-          "Social Democratic Party EST": 1,
-          "NEOS - The New Austria and Liberal Forum": 1,
-          "Croatian Social-Liberal Party": 1,
-          "Sweden Democrats": 1,
-          "Sustainable Development of Croatia": 1,
-          "Ordinary People and Independent Personalities": 1,
-          "Alliance for the Future of Austria": 1,
-          "Danish People's Party": 1,
+          "Humanist Democratic Centre W": 1,
+          "Croatian Labouristi - Labour Party": 1,
+          "Green Union": 1,
+          "Citizens for European Development of Bulgaria": 1,
+          "True Finns": 1,
+          "Socialist Party POR": 1,
+          "Austrian Freedom Party": 1,
+          "Freedom and Solidarity": 1,
+          "Left Ecology Movement": 1,
+          "Flemish Interest F": 1,
+          "Labour Party LITH": 1,
+          "Czech Social Democratic Party": 1,
+          "Liberal Movement": 1,
+          "Conservative Party UK": 1,
+          "Europe Ecology - The Greens": 1,
+          "Liberal Alliance": 1,
+          "Democratic Liberal Party": 1,
+          "Law and Justice": 1,
+          "Ecologists W": 1,
+          "Communist Party of Bohemia and Moravia": 1,
+          "Tradition, Responsibility, Prosperity 09 (TOP 09)": 1,
+          "Jobbik": 1,
+          "Austrian Social Democratic Party": 1,
+          "Feminist Initiative": 1,
+          "Christian Democratic and Flemish Party F": 1,
+          "Civic Democratic Party": 1,
+          "Christian Democratic Union / Christian Social Union": 1,
+          "Podemos (We Can)": 1,
           "Croation Democratic Union": 1,
+          "Finnish Social Democrats": 1,
+          "Social Democratic Party SLE": 1,
+          "Pirate Party SWE": 1,
+          "Basque Nationalist Party": 1,
+          "Alliance for the Future of Austria": 1,
+          "Sinn Fein": 1,
+          "Green Party CZ": 1,
+          "Left Bloc": 1,
+          "New Flemish Alliance F": 1,
+          "Bridge": 1,
+          "Party for the Animals": 1,
+          "Istrian Democratic Assembly": 1,
+          "Unity": 1,
+          "Social Democratic Labour Party": 1,
+          "Northern League": 1,
+          "Party of the Hungarian Community": 1,
+          "Civic Platform": 1,
+          "Politics Can Be Different": 1,
+          "Croatian Party of Rights": 1,
+          "Green Ecology Party": 1,
+          "Slovenian People's Party": 1,
+          "Ordinary People and Independent Personalities": 1,
+          "Canarian Coalition": 1,
+          "Party of Freedom": 1,
+          "People's Movement Party": 1,
+          "Sweden Democrats": 1,
+          "Union of Democratic Forces": 1,
+          "Order and Justice": 1,
+          "Socialist People's Party": 1,
+          "New Democracy": 1,
+          "Labour Party UK": 1,
+          "People's Party for Freedom and Democracy": 1,
+          "Party of Wales": 1,
+          "People's Party POR": 1,
+          "Democratic Party SLE": 1,
+          "Attack": 1,
+          "Radical Party DEN": 1,
+          "Coalition of the Democratic Left Alliance and the Union of Labour": 1,
+          "Social Democratic Party EST": 1,
+          "Social Democratic Party DE": 1,
+          "Union for a Popular Movement": 1,
           "Estonian Reform Party": 1,
-          "Earth Party": 1
+          "Catalan Republican Left": 1,
+          "Finnish Centre": 1,
+          "Estonian Center Party": 1,
+          "Independent Greeks": 1,
+          "Green Party IRL": 1,
+          "NEOS - The New Austria and Liberal Forum": 1,
+          "Left Wing Alliance": 1,
+          "Left Front": 1,
+          "Green Left": 1,
+          "Alternative for Bulgarian Revival": 1,
+          "Social Democratic Party ROM": 1,
+          "Movement for Rights and Freedom": 1,
+          "Pro Patria and Res Publica Union": 1,
+          "National Liberal Party": 1,
+          "Democrats '66": 1,
+          "Popular Party": 1,
+          "Liberal People's Party": 1,
+          "Left Party": 1,
+          "The Left DE": 1,
+          "Union for Christian and Center Democrats": 1,
+          "Union, Progress and Democracy": 1,
+          "ANO 2011": 1,
+          "Green F": 1,
+          "Latvian Russian Union": 1,
+          "Party of Free Citizens": 1,
+          "Hungarian Democratic Alliance of Romania": 1,
+          "Christian Democratic Appeal": 1,
+          "Christian Democrats in Finland": 1,
+          "Popular Orthodox Rally": 1,
+          "Election Action of Lithuania's Poles": 1,
+          "Estonian Greens": 1,
+          "Free Democratic Party": 1,
+          "Lithuanian Social Democratic Party": 1,
+          "Social Democratic Party of Croatia": 1,
+          "Positive Slovenia": 1,
+          "Golden Dawn": 1,
+          "Lithuanian Peasant and Greens Union": 1,
+          "Galician Nationalist Bloc": 1,
+          "Danish People's Party": 1,
+          "Conservative Party ROM": 1,
+          "People's Party BEL W": 1,
+          "Direction": 1,
+          "United Kingdom Independence Party": 1,
+          "Croatian Social-Liberal Party": 1,
+          "Moderate Coalition Party": 1,
+          "Your Movement": 1,
+          "Sustainable Development of Croatia": 1,
+          "Alliance 90 / The Greens": 1,
+          "Open Flemish Liberals and Democrats F": 1,
+          "National Coalition": 1,
+          "Alternative for Germany": 1,
+          "Fine Gael": 1,
+          "Christian Democrats": 1,
+          "Christian Democratic Movement": 1,
+          "Social Democratic Party DEN": 1,
+          "Croatian Democratic Assembly of Slavonia and Baranja": 1,
+          "Together 2014 - Dialogue for Hungary": 1,
+          "People's Party - Dan Dianconescu": 1,
+          "Liberal Democrats": 1,
+          "Socialist Party NET": 1,
+          "Green Party UK": 1,
+          "Communist Party of Greece": 1,
+          "The Greens AT": 1,
+          "Austrian People's Party": 1,
+          "Slovakian National Party": 1,
+          "For Fatherland and Freedom - National Independence Movement of Latvia": 1,
+          "Socialist Party FR": 1,
+          "Hungarian Socialist Party": 1,
+          "Earth Party": 1,
+          "Fianna Fail": 1,
+          "National Front": 1,
+          "Swedish People's Party": 1,
+          "Democratic Party ITL": 1,
+          "Democratic Coalition HUN": 1,
+          "Scottish National Party": 1,
+          "The River (Greece)": 1,
+          "Forward Italy": 1,
+          "Democratic Party of Pensioners of Slovenia": 1,
+          "Homeland Union - Lithuanian Christian Democrats": 1,
+          "Centre Party": 1,
+          "Croatian Peasant Party": 1,
+          "Social Democratic Party POR": 1,
+          "Slovenian Democratic Party": 1,
+          "Reform Movement W": 1,
+          "Harmony Centre (Concord Centre)": 1,
+          "FIDESZ-KDNP Alliance": 1
         }
       ],
       [
@@ -928,28 +813,12 @@
     [
       "BZO",
       [
-        "Smer-SD",
-        "RV",
-        "CDA",
-        "KDH",
-        "C"
+        "EK",
+        "C's",
+        "LKS",
+        "OVP",
+        "KNP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.chespty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.chespty.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -983,11 +852,11 @@
       [
         "fewestValues",
         [
-          "Smer-SD",
-          "RV",
-          "CDA",
-          "KDH",
-          "C"
+          "EK",
+          "C's",
+          "LKS",
+          "OVP",
+          "KNP"
         ]
       ],
       [
@@ -1013,183 +882,183 @@
       [
         "plotValues",
         {
-          "DPS": 1,
-          "M5S": 1,
-          "SDPS": 1,
-          "PS-BEL W": 1,
-          "EAJ/PNV": 1,
-          "Groen F": 1,
-          "ORaH": 1,
-          "SP": 1,
-          "SLS": 1,
-          "FP": 1,
-          "PO": 1,
-          "XA": 1,
-          "CONS": 1,
-          "PG": 1,
-          "V-SWE": 1,
-          "VB F": 1,
-          "ND": 1,
-          "UMP": 1,
-          "LA": 1,
-          "PS-SLE": 1,
-          "FF": 1,
-          "V-LAT": 1,
-          "KESK": 1,
-          "HDZ": 1,
-          "LMP": 1,
-          "DF": 1,
-          "PiS": 1,
-          "SMK-MKP": 1,
-          "HSP": 1,
-          "FN": 1,
-          "DK": 1,
-          "KSCM": 1,
-          "PSD-ROM": 1,
-          "PMP": 1,
-          "SD-SLE": 1,
-          "Linke": 1,
-          "SF": 1,
-          "SPD": 1,
-          "SZ": 1,
-          "SPO": 1,
-          "HSLS": 1,
-          "VLD F": 1,
-          "Grunen": 1,
-          "VAS": 1,
-          "PC": 1,
-          "ANO2011": 1,
-          "SDP": 1,
-          "KKE": 1,
-          "TT": 1,
-          "KDU-CSL": 1,
-          "UKIP": 1,
-          "PDL": 1,
-          "OVP": 1,
-          "ZZS": 1,
-          "SLD": 1,
-          "ABV": 1,
-          "MH": 1,
-          "PS-POR": 1,
-          "SNP": 1,
-          "BZO": 1,
-          "HDSSB": 1,
-          "Fidesz": 1,
-          "LKS": 1,
-          "SEL": 1,
-          "TS-LKD": 1,
-          "KF": 1,
-          "PLAID": 1,
-          "EER": 1,
           "D66": 1,
-          "LN": 1,
-          "CDU": 1,
-          "PD": 1,
-          "FI-SWE": 1,
-          "SP-IRL": 1,
-          "SD-SWE": 1,
-          "FDP": 1,
-          "EELV": 1,
-          "HL-SR": 1,
-          "EK": 1,
-          "SDKU-DS": 1,
-          "TOP09": 1,
-          "OLaNO": 1,
-          "SDS-BUL": 1,
-          "Piraten": 1,
-          "Potami": 1,
-          "BNG": 1,
-          "ECOLO W": 1,
-          "GP": 1,
-          "N-VA F": 1,
-          "PS-FIN": 1,
-          "M": 1,
-          "SAP": 1,
-          "DIMAR": 1,
-          "PP": 1,
-          "ANEL": 1,
-          "PP-DD": 1,
-          "ER": 1,
-          "SD": 1,
-          "VIHR": 1,
-          "GERB": 1,
-          "BE": 1,
-          "SNS": 1,
-          "GREEN": 1,
-          "UDC": 1,
-          "VVD": 1,
-          "KNP": 1,
-          "SDE": 1,
-          "C's": 1,
-          "FG": 1,
-          "ODS": 1,
-          "PP-BEL W": 1,
-          "KD-FIN": 1,
-          "V": 1,
-          "SYRIZA": 1,
-          "JOBBIK": 1,
-          "SDP-CRO": 1,
-          "PSL": 1,
-          "cdH W": 1,
-          "SaS": 1,
-          "SVOBODNI": 1,
-          "LAB": 1,
+          "SP": 1,
           "SF-IRL": 1,
-          "HSS": 1,
-          "PASOK": 1,
+          "NOVA": 1,
           "LSDP": 1,
-          "LAOS": 1,
-          "GRUNE": 1,
-          "MPT": 1,
-          "NCD": 1,
+          "SDS": 1,
+          "PDL": 1,
+          "TOP09": 1,
+          "KD-FIN": 1,
+          "SLS": 1,
+          "SP-IRL": 1,
+          "ORaH": 1,
+          "ABV": 1,
+          "PvdD": 1,
+          "JOBBIK": 1,
+          "SDPS": 1,
+          "SVOBODNI": 1,
+          "SYRIZA": 1,
+          "Podemos": 1,
+          "PS-FIN": 1,
+          "PS-SLE": 1,
+          "FDP": 1,
+          "KNP": 1,
+          "RV": 1,
           "CSSD": 1,
-          "MP": 1,
+          "ODS": 1,
+          "DP": 1,
+          "PMP": 1,
+          "LN": 1,
+          "BZO": 1,
+          "Fidesz": 1,
+          "GRUNE": 1,
+          "SDKU-DS": 1,
+          "SDP": 1,
+          "LAB": 1,
+          "VIHR": 1,
+          "FPO": 1,
+          "V-LAT": 1,
+          "VLD F": 1,
+          "PLAID": 1,
+          "ERC": 1,
+          "IRL": 1,
+          "UDMR": 1,
+          "SDS-BUL": 1,
+          "ZZS": 1,
+          "ANEL": 1,
+          "HL-SR": 1,
+          "ECOLO W": 1,
+          "LA": 1,
+          "NCD": 1,
+          "DIMAR": 1,
+          "PP-DD": 1,
+          "VVD": 1,
+          "PIRAT": 1,
+          "CC": 1,
+          "HSP": 1,
+          "E14": 1,
+          "SZ": 1,
+          "FP": 1,
+          "UpyD": 1,
+          "LLRA": 1,
+          "Grunen": 1,
+          "PD": 1,
+          "N-VA F": 1,
+          "SF": 1,
+          "SLD": 1,
+          "M5S": 1,
+          "CDU": 1,
+          "SD": 1,
+          "KESK": 1,
+          "SMK-MKP": 1,
+          "KKE": 1,
+          "DPS": 1,
+          "IDS": 1,
           "CDA": 1,
+          "ATAKA": 1,
+          "ANO2011": 1,
+          "SPA F": 1,
+          "Fdl": 1,
+          "FF": 1,
+          "cdH W": 1,
+          "PiS": 1,
+          "SNS": 1,
+          "ND": 1,
+          "Linke": 1,
+          "KDU-CSL": 1,
+          "VAS": 1,
+          "RKP/SFP": 1,
+          "UMP": 1,
+          "EAJ/PNV": 1,
+          "MH": 1,
+          "SEL": 1,
+          "SaS": 1,
+          "Potami": 1,
+          "SP-POL": 1,
+          "Groen F": 1,
+          "CD&V F": 1,
+          "NEOS": 1,
+          "LRLS": 1,
+          "MSZP": 1,
+          "DK": 1,
+          "LAOS": 1,
+          "PASOK": 1,
+          "PP-BEL W": 1,
+          "PvdA": 1,
+          "PS-BEL W": 1,
+          "PC": 1,
+          "TT": 1,
+          "PG": 1,
+          "XA": 1,
+          "PS-POR": 1,
+          "BE": 1,
+          "SPD": 1,
+          "HSLS": 1,
+          "HDZ": 1,
+          "Piraten": 1,
+          "Smer-SD": 1,
+          "EER": 1,
+          "SNP": 1,
+          "KOK": 1,
+          "KF": 1,
+          "C": 1,
+          "DeSUS": 1,
+          "BNG": 1,
+          "GP": 1,
+          "SD-SLE": 1,
+          "SDE": 1,
+          "HSS": 1,
+          "SDP-CRO": 1,
+          "GL": 1,
+          "KSCM": 1,
+          "GERB": 1,
+          "SD-SWE": 1,
+          "GREEN": 1,
+          "DF": 1,
+          "M": 1,
+          "UKIP": 1,
+          "OLaNO": 1,
+          "KDH": 1,
+          "V-SWE": 1,
+          "PS-FR": 1,
+          "SPO": 1,
+          "PP-POR": 1,
+          "SAP": 1,
+          "TS-LKD": 1,
+          "MP": 1,
+          "UDC": 1,
+          "FG": 1,
+          "V": 1,
+          "EELV": 1,
+          "PP": 1,
+          "FI-SWE": 1,
+          "FI": 1,
+          "MPT": 1,
+          "LMP": 1,
+          "PO": 1,
+          "RP": 1,
+          "LIBDEM": 1,
+          "FN": 1,
+          "AfD": 1,
+          "LVZS": 1,
+          "PSL": 1,
+          "ER": 1,
+          "CONS": 1,
+          "PVV": 1,
           "PSD": 1,
           "PNL": 1,
-          "PVV": 1,
-          "UDMR": 1,
-          "FI": 1,
-          "E14": 1,
-          "PS-FR": 1,
-          "IRL": 1,
-          "PSOE": 1,
           "MR W": 1,
-          "SDS": 1,
-          "SP-POL": 1,
+          "PSOE": 1,
+          "HDSSB": 1,
+          "VB F": 1,
+          "OVP": 1,
+          "LKS": 1,
+          "C's": 1,
+          "PSD-ROM": 1,
           "KD": 1,
-          "LVZS": 1,
-          "Smer-SD": 1,
-          "Fdl": 1,
-          "LLRA": 1,
-          "PIRAT": 1,
-          "NOVA": 1,
-          "RP": 1,
-          "PP-POR": 1,
-          "RKP/SFP": 1,
-          "Podemos": 1,
-          "DP": 1,
-          "IDS": 1,
-          "ERC": 1,
-          "MSZP": 1,
-          "CD&V F": 1,
-          "GL": 1,
-          "DeSUS": 1,
-          "AfD": 1,
-          "NEOS": 1,
-          "KOK": 1,
-          "FPO": 1,
-          "PvdA": 1,
-          "ATAKA": 1,
-          "PvdD": 1,
-          "CC": 1,
-          "C": 1,
-          "KDH": 1,
-          "RV": 1,
-          "UpyD": 1,
-          "LRLS": 1,
-          "LIBDEM": 1,
-          "SPA F": 1
+          "EK": 1
         }
       ],
       [
@@ -28397,322 +28266,6 @@
           "defaultNature": "ratio",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:06",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "chespty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1960": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1961": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1962": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1963": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1964": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1965": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1966": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1967": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1968": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1969": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1970": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1971": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1972": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1973": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1974": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1975": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1976": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1977": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1978": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1979": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1980": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1981": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1982": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1983": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1984": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1985": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1986": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1987": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1988": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1989": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1990": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1991": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1992": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1994": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1995": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1996": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1997": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1998": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1999": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2000": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2002": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2003": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2004": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2005": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2006": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2007": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2008": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2009": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2013": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "2014": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

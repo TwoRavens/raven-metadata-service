@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        75
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "DY1282_district_char.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2060
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.districtname.mode",
     [
       "Achham",
       [
-        "Dhading",
-        "Solukhumbu",
-        "Dhankuta",
+        "Achham",
+        "Doti",
+        "Baitadi",
         "Nuwakot",
-        "Nawalparasi"
+        "Tanahun"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.districtname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.districtname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Dhading",
-          "Solukhumbu",
-          "Dhankuta",
+          "Achham",
+          "Doti",
+          "Baitadi",
           "Nuwakot",
-          "Nawalparasi"
+          "Tanahun"
         ]
       ],
       [
@@ -173,81 +74,81 @@
       [
         "plotValues",
         {
-          "Parsa": 1,
-          "Kalikot": 1,
-          "Dolakha": 1,
-          "Surkhet": 1,
-          "Myagdi": 1,
-          "Pyuthan": 1,
-          "Kavrepalanchok": 1,
-          "Sunsari": 1,
-          "Rupandehi": 1,
-          "Morang": 1,
-          "Humla": 1,
-          "Dhanusha": 1,
-          "Tehrathum": 1,
-          "Panchthar": 1,
-          "Udayapur": 1,
-          "Okhaldhunga": 1,
-          "Bardiya": 1,
-          "Kaski": 1,
-          "Jumla": 1,
+          "Dhankuta": 1,
           "Parbat": 1,
-          "Khotang": 1,
-          "Bara": 1,
-          "Palpa": 1,
-          "Ramechhap": 1,
           "Mustang": 1,
-          "Taplejung": 1,
-          "Ilam": 1,
-          "Jhapa": 1,
-          "Kathmandu": 1,
-          "Bajhang": 1,
-          "Saptari": 1,
-          "Dolpa": 1,
-          "Sarlahi": 1,
-          "Salyan": 1,
-          "Achham": 1,
-          "Tanahun": 1,
+          "Udayapur": 1,
+          "Kaski": 1,
+          "Kanchanpur": 1,
+          "Darchula": 1,
           "Jajarkot": 1,
-          "Rukum": 1,
-          "Manang": 1,
-          "Banke": 1,
+          "Humla": 1,
+          "Bara": 1,
+          "Syangja": 1,
+          "Dang": 1,
+          "Bajhang": 1,
+          "Arghakhanchi": 1,
+          "Pyuthan": 1,
+          "Morang": 1,
+          "Kalikot": 1,
+          "Kathmandu": 1,
+          "Palpa": 1,
+          "Bhojpur": 1,
+          "Surkhet": 1,
+          "Baglung": 1,
           "Sindhuli": 1,
-          "Bhaktapur": 1,
-          "Rautahat": 1,
+          "Solukhumbu": 1,
           "Bajura": 1,
+          "Chitwan": 1,
+          "Nawalparasi": 1,
+          "Rasuwa": 1,
           "Sindhupalchok": 1,
-          "Lamjung": 1,
+          "Manang": 1,
+          "Dolakha": 1,
+          "Salyan": 1,
+          "Taplejung": 1,
+          "Gulmi": 1,
+          "Kavrepalanchok": 1,
           "Mugu": 1,
-          "Lalitpur": 1,
+          "Siraha": 1,
+          "Okhaldhunga": 1,
+          "Rolpa": 1,
+          "Tehrathum": 1,
+          "Dailekh": 1,
+          "Sarlahi": 1,
+          "Rukum": 1,
+          "Rautahat": 1,
+          "Banke": 1,
+          "Rupandehi": 1,
+          "Sankhuwasabha": 1,
+          "Saptari": 1,
+          "Khotang": 1,
+          "Bardiya": 1,
+          "Ramechhap": 1,
           "Makwanpur": 1,
-          "Dandeldhura": 1,
+          "Panchthar": 1,
+          "Parsa": 1,
+          "Gorkha": 1,
+          "Lamjung": 1,
+          "Dhading": 1,
           "Kapilbastu": 1,
           "Mahottari": 1,
-          "Gorkha": 1,
-          "Baitadi": 1,
-          "Dang": 1,
-          "Gulmi": 1,
-          "Doti": 1,
-          "Kanchanpur": 1,
-          "Bhojpur": 1,
-          "Sankhuwasabha": 1,
+          "Sunsari": 1,
+          "Dandeldhura": 1,
+          "Myagdi": 1,
+          "Jumla": 1,
+          "Dolpa": 1,
+          "Dhanusha": 1,
+          "Ilam": 1,
+          "Jhapa": 1,
+          "Bhaktapur": 1,
+          "Lalitpur": 1,
           "Kailali": 1,
-          "Rolpa": 1,
-          "Chitwan": 1,
-          "Arghakhanchi": 1,
-          "Rasuwa": 1,
-          "Syangja": 1,
-          "Siraha": 1,
-          "Baglung": 1,
-          "Dailekh": 1,
-          "Darchula": 1,
-          "Nawalparasi": 1,
+          "Tanahun": 1,
           "Nuwakot": 1,
-          "Dhankuta": 1,
-          "Solukhumbu": 1,
-          "Dhading": 1
+          "Baitadi": 1,
+          "Doti": 1,
+          "Achham": 1
         }
       ],
       [
@@ -494,22 +395,6 @@
     [
       "9587",
       9587
-    ]
-  ],
-  [
-    "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1150,22 +1035,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.telephone_lines.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.telephone_lines.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1818,26 +1687,10 @@
   ],
   [
     "change",
-    "variables.road_km.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.road_km.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.road_km.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2435,52 +2288,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:22",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "districtname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "telephone_lines": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "road_km": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

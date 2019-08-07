@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        69
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CQNETA_dataset_dropoff.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2571
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Order.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Order.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Order.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -694,28 +595,12 @@
     [
       "Consented",
       [
+        "Homeowner",
+        "Age",
+        "Education",
         "Zipcode",
-        "Consented",
-        "Completed",
-        "Race",
-        "Age"
+        "Consented"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Question.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Question.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -749,10 +634,10 @@
       [
         "fewestValues",
         [
-          "Candidate Pair 1",
-          "Gender Stereotypes",
-          "Size of Tax Increase Would Tolerate on Self",
-          "Quality of Local Fire Protection",
+          "Position on Transportation Self",
+          "Will Experience Fire",
+          "Position on Housing Self",
+          "Candidate Pair 2",
           "Clinton Feeling Thermometer"
         ]
       ],
@@ -779,49 +664,49 @@
       [
         "plotValues",
         {
-          "Race": 3,
-          "Income": 3,
-          "Ideology Self": 3,
-          "Consented": 3,
-          "Zipcode": 3,
           "Age": 3,
           "Homeowner": 3,
-          "Female": 3,
+          "Income": 3,
           "Completed": 3,
+          "Consented": 3,
+          "Female": 3,
+          "Zipcode": 3,
+          "Race": 3,
           "Party": 3,
+          "Ideology Self": 3,
           "Education": 3,
+          "Most Important Issues": 2,
           "Ideology Winner": 2,
           "Turnout": 2,
           "Vote Choice": 2,
-          "Most Important Issues": 2,
-          "Candidate Pair 5": 1,
-          "Position on Crime Winner": 1,
-          "Racial Stereotypes": 1,
-          "Candidate Pair 2": 1,
-          "Position on Police Benefits Self": 1,
-          "Position on Police Benefits Winner": 1,
-          "Position on Transportation Winner": 1,
-          "Will Experience Fire": 1,
-          "Position on Housing Winner": 1,
-          "Candidate Pair 4": 1,
-          "Should Budget Be Decided via Direct Democracy": 1,
-          "Position on Charters Self": 1,
-          "Candidate Pair 3": 1,
-          "Position on Taxing and Spending Self": 1,
-          "Size of Tax Increase Would Tolerate on Others": 1,
-          "Gender Stereotypes": 1,
+          "Clinton Feeling Thermometer": 1,
           "Experienced Fire": 1,
+          "Racial Stereotypes": 1,
+          "Size of Tax Increase Would Tolerate on Others": 1,
+          "Will Experience Fire": 1,
+          "Candidate Pair 2": 1,
           "Position on Crime Self": 1,
+          "Position on Transportation Winner": 1,
+          "Perception of Waste in Government": 1,
+          "Candidate Pair 1": 1,
+          "Candidate Pair 5": 1,
+          "Position on Charters Winner": 1,
+          "Position on Police Benefits Self": 1,
           "Is Budget Decided via Direct Democracy": 1,
-          "Quality of Local Fire Protection": 1,
           "Position on Housing Self": 1,
           "Position on Transportation Self": 1,
-          "Perception of Crime": 1,
+          "Position on Taxing and Spending Self": 1,
+          "Candidate Pair 3": 1,
+          "Quality of Local Fire Protection": 1,
+          "Position on Crime Winner": 1,
+          "Position on Police Benefits Winner": 1,
+          "Position on Housing Winner": 1,
+          "Position on Charters Self": 1,
+          "Should Budget Be Decided via Direct Democracy": 1,
           "Size of Tax Increase Would Tolerate on Self": 1,
-          "Clinton Feeling Thermometer": 1,
-          "Candidate Pair 1": 1,
-          "Position on Charters Winner": 1,
-          "Perception of Waste in Government": 1
+          "Perception of Crime": 1,
+          "Gender Stereotypes": 1,
+          "Candidate Pair 4": 1
         }
       ],
       [
@@ -1032,22 +917,6 @@
     [
       "253",
       253
-    ]
-  ],
-  [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1659,22 +1528,6 @@
     ]
   ],
   [
-    "change",
-    "variables.City.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.City.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.City",
     [
@@ -1861,52 +1714,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:51",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Order": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Question": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "City": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

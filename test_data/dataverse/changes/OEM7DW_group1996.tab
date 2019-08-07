@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        303
-      ],
-      [
-        "variableCount",
-        17
-      ],
-      [
-        "dataSource",
-        {
-          "name": "OEM7DW_group1996.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 37715
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.degree.median",
     [
@@ -122,22 +39,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.degree.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.degree.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -357,22 +258,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -403,8 +288,8 @@
       [
         "fewestValues",
         [
-          "USA",
-          "SLO"
+          "SLO",
+          "USA"
         ]
       ],
       [
@@ -435,14 +320,14 @@
           "AUS": 25,
           "DE": 25,
           "IRL": 24,
-          "CZ": 23,
           "F": 23,
-          "CA": 22,
+          "CZ": 23,
           "H": 22,
           "PL": 22,
+          "CA": 22,
           "NZ": 22,
-          "SLO": 21,
-          "USA": 21
+          "USA": 21,
+          "SLO": 21
         }
       ],
       [
@@ -624,22 +509,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.soclass.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.soclass.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -888,22 +757,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.agecat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agecat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1164,26 +1017,10 @@
   ],
   [
     "change",
-    "variables.av_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.av_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.av_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1836,26 +1673,10 @@
   ],
   [
     "change",
-    "variables.av_spend_health.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.av_spend_health.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.av_spend_health.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2508,26 +2329,10 @@
   ],
   [
     "change",
-    "variables.sd_spend_health.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_spend_health.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_spend_health.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3180,26 +2985,10 @@
   ],
   [
     "change",
-    "variables.av_spend_edu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.av_spend_edu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.av_spend_edu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3852,26 +3641,10 @@
   ],
   [
     "change",
-    "variables.sd_spend_edu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_spend_edu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_spend_edu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4524,26 +4297,10 @@
   ],
   [
     "change",
-    "variables.av_spend_retire.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.av_spend_retire.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.av_spend_retire.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5197,26 +4954,10 @@
   ],
   [
     "change",
-    "variables.sd_spend_retire.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_spend_retire.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_spend_retire.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5869,26 +5610,10 @@
   ],
   [
     "change",
-    "variables.av_spend_unemplo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.av_spend_unemplo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.av_spend_unemplo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6541,26 +6266,10 @@
   ],
   [
     "change",
-    "variables.sd_spend_unemplo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_spend_unemplo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_spend_unemplo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7204,22 +6913,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -7420,22 +7113,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cnt_yr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cnt_yr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cnt_yr",
     [
@@ -7466,8 +7143,8 @@
       [
         "fewestValues",
         [
-          "SI_1996",
-          "US_1996"
+          "US_1996",
+          "SI_1996"
         ]
       ],
       [
@@ -7500,12 +7177,12 @@
           "IE_1996": 24,
           "FR_1996": 23,
           "CZ_1996": 23,
-          "NZ_1996": 22,
-          "PL_1996": 22,
           "HU_1996": 22,
+          "PL_1996": 22,
           "CA_1996": 22,
-          "US_1996": 21,
-          "SI_1996": 21
+          "NZ_1996": 22,
+          "SI_1996": 21,
+          "US_1996": 21
         }
       ],
       [
@@ -7686,22 +7363,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.size.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.size.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8354,26 +8015,10 @@
   ],
   [
     "change",
-    "variables.av_income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.av_income.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.av_income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8971,117 +8616,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:07",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "degree": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "soclass": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agecat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "av_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "av_spend_health": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_spend_health": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "av_spend_edu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_spend_edu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "av_spend_retire": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_spend_retire": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "av_spend_unemplo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_spend_unemplo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cnt_yr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "size": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "av_income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

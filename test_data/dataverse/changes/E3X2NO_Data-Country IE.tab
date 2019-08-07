@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        600
-      ],
-      [
-        "variableCount",
-        12
-      ],
-      [
-        "dataSource",
-        {
-          "name": "E3X2NO_Data-Country IE.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 55798
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1950",
       1950.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "AUS",
       [
-        "CAN",
-        "AUS",
+        "CHE",
+        "SWE",
         "JPN",
         "DNK",
-        "SWE"
+        "NZL"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "CAN",
-          "AUS",
+          "CHE",
+          "SWE",
           "JPN",
           "DNK",
-          "SWE"
+          "NZL"
         ]
       ],
       [
@@ -833,16 +718,16 @@
       [
         "plotValues",
         {
-          "NOR": 60,
           "GBR": 60,
-          "CHE": 60,
-          "NZL": 60,
           "USA": 60,
-          "SWE": 60,
+          "NOR": 60,
+          "AUS": 60,
+          "CAN": 60,
+          "NZL": 60,
           "DNK": 60,
           "JPN": 60,
-          "AUS": 60,
-          "CAN": 60
+          "SWE": 60,
+          "CHE": 60
         }
       ],
       [
@@ -1032,26 +917,10 @@
   ],
   [
     "change",
-    "variables.qxfemale.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.qxfemale.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.qxfemale.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1705,26 +1574,10 @@
   ],
   [
     "change",
-    "variables.invertedplc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.invertedplc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.invertedplc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2377,26 +2230,10 @@
   ],
   [
     "change",
-    "variables.exfemale.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.exfemale.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.exfemale.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3053,26 +2890,10 @@
   ],
   [
     "change",
-    "variables.qxmale.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.qxmale.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.qxmale.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3725,26 +3546,10 @@
   ],
   [
     "change",
-    "variables.exmale.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.exmale.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.exmale.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4351,28 +4156,12 @@
     [
       "Australia",
       [
-        "Norway",
         "Sweden",
+        "United States",
+        "New Zealand",
         "Canada",
-        "Australia",
-        "New Zealand"
+        "Australia"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4406,11 +4195,11 @@
       [
         "fewestValues",
         [
-          "Norway",
           "Sweden",
+          "United States",
+          "New Zealand",
           "Canada",
-          "Australia",
-          "New Zealand"
+          "Australia"
         ]
       ],
       [
@@ -4437,15 +4226,15 @@
         "plotValues",
         {
           "Japan": 60,
-          "United States": 60,
-          "Denmark": 60,
-          "United Kingdom": 60,
           "Switzerland": 60,
-          "New Zealand": 60,
+          "United Kingdom": 60,
+          "Denmark": 60,
+          "Norway": 60,
           "Australia": 60,
           "Canada": 60,
-          "Sweden": 60,
-          "Norway": 60
+          "New Zealand": 60,
+          "United States": 60,
+          "Sweden": 60
         }
       ],
       [
@@ -4635,26 +4424,10 @@
   ],
   [
     "change",
-    "variables.rgdpe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rgdpe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rgdpe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5307,26 +5080,10 @@
   ],
   [
     "change",
-    "variables.pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5979,26 +5736,10 @@
   ],
   [
     "change",
-    "variables.hc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6651,26 +6392,10 @@
   ],
   [
     "change",
-    "variables.rpcgdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rpcgdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rpcgdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7268,92 +6993,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:22:51",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qxfemale": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "invertedplc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "exfemale": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qxmale": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "exmale": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rgdpe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rpcgdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

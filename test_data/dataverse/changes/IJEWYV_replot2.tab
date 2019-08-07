@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        38
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IJEWYV_replot2.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2833
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Idno.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Idno.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Idno.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -686,28 +587,12 @@
     [
       "Macroeconomics",
       [
-        "Transportation",
-        "Labor",
-        "Education",
-        "Space, Science, and Technology ",
-        "Macroeconomics"
+        "Agriculture",
+        "Macroeconomics",
+        "Foreign Trade",
+        "Energy",
+        "Transportation"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ID.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -741,11 +626,11 @@
       [
         "fewestValues",
         [
-          "Transportation",
-          "Labor",
-          "Education",
-          "Space, Science, and Technology ",
-          "Macroeconomics"
+          "Agriculture",
+          "Macroeconomics",
+          "Foreign Trade",
+          "Energy",
+          "Transportation"
         ]
       ],
       [
@@ -771,25 +656,25 @@
       [
         "plotValues",
         {
-          "Transportation": 2,
-          "Civil Rights and Liberties": 2,
-          "Energy": 2,
           "Health": 2,
-          "Law, Crime, and Family Issues": 2,
-          "Agriculture": 2,
-          "Public Lands and Water Management": 2,
           "Foreign Trade": 2,
+          "Civil Rights and Liberties": 2,
+          "Labor": 2,
+          "International Affairs": 2,
+          "Public Lands and Water Management": 2,
+          "Banking": 2,
           "Government Operations": 2,
+          "Environment": 2,
+          "Community Development": 2,
           "Defense": 2,
           "Social Welfare": 2,
-          "Community Development": 2,
-          "Environment": 2,
-          "Macroeconomics": 2,
           "Education": 2,
-          "International Affairs": 2,
-          "Labor": 2,
-          "Banking": 2,
-          "Space, Science, and Technology ": 2
+          "Macroeconomics": 2,
+          "Energy": 2,
+          "Space, Science, and Technology ": 2,
+          "Transportation": 2,
+          "Law, Crime, and Family Issues": 2,
+          "Agriculture": 2
         }
       ],
       [
@@ -945,22 +830,6 @@
         "Male",
         "Female"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Gender.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1208,26 +1077,10 @@
   ],
   [
     "change",
-    "variables.diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1884,26 +1737,10 @@
   ],
   [
     "change",
-    "variables.se.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2560,26 +2397,10 @@
   ],
   [
     "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3223,22 +3044,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pr",
     [
@@ -3484,26 +3289,10 @@
   ],
   [
     "change",
-    "variables.lower.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lower.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lower.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4160,26 +3949,10 @@
   ],
   [
     "change",
-    "variables.upper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.upper.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.upper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4777,77 +4550,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:48",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Idno": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lower": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "upper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

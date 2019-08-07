@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        28
-      ],
-      [
-        "variableCount",
-        31
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WJXCT8_data_media2012.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 14153
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.authority.median",
     [
@@ -138,26 +55,10 @@
   ],
   [
     "change",
-    "variables.authority.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.authority.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.authority.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -814,26 +715,10 @@
   ],
   [
     "change",
-    "variables.fairness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fairness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fairness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1490,26 +1375,10 @@
   ],
   [
     "change",
-    "variables.harm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.harm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.harm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2166,26 +2035,10 @@
   ],
   [
     "change",
-    "variables.ingroup.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ingroup.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ingroup.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2842,26 +2695,10 @@
   ],
   [
     "change",
-    "variables.purity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.purity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.purity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3518,26 +3355,10 @@
   ],
   [
     "change",
-    "variables.general.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.general.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.general.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4144,28 +3965,12 @@
     [
       "INET_CNN_com",
       [
-        "TV_ABC_60minutes",
-        "TV_CBS_ThisMorning",
+        "PRINT_TheWashingtonPost",
+        "TV_NBC_NightlyNews",
         "TV_CBS_EveningNews",
-        "TV_NBC_TodayShow",
-        "TV_NBC_NightlyNews"
+        "NPR_FreshAir",
+        "INET_TheNewYorkTimes"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4199,11 +4004,11 @@
       [
         "fewestValues",
         [
-          "TV_ABC_60minutes",
-          "TV_CBS_ThisMorning",
+          "PRINT_TheWashingtonPost",
+          "TV_NBC_NightlyNews",
           "TV_CBS_EveningNews",
-          "TV_NBC_TodayShow",
-          "TV_NBC_NightlyNews"
+          "NPR_FreshAir",
+          "INET_TheNewYorkTimes"
         ]
       ],
       [
@@ -4229,34 +4034,34 @@
       [
         "plotValues",
         {
-          "TV_Fox_Hannity": 1,
-          "TV_Fox_SpecialReport": 1,
-          "INET_USAToday": 1,
-          "TV_CBS_FaceTheNation": 1,
-          "TV_Fox_OReillyFactor": 1,
-          "PRINT_TheWashingtonPost": 1,
-          "TV_NBC_RockCenter": 1,
-          "TV_CNN_AndersonCooper": 1,
+          "TV_CBS_SundayMorning": 1,
           "TV_Fox_TheFive": 1,
           "TV_ABC_WorldNews": 1,
-          "NPR_MorningEdition": 1,
-          "PRINT_WallStreetJournal_Abstracts": 1,
-          "INET_Washingtonpost_com": 1,
-          "NPR_AllThingsConsidered": 1,
-          "TV_CBS_SundayMorning": 1,
-          "INET_CNN_com": 1,
-          "TV_ABC_GoodMorningAmerica": 1,
-          "TV_ABC_ThisWeek": 1,
-          "NPR_FreshAir": 1,
-          "TV_NBC_MeetThePress": 1,
-          "TV_NBC_Dateline": 1,
-          "INET_TheNewYorkTimes": 1,
-          "INET_MSNBC_com": 1,
-          "TV_NBC_NightlyNews": 1,
           "TV_NBC_TodayShow": 1,
-          "TV_CBS_EveningNews": 1,
+          "INET_MSNBC_com": 1,
+          "TV_Fox_OReillyFactor": 1,
+          "NPR_AllThingsConsidered": 1,
+          "INET_CNN_com": 1,
+          "TV_ABC_60minutes": 1,
+          "INET_USAToday": 1,
+          "TV_NBC_RockCenter": 1,
           "TV_CBS_ThisMorning": 1,
-          "TV_ABC_60minutes": 1
+          "TV_CBS_FaceTheNation": 1,
+          "TV_NBC_MeetThePress": 1,
+          "TV_ABC_ThisWeek": 1,
+          "TV_ABC_GoodMorningAmerica": 1,
+          "INET_Washingtonpost_com": 1,
+          "NPR_MorningEdition": 1,
+          "TV_Fox_Hannity": 1,
+          "TV_Fox_SpecialReport": 1,
+          "TV_CNN_AndersonCooper": 1,
+          "TV_NBC_Dateline": 1,
+          "PRINT_WallStreetJournal_Abstracts": 1,
+          "INET_TheNewYorkTimes": 1,
+          "NPR_FreshAir": 1,
+          "TV_CBS_EveningNews": 1,
+          "TV_NBC_NightlyNews": 1,
+          "PRINT_TheWashingtonPost": 1
         }
       ],
       [
@@ -4468,26 +4273,10 @@
   ],
   [
     "change",
-    "variables.authority_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.authority_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.authority_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5144,26 +4933,10 @@
   ],
   [
     "change",
-    "variables.fairness_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fairness_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fairness_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5820,26 +5593,10 @@
   ],
   [
     "change",
-    "variables.harm_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.harm_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.harm_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6496,26 +6253,10 @@
   ],
   [
     "change",
-    "variables.ingroup_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ingroup_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ingroup_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7172,26 +6913,10 @@
   ],
   [
     "change",
-    "variables.purity_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.purity_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.purity_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7848,26 +7573,10 @@
   ],
   [
     "change",
-    "variables.general_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.general_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.general_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8512,22 +8221,6 @@
     ]
   ],
   [
-    "change",
-    "variables.authority_d.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.authority_d.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.authority_d",
     [
@@ -8769,22 +8462,6 @@
     [
       "-1",
       -1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.fairness_d.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.fairness_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9032,22 +8709,6 @@
     ]
   ],
   [
-    "change",
-    "variables.harm_d.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.harm_d.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.harm_d",
     [
@@ -9289,22 +8950,6 @@
     [
       "-1",
       -1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ingroup_d.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ingroup_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9552,22 +9197,6 @@
     ]
   ],
   [
-    "change",
-    "variables.purity_d.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.purity_d.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.purity_d",
     [
@@ -9809,22 +9438,6 @@
     [
       "-1",
       -1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.general_d.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.general_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10084,26 +9697,10 @@
   ],
   [
     "change",
-    "variables.authority_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.authority_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.authority_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10760,26 +10357,10 @@
   ],
   [
     "change",
-    "variables.authority_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.authority_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.authority_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11436,26 +11017,10 @@
   ],
   [
     "change",
-    "variables.fairness_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fairness_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fairness_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12112,26 +11677,10 @@
   ],
   [
     "change",
-    "variables.fairness_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fairness_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fairness_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12788,26 +12337,10 @@
   ],
   [
     "change",
-    "variables.harm_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.harm_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.harm_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13464,26 +12997,10 @@
   ],
   [
     "change",
-    "variables.harm_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.harm_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.harm_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14140,26 +13657,10 @@
   ],
   [
     "change",
-    "variables.ingroup_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ingroup_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ingroup_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14816,26 +14317,10 @@
   ],
   [
     "change",
-    "variables.ingroup_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ingroup_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ingroup_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15492,26 +14977,10 @@
   ],
   [
     "change",
-    "variables.purity_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.purity_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.purity_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16168,26 +15637,10 @@
   ],
   [
     "change",
-    "variables.purity_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.purity_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.purity_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16844,26 +16297,10 @@
   ],
   [
     "change",
-    "variables.general_lo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.general_lo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.general_lo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17520,26 +16957,10 @@
   ],
   [
     "change",
-    "variables.general_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.general_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.general_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18137,187 +17558,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:34",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "authority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fairness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "harm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingroup": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "purity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "authority_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fairness_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "harm_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingroup_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "purity_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "general_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "authority_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fairness_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "harm_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingroup_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "purity_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "general_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "authority_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "authority_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fairness_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fairness_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "harm_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "harm_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingroup_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingroup_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "purity_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "purity_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "general_lo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "general_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

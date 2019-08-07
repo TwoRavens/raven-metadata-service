@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        62
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "AW6L1P_PSU_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 5478
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Kod_Teryt.median",
     [
@@ -126,22 +43,6 @@
     [
       "201022",
       201022
-    ]
-  ],
-  [
-    "change",
-    "variables.Kod_Teryt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Kod_Teryt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -789,22 +690,6 @@
     ]
   ],
   [
-    "change",
-    "variables.citowvil.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.citowvil.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.citowvil",
     [
@@ -1445,22 +1330,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Resettled.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Resettled.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Resettled",
     [
@@ -1665,30 +1534,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "Woj.",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Woj.",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -1722,9 +1567,9 @@
       [
         "fewestValues",
         [
-          "Zachodniopomorskie",
           "Pomorskie",
-          "Warminsko-Mazurskie"
+          "Warminsko-Mazurskie",
+          "Zachodniopomorskie"
         ]
       ],
       [
@@ -1752,11 +1597,11 @@
         {
           "Dolnoslaskie": 34,
           "Opolskie": 9,
-          "Slaskie": 5,
           "Lubuskie": 5,
+          "Slaskie": 5,
+          "Zachodniopomorskie": 3,
           "Warminsko-Mazurskie": 3,
-          "Pomorskie": 3,
-          "Zachodniopomorskie": 3
+          "Pomorskie": 3
         }
       ],
       [
@@ -1900,28 +1745,12 @@
     [
       "Krosnice",
       [
-        "Strzelin",
-        "Zielona Gora",
-        "Dobrzen Wielki",
+        "Twardogora",
+        "Wisznia Mala",
         "Zawonia",
-        "Twardogora"
+        "Krosnice",
+        "Zielona Gora"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Gmina.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Gmina.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1955,11 +1784,11 @@
       [
         "fewestValues",
         [
-          "Nowa Sol",
-          "Olsztyn",
-          "Jaworzyna Slaska",
-          "Kuznia Raciborska",
-          "Swiebodzin"
+          "Zabkowice Slaskie",
+          "Pruszcz Gdanski",
+          "Walbrzych",
+          "Olesnica",
+          "Pyskowice"
         ]
       ],
       [
@@ -1985,60 +1814,60 @@
       [
         "plotValues",
         {
-          "Strzelin": 2,
           "Wisznia Mala": 2,
           "Olawa": 2,
+          "Dobrzen Wielki": 2,
+          "Strzelin": 2,
+          "Zielona Gora": 2,
           "Krosnice": 2,
           "Zawonia": 2,
           "Twardogora": 2,
-          "Zielona Gora": 2,
-          "Dobrzen Wielki": 2,
-          "Zlotoryja": 1,
-          "Ziebice": 1,
-          "Milicz": 1,
-          "Kolobrzeg": 1,
-          "Czerwiensk": 1,
-          "Bielawa": 1,
-          "Pyskowice": 1,
           "Prusice": 1,
-          "Legnica": 1,
-          "Olesnica": 1,
-          "Boleslawiec": 1,
-          "Oborniki Slaskie": 1,
-          "Gdansk": 1,
-          "Ostroda": 1,
-          "Dzierzoniow": 1,
-          "Klodzko": 1,
-          "Wroclaw": 1,
-          "Trzebnica": 1,
-          "Swidnica": 1,
-          "Zabrze": 1,
-          "Glogowek": 1,
-          "Jaworzyna Slaska": 1,
-          "Szczecin": 1,
-          "Walbrzych": 1,
-          "Koszalin": 1,
-          "Renska Wies": 1,
-          "Dabrowa": 1,
-          "Gliwice": 1,
-          "Dlugol_ka": 1,
-          "Opole": 1,
-          "Szczawno Zdroj": 1,
-          "Zabkowice Slaskie": 1,
-          "Zdzieszowice": 1,
-          "Pruszcz Gdanski": 1,
-          "Sopot": 1,
-          "Gluszyca": 1,
-          "Strzelce Opolskie": 1,
-          "Dlugoleka": 1,
-          "Szczytno": 1,
-          "Boguszow Gorce": 1,
-          "Bytom": 1,
-          "Prudnik": 1,
-          "Swiebodzin": 1,
-          "Kuznia Raciborska": 1,
+          "Bielawa": 1,
           "Olsztyn": 1,
-          "Nowa Sol": 1
+          "Wroclaw": 1,
+          "Swidnica": 1,
+          "Gliwice": 1,
+          "Boleslawiec": 1,
+          "Glogowek": 1,
+          "Zabrze": 1,
+          "Szczytno": 1,
+          "Strzelce Opolskie": 1,
+          "Szczecin": 1,
+          "Czerwiensk": 1,
+          "Sopot": 1,
+          "Dlugol_ka": 1,
+          "Zlotoryja": 1,
+          "Dzierzoniow": 1,
+          "Ostroda": 1,
+          "Koszalin": 1,
+          "Dabrowa": 1,
+          "Prudnik": 1,
+          "Gluszyca": 1,
+          "Legnica": 1,
+          "Renska Wies": 1,
+          "Bytom": 1,
+          "Zdzieszowice": 1,
+          "Opole": 1,
+          "Milicz": 1,
+          "Kuznia Raciborska": 1,
+          "Szczawno Zdroj": 1,
+          "Trzebnica": 1,
+          "Swiebodzin": 1,
+          "Ziebice": 1,
+          "Gdansk": 1,
+          "Dlugoleka": 1,
+          "Kolobrzeg": 1,
+          "Boguszow Gorce": 1,
+          "Nowa Sol": 1,
+          "Klodzko": 1,
+          "Oborniki Slaskie": 1,
+          "Pyskowice": 1,
+          "Olesnica": 1,
+          "Walbrzych": 1,
+          "Pruszcz Gdanski": 1,
+          "Jaworzyna Slaska": 1,
+          "Zabkowice Slaskie": 1
         }
       ],
       [
@@ -2231,22 +2060,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pow2003.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pow2003.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pow2003",
     [
@@ -2277,11 +2090,11 @@
       [
         "fewestValues",
         [
-          "Sopot m.",
-          "nowosolski",
-          "Zielona Gora m.",
+          "raciborski",
+          "boleslawiecki",
           "Zabrze m.",
-          "zlotoryjski"
+          "lubanski",
+          "szczycienski"
         ]
       ],
       [
@@ -2308,45 +2121,45 @@
         "plotValues",
         {
           "trzebnicki": 7,
+          "olesnicki": 3,
+          "walbrzyski": 3,
           "milicki": 3,
           "opolski": 3,
-          "walbrzyski": 3,
-          "olesnicki": 3,
-          "swidnicki": 2,
-          "strzelinski": 2,
-          "wroclawski": 2,
-          "zabkowicki": 2,
           "dzierzoniowski": 2,
-          "zielonogorski": 2,
+          "zabkowicki": 2,
+          "wroclawski": 2,
+          "strzelinski": 2,
           "olawski": 2,
           "prudnicki": 2,
-          "kedzierzynsko-kozielski": 1,
-          "Szczecin m.": 1,
-          "ostrodzki": 1,
-          "szczycienski": 1,
-          "Olsztyn m.": 1,
-          "krapkowicki": 1,
-          "gliwicki": 1,
-          "Gliwice m.": 1,
-          "boleslawiecki": 1,
-          "Zielona Gora m.": 1,
-          "Wroclaw m.": 1,
-          "Legnica m.": 1,
-          "raciborski": 1,
-          "strzelecki": 1,
-          "Gdansk m.": 1,
-          "Opole m.": 1,
-          "gdanski": 1,
-          "kolobrzeski": 1,
-          "Koszalin m.": 1,
-          "Bytom m.": 1,
-          "klodzki": 1,
-          "swiebodzinski": 1,
-          "zlotoryjski": 1,
-          "Zabrze m.": 1,
-          "lubanski": 1,
+          "swidnicki": 2,
+          "zielonogorski": 2,
           "nowosolski": 1,
-          "Sopot m.": 1
+          "gliwicki": 1,
+          "swiebodzinski": 1,
+          "strzelecki": 1,
+          "krapkowicki": 1,
+          "Opole m.": 1,
+          "Szczecin m.": 1,
+          "Gdansk m.": 1,
+          "kolobrzeski": 1,
+          "klodzki": 1,
+          "Zabrze m.": 1,
+          "Gliwice m.": 1,
+          "Koszalin m.": 1,
+          "kedzierzynsko-kozielski": 1,
+          "boleslawiecki": 1,
+          "szczycienski": 1,
+          "Zielona Gora m.": 1,
+          "Olsztyn m.": 1,
+          "Legnica m.": 1,
+          "Sopot m.": 1,
+          "gdanski": 1,
+          "raciborski": 1,
+          "Wroclaw m.": 1,
+          "Bytom m.": 1,
+          "zlotoryjski": 1,
+          "lubanski": 1,
+          "ostrodzki": 1
         }
       ],
       [
@@ -2570,26 +2383,10 @@
   ],
   [
     "change",
-    "variables.GermDistKM.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GermDistKM.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GermDistKM.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3246,26 +3043,10 @@
   ],
   [
     "change",
-    "variables.divMig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.divMig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.divMig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3922,26 +3703,10 @@
   ],
   [
     "change",
-    "variables.shareResettled.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.shareResettled.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.shareResettled.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4539,77 +4304,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:27",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Kod_Teryt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "citowvil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Resettled": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Woj.": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gmina": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pow2003": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GermDistKM": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "divMig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "shareResettled": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

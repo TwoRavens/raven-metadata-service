@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        18
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WSUHI3_base_categories.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 918
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.attribute.mode",
     [
       "Base category: Female",
       [
-        "Base category: 35",
-        "Base category: Female",
+        "Base category: Educator",
+        "Base category: No Political Experience",
         "Base category: Independent",
-        "Base category: White",
-        "Base category: No Political Experience"
+        "Base category: Female",
+        "Base category: White"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.attribute.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.attribute.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Base category: 35",
-          "Base category: Female",
+          "Base category: Educator",
+          "Base category: No Political Experience",
           "Base category: Independent",
-          "Base category: White",
-          "Base category: No Political Experience"
+          "Base category: Female",
+          "Base category: White"
         ]
       ],
       [
@@ -176,8 +77,8 @@
           "Base category: Educator": 3,
           "Base category: No Political Experience": 3,
           "Base category: White": 3,
-          "Base category: Independent": 3,
           "Base category: Female": 3,
+          "Base category: Independent": 3,
           "Base category: 35": 3
         }
       ],
@@ -318,28 +219,12 @@
     [
       "Gender",
       [
-        "Race",
-        "Party",
         "Job",
-        "Gender",
+        "Race",
+        "Political",
+        "Party",
         "Age"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.rowname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rowname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -373,10 +258,10 @@
       [
         "fewestValues",
         [
-          "Race",
-          "Party",
           "Job",
-          "Gender",
+          "Race",
+          "Political",
+          "Party",
           "Age"
         ]
       ],
@@ -403,12 +288,12 @@
       [
         "plotValues",
         {
-          "Political": 3,
-          "Age": 3,
           "Gender": 3,
-          "Job": 3,
+          "Age": 3,
           "Party": 3,
-          "Race": 3
+          "Political": 3,
+          "Race": 3,
+          "Job": 3
         }
       ],
       [
@@ -548,22 +433,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -752,26 +621,10 @@
     [
       "Democrats",
       [
-        "Republicans",
         "Democrats",
+        "Republicans",
         "Difference"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -805,8 +658,8 @@
       [
         "fewestValues",
         [
-          "Republicans",
           "Democrats",
+          "Republicans",
           "Difference"
         ]
       ],
@@ -834,8 +687,8 @@
         "plotValues",
         {
           "Difference": 6,
-          "Democrats": 6,
-          "Republicans": 6
+          "Republicans": 6,
+          "Democrats": 6
         }
       ],
       [
@@ -963,52 +816,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:44",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "attribute": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rowname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Estimate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

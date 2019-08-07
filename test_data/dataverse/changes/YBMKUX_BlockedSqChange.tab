@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        50
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "YBMKUX_BlockedSqChange.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3137
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.congress.median",
     [
@@ -122,22 +39,6 @@
     [
       "104",
       104
-    ]
-  ],
-  [
-    "change",
-    "variables.congress.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.congress.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -430,26 +331,10 @@
   ],
   [
     "change",
-    "variables.sq.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sq.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sq.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1056,25 +941,9 @@
     [
       "cigarettetaxesDX",
       [
-        "environmentDX",
-        "cigarettetaxesDX"
+        "cigarettetaxesDX",
+        "environmentDX"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.issue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.issue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1108,10 +977,10 @@
       [
         "fewestValues",
         [
-          "inheritancetaxesDX",
-          "welfareDX",
+          "publichealthservicesDX",
+          "ciaappropriationsDX",
           "unitednationsComX",
-          "nationalparksDX",
+          "corporatetaxesDX",
           "internationalaidDX"
         ]
       ],
@@ -1138,30 +1007,30 @@
       [
         "plotValues",
         {
-          "cigarettetaxesDX": 6,
           "environmentDX": 6,
+          "cigarettetaxesDX": 6,
           "earnedincometaxcreditDX": 4,
           "alcoholtaxesDX": 3,
-          "researchanddevelopmentofnewweaDX": 2,
-          "capitalgainstaxesDX": 2,
-          "educationDX": 2,
-          "JobTrainingDWX": 2,
+          "nationalmissiledefenseDX": 2,
+          "gasolinetaxesDX": 2,
+          "defenseplantconversionDX": 2,
+          "defenseDX": 2,
           "militaryhardwareDX": 2,
           "militaryspaceshuttlemissionsDX": 2,
-          "gasolinetaxesDX": 2,
+          "researchanddevelopmentofnewweaDX": 2,
+          "capitalgainstaxesDX": 2,
+          "JobTrainingDWX": 2,
           "AIDSResearchDWX": 2,
-          "nationalmissiledefenseDX": 2,
-          "defenseDX": 2,
-          "defenseplantconversionDX": 2,
-          "welfareDX": 1,
-          "nationalparksDX": 1,
+          "educationDX": 2,
           "publichealthservicesDX": 1,
-          "corporatetaxesDX": 1,
-          "ciaappropriationsDX": 1,
-          "unitednationsComX": 1,
           "artsDX": 1,
+          "welfareDX": 1,
           "internationalaidDX": 1,
-          "inheritancetaxesDX": 1
+          "inheritancetaxesDX": 1,
+          "nationalparksDX": 1,
+          "corporatetaxesDX": 1,
+          "unitednationsComX": 1,
+          "ciaappropriationsDX": 1
         }
       ],
       [
@@ -1367,26 +1236,10 @@
   ],
   [
     "change",
-    "variables.laggedsq.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.laggedsq.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.laggedsq.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2031,22 +1884,6 @@
     ]
   ],
   [
-    "change",
-    "variables.issuenumber.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.issuenumber.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.issuenumber",
     [
@@ -2644,26 +2481,10 @@
   ],
   [
     "change",
-    "variables.howmuchclosertomedianisoutcometh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.howmuchclosertomedianisoutcometh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.howmuchclosertomedianisoutcometh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3317,26 +3138,10 @@
   ],
   [
     "change",
-    "variables.distanceoutcometomedianamongbloc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distanceoutcometomedianamongbloc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distanceoutcometomedianamongbloc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3989,26 +3794,10 @@
   ],
   [
     "change",
-    "variables.distanceinitialsqtomedianamongbl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.distanceinitialsqtomedianamongbl.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.distanceinitialsqtomedianamongbl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4290,22 +4079,6 @@
     ]
   ],
   [
-    "change",
-    "variables.hastert.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.hastert.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.hastert",
     [
@@ -4502,77 +4275,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:28",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "congress": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sq": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "issue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "laggedsq": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "issuenumber": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "howmuchclosertomedianisoutcometh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distanceoutcometomedianamongbloc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "distanceinitialsqtomedianamongbl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hastert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

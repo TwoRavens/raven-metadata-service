@@ -1,89 +1,6 @@
 [
   [
     "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        11
-      ],
-      [
-        "variableCount",
-        2
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ZYPHVD_Stem_Decision_description.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 936
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
     "variables",
     [
       [
@@ -104,19 +21,19 @@
           "max": "NA",
           "min": "NA",
           "mode": [
-            "CIRM3",
-            "Prop71",
+            "CIRM2",
             "SB1260",
             "CIRM5",
-            "SB253"
+            "SB771",
+            "Superior"
           ],
           "modeFreq": 1,
           "fewestValues": [
-            "CIRM3",
-            "Prop71",
+            "CIRM2",
             "SB1260",
             "CIRM5",
-            "SB253"
+            "SB771",
+            "Superior"
           ],
           "fewestFreq": 1,
           "midpoint": null,
@@ -124,17 +41,17 @@
           "stdDev": "NA",
           "herfindahlIndex": 0.09090909090909091,
           "plotValues": {
-            "SB771": 1,
-            "CIRM4": 1,
-            "CIRM2": 1,
-            "SB1260": 1,
-            "CIRM1": 1,
-            "CIRM3": 1,
-            "CIRM5": 1,
-            "Prop71": 1,
-            "SB253": 1,
             "Appellate": 1,
-            "Superior": 1
+            "SB771": 1,
+            "CIRM3": 1,
+            "Prop71": 1,
+            "CIRM4": 1,
+            "SB253": 1,
+            "CIRM1": 1,
+            "Superior": 1,
+            "CIRM5": 1,
+            "SB1260": 1,
+            "CIRM2": 1
           },
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -166,11 +83,11 @@
           ],
           "modeFreq": 2,
           "fewestValues": [
-            "Law extending the duration of SB 253 and SB 771, and requiring a biannual reporting on hESC research",
-            "Proposition 71 is constitutional and the bonds issued are valid",
-            "Rules on IP and Revenue-Sharing for For-Profits",
+            "Proposition 71: Research on hESC is a constitutional right, $3 billion investment over 30 years and creation of the California Institute for Regenerative Medicine (CIRM)",
             "Proposition 71 is constitutional",
-            "Rules on IP and Revenue-Sharing Requirements for Non-Profits and For-Profit Grantees"
+            "Proposition 71 is constitutional and the bonds issued are valid",
+            "Rules on Intellectual Property (IP) Policy for Non-profit Organizations",
+            "Law extending the duration of SB 253 and SB 771, and requiring a biannual reporting on hESC research"
           ],
           "fewestFreq": 1,
           "midpoint": null,
@@ -179,15 +96,15 @@
           "herfindahlIndex": 0.10743801652892562,
           "plotValues": {
             "Rules on medical and ethical standards": 2,
-            "Rules on Intellectual Property (IP) Policy for Non-profit Organizations": 1,
             "Law allowing research on hESC": 1,
-            "Proposition 71: Research on hESC is a constitutional right, $3 billion investment over 30 years and creation of the California Institute for Regenerative Medicine (CIRM)": 1,
             "Law requiring an anonymous embryos registry and regulating informed consent of embryos' donors": 1,
             "Rules on IP and Revenue-Sharing Requirements for Non-Profits and For-Profit Grantees": 1,
-            "Proposition 71 is constitutional": 1,
             "Rules on IP and Revenue-Sharing for For-Profits": 1,
+            "Law extending the duration of SB 253 and SB 771, and requiring a biannual reporting on hESC research": 1,
+            "Rules on Intellectual Property (IP) Policy for Non-profit Organizations": 1,
             "Proposition 71 is constitutional and the bonds issued are valid": 1,
-            "Law extending the duration of SB 253 and SB 771, and requiring a biannual reporting on hESC research": 1
+            "Proposition 71 is constitutional": 1,
+            "Proposition 71: Research on hESC is a constitutional right, $3 billion investment over 30 years and creation of the California Institute for Regenerative Medicine (CIRM)": 1
           },
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -300,42 +217,6 @@
           "defaultNature": "nominal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:23:20",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Decision short name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Decision description": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

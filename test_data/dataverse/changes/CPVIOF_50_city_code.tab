@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        50
-      ],
-      [
-        "variableCount",
-        2
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CPVIOF_50_city_code.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 976
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.code.median",
     [
@@ -126,22 +43,6 @@
     [
       "1305",
       1305.0
-    ]
-  ],
-  [
-    "change",
-    "variables.code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.code.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "\u6e05\u8fdc\u5e02",
       [
-        "\u6c55\u5c3e\u5e02",
-        "\u8302\u540d\u5e02",
-        "\u5415\u6881\u5e02",
-        "\u6986\u6797\u5e02",
-        "\u8346\u95e8\u5e02"
+        "\u6c5f\u95e8\u5e02",
+        "\u8425\u53e3\u5e02",
+        "\u7389\u6797\u5e02",
+        "\u6d77\u53e3\u5e02",
+        "\u5eca\u574a\u5e02"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cityname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cityname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "\u6c55\u5c3e\u5e02",
-          "\u8302\u540d\u5e02",
-          "\u5415\u6881\u5e02",
-          "\u6986\u6797\u5e02",
-          "\u8346\u95e8\u5e02"
+          "\u6c5f\u95e8\u5e02",
+          "\u8425\u53e3\u5e02",
+          "\u7389\u6797\u5e02",
+          "\u6d77\u53e3\u5e02",
+          "\u5eca\u574a\u5e02"
         ]
       ],
       [
@@ -833,56 +718,56 @@
       [
         "plotValues",
         {
-          "\u846b\u82a6\u5c9b\u5e02": 1,
-          "\u664b\u4e2d\u5e02": 1,
-          "\u8862\u5dde\u5e02": 1,
-          "\u6885\u5dde\u5e02": 1,
-          "\u516d\u76d8\u6c34\u5e02": 1,
-          "\u94c1\u5cad\u5e02": 1,
-          "\u9ec4\u77f3\u5e02": 1,
-          "\u6f6e\u5dde\u5e02": 1,
-          "\u8346\u95e8\u5e02": 1,
-          "\u4e50\u5c71\u5e02": 1,
-          "\u671d\u9633\u5e02": 1,
-          "\u9633\u6c5f\u5e02": 1,
-          "\u664b\u57ce\u5e02": 1,
-          "\u8425\u53e3\u5e02": 1,
-          "\u6d77\u53e3\u5e02": 1,
-          "\u4e3d\u6c34\u5e02": 1,
-          "\u5f20\u5bb6\u53e3\u5e02": 1,
-          "\u76d8\u9526\u5e02": 1,
-          "\u9102\u5dde\u5e02": 1,
-          "\u6e05\u8fdc\u5e02": 1,
-          "\u6714\u5dde\u5e02": 1,
-          "\u60e0\u5dde\u5e02": 1,
           "\u8087\u5e86\u5e02": 1,
-          "\u91d1\u534e\u5e02": 1,
+          "\u6714\u5dde\u5e02": 1,
+          "\u4e50\u5c71\u5e02": 1,
+          "\u9633\u6c5f\u5e02": 1,
+          "\u63ed\u9633\u5e02": 1,
+          "\u8944\u9633\u5e02": 1,
+          "\u821f\u5c71\u5e02": 1,
+          "\u5415\u6881\u5e02": 1,
+          "\u4e3d\u6c34\u5e02": 1,
+          "\u90a2\u53f0\u5e02": 1,
+          "\u671d\u9633\u5e02": 1,
+          "\u6986\u6797\u5e02": 1,
+          "\u6885\u5dde\u5e02": 1,
+          "\u6f6e\u5dde\u5e02": 1,
           "\u9e21\u897f\u5e02": 1,
-          "\u68a7\u5dde\u5e02": 1,
+          "\u6c55\u5c3e\u5e02": 1,
           "\u5b5d\u611f\u5e02": 1,
-          "\u6ca7\u5dde\u5e02": 1,
-          "\u5eca\u574a\u5e02": 1,
-          "\u7389\u6797\u5e02": 1,
+          "\u4e39\u4e1c\u5e02": 1,
+          "\u7709\u5c71\u5e02": 1,
+          "\u5f20\u5bb6\u53e3\u5e02": 1,
+          "\u68a7\u5dde\u5e02": 1,
+          "\u901a\u8fbd\u5e02": 1,
+          "\u664b\u4e2d\u5e02": 1,
+          "\u8302\u540d\u5e02": 1,
           "\u8fbd\u9633\u5e02": 1,
           "\u8861\u6c34\u5e02": 1,
-          "\u821f\u5c71\u5e02": 1,
-          "\u901a\u8fbd\u5e02": 1,
-          "\u4e09\u4e9a\u5e02": 1,
-          "\u8944\u9633\u5e02": 1,
+          "\u8862\u5dde\u5e02": 1,
+          "\u8425\u53e3\u5e02": 1,
+          "\u9ec4\u77f3\u5e02": 1,
+          "\u6ca7\u5dde\u5e02": 1,
+          "\u846b\u82a6\u5c9b\u5e02": 1,
           "\u9632\u57ce\u6e2f\u5e02": 1,
+          "\u516d\u76d8\u6c34\u5e02": 1,
+          "\u91d1\u534e\u5e02": 1,
           "\u5ffb\u5dde\u5e02": 1,
-          "\u8bb8\u660c\u5e02": 1,
+          "\u76d8\u9526\u5e02": 1,
           "\u5341\u5830\u5e02": 1,
-          "\u63ed\u9633\u5e02": 1,
-          "\u7709\u5c71\u5e02": 1,
-          "\u90a2\u53f0\u5e02": 1,
+          "\u94c1\u5cad\u5e02": 1,
+          "\u664b\u57ce\u5e02": 1,
+          "\u6e05\u8fdc\u5e02": 1,
+          "\u6d77\u53e3\u5e02": 1,
+          "\u8346\u95e8\u5e02": 1,
           "\u6bd5\u8282\u5e02": 1,
-          "\u4e39\u4e1c\u5e02": 1,
-          "\u6986\u6797\u5e02": 1,
-          "\u5415\u6881\u5e02": 1,
-          "\u8302\u540d\u5e02": 1,
-          "\u6c5f\u95e8\u5e02": 1,
-          "\u6c55\u5c3e\u5e02": 1
+          "\u9102\u5dde\u5e02": 1,
+          "\u4e09\u4e9a\u5e02": 1,
+          "\u8bb8\u660c\u5e02": 1,
+          "\u5eca\u574a\u5e02": 1,
+          "\u60e0\u5dde\u5e02": 1,
+          "\u7389\u6797\u5e02": 1,
+          "\u6c5f\u95e8\u5e02": 1
         }
       ],
       [
@@ -1057,42 +942,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:25:47",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cityname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

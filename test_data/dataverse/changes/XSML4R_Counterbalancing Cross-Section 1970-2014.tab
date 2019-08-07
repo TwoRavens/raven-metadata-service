@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        192
-      ],
-      [
-        "variableCount",
-        3
-      ],
-      [
-        "dataSource",
-        {
-          "name": "XSML4R_Counterbalancing Cross-Section 1970-2014.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3129
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ISO.mode",
     [
       "AFG",
       [
-        "AGO",
-        "MUS",
-        "VUT",
-        "JAM",
-        "PNG"
+        "TON",
+        "PLW",
+        "NRU",
+        "BRB",
+        "FIN"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ISO.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ISO.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "AGO",
-          "MUS",
-          "VUT",
-          "JAM",
-          "PNG"
+          "TON",
+          "PLW",
+          "NRU",
+          "BRB",
+          "FIN"
         ]
       ],
       [
@@ -173,198 +74,198 @@
       [
         "plotValues",
         {
-          "UKR": 1,
-          "ARE": 1,
-          "VCT": 1,
-          "PHL": 1,
-          "TLS": 1,
-          "WSM": 1,
-          "THA": 1,
-          "HTI": 1,
-          "TGO": 1,
-          "DJI": 1,
-          "EST": 1,
-          "LSO": 1,
-          "LAO": 1,
-          "TCD": 1,
-          "IDN": 1,
-          "BRB": 1,
-          "PER": 1,
-          "NLD": 1,
-          "DEU": 1,
-          "MHL": 1,
-          "CZE": 1,
-          "TKM": 1,
-          "FIN": 1,
-          "MKD": 1,
-          "GNQ": 1,
-          "MLI": 1,
-          "GTM": 1,
-          "AND": 1,
-          "ISL": 1,
-          "FSM": 1,
-          "LTU": 1,
-          "ATG": 1,
-          "HND": 1,
-          "FRA": 1,
-          "ALB": 1,
-          "MMR": 1,
-          "GUY": 1,
-          "QAT": 1,
-          "BTN": 1,
-          "COL": 1,
-          "GRC": 1,
-          "MYS": 1,
-          "KIR": 1,
-          "KNA": 1,
-          "ECU": 1,
-          "USA": 1,
-          "TWN": 1,
-          "BLR": 1,
-          "TUR": 1,
-          "NOR": 1,
-          "SAU": 1,
-          "LBN": 1,
-          "BHR": 1,
-          "PAK": 1,
-          "MLT": 1,
-          "LIE": 1,
-          "CUB": 1,
-          "GIN": 1,
-          "BLZ": 1,
-          "CIV": 1,
-          "AUS": 1,
-          "SOM": 1,
-          "COG": 1,
-          "KEN": 1,
-          "GBR": 1,
-          "ROU": 1,
-          "BGD": 1,
-          "MNE": 1,
-          "SLE": 1,
-          "ZAF": 1,
-          "SMR": 1,
-          "ARM": 1,
-          "FJI": 1,
-          "LCA": 1,
-          "PRK": 1,
-          "HRV": 1,
-          "SVK": 1,
-          "MDG": 1,
-          "TJK": 1,
-          "SWZ": 1,
-          "MDV": 1,
-          "TUN": 1,
-          "BEN": 1,
-          "SYC": 1,
-          "SWE": 1,
-          "KAZ": 1,
-          "PLW": 1,
-          "GRD": 1,
-          "SLB": 1,
-          "NZL": 1,
-          "MCO": 1,
-          "GEO": 1,
-          "KOR": 1,
-          "RUS": 1,
-          "CYP": 1,
-          "IRL": 1,
-          "VEN": 1,
-          "BRN": 1,
-          "SYR": 1,
-          "KGZ": 1,
-          "KWT": 1,
-          "COM": 1,
-          "MRT": 1,
-          "NRU": 1,
-          "MAR": 1,
-          "HUN": 1,
-          "NER": 1,
-          "URY": 1,
-          "BGR": 1,
-          "SLV": 1,
-          "VNM": 1,
-          "NGA": 1,
-          "JOR": 1,
-          "ERI": 1,
-          "SVN": 1,
-          "ITA": 1,
-          "CHE": 1,
-          "MWI": 1,
-          "DZA": 1,
-          "JPN": 1,
-          "IRN": 1,
-          "ARG": 1,
-          "LKA": 1,
-          "SEN": 1,
-          "CPV": 1,
-          "BEL": 1,
-          "BHS": 1,
-          "COD": 1,
-          "BDI": 1,
-          "SRB": 1,
-          "LBY": 1,
-          "IND": 1,
-          "BFA": 1,
-          "BIH": 1,
-          "PAN": 1,
-          "MNG": 1,
-          "CAF": 1,
-          "NPL": 1,
-          "AZE": 1,
-          "ETH": 1,
-          "TZA": 1,
-          "AUT": 1,
-          "SDN": 1,
-          "LBR": 1,
-          "DOM": 1,
-          "DMA": 1,
-          "MEX": 1,
-          "CRI": 1,
-          "SUR": 1,
-          "ZWE": 1,
-          "BRA": 1,
-          "DNK": 1,
-          "GAB": 1,
-          "UGA": 1,
-          "CHN": 1,
-          "PRT": 1,
-          "AFG": 1,
-          "KHM": 1,
-          "ZMB": 1,
-          "NAM": 1,
-          "TTO": 1,
-          "CMR": 1,
-          "PRY": 1,
-          "CAN": 1,
-          "OMN": 1,
-          "MDA": 1,
-          "ESP": 1,
-          "STP": 1,
           "YEM": 1,
-          "GNB": 1,
-          "GHA": 1,
-          "IRQ": 1,
+          "CHN": 1,
+          "MKD": 1,
+          "NLD": 1,
+          "PNG": 1,
+          "PER": 1,
+          "BRN": 1,
+          "ECU": 1,
+          "PHL": 1,
+          "PRT": 1,
+          "DZA": 1,
+          "LCA": 1,
+          "ISL": 1,
+          "COM": 1,
+          "BTN": 1,
+          "IND": 1,
+          "DOM": 1,
+          "MDA": 1,
+          "SRB": 1,
+          "BEL": 1,
+          "SEN": 1,
+          "TJK": 1,
+          "AND": 1,
+          "SYR": 1,
+          "CHL": 1,
+          "HTI": 1,
+          "SAU": 1,
+          "SGP": 1,
+          "SWZ": 1,
+          "FSM": 1,
+          "HND": 1,
+          "STP": 1,
+          "AFG": 1,
+          "BGR": 1,
+          "CYP": 1,
+          "MMR": 1,
+          "JAM": 1,
+          "SLV": 1,
+          "ALB": 1,
+          "LVA": 1,
+          "TWN": 1,
+          "MCO": 1,
           "NIC": 1,
           "MOZ": 1,
-          "BWA": 1,
-          "ISR": 1,
-          "GMB": 1,
-          "CHL": 1,
-          "BOL": 1,
+          "IDN": 1,
+          "FRA": 1,
+          "BHR": 1,
+          "MLI": 1,
+          "VEN": 1,
+          "KIR": 1,
           "UZB": 1,
-          "LVA": 1,
-          "LUX": 1,
-          "SGP": 1,
           "RWA": 1,
-          "POL": 1,
-          "EGY": 1,
-          "TON": 1,
-          "PNG": 1,
-          "JAM": 1,
+          "DMA": 1,
+          "WSM": 1,
+          "NPL": 1,
+          "BRA": 1,
+          "NER": 1,
+          "DNK": 1,
+          "JPN": 1,
+          "GRD": 1,
+          "ARE": 1,
+          "TZA": 1,
+          "SOM": 1,
+          "MNE": 1,
+          "LIE": 1,
+          "ROU": 1,
+          "HUN": 1,
+          "KOR": 1,
+          "AUT": 1,
+          "THA": 1,
+          "TCD": 1,
+          "COD": 1,
+          "MNG": 1,
+          "KNA": 1,
+          "LSO": 1,
+          "KHM": 1,
+          "LTU": 1,
+          "GAB": 1,
+          "HRV": 1,
+          "AUS": 1,
+          "SLE": 1,
+          "SVN": 1,
+          "CPV": 1,
+          "SDN": 1,
+          "ESP": 1,
+          "MYS": 1,
+          "SVK": 1,
+          "DEU": 1,
+          "BDI": 1,
+          "NZL": 1,
+          "KAZ": 1,
+          "OMN": 1,
+          "BGD": 1,
+          "COG": 1,
+          "TUR": 1,
+          "KEN": 1,
+          "GRC": 1,
+          "USA": 1,
+          "SLB": 1,
+          "ARG": 1,
+          "CAF": 1,
+          "MAR": 1,
+          "BIH": 1,
+          "KWT": 1,
+          "ZMB": 1,
+          "MDG": 1,
+          "COL": 1,
+          "UKR": 1,
+          "TKM": 1,
+          "AGO": 1,
+          "GEO": 1,
+          "CUB": 1,
+          "ZWE": 1,
+          "EST": 1,
+          "LBY": 1,
+          "TUN": 1,
+          "GBR": 1,
+          "ISR": 1,
+          "SYC": 1,
+          "VNM": 1,
+          "GIN": 1,
+          "NOR": 1,
+          "BLZ": 1,
+          "GHA": 1,
+          "BFA": 1,
+          "MHL": 1,
+          "JOR": 1,
+          "QAT": 1,
+          "NGA": 1,
+          "BLR": 1,
+          "KGZ": 1,
           "VUT": 1,
+          "ERI": 1,
+          "LKA": 1,
+          "BEN": 1,
+          "URY": 1,
+          "GNB": 1,
+          "ITA": 1,
+          "CAN": 1,
+          "BOL": 1,
           "MUS": 1,
-          "AGO": 1
+          "SMR": 1,
+          "CRI": 1,
+          "IRQ": 1,
+          "TLS": 1,
+          "EGY": 1,
+          "FJI": 1,
+          "GTM": 1,
+          "DJI": 1,
+          "RUS": 1,
+          "UGA": 1,
+          "IRL": 1,
+          "TGO": 1,
+          "BWA": 1,
+          "PAN": 1,
+          "GNQ": 1,
+          "GUY": 1,
+          "MEX": 1,
+          "CZE": 1,
+          "MLT": 1,
+          "VCT": 1,
+          "NAM": 1,
+          "SWE": 1,
+          "CHE": 1,
+          "BHS": 1,
+          "LBN": 1,
+          "LAO": 1,
+          "SUR": 1,
+          "LBR": 1,
+          "MRT": 1,
+          "MWI": 1,
+          "PRK": 1,
+          "AZE": 1,
+          "TTO": 1,
+          "CIV": 1,
+          "MDV": 1,
+          "ATG": 1,
+          "IRN": 1,
+          "ARM": 1,
+          "PAK": 1,
+          "ZAF": 1,
+          "POL": 1,
+          "PRY": 1,
+          "LUX": 1,
+          "CMR": 1,
+          "GMB": 1,
+          "ETH": 1,
+          "FIN": 1,
+          "BRB": 1,
+          "NRU": 1,
+          "PLW": 1,
+          "TON": 1
         }
       ],
       [
@@ -736,26 +637,10 @@
   ],
   [
     "change",
-    "variables.effective_number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.effective_number.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.effective_number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1399,22 +1284,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cow_reg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cow_reg.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cow_reg",
     [
@@ -1653,47 +1522,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:42",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ISO": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "effective_number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cow_reg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

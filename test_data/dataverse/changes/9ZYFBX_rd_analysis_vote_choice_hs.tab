@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        454
-      ],
-      [
-        "variableCount",
-        72
-      ],
-      [
-        "dataSource",
-        {
-          "name": "9ZYFBX_rd_analysis_vote_choice_hs.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 219879
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
@@ -90,22 +7,6 @@
       [
         "FL"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,11 +40,11 @@
       [
         "fewestValues",
         [
-          "WY",
           "DE",
           "VT",
-          "AK",
-          "ND"
+          "WY",
+          "ND",
+          "AK"
         ]
       ],
       [
@@ -171,8 +72,8 @@
         {
           "FL": 34,
           "TX": 28,
-          "IL": 27,
           "CA": 27,
+          "IL": 27,
           "NY": 26,
           "PA": 25,
           "OH": 22,
@@ -180,44 +81,44 @@
           "AZ": 17,
           "MD": 15,
           "TN": 15,
-          "GA": 14,
           "NC": 14,
+          "GA": 14,
           "NJ": 12,
           "IN": 12,
           "MO": 11,
-          "AR": 9,
           "MA": 9,
-          "IA": 8,
-          "KS": 8,
+          "AR": 9,
           "MN": 8,
           "CO": 8,
+          "IA": 8,
+          "KS": 8,
           "AL": 7,
+          "NH": 6,
           "NM": 6,
           "OK": 6,
-          "NH": 6,
           "SC": 5,
-          "KY": 4,
           "RI": 4,
-          "UT": 4,
+          "KY": 4,
           "HI": 4,
           "ME": 4,
-          "ID": 3,
-          "CT": 3,
-          "WI": 3,
-          "WV": 3,
+          "UT": 4,
           "VA": 3,
           "MS": 3,
           "NE": 3,
-          "SD": 2,
-          "OR": 2,
+          "ID": 3,
+          "CT": 3,
+          "WV": 3,
+          "WI": 3,
           "WA": 2,
           "MT": 2,
           "NV": 2,
-          "ND": 1,
+          "OR": 2,
+          "SD": 2,
           "AK": 1,
+          "ND": 1,
+          "WY": 1,
           "VT": 1,
-          "DE": 1,
-          "WY": 1
+          "DE": 1
         }
       ],
       [
@@ -434,22 +335,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1067,22 +952,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem",
     [
@@ -1322,22 +1191,6 @@
     [
       "2006",
       2006.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1610,26 +1463,10 @@
   ],
   [
     "change",
-    "variables.vc_per_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_per_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_per_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2282,26 +2119,10 @@
   ],
   [
     "change",
-    "variables.vc_per_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_per_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_per_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2954,26 +2775,10 @@
   ],
   [
     "change",
-    "variables.vc_per_dem_li.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_per_dem_li.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_per_dem_li.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3626,26 +3431,10 @@
   ],
   [
     "change",
-    "variables.vc_per_dem_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_per_dem_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_per_dem_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4298,26 +4087,10 @@
   ],
   [
     "change",
-    "variables.vc_per_rep_li.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_per_rep_li.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_per_rep_li.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4970,26 +4743,10 @@
   ],
   [
     "change",
-    "variables.vc_per_rep_hi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_per_rep_hi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_per_rep_hi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5633,22 +5390,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vc_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vc_dem",
     [
@@ -6286,22 +6027,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6945,22 +6670,6 @@
     ]
   ],
   [
-    "change",
-    "variables.all_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.all_n.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.all_n",
     [
@@ -7601,22 +7310,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_n",
     [
@@ -8254,22 +7947,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8922,26 +8599,10 @@
   ],
   [
     "change",
-    "variables.ind_vc_per_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ind_vc_per_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_vc_per_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9594,26 +9255,10 @@
   ],
   [
     "change",
-    "variables.ind_vc_per_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ind_vc_per_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_vc_per_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10257,22 +9902,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ind_vc_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_vc_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ind_vc_dem",
     [
@@ -10566,22 +10195,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_vc_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_vc_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10885,22 +10498,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11484,26 +11081,10 @@
   ],
   [
     "change",
-    "variables.moderate_vc_per_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.moderate_vc_per_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_vc_per_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12156,26 +11737,10 @@
   ],
   [
     "change",
-    "variables.moderate_vc_per_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.moderate_vc_per_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_vc_per_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12819,22 +12384,6 @@
     ]
   ],
   [
-    "change",
-    "variables.moderate_vc_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_vc_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.moderate_vc_dem",
     [
@@ -13435,22 +12984,6 @@
     ]
   ],
   [
-    "change",
-    "variables.moderate_vc_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_vc_rep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.moderate_vc_rep",
     [
@@ -14027,22 +13560,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14678,22 +14195,6 @@
     ]
   ],
   [
-    "change",
-    "variables.with_independents.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.with_independents.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.with_independents",
     [
@@ -14933,22 +14434,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.with_moderates.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.with_moderates.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15195,22 +14680,6 @@
     [
       "8",
       8.0
-    ]
-  ],
-  [
-    "change",
-    "variables.p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15863,26 +15332,10 @@
   ],
   [
     "change",
-    "variables.vote_g0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_g0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_g0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16539,26 +15992,10 @@
   ],
   [
     "change",
-    "variables.vote_top20.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_top20.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_top20.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17202,22 +16639,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cand_dwnom_amount_prim0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_amount_prim0.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cand_dwnom_amount_prim0",
     [
@@ -17855,22 +17276,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_number_prim0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_number_prim0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18523,26 +17928,10 @@
   ],
   [
     "change",
-    "variables.cand_dwnom_score_i_prim0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cand_dwnom_score_i_prim0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_score_i_prim0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19195,26 +18584,10 @@
   ],
   [
     "change",
-    "variables.vote_g1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_g1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_g1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19871,26 +19244,10 @@
   ],
   [
     "change",
-    "variables.vote_top21.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_top21.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_top21.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20534,22 +19891,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cand_dwnom_amount_prim1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_amount_prim1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cand_dwnom_amount_prim1",
     [
@@ -21187,22 +20528,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_number_prim1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_number_prim1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21858,26 +21183,10 @@
   ],
   [
     "change",
-    "variables.cand_dwnom_score_i_prim1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cand_dwnom_score_i_prim1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cand_dwnom_score_i_prim1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22489,22 +21798,6 @@
     ]
   ],
   [
-    "change",
-    "variables.type.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.type.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.type",
     [
@@ -22744,26 +22037,10 @@
   ],
   [
     "change",
-    "variables.D_SW_PCT_SHARE.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.D_SW_PCT_SHARE.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.D_SW_PCT_SHARE.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23411,22 +22688,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vote_g_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_g_total.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vote_g_total",
     [
@@ -24067,22 +23328,6 @@
     ]
   ],
   [
-    "change",
-    "variables.inc_p.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.inc_p.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.inc_p",
     [
@@ -24322,22 +23567,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.open.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.open.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24583,22 +23812,6 @@
     ]
   ],
   [
-    "change",
-    "variables.open_all.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.open_all.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.open_all",
     [
@@ -24838,22 +24051,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.r.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.r.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25112,26 +24309,10 @@
   ],
   [
     "change",
-    "variables.rv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25788,26 +24969,10 @@
   ],
   [
     "change",
-    "variables.rv2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26464,26 +25629,10 @@
   ],
   [
     "change",
-    "variables.rv3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27140,26 +26289,10 @@
   ],
   [
     "change",
-    "variables.rv4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27816,26 +26949,10 @@
   ],
   [
     "change",
-    "variables.rv5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28479,22 +27596,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treat",
     [
@@ -28746,26 +27847,10 @@
   ],
   [
     "change",
-    "variables.treat_rv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.treat_rv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.treat_rv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29418,26 +28503,10 @@
   ],
   [
     "change",
-    "variables.vote_general.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_general.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_general.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30081,22 +29150,6 @@
     ]
   ],
   [
-    "change",
-    "variables.victory_general.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.victory_general.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.victory_general",
     [
@@ -30348,26 +29401,10 @@
   ],
   [
     "change",
-    "variables.absdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.absdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.absdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31024,26 +30061,10 @@
   ],
   [
     "change",
-    "variables.log_total_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_total_turnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_total_turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31687,22 +30708,6 @@
     ]
   ],
   [
-    "change",
-    "variables.midterm.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.midterm.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.midterm",
     [
@@ -31954,26 +30959,10 @@
   ],
   [
     "change",
-    "variables.ext_number_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ext_number_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ext_number_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32626,26 +31615,10 @@
   ],
   [
     "change",
-    "variables.ext_amount_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ext_amount_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ext_amount_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33298,26 +32271,10 @@
   ],
   [
     "change",
-    "variables.vc_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vc_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vc_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33970,26 +32927,10 @@
   ],
   [
     "change",
-    "variables.moderate_vc_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.moderate_vc_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.moderate_vc_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34642,26 +33583,10 @@
   ],
   [
     "change",
-    "variables.ind_vc_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ind_vc_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_vc_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35314,26 +34239,10 @@
   ],
   [
     "change",
-    "variables.low_info_vc_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.low_info_vc_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_vc_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35986,26 +34895,10 @@
   ],
   [
     "change",
-    "variables.high_info_vc_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.high_info_vc_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_vc_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36647,22 +35540,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37315,26 +36192,10 @@
   ],
   [
     "change",
-    "variables.treat_abs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.treat_abs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.treat_abs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37978,22 +36839,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pres.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pres.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pres",
     [
@@ -38236,22 +37081,6 @@
     ]
   ],
   [
-    "change",
-    "variables.re.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.re.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.re",
     [
@@ -38491,22 +37320,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.g.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.g.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39159,26 +37972,10 @@
   ],
   [
     "change",
-    "variables.pv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39831,26 +38628,10 @@
   ],
   [
     "change",
-    "variables.two_party_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.two_party_total.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.two_party_total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40503,26 +39284,10 @@
   ],
   [
     "change",
-    "variables.lag_pv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_pv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_pv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41120,392 +39885,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:44",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_per_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_per_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_per_dem_li": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_per_dem_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_per_rep_li": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_per_rep_hi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "all_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_vc_per_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_vc_per_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_vc_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_vc_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moderate_vc_per_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moderate_vc_per_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moderate_vc_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moderate_vc_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moderate_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "with_independents": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "with_moderates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_g0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_top20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cand_dwnom_amount_prim0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cand_dwnom_number_prim0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cand_dwnom_score_i_prim0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_g1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_top21": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cand_dwnom_amount_prim1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cand_dwnom_number_prim1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cand_dwnom_score_i_prim1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "D_SW_PCT_SHARE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_g_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inc_p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "open": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "open_all": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat_rv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "victory_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "absdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_total_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "midterm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ext_number_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ext_amount_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vc_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "moderate_vc_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_vc_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_vc_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_vc_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat_abs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pres": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "re": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "two_party_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_pv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

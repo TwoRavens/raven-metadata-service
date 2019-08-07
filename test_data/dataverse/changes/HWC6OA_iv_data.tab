@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        837
-      ],
-      [
-        "variableCount",
-        18
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HWC6OA_iv_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 103841
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -122,22 +39,6 @@
     [
       "1990",
       1990
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -676,28 +577,12 @@
     [
       "AK",
       [
-        "ID",
-        "NV",
         "MT",
-        "WY",
-        "WA"
+        "ID",
+        "AK",
+        "NV",
+        "WY"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -757,45 +642,45 @@
       [
         "plotValues",
         {
-          "OR": 24,
-          "AK": 24,
           "WA": 24,
+          "OR": 24,
           "WY": 24,
-          "MT": 24,
           "NV": 24,
+          "AK": 24,
           "ID": 24,
-          "IN": 20,
+          "MT": 24,
           "UT": 20,
-          "RI": 20,
-          "GA": 20,
-          "KY": 20,
+          "IN": 20,
           "NM": 20,
-          "NC": 18,
+          "KY": 20,
+          "GA": 20,
+          "RI": 20,
+          "IL": 18,
+          "CO": 18,
           "ME": 18,
           "MO": 18,
-          "TN": 18,
-          "CO": 18,
-          "KS": 18,
-          "AZ": 18,
           "OH": 18,
-          "IL": 18,
           "SC": 18,
-          "MI": 17,
+          "AZ": 18,
+          "TN": 18,
+          "NC": 18,
+          "KS": 18,
           "CT": 17,
           "VT": 17,
           "MN": 17,
+          "MI": 17,
           "WI": 16,
-          "FL": 16,
-          "PA": 16,
+          "MA": 16,
+          "WV": 16,
           "ND": 16,
+          "IA": 16,
+          "PA": 16,
           "NH": 16,
           "NY": 16,
-          "IA": 16,
-          "CA": 16,
-          "WV": 16,
-          "TX": 16,
-          "MA": 16,
           "HI": 16,
+          "FL": 16,
+          "CA": 16,
+          "TX": 16,
           "SD": 14,
           "DE": 14,
           "OK": 14,
@@ -1022,22 +907,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lower.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lower.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1296,26 +1165,10 @@
   ],
   [
     "change",
-    "variables.amount0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.amount0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.amount0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1972,26 +1825,10 @@
   ],
   [
     "change",
-    "variables.amount1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.amount1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.amount1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2648,26 +2485,10 @@
   ],
   [
     "change",
-    "variables.total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.total.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3324,26 +3145,10 @@
   ],
   [
     "change",
-    "variables.dem_year_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_year_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_year_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3984,22 +3789,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4652,26 +4441,10 @@
   ],
   [
     "change",
-    "variables.dem_frac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_frac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_frac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5315,22 +5088,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ban_corp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ban_corp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ban_corp",
     [
@@ -5570,22 +5327,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ban_union.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ban_union.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5831,22 +5572,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ban_spend_corp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ban_spend_corp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ban_spend_corp",
     [
@@ -6089,22 +5814,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ban_spend_union.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ban_spend_union.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ban_spend_union",
     [
@@ -6310,28 +6019,12 @@
     [
       "Alaska",
       [
-        "Idaho",
+        "Montana",
+        "Washington",
         "Wyoming",
         "Oregon",
-        "Nevada",
-        "Washington"
+        "Idaho"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state_long.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_long.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6365,11 +6058,11 @@
       [
         "fewestValues",
         [
-          "Arkansas",
           "Alabama",
+          "Maryland",
+          "Arkansas",
           "Louisiana",
-          "Mississippi",
-          "Maryland"
+          "Mississippi"
         ]
       ],
       [
@@ -6395,55 +6088,55 @@
       [
         "plotValues",
         {
-          "Montana": 16,
           "Alaska": 16,
-          "Washington": 16,
           "Nevada": 16,
+          "Washington": 16,
+          "Idaho": 16,
           "Oregon": 16,
           "Wyoming": 16,
-          "Idaho": 16,
+          "Montana": 16,
           "Indiana": 12,
+          "Kentucky": 12,
           "New Mexico": 12,
           "Rhode Island": 12,
-          "Georgia": 12,
           "Utah": 12,
-          "Kentucky": 12,
-          "Colorado": 10,
+          "Georgia": 12,
           "Tennessee": 10,
-          "North Carolina": 10,
-          "South Carolina": 10,
-          "Maine": 10,
-          "Arizona": 10,
-          "Missouri": 10,
-          "Ohio": 10,
-          "Illinois": 10,
           "Kansas": 10,
-          "Vermont": 9,
+          "Missouri": 10,
+          "South Carolina": 10,
+          "Illinois": 10,
+          "Ohio": 10,
+          "Maine": 10,
+          "Colorado": 10,
+          "North Carolina": 10,
+          "Arizona": 10,
           "Minnesota": 9,
           "Connecticut": 9,
           "Michigan": 9,
+          "Vermont": 9,
           "New Jersey": 9,
           "California": 8,
+          "Hawaii": 8,
+          "Florida": 8,
+          "West Virginia": 8,
+          "Virginia": 8,
+          "New Hampshire": 8,
+          "New York": 8,
+          "North Dakota": 8,
+          "Massachusetts": 8,
           "Iowa": 8,
           "Texas": 8,
           "Pennsylvania": 8,
-          "New Hampshire": 8,
-          "North Dakota": 8,
           "Wisconsin": 8,
-          "Florida": 8,
-          "Virginia": 8,
-          "West Virginia": 8,
-          "Massachusetts": 8,
-          "New York": 8,
-          "Hawaii": 8,
           "Oklahoma": 6,
           "South Dakota": 6,
           "Delaware": 6,
-          "Maryland": 4,
           "Mississippi": 4,
           "Louisiana": 4,
-          "Alabama": 4,
-          "Arkansas": 4
+          "Maryland": 4,
+          "Arkansas": 4,
+          "Alabama": 4
         }
       ],
       [
@@ -6673,26 +6366,10 @@
   ],
   [
     "change",
-    "variables.legprof_squire.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.legprof_squire.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.legprof_squire.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7336,22 +7013,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ban_both.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ban_both.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ban_both",
     [
@@ -7591,22 +7252,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_maj.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_maj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7853,22 +7498,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_chamber_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_chamber_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8464,122 +8093,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:33",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lower": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "amount0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "amount1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_year_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_frac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ban_corp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ban_union": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ban_spend_corp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ban_spend_union": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_long": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legprof_squire": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ban_both": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_maj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_chamber_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2124
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "5UMCKK_ccdat.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 304025
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.mc.median",
     [
@@ -122,22 +39,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.mc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -383,22 +284,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state",
     [
@@ -638,22 +523,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.male.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.male.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -935,35 +804,11 @@
     [
       "variables",
       "age.recode",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "age.recode",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "age.recode",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1647,35 +1492,11 @@
     [
       "variables",
       "agesq.recode",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "agesq.recode",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "agesq.recode",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2291,22 +2112,6 @@
     ]
   ],
   [
-    "change",
-    "variables.occ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.occ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.occ",
     [
@@ -2514,22 +2319,6 @@
       [
         "\u0432\u044b\u0441\u0448\u0435\u0435 (\u0437\u0430\u043a\u043e\u043d\u0447\u0435\u043d \u0432\u0443\u0437)"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.edu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.edu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2766,22 +2555,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.communists.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.communists.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3027,22 +2800,6 @@
     ]
   ],
   [
-    "change",
-    "variables.democrats.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.democrats.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.democrats",
     [
@@ -3282,22 +3039,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.nationalists.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nationalists.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3543,22 +3284,6 @@
     ]
   ],
   [
-    "change",
-    "variables.postcw.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.postcw.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.postcw",
     [
@@ -3766,22 +3491,6 @@
       [
         "(2.5,3.5]"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.agecat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agecat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4023,22 +3732,6 @@
     ]
   ],
   [
-    "change",
-    "variables.protest.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.protest.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.protest",
     [
@@ -4235,97 +3928,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:35",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "mc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "male": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age.recode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agesq.recode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "occ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "edu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "communists": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "democrats": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nationalists": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "postcw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agecat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "protest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

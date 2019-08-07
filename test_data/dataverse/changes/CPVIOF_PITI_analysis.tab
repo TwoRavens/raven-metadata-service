@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        50
-      ],
-      [
-        "variableCount",
-        213
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CPVIOF_PITI_analysis.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 44980
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.code.median",
     [
@@ -126,22 +43,6 @@
     [
       "1305",
       1305
-    ]
-  ],
-  [
-    "change",
-    "variables.code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.code.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -754,22 +655,6 @@
     ]
   ],
   [
-    "change",
-    "variables.city_e.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.city_e.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.city_e",
     [
@@ -800,11 +685,11 @@
       [
         "fewestValues",
         [
-          "JIEYANG",
-          "WUZHOU",
-          "FANGCHENGGANG",
-          "HENGSHUI",
-          "LISHUI"
+          "LIUPANSHUI",
+          "YINGKOU",
+          "ZHAOQING",
+          "MEISHAN",
+          "EZHOU"
         ]
       ],
       [
@@ -832,52 +717,52 @@
         {
           "CHAOYANG": 2,
           "YULIN": 2,
-          "LIAOYANG": 1,
           "JINZHONG": 1,
-          "LANGFANG": 1,
-          "HAIKOU": 1,
-          "JINCHENG": 1,
-          "DANDONG": 1,
-          "XIANGYANG": 1,
-          "JIXI": 1,
-          "XIAOGAN": 1,
-          "EZHOU": 1,
-          "CANGZHOU": 1,
-          "JINGMEN": 1,
-          "JIANGMEN": 1,
-          "HUANGSHI": 1,
-          "FANGCHENGGANG": 1,
-          "MEISHAN": 1,
-          "ZHAOQING": 1,
-          "XINGTAI": 1,
-          "HUIZHOU": 1,
-          "SHUOZHOU": 1,
-          "MEIZHOU": 1,
-          "SHANWEI": 1,
-          "LIUPANSHUI": 1,
-          "ZHOUSHAN": 1,
-          "HULUDAO": 1,
-          "WUZHOU": 1,
-          "LVLIANG": 1,
           "JINHUA": 1,
-          "YANGJIANG": 1,
-          "QINGYUAN": 1,
-          "MAOMING": 1,
-          "XINZHOU": 1,
-          "TONGLIAO": 1,
-          "SANYA": 1,
-          "TIELING": 1,
-          "QUZHOU": 1,
-          "PANJIN": 1,
-          "YINGKOU": 1,
-          "XUCHANG": 1,
+          "JINCHENG": 1,
+          "HUIZHOU": 1,
           "SHIYAN": 1,
           "LESHAN": 1,
-          "ZHANGJIAKOU": 1,
           "LISHUI": 1,
+          "XINZHOU": 1,
+          "QINGYUAN": 1,
+          "HULUDAO": 1,
+          "LIAOYANG": 1,
+          "PANJIN": 1,
+          "JINGMEN": 1,
+          "TIELING": 1,
+          "MAOMING": 1,
+          "SHUOZHOU": 1,
+          "WUZHOU": 1,
+          "JIANGMEN": 1,
+          "HAIKOU": 1,
+          "XIAOGAN": 1,
+          "ZHANGJIAKOU": 1,
+          "XINGTAI": 1,
+          "DANDONG": 1,
+          "SANYA": 1,
+          "JIXI": 1,
+          "YINGKOU": 1,
+          "CANGZHOU": 1,
+          "LVLIANG": 1,
+          "TONGLIAO": 1,
+          "FANGCHENGGANG": 1,
+          "JIEYANG": 1,
+          "MEIZHOU": 1,
+          "LIUPANSHUI": 1,
           "BIJIE": 1,
           "HENGSHUI": 1,
-          "JIEYANG": 1
+          "LANGFANG": 1,
+          "SHANWEI": 1,
+          "XIANGYANG": 1,
+          "XUCHANG": 1,
+          "HUANGSHI": 1,
+          "ZHOUSHAN": 1,
+          "EZHOU": 1,
+          "MEISHAN": 1,
+          "ZHAOQING": 1,
+          "YANGJIANG": 1,
+          "QUZHOU": 1
         }
       ],
       [
@@ -1109,26 +994,10 @@
   ],
   [
     "change",
-    "variables.population_in_2008.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.population_in_2008.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.population_in_2008.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1776,22 +1645,6 @@
     ]
   ],
   [
-    "change",
-    "variables.block.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.block.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.block",
     [
@@ -2383,22 +2236,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treat",
     [
@@ -2639,22 +2476,6 @@
     [
       "13",
       13
-    ]
-  ],
-  [
-    "change",
-    "variables.province.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.province.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3226,22 +3047,6 @@
     [
       "237",
       237
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_1_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_1_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3889,22 +3694,6 @@
     ]
   ],
   [
-    "change",
-    "variables.petition_2_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_2_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.petition_2_14",
     [
@@ -4547,22 +4336,6 @@
     ]
   ],
   [
-    "change",
-    "variables.petition_3_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_3_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.petition_3_14",
     [
@@ -5198,22 +4971,6 @@
     [
       "372",
       372
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5869,26 +5626,10 @@
   ],
   [
     "change",
-    "variables.piti_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6541,26 +6282,10 @@
   ],
   [
     "change",
-    "variables.piti_1_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_1_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_1_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7213,26 +6938,10 @@
   ],
   [
     "change",
-    "variables.piti_2_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_2_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_2_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7520,26 +7229,10 @@
   ],
   [
     "change",
-    "variables.piti_3_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_3_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_3_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7843,22 +7536,6 @@
     [
       "4",
       4
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_4_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_4_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8169,26 +7846,10 @@
   ],
   [
     "change",
-    "variables.piti_6_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_6_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_6_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8841,26 +8502,10 @@
   ],
   [
     "change",
-    "variables.piti_7_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_7_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_7_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9513,26 +9158,10 @@
   ],
   [
     "change",
-    "variables.piti_8_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_8_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_8_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9845,26 +9474,10 @@
   ],
   [
     "change",
-    "variables.piti_9_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_9_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_9_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10131,26 +9744,10 @@
   ],
   [
     "change",
-    "variables.piti_10_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_10_14.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_10_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10798,22 +10395,6 @@
     ]
   ],
   [
-    "change",
-    "variables.petition_1_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_1_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.petition_1_15",
     [
@@ -11454,22 +11035,6 @@
     ]
   ],
   [
-    "change",
-    "variables.petition_2_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_2_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.petition_2_15",
     [
@@ -12100,22 +11665,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_3_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_3_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12752,22 +12301,6 @@
     [
       "270",
       270
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.petition_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13422,26 +12955,10 @@
   ],
   [
     "change",
-    "variables.piti_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14094,26 +13611,10 @@
   ],
   [
     "change",
-    "variables.piti_1_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_1_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_1_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14766,26 +14267,10 @@
   ],
   [
     "change",
-    "variables.piti_2_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_2_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_2_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15066,26 +14551,10 @@
   ],
   [
     "change",
-    "variables.piti_3_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_3_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_3_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15729,22 +15198,6 @@
     ]
   ],
   [
-    "change",
-    "variables.piti_4_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_4_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.piti_4_15",
     [
@@ -16038,26 +15491,10 @@
   ],
   [
     "change",
-    "variables.piti_5_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_5_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_5_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16361,26 +15798,10 @@
   ],
   [
     "change",
-    "variables.piti_6_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_6_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_6_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17032,26 +16453,10 @@
   ],
   [
     "change",
-    "variables.piti_7_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_7_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_7_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17705,26 +17110,10 @@
   ],
   [
     "change",
-    "variables.piti_8_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_8_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_8_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18377,26 +17766,10 @@
   ],
   [
     "change",
-    "variables.piti_9_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_9_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_9_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18683,26 +18056,10 @@
   ],
   [
     "change",
-    "variables.piti_10_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_10_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_10_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19007,26 +18364,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19679,26 +19020,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19999,26 +19324,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20662,22 +19971,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_piti_4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_piti_4",
     [
@@ -21257,26 +20550,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_6.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21932,26 +21209,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_7.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22599,22 +21860,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_petition_1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_petition_1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_petition_1",
     [
@@ -23257,22 +22502,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_petition_2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_petition_2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_petition_2",
     [
@@ -23911,22 +23140,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_petition_3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_petition_3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_petition_3",
     [
@@ -24552,22 +23765,6 @@
     [
       "-1631",
       -1631
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_petition.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_petition.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25220,26 +24417,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25892,26 +25073,10 @@
   ],
   [
     "change",
-    "variables.piti_8_old_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_8_old_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_8_old_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26563,26 +25728,10 @@
   ],
   [
     "change",
-    "variables.piti_9_old_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_9_old_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_9_old_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26879,26 +26028,10 @@
   ],
   [
     "change",
-    "variables.piti_old_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_old_15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_old_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27553,26 +26686,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_old.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_old.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28225,26 +27342,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_8_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_8_old.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_8_old.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28897,26 +27998,10 @@
   ],
   [
     "change",
-    "variables.diff_piti_9_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff_piti_9_old.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_9_old.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29229,26 +28314,10 @@
   ],
   [
     "change",
-    "variables.piti_1_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_1_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_1_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29901,26 +28970,10 @@
   ],
   [
     "change",
-    "variables.piti_2_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_2_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_2_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30221,26 +29274,10 @@
   ],
   [
     "change",
-    "variables.piti_3_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_3_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_3_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30540,22 +29577,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_4_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_4_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30873,26 +29894,10 @@
   ],
   [
     "change",
-    "variables.piti_6_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_6_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_6_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31545,26 +30550,10 @@
   ],
   [
     "change",
-    "variables.piti_7_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_7_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_7_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32217,26 +31206,10 @@
   ],
   [
     "change",
-    "variables.piti_8_old_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_8_old_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_8_old_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32889,26 +31862,10 @@
   ],
   [
     "change",
-    "variables.piti_9_old_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_9_old_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_9_old_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33200,26 +32157,10 @@
   ],
   [
     "change",
-    "variables.piti_10_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_10_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_10_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33873,26 +32814,10 @@
   ],
   [
     "change",
-    "variables.piti_old_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_old_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_old_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34545,26 +33470,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_old.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_old.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35217,26 +34126,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35889,26 +34782,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36215,26 +35092,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36878,22 +35739,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_piti_4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_piti_4",
     [
@@ -37481,26 +36326,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_6.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38154,26 +36983,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_7.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38826,26 +37639,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_8_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_8_old.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_8_old.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39498,26 +38295,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_9_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_9_old.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_9_old.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40170,26 +38951,10 @@
   ],
   [
     "change",
-    "variables.diff2_piti_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diff2_piti_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40833,22 +39598,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_baidu_14",
     [
@@ -41100,22 +39849,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41391,22 +40124,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_baidu_14.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_baidu_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_baidu_14",
     [
@@ -41646,22 +40363,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41943,22 +40644,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toumingdu_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_baidu_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toumingdu_baidu_14",
     [
@@ -42210,22 +40895,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42520,22 +41189,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43129,22 +41782,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xinxigongkai_baidu_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_baidu_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xinxigongkai_baidu_14",
     [
@@ -43415,22 +42052,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43998,22 +42619,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44635,22 +43240,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_baidu_full_14",
     [
@@ -45219,22 +43808,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45832,22 +44405,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toumingdu_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toumingdu_baidu_full_14",
     [
@@ -46413,22 +44970,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47033,22 +45574,6 @@
     [
       "7",
       7
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47690,22 +46215,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xinxigongkai_baidu_full_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_baidu_full_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xinxigongkai_baidu_full_14",
     [
@@ -48336,22 +46845,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_baidu_15",
     [
@@ -48597,22 +47090,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -48896,22 +47373,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_baidu_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_baidu_15",
     [
@@ -49178,22 +47639,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49470,22 +47915,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toumingdu_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_baidu_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toumingdu_baidu_15",
     [
@@ -49731,22 +48160,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -50047,22 +48460,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -50665,22 +49062,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xinxigongkai_baidu_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_baidu_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xinxigongkai_baidu_15",
     [
@@ -50972,22 +49353,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51556,22 +49921,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -52197,22 +50546,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_baidu_full_15",
     [
@@ -52793,22 +51126,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53420,22 +51737,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toumingdu_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toumingdu_baidu_full_15",
     [
@@ -53732,22 +52033,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54352,22 +52637,6 @@
     [
       "17",
       17
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55008,22 +53277,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xinxigongkai_baidu_full_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_baidu_full_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xinxigongkai_baidu_full_15",
     [
@@ -55656,22 +53909,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_baidu_16",
     [
@@ -55918,22 +54155,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56211,22 +54432,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_baidu_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_baidu_16",
     [
@@ -56479,22 +54684,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56765,22 +54954,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toumingdu_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_baidu_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toumingdu_baidu_16",
     [
@@ -57026,22 +55199,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57337,22 +55494,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57956,22 +56097,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xinxigongkai_baidu_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_baidu_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xinxigongkai_baidu_16",
     [
@@ -58544,22 +56669,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_baidu_full_16",
     [
@@ -58850,22 +56959,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59489,22 +57582,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_baidu_full_16",
     [
@@ -60084,22 +58161,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60695,22 +58756,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toumingdu_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toumingdu_baidu_full_16",
     [
@@ -61272,22 +59317,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61884,22 +59913,6 @@
     [
       "15",
       15
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62543,22 +60556,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xinxigongkai_baidu_full_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_baidu_full_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xinxigongkai_baidu_full_16",
     [
@@ -63193,22 +61190,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_huimai_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_huimai_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_huimai_baidu",
     [
@@ -63468,22 +61449,6 @@
     [
       "-6",
       -6
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pilu_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pilu_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -63786,22 +61751,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_pm10_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm10_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_pm10_baidu",
     [
@@ -64067,22 +62016,6 @@
     [
       "-9",
       -9
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm25_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm25_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -64360,22 +62293,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_toumingdu_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_toumingdu_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_toumingdu_baidu",
     [
@@ -64628,22 +62545,6 @@
     [
       "-49",
       -49
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wumai_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wumai_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65212,22 +63113,6 @@
     [
       "-104",
       -104
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wuran_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wuran_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65829,22 +63714,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_xinxigongkai_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_xinxigongkai_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_xinxigongkai_baidu",
     [
@@ -66142,22 +64011,6 @@
     [
       "-101",
       -101
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_huimai_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_huimai_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -66732,22 +64585,6 @@
     [
       "-289",
       -289
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pilu_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pilu_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -67385,22 +65222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_pm10_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm10_baidu_full.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_pm10_baidu_full",
     [
@@ -67992,22 +65813,6 @@
     [
       "-113",
       -113
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm25_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm25_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -68625,22 +66430,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_toumingdu_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_toumingdu_baidu_full.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_toumingdu_baidu_full",
     [
@@ -69215,22 +67004,6 @@
     [
       "-230",
       -230
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wumai_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wumai_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -69850,22 +67623,6 @@
     [
       "-180",
       -180
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wuran_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wuran_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -70502,22 +68259,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_xinxigongkai_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_xinxigongkai_baidu_full.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_xinxigongkai_baidu_full",
     [
@@ -71142,22 +68883,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_huimai_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_huimai_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_huimai_baidu",
     [
@@ -71416,22 +69141,6 @@
     [
       "-5",
       -5
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pilu_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pilu_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -71721,22 +69430,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_pm10_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm10_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_pm10_baidu",
     [
@@ -71995,22 +69688,6 @@
     [
       "-9",
       -9
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm25_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm25_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -72287,22 +69964,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_toumingdu_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_toumingdu_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_toumingdu_baidu",
     [
@@ -72554,22 +70215,6 @@
     [
       "-57",
       -57
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wumai_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wumai_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -73138,22 +70783,6 @@
     [
       "-139",
       -139
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wuran_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wuran_baidu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -73763,22 +71392,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_xinxigongkai_baidu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_xinxigongkai_baidu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_xinxigongkai_baidu",
     [
@@ -74350,22 +71963,6 @@
     [
       "-192",
       -192
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_huimai_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_huimai_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -74942,22 +72539,6 @@
     [
       "-563",
       -563
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pilu_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pilu_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -75593,22 +73174,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_pm10_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm10_baidu_full.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_pm10_baidu_full",
     [
@@ -76195,22 +73760,6 @@
     [
       "-162",
       -162
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm25_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm25_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -76816,22 +74365,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_toumingdu_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_toumingdu_baidu_full.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_toumingdu_baidu_full",
     [
@@ -77413,22 +74946,6 @@
     [
       "-316",
       -316
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wumai_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wumai_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -78035,22 +75552,6 @@
     [
       "-413",
       -413
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wuran_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wuran_baidu_full.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -78692,22 +76193,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_xinxigongkai_baidu_full.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_xinxigongkai_baidu_full.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_xinxigongkai_baidu_full",
     [
@@ -79338,22 +76823,6 @@
     [
       "139",
       139
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_weibo_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -79993,22 +77462,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_weibo_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_weibo_14",
     [
@@ -80585,22 +78038,6 @@
     [
       "8",
       8
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_weibo_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -81237,22 +78674,6 @@
     [
       "71",
       71
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_weibo_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -81896,22 +79317,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_weibo_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_weibo_14",
     [
@@ -82512,22 +79917,6 @@
     ]
   ],
   [
-    "change",
-    "variables.piti_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_weibo_14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.piti_weibo_14",
     [
@@ -82774,22 +80163,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_weibo_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -83388,22 +80761,6 @@
     [
       "8",
       8
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_weibo_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -84017,22 +81374,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_weibo_14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_weibo_14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -84662,22 +82003,6 @@
     [
       "125",
       125
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_weibo_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -85317,22 +82642,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_weibo_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_weibo_15",
     [
@@ -85907,22 +83216,6 @@
     [
       "8",
       8
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_weibo_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -86551,22 +83844,6 @@
     [
       "55",
       55
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_weibo_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -87208,22 +84485,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_weibo_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_weibo_15",
     [
@@ -87808,22 +85069,6 @@
     ]
   ],
   [
-    "change",
-    "variables.piti_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_weibo_15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.piti_weibo_15",
     [
@@ -88069,22 +85314,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_weibo_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -88679,22 +85908,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_weibo_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -89301,22 +86514,6 @@
     [
       "14",
       14
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_weibo_15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_weibo_15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -89947,22 +87144,6 @@
     [
       "67",
       67
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wuran_weibo_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -90604,22 +87785,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pm10_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm10_weibo_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pm10_weibo_16",
     [
@@ -91199,22 +88364,6 @@
     [
       "5",
       5
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pm25_weibo_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -91846,22 +88995,6 @@
     [
       "36",
       36
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wumai_weibo_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -92502,22 +89635,6 @@
     ]
   ],
   [
-    "change",
-    "variables.huimai_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.huimai_weibo_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.huimai_weibo_16",
     [
@@ -93092,22 +90209,6 @@
     ]
   ],
   [
-    "change",
-    "variables.piti_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_weibo_16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.piti_weibo_16",
     [
@@ -93353,22 +90454,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xinxigongkai_weibo_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -93963,22 +91048,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toumingdu_weibo_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -94583,22 +91652,6 @@
     [
       "26",
       26
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_weibo_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pilu_weibo_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -95221,22 +92274,6 @@
     [
       "-207",
       -207
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wuran_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wuran_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -95872,22 +92909,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_pm10_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm10_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_pm10_weibo",
     [
@@ -96479,22 +93500,6 @@
     [
       "-550",
       -550
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm25_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pm25_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -97130,22 +94135,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_wumai_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_wumai_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_wumai_weibo",
     [
@@ -97770,22 +94759,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_huimai_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_huimai_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_huimai_weibo",
     [
@@ -98382,22 +95355,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff_piti_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_piti_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff_piti_weibo",
     [
@@ -98650,22 +95607,6 @@
     [
       "-79",
       -79
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_xinxigongkai_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_xinxigongkai_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -99267,22 +96208,6 @@
     [
       "-216",
       -216
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_toumingdu_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_toumingdu_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -99894,22 +96819,6 @@
     [
       "-218",
       -218
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pilu_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff_pilu_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -100534,22 +97443,6 @@
     [
       "-601",
       -601
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wuran_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wuran_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -101181,22 +98074,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_pm10_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm10_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_pm10_weibo",
     [
@@ -101779,22 +98656,6 @@
     [
       "-673",
       -673
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm25_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pm25_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -102432,22 +99293,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_wumai_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_wumai_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_wumai_weibo",
     [
@@ -103082,22 +99927,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_huimai_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_huimai_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_huimai_weibo",
     [
@@ -103696,22 +100525,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diff2_piti_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_piti_weibo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diff2_piti_weibo",
     [
@@ -103971,22 +100784,6 @@
     [
       "-104",
       -104
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_xinxigongkai_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_xinxigongkai_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -104591,22 +101388,6 @@
     [
       "-234",
       -234
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_toumingdu_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_toumingdu_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -105219,22 +102000,6 @@
     [
       "-508",
       -508
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pilu_weibo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.diff2_pilu_weibo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -105878,26 +102643,10 @@
   ],
   [
     "change",
-    "variables.piti_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -106550,26 +103299,10 @@
   ],
   [
     "change",
-    "variables.piti_8_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_8_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_8_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -107222,26 +103955,10 @@
   ],
   [
     "change",
-    "variables.piti_9_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_9_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_9_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -107533,26 +104250,10 @@
   ],
   [
     "change",
-    "variables.piti_5_16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.piti_5_16.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.piti_5_16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -107865,26 +104566,10 @@
   ],
   [
     "change",
-    "variables.foreign_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.foreign_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.foreign_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -108537,26 +105222,10 @@
   ],
   [
     "change",
-    "variables.soe_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.soe_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.soe_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -109201,22 +105870,6 @@
     [
       "1088",
       1088
-    ]
-  ],
-  [
-    "change",
-    "variables.large_firm_employee_2008.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.large_firm_employee_2008.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -109873,26 +106526,10 @@
   ],
   [
     "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.population.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -110540,22 +107177,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gdp",
     [
@@ -111197,22 +107818,6 @@
     [
       "13461",
       13461
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpcapita.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpcapita.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -111869,26 +108474,10 @@
   ],
   [
     "change",
-    "variables.sec_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sec_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sec_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -112536,22 +109125,6 @@
     ]
   ],
   [
-    "change",
-    "variables.budget_revenue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.budget_revenue.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.budget_revenue",
     [
@@ -113193,22 +109766,6 @@
     [
       "626832",
       626832
-    ]
-  ],
-  [
-    "change",
-    "variables.budget_expenditure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.budget_expenditure.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -113865,26 +110422,10 @@
   ],
   [
     "change",
-    "variables.large_firm_dominance_2008.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.large_firm_dominance_2008.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.large_firm_dominance_2008.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -114541,26 +111082,10 @@
   ],
   [
     "change",
-    "variables.regulatory_capacity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.regulatory_capacity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.regulatory_capacity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -115217,26 +111742,10 @@
   ],
   [
     "change",
-    "variables.budget_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.budget_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.budget_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -115834,1097 +112343,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:54",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "city_e": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population_in_2008": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "block": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "province": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_1_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_2_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_3_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_1_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_2_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_3_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_4_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_6_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_7_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_8_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_9_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_10_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_1_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_2_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_3_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "petition_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_1_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_2_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_3_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_4_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_5_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_6_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_7_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_8_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_9_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_10_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_petition_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_petition_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_petition_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_petition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_8_old_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_9_old_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_old_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_8_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_9_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_1_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_2_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_3_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_4_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_6_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_7_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_8_old_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_9_old_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_10_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_old_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_8_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_9_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_baidu_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_baidu_full_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_baidu_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_baidu_full_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_baidu_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_baidu_full_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_huimai_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pilu_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pm10_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pm25_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_toumingdu_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_wumai_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_wuran_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_xinxigongkai_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_huimai_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pilu_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pm10_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pm25_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_toumingdu_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_wumai_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_wuran_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_xinxigongkai_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_huimai_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pilu_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pm10_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pm25_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_toumingdu_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_wumai_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_wuran_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_xinxigongkai_baidu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_huimai_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pilu_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pm10_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pm25_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_toumingdu_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_wumai_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_wuran_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_xinxigongkai_baidu_full": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_weibo_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_weibo_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wuran_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm10_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pm25_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wumai_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "huimai_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xinxigongkai_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toumingdu_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pilu_weibo_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_wuran_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pm10_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pm25_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_wumai_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_huimai_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_piti_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_xinxigongkai_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_toumingdu_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff_pilu_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_wuran_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pm10_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pm25_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_wumai_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_huimai_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_piti_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_xinxigongkai_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_toumingdu_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diff2_pilu_weibo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_8_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_9_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "piti_5_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "foreign_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "soe_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "large_firm_employee_2008": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpcapita": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sec_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "budget_revenue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "budget_expenditure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "large_firm_dominance_2008": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regulatory_capacity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "budget_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        127
-      ],
-      [
-        "variableCount",
-        26
-      ],
-      [
-        "dataSource",
-        {
-          "name": "AW6L1P_AllOccupations1950.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 19511
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.NoPow1950.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.NoPow1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NoPow1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "Bartoszyce",
       [
-        "Lubin",
-        "Braniewo",
-        "Jawor",
-        "Olesno",
-        "Koszalin m."
+        "Wroclaw M.",
+        "Slawno",
+        "Miastko",
+        "Grodkow",
+        "Drawsko"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Powiat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Powiat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "Lubin",
-          "Braniewo",
-          "Jawor",
-          "Olesno",
-          "Koszalin m."
+          "Wroclaw M.",
+          "Slawno",
+          "Miastko",
+          "Grodkow",
+          "Drawsko"
         ]
       ],
       [
@@ -833,133 +718,133 @@
       [
         "plotValues",
         {
-          "Drawsko": 1,
-          "Glogow": 1,
-          "Brzeg m.": 1,
-          "Nysa m.": 1,
-          "Swiedbodzin": 1,
-          "Glubczyce": 1,
-          "Chojna": 1,
-          "Olsztynski": 1,
-          "Lwowek Slaski": 1,
-          "Lobez": 1,
-          "Ostroda": 1,
-          "Choszczno": 1,
-          "Olecko": 1,
-          "Szprotawa": 1,
-          "Nowogard": 1,
-          "Walbrzych M": 1,
-          "Gryfino": 1,
-          "Sycow": 1,
-          "Wolow": 1,
-          "Morag": 1,
-          "Raciborz m.": 1,
-          "Slubice (first rzepinski)": 1,
-          "Strzelin": 1,
-          "Jelenia Gora m.": 1,
-          "Boleslawiec": 1,
-          "Strzelce Krajenskie": 1,
-          "Gliwice m.": 1,
-          "Zlotow": 1,
-          "Tarnogorski": 1,
-          "Pyrzyce": 1,
-          "Slupsk m.": 1,
-          "Prudnik": 1,
-          "Zabkowice Slaskie": 1,
-          "Olsztyn m.": 1,
-          "Koszalin": 1,
-          "Opole m.": 1,
-          "Milicz": 1,
-          "Skwierzyna": 1,
-          "Ketrzyn": 1,
-          "Gdansk": 1,
-          "Pisz": 1,
-          "Zary": 1,
-          "Lubliniec": 1,
-          "Mragowo": 1,
-          "Brzeg": 1,
-          "Trzebnica": 1,
-          "Elblag m.": 1,
-          "Slawno": 1,
-          "Slupsk": 1,
-          "Kamienna Gora": 1,
-          "Zgorzelec": 1,
-          "Sztum": 1,
-          "M. Szczecin": 1,
-          "Swidnica": 1,
-          "Strzelce Opolskie": 1,
-          "Kluczbork": 1,
-          "Goldap": 1,
-          "Szczecin": 1,
-          "Sulechow": 1,
-          "Sroda Slaska": 1,
-          "Gubin": 1,
-          "Zlotoryja": 1,
-          "Elblag": 1,
-          "Opole ": 1,
-          "Jeleniogorski ": 1,
-          "Susz": 1,
-          "Klodzko": 1,
-          "Olawa": 1,
-          "Kozle": 1,
-          "Ilawa": 1,
-          "Legnica m.": 1,
-          "Szczecinek": 1,
-          "Paslek": 1,
-          "Gizycko": 1,
-          "Bytow": 1,
-          "Gorzow miasto": 1,
-          "Bartoszyce": 1,
-          "Dzierzoniow": 1,
-          "Zielona Gora": 1,
-          "Walbrzych": 1,
-          "Luban": 1,
-          "Bialogard": 1,
-          "Kamien Pomorski": 1,
-          "Niemodlin": 1,
-          "Wolin": 1,
-          "Gdansk Miasto": 1,
-          "Gliwice pow": 1,
-          "Raciborz": 1,
-          "Kolobrzeg": 1,
-          "Kwidzyn": 1,
-          "Sulecin": 1,
-          "Legnica": 1,
-          "Wroclaw": 1,
-          "Malbork": 1,
-          "Szczytno": 1,
-          "Zielona Gora m.": 1,
-          "Wegorzewo": 1,
-          "Gora": 1,
-          "Reszel": 1,
-          "Miastko": 1,
-          "Namyslow": 1,
-          "Czluchow": 1,
-          "Elk": 1,
-          "Nysa": 1,
-          "Walcz": 1,
-          "Nowa Sol": 1,
           "Gryfice": 1,
-          "Zagan": 1,
-          "Miedzyrzecz": 1,
-          "Wroclaw M.": 1,
-          "Gorzow Wielk.": 1,
-          "Nidzica": 1,
-          "Lebork": 1,
-          "Swidnica M.": 1,
+          "Ilawa": 1,
+          "Walbrzych": 1,
+          "Reszel": 1,
+          "Opole m.": 1,
+          "Szczytno": 1,
+          "Gizycko": 1,
           "Bystrzyca Klodzka": 1,
-          "Stargard Szczecinski": 1,
-          "Krosno Odrz. ": 1,
-          "Wschowa": 1,
-          "Mysliborz": 1,
-          "Grodkow": 1,
           "Olesnica": 1,
-          "Lidzbark Warminski": 1,
-          "Koszalin m.": 1,
-          "Olesno": 1,
+          "Kwidzyn": 1,
+          "Skwierzyna": 1,
+          "Paslek": 1,
+          "Szprotawa": 1,
+          "Legnica m.": 1,
+          "Gorzow Wielk.": 1,
+          "Klodzko": 1,
           "Jawor": 1,
+          "Nowogard": 1,
+          "Chojna": 1,
+          "Tarnogorski": 1,
+          "Ostroda": 1,
+          "Zgorzelec": 1,
+          "Pyrzyce": 1,
+          "Gdansk": 1,
+          "Legnica": 1,
+          "Raciborz": 1,
+          "Gryfino": 1,
+          "Brzeg m.": 1,
+          "Bartoszyce": 1,
+          "Kamien Pomorski": 1,
+          "Nowa Sol": 1,
+          "Koszalin": 1,
+          "Czluchow": 1,
+          "Olecko": 1,
+          "Namyslow": 1,
+          "Swiedbodzin": 1,
+          "Olawa": 1,
+          "Zielona Gora": 1,
+          "Lubin": 1,
+          "Gdansk Miasto": 1,
+          "Swidnica M.": 1,
+          "Brzeg": 1,
+          "Szczecin": 1,
+          "Olsztyn m.": 1,
+          "Krosno Odrz. ": 1,
+          "Sroda Slaska": 1,
+          "Zary": 1,
+          "Zielona Gora m.": 1,
+          "Nidzica": 1,
+          "Wschowa": 1,
+          "Olesno": 1,
+          "Jeleniogorski ": 1,
+          "M. Szczecin": 1,
+          "Gliwice pow": 1,
+          "Opole ": 1,
+          "Swidnica": 1,
+          "Slupsk": 1,
+          "Bytow": 1,
+          "Lidzbark Warminski": 1,
+          "Milicz": 1,
+          "Strzelin": 1,
+          "Zagan": 1,
+          "Slubice (first rzepinski)": 1,
+          "Gora": 1,
+          "Lwowek Slaski": 1,
+          "Malbork": 1,
+          "Dzierzoniow": 1,
+          "Pisz": 1,
+          "Elblag m.": 1,
+          "Sulecin": 1,
+          "Lubliniec": 1,
+          "Choszczno": 1,
+          "Elblag": 1,
+          "Nysa m.": 1,
+          "Kluczbork": 1,
+          "Kamienna Gora": 1,
+          "Zlotoryja": 1,
+          "Koszalin m.": 1,
+          "Sycow": 1,
+          "Elk": 1,
+          "Strzelce Opolskie": 1,
+          "Gliwice m.": 1,
+          "Wolow": 1,
+          "Goldap": 1,
+          "Morag": 1,
+          "Kolobrzeg": 1,
+          "Szczecinek": 1,
+          "Glubczyce": 1,
+          "Wolin": 1,
+          "Prudnik": 1,
+          "Niemodlin": 1,
+          "Mragowo": 1,
+          "Gubin": 1,
+          "Stargard Szczecinski": 1,
+          "Lobez": 1,
+          "Ketrzyn": 1,
+          "Olsztynski": 1,
+          "Strzelce Krajenskie": 1,
+          "Walcz": 1,
+          "Gorzow miasto": 1,
+          "Slupsk m.": 1,
+          "Walbrzych M": 1,
+          "Sztum": 1,
+          "Zlotow": 1,
+          "Jelenia Gora m.": 1,
+          "Zabkowice Slaskie": 1,
+          "Susz": 1,
+          "Bialogard": 1,
+          "Kozle": 1,
+          "Miedzyrzecz": 1,
+          "Nysa": 1,
+          "Luban": 1,
+          "Wroclaw": 1,
+          "Trzebnica": 1,
+          "Mysliborz": 1,
+          "Lebork": 1,
+          "Raciborz m.": 1,
+          "Glogow": 1,
+          "Sulechow": 1,
+          "Wegorzewo": 1,
           "Braniewo": 1,
-          "Lubin": 1
+          "Boleslawiec": 1,
+          "Drawsko": 1,
+          "Grodkow": 1,
+          "Miastko": 1,
+          "Slawno": 1,
+          "Wroclaw M.": 1
         }
       ],
       [
@@ -1225,22 +1110,6 @@
     ]
   ],
   [
-    "change",
-    "variables.OtherName.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.OtherName.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.OtherName",
     [
@@ -1271,11 +1140,11 @@
       [
         "fewestValues",
         [
-          "Lubin",
-          "Zielona Gora m.",
-          "Glogow",
-          "Lebork",
-          "Braniewo"
+          "Wroclaw M.",
+          "Ketrzyn",
+          "Wroclaw",
+          "Slawno",
+          "Miastko"
         ]
       ],
       [
@@ -1302,131 +1171,131 @@
         "plotValues",
         {
           "Walbrzych": 2,
-          "Swiedbodzin": 1,
-          "Chojna": 1,
-          "Lwowek Slaski": 1,
-          "Lobez": 1,
-          "Ostroda": 1,
-          "Elblag w/out m": 1,
-          "Olecko": 1,
-          "Szprotawa": 1,
-          "Nowogard": 1,
-          "Namyslow": 1,
-          "Sycow": 1,
-          "Wolow": 1,
-          "Skwierzyna (?)": 1,
-          "Morag": 1,
-          "Raciborz m.": 1,
-          "Drawsko": 1,
-          "Slubice (first rzepinski)": 1,
-          "Strzelin": 1,
-          "Jelenia Gora m.": 1,
-          "Boleslawiec": 1,
-          "Strzelce Krajenskie": 1,
-          "Gliwice m.": 1,
-          "Zlotow": 1,
-          "Tarnogorski": 1,
-          "Pyrzyce": 1,
-          "Zary": 1,
-          "Zabkowice Slaskie": 1,
-          "Opole powiat": 1,
-          "Bartoszyce": 1,
-          "Wegorzewo": 1,
-          "Glubczyce": 1,
-          "Brzeg m.": 1,
-          "Miastko": 1,
-          "Slupsk m.": 1,
-          "Wroclaw": 1,
-          "Opole m.": 1,
-          "Milicz": 1,
-          "Ketrzyn": 1,
-          "Gdansk": 1,
-          "Pisz": 1,
-          "Lubliniec": 1,
-          "Mragowo": 1,
-          "Brzeg": 1,
-          "Trzebnica": 1,
-          "Elblag m.": 1,
-          "Olsztyn m.": 1,
-          "Slawno": 1,
-          "Kamienna Gora": 1,
-          "Zgorzelec": 1,
-          "Sztum": 1,
-          "M. Szczecin": 1,
-          "Swidnica": 1,
-          "Strzelce Opolskie": 1,
-          "Goldap": 1,
-          "Szczecin": 1,
-          "Koszalin w/out m": 1,
-          "Sroda Slaska": 1,
-          "Nysa m.": 1,
-          "Zlotoryja": 1,
-          "Prudnik": 1,
-          "Gryfino": 1,
-          "Reszel": 1,
-          "Czluchow": 1,
-          "Malbork": 1,
-          "Susz": 1,
-          "Kozle": 1,
-          "Ilawa": 1,
-          "Legnica m.": 1,
-          "Szczecinek": 1,
-          "Niemodlin": 1,
-          "Jawor": 1,
-          "Gizycko": 1,
-          "Bytow": 1,
-          "Gorzow miasto": 1,
-          "Sulechow": 1,
-          "Dzierzoniow": 1,
-          "Paslek": 1,
-          "Zielona Gora": 1,
-          "Bialogard": 1,
-          "Elk": 1,
-          "Kamien Pomorski": 1,
-          "Slupsk w/out m": 1,
-          "Wolin": 1,
-          "Gdansk Miasto": 1,
-          "Olsztyn w/out m": 1,
-          "Gliwice pow": 1,
-          "Raciborz": 1,
-          "Kozuchow": 1,
-          "Kolobrzeg": 1,
-          "Kwidzyn": 1,
-          "Sulecin": 1,
-          "Lubsko (Gubin)": 1,
-          "Legnica": 1,
-          "Olawa": 1,
-          "Klodzko": 1,
-          "Szczytno": 1,
-          "Luban": 1,
-          "Nysa": 1,
-          "Walcz": 1,
           "Gryfice": 1,
-          "Zagan": 1,
-          "Miedzyrzecz": 1,
-          "Wroclaw M.": 1,
-          "Gorzow Wielk.": 1,
-          "Gora": 1,
-          "Nidzica": 1,
-          "Swidnica M.": 1,
+          "Jawor": 1,
+          "Reszel": 1,
+          "Opole m.": 1,
+          "Szczytno": 1,
+          "Malbork": 1,
           "Bystrzyca Klodzka": 1,
-          "Choszczno": 1,
-          "Krosno Odrz. ": 1,
-          "Wschowa": 1,
-          "Stargard Szczecinski": 1,
-          "Mysliborz": 1,
-          "Grodkow": 1,
           "Olesnica": 1,
-          "Lidzbark Warminski": 1,
+          "Kwidzyn": 1,
+          "Grodkow": 1,
+          "Szprotawa": 1,
+          "Legnica m.": 1,
+          "Gorzow Wielk.": 1,
+          "Ilawa": 1,
+          "Klodzko": 1,
+          "Chojna": 1,
+          "Tarnogorski": 1,
+          "Ostroda": 1,
+          "Pyrzyce": 1,
+          "Gdansk": 1,
+          "Legnica": 1,
+          "Raciborz": 1,
+          "Gryfino": 1,
+          "Brzeg m.": 1,
+          "Bartoszyce": 1,
+          "Kamien Pomorski": 1,
+          "Slubice (first rzepinski)": 1,
+          "Czluchow": 1,
+          "Gora": 1,
+          "Opole powiat": 1,
+          "Olsztyn w/out m": 1,
+          "Zgorzelec": 1,
+          "Slupsk w/out m": 1,
+          "Elblag w/out m": 1,
+          "Namyslow": 1,
           "Jelenia Gora w/out m": 1,
-          "Koszalin m.": 1,
-          "Olesno": 1,
-          "Kluczbork": 1,
-          "Braniewo": 1,
-          "Lebork": 1,
-          "Glogow": 1,
+          "Swiedbodzin": 1,
+          "Olawa": 1,
+          "Paslek": 1,
+          "Gizycko": 1,
+          "Gdansk Miasto": 1,
+          "Zielona Gora": 1,
+          "Lubsko (Gubin)": 1,
+          "Brzeg": 1,
+          "Szczecin": 1,
+          "Olsztyn m.": 1,
+          "Krosno Odrz. ": 1,
+          "Sroda Slaska": 1,
+          "Zary": 1,
+          "Olecko": 1,
           "Zielona Gora m.": 1,
-          "Lubin": 1
+          "Wschowa": 1,
+          "Olesno": 1,
+          "M. Szczecin": 1,
+          "Gliwice pow": 1,
+          "Swidnica": 1,
+          "Bytow": 1,
+          "Lidzbark Warminski": 1,
+          "Swidnica M.": 1,
+          "Nidzica": 1,
+          "Zagan": 1,
+          "Nowogard": 1,
+          "Walcz": 1,
+          "Kozuchow": 1,
+          "Elk": 1,
+          "Elblag m.": 1,
+          "Sulecin": 1,
+          "Lubliniec": 1,
+          "Choszczno": 1,
+          "Milicz": 1,
+          "Koszalin w/out m": 1,
+          "Strzelin": 1,
+          "Nysa m.": 1,
+          "Kluczbork": 1,
+          "Kamienna Gora": 1,
+          "Zlotoryja": 1,
+          "Koszalin m.": 1,
+          "Sycow": 1,
+          "Gliwice m.": 1,
+          "Slupsk m.": 1,
+          "Wolow": 1,
+          "Goldap": 1,
+          "Morag": 1,
+          "Kolobrzeg": 1,
+          "Szczecinek": 1,
+          "Glubczyce": 1,
+          "Skwierzyna (?)": 1,
+          "Prudnik": 1,
+          "Niemodlin": 1,
+          "Mragowo": 1,
+          "Gorzow miasto": 1,
+          "Stargard Szczecinski": 1,
+          "Lwowek Slaski": 1,
+          "Pisz": 1,
+          "Dzierzoniow": 1,
+          "Lobez": 1,
+          "Strzelce Opolskie": 1,
+          "Sztum": 1,
+          "Zlotow": 1,
+          "Jelenia Gora m.": 1,
+          "Zabkowice Slaskie": 1,
+          "Susz": 1,
+          "Bialogard": 1,
+          "Kozle": 1,
+          "Miedzyrzecz": 1,
+          "Nysa": 1,
+          "Strzelce Krajenskie": 1,
+          "Wolin": 1,
+          "Luban": 1,
+          "Trzebnica": 1,
+          "Mysliborz": 1,
+          "Lebork": 1,
+          "Raciborz m.": 1,
+          "Glogow": 1,
+          "Sulechow": 1,
+          "Wegorzewo": 1,
+          "Braniewo": 1,
+          "Boleslawiec": 1,
+          "Drawsko": 1,
+          "Lubin": 1,
+          "Miastko": 1,
+          "Slawno": 1,
+          "Wroclaw": 1,
+          "Ketrzyn": 1,
+          "Wroclaw M.": 1
         }
       ],
       [
@@ -1723,22 +1592,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Town.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Town.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Town",
     [
@@ -1946,22 +1799,6 @@
       [
         "wroclawskie"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Woj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Woj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2174,22 +2011,6 @@
       [
         "Breslau"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Regbez.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Regbez.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2446,22 +2267,6 @@
     [
       "8975",
       8975
-    ]
-  ],
-  [
-    "change",
-    "variables.Ogolem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Ogolem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3109,22 +2914,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Przemysl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Przemysl.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Przemysl",
     [
@@ -3762,22 +3551,6 @@
     [
       "134",
       134
-    ]
-  ],
-  [
-    "change",
-    "variables.Budownictwo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Budownictwo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4421,22 +4194,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Rolnictwo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Rolnictwo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Rolnictwo",
     [
@@ -5074,22 +4831,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Lesnictwo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Lesnictwo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5735,22 +5476,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Komunikacja.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Komunikacja.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Komunikacja",
     [
@@ -6389,22 +6114,6 @@
     [
       "354",
       354
-    ]
-  ],
-  [
-    "change",
-    "variables.Trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7050,22 +6759,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GospKom.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GospKom.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GospKom",
     [
@@ -7706,22 +7399,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Nauka.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Nauka.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Nauka",
     [
@@ -8359,22 +8036,6 @@
     [
       "62",
       62
-    ]
-  ],
-  [
-    "change",
-    "variables.Health.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Health.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9021,22 +8682,6 @@
     ]
   ],
   [
-    "change",
-    "variables.AdminBank.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.AdminBank.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.AdminBank",
     [
@@ -9674,22 +9319,6 @@
     [
       "13",
       13
-    ]
-  ],
-  [
-    "change",
-    "variables.OtherOcc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.OtherOcc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10331,22 +9960,6 @@
     [
       "83",
       83
-    ]
-  ],
-  [
-    "change",
-    "variables.UnknOcc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UnknOcc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10994,22 +10607,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totpop1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totpop1950",
     [
@@ -11647,22 +11244,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.totUrb1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totUrb1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12309,22 +11890,6 @@
     ]
   ],
   [
-    "change",
-    "variables.autochtpop1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.autochtpop1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.autochtpop1950",
     [
@@ -12962,22 +12527,6 @@
     [
       "943",
       943
-    ]
-  ],
-  [
-    "change",
-    "variables.fromCentrPoland1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fromCentrPoland1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13625,22 +13174,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fromUSSR1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fromUSSR1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fromUSSR1950",
     [
@@ -14282,22 +13815,6 @@
     [
       "24",
       24
-    ]
-  ],
-  [
-    "change",
-    "variables.fromAbroad1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fromAbroad1950.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14945,22 +14462,6 @@
     ]
   ],
   [
-    "change",
-    "variables.SumPopCounted1950.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.SumPopCounted1950.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.SumPopCounted1950",
     [
@@ -15555,162 +15056,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:18",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "NoPow1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Powiat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "OtherName": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Town": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Woj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Regbez": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ogolem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Przemysl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Budownictwo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rolnictwo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lesnictwo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Komunikacja": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GospKom": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Nauka": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Health": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AdminBank": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "OtherOcc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UnknOcc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totUrb1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "autochtpop1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fromCentrPoland1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fromUSSR1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fromAbroad1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "SumPopCounted1950": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

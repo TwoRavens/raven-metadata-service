@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        9312
-      ],
-      [
-        "variableCount",
-        16
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IO89OI_2014 NSS - never heard.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 602211
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Identifier.median",
     [
@@ -126,22 +43,6 @@
     [
       "51515",
       51515.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Identifier.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Identifier.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "actblue",
       [
-        "actblue",
-        "rfc",
-        "susan",
+        "moveon",
+        "teaparty",
         "emily",
-        "viewpac"
+        "susan",
+        "maggie"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "actblue",
-          "rfc",
-          "susan",
+          "moveon",
+          "teaparty",
           "emily",
-          "viewpac"
+          "susan",
+          "maggie"
         ]
       ],
       [
@@ -833,18 +718,18 @@
       [
         "plotValues",
         {
-          "moveon": 776,
           "shepac": 776,
-          "maggie": 776,
-          "now": 776,
           "prosperity": 776,
-          "teaparty": 776,
           "crossroads": 776,
-          "viewpac": 776,
-          "emily": 776,
-          "susan": 776,
           "rfc": 776,
-          "actblue": 776
+          "now": 776,
+          "actblue": 776,
+          "viewpac": 776,
+          "maggie": 776,
+          "susan": 776,
+          "emily": 776,
+          "teaparty": 776,
+          "moveon": 776
         }
       ],
       [
@@ -1024,22 +909,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.womstmt_3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.womstmt_3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1309,22 +1178,6 @@
     ]
   ],
   [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.education",
     [
@@ -1582,22 +1435,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1873,22 +1710,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income",
     [
@@ -2155,22 +1976,6 @@
     ]
   ],
   [
-    "change",
-    "variables.repub.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.repub.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.repub",
     [
@@ -2410,22 +2215,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2671,22 +2460,6 @@
     ]
   ],
   [
-    "change",
-    "variables.whiteonly.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.whiteonly.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.whiteonly",
     [
@@ -2926,22 +2699,6 @@
     [
       "26",
       26.0
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3585,22 +3342,6 @@
     ]
   ],
   [
-    "change",
-    "variables.womPACdonor.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.womPACdonor.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.womPACdonor",
     [
@@ -3840,22 +3581,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.neverhrd_grp_.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.neverhrd_grp_.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4101,22 +3826,6 @@
     ]
   ],
   [
-    "change",
-    "variables.evangelical.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.evangelical.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.evangelical",
     [
@@ -4356,22 +4065,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.WRPD.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.WRPD.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4617,22 +4310,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ConsGrp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ConsGrp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ConsGrp",
     [
@@ -4873,22 +4550,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.OrgAgein2014.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.OrgAgein2014.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5140,112 +4801,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:02",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Identifier": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "womstmt_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "repub": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whiteonly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "womPACdonor": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "neverhrd_grp_": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "evangelical": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "WRPD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ConsGrp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "OrgAgein2014": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

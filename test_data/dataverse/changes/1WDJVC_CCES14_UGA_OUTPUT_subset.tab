@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1000
-      ],
-      [
-        "variableCount",
-        15
-      ],
-      [
-        "dataSource",
-        {
-          "name": "1WDJVC_CCES14_UGA_OUTPUT_subset.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 44911
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.V101.median",
     [
@@ -126,22 +43,6 @@
     [
       "222791715",
       222791715
-    ]
-  ],
-  [
-    "change",
-    "variables.V101.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.V101.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -785,22 +686,6 @@
     ]
   ],
   [
-    "change",
-    "variables.UGA323.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA323.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.UGA323",
     [
@@ -1046,22 +931,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA324.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA324.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1313,22 +1182,6 @@
     ]
   ],
   [
-    "change",
-    "variables.UGA325.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA325.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.UGA325",
     [
@@ -1574,22 +1427,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA326.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA326.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1841,22 +1678,6 @@
     ]
   ],
   [
-    "change",
-    "variables.UGA327.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA327.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.UGA327",
     [
@@ -2102,22 +1923,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA328.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA328.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2369,22 +2174,6 @@
     ]
   ],
   [
-    "change",
-    "variables.UGA329.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.UGA329.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.UGA329",
     [
@@ -2601,22 +2390,6 @@
     ]
   ],
   [
-    "change",
-    "variables.StateAbbr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.StateAbbr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.StateAbbr",
     [
@@ -2647,8 +2420,8 @@
       [
         "fewestValues",
         [
-          "HI",
-          "WY"
+          "WY",
+          "HI"
         ]
       ],
       [
@@ -2681,8 +2454,8 @@
           "OH": 43,
           "MI": 40,
           "PA": 40,
-          "NC": 35,
           "AZ": 35,
+          "NC": 35,
           "GA": 33,
           "IL": 31,
           "NJ": 29,
@@ -2691,9 +2464,9 @@
           "MD": 23,
           "IN": 23,
           "MO": 22,
-          "TN": 21,
-          "KY": 21,
           "MA": 21,
+          "KY": 21,
+          "TN": 21,
           "VA": 20,
           "CT": 19,
           "CO": 18,
@@ -2710,15 +2483,15 @@
           "OK": 8,
           "KS": 8,
           "ME": 7,
+          "NH": 6,
           "SD": 6,
           "ID": 6,
-          "NH": 6,
           "DE": 5,
+          "MT": 4,
           "MS": 4,
           "AR": 4,
-          "MT": 4,
-          "WV": 3,
           "RI": 3,
+          "WV": 3,
           "VT": 2,
           "WY": 1,
           "HI": 1
@@ -2937,22 +2710,6 @@
     [
       "1925",
       1925
-    ]
-  ],
-  [
-    "change",
-    "variables.birthyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.birthyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3595,22 +3352,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -3850,22 +3591,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.educ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.educ.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4132,22 +3857,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.race.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.race.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4426,22 +4135,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.inputstate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.inputstate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5078,22 +4771,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -5302,107 +4979,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:34",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "V101": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA323": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA324": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA325": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA326": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA327": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA328": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "UGA329": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "StateAbbr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "birthyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "race": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inputstate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

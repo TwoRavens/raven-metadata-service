@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        138
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "VDH088_elections.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 7211
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -122,22 +39,6 @@
     [
       "1981",
       1981
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -375,22 +276,6 @@
     ]
   ],
   [
-    "change",
-    "variables.county_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.county_name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.county_name",
     [
@@ -590,25 +475,9 @@
     [
       "napoli",
       [
-        "napoli",
-        "randolph"
+        "randolph",
+        "napoli"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.muni_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.muni_name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -642,11 +511,11 @@
       [
         "fewestValues",
         [
-          "hinsdale",
           "nunda",
-          "mt morris",
-          "ledyard",
-          "red house"
+          "groveland",
+          "springport",
+          "sparta",
+          "cato"
         ]
       ],
       [
@@ -672,60 +541,60 @@
       [
         "plotValues",
         {
-          "randolph": 6,
           "napoli": 6,
-          "philipstown": 5,
+          "randolph": 6,
           "ischua": 5,
-          "freedom": 4,
-          "tyrone": 4,
-          "putnam valley": 4,
-          "mansfield": 4,
-          "sempronius": 4,
-          "machias": 4,
-          "cold spring": 4,
+          "philipstown": 5,
           "west sparta": 4,
           "sennett": 4,
-          "ira": 3,
-          "springwater": 3,
-          "leon": 3,
-          "new albion": 3,
-          "fleming": 3,
-          "ellicottville": 3,
-          "north dansville": 3,
-          "venice": 3,
-          "mentz": 3,
-          "farmersville": 3,
-          "dix": 3,
+          "sempronius": 4,
+          "cold spring": 4,
+          "mansfield": 4,
+          "machias": 4,
+          "putnam valley": 4,
+          "tyrone": 4,
+          "freedom": 4,
           "summerhill": 3,
-          "little valley": 2,
-          "patterson": 2,
-          "great valley": 2,
-          "moravia": 2,
-          "east otto": 2,
+          "venice": 3,
+          "ellicottville": 3,
+          "new albion": 3,
+          "springwater": 3,
+          "farmersville": 3,
+          "fleming": 3,
+          "leon": 3,
+          "mentz": 3,
+          "ira": 3,
+          "north dansville": 3,
+          "dix": 3,
           "brutus": 2,
-          "york": 2,
+          "scipio": 2,
+          "great valley": 2,
           "conquest": 2,
+          "york": 2,
+          "otto": 2,
+          "east otto": 2,
+          "locke": 2,
           "aurelius": 2,
           "leicester": 2,
-          "locke": 2,
           "montezuma": 2,
-          "scipio": 2,
-          "otto": 2,
+          "patterson": 2,
+          "little valley": 2,
+          "moravia": 2,
           "geneseo": 2,
-          "cato": 1,
+          "mt morris": 1,
           "victory": 1,
-          "sparta": 1,
-          "groveland": 1,
+          "ledyard": 1,
+          "franklinville": 1,
+          "hinsdale": 1,
+          "red house": 1,
           "carrollton": 1,
           "sterling": 1,
           "lyndon": 1,
-          "hinsdale": 1,
+          "cato": 1,
+          "sparta": 1,
           "springport": 1,
-          "red house": 1,
-          "ledyard": 1,
-          "mt morris": 1,
-          "nunda": 1,
-          "franklinville": 1
+          "groveland": 1,
+          "nunda": 1
         }
       ],
       [
@@ -959,26 +828,10 @@
   ],
   [
     "change",
-    "variables.ncand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ncand.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ncand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1281,26 +1134,10 @@
   ],
   [
     "change",
-    "variables.winnermargin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.winnermargin.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.winnermargin.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1953,26 +1790,10 @@
   ],
   [
     "change",
-    "variables.contested.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.contested.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.contested.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2236,22 +2057,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ntowns.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ntowns.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ntowns",
     [
@@ -2512,22 +2317,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ncounties.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncounties.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ncounties",
     [
@@ -2730,72 +2519,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:35",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "county_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "muni_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "winnermargin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "contested": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ntowns": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncounties": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

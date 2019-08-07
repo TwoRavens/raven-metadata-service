@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2473
-      ],
-      [
-        "variableCount",
-        32
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ZFS7LI_Experiment_1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 810259
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -94,30 +11,6 @@
       [
         "con_nocue"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "article.type",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "article.type",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -337,30 +230,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "cue.memory.cutoff",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "cue.memory.cutoff",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -576,30 +445,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "cue.memory.policy",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "cue.memory.policy",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -811,30 +656,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "cue.memory.total.recipients",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "cue.memory.total.recipients",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -1043,22 +864,6 @@
       [
         "some college"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1277,22 +1082,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -1324,10 +1113,10 @@
         "fewestValues",
         [
           "38",
-          "WOMAN",
-          "girl",
-          "32",
-          "women"
+          "white",
+          "women",
+          "<Male",
+          "WOMAN"
         ]
       ],
       [
@@ -1355,23 +1144,23 @@
         {
           "female": 1370,
           "male": 1083,
-          "woman": 1,
-          "<Male": 1,
-          "55": 1,
           "27": 1,
-          "28": 1,
           "13": 1,
-          "white": 1,
-          "57": 1,
-          "26": 1,
-          "24": 1,
+          "32": 1,
+          "55": 1,
           "60": 1,
+          "28": 1,
+          "57": 1,
+          "24": 1,
+          "woman": 1,
+          "26": 1,
           "42": 1,
           "e": 1,
-          "women": 1,
-          "32": 1,
           "girl": 1,
           "WOMAN": 1,
+          "<Male": 1,
+          "women": 1,
+          "white": 1,
           "38": 1
         }
       ],
@@ -1536,30 +1325,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "gender.original",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gender.original",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -1593,11 +1358,11 @@
       [
         "fewestValues",
         [
-          "femake",
-          "femqle",
-          "60",
-          "mLe",
-          "42"
+          "FEAMALE",
+          "female ",
+          "42",
+          "mALE",
+          "mal"
         ]
       ],
       [
@@ -1637,51 +1402,51 @@
           "femal": 7,
           "Femal": 3,
           "FEmale": 2,
-          "femalr": 1,
-          "26": 1,
-          "<Male": 1,
-          "57": 1,
-          "white": 1,
-          "femaile": 1,
-          "27": 1,
-          "13": 1,
-          "28": 1,
-          " FEMALE": 1,
-          "famale": 1,
-          "feale": 1,
-          "mal": 1,
-          "38": 1,
-          "fem": 1,
-          "55": 1,
-          "FEAMALE": 1,
-          "mle": 1,
-          "man": 1,
-          "femaele": 1,
-          "Male ": 1,
-          "woman": 1,
-          "feman": 1,
           "24": 1,
-          "WOMAN": 1,
-          "mALE": 1,
-          "femals": 1,
-          "femle": 1,
-          "girl": 1,
-          "frmale": 1,
           "Mr.": 1,
-          "Manl": 1,
-          "32": 1,
-          "women": 1,
-          "female ": 1,
-          "e": 1,
+          "woman": 1,
+          "feale": 1,
+          "mle": 1,
+          "57": 1,
+          "27": 1,
           "Female ": 1,
           "Make": 1,
-          "feamale": 1,
-          "Femail": 1,
-          "42": 1,
-          "mLe": 1,
+          "28": 1,
           "60": 1,
+          "man": 1,
+          "feamale": 1,
+          "55": 1,
+          "32": 1,
+          "38": 1,
+          "femaele": 1,
+          "26": 1,
+          "feman": 1,
+          "Manl": 1,
+          "13": 1,
           "femqle": 1,
-          "femake": 1
+          "femle": 1,
+          "Male ": 1,
+          "white": 1,
+          "Femail": 1,
+          "femalr": 1,
+          "mLe": 1,
+          "women": 1,
+          "<Male": 1,
+          "femaile": 1,
+          "femake": 1,
+          "WOMAN": 1,
+          " FEMALE": 1,
+          "famale": 1,
+          "femals": 1,
+          "girl": 1,
+          "e": 1,
+          "fem": 1,
+          "frmale": 1,
+          "mal": 1,
+          "mALE": 1,
+          "42": 1,
+          "female ": 1,
+          "FEAMALE": 1
         }
       ],
       [
@@ -1935,30 +1700,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "gk.Cheney",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gk.Cheney",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -2179,30 +1920,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "gk.Cheney.original",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gk.Cheney.original",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -2236,11 +1953,11 @@
       [
         "fewestValues",
         [
-          "Republican ",
-          "Vice Presedent",
-          "rep",
-          "Vice President of United States",
-          "defense"
+          "Vice President of the United States and President of the United States Senate",
+          "vice preident",
+          "vice president--gladly not for much longer",
+          "Vice-President of the U.S.",
+          "V,P of U.S"
         ]
       ],
       [
@@ -2278,255 +1995,255 @@
           "Vice President of the United States": 13,
           "v.p.": 11,
           "senate": 10,
-          "secretary of state": 8,
           "not sure": 8,
-          "vice pres.": 7,
-          "Vice Pres": 7,
+          "secretary of state": 8,
           "republican": 7,
+          "Vice Pres": 7,
+          "vice pres.": 7,
           "vice President": 7,
           "Secretary of State": 6,
           "vise president": 6,
           "vicepresident": 6,
           "Republican": 6,
-          "vice president ": 5,
           "?": 5,
-          "dont know": 5,
           "Senator": 5,
-          "don t know": 5,
           "Vice President of the U.S.": 5,
-          "Senate": 4,
-          "Vice-President of the United States": 4,
-          "V.P.": 4,
-          "vice presdent": 4,
-          "VIce President": 4,
-          "Vice Pres.": 4,
-          "vice  president": 4,
+          "don t know": 5,
+          "dont know": 5,
+          "vice president ": 5,
           "Vice-president": 4,
-          "Vice President of the United States of America": 3,
-          "Vice President ": 3,
+          "vice presdent": 4,
+          "vice  president": 4,
+          "Vice-President of the United States": 4,
+          "VIce President": 4,
+          "Senate": 4,
+          "Vice Pres.": 4,
+          "V.P.": 4,
           "vice prez": 3,
-          "VICE PRES": 3,
-          "Vise President": 3,
           "none": 3,
+          "Vice President ": 3,
+          "Vise President": 3,
+          "VICE PRES": 3,
+          "Vice President of the United States of America": 3,
           "na": 3,
-          "SENATOR": 2,
-          "vice priesident": 2,
-          "vice-pres.": 2,
-          "Vice President of the US": 2,
-          "v p": 2,
-          "Vice President of US": 2,
-          "unknown": 2,
           "vice presdient": 2,
-          "vICE pRESIDENT": 2,
-          "vice ": 2,
-          "VEEP": 2,
-          "VICE PRES.": 2,
-          "Vice-President of the United States of America": 2,
-          "speaker of the house": 2,
-          "Vice Prsident": 2,
-          "vice president of US": 2,
           "veep": 2,
-          "sec of state": 2,
-          "V.P": 2,
           "VICE-PRESIDENT": 2,
-          "Vice President of the USA": 2,
-          "vice pesident": 2,
-          "Speaker of the House": 2,
-          "V,P.": 2,
-          "n[deleted]a": 2,
-          "Vice President of The United States": 2,
-          "senator": 2,
-          "VP of the United States": 2,
-          "Vice pres.": 2,
-          "Vice President Republican": 2,
+          "vice ": 2,
           "secretary of defense": 2,
-          "Vice President of the  U.S.": 1,
-          "US Vice-President": 1,
-          "vice preident": 1,
-          "Worst Vice President in History": 1,
-          "attorney general": 1,
-          "Vice president of the US": 1,
-          "democrate": 1,
-          "NOT SURE": 1,
-          "Vise-president": 1,
-          "Vixw President": 1,
-          "Vice President 2004-2008": 1,
-          "Vice-Pres.": 1,
-          "vice presedent": 1,
-          "attorneygeneral": 1,
-          "vice president of the US": 1,
-          "vice present": 1,
-          "vice presidency": 1,
-          "VICE PRESEDENT": 1,
-          "don t remember": 1,
-          "GOVERNOR OF TEXAS": 1,
-          "V  Pres.": 1,
-          "vp, pres.protem of the senate": 1,
-          "Votes in a tie breaker in U.S. Senate": 1,
-          " vice president ": 1,
-          "Vice-President of the U.S.": 1,
-          "vicepresdent": 1,
-          "vice prrsident": 1,
-          "vice pres and he s a republican": 1,
-          "Vice Precidency": 1,
-          "Don t know": 1,
-          "vp of the united states": 1,
-          "vice presidente": 1,
-          "v-p": 1,
-          "sec of defense": 1,
-          "Vice President of The United Staes of America": 1,
-          "rep  present Vice-president": 1,
-          "Vice Preident": 1,
-          "Vice President and Evil Doer": 1,
-          "verys": 1,
-          "congressman": 1,
-          "I am not sure i have heard it for day now i just cant remember ": 1,
-          "vice president (ha ha)": 1,
-          "vise presd": 1,
-          "governor": 1,
-          "Vice President of the US[deleted]President of the Senate": 1,
-          "VIC PRESIDENT": 1,
-          "vice predident": 1,
-          "vice president of usa": 1,
-          "Vice-Presidant": 1,
-          "dontknow": 1,
-          "cabinet": 1,
-          "republcan": 1,
-          "thought he was ousted[deleted] was vice president": 1,
-          "vice preisdent": 1,
-          "vice president of the united states of america": 1,
-          "Vice - President ( Possibly Darth Vader)": 1,
-          "vice presideni": 1,
-          "Vice President.": 1,
-          "vice presidente crook": 1,
-          "vice presidenmt": 1,
-          "vice president of united states": 1,
-          "???": 1,
-          "Vicxe President": 1,
-          "V. President": 1,
-          "House leader": 1,
-          "Vp": 1,
-          "house": 1,
-          "Vice President and puppetmaster": 1,
-          "presidential aide": 1,
-          "vice Preident": 1,
-          "Unknown": 1,
-          "VP ": 1,
-          "V[deleted]Pres": 1,
-          "VP of US": 1,
-          "vice president of the united states": 1,
-          "idiot": 1,
-          "VPOTUS": 1,
-          "vice frecken president": 1,
-          "Vic President": 1,
-          "Vice Presidwent": 1,
-          "Vice president Republican": 1,
-          "v-pres": 1,
-          "secretary state": 1,
-          "Vice Presidetn": 1,
-          "Vice Presendency": 1,
-          "=": 1,
-          "gov": 1,
-          "VICE PRESIDENT U.S.": 1,
-          "Vice President Of The United States of America": 1,
-          "vice-president of us": 1,
-          "govenor": 1,
-          "vice resident": 1,
-          "Vice Predsident": 1,
-          "vice-pres": 1,
-          "vise pres.": 1,
-          "Vice Pres and[deleted]or Darth Vader": 1,
-          "Vice President-someone should kill him": 1,
-          "vice-prez": 1,
-          "V. Pres": 1,
-          "VP60": 1,
-          "V Pres": 1,
-          "V,P of U.S": 1,
-          "senater": 1,
-          "??": 1,
-          "VICE PRESDIENT": 1,
-          "VP (Vice President) ": 1,
-          "V. PRESIDENT": 1,
-          "speaker of trhe house": 1,
-          "vice pres. of the u.s.": 1,
-          "VP-WAR MONGER": 1,
-          "Vice- President": 1,
-          "secratary of state": 1,
-          "Vice Presidaent": 1,
-          "repulican": 1,
-          "Vicepresident": 1,
-          "11": 1,
-          "V P": 1,
-          "Vice-Pres": 1,
-          "Vice Presidnet": 1,
-          "vice Preident of u.s.": 1,
-          "secretare of state": 1,
-          "vic president": 1,
-          "US Vice President": 1,
-          "VICEPRES": 1,
+          "Speaker of the House": 2,
+          "VICE PRES.": 2,
+          "speaker of the house": 2,
+          "vice president of US": 2,
+          "Vice President of the US": 2,
+          "V.P": 2,
+          "VP of the United States": 2,
+          "VEEP": 2,
+          "vice priesident": 2,
+          "Vice-President of the United States of America": 2,
+          "Vice President of the USA": 2,
+          "sec of state": 2,
+          "Vice President Republican": 2,
+          "unknown": 2,
+          "senator": 2,
+          "vICE pRESIDENT": 2,
+          "Vice pres.": 2,
+          "V,P.": 2,
+          "Vice President of The United States": 2,
+          "Vice President of US": 2,
+          "v p": 2,
+          "n[deleted]a": 2,
+          "SENATOR": 2,
+          "Vice Prsident": 2,
+          "vice-pres.": 2,
+          "vice pesident": 2,
           "former vp": 1,
-          "VICE PRESIDENT ": 1,
-          "Republican ": 1,
-          "governer": 1,
-          "v.p": 1,
-          "member of the house": 1,
-          "vice presiden": 1,
-          "Chief Bozo": 1,
-          "VCE PRESIDENT": 1,
-          "Vize President": 1,
+          "verys": 1,
+          "thought he was ousted[deleted] was vice president": 1,
+          "vice president of united states": 1,
+          "Vice President 2004-2008": 1,
+          "vice presideni": 1,
+          "Vic President": 1,
+          "gov": 1,
           "no": 1,
-          "VicePresident": 1,
-          "I wish you wouldn t mention this shithead s name ever again...I can t stand him period!!! ": 1,
-          "republicans": 1,
-          "chairman fo the house": 1,
-          "V. P.": 1,
-          "vie president": 1,
-          "Vice President[deleted]Eminence Grise-in-Chief": 1,
-          "President of the House": 1,
-          "can t think of it right now": 1,
-          "Vice Presient": 1,
-          "vice-President": 1,
-          "Vce President": 1,
-          "c": 1,
-          "Vice President [deleted] Executive Branch": 1,
-          "sec. of defence": 1,
-          "v. president": 1,
-          "VP of the US": 1,
-          "vic-president": 1,
-          "Darth Vader, oops V.P.": 1,
-          "Vice President (unfortunately)": 1,
-          "Vice President of the United States and President of the United States Senate": 1,
-          "Vice-president of the United States": 1,
-          "Secretary of Defense": 1,
-          "v.pres": 1,
-          "secertary of defense": 1,
-          "vice pr": 1,
-          "Veep": 1,
-          "SECURITY": 1,
-          "laughingstock": 1,
-          "VICE PRESDENT": 1,
-          "VP (Vile person)  Vive President": 1,
-          "Vice President[deleted]war criminal": 1,
-          "vice predisent": 1,
-          "HOUSE SPEAKER": 1,
-          "vice presodemt": 1,
-          "Vice President [deleted] President of the Senate": 1,
-          "-": 1,
-          "Vice President[deleted]Crook": 1,
-          "OUTGOING VICEPRESIDENT": 1,
-          "V-PRESIDENT": 1,
-          "shotgun": 1,
-          "vice president--gladly not for much longer": 1,
+          "dontknow": 1,
           "vice Pres": 1,
-          "Speaker": 1,
-          "defense": 1,
-          "Vice President of United States": 1,
+          "I am not sure i have heard it for day now i just cant remember ": 1,
+          "vice-president of us": 1,
+          "Vice President[deleted]war criminal": 1,
           "rep": 1,
-          "Vice Presedent": 1,
-          "Vice Preseident": 1,
-          "Vice Ass, er, um, President": 1,
+          "Vize President": 1,
+          "vice preisdent": 1,
+          "Speaker": 1,
+          "v. president": 1,
+          "v.p": 1,
+          " vice president ": 1,
+          "vice present": 1,
+          "Vice Preident": 1,
+          "vice presidency": 1,
+          "member of the house": 1,
           "House of Reps": 1,
-          "NONE": 1
+          "secertary of defense": 1,
+          "vice presidente crook": 1,
+          "Vice President of the US[deleted]President of the Senate": 1,
+          "Vp": 1,
+          "Vice President and puppetmaster": 1,
+          "V P": 1,
+          "V  Pres.": 1,
+          "vic president": 1,
+          "Vice Presedent": 1,
+          "Vice Pres and[deleted]or Darth Vader": 1,
+          "vice presidenmt": 1,
+          "vice Preident of u.s.": 1,
+          "Vice Presient": 1,
+          "Republican ": 1,
+          "Vice Presidnet": 1,
+          "sec of defense": 1,
+          "V. Pres": 1,
+          "vice frecken president": 1,
+          "GOVERNOR OF TEXAS": 1,
+          "congressman": 1,
+          "Vice President of the United States and President of the United States Senate": 1,
+          "don t remember": 1,
+          "Vice Presendency": 1,
+          "VP ": 1,
+          "VCE PRESIDENT": 1,
+          "I wish you wouldn t mention this shithead s name ever again...I can t stand him period!!! ": 1,
+          "VICEPRES": 1,
+          "vice pr": 1,
+          "repulican": 1,
+          "Vice President.": 1,
+          "Votes in a tie breaker in U.S. Senate": 1,
+          "US Vice-President": 1,
+          "Chief Bozo": 1,
+          "VP (Vile person)  Vive President": 1,
+          "Don t know": 1,
+          "vise presd": 1,
+          "VICE PRESIDENT ": 1,
+          "defense": 1,
+          "attorney general": 1,
+          "Vice Predsident": 1,
+          "OUTGOING VICEPRESIDENT": 1,
+          "vice Preident": 1,
+          "Vice President of The United Staes of America": 1,
+          "vice resident": 1,
+          "VPOTUS": 1,
+          "Vicepresident": 1,
+          "govenor": 1,
+          "Vicxe President": 1,
+          "Vice President of United States": 1,
+          "vice-pres": 1,
+          "Vice President-someone should kill him": 1,
+          "VICE PRESDIENT": 1,
+          "vice president of usa": 1,
+          "vice pres and he s a republican": 1,
+          "republicans": 1,
+          "vp, pres.protem of the senate": 1,
+          "vie president": 1,
+          "Vice-Pres": 1,
+          "secratary of state": 1,
+          "speaker of trhe house": 1,
+          "Vice-President of the U.S.": 1,
+          "cabinet": 1,
+          "vp of the united states": 1,
+          "governor": 1,
+          "Vice President [deleted] Executive Branch": 1,
+          "House leader": 1,
+          "Vice president Republican": 1,
+          "house": 1,
+          "Darth Vader, oops V.P.": 1,
+          "vice presidente": 1,
+          "c": 1,
+          "Vice-Pres.": 1,
+          "vice-President": 1,
+          "vice president of the united states": 1,
+          "vicepresdent": 1,
+          "VicePresident": 1,
+          "Vice Presidetn": 1,
+          "Vice President Of The United States of America": 1,
+          "secretary state": 1,
+          "V[deleted]Pres": 1,
+          "President of the House": 1,
+          "Vice President (unfortunately)": 1,
+          "Vixw President": 1,
+          "rep  present Vice-president": 1,
+          "NONE": 1,
+          "Vise-president": 1,
+          "Vice President[deleted]Crook": 1,
+          "vice president of the united states of america": 1,
+          "V-PRESIDENT": 1,
+          "vic-president": 1,
+          "HOUSE SPEAKER": 1,
+          "vice presiden": 1,
+          "Vice Presidwent": 1,
+          "VP of US": 1,
+          "governer": 1,
+          "Vice President and Evil Doer": 1,
+          "Vice-president of the United States": 1,
+          "VICE PRESIDENT U.S.": 1,
+          "presidential aide": 1,
+          "VP60": 1,
+          "Vice President of the  U.S.": 1,
+          "V. P.": 1,
+          "VIC PRESIDENT": 1,
+          "secretare of state": 1,
+          "Vice President[deleted]Eminence Grise-in-Chief": 1,
+          "vice pres. of the u.s.": 1,
+          "vice presodemt": 1,
+          "vise pres.": 1,
+          "Vice- President": 1,
+          "V. PRESIDENT": 1,
+          "vice president of the US": 1,
+          "vice prrsident": 1,
+          "democrate": 1,
+          "Vice-Presidant": 1,
+          "US Vice President": 1,
+          "NOT SURE": 1,
+          "Vice Preseident": 1,
+          "VP-WAR MONGER": 1,
+          "Vice Precidency": 1,
+          "11": 1,
+          "Secretary of Defense": 1,
+          "Vice President [deleted] President of the Senate": 1,
+          "vice predident": 1,
+          "idiot": 1,
+          "VICE PRESDENT": 1,
+          "SECURITY": 1,
+          "=": 1,
+          "???": 1,
+          "Vice - President ( Possibly Darth Vader)": 1,
+          "Worst Vice President in History": 1,
+          "chairman fo the house": 1,
+          "V Pres": 1,
+          "V. President": 1,
+          "vice predisent": 1,
+          "VICE PRESEDENT": 1,
+          "shotgun": 1,
+          "VP (Vice President) ": 1,
+          "vice president (ha ha)": 1,
+          "VP of the US": 1,
+          "can t think of it right now": 1,
+          "laughingstock": 1,
+          "Vice president of the US": 1,
+          "v-p": 1,
+          "Veep": 1,
+          "-": 1,
+          "Unknown": 1,
+          "attorneygeneral": 1,
+          "??": 1,
+          "Vce President": 1,
+          "v-pres": 1,
+          "sec. of defence": 1,
+          "vice presedent": 1,
+          "v.pres": 1,
+          "V,P of U.S": 1,
+          "vice-prez": 1,
+          "vice president--gladly not for much longer": 1,
+          "vice preident": 1,
+          "senater": 1,
+          "republcan": 1,
+          "Vice Presidaent": 1,
+          "Vice Ass, er, um, President": 1
         }
       ],
       [
@@ -2934,30 +2651,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "initial.like",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "initial.like",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -3173,22 +2866,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ncog1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ncog1",
     [
@@ -3398,22 +3075,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ncog3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ncog3",
     [
@@ -3616,22 +3277,6 @@
       [
         "no preference"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3839,22 +3484,6 @@
       [
         "neither like nor dislike"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4067,22 +3696,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ncog6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ncog6",
     [
@@ -4289,22 +3902,6 @@
       [
         "relief and satisfaction to the"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ncog7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4517,22 +4114,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state",
     [
@@ -4563,9 +4144,9 @@
       [
         "fewestValues",
         [
+          "AE",
           "PW",
-          "FM",
-          "AE"
+          "FM"
         ]
       ],
       [
@@ -4612,8 +4193,8 @@
           "OR": 44,
           "MN": 42,
           "MD": 41,
-          "CO": 39,
           "KY": 39,
+          "CO": 39,
           "MA": 35,
           "IA": 35,
           "SC": 33,
@@ -4624,26 +4205,26 @@
           "OK": 24,
           "KS": 22,
           "LA": 19,
+          "UT": 16,
           "NM": 16,
           "WV": 16,
-          "UT": 16,
           "ID": 15,
-          "SD": 14,
           "NE": 14,
+          "SD": 14,
           "CT": 13,
           "ME": 10,
           "WY": 9,
           "HI": 8,
-          "NH": 7,
           "DE": 7,
+          "NH": 7,
           "RI": 6,
-          "VT": 6,
           "MT": 6,
-          "ND": 3,
+          "VT": 6,
           "AK": 3,
+          "ND": 3,
           "DC": 2,
-          "FM": 1,
           "AE": 1,
+          "FM": 1,
           "PW": 1
         }
       ],
@@ -4887,30 +4468,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "year.of.birth",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "year.of.birth",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5532,30 +5089,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "cue.condition",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "cue.condition",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -5791,22 +5324,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.Demsupp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Demsupp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6052,22 +5569,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Demopp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Demopp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Demopp",
     [
@@ -6307,22 +5808,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6568,22 +6053,6 @@
     ]
   ],
   [
-    "change",
-    "variables.male.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.male.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.male",
     [
@@ -6823,22 +6292,6 @@
     [
       "-60",
       -60.0
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7502,30 +6955,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "age.legit",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "age.legit",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -7794,30 +7223,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "educ.low",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "educ.low",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -8063,22 +7468,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.Northeast.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Northeast.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8344,30 +7733,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "North.Central",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "North.Central",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -8616,22 +7981,6 @@
     ]
   ],
   [
-    "change",
-    "variables.South.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.South.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.South",
     [
@@ -8874,22 +8223,6 @@
     ]
   ],
   [
-    "change",
-    "variables.West.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.West.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.West",
     [
@@ -9100,22 +8433,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -9323,30 +8640,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "PID.pre",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "PID.pre",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -9537,192 +8830,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:33",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "article.type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cue.memory.cutoff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cue.memory.policy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cue.memory.total.recipients": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender.original": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gk.Cheney": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gk.Cheney.original": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "initial.like": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncog1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncog3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncog4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncog5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncog6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ncog7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year.of.birth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cue.condition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Demsupp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Demopp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "male": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age.legit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "educ.low": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Northeast": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "North.Central": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "South": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "West": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PID.pre": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

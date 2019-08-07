@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        27
-      ],
-      [
-        "variableCount",
-        6
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SGB8FE_idealcompare.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1684
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Number.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -752,26 +653,10 @@
   ],
   [
     "change",
-    "variables.ideal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ideal.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ideal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1428,26 +1313,10 @@
   ],
   [
     "change",
-    "variables.se.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2104,26 +1973,10 @@
   ],
   [
     "change",
-    "variables.upper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.upper.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.upper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2780,26 +2633,10 @@
   ],
   [
     "change",
-    "variables.lower.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lower.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lower.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3406,28 +3243,12 @@
     [
       "POOLE",
       [
-        "HOLCOMB",
         "FERGUSON",
+        "HOLCOMB",
+        "LACKER",
         "STERN",
-        "STONE",
-        "WARSH"
+        "MOSKOW"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.NAME.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NAME.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3461,11 +3282,11 @@
       [
         "fewestValues",
         [
-          "HOLCOMB",
           "FERGUSON",
+          "HOLCOMB",
+          "LACKER",
           "STERN",
-          "STONE",
-          "WARSH"
+          "MOSKOW"
         ]
       ],
       [
@@ -3491,33 +3312,33 @@
       [
         "plotValues",
         {
+          "HOLCOMB": 1,
           "BERNANKE": 1,
-          "POOLE": 1,
-          "KROSZNER": 1,
-          "EVANS": 1,
-          "PIANALTO": 1,
-          "GRAMLICH": 1,
-          "OLSON": 1,
-          "HOENIG": 1,
-          "GEITHNER": 1,
-          "FISHER": 1,
-          "YELLEN": 1,
-          "MISHKIN": 1,
-          "GUYNN": 1,
-          "MOSKOW": 1,
-          "MINEHAN": 1,
-          "GREENSPAN": 1,
-          "BIES": 1,
-          "KOHN": 1,
-          "SANTOMERO": 1,
-          "LOCKHART": 1,
-          "PLOSSER": 1,
-          "LACKER": 1,
           "WARSH": 1,
+          "BIES": 1,
+          "HOENIG": 1,
+          "POOLE": 1,
+          "GEITHNER": 1,
+          "PIANALTO": 1,
+          "SANTOMERO": 1,
           "STONE": 1,
+          "GRAMLICH": 1,
+          "GUYNN": 1,
+          "PLOSSER": 1,
+          "MISHKIN": 1,
+          "EVANS": 1,
+          "YELLEN": 1,
+          "FISHER": 1,
+          "OLSON": 1,
+          "KROSZNER": 1,
+          "GREENSPAN": 1,
+          "LOCKHART": 1,
+          "KOHN": 1,
+          "MINEHAN": 1,
+          "MOSKOW": 1,
           "STERN": 1,
-          "FERGUSON": 1,
-          "HOLCOMB": 1
+          "LACKER": 1,
+          "FERGUSON": 1
         }
       ],
       [
@@ -3669,62 +3490,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:16",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "upper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lower": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NAME": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

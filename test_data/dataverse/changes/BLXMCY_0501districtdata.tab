@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        22
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "BLXMCY_0501districtdata.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1299
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.area.mode",
     [
       "east anglia",
       [
-        "greater london",
-        "east midlands",
         "wales",
-        "east anglia",
+        "south west",
+        "scotland",
+        "greater london",
         "north west"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.area.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.area.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,9 +44,9 @@
       [
         "fewestValues",
         [
-          "south east ",
-          "south east",
           "north ",
+          "south east",
+          "south east ",
           "north"
         ]
       ],
@@ -172,19 +73,19 @@
       [
         "plotValues",
         {
-          "scotland": 2,
-          "south west": 2,
-          "west midlands": 2,
-          "north west": 2,
           "east anglia": 2,
           "yorkshire and humberside": 2,
-          "wales": 2,
           "east midlands": 2,
+          "west midlands": 2,
+          "north west": 2,
           "greater london": 2,
+          "scotland": 2,
+          "south west": 2,
+          "wales": 2,
           "north": 1,
           "south east ": 1,
-          "north ": 1,
-          "south east": 1
+          "south east": 1,
+          "north ": 1
         }
       ],
       [
@@ -369,22 +270,6 @@
     [
       "2515479",
       2515479.0
-    ]
-  ],
-  [
-    "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -985,26 +870,10 @@
   ],
   [
     "change",
-    "variables.income_pc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.income_pc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.income_pc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1649,22 +1518,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1919,26 +1772,10 @@
   ],
   [
     "change",
-    "variables.unemploy_rate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemploy_rate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemploy_rate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2591,26 +2428,10 @@
   ],
   [
     "change",
-    "variables.pctwhite.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctwhite.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctwhite.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3258,22 +3079,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -3528,67 +3333,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:36",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "area": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income_pc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemploy_rate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctwhite": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

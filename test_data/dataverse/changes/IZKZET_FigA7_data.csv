@@ -1,113 +1,14 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        62
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IZKZET_FigA7_data.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 6347
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Attribute.mode",
     [
       "Policy area of expertise",
       [
         "Age",
-        "Salient personal characteristics",
-        "Policy area of expertise"
+        "Policy area of expertise",
+        "Salient personal characteristics"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -141,10 +42,10 @@
       [
         "fewestValues",
         [
-          "Position on immigrants",
-          "Sex",
+          "Party affiliation",
           "Position on national security",
-          "Party affiliation"
+          "Position on immigrants",
+          "Sex"
         ]
       ],
       [
@@ -174,15 +75,15 @@
           "Policy area of expertise": 7,
           "Age": 7,
           "Favorability rating among the public": 6,
-          "Family": 5,
           "Experience in public office": 5,
           "Race": 5,
+          "Family": 5,
           "Position on abortion": 4,
           "Position on government deficit": 4,
-          "Party affiliation": 3,
-          "Position on national security": 3,
           "Sex": 3,
-          "Position on immigrants": 3
+          "Position on immigrants": 3,
+          "Position on national security": 3,
+          "Party affiliation": 3
         }
       ],
       [
@@ -329,28 +230,12 @@
     [
       "70%",
       [
-        "43%",
-        "Pro-choice",
-        "Male",
-        "Environmental issues",
-        "Pro-life"
+        "12 years",
+        "No experience",
+        "68 years old",
+        "76 years old",
+        "Democratic Party"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -384,11 +269,11 @@
       [
         "fewestValues",
         [
-          "43%",
-          "Pro-choice",
-          "Male",
-          "Environmental issues",
-          "Pro-life"
+          "12 years",
+          "No experience",
+          "68 years old",
+          "76 years old",
+          "Democratic Party"
         ]
       ],
       [
@@ -414,55 +299,55 @@
       [
         "plotValues",
         {
-          "61%": 1,
-          "Education": 1,
           "52%": 1,
-          "No opinion (neutral)": 1,
-          "Favors giving guest worker status": 1,
-          "44 years old": 1,
-          "70%": 1,
-          "Reduce deficit through spending cuts": 1,
-          "43%": 1,
-          "Republican Party": 1,
-          "60 years old": 1,
-          "Public safety (crime)": 1,
-          "68 years old": 1,
+          "Reduce deficit through tax increase": 1,
           "Intelligent": 1,
           "Honest": 1,
-          "Democratic Party": 1,
-          "No experience": 1,
-          "Health care": 1,
-          "White": 1,
-          "76 years old": 1,
-          "Provides strong leadership": 1,
-          "Compassionate": 1,
-          "34%": 1,
-          "52 years old": 1,
-          "Female": 1,
-          "Foreign policy": 1,
-          "Married (two children)": 1,
-          "Reduce deficit through tax increase": 1,
-          "8 years": 1,
-          "Asian American": 1,
-          "12 years": 1,
-          "Pro-choice": 1,
-          "Opposes giving guest worker status": 1,
-          "36 years old": 1,
-          "Cut military budget": 1,
-          "Maintain strong defense": 1,
-          "Economic policy": 1,
-          "Knowledgeable": 1,
-          "Hispanic": 1,
           "Single (never married)": 1,
-          "Married (no child)": 1,
-          "Really cares about people like you": 1,
           "Pro-life": 1,
-          "Black": 1,
-          "Environmental issues": 1,
-          "Male": 1,
-          "Don't reduce deficit now": 1,
+          "Pro-choice": 1,
+          "Education": 1,
+          "44 years old": 1,
+          "61%": 1,
+          "Republican Party": 1,
           "Single (divorced)": 1,
-          "4 years": 1
+          "Favors giving guest worker status": 1,
+          "Compassionate": 1,
+          "Public safety (crime)": 1,
+          "4 years": 1,
+          "Provides strong leadership": 1,
+          "36 years old": 1,
+          "Reduce deficit through spending cuts": 1,
+          "Married (two children)": 1,
+          "76 years old": 1,
+          "12 years": 1,
+          "43%": 1,
+          "8 years": 1,
+          "Maintain strong defense": 1,
+          "Democratic Party": 1,
+          "Black": 1,
+          "Married (no child)": 1,
+          "Health care": 1,
+          "Opposes giving guest worker status": 1,
+          "Really cares about people like you": 1,
+          "Foreign policy": 1,
+          "Don't reduce deficit now": 1,
+          "34%": 1,
+          "Male": 1,
+          "Knowledgeable": 1,
+          "70%": 1,
+          "Hispanic": 1,
+          "Environmental issues": 1,
+          "52 years old": 1,
+          "Economic policy": 1,
+          "Asian American": 1,
+          "68 years old": 1,
+          "No experience": 1,
+          "Female": 1,
+          "Cut military budget": 1,
+          "60 years old": 1,
+          "White": 1,
+          "No opinion (neutral)": 1
         }
       ],
       [
@@ -695,26 +580,10 @@
   ],
   [
     "change",
-    "variables.Estimate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Estimate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1371,26 +1240,10 @@
   ],
   [
     "change",
-    "variables.p_raw.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_raw.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_raw.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2002,22 +1855,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sig.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sig",
     [
@@ -2213,22 +2050,6 @@
       [
         "data1"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.data.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.data.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2457,22 +2278,6 @@
     [
       "1583",
       1583
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2709,22 +2514,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.order.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.order.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3335,36 +3124,12 @@
     [
       "70%",
       [
-        "43%",
-        "   Foreign policy",
-        "(Baseline = White)",
-        "Position on abortion:",
-        "Policy area of expertise:"
+        "Favorability rating among the public:",
+        "   Compassionate",
+        "   Honest",
+        "   68 years old",
+        "   Foreign policy"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3401,11 +3166,11 @@
       [
         "fewestValues",
         [
-          "43%",
-          "   Foreign policy",
-          "(Baseline = White)",
-          "Position on abortion:",
-          "Policy area of expertise:"
+          "Favorability rating among the public:",
+          "   Compassionate",
+          "   Honest",
+          "   68 years old",
+          "   Foreign policy"
         ]
       ],
       [
@@ -3431,68 +3196,68 @@
       [
         "plotValues",
         {
-          "61%": 1,
-          "Favorability rating among the public:": 1,
-          "(Baseline = Favors giving guest worker status)": 1,
-          "   Public safety (crime)": 1,
-          "Age:": 1,
-          "   8 years": 1,
-          "Race:": 1,
-          "Experience in public office:": 1,
-          "   68 years old": 1,
-          "   Opposes giving guest worker status": 1,
-          "   Honest": 1,
-          "   Black": 1,
-          "43%": 1,
-          "Sex:": 1,
-          "   Hispanic": 1,
-          "(Baseline = 36 years old)": 1,
-          "   Republican Party": 1,
-          "(Baseline = No opinion (neutral))": 1,
-          "Position on national security:": 1,
-          "   Pro-choice": 1,
-          "   12 years": 1,
-          "   Really cares about people like you": 1,
-          "(Baseline = Single (never married))": 1,
-          "   Single (divorced)": 1,
-          "   52 years old": 1,
-          "   Health care": 1,
-          "   Pro-life": 1,
-          "(Baseline = Don't reduce deficit now)": 1,
-          "   Maintain strong defense": 1,
-          "   Knowledgeable": 1,
-          "   Reduce deficit through spending cuts": 1,
-          "Family:": 1,
-          "(Baseline = Cut military budget)": 1,
-          "(Baseline = Democratic Party)": 1,
-          "   4 years": 1,
-          "   Asian American": 1,
           "(Baseline = Environmental issues)": 1,
-          "(Baseline = No experience)": 1,
-          "   Married (no child)": 1,
-          "70%": 1,
-          "   Married (two children)": 1,
-          "Position on government deficit:": 1,
-          "   Economic policy": 1,
-          "Party affiliation:": 1,
-          "   60 years old": 1,
-          "   Reduce deficit through tax increase": 1,
+          "   12 years": 1,
+          "   Pro-life": 1,
+          "   Single (divorced)": 1,
           "Salient personal characteristics:": 1,
-          "   76 years old": 1,
-          "52%": 1,
-          "Position on immigrants:": 1,
-          "(Baseline = 34%)": 1,
-          "   Compassionate": 1,
-          "(Baseline = Provides strong leadership)": 1,
           "   44 years old": 1,
-          "   Education": 1,
+          "Party affiliation:": 1,
           "(Baseline = Male)": 1,
+          "Family:": 1,
+          "(Baseline = Single (never married))": 1,
+          "(Baseline = 36 years old)": 1,
+          "   68 years old": 1,
+          "(Baseline = White)": 1,
+          "   Black": 1,
+          "   76 years old": 1,
           "   Female": 1,
           "Policy area of expertise:": 1,
+          "Sex:": 1,
+          "Experience in public office:": 1,
           "Position on abortion:": 1,
-          "(Baseline = White)": 1,
+          "Age:": 1,
+          "43%": 1,
+          "   Compassionate": 1,
+          "   Reduce deficit through tax increase": 1,
+          "   Really cares about people like you": 1,
+          "61%": 1,
+          "   Married (no child)": 1,
+          "   Pro-choice": 1,
+          "   Asian American": 1,
+          "Position on immigrants:": 1,
+          "   Public safety (crime)": 1,
+          "   60 years old": 1,
+          "   Honest": 1,
           "   Foreign policy": 1,
-          "   Intelligent": 1
+          "   Intelligent": 1,
+          "   52 years old": 1,
+          "   Married (two children)": 1,
+          "   Economic policy": 1,
+          "(Baseline = Cut military budget)": 1,
+          "(Baseline = 34%)": 1,
+          "(Baseline = No experience)": 1,
+          "(Baseline = Don't reduce deficit now)": 1,
+          "52%": 1,
+          "   Maintain strong defense": 1,
+          "70%": 1,
+          "Position on national security:": 1,
+          "(Baseline = Democratic Party)": 1,
+          "Race:": 1,
+          "   8 years": 1,
+          "(Baseline = No opinion (neutral))": 1,
+          "   Reduce deficit through spending cuts": 1,
+          "   Hispanic": 1,
+          "(Baseline = Favors giving guest worker status)": 1,
+          "   Health care": 1,
+          "   Republican Party": 1,
+          "(Baseline = Provides strong leadership)": 1,
+          "Position on government deficit:": 1,
+          "   Opposes giving guest worker status": 1,
+          "   Education": 1,
+          "   Knowledgeable": 1,
+          "   4 years": 1,
+          "Favorability rating among the public:": 1
         }
       ],
       [
@@ -4679,87 +4444,6 @@
           "defaultNature": "percent",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:29:18",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Attribute": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Level": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Estimate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Std. Err": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_raw": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "data": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "respondents": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "order": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "var.names": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

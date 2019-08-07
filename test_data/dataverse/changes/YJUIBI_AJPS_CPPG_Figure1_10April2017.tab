@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        35
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "YJUIBI_AJPS_CPPG_Figure1_10April2017.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1198
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "UK",
       [
-        "Co. maj.",
-        "Co. min.",
-        "CA",
-        "SE",
-        "Sin. min."
+        "IT",
+        "All",
+        "Sin. min.",
+        "Sin. maj.",
+        "PT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Co. maj.",
-          "Co. min.",
-          "CA",
-          "SE",
-          "Sin. min."
+          "IT",
+          "All",
+          "Sin. min.",
+          "Sin. maj.",
+          "PT"
         ]
       ],
       [
@@ -173,23 +74,23 @@
       [
         "plotValues",
         {
-          "NL": 2,
-          "ES": 2,
-          "All": 2,
-          "IT": 2,
-          "Sin. min.": 2,
-          "AT": 2,
-          "UK": 2,
-          "PT": 2,
-          "US": 2,
-          "Sin. maj.": 2,
-          "DE": 2,
-          "SE": 2,
-          "IE": 2,
-          "BU": 2,
-          "CA": 2,
           "Co. min.": 2,
-          "Co. maj.": 2
+          "Co. maj.": 2,
+          "DE": 2,
+          "ES": 2,
+          "NL": 2,
+          "Sin. min.": 2,
+          "UK": 2,
+          "BU": 2,
+          "IE": 2,
+          "US": 2,
+          "SE": 2,
+          "AT": 2,
+          "PT": 2,
+          "Sin. maj.": 2,
+          "All": 2,
+          "CA": 2,
+          "IT": 2
         }
       ],
       [
@@ -343,22 +244,6 @@
       [
         "G"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.govopp.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.govopp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -606,26 +491,10 @@
   ],
   [
     "change",
-    "variables.pful.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pful.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pful.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1278,26 +1147,10 @@
   ],
   [
     "change",
-    "variables.fful.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fful.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fful.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1954,26 +1807,10 @@
   ],
   [
     "change",
-    "variables.fpfulonly.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fpfulonly.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fpfulonly.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2630,26 +2467,10 @@
   ],
   [
     "change",
-    "variables.fpgovall.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fpgovall.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fpgovall.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3293,22 +3114,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n",
     [
@@ -3913,22 +3718,6 @@
     ]
   ],
   [
-    "change",
-    "variables.order.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.order.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.order",
     [
@@ -4457,72 +4246,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:53",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govopp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pful": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fful": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fpfulonly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fpgovall": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "order": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

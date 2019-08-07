@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1133
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WRVUOT_Argentine 1983 elections.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 64236
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.district.mode",
     [
@@ -90,22 +7,6 @@
       [
         "TUC"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.district.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.district.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -170,24 +71,24 @@
           "SFE": 68,
           "CAT": 60,
           "STA": 59,
-          "CTES": 58,
           "CBA": 58,
+          "CTES": 58,
           "ER": 53,
           "SJ": 49,
-          "RN": 46,
           "MZA": 46,
+          "RN": 46,
           "CHA": 45,
           "CHU": 44,
           "JUJ": 41,
           "SGO": 40,
-          "FSA": 37,
           "NQN": 37,
+          "FSA": 37,
           "LP": 37,
-          "MIS": 36,
           "SC": 36,
+          "MIS": 36,
           "LR": 34,
-          "SL": 31,
           "CABA": 31,
+          "SL": 31,
           "TDF": 30
         }
       ],
@@ -348,22 +249,6 @@
       [
         "10/30/83"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -560,22 +445,6 @@
       [
         "presid"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.elType.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.elType.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -776,26 +645,10 @@
     [
       "JUSTICIALISTA",
       [
-        "TOTAL VOTANTES",
+        "JUSTICIALISTA",
         "VOTOS POSITIVOS",
-        "JUSTICIALISTA"
+        "TOTAL VOTANTES"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.list.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.list.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -830,10 +683,10 @@
         "fewestValues",
         [
           "AL. DEM. PROGRESISTA",
-          "AL. DEMOCRATA SOCIALISTA",
-          "VANGUARDIA FEDERAL",
           "CONF. NACIONAL DE CENTRO",
-          "AL. AGRUP.VEC. UNION POP.FUEG."
+          "AL DEMOCRATA SOC.",
+          "AL. DEMOCRATA SOCIALISTA",
+          "AL. DEM. SOCIALISTA"
         ]
       ],
       [
@@ -859,14 +712,14 @@
       [
         "plotValues",
         {
-          "VOTOS POSITIVOS": 79,
           "JUSTICIALISTA": 79,
+          "VOTOS POSITIVOS": 79,
           "TOTAL VOTANTES": 79,
           "U.C.R.": 76,
           "M.I.D.": 76,
           "INTRANSIGENTE": 73,
-          "VOTOS ANULADOS": 69,
           "VOTOS EN BLANCO": 69,
+          "VOTOS ANULADOS": 69,
           "DEMOCRATA CRISTIANO": 56,
           "M.A.S.": 38,
           "SOCIALISTA POPULAR": 38,
@@ -877,71 +730,71 @@
           "FTE. DE IZQUIERDA POP.": 21,
           "ALIANZA FEDERAL": 19,
           "FTE. DE IZQUIERDA POPULAR": 11,
-          "VOTOS NULOS": 10,
-          "VOTOS BLANCOS": 10,
           "DE CENTRO": 10,
+          "VOTOS BLANCOS": 10,
+          "VOTOS NULOS": 10,
           "U.Ce.D_.": 9,
           "SOCIALISTA DEMOCRATICO": 8,
           "DEMOCRATA": 8,
           "DEM. PROGRESISTA": 7,
-          "MOV. LINEA POPULAR": 6,
           "U.Ce. D_.": 6,
-          "AL.DEM. SOCIALISTA": 5,
+          "MOV. LINEA POPULAR": 6,
           "DEMOCRATA PROGRESISTA": 5,
-          "FTE DE IZQUIERDA POP.": 4,
-          "MOV.LINEA POPULAR": 4,
+          "AL.DEM. SOCIALISTA": 5,
+          "CONF. NAC. DE CENTRO": 4,
+          "#NAME?": 4,
           "SOCIALISTA AUTENTICO": 4,
           "ALIANZA SALTE\ufffdA": 4,
-          "DEM. DE CATAMARCA": 4,
+          "MOV.POP.CATAMARQUE\ufffdO": 4,
+          "MOV. NACIONALISTA": 4,
           "DEM. CRISTIANO": 4,
-          "DEFENSA PROVINCIAL": 4,
+          "RENOVADOR DE SALTA": 4,
           "MOV. POP. SALTE\ufffdO": 4,
           "CONSERVADOR PRINCIPISTA": 4,
+          "MOV.LINEA POPULAR": 4,
           "UNION POPULAR": 4,
-          "CONF. NAC. DE CENTRO": 4,
-          "RENOVADOR DE SALTA": 4,
-          "DEMOCRATA DE E.RIOS": 4,
-          "MOV.POP.CATAMARQUE\ufffdO": 4,
-          "LA VOZ DEL PUEBLO": 4,
-          "#NAME?": 4,
+          "FTE DE IZQUIERDA POP.": 4,
           "LINEA POPULAR": 4,
-          "MOV. NACIONALISTA": 4,
-          "PROVINCIAL RIONEGRINO": 3,
-          "ACCION CHUBUTENSE": 3,
-          "AL. FEDERAL": 3,
-          "MOV.DE UNIDAD CHAQUE\ufffdA": 3,
-          "RENOV.DE LA PROVINCIA": 3,
+          "LA VOZ DEL PUEBLO": 4,
+          "DEMOCRATA DE E.RIOS": 4,
+          "DEFENSA PROVINCIAL": 4,
+          "DEM. DE CATAMARCA": 4,
           "SOCIALISTA DEM.": 3,
-          "MOV. POPULAR JUJE\ufffdO": 3,
-          "MAS": 3,
           "BLOQUISTA": 3,
-          "CRUZADA RENOVADORA": 3,
-          "SOCIALISTA. AUTENTICO": 3,
-          "SOCIALISTA": 3,
-          "MOV. FEDERALISTA PAMP.": 3,
-          "AL.FTE.VANG. FED.- DEM.CRIST.": 3,
-          "TRES BANDERAS": 3,
           "ALIANZA POPULAR": 3,
-          "PARA  LA DEM. SOCIAL": 3,
+          "TRES BANDERAS": 3,
           "AL.DEMOCRATA SOCIALISTA": 3,
-          "UCR": 3,
+          "PARA  LA DEM. SOCIAL": 3,
+          "CRUZADA RENOVADORA": 3,
+          "MAS": 3,
+          "MOV. FEDERALISTA PAMP.": 3,
+          "SOCIALISTA": 3,
           "MOV. POPULAR NEUQUINO": 3,
+          "ACCION CHUBUTENSE": 3,
+          "SOCIALISTA. AUTENTICO": 3,
+          "MOV.DE UNIDAD CHAQUE\ufffdA": 3,
+          "MOV. POPULAR JUJE\ufffdO": 3,
+          "RENOV.DE LA PROVINCIA": 3,
+          "AL. FEDERAL": 3,
           "MID": 3,
+          "PROVINCIAL RIONEGRINO": 3,
+          "AL.FTE.VANG. FED.- DEM.CRIST.": 3,
+          "UCR": 3,
           "AL.DEMOC.SOCIALISTA": 2,
-          "PACTO AUTON. LIBERAL": 2,
           "CONF.  NACIONAL DE CENTRO": 2,
-          "PARA LA DEM. SOCIAL": 2,
           "CONSERVADOR POPULAR": 2,
-          "MOV. NACIONAL": 1,
-          "AL. DEM. SOCIALISTA": 1,
-          "AL. AGRUP.VEC. UNION POP.FUEG.": 1,
-          "VANGUARDIA FEDERAL": 1,
-          "CONF. NACIONAL DE CENTRO": 1,
-          "AL DEMOCRATA SOC.": 1,
-          "AL. DEMO. SOCIALISTA": 1,
-          "AL. DEMOCRATA SOC.": 1,
+          "PARA LA DEM. SOCIAL": 2,
+          "PACTO AUTON. LIBERAL": 2,
           "AL. DEMOCRATA SOCIALISTA": 1,
-          "AL. DEM. PROGRESISTA": 1
+          "AL. DEM. SOCIALISTA": 1,
+          "AL. DEM. PROGRESISTA": 1,
+          "CONF. NACIONAL DE CENTRO": 1,
+          "MOV. NACIONAL": 1,
+          "AL DEMOCRATA SOC.": 1,
+          "VANGUARDIA FEDERAL": 1,
+          "AL. AGRUP.VEC. UNION POP.FUEG.": 1,
+          "AL. DEMO. SOCIALISTA": 1,
+          "AL. DEMOCRATA SOC.": 1
         }
       ],
       [
@@ -1196,22 +1049,6 @@
     [
       "11",
       11
-    ]
-  ],
-  [
-    "change",
-    "variables.votes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.votes.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1864,26 +1701,10 @@
   ],
   [
     "change",
-    "variables.voteSh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.voteSh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.voteSh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2527,22 +2348,6 @@
     ]
   ],
   [
-    "change",
-    "variables.seats.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.seats.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.seats",
     [
@@ -3155,22 +2960,6 @@
     ]
   ],
   [
-    "change",
-    "variables.partyPJ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyPJ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.partyPJ",
     [
@@ -3400,22 +3189,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.partyUCR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyUCR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3651,22 +3424,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party3rd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party3rd.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party3rd",
     [
@@ -3853,82 +3610,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:38",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "district": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elType": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "list": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "votes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "voteSh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seats": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyPJ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyUCR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party3rd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2250
-      ],
-      [
-        "variableCount",
-        5
-      ],
-      [
-        "dataSource",
-        {
-          "name": "29375_FederalEmployment_1969_2013.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 66954
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "AK",
       [
-        "UT",
+        "WI",
+        "MA",
+        "NJ",
         "CT",
-        "PA",
-        "NH",
-        "VA"
+        "UT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "UT",
+          "WI",
+          "MA",
+          "NJ",
           "CT",
-          "PA",
-          "NH",
-          "VA"
+          "UT"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "HI": 45,
-          "IL": 45,
-          "AK": 45,
-          "CO": 45,
-          "DE": 45,
-          "IA": 45,
-          "KS": 45,
-          "MA": 45,
-          "AZ": 45,
-          "NM": 45,
+          "MD": 45,
+          "GA": 45,
+          "KY": 45,
+          "FL": 45,
           "AR": 45,
-          "SD": 45,
-          "NY": 45,
-          "MN": 45,
-          "ID": 45,
-          "WY": 45,
+          "TN": 45,
+          "NE": 45,
+          "NV": 45,
+          "RI": 45,
+          "ME": 45,
+          "CO": 45,
+          "HI": 45,
+          "AL": 45,
+          "MT": 45,
+          "NM": 45,
           "MI": 45,
           "MO": 45,
-          "MD": 45,
-          "RI": 45,
-          "OH": 45,
-          "OK": 45,
-          "NV": 45,
-          "IN": 45,
           "NC": 45,
-          "NE": 45,
-          "FL": 45,
-          "NJ": 45,
-          "GA": 45,
-          "TN": 45,
-          "KY": 45,
-          "OR": 45,
-          "LA": 45,
-          "SC": 45,
-          "WA": 45,
           "ND": 45,
-          "ME": 45,
-          "CA": 45,
-          "WV": 45,
-          "MT": 45,
-          "VT": 45,
-          "AL": 45,
-          "WI": 45,
+          "OR": 45,
+          "DE": 45,
+          "LA": 45,
           "MS": 45,
-          "TX": 45,
+          "WV": 45,
+          "NY": 45,
           "VA": 45,
-          "NH": 45,
+          "OH": 45,
           "PA": 45,
+          "ID": 45,
+          "TX": 45,
+          "KS": 45,
+          "IA": 45,
+          "MN": 45,
+          "WY": 45,
+          "AZ": 45,
+          "OK": 45,
+          "AK": 45,
+          "CA": 45,
+          "WA": 45,
+          "IL": 45,
+          "IN": 45,
+          "SC": 45,
+          "SD": 45,
+          "NH": 45,
+          "VT": 45,
+          "UT": 45,
           "CT": 45,
-          "UT": 45
+          "NJ": 45,
+          "MA": 45,
+          "WI": 45
         }
       ],
       [
@@ -444,22 +345,6 @@
     [
       "1969",
       1969
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1090,22 +975,6 @@
     [
       "3755",
       3755
-    ]
-  ],
-  [
-    "change",
-    "variables.fedciv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fedciv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1753,22 +1622,6 @@
     ]
   ],
   [
-    "change",
-    "variables.military.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.military.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.military",
     [
@@ -2413,22 +2266,6 @@
     ]
   ],
   [
-    "change",
-    "variables.employment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.employment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.employment",
     [
@@ -3023,57 +2860,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:12",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fedciv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "military": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

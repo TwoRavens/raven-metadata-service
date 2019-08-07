@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        13850
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HG0YSS_Denmark (2015).tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 859207
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.pid.median",
     [
@@ -126,22 +43,6 @@
     [
       "1101098",
       1101098
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -789,22 +690,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Party.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Party",
     [
@@ -1063,27 +948,11 @@
       "Socialdemokratiet",
       [
         "Det Konservative Folkeparti",
-        "Kristendemokraterne",
-        "Venstre",
         "Socialistisk Folkeparti",
-        "Liberal Alliance"
+        "Venstre",
+        "Radikale Venstre",
+        "Kristendemokraterne"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.partyname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1118,10 +987,10 @@
         "fewestValues",
         [
           "Det Konservative Folkeparti",
-          "Kristendemokraterne",
-          "Venstre",
           "Socialistisk Folkeparti",
-          "Liberal Alliance"
+          "Venstre",
+          "Radikale Venstre",
+          "Kristendemokraterne"
         ]
       ],
       [
@@ -1147,15 +1016,15 @@
       [
         "plotValues",
         {
+          "Dansk Folkeparti": 1385,
           "Enhedslisten": 1385,
           "Alternativet": 1385,
-          "Radikale Venstre": 1385,
-          "Dansk Folkeparti": 1385,
           "Socialdemokratiet": 1385,
           "Liberal Alliance": 1385,
-          "Socialistisk Folkeparti": 1385,
-          "Venstre": 1385,
           "Kristendemokraterne": 1385,
+          "Radikale Venstre": 1385,
+          "Venstre": 1385,
+          "Socialistisk Folkeparti": 1385,
           "Det Konservative Folkeparti": 1385
         }
       ],
@@ -1334,22 +1203,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Resp_attribution.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Resp_attribution.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1625,22 +1478,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Prime_minister.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Prime_minister.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Prime_minister",
     [
@@ -1880,22 +1717,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Cabinet.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Cabinet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2141,22 +1962,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Support.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Support.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Support",
     [
@@ -2396,22 +2201,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Opposition.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Opposition.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2657,22 +2446,6 @@
     ]
   ],
   [
-    "change",
-    "variables.No_seats.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.No_seats.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.No_seats",
     [
@@ -2915,22 +2688,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Dont_know.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Dont_know.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Dont_know",
     [
@@ -3127,82 +2884,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:50",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "pid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Resp_attribution": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Prime_minister": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Cabinet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Support": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Opposition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "No_seats": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Dont_know": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

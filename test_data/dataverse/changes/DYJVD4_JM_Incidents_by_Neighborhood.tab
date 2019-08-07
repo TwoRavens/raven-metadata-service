@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        79
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "DYJVD4_JM_Incidents_by_Neighborhood.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1762
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.neighnum.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.neighnum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.neighnum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.neighberhoodname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.neighberhoodname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.neighberhoodname",
     [
@@ -799,11 +684,11 @@
       [
         "fewestValues",
         [
-          "Katamonim",
-          "Rehavia",
-          "Ma'alot Dafna",
-          "Ramat Sharett and Ramat Denya",
-          "Geula"
+          "Katamon",
+          "City Center",
+          "Ein Karem Hospital",
+          "Baka",
+          "Har Nof"
         ]
       ],
       [
@@ -830,83 +715,83 @@
         "plotValues",
         {
           "(unbuilt)": 2,
-          "Ma'alot Dafna": 1,
-          "Talpiot": 1,
-          "Givat Shaul industrial Zone": 1,
-          "Mount Scopus": 1,
           "Givat Hamatos": 1,
-          "French's Hill": 1,
-          "Ras al-Amud": 1,
-          "Ramat Hadassah (unbuilt)": 1,
-          "German Colony": 1,
-          "Neve Yaaqov": 1,
-          "Ramat Eshkol": 1,
-          "Muslim Quarter": 1,
-          "Teddy Stadium, Zoo": 1,
-          "Givat Mordechai": 1,
-          "Kiryat Hayovel": 1,
-          "Baka": 1,
-          "Ramot Haredi": 1,
-          "Malha": 1,
-          "Romema": 1,
-          "Har Nof": 1,
-          "Mea Shearim": 1,
-          "Bayit VeGan": 1,
-          "Ein Lavan": 1,
-          "Lavan Ridge": 1,
-          "Issawiya": 1,
-          "Yefeh Nof": 1,
-          "Keryat Hale'om": 1,
-          "Nachlaot": 1,
-          "Gilo": 1,
-          "Herzl Mount": 1,
-          "Shalmon Mount": 1,
+          "Musrara": 1,
+          "Beit Safafa": 1,
+          "Abu Tor": 1,
           "Givat Shaul": 1,
-          "Shuafat": 1,
-          "Beit Hanina": 1,
-          "Katamon": 1,
+          "Kiryat Hayovel": 1,
           "Katamonim": 1,
-          "Kiryat Moshe": 1,
-          "Jabel Mukaber": 1,
-          "Sheikh Jarrah": 1,
-          "Bab A zahara": 1,
-          "Sur Baher, Um Tuba": 1,
-          "Geula": 1,
-          "Motza": 1,
-          "Sanhedria": 1,
+          "Shuafat": 1,
+          "Ein Lavan": 1,
+          "Sharafat": 1,
+          "Rehavia": 1,
           "Atarot, Kafr 'Aqab, Industrial Zone": 1,
-          "City Center": 1,
-          "Talpiot Industrial Zone": 1,
-          "Mekor Baruch": 1,
-          "Talbiya": 1,
+          "Bab A zahara": 1,
+          "Kiryat Mennahem": 1,
+          "Keryat Hale'om": 1,
+          "Gilo": 1,
+          "Har Homa": 1,
+          "Ramat Shlomo": 1,
+          "Ma'alot Dafna": 1,
+          "A-Tur": 1,
+          "Har Hotzvim": 1,
+          "Lifta": 1,
+          "Kiryat Moshe": 1,
+          "Neve Yaaqov": 1,
+          "Christian Quarter": 1,
+          "Givat Mordechai": 1,
+          "Geula": 1,
           "Nayot": 1,
           "Shmuel Hanavi": 1,
-          "Wadi Joz": 1,
-          "Musrara": 1,
-          "Ramat Shlomo": 1,
-          "Har Homa": 1,
-          "Ein Karem": 1,
-          "Pisgat Ze'ev": 1,
-          "Lifta": 1,
-          "Ramot Alon": 1,
-          "Jewish Quarter": 1,
-          "Rehavia": 1,
-          "Givat Ram": 1,
-          "Kiryat Mennahem": 1,
+          "Armenian Quarter": 1,
           "Um Lisun": 1,
-          "Beit Safafa": 1,
-          "A-Tur": 1,
+          "East Talpiot": 1,
+          "Jewish Quarter": 1,
+          "Sheikh Jarrah": 1,
+          "Beit Hanina": 1,
+          "Givat Ram": 1,
+          "Wadi Joz": 1,
+          "Lavan Ridge": 1,
+          "Ramot Haredi": 1,
+          "Talbiya": 1,
+          "Motza": 1,
+          "German Colony": 1,
+          "Ramat Hadassah (unbuilt)": 1,
+          "Jabel Mukaber": 1,
+          "Ras al-Amud": 1,
+          "Sur Baher, Um Tuba": 1,
+          "French's Hill": 1,
+          "Teddy Stadium, Zoo": 1,
+          "Mount Scopus": 1,
+          "Ramat Eshkol": 1,
+          "Talpiot": 1,
+          "Givat Massuah": 1,
+          "Issawiya": 1,
+          "Romema": 1,
+          "Mea Shearim": 1,
+          "Yefeh Nof": 1,
+          "Talpiot Industrial Zone": 1,
+          "Shalmon Mount": 1,
+          "Ramat Sharett and Ramat Denya": 1,
           "Silwan": 1,
           "Beit Hakerem": 1,
-          "Abu Tor": 1,
-          "Armenian Quarter": 1,
-          "Har Hotzvim": 1,
-          "Christian Quarter": 1,
-          "Sharafat": 1,
-          "East Talpiot": 1,
+          "Baka": 1,
+          "Sanhedria": 1,
+          "Givat Shaul industrial Zone": 1,
+          "Bayit VeGan": 1,
+          "Ramot Alon": 1,
+          "Malha": 1,
+          "Mekor Baruch": 1,
+          "Herzl Mount": 1,
+          "Ein Karem": 1,
+          "Nachlaot": 1,
+          "Muslim Quarter": 1,
           "Ein Karem Hospital": 1,
-          "Ramat Sharett and Ramat Denya": 1,
-          "Givat Massuah": 1
+          "Pisgat Ze'ev": 1,
+          "Har Nof": 1,
+          "City Center": 1,
+          "Katamon": 1
         }
       ],
       [
@@ -1152,22 +1037,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.incidents200104.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incidents200104.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1747,22 +1616,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incidents200509.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incidents200509.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incidents200509",
     [
@@ -2285,52 +2138,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:52",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "neighnum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "neighberhoodname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incidents200104": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incidents200509": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        16
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "5HEB4I_commitment_figure3.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1036
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.group.median",
     [
@@ -125,22 +42,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.group.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -364,25 +265,9 @@
     [
       "positive",
       [
-        "negative",
-        "positive"
+        "positive",
+        "negative"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.commitment.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.commitment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -416,8 +301,8 @@
       [
         "fewestValues",
         [
-          "negative",
-          "positive"
+          "positive",
+          "negative"
         ]
       ],
       [
@@ -443,8 +328,8 @@
       [
         "plotValues",
         {
-          "positive": 8,
-          "negative": 8
+          "negative": 8,
+          "positive": 8
         }
       ],
       [
@@ -580,27 +465,11 @@
     [
       "competence",
       [
-        "credibility",
         "competence",
+        "reputation",
         "morality",
-        "reputation"
+        "credibility"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.outcome.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.outcome.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -634,10 +503,10 @@
       [
         "fewestValues",
         [
-          "credibility",
           "competence",
+          "reputation",
           "morality",
-          "reputation"
+          "credibility"
         ]
       ],
       [
@@ -663,10 +532,10 @@
       [
         "plotValues",
         {
-          "reputation": 4,
+          "credibility": 4,
           "morality": 4,
-          "competence": 4,
-          "credibility": 4
+          "reputation": 4,
+          "competence": 4
         }
       ],
       [
@@ -804,25 +673,9 @@
     [
       "no",
       [
-        "yes",
-        "no"
+        "no",
+        "yes"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.newinfo.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.newinfo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -856,8 +709,8 @@
       [
         "fewestValues",
         [
-          "yes",
-          "no"
+          "no",
+          "yes"
         ]
       ],
       [
@@ -883,8 +736,8 @@
       [
         "plotValues",
         {
-          "no": 8,
-          "yes": 8
+          "yes": 8,
+          "no": 8
         }
       ],
       [
@@ -1070,26 +923,10 @@
   ],
   [
     "change",
-    "variables.percent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.percent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.percent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1746,26 +1583,10 @@
   ],
   [
     "change",
-    "variables.lowerci.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lowerci.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lowerci.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2422,26 +2243,10 @@
   ],
   [
     "change",
-    "variables.upperci.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.upperci.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.upperci.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3039,67 +2844,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:05",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "commitment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "outcome": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "newinfo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "percent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lowerci": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "upperci": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

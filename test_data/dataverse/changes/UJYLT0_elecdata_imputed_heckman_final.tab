@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        177
-      ],
-      [
-        "variableCount",
-        15
-      ],
-      [
-        "dataSource",
-        {
-          "name": "UJYLT0_elecdata_imputed_heckman_final.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 15291
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccode.median",
     [
@@ -122,22 +39,6 @@
     [
       "70",
       70
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -749,22 +650,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -795,11 +680,11 @@
       [
         "fewestValues",
         [
+          "Malawi",
           "Bangladesh",
-          "Niger",
+          "Guyana",
           "Nicaragua",
-          "Congo (Brazzaville)",
-          "Nigeria"
+          "South Africa"
         ]
       ],
       [
@@ -827,54 +712,54 @@
         {
           "Iran": 9,
           "Togo": 8,
+          "Zimbabwe": 6,
+          "Egypt": 6,
+          "Mauritania": 6,
           "Belarus": 6,
           "Gabon": 6,
-          "Egypt": 6,
           "Algeria": 6,
-          "Mauritania": 6,
-          "Zimbabwe": 6,
           "Djibouti": 5,
-          "Cameroon": 5,
-          "Tajikistan": 5,
-          "Burkina Faso": 5,
           "Singapore": 5,
-          "Kazakhstan": 5,
-          "Armenia": 5,
+          "Cameroon": 5,
+          "Burkina Faso": 5,
+          "Tajikistan": 5,
           "Azerbaijan": 5,
-          "Gambia, The": 4,
+          "Armenia": 5,
+          "Kazakhstan": 5,
           "Mexico": 4,
+          "Gambia, The": 4,
           "Morocco": 4,
-          "Yemen": 4,
           "Chad": 4,
+          "Jordan": 4,
           "Kuwait": 4,
           "Malaysia": 4,
           "Guinea": 4,
-          "Jordan": 4,
-          "Tunisia": 3,
-          "Indonesia": 3,
+          "Yemen": 4,
           "Kenya": 3,
-          "Tanzania": 3,
           "Kyrgyzstan": 3,
+          "Indonesia": 3,
           "Serbia": 3,
+          "Tunisia": 3,
           "Senegal": 3,
-          "Cote d'Ivoire": 2,
-          "Russia": 2,
+          "Tanzania": 3,
           "Paraguay": 2,
-          "Zambia": 2,
-          "Peru": 2,
-          "Ethiopia": 2,
-          "Madagascar": 2,
           "Cambodia": 2,
+          "Russia": 2,
+          "Madagascar": 2,
+          "Zambia": 2,
           "Uganda": 2,
+          "Peru": 2,
+          "Cote d'Ivoire": 2,
+          "Ethiopia": 2,
+          "Niger": 1,
+          "Bangladesh": 1,
+          "Nigeria": 1,
+          "Nicaragua": 1,
           "Guyana": 1,
-          "South Africa": 1,
           "Ghana": 1,
           "Malawi": 1,
-          "Nigeria": 1,
-          "Congo (Brazzaville)": 1,
-          "Nicaragua": 1,
-          "Niger": 1,
-          "Bangladesh": 1
+          "South Africa": 1,
+          "Congo (Brazzaville)": 1
         }
       ],
       [
@@ -1092,22 +977,6 @@
     [
       "1990",
       1990
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1695,26 +1564,10 @@
   ],
   [
     "change",
-    "variables.gdpgrowth_lag1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpgrowth_lag1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpgrowth_lag1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2371,26 +2224,10 @@
   ],
   [
     "change",
-    "variables.loggdppc_lag1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.loggdppc_lag1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.loggdppc_lag1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3034,22 +2871,6 @@
     ]
   ],
   [
-    "change",
-    "variables.chiefelec.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.chiefelec.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.chiefelec",
     [
@@ -3292,22 +3113,6 @@
     ]
   ],
   [
-    "change",
-    "variables.hm_incrun_fill.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.hm_incrun_fill.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.hm_incrun_fill",
     [
@@ -3547,22 +3352,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.americas.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.americas.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3817,26 +3606,10 @@
   ],
   [
     "change",
-    "variables.fpp01.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fpp01.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fpp01.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4480,22 +4253,6 @@
     ]
   ],
   [
-    "change",
-    "variables.opp_coalitiontotal.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.opp_coalitiontotal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.opp_coalitiontotal",
     [
@@ -4735,22 +4492,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.extcondpre.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.extcondpre.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4996,22 +4737,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ed_trans.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ed_trans.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ed_trans",
     [
@@ -5251,22 +4976,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.cee.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cee.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5512,22 +5221,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gwf_compauth_lag1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gwf_compauth_lag1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gwf_compauth_lag1",
     [
@@ -5768,22 +5461,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.eleccount_auth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eleccount_auth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6317,107 +5994,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:08:49",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpgrowth_lag1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "loggdppc_lag1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "chiefelec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hm_incrun_fill": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "americas": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fpp01": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "opp_coalitiontotal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "extcondpre": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ed_trans": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cee": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gwf_compauth_lag1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eleccount_auth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

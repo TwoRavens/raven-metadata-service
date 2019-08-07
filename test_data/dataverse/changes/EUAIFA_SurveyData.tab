@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2000
-      ],
-      [
-        "variableCount",
-        14
-      ],
-      [
-        "dataSource",
-        {
-          "name": "EUAIFA_SurveyData.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 182516
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Municipality.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Banja Luka"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Municipality.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Municipality.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -168,8 +69,8 @@
           "Banja Luka": 183,
           "Zenica": 139,
           "Novi Grad Sarajevo": 130,
-          "Mostar": 122,
           "Tuzla": 122,
+          "Mostar": 122,
           "Doboj": 94,
           "Bijeljina": 93,
           "Brcko": 84,
@@ -177,8 +78,8 @@
           "Zvornik": 70,
           "Bihac": 68,
           "Sanski Most": 59,
-          "Bosanska Gradiska": 57,
           "Kakanj": 57,
+          "Bosanska Gradiska": 57,
           "Derventa": 54,
           "Travnik": 49,
           "Stari Grad Sarajevo": 48,
@@ -188,8 +89,8 @@
           "Livno": 39,
           "Srebrenica": 35,
           "Bratunac": 32,
-          "Novi Travnik": 29,
           "Tomislavgrad": 29,
+          "Novi Travnik": 29,
           "Siroki Brijeg": 26,
           "Gornji Vakuf": 24
         }
@@ -386,22 +287,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Ethnic_Friends.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Ethnic_Friends.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -665,22 +550,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Closest_Friends.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Closest_Friends.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Closest_Friends",
     [
@@ -941,22 +810,6 @@
     ]
   ],
   [
-    "change",
-    "variables.National_Trust.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.National_Trust.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.National_Trust",
     [
@@ -1214,22 +1067,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Representation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Representation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1502,26 +1339,10 @@
   ],
   [
     "change",
-    "variables.Log_Casualty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Log_Casualty.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Log_Casualty.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2161,22 +1982,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Gender",
     [
@@ -2416,22 +2221,6 @@
     [
       "17",
       17.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3080,26 +2869,10 @@
   ],
   [
     "change",
-    "variables.HHI_SB.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HHI_SB.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HHI_SB.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3748,26 +3521,10 @@
   ],
   [
     "change",
-    "variables.HHI_CB.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HHI_CB.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HHI_CB.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4416,26 +4173,10 @@
   ],
   [
     "change",
-    "variables.HHI_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HHI_SC.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HHI_SC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5084,26 +4825,10 @@
   ],
   [
     "change",
-    "variables.Pop_Density.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Pop_Density.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Pop_Density.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5752,26 +5477,10 @@
   ],
   [
     "change",
-    "variables.Income_PC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Income_PC.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Income_PC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6411,22 +6120,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Violence.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Violence.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Violence",
     [
@@ -6623,102 +6316,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:29:43",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Municipality": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ethnic_Friends": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Closest_Friends": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "National_Trust": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Representation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Log_Casualty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HHI_SB": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HHI_CB": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HHI_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pop_Density": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Income_PC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Violence": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

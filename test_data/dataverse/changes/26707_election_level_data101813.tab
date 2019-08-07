@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        148
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26707_election_level_data101813.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 7877
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.median",
     [
@@ -122,22 +39,6 @@
     [
       "11",
       11.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -702,22 +603,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countryname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countryname",
     [
@@ -749,9 +634,9 @@
         "fewestValues",
         [
           "Czech Republic",
+          "France",
           "Italy",
-          "Lithuania",
-          "France"
+          "Lithuania"
         ]
       ],
       [
@@ -779,30 +664,30 @@
         {
           "Greece": 8,
           "Iceland": 7,
-          "Austria": 7,
           "Denmark": 7,
-          "Belgium": 6,
-          "Bulgaria": 6,
-          "Sweden": 6,
+          "Austria": 7,
           "Ireland": 6,
           "Netherlands": 6,
-          "Germany": 6,
+          "Sweden": 6,
           "Finland": 6,
+          "Belgium": 6,
+          "Bulgaria": 6,
+          "Germany": 6,
           "Portugal": 6,
-          "Norway": 5,
-          "Switzerland": 5,
           "Hungary": 5,
           "Spain": 5,
+          "Latvia": 5,
+          "Switzerland": 5,
+          "Slovenia": 5,
+          "Poland": 5,
           "Romania": 5,
+          "Great Britain": 5,
+          "Norway": 5,
           "Estonia": 5,
           "Slovakia": 5,
-          "Poland": 5,
-          "Slovenia": 5,
-          "Great Britain": 5,
-          "Latvia": 5,
-          "France": 4,
           "Lithuania": 4,
           "Italy": 4,
+          "France": 4,
           "Czech Republic": 4
         }
       ],
@@ -998,22 +883,6 @@
     [
       "1988",
       1988.0
-    ]
-  ],
-  [
-    "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1601,22 +1470,6 @@
     ]
   ],
   [
-    "change",
-    "variables.t_1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.t_1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.t_1",
     [
@@ -2197,22 +2050,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Region_1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Region_1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Region_1",
     [
@@ -2452,22 +2289,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.EIP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.EIP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2783,26 +2604,10 @@
   ],
   [
     "change",
-    "variables.EIP_w.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.EIP_w.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.EIP_w.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3455,26 +3260,10 @@
   ],
   [
     "change",
-    "variables.EIP_n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.EIP_n.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.EIP_n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4127,26 +3916,10 @@
   ],
   [
     "change",
-    "variables.percent_changing.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.percent_changing.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.percent_changing.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4744,77 +4517,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:13",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Region_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EIP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EIP_w": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EIP_n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "percent_changing": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        62
-      ],
-      [
-        "variableCount",
-        27
-      ],
-      [
-        "dataSource",
-        {
-          "name": "VT4KJA_MNCs&Corruption.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 14452
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.province.mode",
     [
       "Anhui",
       [
-        "Shaanxi",
         "Liaoning",
         "Tibet",
-        "Hubei",
-        "Guizhou"
+        "Jiangxi",
+        "Hainan",
+        "Tianjin"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.province.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.province.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Shaanxi",
           "Liaoning",
           "Tibet",
-          "Hubei",
-          "Guizhou"
+          "Jiangxi",
+          "Hainan",
+          "Tianjin"
         ]
       ],
       [
@@ -173,37 +74,37 @@
       [
         "plotValues",
         {
-          "Guangdong": 2,
-          "Inner Mongolia": 2,
-          "Jiangxi": 2,
-          "Chongqing": 2,
           "Sichuan": 2,
-          "Heilongjiang": 2,
-          "Yunnan": 2,
-          "Zhejiang": 2,
-          "Guangxi": 2,
-          "Anhui": 2,
-          "Jilin": 2,
-          "Beijing": 2,
-          "Hebei": 2,
-          "Gansu": 2,
-          "Shanxi": 2,
           "Shanghai": 2,
+          "Zhejiang": 2,
+          "Hebei": 2,
           "Fujian": 2,
-          "Henan": 2,
-          "Shandong": 2,
-          "Ningxia": 2,
-          "Hainan": 2,
-          "Xinjiang": 2,
-          "Qinghai": 2,
+          "Jilin": 2,
+          "Anhui": 2,
+          "Gansu": 2,
           "Jiangsu": 2,
-          "Hunan": 2,
-          "Tianjin": 2,
+          "Heilongjiang": 2,
+          "Shandong": 2,
+          "Beijing": 2,
           "Guizhou": 2,
+          "Hunan": 2,
+          "Guangdong": 2,
+          "Yunnan": 2,
+          "Henan": 2,
           "Hubei": 2,
+          "Shaanxi": 2,
+          "Xinjiang": 2,
+          "Shanxi": 2,
+          "Inner Mongolia": 2,
+          "Qinghai": 2,
+          "Guangxi": 2,
+          "Chongqing": 2,
+          "Ningxia": 2,
+          "Tianjin": 2,
+          "Hainan": 2,
+          "Jiangxi": 2,
           "Tibet": 2,
-          "Liaoning": 2,
-          "Shaanxi": 2
+          "Liaoning": 2
         }
       ],
       [
@@ -403,22 +304,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.timeperiod.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.timeperiod.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -678,26 +563,10 @@
   ],
   [
     "change",
-    "variables.corruppercep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.corruppercep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.corruppercep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1351,26 +1220,10 @@
   ],
   [
     "change",
-    "variables.corrupexp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.corrupexp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.corrupexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2027,26 +1880,10 @@
   ],
   [
     "change",
-    "variables.pubempratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pubempratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pubempratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2703,26 +2540,10 @@
   ],
   [
     "change",
-    "variables.pwratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pwratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pwratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3379,26 +3200,10 @@
   ],
   [
     "change",
-    "variables.female.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.female.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4051,26 +3856,10 @@
   ],
   [
     "change",
-    "variables.BureauIntegr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.BureauIntegr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.BureauIntegr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4727,26 +4516,10 @@
   ],
   [
     "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.population.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5403,26 +5176,10 @@
   ],
   [
     "change",
-    "variables.gdp9302.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp9302.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp9302.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6079,26 +5836,10 @@
   ],
   [
     "change",
-    "variables.gdp6978.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp6978.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp6978.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6752,26 +6493,10 @@
   ],
   [
     "change",
-    "variables.TrustCourts.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TrustCourts.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TrustCourts.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7428,26 +7153,10 @@
   ],
   [
     "change",
-    "variables.MNC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MNC.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MNC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8104,26 +7813,10 @@
   ],
   [
     "change",
-    "variables.lfdistockgdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lfdistockgdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lfdistockgdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8780,26 +8473,10 @@
   ],
   [
     "change",
-    "variables.lgdpcap9302.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgdpcap9302.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgdpcap9302.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9452,26 +9129,10 @@
   ],
   [
     "change",
-    "variables.lgdpcap6978.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgdpcap6978.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgdpcap6978.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10128,26 +9789,10 @@
   ],
   [
     "change",
-    "variables.leduc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.leduc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.leduc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10804,26 +10449,10 @@
   ],
   [
     "change",
-    "variables.lgovtexp9302.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lgovtexp9302.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lgovtexp9302.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11480,26 +11109,10 @@
   ],
   [
     "change",
-    "variables.corruption3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.corruption3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.corruption3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12156,26 +11769,10 @@
   ],
   [
     "change",
-    "variables.corruption2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.corruption2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.corruption2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12819,22 +12416,6 @@
     ]
   ],
   [
-    "change",
-    "variables.minicipalities.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.minicipalities.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.minicipalities",
     [
@@ -13090,26 +12671,10 @@
   ],
   [
     "change",
-    "variables.corruption1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.corruption1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.corruption1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13754,22 +13319,6 @@
     ]
   ],
   [
-    "change",
-    "variables.time.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.time.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.time",
     [
@@ -14026,26 +13575,10 @@
   ],
   [
     "change",
-    "variables.lwdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lwdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lwdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14702,26 +14235,10 @@
   ],
   [
     "change",
-    "variables.HMTfdi_gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HMTfdi_gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HMTfdi_gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15378,26 +14895,10 @@
   ],
   [
     "change",
-    "variables.NonHMTfdi_gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.NonHMTfdi_gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.NonHMTfdi_gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16054,26 +15555,10 @@
   ],
   [
     "change",
-    "variables.MNC2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MNC2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MNC2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16671,167 +16156,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:30",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "province": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timeperiod": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "corruppercep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "corrupexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pubempratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pwratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BureauIntegr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp9302": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp6978": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TrustCourts": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MNC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lfdistockgdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgdpcap9302": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgdpcap6978": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leduc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lgovtexp9302": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "corruption3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "corruption2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "minicipalities": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "corruption1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lwdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HMTfdi_gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NonHMTfdi_gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MNC2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

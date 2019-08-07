@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1176
-      ],
-      [
-        "variableCount",
-        80
-      ],
-      [
-        "dataSource",
-        {
-          "name": "GDZTK8_dime_aggregate.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 642221
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "AK",
       [
-        "NJ",
+        "PA",
+        "ME",
         "RI",
-        "TX",
-        "NY",
-        "VA"
+        "AK",
+        "NV"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "NJ",
+          "PA",
+          "ME",
           "RI",
-          "TX",
-          "NY",
-          "VA"
+          "AK",
+          "NV"
         ]
       ],
       [
@@ -173,55 +74,55 @@
       [
         "plotValues",
         {
-          "LA": 24,
-          "ND": 24,
-          "OR": 24,
-          "IA": 24,
-          "MN": 24,
-          "UT": 24,
-          "WY": 24,
-          "ID": 24,
-          "AZ": 24,
+          "OH": 24,
+          "CO": 24,
+          "GA": 24,
           "AL": 24,
-          "KS": 24,
           "NM": 24,
           "MI": 24,
-          "IN": 24,
-          "AK": 24,
-          "VT": 24,
-          "WA": 24,
-          "SC": 24,
-          "PA": 24,
-          "CT": 24,
-          "NH": 24,
-          "CA": 24,
-          "ME": 24,
-          "IL": 24,
-          "WV": 24,
-          "NC": 24,
-          "MO": 24,
-          "FL": 24,
-          "MA": 24,
-          "MT": 24,
-          "NV": 24,
-          "OH": 24,
-          "MD": 24,
-          "GA": 24,
-          "KY": 24,
-          "MS": 24,
-          "CO": 24,
-          "TN": 24,
-          "OK": 24,
-          "WI": 24,
           "SD": 24,
-          "HI": 24,
+          "NH": 24,
+          "MO": 24,
+          "IL": 24,
+          "ND": 24,
+          "OR": 24,
           "DE": 24,
-          "AR": 24,
+          "VT": 24,
+          "LA": 24,
+          "UT": 24,
+          "MS": 24,
+          "CT": 24,
+          "NJ": 24,
+          "WV": 24,
+          "MA": 24,
+          "IN": 24,
+          "WI": 24,
+          "HI": 24,
+          "WA": 24,
+          "MD": 24,
+          "CA": 24,
+          "MT": 24,
+          "ID": 24,
+          "NC": 24,
           "VA": 24,
+          "KS": 24,
+          "IA": 24,
+          "SC": 24,
           "NY": 24,
+          "KY": 24,
+          "MN": 24,
+          "FL": 24,
           "TX": 24,
+          "AR": 24,
+          "WY": 24,
+          "TN": 24,
+          "AZ": 24,
+          "OK": 24,
+          "NV": 24,
+          "AK": 24,
           "RI": 24,
-          "NJ": 24
+          "ME": 24,
+          "PA": 24
         }
       ],
       [
@@ -442,22 +343,6 @@
     [
       "1993",
       1993
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1050,22 +935,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.X.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.X.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1718,26 +1587,10 @@
   ],
   [
     "change",
-    "variables.gov_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gov_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1998,26 +1851,10 @@
   ],
   [
     "change",
-    "variables.hs_abs_diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hs_abs_diff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hs_abs_diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2670,26 +2507,10 @@
   ],
   [
     "change",
-    "variables.sen_abs_diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sen_abs_diff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sen_abs_diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3333,22 +3154,6 @@
     ]
   ],
   [
-    "change",
-    "variables.divided_gov.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.divided_gov.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.divided_gov",
     [
@@ -3600,26 +3405,10 @@
   ],
   [
     "change",
-    "variables.gini.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gini.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gini.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4276,26 +4065,10 @@
   ],
   [
     "change",
-    "variables.gop_pct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gop_pct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gop_pct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4948,26 +4721,10 @@
   ],
   [
     "change",
-    "variables.unemploy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemploy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemploy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5624,26 +5381,10 @@
   ],
   [
     "change",
-    "variables.foreign_born_pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.foreign_born_pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.foreign_born_pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6284,22 +6025,6 @@
     [
       "473081",
       473081
-    ]
-  ],
-  [
-    "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6952,26 +6677,10 @@
   ],
   [
     "change",
-    "variables.pc_income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pc_income.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pc_income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7628,26 +7337,10 @@
   ],
   [
     "change",
-    "variables.bowen_legprof_firstdim.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bowen_legprof_firstdim.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bowen_legprof_firstdim.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8304,26 +7997,10 @@
   ],
   [
     "change",
-    "variables.bowen_legprof_seconddim.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bowen_legprof_seconddim.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bowen_legprof_seconddim.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8976,26 +8653,10 @@
   ],
   [
     "change",
-    "variables.sess_length.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sess_length.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sess_length.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9648,26 +9309,10 @@
   ],
   [
     "change",
-    "variables.leg_realsalary.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.leg_realsalary.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.leg_realsalary.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10324,26 +9969,10 @@
   ],
   [
     "change",
-    "variables.leg_expend.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.leg_expend.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.leg_expend.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10998,26 +10627,10 @@
   ],
   [
     "change",
-    "variables.squire_2015.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.squire_2015.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.squire_2015.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11670,26 +11283,10 @@
   ],
   [
     "change",
-    "variables.squire_2009.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.squire_2009.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.squire_2009.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12346,26 +11943,10 @@
   ],
   [
     "change",
-    "variables.squire_2003.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.squire_2003.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.squire_2003.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13018,26 +12599,10 @@
   ],
   [
     "change",
-    "variables.squire_1996.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.squire_1996.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.squire_1996.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13693,26 +13258,10 @@
   ],
   [
     "change",
-    "variables.squire_1986.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.squire_1986.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.squire_1986.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14369,26 +13918,10 @@
   ],
   [
     "change",
-    "variables.squire_1979.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.squire_1979.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.squire_1979.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15041,26 +14574,10 @@
   ],
   [
     "change",
-    "variables.legprofscore.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.legprofscore.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.legprofscore.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15713,26 +15230,10 @@
   ],
   [
     "change",
-    "variables.legprofscore2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.legprofscore2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.legprofscore2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16373,22 +15874,6 @@
     [
       "29",
       29.0
-    ]
-  ],
-  [
-    "change",
-    "variables.counter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.counter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17041,26 +16526,10 @@
   ],
   [
     "change",
-    "variables.dem_leg_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_leg_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_leg_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17716,26 +17185,10 @@
   ],
   [
     "change",
-    "variables.rep_leg_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_leg_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_leg_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18392,26 +17845,10 @@
   ],
   [
     "change",
-    "variables.l_diffs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.l_diffs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.l_diffs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19064,26 +18501,10 @@
   ],
   [
     "change",
-    "variables.logpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.logpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.logpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19740,26 +19161,10 @@
   ],
   [
     "change",
-    "variables.pct_fb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pct_fb.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pct_fb.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20403,22 +19808,6 @@
     ]
   ],
   [
-    "change",
-    "variables.divided_gov_1993.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.divided_gov_1993.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.divided_gov_1993",
     [
@@ -20670,26 +20059,10 @@
   ],
   [
     "change",
-    "variables.gov_party_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gov_party_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_party_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20950,26 +20323,10 @@
   ],
   [
     "change",
-    "variables.legprofscore_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.legprofscore_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.legprofscore_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21623,26 +20980,10 @@
   ],
   [
     "change",
-    "variables.hs_abs_diff_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hs_abs_diff_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hs_abs_diff_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22296,26 +21637,10 @@
   ],
   [
     "change",
-    "variables.sen_abs_diff_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sen_abs_diff_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sen_abs_diff_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22972,26 +22297,10 @@
   ],
   [
     "change",
-    "variables.logpop_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.logpop_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.logpop_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23648,26 +22957,10 @@
   ],
   [
     "change",
-    "variables.pc_income_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pc_income_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pc_income_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24320,26 +23613,10 @@
   ],
   [
     "change",
-    "variables.unemploy_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemploy_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemploy_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24996,26 +24273,10 @@
   ],
   [
     "change",
-    "variables.pct_fb_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pct_fb_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pct_fb_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25672,26 +24933,10 @@
   ],
   [
     "change",
-    "variables.gini_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gini_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gini_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26348,26 +25593,10 @@
   ],
   [
     "change",
-    "variables.leg_realsalary_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.leg_realsalary_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.leg_realsalary_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27020,26 +26249,10 @@
   ],
   [
     "change",
-    "variables.sess_length_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sess_length_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sess_length_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27696,26 +26909,10 @@
   ],
   [
     "change",
-    "variables.leg_expend_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.leg_expend_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.leg_expend_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28368,26 +27565,10 @@
   ],
   [
     "change",
-    "variables.abs_diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_diff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29040,26 +28221,10 @@
   ],
   [
     "change",
-    "variables.abs_diff_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_diff_1993.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_diff_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29712,26 +28877,10 @@
   ],
   [
     "change",
-    "variables.hou_chamber.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hou_chamber.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hou_chamber.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30385,26 +29534,10 @@
   ],
   [
     "change",
-    "variables.sen_chamber.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sen_chamber.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sen_chamber.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31058,26 +30191,10 @@
   ],
   [
     "change",
-    "variables.h_diffs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.h_diffs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.h_diffs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31730,26 +30847,10 @@
   ],
   [
     "change",
-    "variables.s_diffs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_diffs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_diffs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32402,26 +31503,10 @@
   ],
   [
     "change",
-    "variables.hou_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hou_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hou_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33076,26 +32161,10 @@
   ],
   [
     "change",
-    "variables.hou_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hou_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hou_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33749,26 +32818,10 @@
   ],
   [
     "change",
-    "variables.sen_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sen_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sen_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34421,26 +33474,10 @@
   ],
   [
     "change",
-    "variables.sen_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sen_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sen_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35047,28 +34084,12 @@
     [
       "AK",
       [
-        "NJ",
+        "PA",
+        "ME",
         "RI",
-        "TX",
-        "NY",
-        "VA"
+        "AK",
+        "NV"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.st.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.st.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35102,11 +34123,11 @@
       [
         "fewestValues",
         [
-          "NJ",
+          "PA",
+          "ME",
           "RI",
-          "TX",
-          "NY",
-          "VA"
+          "AK",
+          "NV"
         ]
       ],
       [
@@ -35132,55 +34153,55 @@
       [
         "plotValues",
         {
-          "LA": 24,
-          "ND": 24,
-          "OR": 24,
-          "IA": 24,
-          "MN": 24,
-          "UT": 24,
-          "WY": 24,
-          "ID": 24,
-          "AZ": 24,
+          "OH": 24,
+          "CO": 24,
+          "GA": 24,
           "AL": 24,
-          "KS": 24,
           "NM": 24,
           "MI": 24,
-          "IN": 24,
-          "AK": 24,
-          "VT": 24,
-          "WA": 24,
-          "SC": 24,
-          "PA": 24,
-          "CT": 24,
-          "NH": 24,
-          "CA": 24,
-          "ME": 24,
-          "IL": 24,
-          "WV": 24,
-          "NC": 24,
-          "MO": 24,
-          "FL": 24,
-          "MA": 24,
-          "MT": 24,
-          "NV": 24,
-          "OH": 24,
-          "MD": 24,
-          "GA": 24,
-          "KY": 24,
-          "MS": 24,
-          "CO": 24,
-          "TN": 24,
-          "OK": 24,
-          "WI": 24,
           "SD": 24,
-          "HI": 24,
+          "NH": 24,
+          "MO": 24,
+          "IL": 24,
+          "ND": 24,
+          "OR": 24,
           "DE": 24,
-          "AR": 24,
+          "VT": 24,
+          "LA": 24,
+          "UT": 24,
+          "MS": 24,
+          "CT": 24,
+          "NJ": 24,
+          "WV": 24,
+          "MA": 24,
+          "IN": 24,
+          "WI": 24,
+          "HI": 24,
+          "WA": 24,
+          "MD": 24,
+          "CA": 24,
+          "MT": 24,
+          "ID": 24,
+          "NC": 24,
           "VA": 24,
+          "KS": 24,
+          "IA": 24,
+          "SC": 24,
           "NY": 24,
+          "KY": 24,
+          "MN": 24,
+          "FL": 24,
           "TX": 24,
+          "AR": 24,
+          "WY": 24,
+          "TN": 24,
+          "AZ": 24,
+          "OK": 24,
+          "NV": 24,
+          "AK": 24,
           "RI": 24,
-          "NJ": 24
+          "ME": 24,
+          "PA": 24
         }
       ],
       [
@@ -35397,22 +34418,6 @@
     [
       "1996",
       1996
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limit_year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limit_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35697,22 +34702,6 @@
     ]
   ],
   [
-    "change",
-    "variables.house_term_limit.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.house_term_limit",
     [
@@ -35952,22 +34941,6 @@
     [
       "1996",
       1996
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limit_year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limit_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36252,22 +35225,6 @@
     ]
   ],
   [
-    "change",
-    "variables.senate_term_limit.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.senate_term_limit",
     [
@@ -36507,22 +35464,6 @@
     [
       "6",
       6
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limit_length.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limit_length.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36771,22 +35712,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_tl_plus.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_tl_plus.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37041,26 +35966,10 @@
   ],
   [
     "change",
-    "variables.average_term_limitedness_score.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.average_term_limitedness_score.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.average_term_limitedness_score.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37713,26 +36622,10 @@
   ],
   [
     "change",
-    "variables.house_term_limitedness_score.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.house_term_limitedness_score.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limitedness_score.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38385,26 +37278,10 @@
   ],
   [
     "change",
-    "variables.senate_term_limitedness_score.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.senate_term_limitedness_score.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limitedness_score.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39057,26 +37934,10 @@
   ],
   [
     "change",
-    "variables.term_limitedness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.term_limitedness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.term_limitedness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39725,26 +38586,10 @@
   ],
   [
     "change",
-    "variables.house_term_limitedness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.house_term_limitedness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limitedness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40393,26 +39238,10 @@
   ],
   [
     "change",
-    "variables.senate_term_limitedness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.senate_term_limitedness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limitedness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41065,26 +39894,10 @@
   ],
   [
     "change",
-    "variables.dem_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41737,26 +40550,10 @@
   ],
   [
     "change",
-    "variables.rep_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42409,26 +41206,10 @@
   ],
   [
     "change",
-    "variables.dem_h_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_h_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_h_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43082,26 +41863,10 @@
   ],
   [
     "change",
-    "variables.rep_h_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_h_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_h_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43757,26 +42522,10 @@
   ],
   [
     "change",
-    "variables.dem_s_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_s_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_s_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44429,26 +43178,10 @@
   ],
   [
     "change",
-    "variables.rep_s_median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_s_median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_s_median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45105,26 +43838,10 @@
   ],
   [
     "change",
-    "variables.polarization.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polarization.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polarization.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45777,26 +44494,10 @@
   ],
   [
     "change",
-    "variables.h_polarization.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.h_polarization.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.h_polarization.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46453,26 +45154,10 @@
   ],
   [
     "change",
-    "variables.s_polarization.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_polarization.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_polarization.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47116,22 +45801,6 @@
     ]
   ],
   [
-    "change",
-    "variables.house_term_limit2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.house_term_limit2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.house_term_limit2",
     [
@@ -47371,22 +46040,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limit2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.senate_term_limit2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -48090,432 +46743,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:57",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "X": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hs_abs_diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sen_abs_diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "divided_gov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gini": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gop_pct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemploy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "foreign_born_pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pc_income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bowen_legprof_firstdim": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bowen_legprof_seconddim": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sess_length": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leg_realsalary": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leg_expend": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "squire_2015": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "squire_2009": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "squire_2003": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "squire_1996": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "squire_1986": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "squire_1979": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legprofscore": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legprofscore2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "counter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_leg_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_leg_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "l_diffs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "logpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pct_fb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "divided_gov_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_party_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legprofscore_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hs_abs_diff_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sen_abs_diff_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "logpop_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pc_income_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemploy_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pct_fb_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gini_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leg_realsalary_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sess_length_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leg_expend_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_diff_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hou_chamber": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sen_chamber": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "h_diffs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_diffs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hou_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hou_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sen_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sen_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "st": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "house_term_limit_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "house_term_limit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate_term_limit_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate_term_limit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "house_term_limit_length": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate_tl_plus": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "average_term_limitedness_score": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "house_term_limitedness_score": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate_term_limitedness_score": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "term_limitedness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "house_term_limitedness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate_term_limitedness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_h_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_h_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_s_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_s_median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polarization": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "h_polarization": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_polarization": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "house_term_limit2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate_term_limit2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

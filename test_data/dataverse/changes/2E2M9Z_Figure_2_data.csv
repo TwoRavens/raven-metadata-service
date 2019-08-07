@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        12
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "2E2M9Z_Figure_2_data.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 1255
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.importshare_naics_simple.median",
     [
@@ -135,26 +52,10 @@
   ],
   [
     "change",
-    "variables.importshare_naics_simple.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.importshare_naics_simple.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.importshare_naics_simple.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -402,22 +303,6 @@
     ]
   ],
   [
-    "change",
-    "variables.s_naics_simple.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.s_naics_simple.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.s_naics_simple",
     [
@@ -450,8 +335,8 @@
         [
           "Discount Retailers",
           "Other Retailer",
-          "Other",
-          "Grocery Stores"
+          "Grocery Stores",
+          "Other"
         ]
       ],
       [
@@ -480,10 +365,10 @@
           "Apparel Wholesalers": 3,
           "Clothing Stores": 3,
           "Department Stores": 2,
-          "Grocery Stores": 1,
           "Other": 1,
-          "Other Retailer": 1,
-          "Discount Retailers": 1
+          "Grocery Stores": 1,
+          "Discount Retailers": 1,
+          "Other Retailer": 1
         }
       ],
       [
@@ -658,22 +543,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.flatten_naics_simple.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.flatten_naics_simple.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -884,22 +753,6 @@
       [
         "Retailers"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.s_retailer.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.s_retailer.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1142,26 +995,10 @@
   ],
   [
     "change",
-    "variables.importshare_retailer.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.importshare_retailer.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.importshare_retailer.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1404,22 +1241,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.flatten_retailer.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.flatten_retailer.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1674,26 +1495,10 @@
   ],
   [
     "change",
-    "variables.importshare_hq_region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.importshare_hq_region.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.importshare_hq_region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1945,22 +1750,6 @@
     ]
   ],
   [
-    "change",
-    "variables.flatten_hq_region.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.flatten_hq_region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.flatten_hq_region",
     [
@@ -2168,22 +1957,6 @@
       [
         "North America"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.s_hq_region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.s_hq_region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2546,82 +2319,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "importshare_naics_simple": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_naics_simple": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "flatten_naics_simple": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_retailer": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "importshare_retailer": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "flatten_retailer": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "importshare_hq_region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "flatten_hq_region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_hq_region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        68
-      ],
-      [
-        "variableCount",
-        24
-      ],
-      [
-        "dataSource",
-        {
-          "name": "AR8SLA_De Rooij et al. 2017 PSRM estimates.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 11600
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -92,35 +9,11 @@
     [
       "Black British",
       [
-        "Black British",
         "White British",
-        "East Europeans",
-        "Muslims"
+        "Muslims",
+        "Black British",
+        "East Europeans"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FIGURE1andA.1A",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FIGURE1andA.1A",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -157,8 +50,8 @@
       [
         "fewestValues",
         [
-          "Coupled",
-          "2016"
+          "2016",
+          "Coupled"
         ]
       ],
       [
@@ -184,14 +77,14 @@
       [
         "plotValues",
         {
-          "Muslims": 3,
           "East Europeans": 3,
           "White British": 3,
+          "Muslims": 3,
           "Black British": 3,
-          "2011": 2,
           "Decoupled": 2,
-          "2016": 1,
-          "Coupled": 1
+          "2011": 2,
+          "Coupled": 1,
+          "2016": 1
         }
       ],
       [
@@ -337,28 +230,12 @@
     [
       "1 - neighborhood safety",
       [
-        "2 - individual economic",
-        "1 - neighborhood safety",
         "5 - collective economic",
+        "1 - neighborhood safety",
         "4 - cultural",
-        "3 - collective safety"
+        "3 - collective safety",
+        "2 - individual economic"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.threat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.threat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -392,11 +269,11 @@
       [
         "fewestValues",
         [
-          "2 - individual economic",
-          "1 - neighborhood safety",
           "5 - collective economic",
+          "1 - neighborhood safety",
           "4 - cultural",
-          "3 - collective safety"
+          "3 - collective safety",
+          "2 - individual economic"
         ]
       ],
       [
@@ -422,11 +299,11 @@
       [
         "plotValues",
         {
+          "2 - individual economic": 12,
           "3 - collective safety": 12,
           "4 - cultural": 12,
-          "5 - collective economic": 12,
           "1 - neighborhood safety": 12,
-          "2 - individual economic": 12
+          "5 - collective economic": 12
         }
       ],
       [
@@ -616,26 +493,10 @@
   ],
   [
     "change",
-    "variables.coefficient.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.coefficient.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.coefficient.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1292,26 +1153,10 @@
   ],
   [
     "change",
-    "variables.standarderror.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.standarderror.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.standarderror.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1919,25 +1764,9 @@
       "Black British",
       [
         "Black British",
-        "Muslims",
-        "East Europeans"
+        "East Europeans",
+        "Muslims"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.FIGURE2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FIGURE2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1971,8 +1800,8 @@
       [
         "fewestValues",
         [
-          "2011",
-          "2016"
+          "2016",
+          "2011"
         ]
       ],
       [
@@ -1998,11 +1827,11 @@
       [
         "plotValues",
         {
-          "East Europeans": 2,
           "Muslims": 2,
           "Black British": 2,
-          "2016": 1,
-          "2011": 1
+          "East Europeans": 2,
+          "2011": 1,
+          "2016": 1
         }
       ],
       [
@@ -2146,36 +1975,12 @@
     [
       "1 - neighborhood safety",
       [
-        "2 - individual economic",
-        "1 - neighborhood safety",
         "5 - collective economic",
+        "1 - neighborhood safety",
         "4 - cultural",
-        "3 - collective safety"
+        "3 - collective safety",
+        "2 - individual economic"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "threat.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "threat.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2212,11 +2017,11 @@
       [
         "fewestValues",
         [
-          "2 - individual economic",
-          "1 - neighborhood safety",
           "5 - collective economic",
+          "1 - neighborhood safety",
           "4 - cultural",
-          "3 - collective safety"
+          "3 - collective safety",
+          "2 - individual economic"
         ]
       ],
       [
@@ -2242,11 +2047,11 @@
       [
         "plotValues",
         {
+          "2 - individual economic": 6,
           "3 - collective safety": 6,
           "4 - cultural": 6,
-          "5 - collective economic": 6,
           "1 - neighborhood safety": 6,
-          "2 - individual economic": 6
+          "5 - collective economic": 6
         }
       ],
       [
@@ -2466,35 +2271,11 @@
     [
       "variables",
       "coefficient.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "coefficient.1",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "coefficient.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3184,35 +2965,11 @@
     [
       "variables",
       "standarderror.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "standarderror.1",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "standarderror.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3829,36 +3586,12 @@
     [
       "2011",
       [
-        "Difference Coupled-Decoupled",
-        "Black British",
-        "Muslims",
+        "East Europeans",
+        "White British",
         "2011",
-        "East Europeans"
+        "Black British",
+        "Muslims"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FIGUREA.1B",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FIGUREA.1B",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3895,11 +3628,11 @@
       [
         "fewestValues",
         [
-          "Difference Coupled-Decoupled",
-          "Black British",
-          "Muslims",
+          "East Europeans",
+          "White British",
           "2011",
-          "East Europeans"
+          "Black British",
+          "Muslims"
         ]
       ],
       [
@@ -3925,12 +3658,12 @@
       [
         "plotValues",
         {
-          "White British": 1,
+          "Difference Coupled-Decoupled": 1,
           "East Europeans": 1,
-          "2011": 1,
-          "Muslims": 1,
           "Black British": 1,
-          "Difference Coupled-Decoupled": 1
+          "2011": 1,
+          "White British": 1,
+          "Muslims": 1
         }
       ],
       [
@@ -4074,28 +3807,12 @@
     [
       "1 - neighborhood safety",
       [
-        "2 - individual economic",
-        "1 - neighborhood safety",
         "5 - collective economic",
+        "1 - neighborhood safety",
         "4 - cultural",
-        "3 - collective safety"
+        "3 - collective safety",
+        "2 - individual economic"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4129,11 +3846,11 @@
       [
         "fewestValues",
         [
-          "2 - individual economic",
-          "1 - neighborhood safety",
           "5 - collective economic",
+          "1 - neighborhood safety",
           "4 - cultural",
-          "3 - collective safety"
+          "3 - collective safety",
+          "2 - individual economic"
         ]
       ],
       [
@@ -4159,11 +3876,11 @@
       [
         "plotValues",
         {
+          "2 - individual economic": 4,
           "3 - collective safety": 4,
           "4 - cultural": 4,
-          "5 - collective economic": 4,
           "1 - neighborhood safety": 4,
-          "2 - individual economic": 4
+          "5 - collective economic": 4
         }
       ],
       [
@@ -4380,35 +4097,11 @@
     [
       "variables",
       "coefficient.2",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "coefficient.2",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "coefficient.2",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5098,35 +4791,11 @@
     [
       "variables",
       "standarderror.2",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "standarderror.2",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "standarderror.2",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5743,35 +5412,11 @@
     [
       "Black British",
       [
+        "White British",
         "Black British",
-        "Muslims",
         "East Europeans",
-        "White British"
+        "Muslims"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FIGUREA.2",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "FIGUREA.2",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5835,12 +5480,12 @@
       [
         "plotValues",
         {
-          "White British": 2,
-          "East Europeans": 2,
           "Muslims": 2,
           "Black British": 2,
-          "2016": 1,
-          "2011": 1
+          "White British": 2,
+          "East Europeans": 2,
+          "2011": 1,
+          "2016": 1
         }
       ],
       [
@@ -5984,28 +5629,12 @@
     [
       "1 - neighborhood safety",
       [
-        "2 - individual economic",
-        "1 - neighborhood safety",
         "5 - collective economic",
+        "1 - neighborhood safety",
         "4 - cultural",
-        "3 - collective safety"
+        "3 - collective safety",
+        "2 - individual economic"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.T.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.T.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6039,11 +5668,11 @@
       [
         "fewestValues",
         [
-          "2 - individual economic",
-          "1 - neighborhood safety",
           "5 - collective economic",
+          "1 - neighborhood safety",
           "4 - cultural",
-          "3 - collective safety"
+          "3 - collective safety",
+          "2 - individual economic"
         ]
       ],
       [
@@ -6069,11 +5698,11 @@
       [
         "plotValues",
         {
+          "2 - individual economic": 8,
           "3 - collective safety": 8,
           "4 - cultural": 8,
-          "5 - collective economic": 8,
           "1 - neighborhood safety": 8,
-          "2 - individual economic": 8
+          "5 - collective economic": 8
         }
       ],
       [
@@ -6290,35 +5919,11 @@
     [
       "variables",
       "coefficient.3",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "coefficient.3",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "coefficient.3",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7008,35 +6613,11 @@
     [
       "variables",
       "standarderror.3",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "standarderror.3",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "standarderror.3",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9933,152 +9514,6 @@
           "defaultNature": "nominal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:17:54",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "FIGURE1andA.1A": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "threat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coefficient": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "standarderror": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1.96*SE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sig.2011-2016": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FIGURE2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "threat.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coefficient.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "standarderror.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1.96*SE.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sig.2011-2016.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FIGUREA.1B": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coefficient.2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "standarderror.2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1.96*SE.2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sig.coupled-decoupled": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FIGUREA.2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "T": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coefficient.3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "standarderror.3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "1.96*SE.3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sig.2011-2016.2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

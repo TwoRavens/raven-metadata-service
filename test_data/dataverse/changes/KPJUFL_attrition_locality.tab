@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        300
-      ],
-      [
-        "variableCount",
-        28
-      ],
-      [
-        "dataSource",
-        {
-          "name": "KPJUFL_attrition_locality.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 50975
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.loc_non_att.median",
     [
@@ -122,22 +39,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.loc_non_att.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.loc_non_att.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -351,22 +252,6 @@
     ]
   ],
   [
-    "change",
-    "variables.department.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.department.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.department",
     [
@@ -565,22 +450,6 @@
     ]
   ],
   [
-    "change",
-    "variables.district.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.district.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.district",
     [
@@ -611,8 +480,8 @@
       [
         "fewestValues",
         [
-          "NUEVA LONDRES",
           "SIMON BOLIVAR",
+          "NUEVA LONDRES",
           "CAPIIBARY"
         ]
       ],
@@ -641,25 +510,25 @@
         {
           "YHU": 22,
           "CNEL OVIEDO": 21,
-          "CHORE": 20,
           "CAAGUAZU": 20,
+          "CHORE": 20,
           "SAN ESTANISLAO": 19,
           "RAUL A. OVIEDO": 18,
           "SAN PEDRO": 16,
           "REPATRIACION": 12,
           "DR. JUAN M. FRUTOS": 10,
           "LIMA": 10,
-          "YATAITY DEL NORTE": 10,
           "SANTA ROSA DEL AGUARAY": 10,
+          "YATAITY DEL NORTE": 10,
           "GRAL ISIDORO RESQUIN": 9,
           "GUAYAIBI": 8,
-          "ELIZARDO A": 8,
           "VILLA DEL  ROSARIO": 8,
+          "ELIZARDO A": 8,
           "ITACURUBI DEL ROSARIO": 7,
           "DR. J. E.ESTIGRARRIB": 6,
           "CARAYAO": 6,
-          "3 DE FEBRERO": 6,
           "TACUATI": 6,
+          "3 DE FEBRERO": 6,
           "MCAL. FCO. S.LOPEZ": 6,
           "JOSE D. OCAMPOS": 5,
           "SAN JOSE DE LOS ARROYOS": 5,
@@ -667,14 +536,14 @@
           "SAN JOAQUIN": 4,
           "SAN PABLO": 4,
           "DR. CECILIO BAEZ": 3,
+          "STA ROSA DEL MBUTUY": 3,
           "LA PASTORA": 3,
           "UNION": 3,
-          "STA ROSA DEL MBUTUY": 3,
           "R. I. 3 CORRALES": 2,
           "NUEVA GERMANIA": 2,
+          "NUEVA LONDRES": 1,
           "CAPIIBARY": 1,
-          "SIMON BOLIVAR": 1,
-          "NUEVA LONDRES": 1
+          "SIMON BOLIVAR": 1
         }
       ],
       [
@@ -844,25 +713,9 @@
     [
       "URBANO",
       [
-        "SAN MIGUEL",
-        "URBANO"
+        "URBANO",
+        "SAN MIGUEL"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.locality.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.locality.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -896,11 +749,11 @@
       [
         "fewestValues",
         [
-          "ALIANZA",
-          "YATAITY CORA",
-          "CARAGUATAY MI",
-          "CANADITA",
-          "COL. ESCALERA"
+          "CASILLA 2",
+          "COL. TUYANGO",
+          "TTE. MORALES - ALEMAN CUE",
+          "CHORE 1",
+          "TORO PIRU"
         ]
       ],
       [
@@ -926,267 +779,267 @@
       [
         "plotValues",
         {
-          "SAN MIGUEL": 6,
           "URBANO": 6,
-          "SAN FRANCISCO": 4,
+          "SAN MIGUEL": 6,
           "SANTA ANA": 4,
-          "SANTA LIBRADA": 3,
+          "SAN FRANCISCO": 4,
           "SAN RAMON": 3,
-          "SAN RAFAEL": 3,
           "SAN BLAS": 3,
-          "SAN JUAN": 2,
-          "INMACULADA CONCEPCION": 2,
-          "SAN ANTONIO": 2,
-          "SAN ISIDRO": 2,
-          "COSTA PUCU": 2,
-          "SANTA ROSA": 2,
-          "INMACULADA": 2,
-          "SAGRADA FAMILIA": 2,
-          "JHUGUA GUAZU": 2,
-          "SAN LORENZO": 2,
-          "SAN PEDRO": 2,
-          "CENTRO": 2,
+          "SANTA LIBRADA": 3,
+          "SAN RAFAEL": 3,
           "MARIA AUXILIADORA": 2,
-          "CALLE SAN MIGUEL": 2,
+          "INMACULADA CONCEPCION": 2,
+          "INMACULADA": 2,
+          "CENTRO": 2,
+          "COSTA PUCU": 2,
           "SAN JORGE": 2,
-          "SAN ROQUE": 1,
-          "SENDERO DEL NORTE": 1,
-          "PEDRO GIMENEZ": 1,
-          "CALLE 8 DE DICIEMBRE": 1,
-          "PRIMAVERA": 1,
-          "CANDIA CUE": 1,
-          "PRIMERA LINEA CHACHI": 1,
-          "GUAYAKI KUA": 1,
-          "COSTA SAN ANTONIO": 1,
-          "CRUCE YPAYARE": 1,
-          "CALLE JHOVY": 1,
-          "CURUPAYTY": 1,
-          "TORO \ufffdU": 1,
-          "SANTA INES": 1,
-          "CERRO VERDE": 1,
-          "SAN LUIS (MBOITY)": 1,
-          "SGTO MONTANIA": 1,
-          "SAN ANTONIO KOKUERA": 1,
-          "SANCHEZ CUE": 1,
-          "COLONIA BERGTHAL": 1,
-          "COL. GRAL CACERES": 1,
-          "ASENTAMIENTO SANTA LIBRADA": 1,
-          "ZAPATINI CUE": 1,
-          "CALLE DON BOSCO": 1,
-          "IPVU": 1,
-          "NORTE POTY": 1,
-          "COL. INDUSTRIAL CUE": 1,
-          "5TA. LINEA": 1,
-          "BELLA VISTA": 1,
-          "COL ESTRELLITA": 1,
-          "SAN JORGE JEJUI": 1,
-          "CRUCE TACUATI": 1,
-          "BLAS GARAY CALLE SEGUNDA": 1,
-          "TAPE CAAVY": 1,
-          "PUERTO ROSARIO": 1,
-          "PLASIDO": 1,
-          "SIRATY": 1,
-          "POTRERO CUE": 1,
-          "CALLE SAN PEDRO": 1,
-          "COLONIA SANTO DOMINGO DE": 1,
-          "LOTE E CHACORE (3 DE NOVIEMBRE": 1,
-          "PLACIDO": 1,
-          "SAN JOSE": 1,
-          "COL YOHAI JHU": 1,
-          "CALLE 12 MIL": 1,
-          "GUAJHORY": 1,
-          "TAPIRACUAI LOMA": 1,
-          "KAATY I": 1,
-          "RUTARA": 1,
-          "ITA PLANCHON": 1,
-          "KOE PYTA 2": 1,
-          "1RA. LINEA GUAVIRA": 1,
-          "COSTA PUCU DEL SAN JOSE": 1,
-          "SAN FELIPE": 1,
-          "CURUZU JHU": 1,
-          "BUENA VISTA": 1,
-          "CALLE MARISTA": 1,
-          "TORO PIRU": 1,
-          "CALLE CANGAI": 1,
-          "YBYRA CATU": 1,
-          "CALABRIA": 1,
-          "SAN SALVADOR": 1,
-          "BARRIENTOS CUE": 1,
-          "1RA. Y 2DA. LINEA SAN JORGE": 1,
-          "MBOCAYA-I": 1,
-          "CALLE 4000 BERTONI": 1,
-          "COLONIA MANITOBA": 1,
-          "BARRIO OVETENSE": 1,
-          "CALLE 8 TACUA CORA": 1,
-          "PINDO": 1,
-          "PINDOTY": 1,
-          "COL. TUYANGO": 1,
-          "CASILLA 2": 1,
-          "CALLE ITACURUBI": 1,
-          "CLETO ROMERO": 1,
-          "CAMBA YKUA": 1,
-          "PTO. SANTA ROSA": 1,
-          "SAN JOSE OBRERO": 1,
-          "INDIGENA SE\ufffdORITA YPAU": 1,
-          "CHAMORRO CUE (RINCON)": 1,
-          "YUQUYTY": 1,
-          "CELANO": 1,
-          "JAGUA KAI": 1,
-          "CAMPANARIO": 1,
-          "PIQUETE I": 1,
-          "KERAMBU": 1,
-          "POTRERITO": 1,
-          "KIRA Y": 1,
-          "NUCLEAR 1": 1,
-          "TTE. MORALES - ALEMAN CUE": 1,
-          "ZONA URBANA": 1,
-          "SANTA MARIA GORETTI": 1,
-          "YBAROTY": 1,
-          "CHORE 1": 1,
-          "MANDIYU TYGUE": 1,
-          "CALLE 3o LINEA SANGUINA CUE": 1,
-          "PRIMERO DE MAYO": 1,
-          "CALLE 6000": 1,
-          "CALLE LIMA": 1,
-          "ARA PORA SAN PEDRO": 1,
-          "TUYU PUCU": 1,
-          "SAN LUIS": 1,
-          "TARUMA": 1,
-          "SAN PATRICIO": 1,
-          "CURUZU ARAUJO": 1,
-          "ARROYO TERERE": 1,
-          "CAACUPE I": 1,
-          "SATI B": 1,
-          "CAROLINA": 1,
+          "SAN PEDRO": 2,
+          "SAN LORENZO": 2,
+          "SAN ISIDRO": 2,
+          "SANTA ROSA": 2,
+          "JHUGUA GUAZU": 2,
+          "SAGRADA FAMILIA": 2,
+          "SAN JUAN": 2,
+          "SAN ANTONIO": 2,
+          "CALLE SAN MIGUEL": 2,
+          "1RA. LINEA CAPIATI": 1,
           "POTRERO GUAYAKI": 1,
-          "AGUAPEY": 1,
-          "VIRGEN DEL CARMEN": 1,
-          "CANADITA": 1,
-          "BARRIO SAN JOSE": 1,
-          "YPYTA": 1,
-          "YHAI": 1,
-          "COLONIA FELICIDAD": 1,
-          "SEGUNDA LINEA CANDELARIA": 1,
-          "SANTA BARBABA": 1,
-          "MARIA AUXILIADORA KOKUERA": 1,
-          "PRIMERA LINEA": 1,
-          "ASENTAMIENTO 3 DE MAYO": 1,
-          "COSTA RICA": 1,
-          "CANTERA BOCA": 1,
-          "REMANSO": 1,
-          "CABO CUE": 1,
-          "PARAGUAY PYA JHU": 1,
-          "INDIGENA PANAMBI": 1,
-          "VILLA DEL MAESTRO": 1,
-          "QUIINDY": 1,
-          "ARROYO GUAZU": 1,
-          "YATAI": 1,
-          "MBUTUY I": 1,
-          "COL. FRIESLAND": 1,
-          "CALLE 7": 1,
-          "3RA. LINEA KANGARA": 1,
-          "CHORRO ( SANTO DOMINGO )": 1,
-          "YATEVU": 1,
-          "CANADA": 1,
-          "CALLE 6 TACUA CORA": 1,
-          "RAMOS": 1,
-          "MBOCAYA I": 1,
-          "LOMA CLAVEL": 1,
-          "5TA. LINEA BALANZA": 1,
-          "YATEBO": 1,
-          "CALLE 16 DE JULIO": 1,
-          "CURUZU I": 1,
-          "PIRI PUCU": 1,
+          "CALLE 12 MIL": 1,
           "YAGUARY": 1,
-          "5000 NORTE KORORO I": 1,
-          "VILLA SAN JUAN": 1,
+          "MANDIYU TYGUE": 1,
+          "1RA. Y 2DA. LINEA SAN JORGE": 1,
+          "SAN JOSE OBRERO": 1,
+          "3RA. Y 2DA. LINEA GUAYAKI": 1,
+          "CELANO": 1,
+          "CALLE 3o LINEA SANGUINA CUE": 1,
+          "GUAYAKI KUA": 1,
+          "COLONIA SANTO DOMINGO DE": 1,
+          "BARRIO SAN JOSE": 1,
+          "SAN ROQUE": 1,
+          "CAMBA YKUA": 1,
+          "CALLE CANGAI": 1,
+          "ZONA URBANA": 1,
+          "ZAPATINI CUE": 1,
+          "CABO CUE": 1,
+          "2DA. Y 3RA. LINEAS CAPIATI": 1,
+          "TORO \ufffdU": 1,
+          "CALLE 6000": 1,
+          "JHUGUAI SOSA": 1,
+          "GUAYAIBI": 1,
+          "CALLE 10000 BERTONI": 1,
+          "CALLE ALEGRE": 1,
+          "PRIMERA LINEA": 1,
+          "MONTE ALTO": 1,
+          "YATEVU": 1,
+          "PRIMERO DE MAYO": 1,
+          "CARUMBEY 1": 1,
+          "ARAPAY": 1,
+          "KERAMBU": 1,
+          "BARRIO SAN ANTONIO": 1,
+          "TAPIRACUAI LOMA": 1,
+          "YBAROTY": 1,
+          "KIRA Y": 1,
+          "SANTA BARBABA": 1,
+          "COSTA SAN ANTONIO": 1,
+          "PINDO": 1,
+          "BARRIO SAN MIGUEL": 1,
+          "BRASILERO CUE": 1,
+          "CANADA": 1,
+          "PLANTA 2": 1,
+          "RAMOS": 1,
+          "COLONIA FELICIDAD": 1,
+          "CAACUPE I": 1,
+          "SAN PATRICIO": 1,
+          "ALIANZA": 1,
+          "SANTA MARIA": 1,
           "EL TRIUNFO": 1,
-          "COLONIA MCAL LOPEZ": 1,
+          "SAN JORGE JEJUI": 1,
+          "ZARO CARO": 1,
+          "MBUTUY I": 1,
+          "SENDERO DEL NORTE": 1,
+          "3 DE MAYO": 1,
+          "PINDO-I CULANTRILLO": 1,
+          "MCAL LOPEZ TERCERA LINEA": 1,
+          "CAMPANARIO": 1,
+          "CALLE SAN PEDRO": 1,
+          "GUAJHORY": 1,
+          "2DA RECONSTRUCCION": 1,
+          "YUQUYTY": 1,
+          "COSTA RICA": 1,
+          "YPECA": 1,
+          "BARRIO SAN JORGE": 1,
+          "YBYRA CATU": 1,
+          "MARIA AUXILIADORA KOKUERA": 1,
+          "COL YOHAI JHU": 1,
+          "SEGUNDA LINEA CANDELARIA": 1,
+          "SATI A": 1,
+          "PUENTE BABA": 1,
+          "MBOCAYA-I": 1,
+          "CALLE 16 DE JULIO": 1,
+          "GUAVIRA": 1,
+          "CARAGUATAY MI": 1,
+          "TTE. MORALES - ALEMAN CUE": 1,
+          "INDIGENA SE\ufffdORITA YPAU": 1,
+          "LOMA CLAVEL": 1,
+          "FLORIDA": 1,
           "PROGRESO": 1,
-          "SANTA BARBARA": 1,
+          "PARAGUAY PYA JHU": 1,
+          "SANTA MARIA GORETTI": 1,
+          "SAN RAMON(LA SANPEDRANA)": 1,
+          "SARGENTO CASTIGLIONI": 1,
+          "REMANSO": 1,
+          "GUYRAUNGUA": 1,
+          "CORRENTINA": 1,
+          "BUENA VISTA": 1,
+          "25 DE DICIEMBRE": 1,
+          "KOE PYTA 2": 1,
+          "CURURU JHO": 1,
+          "PTO. SANTA ROSA": 1,
+          "MBOCAYA I": 1,
+          "5000 NORTE KORORO I": 1,
+          "ASENTAMIENTO COLONIA": 1,
+          "CLETO ROMERO": 1,
+          "CAATY MI": 1,
+          "COL. INDUSTRIAL CUE": 1,
+          "AGUAPEY": 1,
+          "INDIGENA SANTA TERESA": 1,
+          "CALLE 6 TACUA CORA": 1,
+          "NACIENTE AYALA CUE": 1,
+          "YBYPE": 1,
+          "CALLE 8 DE DICIEMBRE": 1,
+          "SAN LUIS (MBOITY)": 1,
+          "SAN LUIS": 1,
+          "COSTA PUCU DEL SAN JOSE": 1,
+          "CHAMORRO CUE (RINCON)": 1,
+          "CANADITA": 1,
+          "YATAI": 1,
+          "COL. ESCALERA": 1,
+          "SAN ANTONIO KOKUERA": 1,
+          "4TA. LINEA CHACORE": 1,
+          "CAROLINA": 1,
+          "SGTO MONTANIA": 1,
+          "YATAITY": 1,
+          "15 DE AGOSTO": 1,
+          "MALVINAS": 1,
+          "ARA PORA SAN PEDRO": 1,
+          "PIRI PUCU": 1,
+          "SAN MIGUEL QUINTA": 1,
           "SAN CARLOS": 1,
           "LA FORTUNA": 1,
-          "SAN PABLO": 1,
-          "GUAVIRA": 1,
-          "CALLE 3 ZANJA JHU": 1,
-          "25 DE DICIEMBRE": 1,
-          "PLANTA 2": 1,
-          "4TA. LINEA CHACORE": 1,
-          "GUAYAIBI": 1,
-          "NUMBUE": 1,
-          "2DA RECONSTRUCCION": 1,
-          "CALLE ALEGRE": 1,
+          "SAN JOSE": 1,
+          "PRIMAVERA": 1,
+          "TARUMA": 1,
           "DACAK": 1,
-          "1RO. DE MARZO": 1,
-          "EMPALADO": 1,
-          "MONTE ALTO": 1,
-          "GUYRAUNGUA": 1,
-          "CAATY MI": 1,
-          "BARRIO SAN MIGUEL": 1,
-          "PASO TUNA": 1,
-          "YBY PYTA": 1,
-          "NACIENTE AYALA CUE": 1,
-          "TACUAPI I": 1,
-          "INDIGENA SANTA TERESA": 1,
-          "SATI A": 1,
-          "MALVINAS": 1,
-          "CRUCE UNION": 1,
-          "YBYPE": 1,
-          "2DA. Y 3RA. LINEAS CAPIATI": 1,
-          "YATAITY": 1,
-          "CURURU JHO": 1,
+          "BLAS GARAY CALLE SEGUNDA": 1,
+          "CALLE LIMA": 1,
+          "QUIINDY": 1,
+          "COL. FRIESLAND": 1,
+          "COLONIA MANITOBA": 1,
           "BERRERO PYTA": 1,
-          "BRASILERO CUE": 1,
-          "SARGENTO CASTIGLIONI": 1,
-          "YVYRA POKA": 1,
-          "CRUCE MBUTUY": 1,
-          "ZARO CARO": 1,
-          "PINDO-I CULANTRILLO": 1,
-          "15 DE AGOSTO": 1,
-          "ARAPAY": 1,
-          "1RA. LINEA CAPIATI": 1,
-          "BARRIO SAN JORGE": 1,
-          "FLORIDA": 1,
-          "YPECA": 1,
-          "CALLE 6000 BERTONI": 1,
-          "SAN RAMON(LA SANPEDRANA)": 1,
-          "JHUGUAI SOSA": 1,
-          "1RA. LINEA CHACORE": 1,
-          "SANTISIMA TRINIDAD": 1,
+          "PUERTO ROSARIO": 1,
+          "CALLE 4000 BERTONI": 1,
+          "CALLE 8 TACUA CORA": 1,
+          "BLAS GARAY CALLE TERCERA": 1,
+          "TUYU PUCU": 1,
+          "PEDRO GIMENEZ": 1,
+          "CAMBILO CUE": 1,
+          "COL ESTRELLITA": 1,
+          "BARRIO OVETENSE": 1,
+          "ITA PLANCHON": 1,
+          "ROQUE GONZALEZ": 1,
           "NATIVIDAD ( COL LUZ BELLA )": 1,
-          "SAN MIGUEL QUINTA": 1,
-          "CALLE 10000 BERTONI": 1,
-          "ROSARIO LOMA": 1,
-          "3 DE MAYO": 1,
-          "CRUCE BERTONI": 1,
-          "AGUAPE TY": 1,
-          "PUENTE BABA": 1,
-          "TAYI POTY": 1,
-          "ITA CUATIA": 1,
-          "SIDEPAR TRES MIL": 1,
-          "COL. ESCALERA": 1,
-          "ASENTAMIENTO COLONIA": 1,
+          "COL. BARBERO": 1,
+          "1RA. LINEA GUAVIRA": 1,
+          "CARRERIA-I": 1,
+          "POTRERITO": 1,
+          "CALLE MARISTA": 1,
+          "5TA. LINEA BALANZA": 1,
+          "CALLE 12000": 1,
+          "YBY PYTA": 1,
+          "PLASIDO": 1,
+          "PLACIDO": 1,
+          "CHORRO ( SANTO DOMINGO )": 1,
+          "CALLE 6000 BERTONI": 1,
+          "5TA. LINEA": 1,
+          "JAGUA KAI": 1,
+          "CALLE 3 ZANJA JHU": 1,
+          "INDIGENA PANAMBI": 1,
+          "ASENTAMIENTO SANTA LIBRADA": 1,
+          "NUCLEAR 1": 1,
           "SANTA LUCIA": 1,
           "CHACO - I": 1,
-          "SANTA MARIA": 1,
+          "NORTE POTY": 1,
+          "VILLA DEL MAESTRO": 1,
+          "YVYRA POKA": 1,
+          "SAN SALVADOR": 1,
+          "CURUZU I": 1,
+          "CALABRIA": 1,
+          "CERRO VERDE": 1,
+          "CALLE DON BOSCO": 1,
           "CABALLERIA": 1,
-          "COLONIA FELICIDAD 14 DE MAYO": 1,
-          "3RA. Y 2DA. LINEA GUAYAKI": 1,
-          "MCAL LOPEZ TERCERA LINEA": 1,
-          "2DA. LINEA SAN MIGUEL": 1,
-          "CARRERIA-I": 1,
-          "BARRIO SAN ANTONIO": 1,
-          "BLAS GARAY CALLE TERCERA": 1,
-          "CAMBILO CUE": 1,
-          "CARUMBEY 1": 1,
-          "CALLE 12000": 1,
-          "CORRENTINA": 1,
-          "ROQUE GONZALEZ": 1,
-          "CARAGUATAY MI": 1,
-          "YATAITY CORA": 1,
+          "POTRERO CUE": 1,
+          "SATI B": 1,
+          "COLONIA BERGTHAL": 1,
+          "RUTARA": 1,
           "ALEMAN CUE": 1,
-          "COL. BARBERO": 1,
-          "ALIANZA": 1
+          "CRUCE YPAYARE": 1,
+          "IPVU": 1,
+          "YATEBO": 1,
+          "CURUPAYTY": 1,
+          "YPYTA": 1,
+          "EMPALADO": 1,
+          "TAYI POTY": 1,
+          "CALLE 7": 1,
+          "CANTERA BOCA": 1,
+          "ROSARIO LOMA": 1,
+          "SIRATY": 1,
+          "CRUCE MBUTUY": 1,
+          "LOTE E CHACORE (3 DE NOVIEMBRE": 1,
+          "VIRGEN DEL CARMEN": 1,
+          "TAPE CAAVY": 1,
+          "2DA. LINEA SAN MIGUEL": 1,
+          "ARROYO TERERE": 1,
+          "SANTA BARBARA": 1,
+          "SAN FELIPE": 1,
+          "PRIMERA LINEA CHACHI": 1,
+          "3RA. LINEA KANGARA": 1,
+          "PIQUETE I": 1,
+          "COLONIA MCAL LOPEZ": 1,
+          "SIDEPAR TRES MIL": 1,
+          "CRUCE UNION": 1,
+          "YHAI": 1,
+          "CALLE JHOVY": 1,
+          "ARROYO GUAZU": 1,
+          "CRUCE BERTONI": 1,
+          "COL. TUYANGO": 1,
+          "SAN PABLO": 1,
+          "SANTISIMA TRINIDAD": 1,
+          "COL. GRAL CACERES": 1,
+          "1RA. LINEA CHACORE": 1,
+          "AGUAPE TY": 1,
+          "NUMBUE": 1,
+          "ASENTAMIENTO 3 DE MAYO": 1,
+          "CURUZU JHU": 1,
+          "CANDIA CUE": 1,
+          "1RO. DE MARZO": 1,
+          "BELLA VISTA": 1,
+          "CURUZU ARAUJO": 1,
+          "COLONIA FELICIDAD 14 DE MAYO": 1,
+          "VILLA SAN JUAN": 1,
+          "TACUAPI I": 1,
+          "SANTA INES": 1,
+          "PASO TUNA": 1,
+          "KAATY I": 1,
+          "YATAITY CORA": 1,
+          "CRUCE TACUATI": 1,
+          "PINDOTY": 1,
+          "CALLE ITACURUBI": 1,
+          "BARRIENTOS CUE": 1,
+          "TORO PIRU": 1,
+          "CHORE 1": 1,
+          "ITA CUATIA": 1,
+          "SANCHEZ CUE": 1,
+          "CASILLA 2": 1
         }
       ],
       [
@@ -1581,26 +1434,10 @@
     [
       "Massive",
       [
-        "Door to Door",
+        "Massive",
         "Control",
-        "Massive"
+        "Door to Door"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1634,9 +1471,9 @@
       [
         "fewestValues",
         [
-          "Door to Door",
+          "Massive",
           "Control",
-          "Massive"
+          "Door to Door"
         ]
       ],
       [
@@ -1662,8 +1499,8 @@
       [
         "plotValues",
         {
-          "Control": 100,
           "Door to Door": 100,
+          "Control": 100,
           "Massive": 100
         }
       ],
@@ -1835,22 +1672,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lineal.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lineal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2096,22 +1917,6 @@
     ]
   ],
   [
-    "change",
-    "variables.control.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.control.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.control",
     [
@@ -2351,22 +2156,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.massive.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.massive.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2612,22 +2401,6 @@
     ]
   ],
   [
-    "change",
-    "variables.D2D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.D2D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.D2D",
     [
@@ -2870,22 +2643,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Rural.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Rural.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Rural",
     [
@@ -3125,22 +2882,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lineal_inv.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lineal_inv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3395,26 +3136,10 @@
   ],
   [
     "change",
-    "variables.pob_0_14_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pob_0_14_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pob_0_14_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4067,26 +3792,10 @@
   ],
   [
     "change",
-    "variables.pob_15_64_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pob_15_64_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pob_15_64_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4739,26 +4448,10 @@
   ],
   [
     "change",
-    "variables.pob_65mas_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pob_65mas_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pob_65mas_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5411,26 +5104,10 @@
   ],
   [
     "change",
-    "variables.analfabetos_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.analfabetos_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.analfabetos_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6085,26 +5762,10 @@
   ],
   [
     "change",
-    "variables.asiste_escuela_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.asiste_escuela_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.asiste_escuela_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6759,26 +6420,10 @@
   ],
   [
     "change",
-    "variables.TASA_men.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TASA_men.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TASA_men.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7432,26 +7077,10 @@
   ],
   [
     "change",
-    "variables.TASA_women.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TASA_women.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TASA_women.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8104,26 +7733,10 @@
   ],
   [
     "change",
-    "variables.electricidad_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.electricidad_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.electricidad_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8776,26 +8389,10 @@
   ],
   [
     "change",
-    "variables.agua_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.agua_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.agua_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9448,26 +9045,10 @@
   ],
   [
     "change",
-    "variables.desague_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.desague_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.desague_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9736,26 +9317,10 @@
   ],
   [
     "change",
-    "variables.basura_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.basura_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.basura_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10408,26 +9973,10 @@
   ],
   [
     "change",
-    "variables.fono_fijo_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fono_fijo_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fono_fijo_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11080,26 +10629,10 @@
   ],
   [
     "change",
-    "variables.fono_cel_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fono_cel_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fono_cel_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11753,26 +11286,10 @@
   ],
   [
     "change",
-    "variables.ocupantes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ocupantes.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ocupantes.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12425,26 +11942,10 @@
   ],
   [
     "change",
-    "variables.log_pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13100,26 +12601,10 @@
   ],
   [
     "change",
-    "variables.mujeres_perc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mujeres_perc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mujeres_perc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13763,22 +13248,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dpto1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dpto1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dpto1",
     [
@@ -13975,172 +13444,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "loc_non_att": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "department": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "district": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "locality": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lineal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "control": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "massive": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "D2D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Rural": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lineal_inv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pob_0_14_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pob_15_64_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pob_65mas_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "analfabetos_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "asiste_escuela_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TASA_men": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TASA_women": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "electricidad_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agua_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "desague_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "basura_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fono_fijo_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fono_cel_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ocupantes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mujeres_perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dpto1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        3777
-      ],
-      [
-        "variableCount",
-        62
-      ],
-      [
-        "dataSource",
-        {
-          "name": "27279_tmp_rdd_us_statewide.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 841883
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
@@ -90,22 +7,6 @@
       [
         "VT"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -183,8 +84,8 @@
           "DE": 89,
           "SD": 88,
           "CA": 88,
-          "AZ": 87,
           "AL": 87,
+          "AZ": 87,
           "FL": 87,
           "WV": 85,
           "KS": 84,
@@ -211,8 +112,8 @@
           "NH": 36,
           "TN": 27,
           "HI": 27,
-          "AK": 26,
           "ME": 26,
+          "AK": 26,
           "NJ": 25,
           "LA": 12
         }
@@ -432,22 +333,6 @@
     [
       "1970",
       1970
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1045,22 +930,6 @@
     ]
   ],
   [
-    "change",
-    "variables.office.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.office.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.office",
     [
@@ -1091,8 +960,8 @@
       [
         "fewestValues",
         [
-          "FINANCE",
           "REPORTER",
+          "FINANCE",
           "INSPECTOR"
         ]
       ],
@@ -1138,8 +1007,8 @@
           "AGR & LAB": 11,
           "PRINTER": 3,
           "INSPECTOR": 2,
-          "REPORTER": 2,
-          "FINANCE": 2
+          "FINANCE": 2,
+          "REPORTER": 2
         }
       ],
       [
@@ -1328,22 +1197,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1560,22 +1413,6 @@
       [
         "G"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.type.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.type.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1806,22 +1643,6 @@
     [
       "1972",
       1972
-    ]
-  ],
-  [
-    "change",
-    "variables.nextup.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nextup.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2419,22 +2240,6 @@
     ]
   ],
   [
-    "change",
-    "variables.congress.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.congress.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.congress",
     [
@@ -2623,22 +2428,6 @@
     ]
   ],
   [
-    "change",
-    "variables.redist1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.redist1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.redist1",
     [
@@ -2824,22 +2613,6 @@
     [
       "NA",
       []
-    ]
-  ],
-  [
-    "change",
-    "variables.redist2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.redist2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3074,26 +2847,10 @@
   ],
   [
     "change",
-    "variables.pct_D.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pct_D.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pct_D.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3746,26 +3503,10 @@
   ],
   [
     "change",
-    "variables.pct_R.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pct_R.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pct_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4418,26 +4159,10 @@
   ],
   [
     "change",
-    "variables.pct_I.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pct_I.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pct_I.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5081,22 +4806,6 @@
     ]
   ],
   [
-    "change",
-    "variables.win_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.win_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.win_D",
     [
@@ -5336,22 +5045,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.win_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.win_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5597,22 +5290,6 @@
     ]
   ],
   [
-    "change",
-    "variables.win_I.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.win_I.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.win_I",
     [
@@ -5852,22 +5529,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.inc_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.inc_D.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6113,22 +5774,6 @@
     ]
   ],
   [
-    "change",
-    "variables.inc_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.inc_R.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.inc_R",
     [
@@ -6368,22 +6013,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.qual_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.qual_D.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6629,22 +6258,6 @@
     ]
   ],
   [
-    "change",
-    "variables.qual_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.qual_R.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.qual_R",
     [
@@ -6887,22 +6500,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.n_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n_D",
     [
@@ -7142,22 +6739,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.n_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.n_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7412,26 +6993,10 @@
   ],
   [
     "change",
-    "variables.rv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8075,22 +7640,6 @@
     ]
   ],
   [
-    "change",
-    "variables.place.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.place.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.place",
     [
@@ -8348,26 +7897,10 @@
   ],
   [
     "change",
-    "variables.share_first.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.share_first.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.share_first.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9020,26 +8553,10 @@
   ],
   [
     "change",
-    "variables.share_second.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.share_second.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.share_second.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9692,26 +9209,10 @@
   ],
   [
     "change",
-    "variables.share_third.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.share_third.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.share_third.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10364,26 +9865,10 @@
   ],
   [
     "change",
-    "variables.lag_rv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_rv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_rv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11027,22 +10512,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_qual_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_qual_D",
     [
@@ -11282,22 +10751,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11543,22 +10996,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_qual_D_2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_D_2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_qual_D_2",
     [
@@ -11798,22 +11235,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R_2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R_2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12059,22 +11480,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_qual_D_3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_D_3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_qual_D_3",
     [
@@ -12314,22 +11719,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R_3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R_3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12575,22 +11964,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_qual_D_4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_D_4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_qual_D_4",
     [
@@ -12830,22 +12203,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R_4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_R_4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13091,22 +12448,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_win_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_win_D",
     [
@@ -13346,22 +12687,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13616,26 +12941,10 @@
   ],
   [
     "change",
-    "variables.next_pct_D.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.next_pct_D.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.next_pct_D.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14288,26 +13597,10 @@
   ],
   [
     "change",
-    "variables.next_pct_R.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.next_pct_R.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.next_pct_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14951,22 +14244,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_n_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_n_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_n_D",
     [
@@ -15206,22 +14483,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_n_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_n_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15467,22 +14728,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_inc_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_inc_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_inc_D",
     [
@@ -15722,22 +14967,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_inc_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_inc_R.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15983,22 +15212,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_same_D.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_same_D.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_same_D",
     [
@@ -16241,22 +15454,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_same_R.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_same_R.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_same_R",
     [
@@ -16496,22 +15693,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16766,26 +15947,10 @@
   ],
   [
     "change",
-    "variables.rv_treat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv_treat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv_treat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17438,26 +16603,10 @@
   ],
   [
     "change",
-    "variables.margin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.margin.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.margin.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18101,22 +17250,6 @@
     ]
   ],
   [
-    "change",
-    "variables.qual_L.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.qual_L.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.qual_L",
     [
@@ -18356,22 +17489,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_L.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_L.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18617,22 +17734,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_cand_L.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_cand_L.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_cand_L",
     [
@@ -18872,22 +17973,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_L.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_L.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19142,26 +18227,10 @@
   ],
   [
     "change",
-    "variables.next_pct_L.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.next_pct_L.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.next_pct_L.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19805,22 +18874,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_same_L.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_same_L.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_same_L",
     [
@@ -20060,22 +19113,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.qual_W.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.qual_W.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20321,22 +19358,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_qual_W.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_qual_W.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_qual_W",
     [
@@ -20579,22 +19600,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_cand_W.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_cand_W.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_cand_W",
     [
@@ -20834,22 +19839,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_W.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_win_W.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21104,26 +20093,10 @@
   ],
   [
     "change",
-    "variables.next_pct_W.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.next_pct_W.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.next_pct_W.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21767,22 +20740,6 @@
     ]
   ],
   [
-    "change",
-    "variables.next_inc_W.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_inc_W.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.next_inc_W",
     [
@@ -22022,22 +20979,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.next_same_W.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.next_same_W.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22283,22 +21224,6 @@
     ]
   ],
   [
-    "change",
-    "variables.openseat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.openseat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.openseat",
     [
@@ -22485,342 +21410,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:04",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "office": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nextup": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "congress": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "redist1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "redist2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pct_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pct_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pct_I": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "win_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "win_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "win_I": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inc_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inc_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qual_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qual_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "place": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share_first": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share_second": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share_third": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_rv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_D_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_R_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_D_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_R_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_D_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_R_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_win_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_win_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_pct_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_pct_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_n_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_n_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_inc_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_inc_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_same_D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_same_R": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv_treat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "margin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qual_L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_cand_L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_win_L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_pct_L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_same_L": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qual_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_qual_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_cand_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_win_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_pct_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_inc_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "next_same_W": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openseat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

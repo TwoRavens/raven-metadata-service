@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        9
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "BANJL7_figure-data_extraction.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 531
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.study.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Two"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.study.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.study.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -336,22 +237,6 @@
     [
       "48",
       48
-    ]
-  ],
-  [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -605,22 +490,6 @@
     ]
   ],
   [
-    "change",
-    "variables.self.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.self.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.self",
     [
@@ -815,27 +684,11 @@
       "Pass to Others",
       [
         "All Pass Along",
-        "Create for Self",
-        "Self   (1:2)",
-        "Self   (1:1)",
-        "Self   (2:1)"
+        "Pass to India",
+        "Self   (2:1)",
+        "All Self Created",
+        "Pass to Others"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -870,10 +723,10 @@
         "fewestValues",
         [
           "All Pass Along",
-          "Create for Self",
-          "Self   (1:2)",
-          "Self   (1:1)",
-          "Self   (2:1)"
+          "Pass to India",
+          "Self   (2:1)",
+          "All Self Created",
+          "Pass to Others"
         ]
       ],
       [
@@ -899,15 +752,15 @@
       [
         "plotValues",
         {
-          "Self   (2:1)": 1,
+          "Self   (1:1)": 1,
+          "Self   (1:2)": 1,
           "Pass to Others": 1,
           "Pass to US": 1,
-          "Pass to India": 1,
-          "Self   (1:2)": 1,
-          "Self   (1:1)": 1,
+          "All Pass Along": 1,
           "All Self Created": 1,
-          "Create for Self": 1,
-          "All Pass Along": 1
+          "Self   (2:1)": 1,
+          "Pass to India": 1,
+          "Create for Self": 1
         }
       ],
       [
@@ -1100,26 +953,10 @@
   ],
   [
     "change",
-    "variables.mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1447,35 +1284,11 @@
     [
       "variables",
       "prop.mean",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "prop.mean",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "prop.mean",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1763,26 +1576,10 @@
   ],
   [
     "change",
-    "variables.se.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2104,35 +1901,11 @@
     [
       "variables",
       "prop.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "prop.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "prop.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2344,72 +2117,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:57",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "study": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "self": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treatment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prop.mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prop.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

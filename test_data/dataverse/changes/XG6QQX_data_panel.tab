@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        680
-      ],
-      [
-        "variableCount",
-        31
-      ],
-      [
-        "dataSource",
-        {
-          "name": "XG6QQX_data_panel.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 227127
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "arg",
       [
-        "per",
-        "chi",
-        "arg",
-        "col",
-        "uru"
+        "uru",
+        "mex",
+        "lat",
+        "hon",
+        "nic"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "per",
-          "chi",
-          "arg",
-          "col",
-          "uru"
+          "uru",
+          "mex",
+          "lat",
+          "hon",
+          "nic"
         ]
       ],
       [
@@ -173,26 +74,26 @@
       [
         "plotValues",
         {
-          "ven": 34,
-          "hon": 34,
-          "els": 34,
           "dom": 34,
+          "ven": 34,
+          "arg": 34,
+          "els": 34,
+          "chi": 34,
+          "usa": 34,
+          "cri": 34,
+          "ecu": 34,
+          "par": 34,
           "bra": 34,
           "bol": 34,
+          "col": 34,
+          "per": 34,
+          "pan": 34,
           "gua": 34,
           "nic": 34,
-          "pan": 34,
-          "usa": 34,
-          "mex": 34,
-          "par": 34,
-          "ecu": 34,
-          "cri": 34,
+          "hon": 34,
           "lat": 34,
-          "uru": 34,
-          "col": 34,
-          "arg": 34,
-          "chi": 34,
-          "per": 34
+          "mex": 34,
+          "uru": 34
         }
       ],
       [
@@ -350,36 +251,12 @@
     [
       "ARG",
       [
-        "PAN",
-        "SLV",
-        "DOM",
-        "USA",
-        "MEX"
+        "URY",
+        "HND",
+        "BOL",
+        "CRI",
+        "NIC"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.wb",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.wb",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -416,11 +293,11 @@
       [
         "fewestValues",
         [
-          "PAN",
-          "SLV",
-          "DOM",
-          "USA",
-          "MEX"
+          "URY",
+          "HND",
+          "BOL",
+          "CRI",
+          "NIC"
         ]
       ],
       [
@@ -446,26 +323,26 @@
       [
         "plotValues",
         {
-          "HND": 34,
-          "PER": 34,
-          "BOL": 34,
-          "PRY": 34,
-          "ARG": 34,
-          "BRA": 34,
-          "COL": 34,
-          "VEN": 34,
-          "NIC": 34,
-          "GTM": 34,
-          "ECU": 34,
-          "CRI": 34,
-          "LCN": 34,
-          "CHL": 34,
-          "URY": 34,
-          "MEX": 34,
           "USA": 34,
+          "CHL": 34,
+          "PAN": 34,
+          "BRA": 34,
+          "GTM": 34,
+          "MEX": 34,
+          "PRY": 34,
+          "PER": 34,
+          "LCN": 34,
           "DOM": 34,
+          "COL": 34,
+          "ECU": 34,
+          "VEN": 34,
           "SLV": 34,
-          "PAN": 34
+          "ARG": 34,
+          "NIC": 34,
+          "CRI": 34,
+          "BOL": 34,
+          "HND": 34,
+          "URY": 34
         }
       ],
       [
@@ -660,22 +537,6 @@
     [
       "1979",
       1979
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1327,35 +1188,11 @@
     [
       "variables",
       "inflation.cp",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "inflation.cp",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "inflation.cp",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2018,26 +1855,10 @@
   ],
   [
     "change",
-    "variables.inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2705,30 +2526,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "gdp.constlcu",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "gdp.constlcu",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -3388,26 +3185,10 @@
   ],
   [
     "change",
-    "variables.dgdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dgdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dgdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4052,22 +3833,6 @@
     [
       "1009455476",
       1009455476.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4724,26 +4489,10 @@
   ],
   [
     "change",
-    "variables.comm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.comm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.comm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5400,26 +5149,10 @@
   ],
   [
     "change",
-    "variables.irates.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.irates.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.irates.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6076,26 +5809,10 @@
   ],
   [
     "change",
-    "variables.unemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6752,26 +6469,10 @@
   ],
   [
     "change",
-    "variables.dirates.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dirates.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dirates.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7428,26 +7129,10 @@
   ],
   [
     "change",
-    "variables.geti.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.geti.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.geti.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8104,26 +7789,10 @@
   ],
   [
     "change",
-    "variables.dgeti.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dgeti.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dgeti.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8780,26 +8449,10 @@
   ],
   [
     "change",
-    "variables.hanke.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hanke.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hanke.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9456,26 +9109,10 @@
   ],
   [
     "change",
-    "variables.okunlag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.okunlag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.okunlag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10132,26 +9769,10 @@
   ],
   [
     "change",
-    "variables.okun.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.okun.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.okun.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10804,26 +10425,10 @@
   ],
   [
     "change",
-    "variables.gdpnorm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpnorm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpnorm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11476,26 +11081,10 @@
   ],
   [
     "change",
-    "variables.gdpnormlag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpnormlag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpnormlag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12152,26 +11741,10 @@
   ],
   [
     "change",
-    "variables.dgdplag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dgdplag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dgdplag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12824,26 +12397,10 @@
   ],
   [
     "change",
-    "variables.unempnormlag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unempnormlag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unempnormlag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13496,26 +13053,10 @@
   ],
   [
     "change",
-    "variables.unempnorm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unempnorm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unempnorm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14172,26 +13713,10 @@
   ],
   [
     "change",
-    "variables.inflog.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflog.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflog.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14844,26 +14369,10 @@
   ],
   [
     "change",
-    "variables.inflognormlag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflognormlag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflognormlag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15516,26 +15025,10 @@
   ],
   [
     "change",
-    "variables.inflognorm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflognorm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflognorm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16192,26 +15685,10 @@
   ],
   [
     "change",
-    "variables.hankelag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hankelag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hankelag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16856,22 +16333,6 @@
     ]
   ],
   [
-    "change",
-    "variables.startyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.startyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.startyear",
     [
@@ -17198,35 +16659,11 @@
     [
       "variables",
       "log.com",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "log.com",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "log.com",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17889,26 +17326,10 @@
   ],
   [
     "change",
-    "variables.competence.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.competence.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.competence.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18565,26 +17986,10 @@
   ],
   [
     "change",
-    "variables.competenceleigh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.competenceleigh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.competenceleigh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19229,22 +18634,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lsce.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lsce.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lsce",
     [
@@ -19442,187 +18831,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:42",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country.wb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation.cp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp.constlcu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dgdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dirates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "geti": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dgeti": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hanke": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "okunlag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "okun": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpnorm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpnormlag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dgdplag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unempnormlag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unempnorm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflog": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflognormlag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflognorm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hankelag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "startyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log.com": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "competence": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "competenceleigh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lsce": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

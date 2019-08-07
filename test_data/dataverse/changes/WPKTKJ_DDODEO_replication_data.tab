@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        116
-      ],
-      [
-        "variableCount",
-        17
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WPKTKJ_DDODEO_replication_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 10309
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.province.mode",
     [
@@ -90,22 +7,6 @@
       [
         "RV"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.province.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.province.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -167,8 +68,8 @@
         {
           "RV": 34,
           "EASTERN": 22,
-          "COAST": 14,
           "NYANZA": 14,
+          "COAST": 14,
           "CENTRAL": 12,
           "WESTERN": 12,
           "NE": 6,
@@ -314,28 +215,12 @@
     [
       "KIAMBU",
       [
-        "KEIYO",
+        "KIAMBU",
+        "NAROK",
+        "KWALE",
         "MBEERE",
-        "BUNGOMA",
-        "THIKA",
-        "BUSIA"
+        "KOIBATEK"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.district.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.district.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -369,11 +254,11 @@
       [
         "fewestValues",
         [
-          "KEIYO",
+          "KIAMBU",
+          "NAROK",
+          "KWALE",
           "MBEERE",
-          "BUNGOMA",
-          "THIKA",
-          "BUSIA"
+          "KOIBATEK"
         ]
       ],
       [
@@ -399,64 +284,64 @@
       [
         "plotValues",
         {
-          "MOYALE": 2,
-          "MACHAKOS": 2,
-          "RACHUONYO": 2,
-          "SAMBURU": 2,
-          "MAKUENI": 2,
-          "MARAGUA": 2,
-          "NAKURU": 2,
-          "KWALE": 2,
-          "KIAMBU": 2,
-          "MERUSOUTH": 2,
-          "MERU": 2,
-          "MOMBASA": 2,
-          "TAITATAVETA": 2,
-          "KAJIADO": 2,
-          "TESO": 2,
-          "NYAMIRA": 2,
-          "KAKAMEGA": 2,
-          "KISUMU": 2,
-          "TRANS MARA": 2,
-          "KILIFI": 2,
-          "MANDERA": 2,
-          "ISIOLO": 2,
-          "KOIBATEK": 2,
-          "KITUI": 2,
-          "MARAKWET": 2,
-          "NYANDARUA": 2,
-          "WESTPOKOT": 2,
-          "NAIROBI HQS": 2,
-          "NAROK": 2,
-          "BARINGO": 2,
-          "MIGORI": 2,
-          "MT. ELGON": 2,
-          "UASINGISHU": 2,
-          "EMBU": 2,
-          "NYAMBENE": 2,
-          "LAMU": 2,
-          "WAJIR": 2,
-          "NYERI": 2,
-          "TRANSNZOIA": 2,
           "GARISSA": 2,
           "MURANGA": 2,
-          "HB": 2,
-          "KERICHO": 2,
-          "MWINGI": 2,
-          "BOMET": 2,
-          "VIHIGIA": 2,
-          "SIAYA": 2,
-          "LAIKIPIA": 2,
-          "MALINDI": 2,
-          "KISII": 2,
+          "NYAMIRA": 2,
+          "KEIYO": 2,
+          "MT. ELGON": 2,
+          "TESO": 2,
           "TANARIVER": 2,
-          "NANDI": 2,
-          "TURKANA": 2,
-          "BUSIA": 2,
+          "NYERI": 2,
+          "KITUI": 2,
+          "BOMET": 2,
+          "MARAGUA": 2,
+          "WAJIR": 2,
+          "NAROK": 2,
+          "LAMU": 2,
+          "VIHIGIA": 2,
           "THIKA": 2,
+          "NAIROBI HQS": 2,
+          "MERUSOUTH": 2,
+          "KISUMU": 2,
+          "KERICHO": 2,
+          "BUSIA": 2,
+          "KISII": 2,
+          "MERU": 2,
+          "KILIFI": 2,
+          "BARINGO": 2,
+          "LAIKIPIA": 2,
+          "KAJIADO": 2,
+          "MOYALE": 2,
+          "NYAMBENE": 2,
+          "SAMBURU": 2,
+          "EMBU": 2,
+          "MALINDI": 2,
+          "MAKUENI": 2,
           "BUNGOMA": 2,
+          "NYANDARUA": 2,
+          "ISIOLO": 2,
+          "TURKANA": 2,
+          "TRANS MARA": 2,
+          "MARAKWET": 2,
+          "MOMBASA": 2,
+          "NAKURU": 2,
+          "MANDERA": 2,
+          "UASINGISHU": 2,
+          "SIAYA": 2,
+          "KAKAMEGA": 2,
+          "TAITATAVETA": 2,
+          "MIGORI": 2,
+          "RACHUONYO": 2,
+          "MACHAKOS": 2,
+          "MWINGI": 2,
+          "WESTPOKOT": 2,
+          "TRANSNZOIA": 2,
+          "NANDI": 2,
+          "KOIBATEK": 2,
           "MBEERE": 2,
-          "KEIYO": 2
+          "KWALE": 2,
+          "HB": 2,
+          "KIAMBU": 2
         }
       ],
       [
@@ -682,22 +567,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.rvdummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rvdummy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -943,22 +812,6 @@
     ]
   ],
   [
-    "change",
-    "variables.alignedprovince.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.alignedprovince.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.alignedprovince",
     [
@@ -1198,22 +1051,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.unalignedprovince.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.unalignedprovince.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1459,22 +1296,6 @@
     ]
   ],
   [
-    "change",
-    "variables.misalignedprovince.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.misalignedprovince.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.misalignedprovince",
     [
@@ -1714,22 +1535,6 @@
     [
       "940",
       940
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2382,26 +2187,10 @@
   ],
   [
     "change",
-    "variables.lpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3058,26 +2847,10 @@
   ],
   [
     "change",
-    "variables.dist_herf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dist_herf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dist_herf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3721,22 +3494,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cabinet.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cabinet.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cabinet",
     [
@@ -3992,26 +3749,10 @@
   ],
   [
     "change",
-    "variables.laggedvoteshare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.laggedvoteshare.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.laggedvoteshare.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4656,22 +4397,6 @@
     [
       "230",
       230
-    ]
-  ],
-  [
-    "change",
-    "variables.area.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.area.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5328,26 +5053,10 @@
   ],
   [
     "change",
-    "variables.larea.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.larea.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.larea.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5992,22 +5701,6 @@
     ]
   ],
   [
-    "change",
-    "variables.deo.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.deo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.deo",
     [
@@ -6249,22 +5942,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ddo.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ddo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6511,22 +6188,6 @@
     ]
   ],
   [
-    "change",
-    "variables.kal_ddodeo.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.kal_ddodeo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.kal_ddodeo",
     [
@@ -6769,22 +6430,6 @@
     ]
   ],
   [
-    "change",
-    "variables.kik_ddodeo.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.kik_ddodeo.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.kik_ddodeo",
     [
@@ -6981,117 +6626,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:13",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "province": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "district": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rvdummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "alignedprovince": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unalignedprovince": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "misalignedprovince": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist_herf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cabinet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "laggedvoteshare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "area": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "larea": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "deo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ddo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kal_ddodeo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kik_ddodeo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

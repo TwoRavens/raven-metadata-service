@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        4764
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "1WDJVC_ACS2014_poststratification.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 217794
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cstate.mode",
     [
       "IA",
       [
-        "KY",
-        "FL",
-        "IA",
-        "LA",
-        "KS"
+        "GA",
+        "OR",
+        "NV",
+        "NE",
+        "NC"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cstate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cstate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,10 +44,10 @@
       [
         "fewestValues",
         [
-          "WY",
-          "ND",
           "MT",
-          "VT"
+          "WY",
+          "VT",
+          "ND"
         ]
       ],
       [
@@ -172,57 +73,57 @@
       [
         "plotValues",
         {
+          "NY": 96,
+          "MD": 96,
+          "IA": 96,
           "MN": 96,
+          "OK": 96,
+          "CA": 96,
+          "WA": 96,
+          "IL": 96,
           "SC": 96,
-          "OR": 96,
-          "MA": 96,
-          "RI": 96,
-          "PA": 96,
-          "AZ": 96,
+          "CT": 96,
           "NJ": 96,
           "VA": 96,
-          "GA": 96,
-          "NY": 96,
-          "IL": 96,
-          "OH": 96,
-          "MD": 96,
-          "CO": 96,
-          "MO": 96,
-          "WI": 96,
-          "MS": 96,
-          "IN": 96,
-          "NE": 96,
-          "WA": 96,
-          "DC": 96,
-          "OK": 96,
-          "MI": 96,
-          "AL": 96,
           "TN": 96,
-          "NC": 96,
-          "TX": 96,
-          "AR": 96,
-          "NV": 96,
-          "FL": 96,
-          "CA": 96,
-          "DE": 96,
-          "CT": 96,
+          "CO": 96,
+          "AL": 96,
           "NM": 96,
-          "KS": 96,
+          "MI": 96,
+          "RI": 96,
+          "DE": 96,
+          "DC": 96,
           "LA": 96,
-          "IA": 96,
+          "TX": 96,
+          "MS": 96,
+          "WI": 96,
+          "AR": 96,
+          "KS": 96,
+          "AZ": 96,
+          "IN": 96,
+          "MA": 96,
+          "PA": 96,
+          "OH": 96,
           "KY": 96,
+          "FL": 96,
+          "MO": 96,
+          "NC": 96,
+          "NE": 96,
+          "NV": 96,
+          "OR": 96,
+          "GA": 96,
           "HI": 93,
           "UT": 92,
           "WV": 92,
-          "NH": 89,
           "AK": 89,
+          "NH": 89,
           "ID": 87,
           "ME": 84,
           "SD": 82,
-          "MT": 78,
           "ND": 78,
+          "VT": 78,
           "WY": 78,
-          "VT": 78
+          "MT": 78
         }
       ],
       [
@@ -441,22 +342,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.crace_WBH.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.crace_WBH.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -705,22 +590,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cage_cat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cage_cat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -978,22 +847,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cfemale.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cfemale.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cfemale",
     [
@@ -1201,22 +1054,6 @@
       [
         "south"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cregion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cregion.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1451,22 +1288,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cedu_cat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cedu_cat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1725,22 +1546,6 @@
     [
       "3183",
       3183.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cfreq_state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cfreq_state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2392,26 +2197,10 @@
   ],
   [
     "change",
-    "variables.cpercent_state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cpercent_state.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cpercent_state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3509,77 +3298,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:48",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cstate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "crace_WBH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cage_cat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cfemale": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cregion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cedu_cat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_freq": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cfreq_state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cpercent_state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

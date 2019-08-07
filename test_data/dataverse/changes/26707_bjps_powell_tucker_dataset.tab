@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        133
-      ],
-      [
-        "variableCount",
-        35
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26707_bjps_powell_tucker_dataset.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 19989
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Austria"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,10 +40,10 @@
       [
         "fewestValues",
         [
+          "Ireland",
           "Estonia",
+          "Norway",
           "France",
-          "Latvia",
-          "Romania",
           "Great Britain"
         ]
       ],
@@ -170,32 +71,32 @@
         "plotValues",
         {
           "Austria": 7,
+          "Iceland": 6,
+          "Denmark": 6,
+          "Greece": 6,
           "Bulgaria": 6,
           "Italy": 6,
-          "Denmark": 6,
-          "Iceland": 6,
-          "Greece": 6,
-          "Germany": 5,
-          "Slovakia": 5,
+          "Slovenia": 5,
           "Czech Republic": 5,
-          "Switzerland": 5,
-          "Portugal": 5,
-          "Spain": 5,
           "Netherlands": 5,
           "Finland": 5,
           "Belgium": 5,
-          "Slovenia": 5,
-          "Sweden": 5,
+          "Spain": 5,
+          "Germany": 5,
+          "Switzerland": 5,
+          "Portugal": 5,
           "Poland": 5,
-          "Norway": 4,
+          "Sweden": 5,
+          "Slovakia": 5,
           "Lithuania": 4,
-          "Ireland": 4,
           "Hungary": 4,
-          "Great Britain": 4,
-          "Romania": 4,
           "Latvia": 4,
+          "Romania": 4,
+          "Great Britain": 4,
           "France": 4,
-          "Estonia": 4
+          "Norway": 4,
+          "Estonia": 4,
+          "Ireland": 4
         }
       ],
       [
@@ -390,22 +291,6 @@
     [
       "11",
       11
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1003,22 +888,6 @@
     ]
   ],
   [
-    "change",
-    "variables.t_1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.t_1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.t_1",
     [
@@ -1597,22 +1466,6 @@
     [
       "1990",
       1990
-    ]
-  ],
-  [
-    "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2195,22 +2048,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ElectionN.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ElectionN.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ElectionN",
     [
@@ -2492,26 +2329,10 @@
   ],
   [
     "change",
-    "variables.TypeAVol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TypeAVol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TypeAVol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3168,26 +2989,10 @@
   ],
   [
     "change",
-    "variables.TypeBVol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TypeBVol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TypeBVol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3840,26 +3645,10 @@
   ],
   [
     "change",
-    "variables.TotalVol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TotalVol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TotalVol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4512,26 +4301,10 @@
   ],
   [
     "change",
-    "variables.EthFrac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.EthFrac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.EthFrac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5175,22 +4948,6 @@
     ]
   ],
   [
-    "change",
-    "variables.EEIndicator.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.EEIndicator.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.EEIndicator",
     [
@@ -5431,22 +5188,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6024,22 +5765,6 @@
     ]
   ],
   [
-    "change",
-    "variables.presys.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.presys.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.presys",
     [
@@ -6269,22 +5994,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.mixsys.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mixsys.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6543,26 +6252,10 @@
   ],
   [
     "change",
-    "variables.Enp1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Enp1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Enp1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7219,26 +6912,10 @@
   ],
   [
     "change",
-    "variables.GDPChangeE1E2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDPChangeE1E2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDPChangeE1E2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7895,26 +7572,10 @@
   ],
   [
     "change",
-    "variables.GDPChange1989.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDPChange1989.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDPChange1989.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8558,22 +8219,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mis_weighted_mag.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mis_weighted_mag.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mis_weighted_mag",
     [
@@ -8816,22 +8461,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mis_GDPChangeE1E2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mis_GDPChangeE1E2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mis_GDPChangeE1E2",
     [
@@ -9064,22 +8693,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mis_GDPChange1989.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mis_GDPChange1989.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mis_GDPChange1989",
     [
@@ -9309,22 +8922,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9568,22 +9165,6 @@
     [
       "4",
       4.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Time2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Time2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10170,26 +9751,10 @@
   ],
   [
     "change",
-    "variables.lg_weighted_mag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lg_weighted_mag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lg_weighted_mag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10833,22 +10398,6 @@
     ]
   ],
   [
-    "change",
-    "variables.escorruptionmentions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.escorruptionmentions.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.escorruptionmentions",
     [
@@ -11127,22 +10676,6 @@
     ]
   ],
   [
-    "change",
-    "variables.esscandalmentions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.esscandalmentions.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.esscandalmentions",
     [
@@ -11409,22 +10942,6 @@
     ]
   ],
   [
-    "change",
-    "variables.esranking03.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.esranking03.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.esranking03",
     [
@@ -11676,22 +11193,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.esranking04.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.esranking04.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11955,22 +11456,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Sample_Tav.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_Tav.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Sample_Tav",
     [
@@ -12210,22 +11695,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_TC.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_TC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12471,22 +11940,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Sample_Bir.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_Bir.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Sample_Bir",
     [
@@ -12729,22 +12182,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Sample_Sik.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_Sik.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Sample_Sik",
     [
@@ -12984,22 +12421,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_NTC.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Sample_NTC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13254,26 +12675,10 @@
   ],
   [
     "change",
-    "variables.TypeAVolLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TypeAVolLag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TypeAVolLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13927,26 +13332,10 @@
   ],
   [
     "change",
-    "variables.TypeBVolLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TypeBVolLag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TypeBVolLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14603,26 +13992,10 @@
   ],
   [
     "change",
-    "variables.TotalVolLag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TotalVolLag.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TotalVolLag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15266,22 +14639,6 @@
     ]
   ],
   [
-    "change",
-    "variables.yeardiff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.yeardiff.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.yeardiff",
     [
@@ -15496,207 +14853,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:17:14",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ElectionN": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TypeAVol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TypeBVol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TotalVol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EthFrac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EEIndicator": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "presys": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mixsys": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Enp1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDPChangeE1E2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDPChange1989": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mis_weighted_mag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mis_GDPChangeE1E2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mis_GDPChange1989": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Time2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lg_weighted_mag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "escorruptionmentions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "esscandalmentions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "esranking03": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "esranking04": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sample_Tav": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sample_TC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sample_Bir": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sample_Sik": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Sample_NTC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TypeAVolLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TypeBVolLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TotalVolLag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "yeardiff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        214
-      ],
-      [
-        "variableCount",
-        18
-      ],
-      [
-        "dataSource",
-        {
-          "name": "BZ5BLZ_district.1986.2014.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 28251
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
       "AC",
       [
-        "MA",
+        "PA",
+        "MG",
+        "RO",
         "AL",
-        "MT",
-        "RN",
-        "PB"
+        "SE"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -169,32 +70,32 @@
       [
         "plotValues",
         {
-          "CE": 8,
-          "RR": 8,
-          "SE": 8,
-          "AM": 8,
-          "RO": 8,
-          "RJ": 8,
-          "MG": 8,
-          "SP": 8,
-          "PR": 8,
-          "AP": 8,
-          "PE": 8,
           "RS": 8,
-          "MS": 8,
-          "PA": 8,
-          "BA": 8,
-          "AC": 8,
-          "DF": 8,
-          "GO": 8,
-          "PI": 8,
-          "ES": 8,
-          "SC": 8,
-          "PB": 8,
-          "RN": 8,
           "MT": 8,
-          "AL": 8,
           "MA": 8,
+          "PI": 8,
+          "DF": 8,
+          "RN": 8,
+          "BA": 8,
+          "MS": 8,
+          "PB": 8,
+          "AP": 8,
+          "AM": 8,
+          "RR": 8,
+          "SP": 8,
+          "SC": 8,
+          "GO": 8,
+          "PR": 8,
+          "ES": 8,
+          "PE": 8,
+          "AC": 8,
+          "RJ": 8,
+          "CE": 8,
+          "SE": 8,
+          "AL": 8,
+          "RO": 8,
+          "MG": 8,
+          "PA": 8,
           "TO": 6
         }
       ],
@@ -360,36 +261,12 @@
     [
       "Acre",
       [
-        "Paran\ufffd",
-        "Piau\ufffd",
-        "Amazonas",
-        "Par\ufffd",
-        "Roraima"
+        "Maranh\ufffdo",
+        "S\ufffdo Paulo",
+        "Alagoas",
+        "Esp\ufffdrito Santo",
+        "Pernambuco"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "State.name",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "State.name",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -426,10 +303,10 @@
       [
         "fewestValues",
         [
-          "MG Sul",
+          "Rio G Norte",
           "Rio G Sul",
           "D Federal",
-          "Rio G Norte"
+          "MG Sul"
         ]
       ],
       [
@@ -455,36 +332,36 @@
       [
         "plotValues",
         {
-          "Esp\ufffdrito Santo": 8,
-          "Mato Grosso": 8,
-          "Paran\ufffd": 8,
-          "Cear\ufffd": 8,
-          "Pernambuco": 8,
-          "Maranh\ufffdo": 8,
-          "Minas Gerais": 8,
-          "Amap\ufffd": 8,
-          "Alagoas": 8,
-          "Para\ufffdba": 8,
-          "Rio de Janeiro": 8,
-          "Acre": 8,
-          "Goi\ufffds": 8,
-          "Piau\ufffd": 8,
-          "Sergipe": 8,
-          "Bahia": 8,
           "Rond\ufffdnia": 8,
-          "Santa Catarina": 8,
+          "Minas Gerais": 8,
+          "Piau\ufffd": 8,
+          "Para\ufffdba": 8,
+          "Mato Grosso": 8,
+          "Amap\ufffd": 8,
+          "Sergipe": 8,
+          "Paran\ufffd": 8,
           "Amazonas": 8,
-          "S\ufffdo Paulo": 8,
-          "Roraima": 8,
           "Par\ufffd": 8,
-          "M.G. Sul": 7,
-          "Rio G. Norte": 7,
+          "Goi\ufffds": 8,
+          "Bahia": 8,
+          "Roraima": 8,
+          "Santa Catarina": 8,
+          "Cear\ufffd": 8,
+          "Maranh\ufffdo": 8,
+          "S\ufffdo Paulo": 8,
+          "Rio de Janeiro": 8,
+          "Esp\ufffdrito Santo": 8,
+          "Alagoas": 8,
+          "Acre": 8,
+          "Pernambuco": 8,
           "Rio G. Sul": 7,
           "D. Federal": 7,
+          "M.G. Sul": 7,
+          "Rio G. Norte": 7,
           "Tocantins": 6,
           "MG Sul": 1,
-          "Rio G Norte": 1,
           "D Federal": 1,
+          "Rio G Norte": 1,
           "Rio G Sul": 1
         }
       ],
@@ -691,22 +568,6 @@
     [
       "1986",
       1986
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -956,36 +817,12 @@
     [
       "AC1986",
       [
-        "RO1990",
-        "SE1998",
-        "RS1994",
-        "DF2006",
-        "PB1994"
+        "AL1990",
+        "RS2014",
+        "AC2014",
+        "RR1998",
+        "MS1990"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "State.year",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "State.year",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1022,11 +859,11 @@
       [
         "fewestValues",
         [
-          "RO1990",
-          "SE1998",
-          "RS1994",
-          "DF2006",
-          "PB1994"
+          "AL1990",
+          "RS2014",
+          "AC2014",
+          "RR1998",
+          "MS1990"
         ]
       ],
       [
@@ -1052,220 +889,220 @@
       [
         "plotValues",
         {
-          "SE2006": 1,
-          "DF2010": 1,
-          "RN1998": 1,
-          "TO1994": 1,
-          "RN2002": 1,
-          "SP1990": 1,
-          "PE2002": 1,
-          "GO2014": 1,
-          "ES2010": 1,
-          "RJ1994": 1,
-          "SC2002": 1,
-          "TO2014": 1,
-          "RS2002": 1,
-          "PR2010": 1,
-          "MA2002": 1,
-          "RR2002": 1,
-          "RR1986": 1,
-          "SP2002": 1,
-          "RJ2010": 1,
-          "AM2006": 1,
-          "PI1990": 1,
-          "SE1994": 1,
-          "MG1986": 1,
-          "AL2006": 1,
-          "CE2006": 1,
-          "RO1986": 1,
-          "CE2010": 1,
-          "ES1998": 1,
-          "PE1986": 1,
-          "PA2006": 1,
-          "BA2002": 1,
-          "PE2010": 1,
-          "RR2014": 1,
-          "RJ1986": 1,
-          "RJ2006": 1,
-          "RO1998": 1,
-          "PE2006": 1,
-          "ES1990": 1,
-          "RN2006": 1,
-          "PE1998": 1,
-          "DF1998": 1,
-          "TO1998": 1,
-          "MT2006": 1,
-          "PA1994": 1,
-          "DF1986": 1,
-          "PA2002": 1,
-          "PB1998": 1,
-          "GO1998": 1,
-          "MT1990": 1,
-          "RR1994": 1,
-          "RJ2002": 1,
-          "MS2014": 1,
-          "PA2014": 1,
-          "SE2010": 1,
-          "DF1990": 1,
-          "AP2006": 1,
-          "AL2002": 1,
-          "AM1986": 1,
-          "PB1986": 1,
-          "SC2014": 1,
-          "PB2002": 1,
-          "MG1994": 1,
-          "AC2002": 1,
-          "SE2014": 1,
-          "MS1990": 1,
-          "MT2010": 1,
-          "SE1986": 1,
-          "PB2006": 1,
-          "SP2010": 1,
-          "AM2002": 1,
           "PI1998": 1,
-          "RS1998": 1,
-          "AC1986": 1,
-          "GO2002": 1,
-          "SE2002": 1,
-          "AP2002": 1,
-          "AP1994": 1,
-          "MG2006": 1,
-          "MA1998": 1,
-          "PR1990": 1,
-          "SP2014": 1,
-          "RN2010": 1,
-          "AL1990": 1,
-          "RN1990": 1,
-          "AM1990": 1,
-          "BA1998": 1,
-          "PE1994": 1,
-          "MG1998": 1,
-          "ES2014": 1,
-          "SC1998": 1,
-          "PI2006": 1,
-          "MA1986": 1,
-          "ES1986": 1,
-          "RR2010": 1,
-          "PB2010": 1,
-          "AL1994": 1,
-          "RS1986": 1,
-          "RJ1998": 1,
-          "RS2010": 1,
-          "MS2006": 1,
-          "RS2006": 1,
-          "RN2014": 1,
-          "AC1990": 1,
-          "MT2002": 1,
-          "DF2014": 1,
-          "PR2006": 1,
-          "RN1986": 1,
-          "RJ2014": 1,
-          "MS2002": 1,
-          "MS1994": 1,
-          "AC2010": 1,
-          "MG1990": 1,
-          "CE1994": 1,
-          "MS1986": 1,
-          "PR1986": 1,
-          "MA1994": 1,
-          "CE1998": 1,
-          "AC2014": 1,
-          "DF1994": 1,
-          "PE2014": 1,
-          "MG2010": 1,
-          "RN1994": 1,
-          "DF2002": 1,
-          "AC2006": 1,
-          "SE1990": 1,
-          "RR2006": 1,
-          "CE1986": 1,
-          "RO2006": 1,
-          "ES2006": 1,
-          "AP2010": 1,
-          "RO2010": 1,
-          "PE1990": 1,
+          "PA2014": 1,
           "PB1990": 1,
-          "PI2002": 1,
-          "RO2002": 1,
-          "MT2014": 1,
-          "RJ1990": 1,
-          "GO2010": 1,
-          "SC2006": 1,
-          "RR1990": 1,
-          "AL2014": 1,
-          "PR2002": 1,
-          "BA1994": 1,
-          "AL1986": 1,
-          "RS1990": 1,
-          "BA1990": 1,
-          "BA2006": 1,
-          "MS2010": 1,
-          "TO2010": 1,
-          "AL2010": 1,
-          "CE2014": 1,
-          "RR1998": 1,
-          "MA1990": 1,
-          "RO2014": 1,
-          "ES2002": 1,
-          "SC1986": 1,
+          "RS1986": 1,
+          "PB2006": 1,
+          "SE1990": 1,
           "PR1994": 1,
-          "SC2010": 1,
-          "AP1998": 1,
-          "MS1998": 1,
-          "SC1994": 1,
-          "PA1990": 1,
-          "RO1994": 1,
-          "GO1986": 1,
-          "AM1994": 1,
-          "CE2002": 1,
-          "AM2014": 1,
-          "PB2014": 1,
-          "RS2014": 1,
-          "SP2006": 1,
-          "PA1998": 1,
-          "BA1986": 1,
-          "ES1994": 1,
-          "TO2002": 1,
-          "AC1994": 1,
-          "MA2006": 1,
-          "GO2006": 1,
           "PR2014": 1,
-          "CE1990": 1,
-          "PA1986": 1,
-          "SP1994": 1,
+          "PA1990": 1,
+          "ES2010": 1,
+          "RO1990": 1,
+          "MS2006": 1,
+          "PI2006": 1,
+          "ES1994": 1,
+          "RR2006": 1,
+          "BA1994": 1,
+          "RR2002": 1,
+          "MS1998": 1,
+          "ES1998": 1,
+          "RO1986": 1,
+          "GO2002": 1,
+          "PE2014": 1,
+          "MA1998": 1,
+          "MG1990": 1,
+          "RS2006": 1,
+          "RS1998": 1,
+          "RJ2002": 1,
+          "CE1994": 1,
+          "DF2010": 1,
+          "SE2006": 1,
+          "TO2002": 1,
+          "GO2010": 1,
+          "TO1998": 1,
           "AP1990": 1,
-          "AP2014": 1,
-          "PI1986": 1,
-          "AC1998": 1,
-          "PA2010": 1,
-          "SP1998": 1,
-          "AP1986": 1,
-          "TO2006": 1,
-          "PI2014": 1,
-          "PR1998": 1,
-          "AM2010": 1,
+          "PR2006": 1,
           "GO1994": 1,
-          "AM1998": 1,
-          "MA2010": 1,
-          "PI2010": 1,
-          "MT1994": 1,
-          "MA2014": 1,
-          "BA2010": 1,
+          "PA2006": 1,
+          "PE2006": 1,
+          "RN2002": 1,
           "SP1986": 1,
-          "GO1990": 1,
-          "PI1994": 1,
-          "AL1998": 1,
-          "BA2014": 1,
-          "PB1994": 1,
+          "DF1994": 1,
+          "SE2010": 1,
+          "AP2014": 1,
+          "AL2014": 1,
+          "AM2002": 1,
+          "RJ1986": 1,
+          "BA2002": 1,
+          "PA1986": 1,
+          "RR1998": 1,
+          "MT1994": 1,
+          "RR2010": 1,
+          "RR1990": 1,
+          "TO2014": 1,
+          "PE1994": 1,
+          "CE2010": 1,
+          "GO2014": 1,
+          "RO2014": 1,
+          "RJ2006": 1,
+          "CE2002": 1,
+          "PA2002": 1,
+          "PB2002": 1,
+          "AC1994": 1,
+          "MS2002": 1,
+          "MG1998": 1,
+          "PE2010": 1,
+          "AC2010": 1,
+          "MS2010": 1,
+          "AM1994": 1,
+          "BA1998": 1,
+          "RN2010": 1,
+          "AM2010": 1,
+          "RN1986": 1,
+          "RR1994": 1,
+          "RR1986": 1,
+          "AM2006": 1,
+          "MT1990": 1,
+          "MS1986": 1,
+          "PB1998": 1,
+          "SE2002": 1,
+          "SP2010": 1,
+          "PI1990": 1,
+          "MA2006": 1,
+          "SP2006": 1,
+          "RJ1990": 1,
+          "PE1986": 1,
+          "CE2006": 1,
+          "DF2002": 1,
+          "SP1990": 1,
+          "MA1990": 1,
+          "SP2002": 1,
+          "PR1986": 1,
+          "GO1986": 1,
+          "AP1986": 1,
+          "AC2002": 1,
+          "RO1994": 1,
+          "SE2014": 1,
+          "RN1994": 1,
+          "SC1986": 1,
+          "AP1998": 1,
+          "TO2010": 1,
+          "RJ2014": 1,
+          "RN2014": 1,
+          "RN1998": 1,
+          "AL2010": 1,
+          "AP1994": 1,
+          "PE1998": 1,
+          "SP2014": 1,
+          "ES2006": 1,
+          "CE1990": 1,
+          "AM1990": 1,
+          "SP1994": 1,
+          "MT2006": 1,
+          "AM1998": 1,
+          "MT2002": 1,
+          "MA2010": 1,
+          "SC1994": 1,
+          "SC2014": 1,
+          "AC1986": 1,
           "DF2006": 1,
+          "MG1986": 1,
+          "PI2002": 1,
+          "DF2014": 1,
+          "BA2014": 1,
+          "PI2014": 1,
+          "PB1994": 1,
+          "RR2014": 1,
+          "AM1986": 1,
+          "DF1990": 1,
+          "SE1986": 1,
+          "AP2002": 1,
+          "ES1990": 1,
+          "MT1998": 1,
+          "TO1994": 1,
+          "PR2010": 1,
+          "RS2010": 1,
+          "MG2014": 1,
+          "SP1998": 1,
+          "TO2006": 1,
+          "MA1986": 1,
+          "RJ1994": 1,
+          "AL2002": 1,
+          "RS2002": 1,
+          "PB1986": 1,
+          "GO1990": 1,
+          "BA2010": 1,
+          "AL2006": 1,
+          "PR1990": 1,
+          "SC2006": 1,
+          "AP2006": 1,
+          "ES1986": 1,
+          "PI1994": 1,
+          "PA1994": 1,
+          "MA1994": 1,
+          "CE2014": 1,
+          "RO2006": 1,
+          "CE1986": 1,
+          "RN1990": 1,
+          "CE1998": 1,
+          "ES2014": 1,
+          "MA2014": 1,
+          "SC1998": 1,
+          "PI2010": 1,
+          "MT1986": 1,
+          "MA2002": 1,
           "RS1994": 1,
           "SE1998": 1,
-          "MG2014": 1,
-          "MT1998": 1,
+          "PA2010": 1,
+          "MS1994": 1,
+          "MT2014": 1,
+          "PE1990": 1,
+          "BA2006": 1,
+          "PB2010": 1,
           "SC1990": 1,
+          "MS2014": 1,
+          "AL1998": 1,
+          "MT2010": 1,
+          "PR1998": 1,
+          "RO1998": 1,
+          "AC1990": 1,
+          "MG1994": 1,
+          "BA1986": 1,
+          "DF1998": 1,
+          "MG2010": 1,
+          "PE2002": 1,
+          "RN2006": 1,
+          "AL1986": 1,
+          "RS1990": 1,
+          "AM2014": 1,
           "MG2002": 1,
-          "MT1986": 1,
-          "RO1990": 1
+          "PB2014": 1,
+          "SE1994": 1,
+          "GO1998": 1,
+          "AC1998": 1,
+          "MG2006": 1,
+          "RJ1998": 1,
+          "AC2006": 1,
+          "ES2002": 1,
+          "AL1994": 1,
+          "GO2006": 1,
+          "SC2002": 1,
+          "DF1986": 1,
+          "SC2010": 1,
+          "RO2010": 1,
+          "PR2002": 1,
+          "BA1990": 1,
+          "PI1986": 1,
+          "PA1998": 1,
+          "AP2010": 1,
+          "RO2002": 1,
+          "MS1990": 1,
+          "AC2014": 1,
+          "RS2014": 1,
+          "RJ2010": 1,
+          "AL1990": 1
         }
       ],
       [
@@ -1664,26 +1501,10 @@
   ],
   [
     "change",
-    "variables.Invalid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Invalid.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Invalid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2336,26 +2157,10 @@
   ],
   [
     "change",
-    "variables.Absenteeism.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Absenteeism.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Absenteeism.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3010,26 +2815,10 @@
   ],
   [
     "change",
-    "variables.Valid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Valid.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Valid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3682,26 +3471,10 @@
   ],
   [
     "change",
-    "variables.Illiterates.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Illiterates.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Illiterates.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4354,26 +4127,10 @@
   ],
   [
     "change",
-    "variables.Urban.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Urban.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Urban.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5014,22 +4771,6 @@
     [
       "12",
       12
-    ]
-  ],
-  [
-    "change",
-    "variables.Candidates.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Candidates.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5686,26 +5427,10 @@
   ],
   [
     "change",
-    "variables.Competitiveness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Competitiveness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Competitiveness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6358,26 +6083,10 @@
   ],
   [
     "change",
-    "variables.Seniors.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Seniors.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Seniors.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7030,26 +6739,10 @@
   ],
   [
     "change",
-    "variables.Young.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Young.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Young.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7702,26 +7395,10 @@
   ],
   [
     "change",
-    "variables.TRE.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.TRE.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.TRE.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8401,35 +8078,11 @@
     [
       "variables",
       "Electronic.Vote",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Electronic.Vote",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Electronic.Vote",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9088,26 +8741,10 @@
   ],
   [
     "change",
-    "variables.Growth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Growth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9396,26 +9033,10 @@
   ],
   [
     "change",
-    "variables.Inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9709,26 +9330,10 @@
   ],
   [
     "change",
-    "variables.Income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Income.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10326,122 +9931,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:32",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "State.name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "State.year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Invalid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Absenteeism": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Valid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Illiterates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Urban": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Candidates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Competitiveness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Seniors": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Young": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TRE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Electronic.Vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

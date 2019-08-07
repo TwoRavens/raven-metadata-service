@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        538
-      ],
-      [
-        "variableCount",
-        40
-      ],
-      [
-        "dataSource",
-        {
-          "name": "38YU1I_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 63912
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.study_nr.median",
     [
@@ -122,22 +39,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.study_nr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.study_nr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -778,22 +679,6 @@
     ]
   ],
   [
-    "change",
-    "variables.obs_per_study.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.obs_per_study.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.obs_per_study",
     [
@@ -1377,22 +1262,6 @@
     ]
   ],
   [
-    "change",
-    "variables.aggregated_data.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.aggregated_data.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.aggregated_data",
     [
@@ -1632,22 +1501,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_data.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_data.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1893,22 +1746,6 @@
     ]
   ],
   [
-    "change",
-    "variables.firm_data.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.firm_data.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.firm_data",
     [
@@ -2119,22 +1956,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country_abbr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_abbr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country_abbr",
     [
@@ -2165,11 +1986,11 @@
       [
         "fewestValues",
         [
-          "CL",
           "AR",
+          "PA",
           "CR",
           "CO",
-          "PA"
+          "CL"
         ]
       ],
       [
@@ -2208,16 +2029,16 @@
           "CH": 6,
           "KR": 6,
           "DE": 5,
+          "SL": 4,
           "EP": 4,
           "FI": 4,
-          "SL": 4,
           "BR": 3,
-          "CO": 2,
+          "PA": 2,
+          "AR": 2,
+          "CR": 2,
           "CL": 2,
           "UY": 2,
-          "CR": 2,
-          "AR": 2,
-          "PA": 2
+          "CO": 2
         }
       ],
       [
@@ -2379,22 +2200,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -2425,11 +2230,11 @@
       [
         "fewestValues",
         [
-          "Uruguay",
-          "Panama",
           "Costa Rica",
-          "Argentina",
-          "Chile"
+          "Chile",
+          "Colombia",
+          "Uruguay",
+          "Panama"
         ]
       ],
       [
@@ -2467,16 +2272,16 @@
           "Sweden": 9,
           "South Korea": 6,
           "Germany": 5,
-          "Slovenia": 4,
           "Finland": 4,
           "Spain": 4,
+          "Slovenia": 4,
           "Brazil": 3,
           "Argentina": 2,
-          "Panama": 2,
           "Uruguay": 2,
           "Colombia": 2,
-          "Costa Rica": 2,
-          "Chile": 2
+          "Chile": 2,
+          "Panama": 2,
+          "Costa Rica": 2
         }
       ],
       [
@@ -2666,22 +2471,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.country_number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3269,22 +3058,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ind_country.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ind_country",
     [
@@ -3524,22 +3297,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.dev_country.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dev_country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3785,22 +3542,6 @@
     ]
   ],
   [
-    "change",
-    "variables.transition_country.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.transition_country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.transition_country",
     [
@@ -4040,22 +3781,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.brazil.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.brazil.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4301,22 +4026,6 @@
     ]
   ],
   [
-    "change",
-    "variables.india.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.india.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.india",
     [
@@ -4556,22 +4265,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.china.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.china.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4817,22 +4510,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rnddummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rnddummy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rnddummy",
     [
@@ -5072,22 +4749,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.non_rd_inno.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.non_rd_inno.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5333,22 +4994,6 @@
     ]
   ],
   [
-    "change",
-    "variables.capital.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.capital.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.capital",
     [
@@ -5588,22 +5233,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.human_cap.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.human_cap.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5849,22 +5478,6 @@
     ]
   ],
   [
-    "change",
-    "variables.openess.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.openess.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.openess",
     [
@@ -6104,22 +5717,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pop_growth.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pop_growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6365,22 +5962,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y0.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y0.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y0",
     [
@@ -6620,22 +6201,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.no_of_vars.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.no_of_vars.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7187,22 +6752,6 @@
     ]
   ],
   [
-    "change",
-    "variables.feestimation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.feestimation.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.feestimation",
     [
@@ -7433,22 +6982,6 @@
     [
       "25",
       25
-    ]
-  ],
-  [
-    "change",
-    "variables.obs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.obs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8093,22 +7626,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dgf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dgf.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dgf",
     [
@@ -8749,22 +8266,6 @@
     ]
   ],
   [
-    "change",
-    "variables.no_years.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.no_years.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.no_years",
     [
@@ -9355,22 +8856,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y_levels.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y_levels.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y_levels",
     [
@@ -9610,22 +9095,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.y_growth.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y_growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9871,22 +9340,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tfp_levels.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tfp_levels.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tfp_levels",
     [
@@ -10126,22 +9579,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.tfp_growth.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tfp_growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10387,22 +9824,6 @@
     ]
   ],
   [
-    "change",
-    "variables.per60s.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.per60s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.per60s",
     [
@@ -10642,22 +10063,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.per70s.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.per70s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10903,22 +10308,6 @@
     ]
   ],
   [
-    "change",
-    "variables.per80s.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.per80s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.per80s",
     [
@@ -11158,22 +10547,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.per90s.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.per90s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11419,22 +10792,6 @@
     ]
   ],
   [
-    "change",
-    "variables.per00s.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.per00s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.per00s",
     [
@@ -11674,22 +11031,6 @@
     [
       "1947",
       1947
-    ]
-  ],
-  [
-    "change",
-    "variables.startyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.startyear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12301,22 +11642,6 @@
     ]
   ],
   [
-    "change",
-    "variables.endyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.endyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.endyear",
     [
@@ -12910,26 +12235,10 @@
   ],
   [
     "change",
-    "variables.bcoef.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bcoef.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bcoef.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13582,26 +12891,10 @@
   ],
   [
     "change",
-    "variables.tval.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tval.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tval.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14254,26 +13547,10 @@
   ],
   [
     "change",
-    "variables.stdv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stdv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stdv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14871,232 +14148,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:34",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "study_nr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "obs_per_study": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aggregated_data": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_data": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "firm_data": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_abbr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dev_country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "transition_country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "brazil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "india": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "china": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rnddummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "non_rd_inno": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "capital": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "human_cap": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openess": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop_growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "no_of_vars": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "feestimation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "obs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dgf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "no_years": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y_levels": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y_growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tfp_levels": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tfp_growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "per60s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "per70s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "per80s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "per90s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "per00s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "startyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "endyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bcoef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tval": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stdv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

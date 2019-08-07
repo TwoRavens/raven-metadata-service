@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        192
-      ],
-      [
-        "variableCount",
-        117
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CAEEG7_abs-jop-nes-white-countydata.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 244001
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -94,30 +11,6 @@
       [
         "TX"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "state.abb",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "state.abb",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -154,11 +47,11 @@
       [
         "fewestValues",
         [
-          "WY",
-          "NC",
+          "DC",
           "NM",
           "AZ",
-          "DC"
+          "NE",
+          "NC"
         ]
       ],
       [
@@ -189,37 +82,37 @@
           "VA": 12,
           "CA": 11,
           "MI": 10,
-          "NJ": 9,
-          "MD": 9,
           "PA": 9,
+          "MD": 9,
+          "NJ": 9,
           "IL": 8,
-          "MN": 8,
-          "OH": 8,
           "GA": 8,
-          "MO": 7,
+          "OH": 8,
+          "MN": 8,
           "MA": 7,
+          "MO": 7,
           "FL": 6,
           "CO": 6,
           "IN": 6,
           "AL": 5,
           "WI": 4,
-          "WV": 4,
           "TN": 4,
-          "KS": 3,
+          "WV": 4,
           "IA": 3,
           "WA": 3,
-          "UT": 2,
-          "AR": 2,
-          "CT": 2,
-          "LA": 2,
+          "KS": 3,
           "NH": 2,
-          "NE": 1,
+          "LA": 2,
+          "UT": 2,
+          "CT": 2,
+          "AR": 2,
           "OR": 1,
-          "DC": 1,
+          "WY": 1,
+          "NC": 1,
+          "NE": 1,
           "AZ": 1,
           "NM": 1,
-          "NC": 1,
-          "WY": 1
+          "DC": 1
         }
       ],
       [
@@ -430,22 +323,6 @@
     [
       "1073",
       1073
-    ]
-  ],
-  [
-    "change",
-    "variables.fips.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1057,22 +934,6 @@
     ]
   ],
   [
-    "change",
-    "variables.county_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.county_name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.county_name",
     [
@@ -1103,11 +964,11 @@
       [
         "fewestValues",
         [
-          "Belmont",
-          "Cobb",
-          "Ottawa",
-          "Prince William",
-          "Howard"
+          "Camden",
+          "Norfolk",
+          "Harris",
+          "Fresno",
+          "Bucks"
         ]
       ],
       [
@@ -1136,174 +997,174 @@
           "Montgomery": 5,
           "Jefferson": 4,
           "St. Clair": 3,
-          "Dallas": 2,
+          "Douglas": 2,
+          "Essex": 2,
+          "Washington": 2,
           "Monroe": 2,
+          "Dallas": 2,
+          "Ohio": 2,
           "Suffolk": 2,
+          "Polk": 2,
+          "Middlesex": 2,
           "Clay": 2,
           "Richmond": 2,
-          "Essex": 2,
-          "Ohio": 2,
-          "Washington": 2,
-          "Middlesex": 2,
-          "Polk": 2,
-          "Douglas": 2,
           "Nassau": 2,
-          "Los Angeles": 1,
-          "Taney": 1,
-          "Vernon": 1,
-          "Bergen": 1,
-          "Hidalgo": 1,
-          "Somerset": 1,
-          "Ellis": 1,
-          "Wells": 1,
-          "Brazoria": 1,
+          "Orange": 1,
           "Erie": 1,
-          "Fresno": 1,
-          "Phillips": 1,
-          "King": 1,
-          "Russell": 1,
-          "Livingston": 1,
+          "Gwinnett": 1,
+          "Madison": 1,
           "Schuyler": 1,
-          "Hennepin": 1,
-          "Kane": 1,
-          "Alameda": 1,
-          "Allen": 1,
-          "St. Louis": 1,
-          "McHenry": 1,
-          "District of Columbia": 1,
-          "Carbon": 1,
-          "Fulton": 1,
-          "Elk": 1,
-          "Harrisonburg": 1,
-          "Tarrant": 1,
-          "Preble": 1,
-          "Jim Wells": 1,
-          "Cuyahoga": 1,
-          "Ozaukee": 1,
-          "Dinwiddie": 1,
-          "Marin": 1,
-          "Sanilac": 1,
-          "Rockingham": 1,
-          "Arlington": 1,
-          "Prince George's": 1,
-          "Arapahoe": 1,
-          "Fairfax": 1,
-          "Lake": 1,
-          "Collin": 1,
-          "Maricopa": 1,
-          "Milwaukee": 1,
-          "San Bernardino": 1,
-          "Westchester": 1,
-          "Union": 1,
-          "Anne Arundel": 1,
-          "Wayne": 1,
-          "St. Louis city": 1,
-          "Atlantic": 1,
-          "Chester": 1,
-          "Powhatan": 1,
-          "DuPage": 1,
-          "Muscogee": 1,
-          "Contra Costa": 1,
-          "Morris": 1,
-          "Charles": 1,
-          "Allegheny": 1,
-          "Denver": 1,
-          "Radford": 1,
-          "De Kalb": 1,
-          "Lane": 1,
-          "San Mateo": 1,
-          "Pierce": 1,
-          "Burlington": 1,
-          "Cape May": 1,
-          "Hale": 1,
-          "Howard": 1,
-          "Geauga": 1,
-          "Oakland": 1,
-          "Decatur": 1,
-          "Jackson": 1,
-          "Hancock": 1,
-          "Fort Bend": 1,
-          "Norfolk": 1,
-          "Duval": 1,
-          "Westmoreland": 1,
-          "Henrico": 1,
           "Ramsey": 1,
-          "Kings": 1,
+          "Henrico": 1,
+          "Decatur": 1,
+          "Greene": 1,
+          "Wyandotte": 1,
+          "Chester": 1,
+          "Wayne": 1,
+          "Riverside": 1,
+          "Lane": 1,
+          "Hennepin": 1,
+          "Los Angeles": 1,
+          "Norfolk": 1,
+          "Morris": 1,
+          "Harrisonburg": 1,
+          "Baltimore city": 1,
+          "Adams": 1,
+          "Dade": 1,
+          "Davis": 1,
+          "Contra Costa": 1,
+          "Whitfield": 1,
+          "Duval": 1,
+          "Bergen": 1,
+          "Cape May": 1,
+          "Hancock": 1,
+          "Knox": 1,
+          "Ellis": 1,
+          "St. Louis": 1,
+          "Delaware": 1,
+          "Ashley": 1,
+          "Maricopa": 1,
+          "Anoka": 1,
+          "Snohomish": 1,
+          "El Dorado": 1,
+          "St. Charles": 1,
+          "Taney": 1,
+          "Hillsborough": 1,
           "Wright": 1,
           "Steele": 1,
-          "Carroll": 1,
-          "St. Charles": 1,
-          "Orange": 1,
-          "Warren": 1,
-          "Gwinnett": 1,
-          "Snohomish": 1,
-          "Waukesha": 1,
-          "Miami": 1,
+          "Tarrant": 1,
+          "San Mateo": 1,
+          "Walker": 1,
+          "Kings": 1,
+          "Livingston": 1,
+          "District of Columbia": 1,
+          "Westmoreland": 1,
+          "Wells": 1,
+          "Cuyahoga": 1,
+          "Switzerland": 1,
+          "Atlantic": 1,
+          "Harford": 1,
+          "St. Johns": 1,
+          "Fairfax": 1,
+          "De Kalb": 1,
+          "McHenry": 1,
+          "Westchester": 1,
+          "Johnson": 1,
+          "Brooke": 1,
+          "Plymouth": 1,
+          "Jim Wells": 1,
+          "Baltimore": 1,
+          "Lapeer": 1,
+          "Cobb": 1,
+          "Salt Lake": 1,
           "Marshall": 1,
-          "Rockland": 1,
-          "Anoka": 1,
-          "Niagara": 1,
-          "Philadelphia": 1,
-          "Bulloch": 1,
+          "Goochland": 1,
+          "Blount": 1,
+          "Saline": 1,
+          "Union": 1,
+          "Prince George's": 1,
+          "Miami": 1,
+          "McLennan": 1,
+          "Oakland": 1,
+          "Allen": 1,
+          "Cook": 1,
+          "Charles": 1,
+          "Waukesha": 1,
+          "Arapahoe": 1,
+          "Fort Bend": 1,
+          "Queens": 1,
+          "New York": 1,
+          "Arlington": 1,
+          "Hidalgo": 1,
+          "Sandoval": 1,
+          "Chesterfield": 1,
+          "Denver": 1,
+          "Milwaukee": 1,
+          "Preble": 1,
+          "Lake": 1,
+          "Prince William": 1,
+          "Brazoria": 1,
+          "Elk": 1,
+          "Pierce": 1,
+          "Muscogee": 1,
+          "Hampshire": 1,
+          "Shelby": 1,
+          "Anne Arundel": 1,
+          "Dakota": 1,
+          "Robeson": 1,
+          "Hale": 1,
           "Bedford": 1,
           "Mower": 1,
-          "Baltimore city": 1,
-          "Greene": 1,
-          "Hampshire": 1,
-          "Macomb": 1,
-          "Bronx": 1,
-          "Sandoval": 1,
-          "New York": 1,
-          "Madison": 1,
-          "Bucks": 1,
-          "Adams": 1,
-          "Kent": 1,
-          "Davis": 1,
-          "Riverside": 1,
-          "Salt Lake": 1,
-          "Chesterfield": 1,
-          "Johnson": 1,
-          "Harford": 1,
-          "Plymouth": 1,
-          "Lapeer": 1,
-          "Brooke": 1,
-          "Saginaw": 1,
-          "New Haven": 1,
-          "Knox": 1,
-          "Switzerland": 1,
-          "Shelby": 1,
-          "Starke": 1,
-          "Queens": 1,
-          "Wyandotte": 1,
-          "Harris": 1,
-          "Ashley": 1,
-          "Delaware": 1,
-          "San Francisco": 1,
-          "Boulder": 1,
-          "Whitfield": 1,
-          "El Dorado": 1,
-          "Goochland": 1,
-          "Dakota": 1,
-          "Baltimore": 1,
-          "Dane": 1,
-          "Robeson": 1,
-          "St. Johns": 1,
-          "Cook": 1,
-          "Denton": 1,
-          "McLennan": 1,
-          "Camden": 1,
-          "Sabine": 1,
-          "Worcester": 1,
-          "Hillsborough": 1,
-          "Walker": 1,
-          "Blount": 1,
-          "Prince William": 1,
-          "Ottawa": 1,
-          "Cobb": 1,
-          "Dade": 1,
-          "Saline": 1,
+          "Rockingham": 1,
+          "Marin": 1,
+          "Geauga": 1,
+          "Jackson": 1,
+          "Carroll": 1,
+          "Rockland": 1,
           "Anderson": 1,
-          "Belmont": 1
+          "King": 1,
+          "Dinwiddie": 1,
+          "Warren": 1,
+          "New Haven": 1,
+          "St. Louis city": 1,
+          "Powhatan": 1,
+          "Fulton": 1,
+          "Vernon": 1,
+          "Alameda": 1,
+          "San Bernardino": 1,
+          "Kane": 1,
+          "Belmont": 1,
+          "Philadelphia": 1,
+          "San Francisco": 1,
+          "Kent": 1,
+          "Macomb": 1,
+          "Burlington": 1,
+          "Sanilac": 1,
+          "Radford": 1,
+          "Camden": 1,
+          "Howard": 1,
+          "Saginaw": 1,
+          "Starke": 1,
+          "Somerset": 1,
+          "Carbon": 1,
+          "Bulloch": 1,
+          "Dane": 1,
+          "Allegheny": 1,
+          "Boulder": 1,
+          "Bronx": 1,
+          "Collin": 1,
+          "Sabine": 1,
+          "Niagara": 1,
+          "Ottawa": 1,
+          "Denton": 1,
+          "Ozaukee": 1,
+          "Russell": 1,
+          "DuPage": 1,
+          "Bucks": 1,
+          "Fresno": 1,
+          "Worcester": 1,
+          "Harris": 1,
+          "Phillips": 1
         }
       ],
       [
@@ -1654,26 +1515,10 @@
   ],
   [
     "change",
-    "variables.pslave1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pslave1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pslave1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2330,26 +2175,10 @@
   ],
   [
     "change",
-    "variables.longitude.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.longitude.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.longitude.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3006,26 +2835,10 @@
   ],
   [
     "change",
-    "variables.latitude.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.latitude.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.latitude.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3682,26 +3495,10 @@
   ],
   [
     "change",
-    "variables.coarea00.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.coarea00.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.coarea00.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4346,22 +4143,6 @@
     [
       "10",
       10
-    ]
-  ],
-  [
-    "change",
-    "variables.coarea.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.coarea.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5018,26 +4799,10 @@
   ],
   [
     "change",
-    "variables.rugged.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rugged.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rugged.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5721,35 +5486,11 @@
     [
       "variables",
       "land.ineq1860",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "land.ineq1860",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "land.ineq1860",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6411,26 +6152,10 @@
   ],
   [
     "change",
-    "variables.sfarmprop1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sfarmprop1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sfarmprop1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7087,26 +6812,10 @@
   ],
   [
     "change",
-    "variables.totpop1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.totpop1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7763,26 +7472,10 @@
   ],
   [
     "change",
-    "variables.fvalpc1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fvalpc1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fvalpc1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8439,26 +8132,10 @@
   ],
   [
     "change",
-    "variables.fvalpac1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fvalpac1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fvalpac1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9115,26 +8792,10 @@
   ],
   [
     "change",
-    "variables.acimp1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.acimp1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.acimp1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9787,26 +9448,10 @@
   ],
   [
     "change",
-    "variables.fbprop1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fbprop1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fbprop1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10450,22 +10095,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rail1860.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rail1860.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rail1860",
     [
@@ -10705,22 +10334,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.water1860.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.water1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10975,26 +10588,10 @@
   ],
   [
     "change",
-    "variables.sprop1850.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sprop1850.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sprop1850.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11647,26 +11244,10 @@
   ],
   [
     "change",
-    "variables.sprop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sprop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sprop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12323,26 +11904,10 @@
   ],
   [
     "change",
-    "variables.cottonsuit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cottonsuit.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cottonsuit.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13006,30 +12571,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "nmatch.diff.20",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "nmatch.diff.20",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -13287,26 +12828,10 @@
   ],
   [
     "change",
-    "variables.blkprop1870.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blkprop1870.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blkprop1870.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13963,26 +13488,10 @@
   ],
   [
     "change",
-    "variables.blkprop20.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blkprop20.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blkprop20.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14635,26 +14144,10 @@
   ],
   [
     "change",
-    "variables.blkprop40.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blkprop40.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blkprop40.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15311,26 +14804,10 @@
   ],
   [
     "change",
-    "variables.blkprop70.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blkprop70.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blkprop70.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15987,26 +15464,10 @@
   ],
   [
     "change",
-    "variables.blkprop00.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blkprop00.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blkprop00.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16663,26 +16124,10 @@
   ],
   [
     "change",
-    "variables.blkprop2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blkprop2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blkprop2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17327,22 +16772,6 @@
     [
       "5623",
       5623
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop00.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop00.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17999,26 +17428,10 @@
   ],
   [
     "change",
-    "variables.highsch90.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.highsch90.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.highsch90.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18672,26 +18085,10 @@
   ],
   [
     "change",
-    "variables.unemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19336,22 +18733,6 @@
     [
       "20034",
       20034
-    ]
-  ],
-  [
-    "change",
-    "variables.medinc00.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.medinc00.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20008,26 +19389,10 @@
   ],
   [
     "change",
-    "variables.wbincratio00.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wbincratio00.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wbincratio00.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20684,26 +20049,10 @@
   ],
   [
     "change",
-    "variables.slavesperhouse.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.slavesperhouse.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.slavesperhouse.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21387,35 +20736,11 @@
     [
       "variables",
       "s.mortrate",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "s.mortrate",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "s.mortrate",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22105,35 +21430,11 @@
     [
       "variables",
       "w.mortrate",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "w.mortrate",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "w.mortrate",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22787,22 +22088,6 @@
     ]
   ],
   [
-    "change",
-    "variables.livstock.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.livstock.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.livstock",
     [
@@ -23444,22 +22729,6 @@
     [
       "200",
       200.0
-    ]
-  ],
-  [
-    "change",
-    "variables.livstock1870.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.livstock1870.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24107,22 +23376,6 @@
     ]
   ],
   [
-    "change",
-    "variables.farmval.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.farmval.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.farmval",
     [
@@ -24764,22 +24017,6 @@
     [
       "320",
       320.0
-    ]
-  ],
-  [
-    "change",
-    "variables.farmval1870.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.farmval1870.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25427,22 +24664,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totpop1880.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop1880.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totpop1880",
     [
@@ -26081,22 +25302,6 @@
     [
       "721",
       721.0
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop1890.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop1890.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26744,22 +25949,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totpop10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totpop10",
     [
@@ -27397,22 +26586,6 @@
     [
       "3517",
       3517
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop20.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop20.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28060,22 +27233,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totpop30.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop30.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totpop30",
     [
@@ -28717,22 +27874,6 @@
     [
       "3496",
       3496
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop40.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop40.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29380,22 +28521,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totpop50.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop50.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totpop50",
     [
@@ -30036,22 +29161,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lynchings.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lynchings.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lynchings",
     [
@@ -30346,26 +29455,10 @@
   ],
   [
     "change",
-    "variables.lynchrate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lynchrate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lynchrate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31022,26 +30115,10 @@
   ],
   [
     "change",
-    "variables.tractors40.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tractors40.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tractors40.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31695,26 +30772,10 @@
   ],
   [
     "change",
-    "variables.tractors30.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tractors30.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tractors30.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32368,26 +31429,10 @@
   ],
   [
     "change",
-    "variables.blklwage1940.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blklwage1940.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blklwage1940.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33040,26 +32085,10 @@
   ],
   [
     "change",
-    "variables.whtlwage1940.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.whtlwage1940.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.whtlwage1940.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33713,26 +32742,10 @@
   ],
   [
     "change",
-    "variables.btenantprop25.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.btenantprop25.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.btenantprop25.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34389,26 +33402,10 @@
   ],
   [
     "change",
-    "variables.wtenantprop25.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wtenantprop25.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wtenantprop25.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35053,22 +34050,6 @@
     [
       "14080",
       14080.0
-    ]
-  ],
-  [
-    "change",
-    "variables.coacres25.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.coacres25.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35723,26 +34704,10 @@
   ],
   [
     "change",
-    "variables.bfarmerownerprop25.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bfarmerownerprop25.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bfarmerownerprop25.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36399,26 +35364,10 @@
   ],
   [
     "change",
-    "variables.wfarmerownerprop25.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wfarmerownerprop25.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wfarmerownerprop25.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37098,35 +36047,11 @@
     [
       "variables",
       "sprop.1",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sprop.1",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sprop.1",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37816,35 +36741,11 @@
     [
       "variables",
       "land.ineq",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "land.ineq",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "land.ineq",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38507,26 +37408,10 @@
   ],
   [
     "change",
-    "variables.sfarmprop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sfarmprop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sfarmprop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39171,22 +38056,6 @@
     [
       "39",
       39.0
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39843,26 +38712,10 @@
   ],
   [
     "change",
-    "variables.fvalpc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fvalpc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fvalpc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40507,22 +39360,6 @@
     [
       "30",
       30.0
-    ]
-  ],
-  [
-    "change",
-    "variables.acimp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.acimp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41175,26 +40012,10 @@
   ],
   [
     "change",
-    "variables.fbprop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fbprop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fbprop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41838,22 +40659,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rail.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rail.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rail",
     [
@@ -42093,22 +40898,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.water.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.water.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42365,26 +41154,10 @@
   ],
   [
     "change",
-    "variables.pdem1840.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1840.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1840.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43039,26 +41812,10 @@
   ],
   [
     "change",
-    "variables.pdem1844.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1844.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1844.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43713,26 +42470,10 @@
   ],
   [
     "change",
-    "variables.pdem1848.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1848.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1848.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44387,26 +43128,10 @@
   ],
   [
     "change",
-    "variables.pdem1852.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1852.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1852.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45061,26 +43786,10 @@
   ],
   [
     "change",
-    "variables.pdem1856.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1856.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1856.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45733,26 +44442,10 @@
   ],
   [
     "change",
-    "variables.pdem1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46405,26 +45098,10 @@
   ],
   [
     "change",
-    "variables.pdem1864.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1864.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1864.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47077,26 +45754,10 @@
   ],
   [
     "change",
-    "variables.pdem1868.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1868.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1868.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47752,26 +46413,10 @@
   ],
   [
     "change",
-    "variables.pdem1872.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1872.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1872.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -48427,26 +47072,10 @@
   ],
   [
     "change",
-    "variables.pdem1876.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1876.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1876.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49101,26 +47730,10 @@
   ],
   [
     "change",
-    "variables.pdem1880.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1880.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1880.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49777,26 +48390,10 @@
   ],
   [
     "change",
-    "variables.pdem1884.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1884.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1884.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -50452,26 +49049,10 @@
   ],
   [
     "change",
-    "variables.pdem1888.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1888.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1888.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51124,26 +49705,10 @@
   ],
   [
     "change",
-    "variables.pdem1892.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1892.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1892.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51796,26 +50361,10 @@
   ],
   [
     "change",
-    "variables.pdem1896.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1896.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1896.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -52470,26 +51019,10 @@
   ],
   [
     "change",
-    "variables.pdem1900.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1900.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1900.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53145,26 +51678,10 @@
   ],
   [
     "change",
-    "variables.pdem1904.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1904.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1904.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53817,26 +52334,10 @@
   ],
   [
     "change",
-    "variables.pdem1908.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1908.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1908.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54492,26 +52993,10 @@
   ],
   [
     "change",
-    "variables.pdem1912.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1912.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1912.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55164,26 +53649,10 @@
   ],
   [
     "change",
-    "variables.pdem1916.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1916.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1916.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55837,26 +54306,10 @@
   ],
   [
     "change",
-    "variables.pdem1920.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1920.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1920.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56511,26 +54964,10 @@
   ],
   [
     "change",
-    "variables.pdem1924.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1924.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1924.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57183,26 +55620,10 @@
   ],
   [
     "change",
-    "variables.pdem1928.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1928.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1928.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57858,26 +56279,10 @@
   ],
   [
     "change",
-    "variables.pdem1932.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1932.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1932.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -58532,26 +56937,10 @@
   ],
   [
     "change",
-    "variables.pdem1936.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1936.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1936.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59208,26 +57597,10 @@
   ],
   [
     "change",
-    "variables.pdem1940.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1940.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1940.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59881,26 +58254,10 @@
   ],
   [
     "change",
-    "variables.pdem1944.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1944.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1944.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60555,26 +58912,10 @@
   ],
   [
     "change",
-    "variables.pdem1948.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1948.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1948.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61231,26 +59572,10 @@
   ],
   [
     "change",
-    "variables.pdem1952.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1952.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1952.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61907,26 +60232,10 @@
   ],
   [
     "change",
-    "variables.pdem1956.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1956.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1956.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62581,26 +60890,10 @@
   ],
   [
     "change",
-    "variables.pdem1960.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1960.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1960.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -63253,26 +61546,10 @@
   ],
   [
     "change",
-    "variables.pdem1964.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pdem1964.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pdem1964.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -63925,26 +62202,10 @@
   ],
   [
     "change",
-    "variables.breckinridge1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.breckinridge1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.breckinridge1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -64628,35 +62889,11 @@
     [
       "variables",
       "wallace68.alt",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "wallace68.alt",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "wallace68.alt",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65315,26 +63552,10 @@
   ],
   [
     "change",
-    "variables.thurmond48.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.thurmond48.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.thurmond48.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -66018,35 +64239,11 @@
     [
       "variables",
       "wht.obama.vote",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "wht.obama.vote",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "wht.obama.vote",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -66705,26 +64902,10 @@
   ],
   [
     "change",
-    "variables.stot1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stot1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stot1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -67381,26 +65562,10 @@
   ],
   [
     "change",
-    "variables.whtot1860.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.whtot1860.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.whtot1860.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -68057,26 +66222,10 @@
   ],
   [
     "change",
-    "variables.wbincratio2014.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wbincratio2014.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wbincratio2014.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -68741,30 +66890,6 @@
     [
       "30513",
       30513.0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "w.med.income2014",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "w.med.income2014",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -69438,30 +67563,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "b.med.income2014",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "b.med.income2014",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -70112,22 +68213,6 @@
     ]
   ],
   [
-    "change",
-    "variables.outflow.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.outflow.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.outflow",
     [
@@ -70769,22 +68854,6 @@
     [
       "648",
       648.0
-    ]
-  ],
-  [
-    "change",
-    "variables.inflow.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.inflow.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -71464,35 +69533,11 @@
     [
       "variables",
       "therm.diff",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "therm.diff",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "therm.diff",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -72153,26 +70198,10 @@
   ],
   [
     "change",
-    "variables.btherm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.btherm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.btherm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -72826,26 +70855,10 @@
   ],
   [
     "change",
-    "variables.wtherm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wtherm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wtherm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -73525,35 +71538,11 @@
     [
       "variables",
       "sample.size",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -74239,35 +72228,11 @@
     [
       "variables",
       "sample.size.td",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size.td",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size.td",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -74953,35 +72918,11 @@
     [
       "variables",
       "sample.size.bt",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size.bt",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size.bt",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -75667,35 +73608,11 @@
     [
       "variables",
       "sample.size.wt",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size.wt",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "sample.size.wt",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -76299,617 +74216,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:07:38",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state.abb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "county_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pslave1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "longitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "latitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coarea00": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coarea": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rugged": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "land.ineq1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sfarmprop1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fvalpc1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fvalpac1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "acimp1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fbprop1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rail1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "water1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sprop1850": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sprop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cottonsuit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nmatch.diff.20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blkprop1870": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blkprop20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blkprop40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blkprop70": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blkprop00": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blkprop2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop00": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highsch90": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "medinc00": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wbincratio00": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "slavesperhouse": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s.mortrate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "w.mortrate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "livstock": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "livstock1870": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "farmval": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "farmval1870": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop1880": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop1890": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop30": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop50": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lynchings": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lynchrate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tractors40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tractors30": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blklwage1940": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whtlwage1940": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "btenantprop25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wtenantprop25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coacres25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bfarmerownerprop25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wfarmerownerprop25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sprop.1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "land.ineq": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sfarmprop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fvalpc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "acimp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fbprop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rail": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "water": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1840": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1844": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1848": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1852": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1856": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1864": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1868": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1872": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1876": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1880": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1884": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1888": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1892": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1896": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1900": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1904": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1908": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1912": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1916": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1920": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1924": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1928": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1932": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1936": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1940": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1944": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1948": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1952": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1956": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1960": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pdem1964": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "breckinridge1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wallace68.alt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thurmond48": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wht.obama.vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stot1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whtot1860": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wbincratio2014": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "w.med.income2014": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b.med.income2014": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "outflow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "therm.diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "btherm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wtherm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample.size": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample.size.td": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample.size.bt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample.size.wt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

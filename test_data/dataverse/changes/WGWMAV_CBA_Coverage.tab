@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        550
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WGWMAV_CBA_Coverage.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 10028
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
       "AK",
       [
-        "WV",
-        "HI",
-        "LA",
-        "SD",
-        "NC"
+        "PA",
+        "RI",
+        "AK",
+        "NV",
+        "NE"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "WV",
-          "HI",
-          "LA",
-          "SD",
-          "NC"
+          "PA",
+          "RI",
+          "AK",
+          "NV",
+          "NE"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "DE": 11,
-          "MD": 11,
           "OH": 11,
-          "NY": 11,
-          "TX": 11,
-          "ME": 11,
-          "OK": 11,
-          "GA": 11,
-          "NV": 11,
-          "CO": 11,
-          "IL": 11,
-          "NH": 11,
-          "MA": 11,
-          "PA": 11,
-          "KS": 11,
-          "MT": 11,
-          "NM": 11,
-          "TN": 11,
           "VT": 11,
-          "MO": 11,
-          "VA": 11,
-          "FL": 11,
+          "NC": 11,
+          "IL": 11,
+          "GA": 11,
           "IN": 11,
-          "WI": 11,
-          "NJ": 11,
-          "MI": 11,
-          "MS": 11,
-          "MN": 11,
+          "AL": 11,
           "SC": 11,
-          "WA": 11,
-          "OR": 11,
+          "MI": 11,
+          "SD": 11,
+          "NH": 11,
           "UT": 11,
+          "ND": 11,
+          "NM": 11,
+          "OR": 11,
+          "DE": 11,
           "ID": 11,
-          "AR": 11,
+          "LA": 11,
+          "MO": 11,
+          "MS": 11,
+          "MT": 11,
+          "NJ": 11,
+          "MA": 11,
+          "WI": 11,
+          "CO": 11,
+          "WA": 11,
+          "CA": 11,
+          "ME": 11,
+          "WV": 11,
+          "NY": 11,
+          "HI": 11,
+          "TX": 11,
+          "VA": 11,
+          "KS": 11,
           "CT": 11,
           "IA": 11,
-          "ND": 11,
+          "MD": 11,
+          "KY": 11,
+          "MN": 11,
+          "FL": 11,
+          "AR": 11,
+          "WY": 11,
+          "TN": 11,
+          "AZ": 11,
+          "OK": 11,
+          "NE": 11,
+          "NV": 11,
           "AK": 11,
           "RI": 11,
-          "AL": 11,
-          "WY": 11,
-          "CA": 11,
-          "KY": 11,
-          "AZ": 11,
-          "NE": 11,
-          "NC": 11,
-          "SD": 11,
-          "LA": 11,
-          "HI": 11,
-          "WV": 11
+          "PA": 11
         }
       ],
       [
@@ -444,22 +345,6 @@
     [
       "1958",
       1958
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -760,22 +645,6 @@
     [
       "1960",
       1960.0
-    ]
-  ],
-  [
-    "change",
-    "variables.YearCBrequired.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.YearCBrequired.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1358,26 +1227,10 @@
   ],
   [
     "change",
-    "variables.CBteachers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1975,52 +1828,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "YearCBrequired": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

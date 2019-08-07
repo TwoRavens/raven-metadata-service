@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        436
-      ],
-      [
-        "variableCount",
-        18
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WO3NXS_2010_news_data_JOP_dataverse_v11_12.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 41235
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.ccesdistrict10.median",
     [
@@ -126,22 +43,6 @@
     [
       "101",
       101.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ccesdistrict10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccesdistrict10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.newspaper10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.newspaper10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.newspaper10",
     [
@@ -799,11 +684,11 @@
       [
         "fewestValues",
         [
-          "Post and Courier",
-          "Daily Record",
-          "Arkansas Democrat-Gazette",
-          "Herald",
-          "Daily Progress"
+          "Register-Guard",
+          "San Angelo Standard-Times",
+          "Peoria Journal Star",
+          "Ocala Star Banner",
+          "Waukesha Freeman"
         ]
       ],
       [
@@ -832,277 +717,277 @@
           "LA Times": 18,
           "Dallas Morning News": 8,
           "New York Daily News": 8,
-          "Detroit News": 7,
           "Chicago Sun-Times": 7,
+          "Detroit News": 7,
           "Washington Post": 6,
           "Atlanta Journal Constitution": 6,
-          "Orlando Sentinel": 6,
           "Houston Chronicle": 6,
           "New York Times": 6,
+          "Orlando Sentinel": 6,
+          "Star Tribune": 5,
           "San Diego Union-Tribune": 5,
           "San Jose Mercury News": 5,
-          "Star Tribune": 5,
-          "St. Louis Post Dispatch": 4,
+          "Newsday": 4,
           "Buffalo News": 4,
           "Arizona Republic": 4,
-          "Record": 4,
-          "Newsday": 4,
+          "St. Louis Post Dispatch": 4,
           "Arlington Heights Daily Herald": 4,
-          "Fresno Bee": 4,
+          "Record": 4,
           "Sun Sentinel": 4,
-          "Charlotte Observer": 3,
-          "Salt Lake Tribune": 3,
-          "Philadelphia Inquirer": 3,
-          "Seattle Times": 3,
-          "Denver Post": 3,
-          "Fort Worth Star-Telegram": 3,
-          "Commercial Appeal": 3,
-          "Oregonian": 3,
+          "Fresno Bee": 4,
           "Austin American-Statesman": 3,
+          "Philadelphia Inquirer": 3,
           "San Francisco Chronicle": 3,
-          "Sacramento Bee": 3,
           "Miami Herald": 3,
+          "Commercial Appeal": 3,
+          "Sacramento Bee": 3,
+          "Seattle Times": 3,
+          "Salt Lake Tribune": 3,
+          "Oregonian": 3,
+          "Fort Worth Star-Telegram": 3,
+          "Charlotte Observer": 3,
+          "Denver Post": 3,
           "Palm Beach Post": 2,
-          "Plain Dealer": 2,
-          "Times Picayune": 2,
-          "Richmond Times-Dispatch": 2,
-          "Oakland Tribune": 2,
-          "Daily Breeze": 2,
-          "Shreveport Times": 2,
-          "Capital Gazette": 2,
-          "Tampa Bay Times": 2,
-          "Star-Ledger": 2,
-          "Daily Herald": 2,
-          "Indianapolis Star": 2,
-          "Telegraph": 2,
-          "Virginian Pilot": 2,
-          "Birmingham News": 2,
-          "Reading Eagle": 2,
-          "Milwaukee Journal Sentinel": 2,
-          "Waterloo-Cedar Falls Courier": 2,
-          "Grand Rapids Press": 2,
-          "Asbury Park Press": 2,
-          "Columbus Dispatch": 2,
-          "Post-Standard": 2,
-          "Pantagraph": 2,
-          "State Journal Register": 2,
-          "Sun Herald": 2,
-          "Journal News": 2,
-          "Times Herald-Record": 2,
-          "Providence Journal": 2,
-          "Inland Valley Daily Bulletin": 2,
-          "News and Observer": 2,
           "Las Vegas Review Journal": 2,
-          "Beaumont Enterprise": 2,
+          "Daily Breeze": 2,
+          "Richmond Times-Dispatch": 2,
+          "State Journal Register": 2,
+          "Daily Herald": 2,
+          "Shreveport Times": 2,
           "Northeast Mississippi Daily Journal": 2,
+          "Star-Ledger": 2,
+          "Beaumont Enterprise": 2,
+          "Sun Herald": 2,
+          "Tampa Bay Times": 2,
+          "Indianapolis Star": 2,
+          "Journal News": 2,
+          "Post-Standard": 2,
+          "Capital Gazette": 2,
+          "Providence Journal": 2,
+          "Times Herald-Record": 2,
           "Winston-Salem Journal": 2,
-          "Journal Gazette": 1,
-          "Augusta Chronicle": 1,
-          "Belleville News Democrat": 1,
-          "Kokomo Tribune": 1,
-          "Herald-Dispatch": 1,
-          "Burlington Free Press": 1,
-          "Akron Beacon Journal": 1,
-          "Tribune-Review": 1,
-          "Olympian": 1,
-          "New Hampshire Union Leader": 1,
-          "Star-Tribune": 1,
-          "Baltimore Sun": 1,
-          "Daily Progress": 1,
-          "San Antonio Express-News": 1,
-          "Toledo Blade": 1,
-          "Portsmouth Daily Times": 1,
-          "Oshkosh Northwestern": 1,
-          "Leader-Telegram": 1,
-          "Santa Fe New Mexican": 1,
-          "Idaho Statesman": 1,
-          "News Gazette": 1,
-          "Vindicator": 1,
-          "Tri-City Herald": 1,
-          "Sarasota Herald Tribune": 1,
-          "La Crosse Tribune": 1,
-          "Bristol Herald Courier": 1,
-          "News-Star": 1,
-          "McKinney Courier Gazette": 1,
-          "Bakersfield Californian": 1,
-          "Press-Register": 1,
-          "Souix City Jounal": 1,
-          "Evening News": 1,
-          "Chico Enterprise Record": 1,
-          "Tribune": 1,
-          "MetroWest Daily News": 1,
-          "Courier-Journal": 1,
-          "Post-Bulletin": 1,
-          "InForum Fargo-Moorhead": 1,
-          "Jefferson City News Tribune": 1,
-          "Jacksonville Daily News": 1,
-          "Bucks County Courier Times": 1,
-          "New Haven Register": 1,
-          "Pittsburgh Post-Gazette": 1,
-          "Albuquerque Journal": 1,
-          "Advocate": 1,
-          "Salina Journal": 1,
-          "Patriot Ledger": 1,
-          "Sierra Vista Herald": 1,
-          "Monterey County Herald": 1,
-          "Lincoln Journal Star": 1,
-          "News & Record (Greensboro)": 1,
-          "Times Tribune": 1,
-          "Daily Press": 1,
-          "Muskegon Chronicle": 1,
-          "Joplin Globe": 1,
-          "Duluth News Tribune": 1,
-          "Cedar Rapids Gazette": 1,
-          "Burlington County Times": 1,
-          "Tallahassee Democrat": 1,
-          "Kentucky Post": 1,
-          "Standard Times": 1,
-          "Erie Times-News": 1,
-          "Amarillo Globe-News": 1,
-          "San Angelo Standard-Times": 1,
-          "South Bend Tribune": 1,
-          "Concord Monitor": 1,
-          "Berkshire Eagle": 1,
-          "Wisconsin State Journal": 1,
-          "Herald-Sun": 1,
-          "State": 1,
-          "Bismark Tribune": 1,
-          "Ans Messenger": 1,
-          "Ocala Star Banner": 1,
-          "Hawaii Tribune Herald": 1,
-          "Roanoke Times": 1,
-          "Times": 1,
-          "Traverse City Record-Eagle": 1,
-          "Southwest Times Record": 1,
-          "Bangor Daily News": 1,
-          "Nevada Appeal": 1,
-          "Centre Daily Times": 1,
-          "Bowling Green Sentinel Tribune": 1,
-          "Columbia Daily Tribune": 1,
-          "Omaha World herald": 1,
-          "Post-Tribune": 1,
-          "Daily Citizen": 1,
-          "Lexington Herald-Leader": 1,
-          "Arizona Daily Star": 1,
-          "Owensboro Messenger-Inquirer": 1,
-          "Brunswick News": 1,
-          "Press Democrat": 1,
-          "Napa Valley Register": 1,
-          "Wheeling News-Register": 1,
-          "Daytona Beach news Journal": 1,
-          "Fort Myers News-Press": 1,
-          "Republican": 1,
-          "Kalamazoo Gazette": 1,
-          "Jonesboro Sun": 1,
-          "Island Packet": 1,
-          "Anchorage Daily News": 1,
+          "Plain Dealer": 2,
+          "Birmingham News": 2,
+          "Grand Rapids Press": 2,
+          "Telegraph": 2,
+          "Columbus Dispatch": 2,
+          "News and Observer": 2,
+          "Oakland Tribune": 2,
+          "Virginian Pilot": 2,
+          "Waterloo-Cedar Falls Courier": 2,
+          "Reading Eagle": 2,
+          "Pantagraph": 2,
+          "Times Picayune": 2,
+          "Inland Valley Daily Bulletin": 2,
+          "Milwaukee Journal Sentinel": 2,
+          "Asbury Park Press": 2,
           "Monitor": 1,
-          "Press of Atlantic City": 1,
-          "Times Reporter": 1,
-          "Las Cruces Sun News": 1,
-          "Lowell Sun": 1,
-          "Daily Item": 1,
-          "Patriot-News": 1,
-          "Greeneville Sun": 1,
-          "Spokesman-Review": 1,
-          "Greeley Tribune": 1,
-          "Rapid City Journal": 1,
+          "Frederick News-Post": 1,
+          "InForum Fargo-Moorhead": 1,
+          "Gazette": 1,
+          "Salem News": 1,
+          "Lima News": 1,
+          "Daily Citizen": 1,
+          "Times Tribune": 1,
+          "Lincoln Journal Star": 1,
+          "Public Opinion": 1,
+          "Akron Beacon Journal": 1,
+          "Owensboro Messenger-Inquirer": 1,
+          "Pittsburgh Post-Gazette": 1,
+          "Boston Herald": 1,
+          "Belleville News Democrat": 1,
+          "Olympian": 1,
+          "Post and Courier": 1,
           "Herald-Journal": 1,
           "Delaware News Journal": 1,
-          "Public Opinion": 1,
-          "Repository": 1,
-          "Boston Herald": 1,
-          "Fayettville Observer": 1,
-          "Pueblo Chieftain": 1,
-          "Enid News and Eagle": 1,
-          "Hartford Courant": 1,
-          "Dayton Daily News": 1,
-          "Lawrence Journal-World": 1,
-          "Beaver County Times": 1,
-          "Frederick News-Post": 1,
-          "Salem News": 1,
-          "Laredo Morning Times": 1,
-          "Reporter": 1,
-          "Oakland Press": 1,
-          "Morning Call": 1,
-          "Post-Star": 1,
-          "Kansas City Star": 1,
-          "Chattanooga Times-Free Press": 1,
-          "Star Beacon": 1,
-          "Day": 1,
-          "Lewiston Morning Tribune": 1,
-          "Muskogee Daily Phoenix and Times-Democrat": 1,
-          "Hickory Daily Record": 1,
+          "New Haven Register": 1,
           "Orange County Register": 1,
-          "Lawton Constitution": 1,
-          "Lima News": 1,
-          "Paper of Montgomery County": 1,
-          "Daily Iberian": 1,
-          "Gazette": 1,
-          "York Daily Record": 1,
-          "Daily Camera": 1,
-          "Ventura County Star": 1,
-          "Free Lance Star": 1,
-          "Columbus Ledger-Enquirer": 1,
-          "Des Moines Register": 1,
-          "Tulsa World": 1,
-          "Albany Times Union": 1,
-          "Topeka Capital Journal": 1,
-          "Peoria Journal Star": 1,
-          "Connecticut Post": 1,
-          "Daily Mountain Eagle": 1,
-          "Pine Bluff Commercial": 1,
-          "East Valley Tribune": 1,
-          "Worcester Telegram & Gazette": 1,
-          "Huntsville Times": 1,
-          "Tennessean": 1,
-          "Honolulu Star-Advertiser": 1,
-          "Dothan Eagle": 1,
-          "Post and Courier": 1,
-          "Herald Times": 1,
-          "Boston Globe": 1,
-          "Columbian": 1,
-          "Lubbock Avalanche-Journal": 1,
-          "Gaston Gazette": 1,
-          "Rockford Register Star": 1,
-          "Evansville Courier & Press": 1,
-          "Herald-Citizen": 1,
-          "Savannah Morning News": 1,
-          "Republican-American": 1,
+          "Bowling Green Sentinel Tribune": 1,
           "Springfield News-Sun": 1,
-          "Wichita Eagle": 1,
-          "Janesville Gazette": 1,
-          "Northwest Florida Daily News": 1,
+          "Jonesboro Sun": 1,
+          "Las Cruces Sun News": 1,
+          "Sarasota Herald Tribune": 1,
+          "Muskogee Daily Phoenix and Times-Democrat": 1,
           "St. Joseph News-Press": 1,
-          "News Tribune": 1,
-          "Portland Press Herald": 1,
-          "Waukesha Freeman": 1,
-          "Paducah Sun": 1,
-          "Jersey Journal": 1,
-          "Watertown Daily Times": 1,
-          "Tampa Tribune": 1,
-          "Oklahoman": 1,
-          "Register-Guard": 1,
-          "Anderson Independent-Mail": 1,
+          "Pueblo Chieftain": 1,
           "Montgomery Advertiser": 1,
-          "Jackson Citizen Patriot": 1,
-          "Arizona Daily Sun": 1,
-          "Billings Gazette": 1,
-          "Charleston Gazette": 1,
-          "Winchester Star": 1,
-          "Tribune-Democrat": 1,
-          "Corsicana Daily Sun": 1,
-          "Bulletin": 1,
-          "Tyler Morning Telegraph": 1,
-          "Knoxville News Sentinel": 1,
-          "Commonwealth Journal": 1,
-          "Herald": 1,
-          "Arkansas Democrat-Gazette": 1,
-          "Daily Record": 1,
-          "Grand Island Independent": 1,
+          "Des Moines Register": 1,
+          "Arizona Daily Star": 1,
+          "New Hampshire Union Leader": 1,
+          "Tribune-Review": 1,
           "Florida Times Union": 1,
+          "Morning Call": 1,
+          "Portland Press Herald": 1,
+          "Watertown Daily Times": 1,
+          "Star-Tribune": 1,
+          "Hartford Courant": 1,
+          "San Antonio Express-News": 1,
+          "Cedar Rapids Gazette": 1,
+          "Day": 1,
+          "Columbus Ledger-Enquirer": 1,
+          "Daily Progress": 1,
+          "Nevada Appeal": 1,
+          "Kokomo Tribune": 1,
+          "Ventura County Star": 1,
+          "Fayettville Observer": 1,
+          "Janesville Gazette": 1,
+          "Wisconsin State Journal": 1,
+          "Arkansas Democrat-Gazette": 1,
+          "Toledo Blade": 1,
+          "Honolulu Star-Advertiser": 1,
+          "Arizona Daily Sun": 1,
+          "Idaho Statesman": 1,
+          "Burlington Free Press": 1,
+          "Post-Tribune": 1,
+          "Free Lance Star": 1,
+          "Knoxville News Sentinel": 1,
+          "Souix City Jounal": 1,
+          "Duluth News Tribune": 1,
+          "Jefferson City News Tribune": 1,
+          "Vindicator": 1,
+          "News & Record (Greensboro)": 1,
+          "Wichita Eagle": 1,
+          "Island Packet": 1,
+          "York Daily Record": 1,
+          "South Bend Tribune": 1,
+          "McKinney Courier Gazette": 1,
+          "Omaha World herald": 1,
+          "Augusta Chronicle": 1,
+          "Kalamazoo Gazette": 1,
+          "Chico Enterprise Record": 1,
+          "News Gazette": 1,
+          "Erie Times-News": 1,
+          "Traverse City Record-Eagle": 1,
+          "Bucks County Courier Times": 1,
+          "Enid News and Eagle": 1,
+          "Paper of Montgomery County": 1,
+          "Bangor Daily News": 1,
+          "Post-Star": 1,
+          "Star Beacon": 1,
+          "News-Star": 1,
+          "Republican-American": 1,
+          "Tyler Morning Telegraph": 1,
+          "Pine Bluff Commercial": 1,
+          "Lubbock Avalanche-Journal": 1,
+          "Monterey County Herald": 1,
+          "Tennessean": 1,
+          "Herald Times": 1,
+          "Advocate": 1,
+          "Republican": 1,
+          "Greeley Tribune": 1,
+          "Herald": 1,
+          "Centre Daily Times": 1,
+          "Journal Gazette": 1,
+          "Huntsville Times": 1,
+          "Daily Item": 1,
+          "Connecticut Post": 1,
+          "Jackson Citizen Patriot": 1,
+          "Savannah Morning News": 1,
+          "Bristol Herald Courier": 1,
+          "Press-Register": 1,
+          "Bulletin": 1,
+          "Herald-Citizen": 1,
+          "Wheeling News-Register": 1,
+          "State": 1,
+          "Dothan Eagle": 1,
+          "Concord Monitor": 1,
+          "Press Democrat": 1,
+          "Tribune": 1,
+          "News Tribune": 1,
+          "Commonwealth Journal": 1,
+          "Baltimore Sun": 1,
+          "Tribune-Democrat": 1,
+          "Standard Times": 1,
+          "Tri-City Herald": 1,
+          "Tulsa World": 1,
+          "Lawton Constitution": 1,
+          "East Valley Tribune": 1,
+          "Albuquerque Journal": 1,
+          "Daily Record": 1,
+          "Daily Iberian": 1,
+          "Post-Bulletin": 1,
+          "Grand Island Independent": 1,
+          "Herald-Sun": 1,
+          "Press of Atlantic City": 1,
+          "La Crosse Tribune": 1,
+          "MetroWest Daily News": 1,
+          "Courier-Journal": 1,
+          "Muskegon Chronicle": 1,
+          "Corpus Christi Caller-Times": 1,
+          "Fort Myers News-Press": 1,
+          "Gaston Gazette": 1,
+          "Dayton Daily News": 1,
+          "Roanoke Times": 1,
+          "Billings Gazette": 1,
+          "Oklahoman": 1,
+          "Spokesman-Review": 1,
+          "Berkshire Eagle": 1,
+          "Daily Camera": 1,
+          "Kentucky Post": 1,
+          "Oshkosh Northwestern": 1,
+          "Bakersfield Californian": 1,
+          "Santa Fe New Mexican": 1,
+          "Kansas City Star": 1,
+          "Tallahassee Democrat": 1,
+          "Worcester Telegram & Gazette": 1,
+          "Boston Globe": 1,
+          "Lexington Herald-Leader": 1,
           "Star Democrat": 1,
-          "Corpus Christi Caller-Times": 1
+          "Lawrence Journal-World": 1,
+          "Hickory Daily Record": 1,
+          "Oakland Press": 1,
+          "Portsmouth Daily Times": 1,
+          "Daytona Beach news Journal": 1,
+          "Lowell Sun": 1,
+          "Columbian": 1,
+          "Jersey Journal": 1,
+          "Tampa Tribune": 1,
+          "Lewiston Morning Tribune": 1,
+          "Beaver County Times": 1,
+          "Topeka Capital Journal": 1,
+          "Patriot Ledger": 1,
+          "Daily Mountain Eagle": 1,
+          "Amarillo Globe-News": 1,
+          "Northwest Florida Daily News": 1,
+          "Paducah Sun": 1,
+          "Times Reporter": 1,
+          "Reporter": 1,
+          "Leader-Telegram": 1,
+          "Herald-Dispatch": 1,
+          "Anderson Independent-Mail": 1,
+          "Rockford Register Star": 1,
+          "Chattanooga Times-Free Press": 1,
+          "Evening News": 1,
+          "Brunswick News": 1,
+          "Evansville Courier & Press": 1,
+          "Joplin Globe": 1,
+          "Rapid City Journal": 1,
+          "Anchorage Daily News": 1,
+          "Salina Journal": 1,
+          "Laredo Morning Times": 1,
+          "Greeneville Sun": 1,
+          "Charleston Gazette": 1,
+          "Columbia Daily Tribune": 1,
+          "Bismark Tribune": 1,
+          "Daily Press": 1,
+          "Hawaii Tribune Herald": 1,
+          "Burlington County Times": 1,
+          "Albany Times Union": 1,
+          "Ans Messenger": 1,
+          "Jacksonville Daily News": 1,
+          "Repository": 1,
+          "Corsicana Daily Sun": 1,
+          "Napa Valley Register": 1,
+          "Sierra Vista Herald": 1,
+          "Waukesha Freeman": 1,
+          "Ocala Star Banner": 1,
+          "Peoria Journal Star": 1,
+          "San Angelo Standard-Times": 1,
+          "Winchester Star": 1,
+          "Patriot-News": 1,
+          "Southwest Times Record": 1,
+          "Times": 1,
+          "Register-Guard": 1
         }
       ],
       [
@@ -1556,26 +1441,10 @@
   ],
   [
     "change",
-    "variables.circulation10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.circulation10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.circulation10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2219,22 +2088,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cookrating10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cookrating10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cookrating10",
     [
@@ -2489,22 +2342,6 @@
     ]
   ],
   [
-    "change",
-    "variables.openseat10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.openseat10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.openseat10",
     [
@@ -2747,22 +2584,6 @@
     ]
   ],
   [
-    "change",
-    "variables.uncontested10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.uncontested10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.uncontested10",
     [
@@ -3002,22 +2823,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.storycount10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.storycount10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3661,22 +3466,6 @@
     ]
   ],
   [
-    "change",
-    "variables.both10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.both10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.both10",
     [
@@ -4294,22 +4083,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.dspend10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dspend10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4950,22 +4723,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.rspend10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rspend10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5619,26 +5376,10 @@
   ],
   [
     "change",
-    "variables.percentblack10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.percentblack10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.percentblack10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6292,26 +6033,10 @@
   ],
   [
     "change",
-    "variables.percenthisp10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.percenthisp10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.percenthisp10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6967,26 +6692,10 @@
   ],
   [
     "change",
-    "variables.percentwhite10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.percentwhite10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.percentwhite10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7641,26 +7350,10 @@
   ],
   [
     "change",
-    "variables.mediainc10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mediainc10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mediainc10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8304,22 +7997,6 @@
     ]
   ],
   [
-    "change",
-    "variables.percentcollege10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.percentcollege10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.percentcollege10",
     [
@@ -8933,22 +8610,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.issues10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.issues10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9592,22 +9253,6 @@
     ]
   ],
   [
-    "change",
-    "variables.traits10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.traits10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.traits10",
     [
@@ -10234,22 +9879,6 @@
     ]
   ],
   [
-    "change",
-    "variables.qcandidate10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.qcandidate10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.qcandidate10",
     [
@@ -10446,122 +10075,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "ccesdistrict10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "newspaper10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "circulation10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cookrating10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openseat10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "uncontested10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "storycount10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "both10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dspend10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rspend10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "percentblack10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "percenthisp10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "percentwhite10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mediainc10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "percentcollege10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "issues10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "traits10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qcandidate10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

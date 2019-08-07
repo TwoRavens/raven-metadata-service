@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        360
-      ],
-      [
-        "variableCount",
-        29
-      ],
-      [
-        "dataSource",
-        {
-          "name": "UMSSKG_election_timing_economic_manipulation_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 75157
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1997",
       1997
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -684,28 +585,12 @@
     [
       "United Kingdom",
       [
-        "France",
-        "Czech Republic",
-        "Slovak Republic",
+        "Netherlands",
+        "Greece",
+        "Portugal",
         "Sweden",
-        "Austria"
+        "Luxembourg"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -739,11 +624,11 @@
       [
         "fewestValues",
         [
-          "France",
-          "Czech Republic",
-          "Slovak Republic",
+          "Netherlands",
+          "Greece",
+          "Portugal",
           "Sweden",
-          "Austria"
+          "Luxembourg"
         ]
       ],
       [
@@ -769,25 +654,25 @@
       [
         "plotValues",
         {
-          "Belgium": 18,
-          "Finland": 18,
-          "France": 18,
-          "Greece": 18,
-          "Czech Republic": 18,
-          "Ireland": 18,
           "United Kingdom": 18,
-          "Denmark": 18,
+          "France": 18,
+          "Finland": 18,
+          "Slovak Republic": 18,
+          "Belgium": 18,
+          "Czech Republic": 18,
+          "Spain": 18,
+          "Estonia": 18,
+          "Italy": 18,
+          "Austria": 18,
           "Hungary": 18,
           "Slovenia": 18,
-          "Italy": 18,
+          "Greece": 18,
           "Germany": 18,
-          "Estonia": 18,
-          "Spain": 18,
-          "Portugal": 18,
+          "Denmark": 18,
           "Luxembourg": 18,
-          "Austria": 18,
           "Sweden": 18,
-          "Slovak Republic": 18,
+          "Portugal": 18,
+          "Ireland": 18,
           "Netherlands": 18
         }
       ],
@@ -988,26 +873,10 @@
   ],
   [
     "change",
-    "variables.prop_elapsed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prop_elapsed.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prop_elapsed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1302,26 +1171,10 @@
   ],
   [
     "change",
-    "variables.change_GDP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.change_GDP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.change_GDP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1974,26 +1827,10 @@
   ],
   [
     "change",
-    "variables.revenue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.revenue.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.revenue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2650,26 +2487,10 @@
   ],
   [
     "change",
-    "variables.gross_debt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gross_debt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gross_debt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3322,26 +3143,10 @@
   ],
   [
     "change",
-    "variables.inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3985,22 +3790,6 @@
     ]
   ],
   [
-    "change",
-    "variables.execrlc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.execrlc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.execrlc",
     [
@@ -4268,26 +4057,10 @@
   ],
   [
     "change",
-    "variables.frac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.frac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.frac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4940,26 +4713,10 @@
   ],
   [
     "change",
-    "variables.govfrac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.govfrac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.govfrac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5612,26 +5369,10 @@
   ],
   [
     "change",
-    "variables.max_pm_gov_leg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.max_pm_gov_leg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.max_pm_gov_leg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6281,26 +6022,10 @@
   ],
   [
     "change",
-    "variables.vote_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6957,26 +6682,10 @@
   ],
   [
     "change",
-    "variables.union_density.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.union_density.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.union_density.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7624,22 +7333,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem_age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_age.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem_age",
     [
@@ -8280,22 +7973,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eu.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.eu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eu",
     [
@@ -8551,26 +8228,10 @@
   ],
   [
     "change",
-    "variables.openness.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.openness.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.openness.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9214,22 +8875,6 @@
     ]
   ],
   [
-    "change",
-    "variables.BBR.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.BBR.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.BBR",
     [
@@ -9472,22 +9117,6 @@
     ]
   ],
   [
-    "change",
-    "variables.DR.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.DR.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.DR",
     [
@@ -9727,22 +9356,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.legislative_type.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.legislative_type.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10003,26 +9616,10 @@
   ],
   [
     "change",
-    "variables.transparency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.transparency.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.transparency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10329,26 +9926,10 @@
   ],
   [
     "change",
-    "variables.structural_bal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.structural_bal.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.structural_bal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11005,26 +10586,10 @@
   ],
   [
     "change",
-    "variables.log_con_inv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_con_inv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_con_inv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11681,26 +11246,10 @@
   ],
   [
     "change",
-    "variables.log_con_inv_t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_con_inv_t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_con_inv_t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12357,26 +11906,10 @@
   ],
   [
     "change",
-    "variables.log_gdp_dol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_gdp_dol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_gdp_dol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13033,26 +12566,10 @@
   ],
   [
     "change",
-    "variables.fisc_cent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fisc_cent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fisc_cent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13709,26 +13226,10 @@
   ],
   [
     "change",
-    "variables.max_elf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.max_elf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.max_elf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14051,26 +13552,10 @@
   ],
   [
     "change",
-    "variables.log_gen_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_gen_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_gen_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14727,26 +14212,10 @@
   ],
   [
     "change",
-    "variables.log_cent_exp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_cent_exp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_cent_exp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15390,22 +14859,6 @@
     ]
   ],
   [
-    "change",
-    "variables.single_party.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.single_party.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.single_party",
     [
@@ -15602,177 +15055,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:27:46",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prop_elapsed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "change_GDP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revenue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gross_debt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "execrlc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "frac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govfrac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "max_pm_gov_leg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "union_density": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openness": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BBR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legislative_type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "transparency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "structural_bal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_con_inv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_con_inv_t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_gdp_dol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fisc_cent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "max_elf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_gen_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_cent_exp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "single_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

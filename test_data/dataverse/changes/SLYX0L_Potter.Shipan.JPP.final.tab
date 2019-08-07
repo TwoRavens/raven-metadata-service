@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2288
-      ],
-      [
-        "variableCount",
-        87
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SLYX0L_Potter.Shipan.JPP.final.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 554603
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.agency.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.agency.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -736,28 +637,12 @@
     [
       "Department of Agriculture",
       [
-        "Department of Agriculture",
-        "Office of Personnel Management",
-        "Department of Commerce",
-        "Department of Defense",
-        "Commodity Futures Trading Commission"
+        "Federal Trade Commission",
+        "Federal Housing Finance Board",
+        "Department of Housing and Urban Development",
+        "Department of Energy",
+        "Department of Treasury"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.agencyname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agencyname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -791,11 +676,11 @@
       [
         "fewestValues",
         [
-          "Department of Agriculture",
-          "Office of Personnel Management",
-          "Department of Commerce",
-          "Department of Defense",
-          "Commodity Futures Trading Commission"
+          "Federal Trade Commission",
+          "Federal Housing Finance Board",
+          "Department of Housing and Urban Development",
+          "Department of Energy",
+          "Department of Treasury"
         ]
       ],
       [
@@ -821,50 +706,50 @@
       [
         "plotValues",
         {
-          "Department of Transportation": 52,
-          "Surface Transportation Board": 52,
-          "Department of Veterans Affairs": 52,
-          "Federal Housing Enterprise Oversight": 52,
-          "Department of Housing and Urban Development": 52,
-          "Federal Maritime Commission": 52,
-          "Equal Employment Opportunity Commission": 52,
-          "General Services Administration": 52,
-          "Federal Communication Commission": 52,
-          "Department of Education": 52,
-          "Department of Treasury": 52,
-          "Office of Management and Budget": 52,
-          "Department of Energy": 52,
-          "Federal Housing Finance Board": 52,
-          "Federal Energy Regulatory Commission": 52,
-          "National Credit Union Administration": 52,
-          "National Aeronautics and Space Administration": 52,
-          "Federal Crop Insurance Corporation": 52,
-          "Consumer Product Safety Commission": 52,
-          "Farm Credit Administration": 52,
-          "Department of Labor": 52,
-          "Department of Justice": 52,
-          "Federal Deposit Insurance Corporation": 52,
-          "Securities and Exchange Commission": 52,
-          "Commodity Futures Trading Commission": 52,
-          "Saint Lawrence Seaway Development Corporation": 52,
-          "Department of State": 52,
-          "Agency for International Development": 52,
-          "Department of Homeland Security": 52,
-          "Department of Health and Human Services": 52,
-          "Nuclear Regulatory Commission": 52,
           "Environmental Protection Agency": 52,
-          "Federal Trade Commission": 52,
           "Federal Emergency Management Agency": 52,
-          "National Archives and Records Administration": 52,
-          "Social Security Administration": 52,
+          "Federal Housing Enterprise Oversight": 52,
+          "Surface Transportation Board": 52,
+          "Federal Deposit Insurance Corporation": 52,
+          "Federal Crop Insurance Corporation": 52,
           "Small Business Administration": 52,
-          "Federal Home Loan Bank Board": 52,
-          "Pension Benefit Guaranty Corporation": 52,
-          "Department of Defense": 52,
-          "Department of Commerce": 52,
+          "Department of Veterans Affairs": 52,
+          "Federal Maritime Commission": 52,
+          "Federal Communication Commission": 52,
+          "General Services Administration": 52,
+          "Consumer Product Safety Commission": 52,
+          "Department of State": 52,
           "Office of Personnel Management": 52,
+          "National Aeronautics and Space Administration": 52,
+          "Commodity Futures Trading Commission": 52,
+          "Nuclear Regulatory Commission": 52,
+          "Department of Education": 52,
+          "Department of Commerce": 52,
+          "Department of Justice": 52,
+          "Pension Benefit Guaranty Corporation": 52,
+          "National Credit Union Administration": 52,
+          "Federal Home Loan Bank Board": 52,
+          "Department of Labor": 52,
+          "Department of Homeland Security": 52,
+          "Saint Lawrence Seaway Development Corporation": 52,
+          "Department of Defense": 52,
+          "National Archives and Records Administration": 52,
+          "Office of Management and Budget": 52,
+          "Department of Agriculture": 52,
+          "Farm Credit Administration": 52,
+          "Department of Health and Human Services": 52,
+          "Federal Energy Regulatory Commission": 52,
+          "Social Security Administration": 52,
+          "Federal Housing Finance Board": 52,
+          "Equal Employment Opportunity Commission": 52,
+          "Department of Transportation": 52,
+          "Agency for International Development": 52,
+          "Department of Treasury": 52,
+          "Department of Energy": 52,
           "Department of the Interior": 52,
-          "Department of Agriculture": 52
+          "Securities and Exchange Commission": 52,
+          "Department of Housing and Urban Development": 52,
+          "Federal Trade Commission": 52
         }
       ],
       [
@@ -1080,22 +965,6 @@
     [
       "1995",
       1995
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1668,22 +1537,6 @@
     ]
   ],
   [
-    "change",
-    "variables.quarter.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.quarter.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.quarter",
     [
@@ -1942,22 +1795,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.tq.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tq.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2605,22 +2442,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tq2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tq2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tq2",
     [
@@ -3265,22 +3086,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ty.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ty",
     [
@@ -3851,22 +3656,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ty2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ty2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ty2",
     [
@@ -4434,22 +4223,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.timequarterid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.timequarterid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5093,22 +4866,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ndSignif_NPRM_count.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ndSignif_NPRM_count.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ndSignif_NPRM_count",
     [
@@ -5668,22 +5425,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ndinsignifNPRM.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ndinsignifNPRM.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6299,22 +6040,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Signif_NPRM_count.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Signif_NPRM_count.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Signif_NPRM_count",
     [
@@ -6878,22 +6603,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ndSignif_Final_count.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ndSignif_Final_count.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7462,22 +7171,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.ndinsignifFinal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ndinsignifFinal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8083,22 +7776,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Signif_Final_count.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Signif_Final_count.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Signif_Final_count",
     [
@@ -8666,22 +8343,6 @@
     ]
   ],
   [
-    "change",
-    "variables.priority.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.priority.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.priority",
     [
@@ -8921,22 +8582,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.alignedpresident.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.alignedpresident.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9191,26 +8836,10 @@
   ],
   [
     "change",
-    "variables.transition.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.transition.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.transition.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9471,26 +9100,10 @@
   ],
   [
     "change",
-    "variables.midnight.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.midnight.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.midnight.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9749,26 +9362,10 @@
   ],
   [
     "change",
-    "variables.oppsizeunity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.oppsizeunity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.oppsizeunity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10412,22 +10009,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cong_agencydisagree.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cong_agencydisagree.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cong_agencydisagree",
     [
@@ -10679,26 +10260,10 @@
   ],
   [
     "change",
-    "variables.hearings_sentiment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hearings_sentiment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hearings_sentiment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11339,22 +10904,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.oversight_hearings.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.oversight_hearings.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12007,26 +11556,10 @@
   ],
   [
     "change",
-    "variables.lncases.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lncases.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lncases.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12683,26 +12216,10 @@
   ],
   [
     "change",
-    "variables.lnsize.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnsize.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnsize.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13356,26 +12873,10 @@
   ],
   [
     "change",
-    "variables.cl_ideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cl_ideology.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_ideology.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14019,22 +13520,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cl_moderate.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cl_moderate.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cl_moderate",
     [
@@ -14274,22 +13759,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.independent.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.independent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14535,22 +14004,6 @@
     ]
   ],
   [
-    "change",
-    "variables.divided.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.divided.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.divided",
     [
@@ -14790,22 +14243,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15051,22 +14488,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g2",
     [
@@ -15306,22 +14727,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15567,22 +14972,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g4",
     [
@@ -15822,22 +15211,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16083,22 +15456,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g6",
     [
@@ -16338,22 +15695,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g7.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16599,22 +15940,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g8",
     [
@@ -16854,22 +16179,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g9.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g9.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17115,22 +16424,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g10",
     [
@@ -17370,22 +16663,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g11.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g11.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17631,22 +16908,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g12.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g12.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g12",
     [
@@ -17886,22 +17147,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g13.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g13.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18147,22 +17392,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g14.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g14",
     [
@@ -18402,22 +17631,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g15.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18663,22 +17876,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g16.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g16",
     [
@@ -18918,22 +18115,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g17.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g17.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19179,22 +18360,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g18.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g18.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g18",
     [
@@ -19434,22 +18599,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g19.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g19.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19695,22 +18844,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g20.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g20.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g20",
     [
@@ -19950,22 +19083,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g21.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g21.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20211,22 +19328,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g22.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g22.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g22",
     [
@@ -20466,22 +19567,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g23.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g23.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20727,22 +19812,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g24.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g24.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g24",
     [
@@ -20982,22 +20051,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g25.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g25.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21243,22 +20296,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g26.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.g26.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g26",
     [
@@ -21488,22 +20525,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g27.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g27.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21749,22 +20770,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g28.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g28.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g28",
     [
@@ -22004,22 +21009,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g29.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g29.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22265,22 +21254,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g30.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g30.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g30",
     [
@@ -22520,22 +21493,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g31.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g31.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22781,22 +21738,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g32.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g32.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g32",
     [
@@ -23036,22 +21977,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g33.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g33.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23297,22 +22222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g34.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g34.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g34",
     [
@@ -23552,22 +22461,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g35.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g35.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23813,22 +22706,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g36.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g36.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g36",
     [
@@ -24068,22 +22945,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g37.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g37.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24329,22 +23190,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g38.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g38.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g38",
     [
@@ -24584,22 +23429,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g39.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g39.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24845,22 +23674,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g40.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g40.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g40",
     [
@@ -25100,22 +23913,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g41.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g41.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25361,22 +24158,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g42.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g42.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g42",
     [
@@ -25616,22 +24397,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g43.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g43.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25877,22 +24642,6 @@
     ]
   ],
   [
-    "change",
-    "variables.g44.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g44.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.g44",
     [
@@ -26132,22 +24881,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.g45.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.g45.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26393,22 +25126,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y1",
     [
@@ -26648,22 +25365,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26909,22 +25610,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y3",
     [
@@ -27164,22 +25849,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27425,22 +26094,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y5",
     [
@@ -27680,22 +26333,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27941,22 +26578,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y7.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y7",
     [
@@ -28196,22 +26817,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y8.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28457,22 +27062,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y9.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y9.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y9",
     [
@@ -28712,22 +27301,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28973,22 +27546,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y11.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y11.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y11",
     [
@@ -29228,22 +27785,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.y12.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y12.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29489,22 +28030,6 @@
     ]
   ],
   [
-    "change",
-    "variables.y13.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.y13.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.y13",
     [
@@ -29701,467 +28226,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:12",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "agency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agencyname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "quarter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tq": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tq2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ty2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timequarterid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ndSignif_NPRM_count": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ndinsignifNPRM": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Signif_NPRM_count": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ndSignif_Final_count": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ndinsignifFinal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Signif_Final_count": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "priority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "alignedpresident": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "transition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "midnight": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oppsizeunity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cong_agencydisagree": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hearings_sentiment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oversight_hearings": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lncases": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnsize": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cl_ideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cl_moderate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "independent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "divided": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g17": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g18": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g19": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g21": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g22": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g23": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g24": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g26": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g27": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g28": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g29": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g30": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g31": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g32": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g33": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g34": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g35": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g36": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g37": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g38": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g41": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g42": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g43": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g44": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g45": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "y13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

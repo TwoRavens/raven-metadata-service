@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        32
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "OB00VG_howhappy_combo.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1195
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.month.median",
     [
@@ -125,22 +42,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.month.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.month.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -401,22 +302,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -670,22 +555,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -931,28 +800,12 @@
     [
       "Nairobi",
       [
-        "Nairobi",
         "R. Valley",
+        "Nairobi",
         "Coast",
-        "N. Eastern",
+        "Central",
         "Eastern"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.regionname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regionname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -986,10 +839,10 @@
       [
         "fewestValues",
         [
-          "Nairobi",
           "R. Valley",
+          "Nairobi",
           "Coast",
-          "N. Eastern",
+          "Central",
           "Eastern"
         ]
       ],
@@ -1017,13 +870,13 @@
         "plotValues",
         {
           "Western": 4,
-          "Nyanza": 4,
-          "Central": 4,
           "N. Eastern": 4,
+          "Nyanza": 4,
+          "Eastern": 4,
+          "Central": 4,
           "Coast": 4,
-          "R. Valley": 4,
           "Nairobi": 4,
-          "Eastern": 4
+          "R. Valley": 4
         }
       ],
       [
@@ -1199,22 +1052,6 @@
     [
       "27",
       27.0
-    ]
-  ],
-  [
-    "change",
-    "variables.veryhappy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.veryhappy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1793,22 +1630,6 @@
     [
       "10",
       10
-    ]
-  ],
-  [
-    "change",
-    "variables.happy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.happy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2404,22 +2225,6 @@
     ]
   ],
   [
-    "change",
-    "variables.unhappy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.unhappy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.unhappy",
     [
@@ -3002,22 +2807,6 @@
     ]
   ],
   [
-    "change",
-    "variables.veryunhappy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.veryunhappy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.veryunhappy",
     [
@@ -3556,22 +3345,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.other.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other",
     [
@@ -3791,22 +3564,6 @@
     [
       "54",
       54
-    ]
-  ],
-  [
-    "change",
-    "variables.n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4354,82 +4111,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:21:37",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "month": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regionname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "veryhappy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "happy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unhappy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "veryunhappy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

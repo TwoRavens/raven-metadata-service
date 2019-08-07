@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        500
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "NPQ3FB_Chen_Bryan Observational Data (Replication).tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 44368
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.FIPS.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.FIPS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.FIPS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "oconnor",
       [
-        "sotomayor",
-        "ginsburg",
+        "roberts",
         "bork",
-        "oconnor",
-        "rehnquist"
+        "ginsburg",
+        "rehnquist",
+        "oconnor"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.NomineeName.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NomineeName.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "sotomayor",
-          "ginsburg",
+          "roberts",
           "bork",
-          "oconnor",
-          "rehnquist"
+          "ginsburg",
+          "rehnquist",
+          "oconnor"
         ]
       ],
       [
@@ -833,16 +718,16 @@
       [
         "plotValues",
         {
-          "breyer": 50,
-          "thomas": 50,
-          "alito": 50,
           "souter": 50,
-          "roberts": 50,
-          "rehnquist": 50,
+          "alito": 50,
+          "sotomayor": 50,
+          "thomas": 50,
           "oconnor": 50,
-          "bork": 50,
+          "rehnquist": 50,
           "ginsburg": 50,
-          "sotomayor": 50
+          "breyer": 50,
+          "bork": 50,
+          "roberts": 50
         }
       ],
       [
@@ -1036,26 +921,10 @@
   ],
   [
     "change",
-    "variables.statepredconfirmwithop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.statepredconfirmwithop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.statepredconfirmwithop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1703,22 +1572,6 @@
     ]
   ],
   [
-    "change",
-    "variables.NomineeNumber.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NomineeNumber.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.NomineeNumber",
     [
@@ -2026,26 +1879,10 @@
   ],
   [
     "change",
-    "variables.forthcoming.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.forthcoming.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.forthcoming.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2356,26 +2193,10 @@
   ],
   [
     "change",
-    "variables.qualified.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.qualified.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.qualified.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2686,26 +2507,10 @@
   ],
   [
     "change",
-    "variables.notforthcoming.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.notforthcoming.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.notforthcoming.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3016,26 +2821,10 @@
   ],
   [
     "change",
-    "variables.interruptions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interruptions.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interruptions.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3346,26 +3135,10 @@
   ],
   [
     "change",
-    "variables.nonanswers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nonanswers.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nonanswers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3672,26 +3445,10 @@
   ],
   [
     "change",
-    "variables.mood.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mood.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mood.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4348,26 +4105,10 @@
   ],
   [
     "change",
-    "variables.democrat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.democrat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.democrat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5024,26 +4765,10 @@
   ],
   [
     "change",
-    "variables.liberal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.liberal.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.liberal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5700,26 +5425,10 @@
   ],
   [
     "change",
-    "variables.PIDCongruence.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PIDCongruence.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PIDCongruence.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6317,97 +6026,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:23",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "FIPS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NomineeName": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "statepredconfirmwithop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NomineeNumber": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "forthcoming": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qualified": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "notforthcoming": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interruptions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nonanswers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mood": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "democrat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "liberal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PIDCongruence": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

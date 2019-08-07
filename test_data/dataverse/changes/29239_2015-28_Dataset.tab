@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        48
-      ],
-      [
-        "variableCount",
-        111
-      ],
-      [
-        "dataSource",
-        {
-          "name": "29239_2015-28_Dataset.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 40359
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Country.mode",
     [
@@ -91,22 +8,6 @@
         "Russia",
         "Germany"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -140,11 +41,11 @@
       [
         "fewestValues",
         [
-          "United Kingdom",
-          "Greece",
           "Bulgaria",
-          "Turkey",
-          "Belgium"
+          "Romania",
+          "United Kingdom",
+          "Portugal",
+          "Lithuania"
         ]
       ],
       [
@@ -172,29 +73,29 @@
         {
           "Germany": 7,
           "Russia": 7,
-          "Italy": 4,
-          "Spain": 4,
           "Ukraine": 4,
+          "Spain": 4,
+          "Italy": 4,
           "France": 3,
-          "Romania": 1,
-          "Austria": 1,
+          "Greece": 1,
           "Netherlands": 1,
-          "Sweden": 1,
-          "Bulgaria": 1,
-          "Poland": 1,
+          "Ireland": 1,
+          "Belgium": 1,
           "Czech Republic": 1,
-          "Denmark": 1,
           "Norway": 1,
+          "Denmark": 1,
+          "Sweden": 1,
           "Estonia": 1,
+          "Latvia": 1,
+          "Austria": 1,
+          "Hungary": 1,
+          "Poland": 1,
           "Turkey": 1,
           "Portugal": 1,
-          "Ireland": 1,
-          "Hungary": 1,
           "United Kingdom": 1,
-          "Latvia": 1,
-          "Greece": 1,
-          "Belgium": 1,
-          "Lithuania": 1
+          "Lithuania": 1,
+          "Romania": 1,
+          "Bulgaria": 1
         }
       ],
       [
@@ -353,28 +254,12 @@
     [
       "Amsterdam",
       [
-        "Athina",
-        "D\ufffdsseldorf",
-        "Wien",
-        "Frankfurt am Main",
-        "Kazan"
+        "Praha",
+        "Ekaterinburg",
+        "Lyon",
+        "Warszawa",
+        "M\ufffdnchen"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.City.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.City.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -408,11 +293,11 @@
       [
         "fewestValues",
         [
-          "Athina",
-          "D\ufffdsseldorf",
-          "Wien",
-          "Frankfurt am Main",
-          "Kazan"
+          "Praha",
+          "Ekaterinburg",
+          "Lyon",
+          "Warszawa",
+          "M\ufffdnchen"
         ]
       ],
       [
@@ -438,54 +323,54 @@
       [
         "plotValues",
         {
-          "Rostov/Don": 1,
-          "Lyon": 1,
-          "Nij. Novgorod": 1,
-          "Berlin": 1,
-          "Oslo": 1,
+          "Bucuresti": 1,
           "Tallinn": 1,
-          "Sevilla": 1,
-          "Milano": 1,
-          "Vilnius": 1,
-          "Praha": 1,
-          "Warszawa": 1,
-          "Dublin": 1,
-          "Samara": 1,
-          "Moskva": 1,
-          "Riga": 1,
-          "Amsterdam": 1,
-          "Madrid": 1,
-          "London": 1,
-          "Hamburg": 1,
-          "Kharkov": 1,
-          "Napoli": 1,
-          "Kiev": 1,
-          "Paris": 1,
-          "Valencia": 1,
-          "Bruxelles": 1,
-          "Barcelona": 1,
-          "Istanbul": 1,
-          "Ekaterinburg": 1,
-          "Sofia": 1,
-          "Marseille": 1,
-          "Stuttgart": 1,
-          "Stockholm": 1,
-          "Roma": 1,
-          "Lisboa": 1,
           "K\ufffdbenhavn": 1,
           "Dnepropetrovsk": 1,
-          "Bucuresti": 1,
-          "Torino": 1,
-          "Budapest": 1,
-          "Odessa": 1,
-          "K\ufffdln": 1,
-          "M\ufffdnchen": 1,
-          "S.-Peterburg": 1,
-          "Kazan": 1,
+          "Istanbul": 1,
+          "Lisboa": 1,
+          "Riga": 1,
+          "Roma": 1,
+          "Samara": 1,
+          "Kharkov": 1,
+          "Marseille": 1,
+          "Stuttgart": 1,
+          "Napoli": 1,
           "Frankfurt am Main": 1,
+          "Nij. Novgorod": 1,
+          "Barcelona": 1,
+          "Hamburg": 1,
+          "Madrid": 1,
+          "Oslo": 1,
+          "Odessa": 1,
+          "Athina": 1,
+          "Torino": 1,
+          "Valencia": 1,
+          "Budapest": 1,
+          "Kazan": 1,
+          "London": 1,
+          "K\ufffdln": 1,
+          "Berlin": 1,
+          "Paris": 1,
+          "Rostov/Don": 1,
+          "Amsterdam": 1,
+          "Kiev": 1,
+          "Dublin": 1,
+          "Moskva": 1,
           "Wien": 1,
+          "Sofia": 1,
+          "Sevilla": 1,
+          "Stockholm": 1,
+          "Bruxelles": 1,
           "D\ufffdsseldorf": 1,
-          "Athina": 1
+          "Vilnius": 1,
+          "S.-Peterburg": 1,
+          "Milano": 1,
+          "M\ufffdnchen": 1,
+          "Warszawa": 1,
+          "Lyon": 1,
+          "Ekaterinburg": 1,
+          "Praha": 1
         }
       ],
       [
@@ -667,28 +552,12 @@
     [
       "Amsterdam",
       [
-        "Marseille",
-        "Barcelona",
-        "Milan",
-        "Naples",
-        "Odessa"
+        "Prague",
+        "Seville",
+        "Hamburg",
+        "Copenhagen",
+        "Oslo"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.City_Eng.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.City_Eng.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -722,11 +591,11 @@
       [
         "fewestValues",
         [
-          "Marseille",
-          "Barcelona",
-          "Milan",
-          "Naples",
-          "Odessa"
+          "Prague",
+          "Seville",
+          "Hamburg",
+          "Copenhagen",
+          "Oslo"
         ]
       ],
       [
@@ -752,54 +621,54 @@
       [
         "plotValues",
         {
-          "Amsterdam": 1,
-          "Rostov-on-Don": 1,
-          "Vienna": 1,
-          "Rome": 1,
-          "Dusseldorf": 1,
-          "Warsaw": 1,
-          "Vilnius": 1,
-          "Samara": 1,
-          "Cologne": 1,
-          "Dublin": 1,
-          "Munich": 1,
-          "Riga": 1,
+          "Stockholm": 1,
+          "Berlin": 1,
           "Athens": 1,
+          "Budapest": 1,
+          "St. Petersburg": 1,
+          "Vilnius": 1,
+          "Dnepropetrovsk": 1,
+          "Istanbul": 1,
+          "Brussels": 1,
+          "Lisbon": 1,
+          "Riga": 1,
+          "Rostov-on-Don": 1,
+          "Kharkov": 1,
+          "Marseille": 1,
+          "Yekaterinburg": 1,
+          "Rome": 1,
+          "Tallinn": 1,
           "Turin": 1,
           "Madrid": 1,
-          "London": 1,
-          "Seville": 1,
-          "Hamburg": 1,
-          "Kharkov": 1,
-          "Copenhagen": 1,
-          "Kiev": 1,
+          "Munich": 1,
           "Paris": 1,
-          "Brussels": 1,
-          "Yekaterinburg": 1,
-          "Berlin": 1,
-          "Prague": 1,
-          "Lisbon": 1,
-          "Nizhniy Novgorod": 1,
-          "Oslo": 1,
-          "Frankfurt": 1,
-          "Stockholm": 1,
-          "Lyon": 1,
-          "Tallinn": 1,
-          "Dnepropetrovsk": 1,
-          "Moscow": 1,
-          "Istanbul": 1,
-          "Stuttgart": 1,
-          "Budapest": 1,
-          "Sofia": 1,
-          "Valencia": 1,
-          "Bucharest": 1,
           "Kazan": 1,
+          "Valencia": 1,
           "Odessa": 1,
-          "St. Petersburg": 1,
-          "Naples": 1,
+          "London": 1,
+          "Lyon": 1,
+          "Sofia": 1,
+          "Frankfurt": 1,
+          "Bucharest": 1,
+          "Samara": 1,
+          "Amsterdam": 1,
+          "Nizhniy Novgorod": 1,
+          "Kiev": 1,
           "Milan": 1,
+          "Dublin": 1,
+          "Moscow": 1,
+          "Cologne": 1,
+          "Naples": 1,
           "Barcelona": 1,
-          "Marseille": 1
+          "Stuttgart": 1,
+          "Vienna": 1,
+          "Warsaw": 1,
+          "Dusseldorf": 1,
+          "Oslo": 1,
+          "Copenhagen": 1,
+          "Hamburg": 1,
+          "Seville": 1,
+          "Prague": 1
         }
       ],
       [
@@ -981,28 +850,12 @@
     [
       "AMS",
       [
-        "FRF",
-        "NAP",
-        "HAM",
-        "ROM",
-        "NNG"
+        "BUD",
+        "MUC",
+        "DUB",
+        "TAL",
+        "EKA"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.City_Short.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.City_Short.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1036,11 +889,11 @@
       [
         "fewestValues",
         [
-          "FRF",
-          "NAP",
-          "HAM",
-          "ROM",
-          "NNG"
+          "BUD",
+          "MUC",
+          "DUB",
+          "TAL",
+          "EKA"
         ]
       ],
       [
@@ -1066,54 +919,54 @@
       [
         "plotValues",
         {
-          "PRG": 1,
-          "MLN": 1,
-          "IST": 1,
-          "SAM": 1,
-          "SOF": 1,
-          "AMS": 1,
-          "LIS": 1,
-          "TAL": 1,
-          "DNK": 1,
-          "MUC": 1,
-          "CPH": 1,
+          "ROM": 1,
           "DUS": 1,
+          "SAM": 1,
+          "BCN": 1,
+          "OSL": 1,
+          "MLN": 1,
+          "KZN": 1,
+          "WAW": 1,
+          "BUH": 1,
+          "NNG": 1,
+          "SPB": 1,
+          "PRG": 1,
+          "TUR": 1,
+          "LIS": 1,
+          "SOF": 1,
+          "DNK": 1,
+          "VIL": 1,
+          "LDN": 1,
+          "IST": 1,
+          "KIV": 1,
+          "HAM": 1,
+          "RIG": 1,
+          "LYN": 1,
+          "HRK": 1,
+          "AMS": 1,
           "PAR": 1,
+          "RND": 1,
+          "STO": 1,
           "ATH": 1,
           "MSK": 1,
-          "SEV": 1,
-          "VIL": 1,
-          "KZN": 1,
-          "MAD": 1,
-          "VIE": 1,
-          "CGN": 1,
-          "EKA": 1,
-          "BER": 1,
-          "OSL": 1,
-          "MRS": 1,
-          "HRK": 1,
-          "BUD": 1,
-          "STO": 1,
-          "TUR": 1,
-          "KIV": 1,
-          "RIG": 1,
-          "ROM": 1,
-          "WAW": 1,
-          "RND": 1,
-          "LDN": 1,
+          "VAL": 1,
           "BRU": 1,
-          "BCN": 1,
-          "BUH": 1,
+          "BER": 1,
+          "CPH": 1,
+          "SEV": 1,
+          "MRS": 1,
+          "CGN": 1,
+          "VIE": 1,
           "ODS": 1,
           "STU": 1,
-          "LYN": 1,
-          "VAL": 1,
-          "SPB": 1,
-          "NNG": 1,
+          "MAD": 1,
           "NAP": 1,
-          "HAM": 1,
+          "FRF": 1,
+          "EKA": 1,
+          "TAL": 1,
           "DUB": 1,
-          "FRF": 1
+          "MUC": 1,
+          "BUD": 1
         }
       ],
       [
@@ -1333,22 +1186,6 @@
     [
       "576",
       576
-    ]
-  ],
-  [
-    "change",
-    "variables.NAds.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NAds.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2001,26 +1838,10 @@
   ],
   [
     "change",
-    "variables.Value.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Value.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Value.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2677,26 +2498,10 @@
   ],
   [
     "change",
-    "variables.Price.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Price.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Price.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3340,22 +3145,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Room.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Room.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Room",
     [
@@ -3616,26 +3405,10 @@
   ],
   [
     "change",
-    "variables.Area.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Area.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Area.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4280,22 +4053,6 @@
     [
       "1416",
       1416
-    ]
-  ],
-  [
-    "change",
-    "variables.NObs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NObs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4948,26 +4705,10 @@
   ],
   [
     "change",
-    "variables.Price_hedonic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Price_hedonic.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Price_hedonic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5624,26 +5365,10 @@
   ],
   [
     "change",
-    "variables.Price_hedonic_identical.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Price_hedonic_identical.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Price_hedonic_identical.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6296,26 +6021,10 @@
   ],
   [
     "change",
-    "variables.Price_Median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Price_Median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Price_Median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6972,26 +6681,10 @@
   ],
   [
     "change",
-    "variables.Price_Mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Price_Mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Price_Mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7644,26 +7337,10 @@
   ],
   [
     "change",
-    "variables.Area_Median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Area_Median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Area_Median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8320,26 +7997,10 @@
   ],
   [
     "change",
-    "variables.Area_Mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Area_Mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Area_Mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8992,26 +8653,10 @@
   ],
   [
     "change",
-    "variables.Room_Median.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Room_Median.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Room_Median.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9276,26 +8921,10 @@
   ],
   [
     "change",
-    "variables.Room_Mean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Room_Mean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Room_Mean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9939,22 +9568,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Euro_area.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Euro_area.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Euro_area",
     [
@@ -10194,22 +9807,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.EU.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10468,26 +10065,10 @@
   ],
   [
     "change",
-    "variables.Population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Population.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11144,26 +10725,10 @@
   ],
   [
     "change",
-    "variables.DPop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DPop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DPop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11816,26 +11381,10 @@
   ],
   [
     "change",
-    "variables.City_Area.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.City_Area.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.City_Area.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12492,26 +12041,10 @@
   ],
   [
     "change",
-    "variables.Density.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Density.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Density.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13168,26 +12701,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13844,26 +13361,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC_PPS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC_PPS.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14520,26 +14021,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC2008.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC2008.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC2008.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15196,26 +14681,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC2009.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC2009.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC2009.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15872,26 +15341,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16545,26 +15998,10 @@
   ],
   [
     "change",
-    "variables.Gini.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Gini.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Gini.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17221,26 +16658,10 @@
   ],
   [
     "change",
-    "variables.Housing_stock_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Housing_stock_2011.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Housing_stock_2011.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17897,26 +17318,10 @@
   ],
   [
     "change",
-    "variables.Housing_stock_2012.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Housing_stock_2012.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Housing_stock_2012.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18569,26 +17974,10 @@
   ],
   [
     "change",
-    "variables.HOR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HOR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HOR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19241,26 +18630,10 @@
   ],
   [
     "change",
-    "variables.HOR_2012.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HOR_2012.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HOR_2012.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19913,26 +19286,10 @@
   ],
   [
     "change",
-    "variables.Kearny_GCI2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Kearny_GCI2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Kearny_GCI2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20586,26 +19943,10 @@
   ],
   [
     "change",
-    "variables.LRIR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LRIR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LRIR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21258,26 +20599,10 @@
   ],
   [
     "change",
-    "variables.Inflation2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Inflation2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Inflation2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21930,26 +21255,10 @@
   ],
   [
     "change",
-    "variables.Inflation2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Inflation2011.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Inflation2011.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22603,26 +21912,10 @@
   ],
   [
     "change",
-    "variables.URate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.URate.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.URate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23276,26 +22569,10 @@
   ],
   [
     "change",
-    "variables.MIR2009.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MIR2009.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MIR2009.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23949,26 +23226,10 @@
   ],
   [
     "change",
-    "variables.MIR2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MIR2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MIR2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24622,26 +23883,10 @@
   ],
   [
     "change",
-    "variables.Mortgage_PC_2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Mortgage_PC_2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Mortgage_PC_2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25294,26 +24539,10 @@
   ],
   [
     "change",
-    "variables.Mortgage_PC_2012.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Mortgage_PC_2012.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Mortgage_PC_2012.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25966,26 +25195,10 @@
   ],
   [
     "change",
-    "variables.Res_debt_GDP_2012.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Res_debt_GDP_2012.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Res_debt_GDP_2012.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26642,26 +25855,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC_PPP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC_PPP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27314,26 +26511,10 @@
   ],
   [
     "change",
-    "variables.GBL_10y_2011.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GBL_10y_2011.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GBL_10y_2011.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27987,26 +27168,10 @@
   ],
   [
     "change",
-    "variables.GBL_10y_2012.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GBL_10y_2012.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GBL_10y_2012.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28660,26 +27825,10 @@
   ],
   [
     "change",
-    "variables.PPP_WorldBank_2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PPP_WorldBank_2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PPP_WorldBank_2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29332,26 +28481,10 @@
   ],
   [
     "change",
-    "variables.Exchange_rate_WorldBank_2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Exchange_rate_WorldBank_2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Exchange_rate_WorldBank_2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30008,26 +29141,10 @@
   ],
   [
     "change",
-    "variables.GDP_PC_PPP_2010.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GDP_PC_PPP_2010.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPP_2010.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30672,22 +29789,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Capital.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Capital.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Capital",
     [
@@ -30932,22 +30033,6 @@
     [
       "464773",
       464773.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl1989_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl1989_1993.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31561,22 +30646,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Tppl1994_1998.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl1994_1998.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Tppl1994_1998",
     [
@@ -32180,22 +31249,6 @@
     [
       "399685",
       399685.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl1999_2002.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl1999_2002.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32815,22 +31868,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Tppl2003_2006.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl2003_2006.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Tppl2003_2006",
     [
@@ -33447,22 +32484,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Tppl2007_2009.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Tppl2007_2009.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Tppl2007_2009",
     [
@@ -34029,22 +33050,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GDP_PC_PPS1989_1993.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPS1989_1993.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GDP_PC_PPS1989_1993",
     [
@@ -34265,22 +33270,6 @@
     [
       "6900",
       6900.0
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPS1994_1998.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPS1994_1998.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34885,22 +33874,6 @@
     [
       "10600",
       10600.0
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPS1999_2002.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_PC_PPS1999_2002.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35523,26 +34496,10 @@
   ],
   [
     "change",
-    "variables.LPrice.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPrice.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPrice.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36199,26 +35156,10 @@
   ],
   [
     "change",
-    "variables.Density2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Density2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Density2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36875,26 +35816,10 @@
   ],
   [
     "change",
-    "variables.Population2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Population2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Population2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37551,26 +36476,10 @@
   ],
   [
     "change",
-    "variables.Housing_stock.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Housing_stock.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Housing_stock.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38227,26 +37136,10 @@
   ],
   [
     "change",
-    "variables.Pop2HS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Pop2HS.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Pop2HS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38900,26 +37793,10 @@
   ],
   [
     "change",
-    "variables.Mortgage_PC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Mortgage_PC.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Mortgage_PC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39573,26 +38450,10 @@
   ],
   [
     "change",
-    "variables.GBL_10y.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.GBL_10y.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.GBL_10y.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40246,26 +39107,10 @@
   ],
   [
     "change",
-    "variables.MIR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MIR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MIR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40918,26 +39763,10 @@
   ],
   [
     "change",
-    "variables.Inflation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Inflation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Inflation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41590,26 +40419,10 @@
   ],
   [
     "change",
-    "variables.DMIR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DMIR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DMIR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42266,26 +41079,10 @@
   ],
   [
     "change",
-    "variables.LPopulation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPopulation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPopulation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42942,26 +41739,10 @@
   ],
   [
     "change",
-    "variables.LGDP_PC_PPP.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LGDP_PC_PPP.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LGDP_PC_PPP.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43618,26 +42399,10 @@
   ],
   [
     "change",
-    "variables.LDensity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LDensity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LDensity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44294,26 +43059,10 @@
   ],
   [
     "change",
-    "variables.LPop2HS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPop2HS.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPop2HS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44967,26 +43716,10 @@
   ],
   [
     "change",
-    "variables.LGBL_10y.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LGBL_10y.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LGBL_10y.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45640,26 +44373,10 @@
   ],
   [
     "change",
-    "variables.LMortgage_PC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LMortgage_PC.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LMortgage_PC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46316,26 +45033,10 @@
   ],
   [
     "change",
-    "variables.LHousing_stock.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LHousing_stock.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LHousing_stock.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46992,26 +45693,10 @@
   ],
   [
     "change",
-    "variables.LPopulation2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPopulation2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPopulation2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47664,26 +46349,10 @@
   ],
   [
     "change",
-    "variables.LPopulation_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPopulation_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPopulation_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -48336,26 +47005,10 @@
   ],
   [
     "change",
-    "variables.LPopulation_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPopulation_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPopulation_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49008,26 +47661,10 @@
   ],
   [
     "change",
-    "variables.LGDP_PC_PPP_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LGDP_PC_PPP_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LGDP_PC_PPP_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49680,26 +48317,10 @@
   ],
   [
     "change",
-    "variables.LGDP_PC_PPP_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LGDP_PC_PPP_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LGDP_PC_PPP_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -50352,26 +48973,10 @@
   ],
   [
     "change",
-    "variables.LDensity_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LDensity_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LDensity_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51024,26 +49629,10 @@
   ],
   [
     "change",
-    "variables.LDensity_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LDensity_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LDensity_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51696,26 +50285,10 @@
   ],
   [
     "change",
-    "variables.LPop2HS_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPop2HS_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPop2HS_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -52368,26 +50941,10 @@
   ],
   [
     "change",
-    "variables.LPop2HS_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LPop2HS_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LPop2HS_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53040,26 +51597,10 @@
   ],
   [
     "change",
-    "variables.LGBL_10y_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LGBL_10y_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LGBL_10y_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53378,26 +51919,10 @@
   ],
   [
     "change",
-    "variables.LGBL_10y_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LGBL_10y_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LGBL_10y_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53716,26 +52241,10 @@
   ],
   [
     "change",
-    "variables.LMortgage_PC_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LMortgage_PC_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LMortgage_PC_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54054,26 +52563,10 @@
   ],
   [
     "change",
-    "variables.LMortgage_PC_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LMortgage_PC_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LMortgage_PC_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54392,26 +52885,10 @@
   ],
   [
     "change",
-    "variables.LHousing_stock_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LHousing_stock_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LHousing_stock_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55064,26 +53541,10 @@
   ],
   [
     "change",
-    "variables.LHousing_stock_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.LHousing_stock_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.LHousing_stock_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55736,26 +54197,10 @@
   ],
   [
     "change",
-    "variables.Gini_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Gini_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Gini_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56408,26 +54853,10 @@
   ],
   [
     "change",
-    "variables.Gini_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Gini_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Gini_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57080,26 +55509,10 @@
   ],
   [
     "change",
-    "variables.MIR_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MIR_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MIR_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57418,26 +55831,10 @@
   ],
   [
     "change",
-    "variables.MIR_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MIR_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MIR_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57756,26 +56153,10 @@
   ],
   [
     "change",
-    "variables.DMIR_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DMIR_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DMIR_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -58088,26 +56469,10 @@
   ],
   [
     "change",
-    "variables.DMIR_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DMIR_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DMIR_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -58420,26 +56785,10 @@
   ],
   [
     "change",
-    "variables.HOR_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HOR_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HOR_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59092,26 +57441,10 @@
   ],
   [
     "change",
-    "variables.HOR_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.HOR_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.HOR_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59764,26 +58097,10 @@
   ],
   [
     "change",
-    "variables.Inflation_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Inflation_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Inflation_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60096,26 +58413,10 @@
   ],
   [
     "change",
-    "variables.Inflation_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Inflation_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Inflation_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60428,26 +58729,10 @@
   ],
   [
     "change",
-    "variables.URate_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.URate_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.URate_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61100,26 +59385,10 @@
   ],
   [
     "change",
-    "variables.URate_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.URate_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.URate_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61772,26 +60041,10 @@
   ],
   [
     "change",
-    "variables.DPop_EA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DPop_EA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DPop_EA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62444,26 +60697,10 @@
   ],
   [
     "change",
-    "variables.DPop_EU.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DPop_EU.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DPop_EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -63120,26 +61357,10 @@
   ],
   [
     "change",
-    "variables.Fitted_OLS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Fitted_OLS.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Fitted_OLS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -63796,26 +62017,10 @@
   ],
   [
     "change",
-    "variables.DevA_OLS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DevA_OLS.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DevA_OLS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -64472,26 +62677,10 @@
   ],
   [
     "change",
-    "variables.DevR_OLS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DevR_OLS.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DevR_OLS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65148,26 +63337,10 @@
   ],
   [
     "change",
-    "variables.Fitted_QR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Fitted_QR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Fitted_QR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65824,26 +63997,10 @@
   ],
   [
     "change",
-    "variables.DevA_QR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DevA_QR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DevA_QR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -66500,26 +64657,10 @@
   ],
   [
     "change",
-    "variables.DevR_QR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.DevR_QR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.DevR_QR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -67117,587 +65258,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:48",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "City": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "City_Eng": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "City_Short": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NAds": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Value": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Price": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Room": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Area": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NObs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Price_hedonic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Price_hedonic_identical": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Price_Median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Price_Mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Area_Median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Area_Mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Room_Median": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Room_Mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Euro_area": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DPop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "City_Area": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Density": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC_PPS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC2008": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC2009": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gini": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Housing_stock_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Housing_stock_2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HOR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HOR_2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Kearny_GCI2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LRIR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Inflation2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Inflation2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MIR2009": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MIR2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Mortgage_PC_2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Mortgage_PC_2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Res_debt_GDP_2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC_PPP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GBL_10y_2011": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GBL_10y_2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PPP_WorldBank_2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Exchange_rate_WorldBank_2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC_PPP_2010": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Capital": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Tppl1989_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Tppl1994_1998": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Tppl1999_2002": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Tppl2003_2006": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Tppl2007_2009": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC_PPS1989_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC_PPS1994_1998": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_PC_PPS1999_2002": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPrice": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Density2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Population2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Housing_stock": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pop2HS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Mortgage_PC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GBL_10y": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MIR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Inflation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DMIR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPopulation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LGDP_PC_PPP": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LDensity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPop2HS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LGBL_10y": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LMortgage_PC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LHousing_stock": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPopulation2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPopulation_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPopulation_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LGDP_PC_PPP_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LGDP_PC_PPP_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LDensity_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LDensity_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPop2HS_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LPop2HS_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LGBL_10y_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LGBL_10y_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LMortgage_PC_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LMortgage_PC_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LHousing_stock_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LHousing_stock_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gini_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Gini_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MIR_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MIR_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DMIR_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DMIR_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HOR_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "HOR_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Inflation_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Inflation_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URate_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URate_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DPop_EA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DPop_EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Fitted_OLS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DevA_OLS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DevR_OLS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Fitted_QR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DevA_QR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DevR_QR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

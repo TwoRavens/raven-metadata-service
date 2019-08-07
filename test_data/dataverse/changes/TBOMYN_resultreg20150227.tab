@@ -1,114 +1,15 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        16
-      ],
-      [
-        "variableCount",
-        14
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TBOMYN_resultreg20150227.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1466
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.firm.mode",
     [
       "PIPE_r",
       [
         "WYNN_r",
-        "PIPE_r",
         "SJMH_r",
+        "PIPE_r",
         "SNDC_r"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.firm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.firm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -142,8 +43,8 @@
       [
         "fewestValues",
         [
-          "MCHL_r",
-          "MCELP-r"
+          "MCELP-r",
+          "MCHL_r"
         ]
       ],
       [
@@ -170,11 +71,11 @@
         "plotValues",
         {
           "SNDC_r": 3,
-          "SJMH_r": 3,
           "PIPE_r": 3,
+          "SJMH_r": 3,
           "WYNN_r": 3,
-          "MCELP-r": 2,
-          "MCHL_r": 2
+          "MCHL_r": 2,
+          "MCELP-r": 2
         }
       ],
       [
@@ -314,25 +215,9 @@
     [
       "20140319short",
       [
-        "20140319short",
-        "20150129short"
+        "20150129short",
+        "20140319short"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.event.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.event.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -392,8 +277,8 @@
       [
         "plotValues",
         {
-          "20150129short": 6,
           "20140319short": 6,
+          "20150129short": 6,
           "20110215": 4
         }
       ],
@@ -577,26 +462,10 @@
   ],
   [
     "change",
-    "variables.AR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1249,26 +1118,10 @@
   ],
   [
     "change",
-    "variables.bldg_year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bldg_year.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bldg_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1542,26 +1395,10 @@
   ],
   [
     "change",
-    "variables.gaming_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gaming_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gaming_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1873,26 +1710,10 @@
   ],
   [
     "change",
-    "variables.vipban_smokingratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vipban_smokingratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vipban_smokingratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2169,26 +1990,10 @@
   ],
   [
     "change",
-    "variables.FDI.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.FDI.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.FDI.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2447,22 +2252,6 @@
     ]
   ],
   [
-    "change",
-    "variables.event1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.event1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.event1",
     [
@@ -2705,22 +2494,6 @@
     ]
   ],
   [
-    "change",
-    "variables.event2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.event2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.event2",
     [
@@ -2960,22 +2733,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.event3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.event3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3230,26 +2987,10 @@
   ],
   [
     "change",
-    "variables.vipsmoking3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vipsmoking3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vipsmoking3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3531,26 +3272,10 @@
   ],
   [
     "change",
-    "variables.bldg_age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bldg_age.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bldg_age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3860,22 +3585,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totalban.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.totalban.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totalban",
     [
@@ -4127,26 +3836,10 @@
   ],
   [
     "change",
-    "variables.poorairTable.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.poorairTable.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.poorairTable.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4358,102 +4051,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:04",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "firm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "event": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bldg_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gaming_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vipban_smokingratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "FDI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "event1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "event2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "event3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vipsmoking3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bldg_age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totalban": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "poorairTable": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

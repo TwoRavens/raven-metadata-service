@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        382
-      ],
-      [
-        "variableCount",
-        123
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CLMQ8E_alt_exps_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 131260
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.experiment.mode",
     [
@@ -90,22 +7,6 @@
       [
         "simple_complex"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.experiment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.experiment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -300,25 +201,9 @@
     [
       "simpleask",
       [
-        "complexask",
-        "simpleask"
+        "simpleask",
+        "complexask"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.condition.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.condition.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -378,8 +263,8 @@
       [
         "plotValues",
         {
-          "simpleask": 98,
           "complexask": 98,
+          "simpleask": 98,
           "baserates_given": 95,
           "incentive": 91
         }
@@ -521,22 +406,6 @@
       [
         "reps_first"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.incentive_order.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.incentive_order.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -768,22 +637,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1417,22 +1270,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -1672,22 +1509,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1951,22 +1772,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pid",
     [
@@ -2189,22 +1994,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pidtext.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pidtext.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pidtext",
     [
@@ -2235,11 +2024,11 @@
       [
         "fewestValues",
         [
-          "No political affiliation",
           "//",
-          "mix",
           "Pirate Party",
-          "Socialist"
+          "No political affiliation",
+          "Socialist",
+          "mix"
         ]
       ],
       [
@@ -2269,11 +2058,11 @@
           "Green": 3,
           "green": 2,
           "undecided": 2,
+          "No political affiliation": 1,
+          "mix": 1,
           "Socialist": 1,
           "//": 1,
-          "mix": 1,
-          "Pirate Party": 1,
-          "No political affiliation": 1
+          "Pirate Party": 1
         }
       ],
       [
@@ -2451,22 +2240,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_dem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2712,22 +2485,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pid_rep.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_rep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pid_rep",
     [
@@ -2967,22 +2724,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_ind.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_ind.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3234,22 +2975,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ideo_3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideo_3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ideo_3",
     [
@@ -3472,22 +3197,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ideo_3text.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideo_3text.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ideo_3text",
     [
@@ -3518,11 +3227,11 @@
       [
         "fewestValues",
         [
-          "na",
-          "libertarian",
-          "No political affiliation",
           "//",
-          "Democrate"
+          "Democrate",
+          "No political affiliation",
+          "libertarian",
+          "mix"
         ]
       ],
       [
@@ -3549,12 +3258,12 @@
         "plotValues",
         {
           "Libertarian": 3,
+          "na": 1,
           "mix": 1,
-          "Democrate": 1,
-          "//": 1,
-          "No political affiliation": 1,
           "libertarian": 1,
-          "na": 1
+          "No political affiliation": 1,
+          "Democrate": 1,
+          "//": 1
         }
       ],
       [
@@ -3730,22 +3439,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lib_branch.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lib_branch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3991,22 +3684,6 @@
     ]
   ],
   [
-    "change",
-    "variables.doyouconsideryourselfveryconserv.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.doyouconsideryourselfveryconserv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.doyouconsideryourselfveryconserv",
     [
@@ -4246,22 +3923,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.doyouleaninaliberalorconservativ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.doyouleaninaliberalorconservativ.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4510,22 +4171,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.political_attnnbsp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.political_attnnbsp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4823,22 +4468,6 @@
     [
       "5",
       5.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_southerners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_southerners.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5442,22 +5071,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_rep_65yearsorolder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_65yearsorolder.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_rep_65yearsorolder",
     [
@@ -6047,22 +5660,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_evangelicalchristian.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_evangelicalchristian.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6657,22 +6254,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_earningover250000pery.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_rep_earningover250000pery.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7276,22 +6857,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_dem_black.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_dem_black.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_dem_black",
     [
@@ -7884,22 +7449,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_dem_atheistoragnostic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_dem_atheistoragnostic.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_dem_atheistoragnostic",
     [
@@ -8488,22 +8037,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_dem_unionmembers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_dem_unionmembers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9100,22 +8633,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_dem_gaylesbianorbisexual.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_dem_gaylesbianorbisexual.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9717,22 +9234,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_baserate_65yearsorolder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_65yearsorolder.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_baserate_65yearsorolder",
     [
@@ -10298,22 +9799,6 @@
     [
       "7",
       7.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_evangelicalchris.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_evangelicalchris.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10900,22 +10385,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_baserate_earningover25000.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_earningover25000.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_baserate_earningover25000",
     [
@@ -11489,22 +10958,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_baserate_southerners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_southerners.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_baserate_southerners",
     [
@@ -11801,22 +11254,6 @@
     [
       "8",
       8.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_black.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_black.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12394,22 +11831,6 @@
     ]
   ],
   [
-    "change",
-    "variables.simple_baserate_atheistoragnosti.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_atheistoragnosti.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.simple_baserate_atheistoragnosti",
     [
@@ -12974,22 +12395,6 @@
     [
       "4",
       4.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_unionmembers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_unionmembers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13566,22 +12971,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_gaylesbianorbise.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.simple_baserate_gaylesbianorbise.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14162,22 +13551,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_religion_evangelical.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_religion_evangelical.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_religion_evangelical",
     [
@@ -14751,22 +14124,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_religion_catholic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_religion_catholic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15344,22 +14701,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_religion_mainlinepro.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_religion_mainlinepro.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_religion_mainlinepro",
     [
@@ -15932,22 +15273,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_religion_other.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_religion_other.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_religion_other",
     [
@@ -16514,22 +15839,6 @@
     [
       "25",
       25.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_south_southerners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_south_southerners.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17110,22 +16419,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_south_nonsoutherners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_south_nonsoutherners.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_south_nonsoutherners",
     [
@@ -17702,22 +16995,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_income_lessthan49999.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_income_lessthan49999.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_income_lessthan49999",
     [
@@ -18287,22 +17564,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_income_between50000a.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_income_between50000a.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18878,22 +18139,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_income_between100000.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_income_between100000.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_income_between100000",
     [
@@ -19461,22 +18706,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_income_morethan25000.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_income_morethan25000.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20052,22 +19281,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_age_1839yearsold.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_age_1839yearsold.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_age_1839yearsold",
     [
@@ -20631,22 +19844,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_age_4064yearsold.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_age_4064yearsold.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21224,22 +20421,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_rep_age_65orolder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_rep_age_65orolder.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_rep_age_65orolder",
     [
@@ -21806,22 +20987,6 @@
     [
       "10",
       10.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_race_whitenotincludi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_race_whitenotincludi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22393,22 +21558,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_dem_race_black.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_race_black.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_dem_race_black",
     [
@@ -22708,22 +21857,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_dem_race_hispanicorlatin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_race_hispanicorlatin.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_dem_race_hispanicorlatin",
     [
@@ -23014,22 +22147,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_race_other.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_race_other.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23332,22 +22449,6 @@
     [
       "10",
       10.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_union_areunionmember.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_union_areunionmember.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23655,22 +22756,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_dem_union_donotbelongtoa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_union_donotbelongtoa.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_dem_union_donotbelongtoa",
     [
@@ -23970,22 +23055,6 @@
     [
       "20",
       20.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_lgb_heterosexualorst.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_lgb_heterosexualorst.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24559,22 +23628,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_dem_lgb_gaylesbianorbise.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_lgb_gaylesbianorbise.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_dem_lgb_gaylesbianorbise",
     [
@@ -25142,22 +24195,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_religion_protestant.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_religion_protestant.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25736,22 +24773,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_dem_religion_catholic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_religion_catholic.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_dem_religion_catholic",
     [
@@ -26321,22 +25342,6 @@
     [
       "5",
       5.0
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_religion_atheistorag.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_religion_atheistorag.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26914,22 +25919,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complex_dem_religion_otherreligi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complex_dem_religion_otherreligi.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complex_dem_religion_otherreligi",
     [
@@ -27498,22 +26487,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_dem_black.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_dem_black.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28157,22 +27130,6 @@
     ]
   ],
   [
-    "change",
-    "variables.baserategiven_dem_atheistoragnos.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_dem_atheistoragnos.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.baserategiven_dem_atheistoragnos",
     [
@@ -28810,22 +27767,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_dem_unionmembers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_dem_unionmembers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29469,22 +28410,6 @@
     ]
   ],
   [
-    "change",
-    "variables.baserategiven_dem_gaylesbianorbi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_dem_gaylesbianorbi.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.baserategiven_dem_gaylesbianorbi",
     [
@@ -30125,22 +29050,6 @@
     ]
   ],
   [
-    "change",
-    "variables.baserategiven_rep_65yearsorolder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_rep_65yearsorolder.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.baserategiven_rep_65yearsorolder",
     [
@@ -30770,22 +29679,6 @@
     [
       "9",
       9.0
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_rep_evangelicalchr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_rep_evangelicalchr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31430,22 +30323,6 @@
     ]
   ],
   [
-    "change",
-    "variables.baserategiven_rep_earningover250.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_rep_earningover250.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.baserategiven_rep_earningover250",
     [
@@ -32086,22 +30963,6 @@
     ]
   ],
   [
-    "change",
-    "variables.baserategiven_rep_southerners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.baserategiven_rep_southerners.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.baserategiven_rep_southerners",
     [
@@ -32739,22 +31600,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incent_ask_demblack.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_demblack.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incent_ask_demblack",
     [
@@ -33326,22 +32171,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dematheistoragnostic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dematheistoragnostic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33922,22 +32751,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incent_ask_demunionmembers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_demunionmembers.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incent_ask_demunionmembers",
     [
@@ -34507,22 +33320,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_demgaylesbianorbisexu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_demgaylesbianorbisexu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35119,26 +33916,10 @@
   ],
   [
     "change",
-    "variables.timingfirstclick.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.timingfirstclick.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.timingfirstclick.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35795,26 +34576,10 @@
   ],
   [
     "change",
-    "variables.timinglastclick.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.timinglastclick.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.timinglastclick.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36471,26 +35236,10 @@
   ],
   [
     "change",
-    "variables.timingpagesubmit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.timingpagesubmit.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.timingpagesubmit.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37135,22 +35884,6 @@
     ]
   ],
   [
-    "change",
-    "variables.timingclickcount.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.timingclickcount.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.timingclickcount",
     [
@@ -37439,22 +36172,6 @@
     [
       "5",
       5.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_repsoutherners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_repsoutherners.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38029,22 +36746,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep65yearsorolder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep65yearsorolder.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38623,22 +37324,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incent_ask_repevangelicalchristi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_repevangelicalchristi.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incent_ask_repevangelicalchristi",
     [
@@ -39212,22 +37897,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_repearningover250000p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_repearningover250000p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39828,26 +38497,10 @@
   ],
   [
     "change",
-    "variables.v125.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v125.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v125.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40504,26 +39157,10 @@
   ],
   [
     "change",
-    "variables.v126.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v126.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v126.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41180,26 +39817,10 @@
   ],
   [
     "change",
-    "variables.v127.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v127.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v127.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41843,22 +40464,6 @@
     ]
   ],
   [
-    "change",
-    "variables.v128.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.v128.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.v128",
     [
@@ -42137,22 +40742,6 @@
     ]
   ],
   [
-    "change",
-    "variables.v129.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.v129.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.v129",
     [
@@ -42382,22 +40971,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_southerners.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_southerners.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42975,22 +41548,6 @@
     [
       "6",
       6.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_65yearsorolder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_65yearsorolder.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43573,22 +42130,6 @@
     [
       "5",
       5.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_evangelicalchrist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_evangelicalchrist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44175,22 +42716,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_earningover250000.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_rep_earningover250000.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44789,26 +43314,10 @@
   ],
   [
     "change",
-    "variables.v134.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v134.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v134.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45465,26 +43974,10 @@
   ],
   [
     "change",
-    "variables.v135.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v135.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v135.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46141,26 +44634,10 @@
   ],
   [
     "change",
-    "variables.v136.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v136.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v136.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46804,22 +45281,6 @@
     ]
   ],
   [
-    "change",
-    "variables.v137.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.v137.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.v137",
     [
@@ -47387,22 +45848,6 @@
     [
       "9",
       9.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_black.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_black.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47988,22 +46433,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incent_ask_dem_atheistoragnostic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_atheistoragnostic.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incent_ask_dem_atheistoragnostic",
     [
@@ -48581,22 +47010,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_unionmembers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_unionmembers.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49182,22 +47595,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_gaylesbianorbisex.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.incent_ask_dem_gaylesbianorbisex.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49794,26 +48191,10 @@
   ],
   [
     "change",
-    "variables.v142.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v142.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v142.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -50470,26 +48851,10 @@
   ],
   [
     "change",
-    "variables.v143.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v143.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v143.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51146,26 +49511,10 @@
   ],
   [
     "change",
-    "variables.v144.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v144.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v144.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51809,22 +50158,6 @@
     ]
   ],
   [
-    "change",
-    "variables.v145.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.v145.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.v145",
     [
@@ -52118,22 +50451,6 @@
     ]
   ],
   [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.age",
     [
@@ -52382,22 +50699,6 @@
     ]
   ],
   [
-    "change",
-    "variables.racewhitecaucasian.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.racewhitecaucasian.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.racewhitecaucasian",
     [
@@ -52627,22 +50928,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.raceblackafricanamerican.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.raceblackafricanamerican.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -52878,22 +51163,6 @@
     ]
   ],
   [
-    "change",
-    "variables.raceasian.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.raceasian.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.raceasian",
     [
@@ -53123,22 +51392,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.racenativeamericanoralaskanative.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.racenativeamericanoralaskanative.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53374,22 +51627,6 @@
     ]
   ],
   [
-    "change",
-    "variables.racenativehawaiianorotherpacific.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.racenativehawaiianorotherpacific.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.racenativehawaiianorotherpacific",
     [
@@ -53622,22 +51859,6 @@
     ]
   ],
   [
-    "change",
-    "variables.racehispaniclatino.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.racehispaniclatino.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.racehispaniclatino",
     [
@@ -53867,22 +52088,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.howwouldyoudescribeyourreligious.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.howwouldyoudescribeyourreligious.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54191,26 +52396,10 @@
   ],
   [
     "change",
-    "variables.locationlatitude.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.locationlatitude.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.locationlatitude.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54863,26 +53052,10 @@
   ],
   [
     "change",
-    "variables.locationlongitude.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.locationlongitude.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.locationlongitude.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55526,22 +53699,6 @@
     ]
   ],
   [
-    "change",
-    "variables.locationaccuracy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.locationaccuracy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.locationaccuracy",
     [
@@ -55771,22 +53928,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56031,22 +54172,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pid_3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid_3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pid_3",
     [
@@ -56276,22 +54401,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_south.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_south.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56935,22 +55044,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rep_old.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_old.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rep_old",
     [
@@ -57588,22 +55681,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_evang.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_evang.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -58247,22 +56324,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rep_rich.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_rich.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rep_rich",
     [
@@ -58900,22 +56961,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_black.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_black.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59559,22 +57604,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem_lgb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_lgb.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem_lgb",
     [
@@ -60212,22 +58241,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_aa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_aa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60871,22 +58884,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem_union.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_union.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem_union",
     [
@@ -61527,22 +59524,6 @@
     ]
   ],
   [
-    "change",
-    "variables.democrat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.democrat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.democrat",
     [
@@ -61782,22 +59763,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.republican.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.republican.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62043,22 +60008,6 @@
     ]
   ],
   [
-    "change",
-    "variables.complier.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.complier.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.complier",
     [
@@ -62245,647 +60194,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:48",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "experiment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "condition": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incentive_order": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pidtext": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid_ind": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideo_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideo_3text": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lib_branch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "doyouconsideryourselfveryconserv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "doyouleaninaliberalorconservativ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "political_attnnbsp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_rep_southerners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_rep_65yearsorolder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_rep_evangelicalchristian": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_rep_earningover250000pery": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_dem_black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_dem_atheistoragnostic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_dem_unionmembers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_dem_gaylesbianorbisexual": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_65yearsorolder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_evangelicalchris": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_earningover25000": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_southerners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_atheistoragnosti": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_unionmembers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "simple_baserate_gaylesbianorbise": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_religion_evangelical": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_religion_catholic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_religion_mainlinepro": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_religion_other": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_south_southerners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_south_nonsoutherners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_income_lessthan49999": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_income_between50000a": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_income_between100000": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_income_morethan25000": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_age_1839yearsold": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_age_4064yearsold": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_rep_age_65orolder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_race_whitenotincludi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_race_black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_race_hispanicorlatin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_race_other": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_union_areunionmember": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_union_donotbelongtoa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_lgb_heterosexualorst": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_lgb_gaylesbianorbise": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_religion_protestant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_religion_catholic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_religion_atheistorag": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complex_dem_religion_otherreligi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_dem_black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_dem_atheistoragnos": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_dem_unionmembers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_dem_gaylesbianorbi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_rep_65yearsorolder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_rep_evangelicalchr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_rep_earningover250": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baserategiven_rep_southerners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_demblack": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_dematheistoragnostic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_demunionmembers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_demgaylesbianorbisexu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timingfirstclick": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timinglastclick": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timingpagesubmit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timingclickcount": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_repsoutherners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_rep65yearsorolder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_repevangelicalchristi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_repearningover250000p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v125": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v126": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v127": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v128": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v129": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_rep_southerners": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_rep_65yearsorolder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_rep_evangelicalchrist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_rep_earningover250000": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v134": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v135": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v136": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v137": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_dem_black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_dem_atheistoragnostic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_dem_unionmembers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incent_ask_dem_gaylesbianorbisex": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v142": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v143": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v144": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v145": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "racewhitecaucasian": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "raceblackafricanamerican": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "raceasian": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "racenativeamericanoralaskanative": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "racenativehawaiianorotherpacific": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "racehispaniclatino": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "howwouldyoudescribeyourreligious": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "locationlatitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "locationlongitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "locationaccuracy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid_7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_south": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_old": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_evang": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_rich": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_lgb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_aa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_union": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "democrat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "republican": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "complier": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        3285
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "VJLVYU_fc1-districts.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 271127
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -94,30 +11,6 @@
       [
         "CA"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "state.abbrev",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "state.abbrev",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -154,9 +47,9 @@
       [
         "fewestValues",
         [
-          "VT",
+          "ND",
           "AK",
-          "ND"
+          "VT"
         ]
       ],
       [
@@ -203,8 +96,8 @@
           "MD": 61,
           "MN": 60,
           "WI": 60,
-          "AL": 56,
           "LA": 56,
+          "AL": 56,
           "CO": 55,
           "KY": 50,
           "SC": 49,
@@ -218,20 +111,20 @@
           "NV": 33,
           "WV": 32,
           "UT": 31,
-          "NE": 30,
           "NM": 30,
+          "NE": 30,
           "HI": 26,
           "ME": 24,
           "NH": 24,
           "RI": 24,
           "ID": 24,
           "DE": 20,
-          "SD": 19,
           "WY": 19,
+          "SD": 19,
           "MT": 19,
-          "ND": 18,
+          "VT": 18,
           "AK": 18,
-          "VT": 18
+          "ND": 18
         }
       ],
       [
@@ -452,22 +345,6 @@
     [
       "108",
       108
-    ]
-  ],
-  [
-    "change",
-    "variables.cong.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cong.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -734,22 +611,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1361,22 +1222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.chamber.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.chamber.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.chamber",
     [
@@ -1604,22 +1449,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.female.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1862,22 +1691,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.minority.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.minority.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2159,35 +1972,11 @@
     [
       "variables",
       "tw.ideo.mean",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "tw.ideo.mean",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "tw.ideo.mean",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2874,35 +2663,11 @@
     [
       "variables",
       "white.pop",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "white.pop",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "white.pop",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3588,35 +3353,11 @@
     [
       "variables",
       "vet.perc",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "vet.perc",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "vet.perc",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4286,30 +4027,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "vet.any",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "vet.any",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -4512,82 +4229,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:07:29",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state.abbrev": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cong": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "chamber": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "minority": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tw.ideo.mean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "white.pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vet.perc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vet.any": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

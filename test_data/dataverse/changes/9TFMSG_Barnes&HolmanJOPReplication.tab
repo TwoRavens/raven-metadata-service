@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        36
-      ],
-      [
-        "variableCount",
-        41
-      ],
-      [
-        "dataSource",
-        {
-          "name": "9TFMSG_Barnes&HolmanJOPReplication.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 13559
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.chamber_year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.chamber_year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.chamber_year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -720,26 +621,10 @@
     [
       "buenos aires house",
       [
-        "buenos aires senate",
+        "federal district",
         "buenos aires house",
-        "federal district"
+        "buenos aires senate"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.prov_chamber.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.prov_chamber.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -773,8 +658,8 @@
       [
         "fewestValues",
         [
-          "santa fe senate",
-          "santa fe house"
+          "santa fe house",
+          "santa fe senate"
         ]
       ],
       [
@@ -800,16 +685,16 @@
       [
         "plotValues",
         {
+          "buenos aires senate": 5,
           "federal district": 5,
           "buenos aires house": 5,
-          "buenos aires senate": 5,
-          "mendoza senate": 4,
           "mendoza house": 4,
+          "mendoza senate": 4,
           "missiones": 3,
           "corrientes house": 3,
           "corrientes senate": 3,
-          "santa fe house": 2,
-          "santa fe senate": 2
+          "santa fe senate": 2,
+          "santa fe house": 2
         }
       ],
       [
@@ -987,22 +872,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.senate.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.senate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1257,26 +1126,10 @@
   ],
   [
     "change",
-    "variables.s_child.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_child.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_child.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1933,26 +1786,10 @@
   ],
   [
     "change",
-    "variables.s_cl_blue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_blue.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_blue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2607,26 +2444,10 @@
   ],
   [
     "change",
-    "variables.s_cl_white.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_white.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_white.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3282,26 +3103,10 @@
   ],
   [
     "change",
-    "variables.s_cl_fblue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_fblue.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_fblue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3954,26 +3759,10 @@
   ],
   [
     "change",
-    "variables.s_cl_fwhite.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_fwhite.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_fwhite.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4626,26 +4415,10 @@
   ],
   [
     "change",
-    "variables.s_cl_mblue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_mblue.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_mblue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5301,26 +5074,10 @@
   ],
   [
     "change",
-    "variables.s_cl_mwhite.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_mwhite.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_mwhite.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5973,26 +5730,10 @@
   ],
   [
     "change",
-    "variables.s_cl_politician.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_politician.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_politician.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6645,26 +6386,10 @@
   ],
   [
     "change",
-    "variables.s_cl_fpolitician.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_fpolitician.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_fpolitician.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7317,26 +7042,10 @@
   ],
   [
     "change",
-    "variables.s_cl_mpolitician.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_cl_mpolitician.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_cl_mpolitician.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7993,26 +7702,10 @@
   ],
   [
     "change",
-    "variables.s_married.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_married.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_married.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8668,26 +8361,10 @@
   ],
   [
     "change",
-    "variables.s_college.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_college.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_college.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9341,26 +9018,10 @@
   ],
   [
     "change",
-    "variables.s_public.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_public.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_public.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10014,26 +9675,10 @@
   ],
   [
     "change",
-    "variables.s_private.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_private.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_private.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10688,26 +10333,10 @@
   ],
   [
     "change",
-    "variables.s_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11362,26 +10991,10 @@
   ],
   [
     "change",
-    "variables.s_f_married.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_f_married.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_f_married.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12034,26 +11647,10 @@
   ],
   [
     "change",
-    "variables.s_f_child.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_f_child.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_f_child.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12706,26 +12303,10 @@
   ],
   [
     "change",
-    "variables.s_f_college.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_f_college.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_f_college.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13380,26 +12961,10 @@
   ],
   [
     "change",
-    "variables.s_f_public.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_f_public.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_f_public.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14052,26 +13617,10 @@
   ],
   [
     "change",
-    "variables.s_f_private.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_f_private.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_f_private.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14724,26 +14273,10 @@
   ],
   [
     "change",
-    "variables.s_f_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_f_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_f_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15397,26 +14930,10 @@
   ],
   [
     "change",
-    "variables.s_m_married.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_m_married.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_m_married.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16069,26 +15586,10 @@
   ],
   [
     "change",
-    "variables.s_m_child.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_m_child.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_m_child.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16741,26 +16242,10 @@
   ],
   [
     "change",
-    "variables.s_m_college.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_m_college.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_m_college.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17413,26 +16898,10 @@
   ],
   [
     "change",
-    "variables.s_m_public.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_m_public.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_m_public.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18089,26 +17558,10 @@
   ],
   [
     "change",
-    "variables.s_m_private.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_m_private.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_m_private.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18761,26 +18214,10 @@
   ],
   [
     "change",
-    "variables.s_m_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.s_m_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.s_m_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19437,26 +18874,10 @@
   ],
   [
     "change",
-    "variables.diversity_person.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diversity_person.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diversity_person.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20109,26 +19530,10 @@
   ],
   [
     "change",
-    "variables.diversity_person_f.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diversity_person_f.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diversity_person_f.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20785,26 +20190,10 @@
   ],
   [
     "change",
-    "variables.diversity_person_m.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diversity_person_m.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diversity_person_m.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21460,26 +20849,10 @@
   ],
   [
     "change",
-    "variables.gdi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22129,26 +21502,10 @@
   ],
   [
     "change",
-    "variables.female.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.female.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.female.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22801,26 +22158,10 @@
   ],
   [
     "change",
-    "variables.unemployment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemployment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemployment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23103,26 +22444,10 @@
   ],
   [
     "change",
-    "variables.prof_diversity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prof_diversity.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prof_diversity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23777,26 +23102,10 @@
   ],
   [
     "change",
-    "variables.prof_diversity_f.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prof_diversity_f.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prof_diversity_f.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24453,26 +23762,10 @@
   ],
   [
     "change",
-    "variables.prof_diversity_m.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prof_diversity_m.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prof_diversity_m.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25116,22 +24409,6 @@
     ]
   ],
   [
-    "change",
-    "variables.quotayear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.quotayear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.quotayear",
     [
@@ -25445,26 +24722,10 @@
   ],
   [
     "change",
-    "variables.logdm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.logdm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.logdm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25707,237 +24968,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:16",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "chamber_year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prov_chamber": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "senate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_child": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_blue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_white": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_fblue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_fwhite": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_mblue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_mwhite": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_politician": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_fpolitician": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_cl_mpolitician": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_married": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_college": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_public": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_private": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_f_married": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_f_child": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_f_college": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_f_public": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_f_private": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_f_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_m_married": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_m_child": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_m_college": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_m_public": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_m_private": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "s_m_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diversity_person": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diversity_person_f": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diversity_person_m": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "female": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemployment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prof_diversity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prof_diversity_f": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prof_diversity_m": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "quotayear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "logdm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

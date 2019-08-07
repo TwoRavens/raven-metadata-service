@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        8
-      ],
-      [
-        "variableCount",
-        45
-      ],
-      [
-        "dataSource",
-        {
-          "name": "L55WPK_agenda_trends vers.13.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 6491
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.legcourt.mode",
     [
       "p9_corte",
       [
-        "p11_corte",
+        "p9_corte",
+        "p14_corte",
         "p12_corte",
         "p16_corte",
-        "p13_corte",
-        "p10_corte"
+        "p13_corte"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.legcourt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.legcourt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "p11_corte",
+          "p9_corte",
+          "p14_corte",
           "p12_corte",
           "p16_corte",
-          "p13_corte",
-          "p10_corte"
+          "p13_corte"
         ]
       ],
       [
@@ -173,14 +74,14 @@
       [
         "plotValues",
         {
-          "p9_corte": 1,
-          "p14_corte": 1,
-          "p15_corte": 1,
           "p10_corte": 1,
+          "p15_corte": 1,
           "p13_corte": 1,
           "p16_corte": 1,
           "p12_corte": 1,
-          "p11_corte": 1
+          "p14_corte": 1,
+          "p11_corte": 1,
+          "p9_corte": 1
         }
       ],
       [
@@ -372,26 +273,10 @@
   ],
   [
     "change",
-    "variables.Domestic_macroeconomic_issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Domestic_macroeconomic_issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Domestic_macroeconomic_issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -686,26 +571,10 @@
   ],
   [
     "change",
-    "variables.Civil_Rights_Minority_Issues_et.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Civil_Rights_Minority_Issues_et.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Civil_Rights_Minority_Issues_et.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -992,26 +861,10 @@
   ],
   [
     "change",
-    "variables.Health.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Health.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Health.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1307,26 +1160,10 @@
   ],
   [
     "change",
-    "variables.Agriculture.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Agriculture.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Agriculture.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1612,26 +1449,10 @@
   ],
   [
     "change",
-    "variables.Labor_Employment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Labor_Employment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Labor_Employment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1926,26 +1747,10 @@
   ],
   [
     "change",
-    "variables.Education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Education.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Education.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2234,26 +2039,10 @@
   ],
   [
     "change",
-    "variables.Environment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Environment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Environment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2529,26 +2318,10 @@
   ],
   [
     "change",
-    "variables.Energy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.Energy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Energy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2803,26 +2576,10 @@
   ],
   [
     "change",
-    "variables.Immigration_Refugee_Issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Immigration_Refugee_Issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Immigration_Refugee_Issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3105,26 +2862,10 @@
   ],
   [
     "change",
-    "variables.Transportation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Transportation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Transportation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3417,26 +3158,10 @@
   ],
   [
     "change",
-    "variables.Law_Crime_Family_Issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Law_Crime_Family_Issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Law_Crime_Family_Issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3735,26 +3460,10 @@
   ],
   [
     "change",
-    "variables.Social_Welfare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Social_Welfare.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Social_Welfare.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4049,26 +3758,10 @@
   ],
   [
     "change",
-    "variables.Community_Development_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Community_Development_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Community_Development_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4357,26 +4050,10 @@
   ],
   [
     "change",
-    "variables.Banking_Finance_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Banking_Finance_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Banking_Finance_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4669,26 +4346,10 @@
   ],
   [
     "change",
-    "variables.Defense.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Defense.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Defense.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4984,26 +4645,10 @@
   ],
   [
     "change",
-    "variables.Space_Science_Technology_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Space_Science_Technology_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Space_Science_Technology_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5285,26 +4930,10 @@
   ],
   [
     "change",
-    "variables.Foreign_Trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Foreign_Trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Foreign_Trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5566,26 +5195,10 @@
   ],
   [
     "change",
-    "variables.International_Affairs_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.International_Affairs_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.International_Affairs_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5861,26 +5474,10 @@
   ],
   [
     "change",
-    "variables.Government_Operations.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Government_Operations.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Government_Operations.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6169,26 +5766,10 @@
   ],
   [
     "change",
-    "variables.Public_Lands_Water_Management.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Public_Lands_Water_Management.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Public_Lands_Water_Management.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6471,26 +6052,10 @@
   ],
   [
     "change",
-    "variables.Cultural_Policy_Issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Cultural_Policy_Issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Cultural_Policy_Issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6761,22 +6326,6 @@
     ]
   ],
   [
-    "change",
-    "variables.leg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.leg.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.leg",
     [
@@ -7022,28 +6571,12 @@
     [
       "p9_parl",
       [
-        "p13_parl",
         "p11_parl",
         "p9_parl",
-        "p10_parl",
-        "p14_parl"
+        "p13_parl",
+        "p15_parl",
+        "p12_parl"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.legparl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.legparl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7077,11 +6610,11 @@
       [
         "fewestValues",
         [
-          "p13_parl",
           "p11_parl",
           "p9_parl",
-          "p10_parl",
-          "p14_parl"
+          "p13_parl",
+          "p15_parl",
+          "p12_parl"
         ]
       ],
       [
@@ -7107,14 +6640,14 @@
       [
         "plotValues",
         {
-          "p12_parl": 1,
-          "p15_parl": 1,
-          "p16_parl": 1,
           "p14_parl": 1,
           "p10_parl": 1,
+          "p16_parl": 1,
+          "p12_parl": 1,
+          "p15_parl": 1,
+          "p13_parl": 1,
           "p9_parl": 1,
-          "p11_parl": 1,
-          "p13_parl": 1
+          "p11_parl": 1
         }
       ],
       [
@@ -7306,26 +6839,10 @@
   ],
   [
     "change",
-    "variables.PDomestic_macroeconomic_issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PDomestic_macroeconomic_issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PDomestic_macroeconomic_issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7624,26 +7141,10 @@
   ],
   [
     "change",
-    "variables.PCivil_Rights_Minority_Issues_et.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PCivil_Rights_Minority_Issues_et.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PCivil_Rights_Minority_Issues_et.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7942,26 +7443,10 @@
   ],
   [
     "change",
-    "variables.PHealth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PHealth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PHealth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8260,26 +7745,10 @@
   ],
   [
     "change",
-    "variables.PAgriculture.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PAgriculture.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PAgriculture.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8578,26 +8047,10 @@
   ],
   [
     "change",
-    "variables.PLabor_Employment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PLabor_Employment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PLabor_Employment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8896,26 +8349,10 @@
   ],
   [
     "change",
-    "variables.PEducation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PEducation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PEducation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9214,26 +8651,10 @@
   ],
   [
     "change",
-    "variables.PEnvironment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PEnvironment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PEnvironment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9532,26 +8953,10 @@
   ],
   [
     "change",
-    "variables.PEnergy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PEnergy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PEnergy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9850,26 +9255,10 @@
   ],
   [
     "change",
-    "variables.PImmigration_Refugee_Issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PImmigration_Refugee_Issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PImmigration_Refugee_Issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10168,26 +9557,10 @@
   ],
   [
     "change",
-    "variables.PTransportation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PTransportation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PTransportation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10486,26 +9859,10 @@
   ],
   [
     "change",
-    "variables.PLaw_Crime_Family_Issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PLaw_Crime_Family_Issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PLaw_Crime_Family_Issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10804,26 +10161,10 @@
   ],
   [
     "change",
-    "variables.PSocial_Welfare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PSocial_Welfare.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PSocial_Welfare.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11122,26 +10463,10 @@
   ],
   [
     "change",
-    "variables.PCommunity_Development_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PCommunity_Development_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PCommunity_Development_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11440,26 +10765,10 @@
   ],
   [
     "change",
-    "variables.PBanking_Finance_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PBanking_Finance_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PBanking_Finance_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11758,26 +11067,10 @@
   ],
   [
     "change",
-    "variables.PDefense.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PDefense.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PDefense.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12076,26 +11369,10 @@
   ],
   [
     "change",
-    "variables.PSpace_Science_Technology_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PSpace_Science_Technology_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PSpace_Science_Technology_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12394,26 +11671,10 @@
   ],
   [
     "change",
-    "variables.PForeign_Trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PForeign_Trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PForeign_Trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12712,26 +11973,10 @@
   ],
   [
     "change",
-    "variables.PInternational_Affairs_etc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PInternational_Affairs_etc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PInternational_Affairs_etc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13030,26 +12275,10 @@
   ],
   [
     "change",
-    "variables.PGovernment_Operations.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PGovernment_Operations.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PGovernment_Operations.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13348,26 +12577,10 @@
   ],
   [
     "change",
-    "variables.PPublic_Lands_Water_Management.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PPublic_Lands_Water_Management.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PPublic_Lands_Water_Management.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13666,26 +12879,10 @@
   ],
   [
     "change",
-    "variables.PCultural_Policy_Issues.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PCultural_Policy_Issues.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PCultural_Policy_Issues.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13925,257 +13122,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:22:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "legcourt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Domestic_macroeconomic_issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Civil_Rights_Minority_Issues_et": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Health": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Agriculture": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Labor_Employment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Environment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Energy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Immigration_Refugee_Issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Transportation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Law_Crime_Family_Issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Social_Welfare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Community_Development_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Banking_Finance_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Defense": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Space_Science_Technology_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Foreign_Trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "International_Affairs_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Government_Operations": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Public_Lands_Water_Management": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Cultural_Policy_Issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legparl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PDomestic_macroeconomic_issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PCivil_Rights_Minority_Issues_et": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PHealth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PAgriculture": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PLabor_Employment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PEducation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PEnvironment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PEnergy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PImmigration_Refugee_Issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PTransportation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PLaw_Crime_Family_Issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PSocial_Welfare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PCommunity_Development_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PBanking_Finance_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PDefense": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PSpace_Science_Technology_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PForeign_Trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PInternational_Affairs_etc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PGovernment_Operations": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PPublic_Lands_Water_Management": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PCultural_Policy_Issues": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        50
-      ],
-      [
-        "variableCount",
-        4
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ZH5YFY_DescriptiveStatsMetadata_allyears.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1209
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "AK",
       [
-        "MN",
-        "MA",
         "PA",
-        "IN",
-        "TN"
+        "ME",
+        "AK",
+        "NV",
+        "IN"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "MN",
-          "MA",
           "PA",
-          "IN",
-          "TN"
+          "ME",
+          "AK",
+          "NV",
+          "IN"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "RI": 1,
-          "HI": 1,
-          "ND": 1,
-          "NV": 1,
-          "UT": 1,
-          "NY": 1,
-          "ID": 1,
-          "SC": 1,
-          "OR": 1,
-          "MO": 1,
-          "GA": 1,
-          "KS": 1,
-          "VA": 1,
-          "IA": 1,
-          "CO": 1,
           "OH": 1,
+          "ND": 1,
+          "HI": 1,
+          "GA": 1,
+          "RI": 1,
+          "AL": 1,
+          "SC": 1,
           "MI": 1,
-          "WI": 1,
-          "KY": 1,
-          "WY": 1,
-          "ME": 1,
+          "SD": 1,
+          "NH": 1,
+          "UT": 1,
+          "VT": 1,
+          "OR": 1,
+          "NM": 1,
+          "MT": 1,
+          "DC": 1,
+          "NE": 1,
+          "LA": 1,
+          "MO": 1,
+          "MS": 1,
           "CT": 1,
-          "AZ": 1,
+          "NJ": 1,
+          "MA": 1,
+          "WI": 1,
+          "NC": 1,
+          "CO": 1,
+          "WA": 1,
+          "CA": 1,
+          "WV": 1,
+          "NY": 1,
           "IL": 1,
           "TX": 1,
-          "NE": 1,
-          "SD": 1,
-          "OK": 1,
-          "DC": 1,
-          "MS": 1,
-          "AR": 1,
-          "NH": 1,
-          "CA": 1,
-          "LA": 1,
-          "AL": 1,
-          "WA": 1,
-          "AK": 1,
-          "NJ": 1,
+          "VA": 1,
+          "KS": 1,
+          "IA": 1,
           "MD": 1,
-          "WV": 1,
-          "NC": 1,
+          "ID": 1,
+          "KY": 1,
+          "MN": 1,
           "FL": 1,
-          "MT": 1,
-          "VT": 1,
-          "NM": 1,
+          "AR": 1,
+          "WY": 1,
           "TN": 1,
+          "AZ": 1,
+          "OK": 1,
           "IN": 1,
-          "PA": 1,
-          "MA": 1,
-          "MN": 1
+          "NV": 1,
+          "AK": 1,
+          "ME": 1,
+          "PA": 1
         }
       ],
       [
@@ -444,22 +345,6 @@
     [
       "3227",
       3227.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pages.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pages.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1105,22 +990,6 @@
     ]
   ],
   [
-    "change",
-    "variables.newspapers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.newspapers.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.newspapers",
     [
@@ -1737,22 +1606,6 @@
     ]
   ],
   [
-    "change",
-    "variables.counties.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.counties.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.counties",
     [
@@ -2301,52 +2154,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:31",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pages": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "newspapers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "counties": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        90
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "F1CFFM_coppock_generalizability_analysis_results.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 12115
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.study.mode",
     [
@@ -90,22 +7,6 @@
       [
         "patriot_act"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.study.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.study.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,8 +40,8 @@
       [
         "fewestValues",
         [
-          "death_penalty",
-          "concealed_carry"
+          "concealed_carry",
+          "death_penalty"
         ]
       ],
       [
@@ -168,16 +69,16 @@
         {
           "patriot_act": 18,
           "frame_breadth": 12,
-          "mental_illness": 12,
           "free_trade": 12,
+          "mental_illness": 12,
           "expert_economists": 10,
           "polarization": 6,
           "elite_endorsements": 4,
           "system_threat": 4,
           "superordinate_id": 4,
           "immigration": 4,
-          "concealed_carry": 2,
-          "death_penalty": 2
+          "death_penalty": 2,
+          "concealed_carry": 2
         }
       ],
       [
@@ -326,22 +227,6 @@
         "mt",
         "original"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -545,22 +430,6 @@
     ]
   ],
   [
-    "change",
-    "variables.term.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.term.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.term",
     [
@@ -591,11 +460,11 @@
       [
         "fewestValues",
         [
-          "Z_expert_3",
-          "T1_condition_nameSP_SC_NO",
-          "T1_condition_nameSC_NO",
-          "T1_condition_nameSP_OL",
-          "Z_gunrights"
+          "Z_expert_4",
+          "T1_condition_nameSP_MB",
+          "T1_condition_nameSC_OL",
+          "Z_particularismPublic Schools",
+          "T1_condition_nameSC_NO"
         ]
       ],
       [
@@ -622,38 +491,38 @@
         "plotValues",
         {
           "Z_Levenduskypolarized": 6,
-          "Z_brader_pos_negpositive": 4,
-          "Z_mcginty_policylcm": 4,
-          "Z_craigcraig_treatment": 4,
           "Z_matchin_party": 4,
           "Z_mcginty_policymi": 4,
           "Z_mcginty_news": 4,
-          "Z_terror_Y_terror": 3,
-          "Z_Hiscox_valencepositive": 3,
-          "Z_health_Y_health": 3,
+          "Z_mcginty_policylcm": 4,
+          "Z_craigcraig_treatment": 4,
+          "Z_brader_pos_negpositive": 4,
           "Z_Hiscox_valencenegative": 3,
-          "Z_crime_Y_crime": 3,
-          "Z_Hiscox_valenceboth": 3,
           "Z_Hiscox_expert": 3,
+          "Z_Hiscox_valenceboth": 3,
+          "Z_Hiscox_valencepositive": 3,
           "Z_stimulus_Y_stimulus": 3,
-          "T1_condition_nameSP_SC_MB": 2,
-          "Z_expert_1": 2,
-          "Z_expert_4": 2,
-          "Z_expert_2": 2,
+          "Z_terror_Y_terror": 3,
+          "Z_crime_Y_crime": 3,
+          "Z_health_Y_health": 3,
           "Z_CP_3race": 2,
-          "T1_condition_nameSP_MB": 2,
-          "T1_condition_nameSC_NO": 2,
+          "T1_condition_nameSP_SC_NO": 2,
           "T1_condition_nameSC_OL": 2,
           "Z_gunrights": 2,
-          "Z_identityOther Americans": 2,
-          "T1_condition_nameSP_NO": 2,
-          "T1_condition_nameSP_SC_NO": 2,
-          "Z_particularismPublic Schools": 2,
+          "Z_expert_3": 2,
           "T1_condition_nameSC_MB": 2,
-          "Z_expert_5": 2,
-          "T1_condition_nameSP_SC_OL": 2,
+          "T1_condition_nameSC_NO": 2,
+          "T1_condition_nameSP_NO": 2,
+          "Z_expert_2": 2,
+          "Z_identityOther Americans": 2,
+          "T1_condition_nameSP_SC_MB": 2,
           "T1_condition_nameSP_OL": 2,
-          "Z_expert_3": 2
+          "Z_expert_5": 2,
+          "Z_expert_1": 2,
+          "Z_particularismPublic Schools": 2,
+          "Z_expert_4": 2,
+          "T1_condition_nameSP_MB": 2,
+          "T1_condition_nameSP_SC_OL": 2
         }
       ],
       [
@@ -870,26 +739,10 @@
   ],
   [
     "change",
-    "variables.est.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.est.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.est.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1546,26 +1399,10 @@
   ],
   [
     "change",
-    "variables.se.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2222,26 +2059,10 @@
   ],
   [
     "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2898,26 +2719,10 @@
   ],
   [
     "change",
-    "variables.p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3529,22 +3334,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv",
     [
@@ -3575,11 +3364,11 @@
       [
         "fewestValues",
         [
-          "agree_1_s",
-          "agree_2_s",
-          "craig_num_imm_s",
-          "agree_5_s",
-          "dv_gun_s"
+          "craig_wol_s",
+          "brader_num_imm_s",
+          "agree_3_s",
+          "fore_dv_s",
+          "agree_5_s"
         ]
       ],
       [
@@ -3607,28 +3396,28 @@
         {
           "PA_support_s": 18,
           "Y_Hiscox_s": 12,
-          "mcginty_SMI_danger_s": 6,
           "mcginty_magazines_s": 6,
+          "mcginty_SMI_danger_s": 6,
           "willing_s": 4,
-          "Y_terror_s": 3,
-          "Y_stimulus_s": 3,
-          "L_dif_s": 3,
           "Y_health_s": 3,
           "Y_crime_s": 3,
+          "Y_terror_s": 3,
           "L_ex_s": 3,
-          "agree_1_s": 2,
+          "Y_stimulus_s": 3,
+          "L_dif_s": 3,
           "agree_4_s": 2,
-          "fore_dv_s": 2,
-          "craig_wol_s": 2,
-          "dv_gun_s": 2,
+          "brader_num_imm_s": 2,
           "brader_neg_impact_s": 2,
           "agree_5_s": 2,
           "craig_num_imm_s": 2,
-          "imm_dv_s": 2,
           "agree_2_s": 2,
+          "agree_1_s": 2,
+          "dv_gun_s": 2,
+          "imm_dv_s": 2,
+          "fore_dv_s": 2,
           "CP_dv_s": 2,
           "agree_3_s": 2,
-          "brader_num_imm_s": 2
+          "craig_wol_s": 2
         }
       ],
       [
@@ -3777,72 +3566,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:02",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "study": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sample": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "term": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "est": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

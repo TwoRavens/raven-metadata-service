@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        63
-      ],
-      [
-        "variableCount",
-        51
-      ],
-      [
-        "dataSource",
-        {
-          "name": "5CVUVU_LacinaAJPSreplication.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 32335
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.snum.median",
     [
@@ -122,22 +39,6 @@
     [
       "100",
       100
-    ]
-  ],
-  [
-    "change",
-    "variables.snum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.snum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -699,22 +600,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state",
     [
@@ -745,11 +630,11 @@
       [
         "fewestValues",
         [
-          "Saurashtra",
-          "Coorg",
-          "Kutch",
+          "Ajmer",
+          "Tripura",
           "West Bengal",
-          "Bilaspur"
+          "Saurashtra",
+          "Delhi"
         ]
       ],
       [
@@ -777,29 +662,29 @@
         {
           "Assam": 8,
           "Madras": 7,
-          "Madhya Pradesh": 5,
           "Punjab": 5,
+          "Madhya Pradesh": 5,
           "Bombay": 4,
           "UP": 4,
+          "Bihar": 3,
           "PEPSU": 3,
           "Hyderabad": 3,
-          "Bihar": 3,
           "Rajasthan": 3,
-          "Mysore": 2,
           "Madhya Bharat": 2,
+          "Mysore": 2,
           "Vindhya Pradesh": 2,
-          "Bhopal": 1,
-          "Travancore-Cochin": 1,
-          "Manipur": 1,
-          "Tripura": 1,
-          "Ajmer": 1,
           "Himachal Pradesh": 1,
-          "Delhi": 1,
-          "Bilaspur": 1,
-          "West Bengal": 1,
-          "Kutch": 1,
+          "Bhopal": 1,
           "Coorg": 1,
-          "Saurashtra": 1
+          "Manipur": 1,
+          "Travancore-Cochin": 1,
+          "Bilaspur": 1,
+          "Kutch": 1,
+          "Delhi": 1,
+          "Saurashtra": 1,
+          "West Bengal": 1,
+          "Tripura": 1,
+          "Ajmer": 1
         }
       ],
       [
@@ -992,22 +877,6 @@
     [
       "8",
       8
-    ]
-  ],
-  [
-    "change",
-    "variables.lsi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lsi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1579,22 +1448,6 @@
     ]
   ],
   [
-    "change",
-    "variables.language.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.language.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.language",
     [
@@ -1625,11 +1478,11 @@
       [
         "fewestValues",
         [
+          "Tulu (Dravidian language)",
+          "Garhwali (Central Pahari), all",
+          "Pahari Kangra",
           "Khasi, all",
-          "Kannada Nilgiris",
-          "Santali Santal Parganas",
-          "Gondi",
-          "Tamil"
+          "Assamese, all"
         ]
       ],
       [
@@ -1658,41 +1511,41 @@
           "Western Hindi, all": 8,
           "Rajasthani, all": 5,
           "Kannada": 4,
-          "Marathi": 3,
           "Awadhi": 3,
+          "Marathi": 3,
           "Telugu": 3,
-          "Gurumukhti Punjabi": 2,
-          "Gujarati": 2,
-          "Western Pahari": 2,
-          "Punjabi standard": 2,
           "Bengali, Central/Standard": 2,
-          "Malayalam, all": 1,
-          "Malayalam, Malabar": 1,
-          "Magaraki Boli (Bhili)": 1,
-          "Pahari Simla": 1,
-          "Manipuri/Meithei": 1,
-          "Bengali Cachar": 1,
+          "Western Pahari": 2,
+          "Gurumukhti Punjabi": 2,
+          "Punjabi standard": 2,
+          "Gujarati": 2,
           "Kachchhi Sindhi (all in Amreli)": 1,
-          "Mizo/Lushei (Central Kuki-Chin)": 1,
-          "Garhwali (Central Pahari), all": 1,
-          "Kannada Bellary": 1,
-          "Garo, all": 1,
           "Mikir (Tibeto-Burman)": 1,
-          "Bengali Goalpara": 1,
-          "Naga": 1,
-          "Pahari Kangra": 1,
-          "Santali Ranchi Singhbhum": 1,
-          "Oriya": 1,
-          "Dangi Kandeshi (Dravidian language)": 1,
-          "Bihari, all (NV)": 1,
-          "Nepali (NV)": 1,
-          "Assamese, all": 1,
-          "Tulu (Dravidian language)": 1,
-          "Tamil": 1,
+          "Magaraki Boli (Bhili)": 1,
           "Gondi": 1,
           "Santali Santal Parganas": 1,
+          "Dangi Kandeshi (Dravidian language)": 1,
+          "Nepali (NV)": 1,
+          "Tamil": 1,
+          "Santali Ranchi Singhbhum": 1,
+          "Mizo/Lushei (Central Kuki-Chin)": 1,
+          "Garo, all": 1,
+          "Naga": 1,
+          "Malayalam, all": 1,
+          "Bengali Cachar": 1,
+          "Malayalam, Malabar": 1,
+          "Manipuri/Meithei": 1,
+          "Kannada Bellary": 1,
           "Kannada Nilgiris": 1,
-          "Khasi, all": 1
+          "Oriya": 1,
+          "Pahari Kangra": 1,
+          "Bengali Goalpara": 1,
+          "Assamese, all": 1,
+          "Bihari, all (NV)": 1,
+          "Khasi, all": 1,
+          "Tulu (Dravidian language)": 1,
+          "Garhwali (Central Pahari), all": 1,
+          "Pahari Simla": 1
         }
       ],
       [
@@ -1902,22 +1755,6 @@
     [
       "2001",
       2001
-    ]
-  ],
-  [
-    "change",
-    "variables.eid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.eid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2561,22 +2398,6 @@
     ]
   ],
   [
-    "change",
-    "variables.srv.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.srv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.srv",
     [
@@ -2816,22 +2637,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.paccom.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.paccom.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3077,22 +2882,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sra.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sra.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sra",
     [
@@ -3332,22 +3121,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.outcome_tri.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.outcome_tri.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3608,26 +3381,10 @@
   ],
   [
     "change",
-    "variables.relgrepnm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.relgrepnm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.relgrepnm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4280,26 +4037,10 @@
   ],
   [
     "change",
-    "variables.lnrelgrepnm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnrelgrepnm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnrelgrepnm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4952,26 +4693,10 @@
   ],
   [
     "change",
-    "variables.lnrelgrepnm2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnrelgrepnm2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnrelgrepnm2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5624,26 +5349,10 @@
   ],
   [
     "change",
-    "variables.polsim.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polsim.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polsim.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6296,26 +6005,10 @@
   ],
   [
     "change",
-    "variables.polcdist05.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polcdist05.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polcdist05.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6968,26 +6661,10 @@
   ],
   [
     "change",
-    "variables.lnelgmps.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnelgmps.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnelgmps.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7644,26 +7321,10 @@
   ],
   [
     "change",
-    "variables.lnelpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnelpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnelpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8320,26 +7981,10 @@
   ],
   [
     "change",
-    "variables.eagpc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eagpc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eagpc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8996,26 +8641,10 @@
   ],
   [
     "change",
-    "variables.elndlss.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elndlss.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elndlss.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9672,26 +9301,10 @@
   ],
   [
     "change",
-    "variables.ehindupc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ehindupc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ehindupc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10348,26 +9961,10 @@
   ],
   [
     "change",
-    "variables.lcapdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lcapdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lcapdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11020,26 +10617,10 @@
   ],
   [
     "change",
-    "variables.srvlnrelgrepnm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.srvlnrelgrepnm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.srvlnrelgrepnm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11692,26 +11273,10 @@
   ],
   [
     "change",
-    "variables.polcdist005.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polcdist005.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polcdist005.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12364,26 +11929,10 @@
   ],
   [
     "change",
-    "variables.polsim_dir.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polsim_dir.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polsim_dir.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13036,26 +12585,10 @@
   ],
   [
     "change",
-    "variables.polcdist05_dir.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polcdist05_dir.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polcdist05_dir.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13712,26 +13245,10 @@
   ],
   [
     "change",
-    "variables.elpolsimple.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elpolsimple.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elpolsimple.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14388,26 +13905,10 @@
   ],
   [
     "change",
-    "variables.elpolf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elpolf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elpolf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15064,26 +14565,10 @@
   ],
   [
     "change",
-    "variables.elfrac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.elfrac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.elfrac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15727,22 +15212,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diffmilitary_postmutiny.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.diffmilitary_postmutiny.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diffmilitary_postmutiny",
     [
@@ -15982,22 +15451,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.difflanghandbook.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.difflanghandbook.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16243,22 +15696,6 @@
     ]
   ],
   [
-    "change",
-    "variables.disadvmilitary_postmutiny.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.disadvmilitary_postmutiny.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.disadvmilitary_postmutiny",
     [
@@ -16501,22 +15938,6 @@
     ]
   ],
   [
-    "change",
-    "variables.disadvlanghandbook.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.disadvlanghandbook.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.disadvlanghandbook",
     [
@@ -16756,22 +16177,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.stclaims.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.stclaims.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17056,26 +16461,10 @@
   ],
   [
     "change",
-    "variables.stlpolsim.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stlpolsim.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stlpolsim.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17728,26 +17117,10 @@
   ],
   [
     "change",
-    "variables.stlpolf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stlpolf.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stlpolf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18400,26 +17773,10 @@
   ],
   [
     "change",
-    "variables.stlfrac.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stlfrac.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stlfrac.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19072,26 +18429,10 @@
   ],
   [
     "change",
-    "variables.stagpc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stagpc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stagpc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19744,26 +19085,10 @@
   ],
   [
     "change",
-    "variables.stlndlss.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.stlndlss.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.stlndlss.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20420,26 +19745,10 @@
   ],
   [
     "change",
-    "variables.agratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.agratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.agratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21092,26 +20401,10 @@
   ],
   [
     "change",
-    "variables.aghi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.aghi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.aghi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21764,26 +21057,10 @@
   ],
   [
     "change",
-    "variables.aglo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.aglo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.aglo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22436,26 +21713,10 @@
   ],
   [
     "change",
-    "variables.e_winshareavg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.e_winshareavg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.e_winshareavg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23108,26 +22369,10 @@
   ],
   [
     "change",
-    "variables.vsabha_efnoparties.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vsabha_efnoparties.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vsabha_efnoparties.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23780,26 +23025,10 @@
   ],
   [
     "change",
-    "variables.vsabha_incseatsh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vsabha_incseatsh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vsabha_incseatsh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24443,22 +23672,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pcc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pcc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pcc",
     [
@@ -24714,26 +23927,10 @@
   ],
   [
     "change",
-    "variables.lbendist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lbendist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lbendist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25377,22 +24574,6 @@
     ]
   ],
   [
-    "change",
-    "variables.borderorcoast.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.borderorcoast.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.borderorcoast",
     [
@@ -25644,26 +24825,10 @@
   ],
   [
     "change",
-    "variables.ergnlpartysh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ergnlpartysh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ergnlpartysh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26316,26 +25481,10 @@
   ],
   [
     "change",
-    "variables.ehinduntnlstsh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ehinduntnlstsh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ehinduntnlstsh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26992,26 +26141,10 @@
   ],
   [
     "change",
-    "variables.lbomdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lbomdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lbomdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27655,22 +26788,6 @@
     ]
   ],
   [
-    "change",
-    "variables.odailies.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.odailies.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.odailies",
     [
@@ -28251,22 +27368,6 @@
     ]
   ],
   [
-    "change",
-    "variables.engdailies.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.engdailies.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.engdailies",
     [
@@ -28515,287 +27616,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:02",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "snum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lsi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "language": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "srv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paccom": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sra": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "outcome_tri": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "relgrepnm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnrelgrepnm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnrelgrepnm2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polsim": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polcdist05": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnelgmps": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnelpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eagpc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elndlss": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ehindupc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lcapdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "srvlnrelgrepnm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polcdist005": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polsim_dir": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polcdist05_dir": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elpolsimple": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elpolf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "elfrac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffmilitary_postmutiny": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "difflanghandbook": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "disadvmilitary_postmutiny": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "disadvlanghandbook": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stclaims": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stlpolsim": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stlpolf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stlfrac": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stagpc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stlndlss": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aghi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aglo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "e_winshareavg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vsabha_efnoparties": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vsabha_incseatsh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pcc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lbendist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "borderorcoast": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ergnlpartysh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ehinduntnlstsh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lbomdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "odailies": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "engdailies": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

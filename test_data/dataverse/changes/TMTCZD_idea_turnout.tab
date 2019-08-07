@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        458
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TMTCZD_idea_turnout.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 36895
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country_name.mode",
     [
@@ -90,22 +7,6 @@
       [
         "United States"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -171,20 +72,20 @@
           "Denmark": 25,
           "New Zealand": 23,
           "Canada": 22,
-          "Greece": 21,
-          "Belgium": 21,
           "Netherlands": 21,
-          "Austria": 20,
+          "Belgium": 21,
+          "Greece": 21,
           "Sweden": 20,
+          "Austria": 20,
           "Finland": 19,
           "Iceland": 19,
           "Italy": 18,
           "Ireland": 18,
           "France": 18,
+          "Switzerland": 17,
           "Norway": 17,
           "Germany": 17,
           "United Kingdom": 17,
-          "Switzerland": 17,
           "Luxembourg": 15,
           "Portugal": 14,
           "Spain": 11
@@ -349,22 +250,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country_iso2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_iso2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country_iso2",
     [
@@ -427,20 +312,20 @@
           "DK": 25,
           "NZ": 23,
           "CA": 22,
-          "BE": 21,
-          "NL": 21,
           "GR": 21,
-          "AT": 20,
+          "NL": 21,
+          "BE": 21,
           "SE": 20,
+          "AT": 20,
           "FI": 19,
           "IS": 19,
-          "FR": 18,
           "IT": 18,
           "IE": 18,
-          "CH": 17,
+          "FR": 18,
           "NO": 17,
-          "GB": 17,
           "DE": 17,
+          "GB": 17,
+          "CH": 17,
           "LU": 15,
           "PT": 14,
           "ES": 11
@@ -634,22 +519,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1203,22 +1072,6 @@
     ]
   ],
   [
-    "change",
-    "variables.election_type.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_type.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.election_type",
     [
@@ -1444,22 +1297,6 @@
     [
       "1945",
       1945
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2112,26 +1949,10 @@
   ],
   [
     "change",
-    "variables.turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2788,26 +2609,10 @@
   ],
   [
     "change",
-    "variables.vap_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vap_turnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vap_turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3448,22 +3253,6 @@
     [
       "77880",
       77880
-    ]
-  ],
-  [
-    "change",
-    "variables.vapop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vapop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4111,22 +3900,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pop.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pop",
     [
@@ -4735,22 +4508,6 @@
     ]
   ],
   [
-    "change",
-    "variables.comp_voting.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.comp_voting.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.comp_voting",
     [
@@ -4935,82 +4692,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:23:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_iso2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vap_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vapop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comp_voting": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

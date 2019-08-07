@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        192
-      ],
-      [
-        "variableCount",
-        257
-      ],
-      [
-        "dataSource",
-        {
-          "name": "NMCOBF_census-2011-data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 294761
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Uttar Pradesh"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -311,22 +212,6 @@
     ]
   ],
   [
-    "change",
-    "variables.District.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.District.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.District",
     [
@@ -357,11 +242,11 @@
       [
         "fewestValues",
         [
-          "Jodhpur",
-          "Sonbhadra",
-          "Churu",
-          "Sidhi",
-          "Chittaurgarh"
+          "Shajapur",
+          "Bhagalpur",
+          "Araria",
+          "Kanpur Nagar",
+          "Allahabad "
         ]
       ],
       [
@@ -388,196 +273,196 @@
         "plotValues",
         {
           "Pratapgarh": 2,
-          "Chhindwara": 1,
-          "Rampur": 1,
-          "Aurangabad": 1,
-          "Saharsa": 1,
-          "Pashchim Champaran": 1,
-          "Jabalpur": 1,
-          "Udaipur": 1,
-          "Rewa": 1,
-          "Bijnor": 1,
-          "Moradabad": 1,
-          "Hamirpur": 1,
-          "Sant Ravidas Nagar (Bhadohi)": 1,
-          "Meerut": 1,
-          "Katni ": 1,
-          "Karauli": 1,
-          "Panna": 1,
-          "Kaushambi": 1,
-          "Rajgarh": 1,
-          "Darbhanga": 1,
-          "Dhar": 1,
-          "Betul": 1,
-          "Supaul": 1,
-          "Mahrajganj": 1,
-          "Allahabad ": 1,
-          "Auraiya": 1,
-          "Satna": 1,
-          "Bulandshahr ": 1,
           "Gautam Buddha Nagar": 1,
-          "Raisen": 1,
-          "Tonk": 1,
-          "Hoshangabad": 1,
-          "Hardoi": 1,
-          "Ajmer": 1,
-          "Jaunpur": 1,
-          "Mahamaya Nagar": 1,
-          "Bhojpur": 1,
-          "Gaya": 1,
-          "Kannauj": 1,
-          "Vaishali": 1,
-          "Tikamgarh": 1,
-          "Sant Kabir Nagar": 1,
-          "Guna": 1,
-          "Gorakhpur": 1,
-          "Mandla": 1,
-          "Dhaulpur": 1,
-          "Sawai Madhopur": 1,
-          "Jehanabad ": 1,
-          "Neemuch ": 1,
-          "Muzaffarnagar": 1,
           "Deoria": 1,
-          "Saran": 1,
-          "Lakhisarai": 1,
-          "Madhubani": 1,
-          "Balrampur": 1,
-          "Balaghat": 1,
-          "Bhind": 1,
-          "Araria": 1,
-          "Jaisalmer": 1,
-          "Jhalawar": 1,
-          "Barwani ": 1,
-          "Farrukhabad": 1,
-          "Pilibhit": 1,
-          "Mathura": 1,
-          "Basti": 1,
-          "Dausa": 1,
-          "Etah": 1,
-          "Azamgarh": 1,
-          "Vidisha": 1,
-          "Mirzapur": 1,
-          "Jodhpur": 1,
-          "Banda": 1,
-          "Siwan": 1,
-          "Kanshiram Nagar": 1,
-          "Nagaur": 1,
-          "Jalaun ": 1,
-          "Ashoknagar": 1,
-          "Dewas": 1,
-          "Bareilly": 1,
-          "Sitapur": 1,
-          "Sheikhpura": 1,
-          "Jhunjhunun": 1,
-          "Burhanpur": 1,
-          "Banswara": 1,
-          "Begusarai": 1,
-          "Kanpur Dehat": 1,
-          "Hanumangarh": 1,
-          "Aligarh": 1,
-          "Bahraich": 1,
-          "Alirajpur": 1,
-          "Ghazipur": 1,
-          "Lalitpur": 1,
-          "Agra": 1,
-          "Sonbhadra": 1,
-          "Baran": 1,
-          "Mahoba": 1,
-          "Damoh": 1,
-          "Datia": 1,
-          "Sagar": 1,
-          "Ghaziabad": 1,
-          "Ballia": 1,
-          "Varanasi": 1,
-          "Jhansi": 1,
-          "Kota": 1,
-          "Jaipur": 1,
-          "Arwal": 1,
-          "Buxar": 1,
-          "Shahdol": 1,
-          "Rae Bareli": 1,
-          "Purba Champaran": 1,
-          "Gonda": 1,
-          "Chitrakoot": 1,
-          "Kushinagar": 1,
-          "Anuppur": 1,
-          "Jamui": 1,
-          "Chandauli": 1,
-          "Chittaurgarh": 1,
-          "Bharatpur": 1,
-          "Khandwa (East Nimar)": 1,
-          "Muzaffarpur": 1,
-          "Bhilwara": 1,
-          "Bundi": 1,
-          "Saharanpur": 1,
-          "Purnia": 1,
-          "Baghpat": 1,
-          "Jyotiba Phule Nagar": 1,
-          "Bhopal": 1,
           "Gwalior": 1,
           "Sheopur ": 1,
-          "Shrawasti": 1,
-          "Indore": 1,
-          "Katihar": 1,
-          "Budaun": 1,
-          "Gopalganj": 1,
-          "Sikar": 1,
-          "Seoni": 1,
-          "Ratlam": 1,
-          "Harda ": 1,
-          "Sirohi": 1,
-          "Umaria": 1,
-          "Jalor": 1,
-          "Ujjain": 1,
-          "Sidhi": 1,
-          "Morena": 1,
-          "Kheri": 1,
-          "Banka": 1,
-          "Pali": 1,
-          "Sehore": 1,
-          "Narsimhapur": 1,
-          "Patna": 1,
-          "Bara Banki": 1,
-          "Ambedkar Nagar": 1,
-          "Dungarpur": 1,
           "Munger": 1,
-          "Faizabad": 1,
-          "Singrauli": 1,
-          "Bikaner": 1,
-          "Etawah": 1,
-          "Kaimur (Bhabua)": 1,
-          "Unnao": 1,
-          "Ganganagar ": 1,
-          "Madhepura": 1,
-          "Sitamarhi": 1,
+          "Kanpur Dehat": 1,
           "Jhabua": 1,
-          "Khagaria": 1,
-          "Sultanpur": 1,
-          "Shajapur": 1,
-          "Fatehpur": 1,
-          "Mau": 1,
-          "Samastipur": 1,
-          "Chhatarpur": 1,
-          "Barmer": 1,
-          "Shivpuri": 1,
-          "Shahjahanpur": 1,
-          "Firozabad": 1,
-          "Bhagalpur": 1,
-          "Nawada": 1,
-          "Kanpur Nagar": 1,
-          "Mainpuri": 1,
+          "Kota": 1,
+          "Barwani ": 1,
+          "Ghaziabad": 1,
+          "Mirzapur": 1,
           "Rohtas": 1,
-          "Siddharthnagar": 1,
+          "Farrukhabad": 1,
+          "Etawah": 1,
+          "Aurangabad": 1,
+          "Sant Ravidas Nagar (Bhadohi)": 1,
+          "Ballia": 1,
+          "Udaipur": 1,
+          "Hoshangabad": 1,
+          "Katihar": 1,
+          "Bhojpur": 1,
+          "Anuppur": 1,
+          "Ujjain": 1,
+          "Nawada": 1,
           "Alwar": 1,
-          "Dindori ": 1,
-          "Kishanganj": 1,
-          "Nalanda": 1,
-          "Mandsaur": 1,
+          "Jaipur": 1,
+          "Banka": 1,
+          "Bijnor": 1,
+          "Singrauli": 1,
+          "Kaushambi": 1,
+          "Chhindwara": 1,
+          "Morena": 1,
+          "Alirajpur": 1,
+          "Ratlam": 1,
+          "Banda": 1,
+          "Saharanpur": 1,
+          "Saran": 1,
+          "Dausa": 1,
+          "Indore": 1,
+          "Hanumangarh": 1,
+          "Gorakhpur": 1,
+          "Supaul": 1,
+          "Datia": 1,
+          "Siwan": 1,
+          "Moradabad": 1,
+          "Ghazipur": 1,
+          "Kanshiram Nagar": 1,
+          "Purnia": 1,
+          "Lakhisarai": 1,
+          "Sonbhadra": 1,
+          "Bhilwara": 1,
+          "Jaunpur": 1,
+          "Kushinagar": 1,
+          "Budaun": 1,
+          "Rewa": 1,
           "Khargone (West Nimar)": 1,
-          "Rajsamand": 1,
-          "Churu": 1,
+          "Sitamarhi": 1,
+          "Arwal": 1,
+          "Madhubani": 1,
+          "Buxar": 1,
+          "Seoni": 1,
+          "Sikar": 1,
+          "Bahraich": 1,
+          "Khandwa (East Nimar)": 1,
+          "Dungarpur": 1,
+          "Sidhi": 1,
+          "Ajmer": 1,
+          "Balrampur": 1,
+          "Shivpuri": 1,
+          "Auraiya": 1,
+          "Meerut": 1,
+          "Dindori ": 1,
+          "Sawai Madhopur": 1,
+          "Madhepura": 1,
+          "Begusarai": 1,
+          "Dhaulpur": 1,
+          "Sheohar": 1,
+          "Mahrajganj": 1,
+          "Satna": 1,
+          "Baghpat": 1,
+          "Umaria": 1,
+          "Etah": 1,
+          "Chhatarpur": 1,
+          "Narsimhapur": 1,
+          "Chandauli": 1,
           "Lucknow": 1,
-          "Sheohar": 1
+          "Mainpuri": 1,
+          "Dhar": 1,
+          "Mahamaya Nagar": 1,
+          "Neemuch ": 1,
+          "Bhopal": 1,
+          "Sehore": 1,
+          "Rajsamand": 1,
+          "Katni ": 1,
+          "Shahdol": 1,
+          "Sirohi": 1,
+          "Mau": 1,
+          "Kannauj": 1,
+          "Hardoi": 1,
+          "Bulandshahr ": 1,
+          "Vidisha": 1,
+          "Varanasi": 1,
+          "Patna": 1,
+          "Chittaurgarh": 1,
+          "Lalitpur": 1,
+          "Jyotiba Phule Nagar": 1,
+          "Azamgarh": 1,
+          "Gopalganj": 1,
+          "Jodhpur": 1,
+          "Raisen": 1,
+          "Muzaffarpur": 1,
+          "Nagaur": 1,
+          "Mandla": 1,
+          "Kaimur (Bhabua)": 1,
+          "Jaisalmer": 1,
+          "Nalanda": 1,
+          "Jabalpur": 1,
+          "Damoh": 1,
+          "Burhanpur": 1,
+          "Siddharthnagar": 1,
+          "Fatehpur": 1,
+          "Ashoknagar": 1,
+          "Barmer": 1,
+          "Sultanpur": 1,
+          "Khagaria": 1,
+          "Rampur": 1,
+          "Bhind": 1,
+          "Sheikhpura": 1,
+          "Pali": 1,
+          "Ambedkar Nagar": 1,
+          "Jhansi": 1,
+          "Vaishali": 1,
+          "Jhalawar": 1,
+          "Guna": 1,
+          "Chitrakoot": 1,
+          "Sant Kabir Nagar": 1,
+          "Balaghat": 1,
+          "Bharatpur": 1,
+          "Pilibhit": 1,
+          "Jhunjhunun": 1,
+          "Hamirpur": 1,
+          "Rajgarh": 1,
+          "Muzaffarnagar": 1,
+          "Kheri": 1,
+          "Tikamgarh": 1,
+          "Araria": 1,
+          "Bhagalpur": 1,
+          "Rae Bareli": 1,
+          "Unnao": 1,
+          "Jalaun ": 1,
+          "Jehanabad ": 1,
+          "Gaya": 1,
+          "Sagar": 1,
+          "Basti": 1,
+          "Mandsaur": 1,
+          "Allahabad ": 1,
+          "Pashchim Champaran": 1,
+          "Bundi": 1,
+          "Samastipur": 1,
+          "Harda ": 1,
+          "Kishanganj": 1,
+          "Shahjahanpur": 1,
+          "Bara Banki": 1,
+          "Mahoba": 1,
+          "Darbhanga": 1,
+          "Kanpur Nagar": 1,
+          "Jamui": 1,
+          "Baran": 1,
+          "Betul": 1,
+          "Saharsa": 1,
+          "Tonk": 1,
+          "Shrawasti": 1,
+          "Dewas": 1,
+          "Aligarh": 1,
+          "Mathura": 1,
+          "Firozabad": 1,
+          "Churu": 1,
+          "Bikaner": 1,
+          "Ganganagar ": 1,
+          "Panna": 1,
+          "Faizabad": 1,
+          "Jalor": 1,
+          "Purba Champaran": 1,
+          "Bareilly": 1,
+          "Karauli": 1,
+          "Sitapur": 1,
+          "Gonda": 1,
+          "Shajapur": 1,
+          "Agra": 1,
+          "Banswara": 1
         }
       ],
       [
@@ -940,22 +825,6 @@
     [
       "82905",
       82905
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_No_HH.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_No_HH.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1603,22 +1472,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_TOT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_TOT_P",
     [
@@ -2260,22 +2113,6 @@
     [
       "233312",
       233312
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2923,22 +2760,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_TOT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_TOT_F",
     [
@@ -3580,22 +3401,6 @@
     [
       "69504",
       69504
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_06.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4243,22 +4048,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_M_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_06.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_M_06",
     [
@@ -4900,22 +4689,6 @@
     [
       "33492",
       33492
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_06.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5563,22 +5336,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_P_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_SC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_P_SC",
     [
@@ -6220,22 +5977,6 @@
     [
       "5724",
       5724
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_SC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6883,22 +6624,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_F_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_SC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_F_SC",
     [
@@ -7536,22 +7261,6 @@
     [
       "7",
       7
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_ST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8199,22 +7908,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_M_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_ST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_M_ST",
     [
@@ -8854,22 +8547,6 @@
     [
       "4",
       4
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_ST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9517,22 +9194,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_P_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_LIT.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_P_LIT",
     [
@@ -10174,22 +9835,6 @@
     [
       "99574",
       99574
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_LIT.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10837,22 +10482,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_F_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_LIT.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_F_LIT",
     [
@@ -11494,22 +11123,6 @@
     [
       "189872",
       189872
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_P_ILL.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12157,22 +11770,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_M_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_M_ILL.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_M_ILL",
     [
@@ -12814,22 +12411,6 @@
     [
       "110600",
       110600
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_F_ILL.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13477,22 +13058,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_TOT_WORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_WORK_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_TOT_WORK_P",
     [
@@ -14134,22 +13699,6 @@
     [
       "123042",
       123042
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_WORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_WORK_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14797,22 +14346,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_TOT_WORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_TOT_WORK_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_TOT_WORK_F",
     [
@@ -15454,22 +14987,6 @@
     [
       "111945",
       111945
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAINWORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAINWORK_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16117,22 +15634,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAINWORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAINWORK_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAINWORK_M",
     [
@@ -16774,22 +16275,6 @@
     [
       "20764",
       20764
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAINWORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAINWORK_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17437,22 +16922,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_CL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_CL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_CL_P",
     [
@@ -18094,22 +17563,6 @@
     [
       "23296",
       23296
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_CL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_CL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18757,22 +18210,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_CL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_CL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_CL_F",
     [
@@ -19414,22 +18851,6 @@
     [
       "14021",
       14021
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_AL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_AL_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20077,22 +19498,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_AL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_AL_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_AL_M",
     [
@@ -20730,22 +20135,6 @@
     [
       "3901",
       3901
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_AL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_AL_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21393,22 +20782,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_HH_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_HH_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_HH_P",
     [
@@ -22053,22 +21426,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_HH_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_HH_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_HH_M",
     [
@@ -22709,22 +22066,6 @@
     [
       "453",
       453
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_HH_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_HH_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23372,22 +22713,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_OT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_OT_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_OT_P",
     [
@@ -24029,22 +23354,6 @@
     [
       "8728",
       8728
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_OT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_OT_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24692,22 +24001,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MAIN_OT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MAIN_OT_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MAIN_OT_F",
     [
@@ -25349,22 +24642,6 @@
     [
       "45434",
       45434
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26012,22 +25289,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARGWORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARGWORK_M",
     [
@@ -26669,22 +25930,6 @@
     [
       "27013",
       27013
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27332,22 +26577,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_CL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_CL_P",
     [
@@ -27989,22 +27218,6 @@
     [
       "1923",
       1923
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28652,22 +27865,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_CL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_CL_F",
     [
@@ -29305,22 +28502,6 @@
     [
       "17867",
       17867
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29968,22 +29149,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_AL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_AL_M",
     [
@@ -30628,22 +29793,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_AL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_AL_F",
     [
@@ -31282,22 +30431,6 @@
     [
       "387",
       387
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31944,22 +31077,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_HH_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_HH_M",
     [
@@ -32600,22 +31717,6 @@
     [
       "200",
       200
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33263,22 +32364,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_OT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_OT_P",
     [
@@ -33920,22 +33005,6 @@
     [
       "1729",
       1729
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34583,22 +33652,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_OT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_OT_F",
     [
@@ -35240,22 +34293,6 @@
     [
       "40692",
       40692
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35903,22 +34940,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARGWORK_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARGWORK_3_6_M",
     [
@@ -36559,22 +35580,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARGWORK_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARGWORK_3_6_F",
     [
@@ -37212,22 +36217,6 @@
     [
       "5146",
       5146
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37875,22 +36864,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_CL_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_CL_3_6_M",
     [
@@ -38532,22 +37505,6 @@
     [
       "1815",
       1815
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_3_6_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39195,22 +38152,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_AL_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_AL_3_6_P",
     [
@@ -39852,22 +38793,6 @@
     [
       "8584",
       8584
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_3_6_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40515,22 +39440,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_AL_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_AL_3_6_F",
     [
@@ -41168,22 +40077,6 @@
     [
       "317",
       317
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41827,22 +40720,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_HH_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_HH_3_6_M",
     [
@@ -42482,22 +41359,6 @@
     [
       "174",
       174
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_3_6_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43145,22 +42006,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_OT_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_OT_3_6_P",
     [
@@ -43805,22 +42650,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_OT_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_OT_3_6_M",
     [
@@ -44458,22 +43287,6 @@
     [
       "954",
       954
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_3_6_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45121,22 +43934,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARGWORK_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARGWORK_0_3_P",
     [
@@ -45778,22 +44575,6 @@
     [
       "1790",
       1790
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46441,22 +45222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARGWORK_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARGWORK_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARGWORK_0_3_F",
     [
@@ -47101,22 +45866,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_CL_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_CL_0_3_P",
     [
@@ -47754,22 +46503,6 @@
     [
       "437",
       437
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -48411,22 +47144,6 @@
     [
       "530",
       530
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_CL_0_3_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49074,22 +47791,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_AL_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_AL_0_3_P",
     [
@@ -49734,22 +48435,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_AL_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_AL_0_3_M",
     [
@@ -50387,22 +49072,6 @@
     [
       "1456",
       1456
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_AL_0_3_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51050,22 +49719,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_HH_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_HH_0_3_P",
     [
@@ -51707,22 +50360,6 @@
     [
       "20",
       20
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -52369,22 +51006,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_HH_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_HH_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_HH_0_3_F",
     [
@@ -53023,22 +51644,6 @@
     [
       "390",
       390
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_0_3_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53682,22 +52287,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_MARG_OT_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_MARG_OT_0_3_M",
     [
@@ -54337,22 +52926,6 @@
     [
       "176",
       176
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_MARG_OT_0_3_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55000,22 +53573,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_NON_WORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_NON_WORK_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_NON_WORK_P",
     [
@@ -55657,22 +54214,6 @@
     [
       "107540",
       107540
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_NON_WORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_NON_WORK_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56320,22 +54861,6 @@
     ]
   ],
   [
-    "change",
-    "variables.RURAL_NON_WORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.RURAL_NON_WORK_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.RURAL_NON_WORK_F",
     [
@@ -56977,22 +55502,6 @@
     [
       "5858",
       5858
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_No_HH.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_No_HH.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57640,22 +56149,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_TOT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_TOT_P",
     [
@@ -58297,22 +56790,6 @@
     [
       "14881",
       14881
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -58960,22 +57437,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_TOT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_TOT_F",
     [
@@ -59617,22 +58078,6 @@
     [
       "4118",
       4118
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_06.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60280,22 +58725,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_M_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_06.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_M_06",
     [
@@ -60937,22 +59366,6 @@
     [
       "2057",
       2057
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_06.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61600,22 +60013,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_P_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_SC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_P_SC",
     [
@@ -62257,22 +60654,6 @@
     [
       "725",
       725
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_SC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62920,22 +61301,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_F_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_SC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_F_SC",
     [
@@ -63579,22 +61944,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_P_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_ST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_P_ST",
     [
@@ -64233,22 +62582,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_ST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -64896,22 +63229,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_F_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_ST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_F_ST",
     [
@@ -65553,22 +63870,6 @@
     [
       "14075",
       14075
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_LIT.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -66216,22 +64517,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_M_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_LIT.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_M_LIT",
     [
@@ -66873,22 +65158,6 @@
     [
       "5591",
       5591
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_LIT.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -67536,22 +65805,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_P_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_P_ILL.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_P_ILL",
     [
@@ -68193,22 +66446,6 @@
     [
       "3293",
       3293
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_M_ILL.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -68856,22 +67093,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_F_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_F_ILL.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_F_ILL",
     [
@@ -69513,22 +67734,6 @@
     [
       "8024",
       8024
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_WORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_WORK_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -70176,22 +68381,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_TOT_WORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_WORK_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_TOT_WORK_M",
     [
@@ -70829,22 +69018,6 @@
     [
       "900",
       900
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_WORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_TOT_WORK_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -71492,22 +69665,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAINWORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAINWORK_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAINWORK_P",
     [
@@ -72149,22 +70306,6 @@
     [
       "5507",
       5507
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAINWORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAINWORK_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -72812,22 +70953,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAINWORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAINWORK_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAINWORK_F",
     [
@@ -73472,22 +71597,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_CL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_CL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_CL_P",
     [
@@ -74126,22 +72235,6 @@
     [
       "266",
       266
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_CL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_CL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -74789,22 +72882,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_CL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_CL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_CL_F",
     [
@@ -75447,22 +73524,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_AL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_AL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_AL_P",
     [
@@ -76101,22 +74162,6 @@
     [
       "180",
       180
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_AL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_AL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -76764,22 +74809,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_AL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_AL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_AL_F",
     [
@@ -77422,22 +75451,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_HH_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_HH_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_HH_P",
     [
@@ -78076,22 +76089,6 @@
     [
       "168",
       168
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_HH_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_HH_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -78739,22 +76736,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_HH_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_HH_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_HH_F",
     [
@@ -79396,22 +77377,6 @@
     [
       "2779",
       2779
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_OT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_OT_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -80059,22 +78024,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MAIN_OT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_OT_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MAIN_OT_M",
     [
@@ -80713,22 +78662,6 @@
     [
       "361",
       361
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_OT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MAIN_OT_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -81376,22 +79309,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARGWORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARGWORK_P",
     [
@@ -82033,22 +79950,6 @@
     [
       "1064",
       1064
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -82696,22 +80597,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARGWORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARGWORK_F",
     [
@@ -83353,22 +81238,6 @@
     [
       "29",
       29
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -84014,22 +81883,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_CL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_CL_M",
     [
@@ -84667,22 +82520,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -85327,22 +83164,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_AL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_AL_P",
     [
@@ -85980,22 +83801,6 @@
     [
       "167",
       167
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -86643,22 +84448,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_AL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_AL_F",
     [
@@ -87299,22 +85088,6 @@
     [
       "57",
       57
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -87962,22 +85735,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_HH_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_HH_M",
     [
@@ -88619,22 +86376,6 @@
     [
       "11",
       11
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -89282,22 +87023,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_OT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_OT_P",
     [
@@ -89935,22 +87660,6 @@
     [
       "354",
       354
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -90598,22 +88307,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_OT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_OT_F",
     [
@@ -91251,22 +88944,6 @@
     [
       "1414",
       1414
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -91911,22 +89588,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARGWORK_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARGWORK_3_6_M",
     [
@@ -92567,22 +90228,6 @@
     [
       "284",
       284
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_3_6_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -93230,22 +90875,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_CL_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_CL_3_6_P",
     [
@@ -93890,22 +91519,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_CL_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_CL_3_6_M",
     [
@@ -94544,22 +92157,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_3_6_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -95202,22 +92799,6 @@
     [
       "235",
       235
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -95865,22 +93446,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_AL_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_AL_3_6_M",
     [
@@ -96525,22 +94090,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_AL_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_AL_3_6_F",
     [
@@ -97180,22 +94729,6 @@
     [
       "42",
       42
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -97843,22 +95376,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_HH_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_HH_3_6_M",
     [
@@ -98499,22 +96016,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_HH_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_HH_3_6_F",
     [
@@ -99152,22 +96653,6 @@
     [
       "418",
       418
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_3_6_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -99815,22 +97300,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_OT_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_3_6_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_OT_3_6_M",
     [
@@ -100469,22 +97938,6 @@
     [
       "100",
       100
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_3_6_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -101129,22 +98582,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARGWORK_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARGWORK_0_3_P",
     [
@@ -101785,22 +99222,6 @@
     [
       "171",
       171
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -102448,22 +99869,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARGWORK_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARGWORK_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARGWORK_0_3_F",
     [
@@ -103101,22 +100506,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_0_3_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -103760,22 +101149,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_CL_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_CL_0_3_M",
     [
@@ -104414,22 +101787,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_CL_0_3_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -105077,22 +102434,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_AL_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_AL_0_3_P",
     [
@@ -105730,22 +103071,6 @@
     [
       "14",
       14
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -106392,22 +103717,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_AL_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_AL_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_AL_0_3_F",
     [
@@ -107050,22 +104359,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_HH_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_HH_0_3_P",
     [
@@ -107703,22 +104996,6 @@
     [
       "4",
       4
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -108363,22 +105640,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_HH_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_HH_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_HH_0_3_F",
     [
@@ -109019,22 +106280,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_OT_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_OT_0_3_P",
     [
@@ -109672,22 +106917,6 @@
     [
       "36",
       36
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_0_3_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -110335,22 +107564,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_MARG_OT_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_MARG_OT_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_MARG_OT_0_3_F",
     [
@@ -110992,22 +108205,6 @@
     [
       "20092",
       20092
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_NON_WORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_NON_WORK_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -111655,22 +108852,6 @@
     ]
   ],
   [
-    "change",
-    "variables.URBAN_NON_WORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_NON_WORK_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.URBAN_NON_WORK_M",
     [
@@ -112312,22 +109493,6 @@
     [
       "11907",
       11907
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_NON_WORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.URBAN_NON_WORK_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -112975,22 +110140,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_No_HH.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_No_HH.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_No_HH",
     [
@@ -113632,22 +110781,6 @@
     [
       "570465",
       570465
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -114295,22 +111428,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_TOT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_TOT_M",
     [
@@ -114952,22 +112069,6 @@
     [
       "275627",
       275627
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -115615,22 +112716,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_P_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_06.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_P_06",
     [
@@ -116272,22 +113357,6 @@
     [
       "43667",
       43667
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_06.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -116935,22 +114004,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_F_06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_06.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_F_06",
     [
@@ -117592,22 +114645,6 @@
     [
       "17427",
       17427
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_SC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -118255,22 +115292,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_M_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_SC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_M_SC",
     [
@@ -118915,22 +115936,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_F_SC.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_SC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_F_SC",
     [
@@ -119568,22 +116573,6 @@
     [
       "14",
       14
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_ST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -120228,22 +117217,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_M_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_ST.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_M_ST",
     [
@@ -120883,22 +117856,6 @@
     [
       "4",
       4
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_ST.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_ST.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -121546,22 +118503,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_P_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_LIT.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_P_LIT",
     [
@@ -122203,22 +119144,6 @@
     [
       "120905",
       120905
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_LIT.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -122866,22 +119791,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_F_LIT.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_LIT.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_F_LIT",
     [
@@ -123523,22 +120432,6 @@
     [
       "217915",
       217915
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_P_ILL.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -124186,22 +121079,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_M_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_M_ILL.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_M_ILL",
     [
@@ -124843,22 +121720,6 @@
     [
       "126884",
       126884
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_ILL.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_F_ILL.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -125506,22 +122367,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_TOT_WORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_WORK_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_TOT_WORK_P",
     [
@@ -126163,22 +123008,6 @@
     [
       "151569",
       151569
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_WORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_WORK_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -126826,22 +123655,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_TOT_WORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_TOT_WORK_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_TOT_WORK_F",
     [
@@ -127483,22 +124296,6 @@
     [
       "137804",
       137804
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAINWORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAINWORK_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -128146,22 +124943,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAINWORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAINWORK_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAINWORK_M",
     [
@@ -128803,22 +125584,6 @@
     [
       "21640",
       21640
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAINWORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAINWORK_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -129466,22 +126231,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_CL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_CL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_CL_P",
     [
@@ -130126,22 +126875,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_CL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_CL_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_CL_M",
     [
@@ -130779,22 +127512,6 @@
     [
       "3363",
       3363
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_CL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_CL_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -131442,22 +128159,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_AL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_AL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_AL_P",
     [
@@ -132102,22 +128803,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_AL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_AL_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_AL_M",
     [
@@ -132759,22 +129444,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_AL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_AL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_AL_F",
     [
@@ -133412,22 +130081,6 @@
     [
       "2817",
       2817
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_HH_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_HH_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -134075,22 +130728,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_HH_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_HH_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_HH_M",
     [
@@ -134730,22 +131367,6 @@
     [
       "988",
       988
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_HH_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_HH_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -135393,22 +132014,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_OT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_OT_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_OT_P",
     [
@@ -136050,22 +132655,6 @@
     [
       "17032",
       17032
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_OT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_OT_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -136713,22 +133302,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MAIN_OT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MAIN_OT_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MAIN_OT_F",
     [
@@ -137370,22 +133943,6 @@
     [
       "53439",
       53439
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -138033,22 +134590,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARGWORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARGWORK_M",
     [
@@ -138690,22 +135231,6 @@
     [
       "28039",
       28039
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139353,22 +135878,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_CL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_CL_P",
     [
@@ -140010,22 +136519,6 @@
     [
       "1965",
       1965
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -140673,22 +137166,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_CL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_CL_F",
     [
@@ -141333,22 +137810,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_P",
     [
@@ -141986,22 +138447,6 @@
     [
       "10286",
       10286
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -142649,22 +139094,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_F",
     [
@@ -143302,22 +139731,6 @@
     [
       "642",
       642
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143962,22 +140375,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_HH_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_HH_M",
     [
@@ -144618,22 +141015,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_HH_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_HH_F",
     [
@@ -145271,22 +141652,6 @@
     [
       "5743",
       5743
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -145934,22 +142299,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_OT_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_OT_M",
     [
@@ -146591,22 +142940,6 @@
     [
       "2120",
       2120
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -147254,22 +143587,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARGWORK_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARGWORK_3_6_P",
     [
@@ -147911,22 +144228,6 @@
     [
       "18541",
       18541
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_3_6_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -148574,22 +144875,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARGWORK_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARGWORK_3_6_F",
     [
@@ -149234,22 +145519,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_CL_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_CL_3_6_P",
     [
@@ -149887,22 +146156,6 @@
     [
       "1527",
       1527
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_3_6_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -150550,22 +146803,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_CL_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_CL_3_6_F",
     [
@@ -151210,22 +147447,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_3_6_P",
     [
@@ -151863,22 +148084,6 @@
     [
       "8904",
       8904
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_3_6_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -152526,22 +148731,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_3_6_F",
     [
@@ -153186,22 +149375,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_HH_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_HH_3_6_P",
     [
@@ -153839,22 +150012,6 @@
     [
       "231",
       231
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_3_6_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -154502,22 +150659,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_HH_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_HH_3_6_F",
     [
@@ -155162,22 +151303,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_OT_3_6_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_3_6_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_OT_3_6_P",
     [
@@ -155815,22 +151940,6 @@
     [
       "1897",
       1897
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_3_6_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_3_6_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -156478,22 +152587,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_OT_3_6_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_3_6_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_OT_3_6_F",
     [
@@ -157131,22 +153224,6 @@
     [
       "5955",
       5955
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_0_3_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -157794,22 +153871,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARGWORK_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARGWORK_0_3_M",
     [
@@ -158454,22 +154515,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARGWORK_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARGWORK_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARGWORK_0_3_F",
     [
@@ -159108,22 +155153,6 @@
     [
       "1058",
       1058
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_0_3_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -159768,22 +155797,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_CL_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_CL_0_3_M",
     [
@@ -160423,22 +156436,6 @@
     [
       "530",
       530
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_CL_0_3_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -161086,22 +157083,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_0_3_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_0_3_P",
     [
@@ -161746,22 +157727,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_0_3_M",
     [
@@ -162402,22 +158367,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_AL_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_AL_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_AL_0_3_F",
     [
@@ -163055,22 +159004,6 @@
     [
       "107",
       107
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_0_3_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -163718,22 +159651,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_HH_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_HH_0_3_M",
     [
@@ -164378,22 +160295,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_HH_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_HH_0_3_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_HH_0_3_F",
     [
@@ -165031,22 +160932,6 @@
     [
       "1330",
       1330
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_0_3_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_0_3_P.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -165692,22 +161577,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_MARG_OT_0_3_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_0_3_M.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_MARG_OT_0_3_M",
     [
@@ -166345,22 +162214,6 @@
     [
       "443",
       443
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_0_3_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_MARG_OT_0_3_F.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -167008,22 +162861,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_NON_WORK_P.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_NON_WORK_P.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_NON_WORK_P",
     [
@@ -167665,22 +163502,6 @@
     [
       "137986",
       137986
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_NON_WORK_M.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_NON_WORK_M.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -168328,22 +164149,6 @@
     ]
   ],
   [
-    "change",
-    "variables.TOTAL_NON_WORK_F.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.TOTAL_NON_WORK_F.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.TOTAL_NON_WORK_F",
     [
@@ -168938,1317 +164743,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:50",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "District": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_No_HH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_TOT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_TOT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_TOT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_P_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_M_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_F_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_P_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_M_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_F_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_P_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_M_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_F_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_P_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_M_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_F_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_P_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_M_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_F_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_TOT_WORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_TOT_WORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_TOT_WORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAINWORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAINWORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAINWORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_CL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_CL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_CL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_AL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_AL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_AL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_HH_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_HH_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_HH_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_OT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_OT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MAIN_OT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARGWORK_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_CL_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_AL_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_HH_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_MARG_OT_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_NON_WORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_NON_WORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RURAL_NON_WORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_No_HH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_TOT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_TOT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_TOT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_P_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_M_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_F_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_P_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_M_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_F_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_P_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_M_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_F_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_P_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_M_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_F_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_P_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_M_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_F_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_TOT_WORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_TOT_WORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_TOT_WORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAINWORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAINWORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAINWORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_CL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_CL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_CL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_AL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_AL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_AL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_HH_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_HH_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_HH_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_OT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_OT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MAIN_OT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARGWORK_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_CL_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_AL_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_HH_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_MARG_OT_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_NON_WORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_NON_WORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "URBAN_NON_WORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_No_HH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_TOT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_TOT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_TOT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_P_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_M_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_F_06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_P_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_M_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_F_SC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_P_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_M_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_F_ST": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_P_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_M_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_F_LIT": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_P_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_M_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_F_ILL": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_TOT_WORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_TOT_WORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_TOT_WORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAINWORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAINWORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAINWORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_CL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_CL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_CL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_AL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_AL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_AL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_HH_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_HH_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_HH_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_OT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_OT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MAIN_OT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_3_6_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_3_6_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_3_6_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARGWORK_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_CL_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_AL_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_HH_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_0_3_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_0_3_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_MARG_OT_0_3_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_NON_WORK_P": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_NON_WORK_M": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "TOTAL_NON_WORK_F": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

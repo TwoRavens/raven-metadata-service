@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        238
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ZY9H1B_dempob.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 14650
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.codccaa.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.codccaa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.codccaa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -720,22 +621,6 @@
     [
       "1996",
       1996
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1320,26 +1205,10 @@
   ],
   [
     "change",
-    "variables.paro.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.paro.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.paro.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1984,22 +1853,6 @@
     [
       "3729",
       3729
-    ]
-  ],
-  [
-    "change",
-    "variables.pib.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pib.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2652,26 +2505,10 @@
   ],
   [
     "change",
-    "variables.morbilidad.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.morbilidad.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.morbilidad.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3324,26 +3161,10 @@
   ],
   [
     "change",
-    "variables.ipc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ipc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ipc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3999,26 +3820,10 @@
   ],
   [
     "change",
-    "variables.esperanza.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.esperanza.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.esperanza.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4666,22 +4471,6 @@
     ]
   ],
   [
-    "change",
-    "variables.poblacion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.poblacion.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.poblacion",
     [
@@ -5301,19 +5090,19 @@
           "max": "NA",
           "min": "NA",
           "mode": [
-            "Comunidad Valenciana",
-            "Madrid",
+            "Asturias",
+            "Baleares",
+            "Murcia",
             "Castilla y Le\u00f3n",
-            "Galicia",
-            "Cantabria"
+            "Rioja (La)"
           ],
           "modeFreq": 14,
           "fewestValues": [
-            "Comunidad Valenciana",
-            "Madrid",
+            "Asturias",
+            "Baleares",
+            "Murcia",
             "Castilla y Le\u00f3n",
-            "Galicia",
-            "Cantabria"
+            "Rioja (La)"
           ],
           "fewestFreq": 14,
           "midpoint": null,
@@ -5321,23 +5110,23 @@
           "stdDev": "NA",
           "herfindahlIndex": 0.05882352941176469,
           "plotValues": {
-            "Navarra": 14,
             "Catalu\u00f1a": 14,
+            "Cantabria": 14,
             "Pa\u00eds Vasco": 14,
             "Castilla-La Mancha": 14,
+            "Madrid": 14,
+            "Extremadura": 14,
+            "Andalucia": 14,
+            "Comunidad Valenciana": 14,
+            "Navarra": 14,
+            "Arag\u00f3n": 14,
+            "Galicia": 14,
             "Canarias": 14,
+            "Rioja (La)": 14,
+            "Castilla y Le\u00f3n": 14,
             "Murcia": 14,
             "Baleares": 14,
-            "Andalucia": 14,
-            "Arag\u00f3n": 14,
-            "Rioja (La)": 14,
-            "Asturias": 14,
-            "Extremadura": 14,
-            "Cantabria": 14,
-            "Galicia": 14,
-            "Castilla y Le\u00f3n": 14,
-            "Madrid": 14,
-            "Comunidad Valenciana": 14
+            "Asturias": 14
           },
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -5407,77 +5196,6 @@
           "defaultNature": "nominal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:12",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "_0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "codccaa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paro": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pib": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "morbilidad": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ipc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "esperanza": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "poblacion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

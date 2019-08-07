@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1093
-      ],
-      [
-        "variableCount",
-        37
-      ],
-      [
-        "dataSource",
-        {
-          "name": "IVPUQT_PE of Sovereign Debt_JOP.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 147950
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "ARGENTINA",
       [
-        "MEXICO",
         "NICARAGUA",
-        "COSTA RICA",
-        "ARGENTINA",
-        "URUGUAY"
+        "PANAMA",
+        "ECUADOR",
+        "MEXICO",
+        "EL SALVADOR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "MEXICO",
           "NICARAGUA",
-          "COSTA RICA",
-          "ARGENTINA",
-          "URUGUAY"
+          "PANAMA",
+          "ECUADOR",
+          "MEXICO",
+          "EL SALVADOR"
         ]
       ],
       [
@@ -173,23 +74,23 @@
       [
         "plotValues",
         {
-          "ECUADOR": 51,
-          "BOLIVIA": 51,
+          "URUGUAY": 51,
+          "GUATEMALA": 51,
+          "ARGENTINA": 51,
+          "PERU": 51,
           "VENEZUELA": 51,
+          "CHILE": 51,
+          "BOLIVIA": 51,
           "HONDURAS": 51,
-          "EL SALVADOR": 51,
-          "COLOMBIA": 51,
           "BRAZIL": 51,
           "BELIZE": 51,
-          "GUATEMALA": 51,
-          "CHILE": 51,
-          "PERU": 51,
-          "PANAMA": 51,
-          "URUGUAY": 51,
-          "ARGENTINA": 51,
+          "COLOMBIA": 51,
           "COSTA RICA": 51,
-          "NICARAGUA": 51,
-          "MEXICO": 51
+          "EL SALVADOR": 51,
+          "MEXICO": 51,
+          "ECUADOR": 51,
+          "PANAMA": 51,
+          "NICARAGUA": 51
         }
       ],
       [
@@ -379,22 +280,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countryid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -973,22 +858,6 @@
     [
       "1961",
       1961.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1642,26 +1511,10 @@
   ],
   [
     "change",
-    "variables.fisc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fisc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fisc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2315,26 +2168,10 @@
   ],
   [
     "change",
-    "variables.Lfisc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Lfisc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Lfisc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2987,26 +2824,10 @@
   ],
   [
     "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3659,26 +3480,10 @@
   ],
   [
     "change",
-    "variables.Lgdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Lgdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Lgdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4331,26 +4136,10 @@
   ],
   [
     "change",
-    "variables.L2gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.L2gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.L2gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5003,26 +4792,10 @@
   ],
   [
     "change",
-    "variables.logcpi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.logcpi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.logcpi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5676,26 +5449,10 @@
   ],
   [
     "change",
-    "variables.Llogcpi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Llogcpi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Llogcpi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6349,26 +6106,10 @@
   ],
   [
     "change",
-    "variables.L2logcpi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.L2logcpi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.L2logcpi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7012,22 +6753,6 @@
     ]
   ],
   [
-    "change",
-    "variables.post_ele.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.post_ele.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.post_ele",
     [
@@ -7267,22 +6992,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pre_ele.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pre_ele.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7537,26 +7246,10 @@
   ],
   [
     "change",
-    "variables.decent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.decent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.decent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8209,26 +7902,10 @@
   ],
   [
     "change",
-    "variables.ele_decent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ele_decent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ele_decent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8881,26 +8558,10 @@
   ],
   [
     "change",
-    "variables.ele_decent2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ele_decent2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ele_decent2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9555,26 +9216,10 @@
   ],
   [
     "change",
-    "variables.glob.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.glob.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.glob.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10227,26 +9872,10 @@
   ],
   [
     "change",
-    "variables.tot.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tot.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tot.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10899,26 +10528,10 @@
   ],
   [
     "change",
-    "variables.trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11572,26 +11185,10 @@
   ],
   [
     "change",
-    "variables.Lgdp_gap.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Lgdp_gap.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Lgdp_gap.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12244,26 +11841,10 @@
   ],
   [
     "change",
-    "variables.Llogint.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Llogint.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Llogint.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12917,26 +12498,10 @@
   ],
   [
     "change",
-    "variables.Lucepal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Lucepal.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Lucepal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13589,26 +13154,10 @@
   ],
   [
     "change",
-    "variables.Lfin_depth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Lfin_depth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Lfin_depth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14262,26 +13811,10 @@
   ],
   [
     "change",
-    "variables.i.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.i.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.i.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14935,26 +14468,10 @@
   ],
   [
     "change",
-    "variables.debt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.debt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.debt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15608,26 +15125,10 @@
   ],
   [
     "change",
-    "variables.Ldebt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Ldebt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Ldebt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16281,26 +15782,10 @@
   ],
   [
     "change",
-    "variables.debt_RR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.debt_RR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.debt_RR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16954,26 +16439,10 @@
   ],
   [
     "change",
-    "variables.Ldebt_RR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Ldebt_RR.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Ldebt_RR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17626,26 +17095,10 @@
   ],
   [
     "change",
-    "variables.Ldebt_serv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Ldebt_serv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Ldebt_serv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18298,26 +17751,10 @@
   ],
   [
     "change",
-    "variables.Lloginc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Lloginc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Lloginc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18961,22 +18398,6 @@
     ]
   ],
   [
-    "change",
-    "variables.xconst.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.xconst.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.xconst",
     [
@@ -19255,22 +18676,6 @@
     ]
   ],
   [
-    "change",
-    "variables.left.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.left.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.left",
     [
@@ -19513,22 +18918,6 @@
     ]
   ],
   [
-    "change",
-    "variables.imf_5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.imf_5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.imf_5",
     [
@@ -19768,22 +19157,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.e.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.e.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20041,22 +19414,6 @@
     ]
   ],
   [
-    "change",
-    "variables.super_fix.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.super_fix.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.super_fix",
     [
@@ -20308,26 +19665,10 @@
   ],
   [
     "change",
-    "variables.cbi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cbi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cbi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20968,22 +20309,6 @@
     ]
   ],
   [
-    "change",
-    "variables.baker.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.baker.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.baker",
     [
@@ -21180,217 +20505,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countryid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fisc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lfisc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lgdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "L2gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "logcpi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Llogcpi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "L2logcpi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "post_ele": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pre_ele": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ele_decent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ele_decent2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "glob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tot": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lgdp_gap": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Llogint": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lucepal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lfin_depth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "i": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "debt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ldebt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "debt_RR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ldebt_RR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ldebt_serv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Lloginc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xconst": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "imf_5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "e": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "super_fix": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cbi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "baker": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

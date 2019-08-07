@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1000
-      ],
-      [
-        "variableCount",
-        78
-      ],
-      [
-        "dataSource",
-        {
-          "name": "DUW1QY_kstan_r_2016_05_21.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 546094
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.n.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,27 +649,11 @@
     [
       "Form 1",
       [
-        "Form 4",
         "Form 2",
         "Form 3",
+        "Form 4",
         "Form 1"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.form.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.form.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -802,9 +687,9 @@
       [
         "fewestValues",
         [
-          "Form 4",
           "Form 2",
           "Form 3",
+          "Form 4",
           "Form 1"
         ]
       ],
@@ -832,9 +717,9 @@
         "plotValues",
         {
           "Form 1": 250,
+          "Form 4": 250,
           "Form 3": 250,
-          "Form 2": 250,
-          "Form 4": 250
+          "Form 2": 250
         }
       ],
       [
@@ -974,22 +859,6 @@
       [
         "Osh oblast"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.I1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.I1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1205,22 +1074,6 @@
     ]
   ],
   [
-    "change",
-    "variables.I2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.I2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.I2",
     [
@@ -1279,52 +1132,52 @@
         {
           "Bishkek": 177,
           "Osh": 45,
-          "Djany Djer": 30,
           "Jalal-Abad": 30,
+          "Djany Djer": 30,
           "Ozgorush": 17,
           "Ataya Ogonbaeva": 16,
+          "Fedorovo": 15,
+          "Uigur Abad": 15,
+          "Nookat": 15,
+          "Kyzyl Kyshtak": 15,
+          "Massy": 15,
+          "Aral bl": 15,
+          "Gulcha": 15,
+          "Bek Djar": 15,
+          "im Telmana": 15,
+          "Alamudun": 15,
+          "Mombekovo": 15,
+          "Cheke Dobo": 15,
+          "Luksemburg": 15,
+          "Beshik Djon": 15,
+          "Borbash": 15,
+          "Auk": 15,
+          "Djerge Tal": 15,
+          "Kara-Shoro": 15,
+          "Burgundu": 15,
+          "Kyzyl Ordo": 15,
+          "Atana": 15,
+          "Kant": 15,
           "Aravan": 15,
           "Gulstan": 15,
-          "Cheke Dobo": 15,
-          "Kara-Shoro": 15,
-          "Nookat": 15,
-          "Atana": 15,
-          "Beshik Djon": 15,
-          "Kant": 15,
-          "Gulcha": 15,
-          "Auk": 15,
-          "Burgundu": 15,
-          "Djerge Tal": 15,
-          "Luksemburg": 15,
-          "Massy": 15,
-          "Alamudun": 15,
-          "Kyzyl Ordo": 15,
-          "Borbash": 15,
-          "Mombekovo": 15,
-          "Bek Djar": 15,
-          "Uigur Abad": 15,
-          "Fedorovo": 15,
-          "Kyzyl Kyshtak": 15,
-          "im Telmana": 15,
-          "Aral bl": 15,
-          "Kochkor Ata": 14,
-          "Fedorovka": 14,
-          "Djany Aryk": 14,
-          "Barskoon": 14,
-          "Uch Kainar": 14,
-          "Teleiken": 14,
-          "Por": 14,
-          "Kara-Bak": 14,
-          "Shopokov": 14,
+          "Predtechenka": 14,
           "Orozbekovo": 14,
-          "Semenovka": 14,
           "Voznesenovka": 14,
           "Kara Kochkor": 14,
-          "Chon Talaa": 14,
-          "Predtechenka": 14,
+          "Semenovka": 14,
+          "Uch Kainar": 14,
           "Besh Oruk": 14,
-          "Orto-Nura": 13,
+          "Shopokov": 14,
+          "Barskoon": 14,
+          "Kara-Bak": 14,
+          "Kochkor Ata": 14,
+          "Teleiken": 14,
+          "Por": 14,
+          "Fedorovka": 14,
+          "Djany Aryk": 14,
+          "Chon Talaa": 14,
           "Cholpon-Ata": 13,
+          "Orto-Nura": 13,
           "Ak Talaa": 13,
           "Karakol": 12,
           "Djan Bulak": 12,
@@ -1527,22 +1380,6 @@
     ]
   ],
   [
-    "change",
-    "variables.I2_1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.I2_1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.I2_1",
     [
@@ -1741,22 +1578,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fio.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fio",
     [
@@ -1787,11 +1608,11 @@
       [
         "fewestValues",
         [
-          "sanavar",
-          "Akmaral",
-          "Ahmedov",
-          "abdyvap",
-          "Lydia"
+          "Nurgazy",
+          "Nurzina",
+          "Khasimat",
+          "Maripa",
+          "Danakan"
         ]
       ],
       [
@@ -1822,695 +1643,695 @@
           "Tatyana": 9,
           "Aigul": 7,
           "valentina": 6,
-          "Baktygul": 5,
-          "nazira": 5,
-          "Sergei": 5,
           "Aizada": 5,
+          "Baktygul": 5,
           "Ainagul": 5,
           "Aidai": 5,
-          "Gulmira": 5,
+          "Sergei": 5,
+          "nazira": 5,
           "Elmira": 5,
-          "ayzhamal": 5,
           "Gulnara": 5,
+          "ayzhamal": 5,
+          "Gulmira": 5,
+          "almaz": 4,
           "Kenzhebek": 4,
-          "Alexander": 4,
-          "Irina": 4,
+          "Anara": 4,
+          "malika": 4,
           "Galina": 4,
+          "Venera": 4,
+          "Burul": 4,
+          "Irina": 4,
+          "Toktosun": 4,
+          "gulzat": 4,
           "Nargiza": 4,
           "Ibrahim": 4,
-          "malika": 4,
-          "Burul": 4,
-          "Venera": 4,
-          "almaz": 4,
-          "gulzat": 4,
-          "Anara": 4,
-          "Toktosun": 4,
+          "Alexander": 4,
           "Lyudmila": 4,
+          "Kanat": 3,
+          "Marat": 3,
+          "Ermek": 3,
+          "tumar": 3,
+          "Vasiliy": 3,
+          "Mirlan": 3,
+          "Kanybek": 3,
+          "Mayram": 3,
+          "nadejda": 3,
+          "Zhamilya": 3,
           "Ainura": 3,
           "sanabar": 3,
-          "tumar": 3,
-          "nuriza": 3,
-          "Ermek": 3,
-          "Marat": 3,
-          "Zhamilya": 3,
-          "Makhabat": 3,
-          "Anatoliy": 3,
+          "Olga": 3,
+          "minavar": 3,
+          "Kunduz": 3,
+          "nazima": 3,
+          "Dilfuza": 3,
+          "Svetlana": 3,
+          "Maria": 3,
           "Kasymbek": 3,
-          "Yuri": 3,
+          "Atyrkul": 3,
+          "Aizhan": 3,
+          "Zhazgul": 3,
           "lubov": 3,
           "Zhypara": 3,
-          "Svetlana": 3,
-          "Kanybek": 3,
-          "Kanat": 3,
-          "nazima": 3,
-          "Vasiliy": 3,
           "Nurbek": 3,
-          "roza": 3,
-          "Gulya": 3,
-          "Olga": 3,
-          "nadejda": 3,
-          "Zhazgul": 3,
-          "Mayram": 3,
-          "Dilfuza": 3,
-          "minavar": 3,
-          "Maria": 3,
-          "Zulfiya": 3,
-          "Adina": 3,
-          "Zhumagul": 3,
-          "marina": 3,
-          "Atyrkul": 3,
-          "Oksana": 3,
-          "talant": 3,
-          "Nurlan": 3,
           "Toktokan": 3,
-          "Kunduz": 3,
-          "Aizhan": 3,
-          "Mirlan": 3,
-          "Erkin": 3,
+          "Yuri": 3,
+          "Makhabat": 3,
+          "Gulya": 3,
+          "Oksana": 3,
+          "Anatoliy": 3,
           "Chyngyz": 3,
-          "orozali": 2,
-          "mamatkadyr": 2,
-          "Kasym": 2,
-          "Nasiba": 2,
-          "Keldibek": 2,
-          "Meerim": 2,
-          "Syrgak": 2,
-          "Elvira": 2,
-          "Beksultan": 2,
-          "Medet": 2,
-          "aidana": 2,
+          "roza": 3,
+          "Adina": 3,
+          "marina": 3,
+          "nuriza": 3,
+          "Zhumagul": 3,
+          "Erkin": 3,
+          "Nurlan": 3,
+          "talant": 3,
+          "Zulfiya": 3,
+          "Eugeneya": 2,
+          "Jyrgal": 2,
           "Clara": 2,
-          "Nina": 2,
-          "Elena": 2,
-          "Toktobek": 2,
-          "Askar": 2,
-          "Daniyar": 2,
-          "Kenzhe": 2,
-          "Avazbek": 2,
-          "Argen": 2,
-          "ulan": 2,
-          "Kamchybek": 2,
-          "Nurzhan": 2,
-          "Umida": 2,
-          "Turatbek": 2,
           "Anastasia": 2,
-          "Alina": 2,
+          "Nasiba": 2,
+          "ekaterina": 2,
+          "Argen": 2,
+          "Medet": 2,
+          "Askar": 2,
+          "Aydar": 2,
+          "Aigerim": 2,
+          "Melis": 2,
+          "Perizat": 2,
+          "Damira": 2,
+          "Avazbek": 2,
+          "Turatbek": 2,
+          "Matluba": 2,
+          "rahat": 2,
+          "Usen": 2,
+          "aidana": 2,
+          "Elena": 2,
+          "Natalia": 2,
+          "Umida": 2,
+          "Jyldyz": 2,
+          "Elaman": 2,
+          "Samat": 2,
+          "Azamat": 2,
+          "orozgul": 2,
+          "gulbayra": 2,
+          "Assylbek": 2,
+          "Taisiya": 2,
+          "Daniyar": 2,
+          "Toktobek": 2,
+          "umsunay": 2,
+          "Gulsara": 2,
           "Gulchehra": 2,
           "Nazarali": 2,
-          "Zakirova": 2,
-          "Eliza": 2,
-          "Yuliya": 2,
-          "Rasul": 2,
-          "Madina": 2,
-          "Melis": 2,
-          "Ayperi": 2,
-          "Baktybek": 2,
+          "Aida": 2,
+          "dinara": 2,
+          "Tabyldy": 2,
+          "Meerim": 2,
+          "Begimai": 2,
+          "Janybek": 2,
           "Valery": 2,
+          "Zhumabai": 2,
+          "Habiba": 2,
+          "Kasym": 2,
+          "ulan": 2,
+          "Eliza": 2,
+          "Beksultan": 2,
+          "Saltanat": 2,
+          "Madina": 2,
+          "Dilara": 2,
+          "Katya": 2,
+          "Tanzilya": 2,
+          "orozali": 2,
+          "Yuliya": 2,
+          "Vyacheslav": 2,
+          "Zakirova": 2,
+          "Kamchybek": 2,
+          "Elvira": 2,
+          "Mukaddas": 2,
           "Zamira": 2,
+          "Keldibek": 2,
+          "Alina": 2,
+          "Maksat": 2,
           "Janyl": 2,
           "zyynat": 2,
-          "Vyacheslav": 2,
-          "Nursultan": 2,
-          "Matluba": 2,
-          "Mukaddas": 2,
-          "gulbayra": 2,
-          "Myktybek": 2,
-          "Manzoora": 2,
-          "Tilek": 2,
-          "Kanykei": 2,
-          "Azamat": 2,
-          "Azim": 2,
-          "Barno": 2,
-          "Niaz": 2,
-          "Farida": 2,
-          "Jumabek": 2,
-          "Habiba": 2,
-          "orozgul": 2,
-          "Janybek": 2,
-          "Saltanat": 2,
-          "Jyldyz": 2,
-          "Samat": 2,
-          "Nicholai": 2,
-          "Tabyldy": 2,
-          "Eugeneya": 2,
-          "Perizat": 2,
-          "Tanzilya": 2,
-          "Aigerim": 2,
-          "Dilara": 2,
-          "Jyrgal": 2,
-          "Katya": 2,
-          "Tamara": 2,
-          "ekaterina": 2,
-          "Natalia": 2,
-          "Saadat": 2,
-          "rahat": 2,
-          "Gulsara": 2,
-          "Aydar": 2,
           "Larisa": 2,
-          "Begimai": 2,
-          "Usen": 2,
-          "nurkyz": 2,
-          "Zhumabai": 2,
-          "Rahima": 2,
-          "Damira": 2,
-          "Bektur": 2,
-          "Ulanbek": 2,
-          "rima": 2,
-          "Maksat": 2,
-          "Nurgul": 2,
-          "umsunay": 2,
-          "Assylbek": 2,
-          "Elaman": 2,
-          "Shahida": 2,
-          "Aida": 2,
-          "Taisiya": 2,
+          "mamatkadyr": 2,
           "aychurok": 2,
-          "Rustam": 2,
-          "dinara": 2,
+          "Bektur": 2,
+          "nurkyz": 2,
+          "Nina": 2,
+          "Azim": 2,
+          "Ayperi": 2,
+          "Rahima": 2,
+          "Manzoora": 2,
+          "Kenzhe": 2,
+          "Jumabek": 2,
           "Diana": 2,
-          "Vadim": 1,
-          "Baikonush": 1,
-          "Umkan": 1,
-          "Ryskul": 1,
-          "Orunbai": 1,
-          "Fatima": 1,
-          "Mamytov": 1,
-          "nursuluu": 1,
-          "shaargul": 1,
-          "shamyrbek": 1,
-          "Khurmat": 1,
-          "talipzhan": 1,
-          "urunsa": 1,
-          "mayrambu": 1,
-          "Kasiet": 1,
-          "Tokonov": 1,
-          "Zuura": 1,
-          "Esenova": 1,
-          "Maftuna": 1,
-          "Mederov": 1,
-          "Zhanara": 1,
-          "Sanat": 1,
-          "Azat": 1,
-          "Baktiyar": 1,
-          "Omurkul": 1,
-          "lutfidin": 1,
-          "Feruza": 1,
-          "asan": 1,
-          "davles": 1,
-          "sadygalieva": 1,
-          "kalbubu": 1,
-          "Batma": 1,
-          "Joldosh": 1,
-          "Alevtina": 1,
-          "mamushoeva": 1,
-          "Zakir": 1,
-          "turdaaly": 1,
-          "Arslanbek": 1,
-          "Karatay": 1,
-          "Tulenbaeva": 1,
-          "Kenzhegul": 1,
-          "Zhanish": 1,
-          "Erkinbek": 1,
-          "Florida": 1,
-          "Farukh": 1,
-          "Orunbek": 1,
-          "ayazym": 1,
-          "Bakyt": 1,
-          "Aina": 1,
-          "zhamiyla": 1,
-          "Dastan": 1,
-          "Inabat": 1,
-          "Nuripa": 1,
-          "fotimahon": 1,
-          "Sapar": 1,
-          "oskenei": 1,
-          "Dilbar": 1,
-          "Adyl": 1,
-          "Almagul": 1,
-          "igenbet": 1,
-          "gulumkan": 1,
-          "Sabirova": 1,
-          "Khalimat": 1,
-          "Omurzak": 1,
-          "tagabaeva": 1,
-          "Tariel": 1,
-          "aziratkul": 1,
-          "saydimar": 1,
-          "Gulbahar": 1,
-          "Zeynep": 1,
-          "Busajira": 1,
-          "Mairambek": 1,
-          "Beknazar": 1,
-          "Anya": 1,
-          "Eric": 1,
-          "Anna": 1,
-          "erkayym": 1,
-          "Iskender": 1,
-          "orozbu": 1,
-          "kazarbay": 1,
-          "Askarbek": 1,
-          "Zarema": 1,
-          "Kairat": 1,
-          "Ibraimova": 1,
-          "Aisuluu": 1,
-          "Gulmairam": 1,
-          "mamatkarim": 1,
-          "Sanjar": 1,
-          "Emilbek": 1,
-          "elzarbek": 1,
-          "guldoysun": 1,
-          "ogulhon": 1,
-          "Borombay": 1,
-          "Ismail": 1,
-          "Ergeshova": 1,
-          "nimat": 1,
-          "Rukia": 1,
-          "Albina": 1,
-          "suksur": 1,
-          "Pavel": 1,
-          "Samara": 1,
-          "kurmanbubu": 1,
-          "Saliha": 1,
-          "mamanazar": 1,
-          "nurayym": 1,
-          "alyz": 1,
-          "Bermet": 1,
-          "Jamshid": 1,
-          "Bayat": 1,
-          "anzhela": 1,
-          "omurkan": 1,
-          "Akunov": 1,
-          "Akylai": 1,
-          "anarbu": 1,
-          "Odina": 1,
-          "Sharapat": 1,
-          "Sadykbek": 1,
-          "Narbek": 1,
-          "Keneshbek": 1,
-          "Abdullayeva": 1,
-          "Risbek": 1,
-          "dogdurbek": 1,
-          "Begmatova": 1,
-          "Sabita": 1,
-          "mohidil": 1,
-          "Ashirbek": 1,
-          "bobke": 1,
-          "Askhat": 1,
-          "Mukhtar": 1,
-          "zhenaliev": 1,
-          "Rabo": 1,
-          "Vladimir": 1,
-          "Gulzada": 1,
-          "Rakhima": 1,
-          "Mamadali": 1,
-          "Ernist": 1,
-          "Bolotbek": 1,
-          "Saparaly": 1,
-          "Abdullah": 1,
-          "sheker": 1,
-          "Adilbek": 1,
-          "boris": 1,
-          "Arthur": 1,
-          "Raya": 1,
-          "karybay": 1,
-          "Sheraly": 1,
-          "Akmatalieva": 1,
-          "Omurbek": 1,
-          "tamarakan": 1,
-          "Raushan": 1,
-          "tanylapov": 1,
-          "Oskon": 1,
-          "Davranov": 1,
-          "Oroz": 1,
-          "Mombekova": 1,
-          "Sadykov": 1,
-          "aysalam": 1,
-          "burmayym": 1,
-          "Noruzbai": 1,
-          "Mukhlisa": 1,
-          "Zhakynbek": 1,
-          "Khasimat": 1,
-          "sarseyit": 1,
-          "katycha": 1,
-          "Arzybek": 1,
-          "haifynsa": 1,
-          "Elebaev": 1,
-          "Baktykan": 1,
-          "talap": 1,
-          "Davran": 1,
-          "Guldana": 1,
-          "Adilet": 1,
-          "roman": 1,
-          "Nastya": 1,
-          "zhuzubaaly": 1,
-          "gulbara": 1,
-          "Fedor": 1,
-          "Batmagul": 1,
-          "Aliya": 1,
-          "guliza": 1,
-          "Amirbek": 1,
-          "turgunay": 1,
-          "Saera": 1,
-          "Danakan": 1,
-          "Dilnoza": 1,
-          "kayicha": 1,
-          "Aisalkyn": 1,
-          "Islam": 1,
-          "ibadat": 1,
-          "ogulhan": 1,
-          "Nargila": 1,
-          "Akylbek": 1,
-          "patilahon": 1,
-          "karimahon": 1,
-          "keldibekova": 1,
-          "Akyl": 1,
-          "Aibek": 1,
-          "zhanyshbay": 1,
-          "Zhibek": 1,
-          "ermamat": 1,
-          "zhazylkan": 1,
-          "Emil": 1,
-          "Muhammad Ali": 1,
-          "Kurman": 1,
-          "Nurkhon": 1,
-          "Gulbju": 1,
-          "suyankulov": 1,
-          "zhakul": 1,
-          "Altynay": 1,
-          "Anarkul": 1,
-          "shaflan": 1,
-          "Orozbaev": 1,
-          "Mirbek": 1,
-          "Toktobaeva": 1,
-          "Chingiz": 1,
-          "tayrova": 1,
-          "myassor": 1,
-          "toraiym": 1,
-          "Atarbek": 1,
-          "Mamira": 1,
-          "Baktybay": 1,
-          "Temirbek": 1,
-          "munarbek": 1,
-          "Nurkan": 1,
-          "erkinay": 1,
-          "nurtilek": 1,
-          "zulhumar": 1,
-          "rozahunova": 1,
-          "Jekshekan": 1,
-          "Haleakala": 1,
-          "gulbarchyn": 1,
-          "hasanvay": 1,
-          "Murodyl": 1,
-          "Alaibek": 1,
-          "Saeed": 1,
-          "Victoria": 1,
-          "Seit": 1,
-          "Tazagul": 1,
-          "asylkan": 1,
-          "aynazhan": 1,
-          "Kamila": 1,
-          "Darika": 1,
-          "bubaysha": 1,
-          "Toktor": 1,
-          "kaldyrbek": 1,
-          "modesheva": 1,
-          "zhamaeva": 1,
-          "aytygul": 1,
-          "Gulanda": 1,
-          "narynkul": 1,
-          "sanavar": 1,
-          "Tajikan": 1,
-          "Mirgul": 1,
-          "Nurgazy": 1,
-          "Tynybek": 1,
-          "Aidaraliev": 1,
-          "Bakirova": 1,
-          "Talas": 1,
-          "Cholpon": 1,
-          "matirammova": 1,
-          "Kiyazaly": 1,
-          "zhaylookan": 1,
-          "gulipa": 1,
-          "Tolkunbek": 1,
-          "aysheker": 1,
-          "Zhypar": 1,
-          "Marziya": 1,
-          "Zarina": 1,
-          "beyishkan": 1,
-          "Kamchy kyzy": 1,
-          "aykokul": 1,
-          "kyyalbek": 1,
-          "dilbaray": 1,
-          "Akmaral": 1,
-          "Mamut": 1,
-          "zhanyzak": 1,
-          "tokoberdi": 1,
-          "yryskeldi": 1,
-          "Mavlyuda": 1,
-          "Uraiym": 1,
-          "Mariyam": 1,
-          "Asema": 1,
-          "Flyura": 1,
-          "Alman": 1,
-          "Esenaly": 1,
-          "Bayaman": 1,
-          "Talay": 1,
-          "Musayeva": 1,
-          "Hickaet": 1,
-          "saury": 1,
-          "Iqbal": 1,
-          "Maripa": 1,
-          "Khanzad": 1,
-          "ikramzhanov": 1,
-          "Osmon": 1,
-          "Azimbek": 1,
-          "togoybekova": 1,
-          "Daniel": 1,
-          "mashpat": 1,
-          "abdubait": 1,
-          "mehrinsa": 1,
-          "muradillo": 1,
-          "Shahlo": 1,
-          "Baatyr": 1,
-          "almazbek": 1,
-          "seydimkan": 1,
-          "Mukambet": 1,
-          "srapil": 1,
-          "Bari": 1,
-          "asanzhan": 1,
-          "Gulchekhra": 1,
-          "Samira": 1,
-          "Orozbay": 1,
-          "Amangeldi": 1,
-          "Nurillo": 1,
-          "Shahnaz": 1,
-          "Bahadir": 1,
-          "Kadirov": 1,
-          "Ahmedov": 1,
-          "abdyvap": 1,
-          "Lydia": 1,
-          "Zulikhan": 1,
-          "Ikram": 1,
-          "Hamida": 1,
-          "malikahan": 1,
-          "vahabaeva": 1,
-          "Begaim": 1,
-          "zhidegul": 1,
-          "Eugene": 1,
-          "Ravshanbek": 1,
-          "halidahan": 1,
-          "gulzada": 1,
-          "ablanov": 1,
-          "maamytkan": 1,
-          "nulifar": 1,
-          "ildas": 1,
-          "Orozaliev": 1,
-          "Kubanych": 1,
-          "zina": 1,
-          "malbekov": 1,
-          "Rustambek": 1,
-          "Tynychbek": 1,
-          "Mamatov": 1,
-          "nuranda": 1,
-          "Aidarbek uulu A": 1,
-          "Mamytova": 1,
-          "Berdibek": 1,
-          "Anarbay": 1,
-          "Hanifa": 1,
-          "Sonya": 1,
-          "Alik": 1,
-          "kalmamat": 1,
-          "Gaziya": 1,
-          "Murataly": 1,
-          "Kairatbek": 1,
-          "ominohan": 1,
-          "yulchubai": 1,
-          "mamatadil": 1,
-          "Muhabbat": 1,
-          "Aman": 1,
-          "ayshakan": 1,
-          "aika": 1,
-          "Ruslan": 1,
-          "Vera": 1,
-          "Ilyaz": 1,
-          "Tashkala": 1,
-          "Arstanbek": 1,
-          "diloran": 1,
-          "sardarbek": 1,
-          "shura": 1,
-          "marapatkhon": 1,
-          "Akish uulu P": 1,
-          "Turdubaev": 1,
-          "Zainidin": 1,
-          "Baltabaev": 1,
-          "ayymkan": 1,
-          "Nasir": 1,
-          "Omuraly": 1,
-          "Zulaika": 1,
-          "samatbek": 1,
-          "Sanjarbek": 1,
-          "turumkan": 1,
-          "ersultan": 1,
-          "Kalicha": 1,
-          "Nurzat": 1,
-          "Taalaigul": 1,
-          "Inna": 1,
-          "Satybaldy": 1,
-          "Raigul": 1,
-          "Taalai": 1,
-          "Aisha": 1,
-          "tatyna": 1,
-          "Sayle": 1,
-          "Mahsuda": 1,
-          "Artikbay": 1,
-          "shermyrza": 1,
-          "Temirzhan kyzy": 1,
-          "Victor": 1,
-          "akiza": 1,
-          "kubataly": 1,
-          "abdysali": 1,
-          "Raikan": 1,
-          "Aitkul": 1,
-          "Uluk": 1,
-          "nasyykan": 1,
-          "Stanislas": 1,
-          "tattybubu": 1,
-          "mendiayym": 1,
+          "Saadat": 2,
+          "Nicholai": 2,
+          "Barno": 2,
+          "Tamara": 2,
+          "Rasul": 2,
+          "rima": 2,
+          "Nursultan": 2,
+          "Farida": 2,
+          "Ulanbek": 2,
+          "Tilek": 2,
+          "Shahida": 2,
+          "Niaz": 2,
+          "Myktybek": 2,
+          "Kanykei": 2,
+          "Syrgak": 2,
+          "Rustam": 2,
+          "Nurzhan": 2,
+          "Baktybek": 2,
+          "Nurgul": 2,
           "Bukan": 1,
-          "Alimzhan": 1,
-          "Esen": 1,
-          "Rashid": 1,
-          "Kasbah": 1,
-          "adi": 1,
-          "Azhibaeva": 1,
-          "nazykan": 1,
-          "Yrys": 1,
-          "Edilbek": 1,
-          "Parizat": 1,
-          "gulzina": 1,
-          "nazbu": 1,
           "tashbubu": 1,
-          "Gulzar": 1,
-          "hafiza": 1,
-          "Gulnur": 1,
-          "tazhinsa": 1,
-          "Bakhtiyar": 1,
-          "Gapar": 1,
-          "Nurali": 1,
-          "Kadyrzhan": 1,
-          "Lida": 1,
-          "Semetei": 1,
-          "Valya": 1,
+          "karybay": 1,
+          "maamytkan": 1,
+          "Gulzada": 1,
+          "Askhat": 1,
+          "Sonya": 1,
+          "Aidaraliev": 1,
+          "kubataly": 1,
+          "Edilbek": 1,
+          "Uraiym": 1,
+          "Nargila": 1,
+          "Michael": 1,
+          "alikadyr": 1,
+          "Emilbek": 1,
           "Ormonova": 1,
+          "erkayym": 1,
+          "Murodyl": 1,
+          "aysalam": 1,
+          "Begaim": 1,
+          "Inna": 1,
+          "Batmagul": 1,
+          "samatbek": 1,
+          "zina": 1,
+          "Indira": 1,
+          "Kairat": 1,
+          "ildas": 1,
+          "Omurzak": 1,
+          "Ayganysh": 1,
+          "Arslanbek": 1,
+          "toraiym": 1,
+          "Busajira": 1,
+          "modesheva": 1,
+          "turdaaly": 1,
+          "Zainidin": 1,
+          "Kumushay": 1,
+          "Mirgul": 1,
+          "Alman": 1,
+          "Kasbah": 1,
+          "Razia": 1,
+          "Aman": 1,
+          "narynkul": 1,
+          "yahebek": 1,
+          "Jamshid": 1,
+          "Gulfiza": 1,
+          "zulhumar": 1,
+          "Iqbal": 1,
+          "nurtilek": 1,
+          "azar": 1,
+          "Kanysh": 1,
+          "Baikonush": 1,
+          "Alaibek": 1,
+          "talap": 1,
+          "Erkebaev": 1,
+          "kayicha": 1,
+          "Satybaldy": 1,
+          "Ernist": 1,
+          "Ibraimova": 1,
+          "urumkan": 1,
+          "saury": 1,
+          "mehrinsa": 1,
+          "ayymkan": 1,
+          "guldoysun": 1,
+          "habiblo": 1,
+          "salmoorbek": 1,
+          "Joldosh": 1,
+          "aykokul": 1,
+          "Gulnur": 1,
+          "Nasir": 1,
+          "nazykan": 1,
+          "Hanifa": 1,
+          "Elebaev": 1,
+          "Turdubaev": 1,
+          "Umkan": 1,
+          "Khalimat": 1,
+          "Kamchy kyzy": 1,
+          "gulzina": 1,
+          "Buraimi": 1,
+          "Kubanych": 1,
+          "aysheker": 1,
+          "seydimkan": 1,
+          "kyyalbek": 1,
+          "Mirbek": 1,
+          "Musayeva": 1,
+          "ermamat": 1,
+          "Alevtina": 1,
+          "Azimbek": 1,
+          "srapil": 1,
+          "Valya": 1,
+          "Feruza": 1,
+          "Uluk": 1,
+          "Asema": 1,
+          "burmayym": 1,
+          "Ashirbek": 1,
+          "turgunay": 1,
+          "Bakyt": 1,
+          "zhidegul": 1,
+          "Nuripa": 1,
+          "Nurkhon": 1,
+          "Tulenbaeva": 1,
+          "Kairat uulu": 1,
+          "togoybekova": 1,
+          "Samara": 1,
+          "Zakir": 1,
+          "kaldyrbek": 1,
+          "nurayym": 1,
+          "Tolkunbek": 1,
+          "Gaziya": 1,
+          "Ilyaz": 1,
+          "asanbek": 1,
+          "Sofiana": 1,
+          "Tayipov": 1,
+          "ikramzhanov": 1,
+          "Aitkul": 1,
+          "Joldoshbek": 1,
+          "yulchubai": 1,
+          "Haleakala": 1,
+          "Mavlyuda": 1,
+          "sarseyit": 1,
+          "Satimov": 1,
+          "Zhypar": 1,
+          "Mederov": 1,
+          "Zhakynbek": 1,
+          "Samira": 1,
+          "sarvarhon": 1,
+          "Raigul": 1,
+          "marapatkhon": 1,
+          "shaargul": 1,
+          "tagabaeva": 1,
+          "gulumkan": 1,
+          "Anya": 1,
+          "saliyka": 1,
+          "rozahunova": 1,
+          "diloran": 1,
+          "roman": 1,
+          "zhanyzak": 1,
+          "Orun": 1,
+          "Adilbek": 1,
+          "Kadyrzhan": 1,
+          "kurmanbubu": 1,
+          "tatyna": 1,
+          "mamatkarim": 1,
+          "nimat": 1,
+          "Arstanbek": 1,
+          "Zarema": 1,
+          "Nurillo": 1,
+          "Amangeldi": 1,
+          "Mairambek": 1,
+          "tazhinsa": 1,
+          "oskenei": 1,
+          "Abdullah": 1,
+          "Raya": 1,
+          "Adash": 1,
+          "shamyrbek": 1,
+          "Rukia": 1,
+          "mayrambu": 1,
+          "Nurali": 1,
+          "aziratkul": 1,
+          "Orunbai": 1,
+          "dostonbek": 1,
+          "Mamadali": 1,
+          "omurkan": 1,
+          "Emil": 1,
+          "Shailoobek": 1,
+          "Rakhima": 1,
+          "Dastan": 1,
+          "Altynay": 1,
+          "aiza": 1,
+          "Dilbar": 1,
+          "Batma": 1,
+          "ogulhan": 1,
+          "ablanov": 1,
+          "katycha": 1,
+          "Seit": 1,
+          "zhanyshbay": 1,
+          "asan": 1,
+          "Mombekova": 1,
+          "suksur": 1,
+          "Murataly": 1,
+          "yryskeldi": 1,
+          "myassor": 1,
+          "Mamytov": 1,
+          "Ravshanbek": 1,
+          "Amirbek": 1,
+          "Marziya": 1,
+          "Omurbek": 1,
+          "tayrova": 1,
+          "Lydia": 1,
+          "Omurkul": 1,
+          "nulifar": 1,
+          "Aina": 1,
+          "Keneshbek": 1,
+          "Aliya": 1,
+          "Adil": 1,
+          "guliza": 1,
+          "Mamytova": 1,
+          "Anarbay": 1,
+          "halidahan": 1,
+          "zhenaliev": 1,
+          "Yrys": 1,
+          "Arzybek": 1,
+          "Dilnoza": 1,
+          "Mukhtar": 1,
+          "muradillo": 1,
+          "Mamytbek": 1,
+          "Cholpon": 1,
+          "Akylbek": 1,
+          "Albina": 1,
+          "Zuura": 1,
+          "Pavel": 1,
+          "munarbek": 1,
+          "Ikram": 1,
+          "Sadykov": 1,
+          "Shahnaz": 1,
+          "Talas": 1,
+          "kalbubu": 1,
+          "Alexey": 1,
+          "Azat": 1,
+          "Akish uulu P": 1,
+          "Zeynep": 1,
+          "Tynychbek": 1,
+          "Vladimir": 1,
+          "Toktor": 1,
+          "Jekshekan": 1,
+          "Vadim": 1,
+          "dogdurbek": 1,
+          "Askarbek": 1,
+          "Victoria": 1,
+          "Berdibek": 1,
+          "Vera": 1,
+          "nursuluu": 1,
+          "davles": 1,
+          "Temirzhan kyzy": 1,
+          "ibadat": 1,
+          "Nastya": 1,
+          "Bayat": 1,
+          "Kalicha": 1,
+          "Atarbek": 1,
+          "Raisa": 1,
+          "Baktybay": 1,
+          "Kiyazaly": 1,
+          "emilkan": 1,
+          "Bayaman": 1,
+          "Davranov": 1,
+          "Temirbek": 1,
+          "tamarakan": 1,
+          "nuranda": 1,
+          "Gulbju": 1,
+          "shavkatillo": 1,
+          "Zoe": 1,
+          "Hickaet": 1,
+          "Osmon": 1,
+          "Sadirov": 1,
+          "Karachach": 1,
+          "Gulzar": 1,
+          "suyunbek": 1,
+          "abduvahar": 1,
+          "Adilet": 1,
+          "Akmaral": 1,
+          "darygul": 1,
+          "aynazhan": 1,
+          "asanzhan": 1,
+          "Noruzbai": 1,
+          "boris": 1,
+          "Abdrakhmanov": 1,
+          "mamushoeva": 1,
+          "Odina": 1,
+          "dzhaparalieva": 1,
+          "Bari": 1,
+          "Bolotbek": 1,
+          "Raushan": 1,
+          "Muhabbat": 1,
+          "Kuban": 1,
+          "Guldana": 1,
+          "Zinaida": 1,
+          "matirammova": 1,
+          "Darika": 1,
+          "Mukhlisa": 1,
+          "shermyrza": 1,
+          "cherikchieva": 1,
+          "Lida": 1,
+          "Alimzhan": 1,
+          "mamanazar": 1,
+          "erkinay": 1,
+          "Nelly": 1,
+          "urunsa": 1,
+          "sahabedin": 1,
+          "nazbu": 1,
+          "bekbachaev": 1,
+          "Gulmairam": 1,
+          "Taalaigul": 1,
+          "Nurzat": 1,
+          "zarina": 1,
+          "Fatima": 1,
+          "Kurmanbek": 1,
+          "ayazym": 1,
+          "Kadirov": 1,
+          "Sabirova": 1,
+          "Aidarbek uulu A": 1,
+          "Abylkasym": 1,
+          "Kasiet": 1,
+          "satimbu": 1,
+          "Akmatalieva": 1,
+          "Saliha": 1,
+          "Saparaly": 1,
+          "Kamchy": 1,
+          "ayshakan": 1,
+          "Rabo": 1,
+          "zhaylookan": 1,
+          "Baltabaev": 1,
+          "Berdaliev": 1,
+          "sadahan": 1,
+          "karimahon": 1,
+          "Sheishenbek": 1,
+          "aika": 1,
+          "Gulchekhra": 1,
+          "Erkinbek": 1,
+          "Artikbay": 1,
+          "fotimahon": 1,
+          "Mamatov": 1,
+          "kanymbu": 1,
+          "Ruslan": 1,
+          "asylkan": 1,
+          "Bakirova": 1,
+          "Sharapat": 1,
+          "salamat": 1,
+          "Jenishbek": 1,
+          "Aisalkyn": 1,
+          "bobke": 1,
+          "mamatadil": 1,
+          "Sabita": 1,
           "Sarah": 1,
+          "Olmas": 1,
+          "haifynsa": 1,
+          "Stanislas": 1,
+          "Ahmedov": 1,
+          "Shailoo": 1,
+          "Zhumash": 1,
+          "Beknazar": 1,
+          "Kamila": 1,
+          "Sanjarbek": 1,
+          "Kurman": 1,
+          "Mukambet": 1,
+          "turumkan": 1,
+          "Baatyr": 1,
+          "Raikan": 1,
+          "Akylai": 1,
+          "Fedor": 1,
+          "zhazylkan": 1,
+          "zhamiyla": 1,
+          "gulipa": 1,
+          "patilahon": 1,
+          "Akyl": 1,
+          "Florida": 1,
+          "bubaysha": 1,
+          "Kairatbek": 1,
+          "Salyi": 1,
+          "sadygalieva": 1,
+          "Kenzhegul": 1,
+          "Saeed": 1,
+          "Sayle": 1,
+          "Borombay": 1,
+          "Davran": 1,
+          "malikahan": 1,
+          "Ryskul": 1,
+          "hafiza": 1,
+          "gulbarchyn": 1,
+          "mashpat": 1,
+          "Anna": 1,
+          "Hamida": 1,
+          "Abdrasul": 1,
+          "Sadykbek": 1,
+          "zhamaeva": 1,
+          "gulbara": 1,
+          "abdysali": 1,
+          "Tariel": 1,
+          "Islam": 1,
+          "Maksim": 1,
+          "Gapar": 1,
+          "Almagul": 1,
+          "Madura": 1,
+          "Zhanara": 1,
+          "sardarbek": 1,
+          "zhakul": 1,
+          "akiza": 1,
+          "Aisha": 1,
+          "alyz": 1,
+          "beyishkan": 1,
+          "Sheraly": 1,
+          "Mahsuda": 1,
+          "Orozbaev": 1,
+          "Tokonov": 1,
+          "Karatay": 1,
+          "kimsan": 1,
+          "kalmamat": 1,
+          "malbekov": 1,
+          "Eugene": 1,
+          "Iskender": 1,
+          "Akunov": 1,
+          "Orunbek": 1,
+          "Ashnavar": 1,
+          "Gulbahar": 1,
+          "gulzada": 1,
+          "anzhela": 1,
+          "dilbaray": 1,
+          "Mariyam": 1,
+          "Omuraly": 1,
+          "Nazimov": 1,
+          "Begaly": 1,
+          "aytygul": 1,
+          "sanavar": 1,
+          "tanylapov": 1,
+          "hasanvay": 1,
+          "ominohan": 1,
+          "Aibek": 1,
+          "vahabaeva": 1,
+          "almazbek": 1,
+          "Maftuna": 1,
+          "Parizat": 1,
+          "Bahadir": 1,
+          "uulbubu": 1,
+          "Mamira": 1,
+          "igenbet": 1,
+          "mendiayym": 1,
+          "Chingiz": 1,
+          "Narbek": 1,
+          "Esenaly": 1,
+          "orozbu": 1,
+          "Semetei": 1,
+          "saydimar": 1,
+          "meymanbay": 1,
+          "Khurmat": 1,
+          "Rustambek": 1,
+          "Nurkan": 1,
+          "Bermet": 1,
+          "Gulanda": 1,
+          "Eric": 1,
+          "Aisuluu": 1,
+          "Ismail": 1,
+          "Esen": 1,
+          "Muhammad Ali": 1,
+          "Alik": 1,
+          "ersultan": 1,
+          "Sanjar": 1,
+          "Abdullayeva": 1,
+          "Satybaldiev": 1,
+          "Risbek": 1,
+          "tattybubu": 1,
+          "shaflan": 1,
+          "Orozaliev": 1,
+          "Ergeshova": 1,
+          "haliya": 1,
+          "zhuzubaaly": 1,
+          "Daniel": 1,
+          "sheker": 1,
+          "Orozbay": 1,
+          "Zulikhan": 1,
+          "Taalai": 1,
+          "Esenova": 1,
+          "Azhibaeva": 1,
+          "Sapar": 1,
+          "Zhibek": 1,
+          "Rashid": 1,
+          "Sanat": 1,
+          "kazarbay": 1,
+          "gulshat": 1,
+          "Zulaika": 1,
+          "Mamut": 1,
+          "abdubait": 1,
+          "Mahira": 1,
+          "Zarina": 1,
           "Rysalieva": 1,
           "Myrzaev": 1,
-          "imarova": 1,
-          "Salyi": 1,
-          "kanymbu": 1,
-          "Zhumash": 1,
-          "Begaly": 1,
-          "Ryskan": 1,
-          "Kamchy": 1,
-          "Erkebaev": 1,
-          "Satybaldiev": 1,
-          "Zinaida": 1,
-          "Alexey": 1,
-          "Abdrasul": 1,
-          "meymanbay": 1,
-          "Buraimi": 1,
-          "saliyka": 1,
-          "sarvarhon": 1,
-          "Tayipov": 1,
-          "gulshat": 1,
-          "Abylkasym": 1,
-          "Ayganysh": 1,
-          "Zoe": 1,
-          "Shailoo": 1,
-          "sahabedin": 1,
+          "Saera": 1,
+          "abdyvap": 1,
           "Dilmurat": 1,
-          "aiza": 1,
-          "Shailoobek": 1,
-          "Sofiana": 1,
-          "dzhaparalieva": 1,
-          "Indira": 1,
-          "azar": 1,
-          "Nurzina": 1,
-          "habiblo": 1,
-          "salamat": 1,
-          "Kumushay": 1,
-          "Michael": 1,
-          "satimbu": 1,
-          "emilkan": 1,
-          "Sheishenbek": 1,
-          "Nelly": 1,
-          "urumkan": 1,
-          "alikadyr": 1,
-          "Gulfiza": 1,
-          "Madura": 1,
-          "nurkulov": 1,
-          "Adash": 1,
-          "dostonbek": 1,
-          "Razia": 1,
-          "yrysbaeva": 1,
-          "zarina": 1,
-          "kimsan": 1,
-          "Orun": 1,
-          "Mahira": 1,
-          "cherikchieva": 1,
-          "asanbek": 1,
-          "bekbachaev": 1,
-          "Kuban": 1,
-          "Kairat uulu": 1,
-          "Raisa": 1,
-          "Kurmanbek": 1,
-          "darygul": 1,
-          "Satimov": 1,
-          "Ashnavar": 1,
-          "Kanatbek": 1,
-          "salmoorbek": 1,
-          "Kanysh": 1,
-          "Maksim": 1,
-          "Berdaliev": 1,
-          "yahebek": 1,
-          "Nazimov": 1,
-          "Mamytbek": 1,
-          "Adil": 1,
-          "Olmas": 1,
-          "Sadirov": 1,
-          "rahathan": 1,
-          "abduvahar": 1,
-          "Abdrakhmanov": 1,
-          "uulbubu": 1,
-          "duyshenbaev": 1,
+          "tokoberdi": 1,
+          "Oroz": 1,
+          "Victor": 1,
           "Gulasal": 1,
-          "Joldoshbek": 1,
-          "suyunbek": 1,
-          "haliya": 1,
-          "shavkatillo": 1,
-          "Karachach": 1,
-          "sadahan": 1,
-          "Jenishbek": 1
+          "suyankulov": 1,
+          "Tajikan": 1,
+          "ogulhon": 1,
+          "Khanzad": 1,
+          "Tashkala": 1,
+          "talipzhan": 1,
+          "nasyykan": 1,
+          "mohidil": 1,
+          "shura": 1,
+          "rahathan": 1,
+          "imarova": 1,
+          "elzarbek": 1,
+          "adi": 1,
+          "Farukh": 1,
+          "lutfidin": 1,
+          "Zhanish": 1,
+          "Tazagul": 1,
+          "Flyura": 1,
+          "Oskon": 1,
+          "Talay": 1,
+          "Ryskan": 1,
+          "Toktobaeva": 1,
+          "nurkulov": 1,
+          "anarbu": 1,
+          "duyshenbaev": 1,
+          "Baktiyar": 1,
+          "Begmatova": 1,
+          "Arthur": 1,
+          "Tynybek": 1,
+          "Kanatbek": 1,
+          "Inabat": 1,
+          "keldibekova": 1,
+          "Bakhtiyar": 1,
+          "Adyl": 1,
+          "Danakan": 1,
+          "Shahlo": 1,
+          "Maripa": 1,
+          "yrysbaeva": 1,
+          "Nurzina": 1,
+          "Anarkul": 1,
+          "Khasimat": 1,
+          "Baktykan": 1,
+          "Nurgazy": 1
         }
       ],
       [
@@ -3343,22 +3164,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Nationality.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Nationality.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Nationality",
     [
@@ -3592,22 +3397,6 @@
     [
       "20608",
       20608.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Phone.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Phone.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4219,22 +4008,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Address.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Address.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Address",
     [
@@ -4265,11 +4038,11 @@
       [
         "fewestValues",
         [
-          "Abdullayev 68",
-          "izakeeva 13-7",
-          "Orozbekova 29",
-          "togolbaev 13",
-          "kartanbaeva 90"
+          "5-16-58",
+          "Footbalnaya 2-13",
+          "Irmatov 3",
+          "Muratalieva 3",
+          "Whites 46"
         ]
       ],
       [
@@ -4296,829 +4069,829 @@
         "plotValues",
         {
           "Por no #": 16,
-          "cholponbaya no #": 15,
-          "kara shoro no #": 15,
-          "Toktogul no #": 15,
           "Jany Turmush no #": 15,
+          "Toktogul no #": 15,
           "Bekzhar no #": 15,
-          "Kara-Bak no #": 14,
+          "kara shoro no #": 15,
+          "cholponbaya no #": 15,
           "Chon Talaa no #": 14,
+          "Kara-Bak no #": 14,
           "Kadyrov no #": 13,
           "Kyshtak no #": 11,
-          "Jashtary no #": 6,
           "Kara Kochkor no #": 6,
-          "Supataev": 4,
-          "misirov no #": 4,
+          "Jashtary no #": 6,
           "toloykan no #": 4,
+          "misirov no #": 4,
+          "Supataev": 4,
           "Musayev": 3,
-          "gulstan": 3,
           "Orozbekova no #": 3,
-          "Samieva 48b-6": 2,
-          "dolotaaly": 2,
-          "Samieva 48b-3": 2,
-          "Suban": 2,
+          "gulstan": 3,
           "Kenesh": 2,
-          "Pushkin 46": 2,
-          "Pushkin": 2,
-          "Karabash": 2,
           "Soviet 189": 2,
+          "Pushkin": 2,
           "Orozbekova 33": 2,
-          "Eraliev 6": 2,
-          "zhenish no #": 2,
-          "Supataev 60": 2,
-          "kurpuskaya 37": 2,
           "chynaliev": 2,
-          "Lenin 17": 2,
           "Maldybaev 30": 2,
+          "Pushkin 46": 2,
+          "kurpuskaya 37": 2,
           "Footbalnaya 2-10": 2,
-          "Toktonalieva 40-30": 1,
-          "kurmalaya 15": 1,
-          "Valdaiskaya 15": 1,
-          "Krasnoflotskaya 5a-35": 1,
-          "Tynystanov 6-10": 1,
-          "Muratalieva 3": 1,
-          "Turdalieva 170": 1,
-          "uchterekskaya 63-2": 1,
-          "Pushkin 52": 1,
-          "mavlyanova24": 1,
-          "Almatinskaya 274": 1,
-          "Chui 33-47": 1,
-          "Tynystanov 6-20": 1,
-          "Whites 68": 1,
-          "Raimbekova 11": 1,
-          "sozhieva92": 1,
-          "turdukulova 58": 1,
-          "Isanova 222": 1,
-          "Tokmok 1": 1,
-          "kurpuskaya 19": 1,
-          "Pushkin 58": 1,
-          "Razhapov 28": 1,
-          "azymkanov 132": 1,
-          "kudaykulov 19": 1,
-          "Chui 34-38": 1,
-          "Bokonbaeva 3": 1,
-          "kudaykulov3": 1,
-          "Chui 33-71": 1,
-          "Toktonalieva 40-23": 1,
-          "Togolok Moldo 69 \\ 19": 1,
-          "arzykulova 8": 1,
-          "Zhapar 3": 1,
-          "Toktonalieva 38-25": 1,
-          "Akira 9": 1,
-          "Supataev 99": 1,
-          "er Toshtuk 36": 1,
-          "Frunze 49": 1,
-          "Togolok Moldo 70 \\ 3": 1,
-          "Chui 30-46": 1,
-          "Anar 46": 1,
-          "Osmonova 49": 1,
-          "Stalbek 32": 1,
-          "burchieva 95": 1,
-          "Kirov 17": 1,
-          "Soviet 187": 1,
-          "Centralnaya 89": 1,
-          "sozhieva 98": 1,
-          "Samieva 48 b-21": 1,
-          "Toktonalieva 38-23": 1,
-          "Lenin 18": 1,
-          "Maldybaev 32-28": 1,
-          "Whites 62": 1,
-          "Abdullayev 114": 1,
-          "Bakay Ata 61": 1,
-          "kartanbaeva 38": 1,
-          "Centralnaya 2": 1,
-          "Musayev 24": 1,
-          "Balvan 17": 1,
-          "Kirov 1": 1,
-          "5-16-64": 1,
-          "Pushkin 2": 1,
-          "Togolok Moldo 69 \\ 45": 1,
-          "pushkin26": 1,
-          "osepinka 28": 1,
-          "kurmalaya 11": 1,
-          "izakeeva 15-4": 1,
-          "Kyshtak 1": 1,
-          "Soviet 193": 1,
-          "akkozieva 7": 1,
-          "Lenin 3": 1,
-          "koychubaev 59": 1,
-          "sasykbaev 13": 1,
-          "Shopokova 2": 1,
-          "ostashovskaya 12": 1,
-          "Manas 174": 1,
-          "uchtereksaya 69-3": 1,
-          "Almatinskaya 370": 1,
-          "altymysheva 6": 1,
-          "izakeeva 6-5": 1,
-          "Rashap 23": 1,
-          "Gulstan no #": 1,
-          "gulstan 23": 1,
-          "turdukulova 57": 1,
-          "togolbaeva 31": 1,
-          "Pushkin 30": 1,
-          "Bokonbaeva 4": 1,
-          "azimkanov 62": 1,
-          "eshmambet 132": 1,
-          "Footbalnaya 4-22": 1,
-          "6-9-39": 1,
-          "azylkanov": 1,
-          "Voskhod 3-50": 1,
-          "Sagal 44": 1,
-          "brchieva 107": 1,
-          "Pushkin 7": 1,
-          "Voskhod 3-7": 1,
-          "Sagal 36": 1,
-          "Pishpek 62": 1,
-          "arzykulova": 1,
-          "Soviet 99": 1,
-          "Uzepova 9": 1,
-          "izakeeva 14-5": 1,
-          "39 Suban": 1,
-          "Whites 54": 1,
-          "Balvan 29": 1,
-          "Voskhod 3-1": 1,
-          "sovetsskaya 207": 1,
-          "Pushkin 34": 1,
-          "Stalbek 42": 1,
-          "Toktogul 52": 1,
-          "Krasnoflotskaya 5-5": 1,
-          "Kyshtak 48": 1,
-          "Mira 18": 1,
-          "Tynystanov 4a-1": 1,
-          "Voskhod 6-17": 1,
-          "Centralnaya 6": 1,
-          "chynaliev 37": 1,
-          "Manas 138": 1,
-          "on archa 22": 1,
-          "Lugovaya 12": 1,
-          "Sadovaya 22": 1,
-          "Anar 76": 1,
-          "Footbalnaya 4-11": 1,
-          "Maldybaev 32-46": 1,
-          "arzykulova 72": 1,
-          "er tailak 39": 1,
-          "Abdullayev 84": 1,
-          "sozhieva 95": 1,
-          "Togolok Moldo 69 \\ 23": 1,
-          "Bakay Ata 43": 1,
-          "6-9-31": 1,
-          "Petrov 43-1": 1,
-          "Abdullayev 120": 1,
-          "gulstan 5": 1,
-          "Samieva 48b-27": 1,
-          "Toktonalieva 42-27": 1,
-          "Kazakova, 97": 1,
-          "Myrzalieva 40": 1,
-          "burchieva 89": 1,
-          "Stalbek 60": 1,
-          "Bakay Ata 21": 1,
-          "izakeeva 13-5": 1,
-          "Sadovaya 8": 1,
-          "Krasnoflotskaya 5-10": 1,
-          "Tynystanov 4a-16": 1,
-          "Kazakova, 51": 1,
-          "kurpuskaya 9": 1,
-          "shaymat 28": 1,
-          "Samieva 48b-30": 1,
-          "novoi21": 1,
-          "Raimbekov 21": 1,
+          "Samieva 48b-6": 2,
+          "Samieva 48b-3": 2,
+          "zhenish no #": 2,
+          "Lenin 17": 2,
+          "Supataev 60": 2,
+          "Suban": 2,
+          "Eraliev 6": 2,
+          "dolotaaly": 2,
+          "Karabash": 2,
+          "arzykulova 71": 1,
+          "on archa 10": 1,
           "Suban 37a": 1,
-          "Samieva 48b-24": 1,
-          "Orozbekova 34": 1,
-          "Togolok Moldo 69": 1,
-          "azymhanov 110": 1,
-          "Chui 32-76": 1,
-          "Maldybaev 32-26": 1,
-          "Irmatov 2": 1,
-          "Musayev 10": 1,
-          "Samieva 48b-33": 1,
-          "Krasnoflotskaya 5a-44": 1,
-          "Kara kochkor 194": 1,
-          "Isanova 230": 1,
-          "Supataev 57": 1,
-          "Lenin 33": 1,
-          "2mkr 18-61": 1,
-          "Soviet 93": 1,
-          "azimkanov 78": 1,
-          "arzykulova 94": 1,
-          "Stalbek 18": 1,
-          "Chui 31-57": 1,
-          "Sadovaya 9a": 1,
-          "Zaitov 19": 1,
-          "Toktonalieva 50-40": 1,
-          "Alymbaeva 36": 1,
-          "Lugovaya 8": 1,
-          "Gagarina 12": 1,
-          "Voskhod 3-47": 1,
-          "orozbekova21": 1,
-          "6-9-11": 1,
-          "azymkanov 138": 1,
-          "mavlenova": 1,
-          "5-16-73": 1,
-          "Gagarina 23": 1,
-          "Alamedin 1 68-61": 1,
-          "Toktogul 15": 1,
-          "Abdullayev 138": 1,
-          "Alymbaeva 48": 1,
-          "Almatinskaya 380": 1,
-          "uzenova9": 1,
-          "Bayalinova 99": 1,
-          "Alamedin 1 70-11": 1,
-          "zhenish 19": 1,
-          "Abdullayev 56": 1,
-          "2mkr 18-4": 1,
-          "Soviet 87": 1,
-          "19 Suban": 1,
-          "Orozova 75": 1,
-          "Pushkin 64": 1,
-          "Orozbekova 24": 1,
-          "Footbalnaya 4-23": 1,
-          "Alamedin 1 81-12": 1,
-          "Pushkin 44": 1,
-          "Maak 15": 1,
-          "Voskhod 3-39": 1,
-          "dolotaaly 21": 1,
-          "turdukulova 64": 1,
-          "Togolok Moldo 69 \\ 48": 1,
-          "5-16-23": 1,
-          "Sadybakasova 85": 1,
-          "5-16-38": 1,
-          "isakeeva 14-8": 1,
-          "uzenova4": 1,
-          "Togolok Moldo 150": 1,
-          "Almatinskaya 392": 1,
-          "Maak 21a": 1,
-          "Tynystanov 4a-6": 1,
-          "soyuzbek": 1,
-          "Pushkin 22": 1,
-          "kartanbaeva 8": 1,
-          "Maldybaev 32-14": 1,
-          "Manas 166": 1,
-          "Soviet 111": 1,
-          "Lenin 97": 1,
-          "Isanova 206": 1,
-          "ishenaly 91": 1,
-          "Maak 1": 1,
-          "izekeeva 7-6": 1,
-          "45 Suban": 1,
-          "izakeeva 8-8": 1,
-          "6-9-41": 1,
-          "Eraliev 20-19": 1,
-          "Petrova 43-46": 1,
-          "Alymbaeva 54": 1,
-          "Isanova 216": 1,
-          "novoi13": 1,
-          "Gagarin 6": 1,
-          "uchterekskaya67-1": 1,
-          "Ermatov no #": 1,
-          "2mkr 12-53": 1,
-          "Pushkin 62": 1,
-          "Chui 35-61": 1,
-          "Muqimiy 8": 1,
-          "Ergeshov 2": 1,
-          "2 mkr 18-66": 1,
-          "Footbalnaya 2-32": 1,
-          "togolbaev 13": 1,
-          "Toktonalieva 50-17": 1,
-          "alamedin1 81-25": 1,
-          "Lenin 92": 1,
-          "kartanbaeva 44": 1,
-          "Bakay Ata 15": 1,
-          "Almatinskaya 286": 1,
-          "Alamedin 1 80-25": 1,
-          "Omurzakov 24": 1,
-          "Soviet 68": 1,
-          "dolotaaly 27": 1,
-          "Valdaiskaya": 1,
-          "Musayev 6": 1,
-          "Toktonalieva 50-27": 1,
-          "Soviet 26": 1,
-          "Ibn Sina 74": 1,
-          "Supataev 64": 1,
-          "Toktonalieva 42-17": 1,
-          "Supataev 67": 1,
-          "Sagal": 1,
-          "Maak 13": 1,
-          "Pushkin 14": 1,
-          "Toktogul 1": 1,
-          "Orozbekova 36": 1,
-          "ishenaly 37": 1,
-          "Petrova 43-31": 1,
-          "Orozbekova 23": 1,
-          "Omurzakov 19": 1,
-          "Lugovaya 64": 1,
-          "Sadovaya 14": 1,
-          "Pushkin 79": 1,
-          "Kasimov": 1,
-          "Stalbek 56": 1,
-          "2 mkr18a-4": 1,
-          "sozhieva 83": 1,
-          "Bayalinova 83": 1,
-          "2mkr 18-79": 1,
-          "kulchoro 57": 1,
-          "6-9-64": 1,
-          "Voskhod 3-23": 1,
-          "kudaykulov25": 1,
-          "2mkr 18-30": 1,
-          "Ibn Sina 48": 1,
-          "sozhieva 84": 1,
-          "kulchoro 77": 1,
-          "Alamedin 1 81-3": 1,
-          "Toktogul 22": 1,
-          "ishenaaly 61": 1,
-          "uchterekskaya 65-1": 1,
-          "mavlyanova54": 1,
-          "kudaykulov71-26": 1,
-          "Samak 135": 1,
-          "25 Suban": 1,
-          "Eraliev 11": 1,
-          "kulchoro 71": 1,
-          "Alymbaeva 82": 1,
-          "arzykulova 61": 1,
-          "Balvan 11": 1,
-          "turdukulova 71": 1,
-          "Cheeji no #": 1,
-          "Ostashkovskaya 21": 1,
-          "Krasnoflotskaya 5a-30": 1,
-          "Gagarin 7": 1,
-          "Toktonalieva 42-11": 1,
-          "Alamedin 1 68-6": 1,
-          "turdukulova 56": 1,
-          "Lenin 39": 1,
-          "6-9-61": 1,
-          "Eraliev 4": 1,
-          "Stalbek 66": 1,
-          "supataev72": 1,
-          "shaymat 11": 1,
-          "Amirov 7": 1,
-          "Ibn Sina 22": 1,
-          "Krasnoflotskaya 5a-55": 1,
-          "kuyukova 8-11": 1,
-          "West 3": 1,
-          "eshmambet 122": 1,
-          "Orozova 35": 1,
-          "gulstan 7": 1,
-          "Kara kochkor 20": 1,
-          "Shopokova 16": 1,
-          "Samak 155": 1,
-          "Ibn Sina 42": 1,
-          "Almatinskaya 268a": 1,
-          "kulchoro 68": 1,
-          "Petrova 43-41": 1,
-          "izakeeva 11-3": 1,
-          "Isanova 226": 1,
-          "Raimbekov 15": 1,
-          "ostashovskaya 13-2": 1,
-          "Bakay Ata 11": 1,
-          "Toktonalieva 50-44": 1,
-          "Krasnoflotskaya 52": 1,
-          "Turdukulov 64": 1,
-          "Footbalnaya": 1,
-          "Pushkin 12": 1,
-          "Centralnaya 13": 1,
-          "Kirov 11": 1,
-          "arzykulova 7": 1,
-          "Petrov 43-4": 1,
-          "29 Suban": 1,
-          "turdukulova 53": 1,
-          "Kenzhebaev 16": 1,
-          "Chui 34-56": 1,
-          "Alymbaeva 76": 1,
-          "azimkanov 66": 1,
-          "Krasnoflotskaya 5a-49": 1,
-          "5-16-56": 1,
-          "Bakay Ata 49": 1,
-          "Toktonalieva 38-38": 1,
-          "Almatinskaya 398": 1,
-          "Togolok Moldo 69 \\ 18": 1,
-          "Komsomolskaya 2a": 1,
-          "Stalbek 38": 1,
-          "Yuldashev 2": 1,
-          "Bayalinova 107": 1,
-          "Manas 132": 1,
-          "Orozbekova 30": 1,
-          "Sagal 32": 1,
-          "akkozieva 13": 1,
-          "ishenaaly 74": 1,
-          "Almatinskaya 332": 1,
-          "Toktonalieva 40-14": 1,
-          "Kenzhebaev 14": 1,
-          "sasykbaev 33": 1,
-          "Mira 6": 1,
-          "Orozbekova 28": 1,
-          "Zaitov 7": 1,
-          "Maldybaev 23": 1,
-          "dolotaaly 23": 1,
-          "kartanbaeva 25a": 1,
-          "Abdullayev 102": 1,
-          "Lenin 81": 1,
-          "Kazakova, 57": 1,
-          "Orozbekova 37": 1,
-          "5-16-41": 1,
-          "kartanbaeva 56": 1,
-          "Maldybaev 41": 1,
-          "6-9-49": 1,
-          "Chui 30-52": 1,
-          "uchterekskaya 67-3a": 1,
-          "valdiyskaya 45-1": 1,
-          "Abdullaevna 74": 1,
-          "azymkanov 58": 1,
-          "Mira 12": 1,
-          "Maldybaev 52": 1,
-          "Kara kochkor 202": 1,
-          "Supataev 53": 1,
-          "Sydyk": 1,
-          "Nekrasov 161": 1,
-          "abdullaeva90": 1,
-          "Maldybaev 35": 1,
-          "Osmonova 33": 1,
-          "Krasnoflotskaya 54-15": 1,
-          "Alamedin 1 64-27": 1,
-          "altymysheva 5": 1,
-          "ostrovskaya200": 1,
-          "shaymat 8": 1,
-          "altymysheva 24": 1,
-          "Kasimov 19": 1,
-          "Musayev 36": 1,
-          "Alymbaeva 66": 1,
-          "azymhanov 10": 1,
-          "Petrova 43-39": 1,
-          "Bakay Ata 35": 1,
-          "Petrov 43-6": 1,
-          "Ashirova 1": 1,
-          "altymysheva10": 1,
-          "uchtereksky 69 \\ 1": 1,
-          "novoi17": 1,
-          "kanchoro 16": 1,
-          "Alymbaeva 42": 1,
-          "azymkanov 114": 1,
-          "Medet 7": 1,
-          "On archa 4": 1,
-          "Lenin 29": 1,
-          "Sadovaya 2": 1,
-          "dolotaaly 13": 1,
-          "Bokonbaeva 9": 1,
-          "2 mkr 18-9": 1,
-          "Soviet 32": 1,
-          "Lenin 14": 1,
-          "Tynystanov 4a-51": 1,
-          "altymysheva16": 1,
-          "hamidhazhy 9": 1,
-          "ishenaly 78": 1,
-          "Stalbek 26": 1,
+          "Sadovaya 4a": 1,
+          "Abdullayev 132": 1,
           "Togolok Moldo 69 \\ 35": 1,
-          "Oktyabrskaya 18": 1,
-          "Ibn Sina 28": 1,
-          "Toktonalieva 40-6": 1,
-          "Pushkin 26": 1,
-          "Chui 32-54": 1,
-          "Orozbekova 32": 1,
-          "ostashovskaya 38": 1,
-          "Bokonbaeva 21": 1,
-          "chuy32-74": 1,
-          "Belekov 38": 1,
-          "Togolok Moldo 69 \\ 42": 1,
-          "kulchoro 47": 1,
-          "Abdullayev 126": 1,
-          "knzhebaev 5": 1,
-          "Petrova 43-34": 1,
-          "uchtereksky 75 \\ 2": 1,
-          "Maak 10": 1,
-          "ermamat 12": 1,
-          "sasykbaev13a": 1,
-          "6-9-74": 1,
-          "Pushkin 10": 1,
-          "Raimbekov 5": 1,
-          "Pushkin 6": 1,
-          "6-9-1": 1,
-          "Voskhod 3-4": 1,
-          "Tynystanov 6-22": 1,
-          "Gagarina 18": 1,
-          "Orozbekova 20": 1,
-          "Stalbek 20": 1,
-          "Maak": 1,
-          "Orozbekova 26": 1,
-          "Supataev 72": 1,
-          "Irmatov 34": 1,
-          "Muratalieva 6": 1,
-          "Ibn Sina 54": 1,
-          "Balvan 5": 1,
-          "uchterekskaya 59-4": 1,
-          "kurpiskaya 7": 1,
-          "sasykbaev 19": 1,
-          "Whites 46": 1,
-          "Petrova 43-19": 1,
-          "Osmonova 61a": 1,
-          "2mkr 18-35": 1,
-          "kartanbaeva 47a": 1,
-          "5-16-58": 1,
-          "on archa 16": 1,
-          "Soviet 14": 1,
+          "Pushkin 7": 1,
+          "altymysheva 24": 1,
+          "19 Suban": 1,
+          "Kasimov 2": 1,
           "lighthouse 5": 1,
-          "Medet 13": 1,
-          "Krasnoflotskaya 5a-21": 1,
-          "azimkanova 1": 1,
-          "erimov14": 1,
-          "Footbalnaya 4-8": 1,
-          "5-16-78": 1,
-          "orozbekova9 \\ 3": 1,
-          "Centralnaya 83": 1,
-          "6-9-34": 1,
-          "Gulistan 17": 1,
-          "Almatinskaya 404": 1,
-          "Maldybaev 14": 1,
-          "Ergeshov 7": 1,
-          "Maldybaev 18": 1,
-          "Alamedin 1 80-22": 1,
-          "Krasnoflotskaya 5a-4": 1,
-          "kartanbaeva 20": 1,
-          "Yuzhnaya 10": 1,
-          "Yuldasheva no #": 1,
-          "shaymat 22": 1,
-          "Balvan 23": 1,
-          "Medet": 1,
+          "Voskhod 3-4": 1,
+          "Alymbaeva 54": 1,
+          "Krasnoflotskaya 52": 1,
           "kurpuskaya 30": 1,
-          "kulchoro 33": 1,
-          "Komsomolskaya 9": 1,
+          "Lenin 107": 1,
+          "Pushkin 71": 1,
+          "Ibn Sina 48": 1,
+          "Samieva 48b-57": 1,
+          "5-16-38": 1,
+          "Tynystanov 4a-6": 1,
+          "on archa 16": 1,
+          "Samieva 48b-12": 1,
+          "Pushkin 22": 1,
+          "kartanbaeva 11a": 1,
+          "2mkr 18-59": 1,
+          "Jeti Oguz 29a": 1,
+          "Kirov 11": 1,
+          "Sadovaya 15": 1,
+          "Supataev 64": 1,
+          "Petrova 45-16": 1,
+          "Stalbek 66": 1,
+          "ibn sina65": 1,
+          "Gagarina 12": 1,
+          "Frunze 49": 1,
+          "Maldybaev 20": 1,
+          "uchterekskaya67-1": 1,
+          "Toktonalieva 50-27": 1,
+          "Soviet 32": 1,
+          "ostashovskaya 13-2": 1,
+          "gulstan 5": 1,
+          "Soviet 87": 1,
+          "uchterekskaya 63-2": 1,
+          "uzenova4": 1,
+          "kudaykulov": 1,
+          "Pushkin 44": 1,
+          "azylkanov": 1,
+          "Alymbaeva 60": 1,
+          "Musayev 36": 1,
+          "izakeeva 6-5": 1,
+          "Toktonalieva 42-27": 1,
+          "izakeeva 13-7": 1,
+          "Kirov 5": 1,
+          "Samieva 48b-30": 1,
+          "Soviet 93": 1,
+          "Bakay Ata 21": 1,
+          "Muqimiy 8": 1,
+          "izakeeva 11-3": 1,
+          "Maldybaev 34": 1,
+          "Maldybaev 32-46": 1,
+          "Mira 12": 1,
+          "Chui 34-38": 1,
+          "Toktonalieva 42-11": 1,
+          "sasykbaev 19": 1,
+          "Ishimbai 140": 1,
+          "hamidhazhy3": 1,
+          "Ermatov no #": 1,
+          "Orozbekova 9": 1,
+          "Anar 52": 1,
+          "chynaliev 37": 1,
+          "Alamedin 1 68-61": 1,
+          "Isanova 216": 1,
+          "Osmonova 65": 1,
           "Petrova 43-11": 1,
           "Maldybaev 36": 1,
-          "dolotaaly 43": 1,
-          "Petrova 45-16": 1,
-          "Anar 52": 1,
-          "Omurzakov 18": 1,
-          "attokurova 4": 1,
-          "Supataev 65": 1,
-          "Alamedin 1 77-9": 1,
-          "Kenesh 18": 1,
-          "Stalbek 48": 1,
-          "Murataliev 9": 1,
-          "Irmatov 3": 1,
-          "Almatinskaya 262": 1,
-          "5-16-61-1": 1,
-          "Orozbekova 21a": 1,
-          "mavlyanova34": 1,
-          "sozhieva 89": 1,
-          "Pushkin 74": 1,
-          "Sadovaya 15": 1,
-          "Abdullayev 132": 1,
-          "Toktonalieva 42-13": 1,
-          "Muratalieva 21": 1,
-          "kartanbaeva 17": 1,
-          "Panfilov 45": 1,
-          "orozbaeva4": 1,
-          "Kyshtak 67": 1,
-          "attokurov126": 1,
-          "Kazakova, 65": 1,
-          "Toktogul 18": 1,
-          "Voskhod 3-36": 1,
-          "Bakay Ata 29": 1,
-          "Chui 32-62": 1,
-          "Samieva 48b-18": 1,
-          "arzykulova 71": 1,
-          "Samieva 48b-9": 1,
-          "Belekov 26": 1,
-          "Kenesh 12": 1,
-          "izakeeva 8-2": 1,
-          "Togolok Moldo 69 \\ 10": 1,
-          "Pishpek 36": 1,
-          "uchtereksky 71 \\ 4": 1,
-          "Togolok Moldo 69 \\ 1": 1,
-          "Togolok Moldo 69 \\ 14": 1,
-          "Maak 2": 1,
-          "Lenin 59": 1,
-          "Pishpek 48": 1,
-          "Kadyrov, 11": 1,
-          "5-16-94": 1,
-          "sozhieva 106": 1,
-          "Abdullayev 50": 1,
-          "novoi11": 1,
-          "5-16-20": 1,
-          "Turdukulov 61": 1,
-          "Petrova 43-24": 1,
-          "izakeeva 10": 1,
-          "5-16-44": 1,
-          "arzykulova 76": 1,
-          "kuyukov 138-22": 1,
-          "shaymat 17": 1,
-          "Chui 30-42": 1,
-          "kulchoro 29": 1,
-          "uzenova 5": 1,
-          "Samieva 48b-45": 1,
-          "Kasimov 2": 1,
-          "Sydyk 8": 1,
-          "Eraliev 9": 1,
-          "kartanbaeva 70": 1,
-          "Krasnoflotskaya 5a-64": 1,
-          "Isanova 210": 1,
-          "4 Suban": 1,
-          "5-16-52": 1,
-          "Frunze 60 \\ 7": 1,
-          "on archa 30": 1,
-          "2 mkr 18-23": 1,
-          "Lenina 10": 1,
-          "gulstan 26": 1,
-          "Belekov 20": 1,
-          "15 Suban": 1,
-          "izakeeva 14-3": 1,
-          "Sagal 28": 1,
-          "Amirov 22": 1,
-          "Alamedin 1 70-3": 1,
-          "Maldybaev 32-20": 1,
-          "Tynystanov 6-7": 1,
-          "Lenin 151": 1,
-          "ishenaaly 67": 1,
-          "Lenin 107": 1,
-          "Pushkin 98": 1,
-          "Krasnoflotskaya 5a-27": 1,
-          "Orozbekova 9": 1,
-          "Jeti Oguz 29a": 1,
-          "Sagal 20": 1,
-          "Bakay Ata 53": 1,
-          "azimkan 50": 1,
-          "Petrova 43-44": 1,
-          "Chuguevsky 42": 1,
-          "Maldybaev 34": 1,
-          "Pushkin 86": 1,
-          "Kenzhebaev 10": 1,
-          "Pishpek 26": 1,
-          "Alamedin 1 70-14": 1,
-          "Maldybaev 24": 1,
-          "6-9-54": 1,
-          "Krasnoflotskaya 5a-24": 1,
-          "ishenaly 72": 1,
-          "Pushkin 24": 1,
-          "Komsomol 5": 1,
-          "Footbalnaya 2-13": 1,
-          "ibn sina65": 1,
-          "izaekeeva 10-3": 1,
-          "Kara kochkor 46": 1,
-          "tynystanova4a-58": 1,
-          "Footbalnaya 2": 1,
-          "Stalbek 12": 1,
-          "Supataev 70": 1,
-          "Kenesh 30": 1,
-          "Samieva 48b-57": 1,
-          "Lenin 93": 1,
-          "Footbalnaya 4-15": 1,
-          "Stalbek 24": 1,
-          "Lenin 16": 1,
-          "Centralnaya 7": 1,
-          "Manas 160": 1,
-          "Irmatov 27": 1,
-          "Maldybaev 32-49": 1,
-          "Soviet 46": 1,
-          "Kirov 21a": 1,
-          "Soviet 8": 1,
-          "Zaitov 15": 1,
-          "novoi27": 1,
-          "kudaykulov": 1,
-          "kulchoro 43": 1,
-          "2mkr 12-17": 1,
-          "Kyshtak 55": 1,
-          "Almatinskaya 376": 1,
-          "Alamedin 1 72-6": 1,
-          "dolotaaly 41": 1,
-          "palvan 35": 1,
-          "Valdaiskaya 22": 1,
-          "kurpuskaya 23": 1,
-          "kartanbaeva 320": 1,
-          "izekeeva 9-5": 1,
-          "orozbekova14": 1,
-          "Pushkin 18": 1,
-          "Togolok Moldo 69 \\ 32": 1,
-          "Pushkin 71": 1,
-          "dolotaaly 33": 1,
-          "on archa 10": 1,
+          "azimkanov 66": 1,
+          "Komsomolskaya 9": 1,
+          "Komsomolskaya 2a": 1,
           "Osipenko 14a": 1,
-          "Sadovaya 4a": 1,
-          "kartanbaeva 33": 1,
-          "Sadovaya 28a": 1,
-          "Muratalieva 15": 1,
-          "Tynystanov 4a-38": 1,
-          "5-16-31": 1,
-          "Alamedin 1 73-39": 1,
-          "shaymat 18": 1,
-          "dolotaaly 29": 1,
-          "2mkr 18a-24": 1,
-          "Stalbek 50": 1,
-          "Irmatov 40": 1,
-          "ostashovskaya 32": 1,
-          "Abdymomunova 25": 1,
-          "Orozbekova 6": 1,
-          "Sagal 47": 1,
-          "dolotaaly 9a": 1,
-          "Frunze 60 \\ 4": 1,
-          "chynaliev 31": 1,
-          "6-9-79": 1,
-          "2mkr 18-7": 1,
-          "Pushkin 13": 1,
-          "azymkanov80": 1,
-          "Belekov 32": 1,
-          "Petrova 45-13": 1,
-          "Omurzakov 27": 1,
-          "Petrova 43-16": 1,
-          "Lenin 104": 1,
-          "Manas 154": 1,
-          "Voskhod 3-19": 1,
-          "6-9-72": 1,
-          "Rashap 35": 1,
-          "professor 55": 1,
-          "azymkanov 102": 1,
-          "Almatinskaya 320": 1,
-          "hamidhazhy3": 1,
-          "arzykulova 80": 1,
-          "Frunze 58 \\ 4": 1,
-          "Medet 3": 1,
-          "er tailak 53": 1,
-          "Turdukulov 27": 1,
-          "azymhanov 82": 1,
-          "Orozbekova 27": 1,
-          "Orozbekova 1": 1,
-          "Soviet 105": 1,
-          "Chui 32-68": 1,
-          "Razhapov 22": 1,
-          "Chui 31-73": 1,
-          "Amirov 21": 1,
-          "Maldybaev 20": 1,
-          "Almatinskaya 364": 1,
-          "ishenaaly 41": 1,
-          "dolotaaly 3": 1,
-          "Toktonalieva 42-4": 1,
-          "2mkr 18-47": 1,
-          "6-9-19": 1,
-          "kartanbaeva 50": 1,
-          "Footbalnaya 4-1": 1,
-          "kuyukova 221-141": 1,
-          "World 15": 1,
+          "Supataev 70": 1,
+          "Voskhod 3-7": 1,
+          "uchtereksky 71 \\ 4": 1,
+          "azymhanov 110": 1,
+          "Toktogul 15": 1,
+          "Stalbek 20": 1,
+          "Togolok Moldo 69 \\ 19": 1,
+          "kurmalaya 15": 1,
+          "kulchoro 68": 1,
+          "Centralnaya 7": 1,
+          "Lenin 81": 1,
+          "Toktonalieva 38-38": 1,
+          "er Toshtuk 36": 1,
           "Lenin 47": 1,
-          "Jutai 9b": 1,
-          "Abdullayev 108": 1,
-          "mavlyanova44": 1,
-          "arzykulova 89": 1,
-          "6-9-69": 1,
-          "Ishimbai 140": 1,
-          "Samieva 48b-12": 1,
-          "Turdalieva 188": 1,
-          "5-16-41\ufffd": 1,
-          "Muratalieva 20": 1,
-          "Turdukulov 1": 1,
-          "6-9-59": 1,
-          "Osmonova 65": 1,
-          "Alamedin 1 68-9": 1,
-          "Alamedin 1 74-46": 1,
-          "5-16-43": 1,
-          "Abdullayev 62": 1,
-          "Voskhod 3-17": 1,
-          "Muratalieva 26": 1,
-          "Alymbaeva 60": 1,
-          "6-9-52": 1,
-          "Voskhod 3-26": 1,
-          "Krupskaya no #": 1,
-          "Samieva 48b-36": 1,
-          "Almatinskaya 338": 1,
-          "Kadyrov, 39": 1,
-          "Ibn Sina 16": 1,
-          "Amirov 29": 1,
-          "Turdalieva 182": 1,
-          "Footbalnaya 2-1": 1,
-          "Bayalinova 89": 1,
-          "Almatinskaya 386": 1,
-          "Togolok Moldo 69 \\ 7": 1,
-          "2mkr 18-59": 1,
-          "kanchoro 4": 1,
-          "izakeeva 12-5": 1,
-          "Rashap 39": 1,
-          "Jyrgalan 2": 1,
-          "Orozbekova 21": 1,
+          "Pushkin 30": 1,
+          "izekeeva 9-5": 1,
+          "Orozbekova 36": 1,
+          "ostrovskaya200": 1,
           "orbekova17": 1,
-          "Irmatov": 1,
-          "osepinko 32": 1,
-          "altymysheva 17": 1,
-          "Krasnoflotskaya 5a-38": 1,
-          "kartanbaeva 40": 1,
-          "Footbalnaya 2-19": 1,
-          "Temirova 2": 1,
+          "izaekeeva 10-3": 1,
+          "azymkanov80": 1,
+          "sasykbaev13a": 1,
+          "dolotaaly 43": 1,
+          "Lugovaya 12": 1,
+          "togolbaev 13": 1,
+          "Voskhod 3-26": 1,
+          "kulchoro 33": 1,
+          "on archa 22": 1,
+          "Krasnoflotskaya 5-10": 1,
+          "Manas 166": 1,
+          "Kenesh 30": 1,
+          "professor 55": 1,
+          "Muratalieva 15": 1,
+          "Pishpek 62": 1,
+          "Sydyk": 1,
+          "arzykulova 61": 1,
+          "Shopokova 16": 1,
+          "Maldybaev 52": 1,
+          "ishenaly 78": 1,
+          "Amirov 22": 1,
           "Sadovaya 15a": 1,
-          "kulchoro 39": 1,
-          "Anar 68": 1,
-          "Muqimiy 14": 1,
-          "Alymbaeva 70": 1,
+          "azymkanov 114": 1,
           "Abdullayev 96": 1,
-          "Kirov 5": 1,
-          "kartanbaeva 90": 1,
+          "kanchoro 16": 1,
+          "Myrzalieva 40": 1,
+          "Almatinskaya 286": 1,
+          "Footbalnaya 2": 1,
+          "Kara kochkor 20": 1,
+          "Orozbekova 1": 1,
+          "Gulistan 17": 1,
+          "novoi11": 1,
+          "5-16-94": 1,
+          "Chui 30-46": 1,
+          "Isanova 222": 1,
+          "Whites 54": 1,
+          "2 mkr 18-9": 1,
+          "osepinka 28": 1,
+          "Omurzakov 18": 1,
+          "Manas 138": 1,
+          "Musayev 10": 1,
+          "Sadovaya 2": 1,
+          "Pushkin 6": 1,
+          "Toktonalieva 50-40": 1,
+          "ermamat 12": 1,
+          "Lenin 59": 1,
+          "Balvan 5": 1,
+          "Pushkin 64": 1,
+          "Pushkin 18": 1,
+          "kartanbaeva 33": 1,
+          "Kasimov 19": 1,
+          "Kazakova, 51": 1,
+          "Almatinskaya 370": 1,
+          "Panfilov 45": 1,
+          "dolotaaly 13": 1,
+          "Bayalinova 99": 1,
+          "novoi17": 1,
+          "Shopokova 2": 1,
+          "Alamedin 1 64-27": 1,
+          "altymysheva 17": 1,
+          "Togolok Moldo 70 \\ 3": 1,
+          "orozbekova14": 1,
+          "Orozbekova 28": 1,
+          "kartanbaeva 25a": 1,
+          "shaymat 18": 1,
+          "Alamedin 1 70-14": 1,
+          "Frunze 60 \\ 7": 1,
+          "Omurzakov 19": 1,
+          "6-9-41": 1,
+          "29 Suban": 1,
+          "Kenesh 12": 1,
+          "Chui 32-54": 1,
+          "kartanbaeva 50": 1,
+          "Stalbek 56": 1,
+          "Lenin 151": 1,
+          "turdukulova 57": 1,
+          "Murataliev 9": 1,
+          "Togolok Moldo 69 \\ 23": 1,
+          "palvan 35": 1,
+          "Petrov 43-1": 1,
+          "Kenesh 18": 1,
+          "Kirov 17": 1,
+          "kuyukov 138-22": 1,
+          "Medet": 1,
+          "Belekov 26": 1,
+          "Chui 33-71": 1,
+          "Footbalnaya 4-8": 1,
+          "Alymbaeva 70": 1,
+          "kartanbaeva 20": 1,
+          "kartanbaeva 38": 1,
           "Chui 30-70": 1,
-          "izakeeva 13-7": 1,
-          "kartanbaeva 11a": 1,
-          "togolbaev 1": 1,
-          "Togolok Moldo 70 \\ 12": 1,
-          "Medet 10": 1,
-          "Sadovaya 17": 1,
-          "Maak 21": 1,
-          "Bokonbaeva 15": 1,
-          "Kara kochkor 210": 1,
-          "Orozbekova 29": 1,
+          "Lenin 29": 1,
+          "Footbalnaya 4-22": 1,
+          "kanchoro 4": 1,
+          "Bakay Ata 29": 1,
+          "orozbekova21": 1,
+          "Whites 68": 1,
+          "Isanova 210": 1,
+          "Muratalieva 20": 1,
+          "6-9-31": 1,
+          "Kara kochkor 202": 1,
+          "Alamedin 1 81-3": 1,
+          "Irmatov 2": 1,
+          "Muratalieva 6": 1,
+          "Chui 32-76": 1,
+          "Maldybaev 32-26": 1,
+          "turdukulova 56": 1,
+          "Ibn Sina 54": 1,
+          "mavlenova": 1,
+          "burchieva 89": 1,
+          "izakeeva 10": 1,
+          "5-16-64": 1,
+          "Maldybaev 32-49": 1,
+          "Isanova 230": 1,
+          "Osmonova 49": 1,
+          "Supataev 67": 1,
+          "Lenin 92": 1,
+          "Valdaiskaya 22": 1,
+          "Maak 21a": 1,
+          "Rashap 23": 1,
+          "5-16-31": 1,
+          "Turdalieva 182": 1,
+          "Toktonalieva 50-44": 1,
+          "Abdullayev 62": 1,
+          "uchterekskaya 65-1": 1,
+          "dolotaaly 9a": 1,
+          "azymkanov 138": 1,
+          "ostashovskaya 38": 1,
+          "Pushkin 52": 1,
+          "Turdukulov 1": 1,
+          "ostashovskaya 32": 1,
+          "2 mkr18a-4": 1,
+          "Petrova 43-34": 1,
+          "Sadovaya 8": 1,
+          "Isanova 206": 1,
+          "Chui 30-52": 1,
+          "Petrov 43-4": 1,
+          "Bayalinova 107": 1,
+          "2 mkr 18-23": 1,
+          "gulstan 7": 1,
+          "Centralnaya 6": 1,
+          "Petrova 43-16": 1,
+          "Centralnaya 13": 1,
+          "Gagarina 18": 1,
+          "Almatinskaya 268a": 1,
+          "Samieva 48b-24": 1,
+          "Zaitov 15": 1,
+          "Footbalnaya": 1,
+          "Bakay Ata 61": 1,
+          "Ostashkovskaya 21": 1,
+          "Toktogul 22": 1,
+          "Abdymomunova 25": 1,
+          "Lugovaya 64": 1,
+          "Stalbek 38": 1,
+          "Turdukulov 64": 1,
+          "Abdullayev 120": 1,
+          "arzykulova 7": 1,
+          "Ergeshov 7": 1,
+          "isakeeva 14-8": 1,
+          "6-9-74": 1,
+          "5-16-58": 1,
+          "sozhieva 89": 1,
+          "Samieva 48b-9": 1,
+          "Akira 9": 1,
+          "Maak 1": 1,
+          "2mkr 18a-24": 1,
+          "orozbekova9 \\ 3": 1,
+          "Almatinskaya 376": 1,
+          "osepinko 32": 1,
+          "Gagarin 7": 1,
+          "Supataev 57": 1,
+          "alamedin1 81-25": 1,
+          "Sagal 32": 1,
+          "Petrova 43-44": 1,
+          "Medet 13": 1,
+          "kartanbaeva 44": 1,
+          "Valdaiskaya": 1,
+          "ishenaaly 61": 1,
+          "Alamedin 1 73-39": 1,
+          "Eraliev 9": 1,
+          "kulchoro 57": 1,
+          "Mira 6": 1,
+          "Pushkin 86": 1,
+          "Petrova 43-39": 1,
+          "Razhapov 28": 1,
+          "2mkr 12-53": 1,
           "Amirov 16": 1,
-          "Abdullayev 68": 1
+          "2mkr 18-30": 1,
+          "Ashirova 1": 1,
+          "chuy32-74": 1,
+          "eshmambet 122": 1,
+          "Kenzhebaev 16": 1,
+          "Footbalnaya 4-23": 1,
+          "pushkin26": 1,
+          "kuyukova 221-141": 1,
+          "Kyshtak 67": 1,
+          "dolotaaly 3": 1,
+          "Turdukulov 61": 1,
+          "Jutai 9b": 1,
+          "Bokonbaeva 21": 1,
+          "Centralnaya 2": 1,
+          "attokurov126": 1,
+          "Alymbaeva 66": 1,
+          "Almatinskaya 364": 1,
+          "Uzepova 9": 1,
+          "Maak": 1,
+          "azymhanov 10": 1,
+          "er tailak 39": 1,
+          "Kyshtak 55": 1,
+          "Irmatov 27": 1,
+          "Abdullayev 84": 1,
+          "2mkr 18-4": 1,
+          "Manas 132": 1,
+          "Toktogul 1": 1,
+          "Krasnoflotskaya 5a-38": 1,
+          "Samak 155": 1,
+          "izakeeva 8-8": 1,
+          "Maldybaev 32-14": 1,
+          "Turdalieva 188": 1,
+          "Maak 13": 1,
+          "Lenin 3": 1,
+          "Turdukulov 27": 1,
+          "Pushkin 13": 1,
+          "Sagal": 1,
+          "arzykulova 94": 1,
+          "Medet 3": 1,
+          "gulstan 26": 1,
+          "Chuguevsky 42": 1,
+          "izakeeva 14-5": 1,
+          "togolbaeva 31": 1,
+          "Togolok Moldo 69 \\ 14": 1,
+          "Pushkin 14": 1,
+          "azymkanov 58": 1,
+          "Irmatov 40": 1,
+          "kartanbaeva 8": 1,
+          "Alamedin 1 80-22": 1,
+          "azimkan 50": 1,
+          "Alymbaeva 76": 1,
+          "Toktogul 52": 1,
+          "Lenin 93": 1,
+          "6-9-19": 1,
+          "Togolok Moldo 70 \\ 12": 1,
+          "tynystanova4a-58": 1,
+          "kulchoro 29": 1,
+          "Bakay Ata 11": 1,
+          "Petrova 45-13": 1,
+          "Krasnoflotskaya 5a-21": 1,
+          "Supataev 99": 1,
+          "turdukulova 71": 1,
+          "azymhanov 82": 1,
+          "Alymbaeva 42": 1,
+          "Toktonalieva 42-13": 1,
+          "Togolok Moldo 69 \\ 1": 1,
+          "kurpuskaya 23": 1,
+          "Togolok Moldo 69 \\ 45": 1,
+          "5-16-41": 1,
+          "6-9-52": 1,
+          "dolotaaly 27": 1,
+          "6-9-72": 1,
+          "sozhieva 95": 1,
+          "Whites 46": 1,
+          "ishenaly 37": 1,
+          "Omurzakov 27": 1,
+          "Orozbekova 6": 1,
+          "kulchoro 43": 1,
+          "Lugovaya 8": 1,
+          "Togolok Moldo 69 \\ 10": 1,
+          "Togolok Moldo 69 \\ 7": 1,
+          "Footbalnaya 4-1": 1,
+          "Voskhod 3-47": 1,
+          "Soviet 46": 1,
+          "Alamedin 1 68-9": 1,
+          "Lenin 14": 1,
+          "Pushkin 98": 1,
+          "Krasnoflotskaya 5a-49": 1,
+          "Pushkin 12": 1,
+          "koychubaev 59": 1,
+          "Muqimiy 14": 1,
+          "Orozbekova 30": 1,
+          "Maldybaev 14": 1,
+          "Orozbekova 21a": 1,
+          "Almatinskaya 398": 1,
+          "15 Suban": 1,
+          "Footbalnaya 2-19": 1,
+          "Pushkin 79": 1,
+          "Lenin 39": 1,
+          "Abdullayev 56": 1,
+          "mavlyanova24": 1,
+          "Kara kochkor 210": 1,
+          "Bayalinova 89": 1,
+          "azymkanov 132": 1,
+          "Krasnoflotskaya 5a-24": 1,
+          "Komsomol 5": 1,
+          "Supataev 53": 1,
+          "World 15": 1,
+          "Maldybaev 18": 1,
+          "sozhieva 98": 1,
+          "Toktogul 18": 1,
+          "Irmatov": 1,
+          "Togolok Moldo 69 \\ 48": 1,
+          "arzykulova 8": 1,
+          "shaymat 22": 1,
+          "kurpuskaya 19": 1,
+          "Chui 32-68": 1,
+          "Krasnoflotskaya 5a-30": 1,
+          "dolotaaly 33": 1,
+          "2mkr 18-47": 1,
+          "Pishpek 48": 1,
+          "izakeeva 15-4": 1,
+          "Toktonalieva 40-23": 1,
+          "West 3": 1,
+          "Petrova 43-31": 1,
+          "Stalbek 50": 1,
+          "Alamedin 1 80-25": 1,
+          "Orozova 35": 1,
+          "Footbalnaya 2-32": 1,
+          "Lenin 97": 1,
+          "Maak 21": 1,
+          "Almatinskaya 386": 1,
+          "Whites 62": 1,
+          "shaymat 11": 1,
+          "Petrova 43-41": 1,
+          "Muratalieva 21": 1,
+          "Krasnoflotskaya 5a-4": 1,
+          "Stalbek 26": 1,
+          "Soviet 111": 1,
+          "Soviet 187": 1,
+          "Chui 34-56": 1,
+          "Alamedin 1 77-9": 1,
+          "ishenaly 72": 1,
+          "Sadovaya 9a": 1,
+          "Voskhod 3-17": 1,
+          "brchieva 107": 1,
+          "Samieva 48b-36": 1,
+          "Togolok Moldo 69 \\ 42": 1,
+          "Musayev 6": 1,
+          "Manas 174": 1,
+          "Footbalnaya 4-11": 1,
+          "Tynystanov 4a-38": 1,
+          "uzenova 5": 1,
+          "Lenin 16": 1,
+          "Tokmok 1": 1,
+          "Manas 154": 1,
+          "6-9-61": 1,
+          "kurpuskaya 9": 1,
+          "Balvan 11": 1,
+          "valdiyskaya 45-1": 1,
+          "Maldybaev 24": 1,
+          "Raimbekova 11": 1,
+          "25 Suban": 1,
+          "Yuzhnaya 10": 1,
+          "hamidhazhy 9": 1,
+          "kudaykulov 19": 1,
+          "Pushkin 24": 1,
+          "mavlyanova34": 1,
+          "dolotaaly 21": 1,
+          "Chui 32-62": 1,
+          "6-9-54": 1,
+          "Anar 76": 1,
+          "kulchoro 39": 1,
+          "ishenaly 91": 1,
+          "Irmatov 34": 1,
+          "Eraliev 20-19": 1,
+          "Maldybaev 32-28": 1,
+          "39 Suban": 1,
+          "Anar 68": 1,
+          "6-9-59": 1,
+          "Toktonalieva 50-17": 1,
+          "shaymat 17": 1,
+          "Togolok Moldo 69 \\ 18": 1,
+          "Bayalinova 83": 1,
+          "Voskhod 3-36": 1,
+          "arzykulova 80": 1,
+          "6-9-69": 1,
+          "Valdaiskaya 15": 1,
+          "Stalbek 12": 1,
+          "izakeeva 12-5": 1,
+          "arzykulova 72": 1,
+          "Alymbaeva 48": 1,
+          "Tynystanov 4a-16": 1,
+          "sasykbaev 13": 1,
+          "Orozbekova 26": 1,
+          "ishenaaly 67": 1,
+          "Sadovaya 14": 1,
+          "Maldybaev 41": 1,
+          "Pushkin 58": 1,
+          "uchtereksky 69 \\ 1": 1,
+          "Gagarin 6": 1,
+          "Almatinskaya 404": 1,
+          "togolbaev 1": 1,
+          "Anar 46": 1,
+          "izakeeva 13-5": 1,
+          "4 Suban": 1,
+          "Ergeshov 2": 1,
+          "Yuldasheva no #": 1,
+          "Maak 2": 1,
+          "Orozbekova 34": 1,
+          "6-9-34": 1,
+          "Cheeji no #": 1,
+          "Raimbekov 15": 1,
+          "azimkanov 62": 1,
+          "altymysheva10": 1,
+          "gulstan 23": 1,
+          "akkozieva 13": 1,
+          "dolotaaly 29": 1,
+          "Kazakova, 57": 1,
+          "knzhebaev 5": 1,
+          "Bakay Ata 53": 1,
+          "Alamedin 1 70-11": 1,
+          "Almatinskaya 332": 1,
+          "Tynystanov 6-22": 1,
+          "Stalbek 32": 1,
+          "Voskhod 3-50": 1,
+          "kartanbaeva 56": 1,
+          "Medet 7": 1,
+          "Zaitov 7": 1,
+          "on archa 30": 1,
+          "Tynystanov 6-10": 1,
+          "altymysheva 6": 1,
+          "Petrova 43-46": 1,
+          "Sagal 36": 1,
+          "kartanbaeva 90": 1,
+          "Krasnoflotskaya 5a-35": 1,
+          "Petrova 43-24": 1,
+          "kuyukova 8-11": 1,
+          "Rashap 39": 1,
+          "Mira 18": 1,
+          "Bokonbaeva 15": 1,
+          "Gagarina 23": 1,
+          "Pishpek 26": 1,
+          "Stalbek 24": 1,
+          "Sadovaya 17": 1,
+          "kudaykulov25": 1,
+          "Stalbek 18": 1,
+          "izekeeva 7-6": 1,
+          "ishenaaly 41": 1,
+          "Sagal 47": 1,
+          "Osmonova 33": 1,
+          "Rashap 35": 1,
+          "Voskhod 3-23": 1,
+          "kurmalaya 11": 1,
+          "Krasnoflotskaya 5a-55": 1,
+          "Alamedin 1 81-12": 1,
+          "5-16-41\ufffd": 1,
+          "Abdullayev 138": 1,
+          "Gulstan no #": 1,
+          "Musayev 24": 1,
+          "Bokonbaeva 9": 1,
+          "Medet 10": 1,
+          "kartanbaeva 47a": 1,
+          "Alymbaeva 36": 1,
+          "On archa 4": 1,
+          "Lenin 18": 1,
+          "turdukulova 58": 1,
+          "Samak 135": 1,
+          "kulchoro 47": 1,
+          "Petrov 43-6": 1,
+          "ostashovskaya 12": 1,
+          "Amirov 21": 1,
+          "Tynystanov 4a-51": 1,
+          "Pishpek 36": 1,
+          "Soviet 26": 1,
+          "Tynystanov 4a-1": 1,
+          "2mkr 18-61": 1,
+          "2mkr 18-79": 1,
+          "altymysheva16": 1,
+          "Ibn Sina 42": 1,
+          "5-16-56": 1,
+          "sozhieva92": 1,
+          "Kasimov": 1,
+          "Toktonalieva 40-14": 1,
+          "Belekov 20": 1,
+          "Tynystanov 6-7": 1,
+          "sozhieva 83": 1,
+          "Soviet 193": 1,
+          "kartanbaeva 40": 1,
+          "Krasnoflotskaya 5a-27": 1,
+          "6-9-64": 1,
+          "Orozova 75": 1,
+          "zhenish 19": 1,
+          "Bakay Ata 35": 1,
+          "altymysheva 5": 1,
+          "azimkanova 1": 1,
+          "Kyshtak 48": 1,
+          "Abdullayev 114": 1,
+          "Bakay Ata 49": 1,
+          "sasykbaev 33": 1,
+          "Kyshtak 1": 1,
+          "Omurzakov 24": 1,
+          "Temirova 2": 1,
+          "Toktonalieva 42-17": 1,
+          "5-16-73": 1,
+          "abdullaeva90": 1,
+          "Alamedin 1 70-3": 1,
+          "burchieva 95": 1,
+          "Soviet 68": 1,
+          "kudaykulov3": 1,
+          "5-16-78": 1,
+          "Raimbekov 21": 1,
+          "uchtereksaya 69-3": 1,
+          "Ibn Sina 28": 1,
+          "Muratalieva 26": 1,
+          "Chui 35-61": 1,
+          "Yuldashev 2": 1,
+          "Abdullayev 102": 1,
+          "ishenaaly 74": 1,
+          "Balvan 29": 1,
+          "Abdullayev 68": 1,
+          "Frunze 60 \\ 4": 1,
+          "orozbaeva4": 1,
+          "Toktonalieva 40-30": 1,
+          "45 Suban": 1,
+          "Samieva 48 b-21": 1,
+          "Soviet 105": 1,
+          "Ibn Sina 74": 1,
+          "Razhapov 22": 1,
+          "Turdalieva 170": 1,
+          "Raimbekov 5": 1,
+          "Toktonalieva 42-4": 1,
+          "Kara kochkor 46": 1,
+          "Abdullayev 108": 1,
+          "2mkr 18-7": 1,
+          "Orozbekova 29": 1,
+          "Samieva 48b-33": 1,
+          "Centralnaya 89": 1,
+          "kulchoro 71": 1,
+          "Jyrgalan 2": 1,
+          "Zaitov 19": 1,
+          "Almatinskaya 274": 1,
+          "shaymat 28": 1,
+          "Amirov 29": 1,
+          "5-16-23": 1,
+          "erimov14": 1,
+          "Voskhod 6-17": 1,
+          "Pushkin 62": 1,
+          "Nekrasov 161": 1,
+          "Lenin 33": 1,
+          "Pushkin 34": 1,
+          "Sagal 28": 1,
+          "izakeeva 8-2": 1,
+          "Alamedin 1 68-6": 1,
+          "Kadyrov, 11": 1,
+          "Chui 33-47": 1,
+          "Soviet 14": 1,
+          "dolotaaly 23": 1,
+          "Orozbekova 27": 1,
+          "Samieva 48b-18": 1,
+          "turdukulova 64": 1,
+          "6-9-11": 1,
+          "Samieva 48b-27": 1,
+          "Almatinskaya 392": 1,
+          "Kirov 1": 1,
+          "kartanbaeva 320": 1,
+          "Osmonova 61a": 1,
+          "Stalbek 48": 1,
+          "Orozbekova 37": 1,
+          "Frunze 58 \\ 4": 1,
+          "novoi27": 1,
+          "supataev72": 1,
+          "Voskhod 3-1": 1,
+          "Orozbekova 21": 1,
+          "Kadyrov, 39": 1,
+          "shaymat 8": 1,
+          "Lenin 104": 1,
+          "Lenina 10": 1,
+          "Chui 31-57": 1,
+          "Krasnoflotskaya 5a-64": 1,
+          "dolotaaly 41": 1,
+          "mavlyanova44": 1,
+          "Almatinskaya 380": 1,
+          "Belekov 32": 1,
+          "soyuzbek": 1,
+          "6-9-49": 1,
+          "6-9-39": 1,
+          "Balvan 23": 1,
+          "Abdullaevna 74": 1,
+          "kartanbaeva 70": 1,
+          "Abdullayev 50": 1,
+          "Toktonalieva 38-25": 1,
+          "kulchoro 77": 1,
+          "Toktonalieva 40-6": 1,
+          "Bakay Ata 15": 1,
+          "Pushkin 26": 1,
+          "Kazakova, 65": 1,
+          "Kenzhebaev 14": 1,
+          "Kara kochkor 194": 1,
+          "Voskhod 3-19": 1,
+          "5-16-20": 1,
+          "Stalbek 42": 1,
+          "Orozbekova 23": 1,
+          "Bokonbaeva 3": 1,
+          "2mkr 12-17": 1,
+          "sovetsskaya 207": 1,
+          "Almatinskaya 320": 1,
+          "5-16-44": 1,
+          "arzykulova": 1,
+          "5-16-52": 1,
+          "2 mkr 18-66": 1,
+          "Pushkin 2": 1,
+          "Alamedin 1 74-46": 1,
+          "Maldybaev 32-20": 1,
+          "Krasnoflotskaya 54-15": 1,
+          "2mkr 18-35": 1,
+          "akkozieva 7": 1,
+          "sozhieva 84": 1,
+          "Sadovaya 22": 1,
+          "novoi13": 1,
+          "Almatinskaya 262": 1,
+          "Chui 30-42": 1,
+          "Tynystanov 6-20": 1,
+          "uchterekskaya 67-3a": 1,
+          "Oktyabrskaya 18": 1,
+          "er tailak 53": 1,
+          "Maldybaev 35": 1,
+          "Petrova 43-19": 1,
+          "izakeeva 14-3": 1,
+          "Maldybaev 23": 1,
+          "azymkanov 102": 1,
+          "attokurova 4": 1,
+          "Footbalnaya 4-15": 1,
+          "Krasnoflotskaya 5-5": 1,
+          "Alamedin 1 72-6": 1,
+          "Supataev 72": 1,
+          "Amirov 7": 1,
+          "Soviet 8": 1,
+          "Bokonbaeva 4": 1,
+          "Zhapar 3": 1,
+          "Sadovaya 28a": 1,
+          "Bakay Ata 43": 1,
+          "Ibn Sina 16": 1,
+          "uzenova9": 1,
+          "Krupskaya no #": 1,
+          "Eraliev 11": 1,
+          "uchterekskaya 59-4": 1,
+          "Chui 31-73": 1,
+          "Stalbek 60": 1,
+          "chynaliev 31": 1,
+          "Abdullayev 126": 1,
+          "turdukulova 53": 1,
+          "Footbalnaya 2-1": 1,
+          "Belekov 38": 1,
+          "Pushkin 10": 1,
+          "kudaykulov71-26": 1,
+          "Pushkin 74": 1,
+          "Eraliev 4": 1,
+          "kartanbaeva 17": 1,
+          "Toktonalieva 38-23": 1,
+          "Orozbekova 24": 1,
+          "Alymbaeva 82": 1,
+          "Togolok Moldo 69 \\ 32": 1,
+          "Orozbekova 32": 1,
+          "Voskhod 3-39": 1,
+          "Centralnaya 83": 1,
+          "5-16-61-1": 1,
+          "Sadybakasova 85": 1,
+          "Kazakova, 97": 1,
+          "azimkanov 78": 1,
+          "Almatinskaya 338": 1,
+          "Manas 160": 1,
+          "Isanova 226": 1,
+          "Kenzhebaev 10": 1,
+          "Ibn Sina 22": 1,
+          "Sagal 20": 1,
+          "Balvan 17": 1,
+          "Samieva 48b-45": 1,
+          "Sydyk 8": 1,
+          "mavlyanova54": 1,
+          "Togolok Moldo 150": 1,
+          "Krasnoflotskaya 5a-44": 1,
+          "eshmambet 132": 1,
+          "Maak 10": 1,
+          "Soviet 99": 1,
+          "6-9-79": 1,
+          "arzykulova 89": 1,
+          "Maak 15": 1,
+          "6-9-1": 1,
+          "Togolok Moldo 69": 1,
+          "Orozbekova 20": 1,
+          "Supataev 65": 1,
+          "5-16-43": 1,
+          "kurpiskaya 7": 1,
+          "sozhieva 106": 1,
+          "Sagal 44": 1,
+          "uchtereksky 75 \\ 2": 1,
+          "arzykulova 76": 1,
+          "Kirov 21a": 1,
+          "Muratalieva 3": 1,
+          "Irmatov 3": 1,
+          "Footbalnaya 2-13": 1,
+          "novoi21": 1
         }
       ],
       [
@@ -6117,22 +5890,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ID1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ID1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ID1",
     [
@@ -6741,22 +6498,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ID2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ID2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ID2",
     [
@@ -6950,22 +6691,6 @@
       [
         "Kyrgyz"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.I3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.I3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7164,22 +6889,6 @@
       [
         "30-50"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7383,22 +7092,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Q2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q2",
     [
@@ -7594,22 +7287,6 @@
       [
         "Completed secondary education"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7816,22 +7493,6 @@
       [
         "Homemaker"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8043,22 +7704,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q5",
     [
@@ -8260,22 +7905,6 @@
       [
         "Osh Province (not Osh city)"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8491,22 +8120,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q7",
     [
@@ -8711,22 +8324,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q8.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q8",
     [
@@ -8926,22 +8523,6 @@
       [
         "Unemployment"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q9.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q9.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9149,22 +8730,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q10",
     [
@@ -9366,22 +8931,6 @@
       [
         "Highly unlikely"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q11.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q11.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9587,22 +9136,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q12A.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q12A.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q12A",
     [
@@ -9800,22 +9333,6 @@
       [
         "No, not at all"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q12B.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q12B.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10019,22 +9536,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q12C.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q12C.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q12C",
     [
@@ -10232,22 +9733,6 @@
       [
         "No, not at all"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q12D.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q12D.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10451,22 +9936,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q13.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q13.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q13",
     [
@@ -10667,22 +10136,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q14.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Q14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q14",
     [
@@ -10878,22 +10331,6 @@
       [
         "Somewhat good"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11101,22 +10538,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Q16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Q16",
     [
@@ -11318,22 +10739,6 @@
       [
         "Satisfied"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q17.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Q17.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11571,22 +10976,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.tmt.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tmt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11833,22 +11222,6 @@
     ]
   ],
   [
-    "change",
-    "variables.approve_inv.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_inv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.approve_inv",
     [
@@ -12088,22 +11461,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_inv_num.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_inv_num.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12361,22 +11718,6 @@
     ]
   ],
   [
-    "change",
-    "variables.approve_icc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_icc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.approve_icc",
     [
@@ -12616,22 +11957,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_icc_num.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_icc_num.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12889,22 +12214,6 @@
     ]
   ],
   [
-    "change",
-    "variables.approve_gov1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_gov1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.approve_gov1",
     [
@@ -13159,22 +12468,6 @@
     ]
   ],
   [
-    "change",
-    "variables.approve_gov2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_gov2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.approve_gov2",
     [
@@ -13426,22 +12719,6 @@
     [
       "-3",
       -3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_gov_diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_gov_diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13711,22 +12988,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dkrta.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dkrta.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dkrta",
     [
@@ -13966,22 +13227,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.dkrta_icc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dkrta_icc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14227,22 +13472,6 @@
     ]
   ],
   [
-    "change",
-    "variables.osh.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.osh.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.osh",
     [
@@ -14482,22 +13711,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.oshob.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.oshob.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14743,22 +13956,6 @@
     ]
   ],
   [
-    "change",
-    "variables.oshjal.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.oshjal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.oshjal",
     [
@@ -15001,22 +14198,6 @@
     ]
   ],
   [
-    "change",
-    "variables.oshobjal.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.oshobjal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.oshobjal",
     [
@@ -15256,22 +14437,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15559,22 +14724,6 @@
     ]
   ],
   [
-    "change",
-    "variables.heard_icc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.heard_icc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.heard_icc",
     [
@@ -15814,22 +14963,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.kyrgyzlang.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.kyrgyzlang.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16075,22 +15208,6 @@
     ]
   ],
   [
-    "change",
-    "variables.age_under50.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.age_under50.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.age_under50",
     [
@@ -16330,22 +15447,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.male.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.male.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16591,22 +15692,6 @@
     ]
   ],
   [
-    "change",
-    "variables.postsec_educ.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.postsec_educ.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.postsec_educ",
     [
@@ -16846,22 +15931,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.employed.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.employed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17107,22 +16176,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income_av.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.income_av.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income_av",
     [
@@ -17365,22 +16418,6 @@
     ]
   ],
   [
-    "change",
-    "variables.govsatis.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.govsatis.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.govsatis",
     [
@@ -17620,22 +16657,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.getbetter.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.getbetter.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17882,22 +16903,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sarah_tmt.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sarah_tmt.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sarah_tmt",
     [
@@ -18138,22 +17143,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.region_1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18399,22 +17388,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region_2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region_2",
     [
@@ -18654,22 +17627,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.region_3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18915,22 +17872,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region_4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region_4",
     [
@@ -19170,22 +18111,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.region_5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19431,22 +18356,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region_6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region_6",
     [
@@ -19686,22 +18595,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.region_7.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19947,22 +18840,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region_8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region_8",
     [
@@ -20202,22 +19079,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.region_9.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.region_9.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20463,22 +19324,6 @@
     ]
   ],
   [
-    "change",
-    "variables.approve_inv_nodk.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_inv_nodk.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.approve_inv_nodk",
     [
@@ -20718,22 +19563,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_icc_nodk.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.approve_icc_nodk.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20979,22 +19808,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dontknow_inv.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dontknow_inv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dontknow_inv",
     [
@@ -21234,22 +20047,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.dontknow_icc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dontknow_icc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21495,22 +20292,6 @@
     ]
   ],
   [
-    "change",
-    "variables.kyrgyz_nat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.kyrgyz_nat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.kyrgyz_nat",
     [
@@ -21750,22 +20531,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.russian_nat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.russian_nat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22011,22 +20776,6 @@
     ]
   ],
   [
-    "change",
-    "variables.uzbek_nat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.uzbek_nat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.uzbek_nat",
     [
@@ -22269,22 +21018,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other_nat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other_nat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other_nat",
     [
@@ -22495,22 +21228,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ethnicity.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ethnicity.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ethnicity",
     [
@@ -22706,22 +21423,6 @@
       [
         "Osh Oblast"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.I1name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.I1name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22966,22 +21667,6 @@
     [
       "9",
       9.0
-    ]
-  ],
-  [
-    "change",
-    "variables.D_O.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.D_O.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23619,22 +22304,6 @@
     ]
   ],
   [
-    "change",
-    "variables.D_J.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.D_J.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.D_J",
     [
@@ -24221,422 +22890,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:39",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "form": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "I1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "I2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "I2_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Nationality": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Phone": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Address": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ID1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ID2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "I3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q12A": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q12B": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q12C": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q12D": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Q17": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tmt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_inv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_inv_num": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_icc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_icc_num": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_gov1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_gov2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_gov_diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dkrta": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dkrta_icc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "osh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oshob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oshjal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oshobjal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "heard_icc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kyrgyzlang": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age_under50": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "male": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "postsec_educ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income_av": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govsatis": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "getbetter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sarah_tmt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_inv_nodk": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approve_icc_nodk": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dontknow_inv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dontknow_icc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "kyrgyz_nat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "russian_nat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "uzbek_nat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_nat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ethnicity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "I1name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "D_O": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "D_J": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

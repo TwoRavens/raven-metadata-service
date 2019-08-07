@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        50
-      ],
-      [
-        "variableCount",
-        3
-      ],
-      [
-        "dataSource",
-        {
-          "name": "AMJXCB_uggen_data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1294
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "Alabama",
       [
-        "Georgia",
+        "Michigan",
         "Maine",
-        "Colorado",
-        "Oregon",
-        "Missouri"
+        "Rhode Island",
+        "New Mexico",
+        "New York"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Georgia",
+          "Michigan",
           "Maine",
-          "Colorado",
-          "Oregon",
-          "Missouri"
+          "Rhode Island",
+          "New Mexico",
+          "New York"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "Michigan": 1,
-          "Massachusetts": 1,
-          "Nebraska": 1,
-          "Wyoming": 1,
-          "Arkansas": 1,
-          "Virginia": 1,
           "Wisconsin": 1,
-          "Minnesota": 1,
-          "Rhode Island": 1,
-          "Nevada": 1,
-          "Louisiana": 1,
-          "Maryland": 1,
-          "Pennsylvania": 1,
-          "South Dakota": 1,
-          "Idaho": 1,
-          "Iowa": 1,
-          "New Hampshire": 1,
-          "New Mexico": 1,
-          "Indiana": 1,
           "Alabama": 1,
-          "North Carolina": 1,
-          "North Dakota": 1,
-          "Mississippi": 1,
-          "Kentucky": 1,
-          "Texas": 1,
-          "Vermont": 1,
+          "South Carolina": 1,
+          "South Dakota": 1,
           "Kansas": 1,
-          "Delaware": 1,
-          "Ohio": 1,
-          "Florida": 1,
-          "Alaska": 1,
           "Washington": 1,
-          "Hawaii": 1,
           "New Jersey": 1,
           "Montana": 1,
-          "Arizona": 1,
-          "Tennessee": 1,
-          "New York": 1,
-          "South Carolina": 1,
-          "Connecticut": 1,
-          "California": 1,
-          "Oklahoma": 1,
           "Utah": 1,
-          "Illinois": 1,
-          "West Virginia": 1,
-          "Missouri": 1,
-          "Oregon": 1,
+          "Arizona": 1,
+          "Ohio": 1,
+          "Pennsylvania": 1,
+          "Louisiana": 1,
+          "North Carolina": 1,
+          "Oklahoma": 1,
+          "Hawaii": 1,
+          "Tennessee": 1,
+          "Texas": 1,
+          "Minnesota": 1,
+          "Virginia": 1,
+          "Florida": 1,
+          "Maryland": 1,
+          "North Dakota": 1,
           "Colorado": 1,
+          "Mississippi": 1,
+          "Illinois": 1,
+          "Oregon": 1,
+          "Nebraska": 1,
+          "Kentucky": 1,
+          "Massachusetts": 1,
+          "Wyoming": 1,
+          "Vermont": 1,
+          "West Virginia": 1,
+          "Arkansas": 1,
+          "Missouri": 1,
+          "Idaho": 1,
+          "Iowa": 1,
+          "Nevada": 1,
+          "Delaware": 1,
+          "Alaska": 1,
+          "California": 1,
+          "New Hampshire": 1,
+          "Georgia": 1,
+          "Connecticut": 1,
+          "Indiana": 1,
+          "New York": 1,
+          "New Mexico": 1,
+          "Rhode Island": 1,
           "Maine": 1,
-          "Georgia": 1
+          "Michigan": 1
         }
       ],
       [
@@ -456,26 +357,10 @@
   ],
   [
     "change",
-    "variables.PctDisenfranchised.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PctDisenfranchised.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PctDisenfranchised.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1130,26 +1015,10 @@
   ],
   [
     "change",
-    "variables.PctBlackDisenfranchised.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PctBlackDisenfranchised.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PctBlackDisenfranchised.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1747,47 +1616,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:21:39",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PctDisenfranchised": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PctBlackDisenfranchised": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

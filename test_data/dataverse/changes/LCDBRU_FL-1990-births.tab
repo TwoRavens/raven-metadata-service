@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        8
-      ],
-      [
-        "variableCount",
-        14
-      ],
-      [
-        "dataSource",
-        {
-          "name": "LCDBRU_FL-1990-births.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 719
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.DOB_MM.mode",
     [
       "Total",
       [
+        "Saturday",
         "Wednesday",
-        "Sunday",
-        "Friday",
         "Total",
-        "Saturday"
+        "Friday",
+        "Sunday"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.DOB_MM.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.DOB_MM.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Saturday",
           "Wednesday",
-          "Sunday",
-          "Friday",
           "Total",
-          "Saturday"
+          "Friday",
+          "Sunday"
         ]
       ],
       [
@@ -173,14 +74,14 @@
       [
         "plotValues",
         {
-          "Tuesday": 1,
-          "Monday": 1,
+          "Total": 1,
           "Saturday": 1,
           "Thursday": 1,
-          "Total": 1,
-          "Friday": 1,
           "Sunday": 1,
-          "Wednesday": 1
+          "Friday": 1,
+          "Tuesday": 1,
+          "Wednesday": 1,
+          "Monday": 1
         }
       ],
       [
@@ -360,22 +261,6 @@
     [
       "23113",
       23113
-    ]
-  ],
-  [
-    "change",
-    "variables.Total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -665,22 +550,6 @@
     ]
   ],
   [
-    "change",
-    "variables.January.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.January.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.January",
     [
@@ -964,22 +833,6 @@
     [
       "1749",
       1749
-    ]
-  ],
-  [
-    "change",
-    "variables.February.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.February.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1269,22 +1122,6 @@
     ]
   ],
   [
-    "change",
-    "variables.March.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.March.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.March",
     [
@@ -1568,22 +1405,6 @@
     [
       "1712",
       1712
-    ]
-  ],
-  [
-    "change",
-    "variables.April.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.April.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1873,22 +1694,6 @@
     ]
   ],
   [
-    "change",
-    "variables.May.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.May.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.May",
     [
@@ -2172,22 +1977,6 @@
     [
       "1675",
       1675
-    ]
-  ],
-  [
-    "change",
-    "variables.June.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.June.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2477,22 +2266,6 @@
     ]
   ],
   [
-    "change",
-    "variables.July.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.July.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.July",
     [
@@ -2776,22 +2549,6 @@
     [
       "1846",
       1846
-    ]
-  ],
-  [
-    "change",
-    "variables.August.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.August.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3081,22 +2838,6 @@
     ]
   ],
   [
-    "change",
-    "variables.September.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.September.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.September",
     [
@@ -3380,22 +3121,6 @@
     [
       "1875",
       1875
-    ]
-  ],
-  [
-    "change",
-    "variables.October.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.October.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3685,22 +3410,6 @@
     ]
   ],
   [
-    "change",
-    "variables.November.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.November.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.November",
     [
@@ -3987,22 +3696,6 @@
     ]
   ],
   [
-    "change",
-    "variables.December.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.December.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.December",
     [
@@ -4239,102 +3932,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:26",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "DOB_MM": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "January": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "February": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "March": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "April": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "May": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "June": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "July": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "August": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "September": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "October": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "November": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "December": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

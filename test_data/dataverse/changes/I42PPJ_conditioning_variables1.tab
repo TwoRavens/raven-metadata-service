@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        9
-      ],
-      [
-        "variableCount",
-        12
-      ],
-      [
-        "dataSource",
-        {
-          "name": "I42PPJ_conditioning_variables1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 761
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
       "Benin",
       [
+        "Benin",
         "Kenya",
         "Ghana",
-        "Madagascar",
         "Senegal",
-        "Mali"
+        "Tanzania"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Benin",
           "Kenya",
           "Ghana",
-          "Madagascar",
           "Senegal",
-          "Mali"
+          "Tanzania"
         ]
       ],
       [
@@ -173,15 +74,15 @@
       [
         "plotValues",
         {
-          "Malawi": 1,
-          "Benin": 1,
           "Zambia": 1,
-          "Tanzania": 1,
           "Mali": 1,
-          "Senegal": 1,
+          "Malawi": 1,
           "Madagascar": 1,
+          "Tanzania": 1,
+          "Senegal": 1,
           "Ghana": 1,
-          "Kenya": 1
+          "Kenya": 1,
+          "Benin": 1
         }
       ],
       [
@@ -326,22 +227,6 @@
       [
         "Presidential"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.parl_pres.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.parl_pres.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -584,26 +469,10 @@
   ],
   [
     "change",
-    "variables.inst_sys.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.inst_sys.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inst_sys.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -814,22 +683,6 @@
       [
         "Maj"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_maj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pr_maj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1062,22 +915,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pr.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1323,22 +1160,6 @@
     ]
   ],
   [
-    "change",
-    "variables.unicameral.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.unicameral.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.unicameral",
     [
@@ -1546,22 +1367,6 @@
       [
         "protest"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.trans.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.trans.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1797,22 +1602,6 @@
     ]
   ],
   [
-    "change",
-    "variables.protest.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.protest.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.protest",
     [
@@ -2018,25 +1807,9 @@
     [
       "before",
       [
-        "before",
-        "after"
+        "after",
+        "before"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.econ_lib.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.econ_lib.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2270,22 +2043,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.econ_lib_prior.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.econ_lib_prior.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2545,26 +2302,10 @@
   ],
   [
     "change",
-    "variables.gini.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gini.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gini.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2869,26 +2610,10 @@
   ],
   [
     "change",
-    "variables.effect.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.effect.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.effect.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3134,92 +2859,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:25",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "parl_pres": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inst_sys": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr_maj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unicameral": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trans": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "protest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "econ_lib": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "econ_lib_prior": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gini": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "effect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

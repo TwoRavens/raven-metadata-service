@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        421
-      ],
-      [
-        "variableCount",
-        24
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SGB8FE_GreenbookForecastsRegional.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 47307
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.MeetingID.median",
     [
@@ -124,22 +41,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.MeetingID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.MeetingID.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -733,22 +634,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Meeting.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Meeting.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Meeting",
     [
@@ -1300,28 +1185,12 @@
     [
       "Hoenig",
       [
-        "Stern",
-        "Hoenig",
+        "Lacker",
         "Poole",
         "Kohn",
-        "Yellen"
+        "Yellen",
+        "Stern"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1355,11 +1224,11 @@
       [
         "fewestValues",
         [
-          "Geithner (ViceChair)",
-          "Geithner (Vice Chair) ",
           "Moscow",
-          "Geithner",
-          "Geithener (Vice Chair)"
+          "Geithner (Vice Chair) ",
+          "Geithener (Vice Chair)",
+          "Greenspan (Chair) ",
+          "Geithner (ViceChair)"
         ]
       ],
       [
@@ -1385,20 +1254,20 @@
       [
         "plotValues",
         {
-          "Lacker": 24,
-          "Stern": 24,
+          "Hoenig": 24,
           "Poole": 24,
+          "Stern": 24,
           "Yellen": 24,
           "Kohn": 24,
-          "Hoenig": 24,
+          "Lacker": 24,
           "Fisher": 22,
-          "Moskow": 20,
           "Minehan": 20,
           "Geithner (Vice Chair)": 20,
-          "Pianalto": 17,
+          "Moskow": 20,
           "Bies": 17,
-          "Kroszner": 15,
+          "Pianalto": 17,
           "Warsh": 15,
+          "Kroszner": 15,
           "Bernanke (Chair)": 15,
           "Guynn": 14,
           "Olson": 13,
@@ -1408,21 +1277,21 @@
           "Ferguson": 9,
           "Greenspan (Chair)": 8,
           "Lockhart": 7,
-          "Gramlich": 4,
-          "Rosengren": 4,
           "Pianoalto": 4,
+          "Rosengren": 4,
+          "Gramlich": 4,
           "Stone": 3,
-          "Painoalto": 3,
           "Evans": 3,
-          "Holcomb": 2,
+          "Painoalto": 3,
           "Cumming": 2,
+          "Holcomb": 2,
           "Bernanke": 2,
-          "Geithner (ViceChair)": 1,
-          "Moscow": 1,
-          "Geithner (Vice Chair) ": 1,
-          "Geithener (Vice Chair)": 1,
           "Geithner": 1,
-          "Greenspan (Chair) ": 1
+          "Geithner (ViceChair)": 1,
+          "Geithner (Vice Chair) ": 1,
+          "Greenspan (Chair) ": 1,
+          "Geithener (Vice Chair)": 1,
+          "Moscow": 1
         }
       ],
       [
@@ -1595,27 +1464,11 @@
       "GEITHNER",
       [
         "HOENIG",
-        "LACKER",
-        "POOLE",
-        "KOHN",
-        "GEITHNER"
+        "YELLEN",
+        "GEITHNER",
+        "PIANALTO",
+        "KOHN"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1676,33 +1529,33 @@
       [
         "plotValues",
         {
-          "STERN": 24,
-          "PIANALTO": 24,
-          "YELLEN": 24,
-          "GEITHNER": 24,
-          "KOHN": 24,
           "POOLE": 24,
           "LACKER": 24,
+          "STERN": 24,
+          "KOHN": 24,
+          "PIANALTO": 24,
+          "GEITHNER": 24,
+          "YELLEN": 24,
           "HOENIG": 24,
           "FISHER": 22,
           "MOSKOW": 21,
           "MINEHAN": 20,
-          "BERNANKE": 17,
           "BIES": 17,
-          "WARSH": 15,
+          "BERNANKE": 17,
           "KROSZNER": 15,
+          "WARSH": 15,
           "GUYNN": 14,
           "OLSON": 13,
           "PLOSSER": 12,
           "MISHKIN": 11,
-          "GREENSPAN": 9,
           "SANTOMERO": 9,
           "FERGUSON": 9,
+          "GREENSPAN": 9,
           "LOCKHART": 7,
           "GRAMLICH": 4,
           "ROSENGREN": 4,
-          "STONE": 3,
           "EVANS": 3,
+          "STONE": 3,
           "CUMMING": 2,
           "HOLCOMB": 2
         }
@@ -1901,22 +1754,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.District.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.District.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2492,26 +2329,10 @@
   ],
   [
     "change",
-    "variables.RegionalUnemploymentinMonthofMeeting.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.RegionalUnemploymentinMonthofMeeting.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.RegionalUnemploymentinMonthofMeeting.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3164,26 +2985,10 @@
   ],
   [
     "change",
-    "variables.ProjectedUnemploymentCurrent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ProjectedUnemploymentCurrent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ProjectedUnemploymentCurrent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3480,26 +3285,10 @@
   ],
   [
     "change",
-    "variables.ProjectedInflationCurrentQCPI.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ProjectedInflationCurrentQCPI.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ProjectedInflationCurrentQCPI.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4152,26 +3941,10 @@
   ],
   [
     "change",
-    "variables.ProjectedInflationCurrentQPCE.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ProjectedInflationCurrentQPCE.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ProjectedInflationCurrentQPCE.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4816,22 +4589,6 @@
     [
       "329076",
       329076.0
-    ]
-  ],
-  [
-    "change",
-    "variables.amount.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.amount.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8267,152 +8024,6 @@
           "defaultNature": "ratio",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:33",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "MeetingID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Meeting": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "District": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RegionalUnemploymentinMonthofMeeting": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedUnemploymentCurrent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedUnemployment1-QAH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedUnemployment2-QAH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedUnemployment3-QAH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedUnemployment4-QAH": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RegionalInflation(CPI)inMonthofMeeting": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflationCurrentQCPI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflation1-QAHCPI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflation2-QAHCPI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Projectedinflation3-QAHCPI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflation4-QAHCPI": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "RegionalInflation(PCE)inMonthofMeeting": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflationCurrentQPCE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflation1-QAHPCE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflation2-QAHPCE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Projectedinflation3-QAHPCE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ProjectedInflation4-QAHPCE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "amount": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

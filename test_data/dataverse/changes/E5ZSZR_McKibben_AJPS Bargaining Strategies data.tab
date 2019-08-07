@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        588
-      ],
-      [
-        "variableCount",
-        24
-      ],
-      [
-        "dataSource",
-        {
-          "name": "E5ZSZR_McKibben_AJPS Bargaining Strategies data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 56137
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "Austria",
       [
-        "Czech Republic",
-        "Greece",
-        "Cyprus",
-        "Latvia",
-        "Lithuania"
+        "Poland",
+        "Ireland",
+        "Luxemourg",
+        "Portugal",
+        "Malta"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,8 +44,8 @@
       [
         "fewestValues",
         [
-          "Romania",
-          "Bulgaria"
+          "Bulgaria",
+          "Romania"
         ]
       ],
       [
@@ -170,30 +71,30 @@
       [
         "plotValues",
         {
-          "Hungary": 23,
-          "Poland": 23,
-          "Italy": 23,
-          "Spain": 23,
-          "France": 23,
-          "Finland": 23,
-          "Ireland": 23,
-          "Slovakia": 23,
-          "Belgium": 23,
-          "Slovenia": 23,
-          "Sweden": 23,
-          "Germany": 23,
-          "The Netherlands": 23,
-          "Austria": 23,
           "United Kingdom": 23,
-          "Lithuania": 23,
-          "Malta": 23,
-          "Luxemourg": 23,
-          "Estonia": 23,
-          "Portugal": 23,
-          "Latvia": 23,
-          "Cyprus": 23,
-          "Greece": 23,
+          "Slovenia": 23,
+          "Italy": 23,
+          "Finland": 23,
+          "Belgium": 23,
           "Czech Republic": 23,
+          "Spain": 23,
+          "Estonia": 23,
+          "Cyprus": 23,
+          "Latvia": 23,
+          "Austria": 23,
+          "Hungary": 23,
+          "The Netherlands": 23,
+          "Slovakia": 23,
+          "France": 23,
+          "Lithuania": 23,
+          "Greece": 23,
+          "Germany": 23,
+          "Sweden": 23,
+          "Malta": 23,
+          "Portugal": 23,
+          "Luxemourg": 23,
+          "Ireland": 23,
+          "Poland": 23,
           "Denmark": 18,
           "Romania": 9,
           "Bulgaria": 9
@@ -395,22 +296,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.i_country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.i_country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -968,27 +853,11 @@
     [
       "Kosovo2(Mission_attempt1)",
       [
-        "EUMM Phase 2",
-        "Kosovo3(Mission_attempt2)",
+        "EUMM Phase 1",
         "Kosovo2(Mission_attempt1)",
-        "EUMM Phase 1"
+        "Kosovo3(Mission_attempt2)",
+        "EUMM Phase 2"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.bargain.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bargain.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1022,11 +891,11 @@
       [
         "fewestValues",
         [
-          "REACH 1",
-          "Services 1",
-          "Services 2",
           "Racism 2",
-          "7th Research Framework"
+          "Racism 1",
+          "Financial 1",
+          "F-gas ACs",
+          "Batteries"
         ]
       ],
       [
@@ -1052,29 +921,29 @@
       [
         "plotValues",
         {
-          "EUMM Phase 1": 27,
-          "Kosovo3(Mission_attempt2)": 27,
           "Kosovo2(Mission_attempt1)": 27,
           "EUMM Phase 2": 27,
+          "Kosovo3(Mission_attempt2)": 27,
+          "EUMM Phase 1": 27,
           "EUTM Phase 3": 26,
-          "Atalanta Phase 2": 26,
-          "Atalanta Phase 1": 26,
           "EUTM Phase 2": 26,
+          "Atalanta Phase 1": 26,
           "EUTM Phase 1": 26,
-          "F-gas ACs": 25,
-          "Financial 1": 25,
-          "REACH 2": 25,
+          "Atalanta Phase 2": 26,
           "Eurotom": 25,
-          "Racism 1": 25,
-          "Kosovo1(EUPT)": 25,
-          "F-gas Reg": 25,
-          "Services 1": 25,
-          "Batteries": 25,
-          "Financial 2": 25,
-          "Racism 2": 25,
           "7th Research Framework": 25,
+          "Financial 1": 25,
+          "F-gas Reg": 25,
+          "Financial 2": 25,
+          "Kosovo1(EUPT)": 25,
+          "REACH 2": 25,
           "Services 2": 25,
-          "REACH 1": 25
+          "REACH 1": 25,
+          "Batteries": 25,
+          "F-gas ACs": 25,
+          "Racism 1": 25,
+          "Services 1": 25,
+          "Racism 2": 25
         }
       ],
       [
@@ -1268,22 +1137,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.i_bargain.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.i_bargain.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1873,22 +1726,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv",
     [
@@ -2152,26 +1989,10 @@
   ],
   [
     "change",
-    "variables.lag_dv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_dv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2435,22 +2256,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lag_dv_alt0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dv_alt0.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lag_dv_alt0",
     [
@@ -2702,22 +2507,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dv_alt1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dv_alt1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2975,22 +2764,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lag_dv_alt2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dv_alt2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lag_dv_alt2",
     [
@@ -3245,22 +3018,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lag_dv_alt3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dv_alt3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lag_dv_alt3",
     [
@@ -3512,22 +3269,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.agreement_importance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agreement_importance.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3794,26 +3535,10 @@
   ],
   [
     "change",
-    "variables.voting_power.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.voting_power.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.voting_power.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4114,22 +3839,6 @@
     ]
   ],
   [
-    "change",
-    "variables.foreignpolicy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.foreignpolicy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.foreignpolicy",
     [
@@ -4369,22 +4078,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.new_ms.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.new_ms.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4630,22 +4323,6 @@
     ]
   ],
   [
-    "change",
-    "variables.qmv.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.qmv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.qmv",
     [
@@ -4885,22 +4562,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.euro.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.euro.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5146,22 +4807,6 @@
     ]
   ],
   [
-    "change",
-    "variables.publicity.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.publicity.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.publicity",
     [
@@ -5401,22 +5046,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.presidency.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.presidency.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5675,26 +5304,10 @@
   ],
   [
     "change",
-    "variables.lngdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lngdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lngdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6338,22 +5951,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pillari.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pillari.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pillari",
     [
@@ -6593,22 +6190,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pillarii.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pillarii.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6854,22 +6435,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pillariii.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pillariii.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pillariii",
     [
@@ -7109,22 +6674,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.parl_scrut.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.parl_scrut.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7382,26 +6931,10 @@
   ],
   [
     "change",
-    "variables.issue_linkage_structure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.issue_linkage_structure.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.issue_linkage_structure.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7999,152 +7532,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:06",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "i_country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bargain": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "i_bargain": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_dv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_dv_alt0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_dv_alt1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_dv_alt2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_dv_alt3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agreement_importance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "voting_power": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "foreignpolicy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "new_ms": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "qmv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "euro": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "publicity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "presidency": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lngdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pillari": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pillarii": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pillariii": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "parl_scrut": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "issue_linkage_structure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

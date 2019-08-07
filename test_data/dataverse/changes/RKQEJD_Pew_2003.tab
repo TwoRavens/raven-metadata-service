@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        24
-      ],
-      [
-        "variableCount",
-        16
-      ],
-      [
-        "dataSource",
-        {
-          "name": "RKQEJD_Pew_2003.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3068
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.sample.median",
     [
@@ -123,22 +40,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sample.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -348,28 +249,12 @@
     [
       "q12",
       [
-        "q6g",
-        "q6f",
-        "q6c",
-        "q8",
-        "q6d"
+        "q7",
+        "q6e",
+        "q6h",
+        "q6b",
+        "q6c"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.q.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.q.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -403,11 +288,11 @@
       [
         "fewestValues",
         [
-          "q6g",
-          "q6f",
-          "q6c",
-          "q8",
-          "q6d"
+          "q7",
+          "q6e",
+          "q6h",
+          "q6b",
+          "q6c"
         ]
       ],
       [
@@ -433,18 +318,18 @@
       [
         "plotValues",
         {
-          "q7": 2,
-          "q6b": 2,
           "q6d": 2,
-          "q6h": 2,
-          "q6g": 2,
-          "q6i": 2,
+          "q6a": 2,
           "q6e": 2,
           "q12": 2,
           "q8": 2,
+          "q6g": 2,
           "q6c": 2,
-          "q6a": 2,
-          "q6f": 2
+          "q6b": 2,
+          "q6h": 2,
+          "q6f": 2,
+          "q7": 2,
+          "q6i": 2
         }
       ],
       [
@@ -628,22 +513,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.topic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.topic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -965,26 +834,10 @@
   ],
   [
     "change",
-    "variables.abs_d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_d.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1641,26 +1494,10 @@
   ],
   [
     "change",
-    "variables.cohensd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cohensd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cohensd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2317,26 +2154,10 @@
   ],
   [
     "change",
-    "variables.cohensd_lower.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cohensd_lower.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cohensd_lower.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2993,26 +2814,10 @@
   ],
   [
     "change",
-    "variables.cohensd_upper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cohensd_upper.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cohensd_upper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3669,26 +3474,10 @@
   ],
   [
     "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4336,22 +4125,6 @@
     ]
   ],
   [
-    "change",
-    "variables.df.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.df.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.df",
     [
@@ -4953,26 +4726,10 @@
   ],
   [
     "change",
-    "variables.p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5629,26 +5386,10 @@
   ],
   [
     "change",
-    "variables.mean_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6305,26 +6046,10 @@
   ],
   [
     "change",
-    "variables.sd_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6971,22 +6696,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n_rep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n_rep",
     [
@@ -7580,26 +7289,10 @@
   ],
   [
     "change",
-    "variables.mean_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mean_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mean_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8256,26 +7949,10 @@
   ],
   [
     "change",
-    "variables.sd_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sd_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sd_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8921,22 +8598,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n_dem",
     [
@@ -9473,112 +9134,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:08:37",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "sample": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "q": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "topic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cohensd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cohensd_lower": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cohensd_upper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "df": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mean_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sd_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,113 +1,14 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        306
-      ],
-      [
-        "variableCount",
-        60
-      ],
-      [
-        "dataSource",
-        {
-          "name": "22808_BrancatiPSRM_Table1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 84588
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cnty.mode",
     [
       "Austria",
       [
         "Greece",
-        "Austria",
-        "Sweden"
+        "Sweden",
+        "Austria"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.cnty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cnty.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -167,12 +68,12 @@
       [
         "plotValues",
         {
-          "Sweden": 20,
           "Austria": 20,
+          "Sweden": 20,
           "Greece": 20,
           "Netherlands": 18,
-          "Switzerland": 16,
           "Ireland": 16,
+          "Switzerland": 16,
           "United Kingdom": 16,
           "Italy": 15,
           "Luxembourg": 14,
@@ -184,24 +85,24 @@
           "Malta": 9,
           "Norway": 8,
           "Finland": 7,
-          "Germany": 6,
           "Poland": 6,
-          "Lithuania": 5,
-          "Estonia": 5,
+          "Germany": 6,
           "Hungary": 5,
           "Latvia": 5,
+          "Lithuania": 5,
+          "Estonia": 5,
           "France": 5,
-          "Czech Republic": 4,
-          "Cyprus": 4,
           "Slovenia": 4,
+          "Cyprus": 4,
           "Romania": 4,
           "Bulgaria": 4,
-          "Bosnia-Herzegovina": 3,
+          "Czech Republic": 4,
           "Croatia": 3,
-          "Slovakia": 2,
+          "Bosnia-Herzegovina": 3,
           "Moldova": 2,
-          "Albania": 2,
           "Czechoslovakia": 2,
+          "Slovakia": 2,
+          "Albania": 2,
           "CSFR": 1
         }
       ],
@@ -421,26 +322,10 @@
   ],
   [
     "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.year.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1084,22 +969,6 @@
     ]
   ],
   [
-    "change",
-    "variables.EUindex.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.EUindex.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.EUindex",
     [
@@ -1360,22 +1229,6 @@
     ]
   ],
   [
-    "change",
-    "variables.noEU.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.noEU.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.noEU",
     [
@@ -1615,22 +1468,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ECSC.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ECSC.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1876,22 +1713,6 @@
     ]
   ],
   [
-    "change",
-    "variables.EEC.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.EEC.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.EEC",
     [
@@ -2131,22 +1952,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.EU.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.EU.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2392,22 +2197,6 @@
     ]
   ],
   [
-    "change",
-    "variables.EMU.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.EMU.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.EMU",
     [
@@ -2647,22 +2436,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.NATO.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.NATO.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2918,26 +2691,10 @@
   ],
   [
     "change",
-    "variables.fdi_inflows.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fdi_inflows.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fdi_inflows.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3590,26 +3347,10 @@
   ],
   [
     "change",
-    "variables.fdi_outflows.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.fdi_outflows.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.fdi_outflows.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4250,22 +3991,6 @@
     [
       "427840928",
       427840928.0
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4920,26 +4645,10 @@
   ],
   [
     "change",
-    "variables.gdpcap.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpcap.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpcap.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5593,26 +5302,10 @@
   ],
   [
     "change",
-    "variables.exports.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.exports.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.exports.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6266,26 +5959,10 @@
   ],
   [
     "change",
-    "variables.imports.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.imports.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.imports.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6938,26 +6615,10 @@
   ],
   [
     "change",
-    "variables.trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7601,22 +7262,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Oilrents.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Oilrents.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Oilrents",
     [
@@ -7917,22 +7562,6 @@
     ]
   ],
   [
-    "change",
-    "variables.felect.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.felect.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.felect",
     [
@@ -8172,22 +7801,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.polity2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.polity2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8484,26 +8097,10 @@
   ],
   [
     "change",
-    "variables.avgdm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.avgdm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.avgdm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9147,22 +8744,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dcen.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dcen.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dcen",
     [
@@ -9402,22 +8983,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dcen_index.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dcen_index.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9678,22 +9243,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10333,22 +9882,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sepSEATyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sepSEATyr",
     [
@@ -10932,26 +10465,10 @@
   ],
   [
     "change",
-    "variables.p_sepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_sepVOTEyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_sepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11604,26 +11121,10 @@
   ],
   [
     "change",
-    "variables.p_sepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_sepSEATyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_sepSEATyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12276,26 +11777,10 @@
   ],
   [
     "change",
-    "variables.p_coalVOTEMAX.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_coalVOTEMAX.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_coalVOTEMAX.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12948,26 +12433,10 @@
   ],
   [
     "change",
-    "variables.p_coalSEATMAX.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_coalSEATMAX.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_coalSEATMAX.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13611,22 +13080,6 @@
     ]
   ],
   [
-    "change",
-    "variables.coalVOTEMAX.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.coalVOTEMAX.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.coalVOTEMAX",
     [
@@ -14265,22 +13718,6 @@
     ]
   ],
   [
-    "change",
-    "variables.coalSEATMAX.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.coalSEATMAX.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.coalSEATMAX",
     [
@@ -14854,22 +14291,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.VsepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.VsepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15447,22 +14868,6 @@
     ]
   ],
   [
-    "change",
-    "variables.VsepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.VsepSEATyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.VsepSEATyr",
     [
@@ -15738,26 +15143,10 @@
   ],
   [
     "change",
-    "variables.p_VsepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_VsepVOTEyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_VsepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16410,26 +15799,10 @@
   ],
   [
     "change",
-    "variables.p_VsepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_VsepSEATyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_VsepSEATyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16730,22 +16103,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.proEUsepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.proEUsepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17359,22 +16716,6 @@
     ]
   ],
   [
-    "change",
-    "variables.proEUsepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.proEUsepSEATyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.proEUsepSEATyr",
     [
@@ -17954,26 +17295,10 @@
   ],
   [
     "change",
-    "variables.p_proEUsepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_proEUsepVOTEyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_proEUsepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18626,26 +17951,10 @@
   ],
   [
     "change",
-    "variables.p_proEUsepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_proEUsepSEATyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_proEUsepSEATyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19289,22 +18598,6 @@
     ]
   ],
   [
-    "change",
-    "variables.LEFTsepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LEFTsepVOTEyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.LEFTsepVOTEyr",
     [
@@ -19901,22 +19194,6 @@
     ]
   ],
   [
-    "change",
-    "variables.LEFTsepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.LEFTsepSEATyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.LEFTsepSEATyr",
     [
@@ -20231,26 +19508,10 @@
   ],
   [
     "change",
-    "variables.p_LEFTsepVOTEyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_LEFTsepVOTEyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_LEFTsepVOTEyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20903,26 +20164,10 @@
   ],
   [
     "change",
-    "variables.p_LEFTsepSEATyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_LEFTsepSEATyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_LEFTsepSEATyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21566,22 +20811,6 @@
     ]
   ],
   [
-    "change",
-    "variables.IRvoteyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.IRvoteyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.IRvoteyr",
     [
@@ -21882,22 +21111,6 @@
     ]
   ],
   [
-    "change",
-    "variables.IRseatyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.IRseatyr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.IRseatyr",
     [
@@ -22175,26 +21388,10 @@
   ],
   [
     "change",
-    "variables.p_IRvoteyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_IRvoteyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_IRvoteyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22507,26 +21704,10 @@
   ],
   [
     "change",
-    "variables.p_IRseatyr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.p_IRseatyr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.p_IRseatyr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22827,26 +22008,10 @@
   ],
   [
     "change",
-    "variables.urp_iso_vote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urp_iso_vote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urp_iso_vote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23499,26 +22664,10 @@
   ],
   [
     "change",
-    "variables.urp_iso_uncoded.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urp_iso_uncoded.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urp_iso_uncoded.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24171,26 +23320,10 @@
   ],
   [
     "change",
-    "variables.urp_nutii_vote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urp_nutii_vote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urp_nutii_vote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24843,26 +23976,10 @@
   ],
   [
     "change",
-    "variables.urp_nutsii_uncoded.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urp_nutsii_uncoded.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urp_nutsii_uncoded.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25517,26 +24634,10 @@
   ],
   [
     "change",
-    "variables.expshare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.expshare.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.expshare.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26192,26 +25293,10 @@
   ],
   [
     "change",
-    "variables.revshare.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.revshare.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.revshare.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26855,22 +25940,6 @@
     ]
   ],
   [
-    "change",
-    "variables.d40.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d40.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.d40",
     [
@@ -27110,22 +26179,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.d50.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d50.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27371,22 +26424,6 @@
     ]
   ],
   [
-    "change",
-    "variables.d60.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d60.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.d60",
     [
@@ -27626,22 +26663,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.d70.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d70.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27887,22 +26908,6 @@
     ]
   ],
   [
-    "change",
-    "variables.d80.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d80.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.d80",
     [
@@ -28142,22 +27147,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.d90.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d90.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28403,22 +27392,6 @@
     ]
   ],
   [
-    "change",
-    "variables.d00.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.d00.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.d00",
     [
@@ -28661,22 +27634,6 @@
     ]
   ],
   [
-    "change",
-    "variables.president.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.president.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.president",
     [
@@ -28873,332 +27830,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cnty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EUindex": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "noEU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ECSC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EEC": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "EMU": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NATO": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fdi_inflows": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fdi_outflows": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpcap": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "exports": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "imports": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Oilrents": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "felect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polity2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "avgdm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dcen": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dcen_index": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_sepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_sepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_coalVOTEMAX": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_coalSEATMAX": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coalVOTEMAX": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coalSEATMAX": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "VsepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "VsepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_VsepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_VsepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "proEUsepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "proEUsepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_proEUsepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_proEUsepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LEFTsepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "LEFTsepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_LEFTsepVOTEyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_LEFTsepSEATyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IRvoteyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IRseatyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_IRvoteyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p_IRseatyr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urp_iso_vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urp_iso_uncoded": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urp_nutii_vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urp_nutsii_uncoded": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "expshare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "revshare": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d50": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d60": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d70": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d80": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d90": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d00": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "president": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

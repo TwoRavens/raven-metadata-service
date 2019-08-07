@@ -1,112 +1,13 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        261
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26651_GubernatorialData.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 19447
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "New Hampshire",
       [
-        "Vermont",
-        "New Hampshire"
+        "New Hampshire",
+        "Vermont"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -140,11 +41,11 @@
       [
         "fewestValues",
         [
-          "West Virginia",
+          "Michigan",
+          "Oregon",
+          "Nebraska",
           "Maine",
-          "Utah",
-          "Illinois",
-          "Kansas"
+          "New Mexico"
         ]
       ],
       [
@@ -170,56 +71,56 @@
       [
         "plotValues",
         {
-          "New Hampshire": 10,
           "Vermont": 10,
+          "New Hampshire": 10,
           "Rhode Island": 6,
-          "North Dakota": 5,
-          "Alaska": 5,
-          "Iowa": 5,
-          "Wyoming": 5,
-          "Louisiana": 5,
-          "New Jersey": 5,
-          "Texas": 5,
-          "Nebraska": 5,
-          "Ohio": 5,
-          "Mississippi": 5,
-          "Washington": 5,
-          "Minnesota": 5,
-          "California": 5,
-          "Michigan": 5,
-          "South Dakota": 5,
-          "Missouri": 5,
-          "Tennessee": 5,
-          "Idaho": 5,
-          "Connecticut": 5,
-          "Alabama": 5,
-          "Florida": 5,
-          "New York": 5,
-          "North Carolina": 5,
-          "Maryland": 5,
-          "Oklahoma": 5,
-          "Massachusetts": 5,
-          "Arizona": 5,
-          "Montana": 5,
-          "South Carolina": 5,
-          "Hawaii": 5,
-          "Kentucky": 5,
-          "Nevada": 5,
-          "New Mexico": 5,
-          "Arkansas": 5,
-          "Pennsylvania": 5,
-          "Colorado": 5,
-          "Georgia": 5,
           "Wisconsin": 5,
-          "Oregon": 5,
-          "Delaware": 5,
-          "Virginia": 5,
-          "Indiana": 5,
+          "Alabama": 5,
           "Kansas": 5,
-          "Illinois": 5,
+          "Washington": 5,
+          "New Jersey": 5,
+          "Montana": 5,
           "Utah": 5,
+          "Arizona": 5,
+          "Ohio": 5,
+          "Pennsylvania": 5,
+          "Louisiana": 5,
+          "South Carolina": 5,
+          "Oklahoma": 5,
+          "Hawaii": 5,
+          "Tennessee": 5,
+          "Texas": 5,
+          "Minnesota": 5,
+          "Virginia": 5,
+          "Florida": 5,
+          "Maryland": 5,
+          "North Dakota": 5,
+          "Colorado": 5,
+          "South Dakota": 5,
+          "Illinois": 5,
+          "Mississippi": 5,
+          "Delaware": 5,
+          "Kentucky": 5,
+          "Massachusetts": 5,
+          "Wyoming": 5,
+          "West Virginia": 5,
+          "Arkansas": 5,
+          "Missouri": 5,
+          "Idaho": 5,
+          "Iowa": 5,
+          "Nevada": 5,
+          "Alaska": 5,
+          "North Carolina": 5,
+          "California": 5,
+          "Georgia": 5,
+          "Connecticut": 5,
+          "Indiana": 5,
+          "New York": 5,
+          "New Mexico": 5,
           "Maine": 5,
-          "West Virginia": 5
+          "Nebraska": 5,
+          "Oregon": 5,
+          "Michigan": 5
         }
       ],
       [
@@ -441,22 +342,6 @@
     [
       "6968",
       6968
-    ]
-  ],
-  [
-    "change",
-    "variables.rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1104,22 +989,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem",
     [
@@ -1764,22 +1633,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -2373,26 +2226,10 @@
   ],
   [
     "change",
-    "variables.vep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3049,26 +2886,10 @@
   ],
   [
     "change",
-    "variables.pres_normal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pres_normal.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pres_normal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3725,26 +3546,10 @@
   ],
   [
     "change",
-    "variables.pres_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pres_turnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pres_turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4401,26 +4206,10 @@
   ],
   [
     "change",
-    "variables.approval.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.approval.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.approval.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5064,22 +4853,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem_pres.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_pres.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem_pres",
     [
@@ -5276,77 +5049,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:27:22",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pres_normal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pres_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "approval": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_pres": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

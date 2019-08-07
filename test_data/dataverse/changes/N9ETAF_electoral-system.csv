@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        38
-      ],
-      [
-        "variableCount",
-        6
-      ],
-      [
-        "dataSource",
-        {
-          "name": "N9ETAF_electoral-system.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 642
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     [
       "variables",
@@ -92,36 +9,12 @@
     [
       "AUS",
       [
-        "NLD",
-        "AUT",
+        "CHE",
+        "LUX",
         "CAN",
-        "ITA",
+        "SVK",
         "CYP"
       ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.name.short",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "country.name.short",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -158,10 +51,10 @@
       [
         "fewestValues",
         [
-          "NLD",
-          "AUT",
+          "CHE",
+          "LUX",
           "CAN",
-          "ITA",
+          "SVK",
           "CYP"
         ]
       ],
@@ -188,44 +81,44 @@
       [
         "plotValues",
         {
-          "SVN": 1,
-          "FRA-I": 1,
-          "BGR": 1,
-          "GRC": 1,
-          "MLT": 1,
           "NZL-II": 1,
-          "ROU": 1,
-          "NOR": 1,
-          "LUX": 1,
-          "FIN": 1,
-          "CZE": 1,
           "POL": 1,
-          "FRA-II": 1,
-          "HUN": 1,
-          "PRT": 1,
-          "LTU": 1,
-          "GBR": 1,
-          "BEL": 1,
-          "EST": 1,
-          "IRL": 1,
-          "CHE": 1,
-          "USA": 1,
-          "DNK": 1,
-          "ESP": 1,
-          "SWE": 1,
-          "DEU": 1,
-          "NZL-I": 1,
-          "JPN": 1,
-          "ISL": 1,
-          "SVK": 1,
           "AUS": 1,
-          "LVA": 1,
-          "GDR": 1,
-          "CYP": 1,
-          "ITA": 1,
-          "CAN": 1,
+          "ROU": 1,
+          "FRA-I": 1,
+          "IRL": 1,
+          "DNK": 1,
+          "JPN": 1,
+          "ESP": 1,
+          "NLD": 1,
+          "GBR": 1,
+          "PRT": 1,
+          "CZE": 1,
+          "ISL": 1,
+          "HUN": 1,
+          "MLT": 1,
           "AUT": 1,
-          "NLD": 1
+          "EST": 1,
+          "FRA-II": 1,
+          "DEU": 1,
+          "LVA": 1,
+          "ITA": 1,
+          "BEL": 1,
+          "SWE": 1,
+          "USA": 1,
+          "GRC": 1,
+          "NOR": 1,
+          "FIN": 1,
+          "LTU": 1,
+          "GDR": 1,
+          "SVN": 1,
+          "NZL-I": 1,
+          "BGR": 1,
+          "CYP": 1,
+          "SVK": 1,
+          "CAN": 1,
+          "LUX": 1,
+          "CHE": 1
         }
       ],
       [
@@ -434,22 +327,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.proportional.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.proportional.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -715,30 +592,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "iversen.soskice",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "iversen.soskice",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -984,22 +837,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1257,22 +1094,6 @@
     ]
   ],
   [
-    "change",
-    "variables.disproportional.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.disproportional.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.disproportional",
     [
@@ -1473,22 +1294,6 @@
     ]
   ],
   [
-    "change",
-    "variables.comment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.comment.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.comment",
     [
@@ -1519,9 +1324,9 @@
       [
         "fewestValues",
         [
-          "winner bonus",
           "malapportionement",
-          "segmented system -- half of the seats in run-off elections"
+          "segmented system -- half of the seats in run-off elections",
+          "winner bonus"
         ]
       ],
       [
@@ -1548,9 +1353,9 @@
         "plotValues",
         {
           "STV": 2,
+          "winner bonus": 1,
           "segmented system -- half of the seats in run-off elections": 1,
-          "malapportionement": 1,
-          "winner bonus": 1
+          "malapportionement": 1
         }
       ],
       [
@@ -1680,62 +1485,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:32:05",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country.name.short": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "proportional": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "iversen.soskice": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "disproportional": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

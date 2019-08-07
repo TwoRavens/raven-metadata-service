@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        149
-      ],
-      [
-        "variableCount",
-        113
-      ],
-      [
-        "dataSource",
-        {
-          "name": "9ZYFBX_rd_analysis_shor_new.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 92513
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
@@ -90,22 +7,6 @@
       [
         "GA"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,11 +40,11 @@
       [
         "fewestValues",
         [
-          "MN",
+          "IN",
           "VT",
-          "ID",
-          "HI",
-          "IN"
+          "IA",
+          "NH",
+          "SD"
         ]
       ],
       [
@@ -174,40 +75,40 @@
           "FL": 9,
           "MO": 9,
           "MI": 8,
+          "CA": 7,
           "TX": 7,
           "NC": 7,
-          "CA": 7,
           "NY": 6,
-          "AZ": 5,
-          "NJ": 5,
           "ME": 5,
+          "NJ": 5,
+          "AZ": 5,
           "AR": 5,
           "WI": 4,
           "CO": 4,
-          "PA": 3,
           "MS": 3,
           "NM": 3,
           "OR": 3,
-          "SC": 3,
+          "PA": 3,
           "IL": 3,
           "MD": 3,
-          "UT": 2,
-          "KS": 2,
+          "SC": 3,
+          "MT": 2,
           "TN": 2,
           "AL": 2,
-          "MT": 2,
+          "KS": 2,
+          "UT": 2,
           "WV": 2,
           "RI": 2,
-          "IA": 1,
+          "ID": 1,
           "MA": 1,
+          "HI": 1,
+          "MN": 1,
+          "OK": 1,
           "SD": 1,
           "NH": 1,
-          "OK": 1,
-          "IN": 1,
-          "HI": 1,
-          "ID": 1,
+          "IA": 1,
           "VT": 1,
-          "MN": 1
+          "IN": 1
         }
       ],
       [
@@ -414,22 +315,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1025,22 +910,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dem",
     [
@@ -1280,22 +1149,6 @@
     [
       "2000",
       2000.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1586,26 +1439,10 @@
   ],
   [
     "change",
-    "variables.turnout_dem_strong.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_dem_strong.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_dem_strong.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2249,22 +2086,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes1",
     [
@@ -2840,22 +2661,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3455,22 +3260,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_n1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_n1",
     [
@@ -4058,22 +3847,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4690,26 +4463,10 @@
   ],
   [
     "change",
-    "variables.turnout_dem_nvstrong.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_dem_nvstrong.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_dem_nvstrong.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5353,22 +5110,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes2",
     [
@@ -5666,22 +5407,6 @@
     ]
   ],
   [
-    "change",
-    "variables.high_info_votes2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.high_info_votes2",
     [
@@ -5976,22 +5701,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6575,22 +6284,6 @@
     ]
   ],
   [
-    "change",
-    "variables.high_info_n2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.high_info_n2",
     [
@@ -7164,26 +6857,10 @@
   ],
   [
     "change",
-    "variables.turnout_dem_lean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_dem_lean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_dem_lean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7827,22 +7504,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes3",
     [
@@ -8131,22 +7792,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8710,22 +8355,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9295,22 +8924,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9896,26 +9509,10 @@
   ],
   [
     "change",
-    "variables.turnout_indep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_indep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_indep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10559,22 +10156,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes4",
     [
@@ -10870,22 +10451,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11190,22 +10755,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11784,22 +11333,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12386,26 +11919,10 @@
   ],
   [
     "change",
-    "variables.turnout_rep_lean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_rep_lean.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_rep_lean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13049,22 +12566,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes5",
     [
@@ -13628,22 +13129,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14233,22 +13718,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_n5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_n5",
     [
@@ -14817,22 +14286,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15436,26 +14889,10 @@
   ],
   [
     "change",
-    "variables.turnout_rep_rep_nvstrong.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_rep_rep_nvstrong.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_rep_rep_nvstrong.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16099,22 +15536,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes6",
     [
@@ -16410,22 +15831,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16990,22 +16395,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17577,22 +16966,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n6.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18173,26 +17546,10 @@
   ],
   [
     "change",
-    "variables.turnout_rep_strong.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_rep_strong.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_rep_strong.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18836,22 +18193,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_votes7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_votes7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_votes7",
     [
@@ -19417,22 +18758,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_votes7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20036,22 +19361,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_n7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_n7.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_n7",
     [
@@ -20627,22 +19936,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n7.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_n7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21246,22 +20539,6 @@
     [
       "6",
       6.0
-    ]
-  ],
-  [
-    "change",
-    "variables.total_responses.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total_responses.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21902,22 +21179,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.total_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total_turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22570,26 +21831,10 @@
   ],
   [
     "change",
-    "variables.turnout_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23242,26 +22487,10 @@
   ],
   [
     "change",
-    "variables.turnout_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23914,26 +23143,10 @@
   ],
   [
     "change",
-    "variables.dem_turnout_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_turnout_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_turnout_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24586,26 +23799,10 @@
   ],
   [
     "change",
-    "variables.rep_turnout_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_turnout_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_turnout_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25249,22 +24446,6 @@
     ]
   ],
   [
-    "change",
-    "variables.low_info_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.low_info_turnout.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.low_info_turnout",
     [
@@ -25884,22 +25065,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.high_info_turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26552,26 +25717,10 @@
   ],
   [
     "change",
-    "variables.dem_low_info_turnout_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_low_info_turnout_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_low_info_turnout_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27224,26 +26373,10 @@
   ],
   [
     "change",
-    "variables.rep_low_info_turnout_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_low_info_turnout_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_low_info_turnout_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27896,26 +27029,10 @@
   ],
   [
     "change",
-    "variables.dem_high_info_turnout_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dem_high_info_turnout_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dem_high_info_turnout_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28569,26 +27686,10 @@
   ],
   [
     "change",
-    "variables.rep_high_info_turnout_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rep_high_info_turnout_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rep_high_info_turnout_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29232,22 +28333,6 @@
     ]
   ],
   [
-    "change",
-    "variables.total_low_info_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total_low_info_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.total_low_info_dem",
     [
@@ -29869,26 +28954,10 @@
   ],
   [
     "change",
-    "variables.turnout_low_info_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_low_info_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_low_info_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30532,22 +29601,6 @@
     ]
   ],
   [
-    "change",
-    "variables.total_low_info_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total_low_info_rep.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.total_low_info_rep",
     [
@@ -31161,26 +30214,10 @@
   ],
   [
     "change",
-    "variables.turnout_low_info_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_low_info_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_low_info_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31824,22 +30861,6 @@
     ]
   ],
   [
-    "change",
-    "variables.total_high_info_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total_high_info_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.total_high_info_dem",
     [
@@ -32473,26 +31494,10 @@
   ],
   [
     "change",
-    "variables.turnout_high_info_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_high_info_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_high_info_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33133,22 +32138,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.total_high_info_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total_high_info_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33797,26 +32786,10 @@
   ],
   [
     "change",
-    "variables.turnout_high_info_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_high_info_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_high_info_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34469,26 +33442,10 @@
   ],
   [
     "change",
-    "variables.turnout_ext_lib.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_ext_lib.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_ext_lib.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35141,26 +34098,10 @@
   ],
   [
     "change",
-    "variables.turnout_mod_lib.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_mod_lib.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_mod_lib.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35813,26 +34754,10 @@
   ],
   [
     "change",
-    "variables.turnout_mod.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_mod.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_mod.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36485,26 +35410,10 @@
   ],
   [
     "change",
-    "variables.turnout_mod_cons.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_mod_cons.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_mod_cons.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37157,26 +36066,10 @@
   ],
   [
     "change",
-    "variables.turnout_ext_cons.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_ext_cons.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_ext_cons.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37829,26 +36722,10 @@
   ],
   [
     "change",
-    "variables.turnout_dknow.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_dknow.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_dknow.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38503,26 +37380,10 @@
   ],
   [
     "change",
-    "variables.lag_dem_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_dem_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_dem_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39176,26 +38037,10 @@
   ],
   [
     "change",
-    "variables.lag_rep_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_rep_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_rep_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39838,22 +38683,6 @@
     [
       "16",
       16.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_responses.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_responses.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40506,26 +39335,10 @@
   ],
   [
     "change",
-    "variables.catalist_share_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.catalist_share_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.catalist_share_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41178,26 +39991,10 @@
   ],
   [
     "change",
-    "variables.catalist_share_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.catalist_share_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.catalist_share_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41850,26 +40647,10 @@
   ],
   [
     "change",
-    "variables.catop_share_dem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.catop_share_dem.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.catop_share_dem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42522,26 +41303,10 @@
   ],
   [
     "change",
-    "variables.catop_share_rep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.catop_share_rep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.catop_share_rep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43186,22 +41951,6 @@
     [
       "1125",
       1125.0
-    ]
-  ],
-  [
-    "change",
-    "variables.p.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.p.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -43854,26 +42603,10 @@
   ],
   [
     "change",
-    "variables.vote_g0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_g0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_g0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -44530,26 +43263,10 @@
   ],
   [
     "change",
-    "variables.vote_top20.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_top20.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_top20.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45205,26 +43922,10 @@
   ],
   [
     "change",
-    "variables.np_score0.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.np_score0.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.np_score0.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45877,26 +44578,10 @@
   ],
   [
     "change",
-    "variables.vote_g1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_g1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_g1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -46553,26 +45238,10 @@
   ],
   [
     "change",
-    "variables.vote_top21.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_top21.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_top21.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47225,26 +45894,10 @@
   ],
   [
     "change",
-    "variables.np_score1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.np_score1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.np_score1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -47856,22 +46509,6 @@
     ]
   ],
   [
-    "change",
-    "variables.type.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.type.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.type",
     [
@@ -48112,26 +46749,10 @@
   ],
   [
     "change",
-    "variables.D_SW_PCT_SHARE.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.D_SW_PCT_SHARE.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.D_SW_PCT_SHARE.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -48776,22 +47397,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vote_g_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_g_total.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vote_g_total",
     [
@@ -49432,22 +48037,6 @@
     ]
   ],
   [
-    "change",
-    "variables.inc_p.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.inc_p.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.inc_p",
     [
@@ -49687,22 +48276,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.open.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.open.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -49948,22 +48521,6 @@
     ]
   ],
   [
-    "change",
-    "variables.open_all.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.open_all.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.open_all",
     [
@@ -50203,22 +48760,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.r.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.r.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -50477,26 +49018,10 @@
   ],
   [
     "change",
-    "variables.rv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51153,26 +49678,10 @@
   ],
   [
     "change",
-    "variables.rv2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -51829,26 +50338,10 @@
   ],
   [
     "change",
-    "variables.rv3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -52505,26 +50998,10 @@
   ],
   [
     "change",
-    "variables.rv4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53181,26 +51658,10 @@
   ],
   [
     "change",
-    "variables.rv5.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rv5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rv5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -53844,22 +52305,6 @@
     ]
   ],
   [
-    "change",
-    "variables.treat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.treat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.treat",
     [
@@ -54111,26 +52556,10 @@
   ],
   [
     "change",
-    "variables.treat_rv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.treat_rv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.treat_rv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -54783,26 +53212,10 @@
   ],
   [
     "change",
-    "variables.vote_general.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote_general.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote_general.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -55446,22 +53859,6 @@
     ]
   ],
   [
-    "change",
-    "variables.victory_general.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.victory_general.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.victory_general",
     [
@@ -55713,26 +54110,10 @@
   ],
   [
     "change",
-    "variables.absdist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.absdist.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.absdist.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -56386,26 +54767,10 @@
   ],
   [
     "change",
-    "variables.log_total_turnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_total_turnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_total_turnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57049,22 +55414,6 @@
     ]
   ],
   [
-    "change",
-    "variables.midterm.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.midterm.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.midterm",
     [
@@ -57316,26 +55665,10 @@
   ],
   [
     "change",
-    "variables.turnout_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -57988,26 +56321,10 @@
   ],
   [
     "change",
-    "variables.turnout_opp_party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_opp_party.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_opp_party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -58660,26 +56977,10 @@
   ],
   [
     "change",
-    "variables.turnout_party_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_party_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_party_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -59332,26 +57633,10 @@
   ],
   [
     "change",
-    "variables.lag_share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60004,26 +58289,10 @@
   ],
   [
     "change",
-    "variables.turnout_extreme.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_extreme.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_extreme.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -60676,26 +58945,10 @@
   ],
   [
     "change",
-    "variables.turnout_opp_extreme.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_opp_extreme.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_opp_extreme.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -61348,26 +59601,10 @@
   ],
   [
     "change",
-    "variables.turnout_party_diff.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.turnout_party_diff.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.turnout_party_diff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62011,22 +60248,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -62679,26 +60900,10 @@
   ],
   [
     "change",
-    "variables.treat_abs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.treat_abs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.treat_abs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -63342,22 +61547,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pres.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pres.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pres",
     [
@@ -63600,22 +61789,6 @@
     ]
   ],
   [
-    "change",
-    "variables.re.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.re.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.re",
     [
@@ -63855,22 +62028,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.g.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.g.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -64523,26 +62680,10 @@
   ],
   [
     "change",
-    "variables.pv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65195,26 +63336,10 @@
   ],
   [
     "change",
-    "variables.two_party_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.two_party_total.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.two_party_total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -65867,26 +63992,10 @@
   ],
   [
     "change",
-    "variables.lag_pv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lag_pv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lag_pv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -66484,597 +64593,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:46",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_dem_strong": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_dem_nvstrong": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_dem_lean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_indep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_rep_lean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_rep_rep_nvstrong": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_rep_strong": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_votes7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_votes7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_n7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_n7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total_responses": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_turnout_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_turnout_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low_info_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high_info_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_low_info_turnout_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_low_info_turnout_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dem_high_info_turnout_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rep_high_info_turnout_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total_low_info_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_low_info_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total_low_info_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_low_info_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total_high_info_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_high_info_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total_high_info_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_high_info_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_ext_lib": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_mod_lib": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_mod": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_mod_cons": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_ext_cons": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_dknow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_dem_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_rep_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_responses": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "catalist_share_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "catalist_share_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "catop_share_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "catop_share_rep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_g0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_top20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "np_score0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_g1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_top21": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "np_score1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "D_SW_PCT_SHARE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_g_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inc_p": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "open": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "open_all": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rv5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat_rv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "victory_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "absdist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_total_turnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "midterm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_opp_party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_party_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_extreme": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_opp_extreme": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "turnout_party_diff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "treat_abs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pres": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "re": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "g": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "two_party_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lag_pv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

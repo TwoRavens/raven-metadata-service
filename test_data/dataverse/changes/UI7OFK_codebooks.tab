@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        32
-      ],
-      [
-        "variableCount",
-        2
-      ],
-      [
-        "dataSource",
-        {
-          "name": "UI7OFK_codebooks.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3473
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.B.mode",
     [
@@ -90,22 +7,6 @@
       [
         "an indicator whether the public policy on the issue was congruent with majority public opinion 12 months after the beginning of the observation period"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.B.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.B.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,11 +40,11 @@
       [
         "fewestValues",
         [
-          "number of months between month of enactment of policy change and month of public opinion poll. NA if policy not enacted",
-          "month of the enactment of the policy on the issue, with NA if policy not enacted by the end of the observation period",
-          "share of the public in support of the public call for action from all respondents",
-          "an indicator whether the public policy on the issue was congruent with majority public opinion at the end of the observation period",
-          "share of the public in opposition to the public call for action from all respondents"
+          "whether policy change on the issue occurred within 12 months",
+          "an indicator whether the policy change in the public call for action implies change in a right/TAN direction",
+          "number of newspaper articles on the isue in the time period 1 month prior and 1 month after the poll on the item",
+          "month of publication of the public opinion poll",
+          "an indicator whether the public call for action had net support from all respondents"
         ]
       ],
       [
@@ -170,35 +71,35 @@
         "plotValues",
         {
           "an indicator whether the public policy on the issue was congruent with majority public opinion 12 months after the beginning of the observation period": 2,
-          "the variable salience.init standardized by country": 1,
-          "share of the public in support of the public call for action from  the respondents with opinion": 1,
+          "id of the issues in Germany, used for merging": 1,
           "whether policy change on the issue occurred within 24 months": 1,
-          "whether policy change on the issue occurred within 12 months": 1,
+          "share of the public in support of the public call for action from  the respondents with opinion": 1,
+          "share of the public in support of the public call for action from all respondents": 1,
+          "number of months between month of enactment of policy change and month of public opinion poll. If change not enacted, last month of observation used": 1,
+          "an indicator whether the public policy on the issue was congruent with majority public opinion at the end of the observation period": 1,
+          "the variable salience.init standardized by country": 1,
+          "date of publication of the public opinion poll": 1,
+          "share of the public in opposition to the public call for action from all respondents": 1,
+          "month of the enactment of the policy on the issue, with NA if policy not enacted by the end of the observation period": 1,
+          "country": 1,
+          "an indicator whether the public policy on the issue was congruent with majority public opinion 36 months after the beginning of the observation period": 1,
+          "an indicator whether there was an existing bill on the policy issue": 1,
+          "number of months between month of enactment of policy change and month of public opinion poll. NA if policy not enacted": 1,
+          "an indicator whether the public policy on the issue was congruent with majority public opinion at the beginning of the observation period": 1,
+          "net public support for the public call for action (po.support minus po.against)": 1,
+          "month of the enactment of the policy on the issue, with the last month of observation recorded if policy not enacted by the end of the observation period": 1,
+          "Chapel Hill scale to which the policy item belongs (from 3)": 1,
+          "definition": 1,
+          "date of the enactment of the policy on the issue, with NA if policy not enacted by the end of the observation period": 1,
+          "an indicator whether policy change on the issue occurred or not within the observation period": 1,
+          "number of newspaper articles on the isue in the time period 1 month prior and 1 month after the poll on the item": 1,
           "an indicator whether the observation was censored at the end of the period": 1,
           "whether policy change on the issue occurred within 36 months": 1,
-          "country": 1,
-          "definition": 1,
-          "share of the public in opposition to the public call for action from all respondents": 1,
-          "id of the issues in Germany, used for merging": 1,
-          "month of the enactment of the policy on the issue, with the last month of observation recorded if policy not enacted by the end of the observation period": 1,
-          "month of publication of the public opinion poll": 1,
-          "month of the enactment of the policy on the issue, with NA if policy not enacted by the end of the observation period": 1,
-          "an indicator whether the public policy on the issue was congruent with majority public opinion at the beginning of the observation period": 1,
-          "an indicator whether policy change on the issue occurred or not within the observation period": 1,
-          "date of the enactment of the policy on the issue, with NA if policy not enacted by the end of the observation period": 1,
-          "date of publication of the public opinion poll": 1,
-          "Chapel Hill scale to which the policy item belongs (from 3)": 1,
-          "an indicator whether there was an existing bill on the policy issue": 1,
-          "number of months between month of enactment of policy change and month of public opinion poll. If change not enacted, last month of observation used": 1,
-          "an indicator whether the public policy on the issue was congruent with majority public opinion 36 months after the beginning of the observation period": 1,
-          "an indicator whether the policy change in the public call for action implies change in a right/TAN direction": 1,
-          "number of months between month of enactment of policy change and month of public opinion poll. NA if policy not enacted": 1,
-          "an indicator whether the public call for action had net support from all respondents": 1,
-          "an indicator whether the public policy on the issue was congruent with majority public opinion at the end of the observation period": 1,
-          "share of the public in support of the public call for action from all respondents": 1,
           "an indicator whether the public call for action had majority support from all respondents": 1,
-          "net public support for the public call for action (po.support minus po.against)": 1,
-          "number of newspaper articles on the isue in the time period 1 month prior and 1 month after the poll on the item": 1
+          "an indicator whether the public call for action had net support from all respondents": 1,
+          "month of publication of the public opinion poll": 1,
+          "an indicator whether the policy change in the public call for action implies change in a right/TAN direction": 1,
+          "whether policy change on the issue occurred within 12 months": 1
         }
       ],
       [
@@ -379,19 +280,19 @@
           "max": "NA",
           "min": "NA",
           "mode": [
-            "policy.change.duration.m.c",
-            "policy.date",
-            "policy.change.duration.m",
-            "po.against",
-            "salience.st"
+            "policy.date.m",
+            "policy.change.2",
+            "net.support.dummy",
+            "po.support.alt",
+            "proposal"
           ],
           "modeFreq": 1,
           "fewestValues": [
-            "policy.change.duration.m.c",
-            "policy.date",
-            "policy.change.duration.m",
-            "po.against",
-            "salience.st"
+            "policy.date.m",
+            "policy.change.2",
+            "net.support.dummy",
+            "po.support.alt",
+            "proposal"
           ],
           "fewestFreq": 1,
           "midpoint": null,
@@ -399,37 +300,37 @@
           "stdDev": "NA",
           "herfindahlIndex": 0.03225806451612904,
           "plotValues": {
-            "variable": 1,
-            "policy.change.2": 1,
-            "policy.change.duration.m": 1,
-            "po.support.alt": 1,
-            "congruent0": 1,
-            "policy.change.3": 1,
-            "salience.init": 1,
-            "po.support": 1,
-            "censor": 1,
-            "country": 1,
-            "proposal": 1,
-            "congruent3": 1,
             "policy.scale": 1,
-            "net.support": 1,
-            "policy.change": 1,
-            "po.date": 1,
-            "policy.direction.right": 1,
-            "policy.date.m": 1,
-            "congruent4": 1,
-            "policy.enact.date.m": 1,
-            "po.support.dummy": 1,
-            "net.support.dummy": 1,
-            "congruent1": 1,
-            "policy.change.duration.m.c": 1,
-            "policy.change.1": 1,
-            "po.date.m": 1,
-            "IDde": 1,
-            "salience.st": 1,
             "po.against": 1,
+            "censor": 1,
+            "congruent3": 1,
+            "policy.change": 1,
+            "congruent1": 1,
+            "policy.direction.right": 1,
+            "variable": 1,
+            "IDde": 1,
             "policy.date": 1,
-            "congruent2": 1
+            "po.date.m": 1,
+            "salience.init": 1,
+            "country": 1,
+            "policy.enact.date.m": 1,
+            "policy.change.3": 1,
+            "salience.st": 1,
+            "policy.change.2": 1,
+            "congruent0": 1,
+            "policy.change.1": 1,
+            "congruent2": 1,
+            "po.support.dummy": 1,
+            "policy.change.duration.m.c": 1,
+            "net.support": 1,
+            "policy.change.duration.m": 1,
+            "po.support": 1,
+            "congruent4": 1,
+            "po.date": 1,
+            "proposal": 1,
+            "po.support.alt": 1,
+            "net.support.dummy": 1,
+            "policy.date.m": 1
           },
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -514,42 +415,6 @@
           "defaultNature": "nominal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:08:09",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Codebookforthedatafilepolicyissuedata.txt,usedinToshkovetal.(2018)inJournalofPublicPolicy,lastrevised26.09.2018": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "B": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

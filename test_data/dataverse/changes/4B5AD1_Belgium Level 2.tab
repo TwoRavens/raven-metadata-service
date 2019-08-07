@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        40
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "4B5AD1_Belgium Level 2.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2558
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.partyID.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.partyID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyID.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -728,28 +629,12 @@
     [
       "PS Francophone socialist party",
       [
-        "PS Francophone socialist party",
-        "Agalev Flemish green party",
         "Ecolo Francophone green party",
+        "PSC Francophone Christian Social party",
         "VLD Flemish liberal party",
-        "CVP Flemish Christian democratic party"
+        "PRL Francophone liberal party",
+        "Agalev Flemish green party"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -809,13 +694,13 @@
       [
         "plotValues",
         {
-          "PSC Francophone Christian Social party": 5,
-          "CVP Flemish Christian democratic party": 5,
-          "Ecolo Francophone green party": 5,
-          "VLD Flemish liberal party": 5,
-          "PRL Francophone liberal party": 5,
           "Agalev Flemish green party": 5,
           "PS Francophone socialist party": 5,
+          "CVP Flemish Christian democratic party": 5,
+          "PRL Francophone liberal party": 5,
+          "VLD Flemish liberal party": 5,
+          "PSC Francophone Christian Social party": 5,
+          "Ecolo Francophone green party": 5,
           "SPA Flemish socialist party": 3,
           "SP Flemish socialist party": 2
         }
@@ -998,22 +883,6 @@
     [
       "1995",
       1995
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1281,22 +1150,6 @@
     ]
   ],
   [
-    "change",
-    "variables.decent2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.decent2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.decent2",
     [
@@ -1546,22 +1399,6 @@
     ]
   ],
   [
-    "change",
-    "variables.selectorate1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.selectorate1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.selectorate1",
     [
@@ -1807,22 +1644,6 @@
     [
       "-1",
       -1
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2075,22 +1896,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incumbnt.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.incumbnt.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incumbnt",
     [
@@ -2330,22 +2135,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.DecentD1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.DecentD1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2591,22 +2380,6 @@
     ]
   ],
   [
-    "change",
-    "variables.DecentD2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.DecentD2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.DecentD2",
     [
@@ -2846,22 +2619,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.DecentD3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.DecentD3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3107,22 +2864,6 @@
     ]
   ],
   [
-    "change",
-    "variables.selecD3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.selecD3",
     [
@@ -3362,22 +3103,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3623,22 +3348,6 @@
     ]
   ],
   [
-    "change",
-    "variables.selecD1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.selecD1",
     [
@@ -3835,97 +3544,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:22:35",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "partyID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decent2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selectorate1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incumbnt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DecentD1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DecentD2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DecentD3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecD3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecD2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecD1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

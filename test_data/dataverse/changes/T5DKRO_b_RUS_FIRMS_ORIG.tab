@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        301
-      ],
-      [
-        "variableCount",
-        79
-      ],
-      [
-        "dataSource",
-        {
-          "name": "T5DKRO_b_RUS_FIRMS_ORIG.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 99810
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.city.mode",
     [
@@ -90,22 +7,6 @@
       [
         "regions"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.city.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.city.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -309,22 +210,6 @@
     ]
   ],
   [
-    "change",
-    "variables.city2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.city2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.city2",
     [
@@ -355,10 +240,10 @@
       [
         "fewestValues",
         [
-          "Ekaterinburg",
-          "Rostov.on.Don",
           "Nizhniy.Novgorod",
-          "Samara"
+          "Rostov.on.Don",
+          "Samara",
+          "Ekaterinburg"
         ]
       ],
       [
@@ -388,10 +273,10 @@
           "St.Pete": 75,
           "Novosibirsk": 23,
           "Kazan": 22,
+          "Ekaterinburg": 20,
           "Samara": 20,
-          "Nizhniy.Novgorod": 20,
           "Rostov.on.Don": 20,
-          "Ekaterinburg": 20
+          "Nizhniy.Novgorod": 20
         }
       ],
       [
@@ -567,22 +452,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Prts_viol1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Prts_viol1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -855,22 +724,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Srts_viol1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Srts_viol1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1147,22 +1000,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Prts_viol2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Prts_viol2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Prts_viol2",
     [
@@ -1402,22 +1239,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Srts_viol2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Srts_viol2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1663,22 +1484,6 @@
     ]
   ],
   [
-    "change",
-    "variables.rts_viol.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.rts_viol.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.rts_viol",
     [
@@ -1918,22 +1723,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sued.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sued.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2206,22 +1995,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.defendant.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.defendant.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2498,22 +2271,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sued2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sued2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sued2",
     [
@@ -2753,22 +2510,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.defendant2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.defendant2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3014,22 +2755,6 @@
     ]
   ],
   [
-    "change",
-    "variables.litigated.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.litigated.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.litigated",
     [
@@ -3269,22 +2994,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.violence.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.violence.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3542,22 +3251,6 @@
     ]
   ],
   [
-    "change",
-    "variables.violence2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.violence2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.violence2",
     [
@@ -3797,22 +3490,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.willing_to_use.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.willing_to_use.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4076,22 +3753,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other_firms.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.other_firms.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other_firms",
     [
@@ -4352,22 +4013,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other_firms2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other_firms2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other_firms2",
     [
@@ -4610,22 +4255,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other_firms2_r.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other_firms2_r.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other_firms2_r",
     [
@@ -4865,22 +4494,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.other_past.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.other_past.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5144,22 +4757,6 @@
     ]
   ],
   [
-    "change",
-    "variables.other_past2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other_past2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.other_past2",
     [
@@ -5419,30 +5016,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "contact.mafia",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "contact.mafia",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5714,30 +5287,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "recent.contact.mafia",
-      "binary"
-    ],
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "recent.contact.mafia",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -5983,22 +5532,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.negotiate2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.negotiate2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6274,22 +5807,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lawenf2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lawenf2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lawenf2",
     [
@@ -6559,22 +6076,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lawenf_inf2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lawenf_inf2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6850,22 +6351,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bur2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bur2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bur2",
     [
@@ -7135,22 +6620,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.bur_inf2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bur_inf2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7426,22 +6895,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lawyers2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lawyers2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lawyers2",
     [
@@ -7711,22 +7164,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.courts2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.courts2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8002,22 +7439,6 @@
     ]
   ],
   [
-    "change",
-    "variables.courts_inf2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.courts_inf2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.courts_inf2",
     [
@@ -8287,22 +7708,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.arbitrate2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.arbitrate2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8578,22 +7983,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mafia2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mafia2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mafia2",
     [
@@ -8863,22 +8252,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.psa2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.psa2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9155,22 +8528,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pss2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pss2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pss2",
     [
@@ -9440,22 +8797,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.bus_assoc2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bus_assoc2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9731,22 +9072,6 @@
     ]
   ],
   [
-    "change",
-    "variables.negotiate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.negotiate.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.negotiate",
     [
@@ -10016,22 +9341,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lawenf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lawenf.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10307,22 +9616,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lawenf_inf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lawenf_inf.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lawenf_inf",
     [
@@ -10592,22 +9885,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.bur.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bur.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10883,22 +10160,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bur_inf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bur_inf.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bur_inf",
     [
@@ -11171,22 +10432,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lawyers.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lawyers.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lawyers",
     [
@@ -11456,22 +10701,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.courts.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.courts.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11748,22 +10977,6 @@
     ]
   ],
   [
-    "change",
-    "variables.courts_inf.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.courts_inf.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.courts_inf",
     [
@@ -12033,22 +11246,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.arbitrate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.arbitrate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12324,22 +11521,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mafia.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mafia.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mafia",
     [
@@ -12609,22 +11790,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.psa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.psa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12900,22 +12065,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pss.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pss.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pss",
     [
@@ -13185,22 +12334,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.bus_assoc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bus_assoc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13476,22 +12609,6 @@
     ]
   ],
   [
-    "change",
-    "variables.use_court2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_court2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.use_court2",
     [
@@ -13731,22 +12848,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.use_court_inf2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_court_inf2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13992,22 +13093,6 @@
     ]
   ],
   [
-    "change",
-    "variables.use_bur2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_bur2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.use_bur2",
     [
@@ -14247,22 +13332,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.use_bur_inf2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_bur_inf2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14508,22 +13577,6 @@
     ]
   ],
   [
-    "change",
-    "variables.use_lawenf2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_lawenf2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.use_lawenf2",
     [
@@ -14763,22 +13816,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.use_lawenf_inf2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_lawenf_inf2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15024,22 +14061,6 @@
     ]
   ],
   [
-    "change",
-    "variables.use_arbitrate2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_arbitrate2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.use_arbitrate2",
     [
@@ -15279,22 +14300,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.use_psa2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_psa2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15540,22 +14545,6 @@
     ]
   ],
   [
-    "change",
-    "variables.use_pss2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_pss2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.use_pss2",
     [
@@ -15795,22 +14784,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.use_bus_assoc2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_bus_assoc2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16056,22 +15029,6 @@
     ]
   ],
   [
-    "change",
-    "variables.use_mafia2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.use_mafia2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.use_mafia2",
     [
@@ -16314,22 +15271,6 @@
     ]
   ],
   [
-    "change",
-    "variables.BA.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.BA.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.BA",
     [
@@ -16569,22 +15510,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.size.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.size.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17228,22 +16153,6 @@
     ]
   ],
   [
-    "change",
-    "variables.size_dummies.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.size_dummies.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.size_dummies",
     [
@@ -17467,22 +16376,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sector.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sector.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sector",
     [
@@ -17680,22 +16573,6 @@
       [
         "service"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.sect.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sect.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17926,22 +16803,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.sector2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sector2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18241,22 +17102,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sector3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sector3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sector3",
     [
@@ -18547,22 +17392,6 @@
     ]
   ],
   [
-    "change",
-    "variables.firm_age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.firm_age.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.firm_age",
     [
@@ -18829,22 +17658,6 @@
     ]
   ],
   [
-    "change",
-    "variables.consolidated.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.consolidated.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.consolidated",
     [
@@ -19084,22 +17897,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.privatized.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.privatized.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19345,22 +18142,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gov_own.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gov_own.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gov_own",
     [
@@ -19603,22 +18384,6 @@
     ]
   ],
   [
-    "change",
-    "variables.foreign_own.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.foreign_own.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.foreign_own",
     [
@@ -19858,22 +18623,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.growth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20128,22 +18877,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.tax1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.tax1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20414,22 +19147,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tax1_dich.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tax1_dich.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tax1_dich",
     [
@@ -20672,22 +19389,6 @@
     ]
   ],
   [
-    "change",
-    "variables.tax1_dich_r.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.tax1_dich_r.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.tax1_dich_r",
     [
@@ -20927,22 +19628,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.job_descript.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.job_descript.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21203,22 +19888,6 @@
     [
       "22",
       22.0
-    ]
-  ],
-  [
-    "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21860,22 +20529,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gender.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gender.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gender",
     [
@@ -22118,22 +20771,6 @@
     ]
   ],
   [
-    "change",
-    "variables.leg_ed.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.leg_ed.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.leg_ed",
     [
@@ -22330,427 +20967,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:07:32",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "city": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "city2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Prts_viol1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Srts_viol1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Prts_viol2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Srts_viol2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rts_viol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sued": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "defendant": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sued2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "defendant2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "litigated": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "violence": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "violence2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "willing_to_use": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_firms": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_firms2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_firms2_r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_past": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other_past2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "contact.mafia": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "recent.contact.mafia": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "negotiate2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawenf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawenf_inf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bur2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bur_inf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawyers2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "courts2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "courts_inf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "arbitrate2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mafia2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "psa2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pss2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bus_assoc2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "negotiate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawenf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawenf_inf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bur": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bur_inf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawyers": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "courts": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "courts_inf": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "arbitrate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mafia": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "psa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pss": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bus_assoc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_court2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_court_inf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_bur2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_bur_inf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_lawenf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_lawenf_inf2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_arbitrate2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_psa2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_pss2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_bus_assoc2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "use_mafia2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "size": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "size_dummies": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sector": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sector2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sector3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "firm_age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "consolidated": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "privatized": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gov_own": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "foreign_own": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tax1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tax1_dich": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tax1_dich_r": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "job_descript": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gender": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "leg_ed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

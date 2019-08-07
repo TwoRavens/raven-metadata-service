@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1512
-      ],
-      [
-        "variableCount",
-        18
-      ],
-      [
-        "dataSource",
-        {
-          "name": "KL7J6Z_EULFS and ISSP Merged for Check.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 166402
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.yr_issp.median",
     [
@@ -122,22 +39,6 @@
     [
       "1985",
       1985.0
-    ]
-  ],
-  [
-    "change",
-    "variables.yr_issp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.yr_issp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -706,22 +607,6 @@
     [
       "2",
       2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode_DE.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode_DE.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1315,22 +1200,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income_pred.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income_pred.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income_pred",
     [
@@ -1625,26 +1494,10 @@
   ],
   [
     "change",
-    "variables.empl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.empl.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.empl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2297,26 +2150,10 @@
   ],
   [
     "change",
-    "variables.unempl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unempl.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unempl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2969,26 +2806,10 @@
   ],
   [
     "change",
-    "variables.incpredcorrect.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.incpredcorrect.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.incpredcorrect.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3641,26 +3462,10 @@
   ],
   [
     "change",
-    "variables.wage_ur_issp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_ur_issp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_ur_issp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4272,22 +4077,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -4318,11 +4107,11 @@
       [
         "fewestValues",
         [
-          "HR",
-          "CY",
-          "ME",
-          "MK",
-          "EE"
+          "LI",
+          "BG",
+          "CZ",
+          "TR",
+          "HR"
         ]
       ],
       [
@@ -4366,27 +4155,27 @@
           "CA": 54,
           "FI": 48,
           "IT": 36,
-          "BE": 31,
-          "GR": 31,
           "PL": 31,
           "IS": 31,
+          "GR": 31,
+          "BE": 31,
           "LU": 31,
-          "TR": 1,
-          "BG": 1,
-          "LI": 1,
-          "RO": 1,
-          "SI": 1,
-          "LT": 1,
           "MT": 1,
+          "RO": 1,
           "LV": 1,
-          "CZ": 1,
+          "SI": 1,
+          "MK": 1,
+          "CY": 1,
+          "EE": 1,
+          "LT": 1,
+          "ME": 1,
           "SK": 1,
           "HU": 1,
-          "EE": 1,
-          "MK": 1,
-          "ME": 1,
-          "CY": 1,
-          "HR": 1
+          "HR": 1,
+          "TR": 1,
+          "CZ": 1,
+          "BG": 1,
+          "LI": 1
         }
       ],
       [
@@ -4564,22 +4353,6 @@
     ]
   ],
   [
-    "change",
-    "variables.statenme.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.statenme.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.statenme",
     [
@@ -4610,11 +4383,11 @@
       [
         "fewestValues",
         [
-          "Croatia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca",
+          "Hungary\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca",
+          "Liechtenstein",
+          "Montenegro",
           "Turkey\u00ca\u00ca\u00ca\u00ca\u00ca",
-          "Greece\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca",
-          "Latvia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca",
-          "Poland\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca"
+          "Lithuania\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca"
         ]
       ],
       [
@@ -4655,27 +4428,27 @@
           "Finland\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 30,
           "Netherlands\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 28,
           "Italy\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 6,
-          "Slovak\u00caRepublic\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Montenegro": 1,
-          "Cyprus\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Malta\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Estonia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Luxembourg\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Czech\u00caRepublic\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
           "Romania\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Latvia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "FYR\u00caMacedonia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Montenegro": 1,
+          "Slovak\u00caRepublic\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Bulgaria\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Turkey\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Cyprus\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Belgium\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Poland\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Lithuania\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Croatia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
+          "Liechtenstein": 1,
           "Iceland\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
           "Slovenia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Lithuania\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Estonia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Malta\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Luxembourg\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Liechtenstein": 1,
-          "Hungary\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Bulgaria\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Belgium\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Czech\u00caRepublic\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "FYR\u00caMacedonia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Poland\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Latvia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
           "Greece\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Turkey\u00ca\u00ca\u00ca\u00ca\u00ca": 1,
-          "Croatia\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1
+          "Hungary\u00ca\u00ca\u00ca\u00ca\u00ca\u00ca": 1
         }
       ],
       [
@@ -4880,22 +4653,6 @@
     [
       "1985",
       1985.0
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5478,26 +5235,10 @@
   ],
   [
     "change",
-    "variables.unemployed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemployed.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemployed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6154,26 +5895,10 @@
   ],
   [
     "change",
-    "variables.employed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.employed.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.employed.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6826,26 +6551,10 @@
   ],
   [
     "change",
-    "variables.ltunemp1yr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ltunemp1yr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ltunemp1yr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7498,26 +7207,10 @@
   ],
   [
     "change",
-    "variables.underemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.underemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.underemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8170,26 +7863,10 @@
   ],
   [
     "change",
-    "variables.wage_ur_eulfs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_ur_eulfs.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_ur_eulfs.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8842,26 +8519,10 @@
   ],
   [
     "change",
-    "variables.wage_urlt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_urlt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_urlt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9518,26 +9179,10 @@
   ],
   [
     "change",
-    "variables.wage_urunderemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wage_urunderemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wage_urunderemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10246,122 +9891,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:39",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "yr_issp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode_DE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income_pred": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "empl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unempl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incpredcorrect": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_ur_issp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "statenme": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemployed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ltunemp1yr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "underemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_ur_eulfs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_urlt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wage_urunderemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_merge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

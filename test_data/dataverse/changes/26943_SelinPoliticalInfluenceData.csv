@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        85
-      ],
-      [
-        "variableCount",
-        17
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26943_SelinPoliticalInfluenceData.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 9244
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.agcode4.mode",
     [
       "ACF",
       [
-        "BLS",
-        "MSPB",
-        "USAF",
-        "FCC",
-        "FRTIB"
+        "FMC",
+        "DOE",
+        "FTA",
+        "FHWA",
+        "DTRS"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.agcode4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agcode4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "BLS",
-          "MSPB",
-          "USAF",
-          "FCC",
-          "FRTIB"
+          "FMC",
+          "DOE",
+          "FTA",
+          "FHWA",
+          "DTRS"
         ]
       ],
       [
@@ -173,91 +74,91 @@
       [
         "plotValues",
         {
-          "HUD": 1,
-          "OSHRC": 1,
-          "NRCS": 1,
-          "CEN": 1,
-          "FDIC": 1,
-          "APHIS": 1,
-          "DTRS": 1,
-          "NLRB": 1,
-          "OSHA": 1,
-          "OPM": 1,
-          "COM": 1,
-          "ETA": 1,
-          "FHWA": 1,
-          "EEOC": 1,
-          "FEC": 1,
-          "AMS": 1,
-          "HHS": 1,
-          "BLM": 1,
-          "USITC": 1,
-          "CFTC": 1,
-          "FTC": 1,
-          "BOP": 1,
-          "IRS": 1,
-          "FMSHRC": 1,
-          "VBA": 1,
-          "IHS": 1,
-          "SBA": 1,
-          "NMB": 1,
-          "ACF": 1,
-          "CBP": 1,
-          "CIV": 1,
-          "ARC": 1,
-          "NOAA": 1,
-          "DLA": 1,
-          "VHA": 1,
-          "DOE": 1,
-          "ARS": 1,
-          "NRC": 1,
-          "EXIM": 1,
-          "FEMA": 1,
-          "NAVY": 1,
-          "USPTO": 1,
-          "DOED": 1,
-          "EPA": 1,
           "DOL": 1,
-          "FNS": 1,
-          "CMMS": 1,
-          "STAT": 1,
-          "CNCS": 1,
-          "NHTSA": 1,
-          "DHS": 1,
-          "HRSA": 1,
-          "FMCSA": 1,
-          "SEC": 1,
-          "USDA": 1,
-          "USFS": 1,
-          "FDA": 1,
-          "PCOR": 1,
-          "FMC": 1,
-          "RRB": 1,
-          "DOJ": 1,
-          "CDC": 1,
-          "DOD": 1,
-          "NASA": 1,
-          "NNSA": 1,
-          "FTA": 1,
-          "NARA": 1,
-          "INT": 1,
-          "DOT": 1,
-          "BBG": 1,
-          "NIH": 1,
-          "USAID": 1,
-          "CPSC": 1,
-          "ARMY": 1,
-          "DVA": 1,
-          "FERC": 1,
-          "FAA": 1,
-          "GSA": 1,
-          "SSA": 1,
-          "NIST": 1,
-          "FRTIB": 1,
-          "FCC": 1,
-          "USAF": 1,
           "MSPB": 1,
-          "BLS": 1
+          "VBA": 1,
+          "INT": 1,
+          "NIST": 1,
+          "OPM": 1,
+          "OSHRC": 1,
+          "SEC": 1,
+          "FEMA": 1,
+          "FERC": 1,
+          "SBA": 1,
+          "NNSA": 1,
+          "CIV": 1,
+          "NARA": 1,
+          "DVA": 1,
+          "RRB": 1,
+          "ARC": 1,
+          "HRSA": 1,
+          "NRC": 1,
+          "HHS": 1,
+          "CFTC": 1,
+          "ARMY": 1,
+          "DOED": 1,
+          "NHTSA": 1,
+          "CEN": 1,
+          "EPA": 1,
+          "NMB": 1,
+          "CMMS": 1,
+          "USFS": 1,
+          "GSA": 1,
+          "USAF": 1,
+          "DLA": 1,
+          "FDA": 1,
+          "ARS": 1,
+          "IRS": 1,
+          "FRTIB": 1,
+          "CDC": 1,
+          "NRCS": 1,
+          "AMS": 1,
+          "DHS": 1,
+          "BOP": 1,
+          "APHIS": 1,
+          "PCOR": 1,
+          "ACF": 1,
+          "NIH": 1,
+          "ETA": 1,
+          "FNS": 1,
+          "IHS": 1,
+          "FDIC": 1,
+          "EEOC": 1,
+          "FMCSA": 1,
+          "NAVY": 1,
+          "USITC": 1,
+          "CPSC": 1,
+          "CNCS": 1,
+          "FCC": 1,
+          "DOD": 1,
+          "EXIM": 1,
+          "FMSHRC": 1,
+          "VHA": 1,
+          "NOAA": 1,
+          "FTC": 1,
+          "BBG": 1,
+          "DOJ": 1,
+          "DOT": 1,
+          "CBP": 1,
+          "NASA": 1,
+          "COM": 1,
+          "BLS": 1,
+          "USPTO": 1,
+          "BLM": 1,
+          "USDA": 1,
+          "OSHA": 1,
+          "NLRB": 1,
+          "SSA": 1,
+          "FEC": 1,
+          "FAA": 1,
+          "USAID": 1,
+          "HUD": 1,
+          "STAT": 1,
+          "DTRS": 1,
+          "FHWA": 1,
+          "FTA": 1,
+          "DOE": 1,
+          "FMC": 1
         }
       ],
       [
@@ -522,26 +423,10 @@
   ],
   [
     "change",
-    "variables.changes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.changes.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.changes.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1194,26 +1079,10 @@
   ],
   [
     "change",
-    "variables.deminflu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.deminflu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.deminflu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1867,26 +1736,10 @@
   ],
   [
     "change",
-    "variables.gopinflu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gopinflu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gopinflu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2541,26 +2394,10 @@
   ],
   [
     "change",
-    "variables.whinflu.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.whinflu.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.whinflu.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3213,26 +3050,10 @@
   ],
   [
     "change",
-    "variables.commi.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.commi.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.commi.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3885,26 +3706,10 @@
   ],
   [
     "change",
-    "variables.clintonlewis.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.clintonlewis.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.clintonlewis.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4557,26 +4362,10 @@
   ],
   [
     "change",
-    "variables.employment2007.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.employment2007.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.employment2007.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5220,22 +5009,6 @@
     ]
   ],
   [
-    "change",
-    "variables.com1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.com1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.com1",
     [
@@ -5487,26 +5260,10 @@
   ],
   [
     "change",
-    "variables.cabinet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cabinet.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cabinet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5813,26 +5570,10 @@
   ],
   [
     "change",
-    "variables.lnemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6489,26 +6230,10 @@
   ],
   [
     "change",
-    "variables.dim2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dim2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dim2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7165,26 +6890,10 @@
   ],
   [
     "change",
-    "variables.dim2sd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dim2sd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dim2sd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7841,26 +7550,10 @@
   ],
   [
     "change",
-    "variables.dim1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dim1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dim1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8513,26 +8206,10 @@
   ],
   [
     "change",
-    "variables.dim1sd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dim1sd.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dim1sd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9176,22 +8853,6 @@
     ]
   ],
   [
-    "change",
-    "variables.subunit.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.subunit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.subunit",
     [
@@ -9432,22 +9093,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.totalcommittees.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totalcommittees.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9989,117 +9634,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:17:02",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "agcode4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "changes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "deminflu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gopinflu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whinflu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "commi": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "clintonlewis": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "employment2007": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "com1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cabinet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dim2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dim2sd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dim1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dim1sd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "subunit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totalcommittees": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

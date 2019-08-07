@@ -1,114 +1,15 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        4
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "BXBJFW_CosineFigDataRep.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 424
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Bucket.mode",
     [
       "~10 Year",
       [
-        "~13 year",
         "Theoretically-\rDriven",
+        "~16 Year",
         "~10 Year",
-        "~16 Year"
+        "~13 year"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Bucket.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Bucket.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -142,10 +43,10 @@
       [
         "fewestValues",
         [
-          "~13 year",
           "Theoretically-\rDriven",
+          "~16 Year",
           "~10 Year",
-          "~16 Year"
+          "~13 year"
         ]
       ],
       [
@@ -171,10 +72,10 @@
       [
         "plotValues",
         {
-          "~16 Year": 1,
+          "~13 year": 1,
           "~10 Year": 1,
-          "Theoretically-\rDriven": 1,
-          "~13 year": 1
+          "~16 Year": 1,
+          "Theoretically-\rDriven": 1
         }
       ],
       [
@@ -361,26 +262,10 @@
   ],
   [
     "change",
-    "variables.IDFrameAverage.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.IDFrameAverage.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.IDFrameAverage.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -653,26 +538,10 @@
   ],
   [
     "change",
-    "variables.AllDocAverage.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AllDocAverage.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AllDocAverage.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -972,35 +841,11 @@
     [
       "variables",
       "SE.IDFrameAve",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "SE.IDFrameAve",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "SE.IDFrameAve",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1306,35 +1151,11 @@
     [
       "variables",
       "SE.AllDocAve",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "SE.AllDocAve",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "SE.AllDocAve",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1640,35 +1461,11 @@
     [
       "variables",
       "CI.IDFrameAve",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "CI.IDFrameAve",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "CI.IDFrameAve",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1974,35 +1771,11 @@
     [
       "variables",
       "CI.AllDocAve",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "CI.AllDocAve",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "CI.AllDocAve",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2223,67 +1996,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:13",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Bucket": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "IDFrameAverage": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AllDocAverage": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "SE.IDFrameAve": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "SE.AllDocAve": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CI.IDFrameAve": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CI.AllDocAve": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

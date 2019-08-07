@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        48
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "LFD20F_Borzyskowski Wahman Data for Figures A4-A7.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 4717
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country_name.mode",
     [
       "Ghana",
       [
+        "Uganda",
+        "Democratic Republic of Congo",
         "Tanzania",
-        "Guinea-Bissau",
-        "Zimbabwe",
-        "Gabon",
-        "Central African Republic"
+        "Angola",
+        "Republic of the Congo"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Uganda",
+          "Democratic Republic of Congo",
           "Tanzania",
-          "Guinea-Bissau",
-          "Zimbabwe",
-          "Gabon",
-          "Central African Republic"
+          "Angola",
+          "Republic of the Congo"
         ]
       ],
       [
@@ -173,54 +74,54 @@
       [
         "plotValues",
         {
-          "Mauritius": 1,
-          "Liberia": 1,
           "Guinea": 1,
-          "Cameroon": 1,
-          "Gambia": 1,
-          "Comoros": 1,
-          "Rwanda": 1,
-          "Guinea-Bissau": 1,
-          "Lesotho": 1,
           "South Sudan": 1,
-          "Burkina Faso": 1,
-          "Niger": 1,
-          "Botswana": 1,
-          "Angola": 1,
-          "South Africa": 1,
-          "Mozambique": 1,
-          "Senegal": 1,
-          "Mali": 1,
-          "Seychelles": 1,
-          "Gabon": 1,
           "Mauritania": 1,
-          "Chad": 1,
-          "Zimbabwe": 1,
+          "Guinea-Bissau": 1,
+          "Togo": 1,
+          "Burkina Faso": 1,
+          "Ethiopia": 1,
+          "Malawi": 1,
+          "Liberia": 1,
+          "Madagascar": 1,
+          "Mauritius": 1,
           "Ghana": 1,
           "Ivory Coast": 1,
-          "Burundi": 1,
-          "Swaziland": 1,
-          "Madagascar": 1,
-          "Malawi": 1,
-          "Namibia": 1,
-          "Eritrea": 1,
-          "Djibouti": 1,
-          "Nigeria": 1,
-          "Democratic Republic of Congo": 1,
-          "Kenya": 1,
-          "Cape Verde": 1,
-          "Uganda": 1,
-          "Republic of the Congo": 1,
-          "Sierra Leone": 1,
-          "Equatorial Guinea": 1,
-          "S\ufffd\ufffdo Tom\ufffd\ufffd och Pr\ufffd\ufffdncipe": 1,
-          "Somalia": 1,
-          "Central African Republic": 1,
-          "Tanzania": 1,
-          "Ethiopia": 1,
-          "Togo": 1,
           "Benin": 1,
-          "Zambia": 1
+          "Central African Republic": 1,
+          "Gabon": 1,
+          "Mali": 1,
+          "Seychelles": 1,
+          "Tanzania": 1,
+          "Zambia": 1,
+          "Comoros": 1,
+          "Lesotho": 1,
+          "Chad": 1,
+          "Sierra Leone": 1,
+          "Botswana": 1,
+          "Mozambique": 1,
+          "Uganda": 1,
+          "Rwanda": 1,
+          "Gambia": 1,
+          "S\ufffd\ufffdo Tom\ufffd\ufffd och Pr\ufffd\ufffdncipe": 1,
+          "Cape Verde": 1,
+          "Namibia": 1,
+          "Somalia": 1,
+          "Zimbabwe": 1,
+          "Burundi": 1,
+          "Niger": 1,
+          "Nigeria": 1,
+          "Kenya": 1,
+          "Eritrea": 1,
+          "Swaziland": 1,
+          "South Africa": 1,
+          "Republic of the Congo": 1,
+          "Angola": 1,
+          "Equatorial Guinea": 1,
+          "Democratic Republic of Congo": 1,
+          "Senegal": 1,
+          "Djibouti": 1,
+          "Cameroon": 1
         }
       ],
       [
@@ -436,22 +337,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.MZ.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.MZ.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -710,26 +595,10 @@
   ],
   [
     "change",
-    "variables.v2x_polyarchy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v2x_polyarchy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v2x_polyarchy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1386,26 +1255,10 @@
   ],
   [
     "change",
-    "variables.v2mecenefm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v2mecenefm.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v2mecenefm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2049,22 +1902,6 @@
     ]
   ],
   [
-    "change",
-    "variables.v2elintim_ord.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.v2elintim_ord.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.v2elintim_ord",
     [
@@ -2316,22 +2153,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.v2elpeace_ord.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.v2elpeace_ord.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2608,26 +2429,10 @@
   ],
   [
     "change",
-    "variables.e_areaLOG.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.e_areaLOG.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.e_areaLOG.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3284,26 +3089,10 @@
   ],
   [
     "change",
-    "variables.e_populationLOG.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.e_populationLOG.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.e_populationLOG.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3960,26 +3749,10 @@
   ],
   [
     "change",
-    "variables.v2x_clphy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.v2x_clphy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.v2x_clphy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4577,77 +4350,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:49",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MZ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v2x_polyarchy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v2mecenefm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v2elintim_ord": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v2elpeace_ord": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "e_areaLOG": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "e_populationLOG": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "v2x_clphy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

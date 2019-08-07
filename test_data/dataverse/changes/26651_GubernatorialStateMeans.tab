@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        47
-      ],
-      [
-        "variableCount",
-        6
-      ],
-      [
-        "dataSource",
-        {
-          "name": "26651_GubernatorialStateMeans.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2753
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "Alabama",
       [
+        "Michigan",
         "Arkansas",
-        "Nevada",
         "Washington",
-        "Maryland",
-        "Alaska"
+        "Idaho",
+        "Utah"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Michigan",
           "Arkansas",
-          "Nevada",
           "Washington",
-          "Maryland",
-          "Alaska"
+          "Idaho",
+          "Utah"
         ]
       ],
       [
@@ -173,53 +74,53 @@
       [
         "plotValues",
         {
-          "Missouri": 1,
-          "Illinois": 1,
-          "South Dakota": 1,
-          "Louisiana": 1,
-          "Oregon": 1,
-          "Iowa": 1,
-          "North Dakota": 1,
-          "Massachusetts": 1,
-          "Minnesota": 1,
-          "Idaho": 1,
-          "Ohio": 1,
-          "Tennessee": 1,
-          "Virginia": 1,
-          "New York": 1,
-          "Nebraska": 1,
-          "Kansas": 1,
-          "Maine": 1,
-          "California": 1,
-          "Hawaii": 1,
-          "Arizona": 1,
-          "South Carolina": 1,
-          "Michigan": 1,
-          "Texas": 1,
-          "Montana": 1,
-          "Alabama": 1,
-          "West Virginia": 1,
-          "Pennsylvania": 1,
-          "Delaware": 1,
-          "Mississippi": 1,
-          "Oklahoma": 1,
-          "North Carolina": 1,
-          "Georgia": 1,
-          "Colorado": 1,
-          "Wisconsin": 1,
-          "Utah": 1,
-          "New Jersey": 1,
-          "Wyoming": 1,
           "Indiana": 1,
-          "Connecticut": 1,
-          "Kentucky": 1,
-          "Florida": 1,
-          "New Mexico": 1,
-          "Alaska": 1,
-          "Maryland": 1,
-          "Washington": 1,
+          "Delaware": 1,
+          "Illinois": 1,
+          "Missouri": 1,
+          "Arizona": 1,
+          "Wisconsin": 1,
+          "Iowa": 1,
+          "Tennessee": 1,
+          "Oklahoma": 1,
           "Nevada": 1,
-          "Arkansas": 1
+          "Minnesota": 1,
+          "Florida": 1,
+          "Alabama": 1,
+          "California": 1,
+          "Georgia": 1,
+          "Connecticut": 1,
+          "South Carolina": 1,
+          "Maryland": 1,
+          "Alaska": 1,
+          "Ohio": 1,
+          "North Dakota": 1,
+          "Colorado": 1,
+          "Louisiana": 1,
+          "Pennsylvania": 1,
+          "New York": 1,
+          "South Dakota": 1,
+          "North Carolina": 1,
+          "New Mexico": 1,
+          "Kentucky": 1,
+          "Maine": 1,
+          "Nebraska": 1,
+          "Mississippi": 1,
+          "Massachusetts": 1,
+          "Oregon": 1,
+          "Hawaii": 1,
+          "West Virginia": 1,
+          "Texas": 1,
+          "Kansas": 1,
+          "Virginia": 1,
+          "New Jersey": 1,
+          "Montana": 1,
+          "Wyoming": 1,
+          "Utah": 1,
+          "Idaho": 1,
+          "Washington": 1,
+          "Arkansas": 1,
+          "Michigan": 1
         }
       ],
       [
@@ -450,26 +351,10 @@
   ],
   [
     "change",
-    "variables.presvote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.presvote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.presvote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1126,26 +1011,10 @@
   ],
   [
     "change",
-    "variables.presturnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.presturnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.presturnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1802,26 +1671,10 @@
   ],
   [
     "change",
-    "variables.govvote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.govvote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.govvote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2478,26 +2331,10 @@
   ],
   [
     "change",
-    "variables.govturnout.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.govturnout.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.govturnout.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3141,22 +2978,6 @@
     ]
   ],
   [
-    "change",
-    "variables.on.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.on.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.on",
     [
@@ -3353,62 +3174,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:07",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "presvote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "presturnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govvote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govturnout": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "on": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

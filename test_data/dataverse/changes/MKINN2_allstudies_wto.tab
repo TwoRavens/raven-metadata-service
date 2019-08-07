@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        120
-      ],
-      [
-        "variableCount",
-        75
-      ],
-      [
-        "dataSource",
-        {
-          "name": "MKINN2_allstudies_wto.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 76029
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.study.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Wright 2009"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.study.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.study.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -173,10 +74,10 @@
           "Gibler Randazzo": 8,
           "Greenhill et. al.": 6,
           "Salehayen Gleditsch": 6,
-          "Robertston Teitelbaum": 5,
-          "Savun Tirone": 5,
-          "Donno": 5,
           "Conrad Moore": 5,
+          "Savun Tirone": 5,
+          "Robertston Teitelbaum": 5,
+          "Donno": 5,
           "Vreeland": 5,
           "Marinov": 3,
           "Brooks Kurtz": 3,
@@ -336,22 +237,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_orig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_orig",
     [
@@ -382,9 +267,9 @@
       [
         "fewestValues",
         [
-          "ivreg2",
+          "relogit",
           "ologit",
-          "relogit"
+          "ivreg2"
         ]
       ],
       [
@@ -420,9 +305,9 @@
           "probit": 6,
           "xtlogit": 4,
           "xtpqml": 2,
-          "relogit": 1,
           "ologit": 1,
-          "ivreg2": 1
+          "ivreg2": 1,
+          "relogit": 1
         }
       ],
       [
@@ -574,22 +459,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_orig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_orig",
     [
@@ -620,10 +489,10 @@
       [
         "fewestValues",
         [
-          "amtgdp",
-          "bigconset",
+          "torture",
           "imfloan",
-          "amtsdr",
+          "bigconset",
+          "legislature",
           "fconflict_initiation"
         ]
       ],
@@ -653,41 +522,41 @@
           "regtype": 12,
           "failtype": 10,
           "sftpcons": 9,
-          "dispute": 5,
           "nonset": 5,
+          "dispute": 5,
           "ed_trans": 5,
-          "F.conflict_initiation": 4,
-          "common_tort_hath": 4,
           "negpolchg": 4,
-          "neg4polchange": 4,
+          "F.conflict_initiation": 4,
           "dem": 4,
+          "common_tort_hath": 4,
+          "neg4polchange": 4,
           "dpol3": 4,
-          "no_tort": 3,
-          "practicepos": 3,
-          "lawpos": 3,
           "ka_open": 3,
+          "lawpos": 3,
           "fail": 3,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "Bureaucratic_Quality_PRSF": 2,
+          "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "StopTort": 2,
+          "Tax_Revenue_WDIF": 2,
           "Life_Expectancy_ipolate_lnF": 2,
           "amtqta": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
-          "InvestGDP": 2,
-          "pc": 2,
           "IMR_ipolate_lnF": 2,
-          "StopTort": 2,
           "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
           "prio": 2,
-          "Tax_Revenue_WDIF": 2,
-          "amtsdr": 1,
-          "legislature": 1,
-          "fconflict_initiation": 1,
+          "Illiteracy_imputed_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
+          "pc": 2,
           "torture": 1,
-          "amtgdp": 1,
+          "legislature": 1,
+          "imfloan": 1,
           "bigconset": 1,
-          "imfloan": 1
+          "amtgdp": 1,
+          "amtsdr": 1,
+          "fconflict_initiation": 1
         }
       ],
       [
@@ -906,26 +775,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_orig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_orig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1578,26 +1431,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_orig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_orig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2250,26 +2087,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_orig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_orig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2922,26 +2743,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_orig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_orig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3594,26 +3399,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_orig.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_orig.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4257,22 +4046,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_orig.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_orig.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_orig",
     [
@@ -4881,22 +4654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_noth.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_noth",
     [
@@ -4928,8 +4685,8 @@
         "fewestValues",
         [
           "relogit",
-          "ivreg2",
-          "ologit"
+          "ologit",
+          "ivreg2"
         ]
       ],
       [
@@ -4964,9 +4721,9 @@
           "xtnbreg": 5,
           "nbreg": 4,
           "poisson": 2,
-          "relogit": 1,
           "ologit": 1,
-          "ivreg2": 1
+          "ivreg2": 1,
+          "relogit": 1
         }
       ],
       [
@@ -5118,22 +4875,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_noth.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_noth",
     [
@@ -5164,11 +4905,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
+          "torture",
           "bigconset",
+          "imfloan",
           "amtsdr",
-          "fconflict_initiation",
-          "imfloan"
+          "fconflict_initiation"
         ]
       ],
       [
@@ -5195,40 +4936,40 @@
         "plotValues",
         {
           "sftpcons": 9,
-          "dispute": 5,
           "ed_trans": 5,
+          "dispute": 5,
           "nonset": 5,
-          "neg4polchange": 4,
           "negpolchg": 4,
-          "dpol3": 4,
-          "dem": 4,
           "F.conflict_initiation": 4,
-          "practicepos": 3,
+          "dem": 4,
+          "neg4polchange": 4,
+          "dpol3": 4,
           "fail": 3,
-          "no_tort": 3,
+          "ka_open": 3,
           "common_tort_hath": 3,
           "lawpos": 3,
-          "ka_open": 3,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "amtqta": 2,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
           "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
-          "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "prio": 2,
+          "GROWTH": 2,
+          "IMR_ipolate_lnF": 2,
           "Tax_Revenue_WDIF": 2,
-          "legislature": 1,
-          "fconflict_initiation": 1,
+          "amtqta": 2,
+          "Illiteracy_imputed_lnF": 2,
           "torture": 1,
-          "bigconset": 1,
+          "amtsdr": 1,
           "amtgdp": 1,
+          "bigconset": 1,
+          "fconflict_initiation": 1,
           "imfloan": 1,
-          "amtsdr": 1
+          "legislature": 1
         }
       ],
       [
@@ -5445,26 +5186,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_noth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_noth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6117,26 +5842,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_noth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_noth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6789,26 +6498,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_noth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_noth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7461,26 +7154,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_noth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_noth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8133,26 +7810,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_noth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_noth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8796,22 +8457,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_noth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_noth.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_noth",
     [
@@ -9420,22 +9065,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_fe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_fe",
     [
@@ -9643,22 +9272,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_fe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_fe",
     [
@@ -9689,11 +9302,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
+          "prio",
+          "imfloan",
           "bigconset",
           "amtsdr",
-          "fconflict_initiation",
-          "prio"
+          "amtgdp"
         ]
       ],
       [
@@ -9720,39 +9333,39 @@
         "plotValues",
         {
           "sftpcons": 9,
-          "dispute": 5,
           "ed_trans": 5,
+          "dispute": 5,
           "nonset": 5,
-          "neg4polchange": 4,
           "negpolchg": 4,
-          "dpol3": 4,
-          "dem": 4,
           "F.conflict_initiation": 4,
-          "practicepos": 3,
+          "dem": 4,
+          "neg4polchange": 4,
+          "dpol3": 4,
           "fail": 3,
-          "no_tort": 3,
+          "ka_open": 3,
           "common_tort_hath": 3,
           "lawpos": 3,
-          "ka_open": 3,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "amtqta": 2,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
           "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "IMR_ipolate_lnF": 2,
           "Tax_Revenue_WDIF": 2,
-          "legislature": 1,
+          "amtqta": 2,
+          "Illiteracy_imputed_lnF": 2,
+          "amtsdr": 1,
+          "amtgdp": 1,
+          "bigconset": 1,
           "fconflict_initiation": 1,
           "prio": 1,
-          "bigconset": 1,
-          "amtgdp": 1,
           "imfloan": 1,
-          "amtsdr": 1
+          "legislature": 1
         }
       ],
       [
@@ -9968,26 +9581,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_fe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_fe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10640,26 +10237,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_fe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_fe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11312,26 +10893,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_fe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_fe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11984,26 +11549,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_fe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_fe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12660,26 +12209,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_fe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_fe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13323,22 +12856,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_fe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_fe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_fe",
     [
@@ -13947,22 +13464,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_time.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_time",
     [
@@ -13994,8 +13495,8 @@
         "fewestValues",
         [
           "relogit",
-          "ivreg2",
-          "ologit"
+          "ologit",
+          "ivreg2"
         ]
       ],
       [
@@ -14030,9 +13531,9 @@
           "xtnbreg": 5,
           "nbreg": 4,
           "poisson": 2,
-          "relogit": 1,
           "ologit": 1,
-          "ivreg2": 1
+          "ivreg2": 1,
+          "relogit": 1
         }
       ],
       [
@@ -14184,22 +13685,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_time.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_time",
     [
@@ -14230,11 +13715,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
+          "legislature",
+          "torture",
           "bigconset",
-          "amtsdr",
-          "fconflict_initiation",
-          "imfloan"
+          "imfloan",
+          "amtsdr"
         ]
       ],
       [
@@ -14261,40 +13746,40 @@
         "plotValues",
         {
           "sftpcons": 9,
-          "dispute": 5,
           "ed_trans": 5,
+          "dispute": 5,
           "nonset": 5,
-          "neg4polchange": 4,
           "negpolchg": 4,
-          "dpol3": 4,
-          "dem": 4,
           "F.conflict_initiation": 4,
+          "dem": 4,
           "common_tort_hath": 4,
-          "practicepos": 3,
+          "neg4polchange": 4,
+          "dpol3": 4,
           "fail": 3,
-          "no_tort": 3,
-          "lawpos": 3,
           "ka_open": 3,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "amtqta": 2,
+          "lawpos": 3,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
           "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
-          "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "prio": 2,
+          "GROWTH": 2,
+          "IMR_ipolate_lnF": 2,
           "Tax_Revenue_WDIF": 2,
-          "legislature": 1,
-          "fconflict_initiation": 1,
+          "amtqta": 2,
+          "Illiteracy_imputed_lnF": 2,
           "torture": 1,
-          "bigconset": 1,
+          "amtsdr": 1,
           "amtgdp": 1,
+          "bigconset": 1,
+          "fconflict_initiation": 1,
           "imfloan": 1,
-          "amtsdr": 1
+          "legislature": 1
         }
       ],
       [
@@ -14511,26 +13996,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_time.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15184,26 +14653,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_time.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15857,26 +15310,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_time.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16530,26 +15967,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_time.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17203,26 +16624,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_time.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17866,22 +17271,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_time.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_time",
     [
@@ -18490,22 +17879,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_fet.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_fet",
     [
@@ -18713,22 +18086,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_fet.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_fet",
     [
@@ -18759,11 +18116,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
+          "legislature",
+          "prio",
+          "imfloan",
           "bigconset",
-          "amtsdr",
-          "fconflict_initiation",
-          "prio"
+          "amtsdr"
         ]
       ],
       [
@@ -18790,39 +18147,39 @@
         "plotValues",
         {
           "sftpcons": 9,
-          "dispute": 5,
           "ed_trans": 5,
+          "dispute": 5,
           "nonset": 5,
-          "neg4polchange": 4,
           "negpolchg": 4,
-          "dpol3": 4,
-          "dem": 4,
           "F.conflict_initiation": 4,
+          "dem": 4,
           "common_tort_hath": 4,
-          "practicepos": 3,
+          "neg4polchange": 4,
+          "dpol3": 4,
           "fail": 3,
-          "no_tort": 3,
-          "lawpos": 3,
           "ka_open": 3,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "amtqta": 2,
+          "lawpos": 3,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
           "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "IMR_ipolate_lnF": 2,
           "Tax_Revenue_WDIF": 2,
-          "legislature": 1,
+          "amtqta": 2,
+          "Illiteracy_imputed_lnF": 2,
+          "amtsdr": 1,
+          "amtgdp": 1,
+          "bigconset": 1,
           "fconflict_initiation": 1,
           "prio": 1,
-          "bigconset": 1,
-          "amtgdp": 1,
           "imfloan": 1,
-          "amtsdr": 1
+          "legislature": 1
         }
       ],
       [
@@ -19037,26 +18394,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_fet.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_fet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19713,26 +19054,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_fet.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_fet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20389,26 +19714,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_fet.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_fet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21065,26 +20374,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_fet.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_fet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21741,26 +21034,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_fet.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_fet.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22404,22 +21681,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_fet.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_fet.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_fet",
     [
@@ -23028,22 +22289,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_ct.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_ct",
     [
@@ -23255,22 +22500,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_ct.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_ct",
     [
@@ -23301,11 +22530,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
+          "legislature",
+          "prio",
+          "imfloan",
           "bigconset",
-          "amtsdr",
-          "fconflict_initiation",
-          "prio"
+          "amtsdr"
         ]
       ],
       [
@@ -23332,39 +22561,39 @@
         "plotValues",
         {
           "sftpcons": 6,
-          "dispute": 5,
           "nonset": 5,
-          "neg4polchange": 4,
-          "negpolchg": 4,
-          "dpol3": 4,
-          "ed_trans": 4,
-          "dem": 4,
+          "dispute": 5,
           "F.conflict_initiation": 4,
+          "dpol3": 4,
           "common_tort_hath": 4,
-          "practicepos": 3,
-          "fail": 3,
-          "no_tort": 3,
-          "lawpos": 3,
+          "dem": 4,
+          "ed_trans": 4,
+          "negpolchg": 4,
+          "neg4polchange": 4,
           "ka_open": 3,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "amtqta": 2,
+          "fail": 3,
+          "lawpos": 3,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
           "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "IMR_ipolate_lnF": 2,
           "Tax_Revenue_WDIF": 2,
-          "legislature": 1,
+          "amtqta": 2,
+          "Illiteracy_imputed_lnF": 2,
+          "amtsdr": 1,
+          "amtgdp": 1,
+          "bigconset": 1,
           "fconflict_initiation": 1,
           "prio": 1,
-          "bigconset": 1,
-          "amtgdp": 1,
           "imfloan": 1,
-          "amtsdr": 1
+          "legislature": 1
         }
       ],
       [
@@ -23579,26 +22808,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_ct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_ct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24251,26 +23464,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_ct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_ct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24923,26 +24120,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_ct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_ct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25595,26 +24776,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_ct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_ct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26267,26 +25432,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_ct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_ct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26931,22 +26080,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_ct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_ct.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_ct",
     [
@@ -27555,22 +26688,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_yfe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_yfe",
     [
@@ -27776,22 +26893,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_yfe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_yfe",
     [
@@ -27822,11 +26923,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
-          "bigconset",
-          "amtsdr",
           "prio",
-          "imfloan"
+          "bigconset",
+          "imfloan",
+          "amtsdr",
+          "amtgdp"
         ]
       ],
       [
@@ -27853,38 +26954,38 @@
         "plotValues",
         {
           "sftpcons": 9,
-          "dispute": 5,
-          "nonset": 5,
           "ed_trans": 5,
-          "neg4polchange": 4,
-          "negpolchg": 4,
-          "dpol3": 4,
+          "nonset": 5,
+          "dispute": 5,
           "dem": 4,
+          "negpolchg": 4,
           "fconflict_initiation": 4,
-          "fail": 3,
-          "common_tort_hath": 3,
-          "no_tort": 3,
-          "practicepos": 3,
+          "dpol3": 4,
+          "neg4polchange": 4,
           "lawpos": 3,
+          "practicepos": 3,
+          "fail": 3,
+          "no_tort": 3,
+          "common_tort_hath": 3,
           "ka_open": 3,
-          "amtqta": 2,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "bt": 2,
-          "Tax_Revenue_WDIF": 2,
           "Risk_EuromoneyF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
+          "amtqta": 2,
+          "Tax_Revenue_WDIF": 2,
+          "bt": 2,
           "pa": 2,
           "InvestGDP": 2,
-          "pc": 2,
           "IMR_ipolate_lnF": 2,
-          "GROWTH": 2,
           "Illiteracy_imputed_lnF": 2,
-          "amtsdr": 1,
-          "prio": 1,
-          "amtgdp": 1,
+          "GROWTH": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
+          "pc": 2,
           "bigconset": 1,
+          "amtgdp": 1,
+          "legislature": 1,
+          "amtsdr": 1,
           "imfloan": 1,
-          "legislature": 1
+          "prio": 1
         }
       ],
       [
@@ -28100,26 +27201,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_yfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_yfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28773,26 +27858,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_yfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_yfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29446,26 +28515,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_yfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_yfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30119,26 +29172,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_yfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_yfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30792,26 +29829,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_yfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_yfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31456,22 +30477,6 @@
     ]
   ],
   [
-    "change",
-    "variables.N_gatt_yfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_yfe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.N_gatt_yfe",
     [
@@ -32080,22 +31085,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_cyfe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_cyfe",
     [
@@ -32303,22 +31292,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_cyfe.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_cyfe",
     [
@@ -32349,11 +31322,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
+          "legislature",
+          "prio",
+          "imfloan",
           "bigconset",
-          "amtsdr",
-          "fconflict_initiation",
-          "prio"
+          "amtsdr"
         ]
       ],
       [
@@ -32380,39 +31353,39 @@
         "plotValues",
         {
           "sftpcons": 9,
-          "dispute": 5,
           "ed_trans": 5,
+          "dispute": 5,
           "nonset": 5,
-          "neg4polchange": 4,
           "negpolchg": 4,
-          "dpol3": 4,
-          "dem": 4,
           "F.conflict_initiation": 4,
+          "dem": 4,
           "common_tort_hath": 4,
-          "practicepos": 3,
+          "neg4polchange": 4,
+          "dpol3": 4,
           "fail": 3,
-          "no_tort": 3,
-          "lawpos": 3,
           "ka_open": 3,
-          "Bureaucratic_Quality_PRSF": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "amtqta": 2,
+          "lawpos": 3,
+          "practicepos": 3,
+          "no_tort": 3,
           "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
           "InvestGDP": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "IMR_ipolate_lnF": 2,
           "Tax_Revenue_WDIF": 2,
-          "legislature": 1,
+          "amtqta": 2,
+          "Illiteracy_imputed_lnF": 2,
+          "amtsdr": 1,
+          "amtgdp": 1,
+          "bigconset": 1,
           "fconflict_initiation": 1,
           "prio": 1,
-          "bigconset": 1,
-          "amtgdp": 1,
           "imfloan": 1,
-          "amtsdr": 1
+          "legislature": 1
         }
       ],
       [
@@ -32631,26 +31604,10 @@
   ],
   [
     "change",
-    "variables.b_gatt_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.b_gatt_cyfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.b_gatt_cyfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33307,26 +32264,10 @@
   ],
   [
     "change",
-    "variables.se_gatt_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_gatt_cyfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_gatt_cyfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33983,26 +32924,10 @@
   ],
   [
     "change",
-    "variables.pval_gatt_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_gatt_cyfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_gatt_cyfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34659,26 +33584,10 @@
   ],
   [
     "change",
-    "variables.lo_gatt_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lo_gatt_cyfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lo_gatt_cyfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35335,26 +34244,10 @@
   ],
   [
     "change",
-    "variables.hi_gatt_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.hi_gatt_cyfe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.hi_gatt_cyfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35995,22 +34888,6 @@
     [
       "122",
       122.0
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_cyfe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N_gatt_cyfe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36655,22 +35532,6 @@
     ]
   ],
   [
-    "change",
-    "variables.studynum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.studynum.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.studynum",
     [
@@ -37211,22 +36072,6 @@
     ]
   ],
   [
-    "change",
-    "variables.timetrend.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.timetrend.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.timetrend",
     [
@@ -37432,22 +36277,6 @@
     ]
   ],
   [
-    "change",
-    "variables.method_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.method_match.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.method_match",
     [
@@ -37645,22 +36474,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dv_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv_match.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dv_match",
     [
@@ -37691,11 +36504,11 @@
       [
         "fewestValues",
         [
-          "amtgdp",
-          "imfloan",
-          "amtsdr",
           "prio",
-          "StopTort"
+          "StopTort",
+          "imfloan",
+          "torture",
+          "legislature"
         ]
       ],
       [
@@ -37723,40 +36536,40 @@
         {
           "sftpcons": 9,
           "nonset": 6,
-          "failtype": 5,
-          "fconflict_initiation": 5,
           "ed_trans": 5,
           "dispute": 5,
-          "neg4polchange": 4,
-          "negpolchg": 4,
-          "regtype": 4,
+          "failtype": 5,
+          "fconflict_initiation": 5,
           "dpol3": 4,
-          "trade_index": 3,
+          "regtype": 4,
+          "negpolchg": 4,
+          "neg4polchange": 4,
           "lawpos": 3,
+          "trade_index": 3,
           "fail": 3,
           "practicepos": 3,
           "no_tort": 3,
-          "amtqta": 2,
-          "common_tort_hath": 2,
-          "Life_Expectancy_ipolate_lnF": 2,
-          "Bureaucratic_Quality_PRSF": 2,
-          "bt": 2,
-          "pa": 2,
-          "Risk_EuromoneyF": 2,
-          "dem": 2,
           "InvestGDP": 2,
+          "dem": 2,
+          "bt": 2,
+          "Risk_EuromoneyF": 2,
+          "pa": 2,
           "pc": 2,
-          "IMR_ipolate_lnF": 2,
-          "GROWTH": 2,
-          "Illiteracy_imputed_lnF": 2,
+          "Bureaucratic_Quality_PRSF": 2,
           "Tax_Revenue_WDIF": 2,
+          "common_tort_hath": 2,
+          "GROWTH": 2,
+          "IMR_ipolate_lnF": 2,
+          "amtqta": 2,
+          "Life_Expectancy_ipolate_lnF": 2,
+          "Illiteracy_imputed_lnF": 2,
           "StopTort": 1,
-          "legislature": 1,
           "torture": 1,
+          "amtsdr": 1,
           "amtgdp": 1,
           "prio": 1,
-          "amtsdr": 1,
-          "imfloan": 1
+          "imfloan": 1,
+          "legislature": 1
         }
       ],
       [
@@ -37975,26 +36788,10 @@
   ],
   [
     "change",
-    "variables.att_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.att_match.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.att_match.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38648,26 +37445,10 @@
   ],
   [
     "change",
-    "variables.se_att_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se_att_match.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se_att_match.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39321,26 +38102,10 @@
   ],
   [
     "change",
-    "variables.tscore_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.tscore_match.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.tscore_match.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39997,26 +38762,10 @@
   ],
   [
     "change",
-    "variables.bias_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.bias_match.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.bias_match.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40670,26 +39419,10 @@
   ],
   [
     "change",
-    "variables.pval_match.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pval_match.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pval_match.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41299,22 +40032,6 @@
     ]
   ],
   [
-    "change",
-    "variables.balance.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.balance.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.balance",
     [
@@ -41491,407 +40208,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:10:59",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "study": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_orig": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_noth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_fe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_fet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_ct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_yfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "b_gatt_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_gatt_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_gatt_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lo_gatt_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hi_gatt_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N_gatt_cyfe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "studynum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "timetrend": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "method_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "att_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se_att_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "tscore_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bias_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pval_match": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "balance": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

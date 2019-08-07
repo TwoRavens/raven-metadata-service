@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        51
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "RJAUNW_election_prediction_from_R_d.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3858
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.statev.mode",
     [
       "arizona",
       [
-        "idaho",
-        "north-carolina",
-        "delaware",
-        "new-hampshire",
-        "california"
+        "texas",
+        "north-dakota",
+        "washington-dc",
+        "arizona",
+        "oregon"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.statev.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.statev.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "idaho",
-          "north-carolina",
-          "delaware",
-          "new-hampshire",
-          "california"
+          "texas",
+          "north-dakota",
+          "washington-dc",
+          "arizona",
+          "oregon"
         ]
       ],
       [
@@ -173,57 +74,57 @@
       [
         "plotValues",
         {
-          "nevada": 1,
-          "michigan": 1,
-          "alabama": 1,
-          "new-york": 1,
-          "hawaii": 1,
-          "louisiana": 1,
-          "indiana": 1,
-          "oklahoma": 1,
-          "north-dakota": 1,
-          "illinois": 1,
-          "new-mexico": 1,
-          "alaska": 1,
-          "pennsylvania": 1,
-          "south-carolina": 1,
-          "iowa": 1,
-          "washington": 1,
-          "wisconsin": 1,
-          "florida": 1,
+          "maine": 1,
+          "north-carolina": 1,
+          "kansas": 1,
           "west-virginia": 1,
+          "hawaii": 1,
+          "south-carolina": 1,
           "massachusetts": 1,
-          "georgia": 1,
-          "arizona": 1,
+          "florida": 1,
+          "wyoming": 1,
+          "new-york": 1,
+          "indiana": 1,
+          "idaho": 1,
+          "montana": 1,
           "minnesota": 1,
+          "pennsylvania": 1,
+          "south-dakota": 1,
+          "maryland": 1,
+          "louisiana": 1,
+          "nevada": 1,
+          "kentucky": 1,
+          "michigan": 1,
+          "vermont": 1,
+          "virginia": 1,
           "utah": 1,
           "new-jersey": 1,
-          "montana": 1,
-          "connecticut": 1,
-          "virginia": 1,
-          "ohio": 1,
-          "maine": 1,
-          "maryland": 1,
           "missouri": 1,
-          "kansas": 1,
-          "vermont": 1,
-          "wyoming": 1,
-          "south-dakota": 1,
-          "rhode-island": 1,
-          "arkansas": 1,
-          "washington-dc": 1,
+          "delaware": 1,
           "tennessee": 1,
-          "colorado": 1,
-          "kentucky": 1,
-          "oregon": 1,
-          "texas": 1,
-          "nebraska": 1,
-          "mississippi": 1,
           "california": 1,
           "new-hampshire": 1,
-          "delaware": 1,
-          "north-carolina": 1,
-          "idaho": 1
+          "ohio": 1,
+          "illinois": 1,
+          "nebraska": 1,
+          "mississippi": 1,
+          "connecticut": 1,
+          "washington": 1,
+          "alabama": 1,
+          "rhode-island": 1,
+          "georgia": 1,
+          "north-dakota": 1,
+          "oklahoma": 1,
+          "iowa": 1,
+          "wisconsin": 1,
+          "colorado": 1,
+          "new-mexico": 1,
+          "arkansas": 1,
+          "alaska": 1,
+          "oregon": 1,
+          "arizona": 1,
+          "washington-dc": 1,
+          "texas": 1
         }
       ],
       [
@@ -458,26 +359,10 @@
   ],
   [
     "change",
-    "variables.vsointerpol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vsointerpol.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vsointerpol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1125,22 +1010,6 @@
     ]
   ],
   [
-    "change",
-    "variables.no.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.no.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.no",
     [
@@ -1744,28 +1613,12 @@
     [
       "arizona",
       [
-        "idaho",
-        "north-carolina",
-        "delaware",
-        "new-hampshire",
-        "california"
+        "texas",
+        "north-dakota",
+        "washington-dc",
+        "arizona",
+        "oregon"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.st.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.st.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1799,11 +1652,11 @@
       [
         "fewestValues",
         [
-          "idaho",
-          "north-carolina",
-          "delaware",
-          "new-hampshire",
-          "california"
+          "texas",
+          "north-dakota",
+          "washington-dc",
+          "arizona",
+          "oregon"
         ]
       ],
       [
@@ -1829,57 +1682,57 @@
       [
         "plotValues",
         {
-          "nevada": 1,
-          "michigan": 1,
-          "alabama": 1,
-          "new-york": 1,
-          "hawaii": 1,
-          "louisiana": 1,
-          "indiana": 1,
-          "oklahoma": 1,
-          "north-dakota": 1,
-          "illinois": 1,
-          "new-mexico": 1,
-          "alaska": 1,
-          "pennsylvania": 1,
-          "south-carolina": 1,
-          "iowa": 1,
-          "washington": 1,
-          "wisconsin": 1,
-          "florida": 1,
+          "maine": 1,
+          "north-carolina": 1,
+          "kansas": 1,
           "west-virginia": 1,
+          "hawaii": 1,
+          "south-carolina": 1,
           "massachusetts": 1,
-          "georgia": 1,
-          "arizona": 1,
+          "florida": 1,
+          "wyoming": 1,
+          "new-york": 1,
+          "indiana": 1,
+          "idaho": 1,
+          "montana": 1,
           "minnesota": 1,
+          "pennsylvania": 1,
+          "south-dakota": 1,
+          "maryland": 1,
+          "louisiana": 1,
+          "nevada": 1,
+          "kentucky": 1,
+          "michigan": 1,
+          "vermont": 1,
+          "virginia": 1,
           "utah": 1,
           "new-jersey": 1,
-          "montana": 1,
-          "connecticut": 1,
-          "virginia": 1,
-          "ohio": 1,
-          "maine": 1,
-          "maryland": 1,
           "missouri": 1,
-          "kansas": 1,
-          "vermont": 1,
-          "wyoming": 1,
-          "south-dakota": 1,
-          "rhode-island": 1,
-          "arkansas": 1,
-          "washington-dc": 1,
+          "delaware": 1,
           "tennessee": 1,
-          "colorado": 1,
-          "kentucky": 1,
-          "oregon": 1,
-          "texas": 1,
-          "nebraska": 1,
-          "mississippi": 1,
           "california": 1,
           "new-hampshire": 1,
-          "delaware": 1,
-          "north-carolina": 1,
-          "idaho": 1
+          "ohio": 1,
+          "illinois": 1,
+          "nebraska": 1,
+          "mississippi": 1,
+          "connecticut": 1,
+          "washington": 1,
+          "alabama": 1,
+          "rhode-island": 1,
+          "georgia": 1,
+          "north-dakota": 1,
+          "oklahoma": 1,
+          "iowa": 1,
+          "wisconsin": 1,
+          "colorado": 1,
+          "new-mexico": 1,
+          "arkansas": 1,
+          "alaska": 1,
+          "oregon": 1,
+          "arizona": 1,
+          "washington-dc": 1,
+          "texas": 1
         }
       ],
       [
@@ -2110,26 +1963,10 @@
   ],
   [
     "change",
-    "variables.partypct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.partypct.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.partypct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2773,22 +2610,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ourstates.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ourstates.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ourstates",
     [
@@ -3044,26 +2865,10 @@
   ],
   [
     "change",
-    "variables.totalpred.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.totalpred.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.totalpred.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3720,26 +3525,10 @@
   ],
   [
     "change",
-    "variables.abserror.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abserror.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abserror.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4396,26 +4185,10 @@
   ],
   [
     "change",
-    "variables.totalpredrc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.totalpredrc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.totalpredrc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5118,82 +4891,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "yes",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "statev": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vsointerpol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "no": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "st": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partypct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ourstates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totalpred": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abserror": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totalpredrc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_merge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

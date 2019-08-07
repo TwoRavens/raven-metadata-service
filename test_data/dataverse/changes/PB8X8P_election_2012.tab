@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        51
-      ],
-      [
-        "variableCount",
-        2
-      ],
-      [
-        "dataSource",
-        {
-          "name": "PB8X8P_election_2012.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 918
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
       "Alabama",
       [
         "Michigan",
-        "Pennsylvania",
-        "Hawaii",
+        "Nebraska",
         "Maine",
-        "Louisiana"
+        "Rhode Island",
+        "New Mexico"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -144,10 +45,10 @@
         "fewestValues",
         [
           "Michigan",
-          "Pennsylvania",
-          "Hawaii",
+          "Nebraska",
           "Maine",
-          "Louisiana"
+          "Rhode Island",
+          "New Mexico"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "New Hampshire": 1,
-          "Kansas": 1,
-          "Oregon": 1,
-          "Iowa": 1,
-          "Illinois": 1,
-          "Minnesota": 1,
-          "New Jersey": 1,
-          "Texas": 1,
-          "South Carolina": 1,
-          "New York": 1,
           "North Carolina": 1,
-          "Arizona": 1,
-          "Wisconsin": 1,
-          "North Dakota": 1,
-          "Idaho": 1,
-          "Missouri": 1,
-          "District of Columbia": 1,
-          "Maryland": 1,
-          "Nebraska": 1,
-          "West Virginia": 1,
-          "Georgia": 1,
-          "Delaware": 1,
-          "Colorado": 1,
-          "Alaska": 1,
-          "Ohio": 1,
-          "New Mexico": 1,
-          "Connecticut": 1,
-          "Utah": 1,
-          "Vermont": 1,
-          "Massachusetts": 1,
-          "Washington": 1,
-          "Oklahoma": 1,
-          "Nevada": 1,
-          "Indiana": 1,
-          "California": 1,
-          "Tennessee": 1,
-          "Arkansas": 1,
+          "Louisiana": 1,
           "South Dakota": 1,
+          "Kansas": 1,
+          "Washington": 1,
+          "New Jersey": 1,
+          "Montana": 1,
+          "Utah": 1,
+          "Arizona": 1,
+          "Ohio": 1,
+          "Pennsylvania": 1,
+          "Alabama": 1,
+          "Oklahoma": 1,
+          "Mississippi": 1,
+          "Hawaii": 1,
+          "Tennessee": 1,
+          "Texas": 1,
+          "Minnesota": 1,
           "Virginia": 1,
           "Florida": 1,
-          "Wyoming": 1,
-          "Alabama": 1,
-          "Mississippi": 1,
-          "Montana": 1,
+          "District of Columbia": 1,
+          "Maryland": 1,
+          "North Dakota": 1,
+          "Colorado": 1,
+          "South Carolina": 1,
+          "Illinois": 1,
           "Kentucky": 1,
+          "Delaware": 1,
+          "Massachusetts": 1,
+          "Wyoming": 1,
+          "Vermont": 1,
+          "West Virginia": 1,
+          "Arkansas": 1,
+          "Missouri": 1,
+          "Idaho": 1,
+          "Wisconsin": 1,
+          "Iowa": 1,
+          "Nevada": 1,
+          "Alaska": 1,
+          "Oregon": 1,
+          "California": 1,
+          "New Hampshire": 1,
+          "Georgia": 1,
+          "Connecticut": 1,
+          "Indiana": 1,
+          "New York": 1,
+          "New Mexico": 1,
           "Rhode Island": 1,
-          "Louisiana": 1,
           "Maine": 1,
-          "Hawaii": 1,
-          "Pennsylvania": 1,
+          "Nebraska": 1,
           "Michigan": 1
         }
       ],
@@ -458,26 +359,10 @@
   ],
   [
     "change",
-    "variables.obama_2012.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.obama_2012.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.obama_2012.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1075,42 +960,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:24:16",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "obama_2012": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

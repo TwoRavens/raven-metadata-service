@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2975
-      ],
-      [
-        "variableCount",
-        29
-      ],
-      [
-        "dataSource",
-        {
-          "name": "JAOQSD_WooCon16.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 394440
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.bankscode.median",
     [
@@ -126,22 +43,6 @@
     [
       "10",
       10
-    ]
-  ],
-  [
-    "change",
-    "variables.bankscode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bankscode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -783,22 +684,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1398,28 +1283,12 @@
     [
       "AFG",
       [
-        "ZAF",
-        "HTI",
-        "SAU",
+        "JOR",
+        "AFG",
         "IRN",
-        "AFG"
+        "SAU",
+        "IRQ"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.wdicode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wdicode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1480,83 +1349,83 @@
       [
         "plotValues",
         {
-          "JOR": 51,
-          "SAU": 51,
-          "IRQ": 51,
-          "IRN": 51,
-          "ZAF": 51,
-          "AFG": 51,
           "CHN": 51,
           "HTI": 51,
+          "SAU": 51,
+          "ZAF": 51,
           "ETH": 51,
+          "IRQ": 51,
+          "IRN": 51,
+          "AFG": 51,
+          "JOR": 51,
           "SYR": 50,
           "LBR": 50,
           "CUB": 46,
           "LBY": 46,
           "KHM": 45,
-          "MAR": 44,
           "TUN": 44,
+          "MAR": 44,
           "MEX": 44,
           "MYS": 43,
           "GIN": 42,
-          "ZAR": 41,
           "TCD": 41,
-          "CIV": 41,
-          "MRT": 41,
-          "CMR": 41,
-          "TZA": 41,
-          "GAB": 41,
-          "BFA": 41,
           "LAO": 41,
-          "TGO": 41,
+          "CMR": 41,
+          "CIV": 41,
+          "GAB": 41,
           "KWT": 41,
+          "BFA": 41,
+          "TZA": 41,
+          "TGO": 41,
+          "MRT": 41,
+          "ZAR": 41,
           "DZA": 40,
-          "IDN": 40,
           "NPL": 40,
+          "IDN": 40,
           "RWA": 40,
           "ZMB": 38,
-          "GMB": 37,
-          "ZWE": 37,
-          "LSO": 37,
           "SGP": 37,
+          "ZWE": 37,
           "GUY": 37,
+          "LSO": 37,
+          "GMB": 37,
           "BWA": 37,
           "UGA": 36,
-          "SWZ": 36,
           "BDI": 36,
-          "COG": 35,
+          "SWZ": 36,
           "SOM": 35,
+          "COG": 35,
           "ALB": 35,
           "HUN": 34,
+          "SEN": 34,
+          "ROM": 34,
           "MNG": 34,
           "OMN": 34,
-          "ROM": 34,
-          "SEN": 34,
           "BGR": 34,
-          "SDN": 33,
           "PRY": 33,
+          "SDN": 33,
           "POL": 33,
-          "AGO": 32,
           "CAF": 32,
           "MOZ": 32,
-          "LBN": 32,
+          "AGO": 32,
           "NER": 32,
+          "LBN": 32,
           "KEN": 30,
-          "NIC": 28,
           "SLV": 28,
+          "NIC": 28,
           "SLE": 28,
-          "GNB": 27,
           "MDG": 27,
+          "GNB": 27,
           "FJI": 27,
           "MLI": 26,
-          "BEN": 25,
           "MWI": 25,
+          "BEN": 25,
           "KOR": 22,
           "PER": 21,
           "PAK": 20,
           "PAN": 18,
-          "NGA": 17,
           "CYP": 17,
+          "NGA": 17,
           "BRA": 16,
           "PHL": 16,
           "CHL": 15,
@@ -1567,8 +1436,8 @@
           "HND": 8,
           "ARG": 7,
           "GTM": 5,
-          "THA": 4,
           "TUR": 4,
+          "THA": 4,
           "ECU": 3,
           "BOL": 3
         }
@@ -1845,26 +1714,10 @@
   ],
   [
     "change",
-    "variables.rgdpch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rgdpch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rgdpch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2521,26 +2374,10 @@
   ],
   [
     "change",
-    "variables.openk.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.openk.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.openk.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3197,26 +3034,10 @@
   ],
   [
     "change",
-    "variables.grgdpch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.grgdpch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.grgdpch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3823,28 +3644,12 @@
     [
       "Afghanistan",
       [
-        "China",
-        "Ethiopia",
         "Saudi Arabia",
-        "Afghanistan",
-        "Iraq"
+        "Jordan",
+        "Iraq",
+        "Haiti",
+        "China"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.ctryname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ctryname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3905,74 +3710,74 @@
       [
         "plotValues",
         {
-          "China": 51,
-          "Jordan": 51,
-          "Iraq": 51,
-          "South Africa": 51,
-          "Afghanistan": 51,
           "Ethiopia": 51,
-          "Saudi Arabia": 51,
           "Haiti": 51,
+          "South Africa": 51,
           "Iran": 51,
-          "Liberia": 50,
+          "China": 51,
+          "Afghanistan": 51,
+          "Iraq": 51,
+          "Jordan": 51,
+          "Saudi Arabia": 51,
           "Syria": 50,
-          "Libyan Arab Jamahiriya": 46,
+          "Liberia": 50,
           "Cuba": 46,
+          "Libyan Arab Jamahiriya": 46,
           "Cambodia": 45,
-          "Mexico": 44,
           "Tunisia": 44,
           "Morocco": 44,
+          "Mexico": 44,
           "Malaysia": 43,
           "Guinea": 42,
-          "Cote d'Ivoire": 41,
-          "Gabon": 41,
-          "Democratic Republic of the Congo (Zaire, Congo-Kinshasha)": 41,
-          "Burkina Faso": 41,
-          "Chad": 41,
-          "Mauritania": 41,
           "Kuwait": 41,
-          "Tanzania": 41,
-          "Cameroon": 41,
           "Togo": 41,
+          "Gabon": 41,
+          "Mauritania": 41,
+          "Democratic Republic of the Congo (Zaire, Congo-Kinshasha)": 41,
+          "Chad": 41,
+          "Tanzania": 41,
+          "Burkina Faso": 41,
+          "Cote d'Ivoire": 41,
           "Laos": 41,
+          "Cameroon": 41,
+          "Indonesia": 40,
+          "Algeria": 40,
           "Nepal": 40,
           "Rwanda": 40,
-          "Algeria": 40,
-          "Indonesia": 40,
           "Zambia": 38,
-          "Zimbabwe": 37,
-          "Guyana": 37,
-          "Gambia": 37,
-          "Botswana": 37,
-          "Singapore": 37,
           "Lesotho": 37,
+          "Guyana": 37,
+          "Zimbabwe": 37,
+          "Singapore": 37,
+          "Botswana": 37,
+          "Gambia": 37,
           "Swaziland": 36,
           "Uganda": 36,
           "Burundi": 36,
-          "Congo (Brazzaville, Republic of Congo)": 35,
           "Somalia": 35,
+          "Congo (Brazzaville, Republic of Congo)": 35,
           "Albania": 35,
-          "Oman": 34,
-          "Mongolia": 34,
-          "Senegal": 34,
-          "Bulgaria": 34,
-          "Romania": 34,
           "Hungary": 34,
+          "Romania": 34,
+          "Oman": 34,
+          "Senegal": 34,
+          "Mongolia": 34,
+          "Bulgaria": 34,
           "Poland": 33,
-          "Paraguay": 33,
           "Sudan": 33,
+          "Paraguay": 33,
           "Lebanon": 32,
-          "Niger": 32,
           "Central African Republic": 32,
-          "Mozambique": 32,
+          "Niger": 32,
           "Angola": 32,
+          "Mozambique": 32,
           "Kenya": 30,
-          "El Salvador": 28,
-          "Nicaragua": 28,
           "Sierra Leone": 28,
+          "Nicaragua": 28,
+          "El Salvador": 28,
           "Madagascar": 27,
-          "Guinea-Bissau": 27,
           "Fiji": 27,
+          "Guinea-Bissau": 27,
           "Mali": 26,
           "Benin": 25,
           "Malawi": 25,
@@ -3982,20 +3787,20 @@
           "Panama": 18,
           "Cyprus": 17,
           "Nigeria": 17,
-          "Philippines": 16,
           "Brazil": 16,
+          "Philippines": 16,
           "Chile": 15,
-          "Bangladesh": 13,
           "Ghana": 13,
+          "Bangladesh": 13,
           "Sri Lanka": 12,
           "Uruguay": 10,
           "Honduras": 8,
           "Argentina": 7,
           "Guatemala": 5,
-          "Thailand": 4,
           "Turkey": 4,
-          "Ecuador": 3,
-          "Bolivia": 3
+          "Thailand": 4,
+          "Bolivia": 3,
+          "Ecuador": 3
         }
       ],
       [
@@ -4258,22 +4063,6 @@
     [
       "40",
       40
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4918,22 +4707,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cowcode2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cowcode2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cowcode2",
     [
@@ -5571,22 +5344,6 @@
     ]
   ],
   [
-    "change",
-    "variables.exselec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.exselec.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.exselec",
     [
@@ -5832,22 +5589,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.legselec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.legselec.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6099,22 +5840,6 @@
     ]
   ],
   [
-    "change",
-    "variables.closed.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.closed.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.closed",
     [
@@ -6360,22 +6085,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.dejure.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dejure.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6627,22 +6336,6 @@
     ]
   ],
   [
-    "change",
-    "variables.defacto.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.defacto.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.defacto",
     [
@@ -6888,22 +6581,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.lparty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lparty.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7155,22 +6832,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nmil.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nmil.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nmil",
     [
@@ -7413,22 +7074,6 @@
     ]
   ],
   [
-    "change",
-    "variables.democracy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.democracy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.democracy",
     [
@@ -7668,22 +7313,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.comm.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.comm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7930,22 +7559,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8587,22 +8200,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Assassinations.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Assassinations.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Assassinations",
     [
@@ -9167,22 +8764,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GenStrikes.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GenStrikes.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GenStrikes",
     [
@@ -9446,22 +9027,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Guerrilla.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Guerrilla.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9759,22 +9324,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GovCrises.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GovCrises.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GovCrises",
     [
@@ -10038,22 +9587,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Purges.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Purges.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10340,22 +9873,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Riots.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Riots.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10935,22 +10452,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Revolutions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Revolutions.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Revolutions",
     [
@@ -11214,22 +10715,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.AntiGovDem.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.AntiGovDem.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11809,22 +11294,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Coups.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Coups.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Coups",
     [
@@ -12079,22 +11548,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ColdWar.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ColdWar.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ColdWar",
     [
@@ -12291,177 +11744,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "bankscode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wdicode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rgdpch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openk": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "grgdpch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ctryname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cowcode2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "exselec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legselec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "closed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dejure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "defacto": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lparty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nmil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "democracy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "comm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Assassinations": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GenStrikes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Guerrilla": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GovCrises": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Purges": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Riots": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Revolutions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AntiGovDem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Coups": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ColdWar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

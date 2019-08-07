@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        10
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "RYNSDG_natural_experiment_papers.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 877
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.paper.mode",
     [
       "Blattman (2010)",
       [
-        "Blattman (2010)",
-        "Lyall (2009)",
-        "Hyde (2008)",
+        "Dunning (2010)",
+        "Lee (2008)",
+        "Ferraz and Finan",
         "Di Tella et al. (2007)",
-        "Card and Krueger (2004)"
+        "Lyall (2009)"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.paper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.paper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Blattman (2010)",
-          "Lyall (2009)",
-          "Hyde (2008)",
+          "Dunning (2010)",
+          "Lee (2008)",
+          "Ferraz and Finan",
           "Di Tella et al. (2007)",
-          "Card and Krueger (2004)"
+          "Lyall (2009)"
         ]
       ],
       [
@@ -173,16 +74,16 @@
       [
         "plotValues",
         {
-          "Dunning (2010)": 1,
+          "Chattopadhyay and Duflo (2004)": 1,
+          "Card and Krueger (2004)": 1,
+          "Blattman (2010)": 1,
+          "Hyde (2008)": 1,
+          "Ho and Imai (2008)": 1,
+          "Lyall (2009)": 1,
+          "Di Tella et al. (2007)": 1,
           "Ferraz and Finan": 1,
           "Lee (2008)": 1,
-          "Chattopadhyay and Duflo (2004)": 1,
-          "Ho and Imai (2008)": 1,
-          "Card and Krueger (2004)": 1,
-          "Di Tella et al. (2007)": 1,
-          "Hyde (2008)": 1,
-          "Lyall (2009)": 1,
-          "Blattman (2010)": 1
+          "Dunning (2010)": 1
         }
       ],
       [
@@ -326,28 +227,12 @@
     [
       "Father's Years of Schooling",
       [
-        "Wells",
-        "Employment - November 1992",
-        "Mean Scheduled Tribe Population",
+        "Registered Democratic",
         "Reelection rates (2004)",
-        "Father's Years of Schooling"
+        "Employment - November 1992",
+        "Rebel Presence",
+        "Wells"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -381,11 +266,11 @@
       [
         "fewestValues",
         [
-          "Wells",
-          "Employment - November 1992",
-          "Mean Scheduled Tribe Population",
+          "Registered Democratic",
           "Reelection rates (2004)",
-          "Father's Years of Schooling"
+          "Employment - November 1992",
+          "Rebel Presence",
+          "Wells"
         ]
       ],
       [
@@ -411,16 +296,16 @@
       [
         "plotValues",
         {
-          "Registered Democratic": 1,
           "Father's Years of Schooling": 1,
-          "Years of Education": 1,
-          "Rebel Presence": 1,
-          "Mean Scheduled Tribe Population": 1,
+          "Challenger\u2019s Vote Share": 1,
+          "Wells": 1,
           "Democratic Win Prob ": 1,
+          "Mean Scheduled Tribe Population": 1,
+          "Rebel Presence": 1,
           "Employment - November 1992": 1,
           "Reelection rates (2004)": 1,
-          "Challenger\u2019s Vote Share": 1,
-          "Wells": 1
+          "Registered Democratic": 1,
+          "Years of Education": 1
         }
       ],
       [
@@ -569,22 +454,6 @@
     ]
   ],
   [
-    "change",
-    "variables.iv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.iv.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.iv",
     [
@@ -615,10 +484,10 @@
       [
         "fewestValues",
         [
-          "Artillery Shelling",
-          "Ballot Order Position",
           "Abduction",
           "Property Rights",
+          "Minimum Wage Increase",
+          "Observer Visit",
           "Democratic Victory"
         ]
       ],
@@ -647,13 +516,13 @@
         {
           "Reservations": 2,
           "Gov. Audit": 1,
-          "Minimum Wage Increase": 1,
-          "Observer Visit": 1,
-          "Democratic Victory": 1,
-          "Property Rights": 1,
-          "Abduction": 1,
+          "Artillery Shelling": 1,
           "Ballot Order Position": 1,
-          "Artillery Shelling": 1
+          "Democratic Victory": 1,
+          "Observer Visit": 1,
+          "Minimum Wage Increase": 1,
+          "Property Rights": 1,
+          "Abduction": 1
         }
       ],
       [
@@ -842,26 +711,10 @@
   ],
   [
     "change",
-    "variables.coef.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.coef.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.coef.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1162,26 +1015,10 @@
   ],
   [
     "change",
-    "variables.se.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.se.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.se.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1474,22 +1311,6 @@
     [
       "80",
       80
-    ]
-  ],
-  [
-    "change",
-    "variables.N.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.N.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1791,22 +1612,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n",
     [
@@ -2105,22 +1910,6 @@
     ]
   ],
   [
-    "change",
-    "variables.m.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.m.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.m",
     [
@@ -2369,72 +2158,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:23:43",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "paper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "iv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "N": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "m": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

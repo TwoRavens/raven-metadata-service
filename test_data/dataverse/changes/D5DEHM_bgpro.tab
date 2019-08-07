@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1050
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "D5DEHM_bgpro.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 110590
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.fips.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.fips.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "AL",
       [
-        "NM",
-        "ND",
+        "PA",
+        "RI",
+        "AK",
         "NV",
-        "AL",
-        "TN"
+        "NE"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.stateabv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.stateabv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "NM",
-          "ND",
+          "PA",
+          "RI",
+          "AK",
           "NV",
-          "AL",
-          "TN"
+          "NE"
         ]
       ],
       [
@@ -833,56 +718,56 @@
       [
         "plotValues",
         {
-          "WI": 21,
-          "NJ": 21,
-          "IL": 21,
-          "CO": 21,
-          "UT": 21,
-          "IA": 21,
-          "ME": 21,
-          "MA": 21,
-          "CT": 21,
-          "OR": 21,
-          "AR": 21,
-          "IN": 21,
-          "AZ": 21,
-          "SC": 21,
-          "VT": 21,
-          "WA": 21,
-          "NC": 21,
-          "MI": 21,
-          "LA": 21,
-          "KY": 21,
-          "OK": 21,
-          "MS": 21,
-          "WV": 21,
           "OH": 21,
-          "PA": 21,
-          "MO": 21,
-          "KS": 21,
+          "OR": 21,
           "HI": 21,
-          "MN": 21,
           "GA": 21,
-          "CA": 21,
-          "NH": 21,
-          "MD": 21,
-          "RI": 21,
-          "DE": 21,
-          "WY": 21,
-          "SD": 21,
-          "MT": 21,
-          "NY": 21,
-          "ID": 21,
-          "VA": 21,
-          "TX": 21,
-          "AK": 21,
-          "NE": 21,
-          "FL": 21,
-          "TN": 21,
           "AL": 21,
-          "NV": 21,
+          "NM": 21,
+          "MI": 21,
+          "SD": 21,
+          "NH": 21,
+          "MO": 21,
+          "IL": 21,
           "ND": 21,
-          "NM": 21
+          "DE": 21,
+          "MD": 21,
+          "VT": 21,
+          "LA": 21,
+          "UT": 21,
+          "MS": 21,
+          "CT": 21,
+          "NJ": 21,
+          "WV": 21,
+          "MA": 21,
+          "IN": 21,
+          "WI": 21,
+          "CO": 21,
+          "WA": 21,
+          "CA": 21,
+          "ME": 21,
+          "MT": 21,
+          "ID": 21,
+          "NC": 21,
+          "VA": 21,
+          "KS": 21,
+          "IA": 21,
+          "SC": 21,
+          "NY": 21,
+          "KY": 21,
+          "MN": 21,
+          "FL": 21,
+          "TX": 21,
+          "AR": 21,
+          "WY": 21,
+          "TN": 21,
+          "AZ": 21,
+          "OK": 21,
+          "NE": 21,
+          "NV": 21,
+          "AK": 21,
+          "RI": 21,
+          "PA": 21
         }
       ],
       [
@@ -1066,28 +951,12 @@
     [
       "Alabama",
       [
-        "Oregon",
-        "Wisconsin",
-        "Nebraska",
-        "Vermont",
-        "Idaho"
+        "Michigan",
+        "Rhode Island",
+        "New Mexico",
+        "New York",
+        "Indiana"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1121,11 +990,11 @@
       [
         "fewestValues",
         [
-          "Oregon",
-          "Wisconsin",
-          "Nebraska",
-          "Vermont",
-          "Idaho"
+          "Michigan",
+          "Rhode Island",
+          "New Mexico",
+          "New York",
+          "Indiana"
         ]
       ],
       [
@@ -1151,56 +1020,56 @@
       [
         "plotValues",
         {
-          "California": 21,
-          "Massachusetts": 21,
-          "Illinois": 21,
-          "Arizona": 21,
-          "Iowa": 21,
-          "North Dakota": 21,
-          "Utah": 21,
-          "Missouri": 21,
-          "Washington": 21,
-          "South Carolina": 21,
-          "Connecticut": 21,
-          "Maine": 21,
-          "Tennessee": 21,
-          "Pennsylvania": 21,
-          "New Jersey": 21,
-          "Florida": 21,
-          "Arkansas": 21,
+          "Texas": 21,
+          "Louisiana": 21,
+          "South Dakota": 21,
           "Kansas": 21,
           "Virginia": 21,
-          "West Virginia": 21,
-          "Hawaii": 21,
-          "Minnesota": 21,
-          "New York": 21,
-          "Texas": 21,
-          "Nevada": 21,
-          "Georgia": 21,
-          "South Dakota": 21,
-          "New Mexico": 21,
-          "Ohio": 21,
-          "Indiana": 21,
-          "Alaska": 21,
-          "Wyoming": 21,
+          "New Jersey": 21,
           "Montana": 21,
-          "Michigan": 21,
-          "Kentucky": 21,
-          "Maryland": 21,
-          "Colorado": 21,
-          "Delaware": 21,
-          "Rhode Island": 21,
-          "New Hampshire": 21,
-          "Alabama": 21,
-          "Oklahoma": 21,
-          "Louisiana": 21,
-          "Mississippi": 21,
-          "North Carolina": 21,
+          "Utah": 21,
           "Idaho": 21,
+          "Ohio": 21,
+          "Pennsylvania": 21,
+          "Alabama": 21,
+          "Arizona": 21,
+          "North Carolina": 21,
+          "Kentucky": 21,
+          "Tennessee": 21,
+          "Oklahoma": 21,
+          "Minnesota": 21,
+          "Washington": 21,
+          "Florida": 21,
+          "South Carolina": 21,
+          "Maryland": 21,
+          "North Dakota": 21,
+          "Colorado": 21,
+          "Hawaii": 21,
+          "Illinois": 21,
+          "Mississippi": 21,
+          "Maine": 21,
+          "Iowa": 21,
+          "Massachusetts": 21,
+          "Oregon": 21,
+          "Wyoming": 21,
           "Vermont": 21,
-          "Nebraska": 21,
+          "West Virginia": 21,
+          "Arkansas": 21,
+          "Missouri": 21,
           "Wisconsin": 21,
-          "Oregon": 21
+          "Nebraska": 21,
+          "Nevada": 21,
+          "Delaware": 21,
+          "Alaska": 21,
+          "California": 21,
+          "New Hampshire": 21,
+          "Georgia": 21,
+          "Connecticut": 21,
+          "Indiana": 21,
+          "New York": 21,
+          "New Mexico": 21,
+          "Rhode Island": 21,
+          "Michigan": 21
         }
       ],
       [
@@ -1422,22 +1291,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.sessid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.sessid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2032,26 +1885,10 @@
   ],
   [
     "change",
-    "variables.t_slength.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.t_slength.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.t_slength.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2704,26 +2541,10 @@
   ],
   [
     "change",
-    "variables.slength.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.slength.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.slength.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3376,26 +3197,10 @@
   ],
   [
     "change",
-    "variables.salary_real.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.salary_real.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.salary_real.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4052,26 +3857,10 @@
   ],
   [
     "change",
-    "variables.expend.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.expend.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.expend.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4719,22 +4508,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -5372,26 +5145,10 @@
   ],
   [
     "change",
-    "variables.mds1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mds1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mds1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6048,26 +5805,10 @@
   ],
   [
     "change",
-    "variables.mds2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.mds2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.mds2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6665,87 +6406,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:20:57",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "fips": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stateabv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sessid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t_slength": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "slength": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "salary_real": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "expend": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mds1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mds2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

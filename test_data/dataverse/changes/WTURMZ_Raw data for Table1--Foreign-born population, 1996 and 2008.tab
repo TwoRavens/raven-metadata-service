@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        101
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WTURMZ_Raw data for Table1--Foreign-born population, 1996 and 2008.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 6219
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,25 +649,9 @@
     [
       "1996",
       [
-        "1996",
-        "2008"
+        "2008",
+        "1996"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -826,8 +711,8 @@
       [
         "plotValues",
         {
-          "2008": 50,
           "1996": 50,
+          "2008": 50,
           "Source: Current Population Survey (CPS), Bureau of Labor Statistics": 1
         }
       ],
@@ -965,28 +850,12 @@
     [
       "Alabama",
       [
-        "South Carolina",
-        "Texas",
-        "Kansas",
-        "Minnesota",
-        "Alaska"
+        "Michigan",
+        "Maine",
+        "Rhode Island",
+        "New Mexico",
+        "New York"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.stname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.stname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1020,11 +889,11 @@
       [
         "fewestValues",
         [
-          "South Carolina",
-          "Texas",
-          "Kansas",
-          "Minnesota",
-          "Alaska"
+          "Michigan",
+          "Maine",
+          "Rhode Island",
+          "New Mexico",
+          "New York"
         ]
       ],
       [
@@ -1050,56 +919,56 @@
       [
         "plotValues",
         {
-          "Delaware": 2,
-          "Ohio": 2,
-          "Nebraska": 2,
-          "Utah": 2,
-          "Vermont": 2,
-          "New Mexico": 2,
-          "Oregon": 2,
-          "Illinois": 2,
-          "New Jersey": 2,
-          "Rhode Island": 2,
-          "Arizona": 2,
-          "Oklahoma": 2,
-          "California": 2,
-          "North Carolina": 2,
-          "Georgia": 2,
-          "Montana": 2,
           "Wisconsin": 2,
-          "Florida": 2,
-          "Nevada": 2,
-          "Massachusetts": 2,
-          "Kentucky": 2,
-          "West Virginia": 2,
-          "Maine": 2,
-          "Maryland": 2,
-          "Indiana": 2,
           "Alabama": 2,
-          "Virginia": 2,
-          "North Dakota": 2,
-          "Pennsylvania": 2,
-          "Missouri": 2,
-          "Tennessee": 2,
-          "Wyoming": 2,
-          "Michigan": 2,
-          "New York": 2,
-          "Hawaii": 2,
-          "New Hampshire": 2,
-          "Mississippi": 2,
-          "Washington": 2,
+          "South Carolina": 2,
           "South Dakota": 2,
-          "Iowa": 2,
-          "Colorado": 2,
-          "Arkansas": 2,
-          "Connecticut": 2,
-          "Idaho": 2,
-          "Louisiana": 2,
-          "Alaska": 2,
-          "Minnesota": 2,
           "Kansas": 2,
+          "Washington": 2,
+          "New Jersey": 2,
+          "Montana": 2,
+          "Utah": 2,
+          "Arizona": 2,
+          "Ohio": 2,
+          "Pennsylvania": 2,
+          "Louisiana": 2,
+          "North Carolina": 2,
+          "Oklahoma": 2,
+          "Hawaii": 2,
+          "Tennessee": 2,
           "Texas": 2,
-          "South Carolina": 2
+          "Minnesota": 2,
+          "Virginia": 2,
+          "Florida": 2,
+          "Maryland": 2,
+          "North Dakota": 2,
+          "Colorado": 2,
+          "Mississippi": 2,
+          "Illinois": 2,
+          "Oregon": 2,
+          "Nebraska": 2,
+          "Kentucky": 2,
+          "Massachusetts": 2,
+          "Wyoming": 2,
+          "Vermont": 2,
+          "West Virginia": 2,
+          "Arkansas": 2,
+          "Missouri": 2,
+          "Idaho": 2,
+          "Iowa": 2,
+          "Nevada": 2,
+          "Delaware": 2,
+          "Alaska": 2,
+          "California": 2,
+          "New Hampshire": 2,
+          "Georgia": 2,
+          "Connecticut": 2,
+          "Indiana": 2,
+          "New York": 2,
+          "New Mexico": 2,
+          "Rhode Island": 2,
+          "Maine": 2,
+          "Michigan": 2
         }
       ],
       [
@@ -1318,22 +1187,6 @@
     [
       "355",
       355.0
-    ]
-  ],
-  [
-    "change",
-    "variables.usborn.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.usborn.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1981,22 +1834,6 @@
     ]
   ],
   [
-    "change",
-    "variables.foreignborn.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.foreignborn.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.foreignborn",
     [
@@ -2634,22 +2471,6 @@
     [
       "363",
       363.0
-    ]
-  ],
-  [
-    "change",
-    "variables.total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.total.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3302,26 +3123,10 @@
   ],
   [
     "change",
-    "variables.pforeign.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pforeign.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pforeign.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3919,67 +3724,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:13",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "stname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "usborn": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "foreignborn": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pforeign": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

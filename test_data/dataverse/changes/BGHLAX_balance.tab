@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        22
-      ],
-      [
-        "variableCount",
-        6
-      ],
-      [
-        "dataSource",
-        {
-          "name": "BGHLAX_balance.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1070
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.covariates.mode",
     [
       "Region: North",
       [
+        "Region: London",
+        "Con Vote 2010",
+        "Female",
         "No Vote 2010",
-        "Lab Vote 2010",
-        "Age",
-        "UKIP Party ID 2010",
-        "Lib Vote 2010"
+        "EU membership"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.covariates.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.covariates.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Region: London",
+          "Con Vote 2010",
+          "Female",
           "No Vote 2010",
-          "Lab Vote 2010",
-          "Age",
-          "UKIP Party ID 2010",
-          "Lib Vote 2010"
+          "EU membership"
         ]
       ],
       [
@@ -173,28 +74,28 @@
       [
         "plotValues",
         {
-          "Lib Vote 2010": 1,
-          "UKIP Vote 2010": 1,
-          "Con Party ID 2010": 1,
           "Lib Party ID 2010": 1,
-          "Green Vote 2010": 1,
-          "Female": 1,
-          "Lab Party ID 2010": 1,
-          "Lab Vote 2010": 1,
-          "Region: South": 1,
-          "Con Vote 2010": 1,
           "Region: Scotland": 1,
-          "Green Party ID 2010": 1,
-          "Region: Wales": 1,
-          "EU membership": 1,
-          "Region: Midlands": 1,
-          "UKIP Party ID 2010": 1,
-          "Region: North": 1,
+          "Female": 1,
           "Region: East": 1,
-          "No Party ID 2010 ": 1,
+          "Con Party ID 2010": 1,
+          "Green Vote 2010": 1,
+          "UKIP Vote 2010": 1,
+          "Region: Wales": 1,
+          "Lab Party ID 2010": 1,
+          "UKIP Party ID 2010": 1,
           "Age": 1,
+          "Green Party ID 2010": 1,
+          "Region: Midlands": 1,
+          "No Party ID 2010 ": 1,
+          "Lib Vote 2010": 1,
+          "Lab Vote 2010": 1,
+          "EU membership": 1,
+          "Region: North": 1,
+          "No Vote 2010": 1,
           "Region: London": 1,
-          "No Vote 2010": 1
+          "Con Vote 2010": 1,
+          "Region: South": 1
         }
       ],
       [
@@ -400,26 +301,10 @@
   ],
   [
     "change",
-    "variables.closedno.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.closedno.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.closedno.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1076,26 +961,10 @@
   ],
   [
     "change",
-    "variables.closedwith.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.closedwith.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.closedwith.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1752,26 +1621,10 @@
   ],
   [
     "change",
-    "variables.openno.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.openno.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.openno.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2428,26 +2281,10 @@
   ],
   [
     "change",
-    "variables.openwith.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.openwith.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.openwith.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3104,26 +2941,10 @@
   ],
   [
     "change",
-    "variables.pvalue.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pvalue.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pvalue.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3721,62 +3542,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:17:39",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "covariates": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "closedno": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "closedwith": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openno": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "openwith": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pvalue": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

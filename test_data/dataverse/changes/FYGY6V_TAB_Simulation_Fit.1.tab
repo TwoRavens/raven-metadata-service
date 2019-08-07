@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2200
-      ],
-      [
-        "variableCount",
-        8
-      ],
-      [
-        "dataSource",
-        {
-          "name": "FYGY6V_TAB_Simulation_Fit.1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 269386
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.coef.median",
     [
@@ -138,26 +55,10 @@
   ],
   [
     "change",
-    "variables.coef.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.coef.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.coef.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -841,35 +742,11 @@
     [
       "variables",
       "exp.coef.",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "exp.coef.",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "exp.coef.",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1559,35 +1436,11 @@
     [
       "variables",
       "se.coef.",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "se.coef.",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "se.coef.",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2277,35 +2130,11 @@
     [
       "variables",
       "robust.se",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "robust.se",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "robust.se",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2968,26 +2797,10 @@
   ],
   [
     "change",
-    "variables.z.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.z.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.z.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3667,35 +3480,11 @@
     [
       "variables",
       "Pr...z..",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pr...z..",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Pr...z..",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4349,22 +4138,6 @@
     ]
   ],
   [
-    "change",
-    "variables.boot.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.boot.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.boot",
     [
@@ -4968,28 +4741,12 @@
     [
       "open",
       [
-        "rgdplsq",
+        "first_signer",
         "GDPL",
-        "patent_i_sign",
-        "open",
-        "lnso2pc"
+        "lagpercregion",
+        "rgdpl",
+        "patent_i_sign"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.varname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.varname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5023,11 +4780,11 @@
       [
         "fewestValues",
         [
-          "rgdplsq",
+          "first_signer",
           "GDPL",
-          "patent_i_sign",
-          "open",
-          "lnso2pc"
+          "lagpercregion",
+          "rgdpl",
+          "patent_i_sign"
         ]
       ],
       [
@@ -5053,17 +4810,17 @@
       [
         "plotValues",
         {
-          "lagpercregion": 200,
-          "rgdpl": 200,
-          "first_signer": 200,
-          "threshold": 200,
-          "IO_membership": 200,
           "meanpc": 200,
           "lnso2pc": 200,
+          "IO_membership": 200,
           "open": 200,
+          "rgdplsq": 200,
+          "threshold": 200,
           "patent_i_sign": 200,
+          "rgdpl": 200,
+          "lagpercregion": 200,
           "GDPL": 200,
-          "rgdplsq": 200
+          "first_signer": 200
         }
       ],
       [
@@ -5199,72 +4956,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:31",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "coef": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "exp.coef.": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "se.coef.": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "robust.se": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "z": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pr...z..": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "boot": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "varname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

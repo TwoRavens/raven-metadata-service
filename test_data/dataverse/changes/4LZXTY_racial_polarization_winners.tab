@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        203
-      ],
-      [
-        "variableCount",
-        89
-      ],
-      [
-        "dataSource",
-        {
-          "name": "4LZXTY_racial_polarization_winners.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 126712
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.winner.median",
     [
@@ -122,22 +39,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.winner.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.winner.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -341,22 +242,6 @@
     ]
   ],
   [
-    "change",
-    "variables.type.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.type.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.type",
     [
@@ -388,10 +273,10 @@
         "fewestValues",
         [
           "Run-off",
-          "Primary (Special)",
           "General (special)",
+          "Special - Mayor Resigned to Run for Senate",
           "general (runoff)",
-          "Special - Mayor Resigned to Run for Senate"
+          "Primary (Special)"
         ]
       ],
       [
@@ -427,11 +312,11 @@
           "Primary no run-off": 3,
           "Special": 2,
           "Republican Primary": 2,
-          "Special - Mayor Resigned to Run for Senate": 1,
+          "Run-off": 1,
           "general (runoff)": 1,
-          "General (special)": 1,
+          "Special - Mayor Resigned to Run for Senate": 1,
           "Primary (Special)": 1,
-          "Run-off": 1
+          "General (special)": 1
         }
       ],
       [
@@ -626,26 +511,10 @@
   ],
   [
     "change",
-    "variables.pcandvote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pcandvote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pcandvote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1252,25 +1121,9 @@
     [
       "Brown",
       [
-        "Brown",
-        "Daley"
+        "Daley",
+        "Brown"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.candidate.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.candidate.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1304,11 +1157,11 @@
       [
         "fewestValues",
         [
-          "Barthelemy",
-          "Ferrer",
-          "Moncrief",
-          "Bartlett",
-          "Rimsza"
+          "Hardberger",
+          "DeGroot",
+          "Morial",
+          "Bradley",
+          "Gilroy"
         ]
       ],
       [
@@ -1334,112 +1187,112 @@
       [
         "plotValues",
         {
-          "Daley": 9,
           "Brown": 9,
+          "Daley": 9,
           "White": 7,
-          "Coleman": 4,
-          "Villaraigosa": 4,
-          "Rendell": 4,
           "Schmoke": 4,
+          "Villaraigosa": 4,
           "Lanier": 4,
+          "Rendell": 4,
+          "Coleman": 4,
           "Herenton": 4,
-          "Archer": 3,
           "Rice": 3,
           "Menino": 3,
-          "Newsom": 3,
-          "Murphy": 3,
-          "Riordan": 3,
           "O'Malley": 3,
-          "Norquist": 3,
-          "Peterson": 3,
-          "McCrory": 3,
-          "Todd": 3,
-          "Street": 3,
+          "Newsom": 3,
           "Dixon": 3,
-          "Hammer": 2,
-          "Thornton": 2,
-          "Reed": 2,
-          "Michael Nutter": 2,
-          "Nagin": 2,
-          "Jordan": 2,
-          "Young": 2,
-          "Wolff": 2,
-          "Gonzales": 2,
-          "Bing": 2,
-          "Wynn": 2,
-          "Peyton": 2,
-          "Potter": 2,
-          "Webb": 2,
-          "Kirk": 2,
-          "Golding": 2,
-          "Sanders": 2,
-          "Dinkins": 2,
-          "Goldsmith": 2,
-          "Leppert": 2,
-          "Barry": 2,
-          "Flynn": 2,
-          "Hickenlooper": 2,
-          "Peak": 2,
-          "Kilpatrick": 2,
-          "Lashutka": 2,
-          "Williams": 2,
+          "Archer": 3,
+          "Riordan": 3,
+          "Street": 3,
+          "Peterson": 3,
+          "Todd": 3,
+          "Murphy": 3,
+          "Norquist": 3,
+          "McCrory": 3,
           "Gordon": 2,
+          "Williams": 2,
+          "Reed": 2,
+          "Peak": 2,
+          "Sanders": 2,
+          "Wynn": 2,
+          "Michael Nutter": 2,
           "Giuliani": 2,
+          "Dinkins": 2,
+          "Hickenlooper": 2,
+          "Hammer": 2,
           "Castro": 2,
+          "Nagin": 2,
+          "Flynn": 2,
+          "Young": 2,
+          "Potter": 2,
+          "Wolff": 2,
+          "Webb": 2,
+          "Lashutka": 2,
+          "Barry": 2,
+          "Jordan": 2,
+          "Leppert": 2,
+          "Gonzales": 2,
+          "Golding": 2,
+          "Thornton": 2,
+          "Kilpatrick": 2,
+          "Peyton": 2,
+          "Kirk": 2,
+          "Goldsmith": 2,
+          "Bing": 2,
           "Nickels": 2,
-          "Perk": 1,
-          "Walkup": 1,
-          "Gilroy": 1,
-          "Frye": 1,
-          "Campbell": 1,
-          "Godbold": 1,
-          "Turner": 1,
-          "Leffingwell": 1,
-          "Glover": 1,
-          "Gonzalez": 1,
-          "Ray": 1,
-          "Navarro": 1,
-          "Madans": 1,
-          "Morial": 1,
-          "Purcell": 1,
-          "Wardy": 1,
-          "Cornett": 1,
-          "Barrett": 1,
-          "Pierce": 1,
-          "Barnstone": 1,
-          "Garza": 1,
-          "Fiscalini": 1,
-          "Miller": 1,
-          "Moncrief": 1,
-          "Garcia": 1,
-          "Hardberger": 1,
-          "Vinroot": 1,
-          "Delaney": 1,
-          "Whitmire": 1,
-          "Hahn": 1,
-          "Strauss": 1,
-          "Myrick": 1,
-          "Michael Bloomberg": 1,
-          "Bloomberg": 1,
           "Hill": 1,
           "Ballard": 1,
-          "Rimsza": 1,
-          "Bartlett": 1,
-          "Green": 1,
-          "Scarborough": 1,
-          "Jewett": 1,
-          "Bradley": 1,
-          "Ferrer": 1,
-          "Cook": 1,
-          "DeGroot": 1,
-          "Hendrix": 1,
-          "Goodman": 1,
-          "Early": 1,
-          "Pratt": 1,
-          "Austin": 1,
-          "Watson": 1,
+          "Turner": 1,
           "Messinger": 1,
-          "Barthelemy": 1
+          "Frye": 1,
+          "Madans": 1,
+          "Barnstone": 1,
+          "Walkup": 1,
+          "Garcia": 1,
+          "Myrick": 1,
+          "Scarborough": 1,
+          "Campbell": 1,
+          "Perk": 1,
+          "Early": 1,
+          "Rimsza": 1,
+          "Garza": 1,
+          "Michael Bloomberg": 1,
+          "Strauss": 1,
+          "Purcell": 1,
+          "Barrett": 1,
+          "Hardberger": 1,
+          "Pierce": 1,
+          "Gonzalez": 1,
+          "Miller": 1,
+          "Austin": 1,
+          "Pratt": 1,
+          "Watson": 1,
+          "Morial": 1,
+          "Bradley": 1,
+          "Gilroy": 1,
+          "Whitmire": 1,
+          "Jewett": 1,
+          "Bartlett": 1,
+          "Bloomberg": 1,
+          "DeGroot": 1,
+          "Goodman": 1,
+          "Fiscalini": 1,
+          "Godbold": 1,
+          "Ray": 1,
+          "Wardy": 1,
+          "Navarro": 1,
+          "Leffingwell": 1,
+          "Barthelemy": 1,
+          "Moncrief": 1,
+          "Hendrix": 1,
+          "Cornett": 1,
+          "Glover": 1,
+          "Green": 1,
+          "Delaney": 1,
+          "Cook": 1,
+          "Ferrer": 1,
+          "Hahn": 1,
+          "Vinroot": 1
         }
       ],
       [
@@ -1684,22 +1537,6 @@
     ]
   ],
   [
-    "change",
-    "variables.candrace.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.candrace.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.candrace",
     [
@@ -1939,22 +1776,6 @@
     [
       "8275",
       8275.0
-    ]
-  ],
-  [
-    "change",
-    "variables.candvote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.candvote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2607,26 +2428,10 @@
   ],
   [
     "change",
-    "variables.pwhitevt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pwhitevt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pwhitevt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3280,26 +3085,10 @@
   ],
   [
     "change",
-    "variables.pblackvt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pblackvt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pblackvt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3952,26 +3741,10 @@
   ],
   [
     "change",
-    "variables.platinovt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.platinovt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.platinovt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4624,26 +4397,10 @@
   ],
   [
     "change",
-    "variables.pasianvt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pasianvt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pasianvt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5287,22 +5044,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totvote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totvote.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totvote",
     [
@@ -5911,22 +5652,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state",
     [
@@ -5957,8 +5682,8 @@
       [
         "fewestValues",
         [
-          "NV",
-          "OK"
+          "OK",
+          "NV"
         ]
       ],
       [
@@ -5988,24 +5713,24 @@
           "CA": 35,
           "OH": 12,
           "MI": 11,
-          "PA": 9,
-          "NY": 9,
           "MD": 9,
+          "NY": 9,
+          "PA": 9,
           "IL": 9,
-          "IN": 7,
           "NC": 7,
+          "IN": 7,
+          "WA": 6,
           "FL": 6,
           "CO": 6,
-          "WA": 6,
           "DC": 6,
-          "WI": 5,
           "MA": 5,
+          "WI": 5,
           "TN": 5,
           "LA": 4,
           "AZ": 4,
           "OR": 2,
-          "OK": 1,
-          "NV": 1
+          "NV": 1,
+          "OK": 1
         }
       ],
       [
@@ -6197,22 +5922,6 @@
     [
       "496938",
       496938.0
-    ]
-  ],
-  [
-    "change",
-    "variables.population.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.population.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6494,26 +6203,10 @@
   ],
   [
     "change",
-    "variables.vote50bl.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote50bl.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote50bl.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7168,26 +6861,10 @@
   ],
   [
     "change",
-    "variables.vote50wh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote50wh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote50wh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7840,26 +7517,10 @@
   ],
   [
     "change",
-    "variables.vote50as.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote50as.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote50as.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8515,26 +8176,10 @@
   ],
   [
     "change",
-    "variables.blwhdiv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blwhdiv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blwhdiv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9187,26 +8832,10 @@
   ],
   [
     "change",
-    "variables.blladiv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blladiv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blladiv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9859,26 +9488,10 @@
   ],
   [
     "change",
-    "variables.laasdiv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.laasdiv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.laasdiv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10532,26 +10145,10 @@
   ],
   [
     "change",
-    "variables.aswhdiv.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.aswhdiv.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.aswhdiv.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11195,22 +10792,6 @@
     ]
   ],
   [
-    "change",
-    "variables.numcand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.numcand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.numcand",
     [
@@ -11472,22 +11053,6 @@
     ]
   ],
   [
-    "change",
-    "variables.blwhcand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.blwhcand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.blwhcand",
     [
@@ -11728,22 +11293,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lawhcand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lawhcand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11989,22 +11538,6 @@
     ]
   ],
   [
-    "change",
-    "variables.aswhcand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.aswhcand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.aswhcand",
     [
@@ -12247,22 +11780,6 @@
     ]
   ],
   [
-    "change",
-    "variables.laascand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.laascand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.laascand",
     [
@@ -12492,22 +12009,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.biracial.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.biracial.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12753,22 +12254,6 @@
     ]
   ],
   [
-    "change",
-    "variables.whwhcand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.whwhcand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.whwhcand",
     [
@@ -13008,22 +12493,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.blblcand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.blblcand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13269,22 +12738,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lalacand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lalacand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lalacand",
     [
@@ -13514,22 +12967,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.biracialminonly.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.biracialminonly.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13775,22 +13212,6 @@
     ]
   ],
   [
-    "change",
-    "variables.whcand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.whcand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.whcand",
     [
@@ -14030,22 +13451,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lacand.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lacand.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14291,22 +13696,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ascand.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ascand.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ascand",
     [
@@ -14536,22 +13925,6 @@
     [
       "4000",
       4000
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_pla.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_pla.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15154,22 +14527,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fips_cnty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_cnty.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fips_cnty",
     [
@@ -15735,22 +15092,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cityname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cityname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cityname",
     [
@@ -15781,10 +15122,10 @@
       [
         "fewestValues",
         [
-          "Fort Worth City",
-          "Oklahoma City City",
-          "Nashville-Davidson (Remainder)",
           "Las Vegas City",
+          "Fort Worth City",
+          "Nashville-Davidson (Remainder)",
+          "Oklahoma City City",
           "Tucson City"
         ]
       ],
@@ -15814,36 +15155,36 @@
           "Houston City": 14,
           "San Antonio City": 11,
           "Detroit City": 11,
+          "Los Angeles City": 9,
           "Austin City": 9,
-          "San Francisco City": 9,
-          "Chicago City": 9,
-          "Philadelphia City": 9,
           "San Diego City": 9,
           "Baltimore City": 9,
-          "Los Angeles City": 9,
+          "Chicago City": 9,
+          "San Francisco City": 9,
+          "Philadelphia City": 9,
           "New York City": 9,
           "San Jose City": 8,
           "Charlotte City": 7,
           "Dallas City": 7,
           "Indianapolis": 7,
-          "Cleveland City": 6,
-          "Denver City": 6,
-          "Washington City": 6,
           "Seattle City": 6,
+          "Washington City": 6,
           "Columbus City": 6,
+          "Denver City": 6,
           "Jacksonville": 6,
+          "Cleveland City": 6,
           "Milwaukee City": 5,
           "Boston City": 5,
           "Memphis City": 4,
           "New Orleans City": 4,
           "Phoenix City": 3,
-          "Portland City": 2,
           "El Paso City": 2,
-          "Nashville-Davidson (Remainder)": 1,
+          "Portland City": 2,
+          "Tucson City": 1,
           "Oklahoma City City": 1,
+          "Nashville-Davidson (Remainder)": 1,
           "Fort Worth City": 1,
-          "Las Vegas City": 1,
-          "Tucson City": 1
+          "Las Vegas City": 1
         }
       ],
       [
@@ -16057,26 +15398,10 @@
   ],
   [
     "change",
-    "variables.populationinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.populationinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.populationinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16730,26 +16055,10 @@
   ],
   [
     "change",
-    "variables.pctunemplinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctunemplinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctunemplinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17403,26 +16712,10 @@
   ],
   [
     "change",
-    "variables.pctpovertyinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctpovertyinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctpovertyinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18075,26 +17368,10 @@
   ],
   [
     "change",
-    "variables.chng5pop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.chng5pop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.chng5pop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18738,22 +18015,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mayor_council.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mayor_council.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mayor_council",
     [
@@ -18993,22 +18254,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.council_manager.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.council_manager.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19254,22 +18499,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nonpartisan.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nonpartisan.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nonpartisan",
     [
@@ -19509,22 +18738,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.term_limits_council.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.term_limits_council.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19770,22 +18983,6 @@
     ]
   ],
   [
-    "change",
-    "variables.staggered_council.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.staggered_council.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.staggered_council",
     [
@@ -20025,22 +19222,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.mayoral_veto.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mayoral_veto.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20286,22 +19467,6 @@
     ]
   ],
   [
-    "change",
-    "variables.novevenyr_concurrent.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.novevenyr_concurrent.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.novevenyr_concurrent",
     [
@@ -20512,22 +19677,6 @@
     ]
   ],
   [
-    "change",
-    "variables.city.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.city.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.city",
     [
@@ -20559,10 +19708,10 @@
         "fewestValues",
         [
           "Philadelphia",
-          "Fort Worth city",
-          "Las Vegas city",
-          "Nashville-Davidson",
-          "Oklahoma City city"
+          "Tucson city",
+          "Oklahoma City city",
+          "Washington",
+          "Las Vegas city"
         ]
       ],
       [
@@ -20591,43 +19740,43 @@
           "Houston city": 14,
           "San Antonio": 11,
           "Chicago city": 9,
+          "New York": 9,
+          "San Francisco city": 9,
+          "Detroit city": 9,
           "Austin city": 9,
           "Baltimore city": 9,
-          "San Francisco city": 9,
-          "New York": 9,
-          "Detroit city": 9,
           "Philadelphia city": 8,
           "Indianapolis city": 7,
           "Charlotte city": 7,
-          "Denver city": 6,
-          "Seattle city": 6,
-          "Columbus city": 6,
-          "Jacksonville city": 6,
           "Cleveland city": 6,
-          "San Diego": 5,
-          "Boston city": 5,
-          "San Jose city": 5,
-          "Los Angeles": 5,
-          "Milwaukee city": 5,
+          "Seattle city": 6,
+          "Denver city": 6,
+          "Jacksonville city": 6,
+          "Columbus city": 6,
           "Dallas city": 5,
           "Washington city": 5,
+          "San Diego": 5,
+          "Milwaukee city": 5,
+          "Los Angeles": 5,
+          "Boston city": 5,
+          "San Jose city": 5,
+          "San Diego city": 4,
+          "Los Angeles city": 4,
           "Memphis city": 4,
           "New Orleans city": 4,
-          "Los Angeles city": 4,
-          "San Diego city": 4,
-          "Phoenix city": 3,
           "San Jose": 3,
+          "Phoenix city": 3,
           "Dallas": 2,
-          "Portland city": 2,
           "Detroit": 2,
           "El Paso city": 2,
-          "Oklahoma City city": 1,
-          "Fort Worth city": 1,
+          "Portland city": 2,
           "Washington": 1,
-          "Philadelphia": 1,
           "Nashville-Davidson": 1,
           "Tucson city": 1,
-          "Las Vegas city": 1
+          "Las Vegas city": 1,
+          "Oklahoma City city": 1,
+          "Fort Worth city": 1,
+          "Philadelphia": 1
         }
       ],
       [
@@ -20835,22 +19984,6 @@
     [
       "1989",
       1989
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21432,22 +20565,6 @@
     ]
   ],
   [
-    "change",
-    "variables.incumbent.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.incumbent.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.incumbent",
     [
@@ -21687,22 +20804,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.primary.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.primary.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21948,22 +21049,6 @@
     ]
   ],
   [
-    "change",
-    "variables.general.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.general.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.general",
     [
@@ -22203,22 +21288,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.runoff.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.runoff.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22474,26 +21543,10 @@
   ],
   [
     "change",
-    "variables.dempresp2_interp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dempresp2_interp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dempresp2_interp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23137,22 +22190,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fips_st.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_st.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fips_st",
     [
@@ -23731,22 +22768,6 @@
     [
       "4000",
       4000
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_plaS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_plaS.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24349,22 +23370,6 @@
     ]
   ],
   [
-    "change",
-    "variables.fips_stS.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_stS.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.fips_stS",
     [
@@ -24943,22 +23948,6 @@
     [
       "455000",
       455000
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_stpla.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips_stpla.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25568,22 +24557,6 @@
     ]
   ],
   [
-    "change",
-    "variables.geo_id2S.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.geo_id2S.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.geo_id2S",
     [
@@ -26187,22 +25160,6 @@
     [
       "455000",
       455000
-    ]
-  ],
-  [
-    "change",
-    "variables.geo_id2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.geo_id2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26822,26 +25779,10 @@
   ],
   [
     "change",
-    "variables.H_citytract_NHW_i.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.H_citytract_NHW_i.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.H_citytract_NHW_i.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27495,26 +26436,10 @@
   ],
   [
     "change",
-    "variables.H_citytract_multi_i.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.H_citytract_multi_i.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.H_citytract_multi_i.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28168,26 +27093,10 @@
   ],
   [
     "change",
-    "variables.isolationwht_i.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.isolationwht_i.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.isolationwht_i.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28841,26 +27750,10 @@
   ],
   [
     "change",
-    "variables.pctlocalgovworker.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctlocalgovworker.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctlocalgovworker.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29135,26 +28028,10 @@
   ],
   [
     "change",
-    "variables.pctwhtpopinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctwhtpopinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctwhtpopinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29807,26 +28684,10 @@
   ],
   [
     "change",
-    "variables.pctblkpopinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctblkpopinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctblkpopinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30479,26 +29340,10 @@
   ],
   [
     "change",
-    "variables.pctasianpopinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctasianpopinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctasianpopinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31151,26 +29996,10 @@
   ],
   [
     "change",
-    "variables.pctlatinopopinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctlatinopopinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctlatinopopinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31823,26 +30652,10 @@
   ],
   [
     "change",
-    "variables.pop65ovinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pop65ovinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pop65ovinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32495,26 +31308,10 @@
   ],
   [
     "change",
-    "variables.pctcollegegradinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctcollegegradinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctcollegegradinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33167,26 +31964,10 @@
   ],
   [
     "change",
-    "variables.medincinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.medincinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.medincinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33839,26 +32620,10 @@
   ],
   [
     "change",
-    "variables.pctrentersinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pctrentersinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pctrentersinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34511,26 +33276,10 @@
   ],
   [
     "change",
-    "variables.diversityinterp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.diversityinterp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.diversityinterp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35174,22 +33923,6 @@
     ]
   ],
   [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.region",
     [
@@ -35444,22 +34177,6 @@
     ]
   ],
   [
-    "change",
-    "variables.northeast.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.northeast.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.northeast",
     [
@@ -35699,22 +34416,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.south.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.south.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35960,22 +34661,6 @@
     ]
   ],
   [
-    "change",
-    "variables.midwest.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.midwest.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.midwest",
     [
@@ -36215,22 +34900,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.west.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.west.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36486,26 +35155,10 @@
   ],
   [
     "change",
-    "variables.logpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.logpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.logpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37149,22 +35802,6 @@
     ]
   ],
   [
-    "change",
-    "variables.totalr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.totalr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.totalr",
     [
@@ -37451,26 +36088,10 @@
   ],
   [
     "change",
-    "variables.citywhiteideol_interp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.citywhiteideol_interp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.citywhiteideol_interp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38124,26 +36745,10 @@
   ],
   [
     "change",
-    "variables.citywhiteideol_interp2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.citywhiteideol_interp2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.citywhiteideol_interp2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38796,26 +37401,10 @@
   ],
   [
     "change",
-    "variables.whiteideology_fill2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.whiteideology_fill2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.whiteideology_fill2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39469,26 +38058,10 @@
   ],
   [
     "change",
-    "variables.latinowhdivide.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.latinowhdivide.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.latinowhdivide.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40142,26 +38715,10 @@
   ],
   [
     "change",
-    "variables.blackwhdivide.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blackwhdivide.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blackwhdivide.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40818,26 +39375,10 @@
   ],
   [
     "change",
-    "variables.blacklatinodivide.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.blacklatinodivide.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.blacklatinodivide.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -41491,26 +40032,10 @@
   ],
   [
     "change",
-    "variables.biggestsplit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.biggestsplit.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.biggestsplit.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42166,26 +40691,10 @@
   ],
   [
     "change",
-    "variables.whiteblhispdivid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.whiteblhispdivid.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.whiteblhispdivid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -42829,22 +41338,6 @@
     ]
   ],
   [
-    "change",
-    "variables.biggestsplit_gr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.biggestsplit_gr.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.biggestsplit_gr",
     [
@@ -43047,477 +41540,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:49",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "winner": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "type": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pcandvote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "candidate": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "candrace": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "candvote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pwhitevt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pblackvt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "platinovt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pasianvt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totvote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "population": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote50bl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote50wh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote50as": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blwhdiv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blladiv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "laasdiv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aswhdiv": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "numcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blwhcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lawhcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "aswhcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "laascand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "biracial": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whwhcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blblcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lalacand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "biracialminonly": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whcand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lacand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ascand": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips_pla": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips_cnty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cityname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "populationinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctunemplinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctpovertyinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "chng5pop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mayor_council": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "council_manager": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nonpartisan": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "term_limits_council": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "staggered_council": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mayoral_veto": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "novevenyr_concurrent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "city": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "incumbent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "primary": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "runoff": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dempresp2_interp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips_st": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips_plaS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips_stS": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "fips_stpla": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "geo_id2S": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "geo_id2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "H_citytract_NHW_i": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "H_citytract_multi_i": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "isolationwht_i": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctlocalgovworker": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctwhtpopinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctblkpopinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctasianpopinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctlatinopopinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pop65ovinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctcollegegradinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "medincinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pctrentersinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diversityinterp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "northeast": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "south": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "midwest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "west": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "logpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "totalr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "citywhiteideol_interp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "citywhiteideol_interp2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whiteideology_fill2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "latinowhdivide": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blackwhdivide": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "blacklatinodivide": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "biggestsplit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "whiteblhispdivid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "biggestsplit_gr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

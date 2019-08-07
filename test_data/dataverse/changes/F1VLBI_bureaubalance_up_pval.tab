@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        10
-      ],
-      [
-        "variableCount",
-        11
-      ],
-      [
-        "dataSource",
-        {
-          "name": "F1VLBI_bureaubalance_up_pval.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 803
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Bureau.mode",
     [
       "bureau2",
       [
-        "bureau5",
-        "bureau3",
+        "bureau4",
         "bureau7",
-        "bureau9",
-        "bureau11"
+        "bureau11",
+        "bureau2",
+        "bureau10"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Bureau.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Bureau.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "bureau5",
-          "bureau3",
+          "bureau4",
           "bureau7",
-          "bureau9",
-          "bureau11"
+          "bureau11",
+          "bureau2",
+          "bureau10"
         ]
       ],
       [
@@ -173,16 +74,16 @@
       [
         "plotValues",
         {
-          "bureau4": 1,
-          "bureau6": 1,
-          "bureau2": 1,
-          "bureau10": 1,
           "bureau8": 1,
           "bureau11": 1,
+          "bureau4": 1,
+          "bureau2": 1,
           "bureau9": 1,
+          "bureau10": 1,
+          "bureau5": 1,
+          "bureau6": 1,
           "bureau7": 1,
-          "bureau3": 1,
-          "bureau5": 1
+          "bureau3": 1
         }
       ],
       [
@@ -372,26 +273,10 @@
   ],
   [
     "change",
-    "variables.age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.age.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.age.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -696,26 +581,10 @@
   ],
   [
     "change",
-    "variables.permargin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.permargin.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.permargin.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1026,26 +895,10 @@
   ],
   [
     "change",
-    "variables.inscrits.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.inscrits.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.inscrits.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1356,26 +1209,10 @@
   ],
   [
     "change",
-    "variables.proprietaire.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.proprietaire.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.proprietaire.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1686,26 +1523,10 @@
   ],
   [
     "change",
-    "variables.lib_all.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lib_all.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lib_all.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2016,26 +1837,10 @@
   ],
   [
     "change",
-    "variables.civil.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.civil.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.civil.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2346,26 +2151,10 @@
   ],
   [
     "change",
-    "variables.paris.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.paris.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.paris.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2676,26 +2465,10 @@
   ],
   [
     "change",
-    "variables.cummyears.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cummyears.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cummyears.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3006,26 +2779,10 @@
   ],
   [
     "change",
-    "variables.budgetincumbent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.budgetincumbent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.budgetincumbent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3336,26 +3093,10 @@
   ],
   [
     "change",
-    "variables.budgetexptermyears.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.budgetexptermyears.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.budgetexptermyears.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3607,87 +3348,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:26:14",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Bureau": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "permargin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inscrits": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "proprietaire": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lib_all": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "civil": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "paris": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cummyears": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "budgetincumbent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "budgetexptermyears": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

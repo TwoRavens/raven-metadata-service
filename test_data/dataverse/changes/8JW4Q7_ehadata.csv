@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        599
-      ],
-      [
-        "variableCount",
-        21
-      ],
-      [
-        "dataSource",
-        {
-          "name": "8JW4Q7_ehadata.csv",
-          "type": "File",
-          "format": "text/csv",
-          "filesize": 88644
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.X.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.X.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.X.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cod.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cod.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cod",
     [
@@ -799,10 +684,10 @@
       [
         "fewestValues",
         [
-          "BS",
           "AG",
-          "SO",
-          "BE",
+          "SZ",
+          "GR",
+          "UR",
           "TI"
         ]
       ],
@@ -830,30 +715,30 @@
         "plotValues",
         {
           "TG": 52,
-          "ZG": 51,
           "GE": 51,
+          "ZG": 51,
           "AR": 50,
           "VS": 49,
           "GL": 49,
           "VD": 48,
           "FR": 48,
           "NW": 36,
-          "NE": 35,
           "SG": 35,
+          "NE": 35,
           "OW": 30,
           "SH": 22,
           "BL": 17,
           "ZH": 15,
           "LU": 2,
           "AI": 1,
-          "GR": 1,
-          "SZ": 1,
-          "UR": 1,
-          "TI": 1,
+          "BS": 1,
           "BE": 1,
           "SO": 1,
-          "AG": 1,
-          "BS": 1
+          "TI": 1,
+          "UR": 1,
+          "GR": 1,
+          "SZ": 1,
+          "AG": 1
         }
       ],
       [
@@ -1046,22 +931,6 @@
     [
       "1915",
       1915
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1701,22 +1570,6 @@
     ]
   ],
   [
-    "change",
-    "variables.conc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.conc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.conc",
     [
@@ -1972,26 +1825,10 @@
   ],
   [
     "change",
-    "variables.concmigou.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.concmigou.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.concmigou.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2648,26 +2485,10 @@
   ],
   [
     "change",
-    "variables.concmigin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.concmigin.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.concmigin.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3324,26 +3145,10 @@
   ],
   [
     "change",
-    "variables.infantmor.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.infantmor.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.infantmor.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4000,26 +3805,10 @@
   ],
   [
     "change",
-    "variables.ind_sh.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ind_sh.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ind_sh.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4676,26 +4465,10 @@
   ],
   [
     "change",
-    "variables.socsppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.socsppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.socsppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5352,26 +5125,10 @@
   ],
   [
     "change",
-    "variables.depratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.depratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.depratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6024,26 +5781,10 @@
   ],
   [
     "change",
-    "variables.urban.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urban.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urban.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6696,26 +6437,10 @@
   ],
   [
     "change",
-    "variables.lnpop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnpop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnpop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7372,26 +7097,10 @@
   ],
   [
     "change",
-    "variables.lnPCfedsub.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lnPCfedsub.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lnPCfedsub.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8035,22 +7744,6 @@
     ]
   ],
   [
-    "change",
-    "variables.numpar.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.numpar.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.numpar",
     [
@@ -8320,26 +8013,10 @@
   ],
   [
     "change",
-    "variables.left.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.left.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.left.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8621,22 +8298,6 @@
     ]
   ],
   [
-    "change",
-    "variables.PR_dummy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.PR_dummy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.PR_dummy",
     [
@@ -8879,22 +8540,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Mandbugref.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Mandbugref.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Mandbugref",
     [
@@ -9134,22 +8779,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9789,22 +9418,6 @@
     ]
   ],
   [
-    "change",
-    "variables.time2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.time2",
     [
@@ -10438,22 +10051,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.time3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.time3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11551,137 +11148,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:12:07",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Unnamed: 0": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "X": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cod": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "conc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "concmigou": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "concmigin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "infantmor": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ind_sh": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "socsppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "depratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urban": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnpop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lnPCfedsub": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "numpar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PR_dummy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Mandbugref": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "time3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

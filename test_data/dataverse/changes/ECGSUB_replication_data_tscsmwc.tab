@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        38
-      ],
-      [
-        "variableCount",
-        12
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ECGSUB_replication_data_tscsmwc.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 3337
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.countryyear.mode",
     [
       "Denmark 1994",
       [
         "Denmark 2007",
+        "Norway 1981",
         "Denmark 2005",
-        "Sweden 1979",
         "Netherlands 1982",
-        "Norway 1997"
+        "Netherlands 2006"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.countryyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countryyear.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -144,10 +45,10 @@
         "fewestValues",
         [
           "Denmark 2007",
+          "Norway 1981",
           "Denmark 2005",
-          "Sweden 1979",
           "Netherlands 1982",
-          "Norway 1997"
+          "Netherlands 2006"
         ]
       ],
       [
@@ -174,42 +75,42 @@
         "plotValues",
         {
           "Norway 2005": 1,
-          "Sweden 2002": 1,
-          "Netherlands 1994": 1,
           "Denmark 1998": 1,
-          "Sweden 1982": 1,
-          "Netherlands 1981": 1,
-          "Germany 2002": 1,
-          "Norway 1993": 1,
-          "Sweden 1994": 1,
-          "Netherlands 1986": 1,
-          "Sweden 1985": 1,
-          "Germany 2005": 1,
-          "Netherlands 2006": 1,
-          "Sweden 1998": 1,
-          "Sweden 1991": 1,
-          "Netherlands 1989": 1,
-          "Sweden 1988": 1,
-          "Norway 1989": 1,
-          "Norway 1985": 1,
-          "Netherlands 2010": 1,
-          "Germany 2009": 1,
           "Netherlands 1998": 1,
-          "Norway 1981": 1,
-          "Denmark 1994": 1,
-          "Norway 2001": 1,
+          "Sweden 2002": 1,
           "Denmark 2011": 1,
-          "Netherlands 2002": 1,
-          "Germany 1998": 1,
-          "Norway 1977": 1,
+          "Sweden 1982": 1,
+          "Sweden 1991": 1,
+          "Netherlands 2003": 1,
           "Norway 2009": 1,
           "Sweden 2006": 1,
-          "Netherlands 2003": 1,
-          "Denmark 2001": 1,
+          "Netherlands 1994": 1,
+          "Germany 2009": 1,
+          "Norway 1977": 1,
+          "Germany 2005": 1,
           "Norway 1997": 1,
-          "Netherlands 1982": 1,
+          "Denmark 1994": 1,
+          "Sweden 1994": 1,
+          "Sweden 1998": 1,
+          "Sweden 1988": 1,
+          "Denmark 2001": 1,
+          "Sweden 1985": 1,
+          "Netherlands 2002": 1,
+          "Netherlands 1981": 1,
+          "Netherlands 1986": 1,
+          "Norway 1989": 1,
+          "Norway 1993": 1,
+          "Germany 2002": 1,
+          "Netherlands 2010": 1,
+          "Netherlands 1989": 1,
           "Sweden 1979": 1,
+          "Germany 1998": 1,
+          "Norway 2001": 1,
+          "Norway 1985": 1,
+          "Netherlands 2006": 1,
+          "Netherlands 1982": 1,
           "Denmark 2005": 1,
+          "Norway 1981": 1,
           "Denmark 2007": 1
         }
       ],
@@ -384,22 +285,6 @@
       [
         "Netherlands"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -636,22 +521,6 @@
     [
       "1977",
       1977
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1207,22 +1076,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country_name_short.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name_short.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country_name_short",
     [
@@ -1280,8 +1133,8 @@
         "plotValues",
         {
           "NLD": 10,
-          "SWE": 9,
           "NOR": 9,
+          "SWE": 9,
           "DNK": 6,
           "DEU": 4
         }
@@ -1422,28 +1275,12 @@
     [
       "1994-09-21",
       [
-        "2003-01-22",
-        "2001-11-20",
-        "1985-09-15",
-        "1998-05-06",
-        "1982-09-08"
+        "1998-03-11",
+        "1989-09-11",
+        "1982-09-19",
+        "1986-05-21",
+        "1993-09-13"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.election_date.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_date.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1477,11 +1314,11 @@
       [
         "fewestValues",
         [
-          "2003-01-22",
-          "2001-11-20",
-          "1985-09-15",
-          "1998-05-06",
-          "1982-09-08"
+          "1998-03-11",
+          "1989-09-11",
+          "1982-09-19",
+          "1986-05-21",
+          "1993-09-13"
         ]
       ],
       [
@@ -1507,44 +1344,44 @@
       [
         "plotValues",
         {
-          "1981-09-14": 1,
-          "1994-05-03": 1,
-          "1989-09-06": 1,
-          "2009-09-24": 1,
-          "2011-09-15": 1,
-          "1982-09-19": 1,
-          "2006-11-22": 1,
-          "1994-09-18": 1,
-          "2001-09-10": 1,
-          "1986-05-21": 1,
-          "2005-09-18": 1,
-          "2007-11-13": 1,
-          "1985-09-15": 1,
-          "1988-09-18": 1,
-          "1994-09-21": 1,
-          "2010-06-09": 1,
-          "1989-09-11": 1,
-          "2006-09-17": 1,
           "2009-09-27": 1,
-          "1998-09-27": 1,
-          "1991-09-15": 1,
-          "2001-11-20": 1,
-          "1977-09-11": 1,
-          "1998-09-21": 1,
-          "1993-09-13": 1,
-          "1985-09-08": 1,
-          "2002-09-15": 1,
-          "2005-02-08": 1,
-          "1998-03-11": 1,
           "1979-09-16": 1,
-          "2005-09-12": 1,
-          "2002-05-15": 1,
-          "1997-09-16": 1,
-          "1981-05-26": 1,
+          "1994-09-21": 1,
+          "1985-09-15": 1,
+          "2005-09-18": 1,
+          "1998-09-27": 1,
+          "2002-09-22": 1,
+          "2001-11-20": 1,
+          "2002-09-15": 1,
           "2003-01-22": 1,
-          "1982-09-08": 1,
+          "2005-02-08": 1,
+          "2002-05-15": 1,
+          "2006-09-17": 1,
+          "1981-09-14": 1,
+          "1985-09-08": 1,
+          "1997-09-16": 1,
           "1998-05-06": 1,
-          "2002-09-22": 1
+          "1988-09-18": 1,
+          "2005-09-12": 1,
+          "1989-09-11": 1,
+          "1982-09-19": 1,
+          "1986-05-21": 1,
+          "2010-06-09": 1,
+          "1991-09-15": 1,
+          "2001-09-10": 1,
+          "1994-05-03": 1,
+          "1981-05-26": 1,
+          "1977-09-11": 1,
+          "2009-09-24": 1,
+          "1994-09-18": 1,
+          "2011-09-15": 1,
+          "1998-09-21": 1,
+          "2007-11-13": 1,
+          "1989-09-06": 1,
+          "2006-11-22": 1,
+          "1982-09-08": 1,
+          "1993-09-13": 1,
+          "1998-03-11": 1
         }
       ],
       [
@@ -1750,22 +1587,6 @@
     [
       "8",
       8
-    ]
-  ],
-  [
-    "change",
-    "variables.country_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2030,22 +1851,6 @@
     [
       "3",
       3
-    ]
-  ],
-  [
-    "change",
-    "variables.election_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.election_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2669,22 +2474,6 @@
     ]
   ],
   [
-    "change",
-    "variables.previous_parliament_election_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.previous_parliament_election_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.previous_parliament_election_id",
     [
@@ -3305,22 +3094,6 @@
     ]
   ],
   [
-    "change",
-    "variables.previous_cabinet_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.previous_cabinet_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.previous_cabinet_id",
     [
@@ -3937,22 +3710,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mwc_total.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.mwc_total.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mwc_total",
     [
@@ -4505,22 +4262,6 @@
     ]
   ],
   [
-    "change",
-    "variables.real_gov.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.real_gov.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.real_gov",
     [
@@ -4551,11 +4292,11 @@
       [
         "fewestValues",
         [
-          "CDU/CSU-SPD",
-          "CDU/CSU-FDP",
-          "MSP-FP-C-Ks",
+          "H-KrF-V",
+          "CDA-PvdA",
           "CDA-PvdA-D66",
-          "KrF-SP-V"
+          "H",
+          "MSP-C-FP-Kd"
         ]
       ],
       [
@@ -4583,29 +4324,29 @@
         {
           "SAP": 6,
           "V-KF": 3,
-          "DNA-SV-Sp-": 2,
-          "H-KrF-SP": 2,
           "SPD-B90/Gru": 2,
-          "DNA": 2,
-          "PvdA-VVD-D66": 2,
+          "DNA-SV-Sp-": 2,
           "CDA-VVD": 2,
-          "VVD-CDA": 1,
-          "MSP-C-FP": 1,
-          "MSP-C-FP-Kd": 1,
-          "MSP-FP-C-Ks": 1,
+          "H-KrF-SP": 2,
+          "PvdA-VVD-D66": 2,
+          "DNA": 2,
           "Sd-RV-CD": 1,
-          "Sd-RV-SF": 1,
-          "CDA-LPF-VVD": 1,
-          "H-KrF-V": 1,
-          "H": 1,
-          "CDA-PvdA-CU": 1,
-          "CDA-PvdA-D66": 1,
-          "KrF-SP-V": 1,
           "Sd-RV": 1,
+          "CDA-LPF-VVD": 1,
           "CDA-VVD-D66": 1,
-          "CDU/CSU-FDP": 1,
+          "MSP-FP-C-Ks": 1,
           "CDA-PvdA": 1,
-          "CDU/CSU-SPD": 1
+          "CDA-PvdA-CU": 1,
+          "CDU/CSU-SPD": 1,
+          "Sd-RV-SF": 1,
+          "MSP-C-FP-Kd": 1,
+          "MSP-C-FP": 1,
+          "KrF-SP-V": 1,
+          "VVD-CDA": 1,
+          "H": 1,
+          "CDA-PvdA-D66": 1,
+          "H-KrF-V": 1,
+          "CDU/CSU-FDP": 1
         }
       ],
       [
@@ -4813,26 +4554,10 @@
   ],
   [
     "change",
-    "variables.nparties.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nparties.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nparties.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5430,92 +5155,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:23:14",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "countryyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_name_short": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_date": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "previous_parliament_election_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "previous_cabinet_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mwc_total": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "real_gov": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nparties": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

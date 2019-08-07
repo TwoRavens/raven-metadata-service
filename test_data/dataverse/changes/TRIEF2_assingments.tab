@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        100
-      ],
-      [
-        "variableCount",
-        6
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TRIEF2_assingments.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 10884
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.id.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -798,26 +699,10 @@
   ],
   [
     "change",
-    "variables.est.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.est.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.est.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1124,26 +1009,10 @@
   ],
   [
     "change",
-    "variables.est_moe.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.est_moe.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.est_moe.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1392,26 +1261,10 @@
   ],
   [
     "change",
-    "variables.est_prob.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.est_prob.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.est_prob.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1672,26 +1525,10 @@
     [
       "share_text",
       [
-        "share_moe_text",
         "pwin_text",
+        "share_moe_text",
         "share_text"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.display_cond.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.display_cond.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1725,10 +1562,10 @@
       [
         "fewestValues",
         [
-          "pwin_share_moe_text",
           "share_moe_pwin_text",
-          "share_pwin_text",
-          "pwin_share_text"
+          "pwin_share_moe_text",
+          "pwin_share_text",
+          "share_pwin_text"
         ]
       ],
       [
@@ -1754,13 +1591,13 @@
       [
         "plotValues",
         {
+          "share_moe_text": 20,
           "share_text": 20,
           "pwin_text": 20,
-          "share_moe_text": 20,
-          "pwin_share_text": 10,
-          "share_pwin_text": 10,
           "share_moe_pwin_text": 10,
-          "pwin_share_moe_text": 10
+          "share_pwin_text": 10,
+          "pwin_share_moe_text": 10,
+          "pwin_share_text": 10
         }
       ],
       [
@@ -1901,28 +1738,12 @@
     [
       "is expected to win 45 percent of the vote",
       [
-        "is expected to win 47 percent of the vote",
-        "is expected to win 49 percent of the vote",
-        "is expected to win 55 percent of the vote, +/- 2",
-        "is expected to win 53 percent of the vote",
-        "has a 67 percent chance of victory"
+        "is expected to win 45 percent of the vote",
+        "has a 25 percent chance of victory",
+        "is expected to win 49 percent of the vote, +/- 2",
+        "has a 13 percent chance of victory",
+        "is expected to win 47 percent of the vote"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.text.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.text.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1956,11 +1777,11 @@
       [
         "fewestValues",
         [
-          "is expected to win 55 percent of the vote, +/- 2, and has a 87 percent chance of victory",
-          "has a 67 percent chance of victory and is expected to win 52 percent of the vote, +/- 2",
-          "has a 19 percent chance of victory and is expected to win 46 percent of the vote, +/- 2",
+          "is expected to win 49 percent of the vote and has a 41 percent chance of victory",
+          "is expected to win 51 percent of the vote and has a 59 percent chance of victory",
           "has a 25 percent chance of victory and is expected to win 47 percent of the vote",
-          "is expected to win 49 percent of the vote, +/- 2, and has a 41 percent chance of victory"
+          "is expected to win 47 percent of the vote and has a 25 percent chance of victory",
+          "is expected to win 53 percent of the vote, +/- 2, and has a 75 percent chance of victory"
         ]
       ],
       [
@@ -1986,76 +1807,76 @@
       [
         "plotValues",
         {
-          "is expected to win 54 percent of the vote, +/- 2": 2,
-          "has a 87 percent chance of victory": 2,
-          "is expected to win 53 percent of the vote": 2,
-          "is expected to win 46 percent of the vote": 2,
-          "is expected to win 49 percent of the vote, +/- 2": 2,
-          "is expected to win 52 percent of the vote, +/- 2": 2,
-          "is expected to win 48 percent of the vote": 2,
-          "is expected to win 45 percent of the vote": 2,
-          "is expected to win 47 percent of the vote, +/- 2": 2,
-          "has a 59 percent chance of victory": 2,
-          "is expected to win 51 percent of the vote": 2,
-          "is expected to win 53 percent of the vote, +/- 2": 2,
           "is expected to win 55 percent of the vote, +/- 2": 2,
-          "has a 75 percent chance of victory": 2,
-          "has a 41 percent chance of victory": 2,
           "is expected to win 51 percent of the vote, +/- 2": 2,
-          "has a 33 percent chance of victory": 2,
-          "is expected to win 55 percent of the vote": 2,
-          "has a 81 percent chance of victory": 2,
-          "has a 25 percent chance of victory": 2,
-          "is expected to win 52 percent of the vote": 2,
-          "is expected to win 45 percent of the vote, +/- 2": 2,
-          "is expected to win 49 percent of the vote": 2,
           "has a 19 percent chance of victory": 2,
-          "is expected to win 48 percent of the vote, +/- 2": 2,
+          "is expected to win 46 percent of the vote": 2,
+          "has a 67 percent chance of victory": 2,
+          "is expected to win 51 percent of the vote": 2,
+          "is expected to win 53 percent of the vote": 2,
           "is expected to win 46 percent of the vote, +/- 2": 2,
+          "is expected to win 52 percent of the vote": 2,
+          "is expected to win 53 percent of the vote, +/- 2": 2,
+          "is expected to win 49 percent of the vote, +/- 2": 2,
+          "has a 41 percent chance of victory": 2,
+          "is expected to win 45 percent of the vote": 2,
+          "is expected to win 55 percent of the vote": 2,
+          "is expected to win 48 percent of the vote": 2,
+          "has a 81 percent chance of victory": 2,
+          "has a 75 percent chance of victory": 2,
+          "is expected to win 54 percent of the vote, +/- 2": 2,
+          "is expected to win 47 percent of the vote, +/- 2": 2,
+          "is expected to win 49 percent of the vote": 2,
+          "has a 33 percent chance of victory": 2,
+          "is expected to win 45 percent of the vote, +/- 2": 2,
+          "is expected to win 52 percent of the vote, +/- 2": 2,
           "is expected to win 54 percent of the vote": 2,
           "is expected to win 47 percent of the vote": 2,
+          "is expected to win 48 percent of the vote, +/- 2": 2,
           "has a 13 percent chance of victory": 2,
-          "has a 67 percent chance of victory": 2,
-          "has a 75 percent chance of victory and is expected to win 53 percent of the vote, +/- 2": 1,
+          "has a 25 percent chance of victory": 2,
+          "has a 87 percent chance of victory": 2,
+          "has a 59 percent chance of victory": 2,
+          "has a 81 percent chance of victory and is expected to win 54 percent of the vote, +/- 2": 1,
+          "has a 41 percent chance of victory and is expected to win 49 percent of the vote": 1,
+          "has a 67 percent chance of victory and is expected to win 52 percent of the vote, +/- 2": 1,
+          "has a 33 percent chance of victory and is expected to win 48 percent of the vote": 1,
           "is expected to win 51 percent of the vote, +/- 2, and has a 59 percent chance of victory": 1,
           "is expected to win 52 percent of the vote, +/- 2, and has a 67 percent chance of victory": 1,
-          "has a 13 percent chance of victory and is expected to win 45 percent of the vote, +/- 2": 1,
-          "is expected to win 48 percent of the vote, +/- 2, and has a 33 percent chance of victory": 1,
-          "is expected to win 45 percent of the vote and has a 13 percent chance of victory": 1,
-          "has a 25 percent chance of victory and is expected to win 47 percent of the vote": 1,
-          "is expected to win 45 percent of the vote, +/- 2, and has a 13 percent chance of victory": 1,
-          "has a 25 percent chance of victory and is expected to win 47 percent of the vote, +/- 2": 1,
-          "is expected to win 55 percent of the vote and has a 87 percent chance of victory": 1,
-          "is expected to win 53 percent of the vote, +/- 2, and has a 75 percent chance of victory": 1,
           "has a 67 percent chance of victory and is expected to win 52 percent of the vote": 1,
-          "has a 59 percent chance of victory and is expected to win 51 percent of the vote": 1,
-          "is expected to win 53 percent of the vote and has a 75 percent chance of victory": 1,
-          "has a 33 percent chance of victory and is expected to win 48 percent of the vote": 1,
-          "is expected to win 49 percent of the vote and has a 41 percent chance of victory": 1,
-          "has a 81 percent chance of victory and is expected to win 54 percent of the vote": 1,
-          "is expected to win 47 percent of the vote, +/- 2, and has a 25 percent chance of victory": 1,
-          "is expected to win 54 percent of the vote, +/- 2, and has a 81 percent chance of victory": 1,
-          "is expected to win 52 percent of the vote and has a 67 percent chance of victory": 1,
-          "has a 59 percent chance of victory and is expected to win 51 percent of the vote, +/- 2": 1,
-          "has a 75 percent chance of victory and is expected to win 53 percent of the vote": 1,
-          "has a 33 percent chance of victory and is expected to win 48 percent of the vote, +/- 2": 1,
-          "is expected to win 47 percent of the vote and has a 25 percent chance of victory": 1,
-          "has a 87 percent chance of victory and is expected to win 55 percent of the vote": 1,
-          "has a 19 percent chance of victory and is expected to win 46 percent of the vote": 1,
-          "is expected to win 46 percent of the vote, +/- 2, and has a 19 percent chance of victory": 1,
-          "has a 41 percent chance of victory and is expected to win 49 percent of the vote, +/- 2": 1,
-          "is expected to win 46 percent of the vote and has a 19 percent chance of victory": 1,
-          "is expected to win 51 percent of the vote and has a 59 percent chance of victory": 1,
-          "has a 41 percent chance of victory and is expected to win 49 percent of the vote": 1,
-          "is expected to win 54 percent of the vote and has a 81 percent chance of victory": 1,
-          "has a 81 percent chance of victory and is expected to win 54 percent of the vote, +/- 2": 1,
-          "is expected to win 48 percent of the vote and has a 33 percent chance of victory": 1,
-          "has a 13 percent chance of victory and is expected to win 45 percent of the vote": 1,
           "is expected to win 49 percent of the vote, +/- 2, and has a 41 percent chance of victory": 1,
-          "has a 19 percent chance of victory and is expected to win 46 percent of the vote, +/- 2": 1,
-          "has a 67 percent chance of victory and is expected to win 52 percent of the vote, +/- 2": 1,
+          "is expected to win 53 percent of the vote, +/- 2, and has a 75 percent chance of victory": 1,
+          "has a 59 percent chance of victory and is expected to win 51 percent of the vote, +/- 2": 1,
           "has a 87 percent chance of victory and is expected to win 55 percent of the vote, +/- 2": 1,
-          "is expected to win 55 percent of the vote, +/- 2, and has a 87 percent chance of victory": 1
+          "has a 59 percent chance of victory and is expected to win 51 percent of the vote": 1,
+          "has a 81 percent chance of victory and is expected to win 54 percent of the vote": 1,
+          "is expected to win 48 percent of the vote and has a 33 percent chance of victory": 1,
+          "has a 75 percent chance of victory and is expected to win 53 percent of the vote": 1,
+          "has a 13 percent chance of victory and is expected to win 45 percent of the vote": 1,
+          "is expected to win 52 percent of the vote and has a 67 percent chance of victory": 1,
+          "is expected to win 55 percent of the vote and has a 87 percent chance of victory": 1,
+          "is expected to win 46 percent of the vote and has a 19 percent chance of victory": 1,
+          "is expected to win 48 percent of the vote, +/- 2, and has a 33 percent chance of victory": 1,
+          "is expected to win 45 percent of the vote, +/- 2, and has a 13 percent chance of victory": 1,
+          "is expected to win 54 percent of the vote and has a 81 percent chance of victory": 1,
+          "has a 41 percent chance of victory and is expected to win 49 percent of the vote, +/- 2": 1,
+          "has a 75 percent chance of victory and is expected to win 53 percent of the vote, +/- 2": 1,
+          "has a 13 percent chance of victory and is expected to win 45 percent of the vote, +/- 2": 1,
+          "is expected to win 55 percent of the vote, +/- 2, and has a 87 percent chance of victory": 1,
+          "is expected to win 49 percent of the vote and has a 41 percent chance of victory": 1,
+          "is expected to win 53 percent of the vote and has a 75 percent chance of victory": 1,
+          "has a 25 percent chance of victory and is expected to win 47 percent of the vote, +/- 2": 1,
+          "has a 19 percent chance of victory and is expected to win 46 percent of the vote, +/- 2": 1,
+          "is expected to win 47 percent of the vote, +/- 2, and has a 25 percent chance of victory": 1,
+          "is expected to win 46 percent of the vote, +/- 2, and has a 19 percent chance of victory": 1,
+          "has a 19 percent chance of victory and is expected to win 46 percent of the vote": 1,
+          "is expected to win 54 percent of the vote, +/- 2, and has a 81 percent chance of victory": 1,
+          "has a 33 percent chance of victory and is expected to win 48 percent of the vote, +/- 2": 1,
+          "has a 87 percent chance of victory and is expected to win 55 percent of the vote": 1,
+          "is expected to win 47 percent of the vote and has a 25 percent chance of victory": 1,
+          "has a 25 percent chance of victory and is expected to win 47 percent of the vote": 1,
+          "is expected to win 51 percent of the vote and has a 59 percent chance of victory": 1,
+          "is expected to win 45 percent of the vote and has a 13 percent chance of victory": 1
         }
       ],
       [
@@ -2250,62 +2071,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:48",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "est": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "est_moe": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "est_prob": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "display_cond": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "text": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

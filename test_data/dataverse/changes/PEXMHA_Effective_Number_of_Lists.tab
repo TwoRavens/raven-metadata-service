@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        24
-      ],
-      [
-        "variableCount",
-        5
-      ],
-      [
-        "dataSource",
-        {
-          "name": "PEXMHA_Effective_Number_of_Lists.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 863
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Province.mode",
     [
       "Buenos Aires",
       [
-        "Chubut",
-        "Buenos Aires",
+        "Cordoba",
+        "Jujuy",
+        "Catamarca",
         "San Juan",
-        "Tucuman",
-        "Santa Fe"
+        "Santiago"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Province.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Province.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Chubut",
-          "Buenos Aires",
+          "Cordoba",
+          "Jujuy",
+          "Catamarca",
           "San Juan",
-          "Tucuman",
-          "Santa Fe"
+          "Santiago"
         ]
       ],
       [
@@ -173,30 +74,30 @@
       [
         "plotValues",
         {
+          "Chubut": 1,
           "Formosa": 1,
+          "La Rioja": 1,
+          "La Pampa": 1,
+          "Corrientes": 1,
+          "Mendoza": 1,
           "San Luis": 1,
           "Misiones": 1,
-          "Santiago": 1,
-          "La Pampa": 1,
-          "Ciudad De Buenos Aires": 1,
-          "Corrientes": 1,
-          "La Rioja": 1,
-          "Entre Rios": 1,
-          "Santa Cruz": 1,
-          "Cordoba": 1,
-          "Catamarca": 1,
-          "Rio Negro": 1,
-          "Chaco": 1,
+          "Tierra Del Fuego": 1,
           "Neuquen": 1,
           "Salta": 1,
-          "Mendoza": 1,
-          "Tierra Del Fuego": 1,
-          "Jujuy": 1,
-          "Santa Fe": 1,
           "Tucuman": 1,
-          "San Juan": 1,
+          "Rio Negro": 1,
+          "Chaco": 1,
+          "Ciudad De Buenos Aires": 1,
+          "Santa Fe": 1,
+          "Santa Cruz": 1,
           "Buenos Aires": 1,
-          "Chubut": 1
+          "Entre Rios": 1,
+          "Santiago": 1,
+          "San Juan": 1,
+          "Catamarca": 1,
+          "Jujuy": 1,
+          "Cordoba": 1
         }
       ],
       [
@@ -400,26 +301,10 @@
   ],
   [
     "change",
-    "variables.Deputies.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Deputies.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Deputies.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1076,26 +961,10 @@
   ],
   [
     "change",
-    "variables.Senators.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Senators.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Senators.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1390,26 +1259,10 @@
   ],
   [
     "change",
-    "variables.Deputies_top3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Deputies_top3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Deputies_top3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2062,26 +1915,10 @@
   ],
   [
     "change",
-    "variables.Senators_top3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Senators_top3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Senators_top3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2315,57 +2152,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:15",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Province": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Deputies": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Senators": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Deputies_top3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Senators_top3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

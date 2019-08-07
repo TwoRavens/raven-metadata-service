@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        134
-      ],
-      [
-        "variableCount",
-        6
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SEHMGR_1ELITES55Brazil.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 9952
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.cuesti.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.cuesti.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cuesti.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -753,22 +654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pais.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pais.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pais",
     [
@@ -962,22 +847,6 @@
       [
         "03-07"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.legis.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.legis.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1177,22 +1046,6 @@
     ]
   ],
   [
-    "change",
-    "variables.partido.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partido.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.partido",
     [
@@ -1263,8 +1116,8 @@
           "pv": 2,
           "psc": 2,
           "pcdob": 2,
-          "prona": 1,
-          "psol": 1
+          "psol": 1,
+          "prona": 1
         }
       ],
       [
@@ -1419,22 +1272,6 @@
     ]
   ],
   [
-    "change",
-    "variables.departam.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.departam.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.departam",
     [
@@ -1465,11 +1302,11 @@
       [
         "fewestValues",
         [
-          "Rondonia",
-          "Sergipe",
-          "R\ufffdo Grande do Norte",
+          "Tocantins",
           "Mato Grosso",
-          "Tocantins"
+          "Mato Grosso do Sul",
+          "Rondonia",
+          "Sergipe"
         ]
       ],
       [
@@ -1498,29 +1335,29 @@
           "Sao Paulo": 16,
           "Minas Gerais": 16,
           "Bahia": 14,
-          "Rio de Janeiro": 10,
           "Rio Grande do Sul": 10,
-          "Ceara": 7,
+          "Rio de Janeiro": 10,
           "Pernambuco": 7,
+          "Ceara": 7,
           "Maranhao": 6,
-          "Para": 5,
-          "Paraiba": 5,
           "Parana": 5,
+          "Paraiba": 5,
+          "Para": 5,
           "Santa Catarina": 4,
           "Espirito Santo": 4,
+          "Piaui": 3,
           "Roraima": 3,
           "Amapa": 3,
-          "Amazonas": 3,
-          "Piaui": 3,
           "Goias": 3,
-          "Distrito Federal": 2,
+          "Amazonas": 3,
           "Alagoas": 2,
-          "Mato Grosso do Sul": 1,
-          "Rondonia": 1,
-          "Tocantins": 1,
-          "Mato Grosso": 1,
+          "Distrito Federal": 2,
           "R\ufffdo Grande do Norte": 1,
-          "Sergipe": 1
+          "Rondonia": 1,
+          "Sergipe": 1,
+          "Mato Grosso do Sul": 1,
+          "Mato Grosso": 1,
+          "Tocantins": 1
         }
       ],
       [
@@ -1685,22 +1522,6 @@
     ]
   ],
   [
-    "change",
-    "variables.p3001.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.p3001.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.p3001",
     [
@@ -1732,9 +1553,9 @@
         "fewestValues",
         [
           "Problemas sociales (crisis moral, identidad)",
-          "N.C.",
+          "Healthcare",
           "Reforma administrativa",
-          "Healthcare"
+          "N.C."
         ]
       ],
       [
@@ -1769,10 +1590,10 @@
           "Falta de infraestructuras": 4,
           "Educacion": 3,
           "Crisis institucional": 2,
-          "Healthcare": 1,
           "N.C.": 1,
-          "Problemas sociales (crisis moral, identidad)": 1,
-          "Reforma administrativa": 1
+          "Reforma administrativa": 1,
+          "Healthcare": 1,
+          "Problemas sociales (crisis moral, identidad)": 1
         }
       ],
       [
@@ -1910,62 +1731,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:15:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "cuesti": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pais": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "legis": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partido": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "departam": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "p3001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        551
-      ],
-      [
-        "variableCount",
-        130
-      ],
-      [
-        "dataSource",
-        {
-          "name": "V1ZTM9_80gdp.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 274876
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Country.mode",
     [
       "Australia",
       [
-        "Belgium",
-        "NZ",
         "Finland",
-        "Spain",
-        "Italy"
+        "France",
+        "Lux",
+        "Ireland",
+        "Portugal"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Belgium",
-          "NZ",
           "Finland",
-          "Spain",
-          "Italy"
+          "France",
+          "Lux",
+          "Ireland",
+          "Portugal"
         ]
       ],
       [
@@ -173,25 +74,25 @@
       [
         "plotValues",
         {
-          "France": 29,
-          "Australia": 29,
-          "Ireland": 29,
-          "Canada": 29,
-          "Portugal": 29,
-          "Lux": 29,
-          "Switzerland": 29,
-          "US": 29,
-          "Denmark": 29,
           "Japan": 29,
           "Neth": 29,
-          "Greece": 29,
-          "Sweden": 29,
+          "Belgium": 29,
           "UK": 29,
-          "Italy": 29,
           "Spain": 29,
-          "Finland": 29,
+          "Italy": 29,
+          "Canada": 29,
+          "US": 29,
+          "Greece": 29,
+          "Australia": 29,
+          "Switzerland": 29,
           "NZ": 29,
-          "Belgium": 29
+          "Denmark": 29,
+          "Sweden": 29,
+          "Portugal": 29,
+          "Ireland": 29,
+          "Lux": 29,
+          "France": 29,
+          "Finland": 29
         }
       ],
       [
@@ -382,22 +283,6 @@
     [
       "1980",
       1980
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1008,26 +893,10 @@
   ],
   [
     "change",
-    "variables.PublicFamily.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PublicFamily.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PublicFamily.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1678,26 +1547,10 @@
   ],
   [
     "change",
-    "variables.PubFamilyA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PubFamilyA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PubFamilyA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2347,26 +2200,10 @@
   ],
   [
     "change",
-    "variables.Pubfammat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Pubfammat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Pubfammat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3016,26 +2853,10 @@
   ],
   [
     "change",
-    "variables.PPRfammat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PPRfammat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PPRfammat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3685,26 +3506,10 @@
   ],
   [
     "change",
-    "variables.PPRfamilyA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PPRfamilyA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PPRfamilyA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4354,26 +4159,10 @@
   ],
   [
     "change",
-    "variables.PPRfamily.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.PPRfamily.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.PPRfamily.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5024,26 +4813,10 @@
   ],
   [
     "change",
-    "variables.Publicsocx.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Publicsocx.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Publicsocx.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5691,22 +5464,6 @@
     ]
   ],
   [
-    "change",
-    "variables.CN.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CN.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.CN",
     [
@@ -6285,22 +6042,6 @@
     ]
   ],
   [
-    "change",
-    "variables.govparty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.govparty.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.govparty",
     [
@@ -6570,26 +6311,10 @@
   ],
   [
     "change",
-    "variables.vturn.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vturn.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vturn.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7242,26 +6967,10 @@
   ],
   [
     "change",
-    "variables.womenpar.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.womenpar.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.womenpar.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7918,26 +7627,10 @@
   ],
   [
     "change",
-    "variables.rae_ele.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rae_ele.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rae_ele.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8594,26 +8287,10 @@
   ],
   [
     "change",
-    "variables.rae_leg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rae_leg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rae_leg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9257,22 +8934,6 @@
     ]
   ],
   [
-    "change",
-    "variables.plural.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.plural.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.plural",
     [
@@ -9554,22 +9215,6 @@
     ]
   ],
   [
-    "change",
-    "variables.structur.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.structur.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.structur",
     [
@@ -9843,22 +9488,6 @@
     ]
   ],
   [
-    "change",
-    "variables.strbic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.strbic.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.strbic",
     [
@@ -10120,26 +9749,10 @@
   ],
   [
     "change",
-    "variables.rate_under15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rate_under15.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rate_under15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10796,26 +10409,10 @@
   ],
   [
     "change",
-    "variables.rate_over65.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rate_over65.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rate_over65.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11472,26 +11069,10 @@
   ],
   [
     "change",
-    "variables.gdp_real.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdp_real.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdp_real.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12148,26 +11729,10 @@
   ],
   [
     "change",
-    "variables.flfp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.flfp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.flfp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12821,26 +12386,10 @@
   ],
   [
     "change",
-    "variables.wedu1544.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.wedu1544.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.wedu1544.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13493,26 +13042,10 @@
   ],
   [
     "change",
-    "variables.oldage_pmp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.oldage_pmp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.oldage_pmp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14169,26 +13702,10 @@
   ],
   [
     "change",
-    "variables.unemp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.unemp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.unemp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14832,22 +14349,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country01.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country01.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country01",
     [
@@ -15087,22 +14588,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country02.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country02.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15348,22 +14833,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country03.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country03.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country03",
     [
@@ -15603,22 +15072,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country04.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country04.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15864,22 +15317,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country05.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country05.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country05",
     [
@@ -16119,22 +15556,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country06.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country06.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16380,22 +15801,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country07.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country07.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country07",
     [
@@ -16635,22 +16040,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country08.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country08.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16896,22 +16285,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country09.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country09.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country09",
     [
@@ -17151,22 +16524,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17412,22 +16769,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country11.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country11.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country11",
     [
@@ -17667,22 +17008,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country12.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country12.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17928,22 +17253,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country13.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country13.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country13",
     [
@@ -18183,22 +17492,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country14.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18444,22 +17737,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country15.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country15",
     [
@@ -18699,22 +17976,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country16.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18960,22 +18221,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country17.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country17.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country17",
     [
@@ -19215,22 +18460,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.country18.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country18.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19476,22 +18705,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country19.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.country19.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country19",
     [
@@ -19731,22 +18944,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm01.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm01.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20348,22 +19545,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm02.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm02.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm02",
     [
@@ -20959,22 +20140,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm03.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm03.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21576,22 +20741,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm04.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm04.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm04",
     [
@@ -22187,22 +21336,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm05.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm05.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22804,22 +21937,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm06.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm06.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm06",
     [
@@ -23415,22 +22532,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm07.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm07.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24032,22 +23133,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm08.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm08.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm08",
     [
@@ -24643,22 +23728,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm09.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm09.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25260,22 +24329,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm10.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm10",
     [
@@ -25871,22 +24924,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm11.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm11.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26488,22 +25525,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm12.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm12.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm12",
     [
@@ -27099,22 +26120,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm13.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm13.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27716,22 +26721,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm14.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm14.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm14",
     [
@@ -28327,22 +27316,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm15.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm15.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28944,22 +27917,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm16.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm16.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm16",
     [
@@ -29555,22 +28512,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm17.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm17.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30172,22 +29113,6 @@
     ]
   ],
   [
-    "change",
-    "variables.countrytm18.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm18.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.countrytm18",
     [
@@ -30783,22 +29708,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm19.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.countrytm19.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31413,26 +30322,10 @@
   ],
   [
     "change",
-    "variables.log_gdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.log_gdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.log_gdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32085,26 +30978,10 @@
   ],
   [
     "change",
-    "variables.lagPublicFamily.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lagPublicFamily.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lagPublicFamily.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32747,22 +31624,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33415,26 +32276,10 @@
   ],
   [
     "change",
-    "variables.lagPublicFamilyA.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lagPublicFamilyA.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lagPublicFamilyA.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34038,28 +32883,12 @@
     [
       "Australia",
       [
-        "Belgium",
-        "NZ",
         "Finland",
-        "Spain",
-        "Italy"
+        "France",
+        "Lux",
+        "Ireland",
+        "Portugal"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country_01.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country_01.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34093,11 +32922,11 @@
       [
         "fewestValues",
         [
-          "Belgium",
-          "NZ",
           "Finland",
-          "Spain",
-          "Italy"
+          "France",
+          "Lux",
+          "Ireland",
+          "Portugal"
         ]
       ],
       [
@@ -34123,25 +32952,25 @@
       [
         "plotValues",
         {
-          "France": 29,
-          "Australia": 29,
-          "Ireland": 29,
-          "Canada": 29,
-          "Portugal": 29,
-          "Lux": 29,
-          "Switzerland": 29,
-          "US": 29,
-          "Denmark": 29,
           "Japan": 29,
           "Neth": 29,
-          "Greece": 29,
-          "Sweden": 29,
+          "Belgium": 29,
           "UK": 29,
-          "Italy": 29,
           "Spain": 29,
-          "Finland": 29,
+          "Italy": 29,
+          "Canada": 29,
+          "US": 29,
+          "Greece": 29,
+          "Australia": 29,
+          "Switzerland": 29,
           "NZ": 29,
-          "Belgium": 29
+          "Denmark": 29,
+          "Sweden": 29,
+          "Portugal": 29,
+          "Ireland": 29,
+          "Lux": 29,
+          "France": 29,
+          "Finland": 29
         }
       ],
       [
@@ -34332,22 +33161,6 @@
     [
       "1980",
       1980
-    ]
-  ],
-  [
-    "change",
-    "variables.Year_01.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year_01.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34958,26 +33771,10 @@
   ],
   [
     "change",
-    "variables.lagPublicsocx.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lagPublicsocx.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lagPublicsocx.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35621,22 +34418,6 @@
     ]
   ],
   [
-    "change",
-    "variables.thresh15.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.thresh15",
     [
@@ -35876,22 +34657,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh20.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh20.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36137,22 +34902,6 @@
     ]
   ],
   [
-    "change",
-    "variables.thresh25.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh25.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.thresh25",
     [
@@ -36392,22 +35141,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh30.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh30.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36653,22 +35386,6 @@
     ]
   ],
   [
-    "change",
-    "variables.thresh35.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh35.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.thresh35",
     [
@@ -36908,22 +35625,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh40.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.thresh40.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37178,26 +35879,10 @@
   ],
   [
     "change",
-    "variables.lagPPRFamily.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lagPPRFamily.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lagPPRFamily.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37802,28 +36487,12 @@
     [
       "Australia",
       [
-        "Belgium",
-        "NZ",
         "Finland",
-        "Spain",
-        "Italy"
+        "France",
+        "Lux",
+        "Ireland",
+        "Portugal"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country_02.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country_02.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37857,11 +36526,11 @@
       [
         "fewestValues",
         [
-          "Belgium",
-          "NZ",
           "Finland",
-          "Spain",
-          "Italy"
+          "France",
+          "Lux",
+          "Ireland",
+          "Portugal"
         ]
       ],
       [
@@ -37887,25 +36556,25 @@
       [
         "plotValues",
         {
-          "France": 29,
-          "Australia": 29,
-          "Ireland": 29,
-          "Canada": 29,
-          "Portugal": 29,
-          "Lux": 29,
-          "Switzerland": 29,
-          "US": 29,
-          "Denmark": 29,
           "Japan": 29,
           "Neth": 29,
-          "Greece": 29,
-          "Sweden": 29,
+          "Belgium": 29,
           "UK": 29,
-          "Italy": 29,
           "Spain": 29,
-          "Finland": 29,
+          "Italy": 29,
+          "Canada": 29,
+          "US": 29,
+          "Greece": 29,
+          "Australia": 29,
+          "Switzerland": 29,
           "NZ": 29,
-          "Belgium": 29
+          "Denmark": 29,
+          "Sweden": 29,
+          "Portugal": 29,
+          "Ireland": 29,
+          "Lux": 29,
+          "France": 29,
+          "Finland": 29
         }
       ],
       [
@@ -38058,28 +36727,12 @@
     [
       "AU",
       [
-        "NZ",
-        "FR",
-        "BE",
-        "US",
-        "CA"
+        "IT",
+        "PT",
+        "SE",
+        "LU",
+        "FR"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.CODE.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CODE.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38113,11 +36766,11 @@
       [
         "fewestValues",
         [
-          "NZ",
-          "FR",
-          "BE",
-          "US",
-          "CA"
+          "IT",
+          "PT",
+          "SE",
+          "LU",
+          "FR"
         ]
       ],
       [
@@ -38143,25 +36796,25 @@
       [
         "plotValues",
         {
-          "DK": 29,
-          "JP": 29,
-          "IE": 29,
-          "IT": 29,
-          "LU": 29,
-          "FI": 29,
-          "PT": 29,
-          "GR": 29,
-          "ES": 29,
-          "CH": 29,
-          "SE": 29,
-          "NL": 29,
           "AU": 29,
-          "UK": 29,
+          "JP": 29,
+          "NZ": 29,
           "CA": 29,
+          "UK": 29,
+          "GR": 29,
+          "FI": 29,
+          "ES": 29,
           "US": 29,
           "BE": 29,
+          "IE": 29,
+          "CH": 29,
+          "DK": 29,
+          "NL": 29,
           "FR": 29,
-          "NZ": 29
+          "LU": 29,
+          "SE": 29,
+          "PT": 29,
+          "IT": 29
         }
       ],
       [
@@ -38314,28 +36967,12 @@
     [
       "Australia",
       [
-        "Belgium",
-        "NZ",
         "Finland",
-        "Spain",
-        "Italy"
+        "France",
+        "Lux",
+        "Ireland",
+        "Portugal"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Country_03.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Country_03.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38369,11 +37006,11 @@
       [
         "fewestValues",
         [
-          "Belgium",
-          "NZ",
           "Finland",
-          "Spain",
-          "Italy"
+          "France",
+          "Lux",
+          "Ireland",
+          "Portugal"
         ]
       ],
       [
@@ -38399,25 +37036,25 @@
       [
         "plotValues",
         {
-          "France": 29,
-          "Australia": 29,
-          "Ireland": 29,
-          "Canada": 29,
-          "Portugal": 29,
-          "Lux": 29,
-          "Switzerland": 29,
-          "US": 29,
-          "Denmark": 29,
           "Japan": 29,
           "Neth": 29,
-          "Greece": 29,
-          "Sweden": 29,
+          "Belgium": 29,
           "UK": 29,
-          "Italy": 29,
           "Spain": 29,
-          "Finland": 29,
+          "Italy": 29,
+          "Canada": 29,
+          "US": 29,
+          "Greece": 29,
+          "Australia": 29,
+          "Switzerland": 29,
           "NZ": 29,
-          "Belgium": 29
+          "Denmark": 29,
+          "Sweden": 29,
+          "Portugal": 29,
+          "Ireland": 29,
+          "Lux": 29,
+          "France": 29,
+          "Finland": 29
         }
       ],
       [
@@ -38608,22 +37245,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.CD.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.CD.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39218,26 +37839,10 @@
   ],
   [
     "change",
-    "variables.avfa.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.avfa.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.avfa.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39894,26 +38499,10 @@
   ],
   [
     "change",
-    "variables.avwomenpar.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.avwomenpar.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.avwomenpar.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40558,22 +39147,6 @@
     [
       "1980",
       1980
-    ]
-  ],
-  [
-    "change",
-    "variables.YEAR.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.YEAR.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -45464,682 +44037,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "yes",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PublicFamily": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PubFamilyA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Pubfammat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PPRfammat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PPRfamilyA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PPRfamily": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Publicsocx": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CN": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govparty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vturn": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "womenpar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rae_ele": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rae_leg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "plural": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "structur": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "strbic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rate_under15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rate_over65": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdp_real": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "flfp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wedu1544": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "oldage_pmp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "unemp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country01": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country02": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country03": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country04": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country05": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country07": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country08": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country09": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country17": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country18": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country19": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm01": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm02": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm03": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm04": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm05": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm06": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm07": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm08": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm09": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm17": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm18": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "countrytm19": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "log_gdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagPublicFamily": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagPublicFamilyA": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Country_01": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Year_01": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagPublicsocx": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thresh15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thresh20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thresh25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thresh30": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thresh35": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "thresh40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagPPRFamily": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_17": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_18": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_ICN_19": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1981": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1982": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1983": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1984": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1985": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1986": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1987": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1988": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1989": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1990": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1991": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1992": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1993": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1994": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1995": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1996": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1997": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1998": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_1999": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2000": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2002": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2003": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2004": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2005": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2006": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2007": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_IYear_2008": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Country_02": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CODE": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Country_03": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CD": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "avfa": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "avwomenpar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "YEAR": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

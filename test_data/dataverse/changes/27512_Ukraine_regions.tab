@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        27
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "27512_Ukraine_regions.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1568
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.region.median",
     [
@@ -126,22 +43,6 @@
     [
       "1301",
       1301
-    ]
-  ],
-  [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -702,28 +603,12 @@
     [
       "Crimea",
       [
-        "Zhytomyr",
         "Poltava",
-        "Odesa",
-        "Ivano-Frankivsk",
-        "Kyiv"
+        "Zhytomyr",
+        "Mykolaiv",
+        "Transcarpathia",
+        "Kirovohrad"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.regname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regname.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -757,11 +642,11 @@
       [
         "fewestValues",
         [
-          "Zhytomyr",
           "Poltava",
-          "Odesa",
-          "Ivano-Frankivsk",
-          "Kyiv"
+          "Zhytomyr",
+          "Mykolaiv",
+          "Transcarpathia",
+          "Kirovohrad"
         ]
       ],
       [
@@ -787,33 +672,33 @@
       [
         "plotValues",
         {
-          "Khmelnytskyi": 1,
-          "Sevastopol": 1,
-          "Volyn": 1,
-          "Kherson": 1,
           "Vinnytsia": 1,
-          "Chernivtsi": 1,
-          "Chernihiv": 1,
-          "Donetsk": 1,
-          "Kyiv region": 1,
           "Lviv": 1,
-          "Dnipropetrovsk": 1,
-          "Mykolaiv": 1,
-          "Transcarpathia": 1,
+          "Donetsk": 1,
           "Sumy": 1,
-          "Cherkasy": 1,
-          "Kharkiv": 1,
+          "Ternopil": 1,
+          "Sevastopol": 1,
           "Crimea": 1,
           "Luhansk": 1,
-          "Ternopil": 1,
-          "Kirovohrad": 1,
-          "Zaporizhzhia": 1,
+          "Chernivtsi": 1,
+          "Kherson": 1,
+          "Cherkasy": 1,
+          "Volyn": 1,
+          "Odesa": 1,
           "Rivne": 1,
           "Kyiv": 1,
+          "Kyiv region": 1,
+          "Kharkiv": 1,
           "Ivano-Frankivsk": 1,
-          "Odesa": 1,
-          "Poltava": 1,
-          "Zhytomyr": 1
+          "Khmelnytskyi": 1,
+          "Chernihiv": 1,
+          "Dnipropetrovsk": 1,
+          "Zaporizhzhia": 1,
+          "Kirovohrad": 1,
+          "Transcarpathia": 1,
+          "Zhytomyr": 1,
+          "Mykolaiv": 1,
+          "Poltava": 1
         }
       ],
       [
@@ -1008,22 +893,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.macrowest.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.macrowest.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1269,22 +1138,6 @@
     ]
   ],
   [
-    "change",
-    "variables.macrocenter.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.macrocenter.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.macrocenter",
     [
@@ -1524,22 +1377,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.macroeast.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.macroeast.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1785,22 +1622,6 @@
     ]
   ],
   [
-    "change",
-    "variables.macrosouth.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.macrosouth.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.macrosouth",
     [
@@ -2040,22 +1861,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.west.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.west.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2301,22 +2106,6 @@
     ]
   ],
   [
-    "change",
-    "variables.west_border.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.west_border.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.west_border",
     [
@@ -2559,22 +2348,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eu_border.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_border.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eu_border",
     [
@@ -2814,22 +2587,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.east_border.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.east_border.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3086,26 +2843,10 @@
   ],
   [
     "change",
-    "variables.rus2001.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rus2001.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rus2001.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3762,26 +3503,10 @@
   ],
   [
     "change",
-    "variables.ruslang2001.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ruslang2001.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ruslang2001.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4438,26 +4163,10 @@
   ],
   [
     "change",
-    "variables.YuDec.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.YuDec.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.YuDec.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5055,97 +4764,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:31:19",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "macrowest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "macrocenter": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "macroeast": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "macrosouth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "west": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "west_border": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_border": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "east_border": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rus2001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ruslang2001": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "YuDec": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

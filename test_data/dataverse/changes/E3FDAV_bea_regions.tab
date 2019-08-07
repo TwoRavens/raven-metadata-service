@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        51
-      ],
-      [
-        "variableCount",
-        5
-      ],
-      [
-        "dataSource",
-        {
-          "name": "E3FDAV_bea_regions.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2117
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.fips.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.fips.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.fips.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -748,28 +649,12 @@
     [
       "Alabama",
       [
-        "Tennessee",
-        "Kansas",
-        "Indiana",
-        "Washington",
-        "Massachusetts"
+        "Michigan",
+        "Nebraska",
+        "Maine",
+        "Rhode Island",
+        "New Mexico"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -803,11 +688,11 @@
       [
         "fewestValues",
         [
-          "Tennessee",
-          "Kansas",
-          "Indiana",
-          "Washington",
-          "Massachusetts"
+          "Michigan",
+          "Nebraska",
+          "Maine",
+          "Rhode Island",
+          "New Mexico"
         ]
       ],
       [
@@ -833,57 +718,57 @@
       [
         "plotValues",
         {
-          "Alaska": 1,
-          "New Jersey": 1,
-          "Pennsylvania": 1,
-          "Maryland": 1,
-          "New Mexico": 1,
-          "South Dakota": 1,
-          "Georgia": 1,
-          "Texas": 1,
-          "Hawaii": 1,
-          "Vermont": 1,
-          "Nebraska": 1,
-          "Connecticut": 1,
-          "Illinois": 1,
-          "West Virginia": 1,
-          "Arizona": 1,
-          "Oregon": 1,
-          "Wisconsin": 1,
-          "District of Columbia": 1,
-          "Idaho": 1,
-          "Colorado": 1,
-          "Alabama": 1,
-          "Minnesota": 1,
-          "Montana": 1,
-          "Maine": 1,
-          "Missouri": 1,
-          "Nevada": 1,
-          "South Carolina": 1,
-          "North Dakota": 1,
-          "Wyoming": 1,
-          "Mississippi": 1,
-          "Michigan": 1,
-          "Delaware": 1,
-          "Oklahoma": 1,
-          "Utah": 1,
-          "Louisiana": 1,
-          "New York": 1,
-          "Ohio": 1,
-          "Iowa": 1,
-          "Arkansas": 1,
-          "Virginia": 1,
-          "Kentucky": 1,
-          "Rhode Island": 1,
           "North Carolina": 1,
-          "California": 1,
-          "Florida": 1,
-          "New Hampshire": 1,
-          "Massachusetts": 1,
-          "Washington": 1,
-          "Indiana": 1,
+          "Louisiana": 1,
+          "South Dakota": 1,
           "Kansas": 1,
-          "Tennessee": 1
+          "Washington": 1,
+          "New Jersey": 1,
+          "Montana": 1,
+          "Utah": 1,
+          "Arizona": 1,
+          "Ohio": 1,
+          "Pennsylvania": 1,
+          "Alabama": 1,
+          "Oklahoma": 1,
+          "Mississippi": 1,
+          "Hawaii": 1,
+          "Tennessee": 1,
+          "Texas": 1,
+          "Minnesota": 1,
+          "Virginia": 1,
+          "Florida": 1,
+          "District of Columbia": 1,
+          "Maryland": 1,
+          "North Dakota": 1,
+          "Colorado": 1,
+          "South Carolina": 1,
+          "Illinois": 1,
+          "Kentucky": 1,
+          "Delaware": 1,
+          "Massachusetts": 1,
+          "Wyoming": 1,
+          "Vermont": 1,
+          "West Virginia": 1,
+          "Arkansas": 1,
+          "Missouri": 1,
+          "Idaho": 1,
+          "Wisconsin": 1,
+          "Iowa": 1,
+          "Nevada": 1,
+          "Alaska": 1,
+          "Oregon": 1,
+          "California": 1,
+          "New Hampshire": 1,
+          "Georgia": 1,
+          "Connecticut": 1,
+          "Indiana": 1,
+          "New York": 1,
+          "New Mexico": 1,
+          "Rhode Island": 1,
+          "Maine": 1,
+          "Nebraska": 1,
+          "Michigan": 1
         }
       ],
       [
@@ -1068,28 +953,12 @@
     [
       "AL",
       [
-        "IN",
-        "VA",
-        "RI",
-        "KS",
-        "ID"
+        "PA",
+        "CA",
+        "ME",
+        "AK",
+        "NV"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.abb.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.abb.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1123,11 +992,11 @@
       [
         "fewestValues",
         [
-          "IN",
-          "VA",
-          "RI",
-          "KS",
-          "ID"
+          "PA",
+          "CA",
+          "ME",
+          "AK",
+          "NV"
         ]
       ],
       [
@@ -1153,57 +1022,57 @@
       [
         "plotValues",
         {
-          "CT": 1,
-          "NC": 1,
-          "AR": 1,
-          "NV": 1,
-          "OK": 1,
-          "VT": 1,
-          "MI": 1,
-          "SC": 1,
-          "DC": 1,
-          "MA": 1,
-          "LA": 1,
-          "NY": 1,
-          "NJ": 1,
-          "IA": 1,
-          "MS": 1,
-          "NH": 1,
-          "NE": 1,
-          "MN": 1,
-          "CO": 1,
-          "SD": 1,
-          "TN": 1,
-          "WA": 1,
-          "CA": 1,
-          "MD": 1,
-          "WI": 1,
-          "FL": 1,
-          "KY": 1,
-          "IL": 1,
-          "MO": 1,
-          "PA": 1,
-          "RI": 1,
-          "WV": 1,
+          "OH": 1,
+          "OR": 1,
           "GA": 1,
-          "AZ": 1,
+          "RI": 1,
+          "AL": 1,
+          "SC": 1,
+          "MI": 1,
+          "SD": 1,
+          "NH": 1,
           "UT": 1,
-          "MT": 1,
+          "VT": 1,
           "ND": 1,
           "DE": 1,
-          "OR": 1,
-          "VA": 1,
-          "NM": 1,
+          "NC": 1,
+          "DC": 1,
+          "NE": 1,
+          "LA": 1,
+          "MO": 1,
+          "MS": 1,
+          "CT": 1,
+          "NJ": 1,
+          "WV": 1,
+          "MA": 1,
+          "WI": 1,
           "HI": 1,
+          "CO": 1,
+          "NM": 1,
+          "MN": 1,
+          "MT": 1,
+          "NY": 1,
+          "IL": 1,
           "TX": 1,
+          "VA": 1,
+          "KS": 1,
+          "IA": 1,
+          "MD": 1,
+          "ID": 1,
+          "KY": 1,
+          "FL": 1,
+          "WA": 1,
+          "AR": 1,
+          "WY": 1,
+          "TN": 1,
+          "AZ": 1,
+          "OK": 1,
+          "IN": 1,
+          "NV": 1,
           "AK": 1,
           "ME": 1,
-          "AL": 1,
-          "WY": 1,
-          "OH": 1,
-          "ID": 1,
-          "KS": 1,
-          "IN": 1
+          "CA": 1,
+          "PA": 1
         }
       ],
       [
@@ -1422,22 +1291,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.bea_region_code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bea_region_code.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1687,22 +1540,6 @@
     ]
   ],
   [
-    "change",
-    "variables.bea_region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.bea_region.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.bea_region",
     [
@@ -1761,9 +1598,9 @@
         {
           "Southeast Region": 12,
           "Plains Region": 7,
+          "Far West Region": 6,
           "New England Region": 6,
           "Mideast Region": 6,
-          "Far West Region": 6,
           "Rocky Mountain Region": 5,
           "Great Lakes Region": 5,
           "Southwest Region": 4
@@ -1899,57 +1736,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:29",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "fips": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abb": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bea_region_code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "bea_region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        30
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "8XPBSA_aut_1995_predict.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1816
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.choice.mode",
     [
       "SPO",
       [
+        "Gruene",
+        "LIF",
         "SPO",
         "OVP",
-        "FPO",
-        "Gruene",
-        "LIF"
+        "FPO"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.choice.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.choice.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
+          "Gruene",
+          "LIF",
           "SPO",
           "OVP",
-          "FPO",
-          "Gruene",
-          "LIF"
+          "FPO"
         ]
       ],
       [
@@ -173,10 +74,10 @@
       [
         "plotValues",
         {
+          "FPO": 6,
+          "OVP": 6,
           "SPO": 6,
           "LIF": 6,
-          "OVP": 6,
-          "FPO": 6,
           "Gruene": 6
         }
       ],
@@ -316,28 +217,12 @@
     [
       "OVP",
       [
-        "SPO",
-        "OVP",
-        "FPO",
         "Gruene",
-        "NoID"
+        "LIF",
+        "SPO",
+        "NoID",
+        "OVP"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -371,11 +256,11 @@
       [
         "fewestValues",
         [
-          "SPO",
-          "OVP",
-          "FPO",
           "Gruene",
-          "NoID"
+          "LIF",
+          "SPO",
+          "NoID",
+          "OVP"
         ]
       ],
       [
@@ -401,11 +286,11 @@
       [
         "plotValues",
         {
-          "SPO": 5,
-          "LIF": 5,
-          "OVP": 5,
-          "NoID": 5,
           "FPO": 5,
+          "OVP": 5,
+          "SPO": 5,
+          "NoID": 5,
+          "LIF": 5,
           "Gruene": 5
         }
       ],
@@ -596,26 +481,10 @@
   ],
   [
     "change",
-    "variables.Phat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Phat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Phat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1272,26 +1141,10 @@
   ],
   [
     "change",
-    "variables.nrpid_prop.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.nrpid_prop.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nrpid_prop.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1565,22 +1418,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nobs.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nobs.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nobs",
     [
@@ -1822,26 +1659,10 @@
   ],
   [
     "change",
-    "variables.pseudo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.pseudo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.pseudo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2090,26 +1911,10 @@
   ],
   [
     "change",
-    "variables.share.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.share.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.share.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2331,67 +2136,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "choice": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Phat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nrpid_prop": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nobs": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pseudo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "share": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

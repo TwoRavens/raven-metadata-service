@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        72
-      ],
-      [
-        "variableCount",
-        2
-      ],
-      [
-        "dataSource",
-        {
-          "name": "ZEKDIC_20161011_WRD_TANF_Clean.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 981
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
       "Alabama",
       [
-        "Iowa",
-        "Georgia",
-        "Mississippi",
-        "Missouri",
-        "Nevada"
+        "Michigan",
+        "Nebraska",
+        "Maine",
+        "Rhode Island",
+        "New Mexico"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Iowa",
-          "Georgia",
-          "Mississippi",
-          "Missouri",
-          "Nevada"
+          "Michigan",
+          "Nebraska",
+          "Maine",
+          "Rhode Island",
+          "New Mexico"
         ]
       ],
       [
@@ -173,57 +74,57 @@
       [
         "plotValues",
         {
-          "New Mexico": 1,
-          "Wyoming": 1,
-          "Alabama": 1,
-          "Pennsylvania": 1,
-          "Minnesota": 1,
+          "North Carolina": 1,
+          "Louisiana": 1,
           "South Dakota": 1,
-          "Oregon": 1,
-          "Texas": 1,
-          "New Hampshire": 1,
-          "Florida": 1,
-          "Arkansas": 1,
           "Kansas": 1,
           "Washington": 1,
-          "Rhode Island": 1,
-          "Nebraska": 1,
-          "Arizona": 1,
-          "Utah": 1,
-          "Maine": 1,
-          "Vermont": 1,
-          "North Carolina": 1,
-          "Illinois": 1,
-          "South Carolina": 1,
-          "Wisconsin": 1,
-          "New York": 1,
-          "Kentucky": 1,
-          "Louisiana": 1,
-          "Hawaii": 1,
-          "Maryland": 1,
-          "Ohio": 1,
-          "Indiana": 1,
-          "California": 1,
-          "West Virginia": 1,
-          "North Dakota": 1,
-          "Alaska": 1,
-          "Massachusetts": 1,
           "New Jersey": 1,
-          "Tennessee": 1,
-          "Colorado": 1,
-          "Michigan": 1,
           "Montana": 1,
-          "Virginia": 1,
-          "Delaware": 1,
-          "DC": 1,
-          "Connecticut": 1,
+          "Utah": 1,
+          "Arizona": 1,
+          "Ohio": 1,
+          "Pennsylvania": 1,
+          "Alabama": 1,
           "Oklahoma": 1,
-          "Idaho": 1,
-          "Nevada": 1,
-          "Missouri": 1,
           "Mississippi": 1,
+          "Hawaii": 1,
+          "Tennessee": 1,
+          "Texas": 1,
+          "Minnesota": 1,
+          "Virginia": 1,
+          "Florida": 1,
+          "Maryland": 1,
+          "DC": 1,
+          "North Dakota": 1,
+          "Colorado": 1,
+          "South Carolina": 1,
+          "Illinois": 1,
+          "Kentucky": 1,
+          "Delaware": 1,
+          "Massachusetts": 1,
+          "Wyoming": 1,
+          "Vermont": 1,
+          "West Virginia": 1,
+          "Arkansas": 1,
+          "Missouri": 1,
+          "Idaho": 1,
+          "Wisconsin": 1,
+          "Iowa": 1,
+          "Nevada": 1,
+          "Alaska": 1,
+          "Oregon": 1,
+          "California": 1,
+          "New Hampshire": 1,
           "Georgia": 1,
-          "Iowa": 1
+          "Connecticut": 1,
+          "Indiana": 1,
+          "New York": 1,
+          "New Mexico": 1,
+          "Rhode Island": 1,
+          "Maine": 1,
+          "Nebraska": 1,
+          "Michigan": 1
         }
       ],
       [
@@ -455,26 +356,10 @@
   ],
   [
     "change",
-    "variables.MAXTANF.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MAXTANF.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MAXTANF.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1072,42 +957,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:54",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MAXTANF": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

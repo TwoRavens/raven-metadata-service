@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        704
-      ],
-      [
-        "variableCount",
-        62
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TJ5XMF_1999-2010_CHES_dataset_means.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 237010
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.median",
     [
@@ -122,22 +39,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -725,22 +626,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eastwest.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.eastwest.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eastwest",
     [
@@ -983,22 +868,6 @@
     ]
   ],
   [
-    "change",
-    "variables.eumember.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.eumember.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.eumember",
     [
@@ -1238,22 +1107,6 @@
     [
       "1999",
       1999
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1508,22 +1361,6 @@
     [
       "4",
       4.0
-    ]
-  ],
-  [
-    "change",
-    "variables.expert.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.expert.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2098,22 +1935,6 @@
     [
       "102",
       102
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party_id.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2761,22 +2582,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cmp_id.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cmp_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cmp_id",
     [
@@ -3385,22 +3190,6 @@
     ]
   ],
   [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.party",
     [
@@ -3431,11 +3220,11 @@
       [
         "fewestValues",
         [
-          "SEP/EKA",
-          "MODEM",
-          "PDL",
-          "JL-PKS",
-          "LDD"
+          "LB",
+          "HZD",
+          "LIBDEM",
+          "EH",
+          "POLA"
         ]
       ],
       [
@@ -3465,296 +3254,296 @@
           "SF": 10,
           "CDU": 10,
           "V": 9,
-          "SD": 8,
           "SP": 8,
+          "SD": 8,
           "PD": 7,
           "PSD": 7,
-          "ODS": 6,
           "SNS": 6,
+          "ODS": 6,
           "KD": 6,
           "FN": 6,
-          "FP": 5,
           "PP": 5,
           "LAB": 5,
-          "IU": 4,
-          "VVD": 4,
-          "VERTS": 4,
-          "BNG": 4,
-          "SFP": 4,
+          "FP": 5,
+          "EA": 4,
+          "FDP": 4,
+          "GRUNE": 4,
+          "PvdA": 4,
+          "MP": 4,
+          "RV": 4,
+          "SNP": 4,
+          "ECOLO": 4,
+          "VAS": 4,
+          "PNV": 4,
+          "KKE": 4,
+          "KESK": 4,
           "FPO": 4,
           "FF": 4,
-          "PASOK": 4,
-          "VB": 4,
-          "SNP": 4,
-          "CSU": 4,
-          "LN": 4,
-          "CONS": 4,
-          "Grunen": 4,
-          "CDS-PP": 4,
-          "PSOE": 4,
-          "EA": 4,
-          "CDA": 4,
-          "D66": 4,
-          "FG": 4,
-          "SPD": 4,
-          "JL": 4,
-          "VAS": 4,
-          "ECOLO": 4,
-          "GRUNE": 4,
-          "C": 4,
-          "GL": 4,
-          "FDP": 4,
-          "PvdA": 4,
-          "VIHR": 4,
-          "SAP": 4,
-          "KF": 4,
-          "PNV": 4,
-          "CC": 4,
-          "KESK": 4,
-          "M": 4,
-          "PRG": 4,
-          "PCF": 4,
-          "OVP": 4,
-          "RV": 4,
-          "MP": 4,
           "DF": 4,
-          "RC": 4,
-          "CiU": 4,
-          "PLAID": 4,
-          "KKE": 4,
-          "ND": 4,
+          "PRG": 4,
           "KOK": 4,
-          "AN": 4,
-          "SPO": 4,
+          "LN": 4,
+          "CiU": 4,
+          "SAP": 4,
+          "PCF": 4,
+          "SFP": 4,
           "SDP": 4,
-          "PiS": 3,
-          "LLRA": 3,
-          "SLD": 3,
-          "PNL": 3,
-          "CDH": 3,
-          "LPR": 3,
-          "KSCM": 3,
-          "DL": 3,
-          "VLD": 3,
-          "DeSUS": 3,
-          "PRM": 3,
-          "FI": 3,
-          "EL": 3,
-          "CU": 3,
-          "NDSV": 3,
-          "UDMR": 3,
-          "Fidesz-M": 3,
-          "PDS": 3,
-          "LibDem": 3,
-          "UKIP": 3,
-          "CD&V": 3,
-          "MR": 3,
-          "DIKKI": 3,
-          "LDS": 3,
-          "UDF": 3,
-          "KDH": 3,
-          "GP": 3,
-          "ZZS": 3,
-          "SGP": 3,
-          "KDU-CSL": 3,
-          "PSL": 3,
-          "NSI": 3,
-          "BE": 3,
-          "FolkB": 3,
-          "ERC": 3,
-          "CSSD": 3,
+          "CDS-PP": 4,
+          "CSU": 4,
+          "PLAID": 4,
+          "KF": 4,
+          "VIHR": 4,
+          "FG": 4,
+          "CONS": 4,
+          "M": 4,
+          "VERTS": 4,
+          "AN": 4,
+          "PASOK": 4,
+          "VVD": 4,
+          "CDA": 4,
+          "ND": 4,
+          "GL": 4,
+          "JL": 4,
+          "IU": 4,
+          "BNG": 4,
+          "OVP": 4,
+          "SPO": 4,
+          "SPD": 4,
+          "D66": 4,
+          "RC": 4,
+          "PSOE": 4,
+          "VB": 4,
+          "Grunen": 4,
+          "CC": 4,
+          "C": 4,
           "LSDP": 3,
-          "GREEN": 3,
-          "KSS": 3,
-          "LIF": 3,
-          "S": 3,
-          "SVP": 3,
-          "Smer": 3,
-          "NVA": 3,
-          "SMK": 3,
-          "DPS": 3,
-          "NS": 3,
-          "KzB": 3,
           "MDF": 3,
+          "S": 3,
+          "CU": 3,
+          "KDH": 3,
+          "UKIP": 3,
+          "PDS": 3,
+          "FolkB": 3,
+          "Fidesz-M": 3,
+          "CDH": 3,
           "PO": 3,
-          "NOA": 2,
-          "DEM": 2,
+          "NS": 3,
+          "VLD": 3,
+          "DIKKI": 3,
+          "NDSV": 3,
+          "KzB": 3,
+          "KSCM": 3,
+          "DPS": 3,
+          "KSS": 3,
+          "BE": 3,
+          "LPR": 3,
+          "UDF": 3,
+          "LLRA": 3,
+          "UDMR": 3,
+          "LibDem": 3,
+          "PNL": 3,
+          "SLD": 3,
+          "KDU-CSL": 3,
+          "EL": 3,
+          "NVA": 3,
+          "PRM": 3,
+          "SGP": 3,
+          "ERC": 3,
+          "NSI": 3,
+          "PSL": 3,
+          "PiS": 3,
+          "DeSUS": 3,
+          "CD&V": 3,
+          "Smer": 3,
+          "GP": 3,
+          "FI": 3,
+          "ZZS": 3,
+          "SMK": 3,
+          "DL": 3,
+          "LDS": 3,
+          "SVP": 3,
+          "LIF": 3,
+          "MR": 3,
+          "CSSD": 3,
+          "GREEN": 3,
           "MSzP": 2,
-          "LS-HZDS": 2,
-          "ZLSD": 2,
-          "SDE": 2,
-          "JuniB": 2,
-          "PSC": 2,
-          "CHA": 2,
-          "LC": 2,
-          "IRL": 2,
-          "SKL": 2,
-          "UDEUR": 2,
-          "LSDSP": 2,
-          "KDNP": 2,
-          "BNS": 2,
-          "PCTVL": 2,
-          "SzDSz": 2,
-          "TS": 2,
-          "TP": 2,
-          "SDS": 2,
-          "LVLS": 2,
-          "RPF": 2,
-          "SDPL": 2,
-          "LLS": 2,
-          "RI": 2,
-          "SC": 2,
-          "MPF": 2,
-          "SYN": 2,
-          "CCD": 2,
-          "LAOS": 2,
-          "PPI": 2,
-          "UMP": 2,
-          "UDC": 2,
-          "PVV": 2,
-          "TB-LNNK": 2,
-          "DS": 2,
-          "Groen": 2,
-          "SDKU-DS": 2,
-          "LCS": 2,
-          "Lab": 2,
-          "DP": 2,
-          "DSB": 2,
-          "PC": 2,
-          "CD": 2,
-          "EK": 2,
-          "AGALEV": 2,
-          "ERL": 2,
-          "BZO": 2,
-          "SYRIZA": 2,
-          "RPR": 2,
           "MARTIN": 2,
-          "LPP": 2,
-          "SZ": 2,
-          "IdV": 2,
-          "SPA": 2,
+          "AGALEV": 2,
+          "PSC": 2,
+          "KDNP": 2,
           "VERDI": 2,
+          "RI": 2,
+          "TB-LNNK": 2,
+          "MPF": 2,
+          "SZ": 2,
+          "LVLS": 2,
+          "PCTVL": 2,
+          "LCS": 2,
+          "SDPL": 2,
+          "CHA": 2,
+          "ERL": 2,
+          "SYN": 2,
+          "DSB": 2,
+          "SC": 2,
+          "RPF": 2,
           "ER": 2,
-          "G-VMRO": 1,
-          "HZD": 1,
-          "LPF": 1,
-          "KIPU": 1,
-          "UW": 1,
-          "GREENS": 1,
-          "D": 1,
-          "CDR 2000": 1,
-          "PSDI": 1,
-          "NyD": 1,
-          "CPNT": 1,
-          "KSII": 1,
-          "UV": 1,
-          "KP": 1,
-          "LIBDEM": 1,
-          "SLS-SKD": 1,
-          "IDV": 1,
+          "TP": 2,
+          "LSDSP": 2,
+          "UMP": 2,
+          "SPA": 2,
+          "UDC": 2,
+          "SzDSz": 2,
+          "LAOS": 2,
+          "IRL": 2,
+          "SDS": 2,
+          "TS": 2,
+          "DS": 2,
+          "CD": 2,
+          "PPI": 2,
+          "SYRIZA": 2,
+          "SKL": 2,
+          "Groen": 2,
+          "LC": 2,
+          "LLS": 2,
+          "LS-HZDS": 2,
+          "SDKU-DS": 2,
+          "BZO": 2,
+          "DP": 2,
+          "IdV": 2,
+          "DEM": 2,
+          "JuniB": 2,
+          "PVV": 2,
+          "BNS": 2,
+          "RPR": 2,
+          "PC": 2,
+          "CCD": 2,
+          "UDEUR": 2,
+          "SDE": 2,
+          "ZLSD": 2,
+          "EK": 2,
+          "LPP": 2,
+          "Lab": 2,
+          "NOA": 2,
           "MN": 1,
-          "BNP": 1,
-          "FDF/RW": 1,
-          "REM": 1,
-          "NC": 1,
-          "Nezavisl": 1,
-          "PvdD": 1,
-          "PA": 1,
-          "SEP/EKA": 1,
-          "ZRP": 1,
-          "EdP-V": 1,
-          "PRI": 1,
-          "RAD": 1,
-          "PsDA": 1,
-          "PRL": 1,
-          "JL-PKS": 1,
-          "DVU": 1,
-          "MKDS": 1,
-          "FdV": 1,
-          "FDGR": 1,
-          "POLA": 1,
-          "Linkspartei/PDS": 1,
-          "NDP": 1,
-          "LD": 1,
-          "L": 1,
-          "SEG": 1,
-          "LVP": 1,
-          "AS": 1,
-          "NPSI": 1,
-          "LP": 1,
-          "MpA": 1,
-          "PdCI": 1,
-          "SNK-ED": 1,
-          "LINKE": 1,
-          "SL": 1,
-          "KRF": 1,
-          "GERB": 1,
-          "LKDP": 1,
-          "UPD": 1,
-          "ANO": 1,
-          "CP": 1,
-          "MS": 1,
-          "MCC": 1,
-          "MIEP": 1,
-          "PD-L": 1,
-          "SLS-SMS": 1,
           "UP": 1,
-          "PDL": 1,
-          "CpE": 1,
-          "MODEM": 1,
-          "MRE": 1,
-          "OP": 1,
-          "SLS": 1,
-          "LRS": 1,
-          "SZDSZ": 1,
-          "REP": 1,
-          "LiCS": 1,
-          "PSI": 1,
-          "Zares": 1,
-          "PdUP": 1,
-          "VV": 1,
-          "PSNS": 1,
-          "PCI": 1,
-          "PVV/VLD": 1,
-          "EH": 1,
-          "TPP": 1,
-          "Most": 1,
-          "SDKU": 1,
-          "PUR": 1,
-          "SLP": 1,
-          "SDI": 1,
-          "LDD": 1,
-          "LO-LCR": 1,
-          "PIRAT": 1,
-          "EER": 1,
-          "JOBBIK": 1,
-          "AWSP": 1,
-          "RZS": 1,
-          "FRONT": 1,
-          "PAR": 1,
-          "GPV": 1,
-          "LRLS": 1,
-          "TOP09": 1,
-          "VERDE": 1,
-          "UD": 1,
-          "LB": 1,
-          "TT": 1,
+          "SEP/EKA": 1,
           "CVP": 1,
-          "MSZP": 1,
-          "SMS": 1,
+          "UD": 1,
+          "LRS": 1,
+          "PSI": 1,
+          "PSNS": 1,
+          "EdP-V": 1,
+          "Linkspartei/PDS": 1,
+          "PSDI": 1,
+          "FRONT": 1,
+          "MODEM": 1,
+          "IDV": 1,
+          "PvdD": 1,
+          "TOP09": 1,
+          "FDGR": 1,
+          "ANO": 1,
+          "MCC": 1,
           "TS-LK": 1,
           "US-DEU": 1,
-          "LMP": 1,
-          "LA": 1,
-          "NKS": 1,
+          "LD": 1,
+          "EER": 1,
+          "CpE": 1,
+          "PRI": 1,
           "SDSS": 1,
-          "SaS": 1,
-          "PVDA": 1,
-          "HZDS": 1,
+          "Most": 1,
+          "LDD": 1,
+          "ID21": 1,
+          "SLP": 1,
+          "MpA": 1,
+          "EH": 1,
+          "LKDP": 1,
+          "KSII": 1,
+          "PIRAT": 1,
           "MEI": 1,
+          "CP": 1,
+          "PVDA": 1,
+          "FdV": 1,
+          "SLS-SKD": 1,
+          "LA": 1,
+          "KP": 1,
+          "NPSI": 1,
+          "LVP": 1,
+          "LP": 1,
+          "PAR": 1,
+          "SaS": 1,
+          "LO-LCR": 1,
+          "MKDS": 1,
+          "SMS": 1,
+          "SNK-ED": 1,
+          "TT": 1,
+          "LRLS": 1,
+          "GREENS": 1,
+          "MSZP": 1,
+          "D": 1,
+          "JL-PKS": 1,
+          "VERDE": 1,
+          "RAD": 1,
+          "NyD": 1,
+          "REM": 1,
+          "NC": 1,
+          "SLS": 1,
+          "JOBBIK": 1,
+          "KIPU": 1,
+          "HZD": 1,
+          "Nezavisl": 1,
+          "REP": 1,
+          "HZDS": 1,
+          "MS": 1,
+          "POLA": 1,
+          "PCI": 1,
+          "PD-L": 1,
+          "LINKE": 1,
+          "SDKU": 1,
+          "SDI": 1,
           "IC": 1,
+          "ZRP": 1,
+          "PdCI": 1,
+          "AS": 1,
           "VU": 1,
-          "ID21": 1
+          "NDP": 1,
+          "PUR": 1,
+          "LIBDEM": 1,
+          "PsDA": 1,
+          "AWSP": 1,
+          "TPP": 1,
+          "Zares": 1,
+          "GERB": 1,
+          "LMP": 1,
+          "PVV/VLD": 1,
+          "PDL": 1,
+          "SEG": 1,
+          "BNP": 1,
+          "LiCS": 1,
+          "GPV": 1,
+          "OP": 1,
+          "SZDSZ": 1,
+          "LB": 1,
+          "FDF/RW": 1,
+          "PA": 1,
+          "CPNT": 1,
+          "MRE": 1,
+          "PdUP": 1,
+          "L": 1,
+          "SL": 1,
+          "KRF": 1,
+          "NKS": 1,
+          "UPD": 1,
+          "UV": 1,
+          "UW": 1,
+          "DVU": 1,
+          "LPF": 1,
+          "SLS-SMS": 1,
+          "MIEP": 1,
+          "RZS": 1,
+          "VV": 1,
+          "CDR 2000": 1,
+          "G-VMRO": 1,
+          "PRL": 1
         }
       ],
       [
@@ -4228,26 +4017,10 @@
   ],
   [
     "change",
-    "variables.vote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4900,26 +4673,10 @@
   ],
   [
     "change",
-    "variables.seat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.seat.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.seat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5563,22 +5320,6 @@
     ]
   ],
   [
-    "change",
-    "variables.electionyear.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.electionyear.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.electionyear",
     [
@@ -6158,26 +5899,10 @@
   ],
   [
     "change",
-    "variables.epvote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.epvote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.epvote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6821,22 +6546,6 @@
     ]
   ],
   [
-    "change",
-    "variables.family.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.family.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.family",
     [
@@ -7142,26 +6851,10 @@
   ],
   [
     "change",
-    "variables.govt.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.govt.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.govt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7422,26 +7115,10 @@
   ],
   [
     "change",
-    "variables.position.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.position.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.position.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8085,22 +7762,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pro_anti.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.pro_anti.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pro_anti",
     [
@@ -8358,26 +8019,10 @@
   ],
   [
     "change",
-    "variables.eu_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9030,26 +8675,10 @@
   ],
   [
     "change",
-    "variables.eu_dissent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_dissent.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_dissent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9702,26 +9331,10 @@
   ],
   [
     "change",
-    "variables.eu_benefit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_benefit.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_benefit.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10374,26 +9987,10 @@
   ],
   [
     "change",
-    "variables.eu_ep.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_ep.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_ep.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11046,26 +10643,10 @@
   ],
   [
     "change",
-    "variables.eu_fiscal.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_fiscal.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_fiscal.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11718,26 +11299,10 @@
   ],
   [
     "change",
-    "variables.eu_intmark.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_intmark.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_intmark.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12390,26 +11955,10 @@
   ],
   [
     "change",
-    "variables.eu_employ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_employ.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_employ.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13062,26 +12611,10 @@
   ],
   [
     "change",
-    "variables.eu_agri.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_agri.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_agri.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13734,26 +13267,10 @@
   ],
   [
     "change",
-    "variables.eu_cohesion.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_cohesion.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_cohesion.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14406,26 +13923,10 @@
   ],
   [
     "change",
-    "variables.eu_environ.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_environ.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_environ.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15078,26 +14579,10 @@
   ],
   [
     "change",
-    "variables.eu_asylum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_asylum.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_asylum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15750,26 +15235,10 @@
   ],
   [
     "change",
-    "variables.eu_foreign.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_foreign.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_foreign.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16422,26 +15891,10 @@
   ],
   [
     "change",
-    "variables.eu_turkey.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.eu_turkey.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.eu_turkey.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17094,26 +16547,10 @@
   ],
   [
     "change",
-    "variables.lrgen.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrgen.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrgen.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17766,26 +17203,10 @@
   ],
   [
     "change",
-    "variables.lrecon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lrecon.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lrecon.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18438,26 +17859,10 @@
   ],
   [
     "change",
-    "variables.galtan.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.galtan.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.galtan.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19110,26 +18515,10 @@
   ],
   [
     "change",
-    "variables.spendvtax.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.spendvtax.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.spendvtax.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19782,26 +19171,10 @@
   ],
   [
     "change",
-    "variables.spendvtax_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.spendvtax_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.spendvtax_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20454,26 +19827,10 @@
   ],
   [
     "change",
-    "variables.deregulation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.deregulation.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.deregulation.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21126,26 +20483,10 @@
   ],
   [
     "change",
-    "variables.dereg_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dereg_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dereg_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21798,26 +21139,10 @@
   ],
   [
     "change",
-    "variables.redistribution.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.redistribution.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.redistribution.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22470,26 +21795,10 @@
   ],
   [
     "change",
-    "variables.redist_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.redist_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.redist_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23142,26 +22451,10 @@
   ],
   [
     "change",
-    "variables.civlib_laworder.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.civlib_laworder.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.civlib_laworder.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23814,26 +23107,10 @@
   ],
   [
     "change",
-    "variables.civlib_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.civlib_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.civlib_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24486,26 +23763,10 @@
   ],
   [
     "change",
-    "variables.sociallifestyle.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.sociallifestyle.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.sociallifestyle.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25158,26 +24419,10 @@
   ],
   [
     "change",
-    "variables.social_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.social_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.social_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25830,26 +25075,10 @@
   ],
   [
     "change",
-    "variables.religious_principle.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.religious_principle.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.religious_principle.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26502,26 +25731,10 @@
   ],
   [
     "change",
-    "variables.relig_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.relig_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.relig_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27174,26 +26387,10 @@
   ],
   [
     "change",
-    "variables.immigrate_policy.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.immigrate_policy.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.immigrate_policy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27846,26 +27043,10 @@
   ],
   [
     "change",
-    "variables.immigra_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.immigra_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.immigra_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28518,26 +27699,10 @@
   ],
   [
     "change",
-    "variables.multiculturalism.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.multiculturalism.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.multiculturalism.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29190,26 +28355,10 @@
   ],
   [
     "change",
-    "variables.multicult_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.multicult_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.multicult_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29862,26 +29011,10 @@
   ],
   [
     "change",
-    "variables.urban_rural.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urban_rural.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urban_rural.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30535,26 +29668,10 @@
   ],
   [
     "change",
-    "variables.urban_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.urban_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.urban_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31207,26 +30324,10 @@
   ],
   [
     "change",
-    "variables.environment.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.environment.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.environment.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31880,26 +30981,10 @@
   ],
   [
     "change",
-    "variables.enviro_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.enviro_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.enviro_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32552,26 +31637,10 @@
   ],
   [
     "change",
-    "variables.cosmo.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cosmo.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cosmo.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33224,26 +32293,10 @@
   ],
   [
     "change",
-    "variables.cosmo_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cosmo_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cosmo_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33896,26 +32949,10 @@
   ],
   [
     "change",
-    "variables.regions.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.regions.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.regions.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34568,26 +33605,10 @@
   ],
   [
     "change",
-    "variables.region_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.region_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.region_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35240,26 +34261,10 @@
   ],
   [
     "change",
-    "variables.international_security.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.international_security.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.international_security.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35912,26 +34917,10 @@
   ],
   [
     "change",
-    "variables.international_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.international_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.international_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36584,26 +35573,10 @@
   ],
   [
     "change",
-    "variables.us.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.us.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.us.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37256,26 +36229,10 @@
   ],
   [
     "change",
-    "variables.us_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.us_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.us_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37928,26 +36885,10 @@
   ],
   [
     "change",
-    "variables.ethnic_minorities.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ethnic_minorities.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ethnic_minorities.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38600,26 +37541,10 @@
   ],
   [
     "change",
-    "variables.ethnic_salience.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ethnic_salience.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ethnic_salience.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39217,342 +38142,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:08:34",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eastwest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eumember": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "expert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmp_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "seat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "electionyear": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "epvote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "family": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "govt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "position": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pro_anti": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_dissent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_benefit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_ep": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_fiscal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_intmark": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_employ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_agri": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_cohesion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_environ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_asylum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_foreign": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "eu_turkey": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrgen": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lrecon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "galtan": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spendvtax": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "spendvtax_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "deregulation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dereg_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "redistribution": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "redist_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "civlib_laworder": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "civlib_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sociallifestyle": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "social_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "religious_principle": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "relig_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "immigrate_policy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "immigra_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "multiculturalism": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "multicult_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urban_rural": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "urban_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "environment": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "enviro_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cosmo": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cosmo_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regions": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "international_security": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "international_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "us": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "us_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ethnic_minorities": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ethnic_salience": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

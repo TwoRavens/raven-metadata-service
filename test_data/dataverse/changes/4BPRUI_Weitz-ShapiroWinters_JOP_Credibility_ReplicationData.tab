@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2002
-      ],
-      [
-        "variableCount",
-        56
-      ],
-      [
-        "dataSource",
-        {
-          "name": "4BPRUI_Weitz-ShapiroWinters_JOP_Credibility_ReplicationData.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 336271
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.quest.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.quest.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.quest.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -785,22 +686,6 @@
     ]
   ],
   [
-    "change",
-    "variables.reg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.reg.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.reg",
     [
@@ -1024,22 +909,6 @@
     ]
   ],
   [
-    "change",
-    "variables.est_temp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.est_temp.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.est_temp",
     [
@@ -1070,10 +939,10 @@
       [
         "fewestValues",
         [
-          "ac",
           "rr",
           "ro",
           "to",
+          "ac",
           "se"
         ]
       ],
@@ -1109,23 +978,23 @@
           "pe": 84,
           "ce": 84,
           "go": 70,
-          "pa": 70,
           "sc": 70,
+          "pa": 70,
           "ma": 56,
           "pb": 42,
           "es": 42,
-          "ms": 28,
+          "al": 28,
           "df": 28,
           "mt": 28,
-          "rn": 28,
           "am": 28,
+          "rn": 28,
+          "ms": 28,
           "pi": 28,
-          "al": 28,
           "se": 14,
           "to": 14,
+          "ac": 14,
           "ro": 14,
-          "rr": 14,
-          "ac": 14
+          "rr": 14
         }
       ],
       [
@@ -1290,22 +1159,6 @@
     ]
   ],
   [
-    "change",
-    "variables.muni_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.muni_name.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.muni_name",
     [
@@ -1336,11 +1189,11 @@
       [
         "fewestValues",
         [
-          "Nova Lim",
-          "Ananinde",
-          "Ferraz d",
-          "Pirapora",
-          "Contagem"
+          "Cama\u00c1ari",
+          "Embu-Gua",
+          "Jaboat\u0084o",
+          "Itaquaqu",
+          "Pirapora"
         ]
       ],
       [
@@ -1370,139 +1223,139 @@
           "Rio de J": 70,
           "Salvador": 35,
           "S\u0084o Jos\u00c8": 35,
+          "Bras\u00cclia": 28,
           "Belo Hor": 28,
           "Concei\u00c1\u0084": 28,
-          "Bras\u00cclia": 28,
           "Fortalez": 28,
-          "Recife": 21,
-          "Santo An": 21,
-          "Bel\u00c8m": 21,
           "S\u0084o Jo\u0084o": 21,
-          "Joinvill": 14,
-          "Malhada": 14,
-          "Sant\u00a5ana": 14,
-          "Princesa": 14,
-          "Jandaia": 14,
-          "Itapuran": 14,
-          "Axix\u00b7 do": 14,
-          "Formosa": 14,
-          "Goi\u0082nia": 14,
-          "Assar\u00c8": 14,
-          "Brusque": 14,
-          "Vila Vel": 14,
-          "Muniz Fr": 14,
+          "Bel\u00c8m": 21,
+          "Santo An": 21,
+          "Recife": 21,
           "Macei\u00db": 14,
-          "Coelho N": 14,
-          "Aracaju": 14,
-          "Colniza": 14,
-          "Amambai": 14,
-          "Salto": 14,
-          "Cuiab\u00b7": 14,
-          "Xambr\u00cd": 14,
-          "S\u0084o Domi": 14,
-          "Campina": 14,
-          "Len\u00c1\u00dbis": 14,
-          "Guaratin": 14,
-          "Praia Gr": 14,
-          "Carangol": 14,
-          "Jo\u0084o Pes": 14,
-          "Campo Be": 14,
-          "Campo Gr": 14,
-          "Marau": 14,
-          "Birigui": 14,
-          "Ruy Barb": 14,
-          "Camet\u00b7": 14,
-          "Laguna": 14,
-          "Campo Al": 14,
-          "Cabo Fri": 14,
-          "Itapetin": 14,
-          "Juruti": 14,
-          "Uberl\u0082nd": 14,
-          "Frederic": 14,
-          "Feliz": 14,
-          "Bragan\u00c1a": 14,
-          "Barra de": 14,
-          "Manaus": 14,
-          "Jabotica": 14,
-          "Sumar\u00c8": 14,
-          "Londrina": 14,
-          "Montauri": 14,
-          "Rorain\u00dbp": 14,
-          "S\u0084o Lu\u00ccs": 14,
-          "Ol\u00ccmpia": 14,
-          "Teresina": 14,
-          "Rio Bran": 14,
-          "Carir\u00c8": 14,
-          "S\u0084o Gon\u00c1": 14,
-          "Matias B": 14,
-          "Jacupira": 14,
-          "It\u00b7polis": 14,
-          "Ariqueme": 14,
-          "Iturama": 14,
-          "Jata\u00cc": 14,
-          "Ortiguei": 14,
-          "Guarulho": 14,
-          "Itinga": 14,
-          "\u00a1guas Li": 14,
-          "Parnamir": 14,
-          "Santa Ri": 14,
-          "Vit\u00dbria": 14,
-          "Limeira": 14,
-          "Batalha": 14,
-          "Curitiba": 14,
-          "Presiden": 14,
-          "Itapipoc": 14,
-          "Natal": 14,
-          "S\u0084o Lour": 14,
-          "Ros\u00b7rio": 14,
-          "Paracatu": 14,
-          "Una": 14,
-          "Po\u00c1o Fun": 14,
-          "Atalaia": 14,
-          "Porto Al": 14,
-          "Mariana": 14,
-          "Hidrol\u0082n": 14,
-          "Vinhedo": 14,
-          "Iranduba": 14,
           "S\u0084o Fid\u00c8": 14,
-          "Volta Redondo": 14,
-          "Caruaru": 14,
+          "Vit\u00dbria": 14,
           "Serrinha": 14,
+          "Frederic": 14,
+          "Coelho N": 14,
+          "Montauri": 14,
+          "Vinhedo": 14,
+          "Santa Ri": 14,
+          "Londrina": 14,
+          "Sumar\u00c8": 14,
+          "Brusque": 14,
+          "Natal": 14,
+          "Cuiab\u00b7": 14,
+          "Goi\u0082nia": 14,
+          "Rorain\u00dbp": 14,
+          "Colniza": 14,
+          "Princesa": 14,
+          "Campo Be": 14,
+          "Manaus": 14,
+          "Barra de": 14,
+          "Iranduba": 14,
+          "Campo Al": 14,
+          "Matias B": 14,
+          "Uberl\u0082nd": 14,
+          "Mariana": 14,
+          "Cabo Fri": 14,
+          "Paracatu": 14,
+          "Itapuran": 14,
           "Santa Ro": 14,
+          "S\u0084o Domi": 14,
+          "Volta Redondo": 14,
+          "Marau": 14,
+          "Vila Vel": 14,
+          "Carangol": 14,
+          "Itinga": 14,
+          "Jo\u0084o Pes": 14,
+          "Caruaru": 14,
+          "Juruti": 14,
+          "Ruy Barb": 14,
+          "Limeira": 14,
+          "Feliz": 14,
+          "Guarulho": 14,
+          "Jacupira": 14,
+          "S\u0084o Gon\u00c1": 14,
           "Governad": 14,
+          "Axix\u00b7 do": 14,
+          "Bragan\u00c1a": 14,
+          "Guaratin": 14,
+          "Po\u00c1o Fun": 14,
+          "Curitiba": 14,
+          "Ol\u00ccmpia": 14,
+          "Praia Gr": 14,
           "Mamangua": 14,
+          "Sant\u00a5ana": 14,
+          "Una": 14,
+          "Carir\u00c8": 14,
+          "S\u0084o Lu\u00ccs": 14,
+          "Ros\u00b7rio": 14,
+          "Jandaia": 14,
+          "Jata\u00cc": 14,
+          "Malhada": 14,
+          "Ariqueme": 14,
+          "Laguna": 14,
+          "Jabotica": 14,
+          "Porto Al": 14,
+          "Muniz Fr": 14,
+          "Itapipoc": 14,
+          "Birigui": 14,
+          "Itapetin": 14,
+          "Rio Bran": 14,
+          "Campo Gr": 14,
+          "Hidrol\u0082n": 14,
           "Itapira": 14,
-          "Canoas": 7,
-          "Santa Lu": 7,
-          "Nova Igu": 7,
-          "Mau\u00b7": 7,
-          "Itaquaqu": 7,
-          "Betim": 7,
-          "Camaragi": 7,
-          "Campo La": 7,
-          "Ferraz d": 7,
-          "Viam\u0084o": 7,
+          "It\u00b7polis": 14,
+          "Parnamir": 14,
+          "Atalaia": 14,
+          "S\u0084o Lour": 14,
+          "Aracaju": 14,
+          "Camet\u00b7": 14,
+          "Campina": 14,
+          "Salto": 14,
+          "Teresina": 14,
+          "Ortiguei": 14,
+          "Amambai": 14,
+          "Joinvill": 14,
+          "Formosa": 14,
+          "Len\u00c1\u00dbis": 14,
+          "Xambr\u00cd": 14,
+          "Assar\u00c8": 14,
+          "\u00a1guas Li": 14,
+          "Batalha": 14,
+          "Presiden": 14,
+          "Iturama": 14,
           "Ananinde": 7,
+          "Contagem": 7,
+          "S\u0084o Bern": 7,
+          "Camaragi": 7,
+          "Tabo\u0084o d": 7,
+          "Viam\u0084o": 7,
+          "Campo La": 7,
+          "Caucaia": 7,
+          "Nova Igu": 7,
+          "Olinda": 7,
+          "Ferraz d": 7,
+          "Santa Lu": 7,
           "Embu-Gua": 7,
-          "Barueri": 7,
-          "Osasco": 7,
-          "Niter\u00dbi": 7,
-          "Aquiraz": 7,
           "Nova Lim": 7,
           "Duque de": 7,
+          "Canoas": 7,
+          "Barueri": 7,
+          "Itaquaqu": 7,
+          "Sapucaia": 7,
+          "Niter\u00dbi": 7,
+          "Tangu\u00b7": 7,
+          "Aquiraz": 7,
+          "Mau\u00b7": 7,
+          "Osasco": 7,
+          "Betim": 7,
+          "Pirapora": 7,
           "Belford": 7,
           "Jaboat\u0084o": 7,
-          "Olinda": 7,
-          "Sapucaia": 7,
-          "Eldorado": 7,
-          "Tangu\u00b7": 7,
-          "Cama\u00c1ari": 7,
           "S\u0084o Caet": 7,
-          "Tabo\u0084o d": 7,
-          "Contagem": 7,
-          "Pirapora": 7,
-          "S\u0084o Bern": 7,
-          "Caucaia": 7
+          "Eldorado": 7,
+          "Cama\u00c1ari": 7
         }
       ],
       [
@@ -1810,22 +1663,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cond.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cond.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cond",
     [
@@ -2071,22 +1908,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.voteintent.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.voteintent.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2341,22 +2162,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.feelingtherm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.feelingtherm.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2636,22 +2441,6 @@
     ]
   ],
   [
-    "change",
-    "variables.vinheta.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.vinheta.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.vinheta",
     [
@@ -2928,22 +2717,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cred_vs_pure.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_pure.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cred_vs_pure",
     [
@@ -3183,22 +2956,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_clean.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_clean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3444,22 +3201,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cred_vs_nosource.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_nosource.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cred_vs_nosource",
     [
@@ -3700,22 +3441,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_less.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_less.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3963,22 +3688,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cred_vs_control.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cred_vs_control.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cred_vs_control",
     [
@@ -4219,22 +3928,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_pure.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_pure.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4480,22 +4173,6 @@
     ]
   ],
   [
-    "change",
-    "variables.less_vs_clean.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_clean.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.less_vs_clean",
     [
@@ -4735,22 +4412,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_nosource.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_nosource.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4994,22 +4655,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_control.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.less_vs_control.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5257,22 +4902,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nosource_vs_pure.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nosource_vs_pure.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nosource_vs_pure",
     [
@@ -5514,22 +5143,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.nosource_vs_clean.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nosource_vs_clean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5777,22 +5390,6 @@
     ]
   ],
   [
-    "change",
-    "variables.clean_vs_pure.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.clean_vs_pure.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.clean_vs_pure",
     [
@@ -6036,22 +5633,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cred.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cred.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cred",
     [
@@ -6281,22 +5862,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.lesscred.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lesscred.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6532,22 +6097,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nosource.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nosource.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nosource",
     [
@@ -6777,22 +6326,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.clean.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.clean.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7028,22 +6561,6 @@
     ]
   ],
   [
-    "change",
-    "variables.purecontrol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.purecontrol.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.purecontrol",
     [
@@ -7273,22 +6790,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.specific.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.specific.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7534,22 +7035,6 @@
     ]
   ],
   [
-    "change",
-    "variables.highedu.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.highedu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.highedu",
     [
@@ -7789,22 +7274,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.education.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.education.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8065,22 +7534,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.inst.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.inst.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8374,22 +7827,6 @@
     ]
   ],
   [
-    "change",
-    "variables.highknow.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.highknow.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.highknow",
     [
@@ -8629,22 +8066,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.polknowledge.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.polknowledge.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8896,22 +8317,6 @@
     ]
   ],
   [
-    "change",
-    "variables.hightalk.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.hightalk.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.hightalk",
     [
@@ -9151,22 +8556,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.talkpol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.talkpol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9418,22 +8807,6 @@
     ]
   ],
   [
-    "change",
-    "variables.male.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.male.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.male",
     [
@@ -9673,22 +9046,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.agecat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.agecat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9955,22 +9312,6 @@
     [
       "16",
       16
-    ]
-  ],
-  [
-    "change",
-    "variables.idade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.idade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10613,22 +9954,6 @@
     ]
   ],
   [
-    "change",
-    "variables.socialclass.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.socialclass.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.socialclass",
     [
@@ -10874,22 +10199,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.classif.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.classif.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11171,22 +10480,6 @@
     ]
   ],
   [
-    "change",
-    "variables.income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.income.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.income",
     [
@@ -11438,22 +10731,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.rend2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rend2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11726,22 +11003,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.rend1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.rend1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12023,22 +11284,6 @@
     ]
   ],
   [
-    "change",
-    "variables.catholic.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.catholic.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.catholic",
     [
@@ -12278,22 +11523,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.reli.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.reli.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12874,22 +12103,6 @@
     ]
   ],
   [
-    "change",
-    "variables.news.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.news.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.news",
     [
@@ -13138,22 +12351,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ptid.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ptid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ptid",
     [
@@ -13393,22 +12590,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.psdbid.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.psdbid.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13654,22 +12835,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pmdbid.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pmdbid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pmdbid",
     [
@@ -13912,22 +13077,6 @@
     ]
   ],
   [
-    "change",
-    "variables.noid.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.noid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.noid",
     [
@@ -14138,22 +13287,6 @@
     ]
   ],
   [
-    "change",
-    "variables.partyid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.partyid",
     [
@@ -14184,10 +13317,10 @@
       [
         "fewestValues",
         [
-          "ptn",
-          "psdc",
-          "ptc",
           "pco",
+          "ptn",
+          "ptc",
+          "psdc",
           "pr"
         ]
       ],
@@ -14225,11 +13358,11 @@
           "psb": 19,
           "dem": 17,
           "Recusa": 17,
-          "PC do B": 14,
           "psol": 14,
+          "PC do B": 14,
           "psc": 10,
-          "pp": 8,
           "PT do B": 8,
+          "pp": 8,
           "pps": 7,
           "psl": 6,
           "pstu": 6,
@@ -14237,10 +13370,10 @@
           "prp": 2,
           "pcb": 2,
           "pr": 1,
-          "pco": 1,
-          "ptc": 1,
           "psdc": 1,
-          "ptn": 1
+          "ptc": 1,
+          "ptn": 1,
+          "pco": 1
         }
       ],
       [
@@ -14435,22 +13568,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.porte.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.porte.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14694,22 +13811,6 @@
     ]
   ],
   [
-    "change",
-    "variables.id_govparty.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.id_govparty.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.id_govparty",
     [
@@ -14777,12 +13878,12 @@
           "PTB": 77,
           "PRB": 49,
           "PR": 42,
-          "PTC": 28,
           "PPS": 28,
+          "PTC": 28,
           "PCdoB": 21,
-          "PTdoB": 14,
-          "PSC": 14,
           "PRP": 14,
+          "PSC": 14,
+          "PTdoB": 14,
           "PMN": 14,
           "PTN": 7
         }
@@ -14971,22 +14072,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.partymatch.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.partymatch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15232,22 +14317,6 @@
     ]
   ],
   [
-    "change",
-    "variables.diffparty.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.diffparty.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.diffparty",
     [
@@ -15487,22 +14556,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.copartisans_vs_partisans.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.copartisans_vs_partisans.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15748,22 +14801,6 @@
     ]
   ],
   [
-    "change",
-    "variables.copartisans_vs_nonpartisans.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.copartisans_vs_nonpartisans.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.copartisans_vs_nonpartisans",
     [
@@ -16006,22 +15043,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nonpartisans_vs_partisans.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.nonpartisans_vs_partisans.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nonpartisans_vs_partisans",
     [
@@ -16218,312 +15239,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:25:15",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "quest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "est_temp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "muni_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cond": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "voteintent": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "feelingtherm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vinheta": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cred_vs_pure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cred_vs_clean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cred_vs_nosource": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cred_vs_less": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cred_vs_control": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "less_vs_pure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "less_vs_clean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "less_vs_nosource": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "less_vs_control": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nosource_vs_pure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nosource_vs_clean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "clean_vs_pure": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cred": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lesscred": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nosource": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "clean": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "purecontrol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "specific": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highedu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "education": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "inst": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "highknow": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polknowledge": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "hightalk": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "talkpol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "male": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "agecat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "idade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "socialclass": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "classif": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rend2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rend1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "catholic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reli": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "news": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ptid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "psdbid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pmdbid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "noid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "porte": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "id_govparty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partymatch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "diffparty": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "copartisans_vs_partisans": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "copartisans_vs_nonpartisans": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nonpartisans_vs_partisans": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

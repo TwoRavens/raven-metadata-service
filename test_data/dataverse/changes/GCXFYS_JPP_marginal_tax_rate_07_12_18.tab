@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1127
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "GCXFYS_JPP_marginal_tax_rate_07_12_18.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 144985
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Year.median",
     [
@@ -126,22 +43,6 @@
     [
       "1986",
       1986
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -732,22 +633,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1352,28 +1237,12 @@
     [
       "AL",
       [
-        "NC",
-        "AR",
-        "MO",
-        "ID",
-        "OR"
+        "PA",
+        "ME",
+        "RI",
+        "AK",
+        "NV"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.scode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.scode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1407,11 +1276,11 @@
       [
         "fewestValues",
         [
-          "NC",
-          "AR",
-          "MO",
-          "ID",
-          "OR"
+          "PA",
+          "ME",
+          "RI",
+          "AK",
+          "NV"
         ]
       ],
       [
@@ -1437,55 +1306,55 @@
       [
         "plotValues",
         {
-          "AZ": 23,
-          "WY": 23,
-          "FL": 23,
-          "CT": 23,
-          "MS": 23,
-          "PA": 23,
-          "MT": 23,
-          "ME": 23,
-          "NV": 23,
-          "NJ": 23,
-          "ND": 23,
-          "NY": 23,
-          "NM": 23,
-          "KY": 23,
-          "TN": 23,
-          "OK": 23,
-          "MN": 23,
-          "RI": 23,
-          "VT": 23,
-          "WI": 23,
-          "WV": 23,
-          "NH": 23,
-          "IL": 23,
-          "UT": 23,
-          "IN": 23,
-          "WA": 23,
-          "IA": 23,
-          "DE": 23,
-          "TX": 23,
-          "AK": 23,
-          "SC": 23,
           "OH": 23,
-          "SD": 23,
-          "GA": 23,
-          "HI": 23,
-          "MA": 23,
-          "MD": 23,
-          "LA": 23,
-          "KS": 23,
-          "MI": 23,
           "CO": 23,
-          "VA": 23,
-          "CA": 23,
+          "GA": 23,
           "AL": 23,
-          "OR": 23,
-          "ID": 23,
+          "NM": 23,
+          "MI": 23,
+          "SD": 23,
+          "NH": 23,
           "MO": 23,
+          "IL": 23,
+          "ND": 23,
+          "OR": 23,
+          "DE": 23,
+          "VT": 23,
+          "LA": 23,
+          "UT": 23,
+          "MS": 23,
+          "CT": 23,
+          "NJ": 23,
+          "WV": 23,
+          "MA": 23,
+          "IN": 23,
+          "WI": 23,
+          "HI": 23,
+          "WA": 23,
+          "MD": 23,
+          "CA": 23,
+          "MT": 23,
+          "ID": 23,
+          "NC": 23,
+          "VA": 23,
+          "KS": 23,
+          "IA": 23,
+          "SC": 23,
+          "NY": 23,
+          "KY": 23,
+          "MN": 23,
+          "FL": 23,
+          "TX": 23,
           "AR": 23,
-          "NC": 23
+          "WY": 23,
+          "TN": 23,
+          "AZ": 23,
+          "OK": 23,
+          "NV": 23,
+          "AK": 23,
+          "RI": 23,
+          "ME": 23,
+          "PA": 23
         }
       ],
       [
@@ -1714,26 +1583,10 @@
   ],
   [
     "change",
-    "variables.MTR_pincome_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MTR_pincome_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MTR_pincome_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2386,26 +2239,10 @@
   ],
   [
     "change",
-    "variables.MTR_sales_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MTR_sales_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MTR_sales_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3058,26 +2895,10 @@
   ],
   [
     "change",
-    "variables.MTR_cincome_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MTR_cincome_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MTR_cincome_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3730,26 +3551,10 @@
   ],
   [
     "change",
-    "variables.MTR_property_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MTR_property_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MTR_property_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4406,26 +4211,10 @@
   ],
   [
     "change",
-    "variables.MTR_other_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MTR_other_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MTR_other_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5078,26 +4867,10 @@
   ],
   [
     "change",
-    "variables.MTR_total_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.MTR_total_s.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.MTR_total_s.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5695,77 +5468,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:20",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "scode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MTR_pincome_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MTR_sales_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MTR_cincome_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MTR_property_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MTR_other_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MTR_total_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1592
-      ],
-      [
-        "variableCount",
-        21
-      ],
-      [
-        "dataSource",
-        {
-          "name": "CV40VF_Lupu_Informative_Power_Replication_CEDAW_ROBUSTNESS_TEST.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 129201
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.year.median",
     [
@@ -122,22 +39,6 @@
     [
       "1981",
       1981
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -699,22 +600,6 @@
     ]
   ],
   [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.country",
     [
@@ -745,11 +630,11 @@
       [
         "fewestValues",
         [
-          "Cape Verde",
-          "Tunisia",
-          "Brazil",
           "Dominica",
-          "Yemen"
+          "Cape Verde",
+          "Brazil",
+          "Belarus",
+          "Tunisia"
         ]
       ],
       [
@@ -776,9 +661,9 @@
         "plotValues",
         {
           "Bhutan": 27,
+          "Democratic Republic of Congo": 24,
           "South Korea": 24,
           "Iran (Islamic Republic of)": 24,
-          "Democratic Republic of Congo": 24,
           "United States of America": 23,
           "Solomon Islands": 22,
           "Somalia": 21,
@@ -787,177 +672,177 @@
           "Kuwait": 20,
           "Switzerland": 19,
           "Equatorial Guinea": 18,
-          "Saudi Arabia": 17,
           "North Korea": 17,
-          "Myanmar": 16,
+          "Saudi Arabia": 17,
+          "Iraq": 16,
           "Israel": 16,
           "Niger": 16,
           "Oman": 16,
-          "Iraq": 16,
-          "Comoros": 16,
           "Lebanon": 16,
+          "Comoros": 16,
           "Swaziland": 16,
-          "Qatar": 15,
-          "Viet Nam": 15,
-          "Gabon": 15,
-          "Libyan Arab Jamahiriya": 15,
-          "Netherlands": 15,
-          "Bahrain": 15,
-          "Afghanistan": 15,
-          "Bahamas": 15,
-          "Fiji": 15,
-          "Angola": 15,
+          "Myanmar": 16,
           "Botswana": 15,
+          "Fiji": 15,
+          "Qatar": 15,
+          "Gabon": 15,
+          "Netherlands": 15,
+          "Afghanistan": 15,
+          "Bahrain": 15,
+          "Bahamas": 15,
+          "Viet Nam": 15,
+          "Libyan Arab Jamahiriya": 15,
+          "Angola": 15,
           "Singapore": 14,
-          "Egypt": 14,
           "Papua New Guinea": 14,
           "Ethiopia": 14,
+          "Egypt": 14,
           "Mauritania": 13,
-          "Grenada": 13,
           "Pakistan": 13,
           "Guinea-Bissau": 13,
+          "Grenada": 13,
           "Malaysia": 13,
-          "Colombia": 12,
-          "Jordan": 12,
-          "Congo": 12,
           "Guyana": 12,
+          "C\u00f4te d'Ivoire": 12,
+          "Uganda": 12,
+          "Algeria": 12,
+          "Jordan": 12,
           "Rwanda": 12,
           "South Africa": 12,
-          "Uganda": 12,
-          "Belize": 12,
-          "C\u00f4te d'Ivoire": 12,
-          "Algeria": 12,
           "Gambia": 12,
-          "Iceland": 11,
-          "Eritrea": 11,
-          "Cuba": 11,
-          "Lesotho": 11,
-          "Albania": 11,
-          "Djibouti": 11,
-          "India": 11,
+          "Congo": 12,
+          "Colombia": 12,
+          "Belize": 12,
           "Malta": 11,
+          "India": 11,
+          "Albania": 11,
+          "Iceland": 11,
+          "Lesotho": 11,
+          "Eritrea": 11,
+          "Djibouti": 11,
           "Sierra Leone": 11,
-          "Benin": 10,
-          "Liberia": 10,
-          "Indonesia": 10,
-          "Bangladesh": 10,
+          "Cuba": 11,
           "Nepal": 10,
-          "Cambodia": 9,
-          "Costa Rica": 9,
+          "Bangladesh": 10,
+          "Liberia": 10,
+          "Benin": 10,
+          "Indonesia": 10,
           "Paraguay": 9,
-          "Sri Lanka": 9,
-          "New Zealand": 9,
+          "Cambodia": 9,
           "Luxembourg": 9,
-          "China": 9,
-          "Bolivia": 9,
-          "Cameroon": 9,
+          "New Zealand": 9,
           "Morocco": 9,
+          "Sri Lanka": 9,
           "Mongolia": 9,
-          "Japan": 8,
-          "Guinea": 8,
+          "Bolivia": 9,
+          "Costa Rica": 9,
+          "China": 9,
+          "Cameroon": 9,
           "Panama": 8,
-          "Chile": 8,
-          "United Arab Emirates": 8,
-          "Trinidad and Tobago": 8,
-          "Burundi": 8,
-          "Honduras": 8,
           "Togo": 8,
+          "Honduras": 8,
+          "Burundi": 8,
+          "Guinea": 8,
+          "United Arab Emirates": 8,
+          "Chile": 8,
+          "Trinidad and Tobago": 8,
           "Turkey": 8,
-          "United Republic of Tanzania": 7,
-          "Philippines": 7,
+          "Japan": 8,
           "Zambia": 7,
-          "Mali": 7,
-          "Malawi": 7,
-          "Nigeria": 7,
-          "Mauritius": 7,
-          "Suriname": 7,
-          "Guatemala": 7,
-          "Chad": 7,
+          "Russian Federation": 7,
+          "Ireland": 7,
           "Uzbekistan": 7,
           "Nicaragua": 7,
-          "Ireland": 7,
-          "Lao People's Democratic Republic": 7,
+          "Malawi": 7,
+          "Guatemala": 7,
+          "Mali": 7,
+          "United Republic of Tanzania": 7,
+          "Nigeria": 7,
+          "Suriname": 7,
           "Mozambique": 7,
-          "Russian Federation": 7,
-          "United Kingdom of Great Britain and Northern Ireland": 6,
-          "Nauru": 6,
-          "Jamaica": 6,
-          "Monaco": 6,
-          "Bulgaria": 6,
-          "Canada": 6,
-          "Tonga": 6,
-          "Vanuatu": 6,
-          "Uruguay": 6,
-          "Zimbabwe": 6,
+          "Mauritius": 7,
+          "Lao People's Democratic Republic": 7,
+          "Chad": 7,
+          "Philippines": 7,
           "Poland": 6,
+          "United Kingdom of Great Britain and Northern Ireland": 6,
           "Finland": 6,
+          "Monaco": 6,
+          "Jamaica": 6,
+          "Vanuatu": 6,
           "San Marino": 6,
           "Romania": 6,
-          "Marshall Islands": 5,
-          "Peru": 5,
-          "Portugal": 5,
-          "Madagascar": 5,
-          "Kazakhstan": 5,
+          "Tonga": 6,
+          "Canada": 6,
+          "Zimbabwe": 6,
+          "Uruguay": 6,
+          "Nauru": 6,
+          "Bulgaria": 6,
+          "Namibia": 5,
           "Haiti": 5,
+          "Peru": 5,
+          "Kazakhstan": 5,
+          "Tuvalu": 5,
+          "Croatia": 5,
           "Saint Lucia": 5,
-          "Ghana": 5,
+          "Marshall Islands": 5,
+          "Portugal": 5,
           "El Salvador": 5,
           "Brunei Darussalam": 5,
-          "Venezuela (Bolivarian Republic of)": 5,
-          "Tuvalu": 5,
-          "Namibia": 5,
+          "Madagascar": 5,
           "Dominican Republic": 5,
           "Mexico": 5,
-          "Croatia": 5,
+          "Ghana": 5,
           "Turkmenistan": 5,
+          "Venezuela (Bolivarian Republic of)": 5,
+          "Tajikistan": 4,
+          "Andorra": 4,
+          "Sweden": 4,
+          "Argentina": 4,
+          "Belgium": 4,
+          "Micronesia (Federated States of)": 4,
+          "Kiribati": 4,
+          "Saint Kitts and Nevis": 4,
+          "Azerbaijan": 4,
           "Norway": 4,
           "Kenya": 4,
-          "Central African Republic": 4,
-          "Andorra": 4,
-          "Hungary": 4,
-          "Senegal": 4,
-          "Saint Kitts and Nevis": 4,
-          "Denmark": 4,
-          "Palau": 4,
           "Ecuador": 4,
-          "Belgium": 4,
-          "Kiribati": 4,
-          "Tajikistan": 4,
-          "Argentina": 4,
-          "Kyrgyzstan": 4,
+          "Senegal": 4,
+          "Denmark": 4,
+          "Central African Republic": 4,
+          "Hungary": 4,
           "Estonia": 4,
-          "Micronesia (Federated States of)": 4,
-          "Sweden": 4,
-          "Azerbaijan": 4,
-          "Italy": 3,
-          "Australia": 3,
-          "France": 3,
+          "Palau": 4,
+          "Kyrgyzstan": 4,
           "Greece": 3,
+          "Australia": 3,
+          "Cyprus": 3,
           "Seychelles": 3,
           "Bosnia and Herzegovina": 3,
-          "Burkina Faso": 3,
-          "Thailand": 3,
           "Antigua and Barbuda": 3,
-          "Cyprus": 3,
-          "Barbados": 2,
-          "Slovenia": 2,
-          "Moldova": 2,
-          "The Former Yugoslav Republic of Macedonia": 2,
-          "Lithuania": 2,
+          "Burkina Faso": 3,
+          "France": 3,
+          "Thailand": 3,
+          "Italy": 3,
+          "Sao Tome and Principe": 2,
+          "Austria": 2,
           "Armenia": 2,
+          "Moldova": 2,
+          "Timor-Leste": 2,
+          "Barbados": 2,
+          "Samoa": 2,
+          "Spain": 2,
+          "Lithuania": 2,
           "Saint Vincent and the Grenadines": 2,
           "Latvia": 2,
-          "Austria": 2,
-          "Timor-Leste": 2,
-          "Sao Tome and Principe": 2,
-          "Samoa": 2,
+          "The Former Yugoslav Republic of Macedonia": 2,
+          "Slovenia": 2,
           "Georgia": 2,
-          "Spain": 2,
           "Brazil": 1,
-          "Cape Verde": 1,
           "Yemen": 1,
-          "Belarus": 1,
+          "Cape Verde": 1,
           "Tunisia": 1,
+          "Belarus": 1,
           "Dominica": 1
         }
       ],
@@ -1310,22 +1195,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.statenum.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.statenum.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1970,22 +1839,6 @@
     ]
   ],
   [
-    "change",
-    "variables.cedawrat.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.cedawrat.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.cedawrat",
     [
@@ -2226,22 +2079,6 @@
     [
       "-10",
       -10
-    ]
-  ],
-  [
-    "change",
-    "variables.polity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.polity.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2820,22 +2657,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.durable.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.durable.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3479,22 +3300,6 @@
     ]
   ],
   [
-    "change",
-    "variables.civilwar.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.civilwar.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.civilwar",
     [
@@ -3734,22 +3539,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.intlwar.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.intlwar.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4008,26 +3797,10 @@
   ],
   [
     "change",
-    "variables.gdpln.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.gdpln.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.gdpln.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4683,26 +4456,10 @@
   ],
   [
     "change",
-    "variables.popln.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.popln.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.popln.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5355,26 +5112,10 @@
   ],
   [
     "change",
-    "variables.ingo_uia.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ingo_uia.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ingo_uia.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6027,26 +5768,10 @@
   ],
   [
     "change",
-    "variables.injud.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.injud.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.injud.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6690,22 +6415,6 @@
     ]
   ],
   [
-    "change",
-    "variables.wecon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wecon.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.wecon",
     [
@@ -6957,22 +6666,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.wopol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wopol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7230,22 +6923,6 @@
     ]
   ],
   [
-    "change",
-    "variables.wosoc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.wosoc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.wosoc",
     [
@@ -7497,22 +7174,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwopol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwopol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7770,22 +7431,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lagwecon.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwecon.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lagwecon",
     [
@@ -8037,22 +7682,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwosoc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwosoc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8310,22 +7939,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lagwopol2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwopol2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lagwopol2",
     [
@@ -8577,22 +8190,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwecon2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwecon2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8850,22 +8447,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lagwosoc2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.lagwosoc2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lagwosoc2",
     [
@@ -9074,137 +8655,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:11:27",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "statenum": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cedawrat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "durable": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "civilwar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "intlwar": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gdpln": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "popln": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingo_uia": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "injud": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wecon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wopol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "wosoc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagwopol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagwecon": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagwosoc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagwopol2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagwecon2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lagwosoc2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

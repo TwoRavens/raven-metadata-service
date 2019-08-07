@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        105
-      ],
-      [
-        "variableCount",
-        65
-      ],
-      [
-        "dataSource",
-        {
-          "name": "TJ5XMF_replication_data_final_AEST.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 49852
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country_name.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Finland"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country_name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -171,10 +72,10 @@
           "Netherlands": 12,
           "Germany": 10,
           "France": 9,
-          "Ireland": 8,
-          "Greece": 8,
-          "Austria": 8,
           "Spain": 8,
+          "Greece": 8,
+          "Ireland": 8,
+          "Austria": 8,
           "Britain": 6,
           "Italy": 5,
           "Portugal": 5
@@ -357,22 +258,6 @@
     [
       "13",
       13.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -677,22 +562,6 @@
     [
       "14041",
       14041
-    ]
-  ],
-  [
-    "change",
-    "variables.index.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.index.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1281,22 +1150,6 @@
     ]
   ],
   [
-    "change",
-    "variables.election_id.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.election_id.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.election_id",
     [
@@ -1539,22 +1392,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1765,22 +1602,6 @@
     ]
   ],
   [
-    "change",
-    "variables.partyname.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyname.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.partyname",
     [
@@ -1811,11 +1632,11 @@
       [
         "fewestValues",
         [
-          "AN/MSI",
+          "EE",
+          "PSD",
           "RC",
-          "UDF",
-          "EXTRA-GAUCHE",
-          "PSD"
+          "FORZA ITALIA",
+          "CDS-PP"
         ]
       ],
       [
@@ -1842,58 +1663,58 @@
         "plotValues",
         {
           "GREENS": 6,
-          "PS": 4,
           "SPD": 4,
+          "PS": 4,
           "CDU": 3,
-          "DF": 2,
-          "PSOE": 2,
-          "Labour": 2,
-          "LEGA NORD": 2,
-          "SPO": 2,
-          "KF": 2,
-          "KD": 2,
-          "OVP": 2,
+          "FDP": 2,
           "Conserv": 2,
-          "VIHR": 2,
-          "LABOUR": 2,
-          "VVD": 2,
-          "KESK": 2,
-          "SF": 2,
-          "GRUNEN": 2,
-          "IU": 2,
-          "FG": 2,
-          "SFP": 2,
+          "KKE": 2,
+          "OVP": 2,
           "CDA": 2,
+          "SD": 2,
+          "SF": 2,
+          "FF": 2,
           "ND": 2,
           "D66": 2,
-          "FPO": 2,
-          "RV": 2,
-          "Liberals": 2,
-          "PVDA": 2,
           "VAS": 2,
           "SP": 2,
-          "FF": 2,
-          "PDS": 2,
-          "V": 2,
-          "KOK": 2,
-          "SD": 2,
-          "KKE": 2,
-          "LEFT ALL": 2,
-          "CIU": 2,
-          "FN": 2,
-          "PASOK": 2,
+          "SFP": 2,
+          "FG": 2,
+          "FPO": 2,
+          "PVDA": 2,
           "PP": 2,
-          "FDP": 2,
+          "KF": 2,
+          "VVD": 2,
+          "LEGA NORD": 2,
+          "IU": 2,
+          "KESK": 2,
+          "KD": 2,
+          "PSOE": 2,
+          "Liberals": 2,
+          "RV": 2,
+          "LEFT ALL": 2,
+          "LABOUR": 2,
+          "PASOK": 2,
+          "SPO": 2,
+          "V": 2,
+          "Labour": 2,
+          "KOK": 2,
+          "GRUNEN": 2,
+          "PDS": 2,
+          "CIU": 2,
+          "DF": 2,
+          "FN": 2,
+          "VIHR": 2,
+          "FORZA ITALIA": 1,
+          "RC": 1,
+          "AN/MSI": 1,
           "LES VERTS": 1,
           "CDS-PP": 1,
-          "PC": 1,
           "EE": 1,
-          "FORZA ITALIA": 1,
-          "PSD": 1,
-          "EXTRA-GAUCHE": 1,
           "UDF": 1,
-          "RC": 1,
-          "AN/MSI": 1
+          "PC": 1,
+          "EXTRA-GAUCHE": 1,
+          "PSD": 1
         }
       ],
       [
@@ -2118,22 +1939,6 @@
     [
       "13230",
       13230
-    ]
-  ],
-  [
-    "change",
-    "variables.cmpcode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cmpcode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2790,26 +2595,10 @@
   ],
   [
     "change",
-    "variables.self_sup.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.self_sup.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.self_sup.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3462,26 +3251,10 @@
   ],
   [
     "change",
-    "variables.self_supp_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.self_supp_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.self_supp_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4138,26 +3911,10 @@
   ],
   [
     "change",
-    "variables.self_supp_t2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.self_supp_t2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.self_supp_t2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4814,26 +4571,10 @@
   ],
   [
     "change",
-    "variables.self_supp_ch_t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.self_supp_ch_t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.self_supp_ch_t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5490,26 +5231,10 @@
   ],
   [
     "change",
-    "variables.self_supp_ch_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.self_supp_ch_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.self_supp_ch_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6166,26 +5891,10 @@
   ],
   [
     "change",
-    "variables.party_all.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_all.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_all.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6839,26 +6548,10 @@
   ],
   [
     "change",
-    "variables.party_all_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_all_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_all_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7515,26 +7208,10 @@
   ],
   [
     "change",
-    "variables.party_all_t2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_all_t2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_all_t2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8188,26 +7865,10 @@
   ],
   [
     "change",
-    "variables.party_ch_all_voters_t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ch_all_voters_t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ch_all_voters_t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8864,26 +8525,10 @@
   ],
   [
     "change",
-    "variables.party_ch_all_voters_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ch_all_voters_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ch_all_voters_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9540,26 +9185,10 @@
   ],
   [
     "change",
-    "variables.abs_party_all_ch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_party_all_ch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_party_all_ch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10204,22 +9833,6 @@
     ]
   ],
   [
-    "change",
-    "variables.n_pid.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.n_pid.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.n_pid",
     [
@@ -10860,22 +10473,6 @@
     ]
   ],
   [
-    "change",
-    "variables.toofew.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.toofew.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.toofew",
     [
@@ -11120,26 +10717,10 @@
   ],
   [
     "change",
-    "variables.party_sup.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_sup.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_sup.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11793,26 +11374,10 @@
   ],
   [
     "change",
-    "variables.party_supp_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_supp_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_supp_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12469,26 +12034,10 @@
   ],
   [
     "change",
-    "variables.party_ch_supporters_t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ch_supporters_t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ch_supporters_t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13145,26 +12694,10 @@
   ],
   [
     "change",
-    "variables.party_ch_supporters_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ch_supporters_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ch_supporters_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13821,26 +13354,10 @@
   ],
   [
     "change",
-    "variables.party_ind.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ind.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ind.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14497,26 +14014,10 @@
   ],
   [
     "change",
-    "variables.party_ind_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ind_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ind_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15173,26 +14674,10 @@
   ],
   [
     "change",
-    "variables.party_ind_ch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ind_ch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ind_ch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15849,26 +15334,10 @@
   ],
   [
     "change",
-    "variables.party_ind_ch1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_ind_ch1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_ind_ch1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16525,26 +15994,10 @@
   ],
   [
     "change",
-    "variables.party_oth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_oth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_oth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17201,26 +16654,10 @@
   ],
   [
     "change",
-    "variables.party_oth_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_oth_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_oth_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17877,26 +17314,10 @@
   ],
   [
     "change",
-    "variables.party_others_ch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_others_ch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_others_ch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18553,26 +17974,10 @@
   ],
   [
     "change",
-    "variables.party_others_ch1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.party_others_ch1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.party_others_ch1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19229,26 +18634,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19901,26 +19290,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20574,26 +19947,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_t2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_t2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_t2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21246,26 +20603,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_ch1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_ch1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_ch1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21919,26 +21260,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_ch2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_ch2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_ch2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22595,26 +21920,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23267,26 +22576,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_t1_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_t1_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_t1_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23940,26 +23233,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_t2_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_t2_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_t2_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24612,26 +23889,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_ch1_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_ch1_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_ch1_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25285,26 +24546,10 @@
   ],
   [
     "change",
-    "variables.interpolated_expert_ch2_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interpolated_expert_ch2_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interpolated_expert_ch2_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25958,26 +25203,10 @@
   ],
   [
     "change",
-    "variables.abs_interp_expert_ch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_interp_expert_ch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_interp_expert_ch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26630,26 +25859,10 @@
   ],
   [
     "change",
-    "variables.emp_posit_t.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_posit_t.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_posit_t.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27302,26 +26515,10 @@
   ],
   [
     "change",
-    "variables.emp_posit_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_posit_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_posit_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27975,26 +27172,10 @@
   ],
   [
     "change",
-    "variables.emp_posit_t2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_posit_t2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_posit_t2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -28651,26 +27832,10 @@
   ],
   [
     "change",
-    "variables.emp_ch1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_ch1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_ch1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29327,26 +28492,10 @@
   ],
   [
     "change",
-    "variables.emp_ch2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_ch2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_ch2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -29999,26 +29148,10 @@
   ],
   [
     "change",
-    "variables.emp_posit_t_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_posit_t_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_posit_t_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -30671,26 +29804,10 @@
   ],
   [
     "change",
-    "variables.emp_posit_t1_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_posit_t1_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_posit_t1_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -31344,26 +30461,10 @@
   ],
   [
     "change",
-    "variables.emp_posit_t2_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_posit_t2_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_posit_t2_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32020,26 +31121,10 @@
   ],
   [
     "change",
-    "variables.emp_ch1_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_ch1_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_ch1_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -32696,26 +31781,10 @@
   ],
   [
     "change",
-    "variables.emp_ch2_10.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.emp_ch2_10.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.emp_ch2_10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -33372,26 +32441,10 @@
   ],
   [
     "change",
-    "variables.abs_epmch.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.abs_epmch.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_epmch.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34035,22 +33088,6 @@
     ]
   ],
   [
-    "change",
-    "variables.greens.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.greens.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.greens",
     [
@@ -34290,22 +33327,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ingovt.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ingovt.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -34560,26 +33581,10 @@
   ],
   [
     "change",
-    "variables.vote.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.vote.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.vote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -35223,22 +34228,6 @@
     ]
   ],
   [
-    "change",
-    "variables.anti_eu.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.anti_eu.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.anti_eu",
     [
@@ -35493,26 +34482,10 @@
   ],
   [
     "change",
-    "variables.extremism_expert.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.extremism_expert.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.extremism_expert.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36165,26 +35138,10 @@
   ],
   [
     "change",
-    "variables.extremism_cmp_lr.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.extremism_cmp_lr.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.extremism_cmp_lr.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -36837,26 +35794,10 @@
   ],
   [
     "change",
-    "variables.cmp_eu_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cmp_eu_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cmp_eu_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -37509,26 +36450,10 @@
   ],
   [
     "change",
-    "variables.cmp_eu_ratio_t1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cmp_eu_ratio_t1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cmp_eu_ratio_t1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38181,26 +37106,10 @@
   ],
   [
     "change",
-    "variables.cmp_eu_ratio_t2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cmp_eu_ratio_t2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cmp_eu_ratio_t2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -38853,26 +37762,10 @@
   ],
   [
     "change",
-    "variables.cmp_eu_ratio_ch1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cmp_eu_ratio_ch1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cmp_eu_ratio_ch1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -39525,26 +38418,10 @@
   ],
   [
     "change",
-    "variables.cmp_eu_ratio_ch2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.cmp_eu_ratio_ch2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.cmp_eu_ratio_ch2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -40142,357 +39019,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:09:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country_name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "index": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_id": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyname": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmpcode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "self_sup": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "self_supp_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "self_supp_t2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "self_supp_ch_t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "self_supp_ch_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_all": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_all_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_all_t2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ch_all_voters_t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ch_all_voters_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_party_all_ch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "n_pid": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "toofew": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_sup": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_supp_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ch_supporters_t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ch_supporters_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ind": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ind_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ind_ch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_ind_ch1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_oth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_oth_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_others_ch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "party_others_ch1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_t2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_ch1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_ch2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_t1_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_t2_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_ch1_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interpolated_expert_ch2_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_interp_expert_ch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_posit_t": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_posit_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_posit_t2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_ch1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_ch2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_posit_t_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_posit_t1_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_posit_t2_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_ch1_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "emp_ch2_10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_epmch": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "greens": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ingovt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "anti_eu": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "extremism_expert": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "extremism_cmp_lr": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmp_eu_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmp_eu_ratio_t1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmp_eu_ratio_t2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmp_eu_ratio_ch1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cmp_eu_ratio_ch2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

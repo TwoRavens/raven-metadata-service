@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        1347
-      ],
-      [
-        "variableCount",
-        37
-      ],
-      [
-        "dataSource",
-        {
-          "name": "XTJRQN_Exit Poll Replication Data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 174472
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.X.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.X.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.X.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -821,35 +722,11 @@
     [
       "variables",
       "Location.Latitude",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Location.Latitude",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Location.Latitude",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1149,35 +1026,11 @@
     [
       "variables",
       "Location.Longitude",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Location.Longitude",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Location.Longitude",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1441,22 +1294,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Tablet.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Tablet.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Tablet",
     [
@@ -1716,30 +1553,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Precinct.Number",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Precinct.Number",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2027,22 +1840,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Woman.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.Woman.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Woman",
     [
@@ -2302,30 +2099,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Clinton.opinion",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Clinton.opinion",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2615,30 +2388,6 @@
     ]
   ],
   [
-    "change",
-    [
-      "variables",
-      "Trump.opinion",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Trump.opinion",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     [
       "variables",
@@ -2905,22 +2654,6 @@
     ]
   ],
   [
-    "change",
-    "variables.DecreaseIllegalImm.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.DecreaseIllegalImm.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.DecreaseIllegalImm",
     [
@@ -3172,22 +2905,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.MenBetterPol.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.MenBetterPol.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3445,22 +3162,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ControlWife.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ControlWife.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ControlWife",
     [
@@ -3712,22 +3413,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.NoSpecialTreat.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NoSpecialTreat.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3991,22 +3676,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Regulation.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Regulation.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Regulation",
     [
@@ -4264,22 +3933,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4573,22 +4226,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Age.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Age.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Age",
     [
@@ -4840,22 +4477,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ReligAttend.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ReligAttend.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5125,22 +4746,6 @@
     ]
   ],
   [
-    "change",
-    "variables.BibLit.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.BibLit.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.BibLit",
     [
@@ -5354,22 +4959,6 @@
       [
         "BlackPre"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.precinct.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.precinct.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5604,22 +5193,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.voteclinton.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.voteclinton.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5865,22 +5438,6 @@
     ]
   ],
   [
-    "change",
-    "variables.votetrump.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.votetrump.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.votetrump",
     [
@@ -6120,22 +5677,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.vote.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.vote.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6381,22 +5922,6 @@
     ]
   ],
   [
-    "change",
-    "variables.white.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.white.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.white",
     [
@@ -6636,22 +6161,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.black.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.black.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6897,22 +6406,6 @@
     ]
   ],
   [
-    "change",
-    "variables.latino.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.latino.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.latino",
     [
@@ -7152,22 +6645,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.asian.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.asian.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7413,22 +6890,6 @@
     ]
   ],
   [
-    "change",
-    "variables.native.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.native.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.native",
     [
@@ -7668,22 +7129,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.other.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.other.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7929,22 +7374,6 @@
     ]
   ],
   [
-    "change",
-    "variables.mixed.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.mixed.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.mixed",
     [
@@ -8155,22 +7584,6 @@
     ]
   ],
   [
-    "change",
-    "variables.race.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.race.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.race",
     [
@@ -8372,22 +7785,6 @@
       [
         "Democrat"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.registration.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.registration.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8620,22 +8017,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.partyreg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.partyreg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8887,22 +8268,6 @@
     ]
   ],
   [
-    "change",
-    "variables.nativity.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.nativity.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.nativity",
     [
@@ -9151,22 +8516,6 @@
     ]
   ],
   [
-    "change",
-    "variables.lessgovt.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.lessgovt.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.lessgovt",
     [
@@ -9406,22 +8755,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ideology.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9685,22 +9018,6 @@
     ]
   ],
   [
-    "change",
-    "variables.trustmedia.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.trustmedia.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.trustmedia",
     [
@@ -9955,22 +9272,6 @@
     ]
   ],
   [
-    "change",
-    "variables.votefraud.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.votefraud.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.votefraud",
     [
@@ -10193,22 +9494,6 @@
     ]
   ],
   [
-    "change",
-    "variables.group.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.group.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.group",
     [
@@ -10405,217 +9690,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:14:37",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "X": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Location.Latitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Location.Longitude": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Tablet": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Precinct.Number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Woman": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Clinton.opinion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Trump.opinion": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "DecreaseIllegalImm": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "MenBetterPol": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ControlWife": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NoSpecialTreat": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Regulation": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Income": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Age": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ReligAttend": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "BibLit": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "precinct": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "voteclinton": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "votetrump": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "vote": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "white": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "black": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "latino": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "asian": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "native": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "other": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "mixed": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "race": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "registration": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "partyreg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nativity": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lessgovt": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "trustmedia": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "votefraud": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "group": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

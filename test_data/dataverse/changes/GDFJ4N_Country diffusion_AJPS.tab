@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        9
-      ],
-      [
-        "variableCount",
-        14
-      ],
-      [
-        "dataSource",
-        {
-          "name": "GDFJ4N_Country diffusion_AJPS.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 645
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.factor.mode",
     [
       "economic_noncoop",
       [
-        "nvintervention",
-        "graph2",
-        "graph",
         "political_nocoop",
-        "violence_state"
+        "violence_state",
+        "social_noncoop",
+        "graph2",
+        "nvintervention"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.factor.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.factor.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "nvintervention",
-          "graph2",
-          "graph",
           "political_nocoop",
-          "violence_state"
+          "violence_state",
+          "social_noncoop",
+          "graph2",
+          "nvintervention"
         ]
       ],
       [
@@ -173,15 +74,15 @@
       [
         "plotValues",
         {
-          "graph": 1,
-          "protest_demonstration": 1,
           "institutional": 1,
           "economic_noncoop": 1,
-          "violence_state": 1,
-          "political_nocoop": 1,
-          "social_noncoop": 1,
+          "graph": 1,
+          "protest_demonstration": 1,
+          "nvintervention": 1,
           "graph2": 1,
-          "nvintervention": 1
+          "social_noncoop": 1,
+          "violence_state": 1,
+          "political_nocoop": 1
         }
       ],
       [
@@ -374,26 +275,10 @@
   ],
   [
     "change",
-    "variables.violence.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.violence.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.violence.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -679,26 +564,10 @@
   ],
   [
     "change",
-    "variables.economic.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.economic.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.economic.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -972,26 +841,10 @@
   ],
   [
     "change",
-    "variables.protest.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.protest.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.protest.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1272,26 +1125,10 @@
   ],
   [
     "change",
-    "variables.social.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.social.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.social.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1581,26 +1418,10 @@
   ],
   [
     "change",
-    "variables.nvint.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.nvint.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.nvint.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1859,26 +1680,10 @@
   ],
   [
     "change",
-    "variables.political.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.political.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.political.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2151,26 +1956,10 @@
   ],
   [
     "change",
-    "variables.institutional.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.institutional.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.institutional.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2443,26 +2232,10 @@
   ],
   [
     "change",
-    "variables.xpos1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.xpos1.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2733,26 +2506,10 @@
   ],
   [
     "change",
-    "variables.xpos2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.xpos2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3010,26 +2767,10 @@
   ],
   [
     "change",
-    "variables.xpos3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.xpos3.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3296,26 +3037,10 @@
   ],
   [
     "change",
-    "variables.xpos4.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.xpos4.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3593,26 +3318,10 @@
   ],
   [
     "change",
-    "variables.xpos5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.xpos5.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3869,26 +3578,10 @@
   ],
   [
     "change",
-    "variables.xpos6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
     "variables.xpos6.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos6.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4089,102 +3782,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:28:24",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "factor": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "violence": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "economic": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "protest": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "social": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "nvint": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "political": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "institutional": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xpos1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xpos2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xpos3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xpos4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xpos5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "xpos6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

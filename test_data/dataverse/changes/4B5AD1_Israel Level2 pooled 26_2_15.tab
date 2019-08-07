@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        33
-      ],
-      [
-        "variableCount",
-        14
-      ],
-      [
-        "dataSource",
-        {
-          "name": "4B5AD1_Israel Level2 pooled 26_2_15.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1675
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.party.mode",
     [
       "Likud",
       [
-        "Likud",
         "Shas",
         "Meretz",
-        "Labour",
-        "Balad"
+        "Likud",
+        "Balad",
+        "Labour"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.party.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Raam",
-          "Shinuy",
           "Hadash-Taal",
-          "Ihud leumi",
-          "Habayit Hayehudi"
+          "Shinuy",
+          "Yisrael Beitenu",
+          "Raam",
+          " "
         ]
       ],
       [
@@ -173,25 +74,25 @@
       [
         "plotValues",
         {
+          "Labour": 3,
           "Balad": 3,
+          "Likud": 3,
           "Meretz": 3,
           "Shas": 3,
-          "Labour": 3,
-          "Likud": 3,
           "Agudat Yisrael": 2,
-          "Kadima": 2,
           "National Religeo": 2,
+          "Kadima": 2,
           "Hadash": 2,
-          " ": 1,
-          "Hadash-Taal": 1,
-          "Habayit Hayehudi": 1,
-          "Ihud leumi": 1,
           "Raam-Taal": 1,
-          "Yisrael Beitenu": 1,
-          "United Torah Jud": 1,
-          "Israel Betenu": 1,
           "Shinuy": 1,
-          "Raam": 1
+          "Ihud leumi": 1,
+          "Habayit Hayehudi": 1,
+          "United Torah Jud": 1,
+          " ": 1,
+          "Raam": 1,
+          "Yisrael Beitenu": 1,
+          "Israel Betenu": 1,
+          "Hadash-Taal": 1
         }
       ],
       [
@@ -379,22 +280,6 @@
     [
       "3",
       3.0
-    ]
-  ],
-  [
-    "change",
-    "variables.Session.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Session.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -647,22 +532,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.PartyID.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.PartyID.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1239,22 +1108,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1486,22 +1339,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.decent2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.decent2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1744,22 +1581,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.selecto1.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.selecto1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2011,22 +1832,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Ideology.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Ideology.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Ideology",
     [
@@ -2275,22 +2080,6 @@
     ]
   ],
   [
-    "change",
-    "variables.opp_coal.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.opp_coal.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.opp_coal",
     [
@@ -2530,22 +2319,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.decenD1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.decenD1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2791,22 +2564,6 @@
     ]
   ],
   [
-    "change",
-    "variables.decenD2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.decenD2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.decenD2",
     [
@@ -3049,22 +2806,6 @@
     ]
   ],
   [
-    "change",
-    "variables.decenD3.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.decenD3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.decenD3",
     [
@@ -3294,22 +3035,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3555,22 +3280,6 @@
     ]
   ],
   [
-    "change",
-    "variables.selecD2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.selecD2",
     [
@@ -3813,22 +3522,6 @@
     ]
   ],
   [
-    "change",
-    "variables.selecD3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.selecD3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.selecD3",
     [
@@ -4025,102 +3718,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:31",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Session": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "PartyID": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decent2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecto1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Ideology": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "opp_coal": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decenD1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decenD2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "decenD3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecD1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecD2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "selecD3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

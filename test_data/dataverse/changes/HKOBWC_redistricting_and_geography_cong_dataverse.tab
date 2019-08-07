@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        2145
-      ],
-      [
-        "variableCount",
-        85
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HKOBWC_redistricting_and_geography_cong_dataverse.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 547530
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.state.mode",
     [
@@ -90,22 +7,6 @@
       [
         "California"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.state.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,8 +40,8 @@
       [
         "fewestValues",
         [
-          "South Dakota",
-          "DC"
+          "DC",
+          "South Dakota"
         ]
       ],
       [
@@ -182,8 +83,8 @@
           "Indiana": 49,
           "Missouri": 45,
           "Tennessee": 44,
-          "Wisconsin": 43,
           "Washington": 43,
+          "Wisconsin": 43,
           "Maryland": 40,
           "Minnesota": 40,
           "Louisiana": 36,
@@ -192,8 +93,8 @@
           "Kentucky": 32,
           "Colorado": 31,
           "South Carolina": 31,
-          "Connecticut": 28,
           "Oklahoma": 28,
+          "Connecticut": 28,
           "Iowa": 26,
           "Oregon": 24,
           "Mississippi": 23,
@@ -204,11 +105,11 @@
           "Utah": 15,
           "New Mexico": 14,
           "Nevada": 11,
-          "Maine": 10,
-          "Idaho": 10,
           "Rhode Island": 10,
+          "Idaho": 10,
           "New Hampshire": 10,
           "Hawaii": 10,
+          "Maine": 10,
           "Montana": 4,
           "DC": 2,
           "South Dakota": 2
@@ -425,22 +326,6 @@
     [
       "101",
       101
-    ]
-  ],
-  [
-    "change",
-    "variables.district.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.district.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1085,22 +970,6 @@
     ]
   ],
   [
-    "change",
-    "variables.d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.d.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.d",
     [
@@ -1738,22 +1607,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -2023,26 +1876,10 @@
   ],
   [
     "change",
-    "variables.prop_prior_retained.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.prop_prior_retained.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.prop_prior_retained.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2686,22 +2523,6 @@
     ]
   ],
   [
-    "change",
-    "variables.irc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.irc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.irc",
     [
@@ -2941,22 +2762,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.non_irc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.non_irc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3202,22 +3007,6 @@
     ]
   ],
   [
-    "change",
-    "variables.court.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.court.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.court",
     [
@@ -3460,22 +3249,6 @@
     ]
   ],
   [
-    "change",
-    "variables.sec5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.sec5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.sec5",
     [
@@ -3715,22 +3488,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_seat_change.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.abs_seat_change.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4004,22 +3761,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.num_cd.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_cd.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4631,22 +4372,6 @@
     ]
   ],
   [
-    "change",
-    "variables.num_counties_split.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_counties_split.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.num_counties_split",
     [
@@ -5218,22 +4943,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.num_counties.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_counties.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5858,22 +5567,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.cities_split.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.cities_split.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6505,26 +6198,10 @@
   ],
   [
     "change",
-    "variables.per_pop_unincorp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.per_pop_unincorp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.per_pop_unincorp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7166,22 +6843,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.num_cities.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_cities.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7838,26 +7499,10 @@
   ],
   [
     "change",
-    "variables.polsby_popper.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.polsby_popper.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.polsby_popper.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -8514,26 +8159,10 @@
   ],
   [
     "change",
-    "variables.ch_ratio.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ch_ratio.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ch_ratio.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9190,26 +8819,10 @@
   ],
   [
     "change",
-    "variables.reock.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.reock.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.reock.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9853,22 +9466,6 @@
     ]
   ],
   [
-    "change",
-    "variables.num_prior_dist.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.num_prior_dist.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.num_prior_dist",
     [
@@ -10160,26 +9757,10 @@
   ],
   [
     "change",
-    "variables.reock_adj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.reock_adj.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.reock_adj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10836,26 +10417,10 @@
   ],
   [
     "change",
-    "variables.ch_ratio_adj.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ch_ratio_adj.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ch_ratio_adj.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11512,26 +11077,10 @@
   ],
   [
     "change",
-    "variables.schwartzberg.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.schwartzberg.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.schwartzberg.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12175,22 +11724,6 @@
     ]
   ],
   [
-    "change",
-    "variables.before_irc.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.before_irc.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.before_irc",
     [
@@ -12430,22 +11963,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.year_dum1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year_dum1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12691,22 +12208,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year_dum4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year_dum4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year_dum4",
     [
@@ -12946,22 +12447,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.year_dum7.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year_dum7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13207,22 +12692,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year_dum12.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.year_dum12.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year_dum12",
     [
@@ -13462,22 +12931,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum1.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13723,22 +13176,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum2.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum2",
     [
@@ -13968,22 +13405,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14229,22 +13650,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum4.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum4",
     [
@@ -14484,22 +13889,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum5.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14745,22 +14134,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum6",
     [
@@ -15000,22 +14373,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum7.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum7.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15261,22 +14618,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum8.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum8.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum8",
     [
@@ -15519,22 +14860,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum9.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum9.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum9",
     [
@@ -15764,22 +15089,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum10.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum10.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16025,22 +15334,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum11.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum11.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum11",
     [
@@ -16280,22 +15573,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum12.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum12.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16541,22 +15818,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum13.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum13.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum13",
     [
@@ -16796,22 +16057,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum14.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum14.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17057,22 +16302,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum15.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum15.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum15",
     [
@@ -17312,22 +16541,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum16.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum16.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17573,22 +16786,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum17.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum17.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum17",
     [
@@ -17828,22 +17025,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum18.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum18.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18089,22 +17270,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum19.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum19.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum19",
     [
@@ -18344,22 +17509,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum20.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum20.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18605,22 +17754,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum21.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum21.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum21",
     [
@@ -18860,22 +17993,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum22.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum22.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19121,22 +18238,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum23.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum23.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum23",
     [
@@ -19376,22 +18477,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum24.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum24.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -19637,22 +18722,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum25.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum25.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum25",
     [
@@ -19892,22 +18961,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum26.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum26.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20153,22 +19206,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum27.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum27.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum27",
     [
@@ -20408,22 +19445,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum28.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum28.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -20669,22 +19690,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum29.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum29.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum29",
     [
@@ -20924,22 +19929,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum30.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum30.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21185,22 +20174,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum31.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum31.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum31",
     [
@@ -21440,22 +20413,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum32.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum32.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -21701,22 +20658,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum33.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum33.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum33",
     [
@@ -21956,22 +20897,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum34.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum34.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22217,22 +21142,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum35.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum35.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum35",
     [
@@ -22462,22 +21371,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum36.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum36.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -22723,22 +21616,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum37.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum37.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum37",
     [
@@ -22978,22 +21855,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum38.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum38.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23239,22 +22100,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum39.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum39.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum39",
     [
@@ -23494,22 +22339,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum40.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum40.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -23755,22 +22584,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum41.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum41.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum41",
     [
@@ -24010,22 +22823,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum42.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum42.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24271,22 +23068,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum43.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum43.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum43",
     [
@@ -24526,22 +23307,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum44.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum44.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -24787,22 +23552,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum45.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum45.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum45",
     [
@@ -25045,22 +23794,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum46.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum46.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum46",
     [
@@ -25290,22 +24023,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum47.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum47.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -25551,22 +24268,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum48.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum48.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum48",
     [
@@ -25806,22 +24507,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum49.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum49.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -26067,22 +24752,6 @@
     ]
   ],
   [
-    "change",
-    "variables.state_dum50.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum50.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.state_dum50",
     [
@@ -26322,22 +24991,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum51.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.state_dum51.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -27102,457 +25755,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "yes",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:16:15",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "state": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "district": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "prop_prior_retained": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "non_irc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "court": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "sec5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "abs_seat_change": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_cd": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_counties_split": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_counties": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "cities_split": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "per_pop_unincorp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_cities": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "polsby_popper": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ch_ratio": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reock": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "num_prior_dist": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "reock_adj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ch_ratio_adj": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "schwartzberg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "before_irc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year_dum1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year_dum4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year_dum7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year_dum12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum7": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum8": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum9": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum10": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum11": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum12": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum13": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum14": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum15": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum16": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum17": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum18": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum19": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum20": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum21": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum22": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum23": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum24": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum25": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum26": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum27": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum28": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum29": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum30": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum31": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum32": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum33": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum34": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum35": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum36": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum37": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum38": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum39": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum40": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum41": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum42": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum43": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum44": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum45": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum46": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum47": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum48": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum49": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum50": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "state_dum51": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_est_a": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_est_c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_est_g": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_est_d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_est_e": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "_est_f": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

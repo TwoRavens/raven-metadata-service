@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        52
-      ],
-      [
-        "variableCount",
-        7
-      ],
-      [
-        "dataSource",
-        {
-          "name": "HJ4KH7_2016_election_results.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2825
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
       "Alabama",
       [
-        "Indiana",
-        "California",
-        "Arizona",
-        "Florida",
-        "Iowa"
+        "Michigan",
+        "Nebraska",
+        "Maine",
+        "Rhode Island",
+        "New Mexico"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "Indiana",
-          "California",
-          "Arizona",
-          "Florida",
-          "Iowa"
+          "Michigan",
+          "Nebraska",
+          "Maine",
+          "Rhode Island",
+          "New Mexico"
         ]
       ],
       [
@@ -173,58 +74,58 @@
       [
         "plotValues",
         {
-          "Montana": 1,
-          "Maine": 1,
-          "New Hampshire": 1,
+          "North Carolina": 1,
+          "Kentucky": 1,
           "South Dakota": 1,
-          "South Carolina": 1,
-          "Alaska": 1,
-          "Illinois": 1,
-          "Missouri": 1,
+          "Kansas": 1,
+          "Washington": 1,
           "New Jersey": 1,
-          "Texas": 1,
+          "Montana": 1,
+          "Utah": 1,
+          "Arizona": 1,
+          "Ohio": 1,
+          "Pennsylvania": 1,
+          "Alabama": 1,
           "Louisiana": 1,
+          "Oklahoma": 1,
+          "Hawaii": 1,
           "Tennessee": 1,
-          "Michigan": 1,
-          "Georgia": 1,
-          "Idaho": 1,
-          "Nevada": 1,
-          "D. C.": 1,
+          "Texas": 1,
+          "Massachusetts": 1,
           "Minnesota": 1,
           "Virginia": 1,
-          "New Mexico": 1,
-          "Utah": 1,
-          "Hawaii": 1,
-          "Connecticut": 1,
-          "Alabama": 1,
-          "New York": 1,
-          "Wyoming": 1,
-          "Mississippi": 1,
-          "Delaware": 1,
-          "Massachusetts": 1,
-          "Washington": 1,
-          "Kansas": 1,
-          "Vermont": 1,
-          "Arkansas": 1,
-          "Wisconsin": 1,
-          "West Virginia": 1,
-          "Rhode Island": 1,
-          "Maryland": 1,
-          "Oklahoma": 1,
-          "Ohio": 1,
-          "Colorado": 1,
-          "California": 1,
-          "North Carolina": 1,
-          "Oregon": 1,
-          "Nebraska": 1,
-          "Pennsylvania": 1,
-          "Kentucky": 1,
-          "Total": 1,
-          "North Dakota": 1,
-          "Iowa": 1,
           "Florida": 1,
-          "Arizona": 1,
-          "Indiana": 1
+          "Total": 1,
+          "Maryland": 1,
+          "North Dakota": 1,
+          "Colorado": 1,
+          "South Carolina": 1,
+          "D. C.": 1,
+          "Illinois": 1,
+          "Delaware": 1,
+          "Mississippi": 1,
+          "Wyoming": 1,
+          "Vermont": 1,
+          "West Virginia": 1,
+          "Arkansas": 1,
+          "Missouri": 1,
+          "Idaho": 1,
+          "Wisconsin": 1,
+          "Iowa": 1,
+          "Nevada": 1,
+          "Alaska": 1,
+          "Oregon": 1,
+          "California": 1,
+          "New Hampshire": 1,
+          "Georgia": 1,
+          "Connecticut": 1,
+          "Indiana": 1,
+          "New York": 1,
+          "New Mexico": 1,
+          "Rhode Island": 1,
+          "Maine": 1,
+          "Nebraska": 1,
+          "Michigan": 1
         }
       ],
       [
@@ -468,30 +369,6 @@
     [
       "255849",
       255849
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Total.Votes",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "Total.Votes",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1145,22 +1022,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Margin.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Margin.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Margin",
     [
@@ -1802,22 +1663,6 @@
     [
       "55973",
       55973
-    ]
-  ],
-  [
-    "change",
-    "variables.Clinton.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Clinton.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2465,22 +2310,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Trump.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Trump.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Trump",
     [
@@ -3122,22 +2951,6 @@
     [
       "4906",
       4906
-    ]
-  ],
-  [
-    "change",
-    "variables.Johnson.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Johnson.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3785,22 +3598,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Other.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Other.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Other",
     [
@@ -4395,67 +4192,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:13:41",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Total.Votes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Margin": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Clinton": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Trump": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Johnson": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Other": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

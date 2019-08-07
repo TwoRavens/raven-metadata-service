@@ -1,115 +1,16 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        50
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "WGWMAV_CBA_Coverage-1.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2608
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.State.mode",
     [
       "WI",
       [
-        "KS",
-        "OR",
-        "CA",
-        "MO",
-        "NY"
+        "PA",
+        "AK",
+        "NV",
+        "IN",
+        "OK"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.State.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.State.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -143,11 +44,11 @@
       [
         "fewestValues",
         [
-          "KS",
-          "OR",
-          "CA",
-          "MO",
-          "NY"
+          "PA",
+          "AK",
+          "NV",
+          "IN",
+          "OK"
         ]
       ],
       [
@@ -173,56 +74,56 @@
       [
         "plotValues",
         {
-          "TN": 1,
-          "PA": 1,
-          "CA": 1,
-          "IL": 1,
-          "ND": 1,
+          "OH": 1,
           "VT": 1,
-          "CO": 1,
+          "NC": 1,
+          "HI": 1,
+          "GA": 1,
+          "RI": 1,
+          "AL": 1,
+          "SC": 1,
+          "MI": 1,
+          "SD": 1,
+          "NH": 1,
+          "UT": 1,
+          "ND": 1,
+          "NM": 1,
+          "OR": 1,
+          "DE": 1,
+          "NE": 1,
+          "LA": 1,
+          "MO": 1,
           "MS": 1,
           "CT": 1,
-          "WA": 1,
-          "MD": 1,
           "NJ": 1,
-          "ID": 1,
-          "AR": 1,
-          "GA": 1,
-          "OK": 1,
-          "NV": 1,
-          "VA": 1,
-          "AK": 1,
-          "DE": 1,
           "MA": 1,
-          "NM": 1,
-          "RI": 1,
-          "NC": 1,
-          "TX": 1,
-          "MI": 1,
-          "MT": 1,
-          "OR": 1,
-          "NE": 1,
-          "AL": 1,
-          "IA": 1,
-          "OH": 1,
-          "SD": 1,
-          "WY": 1,
-          "SC": 1,
-          "NH": 1,
-          "HI": 1,
-          "IN": 1,
-          "MN": 1,
-          "ME": 1,
-          "LA": 1,
-          "WV": 1,
-          "KY": 1,
-          "FL": 1,
           "WI": 1,
-          "AZ": 1,
+          "CO": 1,
+          "WA": 1,
+          "CA": 1,
+          "ME": 1,
+          "WV": 1,
           "NY": 1,
-          "MO": 1,
-          "UT": 1,
-          "KS": 1
+          "IL": 1,
+          "TX": 1,
+          "VA": 1,
+          "KS": 1,
+          "IA": 1,
+          "MD": 1,
+          "MT": 1,
+          "ID": 1,
+          "KY": 1,
+          "MN": 1,
+          "FL": 1,
+          "AR": 1,
+          "WY": 1,
+          "TN": 1,
+          "AZ": 1,
+          "OK": 1,
+          "IN": 1,
+          "NV": 1,
+          "AK": 1,
+          "PA": 1
         }
       ],
       [
@@ -411,22 +312,6 @@
     ]
   ],
   [
-    "change",
-    "variables.YearCBrequired.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.YearCBrequired.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.YearCBrequired",
     [
@@ -457,11 +342,11 @@
       [
         "fewestValues",
         [
-          "1972",
-          "1987",
           "1978",
+          "1972",
+          "1960",
           "1973",
-          "1960"
+          "1987"
         ]
       ],
       [
@@ -490,19 +375,19 @@
           ".": 17,
           "1970": 6,
           "1969": 4,
-          "1976": 3,
           "1971": 3,
-          "1975": 2,
-          "1974": 2,
+          "1976": 3,
           "1984": 2,
           "1965": 2,
           "1968": 2,
           "1966": 2,
-          "1960": 1,
-          "1973": 1,
-          "1978": 1,
+          "1975": 2,
+          "1974": 2,
           "1987": 1,
-          "1972": 1
+          "1973": 1,
+          "1960": 1,
+          "1972": 1,
+          "1978": 1
         }
       ],
       [
@@ -698,26 +583,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1958.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1958.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1958.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -992,26 +861,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1960.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1960.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1960.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1286,26 +1139,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1962.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1962.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1962.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1587,26 +1424,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1964.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1964.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1964.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1907,26 +1728,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1966.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1966.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1966.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2239,26 +2044,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1968.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1968.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1968.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2911,26 +2700,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1970.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1970.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1970.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3583,26 +3356,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1972.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1972.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1972.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4255,26 +4012,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1975.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1975.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1975.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4927,26 +4668,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1976.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1976.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1976.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5600,26 +5325,10 @@
   ],
   [
     "change",
-    "variables.CBteachers1977.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.CBteachers1977.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.CBteachers1977.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6217,97 +5926,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:23:42",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "State": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "YearCBrequired": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1958": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1960": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1962": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1964": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1966": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1968": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1970": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1972": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1975": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1976": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "CBteachers1977": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

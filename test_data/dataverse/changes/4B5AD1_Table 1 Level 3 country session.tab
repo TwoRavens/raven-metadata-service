@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        28
-      ],
-      [
-        "variableCount",
-        13
-      ],
-      [
-        "dataSource",
-        {
-          "name": "4B5AD1_Table 1 Level 3 country session.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 1799
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -90,22 +7,6 @@
       [
         "Israel"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -139,11 +40,11 @@
       [
         "fewestValues",
         [
+          "Costa Rica",
           "New Zealand",
-          "Taiwan",
-          "Austria",
-          "Poland",
-          "Belgium"
+          "Hungary",
+          "Chile",
+          "Russia"
         ]
       ],
       [
@@ -171,26 +72,26 @@
         {
           "Israel": 3,
           "Ireland": 2,
+          "Finland": 2,
           "Czech Republic": 2,
           "Norway": 2,
-          "Finland": 2,
-          "Switzerland": 1,
-          "Chile": 1,
-          "Croatia": 1,
-          "Brazil": 1,
-          "Costa Rica": 1,
-          "Russia": 1,
-          "UK": 1,
-          "Hungary": 1,
           "Japan": 1,
+          "Switzerland": 1,
+          "Taiwan": 1,
+          "Poland": 1,
+          "Brazil": 1,
+          "Belgium": 1,
           "Denmark": 1,
           "Sweden": 1,
-          "Argentina": 1,
-          "Belgium": 1,
-          "Poland": 1,
+          "Croatia": 1,
           "Austria": 1,
-          "Taiwan": 1,
-          "New Zealand": 1
+          "UK": 1,
+          "Argentina": 1,
+          "Russia": 1,
+          "Chile": 1,
+          "Hungary": 1,
+          "New Zealand": 1,
+          "Costa Rica": 1
         }
       ],
       [
@@ -384,22 +285,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.ID_cntrysession.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ID_cntrysession.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -999,22 +884,6 @@
     ]
   ],
   [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.year",
     [
@@ -1309,26 +1178,10 @@
   ],
   [
     "change",
-    "variables.AVDM.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AVDM.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AVDM.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1976,22 +1829,6 @@
     ]
   ],
   [
-    "change",
-    "variables.GDP_cap.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.GDP_cap.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.GDP_cap",
     [
@@ -2588,22 +2425,6 @@
     ]
   ],
   [
-    "change",
-    "variables.new_dem.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.new_dem.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.new_dem",
     [
@@ -2855,26 +2676,10 @@
   ],
   [
     "change",
-    "variables.AVDM2.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.AVDM2.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.AVDM2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3518,22 +3323,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pref1.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pref1.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pref1",
     [
@@ -3773,22 +3562,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pref2.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pref2.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4034,22 +3807,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pref3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pref3.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pref3",
     [
@@ -4289,22 +4046,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.pref4.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pref4.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4550,22 +4291,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pref5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pref5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pref5",
     [
@@ -4808,22 +4533,6 @@
     ]
   ],
   [
-    "change",
-    "variables.pref6.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.pref6.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.pref6",
     [
@@ -5020,97 +4729,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:19:31",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ID_cntrysession": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AVDM": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "GDP_cap": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "new_dem": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "AVDM2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pref1": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pref2": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pref3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pref4": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pref5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "pref6": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

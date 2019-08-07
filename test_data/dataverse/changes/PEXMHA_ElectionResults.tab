@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        119
-      ],
-      [
-        "variableCount",
-        9
-      ],
-      [
-        "dataSource",
-        {
-          "name": "PEXMHA_ElectionResults.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 6877
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Province.mode",
     [
@@ -90,22 +7,6 @@
       [
         "CABA"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Province.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Province.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -169,8 +70,8 @@
           "CC": 16,
           "NQ": 15,
           "TF": 13,
-          "SA": 12,
           "RN": 12,
+          "SA": 12,
           "ER": 12,
           "SE": 11
         }
@@ -319,22 +220,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Party.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Party.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Party",
     [
@@ -365,11 +250,11 @@
       [
         "fewestValues",
         [
-          "EDPV",
-          "PRO",
-          "FVP",
-          "MUTP",
-          "RENOV"
+          "PMAS",
+          "MLdS",
+          "PF",
+          "RENOV",
+          "FPCyS"
         ]
       ],
       [
@@ -396,55 +281,55 @@
         "plotValues",
         {
           "FPV": 13,
+          "Nulos": 8,
           "NonVoting": 8,
           "Electores": 8,
           "Blancos": 8,
-          "Nulos": 8,
           "CF": 6,
           "UCR": 6,
-          "UNEN": 4,
           "EM": 4,
+          "UNEN": 4,
           "PO": 3,
           "FAP": 3,
-          "NI": 2,
-          "FE": 2,
-          "CCN": 2,
-          "FIyT": 2,
-          "UPC": 2,
-          "PPRN": 2,
-          "PJ": 2,
           "FPS": 2,
+          "CCN": 2,
+          "PPRN": 2,
           "MPN": 2,
-          "PMAS": 1,
-          "MIJD": 1,
+          "FIyT": 2,
+          "NI": 2,
+          "PJ": 2,
+          "FE": 2,
+          "UPC": 2,
+          "MUTP": 1,
+          "MSdlT": 1,
+          "FPCyS": 1,
+          "FCPC": 1,
+          "UPER": 1,
           "IZQ": 1,
-          "FCS": 1,
+          "PP": 1,
+          "MAS": 1,
+          "FVP": 1,
+          "FP": 1,
           "Fte Prog": 1,
+          "MLdS": 1,
+          "PRO": 1,
+          "MIJD": 1,
+          "PCAG": 1,
+          "UNQ": 1,
+          "FCS": 1,
+          "SST": 1,
+          "AyL": 1,
+          "UF": 1,
           "UPLR": 1,
           "MPF": 1,
-          "MSdlT": 1,
-          "PF": 1,
-          "FCPC": 1,
           "LIB": 1,
-          "AyL": 1,
-          "CP": 1,
-          "UPER": 1,
-          "PP": 1,
-          "UP": 1,
-          "UNQ": 1,
-          "MAS": 1,
           "ProyS": 1,
-          "MLdS": 1,
-          "PCAG": 1,
-          "SST": 1,
-          "FP": 1,
-          "UF": 1,
-          "FPCyS": 1,
+          "UP": 1,
+          "PF": 1,
           "RENOV": 1,
-          "MUTP": 1,
-          "FVP": 1,
-          "PRO": 1,
-          "EDPV": 1
+          "EDPV": 1,
+          "CP": 1,
+          "PMAS": 1
         }
       ],
       [
@@ -633,22 +518,6 @@
     ]
   ],
   [
-    "change",
-    "variables.Party_code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Party_code.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.Party_code",
     [
@@ -679,11 +548,11 @@
       [
         "fewestValues",
         [
-          "541",
-          "514",
-          "545",
-          "199",
-          "166"
+          "60",
+          "174",
+          "166",
+          "234",
+          "182"
         ]
       ],
       [
@@ -710,55 +579,55 @@
         "plotValues",
         {
           "501": 14,
-          "N": 8,
           "E": 8,
-          "NV": 8,
           "B": 8,
+          "N": 8,
+          "NV": 8,
           "3": 6,
           "504": 6,
-          "262": 4,
           "502": 4,
+          "262": 4,
           "14": 3,
           "546": 3,
-          "2": 2,
-          "505": 2,
-          "532": 2,
-          "154": 2,
-          "68": 2,
-          "324": 2,
-          "153": 2,
           "519": 2,
-          "179": 1,
-          "536": 1,
-          "183": 1,
-          "158": 1,
+          "68": 2,
+          "154": 2,
+          "153": 2,
+          "2": 2,
+          "532": 2,
+          "324": 2,
+          "505": 2,
           "155": 1,
+          "179": 1,
+          "533": 1,
+          "540": 1,
+          "545": 1,
+          "506": 1,
+          "8": 1,
+          "187": 1,
+          "38": 1,
+          "544": 1,
           "23": 1,
-          "234": 1,
-          "40": 1,
           "550": 1,
-          "503": 1,
+          "535": 1,
           "514": 1,
           "199": 1,
-          "544": 1,
-          "535": 1,
-          "187": 1,
-          "506": 1,
-          "182": 1,
-          "533": 1,
-          "60": 1,
-          "174": 1,
           "325": 1,
-          "61": 1,
-          "8": 1,
-          "508": 1,
-          "38": 1,
-          "203": 1,
-          "540": 1,
+          "40": 1,
+          "536": 1,
           "518": 1,
-          "166": 1,
-          "545": 1,
-          "541": 1
+          "508": 1,
+          "203": 1,
+          "158": 1,
+          "61": 1,
+          "503": 1,
+          "541": 1,
+          "182": 1,
+          "60": 1,
+          "234": 1,
+          "174": 1,
+          "183": 1,
+          "166": 1
         }
       ],
       [
@@ -950,22 +819,6 @@
     ]
   ],
   [
-    "change",
-    "variables.List.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.List.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.List",
     [
@@ -996,11 +849,11 @@
       [
         "fewestValues",
         [
-          "Unidos es Mejor",
-          "Todos Unidos",
-          "Juntos",
-          "Unidad Progresista",
-          "PP"
+          "Compromiso con Neuquen",
+          "MPF",
+          "151 B",
+          "Azul",
+          "Azul y Blanca"
         ]
       ],
       [
@@ -1026,88 +879,88 @@
       [
         "plotValues",
         {
-          "NonVoting": 8,
+          "Electores": 8,
           "Blancos": 8,
           "Nulos": 8,
-          "Electores": 8,
+          "NonVoting": 8,
           "FPV": 4,
           "PO": 3,
-          "FE": 2,
-          "NI": 2,
           "FPS": 2,
           "FIyT": 2,
-          "IZQ": 1,
-          "Unidad y Lealtad": 1,
-          "PF": 1,
-          "LIB": 1,
-          "MUTP": 1,
-          "Azul": 1,
-          "UPER": 1,
-          "FP": 1,
+          "FE": 2,
+          "NI": 2,
           "Unidad Peronista": 1,
-          "Uno de Nosotros": 1,
-          "PMAS": 1,
-          "Blanca mas Blanca": 1,
-          "Valores y Futuro": 1,
-          "CP": 1,
-          "Recuperacion Democratica": 1,
-          "AyL": 1,
-          "Celeste y Blanca": 1,
-          "FCS": 1,
-          "EDPV": 1,
-          "MPF": 1,
-          "Rojo y Blanca - Comp Rionegrino": 1,
-          "Fte Prog": 1,
-          "Fuerza y Compromiso Radical": 1,
-          "UF": 1,
+          "MLdS": 1,
+          "La Juan Domingo Chaco": 1,
+          "UPAU": 1,
           "Lista Unidad": 1,
-          "MSdlT": 1,
-          "151 B": 1,
-          "Presidente Illia": 1,
-          "Azul y Blanca": 1,
-          "Seguridad y Justicia para Todos": 1,
-          "SST": 1,
+          "Recuperacion Democratica": 1,
+          "PMAS": 1,
+          "Frente Justicialista para la Victoria": 1,
+          "Fte Prog": 1,
+          "Compromiso con Neuquen": 1,
           "Juntos": 1,
-          "Coalicion Sur": 1,
-          "UCR": 1,
-          "Modelo Argentino": 1,
-          "Rojo mas Rojo": 1,
-          "UNQ": 1,
+          "Renovacion": 1,
+          "FCS": 1,
           "Recuperacion": 1,
+          "MUTP": 1,
+          "PRO": 1,
+          "Celeste y Blanca": 1,
           "Suma Mas": 1,
+          "Razon de Vida Evita": 1,
+          "Unidos por el Progreso y el Desarrollo": 1,
+          "FP": 1,
+          "MAS": 1,
+          "FCPC": 1,
+          "Paso al Frente": 1,
+          "MSdlT": 1,
+          "IZQ": 1,
+          "Rojo mas Rojo": 1,
+          "Seguridad y Justicia para Todos": 1,
+          "RENOV": 1,
+          "Color Celeste y Blanca K": 1,
+          "PP": 1,
+          "Todos Unidos": 1,
+          "UPER": 1,
+          "Presidente Illia": 1,
+          "Coalicion Sur": 1,
+          "151 B": 1,
+          "Unidad Progresista": 1,
+          "AyL": 1,
+          "Somos Parte": 1,
+          "SST": 1,
+          "Acuerdo Patriotico": 1,
+          "Unidad y Lealtad": 1,
+          "UNQ": 1,
+          "Valores y Futuro": 1,
+          "Blanca mas Blanca": 1,
+          "No a la Re-re-elecccion": 1,
+          "Refundacion Democrata Cristiana": 1,
+          "PCAG": 1,
+          "Fuerza y Compromiso Radical": 1,
+          "CP": 1,
+          "Modelo Argentino": 1,
+          "UPLR": 1,
+          "Unidos es Mejor": 1,
+          "EDPV": 1,
+          "UP": 1,
           "MIJD": 1,
           "17 de Octubre": 1,
-          "Frente Justicialista para la Victoria": 1,
-          "Razon de Vida Evita": 1,
-          "Refundacion Democrata Cristiana": 1,
-          "Paso al Frente": 1,
-          "Renovacion": 1,
-          "No a la Re-re-elecccion": 1,
-          "Elegi Coraje y Transparencia": 1,
-          "Acuerdo Patriotico": 1,
-          "La Juan Domingo Chaco": 1,
-          "FCPC": 1,
-          "UP": 1,
-          "MAS": 1,
-          "Reafirmacion": 1,
-          "ProyS": 1,
-          "UPAU": 1,
-          "RENOV": 1,
-          "Compromiso con Neuquen": 1,
-          "PRO": 1,
+          "Uno de Nosotros": 1,
+          "UF": 1,
           "Basta": 1,
-          "FPCS": 1,
-          "Somos Parte": 1,
-          "Color Celeste y Blanca K": 1,
+          "UCR": 1,
+          "PF": 1,
           "Nacional y Popular": 1,
-          "Unidos por el Progreso y el Desarrollo": 1,
-          "PP": 1,
-          "Unidad Progresista": 1,
-          "Todos Unidos": 1,
-          "UPLR": 1,
-          "PCAG": 1,
-          "MLdS": 1,
-          "Unidos es Mejor": 1
+          "Rojo y Blanca - Comp Rionegrino": 1,
+          "ProyS": 1,
+          "FPCS": 1,
+          "Azul y Blanca": 1,
+          "Azul": 1,
+          "LIB": 1,
+          "MPF": 1,
+          "Reafirmacion": 1,
+          "Elegi Coraje y Transparencia": 1
         }
       ],
       [
@@ -1331,22 +1184,6 @@
     ]
   ],
   [
-    "change",
-    "variables.List_code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.List_code.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.List_code",
     [
@@ -1377,11 +1214,11 @@
       [
         "fewestValues",
         [
-          "3074",
-          "3002",
-          "8",
-          "3110",
-          "508"
+          "3076",
+          "155",
+          "203",
+          "514",
+          "540"
         ]
       ],
       [
@@ -1407,89 +1244,89 @@
       [
         "plotValues",
         {
-          "B": 8,
-          "NV": 8,
           "N": 8,
           "E": 8,
+          "B": 8,
+          "NV": 8,
           "501": 4,
           "14": 3,
           "505": 2,
           "324": 2,
           "68": 2,
-          "3120": 1,
-          "503": 1,
-          "550": 1,
-          "3080": 1,
-          "60": 1,
-          "3123": 1,
-          "536": 1,
-          "3012": 1,
-          "158": 1,
-          "544": 1,
-          "3015": 1,
-          "3079": 1,
-          "3001": 1,
-          "3077": 1,
-          "3007": 1,
-          "155": 1,
-          "3111": 1,
           "3126": 1,
+          "3015": 1,
+          "3014": 1,
+          "3113": 1,
+          "8": 1,
+          "3125": 1,
+          "199": 1,
+          "3120": 1,
+          "3110": 1,
+          "518": 1,
+          "3082": 1,
+          "3077": 1,
+          "166": 1,
+          "60": 1,
           "533": 1,
+          "3127": 1,
+          "3078": 1,
+          "535": 1,
+          "3076": 1,
           "3008": 1,
-          "3121": 1,
-          "3010": 1,
-          "234": 1,
           "3086": 1,
-          "183": 1,
+          "3129": 1,
+          "187": 1,
+          "23": 1,
+          "506": 1,
+          "38": 1,
+          "3005": 1,
+          "3010": 1,
+          "3003": 1,
+          "3001": 1,
+          "550": 1,
+          "155": 1,
+          "545": 1,
+          "3079": 1,
+          "174": 1,
           "3004": 1,
           "3081": 1,
-          "3": 1,
-          "3076": 1,
-          "23": 1,
-          "3127": 1,
-          "3073": 1,
-          "179": 1,
-          "40": 1,
-          "3011": 1,
-          "3013": 1,
-          "199": 1,
-          "3124": 1,
-          "3128": 1,
-          "8": 1,
-          "3122": 1,
-          "541": 1,
-          "3014": 1,
+          "3123": 1,
           "3087": 1,
-          "3072": 1,
-          "506": 1,
-          "3082": 1,
-          "3078": 1,
-          "3115": 1,
-          "187": 1,
-          "182": 1,
-          "3005": 1,
-          "3118": 1,
           "514": 1,
-          "174": 1,
-          "3006": 1,
-          "545": 1,
-          "38": 1,
-          "3113": 1,
+          "536": 1,
+          "3122": 1,
+          "183": 1,
+          "3118": 1,
+          "3115": 1,
           "3119": 1,
-          "166": 1,
-          "518": 1,
-          "540": 1,
-          "203": 1,
-          "3129": 1,
-          "3125": 1,
-          "508": 1,
-          "3110": 1,
-          "61": 1,
+          "3073": 1,
+          "3128": 1,
+          "179": 1,
+          "3012": 1,
+          "3080": 1,
+          "3011": 1,
           "3002": 1,
-          "3003": 1,
-          "535": 1,
+          "234": 1,
+          "3121": 1,
+          "3013": 1,
           "325": 1,
-          "3074": 1
+          "508": 1,
+          "3007": 1,
+          "544": 1,
+          "3124": 1,
+          "182": 1,
+          "541": 1,
+          "3072": 1,
+          "503": 1,
+          "61": 1,
+          "3074": 1,
+          "158": 1,
+          "3006": 1,
+          "3": 1,
+          "540": 1,
+          "40": 1,
+          "203": 1,
+          "3111": 1
         }
       ],
       [
@@ -1752,26 +1589,10 @@
   ],
   [
     "change",
-    "variables.Perc_primaries.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Perc_primaries.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Perc_primaries.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2424,26 +2245,10 @@
   ],
   [
     "change",
-    "variables.Perc_general.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.Perc_general.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.Perc_general.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4038,77 +3843,6 @@
           "defaultNature": "ordinal",
           "defaultBinary": "no",
           "defaultTime": "no"
-        }
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:17:47",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Province": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Party": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Party_code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "List": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "List_code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          " Votes_primaries ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Perc_primaries": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          " Votes_general ": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Perc_general": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
         }
       ]
     ]

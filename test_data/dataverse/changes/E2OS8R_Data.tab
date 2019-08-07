@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        4642
-      ],
-      [
-        "variableCount",
-        38
-      ],
-      [
-        "dataSource",
-        {
-          "name": "E2OS8R_Data.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 857805
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.country.mode",
     [
@@ -90,25 +7,9 @@
       [
         "Chile",
         "France",
-        "Portugal",
-        "Costa Rica"
+        "Costa Rica",
+        "Portugal"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.country.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.country.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -168,37 +69,37 @@
       [
         "plotValues",
         {
-          "Costa Rica": 141,
           "Portugal": 141,
+          "Costa Rica": 141,
           "France": 141,
           "Chile": 141,
           "Greece": 139,
-          "Spain": 138,
-          "Argentina": 138,
-          "Finland": 138,
-          "Venezuela": 138,
-          "Sweden": 138,
-          "Brazil": 138,
           "Germany": 138,
-          "Canada": 138,
           "Italy": 138,
+          "Sweden": 138,
+          "Argentina": 138,
           "United States": 138,
           "United Kingdom": 138,
+          "Venezuela": 138,
+          "Spain": 138,
           "Paraguay": 138,
-          "Denmark": 137,
+          "Brazil": 138,
+          "Canada": 138,
+          "Finland": 138,
           "Nicaragua": 137,
+          "Denmark": 137,
           "Peru": 136,
           "Mexico": 136,
           "Uruguay": 135,
           "Belgium": 135,
-          "Honduras": 134,
           "Colombia": 134,
+          "Honduras": 134,
           "Austria": 133,
           "Switzerland": 133,
           "Netherlands": 130,
           "Dominican Republic": 129,
-          "Cuba": 107,
           "Australia": 107,
+          "Cuba": 107,
           "Panama": 105,
           "Ireland": 89,
           "Ecuador": 76,
@@ -410,22 +311,6 @@
     [
       "1870",
       1870
-    ]
-  ],
-  [
-    "change",
-    "variables.year.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.year.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1069,22 +954,6 @@
     ]
   ],
   [
-    "change",
-    "variables.imf_code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.imf_code.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.imf_code",
     [
@@ -1660,22 +1529,6 @@
     ]
   ],
   [
-    "change",
-    "variables.iso3code.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.iso3code.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.iso3code",
     [
@@ -1736,23 +1589,23 @@
           "CRI": 146,
           "FRA": 144,
           "PRT": 144,
+          "BRA": 143,
           "CAN": 143,
           "ARG": 143,
-          "BRA": 143,
           "DNK": 142,
           "GRC": 142,
-          "FIN": 141,
-          "VEN": 141,
-          "USA": 141,
+          "DEU": 141,
+          "PER": 141,
           "PRY": 141,
+          "ESP": 141,
+          "FIN": 141,
+          "USA": 141,
+          "VEN": 141,
           "ITA": 141,
           "GBR": 141,
-          "DEU": 141,
           "SWE": 141,
-          "PER": 141,
-          "ESP": 141,
-          "NIC": 140,
           "BEL": 140,
+          "NIC": 140,
           "COL": 139,
           "MEX": 138,
           "URY": 138,
@@ -1970,22 +1823,6 @@
     [
       "2",
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.ccode.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2608,26 +2445,10 @@
   ],
   [
     "change",
-    "variables.d.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.d.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.d.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3284,26 +3105,10 @@
   ],
   [
     "change",
-    "variables.rgc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.rgc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.rgc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3947,22 +3752,6 @@
     ]
   ],
   [
-    "change",
-    "variables.gg_budg.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.gg_budg.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.gg_budg",
     [
@@ -4202,22 +3991,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.democracy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.democracy.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4476,26 +4249,10 @@
   ],
   [
     "change",
-    "variables.shock_rgc_trade.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.shock_rgc_trade.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.shock_rgc_trade.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5139,22 +4896,6 @@
     ]
   ],
   [
-    "change",
-    "variables.left.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.left.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.left",
     [
@@ -5394,22 +5135,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.regular.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.regular.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5655,22 +5380,6 @@
     ]
   ],
   [
-    "change",
-    "variables.irregular.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.irregular.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.irregular",
     [
@@ -5910,22 +5619,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.regular_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regular_time.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -6569,22 +6262,6 @@
     ]
   ],
   [
-    "change",
-    "variables.regular_time_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regular_time_s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.regular_time_s",
     [
@@ -7222,22 +6899,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.regular_time_c.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.regular_time_c.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -7881,22 +7542,6 @@
     ]
   ],
   [
-    "change",
-    "variables.irregular_time.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.irregular_time.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.irregular_time",
     [
@@ -8537,22 +8182,6 @@
     ]
   ],
   [
-    "change",
-    "variables.irregular_time_s.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.irregular_time_s.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.irregular_time_s",
     [
@@ -9190,22 +8819,6 @@
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.irregular_time_c.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.irregular_time_c.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -9858,26 +9471,10 @@
   ],
   [
     "change",
-    "variables.dexp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dexp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dexp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -10534,26 +10131,10 @@
   ],
   [
     "change",
-    "variables.expenditures.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.expenditures.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.expenditures.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11210,26 +10791,10 @@
   ],
   [
     "change",
-    "variables.dexpenditures.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.dexpenditures.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.dexpenditures.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -11873,22 +11438,6 @@
     ]
   ],
   [
-    "change",
-    "variables.dexpenditures5.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dexpenditures5.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.dexpenditures5",
     [
@@ -12128,22 +11677,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.dexpenditures3.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.dexpenditures3.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -12398,26 +11931,10 @@
   ],
   [
     "change",
-    "variables.loggdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.loggdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.loggdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13071,26 +12588,10 @@
   ],
   [
     "change",
-    "variables.loggdppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.loggdppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.loggdppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -13734,22 +13235,6 @@
     ]
   ],
   [
-    "change",
-    "variables.ldemocracy.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.ldemocracy.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.ldemocracy",
     [
@@ -14001,26 +13486,10 @@
   ],
   [
     "change",
-    "variables.lloggdp.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lloggdp.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lloggdp.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -14674,26 +14143,10 @@
   ],
   [
     "change",
-    "variables.lloggdppc.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.lloggdppc.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.lloggdppc.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -15350,26 +14803,10 @@
   ],
   [
     "change",
-    "variables.ld.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.ld.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.ld.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16026,26 +15463,10 @@
   ],
   [
     "change",
-    "variables.interact.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.interact.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.interact.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -16689,22 +16110,6 @@
     ]
   ],
   [
-    "change",
-    "variables.election.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.election.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.election",
     [
@@ -16944,22 +16349,6 @@
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.election_pres.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.election_pres.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17205,22 +16594,6 @@
     ]
   ],
   [
-    "change",
-    "variables.election_parl.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.election_parl.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.election_parl",
     [
@@ -17460,22 +16833,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.presidential.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.presidential.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -17721,22 +17078,6 @@
     ]
   ],
   [
-    "change",
-    "variables.latam.binary",
-    [
-      "yes",
-      true
-    ]
-  ],
-  [
-    "change",
-    "variables.latam.time",
-    [
-      "no",
-      "unknown"
-    ]
-  ],
-  [
     "add",
     "variables.latam",
     [
@@ -17976,22 +17317,6 @@
     [
       "0",
       0
-    ]
-  ],
-  [
-    "change",
-    "variables.region.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.region.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18262,26 +17587,10 @@
   ],
   [
     "change",
-    "variables.capb_imf_growth.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
     "variables.capb_imf_growth.interval",
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    "variables.capb_imf_growth.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -18879,222 +18188,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:30:58",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "country": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "year": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "imf_code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "iso3code": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ccode": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "d": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "rgc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "gg_budg": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "democracy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "shock_rgc_trade": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "left": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regular": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irregular": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regular_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regular_time_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "regular_time_c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irregular_time": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irregular_time_s": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "irregular_time_c": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dexp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "expenditures": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dexpenditures": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dexpenditures5": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "dexpenditures3": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "loggdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "loggdppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ldemocracy": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lloggdp": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "lloggdppc": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "ld": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "interact": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_pres": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "election_parl": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "presidential": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "latam": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "region": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "capb_imf_growth": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]

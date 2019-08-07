@@ -1,88 +1,5 @@
 [
   [
-    "add",
-    "dataset",
-    [
-      [
-        "description",
-        ""
-      ],
-      [
-        "unitOfAnalysis",
-        ""
-      ],
-      [
-        "structure",
-        "long"
-      ],
-      [
-        "rowCount",
-        23
-      ],
-      [
-        "variableCount",
-        10
-      ],
-      [
-        "dataSource",
-        {
-          "name": "SGB8FE_merged_votes_text.tab",
-          "type": "File",
-          "format": "text/tab-separated-values",
-          "filesize": 2024
-        }
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "dataset",
-    [
-      [
-        "private",
-        false
-      ],
-      [
-        "stdyDscr",
-        {
-          "citation": {
-            "titlStmt": {
-              "titl": "",
-              "IDNo": {
-                "-agency": "",
-                "#text": ""
-              }
-            },
-            "rspStmt": {
-              "Authentry": ""
-            },
-            "biblcit": "No Data Citation Provided"
-          }
-        }
-      ],
-      [
-        "fileDscr",
-        {
-          "-ID": "",
-          "fileTxt": {
-            "fileName": "",
-            "dimensns": {
-              "caseQnty": "",
-              "varQnty": ""
-            },
-            "fileType": ""
-          },
-          "notes": {
-            "-level": "",
-            "-type": "",
-            "-subject": "",
-            "#text": ""
-          }
-        }
-      ]
-    ]
-  ],
-  [
     "change",
     "variables.Number.median",
     [
@@ -126,22 +43,6 @@
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Number.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -694,28 +595,12 @@
     [
       "bernanke",
       [
-        "yellen",
-        "moskow",
-        "lacker",
-        "hoenig",
-        "plosser"
+        "poole",
+        "ferguson",
+        "bies",
+        "pianalto",
+        "guynn"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -749,11 +634,11 @@
       [
         "fewestValues",
         [
-          "yellen",
-          "moskow",
-          "lacker",
-          "hoenig",
-          "plosser"
+          "poole",
+          "ferguson",
+          "bies",
+          "pianalto",
+          "guynn"
         ]
       ],
       [
@@ -779,29 +664,29 @@
       [
         "plotValues",
         {
-          "santomero": 1,
+          "kroszner": 1,
           "kohn": 1,
+          "plosser": 1,
           "minehan": 1,
+          "greenspan": 1,
           "fisher": 1,
-          "ferguson": 1,
-          "gramlich": 1,
+          "lacker": 1,
+          "yellen": 1,
+          "warsh": 1,
+          "santomero": 1,
           "olson": 1,
+          "hoenig": 1,
+          "moskow": 1,
+          "gramlich": 1,
+          "stern": 1,
           "geithner": 1,
           "bernanke": 1,
           "mishkin": 1,
           "guynn": 1,
-          "bies": 1,
-          "poole": 1,
-          "greenspan": 1,
-          "warsh": 1,
           "pianalto": 1,
-          "stern": 1,
-          "kroszner": 1,
-          "plosser": 1,
-          "hoenig": 1,
-          "lacker": 1,
-          "moskow": 1,
-          "yellen": 1
+          "bies": 1,
+          "ferguson": 1,
+          "poole": 1
         }
       ],
       [
@@ -958,28 +843,12 @@
     [
       "BERNANKE",
       [
-        "FISHER",
-        "BERNANKE",
-        "GRAMLICH",
         "FERGUSON",
-        "GREENSPAN"
+        "LACKER",
+        "STERN",
+        "POOLE",
+        "PLOSSER"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.NAME.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.NAME.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -1013,11 +882,11 @@
       [
         "fewestValues",
         [
-          "FISHER",
-          "BERNANKE",
-          "GRAMLICH",
           "FERGUSON",
-          "GREENSPAN"
+          "LACKER",
+          "STERN",
+          "POOLE",
+          "PLOSSER"
         ]
       ],
       [
@@ -1043,29 +912,29 @@
       [
         "plotValues",
         {
-          "STERN": 1,
-          "LACKER": 1,
-          "YELLEN": 1,
-          "BIES": 1,
-          "OLSON": 1,
-          "POOLE": 1,
           "MISHKIN": 1,
           "PIANALTO": 1,
-          "PLOSSER": 1,
-          "KOHN": 1,
-          "MINEHAN": 1,
-          "GUYNN": 1,
-          "KROSZNER": 1,
-          "SANTOMERO": 1,
-          "WARSH": 1,
+          "FISHER": 1,
+          "OLSON": 1,
+          "BIES": 1,
           "GEITHNER": 1,
           "HOENIG": 1,
-          "MOSKOW": 1,
+          "KROSZNER": 1,
+          "YELLEN": 1,
           "GREENSPAN": 1,
-          "FERGUSON": 1,
-          "GRAMLICH": 1,
+          "KOHN": 1,
+          "WARSH": 1,
           "BERNANKE": 1,
-          "FISHER": 1
+          "MOSKOW": 1,
+          "SANTOMERO": 1,
+          "MINEHAN": 1,
+          "GRAMLICH": 1,
+          "GUYNN": 1,
+          "PLOSSER": 1,
+          "POOLE": 1,
+          "STERN": 1,
+          "LACKER": 1,
+          "FERGUSON": 1
         }
       ],
       [
@@ -1295,35 +1164,11 @@
     [
       "variables",
       "low.text",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "low.text",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "low.text",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2009,35 +1854,11 @@
     [
       "variables",
       "med.text",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "med.text",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "med.text",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -2727,35 +2548,11 @@
     [
       "variables",
       "high.text",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "high.text",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "high.text",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3368,28 +3165,12 @@
     [
       "Bernanke",
       [
-        "Bernanke",
-        "Minehan",
-        "Yellen",
-        "Lacker",
-        "Bies"
+        "Fisher",
+        "Hoenig",
+        "Kohn",
+        "Plosser",
+        "Yellen"
       ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Name.binary",
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    "variables.Name.time",
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -3423,11 +3204,11 @@
       [
         "fewestValues",
         [
-          "Bernanke",
-          "Minehan",
-          "Yellen",
-          "Lacker",
-          "Bies"
+          "Fisher",
+          "Hoenig",
+          "Kohn",
+          "Plosser",
+          "Yellen"
         ]
       ],
       [
@@ -3453,29 +3234,29 @@
       [
         "plotValues",
         {
-          "Geithner": 1,
-          "Greenspan": 1,
-          "Hoenig": 1,
-          "Warsh": 1,
+          "Gramlich": 1,
           "Santomero": 1,
-          "Fisher": 1,
-          "Guynn": 1,
-          "Mishkin": 1,
-          "Plosser": 1,
-          "Moskow": 1,
-          "Kohn": 1,
+          "Minehan": 1,
+          "Bernanke": 1,
+          "Ferguson": 1,
           "Stern": 1,
           "Poole": 1,
-          "Pianalto": 1,
+          "Warsh": 1,
+          "Guynn": 1,
           "Olson": 1,
+          "Mishkin": 1,
+          "Geithner": 1,
           "Kroszner": 1,
-          "Gramlich": 1,
-          "Ferguson": 1,
-          "Bies": 1,
+          "Greenspan": 1,
           "Lacker": 1,
+          "Pianalto": 1,
+          "Moskow": 1,
+          "Bies": 1,
           "Yellen": 1,
-          "Minehan": 1,
-          "Bernanke": 1
+          "Plosser": 1,
+          "Kohn": 1,
+          "Hoenig": 1,
+          "Fisher": 1
         }
       ],
       [
@@ -3709,35 +3490,11 @@
     [
       "variables",
       "low.votes",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "low.votes",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "low.votes",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -4427,35 +4184,11 @@
     [
       "variables",
       "med.votes",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "med.votes",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "med.votes",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5145,35 +4878,11 @@
     [
       "variables",
       "high.votes",
-      "binary"
-    ],
-    [
-      "no",
-      false
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "high.votes",
       "interval"
     ],
     [
       "continuous",
       "discrete"
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "high.votes",
-      "time"
-    ],
-    [
-      "no",
-      "unknown"
     ]
   ],
   [
@@ -5777,82 +5486,6 @@
       [
         "defaultTime",
         "no"
-      ]
-    ]
-  ],
-  [
-    "add",
-    "",
-    [
-      [
-        "self",
-        {
-          "description": "TwoRavens metadata generated by https://github.com/TwoRavens/raven-metadata-service",
-          "created": "2019-07-31 06:29:33",
-          "preprocessId": null,
-          "version": 1
-        }
-      ],
-      [
-        "variableDisplay",
-        {
-          "editable": [
-            "description",
-            "numchar",
-            "nature",
-            "time"
-          ],
-          "Number": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "NAME": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low.text": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "med.text": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high.text": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "Name": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "low.votes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "med.votes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          },
-          "high.votes": {
-            "viewable": true,
-            "omit": [],
-            "images": []
-          }
-        }
       ]
     ]
   ]
