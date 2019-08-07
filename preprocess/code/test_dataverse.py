@@ -5,6 +5,8 @@ import sys
 
 import dictdiffer
 
+from preprocess_runner import PreprocessRunner
+
 def get_path(filename, where='python'):
     return f'../../test_data/dataverse/{where}/{filename}'
 
@@ -21,23 +23,35 @@ def diff(filename, py_path, R_path):
     dif = list(dictdiffer.diff(R_obj, py_obj))
     if dif:
         with open(get_path(filename, 'changes'), 'w') as f:
-            json.dump(dif, f, indent=2 )
+            json.dump(dif, f, indent=2)
 
+errs = {}
 for file in glob.glob('../../test_data/dataverse/data/*'):
     filename = file.split('/')[-1]
     py_path = get_path(filename)
     R_path = get_path(filename, 'R')
+
     if sys.argv[1] == 'diff':
         diff(filename, py_path, R_path)
         continue
 
-    cmd = f'python preprocess.py "{file}" "{py_path}"'
-    if sys.argv[1]:
-        cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
-    result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE)
-    try:
-        obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
-    except:
-        continue 
+    if sys.argv[1] == 'py':
+        runner, err_msg = PreprocessRunner.load_from_file(file)
+        if err_msg:
+            errs[filename] = err_msg
+            continue
+
+        jstring = runner.get_final_json(indent=4)
+        open(py_path, 'w').write(jstring)
+        continue
+
+    cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
+    result = subprocess.run(cmd, check=True, shell=True, stdout=subprocess.PIPE)
+    obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
+
     with open(R_path, 'w') as f:
         json.dump(obj, f) 
+
+with open(get_path('errors.json'), 'w') as f:
+    json.dump(errs, f, indent=2) 
+
