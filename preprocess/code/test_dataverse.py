@@ -10,9 +10,46 @@ from preprocess_runner import PreprocessRunner
 def get_path(filename, where='python'):
     return f'../../test_data/dataverse/{where}/{filename}'
 
+replace = dict(
+    binary = 'defaultBinary',
+    cdfPlotType = 'cdfplottype',
+    cdfPlotX = 'cdfplotx',
+    cdfPlotY = 'cdfploty',
+    description = 'labl', 
+    fewestFreq = 'freqfewest',
+    fewestValues = 'fewest',
+    herfindahlIndex = 'herfindahl',
+    interval = 'defaultInterval',
+    invalidCount = 'invalid',
+    max = 'max',
+    mean = 'mean',
+    median = 'median',
+    midpoint = 'mid',
+    midpointFreq = 'freqmid',
+    min = 'min',
+    mode = 'mode',
+    modeFreq = 'freqmode',
+    nature = 'defaultNature',
+    numchar = 'defaultNumchar',
+    pdfPlotType = 'plottype',
+    pdfPlotX = 'plotx',
+    pdfPlotY = 'ploty',
+    stdDev = 'sd',
+    time = 'defaultTime',
+    validCount = 'valid', 
+    variableName = 'varnamesSumStat',
+    uniqueCount = 'uniques'
+)
+
 def diff(filename, py_path, R_path):
     try:
         py_obj = json.load(open(py_path))
+        for var in py_obj.get('variables', []):
+            for (k, k1) in replace.items():
+                if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty'):
+                    val = py_obj['variables'][var].get(k)
+                    if isinstance(val, list): 
+                        py_obj['variables'][var][k] = sorted(val)
     except:
         py_obj = {}
 
@@ -21,13 +58,24 @@ def diff(filename, py_path, R_path):
     except:
         R_obj = {} 
 
+    R_obj1 = dict(variables={})
+    for var in R_obj.get('variables', []):
+        R_obj1['variables'][var] = dict(plotValues={}) 
+        for (k, k1) in replace.items():
+            val = R_obj['variables'][var].get(k1)
+            if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty') and isinstance(val, list): 
+                R_obj1['variables'][var][k] = sorted(val) 
+            else:
+                R_obj1['variables'][var][k] = val
+
     changes = [] 
-    for change in list(dictdiffer.diff(R_obj, py_obj, ignore='self dataset variableDisplay'.split(), tolerance=0.01)):
+    for change in list(dictdiffer.diff(R_obj1, py_obj, ignore='self dataset variableDisplay'.split(), tolerance=0.01)):
         if change[0] != 'change' or change[2] not in [('yes', True), ('no', False), ('no', 'unknown')]:
             changes.append(change)
 
-    with open(get_path(filename, 'changes'), 'w') as f:
-        json.dump(changes, f, indent=2)
+    if changes:
+        with open(get_path(filename, 'changes'), 'w') as f:
+            json.dump(changes, f, indent=2)
 
 errs = {}
 for file in glob.glob('../../test_data/dataverse/data/*'):

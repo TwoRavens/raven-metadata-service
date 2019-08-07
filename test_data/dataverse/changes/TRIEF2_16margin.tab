@@ -1,5 +1,80 @@
 [
   [
+    "add",
+    "variables.margin.plotValues",
+    [
+      [
+        "-0.8",
+        1
+      ],
+      [
+        "-0.7",
+        1
+      ],
+      [
+        "-1.2",
+        1
+      ],
+      [
+        "-0.2",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.fewestValues",
+    [
+      "-0.7",
+      [
+        -0.2,
+        -1.2,
+        -0.7,
+        -0.8
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.herfindahlIndex",
+    [
+      0.25,
+      0.31034482758620685
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.max",
+    [
+      "-0.2",
+      -0.2
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.mean",
+    [
+      "-0.725",
+      -0.725
+    ]
+  ],
+  [
     "change",
     "variables.margin.median",
     [
@@ -9,10 +84,26 @@
   ],
   [
     "change",
-    "variables.margin.mean",
+    "variables.margin.midpoint",
     [
-      "-0.725",
-      -0.725
+      "-0.7",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.min",
+    [
+      "-1.2",
+      -1.2
     ]
   ],
   [
@@ -30,22 +121,6 @@
   ],
   [
     "change",
-    "variables.margin.max",
-    [
-      "-0.2",
-      -0.2
-    ]
-  ],
-  [
-    "change",
-    "variables.margin.min",
-    [
-      "-1.2",
-      -1.2
-    ]
-  ],
-  [
-    "change",
     "variables.margin.nature",
     [
       "ratio",
@@ -54,225 +129,101 @@
   ],
   [
     "change",
-    "variables.margin.interval",
+    "variables.margin.pdfPlotType",
     [
-      "continuous",
-      "discrete"
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.margin.stdDev",
+    [
+      "0.411298755975102",
+      0.4112987559751021
     ]
   ],
   [
     "add",
-    "variables.margin",
+    "variables.state.plotValues",
     [
       [
-        "variableName",
-        "margin"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
+        "Pennsylvania",
         1
       ],
       [
-        "fewestValues",
-        [
-          -0.2,
-          -1.2,
-          -0.7,
-          -0.8
-        ]
-      ],
-      [
-        "fewestFreq",
+        "Wisconsin",
         1
       ],
       [
-        "midpoint",
-        null
+        "Florida",
+        1
       ],
       [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.4112987559751021
-      ],
-      [
-        "herfindahlIndex",
-        0.31034482758620685
-      ],
-      [
-        "plotValues",
-        {
-          "-0.8": 1,
-          "-0.7": 1,
-          "-1.2": 1,
-          "-0.2": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -1.2,
-          -0.8666666666666667,
-          -0.5333333333333333,
-          -0.2
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.25,
-          0.25,
-          0.75,
-          1.0
-        ]
+        "Michigan",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.margin",
+    "change",
+    "variables.state.cdfPlotType",
     [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.state.fewestValues",
+    [
+      "Pennsylvania",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-1.2": 1,
-          "-0.8": 1,
-          "-0.7": 1,
-          "-0.2": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -1.2,
-          -0.866666666666667,
-          -0.533333333333333,
-          -0.2
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.25,
-          0.25,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "margin"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "0.411298755975102"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "-0.7"
-      ],
-      [
-        "mid",
-        "-0.7"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "margin"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        "Pennsylvania",
+        "Michigan",
+        "Wisconsin",
+        "Florida"
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.midpoint",
+    [
+      "Pennsylvania",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.midpointFreq",
+    [
+      "1",
+      null
     ]
   ],
   [
@@ -289,198 +240,11 @@
     ]
   ],
   [
-    "add",
-    "variables.state",
+    "change",
+    "variables.state.pdfPlotType",
     [
-      [
-        "variableName",
-        "state"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          "Pennsylvania",
-          "Michigan",
-          "Wisconsin",
-          "Florida"
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.25
-      ],
-      [
-        "plotValues",
-        {
-          "Pennsylvania": 1,
-          "Wisconsin": 1,
-          "Florida": 1,
-          "Michigan": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "variables.state",
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "Florida": 1,
-          "Michigan": 1,
-          "Pennsylvania": 1,
-          "Wisconsin": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "state"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "Pennsylvania"
-      ],
-      [
-        "mid",
-        "Pennsylvania"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "state"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "bar",
+      null
     ]
   ]
 ]

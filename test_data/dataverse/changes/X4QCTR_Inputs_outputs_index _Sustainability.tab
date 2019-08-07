@@ -1,5 +1,105 @@
 [
   [
+    "add",
+    "variables.Summary.plotValues",
+    [
+      [
+        "Eco_raw_indic",
+        1
+      ],
+      [
+        "Indices",
+        1
+      ],
+      [
+        "Eco_benchmark",
+        1
+      ],
+      [
+        "Soc_benchmark",
+        1
+      ],
+      [
+        "Env_norm_indic+index",
+        1
+      ],
+      [
+        "Env_benchmark",
+        1
+      ],
+      [
+        "Soc_norm_indic+index",
+        1
+      ],
+      [
+        "Eco_norm_indic+index",
+        1
+      ],
+      [
+        "Soc_raw_indic",
+        1
+      ],
+      [
+        "Env_raw_indic",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.fewestValues",
+    [
+      "Indices",
+      [
+        "Indices",
+        "Soc_raw_indic",
+        "Eco_norm_indic+index",
+        "Env_benchmark",
+        "Env_norm_indic+index"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.midpoint",
+    [
+      "Indices",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Summary.midpointFreq",
+    [
+      1,
+      null
+    ]
+  ],
+  [
     "change",
     "variables.Summary.mode",
     [
@@ -14,211 +114,111 @@
     ]
   ],
   [
+    "change",
+    "variables.Summary.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
     "add",
-    "variables.Summary",
+    "variables.B.plotValues",
     [
       [
-        "variableName",
-        "Summary"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        10
-      ],
-      [
-        "uniqueCount",
-        10
-      ],
-      [
-        "modeFreq",
+        "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)",
         1
       ],
       [
-        "fewestValues",
-        [
-          "Indices",
-          "Soc_raw_indic",
-          "Eco_norm_indic+index",
-          "Env_benchmark",
-          "Env_norm_indic+index"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "benchmarks for social indicators",
         1
       ],
       [
-        "midpoint",
-        null
+        "raw social indicators",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "normalized economic indicators and index (Score Eco)",
+        1
       ],
       [
-        "stdDev",
-        "NA"
+        "raw economic indicators",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.10000000000000003
+        "normalized environmental indicators and index (Score Env)",
+        1
       ],
       [
-        "plotValues",
-        {
-          "Eco_raw_indic": 1,
-          "Indices": 1,
-          "Eco_benchmark": 1,
-          "Soc_benchmark": 1,
-          "Env_norm_indic+index": 1,
-          "Env_benchmark": 1,
-          "Soc_norm_indic+index": 1,
-          "Eco_norm_indic+index": 1,
-          "Soc_raw_indic": 1,
-          "Env_raw_indic": 1
-        }
+        "benchmarks for environmental indicators",
+        1
       ],
       [
-        "pdfPlotType",
-        null
+        "raw environmental indicators",
+        1
       ],
       [
-        "pdfPlotX",
-        null
+        "normalized social indicators and index (Score Soc)",
+        1
       ],
       [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
+        "benchmarks for economic indicators",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.Summary",
+    "change",
+    "variables.B.cdfPlotType",
     [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.B.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.B.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.B.fewestValues",
+    [
+      "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "Eco_benchmark": 1,
-          "Eco_norm_indic+index": 1,
-          "Eco_raw_indic": 1,
-          "Env_benchmark": 1,
-          "Env_norm_indic+index": 1,
-          "Env_raw_indic": 1,
-          "Indices": 1,
-          "Soc_benchmark": 1,
-          "Soc_norm_indic+index": 1,
-          "Soc_raw_indic": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Summary"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        10
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        10
-      ],
-      [
-        "herfindahl",
-        0.1
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "Indices"
-      ],
-      [
-        "mid",
-        "Indices"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "Summary"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        "benchmarks for economic indicators",
+        "benchmarks for environmental indicators",
+        "normalized social indicators and index (Score Soc)",
+        "raw environmental indicators",
+        "benchmarks for social indicators"
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.B.midpoint",
+    [
+      "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.B.midpointFreq",
+    [
+      1,
+      null
     ]
   ],
   [
@@ -236,211 +236,11 @@
     ]
   ],
   [
-    "add",
-    "variables.B",
+    "change",
+    "variables.B.pdfPlotType",
     [
-      [
-        "variableName",
-        "B"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        10
-      ],
-      [
-        "uniqueCount",
-        10
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          "benchmarks for economic indicators",
-          "benchmarks for environmental indicators",
-          "normalized social indicators and index (Score Soc)",
-          "raw environmental indicators",
-          "benchmarks for social indicators"
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.10000000000000003
-      ],
-      [
-        "plotValues",
-        {
-          "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)": 1,
-          "benchmarks for social indicators": 1,
-          "raw social indicators": 1,
-          "normalized economic indicators and index (Score Eco)": 1,
-          "raw economic indicators": 1,
-          "normalized environmental indicators and index (Score Env)": 1,
-          "benchmarks for environmental indicators": 1,
-          "raw environmental indicators": 1,
-          "normalized social indicators and index (Score Soc)": 1,
-          "benchmarks for economic indicators": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "variables.B",
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "benchmarks for economic indicators": 1,
-          "benchmarks for environmental indicators": 1,
-          "benchmarks for social indicators": 1,
-          "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)": 1,
-          "normalized economic indicators and index (Score Eco)": 1,
-          "normalized environmental indicators and index (Score Env)": 1,
-          "normalized social indicators and index (Score Soc)": 1,
-          "raw economic indicators": 1,
-          "raw environmental indicators": 1,
-          "raw social indicators": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "B"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        10
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        10
-      ],
-      [
-        "herfindahl",
-        0.1
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)"
-      ],
-      [
-        "mid",
-        "final output: aggregate indices by pillar (Eco, Soc and Env) and multi-dimensional composite index of Sustainability (Choquet)"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "B"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "bar",
+      null
     ]
   ]
 ]

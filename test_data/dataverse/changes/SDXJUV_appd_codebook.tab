@@ -1,5 +1,157 @@
 [
   [
+    "add",
+    "variables.VariableName.plotValues",
+    [
+      [
+        "agency_codex",
+        1
+      ],
+      [
+        "unemp",
+        1
+      ],
+      [
+        "inflation",
+        1
+      ],
+      [
+        "fy",
+        1
+      ],
+      [
+        "approval",
+        1
+      ],
+      [
+        "cabinet",
+        1
+      ],
+      [
+        "wcf",
+        1
+      ],
+      [
+        "counter",
+        1
+      ],
+      [
+        "divided",
+        1
+      ],
+      [
+        "primarypolicy",
+        1
+      ],
+      [
+        "oppfees",
+        1
+      ],
+      [
+        "fees",
+        1
+      ],
+      [
+        "lnrec_avg",
+        1
+      ],
+      [
+        "postchadha",
+        1
+      ],
+      [
+        "lncurrent",
+        1
+      ],
+      [
+        "agency_subcomm",
+        1
+      ],
+      [
+        "commfe",
+        1
+      ],
+      [
+        "discretion",
+        1
+      ],
+      [
+        "sigreg",
+        1
+      ],
+      [
+        "war",
+        1
+      ],
+      [
+        "agencyfe",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.fewestValues",
+    [
+      "agency_codex",
+      [
+        "agencyfe",
+        "commfe",
+        "sigreg",
+        "discretion",
+        "counter"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.invalidCount",
+    [
+      0,
+      2
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.midpoint",
+    [
+      "agency_codex",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.midpointFreq",
+    [
+      1,
+      null
+    ]
+  ],
+  [
     "change",
     "variables.VariableName.mode",
     [
@@ -14,234 +166,171 @@
     ]
   ],
   [
+    "change",
+    "variables.VariableName.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.VariableName.validCount",
+    [
+      23,
+      21
+    ]
+  ],
+  [
     "add",
-    "variables.VariableName",
+    "variables.Description.plotValues",
     [
       [
-        "variableName",
-        "VariableName"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        2
-      ],
-      [
-        "validCount",
-        21
-      ],
-      [
-        "uniqueCount",
-        21
-      ],
-      [
-        "modeFreq",
+        "Fiscal year",
         1
       ],
       [
-        "fewestValues",
-        [
-          "agencyfe",
-          "commfe",
-          "sigreg",
-          "discretion",
-          "counter"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "Primary policy code (Primary Agendas Project) assigned to primary agency",
         1
       ],
       [
-        "midpoint",
-        null
+        "1 if year is after 1983; 0 otherwise",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "Annual unemployment rate",
+        1
       ],
       [
-        "stdDev",
-        "NA"
+        "Committee code associated with subcommittee",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.04761904761904759
+        "1 if cabinet agency; 0 otherwise",
+        1
       ],
       [
-        "plotValues",
-        {
-          "agency_codex": 1,
-          "unemp": 1,
-          "inflation": 1,
-          "fy": 1,
-          "approval": 1,
-          "cabinet": 1,
-          "wcf": 1,
-          "counter": 1,
-          "divided": 1,
-          "primarypolicy": 1,
-          "oppfees": 1,
-          "fees": 1,
-          "lnrec_avg": 1,
-          "postchadha": 1,
-          "lncurrent": 1,
-          "agency_subcomm": 1,
-          "commfe": 1,
-          "discretion": 1,
-          "sigreg": 1,
-          "war": 1,
-          "agencyfe": 1
-        }
+        "1 if president and congressional chamber are from opposing parties; 0 otherwise",
+        1
       ],
       [
-        "pdfPlotType",
-        null
+        "Annual presidential approval rating from Gallup Poll",
+        1
       ],
       [
-        "pdfPlotX",
-        null
+        "1 if the agency can assess and collect fees; 0 otherwise",
+        1
       ],
       [
-        "pdfPlotY",
-        null
+        "1 if agency engages in significant rulemaking; 0 otherwise",
+        1
       ],
       [
-        "cdfPlotType",
-        null
+        "0 in 1976, 1 in 1977, 2 in 1978, etc",
+        1
       ],
       [
-        "cdfPlotX",
-        null
+        "Fixed for agency-subcommittee pair",
+        1
       ],
       [
-        "cdfPlotY",
-        null
+        "Agency code associated with the agency (destringed for fixed effects)",
+        1
+      ],
+      [
+        "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise",
+        1
+      ],
+      [
+        "Average logged agency presidential budget estimate",
+        1
+      ],
+      [
+        "Discretion from appropriations report (Bolton and Thrower measure)",
+        1
+      ],
+      [
+        "1 if agency uses assessed fees or other receipts to fund its operations",
+        1
+      ],
+      [
+        "Annual inflation rate",
+        1
+      ],
+      [
+        "1 if the agency's activities are funded in part by a working capital fund giving agency access to the money irrespective of other limitations on spending; 0 otherwise",
+        1
+      ],
+      [
+        "Logged current spending in agency",
+        1
+      ],
+      [
+        "Agency code associated with the agency",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.VariableName",
+    "change",
+    "variables.Description.cdfPlotType",
     [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Description.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Description.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Description.fewestValues",
+    [
+      "Agency code associated with the agency",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "": 2,
-          "agency_codex": 1,
-          "agency_subcomm": 1,
-          "agencyfe": 1,
-          "approval": 1,
-          "cabinet": 1,
-          "commfe": 1,
-          "counter": 1,
-          "discretion": 1,
-          "divided": 1,
-          "fees": 1,
-          "fy": 1,
-          "inflation": 1,
-          "lncurrent": 1,
-          "lnrec_avg": 1,
-          "oppfees": 1,
-          "postchadha": 1,
-          "primarypolicy": 1,
-          "sigreg": 1,
-          "unemp": 1,
-          "war": 1,
-          "wcf": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "VariableName"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        23
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        21
-      ],
-      [
-        "herfindahl",
-        0.0476190476190476
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "agency_codex"
-      ],
-      [
-        "mid",
-        "agency_codex"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "VariableName"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        "Primary policy code (Primary Agendas Project) assigned to primary agency",
+        "Annual inflation rate",
+        "Discretion from appropriations report (Bolton and Thrower measure)",
+        "Fiscal year",
+        "1 if agency uses assessed fees or other receipts to fund its operations"
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Description.invalidCount",
+    [
+      0,
+      2
+    ]
+  ],
+  [
+    "change",
+    "variables.Description.midpoint",
+    [
+      "Agency code associated with the agency",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Description.midpointFreq",
+    [
+      1,
+      null
     ]
   ],
   [
@@ -259,234 +348,19 @@
     ]
   ],
   [
-    "add",
-    "variables.Description",
+    "change",
+    "variables.Description.pdfPlotType",
     [
-      [
-        "variableName",
-        "Description"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        2
-      ],
-      [
-        "validCount",
-        21
-      ],
-      [
-        "uniqueCount",
-        21
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          "Primary policy code (Primary Agendas Project) assigned to primary agency",
-          "Annual inflation rate",
-          "Discretion from appropriations report (Bolton and Thrower measure)",
-          "Fiscal year",
-          "1 if agency uses assessed fees or other receipts to fund its operations"
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.04761904761904759
-      ],
-      [
-        "plotValues",
-        {
-          "Fiscal year": 1,
-          "Primary policy code (Primary Agendas Project) assigned to primary agency": 1,
-          "1 if year is after 1983; 0 otherwise": 1,
-          "Annual unemployment rate": 1,
-          "Committee code associated with subcommittee": 1,
-          "1 if cabinet agency; 0 otherwise": 1,
-          "1 if president and congressional chamber are from opposing parties; 0 otherwise": 1,
-          "Annual presidential approval rating from Gallup Poll": 1,
-          "1 if the agency can assess and collect fees; 0 otherwise": 1,
-          "1 if agency engages in significant rulemaking; 0 otherwise": 1,
-          "0 in 1976, 1 in 1977, 2 in 1978, etc": 1,
-          "Fixed for agency-subcommittee pair": 1,
-          "Agency code associated with the agency (destringed for fixed effects)": 1,
-          "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise": 1,
-          "Average logged agency presidential budget estimate": 1,
-          "Discretion from appropriations report (Bolton and Thrower measure)": 1,
-          "1 if agency uses assessed fees or other receipts to fund its operations": 1,
-          "Annual inflation rate": 1,
-          "1 if the agency's activities are funded in part by a working capital fund giving agency access to the money irrespective of other limitations on spending; 0 otherwise": 1,
-          "Logged current spending in agency": 1,
-          "Agency code associated with the agency": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
-      ]
+      "bar",
+      null
     ]
   ],
   [
-    "remove",
-    "variables.Description",
+    "change",
+    "variables.Description.validCount",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "": 2,
-          "0 in 1976, 1 in 1977, 2 in 1978, etc": 1,
-          "1 if agency engages in significant rulemaking; 0 otherwise": 1,
-          "1 if agency uses assessed fees or other receipts to fund its operations": 1,
-          "1 if cabinet agency; 0 otherwise": 1,
-          "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise": 1,
-          "1 if president and congressional chamber are from opposing parties; 0 otherwise": 1,
-          "1 if the agency can assess and collect fees; 0 otherwise": 1,
-          "1 if the agency's activities are funded in part by a working capital fund giving agency access to the money irrespective of other limitations on spending; 0 otherwise": 1,
-          "1 if year is after 1983; 0 otherwise": 1,
-          "Agency code associated with the agency": 1,
-          "Agency code associated with the agency (destringed for fixed effects)": 1,
-          "Annual inflation rate": 1,
-          "Annual presidential approval rating from Gallup Poll": 1,
-          "Annual unemployment rate": 1,
-          "Average logged agency presidential budget estimate": 1,
-          "Committee code associated with subcommittee": 1,
-          "Discretion from appropriations report (Bolton and Thrower measure)": 1,
-          "Fiscal year": 1,
-          "Fixed for agency-subcommittee pair": 1,
-          "Logged current spending in agency": 1,
-          "Primary policy code (Primary Agendas Project) assigned to primary agency": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Description"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        23
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        21
-      ],
-      [
-        "herfindahl",
-        0.0476190476190476
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "Agency code associated with the agency"
-      ],
-      [
-        "mid",
-        "Agency code associated with the agency"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "Description"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      23,
+      21
     ]
   ]
 ]

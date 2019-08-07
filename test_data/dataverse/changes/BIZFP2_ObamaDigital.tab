@@ -1,5 +1,117 @@
 [
   [
+    "add",
+    "variables.state.plotValues",
+    [
+      [
+        "NH",
+        1
+      ],
+      [
+        "IA",
+        1
+      ],
+      [
+        "NM",
+        1
+      ],
+      [
+        "OH",
+        1
+      ],
+      [
+        "VA",
+        1
+      ],
+      [
+        "NC",
+        1
+      ],
+      [
+        "WI",
+        1
+      ],
+      [
+        "PA",
+        1
+      ],
+      [
+        "FL",
+        1
+      ],
+      [
+        "NV",
+        1
+      ],
+      [
+        "CO",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.state.fewestValues",
+    [
+      "CO",
+      [
+        "CO",
+        "NV",
+        "FL",
+        "PA",
+        "WI"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.state.midpoint",
+    [
+      "CO",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.state.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
     "change",
     "variables.state.mode",
     [
@@ -14,213 +126,111 @@
     ]
   ],
   [
+    "change",
+    "variables.state.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
     "add",
-    "variables.state",
+    "variables.digital_costs.plotValues",
     [
       [
-        "variableName",
-        "state"
+        "0.0",
+        2
       ],
       [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        11
-      ],
-      [
-        "uniqueCount",
-        11
-      ],
-      [
-        "modeFreq",
+        "0.11456371",
         1
       ],
       [
-        "fewestValues",
-        [
-          "CO",
-          "NV",
-          "FL",
-          "PA",
-          "WI"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "0.063907884",
         1
       ],
       [
-        "midpoint",
-        null
+        "0.050019093",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "0.06328063",
+        1
       ],
       [
-        "stdDev",
-        "NA"
+        "0.20231053",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.09090909090909091
+        "0.081649415",
+        1
       ],
       [
-        "plotValues",
-        {
-          "NH": 1,
-          "IA": 1,
-          "NM": 1,
-          "OH": 1,
-          "VA": 1,
-          "NC": 1,
-          "WI": 1,
-          "PA": 1,
-          "FL": 1,
-          "NV": 1,
-          "CO": 1
-        }
+        "0.11127258",
+        1
       ],
       [
-        "pdfPlotType",
-        null
+        "1.0",
+        1
       ],
       [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
+        "0.34627357",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.state",
+    "change",
+    "variables.digital_costs.fewestFreq",
     [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.fewestValues",
+    [
+      "0.346274",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "CO": 1,
-          "FL": 1,
-          "IA": 1,
-          "NC": 1,
-          "NH": 1,
-          "NM": 1,
-          "NV": 1,
-          "OH": 1,
-          "PA": 1,
-          "VA": 1,
-          "WI": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "state"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        11
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        11
-      ],
-      [
-        "herfindahl",
-        0.0909090909090909
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "CO"
-      ],
-      [
-        "mid",
-        "CO"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "state"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        0.06328063,
+        0.34627357,
+        1.0,
+        0.11127258,
+        0.20231053
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.herfindahlIndex",
+    [
+      0.107438016528926,
+      0.2911309563579349
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.max",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.mean",
+    [
+      "0.184843401090909",
+      0.18484340109090913
     ]
   ],
   [
@@ -233,10 +243,26 @@
   ],
   [
     "change",
-    "variables.digital_costs.mean",
+    "variables.digital_costs.midpoint",
     [
-      "0.184843401090909",
-      0.18484340109090913
+      "0.346274",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.digital_costs.min",
+    [
+      "0",
+      0.0
     ]
   ],
   [
@@ -251,22 +277,6 @@
   ],
   [
     "change",
-    "variables.digital_costs.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.digital_costs.min",
-    [
-      "0",
-      0.0
-    ]
-  ],
-  [
-    "change",
     "variables.digital_costs.nature",
     [
       "percent",
@@ -275,262 +285,18 @@
   ],
   [
     "change",
-    "variables.digital_costs.interval",
+    "variables.digital_costs.pdfPlotType",
     [
-      "continuous",
-      "discrete"
+      "bar",
+      null
     ]
   ],
   [
-    "add",
-    "variables.digital_costs",
+    "change",
+    "variables.digital_costs.stdDev",
     [
-      [
-        "variableName",
-        "digital_costs"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        11
-      ],
-      [
-        "uniqueCount",
-        10
-      ],
-      [
-        "modeFreq",
-        2
-      ],
-      [
-        "fewestValues",
-        [
-          0.06328063,
-          0.34627357,
-          1.0,
-          0.11127258,
-          0.20231053
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.2877082978900303
-      ],
-      [
-        "herfindahlIndex",
-        0.2911309563579349
-      ],
-      [
-        "plotValues",
-        {
-          "0.0": 2,
-          "0.11456371": 1,
-          "0.063907884": 1,
-          "0.050019093": 1,
-          "0.06328063": 1,
-          "0.20231053": 1,
-          "0.081649415": 1,
-          "0.11127258": 1,
-          "1.0": 1,
-          "0.34627357": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.0,
-          0.1111111111111111,
-          0.2222222222222222,
-          0.3333333333333333,
-          0.4444444444444444,
-          0.5555555555555556,
-          0.6666666666666666,
-          0.7777777777777777,
-          0.8888888888888888,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.18181818181818182,
-          0.5454545454545454,
-          0.8181818181818182,
-          0.8181818181818182,
-          0.9090909090909091,
-          0.9090909090909091,
-          0.9090909090909091,
-          0.9090909090909091,
-          0.9090909090909091,
-          1.0
-        ]
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "variables.digital_costs",
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0": 2,
-          "0.050019093": 1,
-          "0.06328063": 1,
-          "0.063907884": 1,
-          "0.081649415": 1,
-          "0.11127258": 1,
-          "0.11456371": 1,
-          "0.20231053": 1,
-          "0.34627357": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0,
-          0.111111111111111,
-          0.222222222222222,
-          0.333333333333333,
-          0.444444444444444,
-          0.555555555555556,
-          0.666666666666667,
-          0.777777777777778,
-          0.888888888888889,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.181818181818182,
-          0.545454545454545,
-          0.818181818181818,
-          0.818181818181818,
-          0.909090909090909,
-          0.909090909090909,
-          0.909090909090909,
-          0.909090909090909,
-          0.909090909090909,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "digital_costs"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        11
-      ],
-      [
-        "sd",
-        "0.28770829789003"
-      ],
-      [
-        "uniques",
-        10
-      ],
-      [
-        "herfindahl",
-        0.107438016528926
-      ],
-      [
-        "freqmode",
-        2
-      ],
-      [
-        "fewest",
-        "0.346274"
-      ],
-      [
-        "mid",
-        "0.346274"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "digital_costs"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "percent"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.28770829789003",
+      0.2877082978900303
     ]
   ]
 ]

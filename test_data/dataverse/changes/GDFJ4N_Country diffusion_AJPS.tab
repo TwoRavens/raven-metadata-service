@@ -1,5 +1,109 @@
 [
   [
+    "add",
+    "variables.factor.plotValues",
+    [
+      [
+        "institutional",
+        1
+      ],
+      [
+        "economic_noncoop",
+        1
+      ],
+      [
+        "graph",
+        1
+      ],
+      [
+        "protest_demonstration",
+        1
+      ],
+      [
+        "nvintervention",
+        1
+      ],
+      [
+        "graph2",
+        1
+      ],
+      [
+        "social_noncoop",
+        1
+      ],
+      [
+        "violence_state",
+        1
+      ],
+      [
+        "political_nocoop",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.fewestValues",
+    [
+      "economic_noncoop",
+      [
+        "political_nocoop",
+        "violence_state",
+        "social_noncoop",
+        "graph2",
+        "nvintervention"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.midpoint",
+    [
+      "economic_noncoop",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.factor.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
     "change",
     "variables.factor.mode",
     [
@@ -14,209 +118,95 @@
     ]
   ],
   [
+    "change",
+    "variables.factor.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
     "add",
-    "variables.factor",
+    "variables.violence.plotValues",
     [
       [
-        "variableName",
-        "factor"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        9
-      ],
-      [
-        "uniqueCount",
-        9
-      ],
-      [
-        "modeFreq",
+        "-0.12195122",
         1
       ],
       [
-        "fewestValues",
-        [
-          "political_nocoop",
-          "violence_state",
-          "social_noncoop",
-          "graph2",
-          "nvintervention"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "-0.044695835999999996",
         1
       ],
       [
-        "midpoint",
-        null
+        "0.046425253",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "-0.052137643",
+        1
       ],
       [
-        "stdDev",
-        "NA"
+        "1.0",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.1111111111111111
-      ],
-      [
-        "plotValues",
-        {
-          "institutional": 1,
-          "economic_noncoop": 1,
-          "graph": 1,
-          "protest_demonstration": 1,
-          "nvintervention": 1,
-          "graph2": 1,
-          "social_noncoop": 1,
-          "violence_state": 1,
-          "political_nocoop": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
+        "-0.5",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.factor",
+    "change",
+    "variables.violence.fewestFreq",
     [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.fewestValues",
+    [
+      "-0.0521376",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "economic_noncoop": 1,
-          "graph": 1,
-          "graph2": 1,
-          "institutional": 1,
-          "nvintervention": 1,
-          "political_nocoop": 1,
-          "protest_demonstration": 1,
-          "social_noncoop": 1,
-          "violence_state": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "factor"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        9
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        9
-      ],
-      [
-        "herfindahl",
-        0.111111111111111
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "economic_noncoop"
-      ],
-      [
-        "mid",
-        "economic_noncoop"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "factor"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        -0.5,
+        1.0,
+        -0.052137643,
+        0.046425253,
+        -0.044695835999999996
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.herfindahlIndex",
+    [
+      0.166666666666667,
+      11.846885970613638
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.max",
+    [
+      "1",
+      1.0
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.mean",
+    [
+      "0.054606759",
+      0.054606759000000005
     ]
   ],
   [
@@ -229,10 +219,26 @@
   ],
   [
     "change",
-    "variables.violence.mean",
+    "variables.violence.midpoint",
     [
-      "0.054606759",
-      0.054606759000000005
+      "-0.0521376",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -251,22 +257,6 @@
   ],
   [
     "change",
-    "variables.violence.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.violence.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.violence.nature",
     [
       "ratio",
@@ -275,238 +265,93 @@
   ],
   [
     "change",
-    "variables.violence.interval",
+    "variables.violence.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.violence.stdDev",
+    [
+      "0.500769820771586",
+      0.500769820771586
+    ]
+  ],
+  [
+    "add",
+    "variables.economic.plotValues",
+    [
+      [
+        "0.2020202",
+        1
+      ],
+      [
+        "0.11538",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "-0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.fewestValues",
+    [
+      "0.11538",
+      [
+        0.11538,
+        -0.5,
+        1.0,
+        0.2020202
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.herfindahlIndex",
+    [
+      0.25,
+      1.9518644000967362
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.violence",
+    "change",
+    "variables.economic.max",
     [
-      [
-        "variableName",
-        "violence"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        3
-      ],
-      [
-        "validCount",
-        6
-      ],
-      [
-        "uniqueCount",
-        6
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          -0.5,
-          1.0,
-          -0.052137643,
-          0.046425253,
-          -0.044695835999999996
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.500769820771586
-      ],
-      [
-        "herfindahlIndex",
-        11.846885970613638
-      ],
-      [
-        "plotValues",
-        {
-          "-0.12195122": 1,
-          "-0.044695835999999996": 1,
-          "0.046425253": 1,
-          "-0.052137643": 1,
-          "1.0": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          -0.2,
-          0.09999999999999998,
-          0.3999999999999999,
-          0.7,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.16666666666666666,
-          0.16666666666666666,
-          0.8333333333333334,
-          0.8333333333333334,
-          0.8333333333333334,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.violence",
+    "change",
+    "variables.economic.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "-0.12195122": 1,
-          "-0.052137643": 1,
-          "-0.044695836": 1,
-          "0.046425253": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          -0.2,
-          0.1,
-          0.4,
-          0.7,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.166666666666667,
-          0.166666666666667,
-          0.833333333333333,
-          0.833333333333333,
-          0.833333333333333,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "violence"
-      ],
-      [
-        "invalid",
-        3
-      ],
-      [
-        "valid",
-        6
-      ],
-      [
-        "sd",
-        "0.500769820771586"
-      ],
-      [
-        "uniques",
-        6
-      ],
-      [
-        "herfindahl",
-        0.166666666666667
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "-0.0521376"
-      ],
-      [
-        "mid",
-        "-0.0521376"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "violence"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.20435005",
+      0.20435005
     ]
   ],
   [
@@ -519,10 +364,26 @@
   ],
   [
     "change",
-    "variables.economic.mean",
+    "variables.economic.midpoint",
     [
-      "0.20435005",
-      0.20435005
+      "0.11538",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -540,22 +401,6 @@
   ],
   [
     "change",
-    "variables.economic.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.economic.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.economic.nature",
     [
       "ratio",
@@ -564,225 +409,98 @@
   ],
   [
     "change",
-    "variables.economic.interval",
+    "variables.economic.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.economic.stdDev",
+    [
+      "0.615653835058856",
+      0.6156538350588556
+    ]
+  ],
+  [
+    "add",
+    "variables.protest.plotValues",
+    [
+      [
+        "0.12195122",
+        1
+      ],
+      [
+        "-0.046425253",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.09384776",
+        1
+      ],
+      [
+        "-0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.fewestValues",
+    [
+      "0.0938478",
+      [
+        0.09384776,
+        -0.5,
+        1.0,
+        -0.046425253,
+        0.12195122
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.herfindahlIndex",
+    [
+      0.2,
+      2.84745665316277
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.economic",
+    "change",
+    "variables.protest.max",
     [
-      [
-        "variableName",
-        "economic"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        5
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.11538,
-          -0.5,
-          1.0,
-          0.2020202
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.6156538350588556
-      ],
-      [
-        "herfindahlIndex",
-        1.9518644000967362
-      ],
-      [
-        "plotValues",
-        {
-          "0.2020202": 1,
-          "0.11538": 1,
-          "1.0": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          0.0,
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.25,
-          0.25,
-          0.75,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.economic",
+    "change",
+    "variables.protest.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "0.11538": 1,
-          "0.2020202": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          0,
-          0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.25,
-          0.25,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "economic"
-      ],
-      [
-        "invalid",
-        5
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "0.615653835058856"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.11538"
-      ],
-      [
-        "mid",
-        "0.11538"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "economic"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.1338747454",
+      0.1338747454
     ]
   ],
   [
@@ -795,10 +513,26 @@
   ],
   [
     "change",
-    "variables.protest.mean",
+    "variables.protest.midpoint",
     [
-      "0.1338747454",
-      0.1338747454
+      "0.0938478",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -817,22 +551,6 @@
   ],
   [
     "change",
-    "variables.protest.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.protest.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.protest.nature",
     [
       "ratio",
@@ -841,232 +559,106 @@
   ],
   [
     "change",
-    "variables.protest.interval",
+    "variables.protest.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.protest.stdDev",
+    [
+      "0.544569226304849",
+      0.5445692263048486
+    ]
+  ],
+  [
+    "add",
+    "variables.social.plotValues",
+    [
+      [
+        "0.6923077",
+        1
+      ],
+      [
+        "0.6707316999999999",
+        1
+      ],
+      [
+        "0.32404479999999997",
+        1
+      ],
+      [
+        "0.93333334",
+        1
+      ],
+      [
+        "0.34410843",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "-0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.social.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.social.fewestValues",
+    [
+      "0.692308",
+      [
+        -0.5,
+        1.0,
+        0.34410843,
+        0.93333334,
+        0.6707316999999999
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.social.herfindahlIndex",
+    [
+      0.142857142857143,
+      0.27274131827261805
+    ]
+  ],
+  [
+    "change",
+    "variables.social.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.protest",
+    "change",
+    "variables.social.max",
     [
-      [
-        "variableName",
-        "protest"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        4
-      ],
-      [
-        "validCount",
-        5
-      ],
-      [
-        "uniqueCount",
-        5
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.09384776,
-          -0.5,
-          1.0,
-          -0.046425253,
-          0.12195122
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.5445692263048486
-      ],
-      [
-        "herfindahlIndex",
-        2.84745665316277
-      ],
-      [
-        "plotValues",
-        {
-          "0.12195122": 1,
-          "-0.046425253": 1,
-          "1.0": 1,
-          "0.09384776": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          -0.125,
-          0.25,
-          0.625,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.2,
-          0.2,
-          0.8,
-          0.8,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.protest",
+    "change",
+    "variables.social.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "-0.046425253": 1,
-          "0.09384776": 1,
-          "0.12195122": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          -0.125,
-          0.25,
-          0.625,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.2,
-          0.2,
-          0.8,
-          0.8,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "protest"
-      ],
-      [
-        "invalid",
-        4
-      ],
-      [
-        "valid",
-        5
-      ],
-      [
-        "sd",
-        "0.544569226304849"
-      ],
-      [
-        "uniques",
-        5
-      ],
-      [
-        "herfindahl",
-        0.2
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.0938478"
-      ],
-      [
-        "mid",
-        "0.0938478"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "protest"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.494932281428571",
+      0.49493228142857143
     ]
   ],
   [
@@ -1079,10 +671,26 @@
   ],
   [
     "change",
-    "variables.social.mean",
+    "variables.social.midpoint",
     [
-      "0.494932281428571",
-      0.49493228142857143
+      "0.692308",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.social.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.social.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -1101,22 +709,6 @@
   ],
   [
     "change",
-    "variables.social.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.social.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.social.nature",
     [
       "ratio",
@@ -1125,244 +717,83 @@
   ],
   [
     "change",
-    "variables.social.interval",
+    "variables.social.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.social.stdDev",
+    [
+      "0.509737185554675",
+      0.5097371855546748
+    ]
+  ],
+  [
+    "add",
+    "variables.nvint.plotValues",
+    [
+      [
+        "1.0",
+        1
+      ],
+      [
+        "-0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.fewestValues",
+    [
+      "-0.5",
+      [
+        -0.5,
+        1.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.herfindahlIndex",
+    [
+      0.5,
+      5.0
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.social",
+    "change",
+    "variables.nvint.max",
     [
-      [
-        "variableName",
-        "social"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        2
-      ],
-      [
-        "validCount",
-        7
-      ],
-      [
-        "uniqueCount",
-        7
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          -0.5,
-          1.0,
-          0.34410843,
-          0.93333334,
-          0.6707316999999999
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.5097371855546748
-      ],
-      [
-        "herfindahlIndex",
-        0.27274131827261805
-      ],
-      [
-        "plotValues",
-        {
-          "0.6923077": 1,
-          "0.6707316999999999": 1,
-          "0.32404479999999997": 1,
-          "0.93333334": 1,
-          "0.34410843": 1,
-          "1.0": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          -0.25,
-          0.0,
-          0.25,
-          0.5,
-          0.75,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.14285714285714285,
-          0.14285714285714285,
-          0.14285714285714285,
-          0.14285714285714285,
-          0.42857142857142855,
-          0.7142857142857143,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.social",
+    "change",
+    "variables.nvint.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "0.3240448": 1,
-          "0.34410843": 1,
-          "0.6707317": 1,
-          "0.6923077": 1,
-          "0.93333334": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          -0.25,
-          0,
-          0.25,
-          0.5,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.142857142857143,
-          0.142857142857143,
-          0.142857142857143,
-          0.142857142857143,
-          0.428571428571429,
-          0.714285714285714,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "social"
-      ],
-      [
-        "invalid",
-        2
-      ],
-      [
-        "valid",
-        7
-      ],
-      [
-        "sd",
-        "0.509737185554675"
-      ],
-      [
-        "uniques",
-        7
-      ],
-      [
-        "herfindahl",
-        0.142857142857143
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.692308"
-      ],
-      [
-        "mid",
-        "0.692308"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "social"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.25",
+      0.25
     ]
   ],
   [
@@ -1375,10 +806,26 @@
   ],
   [
     "change",
-    "variables.nvint.mean",
+    "variables.nvint.midpoint",
     [
-      "0.25",
-      0.25
+      "-0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -1394,22 +841,6 @@
   ],
   [
     "change",
-    "variables.nvint.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.nvint.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.nvint.nature",
     [
       "ratio",
@@ -1418,211 +849,93 @@
   ],
   [
     "change",
-    "variables.nvint.interval",
+    "variables.nvint.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.nvint.stdDev",
+    [
+      "1.06066017177982",
+      1.0606601717798212
+    ]
+  ],
+  [
+    "add",
+    "variables.political.plotValues",
+    [
+      [
+        "-0.26666668",
+        1
+      ],
+      [
+        "-0.089391",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "-0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.political.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.political.fewestValues",
+    [
+      "-0.266667",
+      [
+        -0.5,
+        1.0,
+        -0.089391,
+        -0.26666668
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.political.herfindahlIndex",
+    [
+      0.25,
+      64.1477270188302
+    ]
+  ],
+  [
+    "change",
+    "variables.political.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.nvint",
+    "change",
+    "variables.political.max",
     [
-      [
-        "variableName",
-        "nvint"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        7
-      ],
-      [
-        "validCount",
-        2
-      ],
-      [
-        "uniqueCount",
-        2
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          -0.5,
-          1.0
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        1.0606601717798212
-      ],
-      [
-        "herfindahlIndex",
-        5.0
-      ],
-      [
-        "plotValues",
-        {
-          "1.0": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.5,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.nvint",
+    "change",
+    "variables.political.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "nvint"
-      ],
-      [
-        "invalid",
-        7
-      ],
-      [
-        "valid",
-        2
-      ],
-      [
-        "sd",
-        "1.06066017177982"
-      ],
-      [
-        "uniques",
-        2
-      ],
-      [
-        "herfindahl",
-        0.5
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "-0.5"
-      ],
-      [
-        "mid",
-        "-0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "nvint"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "yes"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.03598558",
+      0.03598558000000002
     ]
   ],
   [
@@ -1635,10 +948,26 @@
   ],
   [
     "change",
-    "variables.political.mean",
+    "variables.political.midpoint",
     [
-      "0.03598558",
-      0.03598558000000002
+      "-0.266667",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.political.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.political.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -1656,22 +985,6 @@
   ],
   [
     "change",
-    "variables.political.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.political.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.political.nature",
     [
       "ratio",
@@ -1680,225 +993,93 @@
   ],
   [
     "change",
-    "variables.political.interval",
+    "variables.political.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.political.stdDev",
+    [
+      "0.664309672073569",
+      0.6643096720735686
+    ]
+  ],
+  [
+    "add",
+    "variables.institutional.plotValues",
+    [
+      [
+        "0.2020202",
+        1
+      ],
+      [
+        "0.2",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "-0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.fewestValues",
+    [
+      "0.2",
+      [
+        -0.5,
+        1.0,
+        0.2,
+        0.2020202
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.herfindahlIndex",
+    [
+      0.25,
+      1.6356268614575464
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.political",
+    "change",
+    "variables.institutional.max",
     [
-      [
-        "variableName",
-        "political"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        5
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          -0.5,
-          1.0,
-          -0.089391,
-          -0.26666668
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.6643096720735686
-      ],
-      [
-        "herfindahlIndex",
-        64.1477270188302
-      ],
-      [
-        "plotValues",
-        {
-          "-0.26666668": 1,
-          "-0.089391": 1,
-          "1.0": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          0.0,
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.25,
-          0.75,
-          0.75,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.political",
+    "change",
+    "variables.institutional.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "-0.26666668": 1,
-          "-0.089391": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          0,
-          0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.25,
-          0.75,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "political"
-      ],
-      [
-        "invalid",
-        5
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "0.664309672073569"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "-0.266667"
-      ],
-      [
-        "mid",
-        "-0.266667"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "political"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.22550505",
+      0.22550505
     ]
   ],
   [
@@ -1911,10 +1092,26 @@
   ],
   [
     "change",
-    "variables.institutional.mean",
+    "variables.institutional.midpoint",
     [
-      "0.22550505",
-      0.22550505
+      "0.2",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.min",
+    [
+      "-0.5",
+      -0.5
     ]
   ],
   [
@@ -1932,22 +1129,6 @@
   ],
   [
     "change",
-    "variables.institutional.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.institutional.min",
-    [
-      "-0.5",
-      -0.5
-    ]
-  ],
-  [
-    "change",
     "variables.institutional.nature",
     [
       "ratio",
@@ -1956,225 +1137,93 @@
   ],
   [
     "change",
-    "variables.institutional.interval",
+    "variables.institutional.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.institutional.stdDev",
+    [
+      "0.613025842550984",
+      0.6130258425509836
+    ]
+  ],
+  [
+    "add",
+    "variables.xpos1.plotValues",
+    [
+      [
+        "2.0",
+        1
+      ],
+      [
+        "1.5",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.fewestValues",
+    [
+      "0.5",
+      [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.herfindahlIndex",
+    [
+      0.25,
+      0.30000000000000004
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.institutional",
+    "change",
+    "variables.xpos1.max",
     [
-      [
-        "variableName",
-        "institutional"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        5
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          -0.5,
-          1.0,
-          0.2,
-          0.2020202
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.6130258425509836
-      ],
-      [
-        "herfindahlIndex",
-        1.6356268614575464
-      ],
-      [
-        "plotValues",
-        {
-          "0.2020202": 1,
-          "0.2": 1,
-          "1.0": 1,
-          "-0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.5,
-          0.0,
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.25,
-          0.25,
-          0.75,
-          1.0
-        ]
-      ]
+      "2",
+      2.0
     ]
   ],
   [
-    "remove",
-    "variables.institutional",
+    "change",
+    "variables.xpos1.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.5": 1,
-          "0.2": 1,
-          "0.2020202": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.5,
-          0,
-          0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.25,
-          0.25,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "institutional"
-      ],
-      [
-        "invalid",
-        5
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "0.613025842550984"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.2"
-      ],
-      [
-        "mid",
-        "0.2"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "institutional"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "1.25",
+      1.25
     ]
   ],
   [
@@ -2187,10 +1236,26 @@
   ],
   [
     "change",
-    "variables.xpos1.mean",
+    "variables.xpos1.midpoint",
     [
-      "1.25",
-      1.25
+      "0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.min",
+    [
+      "0.5",
+      0.5
     ]
   ],
   [
@@ -2208,22 +1273,6 @@
   ],
   [
     "change",
-    "variables.xpos1.max",
-    [
-      "2",
-      2.0
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos1.min",
-    [
-      "0.5",
-      0.5
-    ]
-  ],
-  [
-    "change",
     "variables.xpos1.nature",
     [
       "ratio",
@@ -2232,225 +1281,83 @@
   ],
   [
     "change",
-    "variables.xpos1.interval",
+    "variables.xpos1.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos1.stdDev",
+    [
+      "0.645497224367903",
+      0.6454972243679028
+    ]
+  ],
+  [
+    "add",
+    "variables.xpos2.plotValues",
+    [
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.fewestValues",
+    [
+      "0.5",
+      [
+        0.5,
+        1.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.herfindahlIndex",
+    [
+      0.5,
+      0.5555555555555556
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.xpos1",
+    "change",
+    "variables.xpos2.max",
     [
-      [
-        "variableName",
-        "xpos1"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        5
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.5,
-          1.0,
-          1.5,
-          2.0
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.6454972243679028
-      ],
-      [
-        "herfindahlIndex",
-        0.30000000000000004
-      ],
-      [
-        "plotValues",
-        {
-          "2.0": 1,
-          "1.5": 1,
-          "1.0": 1,
-          "0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.5,
-          1.0,
-          1.5,
-          2.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.25,
-          0.5,
-          0.75,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.xpos1",
+    "change",
+    "variables.xpos2.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.5": 1,
-          "1": 1,
-          "1.5": 1,
-          "2": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.5,
-          1,
-          1.5,
-          2
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.25,
-          0.5,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "xpos1"
-      ],
-      [
-        "invalid",
-        5
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "0.645497224367903"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.5"
-      ],
-      [
-        "mid",
-        "0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "xpos1"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.75",
+      0.75
     ]
   ],
   [
@@ -2463,10 +1370,26 @@
   ],
   [
     "change",
-    "variables.xpos2.mean",
+    "variables.xpos2.midpoint",
     [
-      "0.75",
-      0.75
+      "0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.min",
+    [
+      "0.5",
+      0.5
     ]
   ],
   [
@@ -2482,22 +1405,6 @@
   ],
   [
     "change",
-    "variables.xpos2.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos2.min",
-    [
-      "0.5",
-      0.5
-    ]
-  ],
-  [
-    "change",
     "variables.xpos2.nature",
     [
       "percent",
@@ -2506,211 +1413,88 @@
   ],
   [
     "change",
-    "variables.xpos2.interval",
+    "variables.xpos2.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos2.stdDev",
+    [
+      "0.353553390593274",
+      0.3535533905932738
+    ]
+  ],
+  [
+    "add",
+    "variables.xpos3.plotValues",
+    [
+      [
+        "1.5",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.fewestValues",
+    [
+      "0.5",
+      [
+        0.5,
+        1.0,
+        1.5
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.3888888888888889
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.xpos2",
+    "change",
+    "variables.xpos3.max",
     [
-      [
-        "variableName",
-        "xpos2"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        7
-      ],
-      [
-        "validCount",
-        2
-      ],
-      [
-        "uniqueCount",
-        2
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.3535533905932738
-      ],
-      [
-        "herfindahlIndex",
-        0.5555555555555556
-      ],
-      [
-        "plotValues",
-        {
-          "1.0": 1,
-          "0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.5,
-          1.0
-        ]
-      ]
+      "1.5",
+      1.5
     ]
   ],
   [
-    "remove",
-    "variables.xpos2",
+    "change",
+    "variables.xpos3.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.5": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "xpos2"
-      ],
-      [
-        "invalid",
-        7
-      ],
-      [
-        "valid",
-        2
-      ],
-      [
-        "sd",
-        "0.353553390593274"
-      ],
-      [
-        "uniques",
-        2
-      ],
-      [
-        "herfindahl",
-        0.5
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.5"
-      ],
-      [
-        "mid",
-        "0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "xpos2"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "percent"
-      ],
-      [
-        "defaultBinary",
-        "yes"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "1",
+      1.0
     ]
   ],
   [
@@ -2723,10 +1507,26 @@
   ],
   [
     "change",
-    "variables.xpos3.mean",
+    "variables.xpos3.midpoint",
+    [
+      "0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.midpointFreq",
     [
       "1",
-      1.0
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.min",
+    [
+      "0.5",
+      0.5
     ]
   ],
   [
@@ -2743,22 +1543,6 @@
   ],
   [
     "change",
-    "variables.xpos3.max",
-    [
-      "1.5",
-      1.5
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos3.min",
-    [
-      "0.5",
-      0.5
-    ]
-  ],
-  [
-    "change",
     "variables.xpos3.nature",
     [
       "ratio",
@@ -2767,218 +1551,98 @@
   ],
   [
     "change",
-    "variables.xpos3.interval",
+    "variables.xpos3.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos3.stdDev",
+    [
+      "0.5",
+      0.5
+    ]
+  ],
+  [
+    "add",
+    "variables.xpos4.plotValues",
+    [
+      [
+        "2.5",
+        1
+      ],
+      [
+        "2.0",
+        1
+      ],
+      [
+        "1.5",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.fewestValues",
+    [
+      "0.5",
+      [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.herfindahlIndex",
+    [
+      0.2,
+      0.24444444444444446
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.xpos3",
+    "change",
+    "variables.xpos4.max",
     [
-      [
-        "variableName",
-        "xpos3"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        6
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.5,
-          1.0,
-          1.5
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.5
-      ],
-      [
-        "herfindahlIndex",
-        0.3888888888888889
-      ],
-      [
-        "plotValues",
-        {
-          "1.5": 1,
-          "1.0": 1,
-          "0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.5,
-          1.0,
-          1.5
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
-      ]
+      "2.5",
+      2.5
     ]
   ],
   [
-    "remove",
-    "variables.xpos3",
+    "change",
+    "variables.xpos4.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.5": 1,
-          "1": 1,
-          "1.5": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.5,
-          1,
-          1.5
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "xpos3"
-      ],
-      [
-        "invalid",
-        6
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "0.5"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.5"
-      ],
-      [
-        "mid",
-        "0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "xpos3"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "1.5",
+      1.5
     ]
   ],
   [
@@ -2991,10 +1655,26 @@
   ],
   [
     "change",
-    "variables.xpos4.mean",
+    "variables.xpos4.midpoint",
     [
-      "1.5",
-      1.5
+      "0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.min",
+    [
+      "0.5",
+      0.5
     ]
   ],
   [
@@ -3013,22 +1693,6 @@
   ],
   [
     "change",
-    "variables.xpos4.max",
-    [
-      "2.5",
-      2.5
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos4.min",
-    [
-      "0.5",
-      0.5
-    ]
-  ],
-  [
-    "change",
     "variables.xpos4.nature",
     [
       "ratio",
@@ -3037,232 +1701,83 @@
   ],
   [
     "change",
-    "variables.xpos4.interval",
+    "variables.xpos4.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos4.stdDev",
+    [
+      "0.790569415042095",
+      0.7905694150420949
+    ]
+  ],
+  [
+    "add",
+    "variables.xpos5.plotValues",
+    [
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.fewestValues",
+    [
+      "0.5",
+      [
+        0.5,
+        1.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.herfindahlIndex",
+    [
+      0.5,
+      0.5555555555555556
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.xpos4",
+    "change",
+    "variables.xpos5.max",
     [
-      [
-        "variableName",
-        "xpos4"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        4
-      ],
-      [
-        "validCount",
-        5
-      ],
-      [
-        "uniqueCount",
-        5
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.5,
-          1.0,
-          1.5,
-          2.0,
-          2.5
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.7905694150420949
-      ],
-      [
-        "herfindahlIndex",
-        0.24444444444444446
-      ],
-      [
-        "plotValues",
-        {
-          "2.5": 1,
-          "2.0": 1,
-          "1.5": 1,
-          "1.0": 1,
-          "0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.5,
-          1.0,
-          1.5,
-          2.0,
-          2.5
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.2,
-          0.4,
-          0.6,
-          0.8,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.xpos4",
+    "change",
+    "variables.xpos5.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.5": 1,
-          "1": 1,
-          "1.5": 1,
-          "2": 1,
-          "2.5": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.5,
-          1,
-          1.5,
-          2,
-          2.5
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.2,
-          0.4,
-          0.6,
-          0.8,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "xpos4"
-      ],
-      [
-        "invalid",
-        4
-      ],
-      [
-        "valid",
-        5
-      ],
-      [
-        "sd",
-        "0.790569415042095"
-      ],
-      [
-        "uniques",
-        5
-      ],
-      [
-        "herfindahl",
-        0.2
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.5"
-      ],
-      [
-        "mid",
-        "0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "xpos4"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.75",
+      0.75
     ]
   ],
   [
@@ -3275,10 +1790,26 @@
   ],
   [
     "change",
-    "variables.xpos5.mean",
+    "variables.xpos5.midpoint",
     [
-      "0.75",
-      0.75
+      "0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.min",
+    [
+      "0.5",
+      0.5
     ]
   ],
   [
@@ -3294,22 +1825,6 @@
   ],
   [
     "change",
-    "variables.xpos5.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos5.min",
-    [
-      "0.5",
-      0.5
-    ]
-  ],
-  [
-    "change",
     "variables.xpos5.nature",
     [
       "percent",
@@ -3318,211 +1833,83 @@
   ],
   [
     "change",
-    "variables.xpos5.interval",
+    "variables.xpos5.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos5.stdDev",
+    [
+      "0.353553390593274",
+      0.3535533905932738
+    ]
+  ],
+  [
+    "add",
+    "variables.xpos6.plotValues",
+    [
+      [
+        "1.0",
+        1
+      ],
+      [
+        "0.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos6.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos6.fewestValues",
+    [
+      "0.5",
+      [
+        0.5,
+        1.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos6.herfindahlIndex",
+    [
+      0.5,
+      0.5555555555555556
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos6.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.xpos5",
+    "change",
+    "variables.xpos6.max",
     [
-      [
-        "variableName",
-        "xpos5"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        7
-      ],
-      [
-        "validCount",
-        2
-      ],
-      [
-        "uniqueCount",
-        2
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.3535533905932738
-      ],
-      [
-        "herfindahlIndex",
-        0.5555555555555556
-      ],
-      [
-        "plotValues",
-        {
-          "1.0": 1,
-          "0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.5,
-          1.0
-        ]
-      ]
+      "1",
+      1.0
     ]
   ],
   [
-    "remove",
-    "variables.xpos5",
+    "change",
+    "variables.xpos6.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.5": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "xpos5"
-      ],
-      [
-        "invalid",
-        7
-      ],
-      [
-        "valid",
-        2
-      ],
-      [
-        "sd",
-        "0.353553390593274"
-      ],
-      [
-        "uniques",
-        2
-      ],
-      [
-        "herfindahl",
-        0.5
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.5"
-      ],
-      [
-        "mid",
-        "0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "xpos5"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "percent"
-      ],
-      [
-        "defaultBinary",
-        "yes"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.75",
+      0.75
     ]
   ],
   [
@@ -3535,10 +1922,26 @@
   ],
   [
     "change",
-    "variables.xpos6.mean",
+    "variables.xpos6.midpoint",
     [
-      "0.75",
-      0.75
+      "0.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos6.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.xpos6.min",
+    [
+      "0.5",
+      0.5
     ]
   ],
   [
@@ -3554,22 +1957,6 @@
   ],
   [
     "change",
-    "variables.xpos6.max",
-    [
-      "1",
-      1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.xpos6.min",
-    [
-      "0.5",
-      0.5
-    ]
-  ],
-  [
-    "change",
     "variables.xpos6.nature",
     [
       "percent",
@@ -3578,211 +1965,18 @@
   ],
   [
     "change",
-    "variables.xpos6.interval",
+    "variables.xpos6.pdfPlotType",
     [
-      "continuous",
-      "discrete"
+      "bar",
+      null
     ]
   ],
   [
-    "add",
-    "variables.xpos6",
+    "change",
+    "variables.xpos6.stdDev",
     [
-      [
-        "variableName",
-        "xpos6"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        7
-      ],
-      [
-        "validCount",
-        2
-      ],
-      [
-        "uniqueCount",
-        2
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.3535533905932738
-      ],
-      [
-        "herfindahlIndex",
-        0.5555555555555556
-      ],
-      [
-        "plotValues",
-        {
-          "1.0": 1,
-          "0.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.5,
-          1.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.5,
-          1.0
-        ]
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "variables.xpos6",
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.5": 1,
-          "1": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.5,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "xpos6"
-      ],
-      [
-        "invalid",
-        7
-      ],
-      [
-        "valid",
-        2
-      ],
-      [
-        "sd",
-        "0.353553390593274"
-      ],
-      [
-        "uniques",
-        2
-      ],
-      [
-        "herfindahl",
-        0.5
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.5"
-      ],
-      [
-        "mid",
-        "0.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "xpos6"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "percent"
-      ],
-      [
-        "defaultBinary",
-        "yes"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.353553390593274",
+      0.3535533905932738
     ]
   ]
 ]

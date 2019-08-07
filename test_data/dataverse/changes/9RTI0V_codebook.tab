@@ -1,5 +1,93 @@
 [
   [
+    "add",
+    "variables.Type.plotValues",
+    [
+      [
+        "Census Covariates",
+        1
+      ],
+      [
+        "Additional Rain Measures",
+        1
+      ],
+      [
+        "Outcomes and Instruments",
+        1
+      ],
+      [
+        "Political Covariates",
+        1
+      ],
+      [
+        "Fixed Effects",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.fewestValues",
+    [
+      "Outcomes and Instruments",
+      [
+        "Fixed Effects",
+        "Political Covariates",
+        "Outcomes and Instruments",
+        "Additional Rain Measures",
+        "Census Covariates"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.invalidCount",
+    [
+      0,
+      43
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.midpoint",
+    [
+      "Outcomes and Instruments",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.midpointFreq",
+    [
+      1,
+      null
+    ]
+  ],
+  [
     "change",
     "variables.Type.mode",
     [
@@ -14,202 +102,255 @@
     ]
   ],
   [
+    "change",
+    "variables.Type.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Type.validCount",
+    [
+      48,
+      5
+    ]
+  ],
+  [
     "add",
-    "variables.Type",
+    "variables.Variable.plotValues",
     [
       [
-        "variableName",
-        "Type"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        43
-      ],
-      [
-        "validCount",
-        5
-      ],
-      [
-        "uniqueCount",
-        5
-      ],
-      [
-        "modeFreq",
+        "rain_day_prev",
         1
       ],
       [
-        "fewestValues",
-        [
-          "Fixed Effects",
-          "Political Covariates",
-          "Outcomes and Instruments",
-          "Additional Rain Measures",
-          "Census Covariates"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "pres_party",
         1
       ],
       [
-        "midpoint",
-        null
+        "inc_win_prv",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "dose_prv",
+        1
       ],
       [
-        "stdDev",
-        "NA"
+        "gov",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.20000000000000004
+        "rain_day_next",
+        1
       ],
       [
-        "plotValues",
-        {
-          "Census Covariates": 1,
-          "Additional Rain Measures": 1,
-          "Outcomes and Instruments": 1,
-          "Political Covariates": 1,
-          "Fixed Effects": 1
-        }
+        "redistricted",
+        1
       ],
       [
-        "pdfPlotType",
-        null
+        "gvtwkr",
+        1
       ],
       [
-        "pdfPlotX",
-        null
+        "inc_win",
+        1
       ],
       [
-        "pdfPlotY",
-        null
+        "rain_elec_prev",
+        1
       ],
       [
-        "cdfPlotType",
-        null
+        "rain_weekend_next",
+        1
       ],
       [
-        "cdfPlotX",
-        null
+        "rain_elec",
+        1
       ],
       [
-        "cdfPlotY",
-        null
+        "as.factor(fe_id_num)",
+        1
+      ],
+      [
+        "farmer",
+        1
+      ],
+      [
+        "construction",
+        1
+      ],
+      [
+        "turnout",
+        1
+      ],
+      [
+        "rain_weekend_prev_prv",
+        1
+      ],
+      [
+        "midterm",
+        1
+      ],
+      [
+        "rain_day",
+        1
+      ],
+      [
+        "sos",
+        1
+      ],
+      [
+        "pop",
+        1
+      ],
+      [
+        "rain_weekend_prev",
+        1
+      ],
+      [
+        "rain_weekend",
+        1
+      ],
+      [
+        "unempld",
+        1
+      ],
+      [
+        "educ",
+        1
+      ],
+      [
+        "minc",
+        1
+      ],
+      [
+        "rain_elec_next",
+        1
+      ],
+      [
+        "comp_cq",
+        1
+      ],
+      [
+        "d_inc",
+        1
+      ],
+      [
+        "turnout_prv",
+        1
+      ],
+      [
+        "rain_day_prev_prv",
+        1
+      ],
+      [
+        "dist_prev",
+        1
+      ],
+      [
+        "retail",
+        1
+      ],
+      [
+        "extremist",
+        1
+      ],
+      [
+        "manuf",
+        1
+      ],
+      [
+        "forborn",
+        1
+      ],
+      [
+        "vote_prv",
+        1
+      ],
+      [
+        "urban",
+        1
+      ],
+      [
+        "rain_elec_prev_prv",
+        1
+      ],
+      [
+        "dose",
+        1
+      ],
+      [
+        "black",
+        1
+      ],
+      [
+        "vote",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.Type",
+    "change",
+    "variables.Variable.cdfPlotType",
     [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.fewestValues",
+    [
+      "dose",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "": 43,
-          "Additional Rain Measures": 1,
-          "Census Covariates": 1,
-          "Fixed Effects": 1,
-          "Outcomes and Instruments": 1,
-          "Political Covariates": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Type"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        48
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        5
-      ],
-      [
-        "herfindahl",
-        0.2
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "Outcomes and Instruments"
-      ],
-      [
-        "mid",
-        "Outcomes and Instruments"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "Type"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        "vote",
+        "black",
+        "dose",
+        "rain_elec_prev_prv",
+        "urban"
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.invalidCount",
+    [
+      0,
+      6
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.midpoint",
+    [
+      "dose",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.midpointFreq",
+    [
+      1,
+      null
     ]
   ],
   [
@@ -227,276 +368,251 @@
     ]
   ],
   [
+    "change",
+    "variables.Variable.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Variable.validCount",
+    [
+      48,
+      42
+    ]
+  ],
+  [
     "add",
-    "variables.Variable",
+    "variables.Desciption.plotValues",
     [
       [
-        "variableName",
-        "Variable"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        6
-      ],
-      [
-        "validCount",
-        42
-      ],
-      [
-        "uniqueCount",
-        42
-      ],
-      [
-        "modeFreq",
+        "prior differeence in democratic vote share",
         1
       ],
       [
-        "fewestValues",
-        [
-          "vote",
-          "black",
-          "dose",
-          "rain_elec_prev_prv",
-          "urban"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "incumbent policy extremist indicator",
         1
       ],
       [
-        "midpoint",
-        null
+        "incumbent win indicator",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "farmer population",
+        1
       ],
       [
-        "stdDev",
-        "NA"
+        "log district population",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.02380952380952379
+        "% urban",
+        1
       ],
       [
-        "plotValues",
-        {
-          "rain_day_prev": 1,
-          "pres_party": 1,
-          "inc_win_prv": 1,
-          "dose_prv": 1,
-          "gov": 1,
-          "rain_day_next": 1,
-          "redistricted": 1,
-          "gvtwkr": 1,
-          "inc_win": 1,
-          "rain_elec_prev": 1,
-          "rain_weekend_next": 1,
-          "rain_elec": 1,
-          "as.factor(fe_id_num)": 1,
-          "farmer": 1,
-          "construction": 1,
-          "turnout": 1,
-          "rain_weekend_prev_prv": 1,
-          "midterm": 1,
-          "rain_day": 1,
-          "sos": 1,
-          "pop": 1,
-          "rain_weekend_prev": 1,
-          "rain_weekend": 1,
-          "unempld": 1,
-          "educ": 1,
-          "minc": 1,
-          "rain_elec_next": 1,
-          "comp_cq": 1,
-          "d_inc": 1,
-          "turnout_prv": 1,
-          "rain_day_prev_prv": 1,
-          "dist_prev": 1,
-          "retail": 1,
-          "extremist": 1,
-          "manuf": 1,
-          "forborn": 1,
-          "vote_prv": 1,
-          "urban": 1,
-          "rain_elec_prev_prv": 1,
-          "dose": 1,
-          "black": 1,
-          "vote": 1
-        }
+        "democratic incumbent indicator",
+        1
       ],
       [
-        "pdfPlotType",
-        null
+        "manufacturing",
+        1
       ],
       [
-        "pdfPlotX",
-        null
+        "% retail workers",
+        1
       ],
       [
-        "pdfPlotY",
-        null
+        "deviated rain instrument on prior weekend of election day",
+        1
       ],
       [
-        "cdfPlotType",
-        null
+        "rain just on election day at next election",
+        1
       ],
       [
-        "cdfPlotX",
-        null
+        "prior rain instrument just on election day",
+        1
       ],
       [
-        "cdfPlotY",
-        null
+        "party of the president",
+        1
+      ],
+      [
+        "% unemployed",
+        1
+      ],
+      [
+        "election turnout",
+        1
+      ],
+      [
+        "rain on election day and day prior two elections prior",
+        1
+      ],
+      [
+        "party of sec. of state",
+        1
+      ],
+      [
+        "prior turnout",
+        1
+      ],
+      [
+        "CQ competitiveness",
+        1
+      ],
+      [
+        "% block",
+        1
+      ],
+      [
+        "rain on election day and prior day at next election",
+        1
+      ],
+      [
+        "education",
+        1
+      ],
+      [
+        "prior normalized presidential vote",
+        1
+      ],
+      [
+        "rain on prior election weekend at next election",
+        1
+      ],
+      [
+        "prior deviated rain instrument on election day and day prior",
+        1
+      ],
+      [
+        "prior deviated rain instrument on prior weekend of election day",
+        1
+      ],
+      [
+        "incumbent ideal point",
+        1
+      ],
+      [
+        "% foreign born",
+        1
+      ],
+      [
+        "% govt workers",
+        1
+      ],
+      [
+        "$ construction workers",
+        1
+      ],
+      [
+        "median income in district",
+        1
+      ],
+      [
+        "rain instrument just on election day",
+        1
+      ],
+      [
+        "deviated rain instrument on election day and day prior",
+        1
+      ],
+      [
+        "prior incumbent ideal point",
+        1
+      ],
+      [
+        "difference in democratic vote share",
+        1
+      ],
+      [
+        "midterm election indicator",
+        1
+      ],
+      [
+        "party of governor ",
+        1
+      ],
+      [
+        "rain on prior election weekend two elections prior",
+        1
+      ],
+      [
+        "rain just on election day two elections prior",
+        1
+      ],
+      [
+        "incumbent win previously  indicator",
+        1
+      ],
+      [
+        "redistricting indicator",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.Variable",
+    "change",
+    "variables.Desciption.cdfPlotType",
     [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.fewestValues",
+    [
+      "difference in democratic vote share",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "": 6,
-          "as.factor(fe_id_num)": 1,
-          "black": 1,
-          "comp_cq": 1,
-          "construction": 1,
-          "d_inc": 1,
-          "dist_prev": 1,
-          "dose": 1,
-          "dose_prv": 1,
-          "educ": 1,
-          "extremist": 1,
-          "farmer": 1,
-          "forborn": 1,
-          "gov": 1,
-          "gvtwkr": 1,
-          "inc_win": 1,
-          "inc_win_prv": 1,
-          "manuf": 1,
-          "midterm": 1,
-          "minc": 1,
-          "pop": 1,
-          "pres_party": 1,
-          "rain_day": 1,
-          "rain_day_next": 1,
-          "rain_day_prev": 1,
-          "rain_day_prev_prv": 1,
-          "rain_elec": 1,
-          "rain_elec_next": 1,
-          "rain_elec_prev": 1,
-          "rain_elec_prev_prv": 1,
-          "rain_weekend": 1,
-          "rain_weekend_next": 1,
-          "rain_weekend_prev": 1,
-          "rain_weekend_prev_prv": 1,
-          "redistricted": 1,
-          "retail": 1,
-          "sos": 1,
-          "turnout": 1,
-          "turnout_prv": 1,
-          "unempld": 1,
-          "urban": 1,
-          "vote": 1,
-          "vote_prv": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Variable"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        48
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        42
-      ],
-      [
-        "herfindahl",
-        0.0238095238095238
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "dose"
-      ],
-      [
-        "mid",
-        "dose"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "Variable"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        "CQ competitiveness",
+        "% govt workers",
+        "rain on prior election weekend two elections prior",
+        "midterm election indicator",
+        "difference in democratic vote share"
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.invalidCount",
+    [
+      0,
+      7
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.midpoint",
+    [
+      "difference in democratic vote share",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Desciption.midpointFreq",
+    [
+      1,
+      null
     ]
   ],
   [
@@ -514,274 +630,19 @@
     ]
   ],
   [
-    "add",
-    "variables.Desciption",
+    "change",
+    "variables.Desciption.pdfPlotType",
     [
-      [
-        "variableName",
-        "Desciption"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        7
-      ],
-      [
-        "validCount",
-        41
-      ],
-      [
-        "uniqueCount",
-        41
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          "CQ competitiveness",
-          "% govt workers",
-          "rain on prior election weekend two elections prior",
-          "midterm election indicator",
-          "difference in democratic vote share"
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.024390243902439015
-      ],
-      [
-        "plotValues",
-        {
-          "prior differeence in democratic vote share": 1,
-          "incumbent policy extremist indicator": 1,
-          "incumbent win indicator": 1,
-          "farmer population": 1,
-          "log district population": 1,
-          "% urban": 1,
-          "democratic incumbent indicator": 1,
-          "manufacturing": 1,
-          "% retail workers": 1,
-          "deviated rain instrument on prior weekend of election day": 1,
-          "rain just on election day at next election": 1,
-          "prior rain instrument just on election day": 1,
-          "party of the president": 1,
-          "% unemployed": 1,
-          "election turnout": 1,
-          "rain on election day and day prior two elections prior": 1,
-          "party of sec. of state": 1,
-          "prior turnout": 1,
-          "CQ competitiveness": 1,
-          "% block": 1,
-          "rain on election day and prior day at next election": 1,
-          "education": 1,
-          "prior normalized presidential vote": 1,
-          "rain on prior election weekend at next election": 1,
-          "prior deviated rain instrument on election day and day prior": 1,
-          "prior deviated rain instrument on prior weekend of election day": 1,
-          "incumbent ideal point": 1,
-          "% foreign born": 1,
-          "% govt workers": 1,
-          "$ construction workers": 1,
-          "median income in district": 1,
-          "rain instrument just on election day": 1,
-          "deviated rain instrument on election day and day prior": 1,
-          "prior incumbent ideal point": 1,
-          "difference in democratic vote share": 1,
-          "midterm election indicator": 1,
-          "party of governor ": 1,
-          "rain on prior election weekend two elections prior": 1,
-          "rain just on election day two elections prior": 1,
-          "incumbent win previously  indicator": 1,
-          "redistricting indicator": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
-      ]
+      "bar",
+      null
     ]
   ],
   [
-    "remove",
-    "variables.Desciption",
+    "change",
+    "variables.Desciption.validCount",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "": 7,
-          "% block": 1,
-          "% foreign born": 1,
-          "% govt workers": 1,
-          "% retail workers": 1,
-          "% unemployed": 1,
-          "% urban": 1,
-          "$ construction workers": 1,
-          "CQ competitiveness": 1,
-          "democratic incumbent indicator": 1,
-          "deviated rain instrument on election day and day prior": 1,
-          "deviated rain instrument on prior weekend of election day": 1,
-          "difference in democratic vote share": 1,
-          "education": 1,
-          "election turnout": 1,
-          "farmer population": 1,
-          "incumbent ideal point": 1,
-          "incumbent policy extremist indicator": 1,
-          "incumbent win indicator": 1,
-          "incumbent win previously  indicator": 1,
-          "log district population": 1,
-          "manufacturing": 1,
-          "median income in district": 1,
-          "midterm election indicator": 1,
-          "party of governor ": 1,
-          "party of sec. of state": 1,
-          "party of the president": 1,
-          "prior deviated rain instrument on election day and day prior": 1,
-          "prior deviated rain instrument on prior weekend of election day": 1,
-          "prior differeence in democratic vote share": 1,
-          "prior incumbent ideal point": 1,
-          "prior normalized presidential vote": 1,
-          "prior rain instrument just on election day": 1,
-          "prior turnout": 1,
-          "rain instrument just on election day": 1,
-          "rain just on election day at next election": 1,
-          "rain just on election day two elections prior": 1,
-          "rain on election day and day prior two elections prior": 1,
-          "rain on election day and prior day at next election": 1,
-          "rain on prior election weekend at next election": 1,
-          "rain on prior election weekend two elections prior": 1,
-          "redistricting indicator": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Desciption"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        48
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        41
-      ],
-      [
-        "herfindahl",
-        0.024390243902439
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "difference in democratic vote share"
-      ],
-      [
-        "mid",
-        "difference in democratic vote share"
-      ],
-      [
-        "freqfewest",
-        1
-      ],
-      [
-        "freqmid",
-        1
-      ],
-      [
-        "varnamesTypes",
-        "Desciption"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      48,
+      41
     ]
   ]
 ]

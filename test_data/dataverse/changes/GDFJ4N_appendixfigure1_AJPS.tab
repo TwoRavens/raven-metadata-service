@@ -1,5 +1,83 @@
 [
   [
+    "add",
+    "variables.group.plotValues",
+    [
+      [
+        "Organization Year",
+        1
+      ],
+      [
+        "Ethnic Group",
+        1
+      ],
+      [
+        "Organization",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.group.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.group.fewestValues",
+    [
+      "Organization Year",
+      [
+        "Organization",
+        "Ethnic Group",
+        "Organization Year"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.group.midpoint",
+    [
+      "Organization Year",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
     "change",
     "variables.group.mode",
     [
@@ -12,195 +90,81 @@
     ]
   ],
   [
+    "change",
+    "variables.group.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
     "add",
-    "variables.group",
+    "variables.economic_noncoop.plotValues",
     [
       [
-        "variableName",
-        "group"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
+        "2.6",
         1
       ],
       [
-        "fewestValues",
-        [
-          "Organization",
-          "Ethnic Group",
-          "Organization Year"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "28.26",
         1
       ],
       [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.3333333333333333
-      ],
-      [
-        "plotValues",
-        {
-          "Organization Year": 1,
-          "Ethnic Group": 1,
-          "Organization": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
+        "10.41",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.group",
+    "change",
+    "variables.economic_noncoop.fewestFreq",
     [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.fewestValues",
+    [
+      "2.6",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "Ethnic Group": 1,
-          "Organization": 1,
-          "Organization Year": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "group"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "Organization Year"
-      ],
-      [
-        "mid",
-        "Organization Year"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "group"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        10.41,
+        28.26,
+        2.6
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.5364894194965292
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.interval",
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.max",
+    [
+      "28.26",
+      28.26
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.mean",
+    [
+      "13.7566666666667",
+      13.756666666666668
     ]
   ],
   [
@@ -213,10 +177,26 @@
   ],
   [
     "change",
-    "variables.economic_noncoop.mean",
+    "variables.economic_noncoop.midpoint",
     [
-      "13.7566666666667",
-      13.756666666666668
+      "2.6",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.min",
+    [
+      "2.6",
+      2.6
     ]
   ],
   [
@@ -233,22 +213,6 @@
   ],
   [
     "change",
-    "variables.economic_noncoop.max",
-    [
-      "28.26",
-      28.26
-    ]
-  ],
-  [
-    "change",
-    "variables.economic_noncoop.min",
-    [
-      "2.6",
-      2.6
-    ]
-  ],
-  [
-    "change",
     "variables.economic_noncoop.nature",
     [
       "ratio",
@@ -257,218 +221,88 @@
   ],
   [
     "change",
-    "variables.economic_noncoop.interval",
+    "variables.economic_noncoop.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.economic_noncoop.stdDev",
+    [
+      "13.1532898292911",
+      13.153289829291126
+    ]
+  ],
+  [
+    "add",
+    "variables.protest_demonstration.plotValues",
+    [
+      [
+        "62.32",
+        1
+      ],
+      [
+        "28.38",
+        1
+      ],
+      [
+        "9.59",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.fewestValues",
+    [
+      "9.59",
+      [
+        9.59,
+        28.38,
+        62.32
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.4753564249875383
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.economic_noncoop",
+    "change",
+    "variables.protest_demonstration.max",
     [
-      [
-        "variableName",
-        "economic_noncoop"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          10.41,
-          28.26,
-          2.6
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        13.153289829291126
-      ],
-      [
-        "herfindahlIndex",
-        0.5364894194965292
-      ],
-      [
-        "plotValues",
-        {
-          "2.6": 1,
-          "28.26": 1,
-          "10.41": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          2.6,
-          15.43,
-          28.26
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
-      ]
+      "62.32",
+      62.32
     ]
   ],
   [
-    "remove",
-    "variables.economic_noncoop",
+    "change",
+    "variables.protest_demonstration.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "2.6": 1,
-          "10.41": 1,
-          "28.26": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          2.6,
-          15.43,
-          28.26
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "economic_noncoop"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "13.1532898292911"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "2.6"
-      ],
-      [
-        "mid",
-        "2.6"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "economic_noncoop"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "33.43",
+      33.43
     ]
   ],
   [
@@ -481,10 +315,26 @@
   ],
   [
     "change",
-    "variables.protest_demonstration.mean",
+    "variables.protest_demonstration.midpoint",
     [
-      "33.43",
-      33.43
+      "9.59",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.min",
+    [
+      "9.59",
+      9.59
     ]
   ],
   [
@@ -501,22 +351,6 @@
   ],
   [
     "change",
-    "variables.protest_demonstration.max",
-    [
-      "62.32",
-      62.32
-    ]
-  ],
-  [
-    "change",
-    "variables.protest_demonstration.min",
-    [
-      "9.59",
-      9.59
-    ]
-  ],
-  [
-    "change",
     "variables.protest_demonstration.nature",
     [
       "ratio",
@@ -525,218 +359,88 @@
   ],
   [
     "change",
-    "variables.protest_demonstration.interval",
+    "variables.protest_demonstration.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.protest_demonstration.stdDev",
+    [
+      "26.7252708124726",
+      26.7252708124726
+    ]
+  ],
+  [
+    "add",
+    "variables.nvintervention.plotValues",
+    [
+      [
+        "35.51",
+        1
+      ],
+      [
+        "1.64",
+        1
+      ],
+      [
+        "8.63",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.fewestValues",
+    [
+      "1.64",
+      [
+        8.63,
+        1.64,
+        35.51
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.6384775440350368
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.protest_demonstration",
+    "change",
+    "variables.nvintervention.max",
     [
-      [
-        "variableName",
-        "protest_demonstration"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          9.59,
-          28.38,
-          62.32
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        26.7252708124726
-      ],
-      [
-        "herfindahlIndex",
-        0.4753564249875383
-      ],
-      [
-        "plotValues",
-        {
-          "62.32": 1,
-          "28.38": 1,
-          "9.59": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          9.59,
-          35.955,
-          62.32
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
-      ]
+      "35.51",
+      35.51
     ]
   ],
   [
-    "remove",
-    "variables.protest_demonstration",
+    "change",
+    "variables.nvintervention.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "9.59": 1,
-          "28.38": 1,
-          "62.32": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          9.59,
-          35.955,
-          62.32
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "protest_demonstration"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "26.7252708124726"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "9.59"
-      ],
-      [
-        "mid",
-        "9.59"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "protest_demonstration"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "15.26",
+      15.26
     ]
   ],
   [
@@ -749,10 +453,26 @@
   ],
   [
     "change",
-    "variables.nvintervention.mean",
+    "variables.nvintervention.midpoint",
     [
-      "15.26",
-      15.26
+      "1.64",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.min",
+    [
+      "1.64",
+      1.64
     ]
   ],
   [
@@ -769,22 +489,6 @@
   ],
   [
     "change",
-    "variables.nvintervention.max",
-    [
-      "35.51",
-      35.51
-    ]
-  ],
-  [
-    "change",
-    "variables.nvintervention.min",
-    [
-      "1.64",
-      1.64
-    ]
-  ],
-  [
-    "change",
     "variables.nvintervention.nature",
     [
       "ratio",
@@ -793,218 +497,88 @@
   ],
   [
     "change",
-    "variables.nvintervention.interval",
+    "variables.nvintervention.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.nvintervention.stdDev",
+    [
+      "17.8818874842674",
+      17.881887484267423
+    ]
+  ],
+  [
+    "add",
+    "variables.social_noncoop.plotValues",
+    [
+      [
+        "27.54",
+        1
+      ],
+      [
+        "6.23",
+        1
+      ],
+      [
+        "1.5",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.fewestValues",
+    [
+      "1.5",
+      [
+        1.5,
+        6.23,
+        27.54
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.6427105445785838
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.nvintervention",
+    "change",
+    "variables.social_noncoop.max",
     [
-      [
-        "variableName",
-        "nvintervention"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          8.63,
-          1.64,
-          35.51
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        17.881887484267423
-      ],
-      [
-        "herfindahlIndex",
-        0.6384775440350368
-      ],
-      [
-        "plotValues",
-        {
-          "35.51": 1,
-          "1.64": 1,
-          "8.63": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          1.64,
-          18.575,
-          35.51
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
-      ]
+      "27.54",
+      27.54
     ]
   ],
   [
-    "remove",
-    "variables.nvintervention",
+    "change",
+    "variables.social_noncoop.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "1.64": 1,
-          "8.63": 1,
-          "35.51": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          1.64,
-          18.575,
-          35.51
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "nvintervention"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "17.8818874842674"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "1.64"
-      ],
-      [
-        "mid",
-        "1.64"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "nvintervention"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "11.7566666666667",
+      11.756666666666666
     ]
   ],
   [
@@ -1017,10 +591,26 @@
   ],
   [
     "change",
-    "variables.social_noncoop.mean",
+    "variables.social_noncoop.midpoint",
     [
-      "11.7566666666667",
-      11.756666666666666
+      "1.5",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.min",
+    [
+      "1.5",
+      1.5
     ]
   ],
   [
@@ -1037,22 +627,6 @@
   ],
   [
     "change",
-    "variables.social_noncoop.max",
-    [
-      "27.54",
-      27.54
-    ]
-  ],
-  [
-    "change",
-    "variables.social_noncoop.min",
-    [
-      "1.5",
-      1.5
-    ]
-  ],
-  [
-    "change",
     "variables.social_noncoop.nature",
     [
       "ratio",
@@ -1061,218 +635,88 @@
   ],
   [
     "change",
-    "variables.social_noncoop.interval",
+    "variables.social_noncoop.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.social_noncoop.stdDev",
+    [
+      "13.8718576021142",
+      13.871857602114192
+    ]
+  ],
+  [
+    "add",
+    "variables.political_nocoop.plotValues",
+    [
+      [
+        "10.41",
+        1
+      ],
+      [
+        "37.68",
+        1
+      ],
+      [
+        "1.98",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.fewestValues",
+    [
+      "1.98",
+      [
+        1.98,
+        37.68,
+        10.41
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.6111160373081042
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.interval",
     [
       "continuous",
       "discrete"
     ]
   ],
   [
-    "add",
-    "variables.social_noncoop",
+    "change",
+    "variables.political_nocoop.max",
     [
-      [
-        "variableName",
-        "social_noncoop"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          1.5,
-          6.23,
-          27.54
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        13.871857602114192
-      ],
-      [
-        "herfindahlIndex",
-        0.6427105445785838
-      ],
-      [
-        "plotValues",
-        {
-          "27.54": 1,
-          "6.23": 1,
-          "1.5": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          1.5,
-          14.52,
-          27.54
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
-      ]
+      "37.68",
+      37.68
     ]
   ],
   [
-    "remove",
-    "variables.social_noncoop",
+    "change",
+    "variables.political_nocoop.mean",
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "1.5": 1,
-          "6.23": 1,
-          "27.54": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          1.5,
-          14.52,
-          27.54
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "social_noncoop"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "13.8718576021142"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "1.5"
-      ],
-      [
-        "mid",
-        "1.5"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "social_noncoop"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "16.69",
+      16.69
     ]
   ],
   [
@@ -1285,10 +729,26 @@
   ],
   [
     "change",
-    "variables.political_nocoop.mean",
+    "variables.political_nocoop.midpoint",
     [
-      "16.69",
-      16.69
+      "1.98",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.min",
+    [
+      "1.98",
+      1.98
     ]
   ],
   [
@@ -1305,22 +765,6 @@
   ],
   [
     "change",
-    "variables.political_nocoop.max",
-    [
-      "37.68",
-      37.68
-    ]
-  ],
-  [
-    "change",
-    "variables.political_nocoop.min",
-    [
-      "1.98",
-      1.98
-    ]
-  ],
-  [
-    "change",
     "variables.political_nocoop.nature",
     [
       "ratio",
@@ -1329,218 +773,80 @@
   ],
   [
     "change",
-    "variables.political_nocoop.interval",
+    "variables.political_nocoop.pdfPlotType",
     [
-      "continuous",
-      "discrete"
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.political_nocoop.stdDev",
+    [
+      "18.6601527324939",
+      18.660152732493913
     ]
   ],
   [
     "add",
-    "variables.political_nocoop",
+    "variables.group1.plotValues",
     [
       [
-        "variableName",
-        "political_nocoop"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
+        "3.0",
         1
       ],
       [
-        "fewestValues",
-        [
-          1.98,
-          37.68,
-          10.41
-        ]
-      ],
-      [
-        "fewestFreq",
+        "2.0",
         1
       ],
       [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        18.660152732493913
-      ],
-      [
-        "herfindahlIndex",
-        0.6111160373081042
-      ],
-      [
-        "plotValues",
-        {
-          "10.41": 1,
-          "37.68": 1,
-          "1.98": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          1.98,
-          19.830000000000002,
-          37.68
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
+        "1.0",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.political_nocoop",
+    "change",
+    "variables.group1.fewestFreq",
     [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.group1.fewestValues",
+    [
+      "1",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "1.98": 1,
-          "10.41": 1,
-          "37.68": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          1.98,
-          19.83,
-          37.68
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "political_nocoop"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "18.6601527324939"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "1.98"
-      ],
-      [
-        "mid",
-        "1.98"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "political_nocoop"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        1.0,
+        2.0,
+        3.0
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.group1.herfindahlIndex",
+    [
+      0.333333333333333,
+      0.3888888888888889
+    ]
+  ],
+  [
+    "change",
+    "variables.group1.max",
+    [
+      "3",
+      3.0
+    ]
+  ],
+  [
+    "change",
+    "variables.group1.mean",
+    [
+      "2",
+      2.0
     ]
   ],
   [
@@ -1553,10 +859,26 @@
   ],
   [
     "change",
-    "variables.group1.mean",
+    "variables.group1.midpoint",
     [
-      "2",
-      2.0
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group1.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group1.min",
+    [
+      "1",
+      1.0
     ]
   ],
   [
@@ -1573,226 +895,18 @@
   ],
   [
     "change",
-    "variables.group1.max",
+    "variables.group1.pdfPlotType",
     [
-      "3",
-      3.0
+      "bar",
+      null
     ]
   ],
   [
     "change",
-    "variables.group1.min",
+    "variables.group1.stdDev",
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "add",
-    "variables.group1",
-    [
-      [
-        "variableName",
-        "group1"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        3
-      ],
-      [
-        "uniqueCount",
-        3
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          1.0,
-          2.0,
-          3.0
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        1.0
-      ],
-      [
-        "herfindahlIndex",
-        0.3888888888888889
-      ],
-      [
-        "plotValues",
-        {
-          "3.0": 1,
-          "2.0": 1,
-          "1.0": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          1.0,
-          2.0,
-          3.0
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.3333333333333333,
-          0.6666666666666666,
-          1.0
-        ]
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "variables.group1",
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "1": 1,
-          "2": 1,
-          "3": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          1,
-          2,
-          3
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.333333333333333,
-          0.666666666666667,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "group1"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        3
-      ],
-      [
-        "sd",
-        "1"
-      ],
-      [
-        "uniques",
-        3
-      ],
-      [
-        "herfindahl",
-        0.333333333333333
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "1"
-      ],
-      [
-        "mid",
-        "1"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "group1"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ordinal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
     ]
   ]
 ]

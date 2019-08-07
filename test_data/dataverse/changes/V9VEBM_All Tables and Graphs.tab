@@ -1,5 +1,96 @@
 [
   [
+    "add",
+    [
+      "variables",
+      "Sl.",
+      "plotValues"
+    ],
+    [
+      [
+        "4.0",
+        1
+      ],
+      [
+        "3.0",
+        1
+      ],
+      [
+        "2.0",
+        1
+      ],
+      [
+        "1.0",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "fewestFreq"
+    ],
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "fewestValues"
+    ],
+    [
+      "1",
+      [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "herfindahlIndex"
+    ],
+    [
+      0.25,
+      0.30000000000000004
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "max"
+    ],
+    [
+      "4",
+      4.0
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "mean"
+    ],
+    [
+      "2.5",
+      2.5
+    ]
+  ],
+  [
     "change",
     [
       "variables",
@@ -16,11 +107,35 @@
     [
       "variables",
       "Sl.",
-      "mean"
+      "midpoint"
     ],
     [
-      "2.5",
-      2.5
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "midpointFreq"
+    ],
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "Sl.",
+      "min"
+    ],
+    [
+      "1",
+      1.0
     ]
   ],
   [
@@ -45,11 +160,11 @@
     [
       "variables",
       "Sl.",
-      "max"
+      "pdfPlotType"
     ],
     [
-      "4",
-      4.0
+      "bar",
+      null
     ]
   ],
   [
@@ -57,232 +172,247 @@
     [
       "variables",
       "Sl.",
-      "min"
+      "stdDev"
     ],
     [
-      "1",
-      1.0
+      "1.29099444873581",
+      1.2909944487358056
     ]
   ],
   [
     "add",
-    [
-      "variables",
-      "Sl."
-    ],
+    "variables.Indicators.plotValues",
     [
       [
-        "variableName",
-        "Sl."
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        38
-      ],
-      [
-        "validCount",
-        4
-      ],
-      [
-        "uniqueCount",
-        4
-      ],
-      [
-        "modeFreq",
+        "Economic",
         1
       ],
       [
-        "fewestValues",
-        [
-          1.0,
-          2.0,
-          3.0,
-          4.0
-        ]
-      ],
-      [
-        "fewestFreq",
+        "Exports (% of GDP)",
         1
       ],
       [
-        "midpoint",
-        null
+        "Share of processing trade",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "Real disposable Income per capita (Yuan)",
+        1
       ],
       [
-        "stdDev",
-        1.2909944487358056
+        "Share of service imports in total imports",
+        1
       ],
       [
-        "herfindahlIndex",
-        0.30000000000000004
+        "Electricity production (growth rate%)",
+        1
       ],
       [
-        "plotValues",
-        {
-          "4.0": 1,
-          "3.0": 1,
-          "2.0": 1,
-          "1.0": 1
-        }
+        "Nominal medium of disposable income per capita (growth rate%)",
+        1
       ],
       [
-        "pdfPlotType",
-        null
+        "Imports (% of GDP)",
+        1
       ],
       [
-        "pdfPlotX",
-        null
+        "Share of Chinese exports in world exports",
+        1
       ],
       [
-        "pdfPlotY",
-        null
+        "Real disposable income per capita (growth rate%)",
+        1
       ],
       [
-        "cdfPlotType",
-        "bar"
+        "Population growth rate (annual %)",
+        1
       ],
       [
-        "cdfPlotX",
-        [
-          1.0,
-          2.0,
-          3.0,
-          4.0
-        ]
+        "Industrial Output (growth rate %)",
+        1
       ],
       [
-        "cdfPlotY",
-        [
-          0.25,
-          0.5,
-          0.75,
-          1.0
-        ]
+        "Consumption Contribution to GDP growth (%)",
+        1
+      ],
+      [
+        "Total trade growth rate",
+        1
+      ],
+      [
+        "Real disposable wage per capita (growth rate)",
+        1
+      ],
+      [
+        "Total energy consumption (growth rate)",
+        1
+      ],
+      [
+        "Urban population growth (annual%)",
+        1
+      ],
+      [
+        "Fixed Assets Investment Growth Rate",
+        1
+      ],
+      [
+        "Electricity Consumption (growth rate%)",
+        1
+      ],
+      [
+        "Railway freights volumes (growth rate)",
+        1
+      ],
+      [
+        "Total freight volumes (growth rates%)",
+        1
+      ],
+      [
+        "Foreign exchange reserve (growth rate)",
+        1
+      ],
+      [
+        "Real disposable wage per capita (Yuan)",
+        1
+      ],
+      [
+        "Share of Chinese imports in world imports",
+        1
+      ],
+      [
+        "Import growth rate",
+        1
+      ],
+      [
+        "PPI (Input price, %)",
+        1
+      ],
+      [
+        "Poverty head count ratio at $1.9 a day (2011 PPP) (of population)",
+        1
+      ],
+      [
+        "Nominal medium of disposable income per capita (Yuan)",
+        1
+      ],
+      [
+        "Trade surplus growth rate",
+        1
+      ],
+      [
+        "Outflow FDI growth rate",
+        1
+      ],
+      [
+        "Social",
+        1
+      ],
+      [
+        "CPI(%)",
+        1
+      ],
+      [
+        "Share of Service Sector in GDP",
+        1
+      ],
+      [
+        "Inflow FDI growth rate (actual)",
+        1
+      ],
+      [
+        "Trade",
+        1
+      ],
+      [
+        "Share of service exports in total exports",
+        1
+      ],
+      [
+        "Total Population (1,000 persons)",
+        1
+      ],
+      [
+        "PPI(output price,%)",
+        1
+      ],
+      [
+        "Monetary and Income Indicators",
+        1
+      ],
+      [
+        "GDP (growth rate)",
+        1
+      ],
+      [
+        "Exports growth rate",
+        1
+      ],
+      [
+        "Share of Manufacturer sector in GDP",
+        1
       ]
     ]
   ],
   [
-    "remove",
+    "change",
+    "variables.Indicators.cdfPlotType",
     [
-      "variables",
-      "Sl."
-    ],
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Indicators.cdfPlotX",
     [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Indicators.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Indicators.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.Indicators.fewestValues",
+    [
+      "Social",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          1,
-          2,
-          3,
-          4
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.25,
-          0.5,
-          0.75,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Sl."
-      ],
-      [
-        "invalid",
-        38
-      ],
-      [
-        "valid",
-        4
-      ],
-      [
-        "sd",
-        "1.29099444873581"
-      ],
-      [
-        "uniques",
-        4
-      ],
-      [
-        "herfindahl",
-        0.25
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "1"
-      ],
-      [
-        "mid",
-        "1"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "Sl."
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ordinal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        "Railway freights volumes (growth rate)",
+        "Monetary and Income Indicators",
+        "Share of service imports in total imports",
+        "Share of processing trade",
+        "Trade"
       ]
+    ]
+  ],
+  [
+    "change",
+    "variables.Indicators.midpoint",
+    [
+      "Social",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.Indicators.midpointFreq",
+    [
+      "1",
+      null
     ]
   ],
   [
@@ -300,275 +430,11 @@
     ]
   ],
   [
-    "add",
-    "variables.Indicators",
+    "change",
+    "variables.Indicators.pdfPlotType",
     [
-      [
-        "variableName",
-        "Indicators"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        42
-      ],
-      [
-        "uniqueCount",
-        42
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          "Railway freights volumes (growth rate)",
-          "Monetary and Income Indicators",
-          "Share of service imports in total imports",
-          "Share of processing trade",
-          "Trade"
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.02380952380952379
-      ],
-      [
-        "plotValues",
-        {
-          "Economic": 1,
-          "Exports (% of GDP)": 1,
-          "Share of processing trade": 1,
-          "Real disposable Income per capita (Yuan)": 1,
-          "Share of service imports in total imports": 1,
-          "Electricity production (growth rate%)": 1,
-          "Nominal medium of disposable income per capita (growth rate%)": 1,
-          "Imports (% of GDP)": 1,
-          "Share of Chinese exports in world exports": 1,
-          "Real disposable income per capita (growth rate%)": 1,
-          "Population growth rate (annual %)": 1,
-          "Industrial Output (growth rate %)": 1,
-          "Consumption Contribution to GDP growth (%)": 1,
-          "Total trade growth rate": 1,
-          "Real disposable wage per capita (growth rate)": 1,
-          "Total energy consumption (growth rate)": 1,
-          "Urban population growth (annual%)": 1,
-          "Fixed Assets Investment Growth Rate": 1,
-          "Electricity Consumption (growth rate%)": 1,
-          "Railway freights volumes (growth rate)": 1,
-          "Total freight volumes (growth rates%)": 1,
-          "Foreign exchange reserve (growth rate)": 1,
-          "Real disposable wage per capita (Yuan)": 1,
-          "Share of Chinese imports in world imports": 1,
-          "Import growth rate": 1,
-          "PPI (Input price, %)": 1,
-          "Poverty head count ratio at $1.9 a day (2011 PPP) (of population)": 1,
-          "Nominal medium of disposable income per capita (Yuan)": 1,
-          "Trade surplus growth rate": 1,
-          "Outflow FDI growth rate": 1,
-          "Social": 1,
-          "CPI(%)": 1,
-          "Share of Service Sector in GDP": 1,
-          "Inflow FDI growth rate (actual)": 1,
-          "Trade": 1,
-          "Share of service exports in total exports": 1,
-          "Total Population (1,000 persons)": 1,
-          "PPI(output price,%)": 1,
-          "Monetary and Income Indicators": 1,
-          "GDP (growth rate)": 1,
-          "Exports growth rate": 1,
-          "Share of Manufacturer sector in GDP": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
-      ]
-    ]
-  ],
-  [
-    "remove",
-    "variables.Indicators",
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "Consumption Contribution to GDP growth (%)": 1,
-          "CPI(%)": 1,
-          "Economic": 1,
-          "Electricity Consumption (growth rate%)": 1,
-          "Electricity production (growth rate%)": 1,
-          "Exports (% of GDP)": 1,
-          "Exports growth rate": 1,
-          "Fixed Assets Investment Growth Rate": 1,
-          "Foreign exchange reserve (growth rate)": 1,
-          "GDP (growth rate)": 1,
-          "Import growth rate": 1,
-          "Imports (% of GDP)": 1,
-          "Industrial Output (growth rate %)": 1,
-          "Inflow FDI growth rate (actual)": 1,
-          "Monetary and Income Indicators": 1,
-          "Nominal medium of disposable income per capita (growth rate%)": 1,
-          "Nominal medium of disposable income per capita (Yuan)": 1,
-          "Outflow FDI growth rate": 1,
-          "Population growth rate (annual %)": 1,
-          "Poverty head count ratio at $1.9 a day (2011 PPP) (of population)": 1,
-          "PPI (Input price, %)": 1,
-          "PPI(output price,%)": 1,
-          "Railway freights volumes (growth rate)": 1,
-          "Real disposable income per capita (growth rate%)": 1,
-          "Real disposable Income per capita (Yuan)": 1,
-          "Real disposable wage per capita (growth rate)": 1,
-          "Real disposable wage per capita (Yuan)": 1,
-          "Share of Chinese exports in world exports": 1,
-          "Share of Chinese imports in world imports": 1,
-          "Share of Manufacturer sector in GDP": 1,
-          "Share of processing trade": 1,
-          "Share of service exports in total exports": 1,
-          "Share of service imports in total imports": 1,
-          "Share of Service Sector in GDP": 1,
-          "Social": 1,
-          "Total energy consumption (growth rate)": 1,
-          "Total freight volumes (growth rates%)": 1,
-          "Total Population (1,000 persons)": 1,
-          "Total trade growth rate": 1,
-          "Trade": 1,
-          "Trade surplus growth rate": 1,
-          "Urban population growth (annual%)": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "Indicators"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        42
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        42
-      ],
-      [
-        "herfindahl",
-        0.0238095238095238
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "Social"
-      ],
-      [
-        "mid",
-        "Social"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "Indicators"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "bar",
+      null
     ]
   ],
   [
@@ -968,369 +834,171 @@
       [
         "X2012",
         {
-          "plottype": "bar",
-          "plotvalues": {
-            "": 5,
-            "-": 5,
-            "-0.7": 1,
-            "-1.7": 1,
-            "-1.8": 1,
-            "-3.7": 1,
-            "0.5": 1,
-            "12.1": 1,
-            "1350695": 1,
-            "14.5": 1,
-            "17.600000000000001": 1,
-            "2.6": 1,
-            "20.3": 1,
-            "22.7": 1,
-            "25.4": 1,
-            "3.1": 1,
-            "3.9": 1,
-            "4.0999999999999996": 1,
-            "4.3": 3,
-            "4.7": 1,
-            "42.1": 1,
-            "44.1": 1,
-            "47.1": 1,
-            "48.7": 1,
-            "5.9": 1,
-            "6.2": 1,
-            "6.5": 1,
-            "7.9": 1,
-            "8.1": 1,
-            "8.6999999999999993": 1,
-            "9.3000000000000007": 1,
-            "9.5": 1
-          },
-          "cdfplottype": "NULL",
-          "cdfplotx": "NULL",
-          "cdfploty": "NULL",
-          "labl": "",
-          "varnamesSumStat": "X2012",
-          "median": "NA",
-          "mean": "NA",
-          "mode": "-",
-          "max": "NA",
-          "min": "NA",
-          "invalid": 0,
-          "valid": 42,
-          "sd": "NA",
-          "uniques": 31,
-          "herfindahl": 0.0460189919649379,
-          "freqmode": 5,
-          "fewest": "1350695",
-          "mid": "1350695",
-          "freqfewest": "1",
-          "freqmid": "1",
-          "numchar": "character",
-          "nature": "nominal",
+          "plotValues": {},
           "binary": "no",
+          "cdfPlotType": "NULL",
+          "cdfPlotX": "NULL",
+          "cdfPlotY": "NULL",
+          "description": "",
+          "fewestFreq": "1",
+          "fewestValues": "1350695",
+          "herfindahlIndex": 0.0460189919649379,
           "interval": "discrete",
+          "invalidCount": 0,
+          "max": "NA",
+          "mean": "NA",
+          "median": "NA",
+          "midpoint": "1350695",
+          "midpointFreq": "1",
+          "min": "NA",
+          "mode": "-",
+          "modeFreq": 5,
+          "nature": "nominal",
+          "numchar": "character",
+          "pdfPlotType": "bar",
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "stdDev": "NA",
           "time": "no",
-          "varnamesTypes": "X2012",
-          "defaultInterval": "discrete",
-          "defaultNumchar": "character",
-          "defaultNature": "nominal",
-          "defaultBinary": "no",
-          "defaultTime": "no"
+          "validCount": 42,
+          "variableName": "X2012",
+          "uniqueCount": 31
         }
       ],
       [
         "X2013",
         {
-          "plottype": "bar",
-          "plotvalues": {
-            "": 4,
-            "-": 3,
-            "-1.9": 1,
-            "-2": 1,
-            "0.5": 1,
-            "1.6": 1,
-            "1.9": 1,
-            "10": 1,
-            "10410.799999999999": 1,
-            "12.5": 1,
-            "1357380": 1,
-            "15.4": 1,
-            "15.6": 1,
-            "18310.8": 1,
-            "19.3": 1,
-            "2.6": 1,
-            "2.9": 1,
-            "22.1": 1,
-            "22.8": 1,
-            "24.5": 1,
-            "25632.1": 1,
-            "3.7": 2,
-            "39": 1,
-            "44.4": 1,
-            "47.2": 1,
-            "5.3": 1,
-            "7.2": 2,
-            "7.5": 1,
-            "7.7": 1,
-            "7.8": 1,
-            "8.8000000000000007": 1,
-            "8.9": 2,
-            "9.1": 1,
-            "9.3000000000000007": 1
-          },
-          "cdfplottype": "NULL",
-          "cdfplotx": "NULL",
-          "cdfploty": "NULL",
-          "labl": "",
-          "varnamesSumStat": "X2013",
-          "median": "NA",
-          "mean": "NA",
-          "mode": "-",
-          "max": "NA",
-          "min": "NA",
-          "invalid": 0,
-          "valid": 42,
-          "sd": "NA",
-          "uniques": 33,
-          "herfindahl": 0.0346260387811634,
-          "freqmode": 3,
-          "fewest": "1357380",
-          "mid": "1357380",
-          "freqfewest": "1",
-          "freqmid": "1",
-          "numchar": "character",
-          "nature": "nominal",
+          "plotValues": {},
           "binary": "no",
+          "cdfPlotType": "NULL",
+          "cdfPlotX": "NULL",
+          "cdfPlotY": "NULL",
+          "description": "",
+          "fewestFreq": "1",
+          "fewestValues": "1357380",
+          "herfindahlIndex": 0.0346260387811634,
           "interval": "discrete",
+          "invalidCount": 0,
+          "max": "NA",
+          "mean": "NA",
+          "median": "NA",
+          "midpoint": "1357380",
+          "midpointFreq": "1",
+          "min": "NA",
+          "mode": "-",
+          "modeFreq": 3,
+          "nature": "nominal",
+          "numchar": "character",
+          "pdfPlotType": "bar",
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "stdDev": "NA",
           "time": "no",
-          "varnamesTypes": "X2013",
-          "defaultInterval": "discrete",
-          "defaultNumchar": "character",
-          "defaultNature": "nominal",
-          "defaultBinary": "no",
-          "defaultTime": "no"
+          "validCount": 42,
+          "variableName": "X2013",
+          "uniqueCount": 33
         }
       ],
       [
         "X2014",
         {
-          "plottype": "bar",
-          "plotvalues": {
-            "": 4,
-            "-": 1,
-            "-1.9": 1,
-            "-2.2000000000000002": 1,
-            "-2.7": 1,
-            "-3.9": 1,
-            "0.5": 3,
-            "0.6": 1,
-            "1.7": 1,
-            "10.6": 1,
-            "11420.6": 1,
-            "12.4": 1,
-            "1364270": 1,
-            "14.2": 1,
-            "15.3": 1,
-            "17569.8": 1,
-            "19.3": 1,
-            "2": 1,
-            "2.1": 1,
-            "2.8": 1,
-            "20167.099999999999": 1,
-            "21.6": 1,
-            "24.1": 1,
-            "3.4": 1,
-            "3.7": 1,
-            "37.700000000000003": 1,
-            "4.2": 2,
-            "44.6": 1,
-            "47.2": 1,
-            "47.9": 1,
-            "7": 1,
-            "7.3": 1,
-            "8": 1,
-            "8.9": 1,
-            "9.6999999999999993": 2
-          },
-          "cdfplottype": "NULL",
-          "cdfplotx": "NULL",
-          "cdfploty": "NULL",
-          "labl": "",
-          "varnamesSumStat": "X2014",
-          "median": "NA",
-          "mean": "NA",
-          "mode": "0.5",
-          "max": "NA",
-          "min": "NA",
-          "invalid": 0,
-          "valid": 42,
-          "sd": "NA",
-          "uniques": 34,
-          "herfindahl": 0.0332409972299169,
-          "freqmode": 3,
-          "fewest": "1364270",
-          "mid": "1364270",
-          "freqfewest": "1",
-          "freqmid": "1",
-          "numchar": "character",
-          "nature": "nominal",
+          "plotValues": {},
           "binary": "no",
+          "cdfPlotType": "NULL",
+          "cdfPlotX": "NULL",
+          "cdfPlotY": "NULL",
+          "description": "",
+          "fewestFreq": "1",
+          "fewestValues": "1364270",
+          "herfindahlIndex": 0.0332409972299169,
           "interval": "discrete",
+          "invalidCount": 0,
+          "max": "NA",
+          "mean": "NA",
+          "median": "NA",
+          "midpoint": "1364270",
+          "midpointFreq": "1",
+          "min": "NA",
+          "mode": "0.5",
+          "modeFreq": 3,
+          "nature": "nominal",
+          "numchar": "character",
+          "pdfPlotType": "bar",
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "stdDev": "NA",
           "time": "no",
-          "varnamesTypes": "X2014",
-          "defaultInterval": "discrete",
-          "defaultNumchar": "character",
-          "defaultNature": "nominal",
-          "defaultBinary": "no",
-          "defaultTime": "no"
+          "validCount": 42,
+          "variableName": "X2014",
+          "uniqueCount": 34
         }
       ],
       [
         "X2015",
         {
-          "plottype": "bar",
-          "plotvalues": {
-            "": 4,
-            "-": 1,
-            "-11.9": 1,
-            "-13.3": 1,
-            "-14.3": 2,
-            "-5.2": 1,
-            "-6.1": 1,
-            "-8.1": 1,
-            "0.5": 1,
-            "1": 1,
-            "1.4": 1,
-            "11.4": 1,
-            "12459": 1,
-            "1371220": 1,
-            "18.3": 1,
-            "18.5": 1,
-            "19281.099999999999": 1,
-            "2.7": 1,
-            "2.8": 1,
-            "2.9": 1,
-            "21.8": 1,
-            "21966.2": 1,
-            "22": 1,
-            "35.1": 1,
-            "4.2": 1,
-            "4.5999999999999996": 1,
-            "45.1": 1,
-            "46.9": 1,
-            "5.6": 1,
-            "55": 1,
-            "6": 1,
-            "6.9": 1,
-            "7.4": 1,
-            "9.1": 1,
-            "9.1999999999999993": 1,
-            "9.6999999999999993": 1,
-            "9.8000000000000007": 2
-          },
-          "cdfplottype": "NULL",
-          "cdfplotx": "NULL",
-          "cdfploty": "NULL",
-          "labl": "",
-          "varnamesSumStat": "X2015",
-          "median": "NA",
-          "mean": "NA",
-          "mode": "9.8000000000000007",
-          "max": "NA",
-          "min": "NA",
-          "invalid": 0,
-          "valid": 42,
-          "sd": "NA",
-          "uniques": 36,
-          "herfindahl": 0.0290858725761773,
-          "freqmode": 2,
-          "fewest": "1371220",
-          "mid": "1371220",
-          "freqfewest": "1",
-          "freqmid": "1",
-          "numchar": "character",
-          "nature": "nominal",
+          "plotValues": {},
           "binary": "no",
+          "cdfPlotType": "NULL",
+          "cdfPlotX": "NULL",
+          "cdfPlotY": "NULL",
+          "description": "",
+          "fewestFreq": "1",
+          "fewestValues": "1371220",
+          "herfindahlIndex": 0.0290858725761773,
           "interval": "discrete",
+          "invalidCount": 0,
+          "max": "NA",
+          "mean": "NA",
+          "median": "NA",
+          "midpoint": "1371220",
+          "midpointFreq": "1",
+          "min": "NA",
+          "mode": "9.8000000000000007",
+          "modeFreq": 2,
+          "nature": "nominal",
+          "numchar": "character",
+          "pdfPlotType": "bar",
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "stdDev": "NA",
           "time": "no",
-          "varnamesTypes": "X2015",
-          "defaultInterval": "discrete",
-          "defaultNumchar": "character",
-          "defaultNature": "nominal",
-          "defaultBinary": "no",
-          "defaultTime": "no"
+          "validCount": 42,
+          "variableName": "X2015",
+          "uniqueCount": 36
         }
       ],
       [
         "X2016",
         {
-          "plottype": "bar",
-          "plotvalues": {
-            "": 4,
-            "-": 4,
-            "-0.2": 1,
-            "-0.8": 1,
-            "-1.3": 1,
-            "-1.9": 1,
-            "-14.1": 1,
-            "-3.7": 1,
-            "-5.5": 2,
-            "-6.8": 1,
-            "-9.6": 1,
-            "0.5": 1,
-            "10.6": 1,
-            "13455": 1,
-            "1378665": 1,
-            "17.399999999999999": 1,
-            "19.600000000000001": 1,
-            "2": 1,
-            "2.6": 1,
-            "20883": 1,
-            "23.2": 1,
-            "23821": 1,
-            "34.1": 1,
-            "4.7": 1,
-            "40.700000000000003": 1,
-            "5.2": 1,
-            "50.7": 1,
-            "6": 1,
-            "6.3": 1,
-            "6.7": 1,
-            "7.9": 1,
-            "8": 1,
-            "8.3000000000000007": 1,
-            "9.5": 1,
-            "9.6": 1
-          },
-          "cdfplottype": "NULL",
-          "cdfplotx": "NULL",
-          "cdfploty": "NULL",
-          "labl": "",
-          "varnamesSumStat": "X2016",
-          "median": "NA",
-          "mean": "NA",
-          "mode": "-",
-          "max": "NA",
-          "min": "NA",
-          "invalid": 0,
-          "valid": 42,
-          "sd": "NA",
-          "uniques": 34,
-          "herfindahl": 0.03601108033241,
-          "freqmode": 4,
-          "fewest": "1378665",
-          "mid": "1378665",
-          "freqfewest": "1",
-          "freqmid": "1",
-          "numchar": "character",
-          "nature": "nominal",
+          "plotValues": {},
           "binary": "no",
+          "cdfPlotType": "NULL",
+          "cdfPlotX": "NULL",
+          "cdfPlotY": "NULL",
+          "description": "",
+          "fewestFreq": "1",
+          "fewestValues": "1378665",
+          "herfindahlIndex": 0.03601108033241,
           "interval": "discrete",
+          "invalidCount": 0,
+          "max": "NA",
+          "mean": "NA",
+          "median": "NA",
+          "midpoint": "1378665",
+          "midpointFreq": "1",
+          "min": "NA",
+          "mode": "-",
+          "modeFreq": 4,
+          "nature": "nominal",
+          "numchar": "character",
+          "pdfPlotType": "bar",
+          "pdfPlotX": null,
+          "pdfPlotY": null,
+          "stdDev": "NA",
           "time": "no",
-          "varnamesTypes": "X2016",
-          "defaultInterval": "discrete",
-          "defaultNumchar": "character",
-          "defaultNature": "nominal",
-          "defaultBinary": "no",
-          "defaultTime": "no"
+          "validCount": 42,
+          "variableName": "X2016",
+          "uniqueCount": 34
         }
       ]
     ]

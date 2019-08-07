@@ -1,5 +1,93 @@
 [
   [
+    "add",
+    "variables.group.plotValues",
+    [
+      [
+        "ssp",
+        1
+      ],
+      [
+        "militant.groups",
+        1
+      ],
+      [
+        "pak.tal",
+        1
+      ],
+      [
+        "afghan.tal",
+        1
+      ],
+      [
+        "edhi",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.group.cdfPlotType",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.cdfPlotX",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.cdfPlotY",
+    [
+      "NULL",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.fewestFreq",
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    "variables.group.fewestValues",
+    [
+      "militant.groups",
+      [
+        "ssp",
+        "afghan.tal",
+        "pak.tal",
+        "militant.groups",
+        "edhi"
+      ]
+    ]
+  ],
+  [
+    "change",
+    "variables.group.midpoint",
+    [
+      "militant.groups",
+      null
+    ]
+  ],
+  [
+    "change",
+    "variables.group.midpointFreq",
+    [
+      "1",
+      null
+    ]
+  ],
+  [
     "change",
     "variables.group.mode",
     [
@@ -14,201 +102,119 @@
     ]
   ],
   [
+    "change",
+    "variables.group.pdfPlotType",
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
     "add",
-    "variables.group",
+    [
+      "variables",
+      "overall.coef",
+      "plotValues"
+    ],
     [
       [
-        "variableName",
-        "group"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        5
-      ],
-      [
-        "uniqueCount",
-        5
-      ],
-      [
-        "modeFreq",
+        "-0.0141625",
         1
       ],
       [
-        "fewestValues",
-        [
-          "ssp",
-          "afghan.tal",
-          "pak.tal",
-          "militant.groups",
-          "edhi"
-        ]
-      ],
-      [
-        "fewestFreq",
+        "0.012715299999999999",
         1
       ],
       [
-        "midpoint",
-        null
+        "-0.0078354",
+        1
       ],
       [
-        "midpointFreq",
-        null
+        "-0.012570900000000001",
+        1
       ],
       [
-        "stdDev",
-        "NA"
-      ],
-      [
-        "herfindahlIndex",
-        0.20000000000000004
-      ],
-      [
-        "plotValues",
-        {
-          "ssp": 1,
-          "militant.groups": 1,
-          "pak.tal": 1,
-          "afghan.tal": 1,
-          "edhi": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        null
-      ],
-      [
-        "cdfPlotX",
-        null
-      ],
-      [
-        "cdfPlotY",
-        null
+        "-0.0067771",
+        1
       ]
     ]
   ],
   [
-    "remove",
-    "variables.group",
+    "change",
     [
+      "variables",
+      "overall.coef",
+      "fewestFreq"
+    ],
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "fewestValues"
+    ],
+    [
+      "-0.0125709",
       [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "afghan.tal": 1,
-          "edhi": 1,
-          "militant.groups": 1,
-          "pak.tal": 1,
-          "ssp": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "NULL"
-      ],
-      [
-        "cdfplotx",
-        "NULL"
-      ],
-      [
-        "cdfploty",
-        "NULL"
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "group"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        5
-      ],
-      [
-        "sd",
-        "NA"
-      ],
-      [
-        "uniques",
-        5
-      ],
-      [
-        "herfindahl",
-        0.2
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "militant.groups"
-      ],
-      [
-        "mid",
-        "militant.groups"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "group"
-      ],
-      [
-        "defaultInterval",
-        "discrete"
-      ],
-      [
-        "defaultNumchar",
-        "character"
-      ],
-      [
-        "defaultNature",
-        "nominal"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
+        -0.0067771,
+        -0.012570900000000001,
+        -0.0078354,
+        0.012715299999999999,
+        -0.0141625
       ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "herfindahlIndex"
+    ],
+    [
+      0.2,
+      0.7656419987532401
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "interval"
+    ],
+    [
+      "continuous",
+      "discrete"
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "max"
+    ],
+    [
+      "0.0127153",
+      0.012715299999999999
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "mean"
+    ],
+    [
+      "-0.00572612",
+      -0.0057261199999999995
     ]
   ],
   [
@@ -228,11 +234,35 @@
     [
       "variables",
       "overall.coef",
-      "mean"
+      "midpoint"
     ],
     [
-      "-0.00572612",
-      -0.0057261199999999995
+      "-0.0125709",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "midpointFreq"
+    ],
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "min"
+    ],
+    [
+      "-0.0141625",
+      -0.0141625
     ]
   ],
   [
@@ -258,30 +288,6 @@
     [
       "variables",
       "overall.coef",
-      "max"
-    ],
-    [
-      "0.0127153",
-      0.012715299999999999
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.coef",
-      "min"
-    ],
-    [
-      "-0.0141625",
-      -0.0141625
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.coef",
       "nature"
     ],
     [
@@ -294,6 +300,90 @@
     [
       "variables",
       "overall.coef",
+      "pdfPlotType"
+    ],
+    [
+      "bar",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.coef",
+      "stdDev"
+    ],
+    [
+      "0.0107664190129309",
+      0.010766419012930902
+    ]
+  ],
+  [
+    "add",
+    [
+      "variables",
+      "overall.se",
+      "plotValues"
+    ],
+    [
+      [
+        "0.0148221",
+        1
+      ],
+      [
+        "0.014497299999999998",
+        1
+      ],
+      [
+        "0.0153403",
+        1
+      ],
+      [
+        "0.0115928",
+        1
+      ],
+      [
+        "0.0138558",
+        1
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.se",
+      "fewestFreq"
+    ],
+    [
+      "1",
+      1
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.se",
+      "fewestValues"
+    ],
+    [
+      "0.0115928",
+      [
+        0.0138558,
+        0.0153403,
+        0.0115928,
+        0.014497299999999998,
+        0.0148221
+      ]
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.se",
       "interval"
     ],
     [
@@ -302,231 +392,27 @@
     ]
   ],
   [
-    "add",
+    "change",
     [
       "variables",
-      "overall.coef"
+      "overall.se",
+      "max"
     ],
     [
-      [
-        "variableName",
-        "overall.coef"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        5
-      ],
-      [
-        "uniqueCount",
-        5
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          -0.0067771,
-          -0.012570900000000001,
-          -0.0078354,
-          0.012715299999999999,
-          -0.0141625
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.010766419012930902
-      ],
-      [
-        "herfindahlIndex",
-        0.7656419987532401
-      ],
-      [
-        "plotValues",
-        {
-          "-0.0141625": 1,
-          "0.012715299999999999": 1,
-          "-0.0078354": 1,
-          "-0.012570900000000001": 1,
-          "-0.0067771": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          -0.0141625,
-          -0.00744305,
-          -0.0007235999999999996,
-          0.005995849999999999,
-          0.012715299999999999
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.2,
-          0.6,
-          0.8,
-          0.8,
-          1.0
-        ]
-      ]
+      "0.0153403",
+      0.0153403
     ]
   ],
   [
-    "remove",
+    "change",
     [
       "variables",
-      "overall.coef"
+      "overall.se",
+      "mean"
     ],
     [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "-0.0141625": 1,
-          "-0.0125709": 1,
-          "-0.0078354": 1,
-          "-0.0067771": 1,
-          "0.0127153": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          -0.0141625,
-          -0.00744305,
-          -0.0007236,
-          0.00599585,
-          0.0127153
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.2,
-          0.6,
-          0.8,
-          0.8,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "overall.coef"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        5
-      ],
-      [
-        "sd",
-        "0.0107664190129309"
-      ],
-      [
-        "uniques",
-        5
-      ],
-      [
-        "herfindahl",
-        0.2
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "-0.0125709"
-      ],
-      [
-        "mid",
-        "-0.0125709"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "overall.coef"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "ratio"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.01402166",
+      0.01402166
     ]
   ],
   [
@@ -546,11 +432,35 @@
     [
       "variables",
       "overall.se",
-      "mean"
+      "midpoint"
     ],
     [
-      "0.01402166",
-      0.01402166
+      "0.0115928",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.se",
+      "midpointFreq"
+    ],
+    [
+      "1",
+      null
+    ]
+  ],
+  [
+    "change",
+    [
+      "variables",
+      "overall.se",
+      "min"
+    ],
+    [
+      "0.0115928",
+      0.0115928
     ]
   ],
   [
@@ -576,30 +486,6 @@
     [
       "variables",
       "overall.se",
-      "max"
-    ],
-    [
-      "0.0153403",
-      0.0153403
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.se",
-      "min"
-    ],
-    [
-      "0.0115928",
-      0.0115928
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "overall.se",
       "nature"
     ],
     [
@@ -612,239 +498,23 @@
     [
       "variables",
       "overall.se",
-      "interval"
+      "pdfPlotType"
     ],
     [
-      "continuous",
-      "discrete"
+      "bar",
+      null
     ]
   ],
   [
-    "add",
+    "change",
     [
       "variables",
-      "overall.se"
+      "overall.se",
+      "stdDev"
     ],
     [
-      [
-        "variableName",
-        "overall.se"
-      ],
-      [
-        "description",
-        ""
-      ],
-      [
-        "invalidCount",
-        0
-      ],
-      [
-        "validCount",
-        5
-      ],
-      [
-        "uniqueCount",
-        5
-      ],
-      [
-        "modeFreq",
-        1
-      ],
-      [
-        "fewestValues",
-        [
-          0.0138558,
-          0.0153403,
-          0.0115928,
-          0.014497299999999998,
-          0.0148221
-        ]
-      ],
-      [
-        "fewestFreq",
-        1
-      ],
-      [
-        "midpoint",
-        null
-      ],
-      [
-        "midpointFreq",
-        null
-      ],
-      [
-        "stdDev",
-        0.0014605323936838918
-      ],
-      [
-        "herfindahlIndex",
-        0.20173597515828334
-      ],
-      [
-        "plotValues",
-        {
-          "0.0148221": 1,
-          "0.014497299999999998": 1,
-          "0.0153403": 1,
-          "0.0115928": 1,
-          "0.0138558": 1
-        }
-      ],
-      [
-        "pdfPlotType",
-        null
-      ],
-      [
-        "pdfPlotX",
-        null
-      ],
-      [
-        "pdfPlotY",
-        null
-      ],
-      [
-        "cdfPlotType",
-        "bar"
-      ],
-      [
-        "cdfPlotX",
-        [
-          0.0115928,
-          0.012529675,
-          0.01346655,
-          0.014403425,
-          0.0153403
-        ]
-      ],
-      [
-        "cdfPlotY",
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.4,
-          1.0
-        ]
-      ]
-    ]
-  ],
-  [
-    "remove",
-    [
-      "variables",
-      "overall.se"
-    ],
-    [
-      [
-        "plottype",
-        "bar"
-      ],
-      [
-        "plotvalues",
-        {
-          "0.0115928": 1,
-          "0.0138558": 1,
-          "0.0144973": 1,
-          "0.0148221": 1,
-          "0.0153403": 1
-        }
-      ],
-      [
-        "cdfplottype",
-        "bar"
-      ],
-      [
-        "cdfplotx",
-        [
-          0.0115928,
-          0.012529675,
-          0.01346655,
-          0.014403425,
-          0.0153403
-        ]
-      ],
-      [
-        "cdfploty",
-        [
-          0.2,
-          0.2,
-          0.2,
-          0.4,
-          1
-        ]
-      ],
-      [
-        "labl",
-        ""
-      ],
-      [
-        "varnamesSumStat",
-        "overall.se"
-      ],
-      [
-        "invalid",
-        0
-      ],
-      [
-        "valid",
-        5
-      ],
-      [
-        "sd",
-        "0.00146053239368389"
-      ],
-      [
-        "uniques",
-        5
-      ],
-      [
-        "herfindahl",
-        0.2
-      ],
-      [
-        "freqmode",
-        1
-      ],
-      [
-        "fewest",
-        "0.0115928"
-      ],
-      [
-        "mid",
-        "0.0115928"
-      ],
-      [
-        "freqfewest",
-        "1"
-      ],
-      [
-        "freqmid",
-        "1"
-      ],
-      [
-        "varnamesTypes",
-        "overall.se"
-      ],
-      [
-        "defaultInterval",
-        "continuous"
-      ],
-      [
-        "defaultNumchar",
-        "numeric"
-      ],
-      [
-        "defaultNature",
-        "percent"
-      ],
-      [
-        "defaultBinary",
-        "no"
-      ],
-      [
-        "defaultTime",
-        "no"
-      ]
+      "0.00146053239368389",
+      0.0014605323936838918
     ]
   ]
 ]
