@@ -1,174 +1,6 @@
 [
   [
     "add",
-    "variables.piecerate.plotValues",
-    [
-      [
-        "10.0",
-        1137
-      ],
-      [
-        "1.5",
-        216
-      ],
-      [
-        "2.55",
-        110
-      ],
-      [
-        "0.45",
-        110
-      ],
-      [
-        "8.5",
-        106
-      ],
-      [
-        "5.0",
-        106
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.piecerate.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "add",
-    "variables.strategic.plotValues",
-    [
-      [
-        "1.0",
-        990
-      ],
-      [
-        "0.0",
-        795
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.strategic.interval",
-    [
-      "discrete",
-      "continuous"
-    ]
-  ],
-  [
-    "change",
-    "variables.strategic.nature",
-    [
-      "ordinal",
-      "percent"
-    ]
-  ],
-  [
-    "change",
-    "variables.strategic.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "add",
-    "variables.pakistan.plotValues",
-    [
-      [
-        "1.0",
-        909
-      ],
-      [
-        "0.0",
-        876
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.pakistan.interval",
-    [
-      "discrete",
-      "continuous"
-    ]
-  ],
-  [
-    "change",
-    "variables.pakistan.nature",
-    [
-      "ordinal",
-      "percent"
-    ]
-  ],
-  [
-    "change",
-    "variables.pakistan.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "add",
-    "variables.pf.plotValues",
-    [
-      [
-        "0.0",
-        666
-      ],
-      [
-        "5.0",
-        348
-      ],
-      [
-        "3.0",
-        256
-      ],
-      [
-        "1.0",
-        212
-      ],
-      [
-        "4.0",
-        154
-      ],
-      [
-        "2.0",
-        149
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.pf.interval",
-    [
-      "discrete",
-      "continuous"
-    ]
-  ],
-  [
-    "change",
-    "variables.pf.nature",
-    [
-      "ordinal",
-      "ratio"
-    ]
-  ],
-  [
-    "change",
-    "variables.pf.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "add",
     "variables",
     [
       [
@@ -190,16 +22,8 @@
           "min": 0.0,
           "modeFreq": 648,
           "stdDev": 0.3314975836461273,
-          "plotValues": {
-            "0.0": 648,
-            "0.85": 379,
-            "0.15": 379,
-            "0.5": 379
-          },
-          "pdfPlotType": null,
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": []
         }
@@ -210,9 +34,9 @@
           "variableName": "difficulty(d)",
           "description": "",
           "numchar": "numeric",
-          "nature": "ratio",
+          "nature": "ordinal",
           "binary": true,
-          "interval": "continuous",
+          "interval": "discrete",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 1785,
@@ -223,14 +47,8 @@
           "min": 100.0,
           "modeFreq": 942,
           "stdDev": 449.43326410471957,
-          "plotValues": {
-            "100.0": 942,
-            "1000.0": 843
-          },
-          "pdfPlotType": null,
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": []
         }
@@ -241,9 +59,9 @@
           "variableName": "solved(x)",
           "description": "",
           "numchar": "numeric",
-          "nature": "ratio",
+          "nature": "ordinal",
           "binary": false,
-          "interval": "continuous",
+          "interval": "discrete",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 1785,
@@ -254,11 +72,8 @@
           "min": 0.0,
           "modeFreq": 236,
           "stdDev": 3.4497475358454803,
-          "plotValues": {},
-          "pdfPlotType": "continuous",
           "pdfPlotX": [],
           "pdfPlotY": [],
-          "cdfPlotType": "continuous",
           "cdfPlotX": [],
           "cdfPlotY": []
         }
@@ -272,85 +87,76 @@
       [
         "taxrate.t.",
         {
-          "plotValues": {},
           "binary": "no",
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": [],
           "description": "",
           "interval": "continuous",
-          "invalidCount": 0,
+          "invalidCount": 0.0,
           "max": 0.85,
           "mean": 0.318487394957983,
           "median": 0.15,
-          "min": 0,
-          "modeFreq": 648,
+          "min": 0.0,
+          "modeFreq": 648.0,
           "nature": "percent",
           "numchar": "numeric",
-          "pdfPlotType": "bar",
           "pdfPlotX": null,
           "pdfPlotY": null,
           "stdDev": 0.331497583646127,
           "time": "no",
-          "validCount": 1785,
+          "validCount": 1785.0,
           "variableName": "taxrate.t.",
-          "uniqueCount": 4
+          "uniqueCount": 4.0
         }
       ],
       [
         "difficulty.d.",
         {
-          "plotValues": {},
           "binary": "yes",
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": [],
           "description": "",
           "interval": "discrete",
-          "invalidCount": 0,
-          "max": 1000,
+          "invalidCount": 0.0,
+          "max": 1000.0,
           "mean": 525.042016806723,
-          "median": 100,
-          "min": 100,
-          "modeFreq": 942,
+          "median": 100.0,
+          "min": 100.0,
+          "modeFreq": 942.0,
           "nature": "ordinal",
           "numchar": "numeric",
-          "pdfPlotType": "bar",
           "pdfPlotX": null,
           "pdfPlotY": null,
           "stdDev": 449.43326410472,
           "time": "no",
-          "validCount": 1785,
+          "validCount": 1785.0,
           "variableName": "difficulty.d.",
-          "uniqueCount": 2
+          "uniqueCount": 2.0
         }
       ],
       [
         "solved.x.",
         {
-          "plotValues": {},
           "binary": "no",
-          "cdfPlotType": "continuous",
           "cdfPlotX": [],
           "cdfPlotY": [],
           "description": "",
           "interval": "discrete",
-          "invalidCount": 0,
-          "max": 29,
+          "invalidCount": 0.0,
+          "max": 29.0,
           "mean": 5.61904761904762,
-          "median": 5,
-          "min": 0,
-          "modeFreq": 236,
+          "median": 5.0,
+          "min": 0.0,
+          "modeFreq": 236.0,
           "nature": "ordinal",
           "numchar": "numeric",
-          "pdfPlotType": "continuous",
           "pdfPlotX": [],
           "pdfPlotY": [],
           "stdDev": 3.44974753584548,
           "time": "no",
-          "validCount": 1785,
+          "validCount": 1785.0,
           "variableName": "solved.x.",
-          "uniqueCount": 21
+          "uniqueCount": 21.0
         }
       ]
     ]

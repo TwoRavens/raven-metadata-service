@@ -41,7 +41,7 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
-ignore = 'fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode'.split()
+ignore = 'cdfPlotType fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode pdfPlotType plotValues'.split()
 
 def diff(filename, py_path, R_path):
     try:
@@ -68,9 +68,15 @@ def diff(filename, py_path, R_path):
 
     R_obj1 = dict(variables={})
     for var in R_obj.get('variables', []):
-        R_obj1['variables'][var] = dict(plotValues={}) 
+        R_obj1['variables'][var] = {} 
         for (k, k1) in replace.items():
             val = R_obj['variables'][var].get(k1)
+            val = None if val == 'NULL' else val
+            try:
+                val = float(val)
+            except:
+                pass
+
             if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty') and isinstance(val, list): 
                 R_obj1['variables'][var][k] = []#sorted(val) 
             elif k not in ignore:

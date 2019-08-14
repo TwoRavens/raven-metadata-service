@@ -1,21 +1,5 @@
 [
   [
-    "change",
-    "variables.FIPS.interval",
-    [
-      "discrete",
-      "continuous"
-    ]
-  ],
-  [
-    "change",
-    "variables.FIPS.nature",
-    [
-      "ordinal",
-      "ratio"
-    ]
-  ],
-  [
     "add",
     "variables",
     [
@@ -25,9 +9,9 @@
           "variableName": "Yes to Sheriff",
           "description": "",
           "numchar": "numeric",
-          "nature": "percent",
+          "nature": "ordinal",
           "binary": false,
-          "interval": "continuous",
+          "interval": "discrete",
           "time": "unknown",
           "invalidCount": 367,
           "validCount": 48,
@@ -38,13 +22,8 @@
           "min": 1.0,
           "modeFreq": 48,
           "stdDev": 0.0,
-          "plotValues": {
-            "1.0": 48
-          },
-          "pdfPlotType": null,
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": []
         }
@@ -58,29 +37,26 @@
       [
         "Yes.to.Sheriff",
         {
-          "plotValues": {},
           "binary": "no",
-          "cdfPlotType": "bar",
-          "cdfPlotX": 1,
-          "cdfPlotY": 1,
+          "cdfPlotX": 1.0,
+          "cdfPlotY": 1.0,
           "description": "",
           "interval": "discrete",
-          "invalidCount": 367,
-          "max": 1,
-          "mean": 1,
-          "median": 1,
-          "min": 1,
-          "modeFreq": 48,
+          "invalidCount": 367.0,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "modeFreq": 48.0,
           "nature": "ordinal",
           "numchar": "numeric",
-          "pdfPlotType": "bar",
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "stdDev": 0,
+          "stdDev": 0.0,
           "time": "no",
-          "validCount": 48,
+          "validCount": 48.0,
           "variableName": "Yes.to.Sheriff",
-          "uniqueCount": 1
+          "uniqueCount": 1.0
         }
       ]
     ]

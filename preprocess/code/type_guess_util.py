@@ -64,7 +64,8 @@ class TypeGuessUtil(BasicErrCheck):
             else:
                 self.col_info.numchar_val = col_const.NUMCHAR_NUMERIC
 
-                if is_float_dtype(self.col_series):
+                ints = self.col_series.where(lambda x: x is 0 or x % 1 == 0.0)
+                if is_float_dtype(self.col_series) and ints.count() != len(self.col_series):
                     self.col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     self.col_info.nature = self.check_nature(self.col_series, True)
                 else:

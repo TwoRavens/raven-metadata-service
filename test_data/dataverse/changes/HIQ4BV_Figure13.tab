@@ -1,176 +1,6 @@
 [
   [
     "add",
-    "variables.name.plotValues",
-    [
-      [
-        "Stood Firm",
-        1
-      ],
-      [
-        "Backed Down",
-        1
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.name.cdfPlotType",
-    [
-      "NULL",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.name.cdfPlotX",
-    [
-      "NULL",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.name.cdfPlotY",
-    [
-      "NULL",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.name.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "add",
-    "variables.estimate.plotValues",
-    [
-      [
-        "2.1947959999999997",
-        1
-      ],
-      [
-        "4.380985",
-        1
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.estimate.max",
-    [
-      "4.380985",
-      4.380985
-    ]
-  ],
-  [
-    "change",
-    "variables.estimate.mean",
-    [
-      "3.2878905",
-      3.2878904999999996
-    ]
-  ],
-  [
-    "change",
-    "variables.estimate.median",
-    [
-      "3.2878905",
-      3.2878904999999996
-    ]
-  ],
-  [
-    "change",
-    "variables.estimate.min",
-    [
-      "2.194796",
-      2.1947959999999997
-    ]
-  ],
-  [
-    "change",
-    "variables.estimate.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.estimate.stdDev",
-    [
-      "1.54586906685544",
-      1.5458690668554371
-    ]
-  ],
-  [
-    "add",
-    "variables.std_error.plotValues",
-    [
-      [
-        "0.0474917",
-        1
-      ],
-      [
-        "0.04641",
-        1
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.std_error.max",
-    [
-      "0.0474917",
-      0.0474917
-    ]
-  ],
-  [
-    "change",
-    "variables.std_error.mean",
-    [
-      "0.04695085",
-      0.04695085
-    ]
-  ],
-  [
-    "change",
-    "variables.std_error.median",
-    [
-      "0.04695085",
-      0.04695085
-    ]
-  ],
-  [
-    "change",
-    "variables.std_error.min",
-    [
-      "0.04641",
-      0.04641
-    ]
-  ],
-  [
-    "change",
-    "variables.std_error.pdfPlotType",
-    [
-      "bar",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.std_error.stdDev",
-    [
-      "0.000764877405209487",
-      0.000764877405209487
-    ]
-  ],
-  [
-    "add",
     "variables",
     [
       [
@@ -192,14 +22,8 @@
           "min": 2.1048459999999998,
           "modeFreq": 1,
           "stdDev": 1.54486356101259,
-          "plotValues": {
-            "2.1048459999999998": 1,
-            "4.289613": 1
-          },
-          "pdfPlotType": null,
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": []
         }
@@ -223,14 +47,8 @@
           "min": 2.283868,
           "modeFreq": 1,
           "stdDev": 1.547875835900444,
-          "plotValues": {
-            "2.283868": 1,
-            "4.472894999999999": 1
-          },
-          "pdfPlotType": null,
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": []
         }
@@ -244,57 +62,51 @@
       [
         "X95_ci_low",
         {
-          "plotValues": {},
           "binary": "yes",
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": [],
           "description": "",
           "interval": "continuous",
-          "invalidCount": 0,
-          "max": "4.289613",
-          "mean": "3.1972295",
-          "median": "3.1972295",
-          "min": "2.104846",
-          "modeFreq": 1,
+          "invalidCount": 0.0,
+          "max": 4.289613,
+          "mean": 3.1972295,
+          "median": 3.1972295,
+          "min": 2.104846,
+          "modeFreq": 1.0,
           "nature": "ratio",
           "numchar": "numeric",
-          "pdfPlotType": "bar",
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "stdDev": "1.54486356101259",
+          "stdDev": 1.54486356101259,
           "time": "no",
-          "validCount": 2,
+          "validCount": 2.0,
           "variableName": "X95_ci_low",
-          "uniqueCount": 2
+          "uniqueCount": 2.0
         }
       ],
       [
         "X95_ci_high",
         {
-          "plotValues": {},
           "binary": "yes",
-          "cdfPlotType": "bar",
           "cdfPlotX": [],
           "cdfPlotY": [],
           "description": "",
           "interval": "continuous",
-          "invalidCount": 0,
-          "max": "4.472895",
-          "mean": "3.3783815",
-          "median": "3.3783815",
-          "min": "2.283868",
-          "modeFreq": 1,
+          "invalidCount": 0.0,
+          "max": 4.472895,
+          "mean": 3.3783815,
+          "median": 3.3783815,
+          "min": 2.283868,
+          "modeFreq": 1.0,
           "nature": "ratio",
           "numchar": "numeric",
-          "pdfPlotType": "bar",
           "pdfPlotX": null,
           "pdfPlotY": null,
-          "stdDev": "1.54787583590044",
+          "stdDev": 1.54787583590044,
           "time": "no",
-          "validCount": 2,
+          "validCount": 2.0,
           "variableName": "X95_ci_high",
-          "uniqueCount": 2
+          "uniqueCount": 2.0
         }
       ]
     ]
