@@ -41,23 +41,23 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
-ignore = 'cdfPlotType fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode pdfPlotType plotValues'.split()
+ignore = 'cdfPlotType cdfPlotX cdfPlotY fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
 
 def diff(filename, py_path, R_path):
     try:
         py_obj = json.load(open(py_path))
         for var in py_obj.get('variables', []):
+            for (k, k1) in replace.items():
+                if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty'):
+                    val = py_obj['variables'][var].get(k)
+                    if isinstance(val, list): 
+                        py_obj['variables'][var][k] = sorted(val)
+
             for k in ignore:
                 try:
                     del py_obj['variables'][var][k]
                 except:
                     pass
-
-            for (k, k1) in replace.items():
-                if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty'):
-                    val = py_obj['variables'][var].get(k)
-                    if isinstance(val, list): 
-                        py_obj['variables'][var][k] = []#sorted(val)
     except:
         py_obj = {}
 
@@ -71,20 +71,22 @@ def diff(filename, py_path, R_path):
         R_obj1['variables'][var] = {} 
         for (k, k1) in replace.items():
             val = R_obj['variables'][var].get(k1)
-            val = None if val == 'NULL' else val
+            if val == 0.0 and k == 'modeFreq' or val =='NULL':
+                val = None
+
             try:
                 val = float(val)
             except:
                 pass
 
-            if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty') and isinstance(val, list): 
-                R_obj1['variables'][var][k] = []#sorted(val) 
-            elif k not in ignore:
+            #if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty') and isinstance(val, list): 
+            #    R_obj1['variables'][var][k] = []#sorted(val) 
+            if k not in ignore:
                 R_obj1['variables'][var][k] = val
 
     changes = [] 
     for change in list(dictdiffer.diff(R_obj1, py_obj, ignore='self dataset variableDisplay'.split(), tolerance=0.01)):
-        if change[0] != 'change' or change[2] not in [('yes', True), ('no', False), ('no', 'unknown')]:
+        if change[0] == 'change' and change[2] not in [('yes', True), ('no', False), ('no', 'unknown')]:
             changes.append(change)
 
     if changes:
