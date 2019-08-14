@@ -4,43 +4,11 @@
     "variables.VariableName.plotValues",
     [
       [
-        "year",
-        1
-      ],
-      [
-        "lnexpired",
-        1
-      ],
-      [
-        "inflation",
-        1
-      ],
-      [
-        "fy",
-        1
-      ],
-      [
-        "approval",
-        1
-      ],
-      [
-        "lnauthorizing3",
-        1
-      ],
-      [
         "war",
         1
       ],
       [
-        "unemp",
-        1
-      ],
-      [
-        "divided",
-        1
-      ],
-      [
-        "lnprimary",
+        "inflation",
         1
       ],
       [
@@ -52,23 +20,15 @@
         1
       ],
       [
-        "agency_codex",
+        "approval",
         1
       ],
       [
-        "commfe",
+        "fy",
         1
       ],
       [
-        "discretion",
-        1
-      ],
-      [
-        "lnprimary3",
-        1
-      ],
-      [
-        "lnauthorizing",
+        "lnexpired",
         1
       ],
       [
@@ -76,7 +36,47 @@
         1
       ],
       [
+        "lnprimary",
+        1
+      ],
+      [
+        "lnauthorizing",
+        1
+      ],
+      [
+        "commfe",
+        1
+      ],
+      [
+        "lnprimary3",
+        1
+      ],
+      [
+        "year",
+        1
+      ],
+      [
         "agencyfe",
+        1
+      ],
+      [
+        "lnauthorizing3",
+        1
+      ],
+      [
+        "agency_codex",
+        1
+      ],
+      [
+        "discretion",
+        1
+      ],
+      [
+        "unemp",
+        1
+      ],
+      [
+        "divided",
         1
       ]
     ]
@@ -107,50 +107,6 @@
   ],
   [
     "change",
-    "variables.VariableName.fewestValues",
-    [
-      "year",
-      [
-        "agencyfe",
-        "first_year",
-        "lnauthorizing",
-        "discretion",
-        "commfe"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.VariableName.midpoint",
-    [
-      "year",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.VariableName.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.VariableName.mode",
-    [
-      "year",
-      [
-        "agencyfe",
-        "first_year",
-        "lnauthorizing",
-        "discretion",
-        "commfe"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.VariableName.pdfPlotType",
     [
       "bar",
@@ -162,59 +118,7 @@
     "variables.Description.plotValues",
     [
       [
-        "Natural log of the number of Mayhew's significant laws passed in an agency's jurisdiction in that year",
-        1
-      ],
-      [
-        "Natural log of the number of laws passed in an agency's jurisdiction, lagged 5 years",
-        1
-      ],
-      [
-        "1 if first year of new administration; 0 otherwise",
-        1
-      ],
-      [
-        "Natural log of the number of programs under an agency's juridiction in a given year whose authorizations expired and budget authority has been appropriated",
-        1
-      ],
-      [
-        "Annual unemployment rate",
-        1
-      ],
-      [
-        "Committee code associated with subcommittee",
-        1
-      ],
-      [
-        "Natural log of the number of laws passed in an agency's jurisdiction in that year",
-        1
-      ],
-      [
-        "Agency code associated with the agency",
-        1
-      ],
-      [
-        "Annual presidential approval rating from Gallup Poll",
-        1
-      ],
-      [
         "Calendar year ",
-        1
-      ],
-      [
-        "Natural log of the number of Mayhew's significant laws passed in an agency's jurisdiction, lagged 5 years",
-        1
-      ],
-      [
-        "Natural log of the number of Mayhew's significant laws passed in an agency's jurisdiction, lagged 3 years",
-        1
-      ],
-      [
-        "Agency code associated with the agency (destringed for fixed effects)",
-        1
-      ],
-      [
-        "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise",
         1
       ],
       [
@@ -222,7 +126,11 @@
         1
       ],
       [
-        "Fiscal year",
+        "Natural log of the number of laws passed in an agency's jurisdiction, lagged 5 years",
+        1
+      ],
+      [
+        "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise",
         1
       ],
       [
@@ -230,11 +138,59 @@
         1
       ],
       [
+        "Annual presidential approval rating from Gallup Poll",
+        1
+      ],
+      [
+        "Agency code associated with the agency",
+        1
+      ],
+      [
+        "Natural log of the number of Mayhew's significant laws passed in an agency's jurisdiction, lagged 5 years",
+        1
+      ],
+      [
+        "Annual unemployment rate",
+        1
+      ],
+      [
         "Annual inflation rate",
         1
       ],
       [
+        "Fiscal year",
+        1
+      ],
+      [
+        "Agency code associated with the agency (destringed for fixed effects)",
+        1
+      ],
+      [
+        "Natural log of the number of Mayhew's significant laws passed in an agency's jurisdiction, lagged 3 years",
+        1
+      ],
+      [
         "1 if president and congressional chamber are from opposing parties; 0 otherwise",
+        1
+      ],
+      [
+        "Natural log of the number of programs under an agency's juridiction in a given year whose authorizations expired and budget authority has been appropriated",
+        1
+      ],
+      [
+        "Natural log of the number of Mayhew's significant laws passed in an agency's jurisdiction in that year",
+        1
+      ],
+      [
+        "Committee code associated with subcommittee",
+        1
+      ],
+      [
+        "1 if first year of new administration; 0 otherwise",
+        1
+      ],
+      [
+        "Natural log of the number of laws passed in an agency's jurisdiction in that year",
         1
       ]
     ]
@@ -261,50 +217,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.fewestValues",
-    [
-      "Calendar year ",
-      [
-        "Natural log of the number of programs under an agency's juridiction in a given year whose authorizations expired and budget authority has been appropriated",
-        "Annual inflation rate",
-        "Discretion from appropriations report (Bolton and Thrower measure)",
-        "Fiscal year",
-        "Natural log of the number of laws passed in an agency's jurisdiction, lagged 3 years"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.midpoint",
-    [
-      "Calendar year ",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.mode",
-    [
-      "Calendar year ",
-      [
-        "Natural log of the number of programs under an agency's juridiction in a given year whose authorizations expired and budget authority has been appropriated",
-        "Annual inflation rate",
-        "Discretion from appropriations report (Bolton and Thrower measure)",
-        "Fiscal year",
-        "Natural log of the number of laws passed in an agency's jurisdiction, lagged 3 years"
-      ]
     ]
   ],
   [

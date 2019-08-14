@@ -14,9 +14,7 @@
     "variables.model.cdfPlotX",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
@@ -24,35 +22,15 @@
     "variables.model.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.model.fewestFreq",
+    "variables.model.interval",
     [
-      "9",
-      9
-    ]
-  ],
-  [
-    "change",
-    "variables.model.fewestValues",
-    [
-      "1",
-      [
-        1.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.model.herfindahlIndex",
-    [
-      1,
-      0.1111111111111111
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -81,22 +59,6 @@
   ],
   [
     "change",
-    "variables.model.midpoint",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.model.midpointFreq",
-    [
-      "9",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.model.min",
     [
       "1",
@@ -105,12 +67,10 @@
   ],
   [
     "change",
-    "variables.model.mode",
+    "variables.model.nature",
     [
-      "1",
-      [
-        1.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -134,11 +94,11 @@
     "variables.group.plotValues",
     [
       [
-        "sac",
+        "non",
         3
       ],
       [
-        "non",
+        "sac",
         3
       ],
       [
@@ -173,54 +133,6 @@
   ],
   [
     "change",
-    "variables.group.fewestFreq",
-    [
-      "3",
-      3
-    ]
-  ],
-  [
-    "change",
-    "variables.group.fewestValues",
-    [
-      "non",
-      [
-        "non",
-        "sac",
-        "black"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group.midpoint",
-    [
-      "non",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.group.midpointFreq",
-    [
-      "3",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.group.mode",
-    [
-      "non",
-      [
-        "non",
-        "sac",
-        "black"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.group.pdfPlotType",
     [
       "bar",
@@ -232,11 +144,11 @@
     "variables.treatment.plotValues",
     [
       [
-        "pattern",
+        "reform",
         3
       ],
       [
-        "reform",
+        "pattern",
         3
       ],
       [
@@ -267,54 +179,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.fewestFreq",
-    [
-      "3",
-      3
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.fewestValues",
-    [
-      "control",
-      [
-        "control",
-        "reform",
-        "pattern"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.midpoint",
-    [
-      "control",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.midpointFreq",
-    [
-      "3",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.mode",
-    [
-      "control",
-      [
-        "control",
-        "reform",
-        "pattern"
-      ]
     ]
   ],
   [
@@ -369,44 +233,6 @@
   ],
   [
     "change",
-    "variables.trustspd.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.trustspd.fewestValues",
-    [
-      "0.609896",
-      [
-        0.4913479,
-        0.26911240000000003,
-        0.27085490000000007,
-        0.6982433000000001,
-        0.214738
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.trustspd.herfindahlIndex",
-    [
-      0.111111111111111,
-      0.1278689195570646
-    ]
-  ],
-  [
-    "change",
-    "variables.trustspd.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.trustspd.max",
     [
       "0.7384692",
@@ -431,48 +257,10 @@
   ],
   [
     "change",
-    "variables.trustspd.midpoint",
-    [
-      "0.609896",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.trustspd.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.trustspd.min",
     [
       "0.214738",
       0.214738
-    ]
-  ],
-  [
-    "change",
-    "variables.trustspd.mode",
-    [
-      "0.6099",
-      [
-        0.4913479,
-        0.26911240000000003,
-        0.27085490000000007,
-        0.6982433000000001,
-        0.214738
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.trustspd.nature",
-    [
-      "percent",
-      "ordinal"
     ]
   ],
   [
@@ -535,44 +323,6 @@
   ],
   [
     "change",
-    "variables.trustpoa.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.trustpoa.fewestValues",
-    [
-      "0.461632",
-      [
-        0.2997782,
-        0.4729266,
-        0.5188630999999999,
-        0.474625,
-        0.4689974
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.trustpoa.herfindahlIndex",
-    [
-      0.111111111111111,
-      0.11817569353929945
-    ]
-  ],
-  [
-    "change",
-    "variables.trustpoa.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.trustpoa.max",
     [
       "0.5188631",
@@ -597,48 +347,10 @@
   ],
   [
     "change",
-    "variables.trustpoa.midpoint",
-    [
-      "0.461632",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.trustpoa.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.trustpoa.min",
     [
       "0.2079647",
       0.2079647
-    ]
-  ],
-  [
-    "change",
-    "variables.trustpoa.mode",
-    [
-      "0.4616",
-      [
-        0.2997782,
-        0.4729266,
-        0.5188630999999999,
-        0.474625,
-        0.4689974
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.trustpoa.nature",
-    [
-      "percent",
-      "ordinal"
     ]
   ],
   [

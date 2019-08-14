@@ -14,9 +14,7 @@
     "variables.model.cdfPlotX",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
@@ -24,35 +22,15 @@
     "variables.model.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.model.fewestFreq",
+    "variables.model.interval",
     [
-      "12",
-      12
-    ]
-  ],
-  [
-    "change",
-    "variables.model.fewestValues",
-    [
-      "1",
-      [
-        1.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.model.herfindahlIndex",
-    [
-      1,
-      0.08333333333333336
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -81,22 +59,6 @@
   ],
   [
     "change",
-    "variables.model.midpoint",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.model.midpointFreq",
-    [
-      "12",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.model.min",
     [
       "1",
@@ -105,12 +67,10 @@
   ],
   [
     "change",
-    "variables.model.mode",
+    "variables.model.nature",
     [
-      "1",
-      [
-        1.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -134,11 +94,11 @@
     "variables.group.plotValues",
     [
       [
-        "sac",
+        "non",
         4
       ],
       [
-        "non",
+        "sac",
         4
       ],
       [
@@ -173,54 +133,6 @@
   ],
   [
     "change",
-    "variables.group.fewestFreq",
-    [
-      "4",
-      4
-    ]
-  ],
-  [
-    "change",
-    "variables.group.fewestValues",
-    [
-      "non",
-      [
-        "non",
-        "sac",
-        "black"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.group.midpoint",
-    [
-      "non",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.group.midpointFreq",
-    [
-      "4",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.group.mode",
-    [
-      "non",
-      [
-        "non",
-        "sac",
-        "black"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.group.pdfPlotType",
     [
       "bar",
@@ -236,15 +148,15 @@
         3
       ],
       [
-        "trust_poa_endorse",
-        3
-      ],
-      [
         "endorse",
         3
       ],
       [
         "control",
+        3
+      ],
+      [
+        "trust_poa_endorse",
         3
       ]
     ]
@@ -271,56 +183,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.fewestFreq",
-    [
-      "3",
-      3
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.fewestValues",
-    [
-      "control",
-      [
-        "control",
-        "endorse",
-        "trust_poa_endorse",
-        "trust_poa"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.midpoint",
-    [
-      "control",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.midpointFreq",
-    [
-      "3",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.treatment.mode",
-    [
-      "control",
-      [
-        "control",
-        "endorse",
-        "trust_poa_endorse",
-        "trust_poa"
-      ]
     ]
   ],
   [
@@ -387,44 +249,6 @@
   ],
   [
     "change",
-    "variables.lawsheriff.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.lawsheriff.fewestValues",
-    [
-      "0.279609",
-      [
-        0.4560723,
-        0.2796091,
-        0.3162975,
-        0.2484047,
-        0.3143397
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.lawsheriff.herfindahlIndex",
-    [
-      0.0833333333333333,
-      0.09205149985993899
-    ]
-  ],
-  [
-    "change",
-    "variables.lawsheriff.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.lawsheriff.max",
     [
       "0.5963799",
@@ -449,48 +273,10 @@
   ],
   [
     "change",
-    "variables.lawsheriff.midpoint",
-    [
-      "0.279609",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.lawsheriff.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.lawsheriff.min",
     [
       "0.1976643",
       0.1976643
-    ]
-  ],
-  [
-    "change",
-    "variables.lawsheriff.mode",
-    [
-      "0.2796",
-      [
-        0.4560723,
-        0.2796091,
-        0.3162975,
-        0.2484047,
-        0.3143397
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.lawsheriff.nature",
-    [
-      "percent",
-      "ordinal"
     ]
   ],
   [
@@ -561,44 +347,6 @@
   ],
   [
     "change",
-    "variables.lawda.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.lawda.fewestValues",
-    [
-      "0.31025",
-      [
-        0.3301992,
-        0.4259626,
-        0.31914990000000004,
-        0.36594240000000006,
-        0.43184940000000005
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.lawda.herfindahlIndex",
-    [
-      0.0972222222222222,
-      0.08782731200911978
-    ]
-  ],
-  [
-    "change",
-    "variables.lawda.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.lawda.max",
     [
       "0.5931",
@@ -623,44 +371,10 @@
   ],
   [
     "change",
-    "variables.lawda.midpoint",
-    [
-      "0.31025",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.lawda.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.lawda.min",
     [
       "0.2672537",
       0.26725370000000004
-    ]
-  ],
-  [
-    "change",
-    "variables.lawda.mode",
-    [
-      "0.3319",
-      [
-        0.33193790000000006
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.lawda.nature",
-    [
-      "percent",
-      "ordinal"
     ]
   ],
   [

@@ -4,27 +4,11 @@
     "variables.Variables.plotValues",
     [
       [
-        "RealPerCapitaGDPj2010",
+        "Year",
         1
       ],
       [
-        "ln(BExchPerCN)",
-        1
-      ],
-      [
-        "ln(RealPerCapitaGDPj2010)",
-        1
-      ],
-      [
-        "PartnerID",
-        1
-      ],
-      [
-        "Opennessj",
-        1
-      ],
-      [
-        "ln(Popj)",
+        "ln(Distance)",
         1
       ],
       [
@@ -32,11 +16,43 @@
         1
       ],
       [
+        "Opennessj",
+        1
+      ],
+      [
+        "ln(Popi)",
+        1
+      ],
+      [
+        "RealPerCapitaGDPj2010",
+        1
+      ],
+      [
+        "ln(BExchPerj)",
+        1
+      ],
+      [
+        "PartnerID",
+        1
+      ],
+      [
+        "ln(ChinaImportFlow)",
+        1
+      ],
+      [
+        "RealPerCapitaGDPi2010",
+        1
+      ],
+      [
+        "RealGDPi2010",
+        1
+      ],
+      [
         "t",
         1
       ],
       [
-        "WTOi",
+        "ln(RealGDPj2010)",
         1
       ],
       [
@@ -48,51 +64,7 @@
         1
       ],
       [
-        "ln(ChinaImportFlow)",
-        1
-      ],
-      [
-        "ln(Opennessj)",
-        1
-      ],
-      [
-        "ln(Popi)",
-        1
-      ],
-      [
-        "ln(BExchPerj)",
-        1
-      ],
-      [
-        "Popi",
-        1
-      ],
-      [
-        "Distance",
-        1
-      ],
-      [
-        "ln(RealPerCapitaGDPi2010)",
-        1
-      ],
-      [
-        "Partner",
-        1
-      ],
-      [
-        "ChinaImportFlow",
-        1
-      ],
-      [
-        "ln(RealGDPj2010)",
-        1
-      ],
-      [
-        "WTOj",
-        1
-      ],
-      [
-        "RealGDPi2010",
+        "ln(Opennessi)",
         1
       ],
       [
@@ -100,19 +72,11 @@
         1
       ],
       [
+        "ln(RealPerCapitaGDPi2010)",
+        1
+      ],
+      [
         "Popj",
-        1
-      ],
-      [
-        "Year",
-        1
-      ],
-      [
-        "RealPerCapitaGDPi2010",
-        1
-      ],
-      [
-        "RealGDPj2010",
         1
       ],
       [
@@ -120,15 +84,19 @@
         1
       ],
       [
-        "ln(Distance)",
+        "RealGDPj2010",
         1
       ],
       [
-        "Home",
+        "ln(BExchPerCN)",
         1
       ],
       [
-        "DPerCapitaGDPij",
+        "Popi",
+        1
+      ],
+      [
+        "WTOj",
         1
       ],
       [
@@ -136,7 +104,19 @@
         1
       ],
       [
-        "ln(Opennessi)",
+        "Distance",
+        1
+      ],
+      [
+        "Home",
+        1
+      ],
+      [
+        "WTOi",
+        1
+      ],
+      [
+        "Partner",
         1
       ],
       [
@@ -144,7 +124,27 @@
         1
       ],
       [
+        "ln(RealPerCapitaGDPj2010)",
+        1
+      ],
+      [
+        "ChinaImportFlow",
+        1
+      ],
+      [
         "ln(DPerCapitaGDPij)",
+        1
+      ],
+      [
+        "DPerCapitaGDPij",
+        1
+      ],
+      [
+        "ln(Popj)",
+        1
+      ],
+      [
+        "ln(Opennessj)",
         1
       ]
     ]
@@ -175,50 +175,6 @@
   ],
   [
     "change",
-    "variables.Variables.fewestValues",
-    [
-      "Obs.",
-      [
-        "ln(Opennessi)",
-        "Obs.",
-        "DPerCapitaGDPij",
-        "ln(Distance)",
-        "t"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Variables.midpoint",
-    [
-      "Obs.",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Variables.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Variables.mode",
-    [
-      "Obs.",
-      [
-        "ln(Opennessi)",
-        "Obs.",
-        "DPerCapitaGDPij",
-        "ln(Distance)",
-        "t"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Variables.pdfPlotType",
     [
       "bar",
@@ -230,43 +186,7 @@
     "variables.Description.plotValues",
     [
       [
-        "Absolute Different between China's Per capita GDP and its Partner's Per capita GDP",
-        1
-      ],
-      [
-        "Per capita GDP of China (Constant 2010 price)",
-        1
-      ],
-      [
-        "Number of observation",
-        1
-      ],
-      [
-        "GDP of China's Trading Partner Country j (Constant 2010 price)",
-        1
-      ],
-      [
-        "WTO membership of Country j",
-        1
-      ],
-      [
-        "Population of China",
-        1
-      ],
-      [
-        "Time Period",
-        1
-      ],
-      [
-        "Trading Partner Country's ID",
-        1
-      ],
-      [
-        "Bilateral Exchange Rate againt Country j's currency",
-        1
-      ],
-      [
-        "Trading Partner Country",
+        "China's Export Flow (USD)",
         1
       ],
       [
@@ -274,15 +194,7 @@
         1
       ],
       [
-        "China's Export Flow (USD)",
-        1
-      ],
-      [
-        "Degree of Trade Openness of China",
-        1
-      ],
-      [
-        "Home Country",
+        "Distance between China's capital, Beijng, and country j's capital (Km)",
         1
       ],
       [
@@ -290,11 +202,47 @@
         1
       ],
       [
-        "Distance between China's capital, Beijng, and country j's capital (Km)",
+        "Trading Partner Country's ID",
+        1
+      ],
+      [
+        "Per capita GDP of China (Constant 2010 price)",
+        1
+      ],
+      [
+        "China's Import Flow (USD)",
+        1
+      ],
+      [
+        "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)",
+        1
+      ],
+      [
+        "GDP of China's Trading Partner Country j (Constant 2010 price)",
+        1
+      ],
+      [
+        "Population of China",
+        1
+      ],
+      [
+        "Degree of Trade Openness of China",
         1
       ],
       [
         "WTO membership of China",
+        1
+      ],
+      [
+        "Time Period",
+        1
+      ],
+      [
+        "Home Country",
+        1
+      ],
+      [
+        "Absolute Different between China's Per capita GDP and its Partner's Per capita GDP",
         1
       ],
       [
@@ -306,15 +254,23 @@
         1
       ],
       [
-        "China's Import Flow (USD)",
+        "Number of observation",
+        1
+      ],
+      [
+        "Bilateral Exchange Rate againt Country j's currency",
+        1
+      ],
+      [
+        "Trading Partner Country",
+        1
+      ],
+      [
+        "WTO membership of Country j",
         1
       ],
       [
         "Population of Country j",
-        1
-      ],
-      [
-        "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)",
         1
       ]
     ]
@@ -345,54 +301,10 @@
   ],
   [
     "change",
-    "variables.Description.fewestValues",
-    [
-      "Number of observation",
-      [
-        "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)",
-        "Population of Country j",
-        "Bilateral Exchange Rate againt Chinese Yuan",
-        "GDP of China's Trading Partner Country j (Constant 2010 price)",
-        "Degree of Trade Openness of Country j"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Description.invalidCount",
     [
       0,
       14
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.midpoint",
-    [
-      "Number of observation",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.mode",
-    [
-      "Number of observation",
-      [
-        "Per capita GDP of China's Trading Partner Country j (Constant 2010 price)",
-        "Population of Country j",
-        "Bilateral Exchange Rate againt Chinese Yuan",
-        "GDP of China's Trading Partner Country j (Constant 2010 price)",
-        "Degree of Trade Openness of Country j"
-      ]
     ]
   ],
   [
@@ -432,11 +344,11 @@
         2
       ],
       [
-        "Calculate",
+        "www.timeanddate.com",
         1
       ],
       [
-        "www.timeanddate.com",
+        "Calculate",
         1
       ]
     ]
@@ -467,47 +379,10 @@
   ],
   [
     "change",
-    "variables.DataSource.fewestValues",
-    [
-      "Calculate",
-      [
-        "www.timeanddate.com",
-        "Calculate"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.DataSource.invalidCount",
     [
       0,
       20
-    ]
-  ],
-  [
-    "change",
-    "variables.DataSource.midpoint",
-    [
-      "UNComtrade",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.DataSource.midpointFreq",
-    [
-      2,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.DataSource.mode",
-    [
-      "World Development Indicator",
-      [
-        "World Development Indicator"
-      ]
     ]
   ],
   [
@@ -531,11 +406,11 @@
     "variables.Dummy.plotValues",
     [
       [
-        "1: if China is WTO member, 0: otherwise",
+        "1: if country j is WTO member, 0: otherwise",
         1
       ],
       [
-        "1: if country j is WTO member, 0: otherwise",
+        "1: if China is WTO member, 0: otherwise",
         1
       ]
     ]
@@ -566,48 +441,10 @@
   ],
   [
     "change",
-    "variables.Dummy.fewestValues",
-    [
-      "1: if China is WTO member, 0: otherwise",
-      [
-        "1: if country j is WTO member, 0: otherwise",
-        "1: if China is WTO member, 0: otherwise"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Dummy.invalidCount",
     [
       0,
       34
-    ]
-  ],
-  [
-    "change",
-    "variables.Dummy.midpoint",
-    [
-      "1: if China is WTO member, 0: otherwise",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Dummy.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Dummy.mode",
-    [
-      "1: if China is WTO member, 0: otherwise",
-      [
-        "1: if country j is WTO member, 0: otherwise",
-        "1: if China is WTO member, 0: otherwise"
-      ]
     ]
   ],
   [

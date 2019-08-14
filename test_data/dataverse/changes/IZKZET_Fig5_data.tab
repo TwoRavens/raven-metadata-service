@@ -4,11 +4,11 @@
     "variables.Attribute.plotValues",
     [
       [
-        "Partisanship_male",
+        "Partisanship_female",
         4
       ],
       [
-        "Partisanship_female",
+        "Partisanship_male",
         4
       ]
     ]
@@ -39,52 +39,6 @@
   ],
   [
     "change",
-    "variables.Attribute.fewestFreq",
-    [
-      "4",
-      4
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.fewestValues",
-    [
-      "Partisanship_female",
-      [
-        "Partisanship_female",
-        "Partisanship_male"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.midpoint",
-    [
-      "Partisanship_female",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.midpointFreq",
-    [
-      "4",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Attribute.mode",
-    [
-      "Partisanship_female",
-      [
-        "Partisanship_female",
-        "Partisanship_male"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Attribute.pdfPlotType",
     [
       "bar",
@@ -96,11 +50,7 @@
     "variables.Level.plotValues",
     [
       [
-        "Partisanship",
-        2
-      ],
-      [
-        "Republicans",
+        "Democrats",
         2
       ],
       [
@@ -108,7 +58,11 @@
         2
       ],
       [
-        "Democrats",
+        "Partisanship",
+        2
+      ],
+      [
+        "Republicans",
         2
       ]
     ]
@@ -135,56 +89,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.fewestFreq",
-    [
-      "2",
-      2
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.fewestValues",
-    [
-      "Independents",
-      [
-        "Democrats",
-        "Independents",
-        "Republicans",
-        "Partisanship"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.midpoint",
-    [
-      "Independents",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.midpointFreq",
-    [
-      "2",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Level.mode",
-    [
-      "Independents",
-      [
-        "Democrats",
-        "Independents",
-        "Republicans",
-        "Partisanship"
-      ]
     ]
   ],
   [
@@ -227,44 +131,6 @@
   ],
   [
     "change",
-    "variables.Estimate.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.fewestValues",
-    [
-      "-0.0361258",
-      [
-        -0.036125800000000007,
-        0.01178114,
-        -0.027945299999999996,
-        -0.02846502,
-        -0.00781542
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.herfindahlIndex",
-    [
-      0.166666666666667,
-      0.4618132696240177
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.Estimate.max",
     [
       "0.01178114",
@@ -289,48 +155,10 @@
   ],
   [
     "change",
-    "variables.Estimate.midpoint",
-    [
-      "-0.0361258",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.Estimate.min",
     [
       "-0.0361258",
       -0.036125800000000007
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.mode",
-    [
-      "-0.03613",
-      [
-        -0.036125800000000007,
-        0.01178114,
-        -0.027945299999999996,
-        -0.02846502,
-        -0.00781542
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Estimate.nature",
-    [
-      "ratio",
-      "ordinal"
     ]
   ],
   [
@@ -364,9 +192,7 @@
     "variables.respondents.cdfPlotX",
     [
       1493,
-      [
-        1493.0
-      ]
+      []
     ]
   ],
   [
@@ -374,35 +200,15 @@
     "variables.respondents.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.respondents.fewestFreq",
+    "variables.respondents.interval",
     [
-      "6",
-      6
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.fewestValues",
-    [
-      "1493",
-      [
-        1493.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.herfindahlIndex",
-    [
-      1,
-      0.16666666666666669
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -431,22 +237,6 @@
   ],
   [
     "change",
-    "variables.respondents.midpoint",
-    [
-      "1493",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.respondents.midpointFreq",
-    [
-      "6",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.respondents.min",
     [
       "1493",
@@ -455,12 +245,10 @@
   ],
   [
     "change",
-    "variables.respondents.mode",
+    "variables.respondents.nature",
     [
-      "1493",
-      [
-        1493.0
-      ]
+      "ordinal",
+      "ratio"
     ]
   ],
   [
@@ -519,36 +307,6 @@
   ],
   [
     "change",
-    "variables.order.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.order.fewestValues",
-    [
-      "1",
-      [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.order.herfindahlIndex",
-    [
-      0.125,
-      0.1574074074074074
-    ]
-  ],
-  [
-    "change",
     "variables.order.max",
     [
       "8",
@@ -573,40 +331,10 @@
   ],
   [
     "change",
-    "variables.order.midpoint",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.order.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.order.min",
     [
       "1",
       1
-    ]
-  ],
-  [
-    "change",
-    "variables.order.mode",
-    [
-      "1",
-      [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
     ]
   ],
   [
@@ -696,73 +424,6 @@
     [
       "variables",
       "var.names",
-      "fewestFreq"
-    ],
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "fewestValues"
-    ],
-    [
-      "Different-party pairings",
-      [
-        "Different-party pairings",
-        "Same-party pairings"
-      ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "midpoint"
-    ],
-    [
-      "    Independents",
-      null
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "midpointFreq"
-    ],
-    [
-      "2",
-      null
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
-      "mode"
-    ],
-    [
-      "    Independents",
-      [
-        "    Republicans",
-        "    Independents",
-        "    Democrats"
-      ]
-    ]
-  ],
-  [
-    "change",
-    [
-      "variables",
-      "var.names",
       "pdfPlotType"
     ],
     [
@@ -780,9 +441,9 @@
           "variableName": "Std. Err",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 2,
           "validCount": 6,
@@ -791,26 +452,8 @@
           "mean": 0.01416625,
           "max": 0.015614500000000002,
           "min": 0.011991,
-          "mode": [
-            0.015571000000000002,
-            0.011991,
-            0.014431,
-            0.0130409,
-            0.014349100000000002
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.015571000000000002,
-            0.011991,
-            0.014431,
-            0.0130409,
-            0.014349100000000002
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.001426352165140153,
-          "herfindahlIndex": 0.16807469447262063,
           "plotValues": {
             "0.015614500000000002": 1,
             "0.015571000000000002": 1,
@@ -823,22 +466,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.011991,
-            0.0127157,
-            0.0134404,
-            0.0141651,
-            0.014889800000000002,
-            0.015614500000000002
-          ],
-          "cdfPlotY": [
-            0.16666666666666666,
-            0.16666666666666666,
-            0.3333333333333333,
-            0.3333333333333333,
-            0.6666666666666666,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ]
     ]
@@ -853,35 +482,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.011991,
-            0.0127157,
-            0.0134404,
-            0.0141651,
-            0.0148898,
-            0.0156145
-          ],
-          "cdfPlotY": [
-            0.166666666666667,
-            0.166666666666667,
-            0.333333333333333,
-            0.333333333333333,
-            0.666666666666667,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.015571",
-          "herfindahlIndex": 0.166666666666667,
           "interval": "continuous",
           "invalidCount": 2,
           "max": "0.0156145",
           "mean": "0.01416625",
           "median": "0.01439005",
-          "midpoint": "0.015571",
-          "midpointFreq": "1",
           "min": "0.011991",
-          "mode": "0.01557",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",

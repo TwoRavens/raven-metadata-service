@@ -4,10 +4,6 @@
     "variables.Type.plotValues",
     [
       [
-        "Census Covariates",
-        1
-      ],
-      [
         "Additional Rain Measures",
         1
       ],
@@ -17,6 +13,10 @@
       ],
       [
         "Political Covariates",
+        1
+      ],
+      [
+        "Census Covariates",
         1
       ],
       [
@@ -51,54 +51,10 @@
   ],
   [
     "change",
-    "variables.Type.fewestValues",
-    [
-      "Outcomes and Instruments",
-      [
-        "Fixed Effects",
-        "Political Covariates",
-        "Outcomes and Instruments",
-        "Additional Rain Measures",
-        "Census Covariates"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Type.invalidCount",
     [
       0,
       43
-    ]
-  ],
-  [
-    "change",
-    "variables.Type.midpoint",
-    [
-      "Outcomes and Instruments",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Type.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Type.mode",
-    [
-      "Outcomes and Instruments",
-      [
-        "Fixed Effects",
-        "Political Covariates",
-        "Outcomes and Instruments",
-        "Additional Rain Measures",
-        "Census Covariates"
-      ]
     ]
   ],
   [
@@ -122,39 +78,19 @@
     "variables.Variable.plotValues",
     [
       [
-        "rain_day_prev",
+        "turnout_prv",
         1
       ],
       [
-        "pres_party",
+        "educ",
         1
       ],
       [
-        "inc_win_prv",
+        "rain_weekend_prev",
         1
       ],
       [
-        "dose_prv",
-        1
-      ],
-      [
-        "gov",
-        1
-      ],
-      [
-        "rain_day_next",
-        1
-      ],
-      [
-        "redistricted",
-        1
-      ],
-      [
-        "gvtwkr",
-        1
-      ],
-      [
-        "inc_win",
+        "dose",
         1
       ],
       [
@@ -162,11 +98,7 @@
         1
       ],
       [
-        "rain_weekend_next",
-        1
-      ],
-      [
-        "rain_elec",
+        "turnout",
         1
       ],
       [
@@ -178,95 +110,11 @@
         1
       ],
       [
-        "construction",
+        "inc_win_prv",
         1
       ],
       [
-        "turnout",
-        1
-      ],
-      [
-        "rain_weekend_prev_prv",
-        1
-      ],
-      [
-        "midterm",
-        1
-      ],
-      [
-        "rain_day",
-        1
-      ],
-      [
-        "sos",
-        1
-      ],
-      [
-        "pop",
-        1
-      ],
-      [
-        "rain_weekend_prev",
-        1
-      ],
-      [
-        "rain_weekend",
-        1
-      ],
-      [
-        "unempld",
-        1
-      ],
-      [
-        "educ",
-        1
-      ],
-      [
-        "minc",
-        1
-      ],
-      [
-        "rain_elec_next",
-        1
-      ],
-      [
-        "comp_cq",
-        1
-      ],
-      [
-        "d_inc",
-        1
-      ],
-      [
-        "turnout_prv",
-        1
-      ],
-      [
-        "rain_day_prev_prv",
-        1
-      ],
-      [
-        "dist_prev",
-        1
-      ],
-      [
-        "retail",
-        1
-      ],
-      [
-        "extremist",
-        1
-      ],
-      [
-        "manuf",
-        1
-      ],
-      [
-        "forborn",
-        1
-      ],
-      [
-        "vote_prv",
+        "redistricted",
         1
       ],
       [
@@ -278,7 +126,55 @@
         1
       ],
       [
-        "dose",
+        "gvtwkr",
+        1
+      ],
+      [
+        "comp_cq",
+        1
+      ],
+      [
+        "midterm",
+        1
+      ],
+      [
+        "rain_day_prev_prv",
+        1
+      ],
+      [
+        "sos",
+        1
+      ],
+      [
+        "rain_weekend",
+        1
+      ],
+      [
+        "dist_prev",
+        1
+      ],
+      [
+        "retail",
+        1
+      ],
+      [
+        "pop",
+        1
+      ],
+      [
+        "rain_elec_next",
+        1
+      ],
+      [
+        "vote_prv",
+        1
+      ],
+      [
+        "rain_day",
+        1
+      ],
+      [
+        "forborn",
         1
       ],
       [
@@ -286,7 +182,67 @@
         1
       ],
       [
+        "minc",
+        1
+      ],
+      [
+        "d_inc",
+        1
+      ],
+      [
+        "rain_weekend_next",
+        1
+      ],
+      [
+        "rain_day_next",
+        1
+      ],
+      [
+        "pres_party",
+        1
+      ],
+      [
+        "construction",
+        1
+      ],
+      [
         "vote",
+        1
+      ],
+      [
+        "gov",
+        1
+      ],
+      [
+        "manuf",
+        1
+      ],
+      [
+        "inc_win",
+        1
+      ],
+      [
+        "rain_weekend_prev_prv",
+        1
+      ],
+      [
+        "extremist",
+        1
+      ],
+      [
+        "unempld",
+        1
+      ],
+      [
+        "rain_elec",
+        1
+      ],
+      [
+        "rain_day_prev",
+        1
+      ],
+      [
+        "dose_prv",
         1
       ]
     ]
@@ -317,54 +273,10 @@
   ],
   [
     "change",
-    "variables.Variable.fewestValues",
-    [
-      "dose",
-      [
-        "vote",
-        "black",
-        "dose",
-        "rain_elec_prev_prv",
-        "urban"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Variable.invalidCount",
     [
       0,
       6
-    ]
-  ],
-  [
-    "change",
-    "variables.Variable.midpoint",
-    [
-      "dose",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Variable.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Variable.mode",
-    [
-      "dose",
-      [
-        "vote",
-        "black",
-        "dose",
-        "rain_elec_prev_prv",
-        "urban"
-      ]
     ]
   ],
   [
@@ -388,47 +300,7 @@
     "variables.Desciption.plotValues",
     [
       [
-        "prior differeence in democratic vote share",
-        1
-      ],
-      [
-        "incumbent policy extremist indicator",
-        1
-      ],
-      [
-        "incumbent win indicator",
-        1
-      ],
-      [
-        "farmer population",
-        1
-      ],
-      [
-        "log district population",
-        1
-      ],
-      [
-        "% urban",
-        1
-      ],
-      [
-        "democratic incumbent indicator",
-        1
-      ],
-      [
-        "manufacturing",
-        1
-      ],
-      [
-        "% retail workers",
-        1
-      ],
-      [
-        "deviated rain instrument on prior weekend of election day",
-        1
-      ],
-      [
-        "rain just on election day at next election",
+        "% block",
         1
       ],
       [
@@ -436,11 +308,107 @@
         1
       ],
       [
-        "party of the president",
+        "% retail workers",
+        1
+      ],
+      [
+        "prior differeence in democratic vote share",
+        1
+      ],
+      [
+        "% foreign born",
+        1
+      ],
+      [
+        "log district population",
+        1
+      ],
+      [
+        "CQ competitiveness",
+        1
+      ],
+      [
+        "median income in district",
         1
       ],
       [
         "% unemployed",
+        1
+      ],
+      [
+        "prior deviated rain instrument on election day and day prior",
+        1
+      ],
+      [
+        "party of governor ",
+        1
+      ],
+      [
+        "democratic incumbent indicator",
+        1
+      ],
+      [
+        "party of the president",
+        1
+      ],
+      [
+        "prior normalized presidential vote",
+        1
+      ],
+      [
+        "% urban",
+        1
+      ],
+      [
+        "prior incumbent ideal point",
+        1
+      ],
+      [
+        "rain on prior election weekend two elections prior",
+        1
+      ],
+      [
+        "manufacturing",
+        1
+      ],
+      [
+        "party of sec. of state",
+        1
+      ],
+      [
+        "midterm election indicator",
+        1
+      ],
+      [
+        "rain on election day and prior day at next election",
+        1
+      ],
+      [
+        "incumbent ideal point",
+        1
+      ],
+      [
+        "deviated rain instrument on election day and day prior",
+        1
+      ],
+      [
+        "education",
+        1
+      ],
+      [
+        "incumbent win previously  indicator",
+        1
+      ],
+      [
+        "incumbent policy extremist indicator",
+        1
+      ],
+      [
+        "rain just on election day at next election",
+        1
+      ],
+      [
+        "prior turnout",
         1
       ],
       [
@@ -452,63 +420,11 @@
         1
       ],
       [
-        "party of sec. of state",
-        1
-      ],
-      [
-        "prior turnout",
-        1
-      ],
-      [
-        "CQ competitiveness",
-        1
-      ],
-      [
-        "% block",
-        1
-      ],
-      [
-        "rain on election day and prior day at next election",
-        1
-      ],
-      [
-        "education",
-        1
-      ],
-      [
-        "prior normalized presidential vote",
-        1
-      ],
-      [
-        "rain on prior election weekend at next election",
-        1
-      ],
-      [
-        "prior deviated rain instrument on election day and day prior",
-        1
-      ],
-      [
-        "prior deviated rain instrument on prior weekend of election day",
-        1
-      ],
-      [
-        "incumbent ideal point",
-        1
-      ],
-      [
-        "% foreign born",
-        1
-      ],
-      [
         "% govt workers",
         1
       ],
       [
-        "$ construction workers",
-        1
-      ],
-      [
-        "median income in district",
+        "deviated rain instrument on prior weekend of election day",
         1
       ],
       [
@@ -516,11 +432,19 @@
         1
       ],
       [
-        "deviated rain instrument on election day and day prior",
+        "rain just on election day two elections prior",
         1
       ],
       [
-        "prior incumbent ideal point",
+        "farmer population",
+        1
+      ],
+      [
+        "rain on prior election weekend at next election",
+        1
+      ],
+      [
+        "$ construction workers",
         1
       ],
       [
@@ -528,27 +452,15 @@
         1
       ],
       [
-        "midterm election indicator",
-        1
-      ],
-      [
-        "party of governor ",
-        1
-      ],
-      [
-        "rain on prior election weekend two elections prior",
-        1
-      ],
-      [
-        "rain just on election day two elections prior",
-        1
-      ],
-      [
-        "incumbent win previously  indicator",
-        1
-      ],
-      [
         "redistricting indicator",
+        1
+      ],
+      [
+        "prior deviated rain instrument on prior weekend of election day",
+        1
+      ],
+      [
+        "incumbent win indicator",
         1
       ]
     ]
@@ -579,54 +491,10 @@
   ],
   [
     "change",
-    "variables.Desciption.fewestValues",
-    [
-      "difference in democratic vote share",
-      [
-        "CQ competitiveness",
-        "% govt workers",
-        "rain on prior election weekend two elections prior",
-        "midterm election indicator",
-        "difference in democratic vote share"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Desciption.invalidCount",
     [
       0,
       7
-    ]
-  ],
-  [
-    "change",
-    "variables.Desciption.midpoint",
-    [
-      "difference in democratic vote share",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Desciption.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Desciption.mode",
-    [
-      "difference in democratic vote share",
-      [
-        "CQ competitiveness",
-        "% govt workers",
-        "rain on prior election weekend two elections prior",
-        "midterm election indicator",
-        "difference in democratic vote share"
-      ]
     ]
   ],
   [

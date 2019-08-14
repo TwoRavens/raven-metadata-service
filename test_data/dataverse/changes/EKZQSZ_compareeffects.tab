@@ -43,44 +43,6 @@
   ],
   [
     "change",
-    "variables.model.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.model.fewestValues",
-    [
-      "1",
-      [
-        1.0,
-        2.0,
-        3.0,
-        4.0,
-        5.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.model.herfindahlIndex",
-    [
-      0.111111111111111,
-      0.14305115436849253
-    ]
-  ],
-  [
-    "change",
-    "variables.model.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.model.max",
     [
       "9.5",
@@ -105,48 +67,10 @@
   ],
   [
     "change",
-    "variables.model.midpoint",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.model.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.model.min",
     [
       "1",
       1.0
-    ]
-  ],
-  [
-    "change",
-    "variables.model.mode",
-    [
-      "1",
-      [
-        1.0,
-        2.0,
-        3.0,
-        4.0,
-        5.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.model.nature",
-    [
-      "ratio",
-      "ordinal"
     ]
   ],
   [
@@ -181,28 +105,10 @@
   ],
   [
     "change",
-    "variables.dv.fewestFreq",
+    "variables.dv.interval",
     [
-      "4",
-      4
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.fewestValues",
-    [
-      "1",
-      [
-        1.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.herfindahlIndex",
-    [
-      0.506172839506173,
-      0.25
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -231,22 +137,6 @@
   ],
   [
     "change",
-    "variables.dv.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.dv.midpointFreq",
-    [
-      "4.5",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.dv.min",
     [
       "0",
@@ -255,12 +145,10 @@
   ],
   [
     "change",
-    "variables.dv.mode",
+    "variables.dv.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -300,18 +188,8 @@
           "mean": 1.0,
           "max": 1,
           "min": 1,
-          "mode": [
-            1
-          ],
           "modeFreq": 9,
-          "fewestValues": [
-            1
-          ],
-          "fewestFreq": 9,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.0,
-          "herfindahlIndex": 0.1111111111111111,
           "plotValues": {
             "1": 9
           },
@@ -319,12 +197,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            1.0
-          ],
-          "cdfPlotY": [
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -344,18 +218,8 @@
           "mean": 1.0,
           "max": 1,
           "min": 1,
-          "mode": [
-            1
-          ],
           "modeFreq": 9,
-          "fewestValues": [
-            1
-          ],
-          "fewestFreq": 9,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.0,
-          "herfindahlIndex": 0.1111111111111111,
           "plotValues": {
             "1": 9
           },
@@ -363,12 +227,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            1.0
-          ],
-          "cdfPlotY": [
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -388,14 +248,8 @@
           "mean": "NA",
           "max": "NA",
           "min": "NA",
-          "mode": [],
           "modeFreq": null,
-          "fewestValues": [],
-          "fewestFreq": null,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": "NA",
-          "herfindahlIndex": 0,
           "plotValues": {},
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -422,14 +276,8 @@
           "mean": "NA",
           "max": "NA",
           "min": "NA",
-          "mode": [],
           "modeFreq": null,
-          "fewestValues": [],
-          "fewestFreq": null,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": "NA",
-          "herfindahlIndex": 0,
           "plotValues": {},
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -456,14 +304,8 @@
           "mean": "NA",
           "max": "NA",
           "min": "NA",
-          "mode": [],
           "modeFreq": null,
-          "fewestValues": [],
-          "fewestFreq": null,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": "NA",
-          "herfindahlIndex": 0,
           "plotValues": {},
           "pdfPlotType": null,
           "pdfPlotX": null,
@@ -479,9 +321,9 @@
           "variableName": "_margin",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -490,26 +332,8 @@
           "mean": 0.053913704,
           "max": 0.10711269999999999,
           "min": 0.016832547,
-          "mode": [
-            0.047690373,
-            0.016832547,
-            0.027719751,
-            0.10711269999999999,
-            0.10420201
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.047690373,
-            0.016832547,
-            0.027719751,
-            0.10711269999999999,
-            0.10420201
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.03295766358759683,
-          "herfindahlIndex": 0.1480190218055889,
           "plotValues": {
             "0.052666295": 1,
             "0.06397561": 1,
@@ -525,28 +349,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.016832547,
-            0.028117566125,
-            0.03940258525,
-            0.050687604375,
-            0.06197262349999999,
-            0.073257642625,
-            0.08454266175,
-            0.09582768087499999,
-            0.10711269999999999
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.3333333333333333,
-            0.3333333333333333,
-            0.5555555555555556,
-            0.6666666666666666,
-            0.7777777777777778,
-            0.7777777777777778,
-            0.7777777777777778,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -555,9 +359,9 @@
           "variableName": "_se",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -566,26 +370,8 @@
           "mean": 0.029510474611111115,
           "max": 0.06973363,
           "min": 0.0071418467,
-          "mode": [
-            0.041040257000000004,
-            0.06973363,
-            0.045063023,
-            0.007911841,
-            0.04410318
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.041040257000000004,
-            0.06973363,
-            0.045063023,
-            0.007911841,
-            0.04410318
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.022779573145026488,
-          "herfindahlIndex": 0.16996074199952388,
           "plotValues": {
             "0.041040257000000004": 1,
             "0.007769203299999999": 1,
@@ -601,28 +387,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.0071418467,
-            0.0149658196125,
-            0.022789792525,
-            0.030613765437500003,
-            0.03843773835000001,
-            0.04626171126250001,
-            0.05408568417500001,
-            0.06190965708750001,
-            0.06973363
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.4444444444444444,
-            0.4444444444444444,
-            0.4444444444444444,
-            0.5555555555555556,
-            0.8888888888888888,
-            0.8888888888888888,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -631,9 +397,9 @@
           "variableName": "_statistic",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "ratio",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -642,26 +408,8 @@
           "mean": 4.0028242133333345,
           "max": 13.412188,
           "min": 0.3186288,
-          "mode": [
-            2.4286845,
-            0.3186288,
-            1.4196919,
-            6.6775970000000004,
-            1.0429981
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            2.4286845,
-            0.3186288,
-            1.4196919,
-            6.6775970000000004,
-            1.0429981
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 4.283729226481855,
-          "herfindahlIndex": 0.22422500538043202,
           "plotValues": {
             "6.656642": 1,
             "13.412188": 1,
@@ -677,28 +425,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.3186288,
-            1.9553236999999999,
-            3.5920186,
-            5.2287135,
-            6.8654084,
-            8.5021033,
-            10.1387982,
-            11.7754931,
-            13.412188
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.4444444444444444,
-            0.6666666666666666,
-            0.6666666666666666,
-            0.8888888888888888,
-            0.8888888888888888,
-            0.8888888888888888,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -707,9 +435,9 @@
           "variableName": "_pvalue",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -718,26 +446,8 @@
           "mean": 0.20552965527247832,
           "max": 0.75000805,
           "min": 0.0,
-          "mode": [
-            0.0,
-            0.6316273,
-            2.4289144e-11,
-            0.15569738,
-            0.2969492
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.0,
-            0.6316273,
-            2.4289144e-11,
-            0.15569738,
-            0.2969492
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.294519399789125,
-          "herfindahlIndex": 0.31391850950582817,
           "plotValues": {
             "0.015153718": 1,
             "2.801547e-11": 1,
@@ -753,28 +463,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.0,
-            0.09375100625,
-            0.1875020125,
-            0.28125301875000003,
-            0.375004025,
-            0.46875503125,
-            0.5625060375000001,
-            0.65625704375,
-            0.75000805
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.5555555555555556,
-            0.6666666666666666,
-            0.6666666666666666,
-            0.7777777777777778,
-            0.7777777777777778,
-            0.7777777777777778,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -783,9 +473,9 @@
           "variableName": "_ci_lb",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "ratio",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -794,26 +484,8 @@
           "mean": -0.003925762777777778,
           "max": 0.08897465,
           "min": -0.11445626,
-          "mode": [
-            -0.03763252,
-            -0.051979717,
-            0.037159372,
-            0.012584228000000001,
-            0.08897465
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            -0.03763252,
-            -0.051979717,
-            0.037159372,
-            0.012584228000000001,
-            0.08897465
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.05988589834937755,
-          "herfindahlIndex": 23.09407315659315,
           "plotValues": {
             "-0.02434629": 1,
             "0.012584228000000001": 1,
@@ -829,28 +501,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            -0.11445626,
-            -0.08902739625,
-            -0.0635985325,
-            -0.038169668749999996,
-            -0.012740804999999994,
-            0.012688058750000009,
-            0.03811692250000001,
-            0.06354578625000001,
-            0.08897465
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.1111111111111111,
-            0.1111111111111111,
-            0.2222222222222222,
-            0.4444444444444444,
-            0.5555555555555556,
-            0.8888888888888888,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -859,9 +511,9 @@
           "variableName": "_ci_ub",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -870,26 +522,8 @@
           "mean": 0.11175316944444444,
           "max": 0.19355334,
           "min": 0.042855274000000006,
-          "mode": [
-            0.15889454,
-            0.042855274000000006,
-            0.061688136,
-            0.08564481,
-            0.06817322
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.15889454,
-            0.042855274000000006,
-            0.061688136,
-            0.08564481,
-            0.06817322
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.05072306065448078,
-          "herfindahlIndex": 0.13145791374575536,
           "plotValues": {
             "0.15229751": 1,
             "0.12324233": 1,
@@ -905,28 +539,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.042855274000000006,
-            0.06169253225,
-            0.0805297905,
-            0.09936704874999999,
-            0.11820430700000001,
-            0.13704156525,
-            0.15587882349999999,
-            0.17471608175,
-            0.19355334
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.2222222222222222,
-            0.3333333333333333,
-            0.4444444444444444,
-            0.4444444444444444,
-            0.6666666666666666,
-            0.7777777777777778,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -935,9 +549,9 @@
           "variableName": "_ci_lb2",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "ratio",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -946,26 +560,8 @@
           "mean": 0.005516526777777779,
           "max": 0.09146052,
           "min": -0.092144005,
-          "mode": [
-            0.039690875,
-            -0.024501112999999998,
-            0.015055101000000001,
-            0.035977744,
-            -0.04074612
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.039690875,
-            -0.024501112999999998,
-            0.015055101000000001,
-            0.035977744,
-            -0.04074612
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.05390625815561412,
-          "herfindahlIndex": 9.541983762351661,
           "plotValues": {
             "0.034783486": 1,
             "-0.092144005": 1,
@@ -981,28 +577,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            -0.092144005,
-            -0.069193439375,
-            -0.046242873749999996,
-            -0.023292308124999994,
-            -0.00034174249999999184,
-            0.02260882312500001,
-            0.04555938875000001,
-            0.06850995437500002,
-            0.09146052
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.1111111111111111,
-            0.1111111111111111,
-            0.3333333333333333,
-            0.4444444444444444,
-            0.5555555555555556,
-            0.8888888888888888,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ],
       [
@@ -1011,9 +587,9 @@
           "variableName": "_ci_ub2",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 9,
@@ -1022,26 +598,8 @@
           "mean": 0.1023108808888889,
           "max": 0.17944191,
           "min": 0.0403844,
-          "mode": [
-            0.11011093,
-            0.07441121,
-            0.059403002,
-            0.0403844,
-            0.17944191
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.11011093,
-            0.07441121,
-            0.059403002,
-            0.0403844,
-            0.17944191
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.04536348035698026,
-          "herfindahlIndex": 0.13052775001883582,
           "plotValues": {
             "0.059403002": 1,
             "0.065641716": 1,
@@ -1057,28 +615,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.0403844,
-            0.05776658875,
-            0.0751487775,
-            0.09253096625,
-            0.109913155,
-            0.12729534375,
-            0.14467753249999998,
-            0.16205972125,
-            0.17944191
-          ],
-          "cdfPlotY": [
-            0.1111111111111111,
-            0.1111111111111111,
-            0.4444444444444444,
-            0.4444444444444444,
-            0.4444444444444444,
-            0.6666666666666666,
-            0.8888888888888888,
-            0.8888888888888888,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ]
     ]
@@ -1096,18 +634,12 @@
           "cdfPlotX": 1,
           "cdfPlotY": 1,
           "description": "",
-          "fewestFreq": "9",
-          "fewestValues": "1",
-          "herfindahlIndex": 1,
           "interval": "discrete",
           "invalidCount": 0,
           "max": "1",
           "mean": "1",
           "median": "1",
-          "midpoint": "1",
-          "midpointFreq": "9",
           "min": "1",
-          "mode": "1",
           "modeFreq": 9,
           "nature": "ordinal",
           "numchar": "numeric",
@@ -1130,18 +662,12 @@
           "cdfPlotX": 1,
           "cdfPlotY": 1,
           "description": "",
-          "fewestFreq": "9",
-          "fewestValues": "1",
-          "herfindahlIndex": 1,
           "interval": "discrete",
           "invalidCount": 0,
           "max": "1",
           "mean": "1",
           "median": "1",
-          "midpoint": "1",
-          "midpointFreq": "9",
           "min": "1",
-          "mode": "1",
           "modeFreq": 9,
           "nature": "ordinal",
           "numchar": "numeric",
@@ -1164,18 +690,12 @@
           "cdfPlotX": "NULL",
           "cdfPlotY": "NULL",
           "description": "",
-          "fewestFreq": "0",
-          "fewestValues": "NA",
-          "herfindahlIndex": 0,
           "interval": "discrete",
           "invalidCount": 9,
           "max": "NA",
           "mean": "NA",
           "median": "NA",
-          "midpoint": "NA",
-          "midpointFreq": "0",
           "min": "NA",
-          "mode": "NA",
           "modeFreq": 0,
           "nature": "nominal",
           "numchar": "character",
@@ -1198,18 +718,12 @@
           "cdfPlotX": "NULL",
           "cdfPlotY": "NULL",
           "description": "",
-          "fewestFreq": "0",
-          "fewestValues": "NA",
-          "herfindahlIndex": 0,
           "interval": "discrete",
           "invalidCount": 9,
           "max": "NA",
           "mean": "NA",
           "median": "NA",
-          "midpoint": "NA",
-          "midpointFreq": "0",
           "min": "NA",
-          "mode": "NA",
           "modeFreq": 0,
           "nature": "nominal",
           "numchar": "character",
@@ -1232,18 +746,12 @@
           "cdfPlotX": "NULL",
           "cdfPlotY": "NULL",
           "description": "",
-          "fewestFreq": "0",
-          "fewestValues": "NA",
-          "herfindahlIndex": 0,
           "interval": "discrete",
           "invalidCount": 9,
           "max": "NA",
           "mean": "NA",
           "median": "NA",
-          "midpoint": "NA",
-          "midpointFreq": "0",
           "min": "NA",
-          "mode": "NA",
           "modeFreq": 0,
           "nature": "nominal",
           "numchar": "character",
@@ -1263,41 +771,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.016832547,
-            0.028117566125,
-            0.03940258525,
-            0.050687604375,
-            0.0619726235,
-            0.073257642625,
-            0.08454266175,
-            0.095827680875,
-            0.1071127
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.333333333333333,
-            0.333333333333333,
-            0.555555555555556,
-            0.666666666666667,
-            0.777777777777778,
-            0.777777777777778,
-            0.777777777777778,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.0168325",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.1071127",
           "mean": "0.053913704",
           "median": "0.047690373",
-          "midpoint": "0.0168325",
-          "midpointFreq": "1",
           "min": "0.016832547",
-          "mode": "0.01683",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",
@@ -1317,41 +799,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.0071418467,
-            0.0149658196125,
-            0.022789792525,
-            0.0306137654375,
-            0.03843773835,
-            0.0462617112625,
-            0.054085684175,
-            0.0619096570875,
-            0.06973363
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.444444444444444,
-            0.444444444444444,
-            0.444444444444444,
-            0.555555555555556,
-            0.888888888888889,
-            0.888888888888889,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.0351089",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.06973363",
           "mean": "0.0295104746111111",
           "median": "0.035108943",
-          "midpoint": "0.0351089",
-          "midpointFreq": "1",
           "min": "0.0071418467",
-          "mode": "0.03511",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",
@@ -1371,41 +827,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.3186288,
-            1.9553237,
-            3.5920186,
-            5.2287135,
-            6.8654084,
-            8.5021033,
-            10.1387982,
-            11.7754931,
-            13.412188
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.444444444444444,
-            0.666666666666667,
-            0.666666666666667,
-            0.888888888888889,
-            0.888888888888889,
-            0.888888888888889,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.479438",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "13.412188",
           "mean": "4.00282421333333",
           "median": "2.4286845",
-          "midpoint": "0.479438",
-          "midpointFreq": "1",
           "min": "0.3186288",
-          "mode": "0.4794",
           "modeFreq": 1,
           "nature": "ratio",
           "numchar": "numeric",
@@ -1425,41 +855,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0,
-            0.09375100625,
-            0.1875020125,
-            0.28125301875,
-            0.375004025,
-            0.46875503125,
-            0.5625060375,
-            0.65625704375,
-            0.75000805
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.555555555555556,
-            0.666666666666667,
-            0.666666666666667,
-            0.777777777777778,
-            0.777777777777778,
-            0.777777777777778,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.631627",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.75000805",
           "mean": "0.205529655272478",
           "median": "0.015153718",
-          "midpoint": "0.631627",
-          "midpointFreq": "1",
           "min": "0",
-          "mode": "0.6316",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",
@@ -1479,41 +883,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            -0.11445626,
-            -0.08902739625,
-            -0.0635985325,
-            -0.03816966875,
-            -0.012740805,
-            0.01268805875,
-            0.0381169225,
-            0.06354578625,
-            0.08897465
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.111111111111111,
-            0.111111111111111,
-            0.222222222222222,
-            0.444444444444444,
-            0.555555555555556,
-            0.888888888888889,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "-0.0519797",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.08897465",
           "mean": "-0.00392576277777778",
           "median": "0.012584228",
-          "midpoint": "-0.0519797",
-          "midpointFreq": "1",
           "min": "-0.11445626",
-          "mode": "-0.05198",
           "modeFreq": 1,
           "nature": "ratio",
           "numchar": "numeric",
@@ -1533,41 +911,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.042855274,
-            0.06169253225,
-            0.0805297905,
-            0.09936704875,
-            0.118204307,
-            0.13704156525,
-            0.1558788235,
-            0.17471608175,
-            0.19355334
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.222222222222222,
-            0.333333333333333,
-            0.444444444444444,
-            0.444444444444444,
-            0.666666666666667,
-            0.777777777777778,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.0856448",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.19355334",
           "mean": "0.111753169444444",
           "median": "0.119429365",
-          "midpoint": "0.0856448",
-          "midpointFreq": "1",
           "min": "0.042855274",
-          "mode": "0.08564",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",
@@ -1587,41 +939,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            -0.092144005,
-            -0.069193439375,
-            -0.04624287375,
-            -0.023292308125,
-            -0.000341742499999992,
-            0.022608823125,
-            0.04555938875,
-            0.068509954375,
-            0.09146052
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.111111111111111,
-            0.111111111111111,
-            0.333333333333333,
-            0.444444444444444,
-            0.555555555555556,
-            0.888888888888889,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "-0.0407461",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.09146052",
           "mean": "0.00551652677777778",
           "median": "0.015055101",
-          "midpoint": "-0.0407461",
-          "midpointFreq": "1",
           "min": "-0.092144005",
-          "mode": "-0.04075",
           "modeFreq": 1,
           "nature": "ratio",
           "numchar": "numeric",
@@ -1641,41 +967,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.0403844,
-            0.05776658875,
-            0.0751487775,
-            0.09253096625,
-            0.109913155,
-            0.12729534375,
-            0.1446775325,
-            0.16205972125,
-            0.17944191
-          ],
-          "cdfPlotY": [
-            0.111111111111111,
-            0.111111111111111,
-            0.444444444444444,
-            0.444444444444444,
-            0.444444444444444,
-            0.666666666666667,
-            0.888888888888889,
-            0.888888888888889,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.0744112",
-          "herfindahlIndex": 0.111111111111111,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.17944191",
           "mean": "0.102310880888889",
           "median": "0.11011093",
-          "midpoint": "0.0744112",
-          "midpointFreq": "1",
           "min": "0.0403844",
-          "mode": "0.07441",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",

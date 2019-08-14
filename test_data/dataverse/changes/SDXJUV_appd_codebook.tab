@@ -4,31 +4,7 @@
     "variables.VariableName.plotValues",
     [
       [
-        "agency_codex",
-        1
-      ],
-      [
-        "unemp",
-        1
-      ],
-      [
-        "inflation",
-        1
-      ],
-      [
-        "fy",
-        1
-      ],
-      [
-        "approval",
-        1
-      ],
-      [
-        "cabinet",
-        1
-      ],
-      [
-        "wcf",
+        "oppfees",
         1
       ],
       [
@@ -36,31 +12,7 @@
         1
       ],
       [
-        "divided",
-        1
-      ],
-      [
         "primarypolicy",
-        1
-      ],
-      [
-        "oppfees",
-        1
-      ],
-      [
-        "fees",
-        1
-      ],
-      [
-        "lnrec_avg",
-        1
-      ],
-      [
-        "postchadha",
-        1
-      ],
-      [
-        "lncurrent",
         1
       ],
       [
@@ -68,11 +20,39 @@
         1
       ],
       [
+        "lnrec_avg",
+        1
+      ],
+      [
+        "lncurrent",
+        1
+      ],
+      [
+        "wcf",
+        1
+      ],
+      [
+        "cabinet",
+        1
+      ],
+      [
+        "postchadha",
+        1
+      ],
+      [
+        "fy",
+        1
+      ],
+      [
+        "inflation",
+        1
+      ],
+      [
         "commfe",
         1
       ],
       [
-        "discretion",
+        "approval",
         1
       ],
       [
@@ -80,11 +60,31 @@
         1
       ],
       [
+        "agencyfe",
+        1
+      ],
+      [
         "war",
         1
       ],
       [
-        "agencyfe",
+        "agency_codex",
+        1
+      ],
+      [
+        "discretion",
+        1
+      ],
+      [
+        "unemp",
+        1
+      ],
+      [
+        "fees",
+        1
+      ],
+      [
+        "divided",
         1
       ]
     ]
@@ -115,54 +115,10 @@
   ],
   [
     "change",
-    "variables.VariableName.fewestValues",
-    [
-      "agency_codex",
-      [
-        "agencyfe",
-        "commfe",
-        "sigreg",
-        "discretion",
-        "counter"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.VariableName.invalidCount",
     [
       0,
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.VariableName.midpoint",
-    [
-      "agency_codex",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.VariableName.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.VariableName.mode",
-    [
-      "agency_codex",
-      [
-        "agencyfe",
-        "commfe",
-        "sigreg",
-        "discretion",
-        "counter"
-      ]
     ]
   ],
   [
@@ -186,11 +142,7 @@
     "variables.Description.plotValues",
     [
       [
-        "Fiscal year",
-        1
-      ],
-      [
-        "Primary policy code (Primary Agendas Project) assigned to primary agency",
+        "1 if president and congressional chamber are from opposing parties; 0 otherwise",
         1
       ],
       [
@@ -198,55 +150,7 @@
         1
       ],
       [
-        "Annual unemployment rate",
-        1
-      ],
-      [
-        "Committee code associated with subcommittee",
-        1
-      ],
-      [
-        "1 if cabinet agency; 0 otherwise",
-        1
-      ],
-      [
-        "1 if president and congressional chamber are from opposing parties; 0 otherwise",
-        1
-      ],
-      [
-        "Annual presidential approval rating from Gallup Poll",
-        1
-      ],
-      [
-        "1 if the agency can assess and collect fees; 0 otherwise",
-        1
-      ],
-      [
         "1 if agency engages in significant rulemaking; 0 otherwise",
-        1
-      ],
-      [
-        "0 in 1976, 1 in 1977, 2 in 1978, etc",
-        1
-      ],
-      [
-        "Fixed for agency-subcommittee pair",
-        1
-      ],
-      [
-        "Agency code associated with the agency (destringed for fixed effects)",
-        1
-      ],
-      [
-        "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise",
-        1
-      ],
-      [
-        "Average logged agency presidential budget estimate",
-        1
-      ],
-      [
-        "Discretion from appropriations report (Bolton and Thrower measure)",
         1
       ],
       [
@@ -254,11 +158,35 @@
         1
       ],
       [
-        "Annual inflation rate",
+        "Discretion from appropriations report (Bolton and Thrower measure)",
         1
       ],
       [
-        "1 if the agency's activities are funded in part by a working capital fund giving agency access to the money irrespective of other limitations on spending; 0 otherwise",
+        "1 if cabinet agency; 0 otherwise",
+        1
+      ],
+      [
+        "Average logged agency presidential budget estimate",
+        1
+      ],
+      [
+        "Annual presidential approval rating from Gallup Poll",
+        1
+      ],
+      [
+        "Primary policy code (Primary Agendas Project) assigned to primary agency",
+        1
+      ],
+      [
+        "Agency code associated with the agency",
+        1
+      ],
+      [
+        "Fixed for agency-subcommittee pair",
+        1
+      ],
+      [
+        "Annual unemployment rate",
         1
       ],
       [
@@ -266,7 +194,35 @@
         1
       ],
       [
-        "Agency code associated with the agency",
+        "Agency code associated with the agency (destringed for fixed effects)",
+        1
+      ],
+      [
+        "Annual inflation rate",
+        1
+      ],
+      [
+        "1 if during war (Korean, Vietnam, Gulf War, and Iraq/Afghansitan (2001-2003)); 0 otherwise",
+        1
+      ],
+      [
+        "Fiscal year",
+        1
+      ],
+      [
+        "1 if the agency's activities are funded in part by a working capital fund giving agency access to the money irrespective of other limitations on spending; 0 otherwise",
+        1
+      ],
+      [
+        "1 if the agency can assess and collect fees; 0 otherwise",
+        1
+      ],
+      [
+        "Committee code associated with subcommittee",
+        1
+      ],
+      [
+        "0 in 1976, 1 in 1977, 2 in 1978, etc",
         1
       ]
     ]
@@ -297,54 +253,10 @@
   ],
   [
     "change",
-    "variables.Description.fewestValues",
-    [
-      "Agency code associated with the agency",
-      [
-        "Primary policy code (Primary Agendas Project) assigned to primary agency",
-        "Annual inflation rate",
-        "Discretion from appropriations report (Bolton and Thrower measure)",
-        "Fiscal year",
-        "1 if agency uses assessed fees or other receipts to fund its operations"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Description.invalidCount",
     [
       0,
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.midpoint",
-    [
-      "Agency code associated with the agency",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.midpointFreq",
-    [
-      1,
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Description.mode",
-    [
-      "Agency code associated with the agency",
-      [
-        "Primary policy code (Primary Agendas Project) assigned to primary agency",
-        "Annual inflation rate",
-        "Discretion from appropriations report (Bolton and Thrower measure)",
-        "Fiscal year",
-        "1 if agency uses assessed fees or other receipts to fund its operations"
-      ]
     ]
   ],
   [

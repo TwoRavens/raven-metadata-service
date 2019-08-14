@@ -4,7 +4,7 @@
     "variables.Source.plotValues",
     [
       [
-        "PredictWise",
+        "HuffingtonPost",
         1
       ],
       [
@@ -12,15 +12,15 @@
         1
       ],
       [
-        "FiveThirtyEight",
-        1
-      ],
-      [
-        "HuffingtonPost",
-        1
-      ],
-      [
         "New York Times",
+        1
+      ],
+      [
+        "PredictWise",
+        1
+      ],
+      [
+        "FiveThirtyEight",
         1
       ]
     ]
@@ -51,58 +51,6 @@
   ],
   [
     "change",
-    "variables.Source.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.Source.fewestValues",
-    [
-      "New York Times",
-      [
-        "New York Times",
-        "PredictWise",
-        "FiveThirtyEight",
-        "HuffingtonPost",
-        "Princeton"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Source.midpoint",
-    [
-      "New York Times",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Source.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Source.mode",
-    [
-      "New York Times",
-      [
-        "New York Times",
-        "PredictWise",
-        "FiveThirtyEight",
-        "HuffingtonPost",
-        "Princeton"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Source.pdfPlotType",
     [
       "bar",
@@ -119,9 +67,9 @@
           "variableName": " distance",
           "description": "",
           "numchar": "numeric",
-          "nature": "ordinal",
+          "nature": "percent",
           "binary": false,
-          "interval": "discrete",
+          "interval": "continuous",
           "time": "unknown",
           "invalidCount": 0,
           "validCount": 5,
@@ -130,26 +78,8 @@
           "mean": 0.384,
           "max": 0.49,
           "min": 0.21,
-          "mode": [
-            0.49,
-            0.21,
-            0.48,
-            0.35,
-            0.39
-          ],
           "modeFreq": 1,
-          "fewestValues": [
-            0.49,
-            0.21,
-            0.48,
-            0.35,
-            0.39
-          ],
-          "fewestFreq": 1,
-          "midpoint": null,
-          "midpointFreq": null,
           "stdDev": 0.11392980294900891,
-          "herfindahlIndex": 0.2140842013888889,
           "plotValues": {
             "0.39": 1,
             "0.35": 1,
@@ -161,20 +91,8 @@
           "pdfPlotX": null,
           "pdfPlotY": null,
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.21,
-            0.28,
-            0.35,
-            0.42000000000000004,
-            0.49
-          ],
-          "cdfPlotY": [
-            0.2,
-            0.2,
-            0.4,
-            0.6,
-            1.0
-          ]
+          "cdfPlotX": [],
+          "cdfPlotY": []
         }
       ]
     ]
@@ -189,33 +107,15 @@
           "plotValues": {},
           "binary": "no",
           "cdfPlotType": "bar",
-          "cdfPlotX": [
-            0.21,
-            0.28,
-            0.35,
-            0.42,
-            0.49
-          ],
-          "cdfPlotY": [
-            0.2,
-            0.2,
-            0.4,
-            0.6,
-            1
-          ],
+          "cdfPlotX": [],
+          "cdfPlotY": [],
           "description": "",
-          "fewestFreq": "1",
-          "fewestValues": "0.35",
-          "herfindahlIndex": 0.2,
           "interval": "continuous",
           "invalidCount": 0,
           "max": "0.49",
           "mean": "0.384",
           "median": "0.39",
-          "midpoint": "0.35",
-          "midpointFreq": "1",
           "min": "0.21",
-          "mode": "0.35",
           "modeFreq": 1,
           "nature": "percent",
           "numchar": "numeric",

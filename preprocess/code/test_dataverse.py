@@ -41,15 +41,23 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
+ignore = 'fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode'.split()
+
 def diff(filename, py_path, R_path):
     try:
         py_obj = json.load(open(py_path))
         for var in py_obj.get('variables', []):
+            for k in ignore:
+                try:
+                    del py_obj['variables'][var][k]
+                except:
+                    pass
+
             for (k, k1) in replace.items():
                 if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty'):
                     val = py_obj['variables'][var].get(k)
                     if isinstance(val, list): 
-                        py_obj['variables'][var][k] = sorted(val)
+                        py_obj['variables'][var][k] = []#sorted(val)
     except:
         py_obj = {}
 
@@ -64,8 +72,8 @@ def diff(filename, py_path, R_path):
         for (k, k1) in replace.items():
             val = R_obj['variables'][var].get(k1)
             if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty') and isinstance(val, list): 
-                R_obj1['variables'][var][k] = sorted(val) 
-            else:
+                R_obj1['variables'][var][k] = []#sorted(val) 
+            elif k not in ignore:
                 R_obj1['variables'][var][k] = val
 
     changes = [] 

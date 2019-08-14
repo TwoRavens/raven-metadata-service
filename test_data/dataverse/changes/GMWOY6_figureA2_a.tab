@@ -4,11 +4,15 @@
     "variables.Income.plotValues",
     [
       [
-        "<$15K",
+        "$50-75K",
         1
       ],
       [
-        "$75-100K",
+        ">$100K",
+        1
+      ],
+      [
+        "<$15K",
         1
       ],
       [
@@ -16,11 +20,7 @@
         1
       ],
       [
-        "$50-75K",
-        1
-      ],
-      [
-        ">$100K",
+        "$75-100K",
         1
       ],
       [
@@ -55,58 +55,6 @@
   ],
   [
     "change",
-    "variables.Income.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.fewestValues",
-    [
-      "<$15K",
-      [
-        "$15-30K",
-        ">$100K",
-        "$50-75K",
-        "$30-50K",
-        "$75-100K"
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.midpoint",
-    [
-      "<$15K",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Income.mode",
-    [
-      "<$15K",
-      [
-        "$15-30K",
-        ">$100K",
-        "$50-75K",
-        "$30-50K",
-        "$75-100K"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.Income.pdfPlotType",
     [
       "bar",
@@ -137,31 +85,10 @@
   ],
   [
     "change",
-    "variables.year92.fewestFreq",
+    "variables.year92.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.year92.fewestValues",
-    [
-      "23",
-      [
-        23.0,
-        35.0,
-        38.0,
-        41.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year92.herfindahlIndex",
-    [
-      0.25,
-      0.2599499174170174
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -190,22 +117,6 @@
   ],
   [
     "change",
-    "variables.year92.midpoint",
-    [
-      "23",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.year92.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.year92.min",
     [
       "23",
@@ -214,15 +125,10 @@
   ],
   [
     "change",
-    "variables.year92.mode",
+    "variables.year92.nature",
     [
-      "23",
-      [
-        23.0,
-        35.0,
-        38.0,
-        41.0
-      ]
+      "ordinal",
+      "ratio"
     ]
   ],
   [
@@ -273,36 +179,6 @@
   ],
   [
     "change",
-    "variables.year96.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.year96.fewestValues",
-    [
-      "28",
-      [
-        40,
-        36,
-        28,
-        45,
-        54
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year96.herfindahlIndex",
-    [
-      0.166666666666667,
-      0.17340994587387504
-    ]
-  ],
-  [
-    "change",
     "variables.year96.max",
     [
       "54",
@@ -327,40 +203,10 @@
   ],
   [
     "change",
-    "variables.year96.midpoint",
-    [
-      "28",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.year96.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.year96.min",
     [
       "28",
       28
-    ]
-  ],
-  [
-    "change",
-    "variables.year96.mode",
-    [
-      "28",
-      [
-        40,
-        36,
-        28,
-        45,
-        54
-      ]
     ]
   ],
   [
@@ -411,36 +257,6 @@
   ],
   [
     "change",
-    "variables.year00.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.year00.fewestValues",
-    [
-      "37",
-      [
-        48,
-        41,
-        51,
-        52,
-        37
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year00.herfindahlIndex",
-    [
-      0.166666666666667,
-      0.16949893243766312
-    ]
-  ],
-  [
-    "change",
     "variables.year00.max",
     [
       "54",
@@ -465,40 +281,10 @@
   ],
   [
     "change",
-    "variables.year00.midpoint",
-    [
-      "37",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.year00.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.year00.min",
     [
       "37",
       37
-    ]
-  ],
-  [
-    "change",
-    "variables.year00.mode",
-    [
-      "37",
-      [
-        48,
-        41,
-        51,
-        52,
-        37
-      ]
     ]
   ],
   [
@@ -549,36 +335,6 @@
   ],
   [
     "change",
-    "variables.year04.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.year04.fewestValues",
-    [
-      "36",
-      [
-        56,
-        49,
-        42,
-        36,
-        58
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year04.herfindahlIndex",
-    [
-      0.166666666666667,
-      0.1710418188458729
-    ]
-  ],
-  [
-    "change",
     "variables.year04.max",
     [
       "58",
@@ -603,40 +359,10 @@
   ],
   [
     "change",
-    "variables.year04.midpoint",
-    [
-      "36",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.year04.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.year04.min",
     [
       "36",
       36
-    ]
-  ],
-  [
-    "change",
-    "variables.year04.mode",
-    [
-      "36",
-      [
-        56,
-        49,
-        42,
-        36,
-        58
-      ]
     ]
   ],
   [
@@ -683,35 +409,6 @@
   ],
   [
     "change",
-    "variables.year08.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.year08.fewestValues",
-    [
-      "25",
-      [
-        25,
-        43,
-        37,
-        48
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year08.herfindahlIndex",
-    [
-      0.222222222222222,
-      0.17379089220806015
-    ]
-  ],
-  [
-    "change",
     "variables.year08.max",
     [
       "49",
@@ -736,36 +433,10 @@
   ],
   [
     "change",
-    "variables.year08.midpoint",
-    [
-      "25",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.year08.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.year08.min",
     [
       "25",
       25
-    ]
-  ],
-  [
-    "change",
-    "variables.year08.mode",
-    [
-      "49",
-      [
-        49
-      ]
     ]
   ],
   [
@@ -804,30 +475,10 @@
   ],
   [
     "change",
-    "variables.year12.fewestFreq",
+    "variables.year12.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.year12.fewestValues",
-    [
-      "35",
-      [
-        35.0,
-        42.0,
-        54.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.year12.herfindahlIndex",
-    [
-      0.333333333333333,
-      0.3440941670065847
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -856,22 +507,6 @@
   ],
   [
     "change",
-    "variables.year12.midpoint",
-    [
-      "35",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.year12.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.year12.min",
     [
       "35",
@@ -880,14 +515,10 @@
   ],
   [
     "change",
-    "variables.year12.mode",
+    "variables.year12.nature",
     [
-      "35",
-      [
-        35.0,
-        42.0,
-        54.0
-      ]
+      "ordinal",
+      "ratio"
     ]
   ],
   [

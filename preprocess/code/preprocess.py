@@ -18,6 +18,7 @@ def test_run(input_file, output_filepath=None):
 
     if err_msg:
         msgt(err_msg)
+        logging.error(err_msg)
         return
 
     runner.show_final_info()
@@ -29,6 +30,7 @@ def test_run(input_file, output_filepath=None):
             open(output_filepath, 'w').write(jstring)
             msgt('file written: %s' % output_filepath)
         except OSError as os_err:
+            raise
             msgt('Failed to write file: %s' % os_err)
 
 def show_instructions():

@@ -4,7 +4,15 @@
     "variables.A.plotValues",
     [
       [
+        "Out-party",
+        1
+      ],
+      [
         "Woman x Out-party x Gender-salient issue",
+        1
+      ],
+      [
+        "Woman x Out-party",
         1
       ],
       [
@@ -12,7 +20,7 @@
         1
       ],
       [
-        "Out-party",
+        "Out-party x Gender-salient issue",
         1
       ],
       [
@@ -20,15 +28,7 @@
         1
       ],
       [
-        "Out-party x Gender-salient issue",
-        1
-      ],
-      [
         "Woman x Gender-Salient Issue",
-        1
-      ],
-      [
-        "Woman x Out-party",
         1
       ]
     ]
@@ -59,62 +59,10 @@
   ],
   [
     "change",
-    "variables.A.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.A.fewestValues",
-    [
-      "Woman",
-      [
-        "Woman x Out-party",
-        "Woman x Gender-Salient Issue",
-        "Out-party x Gender-salient issue",
-        "Gender-salient issue",
-        "Out-party"
-      ]
-    ]
-  ],
-  [
-    "change",
     "variables.A.invalidCount",
     [
       0,
       2
-    ]
-  ],
-  [
-    "change",
-    "variables.A.midpoint",
-    [
-      "Woman",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.A.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.A.mode",
-    [
-      "Woman",
-      [
-        "Woman x Out-party",
-        "Woman x Gender-Salient Issue",
-        "Out-party x Gender-salient issue",
-        "Gender-salient issue",
-        "Out-party"
-      ]
     ]
   ],
   [
@@ -169,44 +117,6 @@
   ],
   [
     "change",
-    "variables.Coefficient.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.fewestValues",
-    [
-      "0.02",
-      [
-        0.25,
-        -0.55,
-        0.37,
-        0.2,
-        -0.39
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.herfindahlIndex",
-    [
-      0.142857142857143,
-      2.381829834962347
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.Coefficient.max",
     [
       "0.89",
@@ -231,48 +141,10 @@
   ],
   [
     "change",
-    "variables.Coefficient.midpoint",
-    [
-      "0.02",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.Coefficient.min",
     [
       "-0.55",
       -0.55
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.mode",
-    [
-      "0.02",
-      [
-        0.25,
-        -0.55,
-        0.37,
-        0.2,
-        -0.39
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Coefficient.nature",
-    [
-      "ratio",
-      "ordinal"
     ]
   ],
   [
@@ -306,9 +178,7 @@
     "variables.C.cdfPlotX",
     [
       0,
-      [
-        0.0
-      ]
+      []
     ]
   ],
   [
@@ -316,35 +186,15 @@
     "variables.C.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.C.fewestFreq",
+    "variables.C.interval",
     [
-      "8",
-      8
-    ]
-  ],
-  [
-    "change",
-    "variables.C.fewestValues",
-    [
-      "0",
-      [
-        0.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.C.herfindahlIndex",
-    [
-      1,
-      0
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -373,22 +223,6 @@
   ],
   [
     "change",
-    "variables.C.midpoint",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.C.midpointFreq",
-    [
-      "8",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.C.min",
     [
       "0",
@@ -397,12 +231,10 @@
   ],
   [
     "change",
-    "variables.C.mode",
+    "variables.C.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -461,44 +293,6 @@
   ],
   [
     "change",
-    "variables.StandardError.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.fewestValues",
-    [
-      "0.333357",
-      [
-        0.0,
-        0.4605687000000001,
-        0.32531709999999997,
-        0.4572371,
-        0.3815808
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.herfindahlIndex",
-    [
-      0.125,
-      0.15631516951422697
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.interval",
-    [
-      "continuous",
-      "discrete"
-    ]
-  ],
-  [
-    "change",
     "variables.StandardError.max",
     [
       "0.6523349",
@@ -523,48 +317,10 @@
   ],
   [
     "change",
-    "variables.StandardError.midpoint",
-    [
-      "0.333357",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.StandardError.min",
     [
       "0",
       0.0
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.mode",
-    [
-      "0.3334",
-      [
-        0.0,
-        0.4605687000000001,
-        0.32531709999999997,
-        0.4572371,
-        0.3815808
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.StandardError.nature",
-    [
-      "percent",
-      "ordinal"
     ]
   ],
   [
@@ -598,9 +354,7 @@
     "variables.E.cdfPlotX",
     [
       0,
-      [
-        0.0
-      ]
+      []
     ]
   ],
   [
@@ -608,35 +362,15 @@
     "variables.E.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.E.fewestFreq",
+    "variables.E.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.E.fewestValues",
-    [
-      "0",
-      [
-        0.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.E.herfindahlIndex",
-    [
-      1,
-      0
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -665,22 +399,6 @@
   ],
   [
     "change",
-    "variables.E.midpoint",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.E.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.E.min",
     [
       "0",
@@ -689,12 +407,10 @@
   ],
   [
     "change",
-    "variables.E.mode",
+    "variables.E.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -728,9 +444,7 @@
     "variables.F.cdfPlotX",
     [
       0,
-      [
-        0.0
-      ]
+      []
     ]
   ],
   [
@@ -738,35 +452,15 @@
     "variables.F.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.F.fewestFreq",
+    "variables.F.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.F.fewestValues",
-    [
-      "0",
-      [
-        0.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.F.herfindahlIndex",
-    [
-      1,
-      0
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -795,22 +489,6 @@
   ],
   [
     "change",
-    "variables.F.midpoint",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.F.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.F.min",
     [
       "0",
@@ -819,12 +497,10 @@
   ],
   [
     "change",
-    "variables.F.mode",
+    "variables.F.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -858,9 +534,7 @@
     "variables.G.cdfPlotX",
     [
       0,
-      [
-        0.0
-      ]
+      []
     ]
   ],
   [
@@ -868,35 +542,15 @@
     "variables.G.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.G.fewestFreq",
+    "variables.G.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.G.fewestValues",
-    [
-      "0",
-      [
-        0.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.G.herfindahlIndex",
-    [
-      1,
-      0
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -925,22 +579,6 @@
   ],
   [
     "change",
-    "variables.G.midpoint",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.G.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.G.min",
     [
       "0",
@@ -949,12 +587,10 @@
   ],
   [
     "change",
-    "variables.G.mode",
+    "variables.G.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -988,9 +624,7 @@
     "variables.H.cdfPlotX",
     [
       0,
-      [
-        0.0
-      ]
+      []
     ]
   ],
   [
@@ -998,35 +632,15 @@
     "variables.H.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.H.fewestFreq",
+    "variables.H.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.H.fewestValues",
-    [
-      "0",
-      [
-        0.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.H.herfindahlIndex",
-    [
-      1,
-      0
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -1055,22 +669,6 @@
   ],
   [
     "change",
-    "variables.H.midpoint",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.H.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.H.min",
     [
       "0",
@@ -1079,12 +677,10 @@
   ],
   [
     "change",
-    "variables.H.mode",
+    "variables.H.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -1118,9 +714,7 @@
     "variables.I.cdfPlotX",
     [
       0,
-      [
-        0.0
-      ]
+      []
     ]
   ],
   [
@@ -1128,35 +722,15 @@
     "variables.I.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
+      []
     ]
   ],
   [
     "change",
-    "variables.I.fewestFreq",
+    "variables.I.interval",
     [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.I.fewestValues",
-    [
-      "0",
-      [
-        0.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.I.herfindahlIndex",
-    [
-      1,
-      0
+      "discrete",
+      "continuous"
     ]
   ],
   [
@@ -1185,22 +759,6 @@
   ],
   [
     "change",
-    "variables.I.midpoint",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.I.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.I.min",
     [
       "0",
@@ -1209,12 +767,10 @@
   ],
   [
     "change",
-    "variables.I.mode",
+    "variables.I.nature",
     [
-      "0",
-      [
-        0.0
-      ]
+      "ordinal",
+      "percent"
     ]
   ],
   [
@@ -1259,46 +815,6 @@
   ],
   [
     "change",
-    "variables.J.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.J.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.J.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.J.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.J.mode",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
     "variables.J.modeFreq",
     [
       0,
@@ -1335,46 +851,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.K.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.K.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.K.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.K.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.K.mode",
-    [
-      "NA",
-      []
     ]
   ],
   [
@@ -1419,46 +895,6 @@
   ],
   [
     "change",
-    "variables.L.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.L.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.L.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.L.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.L.mode",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
     "variables.L.modeFreq",
     [
       0,
@@ -1495,46 +931,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.M.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.M.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.M.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.M.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.M.mode",
-    [
-      "NA",
-      []
     ]
   ],
   [
@@ -1579,46 +975,6 @@
   ],
   [
     "change",
-    "variables.N.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.N.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.N.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.N.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.N.mode",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
     "variables.N.modeFreq",
     [
       0,
@@ -1655,46 +1011,6 @@
     [
       "NULL",
       null
-    ]
-  ],
-  [
-    "change",
-    "variables.O.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.O.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.O.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.O.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.O.mode",
-    [
-      "NA",
-      []
     ]
   ],
   [
@@ -1739,46 +1055,6 @@
   ],
   [
     "change",
-    "variables.P.fewestFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.P.fewestValues",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
-    "variables.P.midpoint",
-    [
-      "NA",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.P.midpointFreq",
-    [
-      "0",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.P.mode",
-    [
-      "NA",
-      []
-    ]
-  ],
-  [
-    "change",
     "variables.P.modeFreq",
     [
       0,
@@ -1808,9 +1084,7 @@
     "variables.Q.cdfPlotX",
     [
       0.009,
-      [
-        0.009000000000000001
-      ]
+      []
     ]
   ],
   [
@@ -1818,35 +1092,7 @@
     "variables.Q.cdfPlotY",
     [
       1,
-      [
-        1.0
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.fewestFreq",
-    [
-      "1",
-      1
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.fewestValues",
-    [
-      "0.009",
-      [
-        0.009000000000000001
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.interval",
-    [
-      "continuous",
-      "discrete"
+      []
     ]
   ],
   [
@@ -1875,44 +1121,10 @@
   ],
   [
     "change",
-    "variables.Q.midpoint",
-    [
-      "0.009",
-      null
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.midpointFreq",
-    [
-      "1",
-      null
-    ]
-  ],
-  [
-    "change",
     "variables.Q.min",
     [
       "0.009",
       0.009000000000000001
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.mode",
-    [
-      "0.009",
-      [
-        0.009000000000000001
-      ]
-    ]
-  ],
-  [
-    "change",
-    "variables.Q.nature",
-    [
-      "percent",
-      "ordinal"
     ]
   ],
   [
