@@ -4,6 +4,7 @@ import subprocess
 import sys
 
 import dictdiffer
+import pandas as pd 
 
 from preprocess_runner import PreprocessRunner
 
@@ -87,7 +88,8 @@ def diff(filename, py_path, R_path):
     changes = [] 
     for change in list(dictdiffer.diff(R_obj1, py_obj, ignore='self dataset variableDisplay'.split(), tolerance=0.01)):
         if change[0] == 'change' and change[2] not in [('yes', True), ('no', False), ('no', 'unknown')]:
-            changes.append(change)
+            if not (change[2][0] == 'NA' and pd.isna(change[2][1])):
+                changes.append(change)
 
     if changes:
         with open(get_path(filename, 'changes'), 'w') as f:
