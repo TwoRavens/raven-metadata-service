@@ -23,15 +23,12 @@ class TypeGuessUtil(BasicErrCheck):
         """check the types of the dataframe"""
         # assert self.colnames, 'self.colnames must have values'
         # number of missing entries
-        #
         self.col_info.invalid = int(self.col_series.isnull().sum())
 
         # number of valid entries
-        #
         self.col_info.valid = int(self.col_series.count())
 
-        # set time , what exactly we want to do with this
-        #
+        # set time, what exactly we want to do with this
         self.col_info.time_val = self.check_time(self.col_series)
 
         # Drop nulls...
@@ -47,40 +44,32 @@ class TypeGuessUtil(BasicErrCheck):
         else:
             self.col_info.binary = col_const.BINARY_NO
         if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
-
             self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
             self.col_info.default_interval = col_const.INTERVAL_DISCRETE
             self.col_info.nature = col_const.NATURE_NOMINAL
-
         else:
-
             try:
                 series_info = self.col_series.astype('int')
             except ValueError as err_obj:
-                user_msg = ('Type guess error when converting'
-                            ' to int: %s') % err_obj
+                user_msg = 'Type guess error when converting to int: %s' % err_obj
                 self.add_err_msg(user_msg)
                 return
 
             if any(series_info.isnull()):
                 # CANNOT REACH HERE B/C NULLS ARE DROPPED!
-                #
+                 
                 self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
                 self.col_info.nature = col_const.NATURE_NOMINAL
                 self.col_info.default_interval = col_const.INTERVAL_DISCRETE
             else:
                 self.col_info.numchar_val = col_const.NUMCHAR_NUMERIC
 
-                if is_float_dtype(series_info):
+                if is_float_dtype(self.col_series):
                     self.col_info.default_interval = col_const.INTERVAL_CONTINUOUS
-                    self.col_info.nature = self.check_nature(series_info, True)
-
+                    self.col_info.nature = self.check_nature(self.col_series, True)
                 else:
                     self.col_info.default_interval = col_const.INTERVAL_DISCRETE
                     self.col_info.nature = self.check_nature(series_info, False)
-
-
-
 
     @staticmethod
     def is_not_numeric(var_series):
