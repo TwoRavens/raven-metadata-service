@@ -42,7 +42,8 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
-ignore = 'cdfPlotType cdfPlotX cdfPlotY fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
+ignore = 'cdfPlotType cdfPlotX cdfPlotY fewestFreq fewestValues herfindahlIndex midpoint midpointFreq pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
+ignore += ['mode', 'modeFreq'] # differ in how calulated and num of results
 ignore += ['invalidCount', 'validCount', 'uniqueCount'] # differ in missingness
 
 def diff(filename, py_path, R_path):
@@ -89,7 +90,7 @@ def diff(filename, py_path, R_path):
     changes = [] 
     for change in list(dictdiffer.diff(R_obj1, py_obj, ignore='self dataset variableDisplay'.split(), tolerance=0.01)):
         if change[0] == 'change' and change[2] not in [('yes', True), ('no', False), ('no', 'unknown')]:
-            if not (change[2][0] == 'NA' and pd.isna(change[2][1])):
+            if not (change[2][0] == 'NA' and not isinstance(change[2][1], list) and pd.isna(change[2][1])):
                 changes.append(change)
 
     if changes:
