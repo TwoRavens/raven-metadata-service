@@ -42,9 +42,9 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
-ignore = 'cdfPlotType cdfPlotX cdfPlotY fewestFreq fewestValues herfindahlIndex midpoint midpointFreq pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
-ignore += ['min', 'max']  # differ in R being wrong 
-ignore += ['mode', 'modeFreq'] # differ in how calulated and num of results
+ignore = 'cdfPlotType cdfPlotX cdfPlotY herfindahlIndex pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
+ignore += ['interval', 'min', 'max', 'nature', 'numchar', 'variableName']  # differ in R being wrong 
+ignore += ['fewestFreq', 'fewestValues', 'midpoint', 'midpointFreq', 'mode', 'modeFreq'] # differ in how calulated and num of results
 ignore += ['binary', 'invalidCount', 'validCount', 'uniqueCount'] # differ in missingness
 ignore += ['mean', 'median', 'stdDev'] # differ in rounding
 
