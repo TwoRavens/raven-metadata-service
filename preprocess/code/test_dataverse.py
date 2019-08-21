@@ -45,6 +45,7 @@ replace = dict(
 ignore = 'cdfPlotType cdfPlotX cdfPlotY fewestFreq fewestValues herfindahlIndex midpoint midpointFreq pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
 ignore += ['mode', 'modeFreq'] # differ in how calulated and num of results
 ignore += ['invalidCount', 'validCount', 'uniqueCount'] # differ in missingness
+ignore += ['mean', 'median', 'stdDev'] # differ in rounding
 
 def diff(filename, py_path, R_path):
     try:
@@ -108,6 +109,9 @@ for file in glob.glob('../../test_data/dataverse/data/*'):
         continue
 
     if sys.argv[1] == 'py':
+        if len(sys.argv) == 3 and file != sys.argv[2]:
+            continue
+
         runner, err_msg = PreprocessRunner.load_from_file(file)
         if err_msg:
             errs[filename] = err_msg
