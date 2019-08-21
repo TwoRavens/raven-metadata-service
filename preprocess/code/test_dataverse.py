@@ -43,6 +43,7 @@ replace = dict(
 )
 
 ignore = 'cdfPlotType cdfPlotX cdfPlotY fewestFreq fewestValues herfindahlIndex midpoint midpointFreq mode pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
+ignore += ['invalidCount', 'validCount', 'uniqueCount'] # differ in missingness
 
 def diff(filename, py_path, R_path):
     try:
