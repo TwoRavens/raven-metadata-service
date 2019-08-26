@@ -1,5 +1,6 @@
 import csv
 import glob
+import os
 import subprocess
 
 for file in glob.glob('../../test_data/dataverse/*/files.csv'):
@@ -11,4 +12,9 @@ for file in glob.glob('../../test_data/dataverse/*/files.csv'):
                 url = f'/api/access/datafile/:persistentId?{id}'
                 id = id.split('/')[2]
                 url = f'https://dataverse.{"unc" if "/sppq/" in file else "harvard"}.edu{url}'
-                subprocess.run(f'wget -T 10 -O "../../test_data/dataverse/data/{id}_{row[-2]}" {url}', shell=True)
+                
+                file = f'../../test_data/dataverse/data/{id}_{row[-2]}' 
+                if os.path.isfile(file) or os.path.isfile(f'../../test_data/dataverse/changes/{id}_{row[-2]}'):
+                    continue
+                
+                subprocess.run(f'wget -T 10 -O "{file}" {url}', shell=True)

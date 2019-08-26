@@ -113,7 +113,7 @@ class PlotValuesUtil(object):
             # code for plot values
             self.col_info.plot_type = col_const.PLOT_BAR
 
-            for val, cnt in self.col_series.sort_values().value_counts().items():
+            for val, cnt in self.col_series.value_counts().items():
                 if not isinstance(val, str):
                     try:
                         self.output[str(val)] = cnt
