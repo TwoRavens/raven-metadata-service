@@ -43,10 +43,11 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
-ignore = 'cdfPlotType herfindahlIndex pdfPlotType plotValues'.split()
+ignore = 'cdfPlotType pdfPlotType plotValues'.split()
+ignore += 'cdfPlotX cdfPlotY pdfPlotX pdfPlotY'.split()
 ignore += ['interval', 'min', 'max', 'nature', 'numchar', 'variableName']  # differ in R being wrong 
 ignore += ['fewestFreq', 'fewestValues', 'midpoint', 'midpointFreq', 'mode', 'modeFreq'] # differ in how calulated and num of results
-ignore += ['binary', 'invalidCount', 'validCount', 'uniqueCount'] # differ in missingness
+ignore += ['binary', 'invalidCount', 'validCount', 'uniqueCount', 'herfindahlIndex'] # differ in missingness
 ignore += ['mean', 'median', 'stdDev'] # differ in rounding
 
 def diff(filename, py_path, R_path):
@@ -81,6 +82,8 @@ def diff(filename, py_path, R_path):
 
             if k not in ignore:
                 R_obj1['variables'][var][k] = val
+
+        continue
 
         fig, (ax, ax1, ax2, ax3) = plt.subplots(4, 1)
 
