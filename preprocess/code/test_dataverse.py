@@ -4,6 +4,7 @@ import subprocess
 import sys
 
 import dictdiffer
+import matplotlib.pyplot as plt
 import pandas as pd 
 
 from preprocess_runner import PreprocessRunner
@@ -42,7 +43,7 @@ replace = dict(
     uniqueCount = 'uniques'
 )
 
-ignore = 'cdfPlotType cdfPlotX cdfPlotY herfindahlIndex pdfPlotType pdfPlotX pdfPlotY plotValues'.split()
+ignore = 'cdfPlotType herfindahlIndex pdfPlotType plotValues'.split()
 ignore += ['interval', 'min', 'max', 'nature', 'numchar', 'variableName']  # differ in R being wrong 
 ignore += ['fewestFreq', 'fewestValues', 'midpoint', 'midpointFreq', 'mode', 'modeFreq'] # differ in how calulated and num of results
 ignore += ['binary', 'invalidCount', 'validCount', 'uniqueCount'] # differ in missingness
@@ -52,12 +53,6 @@ def diff(filename, py_path, R_path):
     try:
         py_obj = json.load(open(py_path))
         for var in py_obj.get('variables', []):
-            for (k, k1) in replace.items():
-                if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty'):
-                    val = py_obj['variables'][var].get(k)
-                    if isinstance(val, list): 
-                        py_obj['variables'][var][k] = sorted(val)
-
             for k in ignore:
                 try:
                     del py_obj['variables'][var][k]
@@ -84,10 +79,37 @@ def diff(filename, py_path, R_path):
             except:
                 pass
 
-            #if k1 in ('cdfplotx', 'cdfploty', 'plotx', 'ploty') and isinstance(val, list): 
-            #    R_obj1['variables'][var][k] = []#sorted(val) 
             if k not in ignore:
                 R_obj1['variables'][var][k] = val
+
+        fig, (ax, ax1, ax2, ax3) = plt.subplots(4, 1)
+
+        df = pd.DataFrame()
+        df['x'] = pd.Series(R_obj1['variables'][var]['pdfPlotX'])
+        df['y'] = pd.Series(R_obj1['variables'][var]['pdfPlotY'])
+        if df['x'].any() and df['y'].any():
+            df.plot(x='x', y='y', ax=ax)
+
+        df1 = pd.DataFrame()
+        df1['x'] = pd.Series(py_obj['variables'][var]['pdfPlotX'])
+        df1['y'] = pd.Series(py_obj['variables'][var]['pdfPlotY'])
+        if df1['x'].any() and df1['y'].any():
+            df1.plot(x='x', y='y', ax=ax1)
+
+        df2 = pd.DataFrame()
+        df2['x'] = pd.Series(py_obj['variables'][var]['cdfPlotX'])
+        df2['y'] = pd.Series(py_obj['variables'][var]['cdfPlotY'])
+        if df2['x'].any() and df2['y'].any():
+            df2.plot(x='x', y='y', ax=ax2)
+
+        df3 = pd.DataFrame()
+        df3['x'] = pd.Series(py_obj['variables'][var]['cdfPlotX'])
+        df3['y'] = pd.Series(py_obj['variables'][var]['cdfPlotY'])
+        if df3['x'].any() and df3['y'].any():
+            df3.plot(x='x', y='y', ax=ax3)
+
+        plt.savefig(f'../../test_data/dataverse/plots/{filename.split(".")[0]}_{var}.png')
+        plt.close(fig)
 
     changes = [] 
     for change in list(dictdiffer.diff(R_obj1, py_obj, ignore='self dataset variableDisplay'.split(), tolerance=0.01)):
