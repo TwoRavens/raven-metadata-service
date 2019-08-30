@@ -6,11 +6,12 @@ import pandas as pd
 PREPROCESS_DIR = dirname(dirname(dirname(abspath(__file__))))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
-from msg_util import dashes, msgt, msg
-from type_guess_util import TypeGuessUtil
-from plot_values import PlotValuesUtil
-from column_info import ColumnInfo
-from summary_stats_util import SummaryStatsUtil
+from raven_preprocess.msg_util import dashes, msgt, msg
+from raven_preprocess.type_guess_util import TypeGuessUtil
+from raven_preprocess.plot_values import PlotValuesUtil
+from raven_preprocess.column_info import ColumnInfo
+from raven_preprocess.summary_stats_util import SummaryStatsUtil
+
 class PlotValuesTest(unittest.TestCase):
     """ class to test Module for plot values eg: type, cdf, labl etc"""
 

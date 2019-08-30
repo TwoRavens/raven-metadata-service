@@ -11,9 +11,9 @@ INPUT_DIR = join(PREPROCESS_DIR, 'input')
 # add the 'code' directory to the sys path
 sys.path.append(join(PREPROCESS_DIR, 'code'))
 
-from msg_util import msg, msgt, dashes
-from type_guess_util import TypeGuessUtil
-import col_info_constants as col_const
+from raven_preprocess.msg_util import msg, msgt, dashes
+from raven_preprocess.type_guess_util import TypeGuessUtil
+import raven_preprocess.col_info_constants as col_const
 
 def main():
     df = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'),

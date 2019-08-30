@@ -6,10 +6,10 @@ from django.utils.text import slugify
 import re
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json
-import col_info_constants as col_const
-from column_info import ColumnInfo
-from np_json_encoder import NumpyJSONEncoder
-from version_number_util import VersionNumberUtil
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.column_info import ColumnInfo
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
+from raven_preprocess.version_number_util import VersionNumberUtil
 
 ALL_VARIABLE_ATTRIBUTES = [x[0] for x in ColumnInfo.get_variable_labels()]
 VIEWABLE_VALUES = [True, False]

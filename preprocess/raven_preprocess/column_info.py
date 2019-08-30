@@ -4,8 +4,8 @@ from collections import OrderedDict
 import json
 import time,datetime
 import pandas as pd
-from np_json_encoder import NumpyJSONEncoder
-import col_info_constants as col_const
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
+import raven_preprocess.col_info_constants as col_const
 
 
 class ColumnInfo(object):
@@ -220,8 +220,8 @@ class ColumnInfo(object):
                       'cdf_plot_type', 'cdf_plotx', 'cdf_ploty')
 
         for pname in attr_names:
-            val = self.__dict__[pname]
-            if val in ['', []]: # empty string or None
+            val = self.__dict__.get(pname)
+            if val in ('', []):
                 self.__dict__[pname] = None #col_const.NOT_APPLICABLE
 
         # Next 2 lines need to be fixed in the plot

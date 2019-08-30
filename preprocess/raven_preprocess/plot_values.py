@@ -3,10 +3,11 @@ from __future__ import print_function
 import logging
 import numpy as np
 import pandas as pd
-from column_info import *
-import col_info_constants as col_const
-from type_guess_util import *
 from scipy import stats
+
+from raven_preprocess.column_info import *
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.type_guess_util import *
 logger = logging.getLogger(__name__)
 
 
@@ -29,7 +30,7 @@ class PlotValuesUtil(object):
 
         self.cal_plot_values()
         self.col_info.tidy_plot_values()
-        
+
 
 
     def ecdf(self, data):

@@ -5,15 +5,13 @@ from os.path import abspath, dirname, isfile, join
 import json
 import decimal
 from collections import OrderedDict
-import col_info_constants as col_const
-import update_constants as update_const
+
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
+from raven_preprocess.msg_util import dashes, msgt, msg
+from raven_preprocess.variable_display_util import VariableDisplayUtil
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
-#INPUT_DIR = join(PREPROCESS_DIR, 'input')
-
-from msg_util import dashes, msgt, msg
-from variable_display_util import VariableDisplayUtil
-
 
 class UpdatePreprocessTest(unittest.TestCase):
     """Unit testing class for summary_stats_util"""
@@ -24,7 +22,8 @@ class UpdatePreprocessTest(unittest.TestCase):
         assert isfile(full_filename),\
             'Set up file not found: %s' % full_filename
 
-        content = open(full_filename, 'r').read()
+        with open(full_filename, 'r') as f: #.read()
+            content = f.read()
 
         if not as_json_dict:
             return content

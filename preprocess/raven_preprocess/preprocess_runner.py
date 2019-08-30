@@ -5,18 +5,19 @@ import decimal
 import pandas as pd
 import os
 from os.path import isdir, isfile
+from raven_preprocess.basic_utils.basic_response import (ok_resp, err_resp)
 
 
-import col_info_constants as col_const
-from msg_util import msg, msgt, dashes
-from np_json_encoder import NumpyJSONEncoder
-from type_guess_util import TypeGuessUtil
-from summary_stats_util import SummaryStatsUtil
-from column_info import ColumnInfo
-from plot_values import PlotValuesUtil
-from variable_display_util import VariableDisplayUtil
-from dataset_level_info_util import DatasetLevelInfo
-from file_format_util import FileFormatUtil
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.msg_util import msg, msgt, dashes
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
+from raven_preprocess.type_guess_util import TypeGuessUtil
+from raven_preprocess.summary_stats_util import SummaryStatsUtil
+from raven_preprocess.column_info import ColumnInfo
+from raven_preprocess.plot_values import PlotValuesUtil
+from raven_preprocess.variable_display_util import VariableDisplayUtil
+from raven_preprocess.dataset_level_info_util import DatasetLevelInfo
+from raven_preprocess.file_format_util import FileFormatUtil
 
 
 KEY_JSONLD_CITATION = 'jsonld_citation'
@@ -99,7 +100,7 @@ class PreprocessRunner(object):
         file_format_util = FileFormatUtil(input_file, **kwargs)
 
         if file_format_util.has_error:
-            return None, file_format_util.error_message
+            return err_resp(file_format_util.error_message)
         else:
             if 'data_source_info' not in kwargs:
                 kwargs['data_source_info'] = file_format_util.data_source_info
@@ -110,9 +111,9 @@ class PreprocessRunner(object):
                         #job_id=job_id,
                         #data_source_info=file_format_util.data_source_info)
             if runner.has_error:
-                return None, runner.error_message
+                return err_resp(runner.error_message)
 
-            return runner, None
+            return ok_resp(runner)
 
     @staticmethod
     def load_update_file(preprocess_input, update_input):
@@ -200,7 +201,7 @@ class PreprocessRunner(object):
             return False
 
         if not self.variable_info:
-            self.add_error_message('Error encountered.  self.variable_info not available')
+            self.add_error_message('Error encountered. self.variable_info not available')
             return False
 
         for col_name, col_info in self.variable_info.items():

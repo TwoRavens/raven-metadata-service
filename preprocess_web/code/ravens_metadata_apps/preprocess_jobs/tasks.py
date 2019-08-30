@@ -69,17 +69,18 @@ def preprocess_csv_file(job_id, **kwargs):
     kwargs['job_id'] = job_id
 
 
-    runner, err_msg = PreprocessRunner.load_from_file(\
+    run_info = PreprocessRunner.load_from_file(\
                                         input_file,
                                         **kwargs)
 
-    if err_msg:
-        print('(%s) FAILED: %s' % (input_file, err_msg))
+    if not run_info.success:
+        print('(%s) FAILED: %s' % (input_file, run_info.err_msg))
         result_info = dict(success=False,
                            job_id=job_id,
                            input_file=input_file,
-                           user_message=err_msg)
+                           user_message=run_info.err_msg)
     else:
+        runner = run_info.result_obj
         elapsed_time = time.time() - start_time
         elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
 

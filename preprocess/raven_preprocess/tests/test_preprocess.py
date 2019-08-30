@@ -8,17 +8,19 @@ from collections import OrderedDict
 import sys
 from os.path import \
     (abspath, basename, dirname, isdir, isfile, join, splitext)
-import col_info_constants as col_const
-import update_constants as update_const
-from preprocess_runner import PreprocessRunner
-from data_source_info import SOURCE_TYPE_FILE
-from file_format_constants import \
+
+
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
+from raven_preprocess.preprocess_runner import PreprocessRunner
+from raven_preprocess.data_source_info import SOURCE_TYPE_FILE
+from raven_preprocess.file_format_constants import \
     (CSV_FILE_EXT, TAB_FILE_EXT, get_mime_type)
+from raven_preprocess.msg_util import dashes, msgt, msg
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
 # INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
-from msg_util import dashes, msgt, msg
 
 
 class PreprocessTest(unittest.TestCase):
@@ -63,12 +65,12 @@ class PreprocessTest(unittest.TestCase):
         msgt(self.test_010_basic_preprocess.__doc__)
 
         basic_csv = self.get_file_path('editor_test.csv')
-        runner, err = PreprocessRunner.load_from_file(basic_csv, job_id=1)
+        run_info = PreprocessRunner.load_from_file(basic_csv, job_id=1)
 
-        print(err)
         print('=' * 40)
-        self.assertTrue(err is None)
-        self.assertTrue(runner.has_error is False)
+        self.assertTrue(run_info.success is True)
+
+        runner = run_info.result_obj
 
         result_dict = runner.get_final_dict()
 
@@ -96,10 +98,11 @@ class PreprocessTest(unittest.TestCase):
         msgt(self.test_020_basic_preprocess.__doc__)
 
         basic_tab = self.get_file_path('editor_test.tab')
-        runner, err = PreprocessRunner.load_from_file(basic_tab, job_id=1)
+        run_info = PreprocessRunner.load_from_file(basic_tab, job_id=1)
 
-        self.assertTrue(err is None)
-        self.assertTrue(runner.has_error is False)
+        self.assertTrue(run_info.success is True)
+
+        runner = run_info.result_obj
 
         result_dict = runner.get_final_dict()
 

@@ -1,9 +1,11 @@
 """Main module to call all sub modules"""
 from os.path import abspath, dirname, join
-import sys
-from preprocess_runner import PreprocessRunner
-from msg_util import msg, msgt, dashes
 import logging
+import sys
+
+from raven_preprocess.preprocess_runner import PreprocessRunner
+from raven_preprocess.basic_utils.basic_response import (ok_resp, err_resp)
+from raven_preprocess.msg_util import msg, msgt, dashes
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
@@ -14,13 +16,17 @@ OUTPUT_DIR = join(dirname(CURRENT_DIR), 'output')
 
 def test_run(input_file, output_filepath=None):
     """Main test run class for this module"""
-    runner, err_msg = PreprocessRunner.load_from_file(input_file)
+    run_info = PreprocessRunner.load_from_file(input_file)
 
-    if err_msg:
-        msgt(err_msg)
+    if not run_info.success:
+        msgt(run_info.err_msg)
+        #print(err_resp(err_msg))
         return
 
+    runner = run_info.result_obj
+
     runner.show_final_info()
+    #return ok_resp(runner.get_final_json(indent=4))
 
     jstring = runner.get_final_json(indent=4)
 
@@ -30,6 +36,7 @@ def test_run(input_file, output_filepath=None):
             msgt('file written: %s' % output_filepath)
         except OSError as os_err:
             msgt('Failed to write file: %s' % os_err)
+
 
 def show_instructions():
     """show command line instructions"""

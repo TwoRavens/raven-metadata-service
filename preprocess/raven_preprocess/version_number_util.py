@@ -1,6 +1,6 @@
 """Update the version number within a preprocess dict"""
 from decimal import Decimal
-import col_info_constants as col_const
+import raven_preprocess.col_info_constants as col_const
 
 
 class VersionNumberUtil(object):
