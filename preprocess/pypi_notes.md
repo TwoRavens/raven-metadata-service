@@ -4,12 +4,19 @@
 - reference: https://packaging.python.org/tutorials/packaging-projects/
 
 ```
-# from the top directory:
+# from the repository's top directory:
+#
+
+# install setup tools
 #
 pip install setuptools wheel twine
 
+# Open/Edit /preprocess/setup.py
+# - Update any necessary information
+
 # build packages
 #
+rm dist/*
 python setup.py sdist bdist_wheel
 
 # upload

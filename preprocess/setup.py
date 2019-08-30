@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tworavens_preprocess",
-    version="0.1.0",
+    version="0.1.1",
     author="Raman Prasad",
     author_email="raman_prasad@harvard.edu",
     description="TwoRavens Preprocess package",
