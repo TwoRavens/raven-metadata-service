@@ -31,7 +31,7 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.metadata_schemas.models import get_temp_schema_info
-from preprocess_runner import \
+from raven_preprocess.preprocess_runner import \
     (PreprocessRunner,)
 
 from raven_preprocess.msg_util import msg, msgt

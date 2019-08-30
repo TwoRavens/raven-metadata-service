@@ -3,11 +3,11 @@
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
 
-import col_info_constants as col_const
-import update_constants as update_const
-from preprocess_runner import KEY_JSONLD_CITATION
-from variable_display_util import VariableDisplayUtil
-from custom_statistics_util import CustomStatisticsUtil
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
+from raven_preprocess.preprocess_runner import KEY_JSONLD_CITATION
+from raven_preprocess.variable_display_util import VariableDisplayUtil
+from raven_preprocess.custom_statistics_util import CustomStatisticsUtil
 
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)

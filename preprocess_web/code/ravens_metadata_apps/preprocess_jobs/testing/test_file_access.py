@@ -14,8 +14,8 @@ from django.template.loader import render_to_string
 
 from raven_preprocess.msg_util import msgt
 
-import col_info_constants as col_const
-import update_constants as update_const
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase

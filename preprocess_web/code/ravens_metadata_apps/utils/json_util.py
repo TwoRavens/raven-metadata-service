@@ -1,6 +1,6 @@
 import json
 from collections import OrderedDict
-from np_json_encoder import NumpyJSONEncoder
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 

@@ -36,9 +36,9 @@ from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
 from ravens_metadata_apps.dataverse_connect.models import DataverseFileInfo
 
-import col_info_constants as col_const
-from col_info_constants import UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS
-from np_json_encoder import NumpyJSONEncoder
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.col_info_constants import UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
 
 
 #@apikey_required
