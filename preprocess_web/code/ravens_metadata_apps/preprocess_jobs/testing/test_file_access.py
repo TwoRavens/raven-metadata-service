@@ -12,7 +12,7 @@ from django.test import TestCase
 from django.core.files.base import ContentFile
 from django.template.loader import render_to_string
 
-from msg_util import msgt
+from raven_preprocess.msg_util import msgt
 
 import col_info_constants as col_const
 import update_constants as update_const

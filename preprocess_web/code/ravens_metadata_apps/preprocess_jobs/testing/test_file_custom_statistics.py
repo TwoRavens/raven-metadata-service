@@ -12,7 +12,7 @@ from django.test import TestCase
 from django.core.files.base import ContentFile
 from django.template.loader import render_to_string
 
-from msg_util import msgt
+from raven_preprocess.msg_util import msgt
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,

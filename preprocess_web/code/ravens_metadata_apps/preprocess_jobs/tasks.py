@@ -34,7 +34,7 @@ from ravens_metadata_apps.metadata_schemas.models import get_temp_schema_info
 from preprocess_runner import \
     (PreprocessRunner,)
 
-from msg_util import msg, msgt
+from raven_preprocess.msg_util import msg, msgt
 
 from ravens_metadata.celery import celery_app
 

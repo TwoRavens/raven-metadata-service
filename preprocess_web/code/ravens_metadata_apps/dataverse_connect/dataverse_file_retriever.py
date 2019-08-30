@@ -12,8 +12,8 @@ from django.core import files
 from django.conf import settings
 from django.core.files.base import ContentFile
 
-from file_format_constants import TAB_FILE_EXT
-from basic_utils.basic_err_check import BasicErrCheck
+from raven_preprocess.file_format_constants import TAB_FILE_EXT
+from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob)
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
@@ -95,7 +95,7 @@ class DataverseFileRetriever(BasicErrCheck):
 
         self.jsonld_citation = retriever.get_citation()
         self.dataset_doi = retriever.get_dataset_doi()
-        
+
     def update_preprocess_job(self):
         """Update or create the Preprocess Job"""
         if self.preprocess_job_id:

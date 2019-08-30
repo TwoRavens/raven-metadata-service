@@ -6,7 +6,7 @@ from os.path import \
 
 
 CURRENT_DIR = dirname(abspath(__file__))
-PREPROCESS_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess', 'code')
+PREPROCESS_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess'')
 sys.path.append(PREPROCESS_DIR)
 PREPROCESS_WEB_DIR = join(dirname(dirname(CURRENT_DIR)), 'preprocess_web', 'code')
 sys.path.append(PREPROCESS_WEB_DIR)
