@@ -12,14 +12,14 @@ from django.test import TestCase
 from django.core.files.base import ContentFile
 from django.template.loader import render_to_string
 
-from msg_util import msgt
+from raven_preprocess.msg_util import msgt
 from ravens_metadata_apps.utils.view_helper import \
     (get_request_body_as_json,
      get_json_error,
      get_json_success,
      get_baseurl_from_request)
-import col_info_constants as col_const
-import update_constants as update_const
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
 
 from ravens_metadata_apps.preprocess_jobs.models import PreprocessJob
 from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase

@@ -2,7 +2,7 @@ import os, sys
 import csv
 from os.path import abspath, dirname, join
 
-from msg_util import msg, msgt
+from raven_preprocess.msg_util import msg, msgt
 from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
     (DataverseFileRetriever)
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil

@@ -5,9 +5,14 @@ import string
 #from os.path import abspath, dirname, join
 
 import signal
+import time
 
 import sys
-from fabric.api import local, settings, task
+from fabric import task
+import invoke
+from invoke import run as fab_local
+
+#from fabric.api import local, settings, task
 import django
 #from django.conf import settings
 import subprocess
@@ -34,84 +39,105 @@ except Exception as e:
     print("WARNING: Can't configure Django. %s" % e)
 
 
+def msgt(m):
+    print('-' * 40)
+    print(m)
+    print('-' * 40)
 
 @task
-def redis_run():
+def hello(c):
+    print("Hello, world!")
+
+@task
+def redis_run(c):
     """Run the local redis server"""
     redis_cmd = 'redis-server /usr/local/etc/redis.conf'
 
-    with settings(warn_only=True):
-        result = local(redis_cmd, capture=True)
+    result = c.run(redis_cmd, warn=True)
 
     if result.failed:
-        print('Redis may already be running...')
+        msgt('Failed. Redis may already be running')
 
 
 @task
-def redis_clear():
+def redis_clear(c):
     """Clear data from the *running* local redis server"""
     redis_cmd = 'redis-cli flushall'    #  /usr/local/etc/redis.conf'
-    with settings(warn_only=True):
-        result = local(redis_cmd, capture=True)
+
+    result = c.run(redis_cmd, warn=True)
 
     if result.failed:
-        print('Redis not running, nothing to clear')
+        msgt('Redis (probably) not running, nothing to clear')
+
 
 @task
-def redis_stop():
+def redis_stop(c):
     """Clear data from the *running* local redis server"""
     redis_cmd = 'pkill -f redis'
-    with settings(warn_only=True):
-        result = local(redis_cmd, capture=True)
+
+    result = c.run(redis_cmd, warn=True)
 
     if result.failed:
-        print('Nothing to stop')
+        msgt('Redis: Nothing to stop')
 
 @task
-def redis_restart():
+def redis_restart(c):
     """Stop redis (if it's running) and start it again"""
-    redis_stop()
-    redis_run()
+    redis_stop(c)
+    print('2 second pause')
+    time.sleep(2)
+    redis_run(c)
 
 @task
-def celery_run():
+def celery_run(c):
     """Clear redis and Start celery"""
-    redis_clear()
+    redis_clear(c)
 
     celery_cmd = ('celery -A ravens_metadata worker -l info')
-    local(celery_cmd)
+
+    result = fab_local(celery_cmd, warn=True)
+
+    if result.failed:
+        msgt('celery: failed to run')
 
 @task
-def celery_stop():
+def celery_stop(c):
     """Stop the celery processes"""
     celery_cmd = ('pkill -f celery')
-    local(celery_cmd)
+
+    result = fab_local(celery_cmd, warn=True)
+
+    if result.failed:
+        msgt('celery: Nothing to stop')
 
 @task
-def celery_restart():
+def celery_restart(context):
     """Stop celery (if it's running) and start it again"""
-    celery_stop()
-    celery_run()
+    celery_stop(context)
+    celery_run(context)
 
 @task
-def run_shell():
+def run_shell(c):
     """Start the django shell"""
     run_shell_cmd = ('python manage.py shell')
 
     print('run shell: %s' % run_shell_cmd)
 
-    local(run_shell_cmd)
+    result = fab_local(run_shell_cmd, warn=True)
+
+    if result.failed:
+        msgt('django shell: failed to run')
 
 @task
-def webpack_prod():
+def webpack_prod(context):
     """Generate the webpack dist files for prod"""
     cmd_webpack = './node_modules/.bin/webpack --config webpack.prod.config.js'
-    local(cmd_webpack)
+    fab_local(cmd_webpack)
 
 @task
-def run_web():
+def run_web(context):
     """Start webpack + django dev server"""
-    init_db()
+    init_db(context)
 
     commands = [
         # start webpack
@@ -127,26 +153,26 @@ def run_web():
 
     try:
         print('run web server: %s' % run_webserver_cmd)
-        local(run_webserver_cmd)
+        fab_local(run_webserver_cmd)
     finally:
         for proc in proc_list:
             os.kill(proc.pid, signal.SIGKILL)
 
 @task
-def init_db():
+def init_db(context):
     """Run django check and migrate"""
     print('check settings')
-    local("python manage.py check")
+    fab_local("python manage.py check")
     print('update database (if needed)')
-    local("python manage.py migrate")
-    create_django_superuser()
-    create_test_user()
-    load_registered_dataverses()
+    fab_local("python manage.py migrate")
+    create_django_superuser(context)
+    create_test_user(context)
+    load_registered_dataverses(context)
     #local("python manage.py loaddata fixtures/users.json")
     #Series(name_abbreviation="Mass.").save()
 
 @task
-def load_registered_dataverses():
+def load_registered_dataverses(context):
     """If none exist, load RegisteredDataverse objects from fixtures"""
     from ravens_metadata_apps.dataverse_connect.models import RegisteredDataverse
 
@@ -157,16 +183,16 @@ def load_registered_dataverses():
 
     load_cmd = ('python manage.py loaddata ravens_metadata_apps/dataverse_connect'
                 '/fixtures/initial_fixtures.json')
-    local(load_cmd)
+    fab_local(load_cmd)
 
 
 @task
-def collectstatic():
+def collectstatic(context):
     """Run the Django collectstatic command"""
-    local('python manage.py collectstatic --noinput')
+    fab_local('python manage.py collectstatic --noinput')
 
 @task
-def clear_metadata_updates():
+def clear_metadata_updates(context):
     """Delete all MetadataUpdate objects"""
     from django.conf import settings
     if not settings.ALLOW_FAB_DELETE:
@@ -187,7 +213,7 @@ def clear_metadata_updates():
         print('No MetadataUpdate objects found.\n')
 
 @task
-def clear_jobs():
+def clear_jobs(context):
     """Delete existing PreprocessJob objects. (ONLY ON TEST)"""
     from django.conf import settings
     if not settings.ALLOW_FAB_DELETE:
@@ -223,7 +249,7 @@ def clear_jobs():
 
 
 @task
-def create_test_user():
+def create_test_user(context):
     """Create regular user with creds: test_user/test_user.  No admin access"""
     from ravens_metadata_apps.raven_auth.models import User
 
@@ -250,7 +276,7 @@ def create_test_user():
 
 
 @task
-def create_django_superuser():
+def create_django_superuser(context):
     """(Test only) Create superuser with username: dev_admin. Password is printed to the console."""
     from ravens_metadata_apps.raven_auth.models import User
 
@@ -278,7 +304,7 @@ def create_django_superuser():
     print('password: "%s"' % admin_pw)
 
 @task
-def run_preprocess(input_file, output_file=None):
+def run_preprocess(context, input_file, output_file=None):
     """Preprocess a single file. "fab run_preprocess:input_file" or "fab run_preprocess:input_file,output_file" """
     # Bit of a hack here....
     from os.path import dirname, isdir, join
@@ -298,4 +324,4 @@ def run_preprocess(input_file, output_file=None):
                          input_file)
 
     print('Run command: "%s"' % preprocess_cmd)
-    local(preprocess_cmd)
+    fab_local(preprocess_cmd)

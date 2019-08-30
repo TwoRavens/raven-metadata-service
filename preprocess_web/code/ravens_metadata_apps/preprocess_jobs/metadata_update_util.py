@@ -8,11 +8,11 @@ from ravens_metadata_apps.utils.random_util import get_alphanumeric_lowercase
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 
 from ravens_metadata_apps.preprocess_jobs.models import MetadataUpdate
-from custom_statistics_util import CustomStatisticsUtil
+from raven_preprocess.custom_statistics_util import CustomStatisticsUtil
 
-from variable_display_util import VariableDisplayUtil
-from np_json_encoder import NumpyJSONEncoder
-from col_info_constants import \
+from raven_preprocess.variable_display_util import VariableDisplayUtil
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
+from raven_preprocess.col_info_constants import \
     (UPDATE_VARIABLE_DISPLAY, UPDATE_CUSTOM_STATISTICS,DELETE_CUSTOM_STATISTICS,UPDATE_TO_CUSTOM_STATISTICS)
 
 

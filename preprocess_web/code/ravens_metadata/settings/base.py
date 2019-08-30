@@ -23,8 +23,7 @@ BASE_DIR = dirname(dirname(os.path.abspath(__file__)))
 # Add path to celery task code
 # ---------------------------------------------
 PREPROCESS_DIR = join(dirname(dirname(dirname(BASE_DIR))),
-                      'preprocess',
-                      'code')
+                      'preprocess')
 sys.path.append(PREPROCESS_DIR)
 
 # Quick-start development settings - unsuitable for production
@@ -63,7 +62,7 @@ INSTALLED_APPS = [
     'ravens_metadata_apps.metadata_schemas',
     'ravens_metadata_apps.preprocess_jobs',
     'ravens_metadata_apps.r_preprocess',
-    'ravens_metadata_apps.api_docs',
+    # 'ravens_metadata_apps.api_docs',
     'ravens_metadata_apps.content_pages', # user model
     'ravens_metadata_apps.dataverse_connect', # preprocess dataverse files
 

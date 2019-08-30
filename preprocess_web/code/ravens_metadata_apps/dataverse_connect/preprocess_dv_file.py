@@ -20,7 +20,7 @@ from ravens_metadata_apps.dataverse_connect.dataverse_file_retriever import \
 from ravens_metadata_apps.dataverse_connect.tasks import preprocess_dataverse_file
 from ravens_metadata_apps.preprocess_jobs.job_util import JobUtil
 from ravens_metadata_apps.dataverse_connect.dataverse_util import DataverseUtil
-from msg_util import msg, msgt
+from raven_preprocess.msg_util import msg, msgt
 
 
 def try_it(file_id=3147445):

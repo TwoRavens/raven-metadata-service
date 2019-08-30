@@ -11,13 +11,13 @@ from ravens_metadata_apps.utils.view_helper import \
      get_json_error,
      get_json_success,
      get_baseurl_from_request)
-import col_info_constants as col_const
+import raven_preprocess.col_info_constants as col_const
 from ravens_metadata_apps.utils.json_util import json_dump
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.metadata_schemas.variable_info import VariableInfo
 
-#from np_json_encoder import NumpyJSONEncoder
+#from raven_preprocess.np_json_encoder import NumpyJSONEncoder
 
 # Create your views here.
 

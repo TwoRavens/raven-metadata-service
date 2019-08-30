@@ -14,8 +14,8 @@ from django.core.files.base import ContentFile
 from django.utils.decorators import method_decorator
 from django.conf import settings
 
-import col_info_constants as col_const
-import update_constants as update_const
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
 
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_metadata_filename

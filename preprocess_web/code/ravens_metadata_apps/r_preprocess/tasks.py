@@ -13,7 +13,7 @@ from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.r_preprocess.preprocess_util import PreprocessUtil
 
-from msg_util import msg, msgt
+from raven_preprocess.msg_util import msg, msgt
 
 from ravens_metadata.celery import celery_app
 

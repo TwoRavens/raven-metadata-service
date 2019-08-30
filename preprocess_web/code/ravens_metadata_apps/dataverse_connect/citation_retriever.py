@@ -1,7 +1,7 @@
 """Interim workaround for pulling citation information based on a file id"""
 import requests
 from django.conf import settings
-from basic_utils.basic_err_check import BasicErrCheck
+from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
 
 
 class CitationRetriever(BasicErrCheck):

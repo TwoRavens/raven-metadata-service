@@ -31,10 +31,10 @@ from ravens_metadata_apps.preprocess_jobs.models import \
 from ravens_metadata_apps.utils.basic_response import \
     (ok_resp, err_resp)
 from ravens_metadata_apps.metadata_schemas.models import get_temp_schema_info
-from preprocess_runner import \
+from raven_preprocess.preprocess_runner import \
     (PreprocessRunner,)
 
-from msg_util import msg, msgt
+from raven_preprocess.msg_util import msg, msgt
 
 from ravens_metadata.celery import celery_app
 
@@ -69,17 +69,18 @@ def preprocess_csv_file(job_id, **kwargs):
     kwargs['job_id'] = job_id
 
 
-    runner, err_msg = PreprocessRunner.load_from_file(\
+    run_info = PreprocessRunner.load_from_file(\
                                         input_file,
                                         **kwargs)
 
-    if err_msg:
-        print('(%s) FAILED: %s' % (input_file, err_msg))
+    if not run_info.success:
+        print('(%s) FAILED: %s' % (input_file, run_info.err_msg))
         result_info = dict(success=False,
                            job_id=job_id,
                            input_file=input_file,
-                           user_message=err_msg)
+                           user_message=run_info.err_msg)
     else:
+        runner = run_info.result_obj
         elapsed_time = time.time() - start_time
         elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
 

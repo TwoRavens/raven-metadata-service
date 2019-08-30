@@ -3,9 +3,9 @@
 import pandas as pd
 from django.http import HttpResponse, JsonResponse
 
-import col_info_constants as col_const
-import update_constants as update_const
-from preprocess_runner import KEY_JSONLD_CITATION
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
+from raven_preprocess.preprocess_runner import KEY_JSONLD_CITATION
 from ravens_metadata_apps.preprocess_jobs.tasks import \
     (preprocess_csv_file,)
 from ravens_metadata_apps.utils.time_util import get_timestring_for_file
@@ -14,11 +14,12 @@ from ravens_metadata_apps.utils.basic_response import \
 from ravens_metadata_apps.preprocess_jobs.models import \
     (PreprocessJob, MetadataUpdate)
 from ravens_metadata_apps.metadata_schemas.models import MetadataSchema
-from variable_display_util import VariableDisplayUtil
+
+from raven_preprocess.variable_display_util import VariableDisplayUtil
 from ravens_metadata_apps.utils.json_util import remove_nan_from_dict
-from file_format_constants import TAB_FILE_EXT
+from raven_preprocess.file_format_constants import TAB_FILE_EXT
 from ravens_metadata_apps.utils.view_helper import get_json_error
-from custom_statistics_util import CustomStatisticsUtil
+from raven_preprocess.custom_statistics_util import CustomStatisticsUtil
 from ravens_metadata_apps.utils.view_helper import get_json_error
 
 
