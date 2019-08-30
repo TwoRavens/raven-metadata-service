@@ -8,17 +8,17 @@ from collections import OrderedDict
 import sys
 from os.path import \
     (abspath, basename, dirname, isdir, isfile, join, splitext)
-import col_info_constants as col_const
-import update_constants as update_const
-from preprocess_runner import PreprocessRunner
-from data_source_info import SOURCE_TYPE_FILE
-from file_format_constants import \
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
+from raven_preprocess.preprocess_runner import PreprocessRunner
+from raven_preprocess.data_source_info import SOURCE_TYPE_FILE
+from raven_preprocess.file_format_constants import \
     (CSV_FILE_EXT, TAB_FILE_EXT, get_mime_type)
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
 # INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
-from msg_util import dashes, msgt, msg
+from raven_preprocess.msg_util import dashes, msgt, msg
 
 
 class PreprocessTest(unittest.TestCase):

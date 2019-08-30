@@ -5,14 +5,14 @@ from os.path import abspath, dirname, isfile, join
 import json
 import decimal
 from collections import OrderedDict
-import col_info_constants as col_const
-import update_constants as update_const
+import raven_preprocess.col_info_constants as col_const
+import raven_preprocess.update_constants as update_const
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
 #INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
-from msg_util import dashes, msgt, msg
-from variable_display_util import VariableDisplayUtil
+from raven_preprocess.msg_util import dashes, msgt, msg
+from raven_preprocess.variable_display_util import VariableDisplayUtil
 
 
 class UpdatePreprocessTest(unittest.TestCase):

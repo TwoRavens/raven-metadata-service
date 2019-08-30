@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from column_info import ColumnInfo
-import col_info_constants as col_const
+from raven_preprocess.column_info import ColumnInfo
+import raven_preprocess.col_info_constants as col_const
 
 
 class SummaryStatsUtil(object):

@@ -26,7 +26,7 @@ except Exception as e:
 from django import template
 
 from django.template.loader import render_to_string
-from column_info import ColumnInfo
+from raven_preprocess.column_info import ColumnInfo
 
 column_info = ColumnInfo('someVar')
 

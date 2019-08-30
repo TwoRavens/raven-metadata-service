@@ -3,9 +3,9 @@ from __future__ import print_function
 import logging
 import numpy as np
 import pandas as pd
-from column_info import *
-import col_info_constants as col_const
-from type_guess_util import *
+from raven_preprocess.column_info import *
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.type_guess_util import *
 from scipy import stats
 logger = logging.getLogger(__name__)
 

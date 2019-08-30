@@ -15,7 +15,7 @@ from django.core.files.base import ContentFile
 from django.utils.decorators import method_decorator
 from django.template.loader import render_to_string
 
-import col_info_constants as col_const
+import raven_preprocess.col_info_constants as col_const
 from ravens_metadata_apps.utils.time_util import get_current_timestring
 from ravens_metadata_apps.utils.metadata_file import get_metadata_filename
 from ravens_metadata_apps.preprocess_jobs.decorators import apikey_required
@@ -36,8 +36,8 @@ from ravens_metadata_apps.preprocess_jobs.metadata_update_util import MetadataUp
 from ravens_metadata_apps.preprocess_jobs.tasks import check_job_status
 from ravens_metadata_apps.utils.json_util import json_dump
 from ravens_metadata_apps.dataverse_connect.models import DataverseFileInfo
-from col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
-from np_json_encoder import NumpyJSONEncoder
+from raven_preprocess.col_info_constants import UPDATE_VARIABLE_DISPLAY,UPDATE_CUSTOM_STATISTICS
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
 
 
 #@apikey_required

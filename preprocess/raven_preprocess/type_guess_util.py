@@ -2,9 +2,9 @@
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 
-import col_info_constants as col_const
-from column_info import ColumnInfo
-from basic_utils.basic_err_check import BasicErrCheck
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.column_info import ColumnInfo
+from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
 
 
 class TypeGuessUtil(BasicErrCheck):

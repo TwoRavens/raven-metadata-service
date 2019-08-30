@@ -8,12 +8,12 @@ PREPROCESS_DIR = dirname(dirname(dirname(abspath(__file__))))
 INPUT_DIR = join(PREPROCESS_DIR, 'input')
 
 
-from msg_util import dashes, msgt, msg
-from type_guess_util import TypeGuessUtil
-from summary_stats_util import SummaryStatsUtil
-from column_info import ColumnInfo
-import col_info_constants as col_const
-from dataset_level_info_util import DatasetLevelInfo
+from raven_preprocess.msg_util import dashes, msgt, msg
+from raven_preprocess.type_guess_util import TypeGuessUtil
+from raven_preprocess.summary_stats_util import SummaryStatsUtil
+from raven_preprocess.column_info import ColumnInfo
+import raven_preprocess.col_info_constants as col_const
+from raven_preprocess.dataset_level_info_util import DatasetLevelInfo
 
 
 class SummaryStatsUtilTest(unittest.TestCase):

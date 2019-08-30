@@ -7,7 +7,7 @@ import dictdiffer
 import matplotlib.pyplot as plt
 import pandas as pd 
 
-from preprocess_runner import PreprocessRunner
+from raven_preprocess.preprocess_runner import PreprocessRunner
 
 def get_path(filename, where='python'):
     return f'../../test_data/dataverse/{where}/{filename}'

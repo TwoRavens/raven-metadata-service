@@ -1,6 +1,6 @@
 from __future__ import print_function
 import json
-import col_info_constants as col_const
+import raven_preprocess.col_info_constants as col_const
 from collections import OrderedDict
 
 SOURCE_TYPE_FILE = 'File'

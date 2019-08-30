@@ -1,8 +1,8 @@
 """Main module to call all sub modules"""
 from os.path import abspath, dirname, join
 import sys
-from preprocess_runner import PreprocessRunner
-from msg_util import msg, msgt, dashes
+from raven_preprocess.preprocess_runner import PreprocessRunner
+from raven_preprocess.msg_util import msg, msgt, dashes
 import logging
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)

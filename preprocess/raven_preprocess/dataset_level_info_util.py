@@ -4,9 +4,9 @@ from collections import OrderedDict
 import numpy as np
 import pandas as pd
 import re
-from np_json_encoder import NumpyJSONEncoder
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
 
-import col_info_constants as col_const
+import raven_preprocess.col_info_constants as col_const
 
 
 class DatasetLevelInfo(object):

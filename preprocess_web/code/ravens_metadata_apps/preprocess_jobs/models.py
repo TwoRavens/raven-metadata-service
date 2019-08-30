@@ -14,7 +14,7 @@ import jsonfield
 from humanfriendly import format_timespan
 from model_utils.models import TimeStampedModel
 
-from file_format_util import TAB_FILE_EXT, CSV_FILE_EXT
+from raven_preprocess.file_format_util import TAB_FILE_EXT, CSV_FILE_EXT
 from ravens_metadata_apps.raven_auth.models import User
 from ravens_metadata_apps.utils.json_util import json_dump
 from ravens_metadata_apps.utils.basic_response import \

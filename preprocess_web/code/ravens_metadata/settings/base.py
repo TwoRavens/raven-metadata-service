@@ -23,8 +23,7 @@ BASE_DIR = dirname(dirname(os.path.abspath(__file__)))
 # Add path to celery task code
 # ---------------------------------------------
 PREPROCESS_DIR = join(dirname(dirname(dirname(BASE_DIR))),
-                      'preprocess',
-                      'code')
+                      'preprocess')
 sys.path.append(PREPROCESS_DIR)
 
 # Quick-start development settings - unsuitable for production

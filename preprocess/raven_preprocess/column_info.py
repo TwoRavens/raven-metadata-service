@@ -4,8 +4,8 @@ from collections import OrderedDict
 import json
 import time,datetime
 import pandas as pd
-from np_json_encoder import NumpyJSONEncoder
-import col_info_constants as col_const
+from raven_preprocess.np_json_encoder import NumpyJSONEncoder
+import raven_preprocess.col_info_constants as col_const
 
 
 class ColumnInfo(object):
@@ -256,7 +256,7 @@ class ColumnInfo(object):
         return ordered_dict
 
 """
-from column_info import ColumnInfo
+from raven_preprocess.column_info import ColumnInfo
 for item in ColumnInfo.get_variable_labels():
     print (item[0])
 """
