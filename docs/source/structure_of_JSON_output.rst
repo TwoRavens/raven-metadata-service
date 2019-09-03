@@ -90,16 +90,7 @@ Variable Display Section
 ----------------------------
 .. note::
 
-    - This section contains the modified object/parameters in the particular version of preprocessed dataset.
+    - This section contains additional parameters to control the behavior of final plot.
 
 
 .. include:: variable_display_section.rst
-
-Custom Statistics Section
-----------------------------
-.. note::
-
-    - This section contains the custom statistics added by the user on the dataset.
-
-
-.. include:: custom_statistics_section.rst

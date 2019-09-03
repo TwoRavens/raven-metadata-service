@@ -10,6 +10,7 @@ Table of Contents
    :maxdepth: 3
 
    structure_of_JSON_output
+   api_documentation
    license
    help
 

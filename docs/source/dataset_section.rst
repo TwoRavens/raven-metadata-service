@@ -58,6 +58,7 @@
     * **type**: String
 
 .. data:: error
+
     A message shows the error happened during dataset-level analysis. This entity may not exist if there is no error occured.
 
     * **type**: String
