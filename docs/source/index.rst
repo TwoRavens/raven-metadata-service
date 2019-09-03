@@ -1,16 +1,15 @@
 TwoRavens Metadata Service
 ==============================================
 
-The TwoRavens metadata service is used preprocess tabular data to to provide summary statistics that power the TwoRavens interface.  The preprocess output (defaults to JSON) may be used by programs and services to explore, query, and compare metadata. test
+The TwoRaven Metadata Service (TRMS) provides the summary statistics that power the TwoRaven interface via using the preprocessed tabular data (Currently, it supports CSV, TAB, XLS and XLSX files). This documentation describes the JSON specification language and how to use TRMS in your application.
 
-
-Guide
-^^^^^
+Table of Contents
+^^^^^^^^^^^^^^^^^
 
 .. toctree::
    :maxdepth: 3
 
-   preprocess_file_description
+   structure_of_JSON_output
    license
    help
 
