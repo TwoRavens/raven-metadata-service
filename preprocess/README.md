@@ -46,16 +46,13 @@ else:
 # Preprocess a single file,
 # Write output to screen
 # -------------------------
-fab run_preprocess:[input file name]
-
-# Example:
-fab run_preprocess:../../test_data/fearonLaitin.csv
-
+from raven_preprocess.preprocess import run_preprocess
+run_preprocess('path-to-input-file.csv')
 
 # -------------------------
 # Preprocess a single file,
 # Write output to file
 # -------------------------
-fab run_preprocess:[input file name],[output file]
-fab run_preprocess:../../test_data/fearonLaitin.csv,/tmp/fearonLaitin.json
+from raven_preprocess.preprocess import run_preprocess
+run_preprocess('path-to-input-file.csv', 'path-to-OUTPUT-file.csv')
 ```
