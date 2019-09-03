@@ -72,7 +72,7 @@ Variable Section
 
 .. note::
 
-    - Except for **invalid**, for all numeric calculations, missing values are ignored.
+    - Except **invalid** block, for all numeric calculations, missing values are ignored.
     - For non-numeric values, summary statistics such as **median** and **mean** are set to `"NA"`.
     For example:
 

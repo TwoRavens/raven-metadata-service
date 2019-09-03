@@ -1,286 +1,203 @@
 
-
 .. data:: variableName
 
-    Name of the variable
+    Name of the variable (column).
 
-
-    * **type**: string
-
-
+    * **type**: String
 
 .. data:: description
 
-    Brief explanation of the variable
+    Brief explanation of the variable.
 
-
-    * **type**: string
-
-
+    * **type**: String
 
 .. data:: numchar
 
-    Describes the variable as numeric or character valued
+    The type of this variable (column).
 
-
-    * **type**: string
-    * **possible values**: character, numeric
-
+    * **type**: String
+    * **possible values**: 'character', 'numeric'
 
 .. data:: nature
 
-    Describes the classification of data into Nominal, Ordinal, Ratio, Interval, Percentage.
+    The type of this variable (from statistic perspective), below is the table of possible values.
 
+    +-----------+------------------------------------------------------------+
+    |    Name   |                   Definition                               |
+    +-----------+------------------------------------------------------------+
+    |  Nominal  | Just names, IDs                                            |
+    +-----------+------------------------------------------------------------+
+    |  Ordinal  | Have/Represent rank order                                  |
+    +-----------+------------------------------------------------------------+
+    |  Interval | Has a fixed size of interval between data points           |
+    +-----------+------------------------------------------------------------+
+    |  Ratio    | Has a true zero point (e.g. mass, length)                  |
+    +-----------+------------------------------------------------------------+
+    |  Percent  | Namely, [0.0, 1.0] or [0, 100]%                            |
+    +-----------+------------------------------------------------------------+
 
-    * **type**: string
-    * **possible values**: interval, nominal, ordinal, percent, ratio, other
-
+    * **type**: String
 
 .. data:: binary
 
-    Signifies that the data can only take two values
+    A boolean flag indicates whether this variable is a binary variable or not.
 
 
-    * **type**: boolean
-
-
+    * **type**: Boolean
 
 .. data:: interval
 
-    Describes numeric variables as either continuously valued, or discretely valued
+    Indicate whether the variable is either continuous or discrete, if it's a numeric variable.
 
-
-    * **type**: string
-    * **possible values**: continuous, discrete
-
+    * **type**: String
+    * **possible values**: 'continuous', 'discrete' or 'NA'
 
 .. data:: time
 
-    Signifies that the variable describes points in time
+    Currently not available, it should return the format of timestamp if this variable is a timestamp.
 
-
-
-
-
+    * **type**: String/None
 
 .. data:: invalidCount
 
-    Counts the number of invalid observations, including missing values, nulls, NA's and any observation with a value enumerated in invalidSpecialCodes
+    Counts the number of invalid observations, including missing values, nulls, NA's and any observation with a value enumerated in invalidSpecialCodes.
 
-
-    * **type**: integer
-
-
-
-.. data:: invalidSpecialCodes
-
-    Any numbers that represent invalid observations
-
-
-    * **type**: array
-
-
+    * **type**: Integer
 
 .. data:: validCount
 
     Counts the number of valid observations
 
-
-    * **type**: integer
-
-
+    * **type**: Integer
 
 .. data:: uniqueCount
 
-    Count of unique values, including invalid signifiers
+    Count of unique values, including invalid observations.
 
-
-    * **type**: integer
-
-
+    * **type**: Integer
 
 .. data:: median
 
+    .. note::
+        - This attribute may have incorrect value, fix is needed.
+
     A central value in the distribution such that there are as many values equal or above, as there are equal or below this value.
+    It will be 'NA' if the data is not numerical.
 
-    * **types**: number or string
-
-
-
+    * **type**: Numeric/String
 
 .. data:: mean
 
-    Average of all numeric values, which are not contained in invalidSpecialCodes
+    Average of all numeric values, which are not contained in invalidSpecialCodes.
+    It will be 'NA' if the data is not numerical.
 
-    * **types**: number or string
-
-
-
+    * **type**: Numeric/String
 
 .. data:: max
 
-    Largest numeric value observed in dataset, that is not contained in invalidSpecialCodes
+    Largest numeric value observed in dataset, that is not contained in invalidSpecialCodes.
+    It will be 'NA' if the data is not numerical.
 
-    * **types**: number or string
-
-
-
+    * **type**: Numeric/String
 
 .. data:: min
 
-    Least numeric value observed in dataset, that is not contained in invalidSpecialCodes
+    Least numeric value observed in dataset, that is not contained in invalidSpecialCodes.
+    It will be 'NA' if the data is not numerical.
 
-    * **types**: number or string
-
-
-
+    * **type**: Numeric/String
 
 .. data:: mode
 
     Value that occurs most frequently.  Multiple values in the case of ties.
 
-    * **types**: array or string
-
-
-
+    * **type**: List of String/Numeric
 
 .. data:: modeFreq
 
-    Number of times value of mode is observed in variable
+    Number of times value of mode is observed in variable.
 
-    * **types**: integer or string
-
-
-
+    * **type**: Integer
 
 .. data:: fewestValues
 
     Value that occurs least frequently.  Multiple values in the case of ties.
 
-    * **types**: array or string
-
-
-
+    * **type**: List of String/Numeric
 
 .. data:: fewestFreq
 
-    Number of times value of fewestValues is observed in variable
+    Number of times value of fewestValues is observed in variable.
 
-    * **types**: integer or string
-
-
-
+    * **type**: Integer
 
 .. data:: midpoint
 
-    The value equidistant from the reported min and max values
+    The value equidistant from the reported min and max values.
 
-    * **types**: number or string
-
-
-
+    * **type**: Numeric/String
 
 .. data:: midpointFreq
 
-    Number of observations with value equal to minpoint
+    Number of observations with value equal to midpoint.
 
-    * **types**: integer or string
-
-
-
+    * **type**: Integer
 
 .. data:: stdDev
 
-    Standard deviation of the values, measuring the spread between values, specifically using population formula
+    Standard deviation of the values, measuring the spread between values, specifically using population formula.
 
-    * **types**: number or string
-
-
-
+    * **type**: Numeric
 
 .. data:: herfindahlIndex
 
-    Measure of heterogeneity of a categorical variable which gives the probability that any two randomly sampled observations have the same value
+    Measure of heterogeneity of a categorical variable which gives the probability that any two randomly sampled observations have the same value.
 
-    * **types**: number or string
+    * **type**: Numeric
 
-
-
+.. warning::
+    - Following attributes may be moved to **Variable Display Section** in the future.
 
 .. data:: plotValues
 
-    Plot points of a bar chart for tracing distribution of variable
+    Contains the y-value of the plot, available while the **plot_type** is PLOT_BAR
 
-    * **types**: object or string
-
-
-
+    * **types**: List of Numeric
 
 .. data:: pdfPlotType
 
-    Describes default type of plot appropriate to represent distribution of variable
+    Describes default type of plot appropriate to represent the distribution of this variable.
 
-    * **types**: string or null
-
-
-
+    * **type**: String/Null
+    * **possible values**: PLOT_BAR, PLOT_CONTINUOUS or None
 
 .. data:: pdfPlotX
 
-    Plot points along x dimension for tracing distribution of variable
+    A list of number that specifies the x-coordinate of corresponding points of the probability density function.
 
-    * **types**: array or null
-
-
-
+    * **types**: List of Numeric/Null
 
 .. data:: pdfPlotY
 
-    Plot points along y dimension for tracing distribution of variable
+    A list of number that specifies the y-coordinate of corresponding points of the probability density function.
 
-    * **types**: array or null
-
-
-
+    * **types**: List of Numeric/Null
 
 .. data:: cdfPlotType
 
-    Describes default type of plot appropriate to represent cumulative distribution of variable
+    Describes default type of plot appropriate to represent the cumulative distribution of variable.
 
-    * **types**: string or null
-
-
-
+    * **type**: String/Null
+    * **possible values**: PLOT_BAR, PLOT_CONTINUOUS or None
 
 .. data:: cdfPlotX
 
-    Plot points along x dimension for tracing cumulative distribution of variable
+    A list of number that specifies the x-coordinate of corresponding points of the cumulative distribution function.
 
-    * **types**: array or null
-
-
-
+    * **types**: List of Numeric/Null
 
 .. data:: cdfPlotY
 
-    Plot points along y dimension for tracing cumulative distribution of variable
+    A list of number that specifies the x-coordinate of corresponding points of the cumulative distribution function.
 
-    * **types**: array or null
-
-
-
-
-.. data:: interpretation
-
-    Object containing descriptors to interpret variable
-
-    * **types**: object or string
-
-
-
-
-.. data:: tworavens
-
-    Object containing metadata specifically used by TwoRavens platform
-
-    * **types**: object or string
+    * **types**: List of Numeric/Null
