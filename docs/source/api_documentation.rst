@@ -39,6 +39,8 @@ Other one is more straightforward, for example:
     ...
     runner = PreprocessRunner(dataframe)
     # dataframe is a Pandas.Dataframe, you can create such entity by yourself.
+    runner.run_preprocess()
+    runner.show_final_info()
     ...
 
 Please refer to :ref:`PreprocessRunner` for more information.
