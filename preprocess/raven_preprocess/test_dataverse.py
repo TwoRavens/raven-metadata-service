@@ -7,14 +7,15 @@ import dictdiffer
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from raven_preprocess.preprocess_runner import PreprocessRunner
-
 from os.path import \
     (abspath, basename, dirname, isdir, isfile, join, splitext)
 
-
 CURRENT_DIR = dirname(abspath(__file__))
 TEST_DATA_DIR = join(dirname(dirname(CURRENT_DIR)), 'test_data')
+sys.path.append(dirname(CURRENT_DIR))
+
+from raven_preprocess.preprocess_runner import PreprocessRunner
+
 
 def get_path(filename, where='python'):
     return f'{TEST_DATA_DIR}/dataverse/{where}/{filename}'
@@ -131,36 +132,45 @@ def diff(filename, py_path, R_path):
         with open(get_path(filename, 'changes'), 'w') as f:
             json.dump(changes, f, indent=2)
 
-errs = {}
-for file in glob.glob('f{TEST_DATA_DIR}/dataverse/data/*'):
-    filename = file.split('/')[-1]
-    py_path = get_path(filename)
-    R_path = get_path(filename, 'R')
 
-    if sys.argv[1] == 'diff':
-        diff(filename, py_path, R_path)
-        continue
+def run_test_dv():
 
-    if sys.argv[1] == 'py':
-        if len(sys.argv) == 3 and file != sys.argv[2]:
+    assert len(sys.argv) >= 2, 'Not enough command line arguments'
+
+
+    errs = {}
+    for file in glob.glob('f{TEST_DATA_DIR}/dataverse/data/*'):
+        filename = file.split('/')[-1]
+        py_path = get_path(filename)
+        R_path = get_path(filename, 'R')
+
+        if sys.argv[1] == 'diff':
+            diff(filename, py_path, R_path)
             continue
 
-        runner, err_msg = PreprocessRunner.load_from_file(file)
-        if err_msg:
-            errs[filename] = err_msg
+        if sys.argv[1] == 'py':
+            if len(sys.argv) == 3 and file != sys.argv[2]:
+                continue
+
+            runner, err_msg = PreprocessRunner.load_from_file(file)
+            if err_msg:
+                errs[filename] = err_msg
+                continue
+
+            jstring = runner.get_final_json(indent=4)
+            open(py_path, 'w').write(jstring)
             continue
 
-        jstring = runner.get_final_json(indent=4)
-        open(py_path, 'w').write(jstring)
-        continue
+        cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
+        result = subprocess.run(cmd, check=True, shell=True, stdout=subprocess.PIPE)
+        print(result.stdout.decode('utf8'))
+        obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
 
-    cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
-    result = subprocess.run(cmd, check=True, shell=True, stdout=subprocess.PIPE)
-    print(result.stdout.decode('utf8'))
-    obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
+        with open(R_path, 'w') as f:
+            json.dump(obj, f)
 
-    with open(R_path, 'w') as f:
-        json.dump(obj, f)
+    with open(get_path('errors.json'), 'w') as f:
+        json.dump(errs, f, indent=2)
 
-with open(get_path('errors.json'), 'w') as f:
-    json.dump(errs, f, indent=2)
+if __name__ == '__main__':
+    run_test_dv()

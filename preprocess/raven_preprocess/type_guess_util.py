@@ -43,7 +43,7 @@ class TypeGuessUtil(BasicErrCheck):
         if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
             fmt = self.check_time(self.col_series)
             if fmt:
-                self.col_info.time_val = fmt 
+                self.col_info.time_val = fmt
 
             self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
             self.col_info.default_interval = col_const.INTERVAL_DISCRETE
@@ -57,7 +57,7 @@ class TypeGuessUtil(BasicErrCheck):
 
             if any(series_info.isnull()):
                 # CANNOT REACH HERE B/C NULLS ARE DROPPED!
-                 
+
                 self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
                 self.col_info.nature = col_const.NATURE_NOMINAL
                 self.col_info.default_interval = col_const.INTERVAL_DISCRETE
@@ -98,7 +98,7 @@ class TypeGuessUtil(BasicErrCheck):
         elif var_series.dtype != 'object':
             return False
 
-        # It's an object.  Check if all the value seither True or False
+        # It's an object.  Check if all the values either True or False
         total = var_series.size
         total_cnt = 0
         for val, cnt in var_series.value_counts().iteritems():
@@ -134,4 +134,4 @@ class TypeGuessUtil(BasicErrCheck):
                     var_series[:10].str.strip().apply(lambda x: datetime.datetime.strptime(x, fmt))
                     return fmt
                 except:
-                    pass  
+                    pass

@@ -133,39 +133,45 @@ def diff(filename, py_path, R_path):
         with open(get_path(filename, 'changes'), 'w') as f:
             json.dump(changes, f, indent=2)
 
-results = [] 
-for file in glob.glob(f'{TEST_DATA_DIR}/dataverse/data/*'):
-    filename = file.split('/')[-1]
-    py_path = get_path(filename)
-    R_path = get_path(filename, 'R')
+def run_test_dv():
 
-    if sys.argv[1] == 'diff':
-        diff(filename, py_path, R_path)
-        continue
+    assert len(sys.argv) >= 2, 'Not enough command line arguments'
 
-    if sys.argv[1] == 'py':
-        if len(sys.argv) == 3 and file != sys.argv[2]:
+    results = []
+    for file in glob.glob(f'{TEST_DATA_DIR}/dataverse/data/*'):
+        filename = file.split('/')[-1]
+        py_path = get_path(filename)
+        R_path = get_path(filename, 'R')
+
+        if sys.argv[1] == 'diff':
+            diff(filename, py_path, R_path)
             continue
 
-        start = time.time()
-        runner, err = PreprocessRunner.load_from_file(file)
-        results.append([filename, getsize(file) / 1024 / 1024, time.time() - start, err or ''])
-        if err:
+        if sys.argv[1] == 'py':
+            if len(sys.argv) == 3 and file != sys.argv[2]:
+                continue
+
+            start = time.time()
+            runner, err = PreprocessRunner.load_from_file(file)
+            results.append([filename, getsize(file) / 1024 / 1024, time.time() - start, err or ''])
+            if err:
+                continue
+
+            jstring = runner.get_final_json(indent=4)
+            open(py_path, 'w').write(jstring)
             continue
 
-        jstring = runner.get_final_json(indent=4)
-        open(py_path, 'w').write(jstring)
-        continue
+        cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
+        result = subprocess.run(cmd, check=True, shell=True, stdout=subprocess.PIPE)
+        obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
 
-    cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
-    result = subprocess.run(cmd, check=True, shell=True, stdout=subprocess.PIPE)
-    obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
+        with open(R_path, 'w') as f:
+            json.dump(obj, f)
 
-    with open(R_path, 'w') as f:
-        json.dump(obj, f)
+    with open(get_path('results.csv'), 'w') as f:
+        w = csv.writer(f)
+        w.writerow('file size time error'.split())
+        w.writerows(results)
 
-with open(get_path('results.csv'), 'w') as f:
-    w = csv.writer(f)
-    w.writerow('file size time error'.split())
-    w.writerows(results)
-
+if __name__ == '__main__':
+    run_test_dv()
