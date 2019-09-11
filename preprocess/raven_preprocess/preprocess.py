@@ -8,7 +8,7 @@ sys.path.append(dirname(CURRENT_DIR))
 
 from raven_preprocess.preprocess_runner import PreprocessRunner
 from raven_preprocess.basic_utils.basic_response import (ok_resp, err_resp)
-from raven_preprocess.msg_util import msg, msgt, dashes
+from raven_preprocess.msg_util import msgt
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 

@@ -1,17 +1,13 @@
 """Unit testing for preprocess_runner using sample data"""
 import unittest
 from unittest import skip
-from os.path import abspath, dirname, isfile, join
 import json
 import decimal
 from collections import OrderedDict
-import sys
-from os.path import \
-    (abspath, basename, dirname, isdir, isfile, join, splitext)
+from os.path import abspath, dirname, isfile, join
 
 
 import raven_preprocess.col_info_constants as col_const
-import raven_preprocess.update_constants as update_const
 from raven_preprocess.preprocess_runner import PreprocessRunner
 from raven_preprocess.data_source_info import SOURCE_TYPE_FILE
 from raven_preprocess.file_format_constants import \
