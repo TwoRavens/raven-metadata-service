@@ -2,7 +2,6 @@
 from collections import OrderedDict
 from decimal import Decimal
 import pandas as pd
-from django.utils.text import slugify
 import re
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json
