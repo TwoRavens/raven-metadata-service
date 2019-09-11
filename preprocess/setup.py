@@ -48,6 +48,5 @@ setuptools.setup(
             'simplejson>=3.13.2',
             'xlrd>=1.1.0',
             'jsonschema>=2.6.0',
-            'fabric>=2.5.0'
         ],
 )
