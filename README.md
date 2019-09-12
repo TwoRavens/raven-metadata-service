@@ -1,12 +1,15 @@
 [![Build Status](https://travis-ci.org/TwoRavens/raven-metadata-service.svg?branch=master)](https://travis-ci.org/TwoRavens/raven-metadata-service.svg)
 
-(note! under initial development.)
-
 ---
 
 # raven-metadata-service
 
 Service to produce TwoRavens metadata.  Description of the produced metadata: http://two-ravens-metadata-service.readthedocs.io
+
+## Library
+
+Note: the preprocess library, without the web service, is available via pypi: https://tworavens.github.io/TwoRavens/Metadata/
+
 
 ## Install
 
