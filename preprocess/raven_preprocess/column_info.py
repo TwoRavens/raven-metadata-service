@@ -2,8 +2,6 @@
 
 from collections import OrderedDict
 import json
-import time,datetime
-import pandas as pd
 from raven_preprocess.np_json_encoder import NumpyJSONEncoder
 import raven_preprocess.col_info_constants as col_const
 

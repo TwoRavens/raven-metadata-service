@@ -1,5 +1,4 @@
 from __future__ import print_function
-import json
 from collections import OrderedDict
 
 import raven_preprocess.col_info_constants as col_const

@@ -1,10 +1,6 @@
 """ File to get the updated metadata file with custom statistics"""
 from collections import OrderedDict
-from decimal import Decimal
-import pandas as pd
-from django.utils.text import slugify
 import re
-from pandas.api.types import is_float_dtype, is_numeric_dtype
 import json
 import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo

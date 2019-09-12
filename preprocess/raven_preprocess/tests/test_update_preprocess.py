@@ -8,7 +8,7 @@ from collections import OrderedDict
 
 import raven_preprocess.col_info_constants as col_const
 import raven_preprocess.update_constants as update_const
-from raven_preprocess.msg_util import dashes, msgt, msg
+from raven_preprocess.msg_util import msgt
 from raven_preprocess.variable_display_util import VariableDisplayUtil
 
 TEST_DATA_DIR = join(dirname(abspath(__file__)), 'test_data')
