@@ -1,18 +1,13 @@
 """ Module for type guessing """
 import datetime
 
+import dateutil.parser
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 
 import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo
 from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
-
-date_fmts = [
-    '%x', # 11/3/98
-    '%Y-%m-%d', # 1958-01-08
-    '%d %b %Y %H:%m', # 17 May 2014 09:38
-]
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
@@ -41,10 +36,7 @@ class TypeGuessUtil(BasicErrCheck):
         self.col_info.binary = col_const.BINARY_YES if len(self.col_series.unique()) == 2 else col_const.BINARY_NO
 
         if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
-            fmt = self.check_time(self.col_series)
-            if fmt:
-                self.col_info.time_val = fmt
-
+            self.col_info.time_val = self.check_time(self.col_series)
             self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
             self.col_info.default_interval = col_const.INTERVAL_DISCRETE
             self.col_info.nature = col_const.NATURE_NOMINAL
@@ -124,14 +116,15 @@ class TypeGuessUtil(BasicErrCheck):
 
     @staticmethod
     def check_time(var_series):
-        """Unimplemented"""
+        """Check if Series is a datetime"""
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
         if var_series.dtype == 'object':
-            for fmt in date_fmts:
-                try:
-                    var_series[:10].str.strip().apply(lambda x: datetime.datetime.strptime(x, fmt))
-                    return fmt
-                except:
-                    pass
+            try:
+                var_series[:10].apply(lambda x: x.strip() and dateutil.parser.parse(x))
+                return True
+            except:
+                pass
+
+        return col_const.UNKNOWN
