@@ -2,20 +2,19 @@ import glob
 import json
 import subprocess
 import sys
+import time
 
 import dictdiffer
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from os.path import \
-    (abspath, basename, dirname, isdir, isfile, join, splitext)
+from os.path import abspath, basename, dirname, getsize, isdir, isfile, join, splitext
 
 CURRENT_DIR = dirname(abspath(__file__))
 TEST_DATA_DIR = join(dirname(dirname(CURRENT_DIR)), 'test_data')
 sys.path.append(dirname(CURRENT_DIR))
 
 from raven_preprocess.preprocess_runner import PreprocessRunner
-
 
 def get_path(filename, where='python'):
     return f'{TEST_DATA_DIR}/dataverse/{where}/{filename}'
@@ -134,12 +133,10 @@ def diff(filename, py_path, R_path):
 
 
 def run_test_dv():
-
     assert len(sys.argv) >= 2, 'Not enough command line arguments'
 
-
-    errs = {}
-    for file in glob.glob('f{TEST_DATA_DIR}/dataverse/data/*'):
+    results = []
+    for file in glob.glob(f'{TEST_DATA_DIR}/dataverse/data/*'):
         filename = file.split('/')[-1]
         py_path = get_path(filename)
         R_path = get_path(filename, 'R')
@@ -152,9 +149,11 @@ def run_test_dv():
             if len(sys.argv) == 3 and file != sys.argv[2]:
                 continue
 
-            runner, err_msg = PreprocessRunner.load_from_file(file)
-            if err_msg:
-                errs[filename] = err_msg
+            start = time.time()
+            runner, err = PreprocessRunner.load_from_file(file)
+            rows, cols = runner.data_frame.shape if runner else (0, 0)
+            results.append([filename, getsize(file) / 1000000, rows, cols, time.time() - start, err or ''])
+            if err:
                 continue
 
             jstring = runner.get_final_json(indent=4)
@@ -163,14 +162,15 @@ def run_test_dv():
 
         cmd = f'Rscript ../../rscripts/runPreprocess.R "{file}" ../../rscripts/'
         result = subprocess.run(cmd, check=True, shell=True, stdout=subprocess.PIPE)
-        print(result.stdout.decode('utf8'))
         obj = json.loads(result.stdout.decode('utf8').split('---START-PREPROCESS-JSON---')[1].split('---END-PREPROCESS-JSON---')[0])
 
         with open(R_path, 'w') as f:
             json.dump(obj, f)
 
-    with open(get_path('errors.json'), 'w') as f:
-        json.dump(errs, f, indent=2)
+    with open(get_path('results.csv'), 'w') as f:
+        w = csv.writer(f)
+        w.writerow('file size rows cols time error'.split())
+        w.writerows(results)
 
 if __name__ == '__main__':
     run_test_dv()
