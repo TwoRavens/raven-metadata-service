@@ -153,7 +153,8 @@ def run_test_dv():
 
             start = time.time()
             runner, err = PreprocessRunner.load_from_file(file)
-            results.append([filename, getsize(file) / 1024 / 1024, time.time() - start, err or ''])
+            rows, cols = runner.data_frame.shape if runner else (0, 0)
+            results.append([filename, getsize(file) / 1000000, rows, cols, time.time() - start, err or ''])
             if err:
                 continue
 
@@ -170,7 +171,7 @@ def run_test_dv():
 
     with open(get_path('results.csv'), 'w') as f:
         w = csv.writer(f)
-        w.writerow('file size time error'.split())
+        w.writerow('file size rows cols time error'.split())
         w.writerows(results)
 
 if __name__ == '__main__':
