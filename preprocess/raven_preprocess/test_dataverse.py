@@ -1,3 +1,4 @@
+import csv
 import glob
 import json
 import subprocess
@@ -135,7 +136,7 @@ def diff(filename, py_path, R_path):
 def run_test_dv():
     assert len(sys.argv) >= 2, 'Not enough command line arguments'
 
-    results = []
+    results, date_results = [], []
     for file in glob.glob(f'{TEST_DATA_DIR}/dataverse/data/*'):
         filename = file.split('/')[-1]
         py_path = get_path(filename)
@@ -151,10 +152,14 @@ def run_test_dv():
 
             start = time.time()
             runner, err = PreprocessRunner.load_from_file(file)
-            rows, cols = runner.data_frame.shape if runner else (0, 0)
+            df = runner and runner.data_frame
+            rows, cols = df.shape if df is not None else (0, 0)
             results.append([filename, getsize(file) / 1000000, rows, cols, time.time() - start, err or ''])
             if err:
                 continue
+
+            for var, val in runner.variable_info.items():
+                date_results.append([str(x) for x in [val.time_val] + list(df[var][:5])])
 
             jstring = runner.get_final_json(indent=4)
             open(py_path, 'w').write(jstring)
@@ -171,6 +176,10 @@ def run_test_dv():
         w = csv.writer(f)
         w.writerow('file size rows cols time error'.split())
         w.writerows(results)
+
+    with open(get_path('date_results.csv'), 'w') as f:
+        w = csv.writer(f)
+        w.writerows(date_results)
 
 if __name__ == '__main__':
     run_test_dv()
