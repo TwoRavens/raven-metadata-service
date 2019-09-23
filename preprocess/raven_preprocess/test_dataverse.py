@@ -159,7 +159,8 @@ def run_test_dv():
                 continue
 
             for var, val in runner.variable_info.items():
-                date_results.append([str(x) for x in [val.time_val] + list(df[var][:5])])
+                if val.time_val is True:
+                    date_results.append([str(x) for x in [val.time_val, df[var].dtype, var] + list(df[var][:5])])
 
             jstring = runner.get_final_json(indent=4)
             open(py_path, 'w').write(jstring)
