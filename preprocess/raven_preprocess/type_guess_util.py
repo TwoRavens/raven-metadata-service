@@ -21,7 +21,7 @@ def parse_date(val):
         val = str(val)
 
     val = val.strip()
-    if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8):
+    if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8) or val.startswith('-'):
         raise ValueError
 
     dateutil.parser.parse(val)
@@ -138,7 +138,7 @@ class TypeGuessUtil(BasicErrCheck):
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
-        if not var_series.dtype in ('int64', 'object'):
+        if var_series.name.endswith('id') or not var_series.dtype in ('int64', 'object'):
             return col_const.UNKNOWN
 
         try:
