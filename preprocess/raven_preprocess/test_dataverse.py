@@ -1,6 +1,7 @@
 import csv
 import glob
 import json
+import pycountry
 import subprocess
 import sys
 import time
@@ -159,8 +160,22 @@ def run_test_dv():
                 continue
 
             for var, val in runner.variable_info.items():
-                if val.time_val is True:
-                    date_results.append([str(x) for x in [val.time_val, df[var].dtype, var] + list(df[var][:5])])
+                vars = list(df[var][:10])
+                if df[var].dtype == 'object':
+                    try:
+                        for var in vars:
+                            val = str(var).strip().lower()
+                            if len(val) < 2 or val == 'yes':
+                                raise ValueError
+
+                            country = pycountry.countries.search_fuzzy(val)[0]
+                            print(country, vars)
+                    except:
+                        country = None
+                else:
+                    country = None
+
+                date_results.append([str(x) for x in [country, var] + vars])
 
             jstring = runner.get_final_json(indent=4)
             open(py_path, 'w').write(jstring)
@@ -178,7 +193,7 @@ def run_test_dv():
         w.writerow('file size rows cols time error'.split())
         w.writerows(results)
 
-    with open(get_path('date_results.csv'), 'w') as f:
+    with open(get_path('country_results.csv'), 'w') as f:
         w = csv.writer(f)
         w.writerows(date_results)
 
