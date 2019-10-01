@@ -160,8 +160,14 @@ def run_test_dv():
                 continue
 
             for var, val in runner.variable_info.items():
+                dtype = df[var].dtype
                 vars = list(df[var][:10])
-                if df[var].dtype == 'object':
+                if val.time_val is True:
+                    date_results.append([str(x) for x in [val.time_val, dtype, var] + vars])
+
+                continue
+
+                if dtype == 'object':
                     try:
                         for var in vars:
                             val = str(var).strip().lower()
@@ -193,7 +199,7 @@ def run_test_dv():
         w.writerow('file size rows cols time error'.split())
         w.writerows(results)
 
-    with open(get_path('country_results.csv'), 'w') as f:
+    with open(get_path('date_results.csv'), 'w') as f:
         w = csv.writer(f)
         w.writerows(date_results)
 

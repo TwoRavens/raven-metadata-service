@@ -13,14 +13,14 @@ from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
 date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
 not_date_re = re.compile(r'-?[.\d]+')
 
-def parse_date(val):
+def parse_date(val, year):
     if not isinstance(val, str):
-        if val > 2100:
+        if not year and val < 1600 or val > 2100:
             raise ValueError
 
         val = str(val)
 
-    val = val.strip()
+    val = val.strip().replace(',', '/')
     if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8) or val.startswith('-'):
         raise ValueError
 
@@ -138,11 +138,12 @@ class TypeGuessUtil(BasicErrCheck):
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
-        if var_series.name.endswith('id') or not var_series.dtype in ('int64', 'object'):
+        name = var_series.name.lower()
+        if name.lower().endswith('id') or not var_series.dtype in ('int64', 'object'):
             return col_const.UNKNOWN
 
         try:
-            var_series[:10].apply(parse_date)
+            var_series[:10].apply(lambda x: parse_date(x, name == 'year'))
             return True
         except:
             return col_const.UNKNOWN
