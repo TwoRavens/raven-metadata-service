@@ -1,5 +1,6 @@
 """ Module for type guessing """
 import datetime
+import re
 
 import dateutil.parser
 import pandas as pd
@@ -8,6 +9,25 @@ from pandas.api.types import is_float_dtype, is_numeric_dtype
 import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo
 from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
+
+# allow values like 01.02.03
+date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
+# filter out values like -3, .1, etc
+not_date_re = re.compile(r'-?[.\d]+')
+
+def parse_date(val, year):
+    """returns datetime.datetime or raises exception by parsing with dateutil after filtering out obvious non-date values"""
+    if not isinstance(val, str):
+        if not year and val < 1600 or val > 2100:
+            raise ValueError
+
+        val = str(val)
+
+    val = val.strip().replace(',', '/')
+    if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8) or val.startswith('-'):
+        raise ValueError
+
+    return dateutil.parser.parse(val)
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
@@ -61,6 +81,7 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     self.col_info.nature = self.check_nature(self.col_series, True)
                 else:
+                    self.col_info.time_val = self.check_time(self.col_series)
                     self.col_info.default_interval = col_const.INTERVAL_DISCRETE
                     self.col_info.nature = self.check_nature(series_info, False)
 
@@ -120,11 +141,12 @@ class TypeGuessUtil(BasicErrCheck):
         assert isinstance(var_series, pd.Series), \
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
-        if var_series.dtype == 'object':
-            try:
-                var_series[:10].apply(lambda x: x.strip() and dateutil.parser.parse(x))
-                return True
-            except:
-                pass
+        name = var_series.name.lower()
+        if name.endswith('id') or not var_series.dtype in ('int64', 'object'):
+            return col_const.UNKNOWN
 
-        return col_const.UNKNOWN
+        try:
+            var_series[:10].apply(lambda x: parse_date(x, name == 'year'))
+            return True
+        except:
+            return col_const.UNKNOWN

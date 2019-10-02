@@ -1,6 +1,7 @@
 import csv
 import glob
 import json
+import pycountry
 import subprocess
 import sys
 import time
@@ -159,7 +160,28 @@ def run_test_dv():
                 continue
 
             for var, val in runner.variable_info.items():
-                date_results.append([str(x) for x in [val.time_val] + list(df[var][:5])])
+                dtype = df[var].dtype
+                vars = list(df[var][:10])
+                if val.time_val is True:
+                    date_results.append([str(x) for x in [val.time_val, dtype, var] + vars])
+
+                continue # this is currently a scratchpad for switching between date and country detection; needs formal toggle
+
+                if dtype == 'object':
+                    try:
+                        for var in vars:
+                            val = str(var).strip().lower()
+                            if len(val) < 2 or val == 'yes':
+                                raise ValueError
+
+                            country = pycountry.countries.search_fuzzy(val)[0]
+                            print(country, vars)
+                    except:
+                        country = None
+                else:
+                    country = None
+
+                date_results.append([str(x) for x in [country, var] + vars])
 
             jstring = runner.get_final_json(indent=4)
             open(py_path, 'w').write(jstring)
