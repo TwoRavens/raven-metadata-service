@@ -165,7 +165,7 @@ def run_test_dv():
                 if val.time_val is True:
                     date_results.append([str(x) for x in [val.time_val, dtype, var] + vars])
 
-                continue
+                continue # this is currently a scratchpad for switching between date and country detection; needs formal toggle
 
                 if dtype == 'object':
                     try:

@@ -10,10 +10,13 @@ import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo
 from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
 
+# allow values like 01.02.03
 date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
+# filter out values like -3, .1, etc
 not_date_re = re.compile(r'-?[.\d]+')
 
 def parse_date(val, year):
+    """returns datetime.datetime or raises exception by parsing with dateutil after filtering out obvious non-date values"""
     if not isinstance(val, str):
         if not year and val < 1600 or val > 2100:
             raise ValueError
@@ -24,7 +27,7 @@ def parse_date(val, year):
     if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8) or val.startswith('-'):
         raise ValueError
 
-    dateutil.parser.parse(val)
+    return dateutil.parser.parse(val)
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
@@ -139,7 +142,7 @@ class TypeGuessUtil(BasicErrCheck):
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
         name = var_series.name.lower()
-        if name.lower().endswith('id') or not var_series.dtype in ('int64', 'object'):
+        if name.endswith('id') or not var_series.dtype in ('int64', 'object'):
             return col_const.UNKNOWN
 
         try:
