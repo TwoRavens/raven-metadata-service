@@ -152,14 +152,17 @@ def run_test_dv():
                 continue
 
             start = time.time()
-            runner, err = PreprocessRunner.load_from_file(file)
-            df = runner and runner.data_frame
-            rows, cols = df.shape if df is not None else (0, 0)
-            results.append([filename, getsize(file) / 1000000, rows, cols, time.time() - start, err or ''])
-            if err:
+            runner = PreprocessRunner.load_from_file(file)
+            ok = runner.success 
+            if ok:
+                obj = runner.result_obj
+                df = obj.data_frame
+            rows, cols = df.shape if ok else (0, 0)
+            results.append([filename, getsize(file) / 1000000, rows, cols, time.time() - start, '' if ok else runner.err_msg])
+            if not ok:
                 continue
 
-            for var, val in runner.variable_info.items():
+            for var, val in obj.variable_info.items():
                 dtype = df[var].dtype
                 vars = list(df[var][:10])
                 if val.time_val is True:
@@ -183,7 +186,7 @@ def run_test_dv():
 
                 date_results.append([str(x) for x in [country, var] + vars])
 
-            jstring = runner.get_final_json(indent=4)
+            jstring = obj.get_final_json(indent=4)
             open(py_path, 'w').write(jstring)
             continue
 
