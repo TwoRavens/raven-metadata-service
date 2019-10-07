@@ -3,6 +3,7 @@ import datetime
 import re
 
 import dateutil.parser
+import numpy as np
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
 
@@ -94,7 +95,7 @@ class TypeGuessUtil(BasicErrCheck):
         if var_series.size == 0 or var_series.dtype == 'bool':
             return True
 
-        return not is_numeric_dtype(var_series)
+        return not is_numeric_dtype(var_series) or  var_series.dropna().empty
 
     @staticmethod
     def is_logical(var_series):
@@ -111,18 +112,10 @@ class TypeGuessUtil(BasicErrCheck):
         elif var_series.dtype != 'object':
             return False
 
-        # It's an object.  Check if all the values either True or False
-        total = var_series.size
-        total_cnt = 0
-        for val, cnt in var_series.value_counts().iteritems():
-            if val is True or val is False:
-                total_cnt = total_cnt + cnt
-
-        if total_cnt == total:
-            # This is a boolean -- everything was either True or False
-            return True
-
-        return False
+        # It's an object. Check if all the values are logical
+        logical = {True, False, None, np.nan}
+        total = sum(cnt for val, cnt in var_series.value_counts(dropna=False).iteritems() if val in logical)
+        return total == var_series.size
 
     @staticmethod
     def check_nature(data_series, continuous_check):
