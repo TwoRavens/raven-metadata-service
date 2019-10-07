@@ -95,7 +95,7 @@ class TypeGuessUtil(BasicErrCheck):
         if var_series.size == 0 or var_series.dtype == 'bool':
             return True
 
-        return not is_numeric_dtype(var_series) or  var_series.dropna().empty
+        return not is_numeric_dtype(var_series) or var_series.dropna().empty
 
     @staticmethod
     def is_logical(var_series):

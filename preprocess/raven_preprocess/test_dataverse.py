@@ -165,26 +165,25 @@ def run_test_dv():
             for var, val in obj.variable_info.items():
                 dtype = df[var].dtype
                 vars = list(df[var][:10])
-                if val.time_val is True:
-                    date_results.append([str(x) for x in [val.time_val, dtype, var] + vars])
-
-                continue # this is currently a scratchpad for switching between date and country detection; needs formal toggle
+                #if val.time_val is True:
+                    #date_results.append([str(x) for x in [val.time_val, dtype, var] + vars])
 
                 if dtype == 'object':
-                    try:
-                        for var in vars:
-                            val = str(var).strip().lower()
-                            if len(val) < 2 or val == 'yes':
-                                raise ValueError
+                    result = []
+                    for var in vars:
+                        val = str(var).strip().lower()
+                        place = ''
+                        if len(val) >= 2 and val != 'yes':
+                            try:
+                                place = pycountry.subdivisions.lookup(val).type
+                            except:
+                                try:
+                                    place = pycountry.countries.lookup(val) and 'Country'
+                                except:
+                                    pass
+                        result.append((var, place))
 
-                            country = pycountry.countries.search_fuzzy(val)[0]
-                            print(country, vars)
-                    except:
-                        country = None
-                else:
-                    country = None
-
-                date_results.append([str(x) for x in [country, var] + vars])
+                    date_results.append(result)
 
             jstring = obj.get_final_json(indent=4)
             open(py_path, 'w').write(jstring)
