@@ -16,6 +16,7 @@ pip install setuptools wheel twine
 
 # build packages
 #
+cd preprocess
 rm dist/*
 python setup.py sdist bdist_wheel
 

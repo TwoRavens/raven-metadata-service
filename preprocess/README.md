@@ -1,6 +1,13 @@
 # TwoRavens Preprocess
 
-Python package to produce TwoRavens metadata
+Python package to produce TwoRavens metadata:
+  - https://pypi.org/project/tworavens-preprocess/
+
+```
+pip install tworavens-preprocess
+```
+
+##  Preprocess a data file
 
 ```
 from raven_preprocess.preprocess_runner import PreprocessRunner
@@ -39,7 +46,9 @@ else:
         print('uniqueCount:', vinfo['uniqueCount'])
         print('median:', vinfo['median'])
         print('etc...')
-```        
+```
+
+##  Preprocess a single file: output to screen or file
 
 ```
 # -------------------------
