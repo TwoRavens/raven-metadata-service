@@ -1,27 +1,23 @@
 .. data:: editable
 
-    list of all the variable features which are editable. e.g `description`, `numchar`, etc.
+    List of all the variable features which are editable. e.g `description`, `numchar`, etc.
 
-
-    * **type**: string or null
+    * **type**: List of String
 
 .. data:: viewable
 
-    It is a boolean property set for a variable to decide to show it or not in the preprocessed data.
+    It is a boolean property set for this variable to decide whether this attribute will be showed in the processed data.
 
-
-    * **type**: boolean
+    * **type**: Boolean
 
 .. data:: omit
 
     A list of all the features which are to be omitted for the particular variable.
 
-
-    * **type**: string or null
+    * **type**: String/Null
 
 .. data:: images
 
-    list containing custom/ scripted images of the variable data.
+    A list contains custom/scripted images of the variable data.
 
-
-    * **type**: string or null
+    * **type**: String/Null

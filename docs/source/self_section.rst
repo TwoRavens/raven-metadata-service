@@ -1,39 +1,45 @@
 .. data:: description
 
-    contains the link to the source.
+    A brief description that contains the link to the service which generate this output.
 
 
-    * **type**: URL
+    * **type**: String
 
 .. data:: created
 
-    The data and time when the preprocessed file was created.
+    A timestamp shows when the task is created. (YYYY-MM-DD HH:MM:SS)
 
 
-    * **type**: string
+    * **type**: String
 
 .. data:: preprocessId
 
-    It is the auto-generated ID given by the service to every preprocess file.
+    An automatic generated ID for current task -- Currently is 'None'.
 
 
-    * **type**: numeric
+    * **type**: Numeric/None
 
 .. data:: version
 
-    It describes the version of the preprocessed file.
+    A number describes the version of current task.
 
 
-    * **type**: numeric
+    * **type**: Numeric
 
-.. data:: schema
+.. data:: schema(Optional)
 
-    contains the description of the schema the service follows.
+    Contains the description of the schema. You need to specify the value of 'SCHEMA_INFO_DICT' if this block is required. We don't provide this information by default.
 
-    - **name**: name of the schema it follows.
-    - **version**: version of the schema it follows.
-    - **schema_url**: source url of the schema it follows.
-    - **schema_docs**: link to the documentation of the schema it follows.
+    +-----------+------------------------------------------------------------+
+    | Attribute |                   Description                              |
+    +-----------+------------------------------------------------------------+
+    |    Name   | Name of the followed schema                                |
+    +-----------+------------------------------------------------------------+
+    |  Version  | Version of corresponding schema it applied                 |
+    +-----------+------------------------------------------------------------+
+    | SchemaUrl | Source url of the schema                                   |
+    +-----------+------------------------------------------------------------+
+    | SchemaDoc | Link to the corresponding schema                           |
+    +-----------+------------------------------------------------------------+
 
-
-    * **type**: string
+    * **type**: Dict

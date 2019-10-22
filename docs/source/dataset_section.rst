@@ -1,46 +1,64 @@
 .. data:: description
 
-    some definition.
+    A brief description of input dataset. (Currently is null)
 
 
-    * **type**: URL
+    * **type**: String/NULL
 
 .. data:: unit of analysis
 
-    some definition.
+    Unknown definition. (Currently is null)
 
 
-    * **type**: string
+    * **type**: String/NULL
 
 .. data:: structure
 
-    some definition.
+    The structure of the input dataset.
 
 
-    * **type**: string
+    * **type**: String
 
 .. data:: rowCount
 
     number of observations in the dataset.
 
 
-    * **type**: numeric
+    * **type**: Integer
 
 .. data:: variableCount
 
     number of variables in the dataset.
 
 
-    * **type**: numeric
+    * **type**: Integer
 
-.. data:: dataSource
+.. data:: dataSource(Optional)
 
-    contains the following details of the source file.
+    Contains some extra information about the raw file. You need to specify the value of 'data_source_info' when a process runner is created, if this block is required. This information is not provided by default.
 
-    - **name**: name of the source file.
-    - **type**: file type.
-    - **format**: format of the file.
-    - **fileSize**: size of the file.
+    +-----------+------------------------------------------------------------+
+    | Attribute |                   Description                              |
+    +-----------+------------------------------------------------------------+
+    |    Name   | Name of input file                                         |
+    +-----------+------------------------------------------------------------+
+    |    Type   | File type (.csv, .xlxs etc)                                |
+    +-----------+------------------------------------------------------------+
+    |  Format   | Format of the input file                                   |
+    +-----------+------------------------------------------------------------+
+    | fileSize  | Size of the file in bytes                                  |
+    +-----------+------------------------------------------------------------+
 
+    * **type**: Dict
 
-    * **type**: string
+.. data:: citation(Optional)
+
+    Unknown definition. default is null.
+
+    * **type**: String
+
+.. data:: error
+
+    A message shows the error happened during dataset-level analysis. This entity may not exist if there is no error occured.
+
+    * **type**: String
