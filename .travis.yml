@@ -19,8 +19,8 @@ install:
 
 script:
   # Run django tests.  (Note django settings are an env variable)
-  - cd preprocess; python -m unittest
-  - cd ../../preprocess_web/code; python manage.py test; cd ../../
+  - cd preprocess; python -m unittest; cd ..
+  - cd preprocess_web/code; python manage.py test; cd ../../
   #- coverage run --source=ravens_metadata_apps.ta2_interfaces manage.py test ravens_metadata_apps.ta2_interfaces ravens_metadata_apps.workspaces
   #- docker build -t tworavens/ravens-main:latest .
   - echo $TRAVIS_BRANCH;
@@ -32,6 +32,11 @@ after_success:
     docker build -t tworavens/raven-metadata-service:latest -f ./Dockerfile-web .;
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push tworavens/raven-metadata-service:latest;
+    fi
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then
+    docker build -t tworavens/raven-metadata-service:latest -f ./Dockerfile-web .;
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push tworavens/raven-metadata-service:develop;
     fi
 # send report to coveralls
 #after_success:
