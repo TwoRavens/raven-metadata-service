@@ -65,16 +65,6 @@
                      "type":"null"
                   }
                ]
-            },
-            "citation":{
-               "description":"Object containing a schema.org Dataset description",
-               "type":"object",
-               "properties":{
-                  "name":{
-                     "description":"Name of the dataset",
-                     "type":"string"
-                  }
-               }
             }
          },
          "required":[
@@ -238,47 +228,26 @@
                   "mode":{
                      "type":[
                         "array",
-                        "string"
+                        "string",
+                        "null"
                      ],
                      "description":"Value that occurs most frequently.  Multiple values in the case of ties.",
                      "oneOf":[
                         {
                            "type":"array",
                            "items":{
-                              "type":"number"
+                              "type": ["number", "string", "boolean"]
                            }
-                        },
-                        {
-                           "type":"array",
-                           "items":{
-                              "type":"string"
-                           }
-                        },
-                        {
-                           "type":"string",
-                           "enum":[
-                              "NA"
-                           ]
                         }
                      ]
                   },
                   "modeFreq":{
                      "type":[
                         "integer",
-                        "string"
+                        "string",
+                        "null"
                      ],
-                     "description":"Number of times value of mode is observed in variable",
-                     "oneOf":[
-                        {
-                           "type":"integer"
-                        },
-                        {
-                           "type":"string",
-                           "enum":[
-                              "NA"
-                           ]
-                        }
-                     ]
+                     "description":"Number of times value of mode is observed in variable"
                   },
                   "fewestValues":{
                      "type":[
@@ -290,13 +259,7 @@
                         {
                            "type":"array",
                            "items":{
-                              "type":"number"
-                           }
-                        },
-                        {
-                           "type":"array",
-                           "items":{
-                              "type":"string"
+                              "type": ["number", "string", "boolean"]
                            }
                         },
                         {
@@ -310,56 +273,27 @@
                   "fewestFreq":{
                      "type":[
                         "integer",
-                        "string"
+                        "string",
+                        "null"
                      ],
-                     "description":"Number of times value of fewestValues is observed in variable",
-                     "oneOf":[
-                        {
-                           "type":"integer"
-                        },
-                        {
-                           "type":"string",
-                           "enum":[
-                              "NA"
-                           ]
-                        }
-                     ]
+                     "description":"Number of times value of fewestValues is observed in variable"
                   },
                   "midpoint":{
                      "type":[
                         "number",
-                        "string"
+                        "string",
+                        "boolean",
+                        "null"
                      ],
-                     "description":"The value equidistant from the reported min and max values",
-                     "oneOf":[
-                        {
-                           "type":"number"
-                        },
-                        {
-                           "type":"string",
-                           "xenum":[
-                              "NA"
-                           ]
-                        }
-                     ]
+                     "description":"The value equidistant from the reported min and max values"
                   },
                   "midpointFreq":{
                      "type":[
                         "integer",
-                        "string"
+                        "string",
+                        "null"
                      ],
-                     "description":"Number of observations with value equal to minpoint",
-                     "oneOf":[
-                        {
-                           "type":"integer"
-                        },
-                        {
-                           "type":"string",
-                           "enum":[
-                              "NA"
-                           ]
-                        }
-                     ]
+                     "description":"Number of observations with value equal to minpoint"
                   },
                   "stdDev":{
                      "type":[

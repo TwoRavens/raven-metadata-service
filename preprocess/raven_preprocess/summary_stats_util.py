@@ -47,7 +47,6 @@ class SummaryStatsUtil(object):
             self.total_agg = self.total_agg + val_cnt
             row_num += 1
             if row_num == mid_pt:
-
                 self.col_info.mid = col_val
                 self.col_info.freqmid = val_cnt
 
@@ -70,11 +69,9 @@ class SummaryStatsUtil(object):
                 self.col_info.freqfewest = val_cnt
 
         self.col_info.set_fewest(fewest_output)
-
         self.col_info.set_mode(output)
 
         if self.col_info.is_character():
-
             # self.col_info.herfindahl=self.herfindahl_index(self.col_series)
             self.col_info.median = col_const.NOT_APPLICABLE
             self.col_info.max = col_const.NOT_APPLICABLE
@@ -88,7 +85,6 @@ class SummaryStatsUtil(object):
                 drop_missing=False)
 
         elif self.col_info.is_numeric():
-
             self.col_info.median = self.col_series.median()
             self.col_info.max = self.col_series.max()
             self.col_info.min = self.col_series.min()

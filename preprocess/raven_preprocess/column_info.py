@@ -231,10 +231,6 @@ class ColumnInfo(object):
         if self.cdf_plotx is None and self.cdf_ploty is None:
             self.cdf_plot_type = None
 
-        # Until mid is updated
-        self.mid = None
-        self.freqmid = None
-
     def print_values(self):
         """print to screen"""
         print('---- %s ----' % self.colname)
