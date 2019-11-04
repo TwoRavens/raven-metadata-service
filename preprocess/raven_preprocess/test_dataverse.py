@@ -7,6 +7,7 @@ import sys
 import time
 
 import dictdiffer
+import jsonschema
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -133,7 +134,6 @@ def diff(filename, py_path, R_path):
         with open(get_path(filename, 'changes'), 'w') as f:
             json.dump(changes, f, indent=2)
 
-
 def run_test_dv():
     assert len(sys.argv) >= 2, 'Not enough command line arguments'
 
@@ -205,5 +205,16 @@ def run_test_dv():
         w = csv.writer(f)
         w.writerows(date_results)
 
+def test_metadata(data_path, metadata_path):
+    for file in glob.glob(data_path, recursive=True):
+        runner = PreprocessRunner.load_from_file(file)
+        if not runner.success:
+            continue
+
+        jsonschema.validate(json.loads(runner.result_obj.get_final_json()), json.load(open(metadata_path)))
+
 if __name__ == '__main__':
-    run_test_dv()
+    if sys.argv[1] == 'metadata':
+        test_metadata(*sys.argv[2:])
+    else:
+        run_test_dv()

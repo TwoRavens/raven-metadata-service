@@ -6,6 +6,8 @@ import dateutil.parser
 import numpy as np
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
+import pycountry
+import us
 
 import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo
@@ -16,19 +18,75 @@ date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
 # filter out values like -3, .1, etc
 not_date_re = re.compile(r'-?[.\d]+')
 
-def parse_date(val, year):
-    """returns datetime.datetime or raises exception by parsing with dateutil after filtering out obvious non-date values"""
+digit_re = re.compile(r'[\d]+')
+
+def match(sample, lookup, threshold):
+    """returns list of matches for each item in sample or None if num matches below threshold"""
+    cnt = sample.count()
+    bad_cnt, matches = 0, []
+    for x in sample:
+        if not isinstance(x, str):
+            break
+
+        x = x.strip().lower()
+        match = lookup(x)
+        matches.append(match)
+        if not match:
+            bad_cnt += 1
+            if bad_cnt / cnt > 1 - threshold:
+                return
+
+    return matches
+
+def lookup_date(val, year):
+    """returns datetime.datetime or None by parsing with dateutil after filtering out obvious non-date values"""
     if not isinstance(val, str):
         if not year and val < 1600 or val > 2100:
-            raise ValueError
+            return
 
         val = str(val)
 
     val = val.strip().replace(',', '/')
     if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8) or val.startswith('-'):
-        raise ValueError
+        return
 
-    return dateutil.parser.parse(val)
+    try:
+        return dateutil.parser.parse(val)
+    except:
+        pass
+
+def lookup_location(x):
+    """returns us.State or ... or None"""
+    if not isinstance(x, str):
+        return 
+
+    x = pycountry.remove_accents(x)
+    ln = len(x)
+    if ln == 1 or digit_re.fullmatch(x) or x in {'male', 'no'}:
+        return
+    elif ln == 2:
+        state = us.states.lookup(x.upper(), 'abbr')
+        if state:
+            return state
+
+    state = us.states.lookup(x.title(), 'name')
+    if state:
+        return state
+
+    try:
+        return countries.lookup(x)
+    except:
+        pass
+
+    for sd in pycountry.subdivisions:
+        for val in sd._fields.values():
+            if val is None:
+                continue
+
+            val = pycountry.remove_accents(val.lower())
+            for val in val.split(';'):
+                if val == x:
+                    return sd
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
@@ -38,6 +96,7 @@ class TypeGuessUtil(BasicErrCheck):
 
         self.col_series = col_series
         self.col_info = col_info
+        self.col_info.location_val = col_const.UNKNOWN
         self.col_info.time_val = col_const.UNKNOWN
         self.binary = False
 
@@ -57,7 +116,13 @@ class TypeGuessUtil(BasicErrCheck):
         self.col_info.binary = col_const.BINARY_YES if len(self.col_series.unique()) == 2 else col_const.BINARY_NO
 
         if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
-            self.col_info.time_val = self.check_time(self.col_series)
+            cnt = self.col_series.count()
+            num_sample = 10
+            sample = self.col_series.sample(n=num_sample if cnt >= num_sample else cnt, random_state=1)
+            self.col_info.time_val = self.check_time(sample)
+            if self.col_info.time_val == col_const.UNKNOWN:
+                self.col_info.location_val = self.check_location(sample)
+
             self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
             self.col_info.default_interval = col_const.INTERVAL_DISCRETE
             self.col_info.nature = col_const.NATURE_NOMINAL
@@ -137,9 +202,14 @@ class TypeGuessUtil(BasicErrCheck):
         name = var_series.name.lower()
         if name.endswith('id') or not var_series.dtype in ('int64', 'object'):
             return col_const.UNKNOWN
+        return True if match(var_series, lambda x: lookup_date(x, name == 'year'), 0.5) else col_const.UNKNOWN
 
-        try:
-            var_series[:10].apply(lambda x: parse_date(x, name == 'year'))
-            return True
-        except:
+    @staticmethod
+    def check_location(var_series):
+        """Check if Series is a location"""
+        assert isinstance(var_series, pd.Series), \
+            "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
+
+        if var_series.dtype != 'object':
             return col_const.UNKNOWN
+        return True if match(var_series, lookup_location, 0.5) else col_const.UNKNOWN

@@ -10,7 +10,7 @@ class ColumnInfo(object):
     """Sets up the expected structure of the whole preprocess output file"""
 
     # names of ColumnInfo *attributes*, not labels, that are editable
-    EDITABLE_COLUMNS = ['labl', 'numchar_val', 'nature', 'time_val']
+    EDITABLE_COLUMNS = ['labl', 'numchar_val', 'nature', 'location_val', 'time_val']
 
     def __init__(self, colname):
         """Init with column name"""
@@ -42,6 +42,7 @@ class ColumnInfo(object):
         self.numchar_val = None
         self.default_interval = None
         self.nature = None
+        self.location_val = None
         self.time_val = None
         self.binary = None
 
@@ -177,6 +178,7 @@ class ColumnInfo(object):
 
             ('binary', 'binary'),
             ('interval', 'default_interval'),
+            ('location', 'location_val'),
             ('time', 'time_val'),
 
             ('invalidCount', 'invalid'),
