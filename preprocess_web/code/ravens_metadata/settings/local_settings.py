@@ -44,6 +44,8 @@ STATIC_ROOT = join(LOCAL_SETUP_DIR, 'staticfiles')
 if not isdir(STATIC_ROOT):
     makedirs(STATIC_ROOT)
 
+TEST_DIRECT_STATIC = join(dirname(BASE_DIR), 'static')
+
 
 MEDIA_ROOT = join(LOCAL_SETUP_DIR, 'metadata_files')
 if not isdir(MEDIA_ROOT):
@@ -64,7 +66,6 @@ AUTH_PASSWORD_VALIDATORS = [
     #dict(NAME='django.contrib.auth.password_validation.NumericPasswordValidator'),
 ]
 
-TEST_DIRECT_STATIC = join(dirname(BASE_DIR), 'static')
 
 # -------------------------------
 # Set this link if the editor is available
@@ -75,8 +76,8 @@ EDITOR_URL = os.environ.get('EDITOR_URL', None) #'http://localhost:1234/')
 if not EDITOR_URL:
     EDITOR_URL = None   # Convert an empty string to None
 
-import logging
-logging.basicConfig(
-        level = logging.DEBUG,
-        format = '%(asctime)s %(levelname)s %(message)s',
-    )
+#import logging
+#logging.basicConfig(
+#        level = logging.DEBUG,
+#        format = '%(asctime)s %(levelname)s %(message)s',
+#    )

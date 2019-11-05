@@ -6,6 +6,7 @@ from django.conf import settings
 from django.utils.text import slugify
 from django.db import transaction
 
+import jsonfield
 from collections import OrderedDict
 # For the prototype, set the current schema for now...
 from model_utils.models import TimeStampedModel
@@ -24,12 +25,20 @@ class MetadataSchema(TimeStampedModel):
 
     schema_type = models.CharField(default=PREPROCESS_CORE_METADATA,
                                    max_length=255)
+
     version = models.CharField(max_length=50,
                                unique=True)
     is_published = models.BooleanField(default=True)
     is_latest = models.BooleanField(default=True)
-    schema_file = models.FileField(upload_to='schema_files/%Y/%m/%d/',
-                                   blank=False)
+
+    schema_json = jsonfield.JSONField(\
+                    load_kwargs=dict(object_pairs_hook=OrderedDict))
+
+
+    #schema_file = models.FileField(upload_to='schema_files/%Y/%m/%d/',
+    #                               null=True
+    #                               blank=True)
+
     description = models.TextField(blank=True)
 
     class Meta:
@@ -51,7 +60,12 @@ class MetadataSchema(TimeStampedModel):
 
     def get_schema(self, as_string=False):
         """Return preprocess file contents if they exist"""
+        if as_string:
+            return json_dump(self.schema_json, indent=4)
 
+        return ok_resp(self.schema_json)
+
+        """
         if not self.schema_file:
             return err_resp('No schema data. e.g. No file')
 
@@ -77,6 +91,7 @@ class MetadataSchema(TimeStampedModel):
             return json_dump(json_dict, indent=4)
 
         return ok_resp(json_dict)
+        """
 
     def get_schema_as_json(self):
         """For display, return preprocess file as string if it exists"""
@@ -97,22 +112,22 @@ class MetadataSchema(TimeStampedModel):
 
 
 def get_temp_schema_info():
-        # ------------------------------------------
-        # some premodel variables for the prototype
-        # ------------------------------------------
-        SCHEMA_TEMP_NAME = 'TwoRavens Metadata File Schema'
-        SCHEMA_TEMP_VERSION = 'v0.4-alpha'
-        SCHEMA_TEMP_LINK = '%s://%s%s' % \
-                           (settings.SITE_SCHEME,
-                            settings.SWAGGER_HOST,
-                            reverse('view_latest_metadata_schema', args=()))
-        SCHEMA_TEMP_DOCS_LINK = ('http://two-ravens-metadata-service.readthedocs.io/'
-                                 'en/latest/preprocess_file_description.html'
-                                 '#preprocess-parameters')
-        # ------------------------------------------
+    # ------------------------------------------
+    # some premodel variables for the prototype
+    # ------------------------------------------
+    SCHEMA_TEMP_NAME = 'TwoRavens Metadata File Schema'
+    SCHEMA_TEMP_VERSION = 'v0.4-alpha'
+    SCHEMA_TEMP_LINK = '%s://%s%s' % \
+                       (settings.SITE_SCHEME,
+                        settings.SWAGGER_HOST,
+                        reverse('view_latest_metadata_schema', args=()))
+    SCHEMA_TEMP_DOCS_LINK = ('http://two-ravens-metadata-service.readthedocs.io/'
+                             'en/latest/preprocess_file_description.html'
+                             '#preprocess-parameters')
+    # ------------------------------------------
 
-        SCHEMA_INFO_DICT = dict(name=SCHEMA_TEMP_NAME,
-                                version=SCHEMA_TEMP_VERSION,
-                                schema_url=SCHEMA_TEMP_LINK,
-                                schema_docs=SCHEMA_TEMP_DOCS_LINK)
-        return SCHEMA_INFO_DICT
+    SCHEMA_INFO_DICT = dict(name=SCHEMA_TEMP_NAME,
+                            version=SCHEMA_TEMP_VERSION,
+                            schema_url=SCHEMA_TEMP_LINK,
+                            schema_docs=SCHEMA_TEMP_DOCS_LINK)
+    return SCHEMA_INFO_DICT

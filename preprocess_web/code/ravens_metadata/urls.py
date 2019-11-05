@@ -18,7 +18,7 @@ from django.urls import path, re_path
 from django.conf.urls import include
 from django.views.generic import RedirectView
 from django.conf import settings
-from django.conf.urls.static import static
+from django.views.static import serve
 
 admin.site.site_header = 'TwoRavens Metadata Service'
 admin.site.index_title = 'Features area'
@@ -30,7 +30,7 @@ urlpatterns = [
 
     path('preprocess/', include('ravens_metadata_apps.preprocess_jobs.urls')),
 
-    path('r-preprocess/', include('ravens_metadata_apps.r_preprocess.urls')),
+    # path('r-preprocess/', include('ravens_metadata_apps.r_preprocess.urls')),
 
     # path('api/', include('ravens_metadata_apps.api_docs.urls')),
 
@@ -42,9 +42,15 @@ urlpatterns = [
 
 ]
 
+print('TEST_DIRECT_STATIC', settings.TEST_DIRECT_STATIC)
+print('STATIC_URL', settings.STATIC_URL)
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL,
-                          document_root=settings.TEST_DIRECT_STATIC)
+    urlpatterns += [
+        re_path(r'^static/(?P<path>.*)$', serve, {
+            'document_root': settings.TEST_DIRECT_STATIC,
+            'show_indexes': True
+        }),
+    ]
 
 
 if settings.DEBUG:

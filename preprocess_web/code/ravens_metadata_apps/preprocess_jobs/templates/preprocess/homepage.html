@@ -13,15 +13,37 @@
                     <h3 class="card-title">Create Summary Statistics</h3>
                     <p class=text-left>Upload a data file to generate a metadata file containing summary statistics.</p>
                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_basic_upload_form' %}" role="button">Run Preprocess</a></p>
-                    <p><a class="btn btn-sm btn-primary" href="{% url 'view_r_preprocess_form' %}" role="button">Run "R" Preprocess</a></p>
 
-                    <p><a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a></p>
+                    <p><a class="btn btn-sm btn-primary" href="https://pypi.org/project/tworavens-preprocess/">Python package (PyPi)</a>
+
+                    {#<p><a class="btn btn-sm btn-primary" href="{% url 'view_dataverse_file_form' %}" role="button">Dataverse Preprocess</a></p>#}
                   </div>
                </div>
             </div>
             <!-- /.col-lg-4 -->
 
+            <div class="col-lg-4 mb-4">
 
+               <div class="card">
+                  <div class="card-body">
+                     <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
+                     <h3 class="card-title">Metadata JSON Schema / Docs</h3>
+                     <p class="text-left">View the JSON schema as well as documentation with variable descriptions generated from the JSON schema.</p>
+
+
+                     <p>
+                       <a class="btn btn-sm btn-primary" href="https://tworavens.github.io/TwoRavens/Metadata/">Documentation</a>
+                      </p>
+                      <p>
+                        <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}?pretty">Schema (readable)</a>
+                      </p>
+                      <p>
+                          <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}">Schema</a>
+                       </p>
+
+                  </div>
+               </div>
+            </div>
             <div class="col-lg-4 mb-4">
               <div class="card">
                 <div class="card-body">
@@ -37,24 +59,11 @@
            </div>
             <!-- /.col-lg-4 -->
 
-            <div class="col-lg-4 mb-4">
 
-               <div class="card">
-                  <div class="card-body">
-                     <img class="rounded-circle" src="{% static "icon/preprocess.png" %}" alt="Generic placeholder image" width="60" height="60" style="background-color: #FAFAFA" />
-                     <h3 class="card-title">Metadata JSON Schema / Docs</h3>
-                     <p class="text-left">View the JSON schema as well as documentation with variable descriptions generated from the JSON schema.</p>
-
-                     <p><a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}">JSON Schema</a>
-                     <a class="btn btn-sm btn-primary" href="{% url 'view_latest_metadata_schema' %}?pretty">("pretty")</a></p>
-
-                     <a class="btn btn-sm btn-primary" href="https://tworavens.github.io/TwoRavens/Metadata/" target="_blank">Docs</a>
-                  </div>
-               </div>
-            </div>
             <!-- /.col-lg-4 -->
          </div><!-- end: row -->
 
+      {% comment %}
        <div class="row">
         <div class="col-lg-4 mb-4">
            <div class="card">
@@ -63,15 +72,12 @@
                 <ul>
                   <li><a href="{% url 'view_variable_definitions' %}">variable defns (latest, .rst)</a></li>
 
-                  {% if debug %}
-                  <li><a class="btn btn-sm btn-warning" href="{% url 'view_r_preprocess_form_direct' %}" role="button">"R" Preprocess DIRECT</a>
-                      <br /><small>(for testing, *blocks* process)</small></li>
-                  {% endif %}
                 </ul>
               </div>
            </div>
         </div>
       </div><!-- end: row -->
+      {% endcomment %}
 
 <footer style="margin-bottom: 5%">
     {% comment %}
