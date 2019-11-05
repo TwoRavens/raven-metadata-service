@@ -1,4 +1,0 @@
-.. _TypeGuessUtil:
-
-TypeGuessUtil
--------------

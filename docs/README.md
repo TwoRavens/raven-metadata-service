@@ -1,3 +1,6 @@
+DEPRECATED - DOCS MOVED TO https://tworavens.github.io/TwoRavens/Metadata/
+
+
 # Document generation
 
 ## Public view
