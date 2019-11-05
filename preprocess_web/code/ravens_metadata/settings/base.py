@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.metadata_schemas',
     'ravens_metadata_apps.preprocess_jobs',
-    'ravens_metadata_apps.r_preprocess',
+    #'ravens_metadata_apps.r_preprocess',
     # 'ravens_metadata_apps.api_docs',
     'ravens_metadata_apps.content_pages', # user model
     'ravens_metadata_apps.dataverse_connect', # preprocess dataverse files
