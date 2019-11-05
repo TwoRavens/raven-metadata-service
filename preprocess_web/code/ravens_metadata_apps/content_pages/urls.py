@@ -15,10 +15,6 @@ urlpatterns = (
          views.view_err_404_test,
          name='view_err_404_test'),
 
-    path('datamart-page',
-         views.view_datamart_page,
-         name='view_datamart_page'),
-
     # homepage/ splash page
     #
     path('',

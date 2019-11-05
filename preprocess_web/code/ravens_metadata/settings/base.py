@@ -61,13 +61,13 @@ INSTALLED_APPS = [
     'ravens_metadata_apps.raven_auth', # user model
     'ravens_metadata_apps.metadata_schemas',
     'ravens_metadata_apps.preprocess_jobs',
-    'ravens_metadata_apps.r_preprocess',
+    #'ravens_metadata_apps.r_preprocess',
     # 'ravens_metadata_apps.api_docs',
     'ravens_metadata_apps.content_pages', # user model
     'ravens_metadata_apps.dataverse_connect', # preprocess dataverse files
 
     # webpack!
-    'webpack_loader',
+    #'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -161,7 +161,7 @@ TIME_ZONE = 'America/New_York'
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [join(dirname(BASE_DIR), 'assets')]
+STATICFILES_DIRS = [join(dirname(BASE_DIR), 'static')]
 
 
 # ---------------------------
@@ -219,13 +219,13 @@ PREPROCESS_DATA_DIR = join(dirname(dirname(dirname(BASE_DIR))),
 # ---------------------------------------------
 # For running webpack in dev
 # ---------------------------------------------
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'build/', # must end with slash
-        'STATS_FILE': join(BASE_DIR, '..', 'webpack-stats.json'),
-        'POLL_INTERVAL': 0.1,
-        'TIMEOUT': None,
-        'IGNORE': ['.+\.hot-update.js', '.+\.map']
-    }
-}
+#WEBPACK_LOADER = {
+#    'DEFAULT': {
+#        'CACHE': not DEBUG,
+#        'BUNDLE_DIR_NAME': 'build/', # must end with slash
+#        'STATS_FILE': join(BASE_DIR, '..', 'webpack-stats.json'),
+#        'POLL_INTERVAL': 0.1,
+#        'TIMEOUT': None,
+#        'IGNORE': ['.+\.hot-update.js', '.+\.map']
+#    }
+#}

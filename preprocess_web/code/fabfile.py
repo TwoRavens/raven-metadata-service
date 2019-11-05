@@ -64,7 +64,7 @@ def redis_clear(c):
     """Clear data from the *running* local redis server"""
     redis_cmd = 'redis-cli flushall'    #  /usr/local/etc/redis.conf'
 
-    result = c.run(redis_cmd, warn=True)
+    result = c.run(redis_cmd)
 
     if result.failed:
         msgt('Redis (probably) not running, nothing to clear')
@@ -129,45 +129,31 @@ def run_shell(c):
         msgt('django shell: failed to run')
 
 @task
-def webpack_prod(context):
-    """Generate the webpack dist files for prod"""
-    cmd_webpack = './node_modules/.bin/webpack --config webpack.prod.config.js'
-    fab_local(cmd_webpack)
-
-@task
 def run_web(context):
-    """Start webpack + django dev server"""
+    """Start django dev server"""
     init_db(context)
-
-    commands = [
-        # start webpack
-        'npm start',
-    ]
-    proc_list = [subprocess.Popen(command, shell=True,
-                                  stdin=sys.stdin, stdout=sys.stdout,
-                                  stderr=sys.stderr)
-                 for command in commands]
 
     print('init db complete; start web server')
     run_webserver_cmd = ('python manage.py runserver 8080')
 
-    try:
-        print('run web server: %s' % run_webserver_cmd)
-        fab_local(run_webserver_cmd)
-    finally:
-        for proc in proc_list:
-            os.kill(proc.pid, signal.SIGKILL)
+    print('run web server: %s' % run_webserver_cmd)
+    fab_local(run_webserver_cmd)
 
 @task
 def init_db(context):
     """Run django check and migrate"""
     print('check settings')
     fab_local("python manage.py check")
+
     print('update database (if needed)')
     fab_local("python manage.py migrate")
+
+
+    print('create users...')
     create_django_superuser(context)
     create_test_user(context)
     load_registered_dataverses(context)
+    load_latest_schema(context)
     #local("python manage.py loaddata fixtures/users.json")
     #Series(name_abbreviation="Mass.").save()
 
@@ -184,6 +170,27 @@ def load_registered_dataverses(context):
     load_cmd = ('python manage.py loaddata ravens_metadata_apps/dataverse_connect'
                 '/fixtures/initial_fixtures.json')
     fab_local(load_cmd)
+
+@task
+def load_latest_schema(context):
+    """Make sure the schema is loaded to the database; Load one if needed."""
+    from ravens_metadata_apps.metadata_schemas.models import MetadataSchema
+    from ravens_metadata_apps.metadata_schemas.schema_util import SchemaUtil
+
+    schema_info = SchemaUtil.get_latest_schema()
+    if schema_info.success:
+        mschema = schema_info.result_obj
+        if mschema:
+            print('MetadataSchema exists')
+            return
+
+
+    load_cmd = ('python manage.py loaddata ravens_metadata_apps/metadata_schemas'
+                '/fixtures/initial_001.json')
+    fab_local(load_cmd)
+    print('Default MetadataSchema loaded')
+
+
 
 
 @task

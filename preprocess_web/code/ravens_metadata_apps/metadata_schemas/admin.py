@@ -12,9 +12,8 @@ class MetadataSchemaFile(admin.ModelAdmin):
         'version',
         'is_published',
         'is_latest',
-        'schema_file',
+        #'schema_json',
         'description'
     )
     list_filter = ('version',
                    'is_latest')
-

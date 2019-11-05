@@ -2,8 +2,8 @@ FROM python:3.6.8
 MAINTAINER TwoRavens http://2ra.vn/
 
 LABEL organization="Two Ravens" \
-      2ra.vn.version="0.0.5-alpha" \
-      2ra.vn.release-date="2019-01-10" \
+      2ra.vn.version="0.0.9-alpha" \
+      2ra.vn.release-date="2019-11-05" \
       description="Web service for preprocessing tabular data"
 
 # -------------------------------------
@@ -15,14 +15,6 @@ RUN apt-get update && \
     iputils-ping \
     telnet \
     vim
-
-# -------------------------------------
-# Install R for preprocess.R
-# -------------------------------------
-RUN apt-get install -y r-base
-RUN R -e 'install.packages("rjson", repos="http://cran.rstudio.org")' && \
-    R -e 'install.packages("DescTools", repos="http://cran.rstudio.org")' && \
-    R -e 'install.packages("XML", repos="http://cran.rstudio.org")'
 
 # -------------------------------------
 # Set the workdir
