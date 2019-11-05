@@ -6,7 +6,7 @@
 #     in a different directory
 # -----------------------------------
 printf "\n(10) Run Init Steps"
-fab init_db
+fab init-db
 fab collectstatic
 
 # -----------------------------------
