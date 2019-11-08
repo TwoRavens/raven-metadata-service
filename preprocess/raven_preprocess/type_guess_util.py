@@ -21,14 +21,13 @@ not_date_re = re.compile(r'-?[.\d]+')
 digit_re = re.compile(r'[\d]+')
 
 def match(sample, lookup, threshold):
-    """returns list of matches for each item in sample or None if num matches below threshold"""
+    """returns list of matches for items in sample or None if num matches below threshold"""
     cnt = sample.count()
     bad_cnt, matches = 0, []
     for x in sample:
-        if not isinstance(x, str):
-            break
+        if isinstance(x, str):
+            x = x.strip().lower()
 
-        x = x.strip().lower()
         match = lookup(x)
         matches.append(match)
         if not match:
@@ -56,7 +55,7 @@ def lookup_date(val, year):
         pass
 
 def lookup_location(x):
-    """returns us.State or ... or None"""
+    """returns us.State or pycountry obj or None"""
     if not isinstance(x, str):
         return 
 
