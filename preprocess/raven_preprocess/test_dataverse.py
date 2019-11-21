@@ -1,4 +1,5 @@
 import csv
+import decimal
 import glob
 import json
 import pycountry
@@ -153,7 +154,7 @@ def run_test_dv():
 
             start = time.time()
             runner = PreprocessRunner.load_from_file(file)
-            ok = runner.success 
+            ok = runner.success
             if ok:
                 obj = runner.result_obj
                 df = obj.data_frame
@@ -206,12 +207,34 @@ def run_test_dv():
         w.writerows(date_results)
 
 def test_metadata(data_path, metadata_path):
+    ignore = []#'.fewest .freqfewest .freqmid .max .mid .min .mode .plottype .plotvalues .cdfplotx .cdfploty'.split()
+    cnt = 0
     for file in glob.glob(data_path, recursive=True):
         runner = PreprocessRunner.load_from_file(file)
         if not runner.success:
             continue
 
-        jsonschema.validate(json.loads(runner.result_obj.get_final_json()), json.load(open(metadata_path)))
+        out = runner.result_obj.get_final_dict(old_format=True)
+        try:
+            out1 = json.load(open(file.replace('dataverse/data', 'dataverse/R')))
+        except:
+            continue
+
+        print(file)
+        diff = dictdiffer.diff(out['variables'], out1['variables'])
+        for x in diff:
+            if sum(y in x[1] for y in ignore):
+                continue
+            if isinstance(x[2][0], decimal.Decimal):
+                continue
+            try:
+                print(x)
+            except:
+                pass
+
+        cnt += 1
+        if cnt > 100:
+            break
 
 if __name__ == '__main__':
     if sys.argv[1] == 'metadata':

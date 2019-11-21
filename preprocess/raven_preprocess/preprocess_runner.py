@@ -18,8 +18,36 @@ from raven_preprocess.variable_display_util import VariableDisplayUtil
 from raven_preprocess.dataset_level_info_util import DatasetLevelInfo
 from raven_preprocess.file_format_util import FileFormatUtil
 
-
 KEY_JSONLD_CITATION = 'jsonld_citation'
+
+def none_to_null(x):
+    return 'NULL' if x is None else x
+
+# map to convert from new to old format
+conversions = dict(
+    description = ('labl',),
+    variableName = ('varnamesSumStat',),
+    mode = ('mode', lambda x: str(x[0]) if x else ''),
+    invalidCount = ('invalid',),
+    validCount = ('valid',),
+    stdDev = ('sd',),
+    uniqueCount = ('uniques',),
+    herfindahlIndex = ('herfindahl',),
+    modeFreq = ('freqmode',),
+    fewestValues = ('fewest', lambda x: str(x[0]) if x else ''),
+    midpoint = ('mid', str),
+    fewestFreq = ('freqfewest',),
+    midpointFreq = ('freqmid',),
+    binary = ('binary', lambda x: 'yes' if x else 'no'),
+    time = ('time', lambda x: 'yes' if x != 'unknown' else 'no'),
+    pdfPlotType = ('plottype', none_to_null),
+    pdfPlotX = ('plotx',),
+    pdfPlotY = ('ploty',),
+    cdfPlotType = ('cdfplottype', none_to_null),
+    cdfPlotX = ('cdfplotx', none_to_null),
+    cdfPlotY = ('cdfploty', none_to_null),
+    plotValues = ('plotvalues',),
+)
 
 
 class PreprocessRunner(object):
@@ -255,7 +283,7 @@ class PreprocessRunner(object):
 
         return info_dict
 
-    def show_final_info(self):
+    def show_final_info(self, old_format=False):
         """Print the final info to the screen"""
         if self.has_error:
             err_msg = 'An error occurred earlier in the process:\n%s' % \
@@ -263,7 +291,7 @@ class PreprocessRunner(object):
             print(err_msg)
             return
 
-        info_string = self.get_final_dict(as_string=True)
+        info_string = self.get_final_dict(as_string=True, old_format=old_format)
 
         print(info_string)
 
@@ -278,7 +306,7 @@ class PreprocessRunner(object):
         return self.get_final_dict(as_string=True,
                                    indent=indent)
 
-    def get_final_json(self, indent=None):
+    def get_final_json(self, indent=None, old_format=False):
         """Return the final variable info as a JSON string"""
         if self.has_error:
             err_msg = 'An error occurred earlier in the process:\n%s' % \
@@ -286,10 +314,39 @@ class PreprocessRunner(object):
             print(err_msg)
             return
 
-        return self.get_final_dict(as_string=True,
-                                   indent=indent)
+        return self.get_final_dict(as_string=True, indent=indent, old_format=old_format)
 
-    def get_final_dict(self, as_string=False, **kwargs):
+    def convert(self, data, old_format):
+        """Convert from new to old format"""
+        if not old_format:
+            return data
+
+        out = OrderedDict()
+        for k, v in data.items():
+            conv = conversions.get(k)
+            if conv:
+                out[conv[0]] = conv[1](v) if len(conv) == 2 else v
+            else:
+                out[k] = v
+
+        out['varnamesTypes'] = out['varnamesSumStat']
+        out['defaultInterval'] = out['interval']
+        out['defaultNumchar'] = out['numchar']
+        out['defaultNature'] = out['nature']
+        out['defaultBinary'] = out['binary']
+        out['defaultTime'] = out['time']
+
+        if out['plotvalues']:
+            out['plottype'] = 'bar'
+
+        del out['location']
+        for x in ('plotx', 'ploty', 'plotvalues'):
+            if out[x] is None or not len(out[x]):
+                del out[x]
+
+        return out
+
+    def get_final_dict(self, as_string=False, old_format=False, **kwargs):
         """Return the preprocess data as an OrderedDict"""
         if self.has_error:
             err_msg = 'An error occurred earlier in the process:\n%s' % \
@@ -297,34 +354,67 @@ class PreprocessRunner(object):
             print(err_msg)
             return
 
-        fmt_variable_info = OrderedDict()   # capture the variables section
-        fmt_display_variable_info = OrderedDict()   # capture the variable_display section
+        fmt_variable_info = OrderedDict() # capture the variables section
+        fmt_display_variable_info = OrderedDict() # capture the variable_display section
         fmt_display_variable_info['editable'] = ColumnInfo.get_editable_column_labels()
+
         # Iterate through each column and pull variable + variable_display info
-        #
         for col_name, col_info in self.variable_info.items():
             # col_info.print_values()
-            fmt_variable_info[col_name] = col_info.as_dict()
-            fmt_display_variable_info[col_name] = VariableDisplayUtil.get_default_settings()
+            fmt_variable_info[col_name] = self.convert(col_info.as_dict(), old_format)
+            if not old_format:
+                fmt_display_variable_info[col_name] = VariableDisplayUtil.get_default_settings()
+
+        desc = self.get_dataset_level_info()
 
         # Format the entire document
-        #
         overall_dict = OrderedDict()
-        overall_dict['$schema'] = 'http://json-schema.org/schema#'
-        overall_dict['$id'] = 'https://github.com/TwoRavens/raven-metadata-service/schema/jsonschema/1-0-0.json#'
-
-        overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section()  # add the "self" section
-
-        # add the 'dataset' section
-        overall_dict[col_const.DATASET_LEVEL_KEY] = self.get_dataset_level_info()
-
-        overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info    # add "variables"
-
-        overall_dict[col_const.VARIABLE_DISPLAY_SECTION_KEY] = fmt_display_variable_info
+        if old_format:
+            overall_dict['dataset'] = {
+                "private": False,
+                "stdyDscr": {
+                  "citation": {
+                    "titlStmt": {
+                      "titl": "",
+                      "IDNo": {
+                        "-agency": "",
+                        "#text": ""
+                      }
+                    },
+                    "rspStmt": {
+                      "Authentry": ""
+                    },
+                    "biblcit": "No Data Citation Provided"
+                  }
+                },
+                "fileDscr": {
+                  "-ID": "",
+                  "fileTxt": {
+                    "fileName": desc['dataSource']['name'],
+                    "dimensns": {
+                      "caseQnty": desc['rowCount'],
+                      "varQnty": desc['variableCount']
+                    },
+                    "fileType": desc['dataSource']['format']
+                  },
+                  "notes": {
+                    "-level": "",
+                    "-type": "",
+                    "-subject": "",
+                    "#text": ""
+                  }
+                }
+            }
+            overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info
+        else:
+            overall_dict['$schema'] = 'https://github.com/TwoRavens/raven-metadata-service/schema/jsonschema/1-0-0.json#'
+            overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section()
+            overall_dict[col_const.DATASET_LEVEL_KEY] = desc
+            overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info
+            overall_dict[col_const.VARIABLE_DISPLAY_SECTION_KEY] = fmt_display_variable_info
 
         if as_string:
             # Convert the OrderedDict to a JSON string
-            #
             indent_level = kwargs.get('indent', 4)
             if indent_level is None:
                 pass
@@ -336,9 +426,7 @@ class PreprocessRunner(object):
                               cls=NumpyJSONEncoder)
 
         # w/o this step, a regular json.dumps() fails on the returned dict
-        #
-        jstring = json.dumps(overall_dict,
-                             cls=NumpyJSONEncoder)
+        jstring = json.dumps(overall_dict, cls=NumpyJSONEncoder)
         return json.loads(jstring,
                           object_pairs_hook=OrderedDict,
                           parse_float=decimal.Decimal)
