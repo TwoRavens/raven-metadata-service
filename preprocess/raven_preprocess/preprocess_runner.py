@@ -25,8 +25,10 @@ def none_to_null(x):
 
 # map to convert from new to old format
 conversions = dict(
-    description = ('labl',),
+    description = ('',),
     variableName = ('varnamesSumStat',),
+    mean = ('mean', str),
+    median = ('median', str),
     mode = ('mode', lambda x: str(x[0]) if x else ''),
     invalidCount = ('invalid',),
     validCount = ('valid',),
@@ -36,19 +38,18 @@ conversions = dict(
     modeFreq = ('freqmode',),
     fewestValues = ('fewest', lambda x: str(x[0]) if x else ''),
     midpoint = ('mid', str),
-    fewestFreq = ('freqfewest',),
-    midpointFreq = ('freqmid',),
+    fewestFreq = ('freqfewest', str),
+    midpointFreq = ('freqmid', str),
     binary = ('binary', lambda x: 'yes' if x else 'no'),
-    time = ('time', lambda x: 'yes' if x != 'unknown' else 'no'),
+    time = ('', lambda x: 'yes' if x != 'unknown' else 'no'),
     pdfPlotType = ('plottype', none_to_null),
     pdfPlotX = ('plotx',),
     pdfPlotY = ('ploty',),
-    cdfPlotType = ('cdfplottype', none_to_null),
-    cdfPlotX = ('cdfplotx', none_to_null),
-    cdfPlotY = ('cdfploty', none_to_null),
+    cdfPlotType = ('',),
+    cdfPlotX = ('',),
+    cdfPlotY = ('',),
     plotValues = ('plotvalues',),
 )
-
 
 class PreprocessRunner(object):
     """Preprocess relatively small files using pandas"""
@@ -324,7 +325,9 @@ class PreprocessRunner(object):
         out = OrderedDict()
         for k, v in data.items():
             conv = conversions.get(k)
-            if conv:
+            if conv and not conv[0]:
+                continue
+            elif conv:
                 out[conv[0]] = conv[1](v) if len(conv) == 2 else v
             else:
                 out[k] = v
@@ -334,7 +337,6 @@ class PreprocessRunner(object):
         out['defaultNumchar'] = out['numchar']
         out['defaultNature'] = out['nature']
         out['defaultBinary'] = out['binary']
-        out['defaultTime'] = out['time']
 
         if out['plotvalues']:
             out['plottype'] = 'bar'
@@ -372,38 +374,6 @@ class PreprocessRunner(object):
         if old_format:
             overall_dict['dataset'] = {
                 "private": False,
-                "stdyDscr": {
-                  "citation": {
-                    "titlStmt": {
-                      "titl": "",
-                      "IDNo": {
-                        "-agency": "",
-                        "#text": ""
-                      }
-                    },
-                    "rspStmt": {
-                      "Authentry": ""
-                    },
-                    "biblcit": "No Data Citation Provided"
-                  }
-                },
-                "fileDscr": {
-                  "-ID": "",
-                  "fileTxt": {
-                    "fileName": desc['dataSource']['name'],
-                    "dimensns": {
-                      "caseQnty": desc['rowCount'],
-                      "varQnty": desc['variableCount']
-                    },
-                    "fileType": desc['dataSource']['format']
-                  },
-                  "notes": {
-                    "-level": "",
-                    "-type": "",
-                    "-subject": "",
-                    "#text": ""
-                  }
-                }
             }
             overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info
         else:
