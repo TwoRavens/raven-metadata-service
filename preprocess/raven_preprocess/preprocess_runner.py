@@ -27,8 +27,6 @@ def none_to_null(x):
 conversions = dict(
     description = ('',),
     variableName = ('varnamesSumStat',),
-    mean = ('mean', str),
-    median = ('median', str),
     mode = ('mode', lambda x: str(x[0]) if x else ''),
     invalidCount = ('invalid',),
     validCount = ('valid',),

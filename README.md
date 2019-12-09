@@ -4,86 +4,79 @@
 
 # raven-metadata-service
 
-Service to produce TwoRavens metadata.  Description of the produced metadata: http://two-ravens-metadata-service.readthedocs.io
+Service to produce TwoRavens metadata.
 
-## Library
-
-Note: the preprocess library, without the web service, is available via pypi: https://tworavens.github.io/TwoRavens/Metadata/
-
+More detailed documentation is available at: https://tworavens.github.io/TwoRavens/Metadata/
 
 ## Install
+
+The preprocess library, without the web service, is available via pypi: https://pypi.org/project/tworavens-preprocess/
+
+```pip install tworavens-preprocess```
+
+### Manual install
 
 Prerequisites:
   - python3
   - [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/install.html)
 
-
-Open a Terminal, from the top of this repository, run:
+Open a Terminal:
 
 ```
-# from within ~/raven-metadata-service
+git clone https://github.com/TwoRavens/raven-metadata-service.git
+cd ~/raven-metadata-service
 mkvirtualenv preprocess
 pip install -r requirements/30_preprocess_web.txt
 ```
 
-## Preprocess a single file from the command line
+## Usage
 
-Open a Terminal, from the top of this repository, run:
+### Within Python
+
+Preprocess a single file, write output to screen:
 
 ```
-# from within ~/raven-metadata-service
+from raven_preprocess.preprocess import run_preprocess
+run_preprocess('path-to-input-file.csv')
+```
+
+Preprocess a single file, write output to file:
+
+```
+from raven_preprocess.preprocess import run_preprocess
+run_preprocess('path-to-input-file.csv', 'path-to-OUTPUT-file.csv')
+```
+
+### Using the wrapper from the manual install
+
+Open a Terminal:
+
+```
+cd ~/raven-metadata-service/preprocess/raven_preprocess
 workon preprocess
-cd preprocess_web/code
-npm install
 ```
 
+Preprocess a single file, write output to screen:
 
+```python preprocess.py [input file]```
 
+Example:
 
-```
-# -------------------------
-# Preprocess a single file,
-# Write output to screen
-# -------------------------
-fab run_preprocess:[input file name]
+```python preprocess.py ../../test_data/fearonLaitin.csv```
 
-# Example:
-fab run_preprocess:../../test_data/fearonLaitin.csv
+Preprocess a single file, write output to file:
 
+```python preprocess.py [input file name] [output file]```
 
-# -------------------------
-# Preprocess a single file,
-# Write output to file
-# -------------------------
-fab run_preprocess:[input file name],[output file]
-fab run_preprocess:../../test_data/fearonLaitin.csv,/tmp/fearonLaitin.json
-```
+Example:
 
-## General preprocess workflow
+```python preprocess.py ../../test_data/fearonLaitin.csv /tmp/fearonLaitin.json```
 
-This gives an overview of the code within `raven-metadata-service/preprocess/code`
+Both ways accept an --old-format flag which will convert the output to be the same as that available on Harvard Dataverse.
 
-### PreprocessRunner
-  - Object that handles overall preprocess logic
-  - file: `preprocess_runner.py`
+```python preprocess.py ../../test_data/fearonLaitin.csv --old-format```
 
-**How it is used:**
-
-1. Instantiate **PreprocessRunner** using a pandas Dataframe
-    - staticmethods can instantiate **PreprocessRunner** using a .csv or .tab file:
-        - `PreprocessRunner.load_from_csv_file(..file path..)`
-        - `PreprocessRunner.load_from_tabular_file(..file path..)`
-1. Iterate through the columns of the Dataframe
-    - Create a **ColumnInfo** object (`column_info.py`) which contains all of the output variables names
-      - Pass the **ColumnInfo** object + column data (`pandas.Series`) through these utils:
-          - **TypeGuessUtil** (`type_guess_util.py`)
-          - **SummaryStatsUtil** (`summary_stats_util.py`)
-          - **PlotValuesUtil** (`plot_values.py`)
-      - Each of the classes above fills in data within the **ColumnInfo** object
-
-**Example of use:**
- - See `preprocess.py`
-
+More examples can be found in the [documentation](https://tworavens.github.io/TwoRavens/Metadata/).
 
 ## Run tests
 
@@ -99,3 +92,11 @@ workon preprocess
 cd docs
 make html
 ```
+
+## Code of Conduct
+
+...
+
+## License
+
+Apache 2.0
