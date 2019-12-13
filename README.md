@@ -2,7 +2,7 @@
 
 ---
 
-# raven-metadata-service
+# TwoRavens Metadata Service
 
 Service to produce TwoRavens metadata.
 
@@ -33,7 +33,36 @@ pip install -r requirements/30_preprocess_web.txt
 
 ### Within Python
 
-Preprocess a single file, write output to screen:
+Preprocess a single file:
+
+```
+from raven_preprocess.preprocess_runner import PreprocessRunner
+
+run_info = PreprocessRunner.load_from_file('input/path/my-data-file.csv')
+if not run_info.success:
+    print(run_info.err_msg)
+else:
+    runner = run_info.result_obj
+
+    # show the JSON (string)
+    print(runner.get_final_json(indent=4))
+
+    # retrieve the data as an OrderedDict
+    metadata = runner.get_final_dict()
+
+    # iterate through the variables
+    for vkey, vinfo in metadata['variables'].items():
+        print('-' * 40)
+        print(f'--- {vkey} ---')
+        print('nature:', vinfo['nature'])
+        print('invalidCount:', vinfo['invalidCount'])
+        print('validCount:', vinfo['validCount'])
+        print('uniqueCount:', vinfo['uniqueCount'])
+        print('median:', vinfo['median'])
+        print('etc...')
+```
+
+or
 
 ```
 from raven_preprocess.preprocess import run_preprocess
@@ -80,22 +109,25 @@ More examples can be found in the [documentation](https://tworavens.github.io/Tw
 
 ## Run tests
 
+The test suite is available for development purposes when installed manually.
+
 ```
-cd preprocess/code
+cd ~/raven-metadata-service/preprocess/code
 python -m unittest
 ```
 
-## Create docs
+## Authors
 
-```
-workon preprocess
-cd docs
-make html
-```
+Kripanshu Bhargava
+Vito D'Orazio
+James Honaker
+Aaron Lebo
+Alan Lin
+Raman Prasad
 
-## Code of Conduct
+## Community Guidelines
 
-...
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## License
 
