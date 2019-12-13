@@ -9,6 +9,8 @@ pip install tworavens-preprocess
 
 ##  Preprocess a data file
 
+- Open a python shell
+
 ```
 from raven_preprocess.preprocess_runner import PreprocessRunner
 
