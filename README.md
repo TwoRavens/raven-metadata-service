@@ -118,12 +118,12 @@ python -m unittest
 
 ## Authors
 
-Kripanshu Bhargava
-Vito D'Orazio
-James Honaker
-Aaron Lebo
-Alan Lin
-Raman Prasad
+* Kripanshu Bhargava
+* Vito D'Orazio
+* James Honaker
+* Aaron Lebo
+* Alan Lin
+* Raman Prasad
 
 ## Community Guidelines
 
