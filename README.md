@@ -122,8 +122,9 @@ python -m unittest
 * Vito D'Orazio
 * James Honaker
 * Aaron Lebo
-* Alan Lin
+* Yu Lin
 * Raman Prasad
+* Michael Shoemate
 
 ## Community Guidelines
 
