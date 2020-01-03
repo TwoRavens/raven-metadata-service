@@ -73,7 +73,7 @@ Preprocess a single file, write output to file:
 
 ```
 from raven_preprocess.preprocess import run_preprocess
-run_preprocess('path-to-input-file.csv', 'path-to-OUTPUT-file.csv')
+run_preprocess('path-to-input-file.csv', 'path-to-OUTPUT-file.json')
 ```
 
 ### Using the wrapper from the manual install
