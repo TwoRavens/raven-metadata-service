@@ -1,4 +1,5 @@
 """ Module for type guessing """
+import collections
 import datetime
 import re
 
@@ -37,43 +38,49 @@ def match(sample, lookup, threshold):
 
     return matches
 
+months = set('jan january feb february mar march apr april may jun june jul july aug august sep september oct october nov november dec december'.split())
+days = set('mon monday tue tuesday wed wednesday thur thurs thursday fri friday sat saturday sun sunday'.split())
+
 def lookup_date(val, year):
-    """returns datetime.datetime or None by parsing with dateutil after filtering out obvious non-date values"""
+    """returns year, month, day, datetime, or None"""
     if not isinstance(val, str):
-        if not year and val < 1600 or val > 2100:
-            return
+        return 'year' if 1600 <= val <= 2100 else None
+    if val in months:
+        return 'month'
+    if val in days:
+        return 'day'
 
-        val = str(val)
-
-    val = val.strip().replace(',', '/')
-    if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and not len(val) in (4, 6, 8) or val.startswith('-'):
+    val = val.replace(',', '/')
+    if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and ('.' in val or not len(val) in (4, 6, 8)):
         return
 
     try:
-        return dateutil.parser.parse(val)
+        dateutil.parser.parse(val)
+        return 'year' if year else 'datetime'
     except:
         pass
 
 def lookup_location(x):
-    """returns us.State or pycountry obj or None"""
+    """returns US state, country, country subdivision, or None"""
     if not isinstance(x, str):
-        return 
+        return
 
     x = pycountry.remove_accents(x)
     ln = len(x)
     if ln == 1 or digit_re.fullmatch(x) or x in {'male', 'no'}:
         return
-    elif ln == 2:
+    if ln == 2:
         state = us.states.lookup(x.upper(), 'abbr')
         if state:
-            return state
+            return 'US state'
 
     state = us.states.lookup(x.title(), 'name')
     if state:
-        return state
+        return 'US state'
 
     try:
-        return countries.lookup(x)
+        pycountry.countries.lookup(x)
+        return 'country'
     except:
         pass
 
@@ -85,7 +92,7 @@ def lookup_location(x):
             val = pycountry.remove_accents(val.lower())
             for val in val.split(';'):
                 if val == x:
-                    return sd
+                    return 'country subdivision'
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
@@ -114,10 +121,10 @@ class TypeGuessUtil(BasicErrCheck):
 
         self.col_info.binary = col_const.BINARY_YES if len(self.col_series.unique()) == 2 else col_const.BINARY_NO
 
+        cnt = self.col_series.count()
+        num_sample = 10
+        sample = self.col_series.sample(n=num_sample if cnt >= num_sample else cnt, random_state=1)
         if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
-            cnt = self.col_series.count()
-            num_sample = 10
-            sample = self.col_series.sample(n=num_sample if cnt >= num_sample else cnt, random_state=1)
             self.col_info.time_val = self.check_time(sample)
             if self.col_info.time_val == col_const.UNKNOWN:
                 self.col_info.location_val = self.check_location(sample)
@@ -146,7 +153,7 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     self.col_info.nature = self.check_nature(self.col_series, True)
                 else:
-                    self.col_info.time_val = self.check_time(self.col_series)
+                    self.col_info.time_val = self.check_time(sample)
                     self.col_info.default_interval = col_const.INTERVAL_DISCRETE
                     self.col_info.nature = self.check_nature(series_info, False)
 
@@ -201,7 +208,12 @@ class TypeGuessUtil(BasicErrCheck):
         name = var_series.name.lower()
         if name.endswith('id') or not var_series.dtype in ('int64', 'object'):
             return col_const.UNKNOWN
-        return True if match(var_series, lambda x: lookup_date(x, name == 'year'), 0.5) else col_const.UNKNOWN
+
+        matches = match(var_series, lambda x: lookup_date(x, name == 'year'), 0.5)
+        for k, _ in collections.Counter(matches).most_common(2):
+            if k:
+                return k
+        return col_const.UNKNOWN
 
     @staticmethod
     def check_location(var_series):
@@ -211,4 +223,9 @@ class TypeGuessUtil(BasicErrCheck):
 
         if var_series.dtype != 'object':
             return col_const.UNKNOWN
-        return True if match(var_series, lookup_location, 0.5) else col_const.UNKNOWN
+
+        matches = match(var_series, lambda x: lookup_location(x), 0.5)
+        for k, _ in collections.Counter(matches).most_common(2):
+            if k:
+                return k
+        return col_const.UNKNOWN
