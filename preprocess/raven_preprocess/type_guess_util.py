@@ -7,6 +7,7 @@ import dateutil.parser
 import numpy as np
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
+from pandas.core.tools.datetimes import _guess_datetime_format
 import pycountry
 import us
 
@@ -42,13 +43,13 @@ months = set('jan january feb february mar march apr april may jun june jul july
 days = set('mon monday tue tuesday wed wednesday thur thurs thursday fri friday sat saturday sun sunday'.split())
 
 def lookup_date(val, year):
-    """returns year, month, day, datetime, or None"""
+    """returns date format where possible or None"""
     if not isinstance(val, str):
-        return 'year' if 1600 <= val <= 2100 else None
+        return '%Y' if 1600 <= val <= 2100 else None
     if val in months:
-        return 'month'
+        return '%b' if len(val) == 3 else '%B'
     if val in days:
-        return 'day'
+        return '%a' if len(val) <= 4 else '%A'
 
     val = val.replace(',', '/')
     if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and ('.' in val or not len(val) in (4, 6, 8)):
@@ -56,7 +57,9 @@ def lookup_date(val, year):
 
     try:
         dateutil.parser.parse(val)
-        return 'year' if year else 'datetime'
+        if year:
+            return '%Y' if len(val) == 4 else '%y'
+        return _guess_datetime_format(val) or '?'
     except:
         pass
 
@@ -102,8 +105,8 @@ class TypeGuessUtil(BasicErrCheck):
 
         self.col_series = col_series
         self.col_info = col_info
-        self.col_info.location_val = col_const.UNKNOWN
-        self.col_info.time_val = col_const.UNKNOWN
+        self.col_info.location_val = False
+        self.col_info.time_val = False
         self.binary = False
 
         # final outout returned
@@ -125,9 +128,13 @@ class TypeGuessUtil(BasicErrCheck):
         num_sample = 10
         sample = self.col_series.sample(n=num_sample if cnt >= num_sample else cnt, random_state=1)
         if self.is_not_numeric(self.col_series) or self.is_logical(self.col_series):
-            self.col_info.time_val = self.check_time(sample)
-            if self.col_info.time_val == col_const.UNKNOWN:
-                self.col_info.location_val = self.check_location(sample)
+            time_unit = self.check_time(sample)
+            self.col_info.time_val = bool(time_unit)
+            self.col_info.time_unit = time_unit if time_unit != '?' else None
+            if self.col_info.time_val is None:
+                location_unit = self.check_location(sample)
+                self.col_info.location_val = bool(location_unit)
+                self.col_info.location_unit = location_unit
 
             self.col_info.numchar_val = col_const.NUMCHAR_CHARACTER
             self.col_info.default_interval = col_const.INTERVAL_DISCRETE
@@ -153,7 +160,9 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.default_interval = col_const.INTERVAL_CONTINUOUS
                     self.col_info.nature = self.check_nature(self.col_series, True)
                 else:
-                    self.col_info.time_val = self.check_time(sample)
+                    time_unit = self.check_time(sample)
+                    self.col_info.time_val = bool(time_unit)
+                    self.col_info.time_unit = time_unit if time_unit != '?' else None
                     self.col_info.default_interval = col_const.INTERVAL_DISCRETE
                     self.col_info.nature = self.check_nature(series_info, False)
 
@@ -207,13 +216,11 @@ class TypeGuessUtil(BasicErrCheck):
 
         name = var_series.name.lower()
         if name.endswith('id') or not var_series.dtype in ('int64', 'object'):
-            return col_const.UNKNOWN
+            return None
 
         matches = match(var_series, lambda x: lookup_date(x, name == 'year'), 0.5)
-        for k, _ in collections.Counter(matches).most_common(2):
-            if k:
-                return k
-        return col_const.UNKNOWN
+        if matches:
+            return collections.Counter(x for x in matches if x).most_common(1)[0][0]
 
     @staticmethod
     def check_location(var_series):
@@ -222,10 +229,8 @@ class TypeGuessUtil(BasicErrCheck):
             "var_series must be a pandas.Series. Found type: (%s)" % type(var_series)
 
         if var_series.dtype != 'object':
-            return col_const.UNKNOWN
+            return None
 
         matches = match(var_series, lambda x: lookup_location(x), 0.5)
-        for k, _ in collections.Counter(matches).most_common(2):
-            if k:
-                return k
-        return col_const.UNKNOWN
+        if matches:
+            return collections.Counter(x for x in matches if x).most_common(1)[0][0]

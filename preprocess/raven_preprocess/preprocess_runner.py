@@ -39,7 +39,10 @@ conversions = dict(
     fewestFreq = ('freqfewest', str),
     midpointFreq = ('freqmid', str),
     binary = ('binary', lambda x: 'yes' if x else 'no'),
-    time = ('', lambda x: 'yes' if x != 'unknown' else 'no'),
+    geographic = ('',),
+    locationUnit = ('',),
+    temporal = ('',),
+    timeUnit = ('',),
     pdfPlotType = ('plottype', none_to_null),
     pdfPlotX = ('plotx',),
     pdfPlotY = ('ploty',),
@@ -339,7 +342,6 @@ class PreprocessRunner(object):
         if out['plotvalues']:
             out['plottype'] = 'bar'
 
-        del out['location']
         for x in ('plotx', 'ploty', 'plotvalues'):
             if out[x] is None or not len(out[x]):
                 del out[x]
@@ -375,7 +377,7 @@ class PreprocessRunner(object):
             }
             overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info
         else:
-            overall_dict['$schema'] = 'https://github.com/TwoRavens/raven-metadata-service/schema/jsonschema/1-0-0.json#'
+            overall_dict['$schema'] = 'https://github.com/TwoRavens/raven-metadata-service/schema/jsonschema/1-1-0.json#'
             overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section()
             overall_dict[col_const.DATASET_LEVEL_KEY] = desc
             overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info

@@ -43,7 +43,9 @@ class ColumnInfo(object):
         self.default_interval = None
         self.nature = None
         self.location_val = None
+        self.location_unit = None
         self.time_val = None
+        self.time_unit = None
         self.binary = None
 
         # set at type util
@@ -178,8 +180,10 @@ class ColumnInfo(object):
 
             ('binary', 'binary'),
             ('interval', 'default_interval'),
-            ('location', 'location_val'),
-            ('time', 'time_val'),
+            ('geographic', 'location_val'),
+            ('locationUnit', 'location_unit'),
+            ('temporal', 'time_val'),
+            ('timeUnit', 'time_unit'),
 
             ('invalidCount', 'invalid'),
             ('validCount', 'valid'),
