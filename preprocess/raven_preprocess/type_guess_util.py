@@ -40,7 +40,7 @@ def match(sample, lookup, threshold):
     return matches
 
 months = set('jan january feb february mar march apr april may jun june jul july aug august sep september oct october nov november dec december'.split())
-days = set('mon monday tue tuesday wed wednesday thur thurs thursday fri friday sat saturday sun sunday'.split())
+days = set('mon monday tue tuesday wed wednesday thu thursday fri friday sat saturday sun sunday'.split())
 
 def lookup_date(val, year):
     """returns date format where possible or None"""
@@ -49,7 +49,7 @@ def lookup_date(val, year):
     if val in months:
         return '%b' if len(val) == 3 else '%B'
     if val in days:
-        return '%a' if len(val) <= 4 else '%A'
+        return '%a' if len(val) == 3 else '%A'
 
     val = val.replace(',', '/')
     if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and ('.' in val or not len(val) in (4, 6, 8)):
