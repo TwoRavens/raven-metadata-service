@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tworavens_preprocess",
-    version="1.0",
+    version="1.1",
     author="Two Ravens Team",
     author_email="raman_prasad@harvard.edu",
     description="TwoRavens Preprocess package",
@@ -22,7 +22,7 @@ setuptools.setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',

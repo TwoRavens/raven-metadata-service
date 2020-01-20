@@ -13,6 +13,7 @@ pip install setuptools wheel twine
 
 # Open/Edit /preprocess/setup.py
 # - Update any necessary information
+# - Example: "version"
 
 # build packages
 #
