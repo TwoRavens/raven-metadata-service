@@ -131,7 +131,7 @@ class TypeGuessUtil(BasicErrCheck):
             time_unit = self.check_time(sample)
             self.col_info.time_val = bool(time_unit)
             self.col_info.time_unit = time_unit if time_unit != '?' else None
-            if self.col_info.time_val is None:
+            if not self.col_info.time_val:
                 location_unit = self.check_location(sample)
                 self.col_info.location_val = bool(location_unit)
                 self.col_info.location_unit = location_unit
