@@ -85,6 +85,7 @@ class PreprocessRunner(object):
         self.current_time = datetime.datetime.fromtimestamp(time_stamp)\
             .strftime('%Y-%m-%d %H:%M:%S')
         self.preprocess_id = None
+        self.user_vars = kwargs.get('user_vars')
 
 
         self.run_preprocess()
@@ -206,7 +207,7 @@ class PreprocessRunner(object):
             col_info = ColumnInfo(colnames)
             col_series = self.data_frame[colnames]
 
-            type_guess_util = TypeGuessUtil(col_series, col_info)
+            type_guess_util = TypeGuessUtil(col_series, col_info, user_vars=self.user_vars)
             if type_guess_util.has_error():
                 self.add_error_message(type_guess_util.get_error_message())
                 return

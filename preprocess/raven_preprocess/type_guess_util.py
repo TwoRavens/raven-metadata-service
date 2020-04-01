@@ -99,7 +99,7 @@ def lookup_location(x):
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
-    def __init__(self, col_series, col_info):
+    def __init__(self, col_series, col_info, user_vars=None):
         """Init with a pandas dataframe"""
         assert col_series is not None, "dataframe can't be None"
 
@@ -107,12 +107,14 @@ class TypeGuessUtil(BasicErrCheck):
         self.col_info = col_info
         self.col_info.location_val = False
         self.col_info.time_val = False
+        self.user_vars = user_vars or {}
         self.binary = False
 
         # final outout returned
         self.check_types()
 
     def check_types(self):
+        var = self.user_vars.get(self.col_info.colname)
         """check the types of the dataframe"""
         # assert self.colnames, 'self.colnames must have values'
 
@@ -165,6 +167,19 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.time_unit = time_unit if time_unit != '?' else None
                     self.col_info.default_interval = col_const.INTERVAL_DISCRETE
                     self.col_info.nature = self.check_nature(series_info, False)
+
+        if self.col_info.time_val != var['temporal']: 
+            self.col_info.time_val = var['temporal']
+        if self.col_info.time_unit != var['timeUnit']: 
+            self.col_info.time_unit = var['timeUnit']
+        if self.col_info.location_val != var['geographic']: 
+            self.col_info.location_val = var['geographic']
+        if self.col_info.location_unit != var['locationUnit']: 
+            self.col_info.location_unit = var['locationUnit']
+
+        return # setting the nature to a bad value can cause the entire preprocess to error; needs work
+        if self.col_info.nature != var['nature']: 
+            self.col_info.nature = var['nature']
 
     @staticmethod
     def is_not_numeric(var_series):
