@@ -168,18 +168,19 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.default_interval = col_const.INTERVAL_DISCRETE
                     self.col_info.nature = self.check_nature(series_info, False)
 
-        if self.col_info.time_val != var['temporal']: 
-            self.col_info.time_val = var['temporal']
-        if self.col_info.time_unit != var['timeUnit']: 
-            self.col_info.time_unit = var['timeUnit']
-        if self.col_info.location_val != var['geographic']: 
-            self.col_info.location_val = var['geographic']
-        if self.col_info.location_unit != var['locationUnit']: 
-            self.col_info.location_unit = var['locationUnit']
+        if var:
+            if self.col_info.time_val != var['temporal']: 
+                self.col_info.time_val = var['temporal']
+            if self.col_info.time_unit != var['timeUnit']: 
+                self.col_info.time_unit = var['timeUnit']
+            if self.col_info.location_val != var['geographic']: 
+                self.col_info.location_val = var['geographic']
+            if self.col_info.location_unit != var['locationUnit']: 
+                self.col_info.location_unit = var['locationUnit']
 
-        return # setting the nature to a bad value can cause the entire preprocess to error; needs work
-        if self.col_info.nature != var['nature']: 
-            self.col_info.nature = var['nature']
+            return # setting the nature to a bad value can cause the entire preprocess to error; needs work
+            if self.col_info.nature != var['nature']: 
+                self.col_info.nature = var['nature']
 
     @staticmethod
     def is_not_numeric(var_series):

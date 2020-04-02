@@ -378,7 +378,7 @@ class PreprocessRunner(object):
             }
             overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info
         else:
-            overall_dict['$schema'] = 'https://github.com/TwoRavens/raven-metadata-service/schema/jsonschema/1-1-0.json#'
+            overall_dict['$schema'] = 'https://github.com/TwoRavens/raven-metadata-service/schema/jsonschema/1-2-0.json#'
             overall_dict[col_const.SELF_SECTION_KEY] = self.get_self_section()
             overall_dict[col_const.DATASET_LEVEL_KEY] = desc
             overall_dict[col_const.VARIABLES_SECTION_KEY] = fmt_variable_info
