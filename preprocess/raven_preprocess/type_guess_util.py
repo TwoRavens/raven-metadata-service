@@ -14,6 +14,7 @@ import us
 import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo
 from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
+from raven_preprocess import format_parser
 
 # allow values like 01.02.03
 date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
@@ -56,10 +57,11 @@ def lookup_date(val, year):
         return
 
     try:
-        dateutil.parser.parse(val)
+        # dateutil.parser.parse(val)
+        _, res_format = format_parser.parse(val)
         if year:
             return '%Y' if len(val) == 4 else '%y'
-        return _guess_datetime_format(val) or '?'
+        return res_format or '?'
     except:
         pass
 

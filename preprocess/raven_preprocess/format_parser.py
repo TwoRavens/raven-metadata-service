@@ -239,7 +239,7 @@ class parser_with_format(parser.parser):
 
         res = self._result()
         l = parser._timelex.split(timestr)
-        # print(l)
+        print(l)
         # Auxiliary dict for date format
         format = [token for token in l]
 
@@ -669,10 +669,20 @@ def _format_parsems(value):
         return int(i), int(f.ljust(6, "0")[:6]), "%S.%f"
 
 
+DEFAULTPARSER = parser_with_format()
+
+
+def parse(timestr, parserinfo=None, **kwargs):
+    if parserinfo:
+        return parser_with_format(parserinfo).parse(timestr, **kwargs)
+    else:
+        return DEFAULTPARSER.parse(timestr, **kwargs)
+
+
 if __name__ == '__main__':
-    test_parser = parser_with_format()
-    test_str = '2010 04:00:00 UTC'
-    res, res_format = test_parser.parse(test_str)
+    # test_parser = parser_with_format()
+    test_str = '2010,07,01'
+    res, res_format = form.parse(test_str)
     print('Parsered Time {}'.format(res))
     print('Parsered Time Format {}'.format(res_format))
     new_res = datetime.datetime.strptime(test_str, res_format)
