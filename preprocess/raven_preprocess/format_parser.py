@@ -700,7 +700,7 @@ def parse(timestr, parserinfo=None, **kwargs):
 
 if __name__ == '__main__':
     # test_parser = parser_with_format()
-    test_str = '7/1/2014'
+    test_str = '2006-12-31'
     res, res_format = parse(test_str)
     print('Parsered Time {}'.format(res))
     print('Parsered Time Format {}'.format(res_format))
