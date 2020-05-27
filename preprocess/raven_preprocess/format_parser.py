@@ -239,7 +239,6 @@ class parser_with_format(parser.parser):
 
         res = self._result()
         l = parser._timelex.split(timestr)
-        print(l)
         # Auxiliary dict for date format
         format = [token for token in l]
 
@@ -492,6 +491,26 @@ class parser_with_format(parser.parser):
                         format[i] = '%p'
 
                         i += 1
+                    elif info.month(l[i]) is not None:
+                        # 12Sep[1999]
+                        assert mstridx == -1
+                        ymd.append([value, value_repr, i-1])
+                        ymd.append([info.month(l[i]), l[i], i])
+                        mstridx = len(ymd) - 1
+
+                        # Go to next token
+                        i += 1
+
+                        if i < len_l:
+                            pass
+                        else:
+                            # Assume l[i] is year
+                            try:
+                                ymd.append([l[i], l[i], i])
+                            except:
+                                # Wrong guess, fall back
+                                i -= 1
+
                     elif not fuzzy:
                         return None, None
                     else:
@@ -655,7 +674,7 @@ class parser_with_format(parser.parser):
         if not info.validate(res):
             return None, None
 
-        print(format)
+        # print(format)
         return res, "".join(format)
 
 
@@ -681,8 +700,8 @@ def parse(timestr, parserinfo=None, **kwargs):
 
 if __name__ == '__main__':
     # test_parser = parser_with_format()
-    test_str = '2010,07,01'
-    res, res_format = form.parse(test_str)
+    test_str = '05sep1957'
+    res, res_format = parse(test_str)
     print('Parsered Time {}'.format(res))
     print('Parsered Time Format {}'.format(res_format))
     new_res = datetime.datetime.strptime(test_str, res_format)
