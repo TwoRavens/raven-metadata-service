@@ -509,7 +509,7 @@ class parser_with_format(parser.parser):
                                 ymd.append([l[i], l[i], i])
                             except:
                                 # Wrong guess, fall back
-                                i -= 1
+                                pass
 
                     elif not fuzzy:
                         return None, None
@@ -700,7 +700,7 @@ def parse(timestr, parserinfo=None, **kwargs):
 
 if __name__ == '__main__':
     # test_parser = parser_with_format()
-    test_str = '05sep1957'
+    test_str = '05sep'
     res, res_format = parse(test_str)
     print('Parsered Time {}'.format(res))
     print('Parsered Time Format {}'.format(res_format))
