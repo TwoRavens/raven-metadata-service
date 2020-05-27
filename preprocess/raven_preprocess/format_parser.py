@@ -130,7 +130,7 @@ class _format_ymd(list):
             else:
                 return '?'
         elif 'month' == role:
-            if len(val_repr) == 2:
+            if len(val_repr) == 2 or len(val_repr) == 1:
                 return '%m'
             elif len(val_repr) == 3:
                 return '%b'
@@ -700,7 +700,7 @@ def parse(timestr, parserinfo=None, **kwargs):
 
 if __name__ == '__main__':
     # test_parser = parser_with_format()
-    test_str = '05sep'
+    test_str = '7/1/2014'
     res, res_format = parse(test_str)
     print('Parsered Time {}'.format(res))
     print('Parsered Time Format {}'.format(res_format))
