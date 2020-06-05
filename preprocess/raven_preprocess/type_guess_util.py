@@ -14,6 +14,7 @@ import us
 import raven_preprocess.col_info_constants as col_const
 from raven_preprocess.column_info import ColumnInfo
 from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
+from raven_preprocess import format_parser
 
 # allow values like 01.02.03
 date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
@@ -42,6 +43,7 @@ def match(sample, lookup, threshold):
 months = set('jan january feb february mar march apr april may jun june jul july aug august sep september oct october nov november dec december'.split())
 days = set('mon monday tue tuesday wed wednesday thu thursday fri friday sat saturday sun sunday'.split())
 
+
 def lookup_date(val, year):
     """returns date format where possible or None"""
     if not isinstance(val, str):
@@ -51,17 +53,25 @@ def lookup_date(val, year):
     if val in days:
         return '%a' if len(val) == 3 else '%A'
 
+    ori_val = val
     val = val.replace(',', '/')
     if not date_re.fullmatch(val) and not_date_re.fullmatch(val) and ('.' in val or not len(val) in (4, 6, 8)):
         return
 
     try:
-        dateutil.parser.parse(val)
+        # dateutil.parser.parse(val)
+        _, res_format = format_parser.parse(ori_val)
         if year:
-            return '%Y' if len(val) == 4 else '%y'
-        return _guess_datetime_format(val) or '?'
+            if len(val) == 4:
+                return '%Y'
+            elif len(val) == 2:
+                return '%y'
+            else:
+                pass
+        return res_format or '?'
     except:
         pass
+
 
 def lookup_location(x):
     """returns US state, country, country subdivision, or None"""
@@ -169,17 +179,17 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.nature = self.check_nature(series_info, False)
 
         if var:
-            if self.col_info.time_val != var['temporal']: 
+            if self.col_info.time_val != var['temporal']:
                 self.col_info.time_val = var['temporal']
-            if self.col_info.time_unit != var['timeUnit']: 
+            if self.col_info.time_unit != var['timeUnit']:
                 self.col_info.time_unit = var['timeUnit']
-            if self.col_info.location_val != var['geographic']: 
+            if self.col_info.location_val != var['geographic']:
                 self.col_info.location_val = var['geographic']
-            if self.col_info.location_unit != var['locationUnit']: 
+            if self.col_info.location_unit != var['locationUnit']:
                 self.col_info.location_unit = var['locationUnit']
 
             return # setting the nature to a bad value can cause the entire preprocess to error; needs work
-            if self.col_info.nature != var['nature']: 
+            if self.col_info.nature != var['nature']:
                 self.col_info.nature = var['nature']
 
     @staticmethod
@@ -236,7 +246,11 @@ class TypeGuessUtil(BasicErrCheck):
 
         matches = match(var_series, lambda x: lookup_date(x, name == 'year'), 0.5)
         if matches:
-            return collections.Counter(x for x in matches if x).most_common(1)[0][0]
+            # Add extra check for %b and %B
+            tmp_corpus = collections.Counter(x for x in matches if x).most_common(2)
+            if len(tmp_corpus) > 1 and '%b' in tmp_corpus[0][0] and '%B' in tmp_corpus[1][0]:
+                return tmp_corpus[1][0]
+            return tmp_corpus[0][0]
 
     @staticmethod
     def check_location(var_series):
