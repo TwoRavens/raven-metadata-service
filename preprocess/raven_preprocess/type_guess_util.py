@@ -179,17 +179,17 @@ class TypeGuessUtil(BasicErrCheck):
                     self.col_info.nature = self.check_nature(series_info, False)
 
         if var:
-            if self.col_info.time_val != var['temporal']: 
+            if self.col_info.time_val != var['temporal']:
                 self.col_info.time_val = var['temporal']
-            if self.col_info.time_unit != var['timeUnit']: 
+            if self.col_info.time_unit != var['timeUnit']:
                 self.col_info.time_unit = var['timeUnit']
-            if self.col_info.location_val != var['geographic']: 
+            if self.col_info.location_val != var['geographic']:
                 self.col_info.location_val = var['geographic']
-            if self.col_info.location_unit != var['locationUnit']: 
+            if self.col_info.location_unit != var['locationUnit']:
                 self.col_info.location_unit = var['locationUnit']
 
             return # setting the nature to a bad value can cause the entire preprocess to error; needs work
-            if self.col_info.nature != var['nature']: 
+            if self.col_info.nature != var['nature']:
                 self.col_info.nature = var['nature']
 
     @staticmethod
