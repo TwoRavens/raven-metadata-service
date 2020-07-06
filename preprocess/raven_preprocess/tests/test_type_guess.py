@@ -212,7 +212,7 @@ class TestTypeGuess(unittest.TestCase):
     # The code below is not needed as the test case for valid and invalid is in test_summary_stats.py
     # def setUp(self,col_info = col_info):
     #     """Load up the test file"""
-    #     self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
+    #     self.df_01 = pd.read_csv(join(INPUT_DIR, 'test_file_01.csv'))
     #     type_guess_obj = TypeGuessUtil(self.df_01,col_info = col_info)
     #     self.variable_info_01 = type_guess_obj.get_variable_dict()
     #

@@ -13,8 +13,8 @@ from raven_preprocess.type_guess_util import TypeGuessUtil
 import raven_preprocess.col_info_constants as col_const
 
 def main():
-    df = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'),
-                               index_col=None)
+    df = pd.read_csv(join(INPUT_DIR, 'test_file_01.csv'),
+                     index_col=None)
 
     print(df.columns)
     #df.columns

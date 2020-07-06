@@ -1,5 +1,9 @@
 # History
 
+### v1.1.4
+  - Updated date parser
+  - Update numpy and scipy package versions
+
 ### v1.1.3
   - Updated date parser
 
