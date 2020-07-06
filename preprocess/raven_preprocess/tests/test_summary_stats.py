@@ -21,8 +21,8 @@ class SummaryStatsUtilTest(unittest.TestCase):
 
     def setUp(self):
         """Load up the test file"""
-        self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
-        self.df_02 = pd.DataFrame.from_csv(join(INPUT_DIR, 'sample_empty.csv'))
+        self.df_01 = pd.read_csv(join(INPUT_DIR, 'test_file_01.csv'))
+        self.df_02 = pd.read_csv(join(INPUT_DIR, 'sample_empty.csv'))
 
         self.dataset_level_info = DatasetLevelInfo(self.df_01).final_output
         self.emptydataerrors = DatasetLevelInfo(self.df_02)
@@ -131,9 +131,13 @@ class SummaryStatsUtilTest(unittest.TestCase):
         sample[col_const.DATASET_UNIT_OF_ANALYSIS] = ''
         sample[col_const.DATASET_STRUCTURE] = col_const.STRUCTURE_LONG
         sample[col_const.DATASET_ROW_CNT] = 12
-        sample[col_const.DATASET_VARIABLE_CNT] = 10
+        sample[col_const.DATASET_VARIABLE_CNT] = 11
 
-        # print('sample : ', sample)
+        #print('cols!!')
+        #for col in self.df_01.columns:
+        #    print(col)
+        #print('self.dataset_level_info : ', self.dataset_level_info)
+
         self.assertEqual(self.dataset_level_info, sample)
 
     def test_40_non_numeric_val_ok(self):

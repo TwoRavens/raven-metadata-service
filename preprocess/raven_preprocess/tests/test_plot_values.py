@@ -17,7 +17,7 @@ class PlotValuesTest(unittest.TestCase):
 
     def setUp(self):
         """Load up the test file"""
-        self.df_01 = pd.DataFrame.from_csv(join(INPUT_DIR, 'test_file_01.csv'))
+        self.df_01 = pd.read_csv(join(INPUT_DIR, 'test_file_01.csv'))
         self.col_info = ColumnInfo('quat')
         TypeGuessUtil(self.df_01['quat'],self.col_info)
         SummaryStatsUtil((self.df_01['quat']), self.col_info)
