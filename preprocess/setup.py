@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tworavens_preprocess",
-    version="1.1.3",
+    version="1.1.4",
     author="Two Ravens Team",
     author_email="raman_prasad@harvard.edu",
     description="TwoRavens Preprocess package",
@@ -44,11 +44,11 @@ setuptools.setup(
 
         install_requires=[
             'pandas>=0.22.0',
-            'scipy>=1.0.0',
+            'scipy>=1.4.1',
             'simplejson>=3.13.2',
-            'dictdiffer==0.8.0',
+            'dictdiffer==0.8.1',
             'requests>=2.20.0',
-            'numpy==1.16.4',
+            'numpy>=1.18.2',
             'xlrd>=1.1.0',
             'jsonschema>=2.6.0',
             'pycountry==19.8.18',
