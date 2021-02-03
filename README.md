@@ -19,7 +19,7 @@ The preprocess library, without the web service, is available via pypi: https://
 Prerequisites:
   - python3
   - [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/install.html)
-
+  - bz2 (sudo apt install or brew install libbz2-dev)
 Open a Terminal:
 
 ```

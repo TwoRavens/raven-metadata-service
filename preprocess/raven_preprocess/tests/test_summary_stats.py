@@ -27,7 +27,6 @@ class SummaryStatsUtilTest(unittest.TestCase):
         self.dataset_level_info = DatasetLevelInfo(self.df_01).final_output
         self.emptydataerrors = DatasetLevelInfo(self.df_02)
 
-
     def test_10_numeric_val_ok(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_10_numeric_val_ok.__doc__)
@@ -133,10 +132,10 @@ class SummaryStatsUtilTest(unittest.TestCase):
         sample[col_const.DATASET_ROW_CNT] = 12
         sample[col_const.DATASET_VARIABLE_CNT] = 11
 
-        #print('cols!!')
-        #for col in self.df_01.columns:
-        #    print(col)
-        #print('self.dataset_level_info : ', self.dataset_level_info)
+        # print('cols!!')
+        # for col in self.df_01.columns:
+        #     print(col)
+        # print('self.dataset_level_info : ', self.dataset_level_info)
 
         self.assertEqual(self.dataset_level_info, sample)
 
@@ -148,6 +147,7 @@ class SummaryStatsUtilTest(unittest.TestCase):
 
         self.assertTrue(has_error)
         print("Errors : ", errors)
+
 
 if __name__ == '__main__':
     unittest.main()

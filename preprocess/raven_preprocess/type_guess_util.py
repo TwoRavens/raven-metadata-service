@@ -7,12 +7,10 @@ import dateutil.parser
 import numpy as np
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
-from pandas.core.tools.datetimes import _guess_datetime_format
 import pycountry
 import us
 
 import raven_preprocess.col_info_constants as col_const
-from raven_preprocess.column_info import ColumnInfo
 from raven_preprocess.basic_utils.basic_err_check import BasicErrCheck
 from raven_preprocess import format_parser
 
@@ -22,6 +20,7 @@ date_re = re.compile(r'[\d]+\.[\d]+\.[\d]+')
 not_date_re = re.compile(r'-?[.\d]+')
 
 digit_re = re.compile(r'[\d]+')
+
 
 def match(sample, lookup, threshold):
     """returns list of matches for items in sample or None if num matches below threshold"""
@@ -39,6 +38,7 @@ def match(sample, lookup, threshold):
                 return
 
     return matches
+
 
 months = set('jan january feb february mar march apr april may jun june jul july aug august sep september oct october nov november dec december'.split())
 days = set('mon monday tue tuesday wed wednesday thu thursday fri friday sat saturday sun sunday'.split())
@@ -106,6 +106,7 @@ def lookup_location(x):
             for val in val.split(';'):
                 if val == x:
                     return 'country subdivision'
+
 
 class TypeGuessUtil(BasicErrCheck):
     """Check variable types of a dataframe"""
@@ -188,9 +189,11 @@ class TypeGuessUtil(BasicErrCheck):
             if self.col_info.location_unit != var['locationUnit']:
                 self.col_info.location_unit = var['locationUnit']
 
-            return # setting the nature to a bad value can cause the entire preprocess to error; needs work
-            if self.col_info.nature != var['nature']:
-                self.col_info.nature = var['nature']
+            # setting the nature to a bad value can cause the entire preprocess to error; needs work
+            return
+            # This is unreachable
+            # if self.col_info.nature != var['nature']:
+            #     self.col_info.nature = var['nature']
 
     @staticmethod
     def is_not_numeric(var_series):
