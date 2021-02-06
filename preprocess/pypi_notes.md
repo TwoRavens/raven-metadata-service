@@ -2,6 +2,7 @@
 # Steps for making the tworavens-preprocess package
 
 - reference: https://packaging.python.org/tutorials/packaging-projects/
+- pypi page: https://pypi.org/project/tworavens-preprocess/
 
 ```
 # from the repository's top directory:

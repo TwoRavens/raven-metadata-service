@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tworavens_preprocess",
-    version="1.1.4",
+    version="1.1.5",
     author="Two Ravens Team",
     author_email="raman_prasad@harvard.edu",
     description="TwoRavens Preprocess package",
@@ -35,7 +35,10 @@ setuptools.setup(
         # that you indicate whether you support Python 2, Python 3 or both.
         # These classifiers are *not* checked by 'pip install'. See instead
         # 'python_requires' below.
-        'Programming Language :: Python :: 3.6'
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
         ],
 
         keywords='tworavens preprocess metadata',  # Optional
