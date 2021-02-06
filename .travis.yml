@@ -39,7 +39,7 @@ after_success:
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push tworavens/raven-metadata-service:latest;
     fi
-  - if [ "$TRAVIS_BRANCH" = "develop" ]; then
+  - if [ "$TRAVIS_BRANCH" = "xdevelop" ]; then
     docker build -t tworavens/raven-metadata-service:develop -f ./Dockerfile-web .;
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push tworavens/raven-metadata-service:develop;
