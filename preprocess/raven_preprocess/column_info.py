@@ -225,7 +225,7 @@ class ColumnInfo(object):
 
         for pname in attr_names:
             val = self.__dict__.get(pname)
-            if val in ('', []):
+            if val is '' or val is []:
                 self.__dict__[pname] = None #col_const.NOT_APPLICABLE
 
         # Next 2 lines need to be fixed in the plot

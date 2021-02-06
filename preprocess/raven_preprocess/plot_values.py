@@ -17,7 +17,7 @@ class PlotValuesUtil(object):
         assert isinstance(col_info, ColumnInfo), "col_info must be a ColumnInfo object"
 
         self.plot_values = list()
-        logger.debug("plot values time")
+        #logger.debug("plot values time")
         #self.dataframe = dataframe
         self.col_info = col_info
         self.colname = self.col_info.colname
@@ -57,13 +57,13 @@ class PlotValuesUtil(object):
         my_interval = self.col_info.interval
         self.col_series.dropna(inplace=True)
         if col_const.NATURE_NOMINAL != nat:
-            logger.debug("into not nominal %s", self.colname)
+            #logger.debug("into not nominal %s", self.colname)
 
             uniques = np.sort(self.col_series.unique())
             lu = len(uniques)
 
             if lu < self.histlimit:
-                logger.debug("into it %s", self.colname)
+                # logger.debug("into it %s", self.colname)
                 # code for plot values
                 self.col_info.plot_type = col_const.PLOT_BAR
 
@@ -109,7 +109,7 @@ class PlotValuesUtil(object):
 
         else:
             """Here data nature is not nominal"""
-            logger.debug("into it *******%s", self.colname)
+            #logger.debug("into it *******%s", self.colname)
             # code for plot values
             self.col_info.plot_type = col_const.PLOT_BAR
 

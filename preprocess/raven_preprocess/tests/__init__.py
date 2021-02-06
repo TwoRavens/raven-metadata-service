@@ -9,7 +9,7 @@ Running 1 file at a time from /preprocess/raven_preprocess
 python -m unittest tests.test_type_guess.TestTypeGuess
 
 # Test summary stats
-python -m unittest tests.test_summary_stats.SummaryStatsUtilTest
+python -m unittest raven_preprocess.tests.test_summary_stats.SummaryStatsUtilTest.test_10_numeric_val_ok
 
 # Test plot values
 python -m unittest tests.test_plot_values.PlotValuesTest

@@ -27,7 +27,6 @@ class SummaryStatsUtilTest(unittest.TestCase):
         self.dataset_level_info = DatasetLevelInfo(self.df_01).final_output
         self.emptydataerrors = DatasetLevelInfo(self.df_02)
 
-
     def test_10_numeric_val_ok(self):
         """(10) Test the data for numeric series"""
         msgt(self.test_10_numeric_val_ok.__doc__)
@@ -35,8 +34,9 @@ class SummaryStatsUtilTest(unittest.TestCase):
         # Calculate the stats
         # SummaryStatsUtil(col_series, col_info)
         self.col_info = ColumnInfo('quat')
-        print("df ", self.df_01['quat'])
-        print("col_info", self.col_info.colname)
+        #print("df ", self.df_01['quat'])
+        #print("col_info", self.col_info.colname)
+
         TypeGuessUtil(pd.Series(self.df_01['quat']), self.col_info)
         SummaryStatsUtil((self.df_01['quat']), self.col_info)
         self.col_info.print_values()
@@ -66,7 +66,7 @@ class SummaryStatsUtilTest(unittest.TestCase):
         msg('Check mode, fewest, mid, etc')
         # Check mode, fewest, mid, etc
         self.assertEqual(col_info.freqmode, 2)
-        self.assertEqual(col_info.mid, 1324)
+        self.assertEqual(col_info.mid, 34314)
         self.assertEqual(col_info.freqmid, 1)
         self.assertEqual(col_info.freqfewest, 1)
 
@@ -133,10 +133,10 @@ class SummaryStatsUtilTest(unittest.TestCase):
         sample[col_const.DATASET_ROW_CNT] = 12
         sample[col_const.DATASET_VARIABLE_CNT] = 11
 
-        #print('cols!!')
-        #for col in self.df_01.columns:
-        #    print(col)
-        #print('self.dataset_level_info : ', self.dataset_level_info)
+        # print('cols!!')
+        # for col in self.df_01.columns:
+        #     print(col)
+        # print('self.dataset_level_info : ', self.dataset_level_info)
 
         self.assertEqual(self.dataset_level_info, sample)
 
@@ -148,6 +148,7 @@ class SummaryStatsUtilTest(unittest.TestCase):
 
         self.assertTrue(has_error)
         print("Errors : ", errors)
+
 
 if __name__ == '__main__':
     unittest.main()
