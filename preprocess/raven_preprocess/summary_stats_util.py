@@ -27,6 +27,8 @@ class SummaryStatsUtil(object):
         self.col_info.uniques = len(self.col_series.unique())
 
         mid_pt = int(self.col_info.uniques / 2)
+        print('self.col_info.uniques', self.col_info.uniques)
+        print('mid_pt', mid_pt)
 
         # iterate through value_counts for mode stats
         #
@@ -39,13 +41,15 @@ class SummaryStatsUtil(object):
         fewest_output = []
 
         for col_val, val_cnt in self.col_series.value_counts(sort=True, ascending=True).iteritems():
+            row_num += 1
+            #print(f'({row_num}) [mid:{mid_pt}] {col_val} -- {val_cnt}')
             if cnt_min is None and val_min is None and cnt_max is None and val_max is None:
                 cnt_min = val_cnt
                 val_min = col_val
                 cnt_max = val_cnt
                 val_max = col_val
             self.total_agg = self.total_agg + val_cnt
-            row_num += 1
+
             if row_num == mid_pt:
                 self.col_info.mid = col_val
                 self.col_info.freqmid = val_cnt

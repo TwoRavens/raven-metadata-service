@@ -34,8 +34,9 @@ class SummaryStatsUtilTest(unittest.TestCase):
         # Calculate the stats
         # SummaryStatsUtil(col_series, col_info)
         self.col_info = ColumnInfo('quat')
-        print("df ", self.df_01['quat'])
-        print("col_info", self.col_info.colname)
+        #print("df ", self.df_01['quat'])
+        #print("col_info", self.col_info.colname)
+
         TypeGuessUtil(pd.Series(self.df_01['quat']), self.col_info)
         SummaryStatsUtil((self.df_01['quat']), self.col_info)
         self.col_info.print_values()
@@ -65,7 +66,7 @@ class SummaryStatsUtilTest(unittest.TestCase):
         msg('Check mode, fewest, mid, etc')
         # Check mode, fewest, mid, etc
         self.assertEqual(col_info.freqmode, 2)
-        self.assertEqual(col_info.mid, 1324)
+        self.assertEqual(col_info.mid, 34314)
         self.assertEqual(col_info.freqmid, 1)
         self.assertEqual(col_info.freqfewest, 1)
 

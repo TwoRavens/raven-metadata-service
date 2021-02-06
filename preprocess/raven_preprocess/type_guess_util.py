@@ -1,9 +1,7 @@
 """ Module for type guessing """
 import collections
-import datetime
 import re
 
-import dateutil.parser
 import numpy as np
 import pandas as pd
 from pandas.api.types import is_float_dtype, is_numeric_dtype
@@ -59,7 +57,6 @@ def lookup_date(val, year):
         return
 
     try:
-        # dateutil.parser.parse(val)
         _, res_format = format_parser.parse(ori_val)
         if year:
             if len(val) == 4:
