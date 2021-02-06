@@ -21,13 +21,13 @@ before_install:
 install:
   # Build/test dependencies
   - pip install --upgrade pip
-  - pip install --no-cache-dir -r requirements/30_preprocess_web.txt
+  - pip install --no-cache-dir -r requirements/10_preprocess.txt
   - pip install coveralls
 
 script:
   # Run django tests.  (Note django settings are an env variable)
   - cd preprocess; python -m unittest; cd ..
-  - cd preprocess_web/code; python manage.py test; cd ../../
+  #- cd preprocess_web/code; python manage.py test; cd ../../
   #- coverage run --source=ravens_metadata_apps.ta2_interfaces manage.py test ravens_metadata_apps.ta2_interfaces ravens_metadata_apps.workspaces
   #- docker build -t tworavens/ravens-main:latest .
   - echo $TRAVIS_BRANCH;
